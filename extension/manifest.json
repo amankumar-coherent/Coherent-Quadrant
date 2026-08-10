@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Coherent Quadrant — AI Overview Collector",
+  "version": "1.0.0",
+  "description": "Drains the pipeline's pending-question queue by reading Google AI Overview answers in your own browser session.",
+  "permissions": ["tabs", "storage", "scripting"],
+  "host_permissions": [
+    "http://127.0.0.1:15552/*",
+    "http://localhost:15552/*",
+    "https://www.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Overview Collector"
+  }
+}

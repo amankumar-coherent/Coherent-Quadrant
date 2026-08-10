@@ -1,0 +1,258 @@
+# Coherent Quadrant — industry-wise X/Y scoring features
+# Source: Coherent Quadrant_ Industry-wise Criteria.xlsx
+# X = Solution Capability | Y = Business Excellence / Strategy
+
+axis_labels:
+  x: Solution Capability
+  y: Business Strategy
+
+groups:
+  Healthcare:
+    Biotechnology:
+      x:
+        - Product Portfolio Breadth
+        - Scientific Innovation
+        - Integration & Interoperability
+        - Manufacturing & Process Excellence
+        - Regulatory & Quality Compliance
+      y:
+        - Geographic Expansion
+        - Brand Reputation & Growth
+        - Financial Performance
+        - Innovation Roadmap
+        - Business Expansion
+    Clinical Diagnostic:
+      x:
+        - Product Portfolio Breadth
+        - Diagnostic Accuracy
+        - Innovation & R&D Capability
+        - Workflow Efficiency
+        - Regulatory & Quality Compliance
+      y:
+        - Geographic Expansion
+        - Brand Reputation & Growth
+        - Financial Performance
+        - Innovation Roadmap
+        - Business Expansion
+    Healthcare IT:
+      x:
+        - Solution/Sevices Portfolio
+        - Technology Innovation
+        - Integration & Interoperability
+        - Scalability Readiness
+        - Regulatory & Quality Compliance
+      y:
+        - Geographic Expansion
+        - Brand Reputation & Growth
+        - Financial Performance
+        - Innovation Roadmap
+        - Business Expansion
+    Medical Devices:
+      x:
+        - Product Portfolio Breadth
+        - Product Quality & Performance
+        - Innovation & R&D Capability
+        - Manufacturing & Process Excellence
+        - Regulatory & Quality Compliance
+      y:
+        - Geographic Expansion
+        - Brand Reputation & Growth
+        - Financial Performance
+        - Innovation Roadmap
+        - Business Expansion
+    Medical Imaging:
+      x:
+        - Product Portfolio Breadth
+        - Product Quality & Performance
+        - Innovation & R&D Capability
+        - Manufacturing & Process Excellence
+        - Regulatory & Quality Compliance
+      y:
+        - Geographic Expansion
+        - Brand Reputation & Growth
+        - Financial Performance
+        - Innovation Roadmap
+        - Business Expansion
+    Pharmaceutical:
+      x:
+        - Product Portfolio Breadth
+        - Therapeutic Coverage
+        - Innovation & R&D Capability
+        - Manufacturing & Process Excellence
+        - Regulatory & Quality Compliance
+      y:
+        - Geographic Expansion
+        - Brand Reputation & Growth
+        - Financial Performance
+        - Innovation Roadmap
+        - Business Expansion
+
+  Chemical and Materials:
+    Bulk Chemicals:
+      x: &chem_x
+        - Product Portfolio Breadth
+        - Product Quality & Performance
+        - Innovation & R&D Capability
+        - Manufacturing & Process Excellence
+        - Regulatory & Quality Compliance
+      y: &default_y
+        - Geographic Expansion
+        - Brand Reputation & Growth
+        - Financial Performance
+        - Innovation Roadmap
+        - Business Expansion
+    Advanced Materials:
+      x: *chem_x
+      y: *default_y
+    Agrochemicals:
+      x: *chem_x
+      y: *default_y
+    Specialty and Fine Chemicals:
+      x: *chem_x
+      y: *default_y
+    Food Ingredients:
+      x: *chem_x
+      y: *default_y
+    Cosmetic Ingredients:
+      x: *chem_x
+      y: *default_y
+    Polymers and Resins:
+      x: *chem_x
+      y: *default_y
+    Green Chemicals:
+      x: *chem_x
+      y: *default_y
+
+  ICT, Automation, Semiconductor:
+    Aerospace and Defense:
+      x: &ict_hw_x
+        - Product Portfolio Breadth
+        - Product Quality & Performance
+        - Innovation & R&D Capability
+        - Manufacturing & Process Excellence
+        - Regulatory & Quality Compliance
+      y: *default_y
+    Automotive and Transportation:
+      x: *ict_hw_x
+      y: *default_y
+    Construction Engineering:
+      x: *ict_hw_x
+      y: *default_y
+    Consumer Electronics:
+      x: *ict_hw_x
+      y: *default_y
+    Industrial Automation and Machinery:
+      x: *ict_hw_x
+      y: *default_y
+    Information and Communication Technology:
+      x:
+        - Solution/Sevices Portfolio
+        - Technology Innovation
+        - Integration & Interoperability
+        - Scalability Readiness
+        - Workflow Integration
+      y: *default_y
+    Semiconductors:
+      x: *ict_hw_x
+      y: *default_y
+    Smart Technologies:
+      x: *ict_hw_x
+      y: *default_y
+
+  Others:
+    Consumer Goods:
+      x: *chem_x
+      y: *default_y
+    Energy:
+      x:
+        - Product Portfolio Breadth
+        - Operational Efficiency
+        - Reliability & Asset Performance
+        - Safety & Regulatory Compliance
+        - Sustainability & Energy Transition
+      y: *default_y
+    Food and Beverages:
+      x: *chem_x
+      y: *default_y
+    Packaging:
+      x: *chem_x
+      y: *default_y
+
+# Keyword hints for deterministic industry routing (lowercase substrings)
+category_keywords:
+  Medical Devices:
+    - dental
+    - medical device
+    - surgical
+    - implant
+    - catheter
+    - stent
+    - orthopaedic
+    - orthopedic
+  Medical Imaging:
+    - medical imaging
+    - mri
+    - ct scanner
+    - ultrasound imaging
+    - x-ray equipment
+  Clinical Diagnostic:
+    - diagnostic
+    - ivd
+    - immunoassay
+    - laboratory diagnostic
+  Biotechnology:
+    - biotech
+    - biologics
+    - gene therapy
+    - cell therapy
+  Healthcare IT:
+    - healthcare it
+    - ehr
+    - emr
+    - healthtech software
+    - telehealth platform
+  Pharmaceutical:
+    - pharmaceutical
+    - pharma
+    - drug
+    - api manufacturer
+  Food and Beverages:
+    - organic milk
+    - dairy
+    - beverage
+    - food and beverage
+    - food & beverage
+    - organic food
+  Energy:
+    - energy
+    - renewable
+    - oil and gas
+    - solar
+    - wind power
+    - battery storage
+  Semiconductors:
+    - semiconductor
+    - chip
+    - wafer
+    - fab
+  Information and Communication Technology:
+    - satcom
+    - telecom
+    - saas
+    - cloud software
+    - ict
+  Green Chemicals:
+    - bio-based
+    - green chemical
+    - sustainable chemical
+  Specialty and Fine Chemicals:
+    - specialty chemical
+    - fine chemical
+  Automotive and Transportation:
+    - automotive
+    - ev charging
+    - electric vehicle
+  Packaging:
+    - packaging
+    - carton
+    - flexible packaging

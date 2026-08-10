@@ -1,0 +1,94 @@
+# Full local stack (same building blocks as Cloud Run deploy)
+#
+#   docker compose up -d --build
+#   → App:     http://localhost:8501
+#   → SearXNG: http://localhost:8080
+#   → Postgres: localhost:5432
+#
+# Copy .env.example → .env and set LLM + JWT + email keys before first run.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: vendor-intel-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: vendor
+      POSTGRES_PASSWORD: vendor
+      POSTGRES_DB: vendor_intel
+    volumes:
+      - vendor_intel_pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U vendor -d vendor_intel"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  searxng:
+    image: searxng/searxng:latest
+    container_name: vendor-intel-searxng
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config/searxng:/etc/searxng:ro
+    environment:
+      - GRANIAN_WORKERS=5
+      - GRANIAN_THREADS=4
+      - GRANIAN_LOG_LEVEL=info
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vendor-intel:latest
+    container_name: vendor-intel-app
+    ports:
+      - "8501:8080"
+    env_file:
+      - .env
+    environment:
+      PORT: "8080"
+      # No DSN literal here: auth/config.py assembles it from these parts.
+      POSTGRES_HOST: postgres
+      POSTGRES_USER: ${POSTGRES_USER:-vendor}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-vendor}
+      POSTGRES_DB: ${POSTGRES_DB:-vendor_intel}
+      SEARXNG_BASE_URL: http://searxng:8080
+      SEARCH_BACKUP: searxng
+      WEB_FETCH_ENABLED: "true"
+      SELENIUM_HEADLESS: "true"
+      CHROME_BINARY_PATH: /usr/bin/google-chrome-stable
+      USE_MOCK_DATA: "false"
+      MARKET_QUERY_OUTPUT_DIR: output/demo
+      # Temporary: no email OTP code — sign in with company email only
+      AUTH_SKIP_OTP: "true"
+      # Coherent Quadrant (also set in .env — repeated so compose one-shots inherit them)
+      QUADRANT_ENABLED: "${QUADRANT_ENABLED:-true}"
+      QUADRANT_MAX_COMPANIES: "${QUADRANT_MAX_COMPANIES:-12}"
+      QUADRANT_BRAND_CONCURRENCY: "${QUADRANT_BRAND_CONCURRENCY:-6}"
+      QUADRANT_QA_BATCH_MODE: "${QUADRANT_QA_BATCH_MODE:-company}"
+      # Override on Cloud Run / hosted DB; local compose uses service DNS above
+    volumes:
+      # Host bind so pipeline CSV + quadrant JSON appear under ./output
+      - ./output:/app/output
+    depends_on:
+      postgres:
+        condition: service_healthy
+      searxng:
+        condition: service_started
+    restart: unless-stopped
+    shm_size: "1gb"
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+
+volumes:
+  vendor_intel_pgdata:

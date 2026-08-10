@@ -1,0 +1,85 @@
+# Vendor Evaluation Matrix rollup weights + CMI rating thresholds
+# Source: Draft Framework_Vendor Evaluation Matrix.xlsx (Criteria sheet)
+
+axis_weights:
+  x: 0.5   # Solution Capability
+  y: 0.5   # Business Excellence / Strategy
+
+# Default equal weights across 5 features per axis (Industry-wise Excel has no weights).
+# Override slots match Vendor Evaluation Matrix Criteria sheet order when preferred.
+default_feature_weights:
+  x: [0.20, 0.20, 0.20, 0.20, 0.20]
+  y: [0.20, 0.20, 0.20, 0.20, 0.20]
+
+# Optional ICT-style template weights from the draft matrix (applied by position if use_matrix_slot_weights)
+matrix_slot_weights:
+  x: [0.30, 0.20, 0.20, 0.15, 0.15]
+  y: [0.25, 0.25, 0.20, 0.15, 0.15]
+
+use_matrix_slot_weights: true
+
+# Full-chart placement: rank-space X/Y so brands scatter (not equal 20% cell nesting)
+chart_stretch: true
+chart_placement: rank
+chart_low: 12
+chart_high: 88
+
+questions_per_feature: 3
+default_question_weights: [0.4, 0.3, 0.3]
+
+# Map feature sub_avg (1-10) → CMI dot rating
+rating_thresholds:
+  very_high: 8.5
+  high: 7.0
+  average: 5.0
+  low: 3.0
+
+# When KB evidence is missing, still score from model knowledge (do NOT force low scores).
+allow_model_knowledge: true
+# Minimum score for any answered question (avoids 1–2 penalties for thin crawl KB)
+score_floor: 4
+# Legacy keys kept for older callers; caps are no longer applied when allow_model_knowledge=true
+insufficient_score: 4
+partial_score_cap: 10
+
+# Absolute tier cutoffs on overall (0-100) — used only when relative_tier=false
+tier_thresholds:
+  tier_1: 85
+  tier_2: 70
+
+# Within-cohort tier bands (tertiles by overall rank). Matches relative_quadrant
+# so a mid-score market (e.g. avocado overalls 42–60) still gets Tier 1/2/3.
+relative_tier: true
+
+# Brand caps for UI density
+max_companies: 12
+# Parallel brand scoring (KB build + batched Q&A)
+brand_concurrency: 6
+# company = 1 LLM call/brand for all questions; feature = 1 call/feature; none = legacy per-question
+qa_batch_mode: company
+# Quadrant never outreach-searches; KB comes from pipeline evidence_snapshot only.
+searches_per_company: 0
+kb_max_chunks: 40
+kb_chunk_chars: 800
+kb_total_chars: 12000
+
+# Quadrant midpoint: relative median when relative_quadrant=true, else axis_midpoint
+relative_quadrant: true
+# half_median = split by X median, then by Y-within-half so Challengers & Trailblazers fill
+quadrant_fill_mode: half_median
+axis_midpoint: 50
+
+# Brand chart colors (cycled)
+brand_colors:
+  - "#002857"
+  - "#0057a8"
+  - "#3f9b50"
+  - "#c44a16"
+  - "#e87a3d"
+  - "#5b3b82"
+  - "#1f7a8c"
+  - "#1f6b30"
+  - "#8b4513"
+  - "#4a5568"
+  - "#2b6cb0"
+  - "#9b2c2c"

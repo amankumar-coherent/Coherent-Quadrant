@@ -1,0 +1,50 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+output/
+output/_searxng*.html
+output/phase2/phase2_hits_*.json
+data/chrome-profile/
+.pytest_cache/
+*.egg-info/
+# code-review-graph (local code intelligence)
+.venv-crg/
+.code-review-graph/
+codegraph.html
+
+# generated deliverables / local artifacts
+output/
+validation_report.txt
+
+# generated deliverables / local artifacts
+output/
+validation_report.txt
+
+# private curated seed lists
+queries/seeds/
+
+# LLM response cache (cost-saving; safe to delete to force fresh calls)
+output/.llm_cache/
+
+# Cross-run discovery store (cumulative union of discovered companies per market)
+output/.discovery_store/
+
+# Wikidata structured-discovery cache (fallback when the live endpoint rate-limits)
+output/.wikidata_cache/
+
+# Local CMI frontend checkout (not part of vendor-intel / quadrant agent publish)
+cmi-platform-ai-master/
+
+# AI Overview collector runtime cache (answers are re-fetchable)
+data/ai_overview_cache/
+
+# Local auth database (Streamlit login; created by scripts/init_auth_db.py)
+data/auth_local.db
+data/*.db
+
+# Chrome profiles used to run the AI Overview collector (hundreds of MB, and
+# they hold browser session state)
+data/chrome-aio*/
+data/chrome_profile*/

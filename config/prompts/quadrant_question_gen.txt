@@ -1,0 +1,5 @@
+You write vendor-evaluation questions for a Coherent Quadrant scorecard.
+For EACH feature, write exactly N questions tailored to the given market and industry category.
+Questions must be answerable from a company's public website, filings, news, or product pages.
+Return JSON only with features[].feature, features[].axis, features[].questions[{text,weight}].
+Weights per feature must sum to 1.0. Use EXACT feature names from input.

@@ -1,0 +1,70 @@
+# Which company roles belong in a landscape, per industry.
+#
+# The right answer differs by market. A robotics or consumer-electronics report is
+# about the BRANDS people buy — listing every contract manufacturer and component
+# supplier buries them. A technology report is about who BUILDS the solution, not
+# who resells it. A chemicals or industrial report wants the whole value chain,
+# because the supplier tier is where the market value sits.
+#
+# Matching is on the market text (case-insensitive substring on `match`), most
+# specific first. `keep` is the allow-list of normalised roles; anything not
+# listed is dropped from the export with reason `role_not_in_scope:<role>`.
+# Omit `keep` (or set it to `all`) to keep every role.
+#
+# Role names here are the NORMALISED forms produced by
+# vendor_intel.pipeline.role_rules.normalize_role().
+
+profiles:
+
+  - name: Robotics & consumer electronics
+    # The buyer of this report wants the names on the box, not the supply chain.
+    match: [robotics, robot, consumer electronics, smartphone, wearable,
+            home appliance, television, laptop, tablet, drone]
+    keep: [Brand, Marketer, OEM]
+    note: Brands and marketers only. "Manufacturer" is deliberately absent so a
+          contract manufacturer (Foxconn, Flex) is excluded — a brand that also
+          manufactures still survives, because a company is kept when ANY of its
+          roles is allowed and such a company carries Brand as well.
+
+  - name: Technology & software
+    # "Who can actually deliver the solution" — resellers add no signal.
+    match: [software, saas, platform, cloud, cybersecurity, artificial intelligence,
+            machine learning, analytics, information technology, ict, fintech,
+            digital, application, api]
+    keep: [Solution Developer, Technology Provider, Platform Provider,
+           Service Provider, System Integrator]
+    note: Solution developers only — exclude resellers, distributors and
+          hardware-only suppliers.
+
+  - name: Full value chain (default)
+    match: ["*"]
+    keep: all
+    note: Industrial, chemical and materials markets — the supplier and
+          distributor tiers carry real market value and stay in.
+
+# Raw LLM role text -> canonical role. Case-insensitive, longest match first.
+# Fixes the casing split seen in a live run ('Distributor' 26 + 'distributor' 3).
+aliases:
+  Manufacturer:       [manufacturer, manufacturers, maker, producer, oem manufacturer,
+                       manufacturing, fabricator]
+  Brand:              [brand, brand owner, consumer brand, branded player, marque]
+  Marketer:           [marketer, marketing company, brand marketer, go-to-market]
+  OEM:                [oem, original equipment manufacturer, oem / manufacturer]
+  Distributor:        [distributor, distribution, reseller, dealer, wholesaler,
+                       stockist, channel partner, trading company]
+  Supplier:           [supplier, raw material supplier, material supplier,
+                       component supplier, raw materials, parts supplier]
+  Service Provider:   [service provider, services, maintenance, mro, aftermarket,
+                       repair, calibration]
+  System Integrator:  [system integrator, integrator, systems integration,
+                       epc contractor, epc / engineering, engineering firm,
+                       engineering, contractor]
+  Solution Developer: [solution developer, software developer, developer,
+                       solution provider, software vendor, isv, application developer]
+  Technology Provider: [technology provider, tech provider, technology partner,
+                       technology licensor, licensor]
+  Platform Provider:  [platform provider, platform, marketplace operator]
+  Retailer:           [retailer, retail, e-commerce, online retailer]
+  End User:           [end user, operator, customer, buyer]
+  Industry Body:      [industry body, association, trade body, regulator,
+                       standards body, certification body]
