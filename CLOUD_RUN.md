@@ -90,10 +90,10 @@ gcloud sql instances create vendor-intel-pg \
   --database-version=POSTGRES_16 \
   --tier=db-custom-1-3840 \
   --region=$REGION \
-  --root-password=GENERATE_A_STRONG_PASSWORD
+  --root-password="$PGPASS"          # export PGPASS=... first
 
 gcloud sql databases create vendor_intel --instance=vendor-intel-pg
-gcloud sql users create vendor --instance=vendor-intel-pg --password=GENERATE_A_STRONG_PASSWORD
+gcloud sql users create vendor --instance=vendor-intel-pg --password="$PGPASS"
 ```
 
 Connection name:
