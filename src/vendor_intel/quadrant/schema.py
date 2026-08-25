@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field, field_validator
 QuadrantName = Literal["Leaders", "Challengers", "Trailblazers", "Emerging Players"]
 TierName = Literal["Tier 1", "Tier 2", "Tier 3"]
 RatingName = Literal["very-high", "high", "average", "low", "very-low"]
-AxisName = Literal["Solution Capability", "Business Strategy"]
+AxisName = str  # market-specific; legacy defaults: Solution Capability / Business Strategy
 GroundingName = Literal["supported", "partial", "model_knowledge", "insufficient"]
 
 
@@ -36,6 +36,19 @@ class QuadrantBrand(BaseModel):
     revenue: str = ""
     yoy_growth: str = ""
     top_strength: str = ""
+    # Chart / Brand column: plain brand name (no acquired-by suffix)
+    display_name: str = ""
+    # Company column: "acquired by Parent" when known
+    company: str = ""
+    # "Founded in" column: location (not year); mirrors founded_location
+    founded_in: str = ""
+    founded_location: str = ""
+    hq_location: str = ""
+    # True = plotted on the quadrant graph (top 15–20); table can include many more
+    on_chart: bool = False
+    # Brand / Marketer (food) or Solution Developer (tech)
+    commercial_role: str = ""
+    company_function: str = ""
 
     @field_validator("execution", "innovation", "overall", "top_pct", "left_pct", mode="before")
     @classmethod

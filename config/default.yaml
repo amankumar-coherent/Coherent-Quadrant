@@ -111,6 +111,16 @@ junk_filters:
     - indian softwares
     - cyber import data india
     - superbcompanies
+    # Adult / non-market junk names that leak from bad SERP titles
+    - pornhub
+    - xvideos
+    - youporn
+    - xcafe
+    - anysex
+    - brobangers
+    - whatsapp
+    - whatsapp web
+    - about whatsapp web
   media_domains:
     - analyticsinsight.net
     - livemint.com
@@ -159,6 +169,61 @@ junk_filters:
     - inc42.com
     # Import-export data providers
     - seair.co.in
+    # Adult / porn domains (never market vendors)
+    - pornhub.com
+    - xvideos.com
+    - youporn.com
+    - xnxx.com
+    - xhamster.com
+    - xcafe.com
+    - anysex.com
+    - brobangers.com
+    - redtube.com
+    - tube8.com
+    - spankbang.com
+    - onlyfans.com
+    # Consumer apps / social / Q&A — not edible-oil vendors
+    - whatsapp.com
+    - faq.whatsapp.com
+    - web.whatsapp.com
+    - facebook.com
+    - instagram.com
+    - twitter.com
+    - tiktok.com
+    - youtube.com
+    - baidu.com
+    - douban.com
+    - zhihu.com
+    - lonelyplanet.com
+    - tasteatlas.com
+    - claude.com
+    - openai.com
+    - chatgpt.com
+    - github.com
+    - desktop.github.com
+    - thechosen.tv
+    - watch.thechosen.tv
+    - tenforums.com
+    - vpforums.com
+    - vpforums.org
+    - christmascountdown.org
+    - movieboxpro.app
+    - extratv.com
+    - alomedika.com
+    - jingyan.baidu.com
+    - zhidao.baidu.com
+    - sports.inquirer.net
+    - movie.douban.com
+    - maps.google.co.id
+    - faq.whatsapp.com
+    - bellakitchenware.com
+    - shinjyuku-wh.com
+    - muzaffarpur.nic.in
+    - vjp.org.in
+    - elcalculador.com
+    - geoffreyparker.com
+    - acao.jp
+    - anysex.com
 
 # Phase 1 smoke test: how many search prompts to run after LLM compile (0 = skip search, 4 = fast)
 phase1_smoke_max_prompts: 4

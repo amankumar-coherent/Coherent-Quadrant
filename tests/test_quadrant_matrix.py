@@ -45,6 +45,30 @@ def test_industry_select_organic_milk_to_food():
     assert sel["industry_category"] == "Food and Beverages"
 
 
+def test_food_beverages_uses_scorecard_parameters():
+    """X/Y features match the Coherent Quadrant Solution Capability / Business Strategy tables."""
+    from vendor_intel.quadrant.criteria_catalog import get_category_features, load_industry_catalog
+
+    load_industry_catalog.cache_clear()
+    feats = get_category_features("Others", "Food and Beverages")
+    assert feats["x"] == [
+        "Product Portfolio",
+        "Sustainability & Welfare",
+        "Supply-Chain Reliability",
+        "Distribution & Logistics",
+        "Multi-Region Coverage",
+    ]
+    assert feats["y"] == [
+        "Market Vision & Alignment",
+        "Customer Base & Adoption",
+        "Partner Ecosystem",
+        "Pricing Competitiveness",
+        "Financial Stability",
+    ]
+    assert feats["axis_x"] == "Product & Supply Capability"
+    assert feats["axis_y"] == "Brand & Commercial Strategy"
+
+
 def test_weighted_question_average_vendor1_solution_portfolio():
     # Vendor Evaluation Matrix: scores 7, 5, 6 with weights 0.3, 0.3, 0.4 → 6.0
     avg = weighted_question_average([7, 5, 6], [0.3, 0.3, 0.4])
@@ -301,3 +325,21 @@ def test_each_half_splits_evenly():
     c = Counter(quads)
     assert c["Challengers"] == c["Emerging Players"] == 25
     assert c["Leaders"] == c["Trailblazers"] == 25
+
+
+def test_all_scores_tied_still_fills_four_quadrants():
+    """Wearable-style score_floor collapse: every brand at the same X/Y."""
+    from collections import Counter
+
+    from vendor_intel.quadrant.rating_map import assign_quadrants_half_median
+
+    n = 174
+    execs = [52] * n
+    innovs = [52] * n
+    quads, _, _ = assign_quadrants_half_median(execs, innovs)
+    c = Counter(quads)
+    for cell in ("Leaders", "Trailblazers", "Challengers", "Emerging Players"):
+        assert c[cell] > 0, f"{cell} empty: {dict(c)}"
+    # ~equal quarters (odd n → right/high sides get +1)
+    assert min(c.values()) >= n // 4 - 1
+    assert max(c.values()) <= n // 4 + 1

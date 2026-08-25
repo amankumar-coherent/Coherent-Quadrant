@@ -1,0 +1,215 @@
+# Landscape expand market gate — drop junk BEFORE Final Excel / HTML.
+#
+# Used by chatgpt_expand Step 4c / 6m (EXPAND_MARKET_GATE=1 by default).
+# Matching is case-insensitive substring on company/brand name unless noted.
+#
+# Profiles match on market query text (most specific first).
+
+profiles:
+
+  - name: Semiconductors
+    match: [semiconductor, wafer, foundry, microelectronics, chip fab, ic design]
+    # Keep: IDM, fabless, foundry, OSAT, SME equipment, EDA/IP, compound semi, design services
+    drop_name_stems:
+      # Wrong industry
+      - mitel
+      - weg s.a
+      - weg sa
+      - embraer
+      - positivo tecnologia
+      - nortech systems
+      - cascodium
+      - semicab
+      - smar equipamentos
+      - ael sistemas
+      - ciena corporation
+      - ciena
+      - siemens ag
+      - raytheon australia
+      - raytheon
+      # R&D / non-commercial
+      - c-dac
+      - centro de tecnologia da informação renato archer
+      - renato archer
+      - instituto de pesquisas eldorado
+      # Fake / unverifiable placeholders
+      - algeria semiconductor
+      - egyptian semiconductor
+      - tunisia semiconductor
+      - moroccan semiconductor
+      - ethiopia semiconductor
+      - south african microelectronics
+      - nanolithography solutions
+      # Acquired shells when parent usually listed
+      - cypress semiconductor
+      - dialog semiconductor
+      - dsp group
+      - xilinx
+      - mellanox
+      - habana labs
+      - sierra wireless
+      - globalfoundries (already listed)
+    drop_name_regex:
+      # "{Country} Semiconductor" style fakes
+      - '^(algeria|egypt|egyptian|tunisia|morocco|moroccan|ethiopia|kenya|nigeria|ghana|uganda|rwanda|sudan|libya|senegal)\s+(semiconductor|microelectronics|electronics)\b'
+      - '^south african\s+(semiconductor|microelectronics)\b'
+      - '^nanolithography\s+solutions?\b'
+      # Research / government institutes
+      - '\b(instituto de pesquisas|centre for development of advanced computing|c-dac)\b'
+      - '\b(research centre|research center|national laboratory)\b'
+      # Freight / EMS / aerospace OEMs that are not chip vendors
+      - '\b(freight|logistics network|equipamentos industriais)\b'
+    # Prefer parent; drop regional sales arms when parent already kept
+    drop_regional_of_parent: true
+    regional_parent_stems:
+      - intel
+      - alphawave
+      - semtech
+      - lumentum
+      - skyworks
+      - huawei
+      - samsung
+      - texas instruments
+      - broadcom
+      - nvidia
+      - amd
+      - qualcomm
+      - micron
+      - applied materials
+      - asml
+      - tsmc
+    note: >
+      Semiconductor landscape = chip design/fab/OSAT/equipment/EDA.
+      Not UC, motors, aircraft, PC OEMs, EMS, freight, defense primes, or country placeholders.
+
+  - name: Wearable medical devices
+    match: [wearable medical, wearable device, remote patient, continuous glucose, medical wearable]
+    drop_name_stems:
+      - infosys
+      - wipro
+      - tata consultancy
+      - hcl technologies
+      - mindtree
+      - cambridge consultants
+      - boat
+      - portronics
+      - zebronics
+      - fire-boltt
+      - fire boltt
+      - cue health
+      - caredx
+      - sonoscape
+      - csiro
+      - yamaha
+      - korea electric terminal
+    drop_name_regex:
+      - '\b(it services|consultancy services)\b'
+    drop_regional_of_parent: true
+    regional_parent_stems:
+      - philips
+      - abbott
+      - medtronic
+      - apple
+      - samsung
+      - omron
+      - baxter
+      - roche
+    note: Medical/clinical wearable OEMs only — not IT services or consumer gadget brands.
+
+  - name: GLP-1 receptor agonists
+    match: [glp-1, glp1, receptor agonist, incretin, semaglutide, tirzepatide]
+    drop_name_stems:
+      - mckesson
+      - cencora
+      - cardinal health
+      - cvs health
+      - cvs pharmacy
+      - walgreens
+      - rite aid
+      - amazon pharmacy
+      - optum pharmacy
+      - express scripts
+      - kroger health
+      - albertsons
+      - costco
+      - publix
+      - hy-vee
+      - superdrug
+      - noweda
+      - sanacorp
+      - axpharm
+      - andreae-noris
+      - anzag
+      - alloga
+      - bidafarma
+      - galexis
+      - cofares
+      - hefame
+      - phoenix médical
+      - phoenix medical
+      - montagu pharmacy
+      - walmart
+    drop_name_regex:
+      - '\b(pharmacy|pharmacies|wholesaler|wholesale drug|pbm|drugstore)\b'
+      - '\b(apothekenversorg|pharmahandel)\b'
+    drop_regional_of_parent: true
+    regional_parent_stems:
+      - novo nordisk
+      - eli lilly
+      - sanofi
+      - astrazeneca
+      - pfizer
+      - amgen
+      - boehringer ingelheim
+      - merck
+      - teva
+      - roche
+      - novartis
+      - sandoz
+      - cipla
+      - biocon
+    note: >
+      GLP-1 landscape = brand owners / developers of GLP-1 agonists.
+      Not retail pharmacies, wholesalers, PBMs, or regional sales arms.
+
+  - name: Flexible packaging
+    match: [flexible packaging, flex pack, packaging film, pouch packaging]
+    drop_name_stems:
+      - bemis associates
+      - essentra plc
+      - macfarlane group
+      - cascades inc
+      - intertape polymer
+      - ds smith
+      - samyang
+      - dongil industries
+      - orora
+      - tetra pak
+      - flex-pack engineering
+      - flex pack engineering
+      - flex america
+      - flex middle east
+      - flex films (usa)
+      - flex films usa
+      - toray plastics (america)
+      - toray plastics america
+    drop_name_regex:
+      - '^embalagens flex'
+    drop_regional_of_parent: true
+    regional_parent_stems:
+      - amcor
+      - berry
+      - constantia
+      - uflex
+      - mondi
+      - toray
+    note: Converters and film makers — not apparel adhesives, steel, cartons, glass/cans-only, or pure distributors/consultancies.
+
+  - name: Default landscape
+    match: ["*"]
+    drop_name_stems: []
+    drop_name_regex:
+      - '\(already listed\)'
+    drop_regional_of_parent: true
+    regional_parent_stems: []
+    note: Minimal defaults for other markets.

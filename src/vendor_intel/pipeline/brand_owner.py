@@ -111,12 +111,22 @@ def classify(
     return tagged
 
 
+_COMMERCIAL_ROLE_SET = {
+    "Brand",
+    "Marketer",
+    "Solution Developer",
+    "Manufacturer",
+    "Service Provider",
+    "System Integrator",
+}
+
+
 def commercial_roles(row: dict[str, Any]) -> set[str]:
     """Every commercial role this row carries, including ones the value-chain
     role already implies (an explicitly-labelled Brand stays a Brand)."""
     from vendor_intel.pipeline.role_rules import roles_of
 
-    out = {r for r in roles_of(row) if r in {"Brand", "Marketer", "Solution Developer"}}
+    out = {r for r in roles_of(row) if r in _COMMERCIAL_ROLE_SET}
     tag = str(row.get("commercial_role") or "").strip()
     if tag:
         out.add(tag)

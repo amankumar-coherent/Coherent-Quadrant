@@ -131,10 +131,19 @@ def classify_domain(domain: str) -> str:
     if low in _DOMAIN_EXACT_CLASS:
         return _DOMAIN_EXACT_CLASS[low]
 
+    def _kw_hit(label: str, kw: str) -> bool:
+        # Whole-token only — bare ``kw in label`` false-positives
+        # mediatek→media, onsemi→nse, magnachip→mag.
+        if not kw or not label:
+            return False
+        if label == kw:
+            return True
+        return bool(re.search(rf"(?<![a-z0-9]){re.escape(kw)}(?![a-z0-9])", label))
+
     # Pattern-based classification on base label + full domain
     for cls, keywords in _DOMAIN_CLASS_RULES:
         for kw in keywords:
-            if kw in base or kw in low:
+            if _kw_hit(base, kw) or _kw_hit(low, kw):
                 return cls
 
     return "company"
@@ -336,7 +345,8 @@ def name_domain_mismatch(name: str, domain: str) -> bool:
     base = domain.lower().split(".")[0].replace("-", "")
     compact = re.sub(r"[^a-z0-9]", "", low_name)
     if len(compact) < 4:
-        return True
+        # Short acronym brands (AMD, UMC, TSMC) are valid when domain matches
+        return not (compact and compact == base)
     if compact in base or base in compact:
         return False
     # First token should often appear in domain for single-brand sites

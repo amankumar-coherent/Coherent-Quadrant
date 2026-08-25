@@ -20,6 +20,7 @@ from ui.bootstrap import env_warnings, init_env, load_settings, output_dir
 from ui.services import JobRunner, list_result_csvs, pipeline_is_busy
 from ui.styles import CUSTOM_CSS
 from ui.auth_gate import require_login
+from ui.quadrant_view import load_quadrant_payload, render_quadrant_browser, render_quadrant_payload
 
 st.set_page_config(
     page_title="Vendor Intelligence",
@@ -43,7 +44,7 @@ if "active_job" not in st.session_state:
 JOB_RUNNER = JobRunner("active_job")
 
 DEFAULT_PROFILE = "quality"
-DEFAULT_CAP = "broad"
+DEFAULT_CAP = "target-1000"
 _WIZARD_STEPS = ["Market & Geography", "Market Structure", "Review & Run"]
 GEO_HINT = "global · United States · Europe · North America · Latin America · APAC · MENA · India · Germany"
 
@@ -365,6 +366,19 @@ def _live_job_status() -> None:
             _render_presentation(Path(csv_path), key_prefix="live_pres")
         else:
             st.warning("Run finished but no result file was returned.")
+
+        # Coherent Quadrant chart (when pipeline produced one)
+        cq = result.get("coherent_quadrant") or {}
+        qpath = result.get("quadrant_path") or cq.get("output_path")
+        payload = load_quadrant_payload(cq if cq.get("brands") else qpath)
+        if payload and payload.get("brands"):
+            st.markdown("---")
+            st.markdown("### Coherent Quadrant")
+            if qpath and not payload.get("output_path"):
+                payload = {**payload, "output_path": qpath}
+            render_quadrant_payload(payload, key_prefix="live_cq")
+        elif cq.get("error"):
+            st.caption(f"Quadrant scoring skipped: {cq.get('error')}")
 
     if not job.get("running") and (job.get("result") or job.get("error") or job.get("cancelled")):
         if st.button("Clear status & start another market", key="clear_job_status"):
@@ -796,7 +810,9 @@ else:
 
 _live_job_status()
 _past_results_panel()
+render_quadrant_browser()
 
 st.caption(
-    f"Outputs save to `{output_dir().name}/` · Time optimization in progress"
+    f"Outputs save to `{output_dir().name}/` · Quadrant charts in `output/quadrant/` · "
+    "Time optimization in progress"
 )

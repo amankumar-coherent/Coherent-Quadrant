@@ -34,9 +34,15 @@ CAP_TIERS: dict[str, dict[str, Any]] = {
         "time": "slowest (~40-70 min)",
         "discover": 500, "enrich": 500, "export": 300, "volume": 60, "widen": 5,
     },
+    "target-1000": {
+        "label": "Target 1000",
+        "approx": "~800-1000 companies",
+        "time": "slowest (~90-150 min)",
+        "discover": 1000, "enrich": 1000, "export": 1000, "volume": 80, "widen": 6,
+    },
 }
 
-DEFAULT_CAP = "broad"
+DEFAULT_CAP = "target-1000"
 
 
 def cap_keys() -> list[str]:

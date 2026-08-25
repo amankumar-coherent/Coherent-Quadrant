@@ -31,13 +31,18 @@ def pipeline_limits(
     recall: bool,
     country: str | None,
 ) -> dict[str, int | float]:
-    """Resolved discover/enrich/export thresholds for this run."""
+    """Resolved discover/enrich/export thresholds for this run.
+
+    Default target raised to 1000 companies across recall / global / regional
+    profiles (was 200-280) — override per-run via config/env if a smaller,
+    faster run is wanted.
+    """
     if recall:
         return {
-            "discover": 220,
-            "enrich": 220,
+            "discover": int(getattr(settings, "pipeline_recall_discover_max", 1000) or 1000),
+            "enrich": int(getattr(settings, "pipeline_recall_enrich_max", 1000) or 1000),
             "min_conf": 0.0,
-            "export_max": 280,
+            "export_max": _cap(settings, "pipeline_recall_export_max_rows", 1000),
             "export_min": 0,
             "min_quality": 0.0,
             "smoke_prompts": 0,
@@ -49,15 +54,15 @@ def pipeline_limits(
     if global_run:
         return {
             "discover": int(
-                getattr(settings, "pipeline_global_discover_max", 280) or 280
+                getattr(settings, "pipeline_global_discover_max", 1000) or 1000
             ),
             "enrich": int(
-                getattr(settings, "pipeline_global_enrich_max", 280) or 280
+                getattr(settings, "pipeline_global_enrich_max", 1000) or 1000
             ),
             "min_conf": float(
                 getattr(settings, "pipeline_global_min_export_confidence", 0.50) or 0.50
             ),
-            "export_max": _cap(settings, "pipeline_global_export_max_rows", 240),
+            "export_max": _cap(settings, "pipeline_global_export_max_rows", 1000),
             "export_min": int(
                 getattr(settings, "pipeline_global_export_min_rows", 0) or 0
             ),
@@ -75,14 +80,14 @@ def pipeline_limits(
             ),
         }
 
-    # Regional quality runs: higher headroom for demo exports
+    # Regional quality runs
     return {
-        "discover": int(getattr(settings, "pipeline_discover_max", 250) or 250),
-        "enrich": int(getattr(settings, "pipeline_enrich_max", 250) or 250),
+        "discover": int(getattr(settings, "pipeline_discover_max", 1000) or 1000),
+        "enrich": int(getattr(settings, "pipeline_enrich_max", 1000) or 1000),
         "min_conf": float(
             getattr(settings, "pipeline_min_export_confidence", 0.50) or 0.50
         ),
-        "export_max": _cap(settings, "pipeline_export_max_rows", 200),
+        "export_max": _cap(settings, "pipeline_export_max_rows", 1000),
         "export_min": int(getattr(settings, "pipeline_export_min_rows", 0) or 0),
         "min_quality": 0.48,
         "smoke_prompts": int(getattr(settings, "phase1_smoke_max_prompts", 4) or 4),

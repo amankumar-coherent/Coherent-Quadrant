@@ -142,4 +142,39 @@ every strategy starts returning `not-found`, strategy 1 is the one to update.
 | Everything comes back `no overview` | Google is not rendering overviews for these queries — often too-narrow phrasing; or you are signed out |
 | `content script unreachable` | A consent interstitial is showing. Open google.com in that tab once, accept, and press Start again |
 | Questions queue but never clear | The extension is pointed at a different market than the one the pipeline wrote |
+
+---
+
+## Dual enrich: Google AI scraper + LLM
+
+Market runs can also call the pasted **google-ai-scraper** (port **15551**) live,
+then have the LLM extract structured facts. Used for:
+
+| Field | Example |
+|-------|---------|
+| Brand / acquired by | `Horizon Organic (acquired by Danone)` |
+| Founded year | `1991` |
+| Founded location / HQ | city / country |
+
+```env
+GOOGLE_AI_SCRAPER_ENABLED=true
+GOOGLE_AI_SCRAPER_URL=http://127.0.0.1:15551
+FACT_ENRICH_LLM=true
+AI_OVERVIEW_ENABLED=true
+```
+
+**Setup**
+
+1. Start google-ai-scraper server under `google-ai-scraper-main/google-ai-scraper-main/server`
+2. Load its Chrome extension; confirm `GET http://127.0.0.1:15551/health` shows connected
+3. Run a market:
+
+```powershell
+$env:PYTHONPATH = "src"
+.venv\Scripts\python.exe scripts\run_quadrant_market.py --industry "Organic Milk Market" --country global
+```
+
+Flow per brand: **scraper ask** → cache answer → **LLM JSON extract** (owner / founded / location)
+→ ownership annotate → quadrant score. If the scraper is down, questions are queued for
+`extension/` + `run_ai_bridge.py` (:15552) and LLM still uses crawl evidence.
 | KB source stays `pipeline_evidence_snapshot` | `AI_OVERVIEW_ENABLED` is not `true`, or no answers cached yet for that market |

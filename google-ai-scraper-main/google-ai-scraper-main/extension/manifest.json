@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "Google AI Overview Scraper",
+  "version": "2.16.1",
+  "description": "Extracts Google AI Overviews as structured markdown via a local MCP server",
+  "permissions": ["tabs", "scripting", "alarms", "storage", "debugger"],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "*://google.com/*",
+    "*://*.google.co.in/*",
+    "*://google.co.in/*",
+    "*://*.google.co.uk/*",
+    "*://*.google.ca/*",
+    "*://*.google.com.au/*",
+    "*://*.google.de/*",
+    "*://*.google.fr/*",
+    "*://*.google.co.jp/*",
+    "*://*.googleusercontent.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "http://[::1]/*",
+    "https://localhost/*",
+    "https://127.0.0.1/*",
+    "https://[::1]/*"
+  ],
+  "optional_host_permissions": [
+    "*://*/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Google AI Scraper"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/search*",
+        "*://google.com/search*",
+        "*://*.google.com/search*",
+        "*://www.google.co.in/search*",
+        "*://google.co.in/search*",
+        "*://*.google.co.in/search*",
+        "*://*.google.co.uk/search*",
+        "*://*.google.ca/search*",
+        "*://*.google.com.au/search*",
+        "*://*.google.de/search*",
+        "*://*.google.fr/search*"
+      ],
+      "js": ["lib/turndown.js", "content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

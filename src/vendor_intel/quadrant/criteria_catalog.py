@@ -28,9 +28,18 @@ def load_industry_catalog() -> dict[str, Any]:
 
 @lru_cache(maxsize=1)
 def load_scoring_weights() -> dict[str, Any]:
+    import os
+
     path = _config_path("quadrant_scoring_weights.yaml")
     with path.open(encoding="utf-8") as f:
-        return yaml.safe_load(f) or {}
+        cfg = yaml.safe_load(f) or {}
+    # Runtime overrides for evidence-only rescoring (no invented mid-band scores)
+    raw = (os.getenv("QUAD_ALLOW_MODEL_KNOWLEDGE") or "").strip().lower()
+    if raw in {"0", "false", "no", "off"}:
+        cfg["allow_model_knowledge"] = False
+    elif raw in {"1", "true", "yes", "on"}:
+        cfg["allow_model_knowledge"] = True
+    return cfg
 
 
 def list_leaf_categories() -> list[tuple[str, str]]:
@@ -46,7 +55,12 @@ def list_leaf_categories() -> list[tuple[str, str]]:
 
 
 def get_category_features(group: str, category: str) -> dict[str, Any]:
-    """Return {group, category, x: [...], y: [...], axis_x, axis_y}."""
+    """Return {group, category, x: [...], y: [...], axis_x, axis_y}.
+
+    Per-leaf ``axis_x`` / ``axis_y`` override the global catalog defaults so
+    markets like Semiconductors / Packaging / Energy are not stuck on generic
+    Solution Capability / Business Strategy labels.
+    """
     catalog = load_industry_catalog()
     groups = catalog.get("groups") or {}
     g = groups.get(group) or {}
@@ -54,13 +68,15 @@ def get_category_features(group: str, category: str) -> dict[str, Any]:
     if not isinstance(row, dict):
         raise KeyError(f"Unknown industry category: {group}/{category}")
     labels = catalog.get("axis_labels") or {}
+    axis_x = str(row.get("axis_x") or labels.get("x") or AXIS_X)
+    axis_y = str(row.get("axis_y") or labels.get("y") or AXIS_Y)
     return {
         "industry_group": group,
         "industry_category": category,
         "x": list(row.get("x") or []),
         "y": list(row.get("y") or []),
-        "axis_x": str(labels.get("x") or AXIS_X),
-        "axis_y": str(labels.get("y") or AXIS_Y),
+        "axis_x": axis_x,
+        "axis_y": axis_y,
     }
 
 

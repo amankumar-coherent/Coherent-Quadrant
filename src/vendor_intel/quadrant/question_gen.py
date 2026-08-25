@@ -10,14 +10,15 @@ from vendor_intel.quadrant.criteria_catalog import load_scoring_weights
 from vendor_intel.quadrant.schema import FeatureQuestions, QuestionItem
 
 _SYSTEM = """You write vendor-evaluation questions for a Coherent Quadrant scorecard.
-For EACH feature, write exactly N questions tailored to the given market and industry category.
+For EACH market-specific scoring PARAMETER (feature), write exactly N questions tailored to the given market.
+These parameters change by market — questions must match THIS market, not a generic template.
 Questions must be answerable from a company's public website, filings, news, or product pages.
 Return JSON only:
 {
   "features": [
     {
       "feature": "exact feature name from input",
-      "axis": "Solution Capability" or "Business Strategy",
+      "axis": "exact axis label from input (market-specific X or Y name)",
       "questions": [
         {"text": "question?", "weight": 0.4},
         {"text": "question?", "weight": 0.3},
@@ -27,9 +28,9 @@ Return JSON only:
   ]
 }
 Rules:
-- Use the EXACT feature names and axis labels from the input.
+- Use the EXACT feature names and axis labels from the input (do not rename axes or parameters).
 - Weights per feature must sum to 1.0 (prefer 0.4/0.3/0.3).
-- Do NOT copy generic ICT template wording; make questions market-specific.
+- Do NOT copy generic ICT template wording; make questions market-specific to each parameter.
 - Keep each question under 140 characters."""
 
 

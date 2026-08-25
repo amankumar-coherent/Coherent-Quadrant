@@ -1,6 +1,8 @@
 # Coherent Quadrant — industry-wise X/Y scoring features
-# Source: Coherent Quadrant_ Industry-wise Criteria.xlsx
-# X = Solution Capability | Y = Business Excellence / Strategy
+# Source: Coherent Quadrant_ Industry-wise Criteria.xlsx + market-tuned leaves
+#
+# Global defaults (fallback only). Prefer per-leaf axis_x / axis_y below —
+# the agent also refines these per market query at score time.
 
 axis_labels:
   x: Solution Capability
@@ -48,18 +50,20 @@ groups:
         - Innovation Roadmap
         - Business Expansion
     Medical Devices:
+      axis_x: Clinical & Device Capability
+      axis_y: Market Access & Growth Strategy
       x:
-        - Product Portfolio Breadth
-        - Product Quality & Performance
+        - Device Portfolio Breadth
+        - Clinical Performance & Safety
         - Innovation & R&D Capability
-        - Manufacturing & Process Excellence
+        - Manufacturing & Quality Systems
         - Regulatory & Quality Compliance
       y:
-        - Geographic Expansion
-        - Brand Reputation & Growth
+        - Geographic & Channel Reach
+        - Brand Trust & Clinical Adoption
         - Financial Performance
-        - Innovation Roadmap
-        - Business Expansion
+        - Pipeline & Indication Expansion
+        - Partnerships & Business Expansion
     Medical Imaging:
       x:
         - Product Portfolio Breadth
@@ -74,18 +78,20 @@ groups:
         - Innovation Roadmap
         - Business Expansion
     Pharmaceutical:
+      axis_x: Therapeutic & Manufacturing Capability
+      axis_y: Commercial Reach & Pipeline Strategy
       x:
-        - Product Portfolio Breadth
-        - Therapeutic Coverage
-        - Innovation & R&D Capability
-        - Manufacturing & Process Excellence
+        - Product / Molecule Portfolio
+        - Therapeutic Coverage & Differentiation
+        - Innovation & Clinical R&D
+        - Manufacturing & Supply Reliability
         - Regulatory & Quality Compliance
       y:
-        - Geographic Expansion
-        - Brand Reputation & Growth
+        - Geographic Market Access
+        - Brand / HCP Reputation
         - Financial Performance
-        - Innovation Roadmap
-        - Business Expansion
+        - Pipeline & Indication Roadmap
+        - Partnerships & Business Expansion
 
   Chemical and Materials:
     Bulk Chemicals:
@@ -145,16 +151,30 @@ groups:
       x: *ict_hw_x
       y: *default_y
     Information and Communication Technology:
+      axis_x: Platform & Solution Capability
+      axis_y: Scale & Go-to-Market Strategy
       x:
-        - Solution/Sevices Portfolio
+        - Solution/Services Portfolio
         - Technology Innovation
         - Integration & Interoperability
         - Scalability Readiness
         - Workflow Integration
       y: *default_y
     Semiconductors:
-      x: *ict_hw_x
-      y: *default_y
+      axis_x: Process & Product Capability
+      axis_y: Scale & Go-to-Market Strategy
+      x:
+        - Process / Node & Technology Leadership
+        - Product Portfolio Breadth (logic, memory, analog, power, OSAT)
+        - Design IP & Architecture Strength
+        - Manufacturing Capacity, Yield & Packaging
+        - Quality, Reliability & Compliance
+      y:
+        - Geographic & End-Market Reach
+        - Customer / Ecosystem Partnerships
+        - Financial Strength & CapEx Capacity
+        - Technology & Product Roadmap
+        - Capacity Expansion & Business Growth
     Smart Technologies:
       x: *ict_hw_x
       y: *default_y
@@ -164,25 +184,58 @@ groups:
       x: *chem_x
       y: *default_y
     Energy:
+      axis_x: Asset & Operating Capability
+      axis_y: Portfolio & Commercial Strategy
       x:
-        - Product Portfolio Breadth
-        - Operational Efficiency
+        - Asset / Project Portfolio Breadth
+        - Operational Efficiency & Throughput
         - Reliability & Asset Performance
         - Safety & Regulatory Compliance
         - Sustainability & Energy Transition
-      y: *default_y
+      y:
+        - Geographic & Corridor Reach
+        - Offtake / Customer Contracts
+        - Financial Performance
+        - Growth & Project Pipeline
+        - Partnerships & Business Expansion
     Food and Beverages:
-      x: *chem_x
-      y: *default_y
+      axis_x: Product & Supply Capability
+      axis_y: Brand & Commercial Strategy
+      x:
+        - Product Portfolio
+        - Sustainability & Welfare
+        - Supply-Chain Reliability
+        - Distribution & Logistics
+        - Multi-Region Coverage
+      y:
+        - Market Vision & Alignment
+        - Customer Base & Adoption
+        - Partner Ecosystem
+        - Pricing Competitiveness
+        - Financial Stability
     Packaging:
-      x: *chem_x
-      y: *default_y
+      axis_x: Packaging Solution Capability
+      axis_y: Commercial & Growth Strategy
+      x:
+        - Structure / Material Portfolio
+        - Barrier, Protection & Performance
+        - Converting & Manufacturing Excellence
+        - Sustainability & Circular Design
+        - Regulatory & Food-Contact Compliance
+      y:
+        - Geographic Coverage
+        - Brand / Converter Customer Reach
+        - Financial Performance
+        - Innovation Roadmap
+        - Capacity & Business Expansion
 
 # Keyword hints for deterministic industry routing (lowercase substrings)
 category_keywords:
   Medical Devices:
     - dental
     - medical device
+    - wearable
+    - wearable medical
     - surgical
     - implant
     - catheter
@@ -216,6 +269,9 @@ category_keywords:
     - pharma
     - drug
     - api manufacturer
+    - glp-1
+    - glp1
+    - receptor agonist
   Food and Beverages:
     - organic milk
     - dairy
@@ -223,10 +279,19 @@ category_keywords:
     - food and beverage
     - food & beverage
     - organic food
+    - avocado oil
+    - edible oil
+    - cooking oil
+    - protein
+    - plant protein
+    - plant-based
   Energy:
     - energy
     - renewable
     - oil and gas
+    - lng
+    - liquefied natural gas
+    - natural gas
     - solar
     - wind power
     - battery storage

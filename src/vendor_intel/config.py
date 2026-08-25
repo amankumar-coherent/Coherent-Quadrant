@@ -43,7 +43,10 @@ class Settings(BaseSettings):
     ] = Field(default="anthropic", validation_alias="LLM_PROVIDER")
     anthropic_api_key: str = Field(default="", validation_alias="ANTHROPIC_API_KEY")
     deepseek_api_key: str = Field(default="", validation_alias="DEEPSEEK_API_KEY")
-    deepseek_model: str = Field(default="deepseek-chat", validation_alias="DEEPSEEK_MODEL")
+    deepseek_model: str = Field(default="deepseek-v4-flash", validation_alias="DEEPSEEK_MODEL")
+    deepseek_base_url: str = Field(
+        default="https://api.deepseek.com", validation_alias="DEEPSEEK_BASE_URL"
+    )
     openrouter_api_key: str = Field(default="", validation_alias="OPENROUTER_API_KEY")
     openrouter_model: str = Field(
         default="deepseek/deepseek-chat-v3-0324", validation_alias="OPENROUTER_MODEL"
@@ -54,6 +57,11 @@ class Settings(BaseSettings):
     opencode_model: str = Field(
         default="deepseek-v4-flash-free", validation_alias="OPENCODE_MODEL"
     )
+    openai_api_key: str = Field(default="", validation_alias="OPENAI_API_KEY")
+    openai_base_url: str = Field(
+        default="https://api.openai.com/v1", validation_alias="OPENAI_BASE_URL"
+    )
+    openai_model: str = Field(default="gpt-4o-mini", validation_alias="OPENAI_MODEL")
 
     # Search
     serpapi_api_key: str = Field(default="", validation_alias="SERPAPI_API_KEY")
@@ -145,7 +153,16 @@ class Settings(BaseSettings):
 
     # Coherent Quadrant (industry-aware Vendor Evaluation Matrix scoring)
     quadrant_enabled: bool = Field(default=True, validation_alias="QUADRANT_ENABLED")
-    quadrant_max_companies: int = Field(default=12, validation_alias="QUADRANT_MAX_COMPANIES")
+    # Brands plotted on the quadrant graph (15–20)
+    quadrant_max_companies: int = Field(default=20, validation_alias="QUADRANT_MAX_COMPANIES")
+    quadrant_chart_companies: int = Field(
+        default=20, validation_alias="QUADRANT_CHART_COMPANIES"
+    )
+    # Brands listed in Company Details table (wide landscape).
+    # Discover ~700 so ~250–300 remain after relevance filter.
+    quadrant_table_companies: int = Field(
+        default=300, validation_alias="QUADRANT_TABLE_COMPANIES"
+    )
     # Deprecated: quadrant never searches; always uses pipeline evidence_snapshot.
     quadrant_web_search: bool = Field(default=False, validation_alias="QUADRANT_WEB_SEARCH")
     quadrant_brand_concurrency: int = Field(
@@ -154,6 +171,31 @@ class Settings(BaseSettings):
     # company = 1 LLM call / brand; feature = 1 call / feature; none = 1 call / question
     quadrant_qa_batch_mode: str = Field(
         default="company", validation_alias="QUADRANT_QA_BATCH_MODE"
+    )
+    # Chart-cohort deep crawl: business = deeper F&B-relevant paths + financials
+    quadrant_crawl_mode: str = Field(
+        default="business", validation_alias="QUADRANT_CRAWL_MODE"
+    )
+    quadrant_crawl_max_pages: int = Field(
+        default=60, validation_alias="QUADRANT_CRAWL_MAX_PAGES"
+    )
+    # Country-wise Google AI scraper for wide Company Details table
+    quadrant_geo_discovery: bool = Field(
+        default=True, validation_alias="QUADRANT_GEO_DISCOVERY"
+    )
+    # Comma-separated override; empty = LLM + defaults (India, New Zealand, …)
+    quadrant_geo_countries: str = Field(
+        default="", validation_alias="QUADRANT_GEO_COUNTRIES"
+    )
+    quadrant_geo_max_countries: int = Field(
+        default=20, validation_alias="QUADRANT_GEO_MAX_COUNTRIES"
+    )
+    quadrant_geo_queries_per_country: int = Field(
+        default=2, validation_alias="QUADRANT_GEO_QUERIES_PER_COUNTRY"
+    )
+    # Full smart_crawl + score every Company Details row (not only chart 18)
+    quadrant_score_all_table: bool = Field(
+        default=True, validation_alias="QUADRANT_SCORE_ALL_TABLE"
     )
 
     # Free search (Phase 1)
@@ -206,6 +248,16 @@ class Settings(BaseSettings):
     ai_overview_cache_dir: str = Field(
         default="", validation_alias="AI_OVERVIEW_CACHE_DIR"
     )
+    google_ai_scraper_enabled: bool = Field(
+        default=False, validation_alias="GOOGLE_AI_SCRAPER_ENABLED"
+    )
+    google_ai_scraper_url: str = Field(
+        default="http://127.0.0.1:15561", validation_alias="GOOGLE_AI_SCRAPER_URL"
+    )
+    google_ai_scraper_timeout: float = Field(
+        default=120.0, validation_alias="GOOGLE_AI_SCRAPER_TIMEOUT"
+    )
+    fact_enrich_llm: bool = Field(default=True, validation_alias="FACT_ENRICH_LLM")
     pipeline_strict_geo: bool = Field(
         default=True, validation_alias="PIPELINE_STRICT_GEO"
     )
@@ -216,21 +268,21 @@ class Settings(BaseSettings):
     pipeline_classify_concurrent: int = Field(
         default=12, validation_alias="PIPELINE_CLASSIFY_CONCURRENT"
     )
-    pipeline_discover_max: int = Field(default=250, validation_alias="PIPELINE_DISCOVER_MAX")
-    pipeline_enrich_max: int = Field(default=250, validation_alias="PIPELINE_ENRICH_MAX")
+    pipeline_discover_max: int = Field(default=1000, validation_alias="PIPELINE_DISCOVER_MAX")
+    pipeline_enrich_max: int = Field(default=1000, validation_alias="PIPELINE_ENRICH_MAX")
     pipeline_export_min_rows: int = Field(default=0, validation_alias="PIPELINE_EXPORT_MIN_ROWS")
-    pipeline_export_max_rows: int = Field(default=200, validation_alias="PIPELINE_EXPORT_MAX_ROWS")
+    pipeline_export_max_rows: int = Field(default=1000, validation_alias="PIPELINE_EXPORT_MAX_ROWS")
     pipeline_global_discover_max: int = Field(
-        default=300, validation_alias="PIPELINE_GLOBAL_DISCOVER_MAX"
+        default=1000, validation_alias="PIPELINE_GLOBAL_DISCOVER_MAX"
     )
     pipeline_global_enrich_max: int = Field(
-        default=300, validation_alias="PIPELINE_GLOBAL_ENRICH_MAX"
+        default=1000, validation_alias="PIPELINE_GLOBAL_ENRICH_MAX"
     )
     pipeline_global_export_min_rows: int = Field(
         default=0, validation_alias="PIPELINE_GLOBAL_EXPORT_MIN_ROWS"
     )
     pipeline_global_export_max_rows: int = Field(
-        default=240, validation_alias="PIPELINE_GLOBAL_EXPORT_MAX_ROWS"
+        default=1000, validation_alias="PIPELINE_GLOBAL_EXPORT_MAX_ROWS"
     )
     pipeline_global_min_export_confidence: float = Field(
         default=0.50, validation_alias="PIPELINE_GLOBAL_MIN_EXPORT_CONFIDENCE"

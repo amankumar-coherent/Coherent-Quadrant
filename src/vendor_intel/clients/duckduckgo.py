@@ -140,7 +140,7 @@ def configured_ddgs_backends() -> list[str]:
 
 
 def _search_sync(query: str, max_results: int, *, region: str = "wt-wt") -> list[DuckResult]:
-    """ddgs.text() with proxy pool rotation (search / scrape / fallbacks share pool)."""
+    """ddgs.text() with proxy pool rotation — or SearXNG when SKIP_DDGS=true."""
     try:
         from vendor_intel.pipeline.cancel import PipelineCancelled, is_cancelled
 
@@ -148,6 +148,32 @@ def _search_sync(query: str, max_results: int, *, region: str = "wt-wt") -> list
             raise PipelineCancelled("Stopped by user.")
     except ImportError:
         pass
+
+    # Directory mining / partner mining call this directly and bypass FreeSearchRouter.
+    if os.getenv("SKIP_DDGS", "").strip().lower() in ("1", "true", "yes") or os.getenv(
+        "SKIP_DUCKDUCKGO", ""
+    ).strip().lower() in ("1", "true", "yes"):
+        try:
+            from vendor_intel.clients.searxng import searxng_search_sync
+
+            sx = searxng_search_sync(query, max_results=max_results)
+            rows = [
+                DuckResult(
+                    title=r.title,
+                    link=r.link,
+                    snippet=r.snippet,
+                    engine="searxng",
+                )
+                for r in sx
+            ]
+            if rows:
+                _search_print(
+                    f"SearXNG OK via sync ({len(rows)} hits) for {query[:50]!r}"
+                )
+            return rows
+        except Exception as exc:
+            _search_print(f"SearXNG sync failed: {type(exc).__name__}: {exc}")
+            return []
 
     if _load_ddgs() is None:
         _search_print("ddgs not installed — run: pip install -U ddgs")
@@ -230,12 +256,8 @@ def _search_sync(query: str, max_results: int, *, region: str = "wt-wt") -> list
         for eng in norm_names:
             if eng not in retry_backends:
                 retry_backends.append(eng)
-        # google → bing → duckduckgo (ddg connect often hangs when google is rate-limited)
+        # Prefer configured order; do not force google/bing ahead of working engines.
         ordered: list[str] = []
-        if "google" in retry_backends:
-            ordered.append("google")
-        if "bing" not in ordered:
-            ordered.append("bing")
         for eng in retry_backends:
             if eng not in ordered:
                 ordered.append(eng)

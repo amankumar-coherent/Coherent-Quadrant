@@ -16,6 +16,22 @@
 
 profiles:
 
+  - name: Food & beverages / CPG brands
+    # Buyer report = brands & marketers on the shelf, not every farm/crush plant only.
+    match: [food, beverage, dairy, milk, avocado, edible oil, cooking oil, protein,
+            plant-based, snack, nutrition, cpg, cosmetic, personal care]
+    keep: [Brand, Marketer]
+    note: Consumer brands and marketers only. Pure commodity traders / unrelated
+          retailers without a brand in this market are out of scope.
+
+  - name: Wearable medical devices
+    # Clinical / medical wearable brands — not component OEMs or gadget makers.
+    match: [wearable medical, medical wearable, remote patient monitoring wearable,
+            continuous glucose wearable]
+    keep: [Brand, Marketer]
+    note: Brand and Marketer only. Drop OEM/component suppliers and pure consumer
+          gadget brands that are not medical/clinical wearable device brands.
+
   - name: Robotics & consumer electronics
     # The buyer of this report wants the names on the box, not the supply chain.
     match: [robotics, robot, consumer electronics, smartphone, wearable,
@@ -30,7 +46,7 @@ profiles:
     # "Who can actually deliver the solution" — resellers add no signal.
     match: [software, saas, platform, cloud, cybersecurity, artificial intelligence,
             machine learning, analytics, information technology, ict, fintech,
-            digital, application, api]
+            digital, application, api, technology]
     keep: [Solution Developer, Technology Provider, Platform Provider,
            Service Provider, System Integrator]
     note: Solution developers only — exclude resellers, distributors and

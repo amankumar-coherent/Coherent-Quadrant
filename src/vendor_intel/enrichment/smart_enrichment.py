@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any, Awaitable, Callable
@@ -72,6 +73,9 @@ def _summary_len(result: dict[str, Any] | None) -> int:
 async def supplement_crawl(
     domain: str,
     existing: dict[str, Any] | None = None,
+    *,
+    crawl_mode: str | None = None,
+    max_pages: int = 0,
 ) -> dict[str, Any]:
     """Extra web scrape for weak classify rows — ddgs extract then smart_crawl retry."""
     dom = (domain or "").strip().lower().removeprefix("www.")
@@ -86,10 +90,15 @@ async def supplement_crawl(
         return fb
 
     try:
+        from vendor_intel.config import Settings as _Settings
+
+        settings = _Settings.load()
+        mode = (crawl_mode or getattr(settings, "quadrant_crawl_mode", None) or "business").strip()
+        pages = int(max_pages or getattr(settings, "quadrant_crawl_max_pages", 0) or 0)
         smart_crawl = _load_smart_crawl()
-        result = await smart_crawl(dom, mode="company")
+        result = await smart_crawl(dom, mode=mode, max_pages=pages)
         if _crawl_has_content(result) and _summary_len(result) >= 120:
-            print(f"  [enrich] supplement ok (smart_crawl): {dom}", flush=True)
+            print(f"  [enrich] supplement ok (smart_crawl/{mode}): {dom}", flush=True)
             return result
     except Exception as exc:
         print(f"  [enrich] supplement smart_crawl failed: {dom} — {exc}", flush=True)
@@ -143,6 +152,8 @@ async def _crawl_one(
     *,
     country: str = "",
     use_ssc: bool = False,
+    crawl_mode: str = "business",
+    max_pages: int = 0,
 ) -> tuple[str, dict[str, Any] | None, str | None]:
     from vendor_intel.utils.domain_corrections import fix_company_domain
 
@@ -159,11 +170,41 @@ async def _crawl_one(
         print(f"  [enrich] skip (no domain): {name[:50]}", flush=True)
         return name, None, "no_domain"
 
+    try:
+        from vendor_intel.discovery.entity_extract import is_blocked_domain
+        from vendor_intel.discovery.candidate_quality import (
+            is_junk_candidate_name,
+            is_junk_media_domain,
+        )
+
+        force = (os.getenv("EXPAND_XY_FORCE_CRAWL") or "").strip().lower() in (
+            "1",
+            "true",
+            "yes",
+            "on",
+        )
+        if not force and (
+            is_blocked_domain(dom)
+            or is_junk_media_domain(dom)
+            or is_junk_candidate_name(name, dom)
+        ):
+            print(f"  [enrich] skip junk: {name[:40]} ({dom})", flush=True)
+            return name, None, "junk_domain"
+        if force and (
+            is_blocked_domain(dom)
+            or is_junk_media_domain(dom)
+            or is_junk_candidate_name(name, dom)
+        ):
+            print(f"  [enrich] force-crawl despite junk heuristic: {name[:40]} ({dom})", flush=True)
+    except Exception:
+        pass
+
     if dom in _cache:
         print(f"  [enrich] cache hit: {dom}", flush=True)
         return name, _cache[dom], None
 
-    print(f"  [enrich] crawl start: {name[:40]} ({dom})", flush=True)
+    mode = (crawl_mode or "business").strip() or "business"
+    print(f"  [enrich] crawl start: {name[:40]} ({dom}) mode={mode}", flush=True)
     if use_ssc:
         result = await _ssc_only(dom)
         if result:
@@ -177,7 +218,7 @@ async def _crawl_one(
 
     try:
         smart_crawl = _load_smart_crawl()
-        result = await smart_crawl(dom, mode="company")
+        result = await smart_crawl(dom, mode=mode, max_pages=int(max_pages or 0))
         if not _crawl_has_content(result):
             fb = await _ddgs_fallback(dom)
             if fb:
@@ -203,6 +244,8 @@ async def enrich_companies(
     max_concurrent: int = 4,
     country: str = "",
     use_ssc: bool | None = None,
+    crawl_mode: str | None = None,
+    max_pages: int | None = None,
 ) -> dict[str, Any]:
     """
     Run smart_crawl in parallel for up to `limit` companies.
@@ -215,6 +258,16 @@ async def enrich_companies(
     settings = Settings.load()
     if use_ssc is None:
         use_ssc = bool(getattr(settings, "pipeline_use_ssc", True))
+    mode = (
+        crawl_mode
+        if crawl_mode is not None
+        else str(getattr(settings, "quadrant_crawl_mode", None) or "business")
+    ).strip() or "business"
+    pages = int(
+        max_pages
+        if max_pages is not None
+        else (getattr(settings, "quadrant_crawl_max_pages", 0) or 0)
+    )
     if not use_ssc:
         _load_smart_crawl()
     else:
@@ -226,7 +279,7 @@ async def enrich_companies(
 
     print(
         f"  [enrich] enriching {len(batch)} companies (limit={limit}, "
-        f"concurrent={max_concurrent})",
+        f"concurrent={max_concurrent}, crawl={mode}, max_pages={pages or 'mode-default'})",
         flush=True,
     )
     sem = asyncio.Semaphore(max(1, max_concurrent))
@@ -238,6 +291,8 @@ async def enrich_companies(
                 str(c.get("domain") or "").strip(),
                 country=country,
                 use_ssc=use_ssc,
+                crawl_mode=mode,
+                max_pages=pages,
             )
 
     results = await asyncio.gather(*[_run_one(c) for c in batch])

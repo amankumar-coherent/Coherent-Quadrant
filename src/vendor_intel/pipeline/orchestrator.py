@@ -472,10 +472,61 @@ async def run_pipeline(
                     asks.append((f"section:{name}", f"Which companies are {name} in the {aio_market}{geo_txt}?"))
 
             aio_names: list[str] = []
-            for purpose, text in asks:
-                ans = aio_store.ask(
-                    Question(text=text, layer="discovery", purpose=purpose, market=aio_market)
+            scraper_live = False
+            try:
+                from vendor_intel.evidence.google_ai_scraper import (
+                    ask as scraper_ask,
+                    health as scraper_health,
+                    scraper_enabled,
                 )
+
+                if scraper_enabled():
+                    h = scraper_health()
+                    scraper_live = bool(h.get("ok"))
+                    if scraper_live:
+                        print(
+                            "  [pipeline] Google AI scraper live for discovery "
+                            f"(extension_connected={h.get('extension_connected')})",
+                            flush=True,
+                        )
+                    else:
+                        print(
+                            f"  [pipeline] Google AI scraper down ({h.get('error') or h}) "
+                            "— discovery will use cache / queue only",
+                            flush=True,
+                        )
+            except Exception:
+                scraper_live = False
+
+            for purpose, text in asks:
+                q = Question(text=text, layer="discovery", purpose=purpose, market=aio_market)
+                ans = aio_store.ask(q)
+                if ans is None and scraper_live:
+                    print(f"  [pipeline] Google AI scraper ← discovery: {purpose}", flush=True)
+                    res = scraper_ask(text)
+                    md = str(res.get("markdown") or "")
+                    err = str(res.get("error") or "")
+                    if md.strip() and not err:
+                        cites = []
+                        for c in list(res.get("citations") or []):
+                            if isinstance(c, dict):
+                                cites.append(
+                                    {
+                                        "title": str(c.get("title") or ""),
+                                        "url": str(c.get("url") or c.get("link") or ""),
+                                    }
+                                )
+                            elif isinstance(c, str) and c.startswith("http"):
+                                cites.append({"title": "", "url": c})
+                        ans = aio_store.put(
+                            q,
+                            md,
+                            citations=cites,
+                            overview_missing=bool(res.get("ai_overview_missing")),
+                            source="google_ai_scraper",
+                        )
+                    elif err:
+                        print(f"  [pipeline] scraper ask failed: {err[:120]}", flush=True)
                 if ans is None or not ans.ok:
                     continue
                 for entry in extract_entries(ans.markdown):
@@ -499,7 +550,8 @@ async def run_pipeline(
                 aio_n += 1
             pend = len(aio_store.pending())
             if aio_n:
-                print(f"  [pipeline] AI Overview added {aio_n} candidate(s) from cached answers", flush=True)
+                src = "Google AI scraper + cache" if scraper_live else "cached answers"
+                print(f"  [pipeline] AI Overview added {aio_n} candidate(s) via {src}", flush=True)
             if pend:
                 print(
                     f"  [pipeline] AI Overview: {pend} question(s) queued — run "
@@ -1212,7 +1264,26 @@ async def run_pipeline(
     coherent_quadrant: dict[str, Any] = {}
     if getattr(settings, "quadrant_enabled", True) and final:
         try:
+            from vendor_intel.evidence.ai_overview import resolve_market_key
+            from vendor_intel.pipeline.ownership import annotate, detect
             from vendor_intel.quadrant import synthesize_quadrant
+
+            market_key = resolve_market_key(query_context, scope) or str(
+                scope.get("market") or query_context.get("industry") or ""
+            )
+            try:
+                from vendor_intel.pipeline.fact_enrich import enrich_brand_facts
+
+                enrich_brand_facts(final, market_key, settings=settings)
+            except Exception as fact_exc:
+                print(f"  [pipeline] fact enrich skipped: {fact_exc}", flush=True)
+            try:
+                owners = detect(final, market_key, settings=settings)
+                if owners:
+                    n_own = annotate(final, owners)
+                    print(f"  [pipeline] ownership: {n_own} company name(s) annotated", flush=True)
+            except Exception as own_exc:
+                print(f"  [pipeline] ownership detection skipped: {own_exc}", flush=True)
 
             coherent_quadrant = await synthesize_quadrant(
                 final,

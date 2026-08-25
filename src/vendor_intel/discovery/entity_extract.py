@@ -163,6 +163,21 @@ _BLOCKED_DOMAINS = frozenset(
     }
 )
 
+# Adult / social hosts — never treat as market companies
+_ADULT_OR_JUNK_DOMAIN_RE = re.compile(
+    r"(?:"
+    r"pornhub|xvideos|youporn|\bxnxx\b|xhamster|redtube|tube8|spankbang|"
+    r"onlyfans|xcafe|anysex|brobangers|"
+    r"whatsapp\.|web\.whatsapp|faq\.whatsapp|"
+    r"facebook\.|instagram\.|tiktok\.|youtube\.|"
+    r"baidu\.|douban\.|zhihu\.|lonelyplanet|tasteatlas|"
+    r"openai\.|chatgpt\.|claude\.com|github\.|"
+    r"thechosen\.tv|tenforums|vpforums|"
+    r"wikipedia\.|reddit\.|quora\."
+    r")",
+    re.I,
+)
+
 _LISTICLE_TITLE = re.compile(
     r"^(?:top\s+\d+|best\s+\d+|\d+\s+best|\d+\s+top|list\s+of|full\s+list|"
     r"category:|strategies\s+for|how\s+to|what\s+is|guide\s+to|"
@@ -402,11 +417,22 @@ def is_listicle_domain(domain: str) -> bool:
 
 
 def is_blocked_domain(domain: str) -> bool:
-    low = (domain or "").lower()
+    low = (domain or "").lower().strip()
+    if not low:
+        return True
     if is_listicle_domain(low):
         return True
     if any(b in low for b in _BLOCKED_DOMAINS):
         return True
+    if _ADULT_OR_JUNK_DOMAIN_RE.search(low):
+        return True
+    try:
+        from vendor_intel.discovery.candidate_quality import is_junk_media_domain
+
+        if is_junk_media_domain(low):
+            return True
+    except Exception:
+        pass
     return any(
         low == b or low.endswith("." + b.split(".")[0] + ".com")
         for b in ("fda.gov", "usp.org", "mdpi.com")

@@ -12,8 +12,14 @@ LLM_PROVIDER = os.getenv("LLM_PROVIDER", "anthropic").strip().lower()
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "YOUR_ANTHROPIC_API_KEY_HERE")
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
-DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
-DEEPSEEK_CHAT_URL = "https://api.deepseek.com/chat/completions"
+DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-v4-flash")
+# Official paid API: https://api.deepseek.com  (chat path appended below)
+DEEPSEEK_BASE_URL = (
+    os.getenv("DEEPSEEK_BASE_URL") or os.getenv("DEEPSEEK_API_URL") or "https://api.deepseek.com"
+).rstrip("/")
+DEEPSEEK_CHAT_URL = (
+    os.getenv("DEEPSEEK_CHAT_URL") or f"{DEEPSEEK_BASE_URL}/chat/completions"
+)
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "deepseek/deepseek-chat-v3-0324")
 OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -331,19 +337,22 @@ def _opencode_complete(system: str, user: str, model: str, max_tokens: int) -> s
 
 def _deepseek_complete(system: str, user: str, model: str, max_tokens: int) -> str:
     """DeepSeek official API (platform.deepseek.com) — OpenAI-compatible chat completions."""
-    body = {
-        "model": model or DEEPSEEK_MODEL,
-        "max_tokens": max(256, min(int(max_tokens), 8192)),
+    mdl = (model or DEEPSEEK_MODEL).strip() or "deepseek-v4-flash"
+    body: dict[str, Any] = {
+        "model": mdl,
+        "max_tokens": max(512, min(int(max_tokens), 8192)),
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
         "temperature": 0.2,
     }
-    # deepseek-chat supports JSON mode; deepseek-reasoner does not. Only request JSON mode when the
-    # prompt actually asks for JSON — DeepSeek rejects json_object if the word "json" is absent, and
-    # plain-text complete() calls (e.g. drafting a brief) must NOT be forced into JSON.
-    if "reasoner" not in (model or DEEPSEEK_MODEL).lower() and "json" in f"{system}\n{user}".lower():
+    # V4 Flash/Pro support thinking; disable for deterministic JSON / classifier calls.
+    if "v4" in mdl.lower() or "flash" in mdl.lower() or "pro" in mdl.lower():
+        body["thinking"] = {"type": "disabled"}
+    # JSON mode: skip for reasoner / thinking-heavy ids; DeepSeek rejects json_object
+    # unless the prompt mentions "json".
+    if "reasoner" not in mdl.lower() and "json" in f"{system}\n{user}".lower():
         body["response_format"] = {"type": "json_object"}
     data = _post_json(
         DEEPSEEK_CHAT_URL,
@@ -351,7 +360,14 @@ def _deepseek_complete(system: str, user: str, model: str, max_tokens: int) -> s
         body,
     )
     choices = data.get("choices") or []
-    return str(choices[0].get("message", {}).get("content", "")) if choices else ""
+    if not choices:
+        return ""
+    message = choices[0].get("message") or {}
+    # Prefer content; fall back to reasoning_content if the model still returned that.
+    text = _opencode_message_text(message if isinstance(message, dict) else {})
+    if text:
+        return text
+    return str(message.get("content") or "") if isinstance(message, dict) else ""
 
 
 def _openrouter_complete(system: str, user: str, model: str, max_tokens: int) -> str:

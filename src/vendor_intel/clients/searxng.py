@@ -180,6 +180,51 @@ async def searxng_search(
         return []
 
 
+def searxng_search_sync(
+    query: str,
+    max_results: int = 15,
+    *,
+    base_url: str = "",
+    timeout: float = 25.0,
+) -> list[SearxResult]:
+    """Sync SearXNG search for callers that bypass the async FreeSearchRouter."""
+    urls = searxng_urls(base_url or os.getenv("SEARXNG_BASE_URL") or "http://127.0.0.1:8080")
+    if not urls:
+        return []
+    params = {"q": query, "format": "json", "categories": "general"}
+    for base in urls:
+        base = base.rstrip("/")
+        hdrs = _client_headers(base)
+        try:
+            with httpx.Client(timeout=timeout, headers=hdrs, follow_redirects=True) as client:
+                data = None
+                for method in ("get", "post"):
+                    try:
+                        if method == "get":
+                            r = client.get(f"{base}/search", params=params)
+                        else:
+                            r = client.post(f"{base}/search", data=params)
+                        if r.status_code == 200 and "json" in (r.headers.get("content-type") or ""):
+                            data = r.json()
+                            break
+                    except (httpx.HTTPError, ValueError):
+                        continue
+                if data:
+                    rows = _parse_json_payload(data, max_results)
+                    if rows:
+                        return rows
+                try:
+                    r = client.post(f"{base}/search", data={"q": query, "category_general": "1"})
+                    rows = _parse_html_results(r.text or "", max_results)
+                    if rows:
+                        return rows
+                except httpx.HTTPError:
+                    continue
+        except httpx.HTTPError:
+            continue
+    return []
+
+
 async def searxng_search_any(
     query: str,
     urls: list[str],

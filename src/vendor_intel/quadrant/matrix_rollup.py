@@ -32,6 +32,52 @@ def scale_to_100(axis_score_0_1: float) -> int:
     return int(round(max(0.0, min(1.0, float(axis_score_0_1))) * 100))
 
 
+NORM_FLOOR = 65.0
+NORM_CEILING = 100.0
+
+
+def normalize_scores_proportionally(
+    values: Sequence[float],
+    *,
+    floor: float = NORM_FLOOR,
+    ceiling: float = NORM_CEILING,
+) -> list[float]:
+    """Proportional min-max normalize one axis's raw scores to [floor, ceiling].
+
+        new = floor + ((old - min(values)) / (max(values) - min(values))) * (ceiling - floor)
+
+    Must be called ONCE per normalization scope, with the COMPLETE population
+    of raw scores for that scope already collected — never per-row, never on
+    a partial/streaming subset, and never mixed across scopes that aren't
+    meant to be compared on the same scale (see call site in synthesize.py:
+    each market's X/Y criteria are LLM-defined per market, so the scope is
+    one market's full company list, not the union of unrelated markets).
+
+    Preserves relative ranking within the scope: the lowest raw score in the
+    population maps to `floor`, the highest maps to `ceiling`, everything
+    else lands proportionally in between — no score is independently forced
+    to `floor` regardless of how it compares to its peers.
+
+    Edge cases:
+    - Empty input -> [].
+    - All values identical (max == min): there is no spread to preserve, so
+      neither snapping everyone to `floor` (implies "all worst") nor to
+      `ceiling` (implies "all best") is justified by the data. Falls back to
+      the midpoint of [floor, ceiling] for every value — documented here as
+      the deliberate choice, not an oversight.
+    """
+    n = len(values)
+    if n == 0:
+        return []
+    vals = [float(v) for v in values]
+    lo, hi = min(vals), max(vals)
+    if hi <= lo:
+        mid = (float(floor) + float(ceiling)) / 2.0
+        return [mid] * n
+    span = float(ceiling) - float(floor)
+    return [float(floor) + ((v - lo) / (hi - lo)) * span for v in vals]
+
+
 def rollup_axis(
     *,
     feature_weights: Sequence[float],

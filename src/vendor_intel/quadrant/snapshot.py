@@ -2,8 +2,9 @@
 from __future__ import annotations
 
 from typing import Any
+from urllib.parse import urlparse
 
-_PAGE_TEXT_MAX = 12000
+_PAGE_TEXT_MAX = 40000
 _SNIPPET_MAX = 12
 _INTEL_KEYS = (
     "company",
@@ -15,25 +16,87 @@ _INTEL_KEYS = (
     "media",
 )
 
+# Prefer pages that map onto F&B / quadrant criteria when packing page_text.
+_SIGNAL_PATH_HINTS = (
+    "sustainab",
+    "esg",
+    "organic",
+    "certif",
+    "sourc",
+    "supply",
+    "where-to-buy",
+    "retail",
+    "distribut",
+    "partner",
+    "investor",
+    "financial",
+    "product",
+    "shop",
+    "collection",
+    "about",
+    "location",
+    "store",
+    "impact",
+    # Medical / wearable device signals
+    "fda",
+    "ce-mark",
+    "clearance",
+    "clinical",
+    "wearable",
+    "cgm",
+    "ecg",
+    "hearing",
+    "patient",
+    "solution",
+    "technology",
+    "regulatory",
+)
+
 
 def _clip(text: str, n: int) -> str:
     t = " ".join(str(text or "").split())
     return t[:n]
 
 
+def _page_signal_score(url: str, text: str) -> int:
+    blob = f"{url} {text[:400]}".lower()
+    score = 0
+    for hint in _SIGNAL_PATH_HINTS:
+        if hint in blob:
+            score += 3
+    path = urlparse(url or "").path.lower()
+    # Prefer shallow high-signal pages over deep blog archives
+    depth = max(0, path.count("/") - 1)
+    score -= min(depth, 4)
+    score += min(len(text) // 800, 5)
+    return score
+
+
 def extract_page_text(smart_data: dict[str, Any] | None) -> str:
     """Pull plain page text from SSC / smart_crawl payloads."""
     if not isinstance(smart_data, dict) or smart_data.get("error"):
         return ""
-    # SSC / crawl pages list
+    # SSC / crawl pages list — prioritize criterion-relevant pages
     pages = smart_data.get("pages")
     if isinstance(pages, list):
-        parts: list[str] = []
+        scored: list[tuple[int, str]] = []
         for p in pages:
-            if isinstance(p, dict) and p.get("text"):
-                parts.append(str(p["text"]))
-            if sum(len(x) for x in parts) >= _PAGE_TEXT_MAX:
+            if not isinstance(p, dict) or not p.get("text"):
+                continue
+            text = str(p["text"])
+            url = str(p.get("url") or "")
+            scored.append((_page_signal_score(url, text), text))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        parts: list[str] = []
+        total = 0
+        for _, text in scored:
+            if total >= _PAGE_TEXT_MAX:
                 break
+            take = text[: max(0, _PAGE_TEXT_MAX - total)]
+            if not take.strip():
+                continue
+            parts.append(take)
+            total += len(take)
         if parts:
             return _clip("\n".join(parts), _PAGE_TEXT_MAX)
     data = smart_data.get("data") if isinstance(smart_data.get("data"), dict) else {}

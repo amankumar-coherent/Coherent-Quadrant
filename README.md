@@ -140,17 +140,73 @@ After landscape export (or from an existing pipeline JSON / market CSV), the **C
 **Package:** [`src/vendor_intel/quadrant/`](src/vendor_intel/quadrant/)  
 **Full design + X/Y math:** [`ARCHITECTURE.md`](src/vendor_intel/quadrant/ARCHITECTURE.md)
 
+### Fast market CLI (15–20 brands)
+
+Efficient path: SSC landscape → deep-crawl **only** the top cohort → ownership annotate → score → **opens HTML UI in your browser**.
+
+```powershell
+$env:PYTHONPATH = "src"
+.venv\Scripts\python.exe scripts\run_quadrant_market.py `
+  --industry "Organic Milk Market" `
+  --country global `
+  --max-companies 18
+```
+
+When the run finishes, the browser opens `output/quadrant/<slug>_report.html` with:
+- 2×2 quadrant graph (Leaders / Challengers / Trailblazers / Emerging Players)
+- Solution Capability + Business Strategy scorecard tables
+- Company details (Brand, Company, Quadrant, X, Y, Overall)
+
+Re-open the latest (or a specific) report anytime:
+
+```powershell
+.venv\Scripts\python.exe scripts\open_quadrant_ui.py
+.venv\Scripts\python.exe scripts\open_quadrant_ui.py --json output\quadrant\organic-milk-market_quadrant.json
+```
+
+| Flag | Purpose |
+|------|---------|
+| `--max-companies 18` | Brands on the chart (typical 15–20) |
+| `--from-pipeline-json PATH` | Rescore an existing landscape JSON |
+| `--full-landscape` | Full pipeline + quadrant (slower) |
+| `--skip-deep-crawl` | Use existing evidence only |
+| `--no-open` | Write HTML but do not open the browser |
+
+**Outputs:**
+
+```text
+output/quadrant/<market-slug>_quadrant.json
+output/quadrant/<market-slug>_questions.json
+output/quadrant/<market-slug>_companies.csv
+output/quadrant/<market-slug>_report.html   ← graph + tables UI
+```
+
+CSV columns: `Brand | Company | Quadrant | X | Y | Overall`  
+(`Brand` includes `(acquired by Parent)` when known.)
+
+### Streamlit UI
+
+```powershell
+.venv\Scripts\python.exe -m streamlit run app.py
+```
+
+Open **http://localhost:8501** → expand **Coherent Quadrant — saved charts** (or view the chart after a pipeline run finishes). The UI shows the 2×2 chart, quadrant explanation cards, and company details table.
+
 ### What it produces
 
 ```text
 output/quadrant/<market-slug>_quadrant.json   # brands, scorecard, criteria, questions, evidence
 output/quadrant/<market-slug>_questions.json  # shared question bank (audit)
+output/quadrant/<market-slug>_companies.csv   # Brand / Company / Quadrant / X / Y / Overall
 ```
 
 Each brand gets:
 
 | Field | Meaning |
 |-------|---------|
+| `display_name` | Chart/table label — e.g. `Horizon Organic (acquired by Danone)` |
+| `company` | Parent / legal company when known |
+| `founded_in` | Founded year when found in crawl/KB |
 | `execution` (X) | Solution Capability 0–100 (matrix rollup of feature Q&A) |
 | `innovation` (Y) | Business Strategy 0–100 |
 | `quadrant` | Leaders / Challengers / Trailblazers / Emerging Players (relative half-median) |

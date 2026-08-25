@@ -23,6 +23,13 @@ def apply_env_overrides() -> None:
         llm_mod.DEEPSEEK_API_KEY = v
     if v := os.getenv("DEEPSEEK_MODEL"):
         llm_mod.DEEPSEEK_MODEL = v
+    if v := os.getenv("DEEPSEEK_BASE_URL") or os.getenv("DEEPSEEK_API_URL"):
+        base = v.rstrip("/")
+        llm_mod.DEEPSEEK_BASE_URL = base
+        if not os.getenv("DEEPSEEK_CHAT_URL"):
+            llm_mod.DEEPSEEK_CHAT_URL = f"{base}/chat/completions"
+    if v := os.getenv("DEEPSEEK_CHAT_URL"):
+        llm_mod.DEEPSEEK_CHAT_URL = v
     if v := os.getenv("OPENROUTER_API_KEY"):
         llm_mod.OPENROUTER_API_KEY = v
     if v := os.getenv("OPENROUTER_MODEL"):

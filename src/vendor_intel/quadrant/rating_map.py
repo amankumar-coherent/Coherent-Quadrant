@@ -91,18 +91,65 @@ def _median_floats(vals: Sequence[float]) -> float:
     return (s[mid - 1] + s[mid]) / 2.0
 
 
+def assign_quadrants_absolute_median(
+    executions: Sequence[int],
+    innovations: Sequence[int],
+) -> tuple[list[str], float, float]:
+    """Place by cohort median thresholds so labels match axis midlines.
+
+    Leaders: X>=mid_x and Y>=mid_y; Challengers: X<mid_x and Y>=mid_y;
+    Trailblazers: X>=mid_x and Y<mid_y; Emerging: X<mid_x and Y<mid_y.
+
+    Prefer this when scores have real spread — half-median equal-sizing can put
+    high-X/high-Y brands into Trailblazers and break the chart visually.
+    Falls back to half-median when a side would be empty (floor-tied scores).
+    """
+    n = len(executions)
+    if n == 0:
+        return [], 50.0, 50.0
+    xs = [float(x) for x in executions]
+    ys = [float(y) for y in innovations]
+    mid_x = _median_floats(xs)
+    mid_y = _median_floats(ys)
+    left = sum(1 for x in xs if x < mid_x)
+    right = sum(1 for x in xs if x >= mid_x)
+    below_y = sum(1 for y in ys if y < mid_y)
+    above_y = sum(1 for y in ys if y >= mid_y)
+    # Both axes must actually split the cohort. A mass tie at the median (e.g.
+    # many companies floored to the same minimum score) makes `>= median`
+    # true for everyone on that axis, silently emptying two quadrants even
+    # though the OTHER axis split fine — checking X alone missed this.
+    if left == 0 or right == 0 or below_y == 0 or above_y == 0:
+        return assign_quadrants_half_median(executions, innovations)
+    quads: list[str] = []
+    for x, y in zip(xs, ys):
+        high_x = x >= mid_x
+        high_y = y >= mid_y
+        if high_x and high_y:
+            quads.append("Leaders")
+        elif not high_x and high_y:
+            quads.append("Challengers")
+        elif high_x and not high_y:
+            quads.append("Trailblazers")
+        else:
+            quads.append("Emerging Players")
+    return quads, mid_x, mid_y
+
+
 def assign_quadrants_half_median(
     executions: Sequence[int],
     innovations: Sequence[int],
 ) -> tuple[list[str], float, float]:
     """
-    Relative placement that fills all four cells when X≈Y.
+    Relative placement that always fills all four cells (no empty quadrant).
 
-    1. Split the cohort at the X median (left = Challengers/Emerging, right = Leaders/Trailblazers).
-    2. Within each half, split again at that half's Y median.
+    1. Rank-split the cohort on X (lowest half → Challengers/Emerging;
+       highest half → Leaders/Trailblazers). Rank split — not ``x >= median`` —
+       so score-floor ties (everyone at 52) still produce a left and right half.
+    2. Within each X-half, rank-split again on Y.
 
-    So a brand that is "high capability but lower strategy than other high-X peers"
-    lands in Trailblazers, and "high strategy among lower-X peers" lands in Challengers.
+    Hardcoding quadrant labels is never used; placement is always relative to
+    the cohort being scored.
     """
     n = len(executions)
     if n == 0:
@@ -112,49 +159,29 @@ def assign_quadrants_half_median(
     mid_x = _median_floats(xs)
     mid_y = _median_floats(ys)
 
-    left_idx = [i for i in range(n) if xs[i] < mid_x]
-    right_idx = [i for i in range(n) if xs[i] >= mid_x]
-    # Degenerate: everyone on one side of X — use global X/Y medians
-    if not left_idx or not right_idx:
-        quads = []
-        for i in range(n):
-            high_x = xs[i] >= mid_x
-            high_y = ys[i] >= mid_y
-            if high_x and high_y:
-                quads.append("Leaders")
-            elif not high_x and high_y:
-                quads.append("Challengers")
-            elif high_x and not high_y:
-                quads.append("Trailblazers")
-            else:
-                quads.append("Emerging Players")
-        return quads, mid_x, mid_y
+    # Rank-split on X first. A plain ``x < median`` empties the left half when
+    # min(X) == median (common after score_floor / thin-KB runs — every brand
+    # lands on the same X). Sorting by (x, y, index) and cutting at n//2 always
+    # yields both halves; ties degrade gracefully via stable index order.
+    order_x = sorted(range(n), key=lambda i: (xs[i], ys[i], i))
+    cut_x = n // 2
+    left_idx = order_x[:cut_x]
+    right_idx = order_x[cut_x:]
 
     quads = ["Emerging Players"] * n
 
     def _fill(indices: list[int], *, high_x: bool) -> None:
         if not indices:
             return
-        half_ys = [ys[i] for i in indices]
-        # If only one brand in the half, put it on the "high Y" side of that half
+        # Single brand in a half → put on the high-Y side of that half
         if len(indices) == 1:
             i = indices[0]
             quads[i] = "Leaders" if high_x else "Challengers"
             return
-        # Rank split, not `y >= median`.
-        #
-        # A plain median comparison empties a cell whenever the median coincides
-        # with a large tie block. Real case: 37 of 66 low-X brands scored Y=40 —
-        # the `score_floor` value every unevidenced brand lands on — so the half's
-        # median WAS 40, all 37 ties tested `40 >= 40` as high-Y, and Emerging
-        # Players came out with zero brands.
-        #
-        # Sorting by (y, index) and cutting at the halfway rank reduces to the
-        # median split when values are distinct, and degrades gracefully when they
-        # are not. The old all-equal special case is subsumed by this.
-        order = sorted(indices, key=lambda i: (ys[i], i))
+        # Rank split on Y (same rationale as X — median ties must not empty a cell)
+        order = sorted(indices, key=lambda i: (ys[i], xs[i], i))
         cut = len(order) // 2
-        low_set = set(order[:cut])  # lowest-ranked half of this X-half by Y
+        low_set = set(order[:cut])
         for i in indices:
             high_y = i not in low_set
             if high_x and high_y:
@@ -180,20 +207,22 @@ def chart_offsets_for_quadrants(
     Place each brand inside its assigned cell so Challengers / Trailblazers are visible.
 
     Cell ranges (top_pct, left_pct on full chart; high Y → low top_pct):
-      Challengers:     left 8–45,  top 8–45
-      Leaders:         left 55–92, top 8–45
-      Emerging:        left 8–45,  top 55–92
-      Trailblazers:    left 55–92, top 55–92
+      Challengers:     left 12–38,  top 12–38
+      Leaders:         left 62–88,  top 12–38
+      Emerging:        left 12–38,  top 62–88
+      Trailblazers:    left 62–88,  top 62–88
     """
     n = len(executions)
     if n == 0:
         return [], 50.0, 50.0
 
     cells = {
-        "Challengers": (8.0, 45.0, 8.0, 45.0),       # top_lo, top_hi, left_lo, left_hi
-        "Leaders": (8.0, 45.0, 55.0, 92.0),
-        "Emerging Players": (55.0, 92.0, 8.0, 45.0),
-        "Trailblazers": (55.0, 92.0, 55.0, 92.0),
+        # Keep a clear gap from the 50% crosshairs so dots never sit on the lines
+        # or look centered between quadrants (top_lo, top_hi, left_lo, left_hi)
+        "Challengers": (10.0, 36.0, 10.0, 36.0),
+        "Leaders": (10.0, 36.0, 64.0, 90.0),
+        "Emerging Players": (64.0, 90.0, 10.0, 36.0),
+        "Trailblazers": (64.0, 90.0, 64.0, 90.0),
     }
     # Group indices by quadrant
     groups: dict[str, list[int]] = {k: [] for k in cells}
@@ -202,6 +231,7 @@ def chart_offsets_for_quadrants(
         groups[key].append(i)
 
     out: list[tuple[int, int]] = [(50, 50)] * n
+    bounds: list[tuple[float, float, float, float]] = [(5.0, 95.0, 5.0, 95.0)] * n
     for qname, idxs in groups.items():
         if not idxs:
             continue
@@ -209,20 +239,81 @@ def chart_offsets_for_quadrants(
         # Within cell: higher innovation → lower top; higher execution → higher left
         xs = [float(executions[i]) for i in idxs]
         ys = [float(innovations[i]) for i in idxs]
-        lefts = _rank_spread(xs, low=left_lo, high=left_hi)
-        # rank_spread high value → high number; for top we want high Y → low top
+        # Inset rank spread so separation has room before hitting cell walls
+        pad = 2.0 if len(idxs) >= 4 else 1.0
+        lefts = _rank_spread(xs, low=left_lo + pad, high=left_hi - pad)
         y_ranks = _rank_spread(ys, low=0.0, high=1.0)
-        tops = [top_hi - yr * (top_hi - top_lo) for yr in y_ranks]
+        tops = [
+            (top_hi - pad) - yr * ((top_hi - pad) - (top_lo + pad)) for yr in y_ranks
+        ]
         for j, i in enumerate(idxs):
-            jitter = ((i * 7) % 11) - 5
-            top = int(round(tops[j] + jitter * 0.25))
-            left = int(round(lefts[j] + jitter * 0.35))
+            # Stronger deterministic offset so near-tied scores don't start stacked
+            jitter_t = (((i * 11) % 13) - 6) * 0.55
+            jitter_l = (((i * 17) % 13) - 6) * 0.55
+            top = int(round(tops[j] + jitter_t))
+            left = int(round(lefts[j] + jitter_l))
             top = int(max(top_lo, min(top_hi, top)))
             left = int(max(left_lo, min(left_hi, left)))
             out[i] = (top, left)
+            bounds[i] = (top_lo, top_hi, left_lo, left_hi)
 
-    out = _separate_points(out, min_dist=8.0, iters=40)
-    # Keep points inside their cell after separation
+    # Stronger separation so ~5 brands/cell stay visually spaced
+    out = _separate_points(out, min_dist=15.0, iters=120, bounds=bounds)
+
+    # If a cell still has clustered points (common with near-tied scores),
+    # snap that cell onto a staggered grid ordered by overall strength.
+    for qname, idxs in groups.items():
+        if len(idxs) < 2:
+            continue
+        top_lo, top_hi, left_lo, left_hi = cells[qname]
+        min_pair = 999.0
+        for a in range(len(idxs)):
+            for b in range(a + 1, len(idxs)):
+                i, j = idxs[a], idxs[b]
+                dt = out[i][0] - out[j][0]
+                dl = out[i][1] - out[j][1]
+                min_pair = min(min_pair, (dt * dt + dl * dl) ** 0.5)
+        if min_pair >= 13.0:
+            continue
+        ranked = sorted(
+            idxs,
+            key=lambda i: (
+                -(float(innovations[i]) + float(executions[i])),
+                -float(innovations[i]),
+                -float(executions[i]),
+                i,
+            ),
+        )
+        k = len(ranked)
+        # Staggered slots in normalized cell space (row-major with offset)
+        slots: list[tuple[float, float]] = []
+        if k == 2:
+            slots = [(0.28, 0.30), (0.72, 0.70)]
+        elif k == 3:
+            slots = [(0.22, 0.28), (0.50, 0.72), (0.78, 0.35)]
+        elif k == 4:
+            slots = [(0.22, 0.25), (0.22, 0.75), (0.78, 0.25), (0.78, 0.75)]
+        else:
+            # 5+: two columns with vertical stagger
+            cols = 2
+            rows_n = (k + cols - 1) // cols
+            for r in range(rows_n):
+                for c in range(cols):
+                    idx_slot = r * cols + c
+                    if idx_slot >= k:
+                        break
+                    yn = (r + 0.5) / rows_n
+                    xn = 0.28 if c == 0 else 0.72
+                    if r % 2 == 1:
+                        xn = 0.22 if c == 0 else 0.78
+                    slots.append((yn, xn))
+        for slot_i, i in enumerate(ranked):
+            yn, xn = slots[slot_i]
+            top = top_lo + yn * (top_hi - top_lo)
+            left = left_lo + xn * (left_hi - left_lo)
+            out[i] = (int(round(top)), int(round(left)))
+
+    # Keep points inside their cell after separation / grid snap
     for i, q in enumerate(quadrants):
         key = q if q in cells else "Emerging Players"
         top_lo, top_hi, left_lo, left_hi = cells[key]
@@ -338,11 +429,27 @@ def _separate_points(
     *,
     min_dist: float = 9.0,
     iters: int = 50,
+    bounds: list[tuple[float, float, float, float]] | None = None,
 ) -> list[tuple[int, int]]:
-    """Push overlapping chart points apart so labels/dots don't stack on the diagonal."""
+    """Push overlapping chart points apart so labels/dots don't stack on the diagonal.
+
+    If ``bounds`` is provided (top_lo, top_hi, left_lo, left_hi per point), each
+    point is clamped to its own quadrant cell every iteration so separation never
+    pushes a brand into another quadrant.
+    """
     if len(coords) < 2:
         return coords
     pts = [[float(t), float(l)] for t, l in coords]
+
+    def _clamp(i: int) -> None:
+        if bounds and i < len(bounds):
+            top_lo, top_hi, left_lo, left_hi = bounds[i]
+            pts[i][0] = max(top_lo, min(top_hi, pts[i][0]))
+            pts[i][1] = max(left_lo, min(left_hi, pts[i][1]))
+        else:
+            pts[i][0] = max(5.0, min(95.0, pts[i][0]))
+            pts[i][1] = max(5.0, min(95.0, pts[i][1]))
+
     for _ in range(iters):
         for i in range(len(pts)):
             for j in range(i + 1, len(pts)):
@@ -361,9 +468,8 @@ def _separate_points(
                 pts[i][1] += uy * push
                 pts[j][0] -= ux * push
                 pts[j][1] -= uy * push
-        for p in pts:
-            p[0] = max(5.0, min(95.0, p[0]))
-            p[1] = max(5.0, min(95.0, p[1]))
+        for i in range(len(pts)):
+            _clamp(i)
     return [(int(round(t)), int(round(l))) for t, l in pts]
 
 

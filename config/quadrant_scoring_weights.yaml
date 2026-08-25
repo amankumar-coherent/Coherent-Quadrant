@@ -38,6 +38,8 @@ rating_thresholds:
 allow_model_knowledge: true
 # Minimum score for any answered question (avoids 1–2 penalties for thin crawl KB)
 score_floor: 4
+# Stretch timid mid scores (4–8) when grounding=supported/partial
+supported_score_boost: 2
 # Legacy keys kept for older callers; caps are no longer applied when allow_model_knowledge=true
 insufficient_score: 4
 partial_score_cap: 10
@@ -51,17 +53,19 @@ tier_thresholds:
 # so a mid-score market (e.g. avocado overalls 42–60) still gets Tier 1/2/3.
 relative_tier: true
 
-# Brand caps for UI density
-max_companies: 12
+# Brand caps: graph = top 20 from the table; Company Details table target = 1000
+max_companies: 20
+table_companies: 1000
 # Parallel brand scoring (KB build + batched Q&A)
 brand_concurrency: 6
 # company = 1 LLM call/brand for all questions; feature = 1 call/feature; none = legacy per-question
 qa_batch_mode: company
 # Quadrant never outreach-searches; KB comes from pipeline evidence_snapshot only.
 searches_per_company: 0
-kb_max_chunks: 40
-kb_chunk_chars: 800
-kb_total_chars: 12000
+# Larger KB so sustainability / distribution / partner crawl text is not truncated away
+kb_max_chunks: 64
+kb_chunk_chars: 900
+kb_total_chars: 24000
 
 # Quadrant midpoint: relative median when relative_quadrant=true, else axis_midpoint
 relative_quadrant: true

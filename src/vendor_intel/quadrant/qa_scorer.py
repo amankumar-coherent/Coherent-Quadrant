@@ -18,19 +18,24 @@ Return JSON only:
   "score": 1-10 integer,
   "answer": "one sentence explaining the score",
   "evidence_urls": ["urls from the knowledge base if any"],
-  "evidence_snippets": ["short quotes from KB and/or concise model-knowledge notes"],
+  "evidence_snippets": ["short quotes from the knowledge base"],
   "grounding": "supported" | "partial" | "model_knowledge" | "insufficient"
 }
 
-Scoring policy (IMPORTANT):
-- Prefer the knowledge_base / evidence_snippets when they answer the question → grounding=supported (or partial if incomplete).
-- If the KB is thin or silent, you MUST still score using your own knowledge of the brand, domain, market role, and typical industry standing for a company of this type. Use grounding=model_knowledge.
-- Do NOT give a low score (1–3) merely because crawl evidence is missing. Low scores are only for weak real-world capability on that question.
-- Score 1–10 relative to global peers in this market. Well-known leaders should score high; niche/emerging players lower — based on substance, not evidence availability.
-- Never invent precise financial figures, certifications, or customer names as hard facts when unsupported; you may still judge capability qualitatively from known brand position.
-- Prefer grounding=insufficient only when the brand is unknown / unassessable; even then keep score in a neutral mid band (4–6), not 1–2."""
+Scoring policy (STRICT — no hallucination):
+1) Use ONLY facts present in knowledge_base for concrete claims (products, certs, retailers, partners, revenue, regions). Quote them in evidence_snippets.
+2) If KB clearly answers the question with strong positive evidence of leadership/capability → grounding=supported, score 8–10.
+3) If KB shows solid but not market-leading capability → grounding=supported or partial, score 6–7.
+4) If KB shows weak/narrow capability → grounding=supported or partial, score 3–5.
+5) If KB is thin/silent: you may use well-known public brand standing ONLY as qualitative judgment → grounding=model_knowledge, score mid (5–7) for known brands. NEVER invent product lists, certifications, customer names, or financial figures.
+6) If the brand is unknown and KB is empty → grounding=insufficient, score 4–5. Do NOT invent a story.
+7) Do NOT give 1–3 only because crawl is missing; 1–3 only for evidenced weak capability.
+8) Prefer the FULL score range when evidence supports it — do not cluster everything at 5–6."""
 
 _SYSTEM_BATCH = """You are a market-research analyst scoring MULTIPLE vendor evaluation questions for ONE brand (Coherent Quadrant).
+
+Each question belongs to a market-specific scoring PARAMETER (feature) on the X or Y axis.
+Score the brand for THIS market only — use the feature name + question, not a generic scorecard.
 
 Return JSON only:
 {
@@ -40,20 +45,20 @@ Return JSON only:
       "score": 1-10 integer,
       "answer": "one sentence explaining the score",
       "evidence_urls": ["urls from the knowledge base if any"],
-      "evidence_snippets": ["short quotes from KB and/or concise model-knowledge notes"],
+      "evidence_snippets": ["short quotes from the knowledge base"],
       "grounding": "supported" | "partial" | "model_knowledge" | "insufficient"
     }
   ]
 }
 
-Scoring policy (IMPORTANT):
+Scoring policy (STRICT — no hallucination):
 - Return one entry per input question id — same ids, same count.
-- Prefer knowledge_base / evidence when present → grounding=supported or partial.
-- If KB is thin or silent for a question, score using your own knowledge of the brand, domain, and market role → grounding=model_knowledge.
-- Do NOT give scores of 1–3 merely because crawl evidence is missing. Low scores only for genuinely weak capability on that criterion versus peers.
-- Score 1–10 relative to global peers. Famous leaders score high; niche brands lower — based on substance, not evidence availability.
-- Do not invent precise unsupported financials/certs/customer lists as hard facts; qualitative judgment from known brand position is allowed.
-- grounding=insufficient only if the brand is truly unknown; then use a neutral mid score (4–6), never 1–2."""
+- Interpret every question through market + feature (e.g. semiconductor process capability ≠ packaging barrier performance).
+- Concrete claims MUST come from knowledge_base; quote KB in evidence_snippets. Never invent products, certs, customers, or financials.
+- Strong KB evidence of leadership on that market parameter → supported, score 8–10. Solid peer → 6–7. Weak → 3–5.
+- Thin KB: qualitative judgment of known brand standing only → model_knowledge (typically 5–7). Unknown + empty KB → insufficient (4–5).
+- Do not cluster all scores at 5–6 when evidence supports higher. Use the full 1–10 range based on substance.
+- Low scores (1–3) only for evidenced weak capability, not for missing crawl text."""
 
 
 def _heuristic_score(
@@ -117,6 +122,7 @@ def _clamp_answer_fields(
     raw: dict[str, Any],
     score_floor: int,
     allow_model_knowledge: bool,
+    supported_boost: int = 0,
 ) -> QuestionAnswer:
     grounding = str(raw.get("grounding") or "model_knowledge").lower().strip()
     if grounding not in ("supported", "partial", "model_knowledge", "insufficient"):
@@ -133,6 +139,19 @@ def _clamp_answer_fields(
         score = max(4, score_floor)
     score = max(1, min(10, score))
 
+    urls = [str(u) for u in (raw.get("evidence_urls") or []) if u][:5]
+    snippets = [str(s) for s in (raw.get("evidence_snippets") or []) if s][:5]
+
+    # Evidence-backed answers: stretch timid mid scores upward (not invent).
+    boost = max(0, min(2, int(supported_boost)))
+    if (
+        boost
+        and grounding in ("supported", "partial")
+        and (snippets or grounding == "supported")
+        and 4 <= score <= 8
+    ):
+        score = min(10, score + boost)
+
     # Never punish missing crawl evidence with 1–3.
     floor = max(1, min(10, int(score_floor)))
     if allow_model_knowledge and score < floor:
@@ -140,8 +159,6 @@ def _clamp_answer_fields(
     if grounding == "insufficient" and allow_model_knowledge and score < 4:
         score = 4
 
-    urls = [str(u) for u in (raw.get("evidence_urls") or []) if u][:5]
-    snippets = [str(s) for s in (raw.get("evidence_snippets") or []) if s][:5]
     return QuestionAnswer(
         question=question,
         weight=weight,
@@ -209,6 +226,7 @@ def answer_question(
             raw=raw,
             score_floor=score_floor,
             allow_model_knowledge=allow_mk,
+            supported_boost=int(cfg.get("supported_score_boost") or 0),
         )
     except Exception as exc:
         print(f"  [quadrant] QA LLM failed: {exc}", flush=True)
@@ -238,6 +256,7 @@ def _answers_from_batch_raw(
     brand: str,
     score_floor: int,
     allow_model_knowledge: bool,
+    supported_boost: int = 0,
 ) -> dict[str, QuestionAnswer]:
     by_id: dict[str, QuestionAnswer] = {}
     rows = []
@@ -268,6 +287,7 @@ def _answers_from_batch_raw(
                 raw=parsed[qid],
                 score_floor=score_floor,
                 allow_model_knowledge=allow_model_knowledge,
+                supported_boost=supported_boost,
             )
         else:
             ans = _heuristic_score(
@@ -321,18 +341,30 @@ def _llm_batch_score(
     domain: str,
     kb_text: str,
     items: list[tuple[str, str, str, str, float]],
+    market: str = "",
+    axis_x: str = "",
+    axis_y: str = "",
 ) -> Any:
     payload = {
+        "market": market or "",
+        "axis_x": axis_x or "",
+        "axis_y": axis_y or "",
         "brand": brand,
         "domain": domain,
         "knowledge_base": kb_text
         or "(empty — score each question from your knowledge of this brand/domain)",
         "policy": (
+            "Score each question against its market-specific feature/parameter for THIS market. "
             "Prefer KB evidence when present. If KB is thin/silent, use model knowledge. "
             "Do not assign low scores only because crawl evidence is missing."
         ),
         "questions": [
-            {"id": qid, "feature": feat, "axis": axis, "question": text}
+            {
+                "id": qid,
+                "feature": feat,
+                "axis": axis,
+                "question": text,
+            }
             for qid, feat, axis, text, _w in items
         ],
     }
@@ -367,10 +399,19 @@ def score_company_features(
 
     score_floor = int(cfg.get("score_floor") or 4)
     allow_mk = bool(cfg.get("allow_model_knowledge", True))
+    supported_boost = int(cfg.get("supported_score_boost") or 0)
     max_chars = int(cfg.get("kb_total_chars") or 12000)
     kb_text = kb_text_blob(kb, max_chars=max_chars)
     brand = str(kb.get("brand") or "")
     domain = str(kb.get("domain") or "")
+    market = str(kb.get("market") or kb.get("industry") or "").strip()
+    seen_axes: list[str] = []
+    for fq in feature_questions:
+        ax = str(fq.axis or "").strip()
+        if ax and ax not in seen_axes:
+            seen_axes.append(ax)
+    axis_x = seen_axes[0] if seen_axes else ""
+    axis_y = seen_axes[1] if len(seen_axes) > 1 else ""
 
     llm_ok = bool(client is not None and getattr(client, "available", False))
     if client is None:
@@ -443,6 +484,9 @@ def score_company_features(
                     domain=domain,
                     kb_text=kb_text,
                     items=items,
+                    market=market,
+                    axis_x=axis_x,
+                    axis_y=axis_y,
                 )
                 by_id.update(
                     _answers_from_batch_raw(
@@ -452,6 +496,7 @@ def score_company_features(
                         brand=brand,
                         score_floor=score_floor,
                         allow_model_knowledge=allow_mk,
+                        supported_boost=supported_boost,
                     )
                 )
             except Exception as exc:
@@ -474,6 +519,9 @@ def score_company_features(
             domain=domain,
             kb_text=kb_text,
             items=items,
+            market=market,
+            axis_x=axis_x,
+            axis_y=axis_y,
         )
         by_id = _answers_from_batch_raw(
             raw,
@@ -482,6 +530,7 @@ def score_company_features(
             brand=brand,
             score_floor=score_floor,
             allow_model_knowledge=allow_mk,
+            supported_boost=supported_boost,
         )
     except Exception as exc:
         print(f"  [quadrant] company-batch QA failed ({brand[:40]}): {exc}", flush=True)

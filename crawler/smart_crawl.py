@@ -222,9 +222,15 @@ MODES: dict[str, dict] = {
                        "/people", "/our-team", "/who-we-are", "/management",
                        "/products", "/product", "/solutions", "/services",
                        "/customers", "/case-studies", "/case-study",
+                       "/partners", "/partnerships",
+                       "/sustainability", "/esg", "/impact", "/organic",
+                       "/certifications", "/sourcing", "/supply-chain",
+                       "/where-to-buy", "/find-us", "/stores", "/retailers",
+                       "/distributors", "/shop", "/collections", "/our-story",
                        "/contact", "/contact-us", "/locations", "/offices",
                        "/pricing", "/plans", "/why-us", "/why"],
-        "fields":     ["company", "location", "business", "people", "contact", "intel"],
+        "fields":     ["company", "location", "business", "people", "contact",
+                       "intel", "financials", "relationships"],
         "max_pages":  40,
         "max_tokens": 5000,
         "label":      "company profile, leadership, products and services",
@@ -254,10 +260,15 @@ MODES: dict[str, dict] = {
         "paths":      ["/about", "/about-us", "/company", "/team", "/leadership",
                        "/products", "/product", "/solutions", "/services",
                        "/customers", "/case-studies", "/partners", "/partnerships",
+                       "/sustainability", "/esg", "/impact", "/organic",
+                       "/certifications", "/sourcing", "/supply-chain",
+                       "/where-to-buy", "/find-us", "/stores", "/retailers",
+                       "/distributors", "/shop", "/collections", "/our-story",
                        "/blog", "/news", "/press", "/insights", "/resources",
                        "/investors", "/investor", "/financials", "/contact",
-                       "/pricing", "/plans"],
-        "fields":     ["company", "business", "people", "media", "financials", "intel"],
+                       "/pricing", "/plans", "/locations", "/offices"],
+        "fields":     ["company", "location", "business", "people", "media",
+                       "financials", "relationships", "intel", "contact"],
         "max_pages":  60,
         "max_tokens": 5000,
         "label":      "business intelligence: products, services, industries, investment data, news and people",
@@ -274,6 +285,10 @@ _UNIVERSAL_VALUABLE_PATHS = (
     "/products", "/product", "/solutions", "/services",
     "/customers", "/case-studies", "/case-study", "/clients",
     "/partners", "/partnerships",
+    "/sustainability", "/esg", "/impact", "/organic", "/certifications",
+    "/sourcing", "/supply-chain",
+    "/where-to-buy", "/find-us", "/stores", "/retailers", "/distributors",
+    "/shop", "/collections", "/our-story",
     "/contact", "/contact-us", "/locations", "/offices",
     "/pricing", "/plans",
     "/careers", "/jobs",
@@ -1574,7 +1589,11 @@ async def smart_crawl(
         if not mode_paths:
             return True
         p = urlparse(url).path.lower()
-        return any(p == mp or p.startswith(mp + "/") or p.startswith(mp + "-") for mp in mode_paths)
+        if any(p == mp or p.startswith(mp + "/") or p.startswith(mp + "-") for mp in mode_paths):
+            return True
+        # Always allow universal high-signal paths (partners/sustainability/etc.)
+        # even when the selected mode's path list is narrower.
+        return any(p == vp or p.startswith(vp + "/") for vp in _UNIVERSAL_VALUABLE_PATHS)
 
     def _score(url: str) -> int:
         """heapq priority: 0 = high-signal path, 1 = shallow, 2 = deep.

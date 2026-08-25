@@ -476,11 +476,26 @@ def _domain_is_name_acronym(name: str, domain: str) -> bool:
         return False
     tokens = re.findall(r"[a-z0-9]+", normalize_name(name).lower())
     if len(tokens) < 2:
-        return False
-    _stop = {"and", "the", "of", "co", "inc", "ltd", "corp", "llc", "group", "company", "de", "la"}
+        # Single-token CamelCase / glued names: GlobalFoundries → gf
+        glued = re.sub(r"[^a-z0-9]", "", normalize_name(name).lower())
+        parts = re.findall(r"[a-z]+|[0-9]+", re.sub(r"([a-z])([A-Z])", r"\1 \2", name))
+        parts = [p.lower() for p in parts if p.isalpha()]
+        if len(parts) >= 2:
+            tokens = parts
+        elif glued and brand == glued[: len(brand)] and len(brand) <= 4:
+            return True
+        else:
+            return False
+    _stop = {"and", "the", "of", "co", "inc", "ltd", "corp", "llc", "group", "company", "de", "la", "plc"}
     initials_all = "".join(t[0] for t in tokens if t)
     initials_core = "".join(t[0] for t in tokens if t and t not in _stop)
-    return brand in (initials_all, initials_core)
+    if brand in (initials_all, initials_core):
+        return True
+    # Compound contraction: Silicon Labs → silabs, Powertech → already matched
+    compact = "".join(t for t in tokens if t and t not in _stop)
+    if brand and len(brand) >= 4 and (brand in compact or compact.startswith(brand)):
+        return True
+    return False
 
 
 def is_junk_candidate_name(name: str, domain: str = "") -> bool:
