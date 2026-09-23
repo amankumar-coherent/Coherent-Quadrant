@@ -43,7 +43,32 @@ def test_protein_market_mode():
     assert company == "(acquired by Nestlé)"
 
 
-def test_tech_solution_provider_plain_parent():
+def test_tech_solution_provider_plain_parent(monkeypatch):
+    # company_display_mode now derives from market_relevance.analyze_market's
+    # live B2B/B2C + dynamic-provider-category classification rather than a
+    # fixed ICT/semiconductor keyword list — mock the LLM call for a
+    # deterministic "this market's categories include a builder/platform
+    # role" case instead of asserting a keyword match.
+    import json as _json
+
+    import vendor_intel.clients.claude as claude_mod
+    from vendor_intel.quadrant import market_relevance as mr
+
+    mr._MARKET_ANALYSIS_CACHE.clear()
+
+    class _FakeClient:
+        available = True
+
+        def complete_json(self, system, user, model=None, max_tokens=None):
+            return {
+                "market_type": "B2B",
+                "market_definition": "Generative AI platforms and tooling.",
+                "market_participants": [
+                    {"type": "Solution Provider", "definition": "Builds the platform.", "why_relevant": "x"},
+                ],
+            }
+
+    monkeypatch.setattr(claude_mod, "ClaudeClient", lambda *a, **k: _FakeClient())
     assert (
         company_display_mode(
             "Generative AI Market",
@@ -52,6 +77,7 @@ def test_tech_solution_provider_plain_parent():
         )
         == "solution_provider"
     )
+    mr._MARKET_ANALYSIS_CACHE.clear()
     row = {
         "company_raw": "Gemini",
         "company": "Gemini",

@@ -19,23 +19,30 @@ Return JSON only: {"industry_group": "...", "industry_category": "...", "confide
 industry_category MUST be copied verbatim from the allowed list. Prefer the most specific leaf."""
 
 
-def _keyword_match(market: str) -> tuple[str, str, float] | None:
+def _kw_in(kw: str, text: str) -> bool:
+    """Whole-word / whole-phrase match (so "chip" does not hit "chipset" or "microchip-free")."""
+    kw = (kw or "").strip().lower()
+    return bool(kw) and re.search(rf"(?<![a-z0-9]){re.escape(kw)}(?![a-z0-9])", text) is not None
+
+
+def _keyword_match(market: str) -> tuple[str, str, float, int] | None:
+    """Best catalog category by whole-word keyword hits: (group, category, confidence, hits)."""
     text = (market or "").lower()
     if not text:
         return None
-    best: tuple[str, str, float] | None = None
+    best: tuple[str, str, float, int] | None = None
     for cat, kws in category_keywords().items():
-        hits = sum(1 for kw in kws if kw in text)
-        if hits <= 0:
+        matched = [kw for kw in kws if _kw_in(kw, text)]
+        if not matched:
             continue
-        score = hits / max(len(kws), 1)
+        score = len(matched) / max(len(kws), 1)
         # Prefer longer keyword hits
-        score += max((len(kw) for kw in kws if kw in text), default=0) / 100.0
+        score += max(len(kw) for kw in matched) / 100.0
         resolved = find_category(cat)
         if not resolved:
             continue
         if best is None or score > best[2]:
-            best = (resolved[0], resolved[1], min(0.95, 0.55 + score))
+            best = (resolved[0], resolved[1], min(0.95, 0.55 + score), len(matched))
     return best
 
 
@@ -54,8 +61,10 @@ def select_industry(
     allowed = [{"industry_group": g, "industry_category": c} for g, c in leaves]
 
     kw = _keyword_match(market)
-    if kw and kw[2] >= 0.7:
-        group, cat, conf = kw
+    # Skip the LLM only on strong evidence (2+ distinct keyword hits); a single
+    # word match is too weak to force a category for an arbitrary market.
+    if kw and kw[3] >= 2 and kw[2] >= 0.7:
+        group, cat, conf, _ = kw
         feats = get_category_features(group, cat)
         feats.update(
             {
@@ -115,7 +124,7 @@ def select_industry(
             print(f"  [quadrant] industry select LLM failed: {exc}", flush=True)
 
     if kw:
-        group, cat, conf = kw
+        group, cat, conf, _ = kw
         feats = get_category_features(group, cat)
         feats.update(
             {

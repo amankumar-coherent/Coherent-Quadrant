@@ -48,3 +48,21 @@ data/*.db
 # they hold browser session state)
 data/chrome-aio*/
 data/chrome_profile*/
+# Holds real Google cookies and session tokens — never commit.
+data/ai_mode_chrome_profile/
+data/ai_mode_chrome_profile_chromium/
+data/ai_mode_chrome_profile_extensions/
+
+# --- Google AI Mode browser profiles (GBs; hold Google login cookies) ---
+data/ai_mode_*/
+data/ai_overview_cache/
+# --- run logs, scratch files, billing exports, one-off outputs ---
+logs/
+scratch*.json
+scratch*.txt
+scratchpad*.json
+cost-*.csv
+amount-*.csv
+/*.xlsx
+/verified_*.csv
+scripts/handover_after_wave1.py

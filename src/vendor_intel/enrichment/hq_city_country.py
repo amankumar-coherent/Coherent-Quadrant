@@ -14,109 +14,6 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
-# Well-known public HQs (Wikipedia / company filings). Longest-stem match.
-_KNOWN_HQ: dict[str, str] = {
-    "taiwan semiconductor manufacturing": "Hsinchu, Taiwan",
-    "tsmc": "Hsinchu, Taiwan",
-    "asml holding": "Veldhoven, Netherlands",
-    "asml": "Veldhoven, Netherlands",
-    "intel corporation": "Santa Clara, California, USA",
-    "intel": "Santa Clara, California, USA",
-    "nvidia": "Santa Clara, California, USA",
-    "advanced micro devices": "Santa Clara, California, USA",
-    "amd": "Santa Clara, California, USA",
-    "samsung electronics": "Suwon, South Korea",
-    "samsung electro-mechanics": "Suwon, South Korea",
-    "broadcom": "San Jose, California, USA",
-    "qualcomm": "San Diego, California, USA",
-    "mediatek": "Hsinchu, Taiwan",
-    "sk hynix": "Icheon, South Korea",
-    "micron technology": "Boise, Idaho, USA",
-    "kioxia": "Tokyo, Japan",
-    "texas instruments": "Dallas, Texas, USA",
-    "analog devices": "Wilmington, Massachusetts, USA",
-    "infineon technologies": "Neubiberg, Germany",
-    "infineon": "Neubiberg, Germany",
-    "nxp semiconductors": "Eindhoven, Netherlands",
-    "nxp": "Eindhoven, Netherlands",
-    "stmicroelectronics": "Geneva, Switzerland",
-    "renesas electronics": "Tokyo, Japan",
-    "renesas": "Tokyo, Japan",
-    "on semiconductor": "Phoenix, Arizona, USA",
-    "onsemi": "Phoenix, Arizona, USA",
-    "microchip technology": "Chandler, Arizona, USA",
-    "rohm semiconductor": "Kyoto, Japan",
-    "rohm": "Kyoto, Japan",
-    "arm holdings": "Cambridge, United Kingdom",
-    "globalfoundries": "Malta, New York, USA",
-    "smic": "Shanghai, China",
-    "umc": "Hsinchu, Taiwan",
-    "united microelectronics": "Hsinchu, Taiwan",
-    "tower semiconductor": "Migdal HaEmek, Israel",
-    "applied materials": "Santa Clara, California, USA",
-    "lam research": "Fremont, California, USA",
-    "kla corporation": "Milpitas, California, USA",
-    "tokyo electron": "Tokyo, Japan",
-    "asm international": "Almere, Netherlands",
-    "ase technology": "Kaohsiung, Taiwan",
-    "amkor technology": "Tempe, Arizona, USA",
-    "jcet": "Jiangyin, Jiangsu, China",
-    "cadence design": "San Jose, California, USA",
-    "synopsys": "Sunnyvale, California, USA",
-    "siemens eda": "Wilsonville, Oregon, USA",
-    "mentor graphics": "Wilsonville, Oregon, USA",
-    "apple": "Cupertino, California, USA",
-    "marvell technology": "Santa Clara, California, USA",
-    "marvell": "Santa Clara, California, USA",
-    "western digital": "San Jose, California, USA",
-    "murata manufacturing": "Nagaokakyo, Kyoto, Japan",
-    "murata": "Nagaokakyo, Kyoto, Japan",
-    "sony semiconductor": "Atsugi, Kanagawa, Japan",
-    "bosch sensortec": "Reutlingen, Germany",
-    "robert bosch": "Gerlingen, Germany",
-    "qorvo": "Greensboro, North Carolina, USA",
-    "nexperia": "Nijmegen, Netherlands",
-    "wolfspeed": "Durham, North Carolina, USA",
-    "siltronic": "Munich, Germany",
-    "globalwafers": "Hsinchu, Taiwan",
-    "nordic semiconductor": "Trondheim, Norway",
-    "lattice semiconductor": "Hillsboro, Oregon, USA",
-    "vishay intertechnology": "Malvern, Pennsylvania, USA",
-    "vishay": "Malvern, Pennsylvania, USA",
-    "teradyne": "North Reading, Massachusetts, USA",
-    "advantest": "Tokyo, Japan",
-    "disco corporation": "Tokyo, Japan",
-    "mitsubishi electric": "Tokyo, Japan",
-    "rohde & schwarz": "Munich, Germany",
-    "realtek": "Hsinchu, Taiwan",
-    "winbond": "Taichung, Taiwan",
-    "nanya technology": "New Taipei City, Taiwan",
-    "hua hong": "Shanghai, China",
-    "powerchip": "Hsinchu, Taiwan",
-    "mobileye": "Jerusalem, Israel",
-    "cerebras": "Sunnyvale, California, USA",
-    "graphcore": "Bristol, United Kingdom",
-    "sambanova": "Palo Alto, California, USA",
-    "ampere computing": "Santa Clara, California, USA",
-    "pragmatic semiconductor": "Cambridge, United Kingdom",
-    "iqe plc": "Cardiff, United Kingdom",
-    "iqe": "Cardiff, United Kingdom",
-    "cyient": "Hyderabad, Telangana, India",
-    "tata electronics": "Mumbai, Maharashtra, India",
-    "dexcom": "San Diego, California, USA",
-    "abbott laboratories": "Abbott Park, Illinois, USA",
-    "medtronic": "Dublin, Ireland",
-    "masimo": "Irvine, California, USA",
-    "philips": "Amsterdam, Netherlands",
-    "omron healthcare": "Kyoto, Japan",
-    "siemens healthineers": "Erlangen, Germany",
-    "amcor": "Zurich, Switzerland",
-    "berry global": "Evansville, Indiana, USA",
-    "constantia flexibles": "Vienna, Austria",
-    "huhtamaki": "Espoo, Finland",
-    "uflex": "Noida, Uttar Pradesh, India",
-    "sealed air": "Charlotte, North Carolina, USA",
-}
 
 _COUNTRY_ONLY = frozenset(
     {
@@ -290,22 +187,27 @@ def normalize_city_country(raw: str) -> str:
 
 
 def lookup_known_hq(company: str) -> str:
+    """HQ from the data cache (data/hq_city_country_cache.json), EXACT
+    normalised-name match only.
+
+    There is no hardcoded company -> HQ table in code: an earlier one mixed
+    companies from a few specific markets and matched them by loose stem
+    (so "Big Apple Seismic" got Apple's Cupertino HQ). Known HQs now live in
+    the cache as data, alongside Wikipedia lookups.
+    """
     name = _norm_name(company)
     if not name:
         return ""
-    if name in _KNOWN_HQ:
-        return _KNOWN_HQ[name]
-    best = ""
-    best_len = 0
-    for stem, hq in _KNOWN_HQ.items():
-        stem_n = stem.strip()
-        if len(stem_n) < 3:
-            continue
-        if name == stem_n or name.startswith(stem_n + " ") or f" {stem_n} " in f" {name} ":
-            if len(stem_n) > best_len:
-                best = hq
-                best_len = len(stem_n)
-    return best
+    cache = _load_cache()
+    # Same company, not a guess: also try the name without its legal suffix
+    # ("Dexcom, Inc." -> "dexcom"). Still an exact match on what remains.
+    bare = re.sub(
+        r"(?:[\s,]+(?:inc|incorporated|ltd|limited|llc|plc|corp|corporation|co|"
+        r"company|gmbh|ag|sa|s\.a|nv|bv|ab|as|asa|oy|pte|pty|pvt|private|srl|spa)\.?)+$",
+        "",
+        name,
+    ).strip(" ,.")
+    return normalize_city_country(cache.get(name) or cache.get(bare) or "")
 
 
 def _wiki_search(name: str) -> str | None:

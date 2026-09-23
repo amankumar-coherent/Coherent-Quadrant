@@ -518,7 +518,7 @@ async def synthesize_quadrant(
 
     x_feats = list(industry.get("x") or [])
     y_feats = list(industry.get("y") or [])
-    axis_x = str(industry.get("axis_x") or "Solution Capability")
+    axis_x = str(industry.get("axis_x") or "Product Strength")
     axis_y = str(industry.get("axis_y") or "Business Strategy")
     x_weights = feature_weights_for("x", len(x_feats))
     y_weights = feature_weights_for("y", len(y_feats))

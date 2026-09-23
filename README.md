@@ -256,11 +256,26 @@ python scripts/run_quadrant_from_csv.py `
   --prefer-section "Smartphone Brands"
 ```
 
-Full landscape + quadrant (Docker example):
+Full landscape + quadrant for any market (discovery -> scoring -> report -> verify):
 
 ```powershell
-.\scripts\run_global_avocado_oil.ps1
+.\.venv\Scripts\python.exe scripts\run_quadrant_pipeline.py --market "<Market name>" --country global --slots 41-50
 ```
+
+**Fixed company count:** add `--keep 120` to end with exactly 120 verified
+companies (20 on the chart + 100 in Other Noticeable Player). Discovery runs in
+batches (discover, verify, discover more, verify) until 120 verified
+companies exist after dedupe, then the best 120 by score are kept.
+
+**CAPTCHA solving is built in.** The reCAPTCHA solver
+[captcha-raptor](extensions/captcha-raptor/) (MIT licence) ships in
+`extensions/` and every Google AI Mode browser loads it automatically: no path
+to set, no manual install. `setup.bat` installs the bundled Chromium it needs
+(`python -m patchright install chromium`). To check it loads:
+`.\.venv\Scripts\python.exe -m vendor_intel.scraping.google_ai_mode doctor`.
+Set `GOOGLE_AI_MODE_BUNDLED_EXTENSIONS=false` in `.env` to switch it off. It
+solves Google's image-grid reCAPTCHA; it cannot clear the harder "unusual
+traffic" block page, which only slower pacing (`GOOGLE_AI_MODE_QUERY_DELAY`) avoids.
 
 ### Frontend preview (CMI web)
 

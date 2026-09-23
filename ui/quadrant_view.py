@@ -117,11 +117,10 @@ def _founded_loc(b: dict[str, Any]) -> str:
 
 
 def _axis_labels(payload: dict[str, Any]) -> tuple[str, str]:
-    labels = (payload.get("criteria") or {}).get("axis_labels") or {}
-    return (
-        str(labels.get("x") or "Solution Capability"),
-        str(labels.get("y") or "Business Strategy"),
-    )
+    """Fixed for every market (same as the HTML report); only parameters vary."""
+    from vendor_intel.quadrant.quadrant_language import AXIS_X_TITLE, AXIS_Y_TITLE
+
+    return AXIS_X_TITLE, AXIS_Y_TITLE
 
 
 def _chart_html(payload: dict[str, Any]) -> str:

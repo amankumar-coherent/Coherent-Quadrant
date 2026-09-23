@@ -1,16 +1,18 @@
 """Score ChatGPT-expand rows with the same X/Y/overall math as Coherent Quadrant.
 
-X = Solution Capability (5 industry features, weighted)
-Y = Business Strategy (5 industry features, weighted)
-Overall = round((X + Y) / 2)
+X = Product Strength (5 market-specific parameters)
+Y = Business Strength (5 market-specific parameters)
 
-Feature lists come from config/quadrant_industry_criteria.yaml.
-Weights come from config/quadrant_scoring_weights.yaml (matrix_slot_weights).
-Each feature is scored 1–10 on 3 questions (weights 0.4 / 0.3 / 0.3), then:
+The axis NAMES are fixed for every market; only the five parameters beneath
+each axis are generated per market (see quadrant/axis_define.py).
 
-  sub_avg       = Σ(question_weight × score)
-  contribution  = feature_weight × (sub_avg / 10)
-  axis_0_100    = round(Σ(contributions) × 100)
+Scores come from Google AI Mode ONLY (quadrant/ai_mode_scorer.py) — one
+consolidated query per axis asking for the unweighted average of that
+market's five parameters. There is no LLM scoring fallback: when AI Mode
+cannot answer, the row is left UNSCORED for a later retry rather than
+written as a 0.
+
+Overall = round((X + Y) / 2), computed AFTER row-level floor normalization.
 """
 from __future__ import annotations
 
@@ -24,8 +26,12 @@ from urllib.parse import urlparse
 from vendor_intel.config import Settings
 from vendor_intel.quadrant.criteria_catalog import feature_weights_for, load_scoring_weights
 from vendor_intel.quadrant.industry_select import select_industry
-from vendor_intel.quadrant.matrix_rollup import feature_contribution, scale_to_100, weighted_question_average
-from vendor_intel.quadrant.question_gen import generate_questions
+from vendor_intel.quadrant.matrix_rollup import (
+    feature_contribution,
+    normalize_row_score_floor,
+    scale_to_100,
+    weighted_question_average,
+)
 from vendor_intel.quadrant.rating_map import (
     assign_quadrants_absolute_median,
     compute_overall,
@@ -90,6 +96,52 @@ def _filled(val: Any) -> str:
     return s
 
 
+_OWNERSHIP_SUFFIX_RE = re.compile(
+    r"\s*\((?:subsidiary of|acquired by|merged into|owned by)\s[^)]*\)\s*$", re.I
+)
+
+
+def _detail_key(name: Any) -> str:
+    """Lookup key for score detail, ignoring the display-only ownership tail.
+
+    The report's Company column reads "Hanwha Q CELLS Co., Ltd. (subsidiary of
+    Hanwha)", while scoring stored the plain legal name it was asked about.
+    An exact match therefore missed 36 of 179 companies in Solar Rooftop, and
+    their parameter cells rendered blank beside a perfectly good axis score.
+    """
+    text = str(name or "").strip()
+    return _OWNERSHIP_SUFFIX_RE.sub("", text).strip().lower()
+
+
+def _lookup_detail(
+    index: dict[str, dict[str, Any]], company: Any, brand: Any
+) -> dict[str, Any]:
+    """Score detail for a row, trying company then brand, suffix-insensitive."""
+    for value in (company, brand):
+        key = _detail_key(value)
+        if key and key in index:
+            return index[key]
+    return {}
+
+
+def _parameter_detail_enabled() -> bool:
+    """Whether to score each axis parameter individually, with evidence.
+
+    OFF by default: it costs two extra paced AI Mode queries per company on
+    top of the batch pass, and neither the axis scores nor the quadrant
+    depend on it. Turn it on when the report needs the per-parameter
+    scorecard populated and the backend audit trail.
+
+        EXPAND_PARAMETER_DETAIL=true
+    """
+    return str(os.getenv("EXPAND_PARAMETER_DETAIL") or "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+
+
 def kb_from_landscape_row(row: dict[str, Any]) -> dict[str, Any]:
     """Excel columns only — used when crawl is skipped or fails."""
     parts: list[str] = []
@@ -112,7 +164,7 @@ def kb_from_landscape_row(row: dict[str, Any]) -> dict[str, Any]:
 
 
 def _scoring_row(row: dict[str, str]) -> dict[str, Any]:
-    """Shape a landscape Excel row for build_company_kb + smart_crawl."""
+    """Shape a landscape Excel row for the scoring path."""
     name = str(row.get("Company") or "").strip()
     website = str(row.get("Website") or "").strip()
     summary_bits = [
@@ -261,14 +313,13 @@ def _filter_rows_by_player_type(
     industry_category: str,
     settings: Settings,
 ) -> tuple[list[dict[str, str]], dict[str, Any]]:
-    """Drop companies whose role doesn't match this market's player type.
+    """Drop companies that don't belong in this market and tag provider role(s).
 
-    Same gate synthesize_quadrant() applies via market_relevance.py
-    (hardware -> Manufacturer only; software / system-integration ->
-    Solution Developer / Service Provider / System Integrator only; else
-    -> Brand / Marketer only) — run here too so the chatgpt_expand report
-    reflects it without a separate manual "run_quadrant_from_chatgpt_
-    checkpoint.py" step.
+    Same gate synthesize_quadrant() applies via market_relevance.py: the
+    market's B2B/C2C type and provider categories are determined dynamically
+    per market (market_relevance.analyze_market) — run here too so the
+    chatgpt_expand report reflects it without a separate manual
+    "run_quadrant_from_chatgpt_checkpoint.py" step.
     """
     from vendor_intel.quadrant.brand_meta import plain_brand_name
     from vendor_intel.quadrant.market_relevance import verify_market_companies
@@ -294,21 +345,24 @@ def _filter_rows_by_player_type(
         industry_group=industry_group,
         industry_category=industry_category,
     )
-    role_by_key = {
-        re.sub(r"[^a-z0-9]", "", plain_brand_name(r).lower()): r.get("commercial_role")
-        for r in kept
+    by_key = {
+        re.sub(r"[^a-z0-9]", "", plain_brand_name(r).lower()): r for r in kept
     }
     filtered: list[dict[str, str]] = []
     for r in rows:
         key = re.sub(r"[^a-z0-9]", "", plain_brand_name(str(r.get("Company") or "")).lower())
-        role = role_by_key.get(key)
-        if not role:
+        src = by_key.get(key)
+        if not src:
             continue
-        r["Distribution Type"] = role
-        r["Role"] = role
+        role_list = src.get("commercial_roles") or [src.get("commercial_role")]
+        role_display = ", ".join(str(x) for x in role_list if x)
+        r["Distribution Type"] = role_display
+        r["Role"] = role_display
+        r["commercial_roles"] = role_list
+        r["role_reasons"] = src.get("role_reasons") or {}
         filtered.append(r)
     _log(
-        f"  [xy] player-type filter ({stats.get('player_type')}): "
+        f"  [xy] market-fit filter ({stats.get('market_type')}): "
         f"{len(rows)} -> {len(filtered)} companies (roles={stats.get('keep_roles')})"
     )
     return filtered, stats
@@ -357,8 +411,8 @@ async def score_expand_rows(
     )
     x_feats = list(industry.get("x") or [])
     y_feats = list(industry.get("y") or [])
-    axis_x = str(industry.get("axis_x") or "Solution Capability")
-    axis_y = str(industry.get("axis_y") or "Business Strategy")
+    axis_x = str(industry.get("axis_x") or "Product Strength")
+    axis_y = str(industry.get("axis_y") or "Business Strength")
     group = str(industry.get("industry_group") or "")
     category = str(industry.get("industry_category") or "")
 
@@ -386,11 +440,14 @@ async def score_expand_rows(
         f"| overall=(X+Y)/2"
     )
 
-    from vendor_intel.clients.claude import ClaudeClient
-    from vendor_intel.quadrant.company_kb import build_company_kb, kb_text_blob
-    from vendor_intel.quadrant.qa_scorer import score_company_features_async
-
-    skip_crawl = (os.getenv("EXPAND_XY_SKIP_CRAWL") or "").strip().lower() in (
+    from vendor_intel.quadrant import ai_mode_scorer
+    # The crawl is OPT-IN. X/Y come from Google AI Mode, which is given the
+    # company name and the market's axis parameters and never reads crawled
+    # pages — so the crawl fed nothing into the score. On Silicon Carbide it
+    # ran 152 times against rows whose website was the literal string
+    # "not publicly disclosed", producing 152 identical empty cache hits.
+    # Set EXPAND_XY_CRAWL=true to restore it.
+    skip_crawl = (os.getenv("EXPAND_XY_CRAWL") or "").strip().lower() not in (
         "1",
         "true",
         "yes",
@@ -399,7 +456,7 @@ async def score_expand_rows(
     crawl_stats: dict[str, int] = {"crawled": 0, "ok": 0, "fail": 0, "skipped_no_domain": 0}
     need_score = [r for r in rows if not _has_xy(r)]
     if skip_crawl:
-        _log("  [xy] crawl SKIPPED (EXPAND_XY_SKIP_CRAWL)")
+        _log("  [xy] crawl SKIPPED — AI Mode scores from the company name")
         if ckpt:
             ckpt.bump("6c_xy", "6c_crawl", note="crawl skipped")
     elif not need_score:
@@ -418,21 +475,136 @@ async def score_expand_rows(
                 note=f"crawl done ok={crawl_stats.get('ok')}",
             )
 
-    client = ClaudeClient(settings)
-    questions = generate_questions(
-        market=query,
-        geography=country,
-        industry_group=group,
-        industry_category=category,
-        x_features=x_feats,
-        y_features=y_feats,
-        axis_x=axis_x,
-        axis_y=axis_y,
-        settings=settings,
-        client=client,
-    )
+    # BATCH FIRST: ask for 30 companies per query instead of one, two queries
+    # per batch (X and Y). A 230-company market drops from ~460 paced queries
+    # to ~16. That is not only faster — every query is a chance to draw a
+    # CAPTCHA or trip the AI-response quota, and those blocks have repeatedly
+    # cost entire scoring runs. Anything the batch does not return falls
+    # through to the per-company path below, unchanged.
+    batch_scores: dict[str, tuple[int | None, int | None]] = {}
+    # Skipped when parameter detail is on: that pass returns the SAME axis
+    # score (as the model's composite) plus the per-parameter breakdown and
+    # its evidence, so running this number-only pass first would spend ~16
+    # extra paced queries to learn what the next pass is about to say anyway.
+    if need_score and not _parameter_detail_enabled():
+        names = [str(r.get("Company") or "").strip() for r in need_score]
+        names = [n for n in names if n]
+        if names:
+            _log(
+                f"  [xy] batch scoring {len(names)} companies "
+                f"({ai_mode_scorer.DEFAULT_SCORE_BATCH}/query, 2 queries per batch)"
+            )
+            try:
+                batch_scores = await asyncio.to_thread(
+                    ai_mode_scorer.score_companies,
+                    names,
+                    x_parameters=list(x_feats),
+                    y_parameters=list(y_feats),
+                    market=query,
+                )
+            except Exception as err:  # noqa: BLE001
+                # Never fatal: the per-company path still runs.
+                _log(f"  [xy] batch scoring failed ({type(err).__name__}) — per-company")
+                batch_scores = {}
+            done = sum(
+                1 for v in batch_scores.values() if v[0] is not None and v[1] is not None
+            )
+            _log(f"  [xy] batch scoring done: {done}/{len(names)} scored")
 
-    sem = asyncio.Semaphore(max(1, int(os.getenv("EXPAND_XY_CONCURRENT") or concurrent)))
+    # Per-parameter scores with their evidence, batched the same way: 5
+    # companies per query, one query per axis. One company per query would
+    # cost ~460 paced queries for a 230-company market; this costs ~92.
+    param_detail: dict[str, dict[str, Any]] = {}
+    if need_score and _parameter_detail_enabled():
+        names = [str(r.get("Company") or "").strip() for r in need_score]
+        names = [n for n in names if n]
+        if names:
+            _log(
+                f"  [xy] parameter detail for {len(names)} companies "
+                f"({ai_mode_scorer.DEFAULT_PARAM_BATCH}/query, 2 queries per batch)"
+            )
+            try:
+                # Identify each company by HQ and what it actually makes.
+                # Judged on its name alone, an abrasives maker was scored
+                # against semiconductor wafer parameters and returned 0/100.
+                ctx = {
+                    str(r.get("Company") or "").strip(): _filled(r.get("Summary"))
+                    for r in need_score
+                }
+                hqs = {
+                    str(r.get("Company") or "").strip(): _filled(r.get("Headquarters"))
+                    for r in need_score
+                }
+                # Save after every batch. This pass can run for an hour
+                # on a 250-company market, and without a checkpoint an
+                # interruption threw away every company scored so far --
+                # the next attempt re-asked for all of them.
+                resumed = dict(ckpt.data("param_detail") or {}) if ckpt else {}
+                # Companies scored in parallel by scripts/prescore_verified.py
+                # while this run was still discovering. It writes a sidecar
+                # rather than the checkpoint, because both processes rewrite
+                # the whole checkpoint and the last writer would win.
+                try:
+                    from pathlib import Path as _Path
+
+                    from vendor_intel.pipeline.web_expand import default_output_dir
+
+                    side = (
+                        _Path(default_output_dir(query, country))
+                        / "param_detail_prescored.json"
+                    )
+                    if side.exists():
+                        pre = json.loads(side.read_text(encoding="utf-8"))
+                        new_n = len(set(pre) - set(resumed))
+                        resumed.update(pre)
+                        if new_n:
+                            _log(f"  [xy] pre-scored sidecar: +{new_n} companies")
+                except Exception as err:  # noqa: BLE001 - never block scoring
+                    _log(f"  [xy] pre-scored sidecar unreadable ({type(err).__name__})")
+                if resumed:
+                    _log(
+                        f"  [xy] parameter detail resuming with "
+                        f"{len(resumed)} companies already done"
+                    )
+                    names = [n for n in names if n not in resumed]
+
+                def _save_params(start, chunk, out):
+                    if not ckpt:
+                        return
+                    merged = dict(resumed)
+                    merged.update(out)
+                    ckpt.bump(
+                        "6c_xy",
+                        f"6c_params.{start + len(chunk)}",
+                        param_detail=merged,
+                        note=(
+                            f"parameter detail {len(merged)} companies"
+                        ),
+                    )
+
+                fresh = {}
+                if names:
+                    fresh = await asyncio.to_thread(
+                        ai_mode_scorer.score_parameters_for_companies,
+                        names,
+                        x_parameters=list(x_feats),
+                        y_parameters=list(y_feats),
+                        market=query,
+                        context_by_company=ctx,
+                        hq_by_company=hqs,
+                        on_batch=_save_params,
+                    )
+                param_detail = {**resumed, **fresh}
+            except Exception as err:  # noqa: BLE001
+                # Never fatal: axis scores and quadrants do not depend on it.
+                _log(f"  [xy] parameter detail failed ({type(err).__name__})")
+                param_detail = {}
+            got = sum(1 for v in param_detail.values() if v.get("x", {}).get("parameters"))
+            _log(f"  [xy] parameter detail done: {got}/{len(names)} companies")
+
+    # AI Mode is one browser, one query at a time and paced by IP, so extra
+    # scoring concurrency buys nothing and only raises the CAPTCHA rate.
+    sem = asyncio.Semaphore(1)
     meta: list[dict[str, Any]] = [{} for _ in rows]
     lock = asyncio.Lock()
     scored_n = sum(1 for r in rows if _has_xy(r))
@@ -459,41 +631,102 @@ async def score_expand_rows(
         async with sem:
             name = str(row.get("Company") or "")[:50]
             _log(f"    → [xy] score {i + 1}/{len(rows)} {name}")
-            score_row = _scoring_row(row)
-            try:
-                kb = await build_company_kb(
-                    score_row, market=query, settings=settings, do_search=False
+            # No knowledge base is built. score_company() is given the company
+            # NAME and the market's axis parameters — it never reads a KB, so
+            # assembling one cost a crawl per company and fed nothing.
+            kb_chars = 0
+            # X/Y scores come from Google AI Mode ONLY, asked as one
+            # consolidated question per axis (the unweighted average of that
+            # market's five LLM-generated parameters). The LLM still GENERATES
+            # those parameters — only the scoring moved. There is no LLM
+            # scoring fallback.
+            # Take the batched result when the batch produced one — asking
+            # again would spend two more paced queries for the same answer.
+            company_name = str(row.get("Company") or "").strip()
+            # Parameter detail already produced this company's axis scores
+            # (the model's own composite, or the average of its parameters),
+            # so use them rather than asking a third time.
+            detailed = param_detail.get(company_name) or {}
+            det_x = (detailed.get("x") or {}).get("score")
+            det_y = (detailed.get("y") or {}).get("score")
+            cached = batch_scores.get(company_name)
+            if det_x is not None and det_y is not None:
+                x_ai, y_ai = det_x, det_y
+            elif cached and cached[0] is not None and cached[1] is not None:
+                x_ai, y_ai = cached
+            else:
+                x_ai, y_ai = await asyncio.to_thread(
+                    ai_mode_scorer.score_company,
+                    str(row.get("Company") or ""),
+                    x_parameters=list(x_feats),
+                    y_parameters=list(y_feats),
+                    # Asked cold, AI Mode returns UNKNOWN for any company that
+                    # is not a household name — even one it can describe when
+                    # the same name is typed into ordinary Google. The market
+                    # frames what "strong" means, and the one-line description
+                    # from discovery identifies a company whose legal name
+                    # alone is ambiguous (common for non-English names).
+                    market=query,
+                    context=_filled(row.get("Summary")),
                 )
-            except Exception:
-                kb = kb_from_landscape_row(row)
-            kb_chars = len(kb_text_blob(kb, max_chars=24000))
-            if kb_chars < 200:
-                excel_kb = kb_from_landscape_row(row)
-                kb["chunks"] = list(excel_kb.get("chunks") or []) + list(kb.get("chunks") or [])
-                kb_chars = len(kb_text_blob(kb, max_chars=24000))
-            try:
-                feature_results = await score_company_features_async(
-                    kb,
-                    questions,
-                    settings=settings,
-                    client=client,
-                    batch_mode="company",
+            if x_ai is None or y_ai is None:
+                # Leave the row UNSCORED rather than writing a 0: a CAPTCHA or
+                # refusal is missing data, not a company with no strength. The
+                # row keeps empty score cells so a later pass can retry it.
+                _log(
+                    f"    → [xy] no score for {name} "
+                    "(AI Mode unavailable) — left unscored for retry"
                 )
-            except Exception as exc:
-                _log(f"    → [xy] fail {name}: {type(exc).__name__}: {exc}")
-                feature_results = []
-            x_score, x_detail = _axis_score(feature_results, x_feats, x_weights, axis_x)
-            y_score, y_detail = _axis_score(feature_results, y_feats, y_weights, axis_y)
+                meta[i] = {
+                    "company": row.get("Company"),
+                    "scorer": "ai_mode",
+                    "scored": False,
+                    "reason": "ai_mode_unavailable",
+                    "kb_chars": kb_chars,
+                }
+                return
+            x_raw, y_raw = float(x_ai), float(y_ai)
+            x_detail = [{"axis": axis_x, "parameters": list(x_feats), "score": x_ai}]
+            y_detail = [{"axis": axis_y, "parameters": list(y_feats), "score": y_ai}]
+
+            # Parameter detail is fetched in BATCHES before this loop (see
+            # `param_detail` above), so each company just collects its own
+            # record here rather than spending two more queries of its own.
+            score_detail = param_detail.get(
+                str(row.get("Company") or "").strip()
+            ) or {}
+            # Row-level proportional floor normalization: each company's X/Y
+            # is transformed independently of every other company — never a
+            # population min/max — so recompute Overall from the normalized
+            # pair, not the raw one.
+            #
+            # A company whose raw scores differ by more than ~1.54x will show
+            # 100 on its stronger axis, because scaling the weaker one up to
+            # the 65 floor pushes the other past the ceiling (raw 12/38 ->
+            # 65/206 -> 65/100). That is inherent to the rule and accepted:
+            # the per-row ratio is what this normalization exists to keep.
+            x_score_f, y_score_f = normalize_row_score_floor(x_raw, y_raw)
+            x_score, y_score = int(round(x_score_f)), int(round(y_score_f))
             overall = compute_overall(x_score, y_score)
             meta[i] = {
                 "company": row.get("Company"),
                 "x": x_score,
                 "y": y_score,
                 "overall": overall,
+                "x_original": x_raw,
+                "y_original": y_raw,
+                "normalization_applied": (x_score, y_score) != (x_raw, y_raw),
+                "normalization_method": "row_proportional_floor_65",
+                "scorer": "ai_mode",
+                "scored": True,
                 "kb_chars": kb_chars,
                 "crawled": bool(row.get("_evidence_snapshot")),
                 "x_features": x_detail,
                 "y_features": y_detail,
+                # Full backend record: axis + per-parameter scores and the
+                # evidence for each. Never rendered — html_report's view model
+                # selects only the score fields (and asserts that it did).
+                "score_detail": score_detail,
             }
             row["X Score"] = str(x_score)
             row["Y Score"] = str(y_score)
@@ -515,10 +748,16 @@ async def score_expand_rows(
     if ckpt:
         ckpt.begin("6c_xy", "6c_quadrant", note="begin quadrant assignment")
 
-    xs = [int(r.get("X Score") or 0) for r in rows]
-    ys = [int(r.get("Y Score") or 0) for r in rows]
+    # Thresholds come from the SCORED rows only. An unscored company reads as
+    # 0 here, and enough of them drag both medians down until ">= median" is
+    # true for nearly everyone — CPaaS put 276 of 287 companies into two
+    # quadrants and left Trailblazers completely empty.
+    scored_rows = [r for r in rows if _has_xy(r)]
+
+    xs = [int(r.get("X Score") or 0) for r in scored_rows]
+    ys = [int(r.get("Y Score") or 0) for r in scored_rows]
     quads, mid_x, mid_y = assign_quadrants_absolute_median(xs, ys)
-    for r, q in zip(rows, quads):
+    for r, q in zip(scored_rows, quads):
         r["Quadrant"] = q
         key = str(r.get("Company") or "")
         for m in meta:
@@ -736,42 +975,52 @@ def _landscape_to_brand_row(
     founded = str(row.get("Founded") or row.get("Founded in") or "").strip()
     hq = str(row.get("Headquarters") or "").strip()
     role = str(row.get("Distribution Type") or row.get("Role") or "").strip()
-    if not role or role.strip().lower() in {
+    role_list = row.get("commercial_roles")
+    if isinstance(role_list, list) and role_list:
+        # Already classified upstream (verify_market_companies, Stage 2) —
+        # a company may legitimately carry more than one provider role.
+        role = ", ".join(str(r).strip() for r in role_list if str(r).strip())
+    elif not role or role.strip().lower() in {
         "brand / marketer",
         "brand/marketer",
         "brand and marketer",
     }:
         from vendor_intel.pipeline.role_split import normalize_role_label
-        from vendor_intel.quadrant.market_relevance import classify_player_type
+        from vendor_intel.quadrant.market_relevance import analyze_market, market_provider_type_names
 
-        player_type = classify_player_type(
+        analysis = analyze_market(
             query,
             industry_group=str((audit or {}).get("industry_group") or ""),
             industry_category=str((audit or {}).get("industry_category") or ""),
         )
-        if player_type == "hardware":
-            role = "Manufacturer"
-        elif player_type == "software_service":
-            role = "Solution Provider"
-        else:
-            role = normalize_role_label(
-                role or "Brand",
-                query=query,
-                company=name,
-                brand=name,
-            )
+        names = market_provider_type_names(analysis)
+        role = names[0] if names else normalize_role_label(role or "Brand/Marketer", query=query, company=name, brand=name)
     else:
         from vendor_intel.pipeline.role_split import normalize_role_label
 
         role = normalize_role_label(role, query=query, company=name, brand=name)
+    # What this company actually offers in THIS market, researched per role
+    # (a Manufacturer's product brand, a Service Provider's named service).
+    # Falls back to the company name when nothing was found, which is the
+    # correct answer for a company that sells only under its own name.
+    offering = str(row.get("Market Offering") or "").strip()
+    if offering.lower() in {"", "n/a", "na", "none", "unknown", "not publicly disclosed"}:
+        offering = ""
+
     meta: dict[str, Any] = {
         "company": name,
         "company_raw": name,
+        # `brand` stays the company name: plain_brand_name() derives the
+        # scoring identity from it, so changing it would re-key scoring.
         "brand": name,
+        "market_offering": offering,
         "parent": ownership,
         "parent_or_independent": ownership,
         "parent_owner": str(row.get("parent_owner") or "").strip(),
         "ownership_relation": str(row.get("ownership_relation") or "").strip(),
+        # Carried through so the display layer can suppress an
+        # "(acquired by X)" the source itself rated as weakly evidenced.
+        "ownership_confidence": str(row.get("ownership_confidence") or "").strip(),
         "founded_in": founded,
         "founded_year": founded,
         "hq_location": hq,
@@ -784,6 +1033,102 @@ def _landscape_to_brand_row(
     if year and not hq:
         meta["founded_location"] = ""
     return meta, year, role
+
+
+_SPLIT_COUNTRY_REJOIN = (
+    ("United, States", "United States"),
+    ("United, Kingdom", "United Kingdom"),
+    ("United, Arab, Emirates", "United Arab Emirates"),
+    ("New, Zealand", "New Zealand"),
+    ("South, Africa", "South Africa"),
+    ("South, Korea", "South Korea"),
+    ("Saudi, Arabia", "Saudi Arabia"),
+    ("Hong, Kong", "Hong Kong"),
+    ("Costa, Rica", "Costa Rica"),
+    ("Sri, Lanka", "Sri Lanka"),
+    ("Czech, Republic", "Czech Republic"),
+    ("Dominican, Republic", "Dominican Republic"),
+)
+
+
+_COUNTRY_NAMES = frozenset(
+    n.lower()
+    for n in (
+        "USA", "United States", "United Kingdom", "UK", "Canada", "Mexico", "Brazil",
+        "Argentina", "Chile", "Colombia", "Peru", "Costa Rica", "Dominican Republic",
+        "Germany", "France", "Spain", "Italy", "Portugal", "Netherlands", "Belgium",
+        "Switzerland", "Austria", "Sweden", "Norway", "Denmark", "Finland", "Ireland",
+        "Poland", "Czech Republic", "Hungary", "Romania", "Greece", "Turkey", "Russia",
+        "Ukraine", "China", "Japan", "South Korea", "North Korea", "India", "Pakistan",
+        "Bangladesh", "Sri Lanka", "Vietnam", "Thailand", "Indonesia", "Malaysia",
+        "Singapore", "Philippines", "Australia", "New Zealand", "South Africa", "Egypt",
+        "Nigeria", "Kenya", "Morocco", "Israel", "Saudi Arabia", "United Arab Emirates",
+        "UAE", "Qatar", "Kuwait", "Jordan", "Lebanon", "Iran", "Iraq", "Hong Kong",
+        "Taiwan", "Colombia", "Venezuela", "Ecuador", "Uruguay", "Paraguay", "Bolivia",
+        "Panama", "Guatemala", "Honduras", "El Salvador", "Nicaragua", "Cuba", "Jamaica",
+        "Croatia", "Serbia", "Slovakia", "Slovenia", "Bulgaria", "Estonia", "Latvia",
+        "Lithuania", "Iceland", "Luxembourg", "Cyprus", "Malta",
+    )
+)
+
+# US states + a handful of common non-US provinces/states that show up as the
+# last fragment when the source text never included a country at all (e.g.
+# "Indianapolis, Indiana" with no "USA"). Recognized the same way as a
+# country so the city/admin-unit split still lands on a comma correctly.
+_ADMIN_UNITS = frozenset(
+    n.lower()
+    for n in (
+        "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
+        "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",
+        "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
+        "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",
+        "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+        "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+        "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
+        "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+        "Washington", "West Virginia", "Wisconsin", "Wyoming",
+        "Ontario", "Quebec", "British Columbia", "Alberta",
+        "Victoria", "New South Wales", "Queensland", "South Australia",
+        "Western Australia", "Tasmania",
+        "Maharashtra", "Karnataka", "Tamil Nadu", "Gujarat",
+    )
+)
+_ADMIN_OR_COUNTRY = _COUNTRY_NAMES | _ADMIN_UNITS
+
+
+def _single_location(text: str) -> str:
+    """Collapse a "Found in" value down to one clean, fully-formed location.
+
+    Some scraped HQ text arrives as a run of comma-separated word fragments
+    (e.g. "Thousand, Oaks, California, USA", "Ho, Chi, Minh", "Leverkusen,
+    Germany, Bayer") instead of a proper "City, State, Country" — a
+    multi-word city name got split at every comma, sometimes with a stray
+    trailing word (a parent company, "Since", "Following") riding along.
+
+    Rejoins split multi-word country names, then finds every fragment that's
+    a recognized country or admin unit (state/province): fragments before
+    the first match are joined back into one city phrase (undoing the wrong
+    comma splits); the recognized fragments themselves stay comma-separated
+    in order ("California, USA"); anything after the last recognized
+    fragment is dropped as junk. With no recognized fragment at all, joins
+    everything into one place name instead of arbitrarily keeping just the
+    first piece.
+    """
+    s = str(text or "").strip()
+    if not s or "," not in s:
+        return s
+    for a, b in _SPLIT_COUNTRY_REJOIN:
+        s = s.replace(a, b)
+    parts = [p.strip() for p in s.split(",") if p.strip()]
+    if not parts:
+        return ""
+    recognized = [i for i, p in enumerate(parts) if p.lower() in _ADMIN_OR_COUNTRY]
+    if not recognized:
+        return " ".join(parts)
+    first, last = recognized[0], recognized[-1]
+    city = " ".join(parts[:first])
+    tail = ", ".join(parts[first : last + 1])
+    return f"{city}, {tail}" if city else tail
 
 
 def to_company_detail_rows(
@@ -830,14 +1175,22 @@ def to_company_detail_rows(
         found_in = normalize_city_country(found_in) or (
             found_in if is_city_country(found_in) else ""
         )
+        found_in = _single_location(found_in)
         x = _int_score(row.get("X Score") or row.get("X"))
         y = _int_score(row.get("Y Score") or row.get("Y"))
         overall = _int_score(row.get("Overall Score") or row.get("Overall"))
         if not overall and (x or y):
             overall = int(round((x + y) / 2.0))
+        # Brand shows WHAT the company offers in this market (its product
+        # brand, or its named service) when that was researched; otherwise the
+        # company's own name, which is the right answer for a company selling
+        # only under it. brand_display_fields' `brand` is the scoring identity
+        # (plain_brand_name) and always the company name, so it cannot be used
+        # here directly.
+        offering = str(meta.get("market_offering") or "").strip()
         out.append(
             {
-                "Brand": brand,
+                "Brand": offering or brand,
                 "Company": company_col or brand,
                 "Role": role,
                 "Quadrant": str(row.get("Quadrant") or "").strip(),
@@ -892,6 +1245,20 @@ def build_expand_quadrant_payload(
         for i, r in enumerate(chart_slice)
     }
 
+    # Parameter detail lives on the audit rows (it is produced during
+    # scoring), while the report reads detail_rows — so index it by company
+    # name once rather than scanning per brand.
+    _detail_by_company: dict[str, dict[str, Any]] = {}
+    for m in audit.get("rows") or []:
+        if not isinstance(m, dict):
+            continue
+        detail = m.get("score_detail")
+        # Same normalisation on both sides of the lookup, or the suffix that
+        # only exists on the display name breaks the match.
+        name = _detail_key(m.get("company"))
+        if name and isinstance(detail, dict) and detail:
+            _detail_by_company[name] = detail
+
     for i, row in enumerate(detail_rows):
         key = str(row.get("Brand") or row.get("Company") or "").strip().lower()
         on_chart = key in chart_keys
@@ -924,12 +1291,18 @@ def build_expand_quadrant_payload(
                 "color": brand_color(color_i),
                 "on_chart": on_chart,
                 "company_display_mode": "",
+                # Backend-only: per-parameter scores + evidence, keyed by this
+                # market's own parameter names. The HTML view model reads the
+                # scores out of here and drops the evidence.
+                "score_detail": _lookup_detail(
+                    _detail_by_company, row.get("Company"), row.get("Brand")
+                ),
             }
         )
 
     scorecard: list[dict[str, Any]] = []
-    axis_x = str(audit.get("axis_x") or "Solution Capability")
-    axis_y = str(audit.get("axis_y") or "Business Strategy")
+    axis_x = str(audit.get("axis_x") or "Product Strength")
+    axis_y = str(audit.get("axis_y") or "Business Strength")
     by_name = {
         str(m.get("company") or "").strip().lower(): m
         for m in (audit.get("rows") or [])
@@ -967,16 +1340,27 @@ def build_expand_quadrant_payload(
             "axis_labels": {"x": axis_x, "y": axis_y},
             "x_axis": list(audit.get("x_features") or []),
             "y_axis": list(audit.get("y_features") or []),
+            "x_feature_weights": list(audit.get("x_feature_weights") or []),
+            "y_feature_weights": list(audit.get("y_feature_weights") or []),
+            "question_weights": list(audit.get("question_weights") or []),
             "parameter_definitions": audit.get("parameter_definitions")
             or {"x": {}, "y": {}},
             "midpoints": {
                 "x": audit.get("quadrant_mid_x") or 50,
                 "y": audit.get("quadrant_mid_y") or 50,
             },
+            "axis_definition_method": audit.get("axis_definition_method") or "",
+            "axis_definition_reason": audit.get("axis_definition_reason") or "",
+            "overall_formula": audit.get("overall_formula") or "(X + Y) / 2",
+            "relevance": audit.get("relevance") or {},
+            "crawl": audit.get("crawl") or {},
         },
         "brands": brands,
         "scorecard": scorecard,
         "chart_brand_count": min(chart_n, len(detail_rows)),
+        # Per-market display overrides for the Strength column, carried from
+        # that market's own axes spec -- never hardcoded in the renderer.
+        "strength_fill_overrides": dict(audit.get("strength_fill_overrides") or {}),
     }
 
 

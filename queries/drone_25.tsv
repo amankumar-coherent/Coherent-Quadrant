@@ -1,0 +1,34 @@
+# Drone/UAV batch — 25 markets, run 5 at a time, INDIA only.
+# <market name><TAB><scope: which companies this market covers>
+# The scope is passed to the pipeline as MARKET_SCOPE and steers market
+# analysis + discovery, so markets sharing the "Drone ..." stem do not
+# collapse into the same cohort.
+#
+# Run with --country India. Discovery then asks for India-headquartered
+# companies in the broad rounds and sweeps the 20 states/metros in
+# geo_rotation.STATES_BY_COUNTRY once the broad question is spent.
+UAV Systems Industry Analysis	Complete UAV/drone systems, platforms and manufacturers
+Commercial Drones Industry Analysis	Commercial and industrial UAV applications
+Defense Drones Industry Analysis	Defence UAVs, military applications and homeland security
+Anti-Drone Systems Industry Analysis	Counter-UAS, anti-drone and drone detection technologies
+Drone Robotics Industry Analysis	Robotics, autonomous systems and unmanned ground systems
+Drone AI Industry Analysis	AI software, intelligent automation and autonomous decision-making
+Drone Software Industry Analysis	UAV software, application development and control platforms
+Drone Analytics Industry Analysis	Drone data processing, analytics and intelligence applications
+Drone Sensors Industry Analysis	Sensors, detection systems and onboard sensing technologies
+Drone Imaging Industry Analysis	Cameras, aerial imaging, multispectral and thermal imaging
+Drone LiDAR Industry Analysis	LiDAR, 3D mapping and precision surveying
+Drone Mapping Industry Analysis	GIS, aerial mapping, photogrammetry and remote sensing
+Drone Navigation Industry Analysis	GPS, navigation, guidance and positioning systems
+Drone Communications Industry Analysis	Wireless connectivity, communications and data links
+Drone Batteries Industry Analysis	UAV batteries, powerpacks and energy storage
+Drone Charging Industry Analysis	Charging infrastructure, power supply and battery management
+Drone Propulsion Industry Analysis	Motors, propulsion systems, propellers and drive technologies
+Drone Components Industry Analysis	Electronics, wires, connectors, semiconductors and components
+Drone Composites Industry Analysis	Carbon fibre, plastics, moulding and lightweight structures
+Drone Cybersecurity Industry Analysis	Data security, network security and UAV cybersecurity
+Drone Cloud Platforms Industry Analysis	Cloud, servers, databases and drone data infrastructure
+Drone Inspection Industry Analysis	Infrastructure, energy, industrial and facility inspection
+Drone Surveillance Industry Analysis	Monitoring, surveillance, security and intelligence
+Drone Testing Industry Analysis	Testing, validation, certification and compliance
+Drone Training Industry Analysis	Pilot training, STEM education and UAV skill development

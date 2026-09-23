@@ -36,6 +36,89 @@ NORM_FLOOR = 65.0
 NORM_CEILING = 100.0
 
 
+def normalize_cohort_to_band(
+    values: Sequence[float],
+    *,
+    floor: float = NORM_FLOOR,
+    ceiling: float = NORM_CEILING,
+) -> list[float]:
+    """Map one axis's raw scores onto [floor, ceiling], preserving ORDER.
+
+    Why this exists, and why the row-level floor scaling below is not enough:
+
+    ``normalize_row_score_floor`` scales a row so its SMALLER value lands on
+    the floor, then caps at 100. Once the cap bites, the ratio it set out to
+    preserve is gone — raw 12/38 and raw 5/20 both come out as exactly
+    65/100. So the weakest companies in a market were being shown a perfect
+    score, and 64 of 230 Silicon Carbide rows carried a 100.
+
+    Three goals conflict: land on the floor, preserve the ratio, and cap at
+    100. This keeps the floor and the cap and gives up the per-row ratio,
+    because rank order across the cohort is what a quadrant chart actually
+    reads. The weakest company sits at 65, the strongest at 100, and nobody
+    is inflated past the companies that genuinely beat them.
+
+    A cohort with no spread (every score identical) maps to the floor rather
+    than dividing by zero.
+    """
+    raw = [float(v) for v in values]
+    if not raw:
+        return []
+    lo, hi = min(raw), max(raw)
+    if hi <= lo:
+        return [floor for _ in raw]
+    span = hi - lo
+    width = ceiling - floor
+    return [floor + (v - lo) / span * width for v in raw]
+
+
+def normalize_row_score_floor(
+    x: float, y: float, *, floor: float = NORM_FLOOR, ceiling: float = NORM_CEILING
+) -> tuple[float, float]:
+    """Row-level proportional floor normalization for one company's X/Y pair.
+
+    Every row is transformed independently of every other row — there is no
+    population min/max here, deliberately, unlike normalize_scores_proportionally
+    above. A company's score never changes because of what any other company
+    scored.
+
+    Rule:
+    - If both x and y are already >= floor: unchanged.
+    - If both are below floor: scale both by the SAME factor so the ratio
+      between x and y is preserved (a company proportionally stronger on one
+      axis stays proportionally stronger after scaling). The factor is
+      `min(floor / lower, ceiling / upper)` — capped by whichever bound
+      would be hit first, so the stronger axis is never pushed past
+      `ceiling` by a much weaker partner axis (the earlier bug here: scaling
+      derived purely from the weaker axis could send the stronger axis past
+      100, and once THAT got clamped the ratio was lost anyway — e.g. a
+      raw 94.4 that happened to be the strongest score in the whole cohort
+      showing as a flat 100, indistinguishable from every other company that
+      also hit the ceiling).
+    - If only one is below floor: raise just that one to `floor`; the axis
+      that already qualified is left untouched (never scaled down).
+
+    Note this does not force EVERY axis to land at exactly `floor` or above
+    in every case: when the two raw scores are far apart, capping the
+    stronger axis at `ceiling` can still leave the weaker one under `floor`
+    (e.g. raw 61.2/36.0 -> 100.0/58.8) — the ratio is kept exact rather than
+    topping the weaker axis up the rest of the way, which would break that
+    ratio for the sake of a number that is already close to it.
+    """
+    fx, fy = float(x), float(y)
+    if fx >= floor and fy >= floor:
+        return fx, fy
+    if fx < floor and fy < floor:
+        lower = min(fx, fy)
+        upper = max(fx, fy)
+        if lower <= 0:
+            return floor, floor
+        scale = min(floor / lower, ceiling / upper)
+        return (fx * scale, fy * scale)
+    # exactly one is below floor — raise only that one
+    return (floor if fx < floor else fx, floor if fy < floor else fy)
+
+
 def normalize_scores_proportionally(
     values: Sequence[float],
     *,

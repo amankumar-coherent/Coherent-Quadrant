@@ -315,6 +315,13 @@ def test_rank_split_matches_median_split_on_distinct_values():
 
 
 def test_each_half_splits_evenly():
+    """X splits cleanly into two halves; Y is fully tied.
+
+    The Y split is NOT forced. Two companies with identical X and Y must get
+    the same quadrant — a shipped report showed four companies at X=100 Y=65
+    labelled two Leaders and two Trailblazers, which is indefensible to a
+    reader. So each X-half stays whole rather than being cut mid-tie.
+    """
     from collections import Counter
 
     from vendor_intel.quadrant.rating_map import assign_quadrants_half_median
@@ -323,12 +330,24 @@ def test_each_half_splits_evenly():
     innovs = [40] * 100                      # every Y identical — the hardest case
     quads, _, _ = assign_quadrants_half_median(execs, innovs)
     c = Counter(quads)
-    assert c["Challengers"] == c["Emerging Players"] == 25
-    assert c["Leaders"] == c["Trailblazers"] == 25
+    # The X split still works: 50 on the low side, 50 on the high side.
+    assert c["Challengers"] + c["Emerging Players"] == 50
+    assert c["Leaders"] + c["Trailblazers"] == 50
+    # And equal scores stayed together.
+    seen = {}
+    for x, y, q in zip(execs, innovs, quads):
+        assert seen.setdefault((x, y), q) == q
 
 
-def test_all_scores_tied_still_fills_four_quadrants():
-    """Wearable-style score_floor collapse: every brand at the same X/Y."""
+def test_all_scores_tied_land_in_one_quadrant():
+    """Wearable-style score_floor collapse: every brand at the same X/Y.
+
+    This used to spread the cohort across all four cells so the chart never
+    looked empty. That is a fabricated distinction: if 174 companies scored
+    identically, the scores do not support ranking them into quarters, and
+    two identical rows carrying different labels is worse than one honest
+    quadrant.
+    """
     from collections import Counter
 
     from vendor_intel.quadrant.rating_map import assign_quadrants_half_median
@@ -338,8 +357,5 @@ def test_all_scores_tied_still_fills_four_quadrants():
     innovs = [52] * n
     quads, _, _ = assign_quadrants_half_median(execs, innovs)
     c = Counter(quads)
-    for cell in ("Leaders", "Trailblazers", "Challengers", "Emerging Players"):
-        assert c[cell] > 0, f"{cell} empty: {dict(c)}"
-    # ~equal quarters (odd n → right/high sides get +1)
-    assert min(c.values()) >= n // 4 - 1
-    assert max(c.values()) <= n // 4 + 1
+    assert len(c) == 1, f"a fully tied cohort must not be split: {dict(c)}"
+    assert sum(c.values()) == n, "every company is still placed"

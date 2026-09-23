@@ -257,6 +257,34 @@ class Settings(BaseSettings):
     google_ai_scraper_timeout: float = Field(
         default=120.0, validation_alias="GOOGLE_AI_SCRAPER_TIMEOUT"
     )
+    # Google AI Mode (udm=50) is the generative backend for the expand
+    # discovery steps, on by default and with no API fallback. Tests force it
+    # off via the autouse fixture in tests/conftest.py.
+    google_ai_mode_enabled: bool = Field(
+        default=True, validation_alias="GOOGLE_AI_MODE_ENABLED"
+    )
+    google_ai_mode_headless: bool = Field(
+        default=False, validation_alias="GOOGLE_AI_MODE_HEADLESS"
+    )
+    google_ai_mode_browser: str = Field(
+        default="chrome", validation_alias="GOOGLE_AI_MODE_BROWSER"
+    )
+    google_ai_mode_query_delay: float = Field(
+        default=10.0, validation_alias="GOOGLE_AI_MODE_QUERY_DELAY"
+    )
+    google_ai_mode_profile_dir: str = Field(
+        default="data/ai_mode_chrome_profile",
+        validation_alias="GOOGLE_AI_MODE_PROFILE_DIR",
+    )
+    google_ai_mode_extensions: str = Field(
+        default="", validation_alias="GOOGLE_AI_MODE_EXTENSIONS"
+    )
+    # Only bundled Chromium reliably honours --load-extension; real Chrome
+    # ignores it under enterprise policy. Staging an extension switches to
+    # Chromium by default rather than silently loading nothing.
+    google_ai_mode_force_chromium: bool = Field(
+        default=True, validation_alias="GOOGLE_AI_MODE_FORCE_CHROMIUM"
+    )
     fact_enrich_llm: bool = Field(default=True, validation_alias="FACT_ENRICH_LLM")
     pipeline_strict_geo: bool = Field(
         default=True, validation_alias="PIPELINE_STRICT_GEO"

@@ -24,7 +24,7 @@ from typing import Any
 
 
 def channel_purity_enabled() -> bool:
-    raw = (os.getenv("CHANNEL_PURITY_FILTER") or "true").strip().lower()
+    raw = (os.getenv("CHANNEL_PURITY_FILTER") or "false").strip().lower()
     return raw in ("1", "true", "yes", "on")
 
 
@@ -76,111 +76,19 @@ NAME_CHANNEL_RE = re.compile(
     re.I,
 )
 
-OEM_BLOCKLISTS: dict[str, set[str]] = {
-    "renewable": {
-        "sungrow", "sungrow power supply", "huawei", "huawei fusionsolar",
-        "huawei technologies", "growatt", "growatt new energy", "delta electronics",
-        "abb", "siemens", "siemens energy", "siemens gamesa", "general electric",
-        "ge vernova", "mitsubishi electric", "toshiba", "panasonic", "lg electronics",
-        "lg energy solution", "byd", "rec group", "solaria", "silfab solar",
-        "q cells", "hanwha q cells", "hanwha corporation", "first solar",
-        "jinko solar", "jinkosolar", "trina solar", "trinasolar", "canadian solar",
-        "longi", "longi solar", "ja solar", "enphase", "enphase energy",
-        "solaredge", "solaredge technologies", "tesla", "vestas", "nordex",
-        "goldwind", "mingyang", "schneider electric", "eaton", "sma",
-        "sma solar technology ag", "fronius", "fronius international", "goodwe",
-        "catl", "samsung sdi", "orsted", "iberdrola", "nextera energy",
-        "nextera energy resources", "enel", "enel green power", "engie",
-        "edf renewables", "shell", "totalenergies", "equinor", "rwe",
-        "rwe renewables", "acciona energy", "mission solar energy", "risen energy",
-        "talesun solar", "yingli solar", "sunpower corporation", "vikram solar",
-        "renewsys india", "kyocera corporation", "chint new energy", "tongwei solar",
-        "waaree energies", "suzlon energy", "victron energy",
-    },
-    "firewall": {
-        "palo alto networks", "fortinet", "cisco", "check point", "checkpoint",
-        "sophos", "juniper", "juniper networks", "forcepoint", "zscaler",
-        "crowdstrike", "sonicwall", "watchguard", "barracuda", "f5", "f5 networks",
-        "aruba", "hp aruba", "huawei", "sangfor", "hillstone",
-    },
-    "smartwatch": {
-        "apple", "samsung", "garmin", "fitbit", "google", "huawei", "xiaomi",
-        "amazfit", "huami", "withings", "fossil", "tag heuer", "polar",
-        "suunto", "oppo", "oneplus", "honor",
-    },
-    "avocado": {
-        "unilever", "cargill", "adm", "bunge", "nestle", "procter gamble",
-    },
-    "green": {
-        "basf", "dow", "dupont", "sabic", "lyondellbasell", "exxonmobil",
-        "shell chemicals", "ineos", "covestro", "evonik",
-    },
-    # Electrical distribution / switchgear / wiring-device OEMs (not channel partners)
-    "electrical": {
-        "abb", "siemens", "schneider electric", "eaton", "legrand", "hager",
-        "hager group", "mitsubishi electric", "panasonic", "toshiba", "hitachi",
-        "fuji electric", "hyundai electric", "hyundai electric energy systems",
-        "ls electric", "ls industrial systems", "hubbell", "phoenix contact",
-        "rockwell automation", "rockwell", "honeywell", "omron", "yaskawa",
-        "danfoss", "emerson", "weg", "zest weg", "nvent", "littelfuse",
-        "leviton", "chint", "delixi", "havells", "bajaj electricals",
-        "polycab", "finolex", "finolex cables", "crompton", "crompton greaves",
-        "elsewedy", "elsewedy electric", "sterlite", "sterlite power",
-        "c s electric", "c&s electric", "philips", "signify", "osram",
-        "samsung", "samsung c t", "samsung cnt", "general electric",
-        "square d", "molex", "te connectivity", "fluke", "ideal industries",
-        "nvc lighting", "v guard", "keil", "terasaki", "lovato", "noark",
-        "alfanar", "hyosung",
-    },
-    "general": set(),
-}
+# No per-industry OEM brand blocklists: lists for renewable / firewall /
+# electrical brands were applied to EVERY "general" market, dropping e.g.
+# Siemens or Samsung rows from unrelated markets. OEM-vs-channel is decided by
+# the heuristics below and the LLM check, using the market itself.
+OEM_BLOCKLISTS: dict[str, set[str]] = {"general": set()}
 
 CHANNEL_ROLE_HINTS: dict[str, str] = {
-    "renewable": (
-        "distributors, wholesalers, dealers, importers, EPCs/system integrators, "
-        "authorized channel partners for solar/wind/storage equipment "
-        "(NOT module/inverter/turbine OEMs, NOT utilities/IPPs/developers as primary)"
-    ),
-    "firewall": (
-        "distributors, VADs, resellers, MSSPs, system integrators, channel partners "
-        "for firewalls / network security (NOT the OEM vendors themselves)"
-    ),
-    "smartwatch": (
-        "distributors, wholesalers, electronics retailers, channel partners for "
-        "smartwatches / wearables (NOT Apple/Samsung/Garmin as OEMs)"
-    ),
-    "avocado": (
-        "distributors, wholesalers, importers, specialty oil suppliers, grocery/retail "
-        "chains, foodservice suppliers of avocado oil / edible oils"
-    ),
-    "green": (
-        "specialty chemical distributors / ingredients distributors for green / "
-        "bio-based chemicals (NOT pure petrochem manufacturers)"
-    ),
-    "electrical": (
-        "independent electrical wholesalers, distributors, dealers, VADs, importers, "
-        "and authorized channel partners for electrical distribution equipment "
-        "(NOT OEMs/manufacturers such as ABB/Siemens/Schneider/Eaton/Legrand/Hager "
-        "and NOT OEM country sales subsidiaries labeled 'as distributor')"
-    ),
     "general": (
         "distributors, wholesalers, channel partners, VADs, resellers, dealers, "
         "system integrators relevant to the market (NOT pure OEMs/manufacturers)"
     ),
 }
 
-# Templated LLM invents: "Electrical Wholesale (Cameroon)" + electricalwholesale.cm
-_TEMPLATED_GENERIC_NAME = re.compile(
-    r"^(?:electrical|electro)\s+(?:wholesale|distributors?)\b",
-    re.I,
-)
-_FAKE_GENERIC_HOST = re.compile(
-    r"(?:^|\.)(?:electricalwholesale|electrowholesale)"
-    r"\.(?:cm|ma|zw|tz|et|ng|gh|co\.zw|co\.tz|co\.nz|com\.ng|com\.et|com\.au)$"
-    r"|(?:^|\.)electricaldistributors?(?:et|gh|ng|zw|tz|cm|ma)?\."
-    r"(?:com|cm|ma|zw|tz|et|ng|gh|co\.zw|co\.tz|co\.nz|com\.ng|com\.et)$",
-    re.I,
-)
 _AS_DISTRIBUTOR_RE = re.compile(
     r"\((?:as\s+distributor|as\s+separate\s+entity)\)|\bas\s+distributor\b|\bas\s+separate\s+entity\b",
     re.I,
@@ -223,32 +131,6 @@ def _website_host(website: str) -> str:
     return w
 
 
-def _is_fake_templated_channel(name: str, website: str = "") -> bool:
-    """Drop LLM-invented 'Electrical Wholesale (Cameroon)' + fake TLD domains."""
-    n = str(name or "").strip()
-    if not _TEMPLATED_GENERIC_NAME.match(n):
-        return False
-    host = _website_host(website)
-    # Country-parenthetical + generated-looking host → fake
-    has_country_paren = bool(re.search(r"\([^)]+\)\s*$", n))
-    if has_country_paren and host and _FAKE_GENERIC_HOST.search(host):
-        return True
-    if has_country_paren and not host:
-        return True
-    # Non-paren generic with African / invented host
-    if host and _FAKE_GENERIC_HOST.search(host):
-        # Allow the known US firm electricalwholesale.com (no country paren)
-        if host in {"electricalwholesale.com"} and not has_country_paren:
-            return False
-        if has_country_paren or host != "electricalwholesale.com":
-            # country clones always fake; bare name with .cm/.ma etc fake
-            if has_country_paren or re.search(
-                r"\.(cm|ma|zw|tz|et|ng|gh|co\.zw|co\.tz|com\.ng)$", host
-            ):
-                return True
-    return False
-
-
 def _is_oem_as_distributor_label(name: str) -> bool:
     """Names like 'Legrand South Africa (as distributor)' are OEM arms, not channel."""
     return bool(_AS_DISTRIBUTOR_RE.search(str(name or "")))
@@ -258,15 +140,7 @@ def _is_blocked_oem(name: str, family: str) -> bool:
     key = _clean_company_key(name)
     if not key:
         return False
-    block: set[str] = set()
-    block |= OEM_BLOCKLISTS.get(family, set())
-    block |= OEM_BLOCKLISTS.get("general", set())
-    if family == "general":
-        block |= OEM_BLOCKLISTS.get("renewable", set())
-        block |= OEM_BLOCKLISTS.get("firewall", set())
-        block |= OEM_BLOCKLISTS.get("electrical", set())
-    if family == "electrical":
-        block |= OEM_BLOCKLISTS.get("renewable", set())  # overlap ABB/Siemens/etc.
+    block: set[str] = set(OEM_BLOCKLISTS.get("general", set()))
     if key in block:
         return True
     for m in sorted(block, key=len, reverse=True):
@@ -321,9 +195,6 @@ def classify_channel_purity(
     name = (name or "").strip()
     if not name:
         return PurityVerdict(False, "empty_name", "drop_unclear")
-
-    if _is_fake_templated_channel(name, website):
-        return PurityVerdict(False, "fake_templated_channel", "drop_unrelated")
 
     if _is_blocked_oem(name, family):
         return PurityVerdict(False, "known_oem_blocklist", "drop_oem")
@@ -423,29 +294,10 @@ def _row_fields(row: dict[str, Any]) -> dict[str, str]:
     }
 
 
-def _resolve_family(family: str, query: str) -> str:
-    family = (family or "general").strip().lower() or "general"
-    q = (query or "").lower()
-    if family == "general" and any(
-        t in q for t in ("renewable", "solar", "wind energy", "photovoltaic", "energy storage")
-    ):
-        return "renewable"
-    if family == "general" and any(
-        t in q
-        for t in (
-            "electrical distribution",
-            "electrical wholesale",
-            "electrical distributor",
-            "switchgear",
-            "wiring device",
-            "lv switchgear",
-            "mcb market",
-        )
-    ):
-        return "electrical"
-    if family == "general" and "electrical" in q and "distribut" in q:
-        return "electrical"
-    return family
+def _resolve_family(family: str, query: str) -> str:  # noqa: ARG001
+    """The caller's family, or "general" -- never guessed from market-name
+    keywords ("solar" -> renewable, "switchgear" -> electrical)."""
+    return (family or "general").strip().lower() or "general"
 
 
 def purity_role_hint(family: str) -> str:
@@ -519,9 +371,12 @@ def llm_classify_channel_batch(
         }
         for it in items
     ]
+    # Static, verbatim, identical for every market/call — the cacheable prefix.
+    # Market/roles are per-call and go in `user` instead, so this system
+    # string never varies and DeepSeek's disk cache can match it call after
+    # call (cache-hit tokens cost ~30x less than cache-miss tokens).
     system = (
         "You are a strict channel-partner analyst. "
-        f"Market: {query or family}. Valid KEEP roles: {roles}. "
         "KEEP only if the company's PRIMARY business is distribution / wholesale / "
         "dealer / reseller / VAD / importer / system integrator / authorized channel partner. "
         "DROP (keep=false) if PRIMARY business is OEM/manufacturer of the core product, "
@@ -536,9 +391,20 @@ def llm_classify_channel_batch(
         '"label":"keep|drop_oem|drop_utility|drop_unclear|drop_unrelated","reason":"short"}]}'
     )
     user = (
+        f"Market: {query or family}. Valid KEEP roles: {roles}.\n"
         f"Classify each company for channel-partner purity.\n"
         f"Companies:\n{json.dumps(payload, ensure_ascii=False)}"
     )
+    def _track(resp: Any) -> None:
+        if not (model and "deepseek" in model.lower()):
+            return  # this client is pointed at real OpenAI, not DeepSeek — don't log it there
+        try:
+            from vendor_intel.pipeline.deepseek_tracker import log_completion
+
+            log_completion(resp, caller="channel_purity.py:llm_classify_channel_batch", model=model)
+        except Exception:
+            pass
+
     content = ""
     try:
         resp = client.chat.completions.create(
@@ -551,6 +417,7 @@ def llm_classify_channel_batch(
             response_format={"type": "json_object"},
             max_tokens=3500,
         )
+        _track(resp)
         content = (resp.choices[0].message.content or "").strip()
     except Exception:
         try:
@@ -563,6 +430,7 @@ def llm_classify_channel_batch(
                 ],
                 max_tokens=3500,
             )
+            _track(resp)
             content = (resp.choices[0].message.content or "").strip()
         except Exception as exc2:  # noqa: BLE001
             print(

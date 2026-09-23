@@ -12,10 +12,13 @@ Steps:
 """
 from __future__ import annotations
 
+import asyncio
+import datetime
 import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -70,16 +73,10 @@ def _seed_candidates(
 
 _JSON_FENCE = re.compile(r"```(?:json)?\s*([\s\S]*?)```", re.I)
 
+# One market-neutral hint per mode. Per-industry hints (avocado, firewall,
+# smartwatch, green, renewable) were selected by keyword-matching the market
+# name, so any new market sharing a word got the wrong industry's wording.
 ROLE_HINTS = {
-    "avocado": "distributors, wholesalers, importers, specialty oil suppliers, grocery/retail chains, foodservice suppliers of avocado oil / edible oils",
-    "firewall": "distributors, VADs, resellers, MSSPs, system integrators, channel partners for firewalls / network security (NOT the OEM vendors themselves)",
-    "smartwatch": "distributors, wholesalers, electronics retailers, channel partners for smartwatches / wearables (NOT Apple/Samsung/Garmin as OEMs)",
-    "green": "specialty chemical distributors / ingredients distributors for green / bio-based chemicals (NOT pure petrochem manufacturers)",
-    "renewable": (
-        "distributors, wholesalers, dealers, importers, EPCs/system integrators, "
-        "authorized channel partners for solar/wind/storage "
-        "(NOT module/inverter/turbine OEMs; NOT utilities/IPPs/developers as primary)"
-    ),
     "general": (
         "distributors, wholesalers, channel partners, VADs, resellers, dealers, "
         "system integrators relevant to the market "
@@ -88,13 +85,6 @@ ROLE_HINTS = {
 }
 
 LANDSCAPE_ROLE_HINTS = {
-    "avocado": (
-        "brand owners, marketers, producers, and commercial sellers of avocado oil / edible oils "
-        "(NOT media, associations, or geo-junk names)"
-    ),
-    "smartwatch": (
-        "wearable / medical device manufacturers, brand owners, and solution providers"
-    ),
     "general": (
         "manufacturers, brand owners, marketers, and solution providers that sell into this market "
         "(NOT media, associations, consultancies, or invented geo-junk names)"
@@ -119,52 +109,254 @@ def landscape_mode() -> bool:
 
 
 def player_mode(query: str, family: str = "") -> str:
-    """Tech markets → solution_provider; all other markets → consumer_brand (brand/marketer)."""
-    fam = (family or "").lower()
-    if fam in {"firewall", "smartwatch"}:
-        return "solution_provider"
+    """Tech markets → solution_provider; all other markets → consumer_brand (brand/marketer).
+
+    Decided per market by company_display_mode's own classification, never
+    by keywords in the market name.
+    """
     try:
         from vendor_intel.quadrant.brand_meta import company_display_mode
 
         return company_display_mode(query or "")
     except Exception:
-        q = (query or "").lower()
-        if any(
-            t in q
-            for t in (
-                "semiconductor",
-                "wearable",
-                "medical device",
-                "software",
-                "saas",
-                "cyber",
-                "firewall",
-                "ict",
-            )
-        ):
-            return "solution_provider"
+        # company_display_mode already fails open to "consumer_brand" on its
+        # own LLM/classification errors — reaching here means something
+        # unrelated broke (e.g. an import error), so fall back to the same
+        # safe default rather than a hardware/software-style keyword guess.
         return "consumer_brand"
 
 
 def player_label(query: str, family: str = "") -> str:
+    """The single player type this market's landscape is built from.
+
+    Comes from Step 0c's market analysis when it has run, so the verify
+    passes require the SAME role that discovery searched for. Without this
+    a B2B market whose primary role is e.g. "Substrate and Epitaxial Wafer
+    Manufacturer" was verified against a hardcoded "Solution Provider" and
+    rejected almost every real company (measured: 2 kept out of 24).
+
+    Falls back to the old tech-vs-consumer binary only before Step 0c has
+    run, or for callers outside the expand pipeline.
+    """
+    cats = _discovery_categories()
+    if cats:
+        return cats[0]
+    if _DISCOVERY_MARKET.get("market_type") == "B2C":
+        return "Brand / Marketer"
     if player_mode(query, family) == "solution_provider":
         return "Solution Provider"
     return "Brand / Marketer"
 
 
+
+# Set once by Step 0c (market analysis) before discovery runs, so the
+# discovery prompts below can ask for the company types that actually exist
+# in THIS market. Empty until Step 0c has run; the wording then falls back to
+# the pre-existing generic behaviour.
+_DISCOVERY_MARKET: dict[str, Any] = {"market_type": "", "categories": []}
+
+
+def publish_discovery_market(market_analysis: dict[str, Any]) -> list[str]:
+    """Publish a Step 0c result (B2B/B2C + participant roles) to the discovery
+    prompt builders and return the role list, primary role first.
+
+    Shared by the main run and by the discover -> verify top-up rounds, so a
+    top-up batch asks for exactly the same company type as the first batch.
+    """
+    provider_categories = [
+        str(p.get("type") or "").strip()
+        for p in (market_analysis.get("market_participants") or [])
+        if str(p.get("type") or "").strip()
+    ]
+    # The LLM named which role the landscape is built from, so it leads.
+    primary = str(market_analysis.get("primary_participant") or "").strip()
+    if primary:
+        provider_categories = [primary] + [
+            c for c in provider_categories if c.lower() != primary.lower()
+        ]
+    set_discovery_market(market_analysis.get("market_type") or "", provider_categories)
+    return provider_categories
+
+
+def set_discovery_market(market_type: str, categories: list[str]) -> None:
+    """Publish Step 0c's result to the discovery prompt builders.
+
+    A landscape compares like with like, so the whole pipeline targets ONE
+    player type per market. Stage 1 returns every participant category it can
+    see (for Silicon Carbide: wafer manufacturer, IDM, foundry, fabless
+    designer, materials refiner), but searching for all of them at once finds
+    companies that are then rejected by a verify pass demanding a different
+    role — measured live: 2 kept out of 24.
+
+    So the PRIMARY category is selected here and used everywhere: discovery
+    asks for it, verify requires it, and the Role column shows it. The full
+    list is kept for reference/audit only.
+    """
+    cats = [str(c).strip() for c in categories if str(c).strip()]
+    # Normalise rather than upper-case: "Hybrid B2B + B2C" is a real value
+    # and .upper() would turn it into a string nothing matches.
+    _DISCOVERY_MARKET["market_type"] = (
+        _canonical_market_type(market_type) if str(market_type or "").strip() else ""
+    )
+    _DISCOVERY_MARKET["all_categories"] = cats
+    # Stage 1 lists categories in order of centrality to the market, so the
+    # first is the primary one. Buyer/channel roles are skipped: a hospital
+    # or an end-user industry buys in this market, it does not compete in it.
+    _DISCOVERY_MARKET["categories"] = [_primary_category(cats)] if cats else []
+
+
+# The ONLY player types a landscape may use. Every company in a market gets
+# the same one, so buyers compare like with like. "Contract Manufacturer" is
+# never permitted.
+HYBRID_MARKET_TYPE = "Hybrid B2B + B2C"
+
+ALLOWED_PLAYER_TYPES = (
+    "Brand / Marketer",  # B2C
+    "Manufacturer",  # B2B physical product
+    "Solution Provider",  # B2B technology / platform
+    "Service Provider",  # B2B service
+)
+
+_PLAYER_TYPE_ALIASES = {
+    "brand": "Brand / Marketer",
+    "marketer": "Brand / Marketer",
+    "brand/marketer": "Brand / Marketer",
+    "brand and marketer": "Brand / Marketer",
+    "consumer brand": "Brand / Marketer",
+    "solution developer": "Solution Provider",
+    "technology provider": "Solution Provider",
+    "platform provider": "Solution Provider",
+    "software provider": "Solution Provider",
+    "system integrator": "Solution Provider",
+    "integrator": "Solution Provider",
+    "oem": "Manufacturer",
+    "producer": "Manufacturer",
+    "supplier": "Manufacturer",
+}
+
+
+def canonical_player_type(raw: str, *, market_type: str = "") -> str:
+    """Force any role label onto the four allowed player types.
+
+    The prompt asks for one of four strings, but a prompt is a request, not a
+    guarantee — Stage 1 has returned market-specific phrases like "Silicon
+    Carbide Substrate Manufacturer". Those are mapped onto the conventional
+    label that is shown in every row of the Role column.
+
+    "Contract Manufacturer" is explicitly collapsed to "Manufacturer": it is
+    never allowed to appear as a player type.
+    """
+    text = re.sub(r"\s+", " ", str(raw or "")).strip()
+    if not text:
+        return "Brand / Marketer" if str(market_type).upper() == "B2C" else "Manufacturer"
+    low = text.lower()
+
+    for allowed in ALLOWED_PLAYER_TYPES:
+        if low == allowed.lower():
+            return allowed
+    if low in _PLAYER_TYPE_ALIASES:
+        return _PLAYER_TYPE_ALIASES[low]
+
+    # Market-specific phrasing: classify by the words it contains. Order
+    # matters — "…Solutions Manufacturer" is a manufacturer.
+    if "manufactur" in low or "producer" in low or "refiner" in low or "fabricat" in low:
+        return "Manufacturer"
+    if any(w in low for w in ("platform", "software", "technology", "saas", "api", "solution")):
+        return "Solution Provider"
+    if "service" in low or "consult" in low or "engineering" in low:
+        return "Service Provider"
+    if any(w in low for w in ("brand", "marketer")):
+        return "Brand / Marketer"
+    return "Brand / Marketer" if str(market_type).upper() == "B2C" else "Manufacturer"
+
+
+_BUYER_OR_CHANNEL_HINTS = (
+    "healthcare provider",
+    "clinic",
+    "hospital",
+    "pharmacy",
+    "end-user",
+    "end user",
+    "reseller",
+    "retailer",
+)
+
+
+def _primary_category(categories: list[str]) -> str:
+    """The single player type this market's landscape is built from.
+
+    Prefers the first category that is a genuine market participant rather
+    than a buyer or a pure channel — Stage 1 sometimes lists "Clinic /
+    Hospital" or "End-User Industry", which are who the market sells TO.
+    """
+    for cat in categories:
+        low = cat.lower()
+        if not any(h in low for h in _BUYER_OR_CHANNEL_HINTS):
+            return cat
+    return categories[0]
+
+
+def discovery_all_categories() -> list[str]:
+    """Every category Stage 1 found, for audit/reporting (not for targeting)."""
+    return list(_DISCOVERY_MARKET.get("all_categories") or [])
+
+
+def _discovery_categories() -> list[str]:
+    return list(_DISCOVERY_MARKET.get("categories") or [])
+
+
+def _is_b2b_market() -> bool:
+    """True for B2B and for Hybrid B2B + B2C.
+
+    A hybrid market has a real business side, so its own participant
+    categories are meaningful and discovery should target them rather than
+    falling back to the consumer-brand wording.
+    """
+    return _DISCOVERY_MARKET.get("market_type") in ("B2B", HYBRID_MARKET_TYPE)
+
+
 def _roles_for(family: str, query: str = "") -> str:
     if landscape_mode():
+        cats = _discovery_categories()
+        if _is_b2b_market() and cats:
+            # This market's own participant roles, from Stage 1 — not a fixed
+            # hardware/software or tech/brand binary.
+            return (
+                "Roles that matter in THIS market: "
+                + ", ".join(cats)
+                + ". A company may legitimately hold more than one of these."
+            )
+        if _DISCOVERY_MARKET.get("market_type") == "B2C":
+            return BRAND_ROLE_HINT
         return TECH_ROLE_HINT if player_mode(query, family) == "solution_provider" else BRAND_ROLE_HINT
     return ROLE_HINTS.get(family, ROLE_HINTS["general"])
 
 
 def _landscape_list_nouns(query: str, family: str) -> str:
+    cats = _discovery_categories()
+    if _is_b2b_market() and cats:
+        return "REAL companies acting as " + " / ".join(cats)
+    if _DISCOVERY_MARKET.get("market_type") == "B2C":
+        return "REAL brands and marketers"
     if player_mode(query, family) == "solution_provider":
         return "REAL solution providers / technology vendors"
     return "REAL brands and marketers"
 
 
 def _landscape_keep_line(query: str, family: str) -> str:
+    cats = _discovery_categories()
+    if _is_b2b_market() and cats:
+        return (
+            "KEEP companies whose PRIMARY business makes them one of: "
+            + ", ".join(cats)
+            + ". DROP consultancies, market-research firms, media, associations, "
+            "pure holding companies, and geo-junk names."
+        )
+    if _DISCOVERY_MARKET.get("market_type") == "B2C":
+        return (
+            "KEEP brands and marketers of products in this market. "
+            "DROP pure retailers (unless private-label in this market), media, associations, and geo-junk names."
+        )
     if player_mode(query, family) == "solution_provider":
         return (
             "KEEP solution providers that build the product or platform. "
@@ -233,113 +425,52 @@ _ALWAYS_DROP_ROLES = frozenset(
 
 
 def verify_criteria_prompt(query: str, family: str = "") -> str:
-    """Strict Step-4 / Step-6 verifier instructions for DeepSeek."""
-    expected = player_label(query, family)
-    if player_mode(query, family) == "solution_provider":
-        q = (query or "").lower()
-        semi = any(
-            t in q
-            for t in (
-                "semiconductor",
-                "wafer",
-                "foundry",
-                "microelectronics",
-                "chip",
-            )
-        )
-        if semi:
-            return (
-                "You are a strict semiconductor-market verifier. Decide KEEP or DROP.\n"
-                f"Market: {query}\n"
-                "KEEP only companies whose business IS semiconductors: IDM, fabless chip "
-                "designers, foundries, OSAT (assembly/test), wafer/materials suppliers, "
-                "semiconductor manufacturing equipment / ATE, EDA or semiconductor IP "
-                "(Arm, Cadence, Synopsys), or semiconductor design houses.\n"
-                "DROP: unified communications / VoIP (e.g. Mitel), industrial motors "
-                "(e.g. WEG), aircraft OEMs (e.g. Embraer), PC/phone OEMs that only "
-                "assemble systems (e.g. Positivo), EMS/PCBA (e.g. Nortech), optical "
-                "networking systems OEMs (e.g. Ciena), freight/logistics, defense system "
-                "integrators, industrial automation instruments, pure conglomerates "
-                "(Siemens AG — keep Siemens EDA separately if listed), government R&D "
-                "labs / research institutes without commercial chips, and fake "
-                "placeholders like 'Algeria Semiconductor' or 'Ethiopia Semiconductor'.\n"
-                "DROP regional sales arms when the parent is the real vendor "
-                "(Intel India, Skyworks Mexico). DROP acquired shells "
-                "(Xilinx now AMD, Cypress now Infineon) when the parent is listed.\n"
-                "If they do not design, fab, package, equip, or sell semiconductor "
-                "devices/IP/tools, DROP.\n"
-                f"Expected role label: {expected}."
-            )
-        return (
-            "You are a strict market-landscape verifier. Decide KEEP or DROP for each company.\n"
-            f"Market: {query}\n"
-            f"Required type: Solution Provider — companies that BUILD the product, "
-            "platform, chip, or device (design, manufacture, or sell their own technology).\n"
-            "KEEP: OEMs, chipmakers, foundries, device makers, platform/software vendors "
-            "whose product IS this market.\n"
-            "DROP: pure resellers, distributors, retailers, hospitals/clinics that only use "
-            "the product, system integrators that do not build it, media, research firms, "
-            "associations, consultancies, governments, country/city/geo labels, market-report "
-            "publishers, and any company not in this market.\n"
-            "If you are not sure they BUILD the technology, DROP.\n"
-            f"Expected role label: {expected}."
-        )
-    q = (query or "").lower()
-    if any(t in q for t in ("glp-1", "glp1", "receptor agonist", "obesity drug", "diabetes drug")):
-        return (
-            "You are a strict GLP-1 / metabolic drug market verifier. Decide KEEP or DROP.\n"
-            f"Market: {query}\n"
-            "Required type: Brand / Marketer — companies that OWN, DEVELOP, or MARKET "
-            "GLP-1 receptor agonist drugs / incretin therapies (e.g. semaglutide, "
-            "tirzepatide, liraglutide, dulaglutide) under their own pharmaceutical brand.\n"
-            "KEEP: originator pharma / biotech with GLP-1 or dual/triple agonist products "
-            "or late-stage pipelines (examples: Novo Nordisk, Eli Lilly, Amgen, Pfizer, "
-            "AstraZeneca, Sanofi, Boehringer Ingelheim, Zealand Pharma, Structure "
-            "Therapeutics, Viking Therapeutics, Altimmune, Innovent when GLP-1 relevant).\n"
-            "DROP: retail pharmacies (CVS, Walgreens, Rite Aid), grocery pharmacies "
-            "(Kroger, Publix, Hy-Vee), wholesalers/distributors (McKesson, Cencora, "
-            "Cardinal Health, Phoenix, Noweda, Alliance Healthcare), PBMs (Express "
-            "Scripts, Optum), Amazon Pharmacy, hospital chains, compounding clinics, "
-            "media, associations, and any company that only dispenses or distributes "
-            "GLP-1 drugs without owning the brand.\n"
-            "If they do not OWN or MARKET a GLP-1 brand/pipeline asset, DROP.\n"
-            f"Expected role label: {expected}."
-        )
-    if "packaging" in q:
-        return (
-            "You are a strict market-landscape verifier. Decide KEEP or DROP for each company.\n"
-            f"Market: {query}\n"
-            "Required type: Brand OR Marketer (pick exactly one — never write both).\n"
-            "Brand = manufactures/converts flexible packaging or packaging films under its "
-            "own company brand (examples: Amcor, Constantia, Uflex, Cosmo Films, ProAmpac).\n"
-            "Marketer = markets a packaging film/resin brand mainly as a specialty materials "
-            "or regional sales arm without being the primary converter "
-            "(examples: Honeywell Aclar, Kuraray EVAL, Mitsubishi Chemical packaging films).\n"
-            "KEEP: packaging converters, film producers, flexible packaging OEMs.\n"
-            "DROP: food/beverage/CPG brands that only BUY packaging (PepsiCo, Nestlé, "
-            "Unilever, Bimbo), retailers (Aldi, Lidl, Walmart), commodity resin/"
-            "petrochemical feedstock producers (ExxonMobil, Dow, SABIC) unless they "
-            "clearly sell finished packaging films under their own packaging brand, "
-            "media, associations, research firms, consultancies, geo labels.\n"
-            "If they do not MAKE or SELL packaging products, DROP.\n"
-            "In JSON role field return exactly \"Brand\" or \"Marketer\".\n"
-            f"Expected role family: {expected}."
-        )
-    return (
-        "You are a strict market-landscape verifier. Decide KEEP or DROP for each company.\n"
-        f"Market: {query}\n"
-        f"Required type: Brand / Marketer — companies that OWN or MARKET the product "
-        "(brand owner, CPG, pharma brand, energy producer/marketer).\n"
-        "KEEP: companies whose brand is sold in this market, or who manufacture and market "
-        "the product under their name.\n"
-        "DROP: pure retailers (unless they own a private-label brand in this market), "
-        "pure distributors/wholesalers/logistics, media, associations, research firms, "
-        "consultancies, governments, country/city/geo labels, and any company that does "
-        "not own or market a product in this market.\n"
-        "If you are not sure they OWN or MARKET the product, DROP.\n"
-        f"Expected role label: {expected}."
-    )
+    """Strict Step-4 / Step-6 verifier instructions.
 
+    Fully market-driven: the required company type comes from THIS market's
+    own Stage 1 analysis (B2B/B2C plus dynamically generated participant
+    categories), so one template serves any market without a per-market
+    branch. Earlier versions short-circuited to hand-written prompts for
+    semiconductor / GLP-1 / packaging, which cannot scale beyond those few
+    demo markets and silently ignored the market analysis.
+    """
+    cats = _discovery_categories()
+    if _is_b2b_market() and cats:
+        required = " OR ".join(cats)
+        keep_line = (
+            "KEEP: companies whose PRIMARY business in this market makes them "
+            f"one of: {required}."
+        )
+        role_line = "In the JSON role field return exactly one of: " + ", ".join(cats) + "."
+    else:
+        required = player_label(query, family)
+        keep_line = (
+            "KEEP: companies whose brand is sold in this market, or who "
+            "manufacture and market the product under their own name."
+        )
+        role_line = f"Expected role label: {required}."
+    return (
+        "You are a strict market-landscape verifier. Decide KEEP or DROP for "
+        "each company.\n"
+        f"Market: {query}\n"
+        f"Required type: {required}\n"
+        f"{keep_line}\n"
+        "Judge by the company's PRIMARY business — what it IS, not something "
+        "it also does.\n"
+        "DROP: consultancies, market-research firms, news/media outlets and "
+        "industry associations (reporting on or advising a market is not "
+        "operating in it), pure holding companies, governments, "
+        "country/city/geo labels, and any company that does not genuinely "
+        "operate in this market.\n"
+        "A parent that does not itself sell in THIS market is a DROP — the "
+        "operating subsidiary is the company that belongs here.\n"
+        "CONTRACT MANUFACTURERS, OEM/ODM makers and white-label producers are "
+        "a DROP: they build to another company's specification and own no "
+        "brand here, so they are never the company behind a brand.\n"
+        "If you are not sure the company genuinely operates in this market, "
+        "DROP.\n"
+        f"{role_line}"
+    )
 
 def verify_should_keep(
     *,
@@ -361,6 +492,16 @@ def verify_should_keep(
     if any(drop in role_n for drop in ("reseller", "distributor", "retailer", "media", "association")):
         return False
     exp = (expected_role or "").strip().lower()
+    # The verifier named exactly the role this market requires (any of the
+    # four player types, or one of this market's own Step 0c categories):
+    # that is a KEEP. Without this a Service Provider market dropped every
+    # company the verifier confirmed as "Service Provider", because only the
+    # Solution-Provider and Brand branches below existed.
+    market_roles = {exp} | {c.strip().lower() for c in _discovery_categories()}
+    if role_n in market_roles:
+        return True
+    if exp == "service provider":
+        return "service" in role_n
     if exp == "solution provider":
         return role_n in _TECH_ROLES or "solution" in role_n or "oem" in role_n
     return role_n in _BRAND_ROLES or "brand" in role_n or "market" in role_n
@@ -596,6 +737,566 @@ def _chat_create(client: OpenAI, kwargs: dict[str, Any], *, use_json: bool) -> A
         raise
 
 
+# Columns the discovery/fill prompts must NOT ask the model to research.
+#
+# The six contact fields are the single biggest fabrication source: a prompt
+# that demands a complete row makes the model invent values to comply
+# (measured elsewhere: 94% of one email column was info@<own-domain>, and
+# every LinkedIn URL was built from a person's name). They are also worth
+# nothing to X/Y scoring, so asking for them buys fabrication risk and
+# prompt length for no analytical gain.
+#
+# Country/Region Code are derived from Headquarters in code, and Distribution
+# Type now comes from the two-stage LLM classifier — so the model should not
+# be guessing any of them either.
+#
+# Everything NOT listed here is still requested, because _scoring_row() feeds
+# Summary / Specialty Focus / Core Categories / Key Brands Represented /
+# Operational Presence into the evidence text that X/Y scoring reads. Dropping
+# those would quietly degrade scoring rather than just shrink the prompt.
+_UNRESEARCHED_COLUMNS = (
+    "Contact Person",
+    "Role",
+    "Email",
+    "LinkedIn",
+    "Office No.",
+    "Country Code",
+    "Region Code",
+    "Distribution Type",
+)
+
+
+def _final_verify_enabled() -> bool:
+    """Whether Step 6a runs the second verification pass.
+
+    OFF by default. It is a re-check of companies Step 4 already verified,
+    scored on Summary / Core Categories / Specialty Focus — fields populated
+    by column fill, which is itself off. Judging blank rows and then failing
+    closed on the verdict deletes verified companies for no gain.
+
+    Set EXPAND_FINAL_VERIFY=true to restore it (turn column fill on too, or
+    it will be judging empty fields).
+    """
+    return str(os.getenv("EXPAND_FINAL_VERIFY") or "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+
+
+def _checkpoint_has_scores(ckpt: ExpandCheckpoint) -> bool:
+    """True when EVERY checkpointed row carries an X score.
+
+    A finished market must have scores. Without this check a run whose
+    scoring step was destroyed by a quota block still counted as done, and
+    the report shipped with an empty X/Y/Quadrant column.
+
+    "Every row", not "any row": a run where AI Mode dropped out part-way
+    leaves some rows scored and some not, and accepting the first score
+    stranded the rest — they were never retried because the market already
+    looked finished, and they shipped as blank cells outside every quadrant.
+    """
+    data = ckpt.state.get("data") or {}
+    for key in ("final_rows", "detail_rows", "final_kept"):
+        rows = [r for r in (data.get(key) or []) if isinstance(r, dict)]
+        if not rows:
+            continue
+        return all(
+            str(row.get("X Score") or row.get("X") or "").strip() for row in rows
+        )
+    return False
+
+
+def _column_fill_enabled() -> bool:
+    """Whether Step 5 researches the extra landscape columns.
+
+    OFF by default. The report is Brand | Company | Role | Quadrant | X | Y |
+    Overall | Found in, and discovery already returns headquarters, ownership
+    and website in the same query that finds the company. What Step 5 adds on
+    top is contact person, email, LinkedIn and office number — none of which
+    reach the report, at the cost of a paced query per company.
+
+    Set EXPAND_COLUMN_FILL=true to restore it for a run that needs the full
+    landscape sheet.
+    """
+    return str(os.getenv("EXPAND_COLUMN_FILL") or "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+
+
+def researched_columns() -> list[str]:
+    """Landscape columns the model is asked to research."""
+    return [h for h in HEADERS if h not in _UNRESEARCHED_COLUMNS]
+
+
+_DISCOVERY_QUERY_SYSTEM = """You write Google search queries that surface COMPANIES operating in a market.
+
+Return JSON only: {"queries":["...","..."]}
+
+Write 6 queries for the given market. Each must:
+- be phrased to return a LIST OF COMPANY NAMES, not articles or definitions
+- use the market's OWN industry vocabulary (product names, process names,
+  technical terms a practitioner would use) rather than generic wording
+- target the participant roles given, when they are provided
+- vary in angle: overall leaders, role-specific players, regional coverage,
+  reference/encyclopedic listings, and industry-specific terminology
+Keep each query under 140 characters. No quotes, no operators, no boolean
+syntax — plain keywords only, as a person would type them.
+Do NOT invent company names in the queries."""
+
+
+def _generate_discovery_queries(
+    market: str,
+    *,
+    market_type: str,
+    categories: list[str],
+    settings: Settings | None = None,
+) -> list[str]:
+    """Ask AI Mode (LLM when AI Mode is off) for market-specific discovery queries.
+
+    The hand-written templates below are generic by construction — they can
+    only interpolate the market name and its role names. A market with its
+    own vocabulary ("monopile", "jacket foundation", "OSAT") is better served
+    by queries that use those terms, and at thousands of markets no fixed
+    template set can cover them.
+
+    Best-effort: returns [] on any failure so the caller falls back to the
+    templates rather than losing the step.
+    """
+    payload = {
+        "market": market,
+        "market_type": market_type or "",
+        "participant_roles": categories or [],
+    }
+    try:
+        # Reuse the pipeline's own client rather than ClaudeClient (used only when AI Mode is off):
+        # placeholders/llm.py reads DEEPSEEK_API_KEY from os.environ at import
+        # time, but the key lives in .env (read by Settings), so that path
+        # reports itself unavailable here.
+        s = settings or Settings()
+        out = _chat_json(
+            _client(s),
+            _model(s),
+            system=_DISCOVERY_QUERY_SYSTEM,
+            user=json.dumps(payload, ensure_ascii=False),
+            label="2g-query-gen",
+            max_tokens=800,
+            retries=2,
+            require_key="queries",
+            # AI Mode writes the queries too (small prompt, fits the URL);
+            # _chat_json only uses the API when AI Mode is switched off.
+            use_ai_mode=True,
+        )
+    except Exception as err:  # noqa: BLE001
+        _log(f"    → substep 2g: query generation unavailable ({err}) — using templates")
+        return []
+
+    raw = out.get("queries") if isinstance(out, dict) else out
+    queries: list[str] = []
+    for q in raw or []:
+        text = re.sub(r"\s+", " ", str(q or "")).strip().strip('"')
+        # Reject anything that is not a usable plain-keyword query.
+        if not text or len(text) > 160 or len(text) < 10:
+            continue
+        if text.lower() in {x.lower() for x in queries}:
+            continue
+        queries.append(text)
+    return queries[:8]
+
+
+# A Google AI Mode query is a SEARCH BOX, not a chat endpoint: the whole
+# prompt rides in ?q=, and Google 400s once the URL passes ~8 KB. The guard
+# below measures the ACTUAL encoded URL rather than guessing from prompt
+# length — percent-encoding inflates by only ~7%, so a 5 KB prompt is fine
+# while an earlier fixed 1,800-char cap needlessly diverted calls that AI
+# Mode handles well.
+#
+# What genuinely does not work is a prompt long enough that build_url has to
+# TRUNCATE it: the tail (where the JSON template lives) is cut off, and AI
+# Mode answers "Something went wrong, and an AI response wasn't generated."
+# Step 5's ~12 KB gap-fill prompt is that case.
+
+
+def _fits_ai_mode(system: str, user: str, *, label: str = "") -> bool:
+    """True when the prompt survives the AI Mode URL intact (no truncation).
+
+    A truncated prompt loses its output template and reliably returns a
+    "something went wrong" page, which the caller cannot distinguish from a
+    genuinely empty result while every retry burns a paced query.
+    """
+    from vendor_intel.scraping.google_ai_mode import MAX_URL_CHARS, build_url
+
+    sys_text = (system or "").strip()
+    user_text = (user or "").strip()
+    prompt = f"{sys_text}\n\n{user_text}" if sys_text else user_text
+    # Reserve a little headroom so a prompt right at the boundary does not
+    # land on a truncating request.
+    encoded = len(build_url(prompt))
+    if encoded <= MAX_URL_CHARS - 200:
+        return True
+    _log(
+        f"      · {label}: prompt encodes to {encoded} URL chars "
+        f"(limit {MAX_URL_CHARS}) — would be truncated and lose its "
+        "output template; using the API backend for this structured call"
+    )
+    return False
+
+
+def _verdict_rejects(row: dict[str, Any]) -> bool:
+    """True when the model's own verdict says this is not an in-market company.
+
+    The prompt asks for a self-reported ``verdict`` and says "NEVER guess
+    this field", but a prompt is a request, not a guarantee — so the
+    classification is gated here in code as well. A MISSING verdict is not a
+    rejection: older prompts and the discovery paths do not always ask for
+    one, and those rows still face the later verify + classification steps.
+    """
+    verdict = str(row.get("verdict") or "").strip().lower()
+    return bool(verdict) and verdict not in {"in_market", "in market"}
+
+
+def _dedupe_key(name: str) -> str:
+    """Identity for duplicate detection during discovery.
+
+    ``web_expand._norm`` only lowercases and collapses whitespace, so it
+    treats "Bayer AG" / "Bayer" and "Centrum" / "Centrum Inc" as different
+    companies. AI Mode returns exactly those variants across pages, so
+    discovery needs suffix- and punctuation-insensitive matching. Shared with
+    ai_mode_discovery so both paths agree.
+    """
+    from vendor_intel.pipeline.ai_mode_discovery import dedupe_key
+
+    return dedupe_key(name)
+
+
+def _exclusion_names(seen: Any) -> list[str]:
+    """Newest-first exclusion names that fit the prompt's character budget.
+
+    The whole prompt rides in the AI Mode URL (?q=), which Google 400s past
+    ~8 KB. The exclusion list is the only part that grows per iteration, so
+    capping it by NAME COUNT alone is not enough — it must be capped by
+    characters. Trimming is safe: this list is only a hint to the model, and
+    the authoritative duplicate guard is the caller's own `seen` set, so a
+    trimmed name that comes back anyway is still dropped.
+    """
+    from vendor_intel.pipeline.ai_mode_discovery import (
+        _MAX_EXCLUDED_IN_PROMPT,
+        _MAX_EXCLUSION_CHARS,
+    )
+
+    names = [str(x).strip() for x in seen if str(x or "").strip()]
+    picked: list[str] = []
+    used = 0
+    for name in reversed(names):  # newest first: repeats cluster there
+        if len(picked) >= _MAX_EXCLUDED_IN_PROMPT:
+            break
+        if used + len(name) + 4 > _MAX_EXCLUSION_CHARS:
+            break
+        picked.append(name)
+        used += len(name) + 4  # + JSON quoting/comma overhead
+    return picked
+
+
+_MARKET_ANALYSIS_DISCOVERY_SYSTEM = """You analyze ONE market so a research team knows what kind of companies to
+look for in it.
+
+Return JSON only:
+{
+  "market_type": "B2B" | "B2C" | "Hybrid B2B + B2C",
+  "market_type_reason": "why this market is B2B or B2C, and if hybrid, say so",
+  "market_definition": "one short sentence describing what this market is",
+  "market_participants": [
+    {"type": "...", "definition": "...", "why_relevant": "..."}
+  ],
+  "primary_participant": "...",
+  "primary_reason": "one sentence on why this is the main competitive role"
+}
+
+market_type:
+- "B2B": the primary customers/buyers are businesses, institutions,
+  professional organizations, governments, or other commercial/industrial
+  entities.
+- "B2C": the primary target buyer is an individual consumer or household.
+Decide from the market's actual target customers, purchasing behavior,
+distribution model, product/service positioning, buyer type, use case and
+sales channel — never from one company's marketing language.
+
+HYBRID markets:
+If the market genuinely sells to BOTH businesses and individual consumers
+(e.g. rooftop solar sold to homeowners AND to commercial sites; water bottles
+sold in shops AND wholesale to offices), answer "Hybrid B2B + B2C". Do not
+force it to one side.
+A hybrid market is still ONE landscape: the brand and the company behind it
+are the same regardless of which channel a buyer uses, so never split a
+company into separate B2B and B2C rows.
+
+market_type_reason: one sentence on WHY this market is B2B or B2C, naming
+who the primary buyer is. If the market sells to both businesses and
+consumers, state that it is hybrid and that B2C was chosen because it has a
+genuine consumer-facing side.
+
+market_participants — ONLY for B2B markets (return an empty list for B2C):
+List the commercial roles that ACTUALLY exist as meaningfully different
+participants in THIS specific market. Do not copy a fixed checklist and do
+not force every market to have the same categories. Example role names
+(NOT a required list — invent a more precise, market-specific name when it
+fits better): Manufacturer, Solution Provider, Service Provider,
+Distributor, Supplier, Technology Provider, Platform Provider, Integrator,
+Consultant, Engineering Provider, Infrastructure Provider, OEM.
+Only include a role that is genuinely a distinct participant type buyers in
+this market actually deal with. Never introduce "Contract Manufacturer" as
+a default category.
+
+primary_participant — the ONE player type the whole landscape is built from.
+Every company in this market will be given this role, so all companies are
+the same type of player and are compared like with like.
+
+It MUST be exactly one of these four strings — never anything else, never a
+market-specific phrase, never "Contract Manufacturer":
+- "Brand / Marketer"   — B2C markets ONLY: a consumer-facing company that
+  owns and markets the product to individual consumers/households.
+- "Manufacturer"       — B2B markets whose defining offering is a PHYSICAL
+  product, material, device or component the company produces under its own
+  name.
+- "Solution Provider"  — B2B markets whose defining offering is TECHNOLOGY:
+  a platform, software, API, or an integrated technology system.
+- "Service Provider"   — B2B markets whose defining offering is an ongoing
+  or professional SERVICE rather than a product someone makes.
+
+Choose by what the companies a buyer actually compares against each other
+DO in this market:
+- NEVER choose a customer-side role (hospital, clinic, pharmacy, end-user
+  industry) — those buy in the market, they do not compete in it.
+- NEVER choose a pure channel (reseller, retailer, distributor) unless the
+  market IS distribution.
+- NEVER choose an upstream input supplier when the market is about the
+  finished product. For a market named after a material or product, the
+  players are the companies that MAKE that product, not the companies that
+  supply feedstock to them.
+
+primary_reason: one sentence naming which of the four you chose and why that
+is the right player type for THIS market, referring to what those companies
+actually sell. If market_participants lists several roles (e.g. manufacturer,
+distributor, solution provider, service provider), say explicitly why the
+chosen one is the competitive player and the others are not."""
+
+
+MARKET_TYPES = ("B2B", "B2C", HYBRID_MARKET_TYPE)
+
+
+def _canonical_market_type(raw: Any) -> str:
+    """Normalise the model's answer onto B2B / B2C / Hybrid B2B + B2C.
+
+    A hybrid market is a real third answer, not a tie to be broken: water
+    bottles sell in shops AND wholesale to offices, and forcing that to one
+    side misdescribes the market. It is still ONE landscape — the brand and
+    the company behind it do not change with the channel.
+    """
+    text = re.sub(r"\s+", " ", str(raw or "")).strip().lower()
+    if not text:
+        return "B2C"
+    if "hybrid" in text or ("b2b" in text and "b2c" in text):
+        return HYBRID_MARKET_TYPE
+    if text == "b2b":
+        return "B2B"
+    if text == "b2c":
+        return "B2C"
+    return "B2C"
+
+
+def _analyze_market_for_discovery(
+    query: str,
+    *,
+    settings: Settings | None = None,
+    industry_group: str = "",
+) -> dict[str, Any]:
+    """Stage 1 market analysis, run BEFORE discovery.
+
+    Routes through Google AI Mode when it is on (so the market read is
+    grounded in a live web answer) and raises if AI Mode fails; only when AI
+    Mode is off does it use the market_relevance LLM path. Both produce the
+    same shape, and the result is cached into market_relevance's own cache so
+    the scoring stage does not re-ask.
+
+    With AI Mode off, an unavailable LLM fails open to B2C with no categories.
+    """
+    user = json.dumps(
+        {"market": query, "industry_group": industry_group or ""}, ensure_ascii=False
+    )
+    analysis: dict[str, Any] = {}
+
+    if _ai_mode_active(settings):
+        # AI Mode is the ONLY backend for the market read when it is on. No
+        # silent DeepSeek fallback, and no silent B2C default either: a wrong
+        # market type flips every B2B/B2C rule downstream, so stop the run
+        # (Step 0c is checkpointed — a rerun retries just this step).
+        try:
+            raw = _ai_mode_json(
+                _MARKET_ANALYSIS_DISCOVERY_SYSTEM,
+                user,
+                label="0c-market-analysis",
+            )
+        except Exception as err:  # noqa: BLE001
+            raise RuntimeError(f"Step 0c: AI Mode market analysis failed: {err}") from err
+        if not (isinstance(raw, dict) and raw.get("market_type")):
+            raise RuntimeError("Step 0c: AI Mode market analysis returned no market_type")
+        analysis = raw
+
+    if not analysis.get("market_type"):
+        # AI Mode switched off: the market_relevance LLM path is the backend.
+        # (market_relevance owns the same two-stage prompt.)
+        try:
+            from vendor_intel.quadrant.market_relevance import analyze_market
+
+            analysis = analyze_market(
+                query, industry_group=industry_group or "", settings=settings
+            )
+        except Exception as err:  # noqa: BLE001
+            _log(f"  [chatgpt] Step 0c: market analysis unavailable: {err}")
+            return {"market_type": "B2C", "market_definition": "", "market_participants": []}
+
+    market_type = _canonical_market_type(analysis.get("market_type"))
+    participants = [
+        p
+        for p in (analysis.get("market_participants") or [])
+        if isinstance(p, dict)
+        and str(p.get("type") or "").strip()
+        # Never a default/global Contract Manufacturer category.
+        and "contract manufacturer" not in str(p.get("type")).strip().lower()
+    ]
+    if market_type == "B2C":
+        participants = []
+
+    # The LLM names which role a landscape of this market should be built
+    # from; the code no longer guesses by taking the first category. Falls
+    # back to the first non-buyer/non-channel entry only if it declined.
+    primary = str(analysis.get("primary_participant") or "").strip()
+    if market_type == "B2C":
+        # A consumer-facing market always resolves to the single B2C role.
+        primary = "Brand / Marketer"
+    else:
+        if primary and "contract manufacturer" in primary.lower():
+            primary = ""  # never a player type
+        if not primary and participants:
+            primary = _primary_category([str(p.get("type") or "") for p in participants])
+        # Force onto the four allowed labels, whatever the model returned.
+        primary = canonical_player_type(primary, market_type=market_type)
+
+    result = {
+        "market_type": market_type,
+        "market_type_reason": str(analysis.get("market_type_reason") or "").strip(),
+        "market_definition": str(analysis.get("market_definition") or "").strip(),
+        "market_participants": participants,
+        "primary_participant": primary,
+        "primary_reason": str(analysis.get("primary_reason") or "").strip(),
+    }
+    # Seed market_relevance's cache so Stage 1 is not paid for twice.
+    try:
+        from vendor_intel.quadrant import market_relevance as _mr
+
+        # Key shape must match analyze_market()'s: stripped + lowercased.
+        _mr._MARKET_ANALYSIS_CACHE[
+            (
+                str(query or "").strip().lower(),
+                str(industry_group or "").strip().lower(),
+                "",
+            )
+        ] = result
+    except Exception:  # noqa: BLE001
+        pass
+    return result
+
+
+def _ai_mode_active(settings: Settings | None = None) -> bool:
+    """Google AI Mode drives the discovery steps (recall / discover / extract /
+    verify / fill) when switched on.
+
+    Scoring and the X/Y axis definitions are NOT affected — those go through
+    ClaudeClient (DeepSeek) on a separate path and stay there.
+    """
+    try:
+        from vendor_intel.scraping import google_ai_mode
+    except Exception:  # noqa: BLE001
+        return False
+    if settings is not None and hasattr(settings, "google_ai_mode_enabled"):
+        return bool(settings.google_ai_mode_enabled) and google_ai_mode.enabled()
+    return google_ai_mode.enabled()
+
+
+def _ai_mode_json(
+    system: str,
+    user: str,
+    *,
+    label: str,
+    require_key: str | None = None,
+    retries: int = 4,
+) -> Any:
+    """AI Mode call returning parsed JSON. The ONLY backend for this step.
+
+    There is no API fallback, so this has to absorb transient failures itself
+    rather than raising on the first one. The three failure modes need
+    opposite responses and are deliberately not conflated: a block wants a
+    long cool-off, a refusal wants an immediate reword, and a parse failure
+    wants a shorter answer.
+    """
+    from vendor_intel.scraping import google_ai_mode as gam
+
+    last_err: Exception | None = None
+    prompt_user = user
+    for attempt in range(1, retries + 1):
+        _log(
+            f"      · {label}: calling Google AI Mode (udm=50) "
+            f"attempt {attempt}/{retries}…"
+        )
+        try:
+            data = gam.chat_json(system, prompt_user, require_key=require_key)
+            if _json_missing_required(data, require_key):
+                raise ValueError(f"reply missing {require_key or 'items'}")
+            _log(f"      · {label}: AI Mode JSON parse OK — {gam.session().status()}")
+            return data
+        except gam.AiModeCaptcha as err:
+            last_err = err
+            # Rate limited by IP: only waiting helps. An AI-response QUOTA
+            # ("reached the request limit") needs far longer than a CAPTCHA
+            # cool-off — Google is metering answers per IP, so a few minutes
+            # just burns another attempt against the same wall.
+            is_quota = "request limit" in str(err).lower()
+            cool_off = (900.0 if is_quota else 300.0) * attempt
+            _log(
+                f"      · {label}: "
+                + ("AI-response quota reached" if is_quota else "rate limited")
+                + f" ({err}) — cooling off {cool_off / 60:.0f} min before retrying"
+            )
+            if attempt < retries:
+                time.sleep(cool_off)
+        except gam.AiModeRefusal as err:
+            last_err = err
+            # Waiting is useless; reword and go again immediately.
+            _log(f"      · {label}: model refused — rewording and retrying now")
+            prompt_user = (
+                user + "\n\nAnswer concisely with valid JSON only. Fewer items is fine."
+            )
+        except (json.JSONDecodeError, ValueError) as err:
+            last_err = err
+            _log(f"      · {label}: unusable reply ({err}) — asking for shorter JSON")
+            prompt_user = (
+                user
+                + "\n\nIMPORTANT: Return SHORTER valid JSON only. Fewer items if "
+                "needed. No markdown, no commentary. Complete all brackets."
+            )
+        except Exception as err:  # noqa: BLE001
+            last_err = err
+            _log(f"      · {label}: AI Mode error: {type(err).__name__}: {err}")
+    raise RuntimeError(
+        f"{label}: Google AI Mode failed after {retries} attempts "
+        f"(no API fallback is configured): {last_err}"
+    )
+
+
 def _chat_json(
     client: OpenAI,
     model: str,
@@ -606,7 +1307,18 @@ def _chat_json(
     max_tokens: int = 4096,
     retries: int = 3,
     require_key: str | None = None,
+    use_ai_mode: bool = True,
 ) -> Any:
+    # When AI Mode is on it is the only backend for this step — no API
+    # fallback, so a hard failure here stops the run rather than silently
+    # spending API credits.
+    #
+    # use_ai_mode=False is for calls that are NOT company discovery — e.g.
+    # writing the discovery queries themselves, which is a reasoning task for
+    # DeepSeek, not a web lookup.
+    if use_ai_mode and _ai_mode_active() and _fits_ai_mode(system, user, label=label):
+        return _ai_mode_json(system, user, label=label, require_key=require_key)
+
     last_err: Exception | None = None
     provider = "DeepSeek" if "deepseek" in (model or "").lower() or _is_deepseek() else "OpenAI"
     use_json = True
@@ -726,12 +1438,27 @@ def _web_search_json(
     max_tokens: int = 4096,
     retries: int = 3,
     require_key: str | None = None,
+    use_ai_mode: bool = True,
 ) -> Any:
     """OpenAI Responses API + hosted web_search → JSON; DeepSeek uses chat.completions.
 
     DeepSeek has no hosted ``web_search`` tool. Skip failed Responses retries and go
     straight to chat (pair with search-stack fill / ddgs harvest for live web facts).
+
+    Google AI Mode, when enabled, is the only backend for this call — it
+    searches the live web itself, which suits this step better than a
+    knowledge-only chat completion.
     """
+    if use_ai_mode and _ai_mode_active() and _fits_ai_mode(system, user, label=label):
+        return _ai_mode_json(
+            system
+            + " Search the web and cite what you find. Mark anything you cannot"
+            " verify as Not publicly disclosed.",
+            user,
+            label=label,
+            require_key=require_key,
+        )
+
     if not _supports_hosted_web_search():
         _log(
             f"      · {label}: DeepSeek mode — chat.completions "
@@ -857,6 +1584,9 @@ _FACT_COLUMNS = frozenset(
     }
 )
 
+# Placeholder text the old per-industry canned defaults wrote into
+# "Key Brands Represented". Recognising it lets rows in older checkpoints be
+# treated as unfilled and re-enriched; it never adds behaviour for a market.
 _GENERIC_BRAND_MARKERS = (
     "private label",
     "regional avocado",
@@ -1039,6 +1769,176 @@ def _row_needs_web_refill(row: dict[str, str]) -> bool:
     return weak >= 3
 
 
+def discover_companies_rounds(
+    client: OpenAI,
+    model: str,
+    *,
+    query: str,
+    family: str,
+    target: int,
+    country: str = "",
+    ckpt: ExpandCheckpoint | None = None,
+) -> list[dict[str, str]]:
+    """Find companies in ROUNDS — replaces recall + discover + list-discover.
+
+    Those three stages all asked the same question in different words, so
+    once the first took the obvious answers the others re-asked and got the
+    same names back. Measured on Silicon Carbide: recall 118, discover 0 new,
+    list-discover +1 across 9 queries — ~35 paced queries for almost nothing.
+
+    One loop, one prompt shape, one exclusion list, one stopping rule.
+    """
+    from vendor_intel.pipeline import discovery_rounds as dr
+
+    player_type = player_label(query, family)
+    market_type = str(_DISCOVERY_MARKET.get("market_type") or "B2B")
+
+    out: list[dict[str, str]] = list(ckpt.data("recalled") or []) if ckpt else []
+    _ckpt(ckpt, "1_recall", "1a_start", begin=True, note="begin discovery rounds")
+    _log(
+        f"    → substep 1a: discovery rounds for {player_type} "
+        f"(batch {dr.DEFAULT_BATCH}, target {target}"
+        + (f", resuming with {len(out)}" if out else "")
+        + ")"
+    )
+
+    def _ask(system: str, user: str, label: str) -> Any:
+        return _chat_json(
+            client,
+            model,
+            system=system,
+            user=user,
+            label=label,
+            max_tokens=3500,
+            require_key="companies",
+        )
+
+    def _on_round(n: int, new: list[dict[str, Any]], found: list[dict[str, Any]]) -> None:
+        _log(f"    → substep 1a.{n}: +{len(new)} (total {len(found)})")
+        if ckpt:
+            # A run WILL be interrupted; losing one round is cheap, losing
+            # the whole set is not.
+            ckpt.bump(
+                "1_recall",
+                f"1a.{n}",
+                progress={"round": n, "found": len(found)},
+                recalled=_slim_ckpt_rows(_as_seed_rows(found)),
+                note=f"round {n}: {len(found)} companies",
+            )
+
+    found, stats = dr.discover_in_rounds(
+        query,
+        player_type,
+        ask_json=_ask,
+        target=target,
+        market_type=market_type,
+        dedupe_key=_dedupe_key,
+        accept=lambda row: not _verdict_rejects(row),
+        on_round=_on_round,
+        # Continue from what a previous interrupted run already collected
+        # instead of re-asking for it (and then overwriting it on save).
+        already_found=_seed_rows_as_found(out),
+        # Scoped to one country: narrow by state rather than by world region.
+        country=country,
+    )
+
+    rows = _as_seed_rows(found)
+    resumed = int(stats.get("resumed_with") or 0)
+    _log(
+        f"    → substep 1a done: {len(rows)} companies in {stats['rounds']} rounds "
+        + (f"(resumed with {resumed}) " if resumed else "")
+        + f"({stats['stopped_because']})"
+    )
+    if ckpt:
+        # Never let a completed step SHRINK the saved set. Marking the step
+        # done overwrites `recalled`, so a run that somehow produced fewer
+        # rows than the checkpoint already held would destroy the difference.
+        if len(rows) < len(out):
+            _log(
+                f"    → substep 1a: keeping {len(out)} checkpointed companies "
+                f"(this pass produced {len(rows)}) — refusing to shrink"
+            )
+            rows = out
+        ckpt.mark_step_done("1_recall", recalled=_slim_ckpt_rows(rows))
+    return rows
+
+
+def _seed_rows_as_found(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Inverse of ``_as_seed_rows``: checkpoint rows -> discovery-round shape.
+
+    A resumed run reads seed rows back off the checkpoint, but the rounds loop
+    dedupes on ``brand`` and builds its exclusion list from it. Handing it seed
+    rows unchanged would leave every brand blank, so the whole saved set would
+    be dropped and re-discovered.
+    """
+    out: list[dict[str, Any]] = []
+    for r in rows:
+        brand = str(r.get("brand_name") or r.get("Market Offering") or "").strip()
+        company = str(r.get("Company") or r.get("name") or "").strip()
+        if not brand:
+            # Older checkpoints predate the brand split; the company name is
+            # the best identity available and still dedupes correctly.
+            brand = company
+        if not brand:
+            continue
+        out.append(
+            {
+                "brand": brand,
+                "company": company or brand,
+                "website": str(r.get("website") or ""),
+                "headquarters": str(r.get("Headquarters") or ""),
+                "ownership": str(r.get("Ownership") or ""),
+                "ownership_confidence": str(r.get("ownership_confidence") or ""),
+                "why_related": str(r.get("Summary") or r.get("snippet") or ""),
+                "verdict": "in_market",
+            }
+        )
+    return out
+
+
+def _as_seed_rows(found: list[dict[str, Any]]) -> list[dict[str, str]]:
+    """Round output -> the seed-row shape the rest of the pipeline expects."""
+    rows: list[dict[str, str]] = []
+    for c in found:
+        # BRAND -> COMPANY. The brand is what the market knows; the company is
+        # the entity behind it. When a company sells only under its own name
+        # the two are the same string, which is correct — but they are still
+        # resolved separately rather than one being copied from the other.
+        brand = str(c.get("brand") or c.get("name") or "").strip()
+        company = str(c.get("company") or "").strip() or brand
+        if not brand:
+            continue
+        website = str(c.get("website") or "").strip()
+        row = {
+            # The pipeline keys rows on `name`; that identity is the COMPANY,
+            # so two brands from one owner stay two rows but resolve to the
+            # same company in the report.
+            "name": company,
+            "website": website,
+            "domain": website.replace("https://", "").replace("http://", "").split("/")[0],
+            "snippet": str(c.get("why_related") or ""),
+            "source_query": "discovery_rounds",
+            "discovery_source": "discovery_rounds",
+            "Company": company,
+            # Feeds the report's Brand column via Market Offering.
+            "Market Offering": brand,
+            "brand_name": brand,
+        }
+        # Details collected in the SAME round that found the brand, so the
+        # later gap-fill pass has little or nothing left to look up.
+        for src, dest in (
+            ("headquarters", "Headquarters"),
+            ("ownership", "Ownership"),
+            ("ownership_confidence", "ownership_confidence"),
+            ("why_related", "Summary"),
+        ):
+            val = str(c.get(src) or "").strip()
+            if val and val.lower() not in {"n/a", "na", "none", "unknown", ""}:
+                row[dest] = val
+        rows.append(row)
+    return rows
+
+
 def gpt_recall_companies(
     client: OpenAI,
     model: str,
@@ -1053,7 +1953,7 @@ def gpt_recall_companies(
     want_total = min(max(target, 40), 1200)
     page_size = 35
     out: list[dict[str, str]] = list(ckpt.data("recalled") or []) if ckpt else []
-    seen: set[str] = {_norm(str(r.get("name") or "")) for r in out if r.get("name")}
+    seen: set[str] = {_dedupe_key(str(r.get("name") or "")) for r in out if r.get("name")}
     start_page = int(ckpt.progress_get("recall_page", 0) or 0) if ckpt else 0
     pages = (want_total + page_size - 1) // page_size
     _ckpt(ckpt, "1_recall", "1a_start", begin=True, note="begin ChatGPT recall")
@@ -1064,7 +1964,10 @@ def gpt_recall_companies(
     )
 
     for page in range(start_page, pages):
-        exclude = list(seen)[-80:]  # avoid huge prompts
+        # Char-budgeted, newest-first. A bare count cap is not enough: 120
+        # real names is ~4.7 KB of JSON, which pushed the AI Mode URL past
+        # Google's ~8 KB limit and silently truncated the prompt tail.
+        exclude = _exclusion_names(seen)
         _log(f"    → substep 1a.{page + 1}: recall page {page + 1}/{pages}…")
         _ckpt(ckpt, "1_recall", f"1a.{page + 1}", begin=True, note=f"begin recall page {page + 1}")
         if landscape_mode():
@@ -1073,13 +1976,43 @@ def gpt_recall_companies(
                 f"({roles}). No invented names. No media, associations, or geo-junk "
                 "labels. Return compact JSON only: "
                 '{"companies":[{"name":"...","website":"https://...","role":"...",'
-                '"country":"...","why_related":"..."}]}'
+                '"country":"...","verdict":"...","why_related":"..."}]}'
             )
+            # Seven-part extraction prompt: subject, ask, inclusion by PRIMARY
+            # business, typed exclusions WITH reasons, name exclusions,
+            # per-field rules, JSON template last (constraints after the
+            # template are applied less reliably).
             user = (
-                f"Market: {query}\n"
+                f"Market: {query}\n\n"
                 f"List up to {page_size} {_landscape_list_nouns(query, family)} "
-                "for this market (diverse countries).\n"
-                f"Do NOT repeat these names: {json.dumps(exclude, ensure_ascii=False)}"
+                "for this market (diverse countries).\n\n"
+                "WHAT QUALIFIES:\n"
+                f"{_landscape_keep_line(query, family)}\n"
+                "Judge by the company's PRIMARY business — what it IS, not "
+                "something it also does.\n\n"
+                "STRICTLY EXCLUDE, even if related to this market:\n"
+                "- Consultancies, market-research firms, news/media outlets and "
+                "industry associations — reporting on or advising a market is not "
+                "operating in it.\n"
+                "- Pure holding companies with no operating business here.\n"
+                "- A parent that does not itself sell in THIS market (name the "
+                "operating subsidiary instead).\n"
+                "If unsure whether a company genuinely operates here, EXCLUDE it.\n\n"
+                "Do NOT repeat any of these (including subsidiaries, aliases or "
+                f"former names): {json.dumps(exclude, ensure_ascii=False)}\n\n"
+                "FIELD RULES:\n"
+                "- name: the operating company's own legal or trade name.\n"
+                "- website: the real official company domain. NEVER a LinkedIn, "
+                "Bloomberg, Crunchbase or Wikipedia page.\n"
+                "- country: the HQ country only.\n"
+                '- verdict: "in_market" only if it genuinely operates in this '
+                'market; otherwise "unrelated" or "unknown". NEVER guess this '
+                'field. Include the company ONLY if verdict is "in_market".\n'
+                "- why_related: one sentence naming what it actually makes, "
+                "supplies or does in THIS market.\n\n"
+                "An empty string is CORRECT and preferred whenever you do not "
+                "genuinely know a value. NEVER construct a website from the "
+                "company name. A wrong value is much worse than an empty one."
             )
         else:
             system = (
@@ -1115,9 +2048,11 @@ def gpt_recall_companies(
                 if not isinstance(row, dict):
                     continue
                 name = str(row.get("name") or "").strip()
-                if not name or _norm(name) in seen:
+                if not name or _dedupe_key(name) in seen:
                     continue
-                seen.add(_norm(name))
+                if _verdict_rejects(row):
+                    continue
+                seen.add(_dedupe_key(name))
                 website = str(row.get("website") or "").strip()
                 out.append(
                     {
@@ -1177,27 +2112,105 @@ async def google_ai_seed_discover(
         return list(ckpt.data("ga_discovered") or [])
 
     nouns = _landscape_list_nouns(query, family)
+    cats = _discovery_categories()
+    # Every query is phrased for THIS market's own participant roles. A B2B
+    # service market must not be asked for "manufacturers and brand owners",
+    # and a B2C market must not be asked for "suppliers and service
+    # providers" — the wording steers what the model returns.
+    if _is_b2b_market() and cats:
+        role_phrase = " and ".join(c.lower() + "s" for c in cats[:3])
+        role_query = f"{query} {role_phrase} list"
+        buyer_query = f"{query} suppliers to businesses and institutions list"
+    else:
+        role_query = f"{query} manufacturers and brand owners list"
+        buyer_query = f"{query} consumer brands and product makers list"
+    _yr = datetime.date.today().year
     prompts = [
         f"top companies in the {query} list names and official websites",
         f"leading {nouns} worldwide in the {query}",
         f"major {nouns} United States Europe Asia {query}",
-        f"{query} key players companies list 2025 2026",
+        f"{query} key players companies list {_yr - 1} {_yr}",
         f"Wikipedia companies in the {query}",
-        f"{query} manufacturers and brand owners list",
+        role_query,
+        buyer_query,
     ]
-    seen: set[str] = {_norm(x) for x in (exclude or []) if x}
+    # AI Mode (or the LLM when AI Mode is off) writes queries in the market's OWN vocabulary, which the
+    # templates above cannot do (they only interpolate the market name and
+    # role names). Templates stay as the fallback and as extra coverage.
+    generated = _generate_discovery_queries(
+        query,
+        market_type=str(_DISCOVERY_MARKET.get("market_type") or ""),
+        categories=cats,
+        settings=Settings(),
+    )
+    if generated:
+        _log(f"    → substep 2g: {len(generated)} market-specific generated queries")
+        for g in generated:
+            _log(f"        · {g}")
+        seen_q = {p.lower() for p in generated}
+        prompts = generated + [p for p in prompts if p.lower() not in seen_q]
+
+    seen: set[str] = {_dedupe_key(x) for x in (exclude or []) if x}
     out: list[dict[str, str]] = []
+
+    # AI Mode is stateless, so a query with no exclusion list asks the same
+    # question every time and Google returns the same well-known companies.
+    # Measured live: 7 queries in a row returned +0 because all 118 already
+    # collected names came back again. Naming a few and asking for others
+    # pushes it past the obvious answers.
+    # Real display names for the prompt. `seen` holds dedupe KEYS
+    # ("mitsubishielectric"), which the model cannot read back.
+    known_names: list[str] = [str(x).strip() for x in (exclude or []) if str(x).strip()]
+
+    def _with_exclusions(base: str) -> str:
+        names = _exclusion_names(known_names)
+        if not names:
+            return base
+        # Keep it short: the whole prompt rides in the URL.
+        listed = ", ".join(names[:12])
+        more = f" and {len(known_names) - 12} others" if len(known_names) > 12 else ""
+        return (
+            f"{base}. Exclude {listed}{more} — list DIFFERENT, smaller or "
+            "regional companies not already named"
+        )
+
     _log(f"    → substep 2g: Google AI list discover ({len(prompts)} queries)…")
     for i, q in enumerate(prompts, 1):
+        q = _with_exclusions(q)
         if len(out) >= target:
             break
         _log(f"    → substep 2g.{i}: Google AI list query {i}/{len(prompts)}")
         try:
-            data = await google_ai_ask(q, llm_clean=False)
+            if _ai_mode_active():
+                # Google AI Mode (udm=50) via the browser — NOT the old
+                # port-15561 AI-Overview scraper service, which is not running.
+                from vendor_intel.scraping import google_ai_mode as _gam
+
+                md = str(await asyncio.to_thread(_gam.ask, q) or "").strip()
+            else:
+                data = await google_ai_ask(q, llm_clean=False)
+                md = str(data.get("markdown") or "").strip()
         except Exception as err:  # noqa: BLE001
-            _log(f"    → substep 2g.{i}: scraper error: {type(err).__name__}: {err}")
-            continue
-        md = str(data.get("markdown") or "").strip()
+            # A refusal here used to be swallowed silently, skipping the query
+            # without a reword or a session reset — so a soured session just
+            # quietly produced fewer companies. Retry once on a fresh session
+            # before giving up on this query.
+            from vendor_intel.scraping import google_ai_mode as _gam
+
+            if isinstance(err, _gam.AiModeRefusal) and _ai_mode_active():
+                _log(
+                    f"    → substep 2g.{i}: no answer generated — "
+                    "resetting session and retrying once"
+                )
+                try:
+                    await asyncio.to_thread(_gam.session().reset_session)
+                    md = str(await asyncio.to_thread(_gam.ask, q) or "").strip()
+                except Exception as err2:  # noqa: BLE001
+                    _log(f"    → substep 2g.{i}: still failing after reset: {err2}")
+                    continue
+            else:
+                _log(f"    → substep 2g.{i}: AI Mode error: {type(err).__name__}: {err}")
+                continue
         if len(md) < 80:
             _log(f"    → substep 2g.{i}: empty overview — skip")
             continue
@@ -1231,9 +2244,14 @@ async def google_ai_seed_discover(
                 if not isinstance(row, dict):
                     continue
                 name = str(row.get("name") or "").strip()
-                if not name or _norm(name) in seen:
+                if not name or _dedupe_key(name) in seen:
                     continue
-                seen.add(_norm(name))
+                if _verdict_rejects(row):
+                    continue
+                seen.add(_dedupe_key(name))
+                # Keep the readable name so later queries in this loop can
+                # exclude it — otherwise every query re-asks the same thing.
+                known_names.append(name)
                 website = str(row.get("website") or "").strip()
                 out.append(
                     {
@@ -1293,14 +2311,14 @@ def gpt_discover_companies(
         page_size = min(page_size, 12)
     out: list[dict[str, str]] = list(ckpt.data("discovered") or []) if ckpt else []
     prior_discovered = list(out)
-    seen: set[str] = {_norm(x) for x in (exclude or []) if x}
+    seen: set[str] = {_dedupe_key(x) for x in (exclude or []) if x}
     for r in out:
-        seen.add(_norm(str(r.get("name") or "")))
+        seen.add(_dedupe_key(str(r.get("name") or "")))
     for r in seed or []:
         name = str(r.get("name") or "").strip()
-        if not name or _norm(name) in seen:
+        if not name or _dedupe_key(name) in seen:
             continue
-        seen.add(_norm(name))
+        seen.add(_dedupe_key(name))
         out.append(r)
     want = max(target, 40)
     # Use full page budget — do not shrink pages so hard that we stop short of target
@@ -1378,7 +2396,7 @@ def gpt_discover_companies(
             break
         geo = geos[page % len(geos)]
         angle = angles[page % len(angles)]
-        exclude_tail = [x for x in seen][-120:]
+        exclude_tail = _exclusion_names(seen)
         need = min(page_size, want - len(out))
         _log(
             f"    → substep 2a.{page + 1}: web discover page {page + 1}/{pages} "
@@ -1451,9 +2469,11 @@ def gpt_discover_companies(
                 if not isinstance(row, dict):
                     continue
                 name = str(row.get("name") or "").strip()
-                if not name or _norm(name) in seen:
+                if not name or _dedupe_key(name) in seen:
                     continue
-                seen.add(_norm(name))
+                if _verdict_rejects(row):
+                    continue
+                seen.add(_dedupe_key(name))
                 website = str(row.get("website") or "").strip()
                 domain = (
                     website.replace("https://", "")
@@ -1621,6 +2641,21 @@ def gpt_extract_and_score(
     return kept
 
 
+def _market_scope() -> str:
+    """Operator-supplied description of exactly which companies qualify.
+
+    Set per run via MARKET_SCOPE. Discovery already uses it to steer what it
+    looks for; verify needs the SAME sentence or the two disagree -- a market
+    named "Advanced Seismic Data Processing" pulls in earthquake-monitoring
+    and structural-engineering software, which share the word "seismic" but
+    serve a different buyer entirely. Without the scope, verify has only the
+    market title to judge against and keeps them.
+    """
+    import os
+
+    return " ".join(str(os.getenv("MARKET_SCOPE") or "").split())[:900]
+
+
 def gpt_verify_market(
     client: OpenAI,
     model: str,
@@ -1636,6 +2671,7 @@ def gpt_verify_market(
 
     expected_role = player_label(query, family)
     criteria = verify_criteria_prompt(query, family)
+    _scope = _market_scope()
     kept: list[dict[str, str]] = list(ckpt.data("verified") or []) if ckpt else []
     rejected: list[dict[str, str]] = list(ckpt.data("rejected_mid") or []) if ckpt else []
     chunk_size = 12
@@ -1672,19 +2708,33 @@ def gpt_verify_market(
             model,
             system=(
                 f"{criteria}\n"
-                "For EACH company you MUST return one result. Never skip a name. "
+                + (
+                    f"\nTHIS MARKET COVERS EXACTLY: {_scope}\n"
+                    "A company that does not do THAT is not in this market, "
+                    "however closely its field is named. Set in_market=false "
+                    "and fits_criteria=false for it.\n"
+                    if _scope
+                    else ""
+                )
+                + "For EACH company you MUST return one result. Never skip a name. "
                 "fits_criteria=true only if they match the required type for this market. "
                 "When unsure, fits_criteria=false and in_market=false. "
                 f"Return compact JSON only: {json_shape}"
             ),
             user=(
                 f"Market: {query}\n"
-                f"Required type: {expected_role}\n"
+                + (f"Market scope: {_scope}\n" if _scope else "")
+                + f"Required type: {expected_role}\n"
                 f"Verify these companies (KEEP only {expected_role}):\n"
                 f"{json.dumps(payload, ensure_ascii=False)}"
             ),
             label=f"verify-{idx}",
             max_tokens=3500,
+            # Same trap as the final pass: without this, a reply that parses
+            # as JSON but carries no "results" logs "parse OK" and is then
+            # dropped by fail-closed, silently rejecting a whole chunk of
+            # real companies.
+            require_key="results",
         )
         results = data.get("results") if isinstance(data, dict) else []
         by_name = {_norm(str(c.get("name") or c.get("Company") or "")): c for c in chunk}
@@ -1890,17 +2940,25 @@ async def gpt_fill_rows(
         "Country; Country.\n"
         "3) Key Brands Represented = brands THIS company actually sells/distributes "
         "(from their site or reliable listing). Do NOT paste generic market brand lists.\n"
-        "4) Contact Person, Role, Email, LinkedIn, Office No. — leave EMPTY string if "
-        "not evidenced. Do NOT invent personal emails, phones, or LinkedIn URLs.\n"
-        "5) Country Code = ISO2 from HQ (e.g. IN). Region Code = NA|EU|ME|AF|LATAM|APAC.\n"
-        "6) Retail / E-commerce / Both = Retail | E-commerce | Both | No when evidenced.\n"
-        "7) Run one Google-style ask per column: \"founded year of {Company}\", "
-        "\"operational presence of {Company}\", \"headquarters of {Company}\", "
-        "\"sales or procurement contact person name of {Company}\".\n"
-        "Contact Person/Role = sales or procurement only — never CEO/founder/HR.\n"
-        "Every row MUST include ALL keys (empty string for unknown contacts; "
-        "Not publicly disclosed for other unknown facts). "
-        f"Required keys exactly: {json.dumps(HEADERS)}. "
+        "3b) Market Offering = what THIS company actually offers in THIS market, "
+        "matched to its role. If it manufactures, name its own product line or "
+        "product brand in this market (e.g. \"Apoquel\", \"Rimadyl\"). If it "
+        "provides a service, name that service (e.g. \"Veterinary diagnostics "
+        "laboratory services\"). If it distributes, name what it distributes. "
+        "Name the specific offering, NOT the company name again, and NOT a "
+        "competitor's brand. Leave it EMPTY if the company sells only under its "
+        "own name with no separate product brand — an empty value is CORRECT "
+        "and preferred over repeating the company name or inventing a brand.\n"
+        "4) Retail / E-commerce / Both = Retail | E-commerce | Both | No when evidenced.\n"
+        "5) Run one Google-style ask per column: \"founded year of {Company}\", "
+        "\"operational presence of {Company}\", \"headquarters of {Company}\".\n"
+        "Do NOT return contact details, personal emails, phone numbers or "
+        "LinkedIn URLs — they are not requested and must not be guessed.\n"
+        "An empty string is CORRECT and preferred whenever you do not genuinely "
+        "know a value. A wrong value is much worse than an empty one — never "
+        "construct a website from the company name, and never guess a founding "
+        "year, parent company or headquarters.\n"
+        f"Required keys exactly: {json.dumps(researched_columns())}. "
         "Summary must state how the company relates to the market using web evidence. "
         'Return JSON: {"rows":[{...one object per company...}]}'
     )
@@ -1935,8 +2993,8 @@ async def gpt_fill_rows(
                     _log(f"      · local SERP evidence: {len(ev.splitlines())} hits")
         user = (
             f"Market: {query}\n"
-            f"Web-search each company and fill a COMPLETE {len(HEADERS)}-column row "
-            "(slim landscape schema).\n"
+            f"Web-search each company and fill the {len(researched_columns())} "
+            "requested columns.\n"
             "FACT fields (Founded, Headquarters, Key Brands Represented, Continent / "
             "Geography, Operational Presence, etc.) must be REAL from the web or "
             "\"Not publicly disclosed\" — never guessed. Contacts stay empty if unknown.\n"
@@ -2106,9 +3164,12 @@ async def gpt_fill_rows(
                     system=system,
                     user=(
                         f"Market: {query}\n"
-                        f"This row has missing/weak fields. Web-search and COMPLETE every "
-                        f"column for:\n{json.dumps({h: r.get(h) for h in HEADERS}, ensure_ascii=False)}\n"
-                        'Return JSON: {"rows":[one complete row]}'
+                        "This row has missing/weak fields. Web-search and fill the "
+                        "requested columns for:\n"
+                        f"{json.dumps({h: r.get(h) for h in researched_columns()}, ensure_ascii=False)}\n"
+                        "Leave a field as an empty string if you do not genuinely "
+                        "know the real value — a wrong value is worse than a blank.\n"
+                        'Return JSON: {"rows":[one row]}'
                     ),
                     label=f"web-refill-{n}",
                     max_tokens=3500,
@@ -2214,6 +3275,11 @@ def gpt_final_verify_rows(
             ),
             label=f"final-{idx}",
             max_tokens=3000,
+            # Without this the parser accepts ANY JSON and logs "parse OK",
+            # then the caller finds no "results" key and fails closed —
+            # 16 chunks of verified companies dropped while every line of the
+            # log claimed success. Retry on the shape the caller needs.
+            require_key="results",
         )
         results = data.get("results") if isinstance(data, dict) else []
         by = {_norm(str(r.get("Company") or "")): r for r in chunk}
@@ -2392,6 +3458,20 @@ async def run_chatgpt_expand(
     if skip_ddgs:
         ddgs_harvest = False
 
+    # Google AI Mode is the single source of companies when it is on. The
+    # ddgs/SearXNG harvest existed only because DeepSeek has no hosted
+    # web_search — AI Mode searches the live web itself, so the harvest would
+    # add companies from raw SERP scraping and give the landscape two
+    # different provenances.
+    # No `settings` argument: Settings() is not constructed until later in
+    # this function, and _ai_mode_active() reads the env var when given none.
+    if _ai_mode_active() and ddgs_harvest:
+        ddgs_harvest = False
+        _log(
+            "  [chatgpt] Step 3 ddgs/SearXNG harvest DISABLED — "
+            "Google AI Mode is the sole company source"
+        )
+
     if _is_deepseek():
         if str(fill_backend).lower() in ("openai", "web", "responses"):
             _log(
@@ -2399,7 +3479,13 @@ async def run_chatgpt_expand(
                 "(no OpenAI hosted web_search)"
             )
             fill_backend = "search"
-        if not ddgs_harvest and not seeds_only and not skip_ddgs:
+        if (
+            not ddgs_harvest
+            and not seeds_only
+            and not skip_ddgs
+            # Not when AI Mode is the sole source — it already searches the web.
+            and not _ai_mode_active()
+        ):
             ddgs_harvest = True
             _log(
                 "  [chatgpt] DeepSeek: auto-enabled ddgs/SearXNG harvest for discovery"
@@ -2442,8 +3528,38 @@ async def run_chatgpt_expand(
             "fill_backend": fill_backend,
         },
     )
-    # Skip finished markets (required for 10k batch efficiency)
-    if resume and not force and ckpt.is_done():
+    # Skip finished markets (required for 10k batch efficiency).
+    #
+    # "Done" must mean SCORED, not merely reached the end. Silicon Carbide
+    # was marked done with 231 verified companies and zero X/Y scores: the
+    # scoring step had been wiped out by an AI Mode quota block, the run
+    # wrote the report anyway, and every later attempt to rescore hit this
+    # skip and exited in 0 minutes. A market with rows but no scores has not
+    # finished — it has failed quietly.
+    if resume and not force and ckpt.is_done() and not _checkpoint_has_scores(ckpt):
+        _log(
+            f"  [chatgpt] checkpoint says done but some rows carry no X score — "
+            f"re-running {query!r} from scoring"
+        )
+        ckpt.state["status"] = "running"
+        ckpt.state["step"] = "6c_xy"
+        # `completed` is a dict of step -> True. Drop only the scoring and
+        # export steps so the verified companies from steps 1-6 are kept.
+        # It must STAY a dict: replacing it with a bool crashed a run with
+        # "'bool' object has no attribute 'get'" and reset the market to
+        # step 0.
+        done = ckpt.state.get("completed")
+        if isinstance(done, dict):
+            for step in [k for k in done if str(k).startswith(("6c", "6d", "7"))]:
+                done.pop(step, None)
+        for key in ("final_rows", "detail_rows"):
+            if key in (ckpt.state.get("data") or {}):
+                ckpt.state["data"][key] = []
+        try:
+            ckpt.save()
+        except Exception:  # noqa: BLE001
+            pass
+    elif resume and not force and ckpt.is_done():
         n_existing = len(existing) if existing else len(read_final_rows(xlsx) if xlsx.exists() else [])
         _log(
             f"  [chatgpt] SKIP done market: {query!r} "
@@ -2543,6 +3659,64 @@ async def run_chatgpt_expand(
         ckpt.begin("0_start", "0a_init", note="pipeline start")
         ckpt.bump("0_start", "0b_seeds", seeds_count=len(seeds), note="seeds loaded")
 
+        # Step 0c — market analysis BEFORE discovery. Stage 1 of the two-stage
+        # classifier decides B2B vs B2C and this market's own participant
+        # categories, so every discovery prompt below can ask for the company
+        # types that actually exist in THIS market instead of a generic
+        # "companies in X" query. Previously this ran only at scoring time,
+        # which meant discovery had no idea what it was looking for.
+        market_analysis = dict(ckpt.data("market_analysis") or {})
+        if not market_analysis.get("market_type"):
+            # industry_group is not known yet — it is selected later from the
+            # scored rows. The market name alone is what Stage 1 needs, and
+            # passing "" keeps the cache key consistent with the scoring-stage
+            # lookup (which also passes "" for industry_category).
+            market_analysis = _analyze_market_for_discovery(
+                query, settings=settings, industry_group=""
+            )
+            ckpt.bump(
+                "0_start",
+                "0c_market",
+                market_analysis=market_analysis,
+                note=f"market_type={market_analysis.get('market_type')}",
+            )
+        else:
+            _log(
+                f"  [chatgpt] Step 0c: SKIP (checkpoint) — "
+                f"market_type={market_analysis.get('market_type')}"
+            )
+        provider_categories = publish_discovery_market(market_analysis)
+        _log(
+            f"  [chatgpt] Step 0c/6: market type = "
+            f"{market_analysis.get('market_type') or 'unknown'}"
+            + (
+                f" | player type = {provider_categories[0]}"
+                if provider_categories
+                else " | player type = Brand / Marketer"
+            )
+        )
+        # State the choice and the reasoning up front: which player type this
+        # landscape uses, which other roles exist in the market, and why the
+        # chosen one is the competitor rather than a buyer or a channel.
+        _subs = [
+            str(p.get("type") or "").strip()
+            for p in (market_analysis.get("market_participants") or [])
+            if str(p.get("type") or "").strip()
+        ]
+        if market_analysis.get("market_type_reason"):
+            _log(
+                f"  [chatgpt] Step 0c/6: why {market_analysis.get('market_type')}: "
+                f"{market_analysis['market_type_reason']}"
+            )
+        if _subs:
+            _log(f"  [chatgpt] Step 0c/6: roles present in market: {', '.join(_subs)}")
+        if market_analysis.get("primary_reason"):
+            _log(f"  [chatgpt] Step 0c/6: why this player type: {market_analysis['primary_reason']}")
+        _log(
+            "  [chatgpt] Step 0c/6: every company in this landscape is the "
+            "same player type (never Contract Manufacturer)"
+        )
+
         recalled: list[dict[str, str]] = []
         if ckpt.is_step_done("1_recall"):
             recalled = list(ckpt.data("recalled") or [])
@@ -2552,12 +3726,16 @@ async def run_chatgpt_expand(
             ckpt.mark_step_done("1_recall", recalled=[])
         else:
             _log("  [chatgpt] Step 1/6: ChatGPT recall known companies…")
-            recalled = gpt_recall_companies(
+            # One rounds loop replaces recall + discover + list-discover:
+            # all three asked the same question and re-found the same
+            # companies. See COMPANY_DISCOVERY_ROUNDS.md.
+            recalled = discover_companies_rounds(
                 client,
                 model,
                 query=query,
                 family=family,
                 target=target,
+                country=country,
                 ckpt=ckpt,
             )
 
@@ -2591,7 +3769,10 @@ async def run_chatgpt_expand(
                     f"  [chatgpt] Step 2/6: SKIP (checkpoint) — "
                     f"{len(discovered)} openai-discovered"
                 )
-            elif openai_discover and need > 0:
+            elif openai_discover and need > 0 and not _ai_mode_active():
+                # Steps 2a/2g are the SAME question the rounds loop already
+                # asked, so on AI Mode they only re-find known companies at
+                # ~20 s per paced query. Kept for the non-AI-Mode path.
                 _log(
                     "  [chatgpt] Step 2/6: OpenAI SDK web_search — find companies…"
                 )
@@ -2819,6 +4000,17 @@ async def run_chatgpt_expand(
             _log(
                 f"  [chatgpt] Step 5/6: SKIP (checkpoint) — {len(filled_part)} filled"
             )
+        elif not _column_fill_enabled():
+            # Step 5 researches contact / LinkedIn / office columns that the
+            # 8-column report does not use, and discovery already collects
+            # headquarters, ownership and website per company. Running it
+            # spends a paced query per row to fill fields nobody reads.
+            filled_part = list(to_fill)
+            _log(
+                f"  [chatgpt] Step 5/6: SKIP (column fill off) — "
+                f"{len(filled_part)} rows already carry their report columns"
+            )
+            ckpt.mark_step_done("5_fill", filled_part=filled_part)
         else:
             use_search_fill = str(fill_backend).lower() in (
                 "search",
@@ -2889,6 +4081,21 @@ async def run_chatgpt_expand(
             _log(
                 f"  [chatgpt] Step 6/6: SKIP (checkpoint) — "
                 f"kept={len(final_rows)} rejected={len(rejected_final)}"
+            )
+        elif not _final_verify_enabled():
+            # Step 6a re-verifies companies Step 4 already verified, judging
+            # them on Summary / Core Categories / Specialty Focus — fields
+            # that column fill used to populate. With column fill off those
+            # are empty, so the pass asks the model to re-judge blank rows and
+            # then fails closed on the result, deleting verified companies.
+            final_rows = list(filled_all)
+            rejected_final = []
+            _log(
+                f"  [chatgpt] Step 6/6: SKIP (final verify off) — "
+                f"keeping {len(final_rows)} rows verified in Step 4"
+            )
+            ckpt.mark_step_done(
+                "6_final", final_kept=final_rows, rejected_final=rejected_final
             )
         else:
             _log("  [chatgpt] Step 6/6: ChatGPT final market-related verify…")
@@ -3092,12 +4299,7 @@ async def run_chatgpt_expand(
             except Exception as exc:
                 _log(f"  [chatgpt] Company Details mapping skipped: {type(exc).__name__}: {exc}")
 
-        sheet = {
-            "firewall": "Firewall Companies",
-            "smartwatch": "Smartwatch Companies",
-            "green": "Green Chemical Companies",
-            "avocado": "Avocado Oil Companies",
-        }.get(family, "Companies")
+        sheet = "Companies"
 
         cost_summary = openai_cost.finish_run(
             companies=len(final_rows),

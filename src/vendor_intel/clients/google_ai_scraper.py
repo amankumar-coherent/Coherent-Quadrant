@@ -327,6 +327,26 @@ async def llm_clean_scrape_markdown(query: str, raw_markdown: str) -> str:
             if r.status_code != 200:
                 return ""
             data = r.json()
+            try:
+                from vendor_intel.pipeline.deepseek_tracker import (
+                    record_call,
+                    usage_from_openai_response,
+                )
+
+                usage = usage_from_openai_response(data)
+                # response=r lets this dedup against install_autotrack()'s
+                # httpx patch, which also sees this same physical response —
+                # without it, both would log the same call.
+                record_call(
+                    caller="google_ai_scraper.py:_llm_clean_scrape",
+                    model=model,
+                    prompt_tokens=usage["prompt_tokens"],
+                    completion_tokens=usage["completion_tokens"],
+                    cache_hit_tokens=usage["cache_hit_tokens"],
+                    response=r,
+                )
+            except Exception:
+                pass
             content = (
                 ((data.get("choices") or [{}])[0].get("message") or {}).get("content") or ""
             ).strip()
@@ -611,8 +631,28 @@ async def google_ai_ask_facts(query: str, *, company: str = "") -> dict:
             )
             if r.status_code != 200:
                 return facts
+            resp_json = r.json()
+            try:
+                from vendor_intel.pipeline.deepseek_tracker import (
+                    record_call,
+                    usage_from_openai_response,
+                )
+
+                usage = usage_from_openai_response(resp_json)
+                # response=r dedups against install_autotrack()'s httpx patch
+                # seeing this same physical response.
+                record_call(
+                    caller="google_ai_scraper.py:_llm_extract_facts",
+                    model=model,
+                    prompt_tokens=usage["prompt_tokens"],
+                    completion_tokens=usage["completion_tokens"],
+                    cache_hit_tokens=usage["cache_hit_tokens"],
+                    response=r,
+                )
+            except Exception:
+                pass
             content = (
-                ((r.json().get("choices") or [{}])[0].get("message") or {}).get("content") or ""
+                ((resp_json.get("choices") or [{}])[0].get("message") or {}).get("content") or ""
             ).strip()
             parsed = json.loads(content) if content else {}
             if isinstance(parsed, dict):

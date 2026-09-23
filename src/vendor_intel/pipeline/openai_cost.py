@@ -20,9 +20,15 @@ _DEFAULT_RATES: dict[str, dict[str, float]] = {
     "gpt-4.1-mini": {"input": 0.40, "output": 1.60},
     "gpt-4.1": {"input": 2.00, "output": 8.00},
     "o4-mini": {"input": 1.10, "output": 4.40},
-    # DeepSeek official API (cache-miss list prices; override via OPENAI_USD_PER_1M_*)
+    # DeepSeek official API, off-peak cache-miss list prices (see
+    # deepseek_tracker.py for the full cache-hit/peak-aware rate table that
+    # actually backs output/cost_dashboard/deepseek_calls.jsonl; these flat
+    # rates remain only as the fallback used by legacy CallRecord.estimated_cost_usd).
     "deepseek-chat": {"input": 0.28, "output": 0.42},
     "deepseek-reasoner": {"input": 0.55, "output": 2.19},
+    "deepseek-v4-flash": {"input": 0.22, "output": 0.66},
+    "deepseek-v4-pro": {"input": 0.66, "output": 1.98},
+    "deepseek-v4-flash-vision-exp": {"input": 0.22, "output": 0.66},
 }
 
 
@@ -220,6 +226,25 @@ def record_response_usage(
     )
     _append_jsonl(rec)
     _write_live_snapshot(session, status="RUNNING", phase=step or label)
+    try:
+        from vendor_intel.pipeline.deepseek_tracker import (
+            record_call,
+            usage_from_openai_response,
+        )
+
+        cache_hit = usage_from_openai_response(resp)["cache_hit_tokens"]
+        record_call(
+            caller=f"chatgpt_expand.py:{label}",
+            model=rec.model,
+            prompt_tokens=rec.prompt_tokens,
+            completion_tokens=rec.completion_tokens,
+            cache_hit_tokens=cache_hit,
+            market=session.market,
+            step=step,
+            run_id=session.run_id,
+        )
+    except Exception:
+        pass
     return rec
 
 

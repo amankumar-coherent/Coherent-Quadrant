@@ -130,7 +130,15 @@
 
   const EXTRACTION_MAX_WAIT = 60000;
   const EXTRACTION_POLL_INTERVAL = 500;
-  const EXTRACTION_STABILITY_DELAY = 3000;
+  // Was 3000, then 7000: measured cases where the AI Overview renders an
+  // intro paragraph, pauses while a list section (e.g. named executives) is
+  // still being generated server-side, then appends it. A short stability
+  // window locks in the incomplete paragraph as "final" before the list
+  // ever arrives, even though EXTRACTION_MAX_WAIT (60s) has plenty of
+  // budget left. The tell-tale symptom is markdown that ends mid-sentence
+  // ("...formats such as firstname.lastname@"). Longer stability delay
+  // trades extra seconds per query for materially fewer truncated answers.
+  const EXTRACTION_STABILITY_DELAY = 12000;
   const FOLLOW_UP_INPUT_SETTLE_DELAY = 300;
   const SHOW_MORE_MAX_CLICKS = 10;
   const SHOW_MORE_CLICK_COOLDOWN_MS = 700;
@@ -527,6 +535,190 @@
       "advanced search",
     ].filter((s) => lower.includes(s)).length;
     if (chromeHits >= 2 && !hasRealAiAnswerSignal(text)) return true;
+
+    if (endsMidSentence(text)) return true;
+    if (promisesRosterButHasNone(text)) return true;
+
+    return false;
+  }
+
+  /**
+   * True when the answer announces a roster of people ("the leadership team
+   * ... are listed below") but contains no role-labelled person name yet.
+   *
+   * This is the decisive signal for leadership queries, and far more robust
+   * than inspecting how the text ends: Google renders the framing sentence
+   * (and often a privacy caveat about executive emails) seconds before it
+   * appends the actual "CEO: Jane Doe" bullet list. Measured on real
+   * captures, every truncated answer of this kind mentioned only the
+   * company's own name, never a person's.
+   */
+  function promisesRosterButHasNone(markdown) {
+    if (!markdown) return false;
+
+    // Google splits the answer across many short lines and repeats the
+    // company name as a trailing source "chip". Flatten to a single
+    // whitespace-normalised string so role/name patterns can match across
+    // what are only visual line breaks ("Ryan Windham\nis the\nCEO\nof").
+    const text = String(markdown)
+      .replace(/\b(?:Shared|\d+\s*files?|Show (?:less|more|all))\b/gi, " ")
+      // Citation chips name a source and often a person ("LinkedIn Harsh
+      // Vardhan +1"), which would otherwise read as a delivered roster
+      // entry and mask a truncated answer.
+      .replace(
+        /\b(?:LinkedIn|Facebook|Twitter|X|Instagram|YouTube|Blogger\.com|Wikipedia|Crunchbase|Tracxn|ZoomInfo|RocketReach|Bloomberg|Reuters)\b[^\n]{0,60}?(?:\+\d+)?/gi,
+        " "
+      )
+      .replace(/\s+/g, " ")
+      .trim();
+    if (!text) return false;
+
+    // Only applies to answers that are clearly *about* a leadership roster.
+    if (
+      !/\b(leadership|executive|management team|founder|ceo|cto|chief|managing director|board of directors)\b/i.test(
+        text
+      )
+    ) {
+      return false;
+    }
+
+    const HONORIFIC = "(?:Mr\\.?|Ms\\.?|Mrs\\.?|Dr\\.?|Shri|Smt\\.?)?\\s*";
+    const PERSON = "[A-Z][a-z]+(?:\\s+[A-Z][a-z'.]+){1,3}";
+    const ROLE =
+      "(?:MD|CEO|CTO|CIO|CMO|COO|chief[a-z ]*officer|managing director|country head|co-?founder|founder|president|chairman|head of [a-z& ]+)";
+
+    // A delivered roster labels roles, e.g. "CEO: Jane Doe",
+    // "Founder - Jane Doe", "Chief Technology Officer (CTO): Jane Doe".
+    if (
+      new RegExp(`\\b${ROLE}\\b[^:–-]{0,40}[:–-]\\s*${HONORIFIC}${PERSON}`, "i").test(text)
+    ) {
+      return false;
+    }
+
+    // Or the reverse order: "Jane Doe is the Chief Executive Officer of X".
+    if (
+      new RegExp(
+        `\\b${PERSON}\\b.{0,40}?\\b(?:is|serves as|was appointed|holds the (?:role|position))\\b.{0,60}?\\b${ROLE}\\b`,
+        "i"
+      ).test(text)
+    ) {
+      return false;
+    }
+
+    // Or run together with no separator at all, as in "...include Founder
+    // and Chairman Anil Jagasia, MD/CEO Jayant Goradia, CTO Devang Pandya".
+    if (new RegExp(`\\b${ROLE}\\b[a-z/& ]{0,24}\\s${HONORIFIC}${PERSON}`, "i").test(text)) {
+      return false;
+    }
+
+    // "The Managing Director (MD) of AdaniConneX is Anil Kumar Sardana" —
+    // role first, company in between, then the name.
+    if (
+      new RegExp(`\\b${ROLE}\\b.{0,60}?\\bis\\b\\s+${HONORIFIC}${PERSON}`, "i").test(text)
+    ) {
+      return false;
+    }
+
+    // "Shreyaans Jain (Co-Founder & CEO)" — name with the role bracketed.
+    if (new RegExp(`\\b${PERSON}\\s*\\([^)]{0,40}?${ROLE}`, "i").test(text)) {
+      return false;
+    }
+
+    // Mentions a roster, but no role-labelled name arrived — still loading.
+    return true;
+  }
+
+  /**
+   * True when the answer stops mid-thought, which means Google is still
+   * streaming it in and a fixed stability timer would capture a partial
+   * answer. Observed repeatedly on leadership queries, where the panel
+   * renders "...standard corporate email formats (such as
+   * firstname.lastname@example.com" and only appends the actual list of
+   * named executives a few seconds later.
+   */
+  function endsMidSentence(markdown, subject) {
+    if (!markdown) return false;
+    // Ignore trailing SERP chrome the extractor commonly appends, so the
+    // real end of the answer is what gets inspected.
+    let body = String(markdown)
+      .replace(/(?:\s*(?:Shared|\d+\s*files?|Show (?:less|more|all))\s*)+$/gi, "")
+      .trim();
+    // Google also echoes the subject as a trailing source "chip" (a bare
+    // repeat of the company name on its own line). Strip a trailing line
+    // that merely repeats a line seen earlier, so the real sentence end is
+    // what gets inspected.
+    const lines = body.split("\n").map((l) => l.trim()).filter(Boolean);
+    while (
+      lines.length > 1 &&
+      lines.slice(0, -1).some(
+        (l) => l.toLowerCase() === lines[lines.length - 1].toLowerCase()
+      )
+    ) {
+      lines.pop();
+    }
+    if (subject) {
+      const subj = String(subject).trim().toLowerCase();
+      while (
+        lines.length > 1 &&
+        subj &&
+        lines[lines.length - 1].toLowerCase() === subj
+      ) {
+        lines.pop();
+      }
+    }
+    body = lines.join("\n").trim();
+    if (!body) return false;
+
+    // An unclosed "(" anywhere means the sentence that opened it never
+    // finished — the strongest signal in practice, because the truncation
+    // reliably lands inside a parenthetical ("...formats (such as
+    // firstname.lastname@example.com" with no closing paren).
+    const opens = (body.match(/\(/g) || []).length;
+    const closes = (body.match(/\)/g) || []).length;
+    if (opens > closes) return true;
+
+    // A dangling email prefix or trailing conjunction likewise means more
+    // text is still coming.
+    if (/@$/.test(body)) return true;
+    if (/\b(such as|including|are|is|and|or|the|of|for|to|by|with)$/i.test(body)) {
+      return true;
+    }
+
+    // A lead-in that promises content it never delivered ("...are detailed
+    // below", "...is as follows:") means the list itself is still
+    // streaming. Only treat it as truncated while the answer is still
+    // short — a long answer ending on such a phrase has already delivered
+    // its substance.
+    // Trailing source chips are short Title Case fragments Google appends
+    // after the prose (e.g. "Unilever Global", "LinkedIn India"). Drop them
+    // so the lead-in phrase they hide becomes the visible ending.
+    let tail = body;
+    for (let i = 0; i < 4; i++) {
+      const stripped = tail.replace(
+        /\n[A-Z][A-Za-z0-9.&'-]*(?:\s+[A-Z][A-Za-z0-9.&'-]*){0,3}\s*$/,
+        ""
+      );
+      if (stripped === tail) break;
+      tail = stripped.trim();
+    }
+
+    const LEAD_IN =
+      /\b(as follows|the following(?: individuals| people| executives| leaders| members)?|detailed below|listed below|outlined below|provided below|described below|are below|shown below|summarized below|compiled below|structured below|include the following)\b[\s.,-]*$/i;
+
+    // A lead-in that ends on a COLON is a promise of a list that has not
+    // arrived, at any length: "The primary leaders ... are detailed below:"
+    // is 525 chars of preamble followed by nothing. Length is irrelevant
+    // here — the colon is the tell.
+    if (/:$/.test(tail) && (LEAD_IN.test(tail.replace(/:\s*$/, "")) || tail.length < 250)) {
+      return true;
+    }
+
+    // Without the colon, only treat a trailing lead-in as truncation while
+    // the answer is short, so a long answer that merely happens to end on
+    // "...are listed below" is left alone.
+    if (tail.length < 250 && LEAD_IN.test(tail)) {
+      return true;
+    }
 
     return false;
   }

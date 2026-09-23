@@ -23,6 +23,10 @@ SLIM_COLUMNS: tuple[str, ...] = (
     "Continent / Geography",
     "Operational Presence",
     "Ownership",
+    # What the company actually offers in this market — the product/brand a
+    # Manufacturer makes, or the named service a Service Provider delivers.
+    # Feeds the report's Brand column, which otherwise just repeats Company.
+    "Market Offering",
     "Employees",
     "Core Categories",
     "Specialty Focus",

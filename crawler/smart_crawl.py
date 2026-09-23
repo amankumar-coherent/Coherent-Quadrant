@@ -15,6 +15,16 @@ from typing import Any
 from urllib.parse import urljoin, urlparse
 
 from openai import AsyncOpenAI
+try:
+    # smart_crawl.py can be imported standalone (e.g. from a worker thread)
+    # without vendor_intel/__init__.py having run first, so install the
+    # DeepSeek autotrack patch explicitly here too — idempotent, safe to
+    # call even if it already ran via `import vendor_intel` elsewhere.
+    from vendor_intel.pipeline.deepseek_tracker import install_autotrack
+
+    install_autotrack()
+except Exception:
+    pass
 _client: Any = None
 def _get_client() -> Any:
     global _client
@@ -35,7 +45,7 @@ def _get_client() -> Any:
                     os.environ["OPENAI_API_KEY"] = api_key  # propagate for any sub-clients
             except Exception:
                 pass
-        _client = AsyncOpenAI(api_key=api_key or None, max_retries=6)
+        _client = AsyncOpenAI(api_key=api_key or None, max_retries=2)
     return _client
 class _ClientProxy:
     def __getattr__(self, name): return getattr(_get_client(), name)
@@ -1249,20 +1259,15 @@ def _strip_source_artifacts(merged: dict) -> None:
 
 _LLM_SEM: asyncio.Semaphore | None = None
 
-async def _extract_chunk(domain: str, chunk: str, until: str | None,
-                         schema: dict, mode_label: str, max_tokens: int = 5000
-                         ) -> tuple[dict, int, int, float]:
-    """Returns (intel_dict, tokens_in, tokens_out, cost_inr).
-
-    Tokens and cost surface into extraction_stats so callers can show real
-    LLM spend per crawl without having to query the cost meter DB.
-    """
-    date_note = f"\nOnly include media.articles published on or before {until}." if until else ""
-    prompt = (
-        f"Extract structured company metadata from the web content below.\n"
-        f"Focal company domain: {domain}  Focus: {mode_label}{date_note}\n\n"
-        "Rules:\n"
-        "- Extract ONLY what is explicitly stated — never invent or guess.\n"
+# Static, verbatim, never interpolated — this is the cacheable prefix. DeepSeek's
+# disk cache only matches identical leading tokens, so any per-call value
+# (domain, mode_label, date_note, chunk content) must come AFTER this block,
+# never inside or before it, or every call becomes a full cache-miss on the
+# ~600-token rule set below (cache-hit tokens cost ~30x less than cache-miss).
+_EXTRACT_CHUNK_RULES = (
+    "Extract structured company metadata from the web content below.\n\n"
+    "Rules:\n"
+    "- Extract ONLY what is explicitly stated — never invent or guess.\n"
         "- The CONTENT below may be sourced from multiple pages (the focal company's\n"
         "  own site, Wikipedia, news articles, third-party profiles, etc.).\n"
         "  Every field you extract must describe the FOCAL COMPANY (domain above),\n"
@@ -1319,9 +1324,25 @@ async def _extract_chunk(domain: str, chunk: str, until: str | None,
         "       consumer channel it sells through ('Retail E-commerce', 'Grocery Retail'), NOT its product\n"
         "       category.\n"
         "  3-6 entries max. If there's genuinely no signal, leave empty.\n"
-        "- business.key_markets: geographic markets ('India', 'GCC', 'APAC', 'North America'), NOT\n"
-        "  industries. Keep this separate from business.industries.\n"
-        "- intel: synthesis and actionable insights only.\n\n"
+    "- business.key_markets: geographic markets ('India', 'GCC', 'APAC', 'North America'), NOT\n"
+    "  industries. Keep this separate from business.industries.\n"
+    "- intel: synthesis and actionable insights only.\n"
+    "- The focal company domain and its focus area are given in the user message;\n"
+    "  every field you extract must describe THAT company, never the source page.\n"
+)
+
+
+async def _extract_chunk(domain: str, chunk: str, until: str | None,
+                         schema: dict, mode_label: str, max_tokens: int = 5000
+                         ) -> tuple[dict, int, int, float]:
+    """Returns (intel_dict, tokens_in, tokens_out, cost_inr).
+
+    Tokens and cost surface into extraction_stats so callers can show real
+    LLM spend per crawl without having to query the cost meter DB.
+    """
+    date_note = f"\nOnly include media.articles published on or before {until}." if until else ""
+    prompt = (
+        f"Focal company domain: {domain}  Focus: {mode_label}{date_note}\n\n"
         f"Content:\n{chunk}"
     )
     global _LLM_SEM
@@ -1339,6 +1360,7 @@ async def _extract_chunk(domain: str, chunk: str, until: str | None,
         "\n\nReturn ONLY valid JSON matching the requested company_intel schema. "
         "No markdown fences or commentary."
     )
+    system_prompt = _EXTRACT_CHUNK_RULES + json_note
     attempts: list[dict[str, Any]] = []
     if _llm_use_json_schema():
         attempts.append(
@@ -1362,7 +1384,10 @@ async def _extract_chunk(domain: str, chunk: str, until: str | None,
             async with _LLM_SEM:
                 body: dict[str, Any] = {
                     "model": LLM_MODEL,
-                    "messages": [{"role": "user", "content": prompt + json_note}],
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": prompt},
+                    ],
                     "temperature": 0,
                     "max_tokens": max_tokens,
                     "timeout": 30,
@@ -1372,18 +1397,24 @@ async def _extract_chunk(domain: str, chunk: str, until: str | None,
             tin = tout = 0
             cost = 0.0
             try:
-                from backend.cost.meter import record, estimate_llm_cost_inr
-
-                tin = resp.usage.prompt_tokens if resp.usage else 0
-                tout = resp.usage.completion_tokens if resp.usage else 0
-                cost = estimate_llm_cost_inr(LLM_MODEL, tin, tout)
-                record(
-                    source="openai",
-                    operation="smart_crawl_extraction",
-                    cost_inr=cost,
-                    tokens_in=tin,
-                    tokens_out=tout,
+                from vendor_intel.pipeline.deepseek_tracker import (
+                    record_call,
+                    usage_from_openai_response,
                 )
+
+                usage = usage_from_openai_response(resp)
+                tin = usage["prompt_tokens"]
+                tout = usage["completion_tokens"]
+                rec = record_call(
+                    caller="smart_crawl.py:_extract_chunk",
+                    model=LLM_MODEL,
+                    prompt_tokens=tin,
+                    completion_tokens=tout,
+                    cache_hit_tokens=usage["cache_hit_tokens"],
+                    market=domain,
+                    step="extract",
+                )
+                cost = rec.estimated_cost_usd
             except Exception as _ce:
                 log.warning("smart_crawl cost record failed for %s: %s", domain, _ce)
             parsed = _parse_llm_json_content(resp.choices[0].message.content or "")

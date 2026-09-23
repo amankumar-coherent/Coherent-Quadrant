@@ -1,7 +1,6 @@
 """Display names, acquisition suffixes, and founded-year extraction for quadrant brands."""
 from __future__ import annotations
 
-import json
 import re
 from typing import Any, Literal
 
@@ -20,136 +19,20 @@ _FOUNDED_RE = re.compile(
 )
 _YEAR_ONLY_RE = re.compile(r"^(19|20)\d{2}$")
 
-_DISPLAY_MODE_SYSTEM = """You decide how a market-comparison table should label two columns,
-BRAND and COMPANY, for every company in ONE market.
-
-Two styles exist:
-- "solution_provider": the buyer chooses a PRODUCT/PLATFORM whose maker is a
-  separate, often more well-known parent — e.g. Brand=Gemini, Company=Google.
-  Typical of tech / software / platform / B2B solution markets, but decide
-  from the market itself, not a fixed industry list.
-- "consumer_brand": the brand IS the company, or is one of several
-  consumer/commercial brands a parent portfolio owns — e.g. Brand=Oreo,
-  Company=(acquired by Mondelez). Typical of food, energy, industrial goods,
-  pharma, and most other markets where "brand" and "company" are usually the
-  same legal entity, or where an acquisition is best shown as a suffix.
-
-Return JSON only:
-{"company_display_mode": "solution_provider" | "consumer_brand", "reason": "one short sentence"}
-"""
-
-# Cache of confirmed LLM verdicts, keyed by (market, industry_group,
-# industry_category) lowercased. Only successful LLM calls are cached — the
-# keyword fallback below is cheap enough to recompute every call, so a
-# process that starts without an LLM available never poisons the cache for
-# a later call that does have one.
-_DISPLAY_MODE_LLM_CACHE: dict[tuple[str, str, str], "CompanyDisplayMode"] = {}
-
-
-def _llm_classify_display_mode(
-    market: str, industry_group: str, industry_category: str, *, settings: Any = None, client: Any = None
-) -> "CompanyDisplayMode | None":
-    """One cached LLM call per market: solution_provider or consumer_brand?
-
-    Returns None (caller falls back to the keyword heuristic) when no LLM is
-    configured/available or the call fails — same fail-open contract as
-    axis_define.py's market axis refinement.
-    """
-    try:
-        from vendor_intel.placeholders.load_keys import apply_env_overrides
-
-        apply_env_overrides()
-    except Exception:
-        pass
-    try:
-        from vendor_intel.clients.claude import ClaudeClient
-        from vendor_intel.config import Settings
-
-        settings = settings or Settings.load()
-        client = client or ClaudeClient(settings)
-    except Exception:
-        return None
-    if client is None or not getattr(client, "available", False):
-        return None
-
-    payload = {
-        "market": market,
-        "industry_group": industry_group,
-        "industry_category": industry_category,
-    }
-    try:
-        raw = client.complete_json(
-            _DISPLAY_MODE_SYSTEM,
-            json.dumps(payload, ensure_ascii=False),
-            model=getattr(settings, "classifier_model", None),
-            max_tokens=200,
-        )
-    except Exception:
-        return None
-    if not isinstance(raw, dict):
-        return None
-    mode = str(raw.get("company_display_mode") or "").strip().lower()
-    if mode in ("solution_provider", "consumer_brand"):
-        return mode  # type: ignore[return-value]
-    return None
-
-
-# Keyword fallback — used only when no LLM is configured/available (tests,
-# offline runs, mock mode). NOT the primary decision path: a market whose
-# name matches neither list used to silently default to "consumer_brand"
-# with no way to reconsider; now that only happens when the LLM path above
-# couldn't run at all.
-# Tech / B2B solution markets → Company = parent / solution provider (e.g. Gemini → Google)
-_SOLUTION_PROVIDER_MARKERS = (
-    "ict",
-    "information and communication",
-    "wearable",
-    "medical device",
-    "medtech",
-    "semiconductor",
+# Provider-category name fragments that indicate a builder/platform-owner
+# style Company column (Brand=product, Company=parent/platform maker) —
+# checked against THIS market's own LLM-derived provider category names
+# (market_relevance.analyze_market), never against a fixed list of market
+# names/keywords. A B2B market whose dynamic categories don't match any of
+# these (e.g. Manufacturer / Distributor / Service Provider only) uses the
+# consumer_brand style instead.
+_PROVIDER_TYPE_SOLUTION_HINTS = (
+    "solution provider",
+    "platform provider",
+    "technology provider",
     "software",
-    "saas",
-    "cloud",
-    "ai ",
-    " artificial intelligence",
-    "machine learning",
-    "automation",
-    "healthcare it",
-    "cyber",
-    "telecom",
-    "technology",
-    "tech ",
     "platform",
-    "api ",
-    "llm",
-    "generative ai",
-)
-
-# Food / protein / CPG → Brand + Company; acquisitions shown as (acquired by Parent)
-_CONSUMER_BRAND_MARKERS = (
-    "food",
-    "beverage",
-    "protein",
-    "dairy",
-    "milk",
-    "oil",
-    "avocado",
-    "nutrition",
-    "ingredient",
-    "snack",
-    "meat",
-    "plant-based",
-    "cpg",
-    "consumer",
-    "cosmetic",
-    "personal care",
-    "packaging",
-    "energy",
-    "lng",
-    "liquefied",
-    "pharma",
-    "pharmaceutical",
-    "glp",
+    "integrator",
 )
 
 
@@ -206,60 +89,36 @@ def company_display_mode(
     """
     Pick Company-column style for this market.
 
-    * ``solution_provider`` — tech-style: Brand=Gemini, Company=Google
+    * ``solution_provider`` — builder/platform-owner style: Brand=Gemini, Company=Google
     * ``consumer_brand`` — most other markets: Brand + Company; owned → ``(acquired by Parent)``
 
-    Decision order:
-    1. Explicit catalog leaf (industry_group/industry_category already came
-       from criteria_catalog.py's controlled taxonomy — a cheap, reliable
-       signal when it's present).
-    2. One LLM call per unique market, cached (see _llm_classify_display_mode) —
-       the actual market-agnostic decision, works for any of ~1,000 markets
-       without a fixed keyword list.
-    3. Keyword-list fallback, only reached when no LLM is configured/available
-       (tests, offline runs, mock mode).
+    Derived from market_relevance.analyze_market's own market-type + dynamic
+    provider-category classification (cached there per market) — a B2C
+    market is always consumer_brand; a B2B market is solution_provider only
+    when its own LLM-derived provider categories for THIS market actually
+    include a builder/platform-style role (see
+    _PROVIDER_TYPE_SOLUTION_HINTS) rather than from any fixed keyword list
+    on the market's name.
     """
-    cat = str(industry_category or "").lower()
-    group = str(industry_group or "").lower()
+    try:
+        from vendor_intel.quadrant.market_relevance import analyze_market, market_provider_type_names
 
-    # 1) Explicit catalog leaf
-    if any(
-        x in cat or x in group
-        for x in (
-            "information and communication",
-            "semiconductor",
-            "healthcare it",
-            "ict",
-            "automation",
+        analysis = analyze_market(
+            str(market or ""),
+            industry_group=str(industry_group or ""),
+            industry_category=str(industry_category or ""),
+            settings=settings,
+            client=client,
         )
-    ):
-        return "solution_provider"
-    if any(
-        x in cat or x in group
-        for x in ("food", "beverage", "ingredient", "dairy", "nutrition")
-    ):
+    except Exception:
         return "consumer_brand"
 
-    # 2) LLM call, cached per (market, industry_group, industry_category)
-    cache_key = (str(market or "").strip().lower(), group, cat)
-    cached = _DISPLAY_MODE_LLM_CACHE.get(cache_key)
-    if cached:
-        return cached
-    llm_mode = _llm_classify_display_mode(
-        str(market or ""), str(industry_group or ""), str(industry_category or ""),
-        settings=settings, client=client,
-    )
-    if llm_mode:
-        _DISPLAY_MODE_LLM_CACHE[cache_key] = llm_mode
-        return llm_mode
-
-    # 3) Keyword fallback (no LLM available)
-    blob = " ".join([str(market or ""), str(industry_group or ""), str(industry_category or "")]).lower()
-    if any(m in blob for m in _CONSUMER_BRAND_MARKERS):
+    if str(analysis.get("market_type") or "").upper() != "B2B":
         return "consumer_brand"
-    if any(m in blob for m in _SOLUTION_PROVIDER_MARKERS):
+
+    names = [n.lower() for n in market_provider_type_names(analysis)]
+    if any(hint in n for n in names for hint in _PROVIDER_TYPE_SOLUTION_HINTS):
         return "solution_provider"
-    # Default: consumer-style acquisitions in brackets (safer for CMI brand tables)
     return "consumer_brand"
 
 
@@ -309,6 +168,47 @@ def _resolve_owner(row: dict[str, Any]) -> tuple[str, str]:
             if not explicit and not inferred:
                 relation = _relation_from_ownership_text(company_field) or relation
     return owner, relation
+
+
+_LEGAL_SUFFIX_RE = re.compile(
+    r"(?i)[\s,]+(?:inc|inc\.|incorporated|corp|corp\.|corporation|co|co\.|"
+    r"company|ltd|ltd\.|limited|llc|l\.l\.c\.|plc|gmbh|ag|nv|n\.v\.|bv|b\.v\.|"
+    r"sa|s\.a\.|as|a/s|ab|oy|spa|s\.p\.a\.|srl|s\.r\.l\.|pty|pvt|pvt\.|"
+    r"private|holdings|holding|group|international|worldwide)\.?\s*$"
+)
+
+
+def _same_entity(a: str, b: str) -> bool:
+    """True when two names denote the same company modulo legal suffixes.
+
+    "Helen of Troy Limited" owned by "Helen of Troy" is a company owning
+    itself, and printing "(acquired by ...)" for it is noise. Comparison only —
+    the displayed name keeps its real suffix.
+    """
+    def core(name: str) -> str:
+        prev = ""
+        cur = (name or "").strip().lower().rstrip(".,")
+        # Repeat: "Foo Group Holdings Ltd" sheds three suffixes.
+        while cur != prev:
+            prev = cur
+            cur = _LEGAL_SUFFIX_RE.sub("", cur).strip().rstrip(".,")
+        return cur
+
+    ca, cb = core(a), core(b)
+    return bool(ca) and ca == cb
+
+
+def _ownership_unverified(row: dict[str, Any]) -> bool:
+    """True when the row itself says the ownership claim is weakly evidenced.
+
+    Discovery asks the model to rate its own ownership evidence. A "low" means
+    it found only indirect signals — similar names, a directory listing — and
+    the spec is explicit that an acquisition is stated only when verified.
+    Anything other than an explicit "low" is allowed through: a missing
+    confidence is the normal case for rows from older or non-AI-Mode sources,
+    and treating those as unverified would strip correct suffixes wholesale.
+    """
+    return str(row.get("ownership_confidence") or "").strip().lower() == "low"
 
 
 def _legal_or_provider_name(row: dict[str, Any], brand: str) -> str:
@@ -362,7 +262,17 @@ def brand_display_fields(
         or brand
     )
 
-    if owner and owner.lower() != own_name.lower() and owner.lower() != brand.lower():
+    if (
+        owner
+        # Legal-suffix aware: "Helen of Troy Limited" owned by "Helen of
+        # Troy" is the same entity, and the suffix would be self-referential.
+        and not _same_entity(owner, own_name)
+        and not _same_entity(owner, brand)
+        # An unverified acquisition printed as fact is worse than no
+        # acquisition at all, so a self-declared "low" confidence suppresses
+        # the suffix and the company stands on its own name.
+        and not _ownership_unverified(row)
+    ):
         company_col = f"{own_name} {format_acquired_suffix(owner, relation=relation, year=year)}"
     else:
         # Independent, or the "owner" field is really just the company itself.

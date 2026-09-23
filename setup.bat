@@ -6,6 +6,8 @@ if not exist .venv python -m venv .venv
 call .venv\Scripts\activate.bat
 .venv\Scripts\python.exe -m pip install --upgrade pip -q
 .venv\Scripts\python.exe -m pip install -r requirements.txt
+REM Bundled Chromium for Google AI Mode -- it loads the CAPTCHA solver in extensions\captcha-raptor
+.venv\Scripts\python.exe -m patchright install chromium
 if not exist .env copy .env.example .env
 echo.
 echo LIVE mode: edit .env using .env.example and env.live.template

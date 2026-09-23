@@ -37,6 +37,9 @@ ddgs>=9.0.0                   # Web search via ddgs.text() / ddgs.news() only
 # --- News & activity (live) ---
 feedparser>=6.0.11            # Optional RSS feeds (RSS_FEED_URLS in .env)
 
+# --- Google AI Mode free LLM backend (GOOGLE_AI_MODE_ENABLED=true) ---
+patchright>=1.61.0            # NOT playwright: plain playwright gets an instant CAPTCHA
+
 # --- Backend website scraping (Selenium + Chrome; WEB_FETCH_ENABLED=true) ---
 selenium>=4.25.0              # Google Chrome required on the host
 trafilatura>=1.12.0           # Extract text from rendered HTML

@@ -14,10 +14,13 @@ from typing import Any
 
 _SYSTEM = """You define Coherent Quadrant SCORING PARAMETERS for ONE specific market.
 
+The axis TITLES are FIXED for every market and must not be changed:
+  X = "Product Strength"
+  Y = "Business Strength"
+
 You must output:
-1) Market-specific X and Y axis titles
-2) Exactly 5 X parameters and 5 Y parameters — these ARE the criteria used to score every company
-3) A short plain-language DEFINITION for EACH of those 10 parameters (what it means in THIS market)
+1) Exactly 5 X parameters and 5 Y parameters — these ARE the criteria used to score every company
+2) A short plain-language DEFINITION for EACH of those 10 parameters (what it means in THIS market)
 
 X parameters = product / tech / operations strength for THIS market only.
 Y parameters = commercial scale / customers / finance / growth for THIS market only.
@@ -27,8 +30,6 @@ exact market query (e.g. semiconductor ≠ flexible packaging ≠ LNG ≠ GLP-1)
 
 Return JSON only:
 {
-  "axis_x": "2-6 word X axis title for this market",
-  "axis_y": "2-6 word Y axis title for this market",
   "x": ["exactly 5 X scoring parameters"],
   "y": ["exactly 5 Y scoring parameters"],
   "x_definitions": {
@@ -46,7 +47,25 @@ Hard rules:
 - x_definitions keys MUST match the "x" list exactly; y_definitions keys MUST match "y" exactly.
 - Definitions must be market-specific (semiconductor process ≠ packaging barrier ≠ LNG assets).
 - Do NOT reuse generic ICT fluff when the market needs different dimensions.
-- axis_x / axis_y MUST be market-specific (not always Solution Capability / Business Strategy).
+- Do NOT return axis titles: X is always "Product Strength" and Y is always
+  "Business Strength". Only the 5 parameters under each axis change per market.
+
+WHAT BELONGS ON EACH AXIS (this split is the whole point of the chart):
+- X = PRODUCT: what the company BUILDS. Technology, performance, breadth,
+  quality, R&D depth, innovation, roadmap, engineering capability.
+- Y = BUSINESS: how the company SELLS and OPERATES commercially. Named
+  customers and contracts, revenue and growth, funding and ownership,
+  headcount, installed base, geographic footprint, channel and partner
+  network, market share.
+- A parameter about technology, innovation or product development belongs on
+  X even if it sounds strategic. "Technology Roadmap", "Innovation Pipeline"
+  and "R&D Investment" are X, never Y.
+- Every Y parameter must be answerable with a COMMERCIAL fact: a customer
+  name, a contract value, a revenue or growth figure, a headcount, a number
+  of offices or countries, a named partner, a market share. If the only
+  honest evidence for a Y parameter would be a vague phrase like "strong
+  presence" or "growing partnerships", it is the wrong parameter -- replace
+  it with one that has countable public evidence.
 - Exactly 5 on X and 5 on Y. No empty strings. Each name under 80 characters.
 - Each definition 1-2 sentences, under 280 characters, no marketing fluff.
 """
@@ -73,6 +92,27 @@ Rules:
 - 1-2 sentences each, under 280 characters.
 - No empty strings.
 """
+
+
+# Axis NAMES are fixed for every market; only the parameters beneath them
+# are market-specific. Exactly this many parameters per axis.
+AXIS_X_FIXED = "Product Strength"
+AXIS_Y_FIXED = "Business Strength"
+PARAMS_PER_AXIS = 5
+
+
+_AXIS_LLM_RETRIES = 3
+
+
+def _axis_llm_required() -> bool:
+    """LLM-derived axis parameters are mandatory by default.
+
+    The catalog baseline is generic, so falling back to it silently gives a
+    market parameters that were never tuned to it — measured live: 3 of 7
+    markets ran on catalog values without any error surfacing.
+    """
+    raw = (os.getenv("EXPAND_MARKET_AXIS_REQUIRE_LLM") or "1").strip().lower()
+    return raw not in {"0", "false", "no", "off"}
 
 
 def _env_enabled() -> bool:
@@ -196,8 +236,15 @@ def define_market_axes(
     parameter definitions when a client is available.
     """
     base = dict(industry or {})
-    axis_x = str(base.get("axis_x") or "Solution Capability")
-    axis_y = str(base.get("axis_y") or "Business Strategy")
+    # The axis NAMES are fixed for every market; only the 5 parameters under
+    # each axis are market-specific. This must hold on the catalog path too:
+    # when the LLM call fails the YAML name leaked through, so markets ended
+    # up labelled "Packaging Solution Capability" or "Asset & Operating
+    # Capability" instead of Product / Business Strength.
+    axis_x = AXIS_X_FIXED
+    axis_y = AXIS_Y_FIXED
+    base["axis_x"] = axis_x
+    base["axis_y"] = axis_y
     x_feats = list(base.get("x") or [])
     y_feats = list(base.get("y") or [])
     base["axis_definition_method"] = "catalog"
@@ -207,14 +254,29 @@ def define_market_axes(
     }
 
     if not _env_enabled():
+        if _axis_llm_required():
+            raise RuntimeError(
+                "EXPAND_MARKET_AXIS_LLM is off but market-specific axis "
+                "parameters are required. Turn it back on, or set "
+                "EXPAND_MARKET_AXIS_REQUIRE_LLM=false to accept the generic "
+                "catalog baseline."
+            )
         return base
 
     try:
         settings, client = _get_client(settings, client)
-    except Exception:
+    except Exception as exc:  # noqa: BLE001
+        if _axis_llm_required():
+            raise RuntimeError(
+                f"market axis parameters need an LLM client for {market!r}: {exc}"
+            ) from exc
         return base
 
     if client is None or not getattr(client, "available", False):
+        if _axis_llm_required():
+            raise RuntimeError(
+                f"market axis parameters need an available LLM client for {market!r}"
+            )
         return base
 
     payload = {
@@ -229,16 +291,47 @@ def define_market_axes(
             "y": y_feats,
         },
     }
-    try:
-        raw = client.complete_json(
-            _SYSTEM,
-            json.dumps(payload, ensure_ascii=False),
-            model=getattr(settings, "classifier_model", None),
-            max_tokens=2500,
+    # The 5 parameters under each axis MUST be market-specific, so the LLM
+    # path is not optional: a silent fall back to the catalog gives every
+    # market the same generic baseline parameters. Retry before giving up.
+    raw = None
+    last_err: Exception | None = None
+    for attempt in range(1, _AXIS_LLM_RETRIES + 1):
+        try:
+            raw = client.complete_json(
+                _SYSTEM,
+                json.dumps(payload, ensure_ascii=False),
+                model=getattr(settings, "classifier_model", None),
+                max_tokens=2500,
+            )
+            if isinstance(raw, dict) and raw.get("x") and raw.get("y"):
+                break
+            last_err = ValueError("axis JSON missing x/y")
+            raw = None
+        except Exception as exc:  # noqa: BLE001
+            last_err = exc
+            raw = None
+        print(
+            f"  [quadrant] market axis LLM attempt {attempt}/{_AXIS_LLM_RETRIES} "
+            f"failed: {last_err}",
+            flush=True,
         )
-    except Exception as exc:
-        print(f"  [quadrant] market axis LLM failed: {exc}", flush=True)
-        # Still try definitions for catalog params
+
+    if raw is None:
+        if _axis_llm_required():
+            # Fail loudly: catalog parameters are generic, so a landscape
+            # scored on them is not market-specific at all.
+            raise RuntimeError(
+                f"market axis parameters could not be derived for {market!r} "
+                f"after {_AXIS_LLM_RETRIES} attempts: {last_err}. "
+                "Set EXPAND_MARKET_AXIS_REQUIRE_LLM=false to allow the "
+                "generic catalog baseline instead."
+            )
+        print(
+            "  [quadrant] WARNING falling back to CATALOG parameters — these "
+            "are generic, not market-specific",
+            flush=True,
+        )
         defs = explain_market_parameters(
             market,
             x_feats,
@@ -253,17 +346,14 @@ def define_market_axes(
         base["axis_definition_method"] = "catalog+defs"
         return base
 
-    if not isinstance(raw, dict):
-        return base
-
     new_x = _clean_axis(str(raw.get("axis_x") or ""), axis_x)
     new_y = _clean_axis(str(raw.get("axis_y") or ""), axis_y)
 
     # NEW: Use fixed axis labels for all markets (parameters remain dynamic per market)
-    new_x_feats = _clean_feat_list(raw.get("x"), x_feats, n=5)
-    new_y_feats = _clean_feat_list(raw.get("y"), y_feats, n=5)
-    base["axis_x"] = "Product Strength"  # Fixed for all markets
-    base["axis_y"] = "Business Strategy"  # Fixed for all markets
+    new_x_feats = _clean_feat_list(raw.get("x"), x_feats, n=PARAMS_PER_AXIS)
+    new_y_feats = _clean_feat_list(raw.get("y"), y_feats, n=PARAMS_PER_AXIS)
+    base["axis_x"] = AXIS_X_FIXED  # Fixed for all markets
+    base["axis_y"] = AXIS_Y_FIXED  # Fixed for all markets
     base["x"] = new_x_feats
     base["y"] = new_y_feats
     base["axis_definition_method"] = "llm"

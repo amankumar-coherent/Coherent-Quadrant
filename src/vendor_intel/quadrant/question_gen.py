@@ -100,8 +100,8 @@ def generate_questions(
     industry_category: str,
     x_features: list[str],
     y_features: list[str],
-    axis_x: str = "Solution Capability",
-    axis_y: str = "Business Strategy",
+    axis_x: str = "Product Strength",
+    axis_y: str = "Business Strength",
     settings: Settings | None = None,
     client: ClaudeClient | None = None,
 ) -> list[FeatureQuestions]:

@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Re-score all chatgpt_expand markets with market-specific X/Y axes + 5×5 parameters.
+"""Re-score one or more markets with market-specific X/Y axes + 5×5 parameters.
 
 Forces a fresh XY pass (clears prior X/Y), keeps companies/roles/Found in, rebuilds
 FINAL Excel + HTML so scorecards show the market parameters used for scoring.
 
 Usage:
-  .\\.venv\\Scripts\\python.exe scripts\\rescore_market_axes.py
-  .\\.venv\\Scripts\\python.exe scripts\\rescore_market_axes.py --only semiconductor
-  .\\.venv\\Scripts\\python.exe scripts\\rescore_market_axes.py --skip-crawl
+  .\\.venv\\Scripts\\python.exe scripts\\rescore_market_axes.py --market "<Market name>"
+  .\\.venv\\Scripts\\python.exe scripts\\rescore_market_axes.py --market "<A>" --market "<B>" --crawl
 """
 from __future__ import annotations
 
@@ -41,33 +40,6 @@ from vendor_intel.pipeline.web_expand import write_final_xlsx
 
 OUT = ROOT / "output" / "chatgpt_expand"
 
-MARKETS: list[tuple[str, str, str]] = [
-    (
-        "global_flexible_packaging_market_global",
-        "Global Flexible Packaging Market",
-        "flexible",
-    ),
-    (
-        "global_wearable_medical_devices_market_global",
-        "Global Wearable Medical Devices Market",
-        "wearable",
-    ),
-    (
-        "global_semiconductor_market_global",
-        "Global Semiconductor Market",
-        "semiconductor",
-    ),
-    (
-        "global_liquefied_natural_gas_market_global",
-        "Global Liquefied Natural Gas Market",
-        "lng",
-    ),
-    (
-        "global_glp_1_receptor_agonist_market_global",
-        "Global GLP-1 Receptor Agonist Market",
-        "glp1",
-    ),
-]
 
 
 def _norm(s: str) -> str:
@@ -225,13 +197,13 @@ async def amain(args: argparse.Namespace) -> int:
     except Exception:
         pass
     os.environ.setdefault("EXPAND_MARKET_AXIS_LLM", "1")
-    only = (args.only or "").strip().lower()
+    from vendor_intel.pipeline.web_expand import default_output_dir
+
     if not args.skip_crawl:
         os.environ["EXPAND_XY_SKIP_CRAWL"] = "0"
     results = []
-    for slug, query, key in MARKETS:
-        if only and only not in {key, slug, _norm(query)} and only not in slug:
-            continue
+    for query in args.market:
+        slug = default_output_dir(query, args.country).name
         try:
             results.append(await rescore_one(slug, query, skip_crawl=args.skip_crawl))
         except Exception as exc:
@@ -247,7 +219,9 @@ async def amain(args: argparse.Namespace) -> int:
 
 def main() -> int:
     p = argparse.ArgumentParser(description="Rescore markets with market-wise X/Y parameters")
-    p.add_argument("--only", default="", help="flexible|wearable|semiconductor|lng|glp1|slug")
+    p.add_argument("--market", action="append", required=True,
+                   help="market name to rescore (repeat for several markets)")
+    p.add_argument("--country", default="global")
     p.add_argument(
         "--skip-crawl",
         action="store_true",

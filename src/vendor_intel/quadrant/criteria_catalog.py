@@ -7,8 +7,8 @@ from typing import Any
 
 import yaml
 
-AXIS_X = "Solution Capability"
-AXIS_Y = "Business Strategy"
+AXIS_X = "Product Strength"
+AXIS_Y = "Business Strength"
 
 
 def _project_root() -> Path:

@@ -136,6 +136,37 @@ def assign_quadrants_absolute_median(
     return quads, mid_x, mid_y
 
 
+def _tie_safe_cut(order: list[int], cut: int, key) -> int:
+    """Move `cut` off a run of equal scores so tied companies stay together.
+
+    The rank split cuts at n//2, which lands mid-tie whenever many companies
+    share a score — and then two companies with IDENTICAL X and Y end up in
+    different quadrants purely because of their row order. Observed live:
+    four glucometer companies all at X=100 Y=65, two labelled Leaders and two
+    Trailblazers.
+
+    The boundary is nudged to whichever edge of the tied run is closer, so the
+    halves stay as even as the data allows without ever splitting equals.
+    """
+    if cut <= 0 or cut >= len(order):
+        return cut
+    if key(order[cut - 1]) != key(order[cut]):
+        return cut  # already on a clean boundary
+
+    tied = key(order[cut])
+    lo = cut
+    while lo > 0 and key(order[lo - 1]) == tied:
+        lo -= 1
+    hi = cut
+    while hi < len(order) and key(order[hi]) == tied:
+        hi += 1
+    # Whole cohort is one tie: keep everyone on one side rather than
+    # inventing a split that the scores do not support.
+    if lo == 0 and hi == len(order):
+        return 0
+    return lo if (cut - lo) <= (hi - cut) else hi
+
+
 def assign_quadrants_half_median(
     executions: Sequence[int],
     innovations: Sequence[int],
@@ -164,7 +195,7 @@ def assign_quadrants_half_median(
     # lands on the same X). Sorting by (x, y, index) and cutting at n//2 always
     # yields both halves; ties degrade gracefully via stable index order.
     order_x = sorted(range(n), key=lambda i: (xs[i], ys[i], i))
-    cut_x = n // 2
+    cut_x = _tie_safe_cut(order_x, n // 2, lambda i: (xs[i], ys[i]))
     left_idx = order_x[:cut_x]
     right_idx = order_x[cut_x:]
 
@@ -180,7 +211,7 @@ def assign_quadrants_half_median(
             return
         # Rank split on Y (same rationale as X — median ties must not empty a cell)
         order = sorted(indices, key=lambda i: (ys[i], xs[i], i))
-        cut = len(order) // 2
+        cut = _tie_safe_cut(order, len(order) // 2, lambda i: (ys[i], xs[i]))
         low_set = set(order[:cut])
         for i in indices:
             high_y = i not in low_set

@@ -359,6 +359,12 @@ def _deepseek_complete(system: str, user: str, model: str, max_tokens: int) -> s
         {"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "content-type": "application/json"},
         body,
     )
+    # No explicit record_call() here: _post_json() makes this request via raw
+    # httpx (not the openai SDK), so install_autotrack()'s httpx.Client.send
+    # patch — which recognizes non-SDK requests by their User-Agent — already
+    # logs it. Adding a second explicit call here would double-count, since
+    # _post_json() discards the raw httpx.Response (only returns the parsed
+    # JSON dict), leaving no way to dedup by response identity.
     choices = data.get("choices") or []
     if not choices:
         return ""

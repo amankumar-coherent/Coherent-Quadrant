@@ -84,73 +84,12 @@ GEO_POOL = [
     "Philippines",
 ]
 
-OEM_BY_HINT: dict[str, set[str]] = {
-    "firewall": {
-        "palo alto networks",
-        "fortinet",
-        "check point",
-        "cisco",
-        "juniper networks",
-        "zscaler",
-        "sophos",
-        "watchguard",
-        "sonicwall",
-        "barracuda",
-        "forcepoint",
-        "crowdstrike",
-    },
-    "smartwatch": {
-        "apple",
-        "samsung",
-        "garmin",
-        "fitbit",
-        "huawei",
-        "xiaomi",
-        "amazfit",
-        "google",
-        "fossil",
-    },
-    "green": {
-        "exxonmobil",
-        "shell plc",
-        "bp plc",
-        "chevron",
-        "saudi aramco",
-        "sinopec",
-        "basf se",
-        "dow chemical",
-    },
-}
-
+# Placeholder column values for a freshly harvested row, before enrichment.
+# One neutral set for every market: per-industry canned values ("Smartwatches;
+# Wearables…", "Avocado Oil; Edible Oils…") were stamped onto any market whose
+# name merely shared a keyword -- e.g. a wearable GLUCOMETER market got
+# smartwatch categories. Keyed by family only for backward compatibility.
 MARKET_DEFAULTS: dict[str, dict[str, str]] = {
-    "avocado": {
-        "Core Categories": "Avocado Oil; Edible Oils; Specialty Oils",
-        "Specialty Focus": "Avocado oil distribution / wholesale / retail channel",
-        "Key Brands Represented": "Private label; Regional avocado oil brands",
-        "Distribution Type": "Broadline Distributor",
-        "Retail / E-commerce / Both": "Both",
-    },
-    "firewall": {
-        "Core Categories": "Network Firewalls; NGFW; SASE; Secure SD-WAN; Cybersecurity",
-        "Specialty Focus": "Network security and firewall channel distribution",
-        "Key Brands Represented": "Cisco; Fortinet; Palo Alto Networks; Check Point; Sophos",
-        "Distribution Type": "Value-Added Distributor",
-        "Retail / E-commerce / Both": "No",
-    },
-    "smartwatch": {
-        "Core Categories": "Smartwatches; Wearables; Fitness Trackers; Connected Devices",
-        "Specialty Focus": "Smartwatch and wearable device channel distribution / retail",
-        "Key Brands Represented": "Apple Watch; Samsung Galaxy Watch; Garmin; Fitbit; Amazfit",
-        "Distribution Type": "Broadline Distributor",
-        "Retail / E-commerce / Both": "Both",
-    },
-    "green": {
-        "Core Categories": "Bio-based Chemicals; Green Solvents; Specialty Ingredients; Sustainable Polymers",
-        "Specialty Focus": "Green and specialty chemical distribution",
-        "Key Brands Represented": "Bio-based solvents; Green surfactants; Specialty additives",
-        "Distribution Type": "Specialty Distributor",
-        "Retail / E-commerce / Both": "No",
-    },
     "general": {
         "Core Categories": "Not publicly disclosed",
         "Specialty Focus": "Channel / distribution for this market",
@@ -172,33 +111,17 @@ def slugify(query: str, country: str = "global") -> str:
 
 
 def market_family(query: str, family: str | None = None) -> str:
-    """Map a market query to a layout family. Prefer explicit family; never
-    hardcode one demo market for 10k-scale runs (bare 'chemical'/'fmcg' are NOT matched).
+    """Layout family for a market: an explicit family if the caller passes
+    one, otherwise "general" for every market.
+
+    It used to guess a family from keywords in the market name ("wearable"
+    -> smartwatch, "solar" -> renewable, ...) and then apply canned,
+    industry-specific defaults -- wrong for any new market that shares a word
+    with an old one. Market-specific behaviour now comes from each market's
+    own classification (market_analysis) and axes, never from its name.
     """
     if family and str(family).strip():
         return str(family).strip().lower()
-    q = (query or "").lower()
-    if "firewall" in q or "network security" in q or "ngfw" in q:
-        return "firewall"
-    if "smartwatch" in q or "wearable" in q:
-        return "smartwatch"
-    if "avocado oil" in q or "edible oil" in q:
-        return "avocado"
-    if "green chemical" in q or "bio-based chemical" in q or "sustainable chem" in q:
-        return "green"
-    if any(
-        t in q
-        for t in (
-            "renewable",
-            "solar",
-            "photovoltaic",
-            "wind energy",
-            "wind turbine",
-            "energy storage",
-            "inverter",
-        )
-    ):
-        return "renewable"
     return "general"
 
 
@@ -210,7 +133,6 @@ def load_discovery_queries(query: str, country: str = "global") -> list[str]:
     from vendor_intel.pipeline.run_and_export import auto_discovery_queries
 
     curated = auto_discovery_queries(query, country)
-    family = market_family(query)
     topic = re.sub(r"\bglobal\b|\bmarket\b", "", query, flags=re.I).strip() or query
 
     landscape = (os.getenv("EXPAND_LANDSCAPE_MODE") or "vendors").strip().lower() not in (
@@ -223,10 +145,7 @@ def load_discovery_queries(query: str, country: str = "global") -> list[str]:
     if landscape:
         from vendor_intel.quadrant.brand_meta import company_display_mode
 
-        tech = company_display_mode(query) == "solution_provider" or family in {
-            "firewall",
-            "smartwatch",
-        }
+        tech = company_display_mode(query) == "solution_provider"
         if tech:
             role_terms = [
                 "solution providers",
@@ -242,31 +161,7 @@ def load_discovery_queries(query: str, country: str = "global") -> list[str]:
                 "key players",
             ]
     else:
-        role_terms = {
-            "firewall": [
-                "distributor",
-                "value added distributor",
-                "authorized distributor",
-                "channel partner",
-                "VAR",
-                "MSSP",
-                "reseller",
-            ],
-            "smartwatch": [
-                "distributor",
-                "wholesale",
-                "authorized distributor",
-                "retailer",
-                "channel partner",
-            ],
-            "green": [
-                "chemical distributor",
-                "specialty chemical distributor",
-                "ingredients distributor",
-                "authorized distributor",
-            ],
-            "general": ["distributor", "wholesaler", "channel partner", "reseller"],
-        }[family if family in {"firewall", "smartwatch", "green"} else "general"]
+        role_terms = ["distributor", "wholesaler", "channel partner", "reseller"]
 
     generated: list[str] = []
     for role in role_terms:
@@ -334,7 +229,6 @@ async def web_harvest_candidates(
     settings = Settings()
     router = FreeSearchRouter(settings)
     family = market_family(query)
-    oem = OEM_BY_HINT.get(family, set())
     topic = re.sub(r"\bglobal\b|\bmarket\b", "", query, flags=re.I).strip() or query
 
     queries = split_batch(load_discovery_queries(query, country), batch)[:max_queries]
@@ -365,8 +259,6 @@ async def web_harvest_candidates(
                 continue
             name = clean_title_as_name(title) or ""
             if not name or is_junk_candidate_name(name, dom):
-                continue
-            if _norm(name) in oem:
                 continue
             key = dom.lower()
             if key in found:
@@ -496,11 +388,10 @@ def merge_candidates(
         if d:
             by_domain.add(d)
 
-    oem = OEM_BY_HINT.get(family, set())
     added = 0
     for c in candidates:
         name = (c.get("name") or "").strip()
-        if not name or _norm(name) in oem:
+        if not name:
             continue
         n = _norm(name)
         d = (c.get("domain") or _dom(c.get("website", ""))).lower()
@@ -653,37 +544,11 @@ def default_output_dir(query: str, country: str = "global") -> Path:
 def resolve_final_path(
     query: str, country: str, out_dir: Path | None, final_path: str | None
 ) -> Path:
-    """Per-market FINAL path under output/web_expand/<slug>/ (no demo-market hardcoding).
-
-    Set EXPAND_USE_LEGACY_FINAL=true to optionally reuse legacy run4 paths for a
-    few known demos when those files already exist.
-    """
+    """Per-market FINAL path under the market's own output folder."""
     if final_path:
         return Path(final_path)
     base = out_dir or default_output_dir(query, country)
-    generic = base / f"{slugify(query, country)}_FINAL.xlsx"
-    if os.getenv("EXPAND_USE_LEGACY_FINAL", "").strip().lower() in ("1", "true", "yes", "on"):
-        family = market_family(query)
-        known = {
-            "firewall": _project_root()
-            / "output"
-            / "run4"
-            / "global_firewall_market_global"
-            / "global_firewall_market_FINAL.xlsx",
-            "smartwatch": _project_root()
-            / "output"
-            / "run4"
-            / "global_smartwatch_market_global"
-            / "global_smartwatch_market_FINAL.xlsx",
-            "green": _project_root()
-            / "output"
-            / "run4"
-            / "global_green_chemical_market_global"
-            / "global_green_chemical_market_FINAL.xlsx",
-        }
-        if family in known and known[family].exists():
-            return known[family]
-    return generic
+    return base / f"{slugify(query, country)}_FINAL.xlsx"
 
 
 async def run_web_expand(
@@ -717,11 +582,7 @@ async def run_web_expand(
     merged = merge_candidates(existing, candidates, family=family, target=target)
     merged.sort(key=lambda r: _norm(r.get("Company", "")))
 
-    sheet = {
-        "firewall": "Firewall Companies",
-        "smartwatch": "Smartwatch Companies",
-        "green": "Green Chemical Companies",
-    }.get(family, "Companies")
+    sheet = "Companies"
 
     audit = {
         "query": query,

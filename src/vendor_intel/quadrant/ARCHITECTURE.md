@@ -55,7 +55,7 @@ For a market (e.g. *Smartphone Market*, *Avocado Oil Market*) and a list of comp
 | Pipeline hook in `pipeline/orchestrator.py` | Full live run (`QUADRANT_ENABLED=true`) |
 | `scripts/run_quadrant_from_pipeline_json.py` | Rerun quadrant only from existing pipeline JSON |
 | `scripts/run_quadrant_from_csv.py` | Quadrant from a sectioned market-roles CSV |
-| `scripts/run_global_avocado_oil.ps1` / `.sh` | Full Docker pipeline + quadrant for avocado oil |
+| `scripts/run_quadrant_pipeline.py` | Full pipeline + quadrant report for any market |
 
 Orchestrator call (simplified):
 
@@ -559,10 +559,10 @@ python scripts/run_quadrant_from_csv.py `
   --prefer-section "Multi-Segment"
 ```
 
-### Full landscape + quadrant (Docker)
+### Full landscape + quadrant (any market)
 
 ```powershell
-.\scripts\run_global_avocado_oil.ps1
+.\.venv\Scripts\python.exe scripts\run_quadrant_pipeline.py --market "<Market name>" --country global --slots 41-50
 ```
 
 Requires `.env` with LLM key and `QUADRANT_ENABLED=true`.
