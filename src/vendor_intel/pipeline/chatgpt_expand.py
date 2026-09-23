@@ -2664,10 +2664,19 @@ def gpt_verify_market(
     family: str,
     companies: list[dict[str, str]],
     ckpt: ExpandCheckpoint | None = None,
+    country: str = "",
 ) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
-    """Keep only Solution Providers (tech) or Brand/Marketers (other markets)."""
+    """Keep only companies of this market's required player type.
+
+    With a single-country run (``country`` not global) a company is also kept
+    only if its OWN global headquarters is in that country -- the same rule
+    every discovery round states, now enforced at verification too.
+    """
     if not companies:
         return [], []
+    from vendor_intel.pipeline.geo_rotation import is_single_country
+
+    hq_country = str(country or "").strip() if is_single_country(country) else ""
 
     expected_role = player_label(query, family)
     criteria = verify_criteria_prompt(query, family)
@@ -2687,7 +2696,17 @@ def gpt_verify_market(
         '{"results":[{"name":"...","in_market":true|false,'
         '"builds_or_owns":true|false,'
         '"role":"Solution Provider|Brand|Marketer|Reseller|Retailer|Distributor|Media|Other",'
-        '"fits_criteria":true|false,"confidence":0-100,"reason":"..."}]}'
+        '"fits_criteria":true|false,"confidence":0-100,"reason":"..."'
+        + (',"hq_in_country":true|false' if hq_country else "")
+        + "}]}"
+    )
+    hq_rule = (
+        f"\nHQ RULE: this landscape covers {hq_country} only. KEEP a company only "
+        f"if its OWN global headquarters is in {hq_country}. A local office, "
+        "plant, subsidiary or distributor of a foreign company is a DROP. Set "
+        "hq_in_country=true only when the headquarters is in "
+        f"{hq_country}; if unsure, false.\n"
+        if hq_country else ""
     )
     for i in range(start_i, len(companies), chunk_size):
         chunk = companies[i : i + chunk_size]
@@ -2716,6 +2735,7 @@ def gpt_verify_market(
                     if _scope
                     else ""
                 )
+                + hq_rule
                 + "For EACH company you MUST return one result. Never skip a name. "
                 "fits_criteria=true only if they match the required type for this market. "
                 "When unsure, fits_criteria=false and in_market=false. "
@@ -2769,6 +2789,11 @@ def gpt_verify_market(
                 continue
             seen.add(key)
             keep, conf, role, reason = _verify_parse_row(r, expected_role)
+            if keep and hq_country and r.get("hq_in_country") is not True:
+                # Fail closed, like every other verify field: a missing or
+                # false answer means the HQ is not confirmed in the country.
+                keep = False
+                reason = f"headquarters not in {hq_country}" + (f" ({reason})" if reason else "")
             if keep:
                 from vendor_intel.pipeline.role_split import normalize_role_label
 
@@ -3882,6 +3907,7 @@ async def run_chatgpt_expand(
                 family=family,
                 companies=combined,
                 ckpt=ckpt,
+                country=country,
             )
             _log(f"    → substep 4b: write rejected list ({len(rejected_mid)})")
             ckpt.begin("4_verify", "4b_rejects", note="begin write mid rejects")

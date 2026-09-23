@@ -122,6 +122,7 @@ def main() -> int:
         log(f"round {rnd}: verifying {len(new)} new companies")
         kept, rej = ce.gpt_verify_market(
             client, model, query=args.market, family=family, companies=new,
+            country=args.country,
         )
         data["verified"] = verified + list(kept)
         data["rejected_mid"] = rejected + list(rej)

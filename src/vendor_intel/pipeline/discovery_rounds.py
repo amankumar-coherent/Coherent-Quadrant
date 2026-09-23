@@ -667,10 +667,11 @@ def discover_in_rounds(
     sweeps = 1
     # A run scoped to one country narrows by STATE, not by region: every
     # company is in the same country, so the region ladder has nothing to
-    # steer with and the country tier is a single ask. Falls back to the
-    # region ladder for a country with no state list.
-    state_queue: list[str] = states_for(country) if is_single_country(country) else []
-    single_country = bool(state_queue)
+    # steer with and the country tier is a single ask. The region ladder is
+    # never used for a single-country run -- it would leave the country. A
+    # country with no state list stops after its broad, HQ-in-country rounds.
+    single_country = is_single_country(country)
+    state_queue: list[str] = states_for(country) if single_country else []
     # A round yields at most `batch`, so allow headroom for empty rounds
     # rather than stopping early on an arbitrary cap.
     limit = max_rounds or max(6, (target // max(1, batch)) * 3)

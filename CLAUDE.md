@@ -190,6 +190,17 @@ only if in market + builds/owns + confidence ≥ 70 + role not a
 channel/media role + role matches the required type (any of the four player
 types or the market's own categories). Unparseable or skipped answers = DROP.
 
+### Country runs (`--country india`, `germany`, …)
+Any country other than `global` is a single-country run
+(`geo_rotation.is_single_country`). Every discovery round asks for companies
+**HEADQUARTERED IN <country>** (a foreign company's local office, plant,
+subsidiary or distributor does not qualify). When the broad rounds run dry it
+sweeps states (only countries with a list in `geo_rotation.STATES_BY_COUNTRY`,
+currently India), and never escalates to other regions or countries.
+Verification adds an **HQ RULE** and an `hq_in_country` field; a company is
+kept only if the answer is `true` (fail closed). Name the market without
+"Global" for a country run, e.g. `--market "Smart Ring Market" --country india`.
+
 ## 6. Tests
 
 ```bat

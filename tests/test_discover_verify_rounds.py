@@ -56,7 +56,7 @@ def test_rounds_continue_until_keep_is_reached(market, monkeypatch):
         ckpt.state["data"]["recalled"] = rows
         return rows
 
-    def verify(client, model, *, query, family, companies):
+    def verify(client, model, *, query, family, companies, **kw):
         calls["verified_batches"].append([c["name"] for c in companies])
         # Keeps only a quarter -- worse than the 60% the first batch showed,
         # so the first top-up falls short and another round is needed.

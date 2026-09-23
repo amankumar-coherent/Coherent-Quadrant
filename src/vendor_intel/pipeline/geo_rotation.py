@@ -134,7 +134,9 @@ def states_for(country: str) -> list[str]:
     Empty for a country with no list, which leaves the caller on the existing
     region/country ladder rather than inventing place names.
     """
-    key = " ".join(str(country or "").split()).strip().lower().lstrip("the ").strip()
+    # removeprefix, not lstrip: lstrip("the ") strips those CHARACTERS, which
+    # turned "thailand" into "ailand".
+    key = " ".join(str(country or "").split()).strip().lower().removeprefix("the ").strip()
     return list(STATES_BY_COUNTRY.get(key, ()))
 
 
