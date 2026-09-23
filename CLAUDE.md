@@ -153,8 +153,9 @@ Orchestrator: `scripts/run_quadrant_pipeline.py` (+ helpers in
 | 1b | **Top-up** (`--keep`): discover a batch, verify only new companies, repeat | `scripts/discover_verify_rounds.py` |
 | 2 | **Axes spec**: 5+5 market-specific parameters + definitions (LLM), fixed axis names → `_pipeline/axes_spec.json` | `quadrant/axis_define.py` (`define_market_axes`, `explain_market_parameters`) |
 | 3 | **Dedupe**: one row per real company (same registrable domain or same name minus legal suffixes; union-find) | `quadrant_pipeline.dedupe_companies` |
-| 4 | **Overall-only scoring** for every unscored company (ranks the pool, feeds long-tail bubbles) | `scripts/score_overall_only.py` (sharded per slot) |
-| 5 | **Evidence** for the Top N: per-parameter score + evidence + reasoning, gap-fill rounds | `prescore_verified.py`, `fill_missing_parameters.py`, `fill_missing_assessed_on.py` |
+| 4 | **Quick X/Y scores** for every verified company: 2 AI Mode queries each, a Product Capability scorecard (all 5 X parameters, one line each) and a Business Capability scorecard (all 5 Y). X/Y = parameter means, Overall = (X+Y)/2. A parameter the answer skips is re-asked alone. Feeds long-tail bubbles | `scripts/score_overall_only.py` (sharded per slot); `ai_mode_scorer.build_axis_scorecard_query` / `parse_axis_scorecard` |
+| 4b | **Top 20 selection**: best 5 by Overall from EACH quadrant, split at the pool's median X and Y; a short quadrant's slots go to the best remaining | `quadrant_pipeline.select_top_by_quadrant` |
+| 5 | **Deep evidence** for the Top 20 only: per-parameter score + evidence + "why" reasoning, gap-fill rounds | `prescore_verified.py`, `fill_missing_parameters.py`, `fill_missing_assessed_on.py` |
 | 6 | **Composite**: X/Y/Overall, cohort band 65–100, 5 per quadrant | `scripts/seed_from_full_evidence.py` |
 | 7 | **Tone**: desk-research wording, no hedges | `scripts/rewrite_assessed_on_tone.py` |
 | 8 | **Report**: HTML/JSON/CSV | `scripts/build_report_from_composite.py` → `quadrant/html_report.py` |

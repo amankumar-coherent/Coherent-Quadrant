@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
-"""Direct Overall score only, no per-parameter evidence -- for the long tail.
+"""Quick X/Y scores for every verified company -- ranks the pool before the
+Top 20 are chosen (5 per quadrant), and feeds the long tail's Strength bubbles.
 
-Other Noticeable Player never shows per-parameter breakdowns or evidence,
-only the Strength bubble (derived from Overall score) -- so scoring it with
-the full 10-parameter evidence pipeline is wasted work.
+Two AI Mode queries per company: one Product Capability scorecard (all 5 X
+parameters, one line each) and one Business Capability scorecard (all 5 Y
+parameters) -- build_axis_scorecard_query. X = mean of the X parameter
+scores, Y = mean of the Y scores, Overall = (X + Y) / 2. Verified live: 4/4
+scorecard queries returned 5/5 parameter scores.
 
-First version of this script asked AI Mode for a bare "reply with ONLY the
-number" per axis (build_score_query). Confirmed live at scale: that format
-failed almost completely (6/167 companies scored) -- AI Mode mostly echoed
-the prompt back with no answer at all, unlike the structured "Evidence +
-Assessed on + Score" format that has been reliable all session. This
-version reuses THAT reliable format (build_defined_small_group_query, 2
-parameters per query, same as the proven fallback path used everywhere
-else) but only keeps the numeric score per parameter -- evidence and
-assessed_on text is read and immediately discarded, never written to the
-sidecar or any other file.
+Any parameter a scorecard answer leaves out is re-asked on its own with the
+proven 1-parameter format (build_defined_small_group_query), so a partial
+answer costs one extra query rather than a re-score. (A bare "reply with ONLY
+the number" format failed at scale -- AI Mode echoed the prompt -- which is
+why each scorecard line carries a short reason.)
+
+No evidence is kept here: per-parameter evidence and reasoning are gathered
+later for the Top 20 only. The per-parameter quick scores are stored with
+X/Y/Overall in overall_only_shard<N>.json.
 
     .\\.venv\\Scripts\\python.exe scripts\\score_overall_only.py ^
         --market "Global Wearable Glucometer Market" --country global ^
@@ -58,9 +60,12 @@ def main() -> int:
 
     from vendor_intel.pipeline.web_expand import default_output_dir
     from vendor_intel.quadrant.ai_mode_scorer import (
+        build_axis_scorecard_query,
         build_defined_small_group_query,
+        parse_axis_scorecard,
         parse_small_group_scores,
     )
+    from vendor_intel.quadrant.quadrant_language import AXIS_X_TITLE, AXIS_Y_TITLE
     from vendor_intel.scraping.google_ai_mode import ask as ai_ask
 
     spec = json.loads(Path(args.fixed_axes).read_text(encoding="utf-8"))
@@ -107,47 +112,44 @@ def main() -> int:
         tmp.write_text(json.dumps(results, ensure_ascii=False), encoding="utf-8")
         os.replace(tmp, side_path)
 
-    def axis_mean(name: str, params: list[str], defs: dict[str, str]) -> float | None:
-        """Ask 2 parameters at a time (the reliable format all session),
-        keep only the numeric score, discard evidence/assessed_on
-        immediately -- nothing from `got` beyond the score ever survives
-        this function."""
-        scores: list[int] = []
-        for i in range(0, len(params), 2):
-            group = params[i : i + 2]
-            query = build_defined_small_group_query(
-                name, group, defs, market=args.market,
+    def axis_scores(name: str, title: str, params: list[str],
+                    defs: dict[str, str]) -> dict[str, int]:
+        """{parameter: score} from ONE scorecard query for the whole axis;
+        only parameters the answer left out are re-asked singly."""
+        query = build_axis_scorecard_query(
+            name, title, params, defs, market=args.market,
+            market_definition=market_definition,
+        )
+        answer = ask_retry(query)
+        got = parse_axis_scorecard(answer, params, query) if answer else {}
+        for p in [p for p in params if p not in got]:
+            one_query = build_defined_small_group_query(
+                name, [p], defs, market=args.market,
                 market_definition=market_definition,
             )
-            answer = ask_retry(query)
-            got = parse_small_group_scores(answer, group, query) if answer else {}
-            missing = [p for p in group if p not in got]
-            for p in missing:  # retry any miss singly, same as the proven fallback
-                one_query = build_defined_small_group_query(
-                    name, [p], defs, market=args.market,
-                    market_definition=market_definition,
-                )
-                one_answer = ask_retry(one_query)
-                one_got = parse_small_group_scores(one_answer, [p], one_query) if one_answer else {}
-                got.update(one_got)
-            scores.extend(v["score"] for v in got.values() if v.get("score") is not None)
-        return sum(scores) / len(scores) if scores else None
+            one_answer = ask_retry(one_query)
+            one = parse_small_group_scores(one_answer, [p], one_query) if one_answer else {}
+            if (one.get(p) or {}).get("score") is not None:
+                got[p] = int(one[p]["score"])
+        return got
 
     done = 0
     for name in my_companies:
         if name in already:
             continue
 
-        x_mean = axis_mean(name, x_params, x_defs)
-        y_mean = axis_mean(name, y_params, y_defs)
-
-        if x_mean is None or y_mean is None:
-            print(f"  {name}: MISS (x={x_mean} y={y_mean})", flush=True)
+        x_got = axis_scores(name, AXIS_X_TITLE, x_params, x_defs)
+        y_got = axis_scores(name, AXIS_Y_TITLE, y_params, y_defs)
+        if not x_got or not y_got:
+            print(f"  {name}: MISS (x={len(x_got)}/{len(x_params)} "
+                  f"y={len(y_got)}/{len(y_params)} parameters)", flush=True)
             continue
 
-        x_score, y_score = round(x_mean), round(y_mean)
+        x_score = round(sum(x_got.values()) / len(x_got))
+        y_score = round(sum(y_got.values()) / len(y_got))
         overall = round((x_score + y_score) / 2)
-        results[name] = {"x_score": x_score, "y_score": y_score, "overall": overall}
+        results[name] = {"x_score": x_score, "y_score": y_score, "overall": overall,
+                         "x_params": x_got, "y_params": y_got}
         write_sidecar()
         done += 1
         print(f"  [{done}/{len(my_companies)}] {name}: X={x_score} Y={y_score} O={overall}", flush=True)

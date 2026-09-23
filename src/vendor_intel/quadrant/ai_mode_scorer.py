@@ -966,6 +966,108 @@ def parse_composite_score(answer: str, prompt: str = "") -> int | None:
     return value if 1 <= value <= 100 else None
 
 
+# --- Quick scorecard: ALL parameters of one axis in ONE query -------------
+#
+# Used to rank every verified company before the Top 20 are chosen. It asks
+# for a SCORECARD -- one short line per parameter -- not the full
+# Evidence / Assessed-on sections. The full format across 5 parameters is
+# what collapsed into a single summary paragraph (see
+# build_defined_small_group_query); a one-line-per-parameter scorecard is a
+# far lighter answer, and the short reason on each line keeps AI Mode
+# answering rather than echoing (a bare "reply with only the number" format
+# failed that way). Deep evidence is gathered later, for the Top 20 only.
+
+_SCORECARD_LINE_RE = re.compile(
+    r"(?:score[:\s*]*)?\b(\d{1,3})\s*(?:/|out\s+of)\s*100", re.I
+)
+
+
+def build_axis_scorecard_query(
+    company: str,
+    axis_title: str,
+    params: list[str],
+    definitions: dict[str, str],
+    *,
+    market: str = "",
+    market_definition: str = "",
+) -> str:
+    """One query: ``company``'s score on every parameter of one axis."""
+    params = [p for p in params if str(p).strip()]
+    if not params:
+        raise ValueError("build_axis_scorecard_query needs at least one parameter")
+    where = f" in the {market}" if str(market).strip() else ""
+    scope = (
+        f"\nMARKET DEFINITION: {market_definition.strip()}"
+        if str(market_definition).strip() else ""
+    )
+    listed = "\n".join(
+        f"{i}. {p}: {definitions.get(p, '')}".rstrip(": ")
+        for i, p in enumerate(params, 1)
+    )
+    template = "\n".join(
+        f"{i}. {p} | Score: NN/100 | <one short reason>"
+        for i, p in enumerate(params, 1)
+    )
+    n = len(params)
+    return (
+        f"Give the {axis_title} scorecard for the company {company}{where}: "
+        f"one score out of 100 for EACH of these {n} parameters.{scope}\n\n"
+        f"{listed}\n\n"
+        f"Search for real information, then reply with exactly {n} lines, "
+        f"one per parameter, in this format:\n{template}\n\n"
+        "SCORING SCALE: 85-100 market-leading, third-party verified. "
+        "70-84 clear verifiable capability, not leading-edge. 55-69 present "
+        "but partial or self-reported evidence. 40-54 weak or unproven on "
+        "this measure. 1-39 little or no evidence.\n\n"
+        f"Every one of the {n} parameters needs its own line and its own "
+        "score -- do not merge them into one paragraph. Use only real "
+        "information; where you cannot verify something, score it lower "
+        "rather than assuming it is true."
+    )
+
+
+def parse_axis_scorecard(
+    answer: str, params: list[str], prompt: str = ""
+) -> dict[str, int]:
+    """{parameter: score} for a reply to build_axis_scorecard_query(), only
+    for parameters that parsed. Tolerates the numbered-line format asked
+    for, a Markdown table, or prose -- each parameter's score is the first
+    "NN/100" after its own name and before the next parameter's name.
+    """
+    nav_parts = _CONVERSATION_RE.split(answer or "")
+    text = nav_parts[-1] if len(nav_parts) > 1 else (answer or "")
+    flat = " ".join(text.split())
+    if prompt:
+        # AI Mode can echo the prompt (template included) before answering;
+        # everything up to the LAST verbatim echo is not the answer.
+        flat_prompt = " ".join(prompt.split())
+        idx = flat.rfind(flat_prompt)
+        if idx >= 0:
+            flat = flat[idx + len(flat_prompt):]
+    if not flat.strip():
+        return {}
+
+    bounds: list[tuple[int, str]] = []
+    for name in params:
+        match = re.search(re.escape(name), flat, re.I)
+        if match:
+            bounds.append((match.end(), name))
+    bounds.sort()
+    out: dict[str, int] = {}
+    for i, (start, name) in enumerate(bounds):
+        end = bounds[i + 1][0] if i + 1 < len(bounds) else len(flat)
+        m = _SCORECARD_LINE_RE.search(flat[start:end])
+        if not m:
+            continue
+        try:
+            score = int(m.group(1))
+        except (TypeError, ValueError):
+            continue
+        if 1 <= score <= 100:
+            out[name] = score
+    return out
+
+
 def parse_small_group_scores(
     answer: str, params: list[str], prompt: str = ""
 ) -> dict[str, dict[str, Any]]:

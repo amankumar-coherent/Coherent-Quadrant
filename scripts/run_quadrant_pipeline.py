@@ -15,11 +15,15 @@ through, with nothing specific to either market:
                     scores against this one file.
   3. Dedupe         one row per real company (shared website domain or the
                     same name minus legal suffixes).
-  4. Overall-only   score_overall_only.py for every company that has no
-                    score yet -- ranks the pool and feeds the Strength
-                    bubbles of the long tail. No evidence stored.
-  5. Evidence pool  the top --top-n companies by that score (or a list you
-                    pin with --top-list) get full per-parameter evidence.
+  4. Quick scores   score_overall_only.py for every company that has no
+                    score yet: 2 AI Mode queries each -- a Product
+                    Capability scorecard (all 5 X parameters) and a Business
+                    Capability scorecard (all 5 Y). X/Y = parameter means,
+                    Overall = (X+Y)/2. Feeds the long tail's Strength bubbles.
+  5. Top N          the best --top-n/4 companies by Overall from EACH
+                    quadrant (split at the pool's median X and Y) -- or a
+                    list you pin with --top-list -- get full per-parameter
+                    evidence.
   6. Evidence       prescore_verified.py (1 parameter per query), then up to
                     --max-rounds of gap fill: fill_missing_parameters.py for
                     missing scores, fill_missing_assessed_on.py for scores
@@ -62,12 +66,14 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from vendor_intel.pipeline.quadrant_pipeline import (  # noqa: E402
+    axis_xy,
     dedupe_companies,
     evidence_gaps,
     load_evidence,
     load_overall_only,
     rank_score,
     row_name,
+    select_top_by_quadrant,
 )
 from vendor_intel.pipeline.web_expand import default_output_dir  # noqa: E402
 
@@ -462,10 +468,20 @@ def main() -> int:
         ev_pool = list(dict.fromkeys(rep_of.get(n, n) for n in ev_pool if rep_of.get(n, n) in pool))
         need = [n for n in pool if n not in ev_pool
                 and rank_score(n, evidence, overall, xp, yp) is None]
-    log(f"4. Overall-only scoring needed for {len(need)} companies")
+    log(f"4. quick X/Y scorecard scoring needed for {len(need)} companies "
+        f"(1 Product + 1 Business query each)")
     runner.shards("overall", "score_overall_only.py", need, ["--fixed-axes", str(spec_path)])
     overall = load_overall_only(out_dir)
-    if ev_pool is None:
+    if ev_pool is None and size <= args.top_n:
+        # The chart's Top N = the best top_n/4 per quadrant by Overall, from
+        # the quick X/Y scores of the whole verified pool.
+        xy = {n: v for n in pool
+              if (v := axis_xy(n, evidence, overall, xp, yp)) is not None}
+        ev_pool = select_top_by_quadrant(xy, args.top_n)
+        log(f"   Top {len(ev_pool)} chosen {args.top_n // 4} per quadrant from "
+            f"{len(xy)} quick-scored companies")
+    elif ev_pool is None:
+        # A larger --evidence-pool: the chart selector picks from it later.
         ranked = sorted(
             (n for n in pool if rank_score(n, evidence, overall, xp, yp) is not None),
             key=lambda n: rank_score(n, evidence, overall, xp, yp), reverse=True,

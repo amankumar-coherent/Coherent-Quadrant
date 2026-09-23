@@ -208,3 +208,68 @@ def rank_score(
     if name in overall_only and overall_only[name].get("overall") is not None:
         return float(overall_only[name]["overall"])
     return None
+
+
+def axis_xy(
+    name: str,
+    evidence: dict,
+    overall_only: dict,
+    x_params: list[str],
+    y_params: list[str],
+) -> tuple[float, float] | None:
+    """(X, Y) for selection: full-evidence means first, then the quick
+    scorecard scores. None when the company has neither."""
+    if is_complete(evidence, name, x_params, y_params):
+        rec = evidence[name]
+        xs = [rec["x"][p]["score"] for p in x_params]
+        ys = [rec["y"][p]["score"] for p in y_params]
+        return sum(xs) / len(xs), sum(ys) / len(ys)
+    rec = overall_only.get(name) or {}
+    if rec.get("x_score") is not None and rec.get("y_score") is not None:
+        return float(rec["x_score"]), float(rec["y_score"])
+    return None
+
+
+def quadrant_of(x: float, y: float, mid_x: float, mid_y: float) -> str:
+    """Same rule as rating_map: Leaders high/high, Challengers low X high Y,
+    Trailblazers high X low Y, Emerging Players low/low."""
+    if x >= mid_x:
+        return "Leaders" if y >= mid_y else "Trailblazers"
+    return "Challengers" if y >= mid_y else "Emerging Players"
+
+
+def select_top_by_quadrant(
+    xy: dict[str, tuple[float, float]], top_n: int = 20
+) -> list[str]:
+    """The chart's Top N: the best top_n/4 companies (by Overall = mean of
+    X and Y) from EACH quadrant of the scored pool.
+
+    Quadrants are split at the pool's median X and median Y, so every
+    quadrant has companies to choose from whatever the market's score
+    level. Ranking the whole pool by Overall alone would fill the chart
+    with the strongest all-rounders and leave Challengers / Trailblazers /
+    Emerging Players empty. A quadrant with fewer than its share gives its
+    free slots to the best remaining companies overall.
+    """
+    names = sorted(xy)
+    overall = {n: (xy[n][0] + xy[n][1]) / 2 for n in names}
+    by_overall = sorted(names, key=lambda n: (-overall[n], n))
+    if len(names) <= top_n:
+        return by_overall
+    xs = sorted(v[0] for v in xy.values())
+    ys = sorted(v[1] for v in xy.values())
+    mid = len(xs) // 2
+    mid_x = xs[mid] if len(xs) % 2 else (xs[mid - 1] + xs[mid]) / 2
+    mid_y = ys[mid] if len(ys) % 2 else (ys[mid - 1] + ys[mid]) / 2
+
+    share = top_n // 4
+    picked: list[str] = []
+    for quad in ("Leaders", "Challengers", "Trailblazers", "Emerging Players"):
+        members = [n for n in by_overall if quadrant_of(*xy[n], mid_x, mid_y) == quad]
+        picked += members[:share]
+    for n in by_overall:  # quadrants short of their share
+        if len(picked) >= top_n:
+            break
+        if n not in picked:
+            picked.append(n)
+    return sorted(picked, key=lambda n: (-overall[n], n))
