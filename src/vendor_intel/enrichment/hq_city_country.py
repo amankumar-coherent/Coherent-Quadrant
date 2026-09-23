@@ -124,7 +124,23 @@ def _save_cache() -> None:
     path = _cache_path()
     try:
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps(_CACHE, indent=2, ensure_ascii=False), encoding="utf-8")
+        # Several markets can run at once (run_markets_parallel.py) and all
+        # share this file: merge with what is on disk now so another run's
+        # new entries are kept, and replace atomically so a reader never sees
+        # a half-written file.
+        merged: dict[str, str] = {}
+        if path.is_file():
+            try:
+                disk = json.loads(path.read_text(encoding="utf-8"))
+                if isinstance(disk, dict):
+                    merged = {str(k).lower(): str(v) for k, v in disk.items() if v}
+            except Exception:
+                merged = {}
+        merged.update(_CACHE)
+        _CACHE.update(merged)
+        tmp = path.with_name(f"{path.name}.{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
+        os.replace(tmp, path)
     except Exception:
         pass
 

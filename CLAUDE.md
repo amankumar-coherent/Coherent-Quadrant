@@ -132,6 +132,24 @@ It should print `extensions loaded: ['Free AI ReCaptcha Solver by Raptor ...']`.
 | `--fixed-axes file.json` / `--top-list` / `--chart-top` / `--reselect` | manual overrides (rarely needed) |
 
 Every step is resumable: re-running the same command skips saved work.
+
+### Many markets at once (one Chromium browser per market)
+```bat
+.venv\Scripts\python.exe scripts\run_markets_parallel.py --markets-file queries\my_markets.txt --workers 10 --keep 120
+```
+`queries\my_markets.txt`: one market per line, optional `| country`
+(`Smart Ring Market | india`). Each market runs the full
+`run_quadrant_pipeline.py` pinned to ONE browser slot
+(`data/ai_mode_batch_<slot>`, Chromium, CAPTCHA Raptor loaded), so
+`--workers 10` = 10 browsers = 10 markets in parallel; when one finishes, the
+next market takes its slot. Slots `--slot-start 41` .. 50 (must stay ≤ 99).
+`--stagger` spaces browser launches (default 20 s). Logs:
+`logs/parallel/<market>_<country>.log`; summary `logs/parallel/summary.json`.
+Extra flags after `--` go to every pipeline run. Don't run two launchers with
+overlapping slot ranges. Ten browsers on one IP raise Google's block rate: if
+many markets hit "unusual traffic", use fewer workers or a higher
+`GOOGLE_AI_MODE_QUERY_DELAY`.
+
 The run ends with a **VERIFY** block; every line must be `[PASS]`:
 5 params on X and Y · Capability axis titles · Top companies have
 score+evidence+reasoning for all 10 parameters · report keeps N (with `--keep`) ·
