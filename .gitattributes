@@ -1,0 +1,13 @@
+# Ensure binary/generated file types are never subjected to CRLF/LF
+# line-ending normalization (core.autocrlf) — that conversion corrupts
+# binary formats like PDF, XLSX, DOCX.
+*.pdf   -text binary
+*.xlsx  -text binary
+*.docx  -text binary
+*.png   -text binary
+*.jpg   -text binary
+*.jpeg  -text binary
+*.gif   -text binary
+*.zip   -text binary
+*.db    -text binary
+*.ico   -text binary
