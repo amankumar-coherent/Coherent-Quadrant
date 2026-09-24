@@ -244,7 +244,11 @@ their `output/` folders were shared.
 | Symptom | Cause / fix |
 |---|---|
 | Browser shows CAPTCHA grid | Raptor solves it; if not, solve by hand in the window. The run continues |
-| "Something went wrong" / unusual-traffic page | Google rate block. Raise `GOOGLE_AI_MODE_QUERY_DELAY`, use fewer `--slots`, wait |
+| Quota page ("reached the request limit for AI responses") | **Automatic:** profile archived (`data/ai_mode_batch_<slot>_chromium_quota_<time>`), browser reopened on a fresh profile, query retried; up to `GOOGLE_AI_MODE_MAX_RESETS` (3) per query with a growing wait (`GOOGLE_AI_MODE_QUOTA_COOLOFF` × 1, 2, 3). Then the query fails and the step's own retry/gap-fill picks it up later |
+| "Something went wrong, and an AI response wasn't generated" | **Automatic, escalating:** 1st reword · 2nd in a row clear cookies + relaunch · 3rd in a row full profile reset + fresh browser (`…_noanswer_<time>`) |
+| Browser crashed / closed | **Automatic:** browser reopened on the same profile, query retried |
+| Unusual-traffic `/sorry/` block | Google rate block (not solvable). Raise `GOOGLE_AI_MODE_QUERY_DELAY`, use fewer `--slots`/workers, wait. 5+ CAPTCHAs in a run also trigger a profile reset |
+| `data/` growing large | every reset archives the old profile folder (renamed, not deleted). Old `data/ai_mode_batch_*_quota_*`, `*_captchas_*`, `*_noanswer_*`, `*_reset_*` folders can be deleted when no run is active |
 | "Opening in existing browser session" | orphaned Chromium holds the profile; the code kills orphans, else close Chromium |
 | Step 0c RuntimeError | AI Mode failed on market analysis (by design, no fallback). Re-run; it is checkpointed |
 | `axes_spec.json has N X / M Y parameters` | delete `_pipeline/axes_spec.json` to regenerate with 5+5 |

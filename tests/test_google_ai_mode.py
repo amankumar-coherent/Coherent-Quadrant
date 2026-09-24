@@ -659,7 +659,10 @@ def test_reset_session_clears_cookies_and_relaunches(monkeypatch):
     s.reset_session()
 
     assert calls == ["clear_cookies", "close", "sleep60", "relaunch"]
-    assert s.soft_failures == 0, "streak must reset after a rebuild"
+    # The streak survives a cookie reset on purpose: if no-answer pages keep
+    # coming, reaching _SOFT_FAILURES_BEFORE_PROFILE_RESET escalates to a full
+    # profile reset. Only a good answer or reset_profile() clears it.
+    assert s.soft_failures == 3
     assert s.resets == 1
 
 

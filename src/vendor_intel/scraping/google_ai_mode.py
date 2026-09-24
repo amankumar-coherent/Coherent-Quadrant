@@ -78,6 +78,45 @@ _SOFT_FAILURES_BEFORE_RESET = 2
 # browser window". Five is high enough not to fire on ordinary noise.
 _CAPTCHAS_BEFORE_PROFILE_RESET = 5
 
+# Consecutive "no AI response generated" pages before the WHOLE profile is
+# archived and the browser reopened on a fresh one. At 2 the session is only
+# rebuilt (cookies cleared, browser relaunched); if the pages keep coming
+# after that, the profile itself is soured and needs the same treatment a
+# quota page gets.
+_SOFT_FAILURES_BEFORE_PROFILE_RESET = 3
+
+# Browser-death messages from patchright: the page/context/browser is gone,
+# so retrying on it can never work -- the browser must be reopened.
+_BROWSER_GONE_MARKERS = (
+    "has been closed",
+    "browser has disconnected",
+    "target closed",
+    "connection closed",
+    "browser closed",
+)
+
+
+def _max_resets_per_query() -> int:
+    """Profile resets one query may trigger (quota / no-answer / crash)
+    before giving up on it. GOOGLE_AI_MODE_MAX_RESETS, default 3."""
+    try:
+        return max(0, int(_env("GOOGLE_AI_MODE_MAX_RESETS", "3") or 3))
+    except ValueError:
+        return 3
+
+
+def _quota_cool_off(reset_number: int) -> float:
+    """Seconds to wait on a fresh profile after the Nth quota reset of one
+    query: base x N (120 s, 240 s, 360 s by default). A quota is partly tied
+    to the soured profile (a fresh one often answers at once) and partly to
+    the IP, which only time clears -- so each further reset waits longer.
+    GOOGLE_AI_MODE_QUOTA_COOLOFF sets the base."""
+    try:
+        base = float(_env("GOOGLE_AI_MODE_QUOTA_COOLOFF", "120") or 120)
+    except ValueError:
+        base = 120.0
+    return max(0.0, base) * max(1, reset_number)
+
 _READY_MARKER = "ai mode response is ready"
 
 
@@ -669,17 +708,31 @@ class AiModeSession:
             url = build_url(prompt)
             attempts_left = max(1, retries)
             captcha_left = max(0, captcha_rounds)
+            # Automatic recoveries (profile reset / browser reopen) this ONE
+            # query may use. Like CAPTCHA solves, a recovery does not cost a
+            # retry: the retry after it runs on a fresh browser.
+            resets_left = _max_resets_per_query()
+            quota_resets = 0
 
             while attempts_left > 0:
                 attempts_left -= 1
                 self._pace()
                 try:
+                    self._ensure_browser()
                     self._page.goto(url, wait_until="domcontentloaded", timeout=30_000)
                 except Exception as err:  # noqa: BLE001
+                    msg = str(err).lower()
                     # AI Mode client-side-redirects (&sei=) right after load,
                     # which can interrupt the navigation wait. Benign.
-                    if "interrupted by another navigation" not in str(err).lower():
+                    if "interrupted by another navigation" not in msg:
                         self._last_query_at = time.monotonic()
+                        # The browser crashed or was closed: retrying on the
+                        # dead page can never work, so reopen it first.
+                        if any(m in msg for m in _BROWSER_GONE_MARKERS) and resets_left > 0:
+                            resets_left -= 1
+                            self.reopen_browser(reason="browser closed/crashed")
+                            attempts_left += 1
+                            continue
                         if attempts_left <= 0:
                             raise AiModeUnavailable(f"navigation failed: {err}") from err
                         continue
@@ -750,8 +803,15 @@ class AiModeSession:
                     # from 7 to 1, while cookie-clearing alone did not recover
                     # it. The limit is partly tied to the soured profile, not
                     # only to the IP.
-                    if attempts_left > 0:
-                        self.reset_profile(reason="quota")
+                    # Escalating: each further reset of this query waits
+                    # longer on the fresh profile (see _quota_cool_off).
+                    if resets_left > 0:
+                        resets_left -= 1
+                        quota_resets += 1
+                        self.reset_profile(
+                            reason="quota", cool_off=_quota_cool_off(quota_resets)
+                        )
+                        attempts_left += 1
                         continue
                     raise AiModeCaptcha(
                         "AI response request limit reached for this IP "
@@ -761,6 +821,22 @@ class AiModeSession:
                 # answer that happens to contain the phrase is not discarded.
                 if len(text) < 600 and any(m in low for m in REFUSAL_MARKERS):
                     self.soft_failures += 1
+                    # Escalating recovery for "AI response wasn't generated":
+                    #   1st  -> reword and retry
+                    #   2nd  -> clear cookies + relaunch the browser
+                    #   3rd+ -> archive the whole profile, reopen on a fresh one
+                    # The streak spans queries (a good answer clears it), so a
+                    # soured profile is replaced instead of failing query
+                    # after query.
+                    if (
+                        self.soft_failures >= _SOFT_FAILURES_BEFORE_PROFILE_RESET
+                        and resets_left > 0
+                    ):
+                        resets_left -= 1
+                        self.reset_profile(reason="noanswer", cool_off=60.0)
+                        attempts_left += 1
+                        url = build_url(prompt)
+                        continue
                     if attempts_left > 0:
                         # Repeated soft failures on prompts that worked
                         # before point at a soured session, not a bad
@@ -851,10 +927,31 @@ class AiModeSession:
         except Exception:  # noqa: BLE001
             pass
         self._pw = self._ctx = self._page = None
-        self.soft_failures = 0
+        # The no-answer streak is deliberately NOT cleared here: if the pages
+        # keep coming after this relaunch, the streak reaching
+        # _SOFT_FAILURES_BEFORE_PROFILE_RESET is what escalates to a full
+        # profile reset. A good answer or reset_profile() clears it.
         # A soured session usually comes with rate limiting, so give the IP a
         # breather before the fresh browser starts querying.
         time.sleep(60)
+        self._ensure_browser()
+
+    def reopen_browser(self, *, reason: str = "browser closed") -> None:
+        """Close whatever is left of the browser and open a fresh one on the
+        SAME profile. For a crashed or externally closed browser, where the
+        profile itself is fine and only the process is gone."""
+        self.resets += 1
+        print(f"  [ai-mode] {reason} — reopening the browser (reset #{self.resets})",
+              flush=True)
+        try:
+            self.close()
+        except Exception:  # noqa: BLE001
+            pass
+        self._pw = self._ctx = self._page = None
+        # A half-dead process keeps the profile lock and the relaunch would
+        # fail with "Opening in existing browser session".
+        _kill_orphan_browsers(profile_dir_for(self.channel))
+        time.sleep(5)
         self._ensure_browser()
 
     def status(self) -> str:
