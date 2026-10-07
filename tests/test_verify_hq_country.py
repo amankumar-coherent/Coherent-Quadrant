@@ -21,7 +21,7 @@ def _run(monkeypatch, country, answers):
 def _ans(name, hq):
     row = {"name": name, "in_market": True, "builds_or_owns": True,
            "role": "Brand / Marketer", "fits_criteria": True, "confidence": 90,
-           "reason": "sells smart rings"}
+           "reason": "sells smart rings", "operating_status": "active"}
     if hq is not None:
         row["hq_in_country"] = hq
     return row
@@ -39,3 +39,20 @@ def test_global_run_has_no_hq_rule(monkeypatch):
     kept, _, system = _run(monkeypatch, "global", [_ans("Oura", None)])
     assert kept == ["Oura"]
     assert "HQ RULE" not in system
+
+
+def test_company_that_no_longer_operates_is_dropped(monkeypatch):
+    """A bankrupt / absorbed company still has a web footprint; verification
+    keeps only companies the verifier confirms still operate today, and a
+    missing status fails closed like the HQ answer."""
+    gone = dict(_ans("Defunct Co", None), operating_status="defunct",
+                status_note="Filed for Chapter 7 bankruptcy in 2016.")
+    absorbed = dict(_ans("Absorbed Co", None), operating_status="acquired")
+    unknown = {k: v for k, v in _ans("Unknown Co", None).items() if k != "operating_status"}
+    kept, rejected, system = _run(monkeypatch, "global",
+                                  [_ans("Oura", None), gone, absorbed, unknown])
+    assert kept == ["Oura"]
+    assert "STATUS RULE" in system
+    reasons = {r["name"]: r["reason"] for r in rejected}
+    assert "Chapter 7" in reasons["Defunct Co"] and "acquired" in reasons["Absorbed Co"]
+    assert "not an active company" in reasons["Unknown Co"]

@@ -25,8 +25,9 @@ You must output:
 X parameters = product / tech / operations strength for THIS market only.
 Y parameters = commercial scale / customers / finance / growth for THIS market only.
 
-You receive an industry baseline. Refine axis titles AND all 10 parameters so they fit the
-exact market query (e.g. semiconductor ≠ flexible packaging ≠ LNG ≠ GLP-1).
+You receive the market name, its geography and (when known) its definition. Derive all 10
+parameters for THIS exact market from what its companies sell and how they compete -- never
+a generic industry template.
 
 Return JSON only:
 {
@@ -43,9 +44,9 @@ Return JSON only:
 
 Hard rules:
 - The 5 X + 5 Y strings are scored one-by-one for each company. Make them concrete and
-  answerable from public evidence (products, fabs, capacity, customers, geography, finance).
+  answerable from public evidence (products, capacity, customers, geography, finance).
 - x_definitions keys MUST match the "x" list exactly; y_definitions keys MUST match "y" exactly.
-- Definitions must be market-specific (semiconductor process ≠ packaging barrier ≠ LNG assets).
+- Definitions must be specific to this market, not to its broader industry.
 - Do NOT reuse generic ICT fluff when the market needs different dimensions.
 - Do NOT return axis titles: X is always "Product Strength" and Y is always
   "Business Strength". Only the 5 parameters under each axis change per market.
@@ -111,8 +112,9 @@ def _axis_llm_required() -> bool:
     market parameters that were never tuned to it — measured live: 3 of 7
     markets ran on catalog values without any error surfacing.
     """
-    raw = (os.getenv("EXPAND_MARKET_AXIS_REQUIRE_LLM") or "1").strip().lower()
-    return raw not in {"0", "false", "no", "off"}
+    # Always on: the catalog is a sector template keyed by market-name words,
+    # so no market may be scored on it (the old opt-out env var is ignored).
+    return True
 
 
 def _env_enabled() -> bool:
@@ -279,18 +281,16 @@ def define_market_axes(
             )
         return base
 
+    # No industry label or catalog baseline: those came from a keyword map of
+    # sectors, so a market's parameters were seeded by a hardcoded sector list.
+    # The market's own scope (client brief / run-time analysis) is the context.
     payload = {
         "market": market,
         "geography": geography or "global",
-        "industry_group": base.get("industry_group") or "",
-        "industry_category": base.get("industry_category") or "",
-        "baseline": {
-            "axis_x": axis_x,
-            "axis_y": axis_y,
-            "x": x_feats,
-            "y": y_feats,
-        },
     }
+    scope = " ".join(str(os.environ.get("MARKET_SCOPE") or "").split())
+    if scope:
+        payload["market_definition"] = scope
     # The 5 parameters under each axis MUST be market-specific, so the LLM
     # path is not optional: a silent fall back to the catalog gives every
     # market the same generic baseline parameters. Retry before giving up.
@@ -304,9 +304,12 @@ def define_market_axes(
                 model=getattr(settings, "classifier_model", None),
                 max_tokens=2500,
             )
-            if isinstance(raw, dict) and raw.get("x") and raw.get("y"):
+            # 5 + 5 from the LLM itself: a short list must not be padded
+            # from the catalog, so it counts as a failed attempt.
+            if (isinstance(raw, dict) and len(raw.get("x") or []) >= PARAMS_PER_AXIS
+                    and len(raw.get("y") or []) >= PARAMS_PER_AXIS):
                 break
-            last_err = ValueError("axis JSON missing x/y")
+            last_err = ValueError("axis JSON needs 5 x and 5 y parameters")
             raw = None
         except Exception as exc:  # noqa: BLE001
             last_err = exc

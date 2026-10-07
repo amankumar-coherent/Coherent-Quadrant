@@ -123,19 +123,18 @@ def _company_name(row: dict[str, Any]) -> str:
     return ""
 
 
-def profile_for_query(query: str) -> dict[str, Any]:
-    q = _norm(query)
-    profiles = _load_profiles()
-    default: dict[str, Any] = {}
-    for p in profiles:
-        matches = p.get("match") or []
-        if "*" in matches or "all" in [str(m).lower() for m in matches]:
-            default = p
-            continue
-        for m in matches:
-            if _norm(str(m)) and _norm(str(m)) in q:
-                return p
-    return default or (profiles[-1] if profiles else {})
+def profile_for_query(query: str) -> dict[str, Any]:  # noqa: ARG001 -- same profile for every market
+    """The generic gate profile (``match: ["*"]``).
+
+    Never chosen by market name: a profile keyed on words in the market name
+    is per-market code in disguise, and every market must run through the
+    same rules.
+    """
+    for p in _load_profiles():
+        matches = [str(m).lower() for m in p.get("match") or []]
+        if "*" in matches or "all" in matches:
+            return p
+    return {}
 
 
 def _is_geo_token(text: str) -> bool:
@@ -234,17 +233,10 @@ def classify_expand_row(
 
     if is_market_geo_artifact(name, query):
         return False, "geo_artifact"
+    # A "<Country> <sector noun>" placeholder that is not a real company fails
+    # verification (it neither builds nor owns anything); a name rule here
+    # would need a sector list and also catches real firms ("Japan Tobacco").
 
-    # Country + core market noun as entire name
-    if re.match(
-        r"^(algeria|egypt|egyptian|tunisia|morocco|moroccan|ethiopia|kenya|"
-        r"nigeria|ghana|uganda|rwanda|sudan|libya|senegal|namibia|botswana|"
-        r"zimbabwe|tanzania|south african?)\s+"
-        r"(semiconductor|microelectronics|electronics|packaging|wearable|"
-        r"medical|lng|glp|market)\b",
-        n,
-    ):
-        return False, "country_market_placeholder"
 
     # Regional duplicate when parent already kept
     if prof.get("drop_regional_of_parent", True) and kept_names is not None:

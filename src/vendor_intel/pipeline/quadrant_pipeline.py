@@ -7,6 +7,7 @@ whatever market is being run, so every market goes through the same steps.
 from __future__ import annotations
 
 import json
+import os
 import re
 from pathlib import Path
 from typing import Any, Iterable
@@ -29,6 +30,19 @@ _NAME_SUFFIXES = {
     "bv", "nv", "ab", "as", "asa", "oy", "pte", "pty", "pvt", "private",
     "kk", "kft", "sp", "zoo", "the",
 }
+
+
+def write_json_atomic(path: Path, obj: Any, *, indent: int | None = None) -> None:
+    """Write JSON through a temp file + rename.
+
+    An evidence sidecar rewritten in place by two processes at once (or one
+    stopped mid-write) ends up as two JSON documents run together; every
+    later step that reads it then skips or crashes on the whole file.
+    """
+    path = Path(path)
+    tmp = path.with_name(f"{path.name}.{os.getpid()}.tmp")
+    tmp.write_text(json.dumps(obj, indent=indent, ensure_ascii=False), encoding="utf-8")
+    os.replace(tmp, path)
 
 
 def row_name(r: dict) -> str:

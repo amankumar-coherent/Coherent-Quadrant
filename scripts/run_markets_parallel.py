@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
-"""Run several markets at the same time, each in its OWN Chromium browser.
+"""Run several markets at the same time, each in its OWN Chromium browser(s).
 
 Every market runs the full one-command pipeline (run_quadrant_pipeline.py:
 discovery -> verify rounds -> quick scores -> Top 20 -> evidence -> report ->
-VERIFY) as a separate process pinned to ONE browser slot. A slot is a
+VERIFY) as a separate process pinned to a BLOCK of browser slots. A slot is a
 Chromium profile folder, data/ai_mode_batch_<slot>, and every browser loads
 the bundled CAPTCHA Raptor extension from extensions/ automatically.
-With --workers 10 there are exactly 10 browsers, one per running market.
+With --workers 10 --slots-per-market 2, 5 markets run at once, 2 browsers
+each (10 browsers total). run_quadrant_pipeline.py's own --slots range
+fans a market's SCORING queries (Step 4 quick scores, Step 5 deep evidence)
+across every browser in its block at once. Discovery and the --keep top-up
+rounds (Step 1/1b) still run on a single browser regardless of the block
+size -- that stage is one sequential conversation with Google AI Mode, not
+parallelizable per company the way scoring is. Default --slots-per-market 1
+keeps the original one-browser-per-market behaviour.
 
 Isolation:
   * browser  -- one slot per market; Chromium locks its profile, so two
@@ -108,7 +115,12 @@ def main() -> int:
                     help="a market (repeatable), same 'name | country' form")
     ap.add_argument("--country", default="global", help="default country")
     ap.add_argument("--workers", type=int, default=10,
-                    help="markets at a time = Chromium browsers open")
+                    help="total Chromium browsers open across all markets "
+                         "(markets running at once = workers / slots-per-market)")
+    ap.add_argument("--slots-per-market", type=int, default=1,
+                    help="browsers dedicated to EACH running market's own "
+                         "scoring shards (default 1 = original behaviour); "
+                         "--workers must be a multiple of this")
     ap.add_argument("--slot-start", type=int, default=41,
                     help="first browser slot; workers use slot-start .. slot-start+workers-1")
     ap.add_argument("--keep", type=int, default=0, help="passed to every market")
@@ -122,16 +134,25 @@ def main() -> int:
                            args.market, args.country)
     if not markets:
         ap.error("no markets: give --markets-file and/or --market")
-    workers = max(1, min(args.workers, len(markets)))
-    slots = list(range(args.slot_start, args.slot_start + workers))
-    if slots[0] < 1 or slots[-1] > 99:
+    spm = max(1, args.slots_per_market)
+    if args.workers % spm != 0:
+        ap.error(f"--workers {args.workers} is not a multiple of "
+                 f"--slots-per-market {spm}")
+    concurrent_markets = max(1, min(args.workers // spm, len(markets)))
+    total_slots = concurrent_markets * spm
+    all_slots = list(range(args.slot_start, args.slot_start + total_slots))
+    if all_slots[0] < 1 or all_slots[-1] > 99:
         ap.error("slots must stay within 1..99 (2-digit profile names)")
+    # One BLOCK of `spm` consecutive slots per concurrently-running market,
+    # e.g. spm=2 -> [[41,42], [43,44], [45,46], [47,48], [49,50]].
+    slot_blocks = [all_slots[i:i + spm] for i in range(0, total_slots, spm)]
 
     from vendor_intel.scraping.google_ai_mode import installed_extensions
 
-    exts = installed_extensions(str(ROOT / "data" / f"ai_mode_batch_{slots[0]:02d}"))
-    log(f"{len(markets)} market(s), {workers} at a time, browser slots "
-        f"{slots[0]}..{slots[-1]} (Chromium)")
+    exts = installed_extensions(str(ROOT / "data" / f"ai_mode_batch_{all_slots[0]:02d}"))
+    log(f"{len(markets)} market(s), {concurrent_markets} at a time "
+        f"({spm} browser(s) each), browser slots "
+        f"{all_slots[0]}..{all_slots[-1]} (Chromium)")
     log("extension(s) loaded in every browser: "
         + (", ".join(Path(p).parent.name if Path(p).name == "extension" else Path(p).name
                      for p in exts) or "NONE -- CAPTCHAs will need solving by hand"))
@@ -139,9 +160,10 @@ def main() -> int:
     log_dir = ROOT / "logs" / "parallel"
     log_dir.mkdir(parents=True, exist_ok=True)
 
-    def command(market: str, country: str, slot: int) -> list[str]:
+    def command(market: str, country: str, block: list[int]) -> list[str]:
+        slots_arg = str(block[0]) if len(block) == 1 else f"{block[0]}-{block[-1]}"
         cmd = [sys.executable, str(ROOT / "scripts" / "run_quadrant_pipeline.py"),
-               "--market", market, "--country", country, "--slots", str(slot),
+               "--market", market, "--country", country, "--slots", slots_arg,
                "--top-n", str(args.top_n)]
         if args.keep:
             cmd += ["--keep", str(args.keep)]
@@ -149,8 +171,8 @@ def main() -> int:
 
     if args.dry_run:
         for i, (m, c) in enumerate(markets):
-            slot = slots[i % workers]
-            log(f"would run (slot {slot}): {' '.join(command(m, c, slot)[1:])}")
+            block = slot_blocks[i % concurrent_markets]
+            log(f"would run (slots {block}): {' '.join(command(m, c, block)[1:])}")
         return 0
 
     todo: queue.Queue[tuple[str, str]] = queue.Queue()
@@ -161,7 +183,8 @@ def main() -> int:
     start_lock = threading.Lock()
     last_start = [0.0]
 
-    def worker(slot: int) -> None:
+    def worker(block: list[int]) -> None:
+        label = str(block[0]) if len(block) == 1 else f"{block[0]}-{block[-1]}"
         while True:
             try:
                 market, country = todo.get_nowait()
@@ -174,26 +197,26 @@ def main() -> int:
                 last_start[0] = time.time()
             log_path = log_dir / f"{slug(market)}_{slug(country)}.log"
             t0 = time.time()
-            log(f"slot {slot}: START {market} ({country}) -> {log_path.name}")
+            log(f"slots {label}: START {market} ({country}) -> {log_path.name}")
             with log_path.open("w", encoding="utf-8") as fh:
                 proc = subprocess.Popen(
-                    command(market, country, slot), cwd=str(ROOT), stdout=fh,
+                    command(market, country, block), cwd=str(ROOT), stdout=fh,
                     stderr=subprocess.STDOUT,
                     env={**os.environ, "PYTHONIOENCODING": "utf-8",
                          "PYTHONPATH": str(ROOT / "src")},
                 )
-                procs[slot] = proc
+                procs[block[0]] = proc
                 rc = proc.wait()
             passed, failed = verify_counts(log_path)
             mins = (time.time() - t0) / 60
             status = "OK" if rc == 0 and failed == 0 and passed else "CHECK"
-            log(f"slot {slot}: {status} {market} ({country}) exit={rc} "
+            log(f"slots {label}: {status} {market} ({country}) exit={rc} "
                 f"VERIFY {passed} pass / {failed} fail, {mins:.0f} min")
-            results.append({"market": market, "country": country, "slot": slot,
+            results.append({"market": market, "country": country, "slots": block,
                             "exit": rc, "verify_pass": passed, "verify_fail": failed,
                             "minutes": round(mins, 1), "log": str(log_path)})
 
-    threads = [threading.Thread(target=worker, args=(s,), daemon=True) for s in slots]
+    threads = [threading.Thread(target=worker, args=(b,), daemon=True) for b in slot_blocks]
     for t in threads:
         t.start()
     try:

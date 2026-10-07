@@ -57,6 +57,7 @@ def main() -> int:
              "falling back to 'Solution Provider' only if the market was "
              "never classified.",
     )
+    ap.add_argument("--top-n", type=int, default=20, help="companies on the chart")
     args = ap.parse_args()
 
     import vendor_intel.pipeline.expand_quadrant_score as _eqs
@@ -122,7 +123,13 @@ def main() -> int:
             "Y": row["Y Score"],
             "Overall": row["Overall Score"],
             "Found in": hq,
-            "_meta": {"hq_location": hq},
+            # Owner fields (set by an analyst ownership review) let the
+            # payload print "Name (acquired by Owner)" in the Company column;
+            # "Company" itself stays the plain join key.
+            "_meta": {"hq_location": hq, **{
+                k: src[k] for k in ("parent_owner", "ownership_relation", "ownership_confidence",
+                                    "current_company", "brand_label")
+                if str(src.get(k) or "").strip()}},
         })
 
     settings = Settings.load()
@@ -322,12 +329,9 @@ def main() -> int:
     # alternate. They stay in detail_rows (and the Other Noticeable Player
     # table) with their composite score; only the chart selection excludes
     # them.
-    # Companies with no usable evidence at all would need excluding from the
-    # chart candidate pool here (the automatic selector has no way to know
-    # a company was already tried and swapped for the next-best same-quadrant
-    # alternate). Every company in this market now has full 5+5 parameter
-    # evidence (confirmed via the completeness audit), so there is nothing
-    # to exclude.
+    # The orchestrator passes the chart it chose (--fixed-top20: companies with
+    # complete evidence, 5 per quadrant), so the automatic selector below only
+    # runs for a stand-alone rebuild without that list.
     chart_candidates = list(detail_rows)
 
     if args.fixed_top20:
@@ -339,7 +343,7 @@ def main() -> int:
             print(f"WARNING: {len(missing)} fixed-top20 names not found in "
                   f"detail_rows: {missing}", file=sys.stderr)
     else:
-        chart_slice = select_chart_rows_by_quadrant_country(chart_candidates, chart_n=20)
+        chart_slice = select_chart_rows_by_quadrant_country(chart_candidates, chart_n=args.top_n)
     from collections import Counter
     print("Top 20 quadrant split:",
           dict(Counter(str(r.get("Quadrant")) for r in chart_slice)))
@@ -360,14 +364,14 @@ def main() -> int:
     if args.fixed_top20:
         chart_keys_fixed = {r["Company"] for r in chart_slice}
 
-        def _forced_selection(rows, *, chart_n=20):  # noqa: ARG001
+        def _forced_selection(rows, *, chart_n=args.top_n):  # noqa: ARG001
             return [r for r in rows if r.get("Company") in chart_keys_fixed]
 
         _eqs.select_chart_rows_by_quadrant_country = _forced_selection
 
     paths = export_expand_quadrant_outputs(
         out_dir, detail_rows, args.market, country=args.country,
-        audit=audit, chart_n=20,
+        audit=audit, chart_n=args.top_n,
     )
     print(f"\nexported:")
     for k, v in paths.items():

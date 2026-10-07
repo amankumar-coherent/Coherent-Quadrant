@@ -135,7 +135,9 @@ def main() -> int:
     os.environ["GOOGLE_AI_MODE_BROWSER"] = "chromium"
     os.environ["GOOGLE_AI_MODE_ENABLED"] = "true"
     os.environ["AI_MODE_PARAM_BATCH"] = str(args.batch)
-    scope = _scope_for(args.market)
+    # The orchestrator's scope (from the market brief) wins; a batch query
+    # file's scope is only a fallback for a stand-alone run.
+    scope = "" if os.environ.get("MARKET_SCOPE") else _scope_for(args.market)
     if scope:
         os.environ["MARKET_SCOPE"] = scope
 

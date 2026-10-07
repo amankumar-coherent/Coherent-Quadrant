@@ -46,29 +46,74 @@ if hasattr(sys.stdout, "reconfigure"):
 # keeps every sentence grammatically identical apart from its opening
 # framing, at the cost of a very slightly less polished result on the
 # minority of sentences with a mid-sentence "but ... could not verify".
-_HEDGE_LEAD_IN = (
-    "This is not disclosed by the company, so desk research could not "
-    "confirm "
+# States the research gap and nothing more. An earlier lead-in, "This is
+# not disclosed by the company, so desk research could not confirm ...",
+# asserted as fact that the company withholds the figure -- which nobody
+# checked -- and read awkwardly beside the finding (an analyst reviewer
+# flagged it). The same wording is used across the published reports.
+_HEDGE_LEAD_IN = "Desk research could not confirm "
+
+# Text written by the earlier lead-ins converges on the current one. Every
+# occurrence is rewritten (rewrite_sentence changes at most one lead-in per
+# call), and "While A. This is not disclosed ..." -- where the earlier split
+# left "While A." as a fragment with no main clause -- is rejoined.
+_MIGRATIONS: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(r"((?:^|[.!?]\s+)(?:While|Although|Though|Whereas)\b[^.!?]*?)\.\s+"
+                r"This is not disclosed by the company(?:,\s*so|\.)\s*desk research "
+                r"could not confirm\s+", re.I),
+     r"\1, desk research could not confirm "),
+    (re.compile(r"This is not disclosed by the company(?:,\s*so|\.)\s*desk research "
+                r"could not confirm\s+", re.I),
+     _HEDGE_LEAD_IN),
+]
+# The model doesn't only write "could not VERIFY" -- "could not isolate",
+# "could not determine", "could not quantify", "could not pinpoint", etc.
+# all carry the exact same apologetic-lookup meaning. A live report
+# ("...disclosures, but I could not isolate the exact revenue share...")
+# slipped past the old verify-only pattern and shipped with a leftover
+# hedge. Matching a broad verb list instead of one fixed verb closes that
+# whole class rather than the one instance found.
+_HEDGE_VERBS = (
+    r"verify|confirm|isolate|determine|quantify|pinpoint|disaggregate|"
+    r"ascertain|establish|locate|identify|find|obtain|source|corroborate|"
+    r"substantiate|independently verify"
 )
 _LEAD_INS: list[tuple[re.Pattern[str], str]] = [
-    (re.compile(r"^I\s+could not verify\s+", re.I), _HEDGE_LEAD_IN),
-    (re.compile(r"^We\s+could not verify\s+", re.I), _HEDGE_LEAD_IN),
+    # Sentence-START "(I|We) could not verify/isolate/determine/... ..." --
+    # optionally with no pronoun at all
+    # ("Could not verify the company's total headcount.").
     (
-        re.compile(r",\s+but\s+I\s+could not verify\s+", re.I),
+        re.compile(rf"^(?:I|We)?\s*could not (?:{_HEDGE_VERBS})\s+", re.I),
+        _HEDGE_LEAD_IN,
+    ),
+    # MID-sentence hedge: a real clause boundary -- a comma, OR the word
+    # "but"/"and"/"yet"/"however" (which the model sometimes writes without
+    # a comma before it) -- immediately followed by an optional pronoun,
+    # then "could not verify/isolate/determine/...". At least ONE of
+    # {comma, connector} is REQUIRED: without that, "could not verify"
+    # occurring anywhere mid-sentence (a different subject earlier, e.g.
+    # "Independent auditors could not verify...", not a hedge about THIS
+    # company's own claim at all) was wrongly cut into a broken fragment --
+    # caught in testing before this pattern shipped.
+    #
+    # Earlier versions enumerated exact combinations one at a time (", but
+    # we could not verify", ", we could not verify", ...) and each time
+    # missed a live combination the model actually wrote -- three separate
+    # finished reports carried leftover hedge text before this replaced the
+    # enumeration. Live cases now covered:
+    #   "...tenders, we could not verify any finalized contracts..."
+    #   "...metrics, and we could not verify specific third-party..."
+    #   "...within India but could not verify any standalone international
+    #    sales..." (comma-less "but", no pronoun immediately before it)
+    #   "...disclosures, but I could not isolate the exact revenue share..."
+    (
+        re.compile(
+            rf"(?:,\s*(?:but|and|yet|however)?|\bbut|\band|\byet|\bhowever)"
+            rf"\s*(?:I|we)?\s*could not (?:{_HEDGE_VERBS})\s+",
+            re.I,
+        ),
         f". {_HEDGE_LEAD_IN}",
     ),
-    (
-        re.compile(r",\s+but\s+we\s+could not verify\s+", re.I),
-        f". {_HEDGE_LEAD_IN}",
-    ),
-    (
-        re.compile(r",\s+but\s+could not verify\s+", re.I),
-        f". {_HEDGE_LEAD_IN}",
-    ),
-    # Subject-less "Could not verify X..." at the START of the sentence --
-    # the model dropped even "I"/"We" here, so there is no pronoun to swap;
-    # this is still the same hedge framing and needs the same rewrite.
-    (re.compile(r"^Could not verify\s+", re.I), _HEDGE_LEAD_IN),
     # Migration: an earlier version of this script rewrote the hedge
     # lead-in to a more awkward phrase ("Based on primary research the
     # company has not disclosed publicly, desk research could not confirm
@@ -154,6 +199,9 @@ def rewrite_sentence(text: str) -> str:
     if not t:
         return t
 
+    for pattern, repl in _MIGRATIONS:
+        t = pattern.sub(repl, t)
+
     for pattern, repl in _LEAD_INS:
         new_t = pattern.sub(repl, t, count=1)
         if new_t != t:
@@ -172,7 +220,20 @@ def rewrite_sentence(text: str) -> str:
     # than leave the sentence starting lowercase.
     if t and t[0].islower():
         t = t[0].upper() + t[1:]
-    return t
+    # House style for missing information is primary-research wording
+    # ("Based on primary research, the company has not disclosed X"); the
+    # same rules finished reports were rewritten with, so new and old
+    # reports read alike.
+    return _house_style(t)
+
+
+def _house_style(text: str) -> str:
+    scripts_dir = str(Path(__file__).resolve().parent)
+    if scripts_dir not in sys.path:
+        sys.path.insert(0, scripts_dir)
+    from primary_research_wording import to_primary
+
+    return to_primary(text)
 
 
 def main() -> int:
@@ -190,10 +251,20 @@ def main() -> int:
         print(f"ERROR: no param_detail_prescored*.json under {out_dir}", file=sys.stderr)
         return 2
 
+    from vendor_intel.pipeline.quadrant_pipeline import write_json_atomic
+
     total_rewritten = 0
     total_evidence_rewritten = 0
+    unreadable: list[str] = []
     for side in sidecars:
-        part = json.loads(side.read_text(encoding="utf-8"))
+        try:
+            part = json.loads(side.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as err:
+            # Fail the step (the pipeline stops) rather than leave every later
+            # sidecar unrewritten behind a crash on this one.
+            print(f"ERROR: unreadable sidecar {side.name}: {err}", file=sys.stderr)
+            unreadable.append(side.name)
+            continue
         changed = False
         for name, rec in part.items():
             for axis in ("x", "y"):
@@ -236,12 +307,12 @@ def main() -> int:
                                 print(f"  NEW: {new_claim}")
                             ev["claim"] = new_claim
         if changed and not args.dry_run:
-            side.write_text(json.dumps(part, ensure_ascii=False), encoding="utf-8")
+            write_json_atomic(side, part)
 
     verb = "would rewrite" if args.dry_run else "rewrote"
     print(f"\n{verb} {total_rewritten} assessed_on entries and "
           f"{total_evidence_rewritten} evidence claims across {len(sidecars)} sidecars")
-    return 0
+    return 1 if unreadable else 0
 
 
 if __name__ == "__main__":

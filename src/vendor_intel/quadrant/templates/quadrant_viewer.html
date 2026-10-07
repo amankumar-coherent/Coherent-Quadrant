@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coherent Quadrant</title>
+<style>
+  :root{
+    --navy:#002857; --score:#1e3a8a; --accent:#1A759F; --teal:#52B69A;
+    --slate900:#0f172a; --slate800:#1e293b; --slate700:#334155; --slate600:#475569;
+    --slate500:#64748b; --slate400:#94a3b8; --slate300:#cbd5e1; --slate200:#e2e8f0;
+    --slate100:#f1f5f9; --slate50:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#eef2f6; color:var(--slate800); line-height:1.5; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1280px;margin:0 auto;padding:22px 18px 60px;display:flex;flex-direction:column;gap:20px}
+  .card{background:#fff;border:1px solid var(--slate200);border-radius:12px;padding:20px;box-shadow:0 1px 2px rgba(15,23,42,.05)}
+  h1{margin:0 0 4px;font-size:1.6rem;letter-spacing:-.02em}
+  h2{margin:0 0 12px;font-size:1.1rem;color:var(--slate900)}
+  h2 .sub{font-size:.85rem;font-weight:500;opacity:.72}
+  .hero{border-radius:14px;padding:26px 28px;color:#f8fafc;background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 50%,#0d9488 100%)}
+  .hero p{margin:0;opacity:.9}
+  .grid2{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:860px){.grid2{grid-template-columns:1fr 1fr}}
+  .panel{background:var(--slate50);border:1px solid var(--slate200);border-radius:10px;padding:16px}
+  .panel .lbl{font-weight:700;color:var(--slate900);margin-bottom:4px}
+  .panel .val{font-size:.92rem;color:var(--slate700)}
+  .muted{color:var(--slate500);font-size:.84rem;margin-top:8px}
+  ol,ul{margin:0;padding-left:20px}
+  ol li{margin-bottom:6px;color:var(--slate700)}
+  .pname{font-weight:600;color:var(--slate900)}
+  .pdef{margin-top:2px;font-size:.88rem;color:var(--slate600);line-height:1.55}
+  .lead{margin:0 0 16px;font-size:.92rem;color:var(--slate500)}
+
+  /* chart */
+  .chartrow{display:flex;align-items:stretch;gap:8px}
+  .yaxis{display:flex;align-items:center}
+  .yaxis span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:.72rem;font-weight:700;
+    text-transform:uppercase;letter-spacing:.08em;color:var(--slate600);text-align:center}
+  .plot{position:relative;flex:1;height:600px;overflow:hidden;border-radius:6px;border:2px solid #93c5fd;
+    background:repeating-linear-gradient(-45deg,#0b1f3a,#0b1f3a 8px,#0d2748 8px,#0d2748 16px)}
+  .plot .hline{position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(255,255,255,.35);z-index:1}
+  .plot .vline{position:absolute;top:0;bottom:0;left:50%;width:1px;background:rgba(255,255,255,.35);z-index:1}
+  .qlabel{position:absolute;z-index:2;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.85)}
+  .bound{position:absolute;z-index:2;font-size:.7rem;color:rgba(255,255,255,.55)}
+  .dot{position:absolute;z-index:3;width:12px;height:12px;transform:translate(-50%,-50%)}
+  .dot i{display:block;width:12px;height:12px;border-radius:50%;border:2px solid #fff}
+  .dot b{position:absolute;top:50%;transform:translateY(-50%);font-size:.62rem;font-weight:600;color:#fff;
+    text-shadow:0 1px 2px rgba(0,0,0,.75);max-width:110px;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis;pointer-events:none}
+  .xaxis{margin-top:8px;text-align:center;font-size:.72rem;font-weight:700;text-transform:uppercase;
+    letter-spacing:.08em;color:var(--slate600)}
+  .mix{margin-top:12px;font-size:.82rem;color:var(--slate600);line-height:1.6}
+  .mix .t{font-weight:600;margin-bottom:2px}
+
+  /* tables */
+  .scroll{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:.88rem}
+  th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px;font-size:.72rem;
+    font-weight:600;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+  td{border-bottom:1px solid var(--slate200);padding:10px 12px;vertical-align:top}
+  tbody tr:nth-child(even){background:rgba(241,245,249,.7)}
+  td.b{font-weight:500;color:var(--slate900)}
+  .disc{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;
+    background:var(--score);color:#fff;font-size:.82rem;font-weight:700;font-variant-numeric:tabular-nums}
+  details.axiscell{display:inline-block}
+  details.axiscell>summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none}
+  details.axiscell>summary::-webkit-details-marker{display:none}
+  .caret{width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;
+    border-left:7px solid var(--score)}
+  details.axiscell[open] .caret{transform:rotate(90deg)}
+  .breakdown{margin-top:8px;min-width:300px;border:1px solid var(--slate200);background:var(--slate50);
+    border-radius:8px;padding:8px 12px}
+  .brow{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border-top:1px solid #e6ebf1;font-size:.82rem}
+  .brow:first-child{border-top:none}
+  .brow span:first-child{color:var(--slate700)}
+  .brow span:last-child{font-weight:700;color:var(--score);font-variant-numeric:tabular-nums}
+  .pill{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:.82rem;font-weight:600;color:var(--slate800)}
+  .pill i{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .dots{display:inline-flex;align-items:center;gap:4px}
+  .dots i{display:inline-block;border-radius:50%;border:1px solid var(--slate300);background:var(--slate200)}
+  .dots i.on{background:var(--score);border-color:var(--score)}
+
+  /* filters */
+  .filters{display:grid;gap:12px;grid-template-columns:1fr;margin-bottom:12px}
+  @media(min-width:640px){.filters{grid-template-columns:1fr 1fr}}
+  .filters label{display:block}
+  .filters .cap{display:block;margin-bottom:4px;font-size:11px;font-weight:600;text-transform:uppercase;
+    letter-spacing:.08em;color:var(--slate500)}
+  .filters input,.filters select{width:100%;padding:8px 12px;font-size:.88rem;color:var(--slate900);
+    border:1px solid var(--slate300);border-radius:6px;background:#fff;font-family:inherit}
+  .filters input:focus,.filters select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+  .count{font-size:.75rem;color:var(--slate600);margin:0 0 8px}
+  .count em{color:var(--slate400);font-style:normal}
+  .toggle{margin-top:12px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;
+    padding:10px 16px;border:1px solid var(--slate300);background:var(--slate50);border-radius:6px;
+    font-size:.88rem;font-weight:600;color:var(--accent);cursor:pointer;font-family:inherit}
+  .toggle:hover{background:var(--slate100)}
+  .toggle i{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;
+    border-top:7px solid var(--accent);display:inline-block}
+  .toggle.open i{transform:rotate(180deg)}
+  .empty{border:1px dashed var(--slate300);border-radius:6px;padding:28px;text-align:center;
+    font-size:.88rem;color:var(--slate500)}
+
+  /* per-company parameter detail */
+  .cblock{border:1px solid var(--slate200);border-radius:10px;background:#fff;margin-bottom:16px}
+  .chead{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:12px 16px;
+    border-bottom:1px solid var(--slate200);background:#f7fafc}
+  .chead .nm{font-size:.98rem;font-weight:700;color:#0f3d5c}
+  .chead .br{font-size:.84rem;color:var(--slate500)}
+  .chead .sc{margin-left:auto;display:flex;gap:12px;font-size:.8rem;color:var(--slate600)}
+  .chead .sc strong{color:var(--slate900);font-variant-numeric:tabular-nums}
+  .cbody{padding:16px;display:flex;flex-direction:column;gap:20px}
+  .axttl{margin-bottom:8px;font-size:.78rem;font-weight:700;text-transform:uppercase;
+    letter-spacing:.08em;color:var(--accent)}
+  .axgrid{display:grid;gap:12px;grid-template-columns:1fr}
+  @media(min-width:900px){.axgrid{grid-template-columns:minmax(220px,300px) 1fr}}
+  .plist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px}
+  .pbtn{width:100%;display:flex;align-items:center;gap:8px;text-align:left;padding:8px 12px;
+    border:1px solid var(--slate200);background:#fff;border-radius:6px;cursor:pointer;font-family:inherit}
+  .pbtn:hover{background:var(--slate50)}
+  .pbtn.active{border-color:var(--accent);background:#eef6fb}
+  .pbtn .car{flex:0 0 auto;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;
+    border-left:6px solid var(--slate400)}
+  .pbtn.active .car{border-left-color:var(--accent);transform:rotate(90deg)}
+  .pbtn .txt{flex:1;font-size:.84rem;line-height:1.35;font-weight:500;color:var(--slate700)}
+  .pbtn.active .txt{font-weight:700;color:#0f3d5c}
+  .pbtn .num{flex:0 0 auto;border-radius:999px;padding:2px 8px;font-size:.75rem;font-weight:700;
+    color:#fff;background:var(--score);font-variant-numeric:tabular-nums}
+  .pdetail{border:1px solid var(--slate200);background:var(--slate50);border-radius:6px;padding:16px;line-height:1.65}
+  .pdetail .h{font-weight:700;color:var(--slate900);margin-bottom:8px}
+  .pdetail .basis{margin:0 0 12px;padding-left:12px;border-left:3px solid var(--teal);
+    font-size:.9rem;color:var(--slate700)}
+  .pdetail .sh{margin-bottom:6px;font-size:.72rem;font-weight:700;text-transform:uppercase;
+    letter-spacing:.08em;color:var(--slate500)}
+  .pdetail ul{padding-left:20px}
+  .pdetail ul li{margin-bottom:8px;font-size:.9rem;color:var(--slate700)}
+  .none{font-size:.88rem;color:var(--slate500);margin:0}
+
+  /* methodology */
+  .steps{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+  .step{flex:1 1 150px;min-width:150px;border-radius:12px;padding:16px;color:#f8fafc;
+    background:linear-gradient(160deg,#0f172a,#1e3a5f)}
+  .step .n{width:28px;height:28px;border-radius:50%;background:#0d9488;display:flex;align-items:center;
+    justify-content:center;font-size:.85rem;font-weight:700;margin-bottom:8px}
+  .step .t{font-size:.88rem;font-weight:700;margin-bottom:4px}
+  .step .d{font-size:.78rem;line-height:1.55;opacity:.9}
+  .foot{text-align:center;font-size:.75rem;color:var(--slate500);padding-top:4px}
+
+  .hero h1{font-size:1.5rem}
+
+  /* what each quadrant means */
+  .qdefs{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:860px){.qdefs{grid-template-columns:1fr 1fr}}
+  .qdef{background:var(--slate50);border:1px solid var(--slate200);border-left:4px solid #cbd5e1;border-radius:10px;padding:16px 20px}
+  .qdef .hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .qdef .tag{font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:999px;color:#0f172a}
+  .qdef .qt{font-size:1.05rem;font-weight:700;color:var(--slate900)}
+  .qdef .qp{font-size:.84rem;color:var(--slate500);margin:6px 0 8px}
+  .qdef .qd{font-size:.92rem;color:var(--slate700);line-height:1.6}
+
+  /* methodology cards with arrows */
+  .steps{flex-wrap:nowrap;align-items:stretch;gap:0;overflow-x:auto}
+  .step{flex:1 1 0;min-width:140px}
+  .arrow{flex:0 0 40px;display:flex;align-items:center;justify-content:center;color:#60a5fa;font-size:1.1rem}
+  @media(max-width:860px){.steps{flex-wrap:wrap;gap:12px}.arrow{display:none}}
+  .mintro{font-size:.92rem;color:var(--slate500);margin:0 0 16px}
+  .mnote{border-top:1px solid var(--slate200);padding-top:14px;margin-top:4px}
+
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script id="quadrant-data" type="application/json">__QUADRANT_DATA__</script>
+<script>
+(function(){
+"use strict";
+
+/* ─── coercion helpers (ported from lib/quadrant-types.ts) ─── */
+function isRec(v){ return v && typeof v === 'object' && !Array.isArray(v); }
+function asString(v, fb){ fb = fb || '';
+  if (typeof v === 'string') return v.trim();
+  if (typeof v === 'number' && isFinite(v)) return String(v);
+  return fb; }
+function asNumber(v){
+  if (typeof v === 'number' && isFinite(v)) return v;
+  if (typeof v === 'string'){ var m = v.match(/-?\d+(\.\d+)?/);
+    if (m){ var n = parseFloat(m[0]); if (isFinite(n)) return n; } }
+  return null; }
+function asRecord(v){ return isRec(v) ? v : {}; }
+function pick(rec){ for (var i=1;i<arguments.length;i++){ var k = arguments[i];
+    if (rec[k] !== undefined && rec[k] !== null && rec[k] !== '') return rec[k]; } return undefined; }
+function asStringList(v, keys){ keys = keys || [];
+  if (typeof v === 'string'){ var s = v.trim(); return s ? [s] : []; }
+  if (!Array.isArray(v)) return [];
+  var out = [];
+  v.forEach(function(item){
+    if (typeof item === 'string'){ var s = item.trim(); if (s) out.push(s); }
+    else if (isRec(item)){
+      for (var i=0;i<keys.length;i++){ var s2 = asString(item[keys[i]]); if (s2){ out.push(s2); break; } } }
+  });
+  return out; }
+
+/* ─── section parsers ─── */
+function parseParamDefs(raw){
+  if (!Array.isArray(raw)) return [];
+  var out = [];
+  raw.forEach(function(item){
+    if (typeof item === 'string'){ var s = item.trim(); if (s) out.push({name:s, definition:''}); return; }
+    var rec = asRecord(item);
+    var name = asString(pick(rec,'name','parameter','title','label'));
+    if (!name) return;
+    out.push({name:name, definition: asString(pick(rec,'definition','description','detail','meaning','measure'))});
+  });
+  return out; }
+
+function parseAxis(raw, fallbackName, definitions){
+  function withDefs(params){
+    if (!definitions) return params;
+    return params.map(function(p){
+      return p.definition ? p : {name:p.name, definition: asString(definitions[p.name])}; }); }
+  if (Array.isArray(raw)) return {name: fallbackName, parameters: withDefs(parseParamDefs(raw))};
+  var rec = asRecord(raw);
+  return {
+    name: asString(pick(rec,'name','title','label','axis'), fallbackName),
+    parameters: withDefs(parseParamDefs(pick(rec,'parameters','params','features','items')))
+  }; }
+
+function parameterFrom(name, rec){
+  return {
+    name: name,
+    score: asNumber(pick(rec,'score','value','rating','points')),
+    basis: asString(pick(rec,'assessed_on','basis','why','rationale','reason','scoring_basis','justification','summary')),
+    evidence: asStringList(pick(rec,'evidence','points','findings','takeaways','bullets','facts'),
+                           ['claim','text','point','finding','detail'])
+  }; }
+
+function parseParamScores(raw){
+  if (Array.isArray(raw)){
+    var out = [];
+    raw.forEach(function(item){
+      var rec = asRecord(item);
+      var name = asString(pick(rec,'name','parameter','title','label'));
+      if (name) out.push(parameterFrom(name, rec)); });
+    return out;
+  }
+  var rec2 = asRecord(raw);
+  var keyed = asRecord(pick(rec2,'parameters','params','features') || rec2);
+  var res = [];
+  Object.keys(keyed).forEach(function(name){
+    var v = asRecord(keyed[name]);
+    if (Object.keys(v).length === 0) return;
+    res.push(parameterFrom(name, v)); });
+  return res; }
+
+function parseCompany(raw){
+  var rec = asRecord(raw);
+  var company = asString(pick(rec,'company','company_name','legal_name','name'));
+  var brand = asString(pick(rec,'brand','display_name','brand_name','product','name'), company);
+  if (!company && !brand) return null;
+  var detail = asRecord(pick(rec,'score_detail','scoreDetail','detail'));
+  return {
+    brand: brand || company,
+    company: company || brand,
+    hq: asString(pick(rec,'hq','hq_location','headquarters','location')),
+    role: asString(pick(rec,'role','commercial_role','provider_role','category','provider_category')),
+    country: asString(pick(rec,'country','hq_country','nation')),
+    quadrant: asString(pick(rec,'quadrant','positioning','relative_positioning','segment')),
+    xScore: asNumber(pick(rec,'x_score','xScore','execution','x','product_capability','x_axis_score')),
+    yScore: asNumber(pick(rec,'y_score','yScore','innovation','y','business_capability','y_axis_score')),
+    overallScore: asNumber(pick(rec,'overall_score','overallScore','overall','total_score','score','strength')),
+    xParameters: parseParamScores(pick(rec,'x_parameters','xParameters','x_params','product_parameters','x_axis_parameters') || detail.x),
+    yParameters: parseParamScores(pick(rec,'y_parameters','yParameters','y_params','business_parameters','y_axis_parameters') || detail.y),
+    xPct: asNumber(pick(rec,'x_pct','xPct','plot_x','left_pct')),
+    yPct: asNumber(pick(rec,'y_pct','yPct','plot_y')),
+    topPct: asNumber(pick(rec,'top_pct','topPct'))
+  }; }
+
+function parseMethodology(raw){
+  var list = Array.isArray(raw) ? raw : asRecord(raw).steps;
+  if (!Array.isArray(list)) return [];
+  var out = [];
+  list.forEach(function(item){
+    if (typeof item === 'string'){ var s = item.trim(); if (s) out.push({title:s, detail:''}); return; }
+    var rec = asRecord(item);
+    var title = asString(pick(rec,'title','name','step','label'));
+    if (title) out.push({title:title, detail: asString(pick(rec,'detail','description','text','body'))}); });
+  return out; }
+
+function isCharted(c, rawItem){
+  var rec = asRecord(rawItem);
+  var flag = rec.on_chart;
+  if (flag === undefined) flag = rec.charted;
+  if (flag === undefined) flag = rec.is_charted;
+  if (flag === undefined) flag = rec.plotted;
+  if (typeof flag === 'boolean') return flag;
+  return c.xParameters.length > 0 || c.yParameters.length > 0; }
+
+function parseReport(rec){
+  var flatRaw   = pick(rec,'companies','brands','players','vendors','entries','all_companies');
+  var chartedRaw = pick(rec,'charted','top_companies','top_20','quadrant_companies','plotted');
+  var othersRaw  = pick(rec,'others','other_companies','other_noticeable_players','other_players','remaining');
+  var charted = [], others = [];
+  if (Array.isArray(chartedRaw) || Array.isArray(othersRaw)){
+    (Array.isArray(chartedRaw) ? chartedRaw : []).forEach(function(i){ var c = parseCompany(i); if (c) charted.push(c); });
+    (Array.isArray(othersRaw) ? othersRaw : []).forEach(function(i){ var c = parseCompany(i); if (c) others.push(c); });
+  } else {
+    var all = Array.isArray(flatRaw) ? flatRaw : [];
+    all.forEach(function(item){
+      var c = parseCompany(item); if (!c) return;
+      if (isCharted(c, item)) charted.push(c); else others.push(c); });
+  }
+  if (charted.length === 0 && others.length === 0) return null;
+  if (charted.length === 0){
+    var ranked = others.slice().sort(function(a,b){ return (b.overallScore||0) - (a.overallScore||0); });
+    charted = ranked.slice(0,20);
+    others = others.filter(function(c){ return charted.indexOf(c) === -1; });
+  }
+  var meta = asRecord(pick(rec,'report_meta','meta','metadata'));
+  var criteria = asRecord(pick(rec,'criteria'));
+  var axisLabels = asRecord(pick(criteria,'axis_labels'));
+  var paramDefs = asRecord(pick(criteria,'parameter_definitions'));
+  var classification = asRecord(pick(rec,'market_classification','classification') || criteria.relevance);
+  return {
+    market: asString(pick(rec,'market','market_name','industry','base_market','title') || meta.title, 'Coherent Quadrant'),
+    geo: asString(pick(rec,'geo','geography','region'), 'global'),
+    marketType: asString(pick(rec,'market_type','marketType') || pick(classification,'market_type','type')),
+    marketDefinition: asString(pick(rec,'market_definition','definition') || pick(classification,'market_definition','definition')),
+    marketTypeRationale: asString(pick(rec,'market_type_rationale','classification_rationale','type_rationale') || pick(classification,'market_type_reason','rationale','reason')),
+    providerCategories: asStringList(pick(rec,'provider_categories','provider_roles','roles','categories') || pick(classification,'keep_roles'), ['name','title','label']),
+    providerRationale: asString(pick(rec,'provider_rationale','provider_category_rationale','role_rationale') || pick(classification,'player_type_reason')),
+    companyCount: asNumber(pick(rec,'company_count','total_companies','companies_scored')) || (charted.length + others.length),
+    xAxis: parseAxis(pick(rec,'x_axis','xAxis','x') || criteria.x_axis, asString(pick(axisLabels,'x'),'Service Delivery Capability'), asRecord(paramDefs.x)),
+    yAxis: parseAxis(pick(rec,'y_axis','yAxis','y') || criteria.y_axis, asString(pick(axisLabels,'y'),'Business and Commercial Strength'), asRecord(paramDefs.y)),
+    charted: charted, others: others,
+    methodology: parseMethodology(pick(rec,'methodology','research_methodology','method')),
+    methodologyNote: asString(pick(rec,'methodology_note','scoring_note','footnote') || asRecord(rec.research_methodology).scoring_note),
+    methodologyIntro: asString(pick(rec,'methodology_intro') || asRecord(rec.research_methodology).intro),
+    quadrantDefinitions: (Array.isArray(pick(rec,'quadrant_definitions','quadrantDefinitions'))
+      ? pick(rec,'quadrant_definitions','quadrantDefinitions') : []).map(function(d){ var r = asRecord(d); return {
+        quadrant: asString(pick(r,'quadrant')), title: asString(pick(r,'title')),
+        position: asString(pick(r,'position')), definition: asString(pick(r,'definition')) }; })
+  }; }
+
+/* ─── display helpers ─── */
+var QUADRANT_KEYS = ['Leaders','Challengers','Trailblazers','Evolving Players'];
+var QUADRANT_ORDER = {'Leaders':0,'Challengers':1,'Trailblazers':2,'Evolving Players':3};
+var QUADRANT_COLORS = {'Leaders':'#7CFC00','Challengers':'#7EB6FF','Trailblazers':'#C4B5FD','Evolving Players':'#A7F3D0'};
+
+function normaliseQuadrant(label){
+  var l = (label || '').toLowerCase();
+  if (l.indexOf('leader') >= 0) return 'Leaders';
+  if (l.indexOf('challenger') >= 0) return 'Challengers';
+  if (l.indexOf('trailblazer') >= 0 || l.indexOf('innovat') >= 0) return 'Trailblazers';
+  if (l.indexOf('evolving') >= 0 || l.indexOf('emerging') >= 0 || l.indexOf('foundation') >= 0) return 'Evolving Players';
+  return label || 'Evolving Players'; }
+
+function sortByQuadrant(list){
+  return list.slice().sort(function(a,b){
+    var qa = QUADRANT_ORDER[normaliseQuadrant(a.quadrant)]; if (qa === undefined) qa = 99;
+    var qb = QUADRANT_ORDER[normaliseQuadrant(b.quadrant)]; if (qb === undefined) qb = 99;
+    if (qa !== qb) return qa - qb;
+    return (b.overallScore || 0) - (a.overallScore || 0); }); }
+
+function clamp(n, min, max){ return Math.min(max, Math.max(min, n)); }
+
+function plotPosition(c){
+  if (c.xPct !== null && c.topPct !== null) return {left: clamp(c.xPct,3,97), top: clamp(c.topPct,3,97)};
+  if (c.xPct !== null && c.yPct !== null)  return {left: clamp(c.xPct,3,97), top: clamp(100 - c.yPct,3,97)};
+  var q = normaliseQuadrant(c.quadrant);
+  var rightHalf = (q === 'Leaders' || q === 'Trailblazers');
+  var topHalf   = (q === 'Leaders' || q === 'Challengers');
+  function spread(s){ return s === null ? 0.5 : clamp((s - 65) / 35, 0, 1); }
+  var left = rightHalf ? 52 + spread(c.xScore) * 42 : 6 + spread(c.xScore) * 40;
+  var fromBottom = topHalf ? 52 + spread(c.yScore) * 42 : 6 + spread(c.yScore) * 40;
+  return {left: clamp(left,3,97), top: clamp(100 - fromBottom,3,97)}; }
+
+function strengthDots(score){
+  var s = score || 0;
+  var filled = s >= 85 ? 5 : s >= 65 ? 4 : s >= 45 ? 3 : s >= 25 ? 2 : 1;
+  return [0,1,2,3,4].map(function(i){ return i < filled; }); }
+
+/* ─── markup helpers ─── */
+function esc(s){ return String(s == null ? '' : s)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function num(v){ return (v === null || v === undefined) ? '&mdash;' : esc(v); }
+function discHTML(score){ return '<span class="disc">' + num(score) + '</span>'; }
+
+function axisCellHTML(score, params){
+  if (!params.length) return discHTML(score);
+  var rows = params.map(function(p){
+    return '<div class="brow"><span>' + esc(p.name) + '</span><span>' + num(p.score) + '</span></div>'; }).join('');
+  return '<details class="axiscell"><summary>' + discHTML(score) + '<span class="caret"></span></summary>' +
+         '<div class="breakdown">' + rows + '</div></details>'; }
+
+function pillHTML(q){
+  var n = normaliseQuadrant(q);
+  var color = QUADRANT_COLORS[n] || '#cbd5e1';
+  return '<span class="pill"><i style="background:' + color + '"></i>' + esc(n) + '</span>'; }
+
+function dotsHTML(score){
+  var sizes = [7,10,13,16,19], on = strengthDots(score);
+  return '<span class="dots">' +
+    sizes.map(function(s,i){
+      return '<i class="' + (on[i] ? 'on' : '') + '" style="width:' + s + 'px;height:' + s + 'px"></i>'; }).join('') +
+    '</span>'; }
+
+/* ─── boot ─── */
+var OTHERS_PREVIEW_ROWS = 4;
+var raw = null, report = null;
+try { raw = JSON.parse(document.getElementById('quadrant-data').textContent); } catch (e) { raw = null; }
+if (raw) report = parseReport(raw);
+
+var app = document.getElementById('app');
+if (!report){
+  app.innerHTML = '<div class="card"><p class="none">No quadrant data embedded in this file.</p></div>';
+  return;
+}
+
+var charted = sortByQuadrant(report.charted);
+var state = { search: '', quadrant: 'all', othersExpanded: false, sel: {} };
+
+/* ─── sections ─── */
+function quadDefsHTML(){
+  if (!report.quadrantDefinitions.length) return '';
+  var TAG = {'Leaders':'#7CFC00','Challengers':'#93c5fd','Trailblazers':'#c4b5fd','Emerging Players':'#a7f3d0','Evolving Players':'#a7f3d0'};
+  var cards = report.quadrantDefinitions.map(function(d){
+    var c = TAG[d.quadrant] || '#cbd5e1';
+    return '<div class="qdef" style="border-left-color:' + c + '"><div class="hd">' +
+      '<span class="tag" style="background:' + c + '">' + esc(d.quadrant) + '</span>' +
+      '<span class="qt">' + esc(d.title) + '</span></div>' +
+      (d.position ? '<div class="qp">' + esc(d.position) + '</div>' : '') +
+      '<div class="qd">' + esc(d.definition) + '</div></div>'; }).join('');
+  return '<section class="card"><h2>What Each Quadrant Means</h2><div class="qdefs">' + cards + '</div></section>'; }
+
+function heroHTML(){
+  var geo = report.geo ? report.geo.charAt(0).toUpperCase() + report.geo.slice(1) : '';
+  return '<div class="hero"><h1>Coherent Quadrant</h1><p>' +
+    esc(report.market) + ' &middot; ' + esc(geo) + ' &middot; ' + esc(report.companyCount) + ' ' +
+    esc(report.providerCategories[0] || 'companies') + ' scored on ' + esc(report.xAxis.name) +
+    ' (X) and ' + esc(report.yAxis.name) + ' (Y)</p></div>'; }
+
+function classificationHTML(){
+  if (!report.marketDefinition && report.providerCategories.length === 0) return '';
+  var left = '<div class="panel"><div class="lbl">Market</div>' +
+    '<div class="val" style="margin-bottom:12px">' + esc(report.market) + '</div>';
+  /* As on the dashboard: the market definition only, no B2B/B2C label or rationale. */
+  if (report.marketDefinition){
+    left += '<div class="lbl">Market Type</div><div class="val">' + esc(report.marketDefinition) + '</div>'; }
+  left += '</div>';
+  var right = '<div class="panel"><div class="lbl" style="margin-bottom:8px">Provider Categories in this Market</div><ol>' +
+    report.providerCategories.map(function(p){ return '<li>' + esc(p) + '</li>'; }).join('') + '</ol>' +
+    (report.providerRationale ? '<div class="muted">' + esc(report.providerRationale) + '</div>' : '') + '</div>';
+  return '<section class="card"><h2>Market Classification</h2><div class="grid2">' + left + right + '</div></section>'; }
+
+// Near the top: the parameter names only, so a reader sees what is scored
+// before the chart. The definitions get their own section further down
+// (definitionsHTML), as in the classic page.
+function parametersHTML(){
+  var xN = report.xAxis.parameters, yN = report.yAxis.parameters;
+  if (!xN.length && !yN.length) return '';
+  function block(label, params){
+    return '<div class="panel"><div class="lbl" style="margin-bottom:8px">' + esc(label) + '</div><ol>' +
+      params.map(function(p){ return '<li><span class="pname">' + esc(p.name) + '</span></li>'; }).join('') +
+      '</ol></div>'; }
+  return '<section class="card"><h2>Market Scoring Parameters</h2>' +
+    '<p class="lead">The X and Y axes and these ' + (xN.length + yN.length) +
+    ' parameters were defined for <strong style="color:var(--slate700)">' + esc(report.market) +
+    '</strong> and form the basis of the company scores below.</p><div class="grid2">' +
+    block('X — ' + report.xAxis.name, xN) + block('Y — ' + report.yAxis.name, yN) + '</div></section>'; }
+
+function definitionsHTML(){
+  var xN = report.xAxis.parameters, yN = report.yAxis.parameters;
+  if (!xN.concat(yN).some(function(p){ return p.definition; })) return '';
+  function block(label, params){
+    return '<div class="panel"><div class="lbl" style="margin-bottom:8px">' + esc(label) + '</div><ol>' +
+      params.map(function(p){
+        return '<li><span class="pname">' + esc(p.name) + '</span>' +
+          (p.definition ? '<div class="pdef">' + esc(p.definition) + '</div>' : '') + '</li>'; }).join('') +
+      '</ol></div>'; }
+  return '<section class="card"><h2>Parameter Definitions</h2>' +
+    '<p class="lead">What each parameter measures and the evidence that shows strength.</p><div class="grid2">' +
+    block('X — ' + report.xAxis.name, xN) + block('Y — ' + report.yAxis.name, yN) + '</div></section>'; }
+
+function chartHTML(){
+  var dots = charted.map(function(c){
+    var pos = plotPosition(c);
+    var color = QUADRANT_COLORS[normaliseQuadrant(c.quadrant)] || '#7EB6FF';
+    var labelRight = pos.left < 70;
+    var title = c.brand + ' (' + (c.country || c.hq) + ') — ' + normaliseQuadrant(c.quadrant) +
+      ' · X ' + (c.xScore === null ? '—' : c.xScore) + ' / Y ' + (c.yScore === null ? '—' : c.yScore);
+    return '<div class="dot" style="left:' + pos.left + '%;top:' + pos.top + '%" title="' + esc(title) + '">' +
+      '<i style="background:' + color + '"></i>' +
+      '<b style="' + (labelRight ? 'left:14px' : 'right:14px') + '">' + esc(c.brand) + '</b></div>'; }).join('');
+
+  var mix = QUADRANT_KEYS.map(function(q){
+    var inQ = charted.filter(function(c){ return normaliseQuadrant(c.quadrant) === q; });
+    var counts = {};
+    inQ.forEach(function(c){ var k = c.country || c.hq || 'Unknown'; counts[k] = (counts[k] || 0) + 1; });
+    var entries = Object.keys(counts).map(function(k){ return k + '×' + counts[k]; });
+    return entries.length ? '<strong>' + esc(q) + '</strong>: ' + esc(entries.join(', ')) : null;
+  }).filter(Boolean).join(' &middot; ');
+
+  return '<section class="card"><h2>Quadrant Positioning <span class="sub">(' + charted.length +
+    ' on chart &middot; ' + report.companyCount + ' in total)</span></h2>' +
+    '<div class="chartrow"><div class="yaxis"><span>' + esc(report.yAxis.name) +
+    ' ( Y AXIS ) &middot; EMERGING &rarr; BEST-IN-CLASS &rarr;</span></div>' +
+    '<div class="plot"><div class="hline"></div><div class="vline"></div>' +
+    '<span class="qlabel" style="left:12px;top:10px">Challengers</span>' +
+    '<span class="qlabel" style="right:12px;top:10px">Leaders</span>' +
+    '<span class="qlabel" style="left:12px;bottom:10px">Evolving Players</span>' +
+    '<span class="qlabel" style="right:12px;bottom:10px">Trailblazers</span>' +
+    '<span class="bound" style="left:6px;top:8px">100</span>' +
+    '<span class="bound" style="left:6px;bottom:8px">0</span>' +
+    '<span class="bound" style="left:28px;bottom:4px">0</span>' +
+    '<span class="bound" style="right:8px;bottom:4px">100</span>' +
+    dots + '</div></div>' +
+    '<div class="xaxis">' + esc(report.xAxis.name) + ' ( X AXIS ) &middot; EMERGING &rarr; BEST-IN-CLASS &rarr;</div>' +
+    (mix ? '<div class="mix"><div class="t">Countries on chart (by quadrant)</div>' + mix + '</div>' : '') +
+    '</section>'; }
+
+function topTableHTML(){
+  var heads = ['Brand','Company','HQ','Role','Quadrant','X (' + report.xAxis.name + ')',
+               'Y (' + report.yAxis.name + ')','Overall Score'];
+  var rows = charted.map(function(c){
+    return '<tr><td class="b">' + esc(c.brand) + '</td><td>' + esc(c.company) + '</td><td>' + esc(c.hq) +
+      '</td><td>' + esc(c.role) + '</td><td>' + pillHTML(c.quadrant) + '</td>' +
+      '<td style="white-space:nowrap">' + axisCellHTML(c.xScore, c.xParameters) + '</td>' +
+      '<td style="white-space:nowrap">' + axisCellHTML(c.yScore, c.yParameters) + '</td>' +
+      '<td>' + discHTML(c.overallScore) + '</td></tr>'; }).join('');
+  return '<section class="card"><h2>Top ' + charted.length + ' Companies <span class="sub">' +
+    '(plotted on the chart above &middot; click a score for the breakdown)</span></h2>' +
+    '<div class="scroll"><table><thead><tr>' +
+    heads.map(function(h){ return '<th>' + esc(h) + '</th>'; }).join('') +
+    '</tr></thead><tbody>' + rows + '</tbody></table></div></section>'; }
+
+function filteredOthers(){
+  var term = state.search.trim().toLowerCase();
+  var matched = report.others.filter(function(c){
+    if (state.quadrant !== 'all' && normaliseQuadrant(c.quadrant) !== state.quadrant) return false;
+    if (!term) return true;
+    return c.brand.toLowerCase().indexOf(term) >= 0 ||
+           c.company.toLowerCase().indexOf(term) >= 0 ||
+           c.hq.toLowerCase().indexOf(term) >= 0; });
+  /* Owner's rule: the long tail is ranked by strength, strongest first. */
+  return matched.slice().sort(function(a,b){ return (b.overallScore || 0) - (a.overallScore || 0); }); }
+
+function othersHTML(){
+  if (!report.others.length) return '';
+  var list = filteredOthers();
+  var visible = state.othersExpanded ? list : list.slice(0, OTHERS_PREVIEW_ROWS);
+  var heads = ['Brand','Company','HQ','Role','Relative Positioning','Strength'];
+  var rows = visible.map(function(c){
+    return '<tr><td class="b">' + esc(c.brand) + '</td><td>' + esc(c.company) + '</td><td>' + esc(c.hq) +
+      '</td><td>' + esc(c.role) + '</td><td>' + pillHTML(c.quadrant) + '</td><td>' +
+      dotsHTML(c.overallScore) + '</td></tr>'; }).join('');
+  return '<section class="card" id="others"><h2>Other Noticeable Players <span class="sub">(' +
+    report.others.length + ' companies)</span></h2>' +
+    '<div class="filters">' +
+      '<label><span class="cap">Search</span><input id="f-search" type="text" placeholder="Brand, company or HQ…" value="' + esc(state.search) + '" /></label>' +
+      '<label><span class="cap">Relative Positioning</span><select id="f-quad"><option value="all"' +
+        (state.quadrant === 'all' ? ' selected' : '') + '>All quadrants</option>' +
+        QUADRANT_KEYS.map(function(q){
+          return '<option value="' + esc(q) + '"' + (state.quadrant === q ? ' selected' : '') + '>' + esc(q) + '</option>'; }).join('') +
+      '</select></label></div>' +
+    '<p class="count">' + list.length + ' compan' + (list.length === 1 ? 'y' : 'ies') +
+      (list.length !== report.others.length ? ' <em>of ' + report.others.length + '</em>' : '') + '</p>' +
+    '<div class="scroll"><table><thead><tr>' + heads.map(function(h){ return '<th>' + esc(h) + '</th>'; }).join('') +
+    '</tr></thead><tbody>' + rows + '</tbody></table>' +
+    (list.length === 0 ? '<div class="empty">No companies match the current filters.</div>' : '') + '</div>' +
+    (list.length > OTHERS_PREVIEW_ROWS
+      ? '<button class="toggle' + (state.othersExpanded ? ' open' : '') + '" id="f-toggle"><i></i>' +
+        (state.othersExpanded ? 'Show fewer — collapse to ' + OTHERS_PREVIEW_ROWS + ' rows'
+                              : 'Show all ' + list.length + ' companies') + '</button>'
+      : '') +
+    '</section>'; }
+
+function axisPanelHTML(ci, axisLabel, axisName, params){
+  if (!params.length) return '';
+  var key = ci + '|' + axisLabel;
+  if (state.sel[key] === undefined) state.sel[key] = params[0].name;
+  var selName = state.sel[key];
+  var active = null;
+  params.forEach(function(p){ if (p.name === selName) active = p; });
+
+  var list = params.map(function(p){
+    var on = p.name === selName;
+    return '<li><button class="pbtn' + (on ? ' active' : '') + '" data-key="' + esc(key) +
+      '" data-name="' + esc(p.name) + '"><span class="car"></span>' +
+      '<span class="txt">' + esc(p.name) + '</span>' +
+      '<span class="num">' + num(p.score) + '</span></button></li>'; }).join('');
+
+  var detail;
+  if (active){
+    detail = '<div class="h">' + esc(active.name) + ' &mdash; scored ' + num(active.score) + '/100</div>' +
+      (active.basis ? '<p class="basis">' + esc(active.basis) + '</p>' : '') +
+      (active.evidence.length
+        ? '<div class="sh">Supporting points</div><ul>' +
+          active.evidence.map(function(e){ return '<li>' + esc(e) + '</li>'; }).join('') + '</ul>'
+        : '') +
+      (!active.basis && !active.evidence.length ? '<p class="none">No supporting detail recorded.</p>' : '');
+  } else {
+    detail = '<p class="none">Select a parameter on the left to read its scoring rationale and evidence.</p>';
+  }
+
+  return '<div class="axwrap" data-wrap="' + esc(key) + '">' +
+    '<div class="axttl">' + esc(axisLabel) + ' &mdash; ' + esc(axisName) + '</div>' +
+    '<div class="axgrid"><ul class="plist">' + list + '</ul>' +
+    '<div class="pdetail">' + detail + '</div></div></div>'; }
+
+function detailHTML(){
+  if (!charted.length) return '';
+  if (!report.xAxis.parameters.length && !report.yAxis.parameters.length) return '';
+  var blocks = charted.map(function(c, i){
+    return '<div class="cblock"><div class="chead">' +
+      '<span class="nm">' + esc(c.company) + '</span>' +
+      (c.brand && c.brand !== c.company ? '<span class="br">' + esc(c.brand) + '</span>' : '') +
+      pillHTML(c.quadrant) +
+      '<span class="sc"><span>X <strong>' + num(c.xScore) + '</strong></span>' +
+      '<span>Y <strong>' + num(c.yScore) + '</strong></span>' +
+      '<span>Overall <strong>' + num(c.overallScore) + '</strong></span></span></div>' +
+      '<div class="cbody">' +
+        axisPanelHTML(i, 'X', report.xAxis.name, c.xParameters) +
+        axisPanelHTML(i, 'Y', report.yAxis.name, c.yParameters) +
+      '</div></div>'; }).join('');
+  return '<section class="card"><h2>Parameter Detail by Company <span class="sub">(' +
+    esc(report.xAxis.name) + ' and ' + esc(report.yAxis.name) + ' evidence for the ' + charted.length +
+    ' companies on the chart)</span></h2>' +
+    '<p class="lead">Click any parameter to read its scoring rationale and supporting evidence.</p>' +
+    blocks + '</section>'; }
+
+function methodologyHTML(){
+  if (!report.methodology.length && !report.methodologyNote) return '';
+  var steps = report.methodology.map(function(s, i){
+    return (i ? '<div class="arrow">&rarr;</div>' : '') +
+      '<div class="step"><div class="n">' + (i + 1) + '</div><div class="t">' + esc(s.title) + '</div>' +
+      (s.detail ? '<div class="d">' + esc(s.detail) + '</div>' : '') + '</div>'; }).join('');
+  return '<section class="card"><h2>Research Methodology</h2>' +
+    (report.methodologyIntro ? '<p class="mintro">' + esc(report.methodologyIntro) + '</p>' : '') +
+    (steps ? '<div class="steps">' + steps + '</div>' : '') +
+    (report.methodologyNote ? '<p class="muted mnote">' + esc(report.methodologyNote) + '</p>' : '') +
+    '</section>'; }
+
+/* ─── wiring ─── */
+function wireOthers(){
+  var s = document.getElementById('f-search');
+  if (s) s.addEventListener('input', function(e){
+    state.search = e.target.value;
+    var caret = e.target.selectionStart;
+    renderOthers();
+    var s2 = document.getElementById('f-search');
+    if (s2){ s2.focus(); try { s2.setSelectionRange(caret, caret); } catch (err) {} } });
+  var q = document.getElementById('f-quad');
+  if (q) q.addEventListener('change', function(e){ state.quadrant = e.target.value; renderOthers(); });
+  var t = document.getElementById('f-toggle');
+  if (t) t.addEventListener('click', function(){ state.othersExpanded = !state.othersExpanded; renderOthers(); });
+}
+
+function renderOthers(){
+  var node = document.getElementById('others');
+  if (!node) return;
+  var tmp = document.createElement('div');
+  tmp.innerHTML = othersHTML();
+  node.parentNode.replaceChild(tmp.firstChild, node);
+  wireOthers(); }
+
+/* Delegated: clicking a parameter swaps only that axis panel. */
+function wireParams(){
+  app.addEventListener('click', function(ev){
+    var btn = ev.target.closest ? ev.target.closest('.pbtn') : null;
+    if (!btn) return;
+    var key = btn.getAttribute('data-key');
+    var name = btn.getAttribute('data-name');
+    state.sel[key] = (state.sel[key] === name) ? null : name;
+    var parts = key.split('|');
+    var ci = parseInt(parts[0], 10), ax = parts[1];
+    var c = charted[ci];
+    var params = (ax === 'X') ? c.xParameters : c.yParameters;
+    var axisName = (ax === 'X') ? report.xAxis.name : report.yAxis.name;
+    var wrap = document.querySelector('.axwrap[data-wrap="' + key + '"]');
+    if (!wrap) return;
+    var tmp = document.createElement('div');
+    tmp.innerHTML = axisPanelHTML(ci, ax, axisName, params);
+    wrap.parentNode.replaceChild(tmp.firstChild, wrap);
+  });
+}
+
+function render(){
+  // The scoring parameters come before the chart (as in the classic page):
+  // a reader needs the 10 parameters before the scores built on them.
+  app.innerHTML = heroHTML() + classificationHTML() + parametersHTML() + chartHTML() + quadDefsHTML() +
+    topTableHTML() + othersHTML() + detailHTML() + definitionsHTML() + methodologyHTML();
+  wireOthers();
+}
+
+document.title = 'Coherent Quadrant — ' + report.market;
+render();
+wireParams();
+})();
+</script>
+</body>
+</html>

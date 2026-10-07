@@ -221,9 +221,36 @@ def main() -> int:
     # since --fixed-top20 controls that separately) gives the report a
     # real long tail instead of just the 20 fully-scored companies.
     if args.include_legacy_scores:
-        # Score source, best first: fresh overall_only_shard*.json sidecars
-        # (scripts/score_overall_only.py), then the checkpoint's older
-        # xy_rows composite. Only ever X/Y numbers -- no evidence.
+        # Score source, best first: full per-parameter evidence (a long-tail
+        # company can carry this from an earlier Top-20 selection, e.g. after
+        # --reselect swapped the chart -- it is strictly better data than a
+        # quick score and MUST be preferred, exactly like rank_score() does
+        # elsewhere in the pipeline), then fresh overall_only_shard*.json
+        # sidecars (scripts/score_overall_only.py), then the checkpoint's
+        # older xy_rows composite.
+        #
+        # Without the full-evidence source here, a company with COMPLETE
+        # 10-parameter evidence but no quick-score sidecar entry (it never
+        # went through Step 4 because it was already scored via Step 5 in an
+        # earlier run) was invisible to this function and silently dropped
+        # from the report -- --keep came up short with no warning. Live case:
+        # Anti-Drone Systems Industry Analysis, 3 companies (Zen
+        # Technologies, Armory Defence Technologies, IG Drones) had full
+        # evidence but landed in neither `fresh` nor `legacy`.
+        full_evidence: dict[str, dict] = {}
+        try:
+            from vendor_intel.pipeline.quadrant_pipeline import load_evidence
+
+            for name, rec in load_evidence(out_dir).items():
+                xs = [v.get("score") for v in (rec.get("x") or {}).values()]
+                ys = [v.get("score") for v in (rec.get("y") or {}).values()]
+                if xs and ys and all(s is not None for s in xs + ys):
+                    full_evidence[name] = {
+                        "x_score": round(sum(xs) / len(xs)),
+                        "y_score": round(sum(ys) / len(ys)),
+                    }
+        except Exception:  # noqa: BLE001 - never let this source block the report
+            full_evidence = {}
         fresh: dict[str, dict] = {}
         for side in sorted(out_dir.glob("overall_only_shard*.json")):
             try:
@@ -244,21 +271,27 @@ def main() -> int:
         if args.long_tail_file:
             allow = json.loads(Path(args.long_tail_file).read_text(encoding="utf-8"))
         else:
-            allow = list(dict.fromkeys(list(fresh) + list(legacy)))
+            allow = list(dict.fromkeys(list(full_evidence) + list(fresh) + list(legacy)))
 
         seen = {row["Company"] for row in xy_partial}
         tail: list[tuple[str, int, int, str]] = []
+        no_score: list[str] = []
         for name in allow:
             if not name or name in seen:
                 continue
-            if name in fresh:
+            if name in full_evidence:
+                x_raw = full_evidence[name].get("x_score")
+                y_raw = full_evidence[name].get("y_score")
+            elif name in fresh:
                 x_raw, y_raw = fresh[name].get("x_score"), fresh[name].get("y_score")
             elif name in legacy:
                 x_raw = legacy[name].get("X Score")
                 y_raw = legacy[name].get("Y Score")
             else:
+                no_score.append(name)
                 continue
             if not (str(x_raw).strip().isdigit() and str(y_raw).strip().isdigit()):
+                no_score.append(name)
                 continue
             brand_row = by_company.get(name) or legacy.get(name) or {}
             brand = str(
@@ -291,6 +324,10 @@ def main() -> int:
                 })
         print(f"added {len(tail)} long-tail companies (Overall score only, "
               f"no evidence) for the Other Noticeable Player table")
+        if no_score:
+            print(f"WARNING: {len(no_score)} allowlisted companies have no score in "
+                  f"full evidence, overall_only_shard*.json or xy_rows -- dropped from "
+                  f"the report: {no_score[:8]}")
 
     data["xy_partial"] = xy_partial
     ckpt_path.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")

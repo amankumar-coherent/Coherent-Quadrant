@@ -270,16 +270,21 @@ def canonical_player_type(raw: str, *, market_type: str = "") -> str:
     return "Brand / Marketer" if str(market_type).upper() == "B2C" else "Manufacturer"
 
 
+# Who a market sells TO or through, in generic words (no sector's buyers).
 _BUYER_OR_CHANNEL_HINTS = (
-    "healthcare provider",
-    "clinic",
-    "hospital",
-    "pharmacy",
     "end-user",
     "end user",
+    "buyer",
+    "customer",
+    "consumer",
     "reseller",
     "retailer",
+    "distributor",
 )
+
+
+_SELLER_HINT = re.compile(r"manufactur|maker|producer|developer|vendor|brand|marketer|software|platform|"
+                          r"solution|oem\b|supplier|operator|carrier", re.I)
 
 
 def _primary_category(categories: list[str]) -> str:
@@ -289,6 +294,13 @@ def _primary_category(categories: list[str]) -> str:
     than a buyer or a pure channel — Stage 1 sometimes lists "Clinic /
     Hospital" or "End-User Industry", which are who the market sells TO.
     """
+    # A category that names a maker / seller of the market's product is the
+    # participant ("Pharmaceutical Manufacturer" over "Healthcare Provider",
+    # "Clinic / Hospital"): generic role words, never one sector's buyers.
+    sellers = [c for c in categories if _SELLER_HINT.search(c)
+               and not any(h in c.lower() for h in _BUYER_OR_CHANNEL_HINTS)]
+    if sellers:
+        return sellers[0]
     for cat in categories:
         low = cat.lower()
         if not any(h in low for h in _BUYER_OR_CHANNEL_HINTS):
@@ -379,9 +391,6 @@ _TECH_ROLES = frozenset(
         "manufacturer",
         "technology vendor",
         "platform vendor",
-        "chipmaker",
-        "foundry",
-        "device maker",
     }
 )
 _BRAND_ROLES = frozenset(
@@ -392,9 +401,6 @@ _BRAND_ROLES = frozenset(
         "brand owner",
         "manufacturer",
         "producer",
-        "cpg",
-        "pharma",
-        "energy producer",
     }
 )
 _ALWAYS_DROP_ROLES = frozenset(
@@ -415,9 +421,6 @@ _ALWAYS_DROP_ROLES = frozenset(
         "consultant",
         "geo",
         "government",
-        "hospital",
-        "clinic",
-        "pharmacy",
         "logistics",
         "other",
     }
@@ -469,8 +472,37 @@ def verify_criteria_prompt(query: str, family: str = "") -> str:
         "brand here, so they are never the company behind a brand.\n"
         "If you are not sure the company genuinely operates in this market, "
         "DROP.\n"
+        f"{STATUS_RULE}"
         f"{role_line}"
     )
+
+# A landscape lists companies a client could hire or buy from TODAY. A
+# company that went bankrupt, was liquidated or wound up, or was bought and
+# absorbed into another business (or renamed and left this market) still
+# has a web footprint and old case studies, so without this rule it verified
+# and scored like a live competitor.
+OPERATING_STATUSES = ("active", "renamed", "acquired", "defunct", "exited")
+# Statuses that still describe a live company in this market. "renamed" is
+# the same business under a new name (it stays; the new name is recorded).
+LIVE_STATUSES = ("active", "renamed")
+STATUS_RULE = (
+    "STATUS RULE: KEEP only companies that still operate in this market TODAY. "
+    'Set operating_status to "active" (trading under its own name, including an '
+    "acquired company that still operates as its own brand or division), "
+    '"renamed" (the same business, still in this market, under a new name -- give '
+    'the new name as successor), "acquired" (bought and absorbed; it no longer '
+    'trades under its own name), "defunct" (bankrupt, liquidated, wound up, ceased '
+    'trading) or "exited" (still exists but no longer operates in this market). A '
+    "company that filed for bankruptcy or restructuring counts as active only if it "
+    "still operates today. For anything other than active, status_note must name "
+    "the event and year. If unsure, do not say active.\n"
+)
+
+
+def status_is_active(status: Any) -> bool:
+    """Fail closed: only an explicit live status keeps a company."""
+    return str(status or "").strip().lower() in LIVE_STATUSES
+
 
 def verify_should_keep(
     *,
@@ -487,19 +519,23 @@ def verify_should_keep(
     if int(confidence or 0) < int(min_confidence):
         return False
     role_n = re.sub(r"\s+", " ", str(role or "").strip().lower())
-    if not role_n or role_n in _ALWAYS_DROP_ROLES:
-        return False
-    if any(drop in role_n for drop in ("reseller", "distributor", "retailer", "media", "association")):
+    if not role_n:
         return False
     exp = (expected_role or "").strip().lower()
     # The verifier named exactly the role this market requires (any of the
     # four player types, or one of this market's own Step 0c categories):
     # that is a KEEP. Without this a Service Provider market dropped every
     # company the verifier confirmed as "Service Provider", because only the
-    # Solution-Provider and Brand branches below existed.
+    # Solution-Provider and Brand branches below existed. Checked BEFORE the
+    # channel drop list: in a market whose own players are distributors or
+    # retailers, those roles are the market, not a channel.
     market_roles = {exp} | {c.strip().lower() for c in _discovery_categories()}
     if role_n in market_roles:
         return True
+    if role_n in _ALWAYS_DROP_ROLES:
+        return False
+    if any(drop in role_n for drop in ("reseller", "distributor", "retailer", "media", "association")):
+        return False
     if exp == "service provider":
         return "service" in role_n
     if exp == "solution provider":
@@ -921,6 +957,18 @@ def _generate_discovery_queries(
 # Step 5's ~12 KB gap-fill prompt is that case.
 
 
+def _ai_mode_url_fits(system: str, user: str) -> bool:
+    """Silent form of :func:`_fits_ai_mode`, for callers that size a batch to fit."""
+    import urllib.parse
+
+    from vendor_intel.scraping.google_ai_mode import MAX_URL_CHARS
+
+    sys_text, user_text = (system or "").strip(), (user or "").strip()
+    prompt = f"{sys_text}\n\n{user_text}" if sys_text else user_text
+    url = f"https://www.google.com/search?q={urllib.parse.quote_plus(prompt)}&udm=50&hl=en"
+    return len(url) <= MAX_URL_CHARS - 200
+
+
 def _fits_ai_mode(system: str, user: str, *, label: str = "") -> bool:
     """True when the prompt survives the AI Mode URL intact (no truncation).
 
@@ -1009,6 +1057,8 @@ Return JSON only:
   "market_type": "B2B" | "B2C" | "Hybrid B2B + B2C",
   "market_type_reason": "why this market is B2B or B2C, and if hybrid, say so",
   "market_definition": "one short sentence describing what this market is",
+  "core_scope": "one sentence: what a company must actually DO to be a core player in this market",
+  "adjacent_segments": ["a neighbouring segment that is NOT this market", "..."],
   "market_participants": [
     {"type": "...", "definition": "...", "why_relevant": "..."}
   ],
@@ -1077,6 +1127,14 @@ DO in this market:
   finished product. For a market named after a material or product, the
   players are the companies that MAKE that product, not the companies that
   supply feedstock to them.
+
+core_scope / adjacent_segments: a landscape compares like with like. Name
+what a core player does, and list the neighbouring segments whose companies
+look related but are not core players here: another step of the value chain
+(e.g. collecting the input rather than processing it), a different end use or
+customer industry, or a much narrower or smaller-scale variant of the service.
+Companies whose main business is an adjacent segment are not placed on the
+chart.
 
 primary_reason: one sentence naming which of the four you chose and why that
 is the right player type for THIS market, referring to what those companies
@@ -1190,6 +1248,9 @@ def _analyze_market_for_discovery(
         "market_type": market_type,
         "market_type_reason": str(analysis.get("market_type_reason") or "").strip(),
         "market_definition": str(analysis.get("market_definition") or "").strip(),
+        "core_scope": str(analysis.get("core_scope") or "").strip(),
+        "adjacent_segments": [str(a).strip() for a in analysis.get("adjacent_segments") or []
+                              if str(a).strip()][:8],
         "market_participants": participants,
         "primary_participant": primary,
         "primary_reason": str(analysis.get("primary_reason") or "").strip(),
@@ -1587,12 +1648,10 @@ _FACT_COLUMNS = frozenset(
 # Placeholder text the old per-industry canned defaults wrote into
 # "Key Brands Represented". Recognising it lets rows in older checkpoints be
 # treated as unfilled and re-enriched; it never adds behaviour for a market.
+# Placeholder wording, not a brand. (Canned values copied from earlier
+# markets were removed: they matched nothing outside those markets.)
 _GENERIC_BRAND_MARKERS = (
     "private label",
-    "regional avocado",
-    "bio-based solvents",
-    "cisco; fortinet",
-    "apple watch; samsung",
 )
 
 
@@ -2696,7 +2755,8 @@ def gpt_verify_market(
         '{"results":[{"name":"...","in_market":true|false,'
         '"builds_or_owns":true|false,'
         '"role":"Solution Provider|Brand|Marketer|Reseller|Retailer|Distributor|Media|Other",'
-        '"fits_criteria":true|false,"confidence":0-100,"reason":"..."'
+        '"fits_criteria":true|false,"confidence":0-100,"reason":"...",'
+        '"operating_status":"active|renamed|acquired|defunct|exited","status_note":"..."'
         + (',"hq_in_country":true|false' if hq_country else "")
         + "}]}"
     )
@@ -2708,11 +2768,24 @@ def gpt_verify_market(
         f"{hq_country}; if unsure, false.\n"
         if hq_country else ""
     )
-    for i in range(start_i, len(companies), chunk_size):
-        chunk = companies[i : i + chunk_size]
-        idx = i // chunk_size + 1
-        _log(f"    → substep 4a.{idx}: verify chunk {idx}/{total_chunks}…")
-        _ckpt(ckpt, "4_verify", f"4a.{idx}", begin=True, note=f"begin verify chunk {idx}")
+    system = (
+        f"{criteria}\n"
+        + (
+            f"\nTHIS MARKET COVERS EXACTLY: {_scope}\n"
+            "A company that does not do THAT is not in this market, "
+            "however closely its field is named. Set in_market=false "
+            "and fits_criteria=false for it.\n"
+            if _scope
+            else ""
+        )
+        + hq_rule
+        + "For EACH company you MUST return one result. Never skip a name. "
+        "fits_criteria=true only if they match the required type for this market. "
+        "When unsure, fits_criteria=false and in_market=false. "
+        f"Return compact JSON only: {json_shape}"
+    )
+
+    def _user(chunk: list[dict[str, str]]) -> str:
         payload = [
             {
                 "name": c.get("name") or c.get("Company"),
@@ -2722,32 +2795,33 @@ def gpt_verify_market(
             }
             for c in chunk
         ]
+        # The scope is already in the system part; repeating it here only
+        # pushes the prompt past the AI Mode URL limit.
+        return (
+            f"Market: {query}\n"
+            f"Required type: {expected_role}\n"
+            f"Verify these companies (KEEP only {expected_role}):\n"
+            f"{json.dumps(payload, ensure_ascii=False)}"
+        )
+
+    i, idx = start_i, start_i // chunk_size
+    while i < len(companies):
+        # Verification is research and belongs on AI Mode: with a long market
+        # scope a 12-company prompt overflows the search URL and would go to
+        # the API, so shrink the chunk until the prompt fits instead.
+        size = chunk_size
+        if _ai_mode_active():
+            while size > 1 and not _ai_mode_url_fits(system, _user(companies[i : i + size])):
+                size -= 1
+        chunk = companies[i : i + size]
+        idx += 1
+        _log(f"    → substep 4a.{idx}: verify chunk {idx} ({len(chunk)} companies, {i}/{len(companies)} done)…")
+        _ckpt(ckpt, "4_verify", f"4a.{idx}", begin=True, note=f"begin verify chunk {idx}")
         data = _chat_json(
             client,
             model,
-            system=(
-                f"{criteria}\n"
-                + (
-                    f"\nTHIS MARKET COVERS EXACTLY: {_scope}\n"
-                    "A company that does not do THAT is not in this market, "
-                    "however closely its field is named. Set in_market=false "
-                    "and fits_criteria=false for it.\n"
-                    if _scope
-                    else ""
-                )
-                + hq_rule
-                + "For EACH company you MUST return one result. Never skip a name. "
-                "fits_criteria=true only if they match the required type for this market. "
-                "When unsure, fits_criteria=false and in_market=false. "
-                f"Return compact JSON only: {json_shape}"
-            ),
-            user=(
-                f"Market: {query}\n"
-                + (f"Market scope: {_scope}\n" if _scope else "")
-                + f"Required type: {expected_role}\n"
-                f"Verify these companies (KEEP only {expected_role}):\n"
-                f"{json.dumps(payload, ensure_ascii=False)}"
-            ),
+            system=system,
+            user=_user(chunk),
             label=f"verify-{idx}",
             max_tokens=3500,
             # Same trap as the final pass: without this, a reply that parses
@@ -2772,11 +2846,12 @@ def gpt_verify_market(
                 ckpt.bump(
                     "4_verify",
                     f"4a.{idx}",
-                    progress={"verify_offset": i + chunk_size, "verify_chunk": idx},
+                    progress={"verify_offset": i + len(chunk), "verify_chunk": idx},
                     verified=kept,
                     rejected_mid=rejected,
                     note=f"verify chunk {idx} parse-fail drop",
                 )
+            i += len(chunk)
             continue
         seen: set[str] = set()
         for r in results:
@@ -2789,6 +2864,13 @@ def gpt_verify_market(
                 continue
             seen.add(key)
             keep, conf, role, reason = _verify_parse_row(r, expected_role)
+            if keep and not status_is_active(r.get("operating_status")):
+                # Same fail-closed rule as the HQ check below: a company is
+                # kept only when the verifier confirms it still operates today.
+                keep = False
+                st = str(r.get("operating_status") or "status not confirmed")
+                note = str(r.get("status_note") or "").strip()
+                reason = f"not an active company ({st}{': ' + note if note else ''})"
             if keep and hq_country and r.get("hq_in_country") is not True:
                 # Fail closed, like every other verify field: a missing or
                 # false answer means the HQ is not confirmed in the country.
@@ -2835,11 +2917,12 @@ def gpt_verify_market(
             ckpt.bump(
                 "4_verify",
                 f"4a.{idx}",
-                progress={"verify_offset": i + chunk_size, "verify_chunk": idx},
+                progress={"verify_offset": i + len(chunk), "verify_chunk": idx},
                 verified=kept,
                 rejected_mid=rejected,
                 note=f"verify chunk {idx}",
             )
+        i += len(chunk)
     _log(
         f"    → substep 4a done: kept={len(kept)} rejected={len(rejected)} "
         f"(required={expected_role})"
@@ -4243,6 +4326,12 @@ async def run_chatgpt_expand(
             final_rows = list(ckpt.data("xy_rows") or [])
             xy_audit = dict(ckpt.data("xy_audit") or {})
             _log(f"  [chatgpt] Step 6c: SKIP (checkpoint) — {len(final_rows)} scored")
+        elif (os.getenv("EXPAND_DISCOVERY_XY") or "1").strip().lower() in ("0", "false", "no", "off"):
+            # run_quadrant_pipeline.py scores every verified company itself
+            # (step 4) and derives the axes itself (step 2); scoring here too
+            # doubled the AI Mode queries per market for nothing.
+            xy_audit = {}
+            _log("  [chatgpt] Step 6c: SKIP — scoring is done by the quadrant pipeline")
         else:
             _log("  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…")
             ckpt.begin("6c_xy", "6c_start", note="begin X/Y scoring")

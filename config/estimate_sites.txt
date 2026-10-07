@@ -1,0 +1,19 @@
+# Contact-data / company-profile aggregators. Their revenue, headcount and
+# growth figures are modelled estimates, not figures a company or registry
+# reported, so an evidence bullet that rests on one is removed
+# (company_facts.cites_estimate_site) and VERIFY fails if one is cited.
+# One regular expression per line, case-insensitive.
+rocketreach
+zoominfo
+\bgrowjo\b
+\bowler\b
+\bapollo\.io\b
+\bleadiq\b
+signalhire
+\blusha\b
+\bcraft\.co\b
+dun\s*(?:&|and)\s*bradstreet
+\bendole\b
+globaldatabase
+crunchbase
+dealroom

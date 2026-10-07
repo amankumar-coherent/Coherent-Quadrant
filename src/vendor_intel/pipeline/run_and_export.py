@@ -130,14 +130,11 @@ def load_seeds_file(path: str | None) -> list[tuple[str, str | None, str | None]
 
 
 def auto_seed_names(query: str, country: str) -> list[tuple[str, str | None, str | None]]:
-    seeds_dir = _project_root() / "queries" / "seeds"
-    if not seeds_dir.exists():
-        return []
-    best_file = _best_curated_file(
-        slugify(query, country),
-        list(seeds_dir.glob("*.txt")),
-    )
-    return load_seeds_file(str(best_file)) if best_file else []
+    # A seed list belongs to exactly one market: its file name must be that
+    # market's slug. A fuzzy word-overlap match let one market's company list
+    # seed a different market sharing a word ("flexible packaging").
+    seeds_file = _project_root() / "queries" / "seeds" / f"{slugify(query, country)}.txt"
+    return load_seeds_file(str(seeds_file)) if seeds_file.exists() else []
 
 
 def auto_discovery_queries(query: str, country: str) -> list[str]:

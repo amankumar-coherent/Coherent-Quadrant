@@ -54,6 +54,22 @@ _REFUSAL_RE = re.compile(
 )
 
 
+# Evidence rules from a published-report audit: each one closes a way a
+# finding was overstated or mis-typed. Kept short: these prompts travel in an
+# AI Mode URL (~8 KB).
+EVIDENCE_RULES = (
+    "EVIDENCE RULES: give each project's status and date exactly as its source "
+    "states (announced, started, in progress, completed); never call it completed "
+    "unless the source does. Write the company's own claims as 'The company "
+    "reports ...'; say 'verified' only for independent sources. Credit partner "
+    "technology to the partnership. Employee-review sites are not customer "
+    "feedback; how long a client's project ran is not the company's own delivery or turnaround time. Third-party company-data "
+    "or market-intelligence sites (RocketReach, ZoomInfo, Tracxn, Crunchbase, "
+    "GlobalDatabase, CB Insights) are not evidence. No footnote numbers or raw URLs in the text. Use the company's "
+    "current name."
+)
+
+
 def build_score_query(
     company: str,
     axis_label: str,
@@ -232,10 +248,19 @@ def build_defined_small_group_query(
         f"{i}. {p}\n"
         "Evidence: <first specific finding — named project, client, "
         "facility, algorithm, figure or case study — and its source>\n"
-        "Evidence: <a SECOND, different finding>\n"
-        "Assessed on: <one sentence: which parts of WHAT THIS MEASURES you "
-        "verified, which you could not, and why that puts it in this "
-        "score band>\n"
+        "Evidence: <a SECOND, different finding; if none exists write exactly "
+        "'Not available'>\n"
+        # The "why" line has to justify the number: what the rating rests on
+        # first, then the gap. A line listing only what could not be found
+        # leaves a reader asking how the company earned its score.
+        "Assessed on: <one or two sentences written as a market research "
+        "analyst: FIRST what the rating rests on (the strongest confirmed "
+        "finding, or that no specific evidence was found), THEN the gap, written "
+        "exactly as 'Based on primary research, the company has not disclosed "
+        "<what>.' Never guess why information is unavailable (no "
+        "'kept confidential', 'proprietary'); research-team voice ('We verified', "
+        "never 'I'), no score-band "
+        "jargon>\n"
         "Score: NN / 100"
         for i, p in enumerate(params, 1)
     )
@@ -254,6 +279,12 @@ def build_defined_small_group_query(
         f"Search for real evidence, then answer in EXACTLY this format"
         f"{' -- ' + all_phrase + ', each with its own section' if len(params) > 1 else ''}:\n\n"
         f"{sections}\n\n"
+        # Market-research publishers are the report owner's competitors: a
+        # finding must stand on the company, customer, regulator, filing,
+        # news or technical source, never on another research firm.
+        "NEVER cite or name market-research or analyst publishers (market-size "
+        "or market-share report firms) as evidence or as a source.\n"
+        f"{EVIDENCE_RULES}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 "
         "present but partial or self-reported evidence. 40-54 weak or "
@@ -303,12 +334,27 @@ def build_forced_score_query(
         f"{scope}{about}\n\n"
         f"{param}\n   WHAT THIS MEASURES: {definition}\n\n"
         "Search for real evidence, then answer in EXACTLY this format:\n\n"
-        "Evidence: <best specific finding you can locate, or 'No public "
-        "evidence located' if genuinely none exists>\n"
+        "Evidence: <best specific finding you can locate, or exactly 'Not "
+        "available' if genuinely none exists (never 'not found in public records')>\n"
         "Evidence: <a second finding if one exists, else omit this line>\n"
-        "Assessed on: <one sentence: what you found or could not find, and "
-        "why that puts it in this score band>\n"
+        # The "why" line has to justify the number: what the rating rests on
+        # first, then the gap. A line listing only what could not be found
+        # leaves a reader asking how the company earned its score.
+        "Assessed on: <one or two sentences written as a market research "
+        "analyst: FIRST what the rating rests on (the strongest confirmed "
+        "finding, or that no specific evidence was found), THEN the gap, written "
+        "exactly as 'Based on primary research, the company has not disclosed "
+        "<what>.' Never guess why information is unavailable (no "
+        "'kept confidential', 'proprietary'); research-team voice ('We verified', "
+        "never 'I'), no score-band "
+        "jargon>\n"
         "Score: NN / 100\n\n"
+        # Market-research publishers are the report owner's competitors: a
+        # finding must stand on the company, customer, regulator, filing,
+        # news or technical source, never on another research firm.
+        "NEVER cite or name market-research or analyst publishers (market-size "
+        "or market-share report firms) as evidence or as a source.\n"
+        f"{EVIDENCE_RULES}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 "
         "present but partial or self-reported evidence. 40-54 weak or "
@@ -391,15 +437,30 @@ def build_defined_parameter_score_query(
         f"1. {first}\n"
         "Evidence: <first specific finding — named project, client, "
         "facility, algorithm, figure or case study — and its source>\n"
-        "Evidence: <a SECOND, different finding for this same parameter>\n"
+        "Evidence: <a SECOND, different finding for this same parameter; if "
+        "none exists write exactly 'Not available'>\n"
         "Evidence: <a THIRD finding, if one genuinely exists>\n"
-        "Assessed on: <one sentence: which parts of WHAT THIS MEASURES you "
-        "verified, which you could not, and why that puts it in this score "
-        "band>\n"
+        # The "why" line has to justify the number: what the rating rests on
+        # first, then the gap. A line listing only what could not be found
+        # leaves a reader asking how the company earned its score.
+        "Assessed on: <one or two sentences written as a market research "
+        "analyst: FIRST what the rating rests on (the strongest confirmed "
+        "finding, or that no specific evidence was found), THEN the gap, written "
+        "exactly as 'Based on primary research, the company has not disclosed "
+        "<what>.' Never guess why information is unavailable (no "
+        "'kept confidential', 'proprietary'); research-team voice ('We verified', "
+        "never 'I'), no score-band "
+        "jargon>\n"
         "Score: NN / 100\n\n"
         f"(repeat for parameter 2, 3, ... through {len(params)} -- EVERY "
         "parameter in the checklist needs its own numbered section)\n\n"
         f"Composite {axis_label} Score: NN / 100\n\n"
+        # Market-research publishers are the report owner's competitors: a
+        # finding must stand on the company, customer, regulator, filing,
+        # news or technical source, never on another research firm.
+        "NEVER cite or name market-research or analyst publishers (market-size "
+        "or market-share report firms) as evidence or as a source.\n"
+        f"{EVIDENCE_RULES}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 "
         "present but partial or self-reported evidence. 40-54 weak or "
@@ -470,7 +531,8 @@ def build_parameter_score_query(
         # argument behind it.
         "Evidence: <first specific finding — named product, facility, "
         "standard or figure — and its source>\n"
-        "Evidence: <a SECOND, different finding for this same parameter>\n"
+        "Evidence: <a SECOND, different finding for this same parameter; if "
+        "none exists write exactly 'Not available'>\n"
         "Evidence: <a THIRD finding, if one genuinely exists>\n"
         "Score: NN / 100\n\n"
         "(then 2., 3., and so on for every parameter)\n\n"
@@ -612,7 +674,8 @@ def build_batch_parameter_query(
         f"1. {first}\n"
         "Evidence: <first specific finding — named product, facility, "
         "standard or figure — and its source>\n"
-        "Evidence: <a SECOND, different finding for this same parameter>\n"
+        "Evidence: <a SECOND, different finding for this same parameter; if "
+        "none exists write exactly 'Not available'>\n"
         "Evidence: <a THIRD finding, if one genuinely exists>\n"
         "Score: NN / 100\n"
         f"2. {second}\n"
@@ -1015,6 +1078,12 @@ def build_axis_scorecard_query(
         f"{listed}\n\n"
         f"Search for real information, then reply with exactly {n} lines, "
         f"one per parameter, in this format:\n{template}\n\n"
+        # Market-research publishers are the report owner's competitors: a
+        # finding must stand on the company, customer, regulator, filing,
+        # news or technical source, never on another research firm.
+        "NEVER cite or name market-research or analyst publishers (market-size "
+        "or market-share report firms) as evidence or as a source.\n"
+        f"{EVIDENCE_RULES}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 present "
         "but partial or self-reported evidence. 40-54 weak or unproven on "

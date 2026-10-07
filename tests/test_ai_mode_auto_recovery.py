@@ -50,7 +50,7 @@ def make_session(monkeypatch):
             s.calls.append(("reset_profile", reason, cool_off))
             s.soft_failures = 0
 
-        def reset_session():
+        def reset_session(*, reason=""):
             s.calls.append(("reset_session",))
 
         def reopen_browser(*, reason=""):
@@ -84,15 +84,16 @@ def test_no_answer_escalates_to_a_full_profile_reset(make_session):
     s = make_session([NOANSWER, NOANSWER, NOANSWER, GOOD])
     assert s.ask("q", retries=3) == GOOD
     kinds = [c[0] for c in s.calls]
-    # 1st: reword only; 2nd: cookies + relaunch; 3rd: whole profile reset
-    assert kinds == ["reset_session", "reset_profile"]
+    # 1st and 2nd: cookies + relaunch; 3rd: whole profile reset
+    assert kinds == ["reset_session", "reset_session", "reset_profile"]
     assert s.calls[-1][1] == "noanswer"
 
 
 def test_a_good_answer_clears_the_no_answer_streak(make_session):
     s = make_session([NOANSWER, GOOD])
     assert s.ask("q") == GOOD
-    assert s.soft_failures == 0 and s.calls == []
+    # one relaunch for the failed page, then the good answer resets the streak
+    assert s.soft_failures == 0 and s.calls == [("reset_session",)]
 
 
 def test_crashed_browser_is_reopened_and_query_retried(make_session):

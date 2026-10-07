@@ -403,7 +403,9 @@ async def score_expand_rows(
                         row[col] = old[col]
 
     settings = Settings.load()
-    industry = select_industry(query, geography=country, settings=settings)
+    # No sector pick from the keyword catalog: the parameters come from the
+    # LLM for this market alone (axis_define.define_market_axes).
+    industry: dict = {}
     from vendor_intel.quadrant.axis_define import define_market_axes
 
     industry = define_market_axes(
@@ -872,7 +874,14 @@ def select_chart_rows_by_quadrant_country(
     seen: set[str] = set()
 
     def _key(row: dict[str, Any]) -> str:
-        return str(row.get("Brand") or row.get("Company") or "").strip().lower()
+        # Company (the already-deduped identity) must win over Brand: two
+        # distinct verified companies can share the same trade name (e.g.
+        # "NewAge Fire Fighting Co. Ltd." and "NewAge Fire Protection
+        # Industries Pvt. Ltd." both trading as "NewAge"), and keying on
+        # Brand alone collapsed them onto one slot / let both slip onto the
+        # chart later when this same "Brand or Company" pattern was reused
+        # for the on_chart flag below.
+        return str(row.get("Company") or row.get("Brand") or "").strip().lower()
 
     def _clear_level_key(row: dict[str, Any], quad: str) -> tuple[float, float]:
         """Prefer clearer High/Lower margins per Coherent criteria, then Overall."""
@@ -1205,6 +1214,29 @@ def to_company_detail_rows(
     return out
 
 
+def _company_column(row: dict[str, Any]) -> str:
+    """Company column for display: "Name (subsidiary of / acquired by Owner)"
+    when the row's _meta carries an owner (ownership review), the name it
+    trades under today when its listed brand is legacy, else the plain name.
+    row["Company"] itself stays the plain name, the key every lookup uses."""
+    meta = row.get("_meta") if isinstance(row.get("_meta"), dict) else {}
+    company = str(meta.get("current_company") or row.get("Company") or "")
+    if not company or not str(meta.get("parent_owner") or "").strip():
+        return company
+    from vendor_intel.quadrant.brand_meta import brand_display_fields
+
+    return brand_display_fields({
+        "company": company, "brand": company,
+        **{k: meta.get(k) for k in ("parent_owner", "ownership_relation", "ownership_confidence")},
+    })[1] or company
+
+
+def _brand_column(row: dict[str, Any]) -> str:
+    """Brand column for display: a retired brand reads "Current (Legacy legacy)"."""
+    meta = row.get("_meta") if isinstance(row.get("_meta"), dict) else {}
+    return str(meta.get("brand_label") or row.get("Brand") or "")
+
+
 def build_expand_quadrant_payload(
     detail_rows: list[dict[str, Any]],
     query: str,
@@ -1225,8 +1257,12 @@ def build_expand_quadrant_payload(
     brands: list[dict[str, Any]] = []
     # Chart: ~equal per quadrant + country diversity (not global top-N → all Leaders)
     chart_slice = select_chart_rows_by_quadrant_country(detail_rows, chart_n=chart_n)
+    # Company, not Brand: see _key()'s comment in select_chart_rows_by_
+    # quadrant_country above -- two different companies can share a Brand,
+    # and keying chart membership on Brand let both light up as on_chart
+    # even though only one was actually in chart_slice.
     chart_keys = {
-        str(r.get("Brand") or r.get("Company") or "").strip().lower() for r in chart_slice
+        str(r.get("Company") or r.get("Brand") or "").strip().lower() for r in chart_slice
     }
     execs = [_int_score(r.get("X")) for r in chart_slice]
     innovs = [_int_score(r.get("Y")) for r in chart_slice]
@@ -1237,7 +1273,7 @@ def build_expand_quadrant_payload(
     overalls = [_int_score(r.get("Overall")) for r in chart_slice]
     tiers = assign_tiers_relative(overalls) if overalls else []
     coord_by_key = {
-        str(r.get("Brand") or r.get("Company") or "").strip().lower(): (
+        str(r.get("Company") or r.get("Brand") or "").strip().lower(): (
             coords[i] if i < len(coords) else (50, 50),
             tiers[i] if i < len(tiers) else "Tier 3",
             i,
@@ -1260,7 +1296,7 @@ def build_expand_quadrant_payload(
             _detail_by_company[name] = detail
 
     for i, row in enumerate(detail_rows):
-        key = str(row.get("Brand") or row.get("Company") or "").strip().lower()
+        key = str(row.get("Company") or row.get("Brand") or "").strip().lower()
         on_chart = key in chart_keys
         top, left = (50, 50)
         tier = "Tier 3"
@@ -1269,11 +1305,16 @@ def build_expand_quadrant_payload(
             (top, left), tier, color_i = coord_by_key[key]
         meta = row.get("_meta") if isinstance(row.get("_meta"), dict) else {}
         hq = str(meta.get("hq_location") or row.get("Headquarters") or "")
+        # Display only: every lookup above keyed on the plain name.
+        company_col = _company_column(row)
         brands.append(
             {
-                "brand": row.get("Brand") or "",
-                "display_name": row.get("Brand") or "",
-                "company": row.get("Company") or "",
+                "brand": _brand_column(row),
+                "display_name": _brand_column(row),
+                # The plain name every review file and lookup is keyed on; the
+                # Company column may show a display form (owner, current name).
+                "company_key": str(row.get("Company") or ""),
+                "company": company_col,
                 "commercial_role": row.get("Role") or "",
                 "founded_in": row.get("Found in") or row.get("Founded in") or "",
                 "founded_location": row.get("Found in")
@@ -1353,7 +1394,9 @@ def build_expand_quadrant_payload(
             "axis_definition_reason": audit.get("axis_definition_reason") or "",
             "overall_formula": audit.get("overall_formula") or "(X + Y) / 2",
             "relevance": audit.get("relevance") or {},
-            "crawl": audit.get("crawl") or {},
+            # Collection stats only when there are any; an empty "crawl" block
+            # adds nothing for the reader of the saved report.
+            **({"crawl": audit["crawl"]} if audit.get("crawl") else {}),
         },
         "brands": brands,
         "scorecard": scorecard,
@@ -1390,11 +1433,33 @@ def export_expand_quadrant_outputs(
         w = csv.writer(f)
         w.writerow(list(DETAIL_COLUMNS))
         for r in detail_rows:
-            w.writerow([r.get(h, "") for h in DETAIL_COLUMNS])
+            w.writerow([_company_column(r) if h == "Company" else _brand_column(r) if h == "Brand"
+                        else r.get(h, "")
+                        for h in DETAIL_COLUMNS])
 
     payload = build_expand_quadrant_payload(
         detail_rows, query, country=country, audit=audit, chart_n=chart_n
     )
+    # The JSON carries the same methodology text the report displays.
+    from vendor_intel.quadrant.html_report import methodology_content
+    from vendor_intel.quadrant.quadrant_language import (
+        AXIS_Y_TITLE,
+        QUADRANT_LABELS,
+        QUADRANT_TITLES,
+        build_quadrant_explain,
+        x_axis_title,
+    )
+
+    # The JSON records what the report displays: the axis titles and the
+    # four quadrant definitions, so a reader of either sees the same frame.
+    x_title = x_axis_title(payload)
+    payload["axis_titles"] = {"x": x_title, "y": AXIS_Y_TITLE}
+    payload["quadrant_definitions"] = [
+        {"quadrant": q, "chart_label": QUADRANT_LABELS.get(q, q),
+         "title": QUADRANT_TITLES.get(q, q), "position": sub, "definition": body}
+        for q, sub, body in build_quadrant_explain(x_title, AXIS_Y_TITLE)
+    ]
+    payload["research_methodology"] = methodology_content(payload, x_title, AXIS_Y_TITLE)
     json_path.write_text(
         json.dumps(payload, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",

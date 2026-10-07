@@ -58,6 +58,8 @@ def main() -> int:
                     help="smallest discovery batch per round")
     ap.add_argument("--max-rounds", type=int, default=10)
     ap.add_argument("--slot", type=int, default=41, help="browser profile slot")
+    ap.add_argument("--verify-only", action="store_true",
+                    help="no discovery: verify the checkpoint's recalled companies not yet checked, then stop")
     args = ap.parse_args()
 
     os.environ["GOOGLE_AI_MODE_PROFILE_DIR"] = str(ROOT / "data" / f"ai_mode_batch_{args.slot:02d}")
@@ -89,6 +91,24 @@ def main() -> int:
 
     def key(row: dict) -> str:
         return ce._dedupe_key(str(row.get("name") or row.get("Company") or ""))
+
+    if args.verify_only:
+        # Discovery was stopped early: check what it already found, nothing more.
+        verified = list(data.get("verified") or [])
+        rejected = list(data.get("rejected_mid") or [])
+        seen = {key(r) for r in verified} | {key(r) for r in rejected}
+        new = [r for r in data.get("recalled") or [] if key(r) and key(r) not in seen]
+        log(f"verify only: {len(new)} unchecked companies")
+        if new:
+            kept, rej = ce.gpt_verify_market(
+                client, model, query=args.market, family=family, companies=new,
+                country=args.country,
+            )
+            data["verified"] = verified + list(kept)
+            data["rejected_mid"] = rejected + list(rej)
+            ckpt.save(note=f"verify only: +{len(kept)} verified, {len(rej)} rejected")
+            log(f"verify only: +{len(kept)} verified, {len(rej)} rejected")
+        return 0
 
     for rnd in range(1, args.max_rounds + 1):
         verified = list(data.get("verified") or [])

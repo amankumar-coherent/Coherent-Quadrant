@@ -30,12 +30,14 @@ Design notes that matter (see COMPANY_DISCOVERY_ROUNDS.md):
 """
 from __future__ import annotations
 
+import os
 from typing import Any, Callable
 
 from vendor_intel.pipeline.geo_rotation import (
     COUNTRIES_BY_REGION,
     REGIONS,
     all_countries_by_coverage,
+    area_shard,
     is_single_country,
     states_for,
     coverage,
@@ -143,18 +145,24 @@ _CONTRACT_MANUFACTURER_MARKERS = (
 )
 
 
-def is_contract_manufacturer(row: dict[str, Any]) -> bool:
+def is_contract_manufacturer(row: dict[str, Any], market: str = "") -> bool:
     """True when the evidence says this entity makes other companies' product.
 
     Only the descriptive fields are searched. The company NAME is deliberately
     not matched on its own: a legitimate brand owner can be called
     "<X> Manufacturing", and dropping it would lose a real competitor.
+    A marker that names the market itself is skipped: in a contract
+    manufacturing, EMS or foundry market those companies ARE the market.
     """
+    m_low = " " + " ".join(str(market or "").lower().split()) + " "
+    markers = [m for m in _CONTRACT_MANUFACTURER_MARKERS
+               if m.strip().split("/")[0].rstrip("s") not in m_low
+               and not any(w in m_low for w in m.strip().split() if len(w) > 4)]
     blob = " ".join(
         str(row.get(k) or "")
         for k in ("why_related", "role", "ownership", "notes", "description")
     ).lower()
-    return any(m in blob for m in _CONTRACT_MANUFACTURER_MARKERS)
+    return any(m in blob for m in markers)
 
 
 def build_round_prompt(
@@ -688,6 +696,18 @@ def discover_in_rounds(
         # off part-way and a capped run is misreported as a finished market.
         limit += len(state_queue) * (EMPTY_ROUNDS_PER_COUNTRY + 1)
 
+    # DISCOVER_START_TIER=country: a top-up browser that runs after the broad
+    # rounds have thinned out goes straight to the country-by-country tier,
+    # over its own GEO_AREA_SHARD slice of the countries, instead of
+    # re-asking the broad question and every region first.
+    if (escalate_regions and not single_country
+            and (os.getenv("DISCOVER_START_TIER") or "").strip().lower() == "country"):
+        countries_done = True
+        country_queue = area_shard(all_countries_by_coverage(found))
+        focus_region = country_queue.pop(0) if country_queue else ""
+        if not max_rounds:
+            limit = max(limit, len(country_queue) * (EMPTY_ROUNDS_PER_COUNTRY + 2) + 4)
+
     while len(found) < target and rounds < limit:
         rounds += 1
         system, user = build_round_prompt(
@@ -749,7 +769,7 @@ def discover_in_rounds(
             key = dedupe_key(name)
             if not key or key in seen:
                 continue
-            if is_contract_manufacturer(row):
+            if is_contract_manufacturer(row, market):
                 continue
             if accept is not None and not accept(row):
                 continue

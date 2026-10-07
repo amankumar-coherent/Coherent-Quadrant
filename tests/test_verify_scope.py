@@ -81,6 +81,8 @@ def test_the_verify_prompt_states_the_scope_and_how_to_use_it():
     block = src.split("def gpt_verify_market(", 1)[1]
     assert "_scope = _market_scope()" in block, "scope never resolved"
     assert "THIS MARKET COVERS EXACTLY" in block, "scope not in the system prompt"
-    assert "Market scope:" in block, "scope not in the user prompt"
+    # Stated once only: a second copy in the user part pushes the prompt past
+    # the AI Mode URL limit and the call would fall back to the API.
+    assert "Market scope:" not in block, "scope repeated in the user prompt"
     # Stating the scope is not enough; verify must be told what to DO with it.
     assert "in_market=false" in block

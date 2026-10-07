@@ -138,7 +138,9 @@ def main() -> int:
         if name in already:
             continue
 
-        x_got = axis_scores(name, AXIS_X_TITLE, x_params, x_defs)
+        # The orchestrator sets the market's own X title (Service / Technology /
+        # Product Capability, from its player type); default when run alone.
+        x_got = axis_scores(name, os.environ.get("QUADRANT_X_TITLE") or AXIS_X_TITLE, x_params, x_defs)
         y_got = axis_scores(name, AXIS_Y_TITLE, y_params, y_defs)
         if not x_got or not y_got:
             print(f"  {name}: MISS (x={len(x_got)}/{len(x_params)} "

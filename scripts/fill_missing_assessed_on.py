@@ -93,7 +93,11 @@ def main() -> int:
                 for pname, v in params.items():
                     if not isinstance(v, dict):
                         continue
-                    if v.get("score") is not None and not v.get("assessed_on"):
+                    # No evidence left counts too (evidence_gaps flags both):
+                    # an analyst correction that removes a parameter's only
+                    # unconfirmed bullet must be refilled, not left as a gap.
+                    if v.get("score") is not None and (not v.get("assessed_on")
+                                                       or not v.get("evidence")):
                         key = (name, axis_key, pname)
                         if key not in sidecars_of:
                             gap_keys.append(key)
@@ -127,7 +131,7 @@ def main() -> int:
         got = parse_small_group_scores(answer, [pname], query) if answer else {}
         entry = got.get(pname)
         status = "MISS"
-        if entry and entry.get("assessed_on"):
+        if entry and entry.get("assessed_on") and entry.get("evidence"):
             # Write the fix into EVERY sidecar that had this same gap, so
             # no copy is left stale for the completeness audit to still
             # flag.

@@ -125,7 +125,33 @@ STATES_BY_COUNTRY: dict[str, tuple[str, ...]] = {
         "Uttarakhand (Dehradun and Haridwar)",
         "Chhattisgarh and Goa",
     ),
+    # UK regions with their main business cities, largest commercial bases first.
+    "united kingdom": (
+        "Greater London (City of London, Canary Wharf and West London)",
+        "Thames Valley (Reading, Slough, Maidenhead and High Wycombe)",
+        "Greater Manchester (Manchester, Salford and Stockport)",
+        "West Midlands (Birmingham, Coventry, Wolverhampton and Solihull)",
+        "Oxfordshire, Buckinghamshire and Milton Keynes",
+        "Hampshire and Surrey (Southampton, Portsmouth, Guildford, Basingstoke and Farnborough)",
+        "Hertfordshire and Essex (Watford, St Albans, Hemel Hempstead and Chelmsford)",
+        "West Yorkshire (Leeds, Bradford, Wakefield and Huddersfield)",
+        "Bristol, Bath, Swindon and Gloucestershire",
+        "Cambridgeshire and East Anglia (Cambridge, Peterborough, Norwich and Ipswich)",
+        "East Midlands (Nottingham, Leicester, Derby and Northampton)",
+        "Merseyside, Cheshire and Lancashire (Liverpool, Warrington, Chester and Preston)",
+        "Kent and Sussex (Maidstone, Brighton, Crawley and Gatwick)",
+        "South Yorkshire and the Humber (Sheffield, Doncaster, Hull and York)",
+        "North East England (Newcastle, Sunderland, Durham and Middlesbrough)",
+        "Scotland (Glasgow, Edinburgh, Aberdeen and Dundee)",
+        "Wales (Cardiff, Swansea, Newport and North Wales)",
+        "Northern Ireland (Belfast, Lisburn and Derry)",
+        "South West England (Exeter, Plymouth, Bournemouth and Poole)",
+        "Bedfordshire, Berkshire and the M1/M4 corridors (Luton, Bedford and Bracknell)",
+    ),
 }
+# Other names for the same country.
+for _alias in ("uk", "u.k.", "great britain", "britain"):
+    STATES_BY_COUNTRY[_alias] = STATES_BY_COUNTRY["united kingdom"]
 
 
 def states_for(country: str) -> list[str]:
@@ -137,7 +163,25 @@ def states_for(country: str) -> list[str]:
     # removeprefix, not lstrip: lstrip("the ") strips those CHARACTERS, which
     # turned "thailand" into "ailand".
     key = " ".join(str(country or "").split()).strip().lower().removeprefix("the ").strip()
-    return list(STATES_BY_COUNTRY.get(key, ()))
+    areas = list(STATES_BY_COUNTRY.get(key, ()))
+    return area_shard(areas)
+
+
+def area_shard(areas: list[str]) -> list[str]:
+    """GEO_AREA_SHARD="k/N" gives one of N parallel discovery browsers its own
+    share of a list of areas (every Nth, starting at k), so they sweep
+    different places instead of repeating each other. Unset = all areas."""
+    import os
+
+    shard = os.environ.get("GEO_AREA_SHARD", "").strip()
+    if shard and areas:
+        try:
+            k, n = (int(x) for x in shard.split("/"))
+            if n > 0:
+                return areas[(k - 1) % n::n] or areas
+        except ValueError:
+            pass
+    return areas
 
 
 def is_single_country(country: str) -> bool:

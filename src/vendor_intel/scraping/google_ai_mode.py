@@ -65,6 +65,16 @@ REFUSAL_MARKERS = (
     "an ai response was not generated",
 )
 
+# Google's "no answer" error page, in any of its wordings. Unlike the generic
+# refusal phrases above these never appear in a real answer, so they are
+# matched anywhere on the page (the page text includes the echoed prompt).
+NO_ANSWER_MARKERS = (
+    "the content wasn't generated",
+    "the content was not generated",
+    "an ai response wasn't generated",
+    "an ai response was not generated",
+)
+
 # A run that keeps hitting "something went wrong" on prompts that used to
 # work is usually a soured session (stale cookies / a flagged profile)
 # rather than a bad prompt. After this many consecutive soft failures the
@@ -687,6 +697,16 @@ class AiModeSession:
             last = n
             page.wait_for_timeout(1500)
 
+    def _verify_page_showing(self) -> bool:
+        """Google's "Verifying your request ... Continue" interstitial (seen
+        when many browsers share one IP). It is not a reCAPTCHA, so the solver
+        does nothing with it; the session is treated as flagged and reset."""
+        try:
+            return "verifying your request" in (
+                self._page.inner_text("body", timeout=3000) or "").lower()
+        except Exception:  # noqa: BLE001
+            return False
+
     def _wait_for_captcha_clear(self, timeout: float = 60.0) -> bool:
         deadline = time.monotonic() + timeout
         while time.monotonic() < deadline:
@@ -713,6 +733,8 @@ class AiModeSession:
             # retry: the retry after it runs on a fresh browser.
             resets_left = _max_resets_per_query()
             quota_resets = 0
+            verify_left = 3  # "Verifying your request" interstitials cleared per query
+            noanswer_left = 3  # "content wasn't generated" pages recovered per query
 
             while attempts_left > 0:
                 attempts_left -= 1
@@ -736,6 +758,20 @@ class AiModeSession:
                         if attempts_left <= 0:
                             raise AiModeUnavailable(f"navigation failed: {err}") from err
                         continue
+
+                if verify_left > 0 and self._verify_page_showing():
+                    # The session is flagged: clear cookies and relaunch the
+                    # browser (twice), then a full profile reset; re-issue the
+                    # query each time without costing a retry.
+                    verify_left -= 1
+                    self.captcha_count += 1
+                    self.last_captcha_at = time.monotonic()
+                    if verify_left >= 1:
+                        self.reset_session(reason="Google 'Verifying your request' page")
+                    else:
+                        self.reset_profile(reason="verify", cool_off=60.0)
+                    attempts_left += 1
+                    continue
 
                 if "/sorry/" in (self._page.url or ""):
                     self.captcha_count += 1
@@ -817,6 +853,23 @@ class AiModeSession:
                         "AI response request limit reached for this IP "
                         f"({self.quota_hits} this run) — only waiting helps"
                     )
+                # "Something went wrong and the content wasn't generated." This
+                # error page carries the echoed question, so with a long prompt
+                # it is far over the 600-char refusal guard below and used to
+                # pass as an answer (then fail to parse, retried in the same
+                # soured browser). These phrases never occur in a real answer:
+                # match anywhere and recover at once -- cookies cleared and the
+                # browser relaunched (twice), then a full profile reset; the
+                # query is re-issued each time without costing a retry.
+                if noanswer_left > 0 and any(m in low for m in NO_ANSWER_MARKERS):
+                    noanswer_left -= 1
+                    self.soft_failures += 1
+                    if noanswer_left >= 1:
+                        self.reset_session(reason="'content wasn't generated' page")
+                    else:
+                        self.reset_profile(reason="noanswer", cool_off=60.0)
+                    attempts_left += 1
+                    continue
                 # Guard the refusal check with a length limit so a long real
                 # answer that happens to contain the phrase is not discarded.
                 if len(text) < 600 and any(m in low for m in REFUSAL_MARKERS):
@@ -902,7 +955,7 @@ class AiModeSession:
         time.sleep(cool_off)
         self._ensure_browser()
 
-    def reset_session(self) -> None:
+    def reset_session(self, *, reason: str = "") -> None:
         """Clear cookies and relaunch the browser.
 
         Google can sour a session: the same prompt shape that worked minutes
@@ -912,9 +965,9 @@ class AiModeSession:
         makes the profile look human, survives).
         """
         self.resets += 1
+        why = reason or f"{self.soft_failures} consecutive no-answer pages"
         print(
-            f"  [ai-mode] {self.soft_failures} consecutive no-answer pages — "
-            f"clearing cookies and relaunching browser (reset #{self.resets})",
+            f"  [ai-mode] {why} — clearing cookies and relaunching browser (reset #{self.resets})",
             flush=True,
         )
         try:
@@ -1031,11 +1084,19 @@ _ARRAY_START_RE = re.compile(r'\[\s*\{\s*"[A-Za-z_]')
 _OBJECT_START_RE = re.compile(r'\{\s*"[A-Za-z_]')
 
 
-def parse_json_answer(raw: str, *, require_key: str | None = None) -> Any:
+def _squash(text: str) -> str:
+    return re.sub(r"\s+", "", text or "")
+
+
+def parse_json_answer(raw: str, *, require_key: str | None = None, prompt: str = "") -> Any:
     """Pull JSON out of a rendered AI Mode answer.
 
     Three defences: strip Google's UI footer, strip a stray ``json`` language
-    tag, and skip the model's echo of the prompt's own empty JSON template.
+    tag, and skip the model's echo of the prompt's own JSON template. With
+    ``prompt`` given, a structure copied verbatim from the prompt is never
+    taken as the answer even when its example values are filled in: when AI
+    Mode replies in prose, the echoed question bubble is the only JSON on the
+    page, and its example values would otherwise be read as the verdict.
     """
     text = (raw or "").replace("Use code with caution.", "")
     text = text.replace("```json", "").replace("```", "")
@@ -1060,6 +1121,9 @@ def parse_json_answer(raw: str, *, require_key: str | None = None) -> Any:
     # A longer candidate encloses a shorter one, so the outermost structure is
     # tried first.
     candidates.sort(key=len, reverse=True)
+    echoed = _squash(prompt)
+    if echoed:
+        candidates = [c for c in candidates if _squash(c) not in echoed]
     fallback: Any = None
     for blob in candidates:
         for attempt in (blob, re.sub(r"\s*\n\s*", " ", blob)):
@@ -1167,7 +1231,8 @@ def chat_json(
     guarded = (system or "").strip()
     if guarded:
         guarded = f"{guarded}\n\n{_BLANK_PREFERRED}"
-    return parse_json_answer(chat(guarded, user, **kw), require_key=require_key)
+    return parse_json_answer(chat(guarded, user, **kw), require_key=require_key,
+                             prompt=f"{guarded}\n\n{(user or '').strip()}")
 
 
 # --- CLI: install / verify an extension, or send one prompt -----------------

@@ -7,93 +7,9 @@ from __future__ import annotations
 import re
 from typing import Any
 
-# Specialty materials / base-film marketers (not finished-pack converters)
-_PACKAGING_MARKETER_STEMS = (
-    "honeywell",
-    "aclar",
-    "kuraray",
-    "eval",
-    "mitsubishi chemical",
-    "mitsubishi gas chemical",
-    "mitsubishi polyester film",
-    "mitsui chemicals",
-    "mylar specialty",
-    "3m scotchpak",
-    "scotchpak",
-    "dupont tyvek",
-    "tyvek",
-    "soarus",
-    "soarnol",
-    "nippon gohsei",
-    "cosmo films",
-    "cosmo first",
-    "polyplex",
-    "taghleef",
-    "jindal films",
-    "jindal poly films",
-    "innovia",
-    "treofan",
-    "ester industries",
-    "ester filmtech",
-    "thai film industries",
-    "srf limited",
-    "chiripal poly",
-    "vacmet",
-    "garware",
-    "skc",
-    "kolon industries",
-    "hyosung chemical",
-    "nan ya plastics",
-    "shinkong",
-    "far eastern new century",
-    "formosa idemitsu",
-    "toray advanced film",
-    "toray industries",
-    "toyobo",
-    "unitika",
-    "futamura",
-    "okura industrial",
-    "asahi kasei packaging",
-    "celplast",
-    "plastic suppliers",
-    "danafilms",
-    "polifilm",
-    "folienwerk wolfen",
-    "buergofol",
-    "allvac folien",
-    "wentus",
-    "folien fischer",
-    "rkw",
-    "sigma stretch",
-    "charter next generation",
-    "max speciality films",
-    "toppan speciality films",
-    "vitopel",
-    "biofilm",
-    "kureha",
-    "sumitomo bakelite",
-    "flex middle east",
-    "flex america",
-    "flex films (usa)",
-)
-
 
 def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", str(s or "").strip().lower())
-
-
-def is_packaging_market(query: str) -> bool:
-    q = _norm(query)
-    return any(t in q for t in ("packaging", "flex pack", "flexible pack", "pouch"))
-
-
-def classify_packaging_role(company: str, brand: str = "") -> str:
-    """Brand = converter/film OEM; Marketer = specialty material / regional marketing arm."""
-    blob = _norm(f"{brand} {company}")
-    for stem in _PACKAGING_MARKETER_STEMS:
-        if stem in blob:
-            return "Marketer"
-    return "Brand"
 
 
 def normalize_role_label(
@@ -103,12 +19,14 @@ def normalize_role_label(
     company: str = "",
     brand: str = "",
 ) -> str:
-    """Collapse combined / fuzzy roles into one allowed label."""
+    """Collapse combined / fuzzy roles into one allowed label.
+
+    Uses the verifier's own role answer only -- the same rule for every
+    market (no market-name branches or company tables). ``query``, ``company``
+    and ``brand`` are kept for callers' signatures.
+    """
     r = _norm(role)
     if not r or r in {"brand / marketer", "brand/marketer", "brand and marketer"}:
-        if is_packaging_market(query):
-            return classify_packaging_role(company, brand)
-        # Non-packaging consumer markets: default Brand when LLM left combined
         return "Brand"
     # Hardware player-type: pass the canonical role straight through — do not
     # collapse it to "Brand" (that used to silently discard the hardware→
@@ -127,8 +45,6 @@ def normalize_role_label(
         return "Brand"
     if r == "marketer" or "marketer" in r:
         return "Marketer"
-    if is_packaging_market(query):
-        return classify_packaging_role(company, brand)
     return "Brand"
 
 

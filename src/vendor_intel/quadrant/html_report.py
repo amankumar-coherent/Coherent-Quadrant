@@ -531,16 +531,17 @@ def _assert_no_evidence(view: dict[str, Any]) -> None:
 
 
 def _axis_labels(payload: dict[str, Any]) -> tuple[str, str]:
-    """Axis titles as the REPORT presents them — FIXED for every market.
+    """Axis titles as the REPORT presents them.
 
-    X is always Product Capability and Y always Business Capability; only the
+    Y is always Business Capability. X follows the market's player type
+    (Service / Technology / Product Capability, see x_axis_title); only the
     5 parameters under each axis change per market. Whatever title a saved
     payload carries (an old market-specific one such as "Service Delivery
     Capability", or the internal "Product Strength" key) is ignored here.
     """
-    from vendor_intel.quadrant.quadrant_language import AXIS_X_TITLE, AXIS_Y_TITLE
+    from vendor_intel.quadrant.quadrant_language import AXIS_Y_TITLE, x_axis_title
 
-    return AXIS_X_TITLE, AXIS_Y_TITLE
+    return x_axis_title(payload), AXIS_Y_TITLE
 
 
 def _label_side(quad: str, left: int, top: int) -> str:
@@ -621,7 +622,7 @@ def _chart(payload: dict[str, Any]) -> str:
     return f"""
 <div class="panel">
   <h2>Quadrant Positioning <span style="font-weight:500;font-size:0.85rem;opacity:.75">
-  ({n_chart} on chart · {n_table} in table · ~equal per quadrant · country-diverse)</span></h2>
+  ({n_chart} companies on the chart · {n_table} companies assessed)</span></h2>
   <div class="cq-chart-frame">
     <div class="cq-y-label">{_esc(y_label)}</div>
     <div class="cq-plot">
@@ -885,7 +886,36 @@ def _bubble_class(score: int) -> str:
 # [label](url "title") -> label. The URL belongs in the JSON, not the report.
 _MD_LINK = re.compile(r"\[([^\]]+)\]\(\s*<?https?://[^)]*\)")
 # A link pasted without Markdown around it.
-_BARE_URL = re.compile(r"<?https?://\S+>?")
+# Stop before a closing bracket and never swallow sentence punctuation:
+# "\S+" ate the ")." after "(Source Page, https://x.com/page/)." and left the
+# displayed sentence with an open bracket and no full stop.
+_BARE_URL = re.compile(r"<?https?://[^\s)\]>]*[^\s)\]>.,;:]>?")
+
+
+# A period after these is part of a name or reference, not a sentence end:
+# splitting there turned "Vimal Fire Controls Pvt. Ltd. manufactures ..." into
+# two broken bullets ("Vimal Fire Controls Pvt." / "Ltd. manufactures ...").
+_ABBREV_END = re.compile(
+    r"(?:\bM/s\.|\be\.g\.|\bi\.e\.|\bsq\.\s?(?:ft|km|m|mtr|yd)\.|"
+    r"\b(?i:Pvt|Ltd|Co|Inc|Corp|Bros|Mfg|Engg|Pty|Plc|Govt|Dept|No|Nos|Opp)\.|"
+    r"\b(?:Mr|Mrs|Ms|Dr|Prof|Sr|Jr|St|viz|Vol|Ref|Cert|Rs|vs|approx|Sec|Ch|Fig|Reg|Intl|Assn|Lt|Col|Gen|"
+    r"Capt|Hon|Smt|Shri|Sh|Adv|Tech)\.|"
+    r"(?:\b[A-Z]\.){1,5})$"
+)
+_SENTENCE_BREAK = re.compile(r"(?<=[.!?])\s+(?=[A-Z(])")
+
+
+def _split_sentences(flat: str) -> list[str]:
+    """Split on . ! ? + space + capital, but never right after an abbreviation or initial."""
+    parts: list[str] = []
+    start = 0
+    for m in _SENTENCE_BREAK.finditer(flat):
+        if _ABBREV_END.search(flat[start:m.start()]):
+            continue
+        parts.append(flat[start:m.start()])
+        start = m.end()
+    parts.append(flat[start:])
+    return [p.strip() for p in parts if p.strip()]
 
 
 def _first_sentence(text: str, limit: int = 420) -> str:
@@ -913,8 +943,7 @@ def _first_sentence(text: str, limit: int = 420) -> str:
     flat = " ".join(flat.replace("()", "").split())
     # Split on . ! ? followed by a space + capital, so "22.5% efficiency" and
     # "Co., Ltd." do not end the sentence early.
-    match = re.search(r"(?<=[.!?])\s+(?=[A-Z(])", flat)
-    first = flat[: match.start()] if match else flat
+    first = _split_sentences(flat)[0]
     if len(first) > limit:
         cut = first[:limit].rsplit(" ", 1)[0]
         return cut.rstrip(",;:") + "…"
@@ -926,6 +955,15 @@ def _strip_links(text: str) -> str:
     out = _MD_LINK.sub(r"\1", str(text or ""))
     out = _BARE_URL.sub("", out)
     return " ".join(out.replace("()", "").split())
+
+
+def _tidy_after_links(text: str) -> str:
+    """Punctuation a removed URL leaves behind: "(Source Page, )" -> "(Source Page)", "Profile ." -> "Profile."."""
+    out = re.sub(r"[,;:]\s*\)", ")", text)
+    out = re.sub(r"\(\s+", "(", out)
+    out = re.sub(r"\(\s*\)", "", out)
+    out = re.sub(r"\s+([.,;:)])", r"\1", out)
+    return " ".join(out.split())
 
 
 def _sentences(text: str) -> list[str]:
@@ -941,11 +979,10 @@ def _sentences(text: str) -> list[str]:
     "Co., Ltd." are split points only if the following token starts a new
     sentence (space + capital).
     """
-    flat = _strip_links(text)
+    flat = _tidy_after_links(_strip_links(text))
     if not flat:
         return []
-    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z(])", flat)
-    return [p.strip() for p in parts if p.strip()]
+    return _split_sentences(flat)
 
 
 def _evidence_bullets(evidence: list[dict[str, Any]]) -> str:
@@ -984,13 +1021,14 @@ def _positioning_note(
     from vendor_intel.quadrant.quadrant_language import (
         quadrant_label,
         quadrant_position,
+        x_axis_noun,
     )
 
     return (
         '<p class="cq-ta-note">Positioned in '
         f'<strong>{_esc(quadrant_label(quad))}</strong> on '
         f"{_esc(x_name)} {x}/100 and {_esc(y_name)} {y}/100 — "
-        f"{_esc(quadrant_position(quad).lower())}. "
+        f"{_esc(quadrant_position(quad, x_axis_noun(x_name)).lower())}. "
         "The parameter evidence below is what those two scores are built "
         "from.</p>"
     )
@@ -1311,7 +1349,7 @@ def _top20_and_others(payload: dict[str, Any], x_name: str, y_name: str) -> tupl
         # Strength bubble instead of four numeric columns — see
         # _strength_table for why the long tail reads better that way.
         _strength_table(
-            other_views, "Other Noticeable Player", f"{len(other_views)} companies",
+            other_views, "Other Noticeable Players", f"{len(other_views)} companies",
             overrides=payload.get("strength_fill_overrides") or {},
         ),
     )
@@ -1373,9 +1411,9 @@ def _parameters_panel(payload: dict[str, Any], x_name: str, y_name: str) -> str:
 <div class="panel">
   <h2>Market Scoring Parameters</h2>
   <p style="margin:0 0 1rem 0;color:#64748b;font-size:.92rem;line-height:1.45">
-    X and Y axes and these 10 parameters are defined for
+    The X and Y axes and these 10 parameters were defined for
     <strong>{_esc(str(payload.get('market') or 'this market'))}</strong>
-    and used to calculate company scores below.
+    and form the basis of the company scores below.
   </p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
     <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.1rem">
@@ -1435,7 +1473,7 @@ def _parameter_definitions_panel(
   <p style="margin:0 0 1rem 0;color:#64748b;font-size:.92rem;line-height:1.45">
     What each scoring parameter means for
     <strong>{_esc(market)}</strong>
-    (generated for this market — not a fixed template).
+    (defined specifically for this market).
   </p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem">
     <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.1rem">
@@ -1455,52 +1493,89 @@ def _parameter_definitions_panel(
 """
 
 
-def _methodology_panel(payload: dict[str, Any], x_name: str, y_name: str) -> str:
-    """Research methodology as a market-research-firm-style flow diagram +
-    narrative: how the quadrant was independently derived, what counts as
-    primary vs. secondary research, and how the two feed into the score."""
-    crit = payload.get("criteria") or {}
-    x_feats = list(crit.get("x_axis") or [])
-    y_feats = list(crit.get("y_axis") or [])
-    market = str(payload.get("market") or "this market")
-    n_brands = len(payload.get("brands") or [])
-    floor, ceiling = int(NORM_FLOOR), int(NORM_CEILING)
+def methodology_content(payload: dict[str, Any] | None = None, x_name: str = "",
+                        y_name: str = "") -> dict[str, Any]:
+    """The research methodology as plain text, shared by the report panel and
+    the saved JSON so the two can never say different things.
 
-    flow = [
-        ("Secondary Research", "Desk research and analyst market recall combined with live web search build the initial universe of candidate companies active in this market."),
-        ("Screening &amp; Verification", "Each candidate checked against this market's inclusion criteria and correct commercial role; off-market, reseller, and media names removed."),
-        ("Primary Research", "Each verified company's own website is reviewed directly for firsthand company information on product portfolio, scale, and positioning."),
-        ("Data Triangulation", "Website evidence cross-checked against search-derived signals so no score rests on a single source."),
-        ("Quantitative Scoring", f"Structured 1&ndash;10 scoring across weighted features rolls up into the {_esc(x_name)} (X) and {_esc(y_name)} (Y) axis scores."),
-        ("Normalization &amp; Validation", f"Scores rescaled across this market's full population ({floor}&ndash;{ceiling}) and quadrant boundaries validated against the median distribution."),
+    One standard text for every market: nothing in it depends on the market,
+    its player type, axis titles, parameter names or company counts (the
+    arguments are accepted only so existing callers keep working). The
+    market-specific detail lives in the report's parameter definitions.
+
+    Deliberately makes no claim the process does not meet: there is no
+    multi-source triangulation guarantee, no weighting (X/Y are straight
+    averages), and primary research is limited to what is actually reported.
+    """
+    floor, ceiling = int(NORM_FLOOR), int(NORM_CEILING)
+    # Six steps of near-equal length so the flow cards read evenly.
+    steps = [
+        ("Market Definition",
+         "The market scope and the type of company that qualifies were defined first. Five "
+         "parameters were then set for each axis, each with a written definition: the X axis "
+         "measures core capability (products, services or technology) and the Y axis measures "
+         "business capability."),
+        ("Secondary and Primary Research",
+         "Secondary research covered company websites, filings, trade directories, industry "
+         "publications and news. Primary research drew on B2B "
+         "marketplace listings, where available, to confirm company offerings. Coverage was "
+         "extended region by region until no new qualifying companies emerged."),
+        ("Screening",
+         "Each candidate was screened against the market's inclusion criteria and required "
+         "commercial role. Distributors, resellers, consultancies, contract manufacturers and "
+         "media names were excluded, and duplicates consolidated. Companies whose main business "
+         "is an adjacent segment are listed but not placed on the chart."),
+        ("Evidence Compilation",
+         "Every screened company was assessed on all ten parameters; for chart companies, "
+         "evidence was recorded parameter by parameter. Claims resting only on a company's own "
+         "materials are reported as company-reported, partner technology is credited to the "
+         "partnership, and employee-review sites are not used as customer evidence."),
+        ("Scoring",
+         "Each parameter is rated 0–100 against its written definition, based on the evidence "
+         "available. Ratings are analyst assessments under this methodology, not independently "
+         "audited figures. X and Y are the simple average of the five parameter ratings on each "
+         "axis; overall is the average of X and Y."),
+        ("Normalization & Selection",
+         f"X and Y scores are rescaled to a {floor}–{ceiling} range across all companies "
+         "assessed, preserving their rank order. The chart shows an equal number of companies "
+         "from each of the four quadrants, with boundaries set at the median. All other "
+         "companies are listed in the table below the chart."),
     ]
+    intro = (
+        "This quadrant was compiled independently through structured secondary research, "
+        "supplemented by primary research where available. It is not based on a survey or on "
+        "vendor self-submission. The steps below describe how companies were identified, "
+        "screened, evidenced and scored."
+    )
+    note = (
+        "Scoring inputs: each axis is built from five market-specific parameters, defined in the "
+        "Parameter Definitions section. All parameters are equally weighted."
+    )
+    return {"intro": intro, "steps": [{"title": t, "description": d} for t, d in steps],
+            "scoring_note": note}
+
+
+def _methodology_panel(payload: dict[str, Any], x_name: str, y_name: str) -> str:
+    """Research methodology as a flow diagram + narrative (see methodology_content)."""
+    content = methodology_content(payload, x_name, y_name)
+    steps = content["steps"]
     flow_cards = []
-    for i, (title, text) in enumerate(flow, 1):
+    for i, step in enumerate(steps, 1):
         flow_cards.append(
             f'<div class="cq-flow-step"><div class="cq-flow-badge">{i}</div>'
-            f'<div class="cq-flow-title">{title}</div><div class="cq-flow-text">{text}</div></div>'
+            f'<div class="cq-flow-title">{_esc(step["title"])}</div>'
+            f'<div class="cq-flow-text">{_esc(step["description"])}</div></div>'
         )
-        if i < len(flow):
+        if i < len(steps):
             flow_cards.append('<div class="cq-flow-arrow">&rarr;</div>')
     flow_html = f'<div class="cq-flow">{"".join(flow_cards)}</div>'
-
-    footnote = (
-        f'<p class="cq-method-footnote">Scoring inputs: {_esc(x_name)} (X) is weighted across '
-        f"{len(x_feats)} features ({_esc(', '.join(x_feats))}); {_esc(y_name)} (Y) across "
-        f"{len(y_feats)} features ({_esc(', '.join(y_feats))}). Each feature is scored on 3 "
-        f"structured questions, rolled into an axis score, then normalized within {_esc(market)}'s "
-        f"own {n_brands}-company population to a {floor}&ndash;{ceiling} range &mdash; preserving "
-        "relative ranking without any company reading as disproportionately weak in isolation."
-        "</p>"
-    )
+    footnote = f'<p class="cq-method-footnote">{_esc(content["scoring_note"])}</p>'
 
     return f"""
 <div class="panel">
   <h2>Research Methodology</h2>
   <p style="margin:0 0 1.25rem 0;color:#64748b;font-size:.92rem;line-height:1.5">
-    This quadrant was independently compiled using a structured, evidence-based research methodology
-    &mdash; not a survey or vendor self-submission. The flow below shows how secondary and primary
-    research combine into each company's final score.
+    {_esc(content["intro"])}
   </p>
   {flow_html}
   {footnote}
@@ -1602,7 +1677,7 @@ def render_quadrant_html(payload: dict[str, Any]) -> str:
         # still renders it.
         + _parameter_definitions_panel(payload, x_name, y_name)
         + _methodology_panel(payload, x_name, y_name)
-        + '<p class="footer">Generated by Coherent Quadrant · open this file after a terminal run</p>'
+        + '<p class="footer">Coherent Quadrant · Independent market assessment based on secondary research and primary research</p>'
     )
     return (
         "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"/>"

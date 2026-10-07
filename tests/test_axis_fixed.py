@@ -28,27 +28,48 @@ def test_axis_names_are_the_fixed_pair():
     assert PARAMS_PER_AXIS == 5
 
 
-def test_catalog_path_overrides_a_wrong_yaml_axis_name(monkeypatch):
-    """Regression: when the LLM call failed, the YAML name leaked through and
-    markets were labelled "Packaging Solution Capability" or "Asset &
-    Operating Capability" instead of Product / Business Strength."""
-    monkeypatch.setenv("EXPAND_MARKET_AXIS_LLM", "0")
-    monkeypatch.setenv("EXPAND_MARKET_AXIS_REQUIRE_LLM", "0")
-    out = define_market_axes(
-        "Global Flexible Packaging Market",
-        _catalog("Packaging Solution Capability", "Commercial Reach"),
-    )
-    assert out["axis_x"] == AXIS_X_FIXED
-    assert out["axis_y"] == AXIS_Y_FIXED
-    assert out["axis_definition_method"] == "catalog"
+class _FakeLLM:
+    """Records each axis request; answers with the queued replies in turn."""
+
+    available = True
+
+    def __init__(self, *replies):
+        self.replies, self.payloads = list(replies), []
+
+    def complete_json(self, system, user, **_kw):
+        import json as _json
+
+        self.payloads.append(_json.loads(user))
+        return self.replies.pop(0)
 
 
-def test_exactly_five_parameters_per_axis(monkeypatch):
-    monkeypatch.setenv("EXPAND_MARKET_AXIS_LLM", "0")
-    monkeypatch.setenv("EXPAND_MARKET_AXIS_REQUIRE_LLM", "0")
-    out = define_market_axes("Any Market", _catalog("Whatever", "Whatever"))
-    assert len(out["x"]) == PARAMS_PER_AXIS
-    assert len(out["y"]) == PARAMS_PER_AXIS
+def _reply(n_x=5, n_y=5, tag="A"):
+    x = [f"{tag} product {i}" for i in range(n_x)]
+    y = [f"{tag} business {i}" for i in range(n_y)]
+    return {"x": x, "y": y, "x_definitions": {p: f"{p} means ..." for p in x},
+            "y_definitions": {p: f"{p} means ..." for p in y}, "reason": "fits"}
+
+
+def test_llm_gets_the_market_not_a_sector_catalog(monkeypatch):
+    """The parameters used to be refined from a sector catalog picked by a
+    keyword map of market names; the LLM now sees only the market."""
+    monkeypatch.setenv("MARKET_SCOPE", "Software that automates supplier invoices.")
+    llm = _FakeLLM(_reply())
+    out = define_market_axes("Any Market", _catalog("Packaging Solution Capability", "Reach"), client=llm)
+    sent = llm.payloads[0]
+    assert "baseline" not in sent and "industry_group" not in sent and "industry_category" not in sent
+    assert sent["market_definition"] == "Software that automates supplier invoices."
+    assert out["x"] == _reply()["x"] and out["axis_definition_method"] == "llm"
+    assert (out["axis_x"], out["axis_y"]) == (AXIS_X_FIXED, AXIS_Y_FIXED)
+    assert len(out["x"]) == len(out["y"]) == PARAMS_PER_AXIS
+
+
+def test_a_short_llm_answer_is_retried_not_padded_from_a_catalog():
+    llm = _FakeLLM(_reply(n_x=3), _reply(tag="B"))
+    out = define_market_axes("Any Market", _catalog("x", "y"), client=llm)
+    assert len(llm.payloads) == 2
+    assert out["x"] == _reply(tag="B")["x"]
+    assert not any(p.startswith("X param") for p in out["x"] + out["y"])
 
 
 def test_llm_prompt_states_the_axes_are_fixed():
@@ -63,12 +84,10 @@ def test_llm_prompt_states_the_axes_are_fixed():
     assert "2-6 word X axis title" not in flat
 
 
-def test_parameters_remain_market_specific(monkeypatch):
-    """Fixing the NAMES must not fix the parameters — those stay per-market."""
-    monkeypatch.setenv("EXPAND_MARKET_AXIS_LLM", "0")
-    monkeypatch.setenv("EXPAND_MARKET_AXIS_REQUIRE_LLM", "0")
-    a = define_market_axes("Market A", _catalog("x", "y") | {"x": ["Wafer Yield"] * 5})
-    b = define_market_axes("Market B", _catalog("x", "y") | {"x": ["Barrier Film"] * 5})
+def test_parameters_remain_market_specific():
+    """Fixing the NAMES must not fix the parameters -- those stay per-market."""
+    a = define_market_axes("Market A", {}, client=_FakeLLM(_reply(tag="Wafer")))
+    b = define_market_axes("Market B", {}, client=_FakeLLM(_reply(tag="Film")))
     assert a["x"] != b["x"]
     assert a["axis_x"] == b["axis_x"] == AXIS_X_FIXED
 
@@ -92,13 +111,14 @@ def test_llm_axis_parameters_are_required_by_default(monkeypatch):
         define_market_axes("Test Market", _catalog("W", "W"))
 
 
-def test_requirement_can_be_opted_out(monkeypatch):
+def test_catalog_fallback_cannot_be_opted_out(monkeypatch):
+    """The old opt-out env var no longer lets a market run on catalog values."""
+    import pytest
+
     monkeypatch.setenv("EXPAND_MARKET_AXIS_REQUIRE_LLM", "0")
     monkeypatch.setenv("EXPAND_MARKET_AXIS_LLM", "0")
-    out = define_market_axes("Test Market", _catalog("W", "W"))
-    assert out["axis_definition_method"] == "catalog"
-    # Even on the fallback, the axis NAMES stay fixed.
-    assert out["axis_x"] == AXIS_X_FIXED
+    with pytest.raises(RuntimeError):
+        define_market_axes("Test Market", _catalog("W", "W"))
 
 
 def test_llm_call_is_retried_before_failing():

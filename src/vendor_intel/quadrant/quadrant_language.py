@@ -12,6 +12,8 @@ presentation-layer wording only.
 """
 from __future__ import annotations
 
+import re
+
 QUADRANT_NAMES = ("Leaders", "Challengers", "Trailblazers", "Emerging Players")
 
 # The capability scale both axes are read on. "Emerging" is the low end and
@@ -27,6 +29,29 @@ SCALE_HIGH = "Best-in-class"
 # scoring and every stored payload use — this is the display wording only.
 AXIS_X_TITLE = "Product Capability"
 AXIS_Y_TITLE = "Business Capability"
+
+# The X title names what this market's companies actually offer, taken from
+# the market's own player type (Step 0c, criteria.relevance.keep_roles) --
+# never from a list of market names. "Product Capability" on a market of
+# service firms misdescribes every company on the chart. Y never changes.
+X_TITLE_BY_PLAYER = {
+    "service provider": "Service Capability",
+    "solution provider": "Technology Capability",
+}
+X_TITLES = (AXIS_X_TITLE, *X_TITLE_BY_PLAYER.values())
+
+
+def x_axis_title(payload: dict | None = None) -> str:
+    """X-axis display title for a report payload (default Product Capability)."""
+    relevance = (((payload or {}).get("criteria") or {}).get("relevance") or {})
+    roles = relevance.get("keep_roles") or []
+    role = str(roles[0] if roles else "").strip().lower()
+    return X_TITLE_BY_PLAYER.get(role, AXIS_X_TITLE)
+
+
+def x_axis_noun(x_title: str) -> str:
+    """"Service Capability" -> "service" (the word the quadrant copy uses)."""
+    return x_title.split()[0].lower() if x_title in X_TITLES else "product"
 
 # Short label shown on the chart and in the Quadrant column. The KEY stays
 # "Emerging Players" — it is what scoring writes and every saved checkpoint
@@ -70,10 +95,10 @@ def quadrant_title(quadrant: str) -> str:
     return QUADRANT_TITLES.get(quadrant, quadrant)
 
 
-def quadrant_position(quadrant: str) -> str:
+def quadrant_position(quadrant: str, x_noun: str = "product") -> str:
     """Capability pair, e.g. "Best-in-class Product, Emerging Business"."""
     x, y = QUADRANT_POSITIONS.get(quadrant, (SCALE_LOW, SCALE_LOW))
-    return f"{x} Product, {y} Business"
+    return f"{x} {x_noun.capitalize()}, {y} Business"
 
 
 def axis_scale_label(axis: str) -> str:
@@ -163,9 +188,13 @@ def generate_quadrant_labels(x_name: str, y_name: str) -> dict[str, str]:
     }
 
 
-def generate_quadrant_descriptions() -> dict[str, str]:
-    """Long-form quadrant descriptions, identical across every market by design."""
-    return {quad: body for quad, (_tpl, body) in _TEMPLATES.items()}
+def generate_quadrant_descriptions(x_noun: str = "product") -> dict[str, str]:
+    """Long-form quadrant descriptions, identical across every market by design
+    except that "product capabilities / portfolio / proposition" follows the
+    X-axis title (a service market reads "service capabilities")."""
+    swap = re.compile(r"\bproduct (capabilities|portfolio|proposition|offerings?)\b")
+    return {quad: swap.sub(lambda m: f"{x_noun} {m.group(1)}", body)
+            for quad, (_tpl, body) in _TEMPLATES.items()}
 
 
 def validate_quadrant_language(text: str) -> list[str]:
@@ -186,7 +215,7 @@ def build_quadrant_explain(x_name: str, y_name: str) -> list[tuple[str, str, str
     copy into a report.
     """
     labels = generate_quadrant_labels(x_name, y_name)
-    descriptions = generate_quadrant_descriptions()
+    descriptions = generate_quadrant_descriptions(x_axis_noun(x_name))
     out: list[tuple[str, str, str]] = []
     for quad in QUADRANT_NAMES:
         tpl, _body = _TEMPLATES[quad]

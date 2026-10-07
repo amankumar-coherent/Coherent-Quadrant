@@ -1,0 +1,14 @@
+# Employee-review / employer-rating sites. They measure workplace experience,
+# not customer satisfaction or delivered quality, so an evidence bullet that
+# rests on one is removed (company_facts.cites_employee_reviews) and VERIFY
+# fails if one is cited. One regular expression per line, case-insensitive.
+glassdoor
+ambitionbox
+comparably
+kununu
+inhersight
+fairygodboss
+\bindeed\.com\b
+\bindeed (?:company )?(?:reviews?|ratings?)\b
+\bemployee (?:reviews?|ratings?|satisfaction)\b
+\bemployer (?:reviews?|ratings?)\b

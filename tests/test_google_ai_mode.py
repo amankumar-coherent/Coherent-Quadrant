@@ -786,3 +786,15 @@ def test_bundled_extension_not_loaded_twice_when_already_staged(tmp_path, monkey
 
     got = g.installed_extensions(str(tmp_path / "profile"))
     assert got == [str(staged.resolve())]
+
+
+def test_parse_json_answer_ignores_filled_template_echoed_from_prompt():
+    # A prose answer leaves only the echoed question on the page; its example
+    # values must not be read as the answer.
+    prompt = 'Check the claim. JSON only: {"results":[{"verdict":"unverified","note":""}]}'
+    raw = prompt + "\n\nThe claim is verified as correct based on the official source."
+    with pytest.raises(json.JSONDecodeError):
+        gam.parse_json_answer(raw, require_key="results", prompt=prompt)
+    real = prompt + '\n{"results":[{"verdict":"correct","note":"site states it"}]}'
+    got = gam.parse_json_answer(real, require_key="results", prompt=prompt)
+    assert got["results"][0]["verdict"] == "correct"

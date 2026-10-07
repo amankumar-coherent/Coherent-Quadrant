@@ -6,6 +6,11 @@ set it up on a new machine (Google AI Mode + the bundled CAPTCHA solver), how
 to run any market with one command, and the rules the owner has set. Read it
 before changing anything.
 
+> **Also read:** `HANDOVER_CHAT_HISTORY.md` (what was done with the owner so far,
+> their preferences and working style, the state of every market, open items)
+> and `PIPELINE_CHATGPT_EXPAND.md` (the full reference of the pipeline: every
+> step, file, review layer, env var and script).
+>
 > Older docs (`PROJECT_HANDOFF.md`, `PLANNING_HLD_LLD.md`, `PIPELINE_END_TO_END.md`,
 > `README_MARKET_INTELLIGENCE.md`) describe earlier pipelines (`run_pipeline.py`,
 > `web_expand`, SearXNG/ddgs discovery). **The current path is the one below.**
@@ -38,13 +43,15 @@ Output: a landscape report in `output/chatgpt_expand/<market>_<country>/`:
    their definitions** (plus scoring prompts built on them). When AI Mode is on
    and the market analysis fails, the run stops. It never silently falls
    back to the API or defaults to B2C.
-3. **Axes are fixed for every market:** X = **Product Capability**,
-   Y = **Business Capability**. Only the parameters under them change per market.
+3. **Axis titles follow the player type:** Y = **Business Capability** always.
+   X = **Service Capability** for Service Provider markets, **Technology
+   Capability** for Solution Provider markets, **Product Capability** otherwise
+   (`quadrant_language.x_axis_title`, from `criteria.relevance.keep_roles`, never
+   a market-name list). Only the parameters under them change per market.
    **Exactly 5 parameters on X and 5 on Y.** Internally the keys are still
    `"Product Strength"` / `"Business Strength"` (`axis_define.AXIS_X_FIXED`)
-   because saved scores and prompt parsers use them; the report always displays
-   the Capability titles (`quadrant_language.AXIS_X_TITLE`). Do not rename the
-   internal keys.
+   because saved scores and prompt parsers use them; the report displays the
+   Capability titles. Do not rename the internal keys.
 4. **Other Noticeable Player = filled strength bubbles only.** No score number,
    no word label, **no hover tooltip (`title=`)** in that column. The score stays
    in the JSON (`overall`). The table is sorted by strength, descending.
@@ -113,6 +120,10 @@ It should print `extensions loaded: ['Free AI ReCaptcha Solver by Raptor ...']`.
 - Off switch: `GOOGLE_AI_MODE_BUNDLED_EXTENSIONS=false`. Extra extensions:
   `GOOGLE_AI_MODE_EXTENSIONS=path1;path2`.
 - Tests disable bundled loading in `tests/conftest.py`.
+- Source: https://github.com/amankumar-coherent/chrome-scraper-extensions
+  (`captcha-raptor/`), copied into `extensions/captcha-raptor/` as a vendored
+  copy — not a git submodule, so a clone of this repo has it with no extra
+  step. Pull that repo's `extension/` folder again here to update it.
 
 ## 4. Run any market (one command)
 
@@ -128,10 +139,28 @@ It should print `extensions loaded: ['Free AI ReCaptcha Solver by Raptor ...']`.
 | `--max-discover-rounds` | top-up rounds cap (default 10) |
 | `--top-n` | chart size (default 20) |
 | `--slots 41-50` | browser profiles for parallel scoring (fewer on slow machines) |
+| `--skip-facts` | skip step 3c's AI Mode queries (saved ownership / identity answers still apply) |
+| `--no-pdf` | do not print the PDF (step 8b) |
+| `--no-docx` | do not write the Word copy (step 8b) |
 | `--dry-run` | print the plan, open no browser |
 | `--fixed-axes file.json` / `--top-list` / `--chart-top` / `--reselect` | manual overrides (rarely needed) |
 
 Every step is resumable: re-running the same command skips saved work.
+
+PDF of a finished report (cover + key figures, no date, contents with page numbers,
+each section on a new page, one company per page in Parameter Detail):
+```bat
+.venv\Scripts\python.exe scripts\export_report_pdf.py --market "Global Smart Ring Market" --country global
+```
+Writes `<slug>_report.pdf` next to the report. Page numbers on the contents
+page need `pymupdf` (in `requirements.txt`); without it the contents prints unnumbered.
+A back cover (e.g. "Thank you / Contact us") is appended when
+`<market>/_pipeline/pdf_back_cover.pdf` exists (that market only) or
+`config/pdf_back_cover.pdf` exists (every market); its old footer is removed
+and every page gets one "Page X of Y" footer that counts it.
+The Word copy (`<slug>_report.docx`, step 8b) also opens with a branded front
+cover when `<market>/_pipeline/front_cover.pdf` or `config/front_cover.pdf`
+exists; an "xxxxxx" title placeholder on it is filled with the market name.
 
 ### Many markets at once (one Chromium browser per market)
 ```bat
@@ -151,14 +180,70 @@ many markets hit "unusual traffic", use fewer workers or a higher
 `GOOGLE_AI_MODE_QUERY_DELAY`.
 
 The run ends with a **VERIFY** block; every line must be `[PASS]`:
-5 params on X and Y · Capability axis titles · Top companies have
+5 params on X and Y · Capability axis titles (X by player type) · no
+inactive / acquired / review-excluded company listed · no market-research
+publisher named (competitors; list in `config/research_publishers.txt`, the
+evidence prompts forbid citing them) · Top companies have
 score+evidence+reasoning for all 10 parameters · report keeps N (with `--keep`) ·
 chart has 20 · 5/5/5/5 · X/Y = mean of parameters · no hedge wording ·
 Other Noticeable Player bubbles only (no numbers, no tooltip) · sorted by
-strength · every company has an HQ · every X/Y ≥ 65.
+strength · no adjacent-segment company on the chart · supporting points: an
+absence reads "Not available", shown only when a parameter has no real
+finding, and then once; no citation leftovers (footnote markers like "[1.21]",
+raw links in brackets); no employee-review site
+(`config/employee_review_sites.txt`) and no modelled-estimate site
+(`config/estimate_sites.txt`: RocketReach, ZoomInfo, Endole, D&B, GlobalDatabase, Crunchbase, …) cited; such bullets are also removed before step 5, so a parameter left empty is re-asked in the same run · every company
+has an HQ · every X/Y ≥ 65 · chart fact-check complete for every chart company.
+
+Evidence prompts also carry EVIDENCE RULES (`ai_mode_scorer.EVIDENCE_RULES`):
+project status and date exactly as the source states; company-stated claims
+written "The company reports …", "verified" only for independent sources;
+partner technology credited to the partnership; employee reviews are not
+customer feedback; how long a client's project ran is not the company's own
+delivery time; current company name.
 
 If a VERIFY line fails, fix the cause in the **generic** code and re-run.
 Never patch a single market's output by hand or add a market-specific fix.
+
+### Chart fact-check (step 8a, every run)
+After the report is built, `scripts/factcheck_chart.py` asks AI Mode, per chart
+company, its status, owner, HQ and scope (against the market brief or Step 0c),
+then judges every specific supporting point correct / incorrect / unverified,
+split over all `--slots` browsers, resumable (checked companies, and sentences
+a review fix changed, are not re-asked). Findings: `_pipeline/factcheck/findings.json`
+and `findings.md` (the review list). `vendor_intel.pipeline.factcheck` turns them
+into `_pipeline/factcheck_review.json` (analyst-review schema), applied as an
+automatic layer that `analyst_review.json` overrides. Because AI Mode cites
+directory sites and can contradict itself, only these apply automatically:
+liquidated / dissolved / in administration with a stated event → excluded (an
+acquired company still trading stays); scope adjacent → off the chart, out →
+excluded; an owner that passes `company_facts.owner_entry` and is not already
+labelled; an HQ whose **country** differs; a claim judged incorrect → its
+corrected sentence (house style applied) when the source is not a directory /
+estimate / review / research-publisher site (`config/directory_sites.txt` and
+the other lists), the edit is small (≥ 0.75 similar) and no other check of the
+company backs the old figure; a claim that belongs to another company → removed.
+When decisions change, the pipeline re-runs itself from saved work (refill,
+evidence for new entrants, 8a for them; max 3 passes). A decision stays once
+made, so a company moved off the chart does not come back. Review-file
+`company` may be the legal name, any deduped variant or the brand
+(`company_status.company_aliases`). Stand-alone: `scripts\factcheck_chart.py
+--market "X" --country global --browsers 10`.
+
+### Kept generic (do not reintroduce)
+- Axes: `define_market_axes` gets the market, geography and `MARKET_SCOPE`
+  only -- no sector catalog baseline (`config/quadrant_industry_criteria.yaml`
+  is not used on the live path), no catalog fallback, a short answer is retried.
+- `config/expand_market_gates.yaml` has one `"*"` profile; profiles are never
+  picked by words in the market name. `role_split.py` has no market branches.
+- Verify keeps a role that is the market's own player type BEFORE the channel
+  drop list (a distribution market's distributors are the market); the
+  contract-manufacturer filter skips markers that name the market itself.
+- Seed files apply only on an exact market-slug match.
+- Discovery does not score (`EXPAND_DISCOVERY_XY=0`, set by the orchestrator
+  and split discovery): steps 2 and 4 derive the axes and score once.
+- `scripts/parallel_topup.py --verify-only` verifies what stopped browsers
+  already found (each company on one browser) and merges it.
 
 ## 5. Pipeline stages and where the code lives
 
@@ -171,12 +256,17 @@ Orchestrator: `scripts/run_quadrant_pipeline.py` (+ helpers in
 | 1b | **Top-up** (`--keep`): discover a batch, verify only new companies, repeat | `scripts/discover_verify_rounds.py` |
 | 2 | **Axes spec**: 5+5 market-specific parameters + definitions (LLM), fixed axis names → `_pipeline/axes_spec.json` | `quadrant/axis_define.py` (`define_market_axes`, `explain_market_parameters`) |
 | 3 | **Dedupe**: one row per real company (same registrable domain or same name minus legal suffixes; union-find) | `quadrant_pipeline.dedupe_companies` |
+| 3b | **Operating status**: AI Mode asks, 10 companies per query, split across every `--slots` browser (one answer file per browser, merged into `operating_status.json`), whether each company still operates today (active / acquired / defunct / renamed) → `_pipeline/operating_status.json`; every non-active company and every `exclude` in `_pipeline/analyst_review.json` is left out (`_pipeline/excluded_companies.json`). A pinned Top 20 that loses a company keeps the rest and refills that quadrant (`company_status.refill_top_by_quadrant`). No answer = kept (a failed query is not evidence of closure) | `scripts/check_operating_status.py`, `pipeline/company_status.py` |
+| 3c | **Ownership + identity + scope** (AI Mode): 10 companies per query "acquired? by whom? trading under its own name? current name / legacy brand?" (`_pipeline/ownership.json`; unclear answers re-asked one by one), one-company identity checks for doubtful answers (`_pipeline/identity_check.json`), and a scope check, 10 per query: **core / adjacent / out** against the market definition and Step 0c's `core_scope` / `adjacent_segments` (`_pipeline/scope_check.json`). The product test: core only when the market's product IS the company's main product; offered as a module or add-on inside a different main product (another software category, a services / leasing / card / security business, a resold data feed, a reseller of another vendor's platform) = adjacent. Decisions go to `_pipeline/auto_review.json`: bought-and-absorbed companies, old names of rebranded companies listed twice, companies that do not exist and `out` companies are left out; **adjacent-segment companies stay in Other Noticeable Players but never go on the chart** (like-for-like quadrant; their slots refill from core companies). A company bought but still trading gets **"Name (acquired by Owner)"** for a deal under 3 years old, else **"Name (subsidiary of Owner)"**; a retired/divested brand is shown under its current name ("SLB (WesternGeco legacy)"). The analyst review always wins | `scripts/check_company_facts.py`, `pipeline/company_facts.py` |
 | 4 | **Quick X/Y scores** for every verified company: 2 AI Mode queries each, a Product Capability scorecard (all 5 X parameters, one line each) and a Business Capability scorecard (all 5 Y). X/Y = parameter means, Overall = (X+Y)/2. A parameter the answer skips is re-asked alone. Feeds long-tail bubbles | `scripts/score_overall_only.py` (sharded per slot); `ai_mode_scorer.build_axis_scorecard_query` / `parse_axis_scorecard` |
-| 4b | **Top 20 selection**: best 5 by Overall from EACH quadrant, split at the pool's median X and Y; a short quadrant's slots go to the best remaining | `quadrant_pipeline.select_top_by_quadrant` |
+| 4b | **Top 20 selection**: best 5 by Overall from EACH quadrant, split at the pool's median X and Y; a short quadrant's slots go to the best remaining. **Small market:** when fewer core companies than chart slots exist, every core company is charted and the strongest adjacent companies (by quick score) fill the rest (`_pipeline/chart_fill_adjacent.json`; VERIFY accepts exactly these) | `quadrant_pipeline.select_top_by_quadrant` |
 | 5 | **Deep evidence** for the Top 20 only: per-parameter score + evidence + "why" reasoning, gap-fill rounds | `prescore_verified.py`, `fill_missing_parameters.py`, `fill_missing_assessed_on.py` |
 | 6 | **Composite**: X/Y/Overall, cohort band 65–100, 5 per quadrant | `scripts/seed_from_full_evidence.py` |
-| 7 | **Tone**: desk-research wording, no hedges | `scripts/rewrite_assessed_on_tone.py` |
-| 8 | **Report**: HTML/JSON/CSV | `scripts/build_report_from_composite.py` → `quadrant/html_report.py` |
+| 7 | **Tone**: research-team voice ("We verified …", never "I"), no hedges; every gap written in the house sentence "Based on primary research, the company has not disclosed <what>." (never "not publicly reported / disclosed", "could not be found", "Desk research could not confirm"); citation leftovers removed | `scripts/rewrite_assessed_on_tone.py` → `scripts/primary_research_wording.to_primary` |
+| 7b | **Analyst review**: `_pipeline/analyst_review.json` `corrections` (exact find/replace in one company's evidence), `hq` (confirmed headquarters) and `ownership` (merged with the automatic owners) applied; `_pipeline/wording_review.json` rewrites; then the supporting-point tidy: absence-only bullets become "Not available", dropped beside a real finding, never repeated | `company_status.apply_corrections`, `apply_hq_corrections`, `apply_ownership_corrections`, `company_facts.tidy_evidence` |
+| 8 | **Report**: HTML/JSON/CSV. `<slug>_report.html` is the interactive design (quadrant.json embedded, rendered in the browser; template `quadrant/templates/quadrant_viewer.html`); the static page is kept as `<slug>_report_classic.html` for VERIFY and maintenance scripts | `scripts/build_report_from_composite.py` → `quadrant/html_report.py`, then `quadrant/viewer.py` |
+| 8a | **Chart fact-check** (every run, before 8b): status / owner / HQ / scope + every specific supporting point of each chart company in AI Mode; safe decisions applied as `_pipeline/factcheck_review.json`, then a re-run from saved work when they change (see "Chart fact-check") | `scripts/factcheck_chart.py`, `pipeline/factcheck.py` |
+| 8b | **PDF**: cover with key figures, contents with page numbers, each section on a new page, one company per page in Parameter Detail → `<slug>_report.pdf`; then the **Word copy** `<slug>_report.docx`, its text read from the same printed page (so it matches the PDF), chart as an image, contents refreshed by Word when installed | `scripts/export_report_pdf.py`, `scripts/export_report_docx.py` |
 | 9 | **Verify** | `verify()` in the orchestrator |
 
 ### Market analysis (Step 0c) and B2B/B2C
@@ -203,21 +293,57 @@ also writes up to 8 market-specific queries (`_generate_discovery_queries`).
 ### How verification works
 `chatgpt_expand.gpt_verify_market`: batches of 12 companies, prompt from
 `verify_criteria_prompt()` (required type from Step 0c; KEEP/DROP rules;
-"when unsure, DROP"; JSON `name, in_market, builds_or_owns, role,
-fits_criteria, confidence, reason`). `verify_should_keep()` keeps a company
-only if in market + builds/owns + confidence ≥ 70 + role not a
-channel/media role + role matches the required type (any of the four player
-types or the market's own categories). Unparseable or skipped answers = DROP.
+STATUS RULE; "when unsure, DROP"; JSON `name, in_market, builds_or_owns, role,
+fits_criteria, confidence, reason, operating_status, status_note`).
+`verify_should_keep()` keeps a company only if in market + builds/owns +
+confidence ≥ 70 + role not a channel/media role + role matches the required
+type (any of the four player types or the market's own categories), and
+`operating_status` must be `active` (fail closed: bankrupt, liquidated,
+absorbed by an acquirer or renamed out of the market = DROP). Unparseable or
+skipped answers = DROP.
+
+### Analyst review file (per market, data not code)
+When a reviewer finds a factual error in a finished report, record it in
+`<market>/_pipeline/analyst_review.json` and re-run the same command (cached,
+no new queries unless the chart changes):
+```json
+{"exclude": [{"company": "...", "reason": "...", "source": "..."}],
+ "corrections": [{"company": "...", "find": "exact text", "replace": "...", "reason": "...", "source": "..."}],
+ "hq": [{"company": "...", "headquarters": "City, Country", "source": "..."}],
+ "ownership": [{"company": "...", "owner": "...", "year": "...", "reason": "...", "source": "..."}],
+ "keep": [{"company": "...", "reason": "..."}],
+ "scope": [{"company": "...", "scope": "core|adjacent|out", "reason": "..."}],
+ "display": [{"company": "...", "current_name": "...", "source": "..."}]}
+```
+`scope` overrides the automatic scope check; `display` shows a company under
+the name it trades as today (`"current_name": ""` clears it).
+`keep` undoes an automatic exclusion from step 3c; an `ownership` entry
+replaces the automatic label for that company (`"owner": ""` removes it).
+`ownership` sets the confirmed owner on the company's verified rows; the
+Company column (HTML, PDF, JSON `company`, CSV) then reads
+"Name (acquired by Owner)". The brand and every internal lookup keep the plain
+name, and chart bubbles show the brand only.
+This is the only sanctioned way to fix one market's facts: it lives with that
+market's output, keeps an audit trail, and survives re-runs. Never edit the
+report HTML/JSON by hand.
 
 ### Country runs (`--country india`, `germany`, …)
 Any country other than `global` is a single-country run
 (`geo_rotation.is_single_country`). Every discovery round asks for companies
 **HEADQUARTERED IN <country>** (a foreign company's local office, plant,
 subsidiary or distributor does not qualify). When the broad rounds run dry it
-sweeps states (only countries with a list in `geo_rotation.STATES_BY_COUNTRY`,
-currently India), and never escalates to other regions or countries.
+sweeps states/regions (only countries with a list in `geo_rotation.STATES_BY_COUNTRY`:
+India and the United Kingdom), and never escalates to other regions or countries.
+`GEO_AREA_SHARD=k/N` gives each of N parallel discovery browsers its own share
+of those areas, so a 10-browser top-up sweeps different cities instead of
+repeating itself.
 Verification adds an **HQ RULE** and an `hq_in_country` field; a company is
-kept only if the answer is `true` (fail closed). Name the market without
+kept only if the answer is `true` (fail closed).
+Step 3c then asks AI Mode (10 companies per query, all browsers) where each
+company's OWN head office is (`_pipeline/hq_check.json`): a company run from
+abroad that only has a branch or office address in the country (e.g. a Dublin
+company with a UK office) is left out; a company headquartered in the country
+but owned by a foreign group stays (no answer = kept). Name the market without
 "Global" for a country run, e.g. `--market "Smart Ring Market" --country india`.
 
 ## 6. Tests
@@ -245,7 +371,8 @@ their `output/` folders were shared.
 |---|---|
 | Browser shows CAPTCHA grid | Raptor solves it; if not, solve by hand in the window. The run continues |
 | Quota page ("reached the request limit for AI responses") | **Automatic:** profile archived (`data/ai_mode_batch_<slot>_chromium_quota_<time>`), browser reopened on a fresh profile, query retried; up to `GOOGLE_AI_MODE_MAX_RESETS` (3) per query with a growing wait (`GOOGLE_AI_MODE_QUOTA_COOLOFF` × 1, 2, 3). Then the query fails and the step's own retry/gap-fill picks it up later |
-| "Something went wrong, and an AI response wasn't generated" | **Automatic, escalating:** 1st reword · 2nd in a row clear cookies + relaunch · 3rd in a row full profile reset + fresh browser (`…_noanswer_<time>`) |
+| "Something went wrong and the content wasn't generated" / "…an AI response wasn't generated" | **Automatic:** matched anywhere on the page (the echoed prompt makes it long); 1st and 2nd time in a query clear cookies + relaunch the browser, 3rd time full profile reset + fresh browser (`…_noanswer_<time>`); the query is re-issued each time without costing a retry |
+| "Verifying your request … Continue" page | **Automatic:** Google's interstitial when many browsers share one IP (not a reCAPTCHA, so Raptor does nothing). The session is treated as flagged: 1st and 2nd time in a query, cookies are cleared and the browser relaunched; 3rd time, a full profile reset (old profile archived as `…_verify_<time>`). The query is re-issued each time without costing a retry. Frequent = too many browsers on one IP: raise `GOOGLE_AI_MODE_QUERY_DELAY` or use fewer slots |
 | Browser crashed / closed | **Automatic:** browser reopened on the same profile, query retried |
 | Unusual-traffic `/sorry/` block | Google rate block (not solvable). Raise `GOOGLE_AI_MODE_QUERY_DELAY`, use fewer `--slots`/workers, wait. 5+ CAPTCHAs in a run also trigger a profile reset |
 | `data/` growing large | every reset archives the old profile folder (renamed, not deleted). Old `data/ai_mode_batch_*_quota_*`, `*_captchas_*`, `*_noanswer_*`, `*_reset_*` folders can be deleted when no run is active |
