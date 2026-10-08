@@ -8,10 +8,42 @@ Turn one natural-language market question into a **validated company list**, **p
 
 ---
 
+## Set up on another machine
+
+GitHub holds the code only. The local files (`.env`, every market's reports in
+`output/`, the run launchers in `logs/`, seed lists and caches) are kept in a
+separate zip, `Coherent-Quadrant_local_files_<date>.zip`, made from the old
+machine and copied across by hand.
+
+To use it on the other machine:
+
+1. Clone the repo from GitHub (`main`):
+   ```bat
+   git clone https://github.com/amankumar-coherent/Coherent-Quadrant.git
+   ```
+2. Run `setup.bat` inside the cloned folder.
+3. Unzip the local-files zip into the cloned folder, merging folders (keep the
+   folder structure).
+
+Then any market resumes from its saved files when you re-run the same command,
+e.g. `.venv\Scripts\python.exe scripts\run_quadrant_pipeline.py --market "..." --country global`.
+
+- The zip contains `.env` with the API key: keep it private, never upload it.
+- Browser profiles (`data/ai_mode_*`) are not in the zip. They hold Google login
+  cookies, and fresh ones are created on the first run.
+- Before working with Claude Code, read [CLAUDE.md](CLAUDE.md),
+  [HANDOVER_CHAT_HISTORY.md](HANDOVER_CHAT_HISTORY.md) and
+  [PIPELINE_CHATGPT_EXPAND.md](PIPELINE_CHATGPT_EXPAND.md).
+
+---
+
 ## Documentation map
 
 | Document | Purpose |
 |----------|---------|
+| **[CLAUDE.md](CLAUDE.md)** | **Current pipeline** (`run_quadrant_pipeline.py`): setup, the owner's rules, one-command runs, VERIFY |
+| **[PIPELINE_CHATGPT_EXPAND.md](PIPELINE_CHATGPT_EXPAND.md)** | Full reference of the current pipeline: every step, file, review layer, env var and script |
+| **[HANDOVER_CHAT_HISTORY.md](HANDOVER_CHAT_HISTORY.md)** | History of the work, the owner's preferences, the state of every market, open items |
 | **[PLANNING_HLD_LLD.md](PLANNING_HLD_LLD.md)** | **Master plan** — scope, phases 1–5, requirements R0–R3, **detailed implementation status**, architecture |
 | **[src/vendor_intel/quadrant/ARCHITECTURE.md](src/vendor_intel/quadrant/ARCHITECTURE.md)** | **Coherent Quadrant agent** — scoring, relative placement, X/Y math, JSON contract, frontend wiring |
 | **[PROJECT_HANDOFF.md](PROJECT_HANDOFF.md)** | Handoff — Phase 1 JSON field guide, fixes log, next steps |
