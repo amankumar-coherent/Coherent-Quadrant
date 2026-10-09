@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only one product (Seer Home System) is mentioned, and it is not yet commercially available."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Research publications indicate focus on epilepsy, but no clinical trial results or safety data are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Develops home-based video-EEG-ECG monitoring, combining devices, cloud computing, and computer science; aims to shift monitoring from hospital to home."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Holds registered trademarks in Australia, but no FDA/CE clearance or other regulatory approvals are mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence only in Australia; no evidence of global reach or channel partnerships."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Attracted interest from significant investors like Cochlear, Mayo Clinic, and Breakthrough Victoria, but product not commercially available and company in administration."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 1,
+      "grounding": "supported",
+      "why": "Company placed in voluntary administration, indicating financial distress."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Focus on epilepsy and other paroxysmal disorders; next generation model for EEG/ECG monitoring in development."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Attracted interest from Cochlear, Mayo Clinic, and Breakthrough Victoria; seeking partner to restructure; plans to take service global."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

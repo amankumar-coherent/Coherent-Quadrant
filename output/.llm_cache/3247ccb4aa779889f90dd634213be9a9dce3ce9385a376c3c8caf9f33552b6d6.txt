@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Synaptics is a fabless semiconductor company and does not own or announce advanced process nodes; it relies on foundry partners, with no specific node details in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Synaptics does not lead in specific process technologies like FinFET or GAA; as a fabless company, it depends on foundry processes, and the knowledge base lacks details on process technology leadership.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "Synaptics' roadmap focuses on edge AI and IoT processors, but specific next-generation node plans are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Synaptics offers a broad portfolio across wireless connectivity, compute/processing, display/interface, and touch/biometric, but is specialized in human interface and IoT rather than covering memory, analog, or power.",
+      "evidence_urls": ["https://www.synaptics.com/products/wireless-connectivity", "https://www.synaptics.com/products/compute-processing", "https://www.synaptics.com/products/display-interface", "https://www.synaptics.com/products/touch-biometrics"],
+      "evidence_snippets": ["Wireless Connectivity", "Compute & Processing", "Display & Interface", "Touch & Biometric"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type, but Synaptics is known for human interface and connectivity, indicating a less diversified portfolio compared to broad-line semiconductor companies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Synaptics is fabless and likely partners with OSAT providers, but the knowledge base does not mention any OSAT services or specific partnerships.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Synaptics owns proprietary IP in touch, display, and biometrics, and has developed the Astra embedded processor platform with integrated NPUs for AI, as evidenced by its product portfolio and partnerships.",
+      "evidence_urls": ["https://www.synaptics.com/products/embedded-processors"],
+      "evidence_snippets": ["Astra Embedded Processors", "High-Performance AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Synaptics uses a mix of proprietary and third-party IP; it partners with ARM for its IoT processors, as indicated by the ARM quote, and also licenses its own IP in touch and display.",
+      "evidence_urls": ["https://www.synaptics.com/company/partnerships"],
+      "evidence_snippets": ["Arm technology has powered multiple generations of Synaptics AI-enabled IoT solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Synaptics is strong in edge AI and IoT with its Astra platform and NPU integration, and has partnerships for AI at the edge, but is less prominent in 5G or automotive compared to dedicated players.",
+      "evidence_urls": ["https://www.synaptics.com/products/embedded-processors", "https://www.synaptics.com/applications/automotive"],
+      "evidence_snippets": ["High-Performance AI", "Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "As a fabless company, Synaptics does not own wafer fabrication capacity; the knowledge base provides no data on wafers per month or utilization.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not disclosed, and as a fabless company, yields depend on foundry partners; no comparison to industry benchmarks is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "The knowledge base does not mention advanced packaging capabilities; Synaptics likely relies on OSAT partners for packaging, but no specific details are provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific quality certifications like ISO 9001 or IATF 16949, but as a semiconductor supplier, Synaptics likely holds standard certifications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate and reliability processes are not detailed in the knowledge base, but Synaptics serves critical applications like automotive, implying robust reliability measures.",
+      "evidence_urls": ["https://www.synaptics.com/applications/automotive"],
+      "evidence_snippets": ["Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Compliance with RoHS, REACH, and conflict minerals is not mentioned in the knowledge base, but it is standard for semiconductor companies to comply with these regulations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Synaptics has a global presence with headquarters in San Jose, California, and significant operations in Asia, as indicated by the company description and multilingual website.",
+      "evidence_urls": ["https://www.synaptics.com"],
+      "evidence_snippets": ["San Jose, California, USA", "United States; Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Synaptics serves multiple end-markets including PC, automotive, smart security, mobile, and audio, as shown in its applications section, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://www.synaptics.com/applications/notebook-pcs", "https://www.synaptics.com/applications/automotive", "https://www.synaptics.com/applications/smart-security", "https://www.synaptics.com/applications/smartphones", "https://www.synaptics.com/applications/digital-headsets"],
+      "evidence_snippets": ["PC Notebooks/Laptops", "Automotive", "Smart Security", "Smartphones", "Audio"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Synaptics' presence in both the US and Asia provides some geographic diversification, but the knowledge base does not detail how this mitigates regional risks.",
+      "evidence_urls": ["https://www.synaptics.com"],
+      "evidence_snippets": ["United States; Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The knowledge base mentions 470+ OEMs but does not identify top customers or concentration risk; Synaptics likely has a diversified customer base given its broad applications.",
+      "evidence_urls": ["https://www.synaptics.com"],
+      "evidence_snippets": ["470+ OEMs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Synaptics has strategic partnerships with ARM, AMPAK, LGU+, embedUR, and Google Research, as evidenced by quotes and news, indicating strong ecosystem collaboration.",
+      "evidence_urls": ["https://www.synaptics.com/company/partnerships", "https://www.synaptics.com/company/news/google-research-and-synaptics-partner-to-showcase-immersive-edge-ai-experiences-powered-by-the-coralboard-at-google-io-2026"],
+      "evidence_snippets": ["Arm technology has powered multiple generations of Synaptics AI-enabled IoT solutions", "Google Research and Synaptics partner to showcase immersive edge AI experiences"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Synaptics collaborates with ecosystem players like ARM, AMPAK, and embedUR to deliver integrated solutions, as shown in partnership quotes and the Astra platform ecosystem.",
+      "evidence_urls": ["https://www.synaptics.com/company/partnerships"],
+      "evidence_snippets": ["We have had great success with Synaptics' best-in-class connectivity modules", "embedUR is excited to partner with Synaptics on the Astra platform"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial data such as revenue, net income, and free cash flow are not provided in the knowledge base; Synaptics is a public company but specifics are unavailable.",
+      "evidence_urls": ["https://investor.synaptics.com/"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available in the knowledge base; as a fabless company, Synaptics likely has lower CapEx than integrated device manufacturers, but no figures are provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not in the knowledge base; Synaptics' financial health is not assessable from the provided information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Synaptics' roadmap includes the Astra platform for edge AI, new AI MCUs like SRW1500, and partnerships for physical AI, as evidenced by recent news and product announcements.",
+      "evidence_urls": ["https://www.synaptics.com/company/blog/powering-edge-ai-at-scale-synaptics-srw1500-single-chip-ai-mcu", "https://www.synaptics.com/products/embedded-processors"],
+      "evidence_snippets": ["Powering Edge AI at Scale SRW1500 Series Single-Chip AI MCU", "Astra Embedded Processors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Synaptics has a clear roadmap for AI chips, particularly edge AI and physical AI, as shown by its Astra platform and recent AI MCU launches, but not for quantum or advanced memory.",
+      "evidence_urls": ["https://www.synaptics.com/company/blog/powering-edge-ai-at-scale-synaptics-srw1500-single-chip-ai-mcu", "https://www.synaptics.com/applications/physical-ai"],
+      "evidence_snippets": ["Powering Edge AI at Scale", "Physical AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Synaptics' roadmap aligns with industry trends toward edge AI and IoT, as evidenced by its Astra platform and partnerships with Google and ARM, addressing customer demands for AI at the edge.",
+      "evidence_urls": ["https://www.synaptics.com/company/news/google-research-and-synaptics-partner-to-showcase-immersive-edge-ai-experiences-powered-by-the-coralboard-at-google-io-2026"],
+      "evidence_snippets": ["Google Research and Synaptics partner to showcase immersive edge AI experiences"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "As a fabless company, Synaptics does not build fabs; the knowledge base contains no announcements of capacity expansion projects.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not provided in the knowledge base; Synaptics is investing in edge AI, but specific growth figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "The knowledge base does not detail funding or execution plans for capacity expansion; as a fabless company, Synaptics likely relies on foundry partners, but specifics are absent.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "EnSilica does not disclose specific process nodes, but as a fabless ASIC designer it likely accesses advanced nodes through partners, though not leading-edge like 3nm or 2nm.",
+      "evidence_urls": ["https://www.ensilica.com/turnkey-asic/"],
+      "evidence_snippets": ["Turnkey ASICs Complex Mixed-Signal and RF"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "EnSilica specializes in mixed-signal and RF, but there is no evidence of leadership in specific process technologies like FinFET or GAA.",
+      "evidence_urls": ["https://www.ensilica.com/"],
+      "evidence_snippets": ["European fabless semiconductor company specialising in complex mixed-signal & RF chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No public roadmap for next-generation nodes is available; as a fabless designer, EnSilica likely follows foundry roadmaps.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "EnSilica offers ASIC and ASSP products across mixed-signal, RF, and digital, but is specialized rather than broad across logic, memory, and power.",
+      "evidence_urls": ["https://www.ensilica.com/turnkey-asic/", "https://www.ensilica.com/application-specific-product/"],
+      "evidence_snippets": ["Turnkey ASICs Complex Mixed-Signal and RF", "Products (ASSP)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "No revenue split by product type is disclosed; the company is primarily an ASIC design services provider.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "EnSilica offers manufacturing services and partners with supply chain, but does not provide OSAT services directly.",
+      "evidence_urls": ["https://www.ensilica.com/manufacturing-services/", "https://www.ensilica.com/partners/"],
+      "evidence_snippets": ["Manufacturing Services", "Development & Supply Chain Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "EnSilica has silicon-proven IP portfolio, but specific IP types like CPU or GPU are not detailed.",
+      "evidence_urls": ["https://www.ensilica.com/silicon-ip/"],
+      "evidence_snippets": ["Silicon-Proven IP Portfolio"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "EnSilica likely uses third-party IP and also licenses its own, but no explicit licensing model is stated.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "EnSilica has expertise in communications and automotive, including 5G NTN and ASIL-D, but not a leader in AI accelerators.",
+      "evidence_urls": ["https://www.ensilica.com/case-study/asil-d-automotive-chassis-controller-asic/", "https://www.ensilica.com/news-and-insight/why-communications-systems-are-migrating-to-asic-architectures-2/"],
+      "evidence_snippets": ["ASIL-D automotive chassis controller ASIC", "low-power 5G NTN modems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "EnSilica is fabless and does not own wafer fabrication capacity; no wafers per month data available.",
+      "evidence_urls": ["https://www.ensilica.com/manufacturing-services/"],
+      "evidence_snippets": ["Manufacturing Services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No yield data is disclosed; as a fabless company, yields depend on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No mention of advanced packaging capabilities; likely relies on partners for packaging.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "EnSilica mentions ISO standards compliance and quality management system, but specific certifications like ISO 9001 or IATF 16949 are not listed.",
+      "evidence_urls": ["https://www.ensilica.com/quality-sustainability/"],
+      "evidence_snippets": ["certified quality management system", "rigorous ISO standards"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No defect rate or DPPM data is provided; reliability is implied through standards like ISO 26262.",
+      "evidence_urls": ["https://www.ensilica.com/quality-sustainability/"],
+      "evidence_snippets": ["functional safety and cybersecurity as core elements"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "EnSilica has environmental and quality policies, but no specific RoHS/REACH or conflict minerals details.",
+      "evidence_urls": ["https://www.ensilica.com/wp-content/uploads/2026/02/Environmental-Policy_UPDATE-OCT2025.pdf"],
+      "evidence_snippets": ["Environmental Policy"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "EnSilica is UK-based with design locations worldwide, but specific regions are not detailed.",
+      "evidence_urls": ["https://www.ensilica.com/locations/"],
+      "evidence_snippets": ["Design Locations"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary markets are automotive, industrial, and communications, with healthcare also mentioned; revenue contribution not disclosed.",
+      "evidence_urls": ["https://www.ensilica.com/automotive/", "https://www.ensilica.com/industrial-asic/", "https://www.ensilica.com/communications/"],
+      "evidence_snippets": ["automotive, industrial and communications markets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification is not well documented; as a UK company, it may have some exposure to regional risks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "No customer names or concentration data are provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "EnSilica lists development and supply chain partners, and innovation partners, but specific names are not given.",
+      "evidence_urls": ["https://www.ensilica.com/partners/", "https://www.ensilica.com/innovation-partners/"],
+      "evidence_snippets": ["Development & Supply Chain Partners", "Innovation Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "EnSilica collaborates with foundries and supply chain partners for end-to-end ASIC services, but details are limited.",
+      "evidence_urls": ["https://www.ensilica.com/partners/"],
+      "evidence_snippets": ["Strong Supply Chain and Foundry Partnerships"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No financial data is available in the knowledge base; EnSilica is a public company but figures are not provided.",
+      "evidence_urls": ["https://www.ensilica.com/investors/"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 2,
+      "answer": "No CapEx data is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No balance sheet information is provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No explicit technology roadmap is published, but recent case studies show focus on automotive and communications.",
+      "evidence_urls": ["https://www.ensilica.com/case-studies/"],
+      "evidence_snippets": ["ASIL-D automotive chassis controller ASIC", "Sensor interface cryptographic Bridge ASIC"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "EnSilica is involved in 5G NTN and edge AI, but no roadmap for quantum or advanced memory.",
+      "evidence_urls": ["https://www.ensilica.com/news-and-insight/why-communications-systems-are-migrating-to-asic-architectures-2/"],
+      "evidence_snippets": ["low-power 5G NTN modems"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "EnSilica's focus on communications and automotive aligns with industry trends toward ASIC adoption.",
+      "evidence_urls": ["https://www.ensilica.com/news-and-insight/why-communications-systems-are-migrating-to-asic-architectures-2/"],
+      "evidence_snippets": ["Why Communications Systems Are Migrating to ASIC Architectures"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No fab expansion projects are announced; EnSilica is fabless.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No revenue growth data is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No funding or expansion plans are disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

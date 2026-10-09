@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 products mentioned; only biosimilar plans noted."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 therapeutic coverage evidenced; specialty portfolio focuses on other areas."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No clinical R&D for GLP-1 evidenced; only biosimilar plans."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "STADA is a major generics manufacturer in Europe, but no GLP-1 manufacturing evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions quality at STADA and biosimilar conference participation, but no GLP-1 regulatory evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "STADA has global presence, but no GLP-1 market access evidenced."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "STADA is a known generics player, but no GLP-1 brand reputation."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No specific financials for GLP-1; company is established but not GLP-1 focused."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Only 'GLP-1 RA biosimilar plans' mentioned, no pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "STADA engages in partnerships for specialty pipeline, but no GLP-1 specific partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

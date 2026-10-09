@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "DET operates four LNG terminals in Germany (Wilhelmshaven, Brunsbüttel, Stade, and another), all FSRU-based, as per offshore-energy.biz and Wikipedia."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions regasification capacity of up to 750 MMSCFD for one FSRU (Höegh Gannet) and commercial operations at Wilhelmshaven, but no aggregate throughput figures."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence indicates terminals are operational (e.g., second terminal started commercial operations Aug 2025), but no detailed reliability metrics."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "As a state-owned operator under the Federal Ministry for Economic Affairs and Climate Action, it must comply with German regulations; no specific safety incidents or certifications cited."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions plans for green ammonia and hydrogen at Lubmin (Reuters) and Stade terminal designed for future hydrogen, but no concrete CCS or emission reduction targets."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "supported",
+      "why": "All terminals are in Germany (Wilhelmshaven, Brunsbüttel, Stade, Lubmin), no international presence or multi-continent reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions RWE handing over infrastructure and cooperation with Gasunie and RWE, but no specific long-term offtake agreements or customer names."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, profit, etc.) provided in evidence."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence indicates ongoing expansion: third FSRU arrived, fourth terminal commissioning planned for September, and Stade terminal under development (though potential collapse noted)."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Partnerships with RWE, Gasunie, Höegh, and Lubmin ReGas are mentioned; also collaboration with Gascade for hydrogen link."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

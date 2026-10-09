@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website lists 'LNG 터미널/연계사업' (LNG terminal/linked business) and '가스전사업' (gas field business), indicating some LNG assets, but no details on scale or number of projects."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on throughput or operational efficiency metrics; only mentions '에너지사업운영그룹' (energy business operations group) in a job description."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific data on asset reliability or performance; only general mention of '안전보건경영' (safety and health management) in sustainability section."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website highlights '0 건 중대산업재해 (2022~)' (zero major industrial accidents since 2022) and has sections for '안전보건경영' and '컴플라이언스' (compliance), indicating commitment."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Declares 'NET ZERO 2050 탄소중립 선언' (Net Zero 2050 carbon neutrality declaration) and has '친환경/저탄소 에너지사업' (eco-friendly/low-carbon energy business) section."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Global network page exists, and news mentions Brazil, Indonesia, and US operations, but no specific LNG corridors or multi-continent LNG presence detailed."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of specific LNG offtake agreements or customer contracts; only general mention of 'LNG trading' in specialty."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "News mentions successful issuance of $500 million global bond with 4x oversubscription, indicating financial strength, but no revenue or profit figures."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "News mentions investments in rare earth and palm oil, but no specific LNG growth projects; only 'LNG 터미널/연계사업' as a business area."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "News shows partnerships with LG CNS, Brazilian rare earth company, and US ReElement, but none specifically in LNG; general business expansion evident."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

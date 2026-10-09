@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "Rittal does not offer compute options such as CPUs, GPUs, or custom accelerators; they focus on enclosures, power distribution, and cooling.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "Rittal does not produce accelerators, so performance per watt is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "Rittal does not offer compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 1,
+      "answer": "Rittal does not provide networking solutions like Ethernet or InfiniBand; they focus on physical infrastructure.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "Rittal does not offer interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "Rittal does not produce networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Rittal offers efficient cooling solutions like Blue e+ that reduce energy consumption, but does not provide full data center designs or PUE metrics.",
+      "evidence_urls": ["https://www.rittal.com/com-en/products/Innovations/filterfan"],
+      "evidence_snippets": ["The 40% greater air throughput of the Blue e+ fan-and-filter unit with pleated filter – compared to a chopped-fibre filter – is unrivalled by any other unit on the market."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 8,
+      "answer": "Rittal offers advanced liquid cooling solutions, including chillers and rack-based cooling, for high-density applications.",
+      "evidence_urls": ["https://www.rittal.com/com-en/products/Innovations/filterfan"],
+      "evidence_snippets": ["VX25 TopTherm chillers are compact in design yet have a wide range of cooling applications."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Rittal's Blue e+ technology is highlighted as the world's most energy-efficient climate control, reducing energy consumption in operations.",
+      "evidence_urls": ["https://www.rittal.com/com-en/products/Innovations/filterfan"],
+      "evidence_snippets": ["Discover the world's most efficient climate control solutions and smart service concepts to help reduce the carbon footprint of your machines and systems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Rittal offers software solutions for panel building and switchgear manufacturing, but not for managing data center resources.",
+      "evidence_urls": ["https://www.rittal.com/com-en/products/Innovations/filterfan"],
+      "evidence_snippets": ["Looking for an integrated software system for panel building and switchgear manufacturing?"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 1,
+      "answer": "Rittal's software is not for data center orchestration, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 1,
+      "answer": "Rittal's software focuses on engineering and manufacturing processes, not on provisioning or scaling workloads.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "Rittal does not offer specialized hardware or software for AI workloads.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 1,
+      "answer": "Rittal does not provide AI-specific optimizations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "Rittal does not offer tools for AI workload profiling.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 1,
+      "answer": "Rittal does not operate data centers; they provide infrastructure for data centers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 1,
+      "answer": "Rittal does not have data centers, so geographic distribution is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 1,
+      "answer": "Rittal does not plan data center expansions as they are not a data center operator.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Rittal has partnerships with companies like PULS and serves industrial customers, but no evidence of hyperscaler partnerships.",
+      "evidence_urls": ["https://www.rittal.com/com-en/Company/Presse/Pressemeldungen/PI_PULS_Partner"],
+      "evidence_snippets": ["Rittal and PULS enter into a technology partnership"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 1,
+      "answer": "Rittal does not disclose revenue split between enterprise and hyperscaler customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Rittal has case studies with companies like GSI Helmholtzzentrum and Engineering Specialists, but not specifically Fortune 500.",
+      "evidence_urls": ["https://www.rittal.com/com-en/Solutions/Referenzen/GSI"],
+      "evidence_snippets": ["Liquid cooling with Rittal"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 1,
+      "answer": "Rittal does not disclose revenue from data center products and services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 1,
+      "answer": "Rittal does not disclose gross margins for a data center segment.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 1,
+      "answer": "Rittal does not report revenue growth specifically for the data center market.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 1,
+      "answer": "Rittal does not have a market share in the data center systems market as they are not a systems provider.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 1,
+      "answer": "Rittal's growth rate is not comparable to the data center market as they are not a direct participant.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 1,
+      "answer": "Rittal is not gaining or losing share in AI servers or storage as they do not offer these products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Rittal has formed partnerships like with PULS for power supplies, but not with major tech providers like NVIDIA or Intel.",
+      "evidence_urls": ["https://www.rittal.com/com-en/Company/Presse/Pressemeldungen/PI_PULS_Partner"],
+      "evidence_snippets": ["Rittal and PULS enter into a technology partnership"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 1,
+      "answer": "No recent acquisitions by Rittal to strengthen data center capabilities are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Rittal has a technology partnership with PULS for power supplies, which is a co-development agreement for data center components.",
+      "evidence_urls": ["https://www.rittal.com/com-en/Company/Presse/Pressemeldungen/PI_PULS_Partner"],
+      "evidence_snippets": ["Rittal and PULS enter into a technology partnership"],
+      "grounding": "partial"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only FlowSense, a single product for shunt monitoring; no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FlowSense is in clinical trials and has FDA Breakthrough Device Designation, but no published clinical outcomes or safety data in evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FlowSense is described as a novel noninvasive wireless wearable sensor; company has publications in npj Digital Medicine and received NIH grant and MedTech Innovator award."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; company is clinical-stage with small team."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Received FDA Breakthrough Device Designation in 2020; currently investigational device limited to investigational use, indicating ongoing regulatory process."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "HQ in Evanston, IL; no evidence of global market presence or distribution channels; sites of care listed as in-hospital, ambulatory, in-home but no specific locations."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Won MedTech Innovator 2020 Global Competition and has partnerships/collaborators mentioned, but no evidence of widespread clinical adoption or brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Estimated revenue $9.5M ARR and valuation $28.5M per one source, but conflicting info (bootstrapped vs VC-backed) and no official financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FlowSense described as platform technology for fluid flow assessment throughout body, but no specific pipeline products or indication expansion beyond hydrocephalus."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Mentions partners and collaborators, NIH grant, Cisco Global Problem Solver Prize, and MedTech Innovator win; indicates business development activities."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

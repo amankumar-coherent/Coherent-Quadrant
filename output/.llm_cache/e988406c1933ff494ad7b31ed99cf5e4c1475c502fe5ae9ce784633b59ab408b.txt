@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 products listed; evidence focuses on oncology, rare disease, neuroscience."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 therapeutic coverage mentioned; company focuses on other areas."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Pipeline mentions acquisitions and clinical trials but no GLP-1 specific R&D."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 manufacturing or supply capabilities."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 regulatory approvals or quality compliance evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Global presence with many countries listed, but no GLP-1 market access evidence."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 brand reputation or HCP recognition mentioned."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "H1 2026 sales growth 23.5%, but no GLP-1 specific financials."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Pipeline focuses on other therapeutic areas; no GLP-1 indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Acquisitions and partnerships mentioned, but none related to GLP-1."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

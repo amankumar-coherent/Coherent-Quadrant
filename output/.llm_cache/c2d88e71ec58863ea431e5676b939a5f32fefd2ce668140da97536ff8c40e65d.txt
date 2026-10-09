@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions insulin and potential GLP-1 receptor agonist products, but no specific GLP-1 brand or molecule is named."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Focus on diabetes with insulin and potential GLP-1, but no evidence of differentiation or specific therapeutic advantages."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No clinical trial data or pipeline details provided; only 'potential' GLP-1 products mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or supply chain."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence only in China; no evidence of global reach."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Known as a Chinese diabetes-focused company, but no evidence of strong brand recognition or HCP reputation."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Potential GLP-1 products mentioned, but no specific pipeline or indication roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a product cooperation with Fosun Pharma, indicating some partnership activity."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

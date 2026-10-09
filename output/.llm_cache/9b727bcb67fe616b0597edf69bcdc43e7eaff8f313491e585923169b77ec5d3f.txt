@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "CP2 LNG is a planned project with no operating trains, so nameplate capacity is zero.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["CP2 LNG export project on the US Gulf Coast. | US LNG liquefaction development | Liquefied Natural Gas | CP2 LNG | USA (planned, Louisiana)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "No operating facilities, so utilization rate is not applicable.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["CP2 LNG | USA (planned, Louisiana)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "No trains in operation; project is planned.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["CP2 LNG | USA (planned, Louisiana)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "No specific feedstock strategy disclosed in KB; typical for Gulf Coast projects to use local gas.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["CP2 LNG export project on the US Gulf Coast."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "No data on feedstock contract mix; likely similar to industry norms.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "No data on feedstock diversification; Gulf Coast projects typically have access to multiple basins.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["US Gulf Coast"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 2,
+      "answer": "No operating trains, so on-stream factor is zero.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned, Louisiana"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 2,
+      "answer": "No operating history, so no outages or force majeure events.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 2,
+      "answer": "No operating assets, so no maintenance track record.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "No operating assets, so no TRIR reported.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No regulatory fines reported; project is in development phase.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "No certifications listed; likely to be obtained upon operation.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No carbon intensity data; as a new project, may aim for lower intensity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No specific emission reduction measures disclosed; industry trends include electrification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No sustainability report found; likely to publish once operational.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "No contracted volumes disclosed; project is in development.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "No contract duration data; typical for long-term contracts.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "No spot sales data; likely minimal until operational.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "No export destinations disclosed; likely global market.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No customer concentration data.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No portfolio details; likely to target multiple markets.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "No revenue or EBITDA as project is not operational.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "No financial ratios available; project financing likely.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No cash flow data; likely to have project financing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No capacity under construction; project is planned.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No timeline disclosed; typical for planned projects.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No expansion projects mentioned; likely early stage.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No market share as project is not producing.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["planned"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No JV partners disclosed; Venture Global is the developer.",
+      "evidence_urls": ["https://ventureglobal.com"],
+      "evidence_snippets": ["Venture Global’s CP2 LNG"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No comparison data; as a new entrant, cost position unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

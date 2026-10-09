@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Osaka Gas is a major LNG buyer with stakes in overseas projects, but evidence does not detail the number or scale of assets."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on operational throughput or efficiency metrics."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on reliability or asset performance."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on safety or regulatory compliance."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company includes 'Electricity and renewables' in its business categories, indicating some transition focus."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows LNG procurement from Middle East (ADNOC) and presence in Japan, but no multi-continent reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Signed long-term agreement with ADNOC for up to 0.8 mtpa from Ruwais LNG, enhancing procurement stability."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Secured LNG offtake from Ruwais LNG starting 2028, indicating growth in supply portfolio."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Long-term partnership with ADNOC for LNG supply; also has stakes in overseas projects."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

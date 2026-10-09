@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions SanketLife (12-lead ECG) and Agatsa One platform connecting to ECG, BP, metabolic, and wellness devices, but portfolio appears narrow (mainly ECG-focused)."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "SanketLife is described as 'clinically validated with 98% accuracy' and '99% accurate' in ETHealthworld, and used by doctors and heart patients in India."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Agatsa claims 'world's first pocket 12-Lead ECG device' and 'world's smallest 12-Lead ECG device' (SanketLife), indicating strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions 'Manufacturer of portable electrocardiogram devices' and CDSCO certification, but no detailed manufacturing or quality system evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Agatsa One is 'CDSCO certified' and the company is involved in 'Regulation of Drugs and Medical Devices' per website, indicating regulatory compliance in India."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence is India only; evidence mentions use in India and remote patient monitoring for doctors, but no global market reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Used by doctors and heart patients in India, with 2.1 Lac+ users on Agatsa One, indicating moderate adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Revenue from operations for FY 2022-23 was Rs. 6.15 crore (approx. $0.8M) per Sun Pharma filing; raised $10M in funding."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Agatsa One expands into metabolic health, BP, and wellness monitoring, but no explicit pipeline for new indications beyond cardiac."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Sun Pharma acquired stakes in Agatsa (23.47% equity method) and industry veterans invested INR 125 mn, indicating strong partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

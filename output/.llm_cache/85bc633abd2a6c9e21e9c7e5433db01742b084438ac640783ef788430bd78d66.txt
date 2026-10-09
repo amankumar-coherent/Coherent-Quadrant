@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence describes a single product: a wearable continuous glucose monitoring device with sensor, transmitter, and applicator. No other products mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Claims 'accurate monitoring' and 'improve health outcomes by maximizing Time in Range' but no clinical trial data or peer-reviewed evidence provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Described as 'painless patch' with 'multiple microneedles' and 'precision sensor' indicating innovative technology; founded by researchers and presented at LSI USA '24."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; only product components mentioned."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or any regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Headquartered in Goleta, CA, USA; no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Small company with 920 LinkedIn followers; no evidence of hospital adoption or key opinion leader endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Series A funding mentioned but no revenue or financial metrics disclosed."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Focus on Type I diabetes; no evidence of pipeline for other indications or product line extensions."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presented at LSI USA '24 and participating in Diabetes Technology Meeting, indicating networking but no formal partnerships or collaborations mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

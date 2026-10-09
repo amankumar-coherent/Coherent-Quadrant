@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Teradyne is a test equipment provider, not a semiconductor manufacturer, so it does not offer process nodes; its relevance is in testing advanced nodes.",
+      "evidence_urls": ["https://www.teradyne.com/semiconductor-testing/"],
+      "evidence_snippets": ["Semiconductor Test"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Teradyne does not fabricate chips, so it does not lead in process technologies like FinFET or GAA; its role is testing such devices.",
+      "evidence_urls": ["https://www.teradyne.com/semiconductor-testing/"],
+      "evidence_snippets": ["Semiconductor Test"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Teradyne's roadmap focuses on test solutions for advanced nodes rather than manufacturing nodes, so it has no node production timeline.",
+      "evidence_urls": ["https://www.teradyne.com/semiconductor-testing/"],
+      "evidence_snippets": ["Semiconductor Test"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Teradyne offers test products across multiple semiconductor categories including digital, memory, analog, power, and wireless, demonstrating broad portfolio breadth.",
+      "evidence_urls": ["https://www.teradyne.com/products/", "https://www.teradyne.com/application-pages/memory/"],
+      "evidence_snippets": ["Digital/Mixed Signal Test", "Memory Test", "Precision Power & Analog Test"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type, but Teradyne's portfolio spans multiple categories, indicating diversification.",
+      "evidence_urls": ["https://www.teradyne.com/products/"],
+      "evidence_snippets": ["Digital/Mixed Signal Test", "Memory Test", "Precision Power & Analog Test"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Teradyne partners with OSAT providers and offers test solutions used in OSAT environments, though it does not provide OSAT services itself.",
+      "evidence_urls": ["https://www.teradyne.com/semiconductor-testing/"],
+      "evidence_snippets": ["Semiconductor Test"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Teradyne owns test-related IP and architectures, but not CPU/GPU/AI accelerator IP; its differentiation lies in test technology.",
+      "evidence_urls": ["https://www.teradyne.com/products/"],
+      "evidence_snippets": ["UltraFLEX", "Magnum EPIC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Teradyne primarily develops its own test IP and does not license CPU/GPU IP; it may use third-party IP in its systems.",
+      "evidence_urls": ["https://www.teradyne.com/products/"],
+      "evidence_snippets": ["UltraFLEX", "Magnum EPIC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Teradyne's architecture is strong in high-growth areas like AI and 5G through its test solutions for advanced devices, as evidenced by its UltraFLEXplus for AI/data center devices.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["Teradyne Introduces Integrated Test Solution for AI and Data Center Devices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Teradyne does not operate wafer fabs, so it has no wafer fabrication capacity or utilization rate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Teradyne does not manufacture wafers, so yield rate comparisons are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Teradyne provides test solutions for advanced packaging like 2.5D/3D, as seen in its collaboration with Tokyo Electron for known good device screening, but does not offer packaging services.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["Teradyne’s UltraFLEXplus platform paired with Tokyo Electron’s probing technology delivers known good device screening for advanced 2.5D/3D packages."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific quality certifications, but as a major test equipment provider, Teradyne likely holds ISO 9001 and other relevant certifications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide defect rate data, but Teradyne's focus on reliability for critical applications is implied by its test solutions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "The knowledge base does not mention environmental compliance specifics, but as a global company, Teradyne likely adheres to RoHS, REACH, and conflict minerals regulations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Teradyne has a global presence with operations in the US, Japan, Korea, and China, as indicated by its multilingual website and global events.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["English", "Japanese 日本語", "Korean 한국어", "Chinese Traditional 繁體中文"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Teradyne serves diverse end-markets including defense, automotive, consumer, and industrial through its test and robotics solutions, though revenue contribution is not detailed.",
+      "evidence_urls": ["https://www.teradyne.com/defense-aerospace/", "https://www.teradyne.com/robotics/"],
+      "evidence_snippets": ["Defense & Aerospace", "Robotics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Teradyne's global footprint across multiple regions helps mitigate risks from regional disruptions or trade policies.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["English", "Japanese 日本語", "Korean 한국어", "Chinese Traditional 繁體中文"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific customers, but Teradyne's customer base includes major semiconductor manufacturers, implying some concentration risk.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Teradyne has strategic partnerships, such as with Tokyo Electron for AI/data center test solutions, and collaborates with ecosystem players.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["Teradyne Introduces Integrated Test Solution for AI and Data Center Devices in Collaboration with Tokyo Electron"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "Teradyne collaborates with ecosystem players like Tokyo Electron to deliver integrated test solutions, and its subsidiaries like LitePoint and Quantifi Photonics expand its ecosystem.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["Teradyne Introduces Integrated Test Solution for AI and Data Center Devices in Collaboration with Tokyo Electron", "LitePoint Wireless Test Products", "Quantifi Photonics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide financial figures, but Teradyne is a publicly traded company with significant revenue; specific numbers are not available.",
+      "evidence_urls": ["https://investors.teradyne.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide CapEx data, but as a test equipment maker, Teradyne's CapEx is likely moderate relative to revenue.",
+      "evidence_urls": ["https://investors.teradyne.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "The knowledge base does not provide balance sheet details, but Teradyne is a stable company with likely manageable debt levels.",
+      "evidence_urls": ["https://investors.teradyne.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Teradyne's roadmap includes advancing test solutions for AI and data center devices, as seen in its collaboration with Tokyo Electron, and expanding its robotics and photonics offerings.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["Teradyne Introduces Integrated Test Solution for AI and Data Center Devices", "Advanced Robotics", "Silicon Photonics Test"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Teradyne is addressing emerging technologies like AI and silicon photonics through its test solutions, indicating a clear roadmap in these areas.",
+      "evidence_urls": ["https://www.teradyne.com/silicon-photonics-testing/", "https://www.teradyne.com/"],
+      "evidence_snippets": ["Silicon Photonics Test", "Teradyne Introduces Integrated Test Solution for AI and Data Center Devices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Teradyne's roadmap aligns with industry trends such as AI and advanced packaging, as evidenced by its collaboration with Tokyo Electron for 2.5D/3D test solutions.",
+      "evidence_urls": ["https://www.teradyne.com/"],
+      "evidence_snippets": ["Teradyne Introduces Integrated Test Solution for AI and Data Center Devices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "Teradyne does not operate fabs, so it has no fab expansion projects; its growth is in test solutions and robotics.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue growth figures, but Teradyne's expansion into robotics and photonics suggests growth initiatives.",
+      "evidence_urls": ["https://www.teradyne.com/robotics/", "https://www.teradyne.com/silicon-photonics-testing/"],
+      "evidence_snippets": ["Robotics", "Silicon Photonics Test"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "The knowledge base does not detail funding plans, but Teradyne likely funds expansions through operating cash flow and strategic investments.",
+      "evidence_urls": ["https://investors.teradyne.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

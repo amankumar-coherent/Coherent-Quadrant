@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "Sembcorp does not operate liquefaction trains; it operates an LNG terminal and imports LNG for power generation.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal and imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "No liquefaction facilities exist, so utilization rate is not applicable.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal and imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "Sembcorp has no liquefaction trains; it operates an import terminal.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal and imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "As an LNG importer, Sembcorp secures feedstock through imports, but specific strategy details are not disclosed.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "No public data on contract vs. spot split for Sembcorp's LNG imports.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Diversification of feedstock sources is not publicly detailed for Sembcorp.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 1,
+      "answer": "No LNG trains to measure on-stream factor; terminal operations are not equivalent.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "No public record of unplanned outages at Sembcorp's LNG terminal, but as an importer it is not comparable to liquefaction.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 3,
+      "answer": "No public data on maintenance turnaround performance for Sembcorp's LNG operations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "No TRIR data for Sembcorp's LNG operations is publicly available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No major regulatory fines are known, but Sembcorp is a large industrial player with generally compliant operations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Sembcorp likely holds standard certifications like ISO 14001, but specific LNG asset certifications are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "No liquefaction facilities, so carbon intensity per tonne of LNG produced is not applicable.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal and imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Sembcorp has sustainability initiatives, but specific emission reduction measures for LNG operations are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Sembcorp publishes sustainability reports, but they may not focus specifically on LNG operations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 2,
+      "answer": "Sembcorp is not a major LNG seller; it imports for its own use, so contracted sales volume is minimal.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 2,
+      "answer": "No significant LNG sales contracts exist as Sembcorp is primarily an importer.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 2,
+      "answer": "Spot sales are not a focus; Sembcorp's LNG activity is import-oriented.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 2,
+      "answer": "Sembcorp does not export LNG; it imports for domestic power generation.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 2,
+      "answer": "No LNG sales to customers as Sembcorp is not a seller.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 2,
+      "answer": "Sembcorp's LNG portfolio is not balanced across regions; it is focused on Singapore imports.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No specific LNG revenue/EBITDA disclosed; Sembcorp's financials are diversified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Sembcorp's overall debt-to-equity is moderate, but LNG-specific ratios are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Sembcorp has adequate liquidity as a large conglomerate, but LNG-specific cash flow is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 1,
+      "answer": "No LNG liquefaction projects under construction or FID as Sembcorp is not a liquefier.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 1,
+      "answer": "No new liquefaction capacity is planned.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 1,
+      "answer": "No expansion projects in liquefaction are known.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 1,
+      "answer": "Sembcorp has negligible global LNG production market share as it does not produce LNG.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No major LNG joint ventures are known; Sembcorp's role is as terminal operator and importer.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["Operates Singapore's LNG terminal"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 2,
+      "answer": "Sembcorp's LNG portfolio is not comparable to major liquefiers; it is a regional importer.",
+      "evidence_urls": ["https://www.sembcorp.com"],
+      "evidence_snippets": ["imports LNG for power generation."],
+      "grounding": "supported"
+    }
+  ]
+}

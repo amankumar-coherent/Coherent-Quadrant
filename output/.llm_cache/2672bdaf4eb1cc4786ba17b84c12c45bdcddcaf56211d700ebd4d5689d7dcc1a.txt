@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Iceotope does not offer compute options like CPUs, GPUs, or accelerators; it provides liquid cooling technology for servers.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Iceotope co-designs and licenses precision liquid cooling technology to OEMs and ODMs building the next generation of AI."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "Iceotope does not manufacture accelerators, so performance per watt of their accelerator is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "Iceotope does not provide compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 1,
+      "answer": "Iceotope does not offer networking solutions; it focuses on liquid cooling for servers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "Iceotope does not provide interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "Iceotope does not offer networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Iceotope's precision liquid cooling significantly reduces energy and water usage, implying improved PUE, though specific PUE values are not stated.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["100% Less water usage per kW of ITE power", "40% Less power usage per kW of ITE power", "84% Less cooling usage per kW of ITE power"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 9,
+      "answer": "Iceotope specializes in advanced liquid cooling solutions, including chassis-level immersion cooling, directly addressing high-density compute needs.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Our patented, chassis-level immersion cooling keeps GPUs, CPUs, storage, memory, and power supplies operating at peak performance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Iceotope's cooling technology reduces energy consumption by eliminating fans and enabling higher operating temperatures, as evidenced by their efficiency metrics.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Removes the need for noisy fans", "Reduces energy consumption", "40% Less power usage per kW of ITE power"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "Iceotope does not provide a software platform for managing data center resources; it focuses on hardware cooling solutions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 1,
+      "answer": "Iceotope does not offer orchestration software, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 1,
+      "answer": "Iceotope does not provide automation features for workload management; it focuses on cooling hardware.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Iceotope's cooling solutions are optimized for AI workloads, enabling high-density AI infrastructure, though they do not offer compute hardware or software optimizations.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Precision liquid cooling that solves thermal bottlenecks in AI infrastructure"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Iceotope's cooling enables AI hardware to perform at peak without thermal throttling, improving performance relative to air-cooled systems.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["keeps GPUs, CPUs, storage, memory, and power supplies operating at peak performance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "Iceotope does not offer workload profiling or optimization tools; it provides cooling hardware.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 1,
+      "answer": "Iceotope does not operate data centers; it provides cooling technology for data centers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 1,
+      "answer": "Iceotope does not have data centers, so geographic distribution is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 1,
+      "answer": "Iceotope does not operate data centers, so expansion plans are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Iceotope partners with OEMs and ODMs, but no specific hyperscaler customers are named in the knowledge base.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Iceotope co-designs and licenses precision liquid cooling technology to OEMs and ODMs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 1,
+      "answer": "Revenue breakdown between enterprise and hyperscaler customers is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No specific Fortune 500 case studies are provided, but the company serves industries like FinTech and Media & Entertainment, which likely include large enterprises.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["FinTech Enabling high-density, compliant infrastructure for real-time analytics, fraud detection, and offer personalization."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Iceotope's revenue is not publicly disclosed, but they raised $26M in Series B funding, indicating some revenue generation.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Iceotope announces $26M series B funding round"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 1,
+      "answer": "Gross margin for their data center segment is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "The company has raised funding and continues to innovate, suggesting growth, but specific revenue growth figures are not available.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Iceotope announces $26M series B funding round"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 3,
+      "answer": "Iceotope is a niche player in liquid cooling, so its market share in the overall data center systems market is likely small.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Iceotope is growing with the liquid cooling market, which is expanding faster than the overall data center market due to AI demand.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Rack power is climbing fast: from 50-120 kW today to 1 MW+ by 2029. Liquid cooling is no longer an optional feature."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "Iceotope is gaining share in the liquid cooling segment, but not in AI servers or storage directly.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Iceotope has partnerships with OEMs and ODMs, and co-development agreements, but no specific alliances with NVIDIA, Intel, or VMware are mentioned.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["Iceotope co-designs and licenses precision liquid cooling technology to OEMs and ODMs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 1,
+      "answer": "No acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 8,
+      "answer": "Iceotope actively engages in co-development and IP licensing for next-gen thermal architectures, as highlighted in their partnerships.",
+      "evidence_urls": ["https://iceotope.com"],
+      "evidence_snippets": ["co-development and IP Licensing ## Work with our team to integrated next-gen thermal architecture without ground-up redesign."],
+      "grounding": "supported"
+    }
+  ]
+}

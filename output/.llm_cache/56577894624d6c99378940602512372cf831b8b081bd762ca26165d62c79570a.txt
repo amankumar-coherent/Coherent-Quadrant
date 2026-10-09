@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Nutrisense offers a CGM program, dietitian coaching, stress management sessions, and bring-your-own-sensor, but does not manufacture devices; it markets Abbott/Dexcom CGM subscriptions."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website claims member outcomes (e.g., 9/10 build habits, 84% reached goals) but no clinical trial data or peer-reviewed evidence provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Innovative offerings like Nora AI and Glucose Certification for Dietitians, but no evidence of proprietary device R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities; Nutrisense is a program marketer, not a device manufacturer."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Mentions dietitian credentialing agency approval for course, but no FDA/CE clearances or regulatory certifications for devices."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Chicago, USA; website indicates US-centric operations with insurance coverage, but no evidence of global market presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Over 110,000 members, 'Excellent on Trustpilot', and member testimonials indicate consumer trust, but limited clinical adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Dexcom in 2026 suggests financial viability, but no revenue figures or profitability data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expanding into stress management and bring-your-own-sensor, but no evidence of new medical indications or device pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired by Dexcom, partners with Abbott/Dexcom for CGM devices, and offers partnership opportunities ('Become Our Partner')."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

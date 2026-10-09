@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows three products: Onera hPSG, Onera STS, and Onera Digital Health Platform, but all are focused on sleep diagnostics, indicating a narrow portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions a validation trial of home polysomnography device succeeded, but no detailed clinical performance metrics or safety data are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence highlights the launch of Onera Biomedical-Lab-on-Chip at CES 2022 and technology partnership with imec, indicating active innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems; only mention of medical-grade disposable patches in partnership with imec."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence states Onera STS is FDA 510(k) cleared and CE marked (MDD 93/42/eec), indicating strong regulatory compliance in US and EU."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence indicates key markets in Europe and United States, and hiring for multiple US locations, but no specific distribution channels or global scale details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions validation trial success and targeting clinicians, but no specific adoption numbers or hospital partnerships are provided."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence from getlatka.com reports $26.6M ARR, $79.8M valuation, and 63 employees, indicating significant revenue scale."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions expansion of platform's analysis capabilities as actionable insight, but no concrete pipeline or new indications are detailed."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows partnerships with imec, Jazz Pharmaceuticals, and EQT portfolio entry, plus funding rounds, indicating active business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

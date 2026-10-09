@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "GUC has announced 3nm HBM4 PHY and controller IP and taped out UCIe 64G IP on TSMC N3P, indicating advanced 3nm process capability.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Announces 3nm 12 Gbps HBM4 PHY and Controller", "GUC Announces Tape-out of UCIe 64G IP on TSMC N3P Technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "GUC leverages TSMC's advanced FinFET processes and leads in advanced packaging integration, but does not own fabs or specific process technology leadership.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC's Total 2.5D/3D ASIC service solutions include critical IP (UCIe, GLink-2.5D/GLink-3D and HBM), 2.5D/3D packaging (CoWoS, InFO, SoIC and System on Wafer) design & SI/PI co-sim"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "GUC's roadmap includes 3nm HBM4 IP and UCIe 64G on N3P, with no explicit 2nm announcements, but as a TSMC partner it likely follows TSMC's roadmap.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Announces 3nm 12 Gbps HBM4 PHY and Controller", "GUC Announces Tape-out of UCIe 64G IP on TSMC N3P Technology"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "GUC is specialized in ASIC design services and IP, not a broad product vendor across logic, memory, analog, and power categories.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["ASIC Design Service", "IP Portfolio"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "No revenue split by product type is disclosed in the knowledge base; GUC's revenue is primarily from ASIC design services and IP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "GUC provides ASIC production services including packaging and testing, and partners with OSATs like TSMC for advanced packaging.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["ASIC Production Services Overview", "Package Design Service", "Test Service"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "GUC owns proprietary IP including HBM, Die-to-Die (2.5D), Die-on-Die (3D), and mixed-signal front-end IP, differentiated for advanced packaging and high-speed interfaces.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["High Bandwidth Memory IP", "Die-to-Die (2.5D) IP", "Die-on-Die (3D) IP", "Mixed Signal Front-End IP"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "GUC licenses its IP to customers and also partners with third-party IP providers, as indicated by its IP portfolio and featured partners.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["IP Portfolio", "Featured Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "GUC has strong architecture in AI/HPC and networking, with advanced packaging and high-speed SerDes integration, and automotive solutions adhering to ISO 26262.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC specializes in designing cutting-edge AI and HPC chips", "GUC offers industry-leading, customized ASIC design services tailored for automotive products"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "GUC is a fabless ASIC design service provider and does not own wafer fabrication capacity; it relies on foundry partners like TSMC.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["ASIC Design Service", "ASIC Production Service"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No yield data is available for GUC; as a design service provider, yields depend on foundry partners and are not publicly disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 9,
+      "answer": "GUC offers advanced 2.5D/3D packaging solutions including CoWoS, InFO, SoIC, and System on Wafer, with design and production services.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC's Total 2.5D/3D ASIC service solutions include critical IP (UCIe, GLink-2.5D/GLink-3D and HBM), 2.5D/3D packaging (CoWoS, InFO, SoIC and System on Wafer) design & SI/PI co-sim"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "GUC mentions adherence to ISO 26262 and AEC-Q100 for automotive, but does not list ISO 9001 or IATF 16949 certifications in the knowledge base.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["adhering to ISO 26262 and AEC-Q100 standards"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No defect rate (DPPM) data is provided; GUC emphasizes quality and reliability services but specific metrics are not disclosed.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["Quality & Reliability Service"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "GUC has an ESG section addressing sustainability, but specific compliance with RoHS, REACH, or conflict minerals is not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["ESG Highlights", "Sustainability Report | TCFD Report"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "GUC is headquartered in Taiwan and recently expanded to Japan with a new office in Yokohama, indicating presence in Asia; global reach is likely through partners.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Expands Presence in Japan with New Office Opening in Yokohama"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "GUC serves AI/HPC, networking, automotive, consumer, storage, and industrial markets, but revenue contribution by end-market is not disclosed.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["AI / HPC", "Networking", "Automotive", "Miscellaneous"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "GUC's geographic diversification is limited to Taiwan and Japan offices, but its partnerships with global foundries and customers provide some risk mitigation.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Expands Presence in Japan with New Office Opening in Yokohama"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Specific top customers are not named in the knowledge base; GUC mentions success stories with industry leaders but customer concentration is not disclosed.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["TRUSTED ASIC PARTNER FOR INDUSTRY LEADERS"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "GUC has strategic partnerships with TSMC, NVIDIA (NVLink Fusion ecosystem), Lightmatter, Ayar Labs, VSORA, and Wiwynn, among others.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Joins NVIDIA NVLink Fusion Ecosystem", "Lightmatter and GUC Partner to Produce Co-Packaged Optics (CPO) Solutions", "VSORA and GUC Partner on Jotunn8 Datacenter AI Inference Processor", "GUC Collaborate with Wiwynn to Advance Silicon-to-System Infrastructure"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "GUC collaborates with foundries (TSMC), OSATs, and partners like Ayar Labs and Lightmatter to deliver complete solutions including advanced packaging and co-packaged optics.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC's Total 2.5D/3D ASIC service solutions include critical IP (UCIe, GLink-2.5D/GLink-3D and HBM), 2.5D/3D packaging (CoWoS, InFO, SoIC and System on Wafer) design & SI/PI co-sim"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not provided in the knowledge base; GUC is a publicly listed company (IR code 3443) but specific revenue, net income, and cash flow are not disclosed.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["IR CODE 3443"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No CapEx data is available in the knowledge base; as a fabless company, CapEx is likely lower than fabs but not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not provided; GUC's investor section implies financial stability but no specific debt or cash figures are available.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["INVESTORS", "Financials"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "GUC's roadmap includes 3nm HBM4 IP, UCIe 64G on N3P, and partnerships for co-packaged optics and AI processors, indicating advanced technology milestones.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Announces 3nm 12 Gbps HBM4 PHY and Controller", "GUC Announces Tape-out of UCIe 64G IP on TSMC N3P Technology", "Lightmatter and GUC Partner to Produce Co-Packaged Optics (CPO) Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "GUC is actively developing AI chips (VSORA Jotunn8), co-packaged optics, and advanced memory (HBM4), showing a clear roadmap for emerging technologies.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Showcases VSORA's Jotunn8 AI Inference Processor", "GUC Announces 3nm 12 Gbps HBM4 PHY and Controller"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "GUC's roadmap aligns with industry trends in AI, high-performance computing, and advanced packaging, as evidenced by partnerships with NVIDIA and hyperscaler-focused CPO solutions.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Joins NVIDIA NVLink Fusion Ecosystem", "Lightmatter and GUC Partner to Produce Co-Packaged Optics (CPO) Solutions for AI Hyperscalers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "GUC does not own fabs and has not announced capacity expansion projects; it relies on foundry partners for manufacturing capacity.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["ASIC Production Service"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not provided in the knowledge base; GUC's monthly sales reports are available but not summarized here.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["GUC Monthly Sales Report"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "GUC plans to fund expansions through partnerships and its public listing, but specific funding and execution plans are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.guc-asic.com/"],
+      "evidence_snippets": ["INVESTORS", "Financials"],
+      "grounding": "partial"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Tower Semiconductor is a specialty foundry focused on analog and mixed-signal processes, not leading-edge digital nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor, the leading foundry of high-value analog semiconductor solutions"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Tower leads in specialty analog and mixed-signal process technologies, including RF, power, and imaging, but does not compete in leading-edge digital logic.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["A broad range of advanced customizable and innovative analog process technologies", "Industry-leading RF and HPA technology solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Tower's roadmap focuses on specialty analog and photonics rather than next-generation digital nodes, with no announced 2nm or 1.4nm plans.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Tower offers a broad portfolio across analog, power, RF, imaging, MEMS, and mixed-signal, but not digital logic or memory.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["RF & HPA", "Power Management", "CMOS Image Sensor", "Non-Volatile Memory (NVM)", "MEMS"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Revenue split is not disclosed in the knowledge base, but Tower's portfolio is diversified across analog, power, and imaging.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["specializes in manufacturing analog integrated circuits for more than 300 customers worldwide"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Tower does not appear to offer OSAT services directly, but may partner with OSAT providers; no explicit evidence in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Tower's proprietary IP is primarily in analog and mixed-signal process technologies, not CPU/GPU/AI accelerators.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Design Enablement Overview", "IP Solutions"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Tower provides design enablement including PDKs and IP solutions, likely relying on third-party IP for digital blocks.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Process Design Kits (PDKs)", "IP Solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Tower's architecture is strong in analog-intensive areas like 5G RF and automotive, but not in AI or digital compute.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["RF & HPA", "Automotive"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Exact wafer capacity is not in the KB, but Tower has multiple fabs across three regions, indicating significant capacity.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Worldwide operational footprint with multi-fab production options in three geographic regions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Yield rates are not disclosed, but Tower's focus on specialty analog likely yields well for mature nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No evidence of advanced packaging (2.5D/3D, chiplets) in the KB; Tower likely focuses on traditional packaging.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Tower holds quality certifications such as ISO 9001 and IATF 16949, as indicated by TPSCo quality certificates.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["TPSCo Quality Certificates"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rates are not disclosed, but Tower's automotive and aerospace offerings imply high reliability standards.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Automotive", "Aerospace & Defense"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Tower likely complies with RoHS/REACH and conflict minerals, but no specific evidence in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Tower has a global footprint with fabs in Israel, USA, and Japan, and sales/R&D worldwide.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Worldwide operational footprint with multi-fab production options in three geographic regions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Tower serves mobile, infrastructure, automotive, medical, industrial, consumer, and aerospace/defense markets.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["growing markets such as mobile, infrastructure, automotive, medical, industrial, consumer, and aerospace and defense"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Tower's multi-region manufacturing reduces risk from regional disruptions, as seen in its Japan expansion.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Tower serves over 300 customers, but top customer names and concentration are not disclosed.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["more than 300 customers worldwide"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Tower has partnerships with companies like Marvell, OpenLight, and IQE, as shown in recent news.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor and Marvell Ship Over Five Million Coherent Photonic ICs", "IQE and Tower Semiconductor Announce Multi-year InP epiwafer Supply Agreement"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Tower collaborates with ecosystem partners like OpenLight for photonics and has design partners, but details are limited.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["OpenLight and Tower Semiconductor Expand PH18DA Photonics Ecosystem"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "Tower reported record revenue and profitability for Q2 2026, indicating strong financial performance.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor Announces Record Results for Revenue and Profitability for the Second Quarter 2026"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx figures are not in the KB, but Tower's capacity expansion in Japan suggests significant investment.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not available, but Tower's record results and expansion plans indicate financial health.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor Announces Record Results for Revenue and Profitability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Tower's roadmap includes expanding silicon photonics capacity and strategic capacity expansion in Japan.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor Signs Customer Contracts for $1.3 Billion Silicon Photonics Revenue for 2027", "Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Tower is investing in silicon photonics, a key emerging technology, but not AI chips or quantum.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor Signs Customer Contracts for $1.3 Billion Silicon Photonics Revenue for 2027"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Tower's roadmap aligns with industry trends in photonics and analog, as evidenced by partnerships and revenue contracts.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["OpenLight and Tower Semiconductor Expand PH18DA Photonics Ecosystem"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Tower announced strategic capacity expansion in Japan with METI support, but specific capacity addition is not detailed.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Tower reported 15% year-over-year revenue growth in Q1 2026 and record Q2 2026 results, indicating strong growth.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor Reports First Quarter 2026 Financial Results with 15% Year over Year Revenue Growth"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Tower plans to fund expansions through customer contracts and government support, as seen in the Japan expansion.",
+      "evidence_urls": ["https://towersemi.com"],
+      "evidence_snippets": ["Tower Semiconductor Signs Customer Contracts for $1.3 Billion Silicon Photonics Revenue for 2027", "Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan"],
+      "grounding": "supported"
+    }
+  ]
+}

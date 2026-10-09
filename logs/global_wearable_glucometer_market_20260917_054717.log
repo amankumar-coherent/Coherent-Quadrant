@@ -1,0 +1,813 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Wearable Glucometer Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=1c1bcf41 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=172 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global\global_wearable_glucometer_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=1a.57 status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2C
+  [chatgpt] Step 0c/6: market type = B2C | player type = Brand / Marketer
+  [chatgpt] Step 0c/6: why B2C: This market is designated as B2C because wearable glucometers are health devices primarily purchased, worn, and utilized by individual consumers or households for personal diabetes management.
+  [chatgpt] Step 0c/6: why this player type: Brand / Marketer is chosen because this is a consumer-facing market where companies design, brand, and market wearable medical devices directly to individual end-users.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Brand / Marketer (batch 10, target 300, resuming with 340)
+    → substep 1a done: 340 companies in 0 rounds (resumed with 340) (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 340)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (340 = 0 seeds + 340 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 340 candidates as Brand / Marketer in 29 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/29…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.1: running kept=254 rejected=58
+    → substep 4a.2: verify chunk 2/29…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.2: running kept=266 rejected=58
+    → substep 4a.3: verify chunk 3/29…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.3: running kept=278 rejected=58
+    → substep 4a.4: verify chunk 4/29…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-4: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 12s ago
+    → substep 4a.4: running kept=290 rejected=58
+    → substep 4a.5: verify chunk 5/29…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 45s ago
+    → substep 4a.5: running kept=300 rejected=60
+    → substep 4a.6: verify chunk 6/29…
+      · verify-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 74s ago
+    → substep 4a.6: running kept=312 rejected=60
+    → substep 4a.7: verify chunk 7/29…
+      · verify-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-7: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 107s ago
+    → substep 4a.7: running kept=324 rejected=60
+    → substep 4a.8: verify chunk 8/29…
+      · verify-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-8: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 140s ago
+    → substep 4a.8: running kept=329 rejected=67
+    → substep 4a.9: verify chunk 9/29…
+      · verify-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-9: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 168s ago
+    → substep 4a.9: running kept=341 rejected=67
+    → substep 4a.10: verify chunk 10/29…
+      · verify-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-10: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 201s ago
+    → substep 4a.10: running kept=352 rejected=68
+    → substep 4a.11: verify chunk 11/29…
+      · verify-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-11: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 232s ago
+    → substep 4a.11: running kept=362 rejected=70
+    → substep 4a.12: verify chunk 12/29…
+      · verify-12: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-12: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 262s ago
+    → substep 4a.12: running kept=371 rejected=73
+    → substep 4a.13: verify chunk 13/29…
+      · verify-13: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-13: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 295s ago
+    → substep 4a.13: running kept=382 rejected=74
+    → substep 4a.14: verify chunk 14/29…
+      · verify-14: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · verify-14: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 15s ago
+    → substep 4a.14: running kept=391 rejected=77
+    → substep 4a.15: verify chunk 15/29…
+      · verify-15: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-15: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 45s ago
+    → substep 4a.15: running kept=401 rejected=79
+    → substep 4a.16: verify chunk 16/29…
+      · verify-16: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-16: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 75s ago
+    → substep 4a.16: running kept=412 rejected=80
+    → substep 4a.17: verify chunk 17/29…
+      · verify-17: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-17: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 106s ago
+    → substep 4a.17: running kept=412 rejected=92
+    → substep 4a.18: verify chunk 18/29…
+      · verify-18: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-18: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 144s ago
+    → substep 4a.18: running kept=421 rejected=95
+    → substep 4a.19: verify chunk 19/29…
+      · verify-19: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-19: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 174s ago
+    → substep 4a.19: running kept=432 rejected=96
+    → substep 4a.20: verify chunk 20/29…
+      · verify-20: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-20: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 208s ago
+    → substep 4a.20: running kept=439 rejected=101
+    → substep 4a.21: verify chunk 21/29…
+      · verify-21: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-21: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 248s ago
+    → substep 4a.21: running kept=444 rejected=108
+    → substep 4a.22: verify chunk 22/29…
+      · verify-22: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-22: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 281s ago
+    → substep 4a.22: running kept=454 rejected=110
+    → substep 4a.23: verify chunk 23/29…
+      · verify-23: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-23: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 310s ago
+    → substep 4a.23: running kept=466 rejected=110
+    → substep 4a.24: verify chunk 24/29…
+      · verify-24: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · verify-24: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 19s ago
+    → substep 4a.24: running kept=471 rejected=117
+    → substep 4a.25: verify chunk 25/29…
+      · verify-25: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-25: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 50s ago
+    → substep 4a.25: running kept=480 rejected=120
+    → substep 4a.26: verify chunk 26/29…
+      · verify-26: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-26: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 80s ago
+    → substep 4a.26: running kept=492 rejected=120
+    → substep 4a.27: verify chunk 27/29…
+      · verify-27: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-27: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 114s ago
+    → substep 4a.27: running kept=500 rejected=124
+    → substep 4a.28: verify chunk 28/29…
+      · verify-28: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-28: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 149s ago
+    → substep 4a.28: running kept=506 rejected=130
+    → substep 4a.29: verify chunk 29/29…
+      · verify-29: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-29: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 178s ago
+    → substep 4a.29: running kept=510 rejected=130
+    → substep 4a done: kept=510 rejected=130 (required=Brand / Marketer)
+    → substep 4b: write rejected list (130)
+    → substep 4c: market gate kept 510/510 (dropped 0)
+  [web_expand] merged +28; total unique=200 (target=600)
+  [chatgpt] fill ALL table rows this pass: 200 (merged=200, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 200 rows already carry their report columns
+    → substep 5c: merged filled rows into list (200 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 200 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] drop 'ALR Technologies SG Ltd.': out of market
+  [relevance] drop 'Beta Bionics, Inc.': out of market
+  [relevance] drop 'GlucoSet AS': out of market
+  [relevance] drop 'Insulet Corporation': out of market
+  [relevance] drop 'Medical Technology and Devices (MTD) Group': out of market
+  [relevance] Global Wearable Glucometer Market: in=200 geo_drop=0 heur_drop=0 llm_drop=5 kept=188 market_type=B2C uniform_role=Brand / Marketer
+  [xy] market-fit filter (B2C): 200 -> 195 companies (roles=['Brand / Marketer'])
+  [xy] industry=Healthcare/Medical Devices axis_def=llm | X=Product Strength ['Sensor Accuracy & Reliability', 'Wearability & User Experience', 'Regulatory Clearances & Compliance', 'Manufacturing Scalability & Quality', 'Data Integration & Connectivity'] | Y=Business Strength ['Reimbursement & Payer Coverage', 'Clinical Adoption & KOL Support', 'Global Distribution & Partnerships', 'Financial Strength & Growth', 'Product Pipeline & Indication Expansion']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 195 companies (1/query, 2 queries per batch)
+      · params [1-1]: 1/1 companies detailed
+      · params [2-2]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [3-3]: 1/1 companies detailed
+      · params [4-4]: 1/1 companies detailed
+      · params [5-5]: 1/1 companies detailed
+      · params [6-6]: 1/1 companies detailed
+      · params [7-7]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [8-8]: 1/1 companies detailed
+      · params [9-9]: 1/1 companies detailed
+      · params [10-10]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [11-11]: 1/1 companies detailed
+      · params [12-12]: 1/1 companies detailed
+      · params [13-13]: 1/1 companies detailed
+      · params [14-14]: 1/1 companies detailed
+      · params [15-15]: 1/1 companies detailed
+      · params [16-16]: 1/1 companies detailed
+      · params [17-17]: 1/1 companies detailed
+      · params [18-18]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [19-19]: 1/1 companies detailed
+      · params [20-20]: 1/1 companies detailed
+      · params [21-21]: 1/1 companies detailed
+      · params [22-22]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [23-23]: 1/1 companies detailed
+      · params [24-24]: 1/1 companies detailed
+      · params [25-25]: 1/1 companies detailed
+      · params [26-26]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [27-27]: 1/1 companies detailed
+      · params [28-28]: 1/1 companies detailed
+      · params [29-29]: 1/1 companies detailed
+      · params [30-30]: 1/1 companies detailed
+      · params [31-31]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [32-32]: 1/1 companies detailed
+      · params [33-33]: 1/1 companies detailed
+      · params [34-34]: 1/1 companies detailed
+      · params [35-35]: 1/1 companies detailed
+      · params [36-36]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · params [37-37]: 1/1 companies detailed
+      · params [38-38]: 1/1 companies detailed
+      · params [39-39]: 1/1 companies detailed
+      · params [40-40]: 1/1 companies detailed
+      · params [41-41]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [42-42]: 1/1 companies detailed
+      · params [43-43]: 1/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+      · params [45-45]: 1/1 companies detailed
+      · params [46-46]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [47-47]: 1/1 companies detailed
+      · params [48-48]: 1/1 companies detailed
+      · params [49-49]: 1/1 companies detailed
+      · params [50-50]: 1/1 companies detailed
+      · params [51-51]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [52-52]: 0/1 companies detailed
+      · params [53-53]: 1/1 companies detailed
+      · params [54-54]: 1/1 companies detailed
+      · params [55-55]: 1/1 companies detailed
+      · params [56-56]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [57-57]: 0/1 companies detailed
+      · params [58-58]: 1/1 companies detailed
+      · params [59-59]: 0/1 companies detailed
+      · params [60-60]: 1/1 companies detailed
+      · params [61-61]: 1/1 companies detailed
+      · params [62-62]: 1/1 companies detailed
+      · params [63-63]: 0/1 companies detailed
+      · params [64-64]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [65-65]: 1/1 companies detailed
+      · params [66-66]: 1/1 companies detailed
+      · params [67-67]: 1/1 companies detailed
+      · params [68-68]: 1/1 companies detailed
+      · params [69-69]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [70-70]: 1/1 companies detailed
+      · params [71-71]: 1/1 companies detailed
+      · params [72-72]: 1/1 companies detailed
+      · params [73-73]: 1/1 companies detailed
+      · params [74-74]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [75-75]: 1/1 companies detailed
+      · params [76-76]: 1/1 companies detailed
+      · params [77-77]: 1/1 companies detailed
+      · params [78-78]: 1/1 companies detailed
+      · params [79-79]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [80-80]: 1/1 companies detailed
+      · params [81-81]: 1/1 companies detailed
+      · params [82-82]: 1/1 companies detailed
+      · params [83-83]: 1/1 companies detailed
+      · params [84-84]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · params [85-85]: 1/1 companies detailed
+      · params [86-86]: 1/1 companies detailed
+      · params [87-87]: 1/1 companies detailed
+      · params [88-88]: 1/1 companies detailed
+      · params [89-89]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · params [90-90]: 1/1 companies detailed
+      · params [91-91]: 1/1 companies detailed
+      · params [92-92]: 1/1 companies detailed
+      · params [93-93]: 0/1 companies detailed
+      · params [94-94]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · params [95-95]: 1/1 companies detailed
+      · params [96-96]: 1/1 companies detailed
+      · params [97-97]: 1/1 companies detailed
+      · params [98-98]: 1/1 companies detailed
+      · params [99-99]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · params [100-100]: 1/1 companies detailed
+      · params [101-101]: 1/1 companies detailed
+      · params [102-102]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #3)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [103-103]: 1/1 companies detailed
+      · params [104-104]: 1/1 companies detailed
+      · params [105-105]: 1/1 companies detailed
+      · params [106-106]: 1/1 companies detailed
+      · params [107-107]: 1/1 companies detailed
+      · params [108-108]: 1/1 companies detailed
+      · params [109-109]: 1/1 companies detailed
+      · params [110-110]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+      · params [111-111]: 1/1 companies detailed
+      · params [112-112]: 1/1 companies detailed
+      · params [113-113]: 1/1 companies detailed
+      · params [114-114]: 1/1 companies detailed
+      · params [115-115]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (24 this run) — solve it in the browser window
+      · params [116-116]: 1/1 companies detailed
+      · params [117-117]: 1/1 companies detailed
+      · params [118-118]: 1/1 companies detailed
+      · params [119-119]: 1/1 companies detailed
+      · params [120-120]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (25 this run) — solve it in the browser window
+      · params [121-121]: 1/1 companies detailed
+      · params [122-122]: 1/1 companies detailed
+      · params [123-123]: 1/1 companies detailed
+      · params [124-124]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (26 this run) — solve it in the browser window
+      · params [125-125]: 1/1 companies detailed
+      · params [126-126]: 0/1 companies detailed
+      · params [127-127]: 1/1 companies detailed
+      · params [128-128]: 1/1 companies detailed
+      · params [129-129]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (27 this run) — solve it in the browser window
+      · params [130-130]: 1/1 companies detailed
+      · params [131-131]: 1/1 companies detailed
+      · params [132-132]: 1/1 companies detailed
+      · params [133-133]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (28 this run) — solve it in the browser window
+      · params [134-134]: 1/1 companies detailed
+      · params [135-135]: 1/1 companies detailed
+      · params [136-136]: 1/1 companies detailed
+      · params [137-137]: 1/1 companies detailed
+      · params [138-138]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (29 this run) — solve it in the browser window
+      · params [139-139]: 1/1 companies detailed
+      · params [140-140]: 1/1 companies detailed
+      · params [141-141]: 1/1 companies detailed
+      · params [142-142]: 1/1 companies detailed
+      · params [143-143]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (30 this run) — solve it in the browser window
+      · params [144-144]: 1/1 companies detailed
+      · params [145-145]: 1/1 companies detailed
+      · params [146-146]: 1/1 companies detailed
+      · params [147-147]: 1/1 companies detailed
+      · params [148-148]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (31 this run) — solve it in the browser window
+      · params [149-149]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #4)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [150-150]: 1/1 companies detailed
+      · params [151-151]: 1/1 companies detailed
+      · params [152-152]: 1/1 companies detailed
+      · params [153-153]: 1/1 companies detailed
+      · params [154-154]: 1/1 companies detailed
+      · params [155-155]: 1/1 companies detailed
+      · params [156-156]: 1/1 companies detailed
+      · params [157-157]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (32 this run) — solve it in the browser window
+      · params [158-158]: 1/1 companies detailed
+      · params [159-159]: 1/1 companies detailed
+      · params [160-160]: 1/1 companies detailed
+      · params [161-161]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (33 this run) — solve it in the browser window
+      · params [162-162]: 1/1 companies detailed
+      · params [163-163]: 1/1 companies detailed
+      · params [164-164]: 1/1 companies detailed
+      · params [165-165]: 1/1 companies detailed
+      · params [166-166]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (34 this run) — solve it in the browser window
+      · params [167-167]: 1/1 companies detailed
+      · params [168-168]: 1/1 companies detailed
+      · params [169-169]: 1/1 companies detailed
+      · params [170-170]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (35 this run) — solve it in the browser window
+      · params [171-171]: 0/1 companies detailed
+      · params [172-172]: 1/1 companies detailed
+      · params [173-173]: 1/1 companies detailed
+      · params [174-174]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (36 this run) — solve it in the browser window
+      · params [175-175]: 1/1 companies detailed
+      · params [176-176]: 1/1 companies detailed
+      · params [177-177]: 1/1 companies detailed
+      · params [178-178]: 1/1 companies detailed
+      · params [179-179]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (37 this run) — solve it in the browser window
+      · params [180-180]: 1/1 companies detailed
+      · params [181-181]: 1/1 companies detailed
+      · params [182-182]: 1/1 companies detailed
+      · params [183-183]: 1/1 companies detailed
+      · params [184-184]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (38 this run) — solve it in the browser window
+      · params [185-185]: 1/1 companies detailed
+      · params [186-186]: 1/1 companies detailed
+      · params [187-187]: 1/1 companies detailed
+      · params [188-188]: 1/1 companies detailed
+      · params [189-189]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (39 this run) — solve it in the browser window
+      · params [190-190]: 1/1 companies detailed
+      · params [191-191]: 1/1 companies detailed
+      · params [192-192]: 1/1 companies detailed
+      · params [193-193]: 1/1 companies detailed
+      · params [194-194]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (40 this run) — solve it in the browser window
+      · params [195-195]: 1/1 companies detailed
+  [xy] parameter detail done: 189/195 companies
+    → [xy] score 1/195 A. Menarini Diagnostics s.r.l.
+    → [xy] score 2/195 Abbott Diabetes Care Inc.
+    → [xy] score 3/195 Abbott Laboratories
+    → [xy] score 4/195 Accofrisk Corporation
+    → [xy] score 5/195 Actofit Wearables Pvt. Ltd.
+    → [xy] score 6/195 Actxa Pte Ltd
+    → [xy] score 7/195 Actxa Pte. Ltd.
+    → [xy] score 8/195 Afon Technology Ltd
+    → [xy] score 9/195 AgaMatrix, Inc.
+    → [xy] score 10/195 Agatsa Software Pvt. Ltd.
+    → [xy] score 11/195 Alertgy
+    → [xy] score 12/195 Alertgy Inc.
+    → [xy] score 13/195 Alertgy, Inc.
+    → [xy] score 14/195 Ambrosia Systems Inc
+    → [xy] score 15/195 Amicikart Online Services Private Limited
+    → [xy] score 16/195 Antara Assisted Care Services Limited
+    → [xy] score 17/195 Apex Biotechnology Corp.
+    → [xy] score 18/195 Apollon Inc.
+    → [xy] score 19/195 AquilX Inc.
+    → [xy] score 20/195 ARKRAY, Inc.
+    → [xy] score 21/195 Arlyn
+    → [xy] score 22/195 Ascensia Diabetes Care Holdings AG
+    → [xy] score 23/195 Beijing Jinwei Dnurse Technology Co., Ltd.
+    → [xy] score 24/195 Bioland Technology (Shenzhen) Ltd.
+    → [xy] score 25/195 Biolinq Inc.
+    → [xy] score 26/195 Biolinq Incorporated
+    → [xy] score 27/195 Bionime Corporation
+    → [xy] score 28/195 BlueSemi Research & Development Pvt. Ltd.
+    → [xy] score 29/195 Bolinq Incorporated
+    → [xy] score 30/195 BOYDSense SAS
+    → [xy] score 31/195 Brolis Sensor Technology
+    → [xy] score 32/195 Buzud (Singapore) Pte. Ltd.
+    → [xy] score 33/195 Changsha Sinocare Inc.
+    → [xy] score 34/195 Cnoga Medical Ltd
+    → [xy] score 35/195 Cnoga Medical Ltd.
+    → [xy] score 36/195 Conzumex Industries Private Limited
+    → [xy] score 37/195 Dexcom, Inc.
+    → [xy] score 38/195 DiaMonTech AG
+    → [xy] score 39/195 DiaMonTech GmbH
+    → [xy] score 40/195 Dongwoon Anatech Co., Ltd.
+    → [xy] score 41/195 DrStore Healthcare Services India Private Limited
+    → [xy] score 42/195 Drstore Healthcare Services India Pvt Ltd
+    → [xy] score 43/195 DrStore Healthcare Services Private Limited
+    → [xy] score 44/195 Eaglenos Sciences, Inc.
+    → [xy] score 45/195 Eastern Medical (Beijing) Technology Co., Ltd.
+    → [xy] score 46/195 Echo Therapeutics, Inc.
+    → [xy] score 47/195 EPS Bio Technology Corp.
+    → [xy] score 48/195 Eris Lifesciences Ltd.
+    → [xy] score 49/195 ESER HEALTH CARE DIGITAL TECHNOLOGY Co., Ltd.
+    → [xy] score 50/195 EyeSense GmbH
+    → [xy] score 51/195 F. Hoffmann-La Roche AG
+    → [xy] score 52/195 FiberSense AG
+  [ai-mode] quota — archiving profile and starting clean (reset #5)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · score FiberSense AG: unparsed reply '78\nShow Code\nThis is for informational purposes only. For medical advice or diagnosis, consult a pro'
+      · score FiberSense AG: unparsed reply '36\nShow Code\nThis is for informational purposes only. For medical advice or diagnosis, consult a pro'
+    → [xy] no score for FiberSense AG (AI Mode unavailable) — left unscored for retry
+    → [xy] score 53/195 Fitterfly HealthTech Private Limited
+    → [xy] score 54/195 ForaCare Innovation Inc.
+    → [xy] score 55/195 ForaCare Suisse AG
+    → [xy] score 56/195 Fosun Medical Systems (S) Pte. Ltd.
+    → [xy] score 57/195 Glu-Chek Diabetes Care S.L.
+      · score Glu-Chek Diabetes Care S.L.: unparsed reply '70\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+      · score Glu-Chek Diabetes Care S.L.: unparsed reply '25\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+    → [xy] no score for Glu-Chek Diabetes Care S.L. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 58/195 GlucoActive Sp. z o.o.
+    → [xy] score 59/195 GlucoModicum
+      · score GlucoModicum: unparsed reply '76\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+      · score GlucoModicum: unparsed reply '28\nShow Code\nThis is for informational purposes only. For medical advice or diagnosis, consult a pro'
+    → [xy] no score for GlucoModicum (AI Mode unavailable) — left unscored for retry
+    → [xy] score 60/195 GlucoModicum Ltd
+    → [xy] score 61/195 GlucoModicum Ltd.
+    → [xy] score 62/195 GlucoRx Healthcare Pvt. Ltd.
+    → [xy] score 63/195 GlucoRx Limited
+      · score GlucoRx Limited: unparsed reply '76\nIf you want to adjust the calculation, let me know if you would like to use different weights for'
+      · score GlucoRx Limited: unparsed reply '58\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+    → [xy] no score for GlucoRx Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 64/195 GlucoRx Ltd
+    → [xy] score 65/195 GlucoSonic
+    → [xy] score 66/195 Glucotrack, Inc.
+    → [xy] score 67/195 GlucoVibes S.L.
+    → [xy] score 68/195 GlySens Incorporated
+    → [xy] score 69/195 GoodFlip
+    → [xy] score 70/195 GraphWear Technologies Inc.
+    → [xy] score 71/195 GraphWear Technologies, Inc.
+    → [xy] score 72/195 Guangzhou Wondfo Biotech Co., Ltd.
+    → [xy] score 73/195 HAGAR N.I.G. (Non-invasive Glucose monitoring) Ltd
+    → [xy] score 74/195 Hangzhou Sejoy Electronics & Instruments Co., Ltd.
+    → [xy] score 75/195 Health ARX Technologies Pvt. Ltd.
+    → [xy] score 76/195 HealthifyMe Wellness Private Limited
+    → [xy] score 77/195 HealthifyMe Wellness Products and Services Private
+    → [xy] score 78/195 HiPPO Biosensors Singapore
+    → [xy] score 79/195 HIPPO MEDICAL PTE. LTD.
+    → [xy] score 80/195 HLB Lifecare Co., Ltd.
+    → [xy] score 81/195 HME Square
+    → [xy] score 82/195 HME Square Inc.
+    → [xy] score 83/195 Huzhou Meiqi Medical Equipment Co., Ltd.
+    → [xy] score 84/195 Huzhou Meiqi Medical Instruments Co., Ltd.
+    → [xy] score 85/195 Huzhou Xinmei Medical Equipment Co., Ltd.
+    → [xy] score 86/195 i-Sens, Inc.
+    → [xy] score 87/195 Igluco Tech, S.L.
+    → [xy] score 88/195 Indigo Diabetes N.V.
+    → [xy] score 89/195 Indigo Diabetes NV
+    → [xy] score 90/195 Infinovo Medical Co., Ltd.
+    → [xy] score 91/195 Informed Data Systems Inc.
+    → [xy] score 92/195 InnoMind (Suzhou) Technology Co., Ltd.
+    → [xy] score 93/195 Integrated Medical Sensors, Inc.
+      · score Integrated Medical Sensors, Inc.: unparsed reply '71\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+      · score Integrated Medical Sensors, Inc.: unparsed reply '20\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+    → [xy] no score for Integrated Medical Sensors, Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 94/195 Intelligo BV
+    → [xy] score 95/195 Jiangsu Yuyue Medical Equipment & Supply Co., Ltd.
+    → [xy] score 96/195 Know Labs, Inc.
+    → [xy] score 97/195 Laxmi Therapeutic Devices
+    → [xy] score 98/195 Lepu Medical Technology (Beijing) Co., Ltd.
+    → [xy] score 99/195 Lifecare ASA
+    → [xy] score 100/195 LifePlus, Inc.
+    → [xy] score 101/195 LifeScan, Inc.
+    → [xy] score 102/195 Liom Health AG
+    → [xy] score 103/195 Mediq BV
+    → [xy] score 104/195 MediWise Ltd.
+    → [xy] score 105/195 Medtronic MiniMed, Inc.
+    → [xy] score 106/195 Medtronic plc
+    → [xy] score 107/195 Medtrum Technologies Inc.
+    → [xy] score 108/195 MedWatch Technologies, Inc.
+    → [xy] score 109/195 MELLIsim
+    → [xy] score 110/195 Metronom Health, Inc.
+      · score Metronom Health, Inc.: unparsed reply '52\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+      · score Metronom Health, Inc.: unparsed reply '35\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+    → [xy] no score for Metronom Health, Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 111/195 Micro-Tech (Nanjing) Co., Ltd.
+    → [xy] score 112/195 MicroTech Medical (Hangzhou) Co., Ltd.
+    → [xy] score 113/195 MicroTech Medical Inc.
+    → [xy] score 114/195 Movano Health
+    → [xy] score 115/195 MYMONX
+    → [xy] score 116/195 Nantong Jiuno Medical Technology Co., Ltd.
+    → [xy] score 117/195 Nemaura Medical Inc.
+    → [xy] score 118/195 New Star Company Ltd.
+    → [xy] score 119/195 Ningbo Meiqi Medical Technology Co., Ltd.
+    → [xy] score 120/195 NIQS Tech (Leeds) Limited
+    → [xy] score 121/195 Nova Biomedical Corporation
+    → [xy] score 122/195 NovioSense B.V.
+    → [xy] score 123/195 Occuity Ltd
+    → [xy] score 124/195 OK Biotech Co., Ltd.
+    → [xy] score 125/195 Onalabs Inno-hub, S.L.
+    → [xy] score 126/195 One Drop
+      · score One Drop: unparsed reply '45\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+      · score One Drop: unparsed reply '46\nShow Code\nThis is for informational purposes only. For medical advice or diagnosis, consult a pro'
+    → [xy] no score for One Drop (AI Mode unavailable) — left unscored for retry
+    → [xy] score 127/195 One Health Biosensing, Inc.
+    → [xy] score 128/195 OneTouch Diagnostics
+    → [xy] score 129/195 OrSense Ltd.
+    → [xy] score 130/195 Ottai Global
+    → [xy] score 131/195 Ottai Technology, Ltd.
+    → [xy] score 132/195 Pacific Diabetes Technologies Inc
+    → [xy] score 133/195 Pacific Diabetes Technologies Inc.
+    → [xy] score 134/195 PercuSense, Inc.
+    → [xy] score 135/195 PharmaSens AG
+    → [xy] score 136/195 PharmEvo Private Limited
+    → [xy] score 137/195 PKvitality
+    → [xy] score 138/195 PKvitality S.A.S.
+    → [xy] score 139/195 Prediktor Medical
+    → [xy] score 140/195 Prodigy Diabetes Care, LLC
+    → [xy] score 141/195 Profusa, Inc.
+    → [xy] score 142/195 Quantum Operation Inc.
+    → [xy] score 143/195 Ragus Healthcare Pvt. Ltd.
+    → [xy] score 144/195 Renu MedTech Private Limited
+    → [xy] score 145/195 Roche Diabetes Care GmbH
+    → [xy] score 146/195 Roche Diagnostics International AG
+    → [xy] score 147/195 Rockley Photonics
+    → [xy] score 148/195 RSP Systems A/S
+    → [xy] score 149/195 San Meditech (Huzhou) Co., Ltd.
+    → [xy] score 150/195 Sava Technologies
+    → [xy] score 151/195 Sava Technologies Ltd
+    → [xy] score 152/195 Scanbo Technologies
+    → [xy] score 153/195 SD Biosensor Inc.
+    → [xy] score 154/195 SenEaron Healthcare Limited
+    → [xy] score 155/195 Senseonics Holdings, Inc.
+    → [xy] score 156/195 Senseonics, Inc.
+    → [xy] score 157/195 Sensible Healthcare Systems
+    → [xy] score 158/195 Sensible Healthcare Systems B.V.
+    → [xy] score 159/195 Sensura Pte. Ltd.
+    → [xy] score 160/195 Shanghai Berry Electronic Tech Co., Ltd.
+    → [xy] score 161/195 Shenzhen Endoc Medical Co., Ltd.
+    → [xy] score 162/195 Shenzhen Powfo Medical Technology Co., Ltd.
+    → [xy] score 163/195 Shenzhen Sibionics Co., Ltd.
+    → [xy] score 164/195 Shenzhen Silicon-based Intelligent Technology Co.,
+    → [xy] score 165/195 SiBio Technology Limited
+    → [xy] score 166/195 Signos, Inc.
+    → [xy] score 167/195 Sinocare Inc.
+    → [xy] score 168/195 Socrates Health Solutions, Inc.
+    → [xy] score 169/195 Supersapiens, Inc.
+    → [xy] score 170/195 SusWel
+    → [xy] score 171/195 Syai Health Technology Pte. Ltd.
+      · score Syai Health Technology Pte. Ltd.: unparsed reply '84\nShow Code\nThis is for informational purposes only. For medical advice or diagnosis, consult a pro'
+      · score Syai Health Technology Pte. Ltd.: unparsed reply '64\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+    → [xy] no score for Syai Health Technology Pte. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 172/195 SynchNeuro, Inc.
+    → [xy] score 173/195 Synex Medical Inc.
+    → [xy] score 174/195 TaiDoc Technology Corporation
+    → [xy] score 175/195 Taiwan Biophotonic Corporation
+    → [xy] score 176/195 TatvaHealth & Wellness Pvt. Ltd.
+    → [xy] score 177/195 Teljane Medical Technology (Suzhou) Co., Ltd.
+    → [xy] score 178/195 Transdermal Diagnostics Ltd
+    → [xy] score 179/195 Trilogy Technologies Pte Ltd
+    → [xy] score 180/195 Trinity Biotech plc
+    → [xy] score 181/195 Tula Health, Inc.
+    → [xy] score 182/195 Ultrahuman Healthcare Pvt. Ltd.
+    → [xy] score 183/195 Uniscreen
+    → [xy] score 184/195 UXN Co., Ltd.
+    → [xy] score 185/195 Veri Left Oy
+    → [xy] score 186/195 Viewtel Co., Ltd.
+    → [xy] score 187/195 Vitasense
+    → [xy] score 188/195 Walletmed Sp. z o.o.
+    → [xy] score 189/195 WaveForm Diabetes
+    → [xy] score 190/195 WaveForm Technologies Inc.
+    → [xy] score 191/195 Weglo
+    → [xy] score 192/195 Woori IO Co., Ltd.
+    → [xy] score 193/195 Xoma Labs Pty Ltd
+    → [xy] score 194/195 Zhejiang POCTech Co., Ltd.
+    → [xy] score 195/195 Zydus Lifesciences Limited
+    → [xy] scored 195 rows (Healthcare/Medical Devices) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] blank 'Uniscreen' (wiki_no_hq:UK Screen Alliance)
+    → [found-in] blank 'Buzud (Singapore) Pte. Ltd.' (wiki_miss)
+    → [found-in] blank 'Ottai Global' (wiki_miss)
+    → [found-in] blank 'Actxa Pte. Ltd.' (wiki_miss)
+    → [found-in] blank 'One Health Biosensing, Inc.' (wiki_miss)
+    → [found-in] blank 'Trilogy Technologies Pte Ltd' (wiki_miss)
+    → [found-in] city/country filled=0 kept=189 blank=6
+    → [table] 195 rows | graph top 20 | html=global_wearable_glucometer_market_global_report.html
+
+=== OpenAI cost (this run) ===
+  run_id : 1c1bcf41
+  market : Global Wearable Glucometer Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (195 rows) → global_wearable_glucometer_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 195 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global\global_wearable_glucometer_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Wearable Glucometer Market",
+  "country": "global",
+  "batch": "all",
+  "family": "smartwatch",
+  "target": 300,
+  "existing_before": 172,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 340,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 510,
+  "rejected_mid": 130,
+  "chatgpt_filled": 200,
+  "rejected_final": 0,
+  "total_after": 195,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\global_wearable_glucometer_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "1c1bcf41",
+    "market": "Global Wearable Glucometer Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-17T00:17:19.426023+00:00",
+    "ended_at": "2026-09-17T04:29:56.434118+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "smartwatch",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 195,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\global_wearable_glucometer_market_global_FINAL.xlsx",
+      "rejected_mid": 130,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Healthcare",
+    "industry_category": "Medical Devices",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters address the unique requirements of wearable glucometers: sensor accuracy, wearability, regulatory hurdles, manufacturing scale, and data integration on the product side; and reimbursement, clinical adoption, distribution, financials, and pipeline on the business side. They are concrete and assessable from public evidence such as clinical studies, regulatory databases, and financial reports.",
+    "parameter_definitions": {
+      "x": {
+        "Sensor Accuracy & Reliability": "Measures the precision of continuous glucose readings versus gold-standard blood glucose, including MARD and stability over wear time. Evidence includes published clinical trials and regulatory submissions showing low error rates.",
+        "Wearability & User Experience": "Assesses comfort, discreetness, wear duration, and ease of use for daily activities. Strength shown by user-reported outcomes, adherence rates, and design awards or patient preference studies.",
+        "Regulatory Clearances & Compliance": "Covers FDA, CE, and other global approvals for wearable glucometers, including indications for diabetes management. Strength indicated by number of approvals, speed of clearance, and post-market safety records.",
+        "Manufacturing Scalability & Quality": "Evaluates production capacity, yield rates, and quality management systems (e.g., ISO 13485) to meet global demand. Evidence includes manufacturing certifications, capacity expansions, and supply chain resilience.",
+        "Data Integration & Connectivity": "Refers to interoperability with mobile apps, insulin pumps, and electronic health records via Bluetooth, NFC, or cloud. Strength shown by partnerships with digital health platforms and API availability."
+      },
+      "y": {
+        "Reimbursement & Payer Coverage": "Indicates the extent to which insurers and national health systems cover the device, reducing patient out-of-pocket costs. Evidence includes reimbursement codes, coverage decisions, and payer contracts.",
+        "Clinical Adoption & KOL Support": "Measures usage by endocrinologists, diabetes educators, and key opinion leaders in guidelines and publications. Strength shown by adoption rates, clinical guideline inclusion, and KOL endorsements.",
+        "Global Distribution & Partnerships": "Assesses the breadth of distribution networks and strategic alliances with pharmacies, distributors, and telehealth providers. Evidence includes geographic reach, partnership announcements, and channel agreements.",
+        "Financial Strength & Growth": "Evaluates revenue, profitability, and growth trajectory in the wearable glucometer segment. Strength indicated by sales figures, market share gains, and investment in R&D and expansion.",
+        "Product Pipeline & Indication Expansion": "Covers development of next-generation sensors, expanded indications (e.g., prediabetes, type 2), and integration with closed-loop systems. Evidence includes pipeline announcements, clinical trials, and regulatory filings."
+      }
+    },
+    "x_features": [
+      "Sensor Accuracy & Reliability",
+      "Wearability & User Experience",
+      "Regulatory Clearances & Compliance",
+      "Manufacturing Scalability & Quality",
+      "Data Integration & Connectivity"
+    ],
+    "y_features": [
+      "Reimbursement & Payer Coverage",
+      "Clinical Adoption & KOL Support",
+      "Global Distribution & Partnerships",
+      "Financial Strength & Growth",
+      "Product Pipeline & Indication Expansion"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 80.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 195,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 200,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 5,
+      "kept": 188,
+      "player_type": "B2C",
+      "market_type": "B2C",
+      "market_definition": "The global wearable glucometer market encompasses continuous glucose monitoring (CGM) devices and other wearable glucose-sensing technologies used for diabetes management.",
+      "keep_roles": [
+        "Brand / Marketer"
+      ],
+      "uniform_role": "Brand / Marketer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 195  (target 300)

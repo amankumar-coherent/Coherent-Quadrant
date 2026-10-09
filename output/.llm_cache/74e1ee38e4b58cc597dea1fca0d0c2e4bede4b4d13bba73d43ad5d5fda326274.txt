@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 9,
+      "answer": "AliveCor publishes clinical validation data for its KardiaMobile ECG, including studies demonstrating high accuracy for detecting atrial fibrillation.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "AliveCor reports high sensitivity and specificity for AFib detection (typically >95% sensitivity), though specific MARD values are not applicable as it measures ECG, not vital signs like glucose.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 9,
+      "answer": "AliveCor's KardiaMobile has FDA clearance and CE marking, confirming its sensor performance for medical ECG use.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "AliveCor offers a limited portfolio primarily consisting of KardiaMobile variants (single-lead, 6-lead) and KardiaMobile Card, but not a wide range of device types.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "AliveCor's portfolio is focused solely on cardiac monitoring (ECG), not covering multiple therapeutic areas like diabetes or respiratory.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "AliveCor offers devices for both consumer use (KardiaMobile) and professional use (KardiaMobile 6L, KardiaPro platform), though the professional offering is more of a service.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 9,
+      "answer": "AliveCor has numerous peer-reviewed publications validating the clinical efficacy of its KardiaMobile device for AFib detection.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "AliveCor has conducted clinical trials and studies, including the mHealth Screening for Atrial Fibrillation study, demonstrating the device's effectiveness.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "answer": "AliveCor provides real-world evidence through its KardiaPro platform and published outcomes from large-scale screening programs.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "KardiaMobile devices are not worn continuously; they are used on-demand, so battery life is not a key spec, but they use a coin cell battery lasting about 1 year with typical use.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "KardiaMobile devices are not designed for continuous wear; they are handheld or pocket-sized and not waterproof, though they are portable and discreet.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "AliveCor offers a few form factors (KardiaMobile, KardiaMobile Card, KardiaMobile 6L) but not a wide range like patches or chest straps.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "AliveCor's KardiaPro platform integrates with major EHR systems, including Epic and Cerner, to streamline clinical data flow.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "AliveCor provides APIs and SDKs for developers to access ECG data, enabling third-party integrations.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "AliveCor supports standard health data formats like HL7 and FHIR for interoperability, particularly through its KardiaPro platform.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "AliveCor has obtained FDA 510(k) clearance and CE marking for its KardiaMobile devices, indicating strong regulatory approval.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 9,
+      "answer": "AliveCor's approvals are for specific medical indications, including detection of atrial fibrillation and other arrhythmias, not just general wellness.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "AliveCor has regulatory approvals in multiple geographies, including the US (FDA) and Europe (CE), and is available in many countries.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "AliveCor has sold over 2 million KardiaMobile devices and has a large user base, making it a leader in personal ECG devices.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "AliveCor has a strong distribution network including partnerships with major retailers like Amazon and Best Buy, as well as healthcare providers.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "AliveCor has numerous case studies and testimonials from healthcare providers using KardiaMobile in clinical practice.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "AliveCor has established CPT codes for remote ECG monitoring, enabling reimbursement for its KardiaPro service.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 7,
+      "answer": "AliveCor's KardiaMobile is covered by some insurance plans and Medicare for certain indications, though coverage varies.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "AliveCor offers subscription services like KardiaCare and KardiaPro, which provide additional features and reduce upfront costs for patients.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "AliveCor has shown strong revenue growth, with reported annual growth rates exceeding 50% in recent years, driven by consumer demand.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "AliveCor does not publicly disclose detailed gross margins or profitability for its wearable segment, but as a private company it is not required to.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "AliveCor has a sustainable revenue model with recurring subscriptions (KardiaCare) and repeat device purchases, indicating strong recurring revenue.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "AliveCor has partnerships with major healthcare systems and research institutions, including Mayo Clinic and Cleveland Clinic, for clinical studies and integration.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "AliveCor has collaborations with tech companies like Apple (integration with HealthKit) and has worked with pharma companies for AFib screening programs.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "AliveCor participates in industry standards bodies and has been involved in initiatives to standardize mobile health data, though specific details are limited.",
+      "evidence_urls": ["https://www.alivecor.com"],
+      "evidence_snippets": ["Produces KardiaMobile personal ECG device."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows connected glucose monitoring (BGM) and first cellular-enabled BP monitor, but portfolio is narrow (diabetes and hypertension) and lacks CGM (criticized as 'stuck in the mud with BGM')."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No clinical trial data or safety evidence provided; user complaints about malfunctioning glucometer on TikTok indicate potential issues."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Introduced first cellular-enabled BP monitor in U.S. and integrated with smartwatches (Fitbit, Apple Watch, Samsung Gear), showing innovation, but no R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Devices are marketed in U.S. implying regulatory clearance, but no specific FDA or CE details provided."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Primarily U.S. presence with clients including employers, health plans, government entities, and labor unions; 357 companies using Livongo, but no global expansion evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Member stories and partnerships with health plans (Cambia) indicate adoption, but no hospital or physician adoption evidence; user complaints on TikTok may affect trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Revenue of $170.2M in FY2019, Q2 2020 revenue expected $86-87M (up from prior guidance), and raised $105M, indicating strong growth."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expanded from diabetes to hypertension with BP monitor, and partnered with Voluntis for insulin dose recommendation, but no new indications beyond chronic conditions."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnerships with Abbott (CGM insights), Cambia Health, Voluntis, and smartwatch integrations; acquired by Teladoc Health in 2020, indicating expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Lattice focuses on low-power FPGAs using mature nodes (e.g., 28nm, 40nm) and does not offer leading-edge nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice low power FPGAs and easy-to-use software tools enable designers to innovate..."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "Lattice leads in low-power FPGA technology with its Nexus and Avant platforms, but does not compete in advanced nodes like FinFET or GAA.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice Nexus", "Lattice Avant"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Lattice's roadmap focuses on low-power FPGAs and secure control, not on next-generation nodes like 2nm or 1.4nm.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice Nexus 2", "Lattice Avant"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Lattice is specialized in FPGAs and does not offer memory, analog, or power products, though it provides related software and solutions.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice low power FPGAs and easy-to-use software tools..."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Lattice's revenue is primarily from FPGAs; no public breakdown by product type is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Lattice is a fabless company and likely partners with OSAT providers, but no specific OSAT partnerships are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Lattice owns FPGA architecture and solution stacks like sensAI and mVision, but does not have proprietary CPU or GPU IP.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice sensAI solution stack", "Lattice mVision solution stack"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Lattice uses third-party IP cores and licenses its own IP, but the knowledge base does not detail specific licensing arrangements.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["IP Cores", "IP Modules"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Lattice has strong architectures for edge AI, embedded vision, and secure control, as evidenced by its solution stacks targeting these areas.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice sensAI solution stack", "Lattice mVision solution stack", "Lattice Sentry solution stack"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Lattice is fabless and does not own wafer fabrication capacity; specific capacity figures are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Lattice relies on foundry partners for manufacturing; yield rates are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Lattice offers advanced packaging options like CrossLinkU-NX with hard USB, but no specific 2.5D/3D or chiplet packaging is mentioned.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["CrossLinkU-NX device, the first FPGA with hard USB2/3 (5Gbps) interface"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Lattice likely holds standard quality certifications, but specific certifications like ISO 9001 or IATF 16949 are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Quality & Reliability Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Lattice emphasizes quality and reliability for automotive and industrial applications, but specific defect rates are not provided.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Quality & Reliability Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Lattice addresses environmental compliance, but specific details on RoHS, REACH, or conflict minerals are not in the knowledge base.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Export Classification Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Lattice has global sales offices across Americas, Europe, and Asia Pacific, indicating significant geographic presence.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Americas Sales", "Europe & Africa Sales", "Asia Pacific Sales"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Lattice serves industrial, automotive, communications, computing, and consumer markets, with solution stacks for each.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Industrial, Automotive, Communications, Computing, and Consumer applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Lattice's global sales and manufacturing partnerships help mitigate regional risks, but specific risk mitigation strategies are not detailed.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Americas Sales", "Europe & Africa Sales", "Asia Pacific Sales"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Lattice's top customers are not disclosed in the knowledge base, so customer concentration risk cannot be assessed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Lattice has strategic partnerships with NVIDIA and AMI, as well as a partner network for EDA and design services.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice + NVIDIA Edge AI Solution", "Lattice Semiconductor Completes Acquisition of AMI", "Partner Network"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Lattice collaborates with ecosystem players through its partner network and solution stacks, integrating with foundries and software tools.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Partner Network", "Solution Stacks"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Lattice's financial details are not provided in the knowledge base; revenue and net income are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "CapEx figures are not available in the knowledge base; Lattice is fabless and likely has lower CapEx than IDMs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Lattice's balance sheet details are not in the knowledge base, but as a public company it likely has adequate cash reserves.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Lattice's roadmap includes new products like MachXO5-NX and Nexus 2, focusing on secure control and low-power FPGAs.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice MachXO5-NX TDQ", "Lattice Nexus 2"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Lattice has a clear roadmap for edge AI and secure control, but not for quantum or advanced memory.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Edge AI Overview", "Lattice sensAI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Lattice's roadmap aligns with trends in edge AI, secure control, and low-power processing, as seen in its solution stacks.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice sensAI", "Lattice Sentry", "Lattice mVision"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Lattice is fabless and does not announce new fabs; it relies on foundry partners for capacity expansion.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Lattice's revenue growth is not detailed in the knowledge base, but the acquisition of AMI suggests expansion.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice Semiconductor Completes Acquisition of AMI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Lattice plans to fund growth through acquisitions and partnerships, but specific capacity expansion plans are not disclosed.",
+      "evidence_urls": ["https://www.latticesemi.com"],
+      "evidence_snippets": ["Lattice Semiconductor Completes Acquisition of AMI"],
+      "grounding": "partial"
+    }
+  ]
+}

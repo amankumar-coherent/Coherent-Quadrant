@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Operates LNG import terminals and power plants in multiple countries (Mexico, Brazil, Puerto Rico, Jamaica) and has Fast LNG assets (e.g., Altamira Fast LNG 1)."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows operational milestones like 'First LNG for its Fast LNG asset' and 'Barcarena LNG Terminal in Pará, Brazil into operation', but no throughput volumes."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'Fast LNG asset resumes production after scheduled maintenance outage' indicating some reliability, but no detailed performance metrics."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "References to 'DOE long-term authorization', 'Customs ruling', and 'Mexico export authorization' show regulatory compliance, but no explicit safety record."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company emphasizes 'positive energy' and 'combat climate change', and has a Sustainability section, but no specific transition projects like CCS."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in US, Mexico, Brazil, Puerto Rico, Jamaica, and mentions of Altamira, Barcarena, Santa Catarina, and La Paz, indicating multi-region operations."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence of long-term agreements: '15-year agreement in Brazil', 'islandwide gas supply contract in Puerto Rico', and 'gas supply agreement with Energiza'."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial figures provided; only mentions of 'closes financings' and 'sale of Jamaica assets' but no revenue or profit data."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Multiple projects in development: 'Fast LNG' assets, '1.6 GW power plant' in Brazil, '630 MW Barcarena Power Plant', and 'Santa Catarina LNG import terminal'."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnerships with CFE, Energiza, and sale of Jamaica assets to Excelerate Energy, plus expansion into new markets like Brazil and Mexico."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

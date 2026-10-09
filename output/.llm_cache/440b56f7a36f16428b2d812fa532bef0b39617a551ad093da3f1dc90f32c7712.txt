@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 3,
+      "answer": "GTA FLNG is a single floating LNG facility with a nameplate capacity of 2.5 MTPA, which is modest compared to large onshore trains.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development on the Mauritania–Senegal maritime border; first exports 2025."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "The facility has not yet started operations (first exports expected in 2025), so no utilization data is available.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["first exports 2025."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "GTA FLNG consists of a single FLNG vessel with a capacity of 2.5 MTPA, not multiple trains.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Feedstock is sourced from the associated gas of the Greater Tortue Ahmeyim field, with a subsea and FPSO system, but details on long-term contracts are not provided.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development on the Mauritania–Senegal maritime border"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "No information is available on the percentage of feedstock from long-term contracts versus spot purchases for GTA FLNG.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Feedstock is solely from the GTA field, a single basin, indicating low diversification.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development on the Mauritania–Senegal maritime border"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 2,
+      "answer": "No operational history exists as the facility is not yet producing, so on-stream factor is unknown.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["first exports 2025."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "No unplanned outages have occurred because the facility is not yet operational.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["first exports 2025."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 3,
+      "answer": "No track record exists for planned maintenance turnarounds as the facility is not yet in operation.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["first exports 2025."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "No specific TRIR data is available for GTA FLNG, but bp as a major operator typically maintains strong safety metrics.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No major regulatory fines or sanctions are known for GTA FLNG, but the project is in a sensitive cross-border area.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["Mauritania–Senegal maritime border"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No specific certifications are mentioned for GTA FLNG, but bp typically holds ISO and OHSAS certifications across its operations.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No carbon intensity data is provided for GTA FLNG, but as a new FLNG project it may have moderate efficiency.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "bp has committed to net zero by 2050 and may incorporate emission reduction measures, but specifics for GTA are not in the KB.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "bp publishes sustainability reports, but specific details on GTA FLNG environmental performance are not in the KB.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "No contracted sales volumes are provided for GTA FLNG, but the project's capacity is 2.5 MTPA, likely fully contracted.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "No information on average remaining contract duration is available for GTA FLNG.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 3,
+      "answer": "No spot sales data is available; the project is likely to have long-term contracts.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "GTA FLNG is expected to export to multiple countries, but specific destinations are not listed in the KB.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["Mauritania, Senegal, West Africa"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "No customer concentration data is available for GTA FLNG.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "As a new project, the portfolio is not yet balanced; it will likely serve Atlantic Basin markets.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["Mauritania, Senegal, West Africa"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "No revenue or EBITDA from GTA FLNG exists as the project has not started production.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["first exports 2025."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "No financial ratios are available for GTA FLNG as a standalone entity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No free cash flow or liquidity data is available for GTA FLNG.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 3,
+      "answer": "GTA FLNG is the only project under construction with 2.5 MTPA capacity; no other projects are mentioned.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "First exports are expected in 2025, but no timeline for additional capacity is provided.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["first exports 2025."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 2,
+      "answer": "No expansion projects are mentioned for GTA FLNG.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "GTA FLNG's 2.5 MTPA capacity is a small fraction of global LNG production, so market share is minimal.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Key partners include Kosmos Energy, Petrosen, and SMH, but this is not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "GTA FLNG is a single project with moderate scale and likely higher cost per tonne compared to large onshore plants.",
+      "evidence_urls": ["https://www.bp.com"],
+      "evidence_snippets": ["bp-led FLNG development"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

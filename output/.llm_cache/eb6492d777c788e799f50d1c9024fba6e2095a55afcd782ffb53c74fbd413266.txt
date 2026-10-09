@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence focuses solely on the ViSi Mobile system; no other products mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "ViSi Mobile monitors multiple vital signs continuously, uses machine learning from millions of hours of patient data, and is FDA cleared; evidence cites early detection of deterioration."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Utilizes machine learning from millions of hours of patient data; continuous cuff-less monitoring of BP, SpO2, ECG, etc.; FDA clearance for wireless blood pressure feature."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA 510k clearance for ViSi Mobile and CE Mark approval; additional FDA clearance for wireless blood pressure monitor."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence listed as United States only; no evidence of global distribution or international market presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Over 35,000 patients monitored and 1 million hours of data; used in hospitals; FDA approvals enhance trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Raised $20M in funding, total ~$50M; annual revenue estimated at $21.8M (from Growjo), but no official financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Continuous monitoring for sepsis and other critical events; ongoing clinical trial for ViSi Mobile; but no explicit pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No specific partnerships mentioned; company is private and focused on hospital monitoring; no evidence of expansion beyond US."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

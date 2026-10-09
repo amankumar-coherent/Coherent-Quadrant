@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Instituto Butantan has several vaccines in Phase III or filed, including dengue, chikungunya, and influenza vaccines, indicating a robust pipeline.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Anvisa autoriza produção nacional da vacina contra a chikungunya pelo Instituto Butantan", "Vacina da dengue do Butantan mantém 80,5% de eficácia contra casos graves e com sinais de alerta após cinco anos"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "The pipeline includes vaccines, monoclonal antibodies, and cell therapy, showing diversity in targets and modalities.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Anticorpos Monoclonais", "Terapia Celular"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "While Butantan develops vaccines for major diseases, it does not specifically target top-selling biologics like adalimumab or etanercept, focusing instead on public health priorities.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Specific bioreactor capacity in liters is not publicly disclosed, but Butantan has significant manufacturing capabilities for vaccines and sera.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "Butantan has multiple production facilities and is expanding with a new innovation hub, indicating multi-site manufacturing capability.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Governo do Estado de São Paulo anuncia terreno para Instituto Butantan criar novo polo de inovação e desenvolvimento de imunobiológicos"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Information on single-use vs. stainless steel processes is not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Butantan likely uses advanced analytical techniques, but no specific evidence of mass spec usage is present in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No information on validated analytical methods for biosimilar comparability is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Butantan publishes studies on vaccine efficacy and development, but not specifically on biosimilar similarity.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Vacina da dengue do Butantan mantém 80,5% de eficácia contra casos graves e com sinais de alerta após cinco anos"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "Butantan has received approvals from Anvisa for vaccines like dengue and chikungunya, but not from FDA/EMA in the last 5 years.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Anvisa autoriza produção nacional da vacina contra a chikungunya pelo Instituto Butantan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No data on average approval time is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "No complete response letters or rejections are mentioned, but there was a temporary interruption of dengue vaccination, which may indicate regulatory issues.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Tire dúvidas sobre a interrupção temporária da vacinação contra dengue com a Butantan-DV"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Butantan uses various expression systems for vaccine production, including cell culture, but specifics are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Butantan has proprietary vaccine platforms like Butantan-DV, but not specifically for biosimilars.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Vacina da dengue Butantan-DV"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Butantan is investing in innovation and has partnerships for advanced therapies, but no explicit AI or automation investment is mentioned.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Instituto Butantan e Hemocentro de Ribeirão Preto firmam acordo para desenvolvimento de terapias avançadas contra doenças autoimunes"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "Butantan primarily supplies vaccines to Brazil's public health system, with limited global commercial presence.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Butantan has a strong presence in Brazil and is expanding in Latin America, targeting emerging markets.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Vacinação contra chikungunya é ampliada para municípios de Minas Gerais, Ceará e Sergipe"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Butantan has local manufacturing in Brazil and partnerships with international biotech companies.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Instituto Butantan firma parceria internacional com IASO Bio para desenvolver terapia inovadora contra câncer hematológico"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Revenue growth data is not available, but Butantan has received significant investments for expansion.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Instituto Butantan celebra 125 anos com investimento de R$ 1,85 bilhão para ampliar, diversificar e modernizar produção de vacinas e soros"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Profitability of the biosimilar segment is not disclosed; Butantan is a public institution focused on public health.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Projected market share growth is not available, but Butantan is expanding its vaccine portfolio.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "Butantan has partnerships with international biotech companies and local health institutions.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Instituto Butantan firma parceria internacional com IASO Bio", "Instituto Butantan e Hemocentro de Ribeirão Preto firmam acordo"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Butantan supplies vaccines to the Brazilian public health system, serving many hospitals and clinics, but specific numbers are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Butantan has supply agreements with the Brazilian Ministry of Health, but not with payers or GPOs in the traditional sense.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Instituto Butantan entrega as primeiras 6,9 milhões de doses da vacina da gripe de 2026 destinadas ao SUS"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "Pricing information for biosimilars is not available; Butantan's vaccines are provided to the public system at low cost.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No evidence of value-added services for payers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No comparative pricing data available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Butantan likely has multiple suppliers for raw materials, but no specific evidence is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Butantan has contingency plans for vaccine supply, as seen in the temporary dengue vaccination interruption, but no formal risk management plan is mentioned.",
+      "evidence_urls": ["https://www.butantan.gov.br"],
+      "evidence_snippets": ["Tire dúvidas sobre a interrupção temporária da vacinação contra dengue com a Butantan-DV"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Lead time data is not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

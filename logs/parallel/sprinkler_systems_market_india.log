@@ -1,0 +1,89 @@
+[pipeline 00:21:34] market: Sprinkler Systems Market (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\sprinkler_systems_market_india
+[pipeline 00:21:34] 1b. 119 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 00:21:37] 1b. now 119 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 00:21:37] 1. verified rows: 119
+[pipeline 00:21:37] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\sprinkler_systems_market_india\_pipeline\axes_spec.json
+[pipeline 00:21:37] 3. 119 names -> 119 companies after dedupe (0 groups merged)
+[pipeline 00:21:37] 3b. 3 companies left out (not active or excluded by review): ['Armor Fire Protection Systems Pvt. Ltd.', 'NewAge Fire Fighting Co. Ltd.', 'Padmini Industries Limited'] -> _pipeline/excluded_companies.json
+[pipeline 00:21:37] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 00:21:37] 3c. ownership 116 / identity 3 / scope 116 answers: 5 more left out ['HD Fire Protect Limited', 'Skipper Limited', 'Sudhakar Irrigation Systems Pvt. Ltd.', 'Utkarsh India Limited', 'Vikasganga Polyplastic Pvt. Ltd.'], 1 owner labels, 50 adjacent-segment (not on the chart) ['A-One Pipes', 'Alex Pipe India Private Limited', 'Annapurna Industries', 'Apollo Pipes Limited', 'Baba Lokenath Agrotech Industries Private Limited', 'Bharat Polymers'] -> _pipeline/auto_review.json
+[pipeline 00:21:37] 4. quick X/Y scorecard scoring needed for 11 companies (1 Product + 1 Business query each)
+[pipeline 00:21:37] overall: 11 companies across 2 browser(s)
+[pipeline 00:21:41] overall: 2/2 shard(s) still running
+[pipeline 00:22:41] overall: 2/2 shard(s) still running
+[pipeline 00:23:41] overall: 2/2 shard(s) still running
+[pipeline 00:24:41] overall: 2/2 shard(s) still running
+[pipeline 00:25:41]    Top 20 chosen 5 per quadrant from 61 quick-scored companies
+[pipeline 00:25:41]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\sprinkler_systems_market_india\_pipeline\evidence_pool.json
+[pipeline 00:25:41] 5. evidence round 1: 20 companies with gaps
+[pipeline 00:25:41] evidence_r1: 20 companies across 2 browser(s)
+[pipeline 00:25:45] evidence_r1: 2/2 shard(s) still running
+[pipeline 00:26:45] evidence_r1: 2/2 shard(s) still running
+[pipeline 00:27:45] evidence_r1: 2/2 shard(s) still running
+[pipeline 00:28:45] reasoning_r1: 20 companies across 2 browser(s)
+[pipeline 00:28:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:29:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:30:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:31:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:32:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:33:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:34:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:35:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:36:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:37:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:38:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:39:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:40:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:41:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:42:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:43:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:44:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:45:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:46:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:47:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:48:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:49:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:50:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:51:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:52:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:53:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:54:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:55:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:56:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:57:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:58:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 00:59:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 01:00:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 01:01:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 01:02:49] reasoning_r1: 2/2 shard(s) still running
+[pipeline 01:03:49] reasoning_r1: 1/2 shard(s) still running
+[pipeline 01:04:49]    WARNING: only 111 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 01:04:49]    --keep 120: 20 chart/evidence + 91 long tail kept, 0 lower-scored dropped
+[pipeline 01:04:49]    20 companies with full evidence, 91 in the long tail
+[pipeline 01:04:49] 6. composite scores (5 per quadrant)
+[pipeline 01:04:51] 7. rewriting hedge wording / first person in evidence
+[pipeline 01:04:52] 7b. supporting points: 5 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 01:04:52] 7b. owner of Driptech India Pvt. Ltd.: Jain Irrigation Systems Ltd.
+[pipeline 01:04:52] 8. building HTML / JSON / CSV report
+[pipeline 01:04:53] 8. report page: interactive design (sprinkler_systems_market_india_report.html); static copy sprinkler_systems_market_india_report_classic.html
+[pipeline 01:05:14] 8b. PDF report: sprinkler_systems_market_india_report.pdf
+[pipeline 01:05:42] 8b. Word report: sprinkler_systems_market_india_report.docx
+[pipeline 01:05:42] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 111 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 01:05:42] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\sprinkler_systems_market_india\sprinkler_systems_market_india_report.html

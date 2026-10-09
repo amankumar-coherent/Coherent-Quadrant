@@ -1,0 +1,39 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Advanced Seismic Data Processing Solutions Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=f9d16b6b → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=output\chatgpt_expand\advanced_seismic_data_processing_solutions_market_global_service_providers\advanced_seismic_data_processing_solutions_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] checkpoint → output\chatgpt_expand\advanced_seismic_data_processing_solutions_market_global_service_providers\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      · 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:/Users/aman.kumar/Downloads/Coherent-Quadrant/data/ai_mode_batch_20_chromium)
+      · 0c-market-analysis: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Solution Provider
+  [chatgpt] Step 0c/6: why B2B: The market is B2B because the primary buyers are oil and gas exploration companies, mining firms, and geophysical survey enterprises requiring specialized processing services.
+  [chatgpt] Step 0c/6: roles present in market: Solution Provider, Service Provider
+  [chatgpt] Step 0c/6: why this player type: Solution Provider was chosen because the market's defining competitive edge is built on proprietary technology, algorithms, and software frameworks, whereas standalone service delivery acts as a secondary channel for deploying these software solutions.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 300)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +10 (total 10)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +10 (total 20)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +10 (total 30)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…

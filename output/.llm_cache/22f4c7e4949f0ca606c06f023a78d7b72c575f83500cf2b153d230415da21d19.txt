@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Fitbit has published clinical validation studies for its heart rate and sleep tracking, though not all sensors have gold-standard validation.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Fitbit reports heart rate accuracy within a few beats per minute in some studies, but no MARD is publicly disclosed for glucose as it does not offer glucose monitoring.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 8,
+      "answer": "Fitbit has FDA clearance for its ECG app and irregular heart rhythm notifications, and CE marking for some devices.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Fitbit offers a wide range of wearables including smartwatches, trackers, and a smart scale, but not medical-grade patches or rings.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Fitbit covers cardiac (ECG, AFib detection), respiratory (SpO2), and general wellness, but not diabetes or other therapeutic areas.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Fitbit devices are primarily consumer-focused but are used in clinical research and have some professional integrations.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Fitbit has numerous peer-reviewed publications on its devices' accuracy and clinical utility, especially for heart rate and sleep.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "answer": "Fitbit has conducted and supported clinical studies for its devices, including the Fitbit Heart Study for AFib detection.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f2_q2",
+      "answer": "Fitbit provides real-world evidence through its large user base and research collaborations, but not formal outcomes data.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 7
+    },
+    {
+      "id": "f3_q0",
+      "answer": "Fitbit devices typically offer 5-7 days of battery life, with some models lasting up to 10 days.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f3_q1",
+      "answer": "Fitbit devices are designed for continuous wear with water resistance and comfortable bands, though not all are discreet.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f3_q2",
+      "answer": "Fitbit offers multiple form factors including wristbands, smartwatches, and a clip-on tracker, but not chest straps or patches.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 7
+    },
+    {
+      "id": "f4_q0",
+      "answer": "Fitbit has some integrations with EHR systems through Google Cloud and partnerships, but not widespread direct EHR integration.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 6
+    },
+    {
+      "id": "f4_q1",
+      "answer": "Fitbit provides a comprehensive Web API and SDK for third-party developers to access user data with consent.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f4_q2",
+      "answer": "Fitbit supports standard health data formats like FHIR through Google's ecosystem, but not HL7 directly.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 7
+    },
+    {
+      "id": "f5_q0",
+      "answer": "Fitbit has FDA clearance for its ECG app and irregular heart rhythm notifications, and CE marking for some devices.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f5_q1",
+      "answer": "Fitbit's regulatory approvals are for specific medical indications like AFib detection, not just general wellness.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f5_q2",
+      "answer": "Fitbit has regulatory approvals in the US and EU, but not in Japan or other major markets.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 7
+    },
+    {
+      "id": "f6_q0",
+      "answer": "Fitbit has sold over 100 million devices and has millions of active users, making it a market leader.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 9
+    },
+    {
+      "id": "f6_q1",
+      "answer": "Fitbit has a strong retail distribution network and partnerships with corporate wellness programs, but not hospital distribution.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 7
+    },
+    {
+      "id": "f6_q2",
+      "answer": "Fitbit has case studies and testimonials from healthcare providers using its devices in research and patient monitoring.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 7
+    },
+    {
+      "id": "f7_q0",
+      "answer": "Fitbit does not have CPT codes for its devices, but some of its data may be used in remote patient monitoring programs.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 4
+    },
+    {
+      "id": "f7_q1",
+      "answer": "Fitbit devices are not typically covered by insurance, but some corporate wellness programs may subsidize them.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 4
+    },
+    {
+      "id": "f7_q2",
+      "answer": "Fitbit offers a premium subscription service (Fitbit Premium) and sometimes discounts for employees, but not patient assistance programs.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 6
+    },
+    {
+      "id": "f8_q0",
+      "answer": "Fitbit's revenue growth has been modest in recent years, with some quarters showing decline, but Google's backing provides stability.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 5
+    },
+    {
+      "id": "f8_q1",
+      "answer": "Fitbit does not publicly report gross margins for its wearable segment, but as a hardware company margins are typically moderate.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 4
+    },
+    {
+      "id": "f8_q2",
+      "answer": "Fitbit has a growing subscription service (Fitbit Premium) and a large installed base, indicating potential for recurring revenue.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 7
+    },
+    {
+      "id": "f9_q0",
+      "answer": "Fitbit has partnerships with healthcare systems and research institutions, such as the Fitbit Heart Study with the University of California.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 8
+    },
+    {
+      "id": "f9_q1",
+      "answer": "Fitbit is owned by Google, providing collaboration with a tech giant, and has partnerships with pharma companies for research.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Smartwatches; Wearables; Fitness Trackers; Connected Devices"],
+      "grounding": "model_knowledge",
+      "score": 9
+    },
+    {
+      "id": "f9_q2",
+      "answer": "Fitbit participates in industry standards bodies and has been involved in developing health data standards through Google.",
+      "evidence_urls": ["https://www.fitbit.com"],
+      "evidence_snippets": ["Offers wearable devices with heart rate, SpO2, skin temperature, and ECG monitoring."],
+      "grounding": "model_knowledge",
+      "score": 7
+    }
+  ]
+}

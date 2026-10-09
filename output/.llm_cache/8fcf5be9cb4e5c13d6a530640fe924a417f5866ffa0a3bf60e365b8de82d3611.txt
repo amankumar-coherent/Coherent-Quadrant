@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows Hua Medicine has dorzagliatin (HuaTangNing) approved in China and Hong Kong, but it is a GKA, not a GLP-1 RA. No GLP-1 products in portfolio."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Dorzagliatin is a first-in-class GKA for T2D, but no evidence of GLP-1 or incretin-based therapy differentiation; focus is on diabetes, not obesity."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Published Phase III results in Nature Medicine and ongoing NMPA approval process for dorzagliatin; but no GLP-1 pipeline mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or supply chain for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Dorzagliatin approved by NMPA in China and Hong Kong, indicating regulatory compliance; but no GLP-1 specific approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Approved in China and Hong Kong, with plans for Southeast Asia expansion; but no global GLP-1 market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Publications in Nature Medicine and approval of dorzagliatin build reputation in diabetes, but not in GLP-1 space."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No GLP-1 pipeline; dorzagliatin is for T2D, no obesity indication mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Hong Kong as gateway for global expansion into Southeast Asia; but no GLP-1 partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

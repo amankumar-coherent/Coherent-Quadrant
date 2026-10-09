@@ -1,0 +1,757 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Solar Rooftop Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=9998135a → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=177 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_solar_rooftop_market_global\global_solar_rooftop_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=done status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_solar_rooftop_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=Hybrid B2B + B2C
+  [chatgpt] Step 0c/6: market type = Hybrid B2B + B2C | player type = Brand / Marketer
+  [chatgpt] Step 0c/6: why Hybrid B2B + B2C: The market is hybrid because solar rooftop systems are actively sold to both residential homeowners (individual consumers) and commercial enterprises (businesses), and B2C was chosen because it has a genuine consumer-facing side.
+  [chatgpt] Step 0c/6: why this player type: Brand / Marketer was chosen because this hybrid market contains a prominent consumer-facing side where companies brand, market, and deliver complete rooftop solar solutions directly to individual households.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Brand / Marketer (batch 10, target 300, resuming with 302)
+    → substep 1a done: 302 companies in 0 rounds (resumed with 302) (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 302)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (302 = 0 seeds + 302 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 302 candidates as Brand / Marketer in 26 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/26…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-1: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 38s ago
+    → substep 4a.1: running kept=183 rejected=131
+    → substep 4a.2: verify chunk 2/26…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 68s ago
+    → substep 4a.2: running kept=195 rejected=131
+    → substep 4a.3: verify chunk 3/26…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 97s ago
+    → substep 4a.3: running kept=207 rejected=131
+    → substep 4a.4: verify chunk 4/26…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-4: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 129s ago
+    → substep 4a.4: running kept=219 rejected=131
+    → substep 4a.5: verify chunk 5/26…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 156s ago
+    → substep 4a.5: running kept=228 rejected=134
+    → substep 4a.6: verify chunk 6/26…
+      · verify-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 186s ago
+    → substep 4a.6: running kept=236 rejected=138
+    → substep 4a.7: verify chunk 7/26…
+      · verify-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-7: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 212s ago
+    → substep 4a.7: running kept=246 rejected=140
+    → substep 4a.8: verify chunk 8/26…
+      · verify-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-8: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 247s ago
+    → substep 4a.8: running kept=250 rejected=148
+    → substep 4a.9: verify chunk 9/26…
+      · verify-9: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · verify-9: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 28s ago
+    → substep 4a.9: running kept=251 rejected=159
+    → substep 4a.10: verify chunk 10/26…
+      · verify-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-10: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 59s ago
+    → substep 4a.10: running kept=262 rejected=160
+    → substep 4a.11: verify chunk 11/26…
+      · verify-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-11: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 87s ago
+    → substep 4a.11: running kept=274 rejected=160
+    → substep 4a.12: verify chunk 12/26…
+      · verify-12: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-12: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 116s ago
+    → substep 4a.12: running kept=278 rejected=168
+    → substep 4a.13: verify chunk 13/26…
+      · verify-13: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-13: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 149s ago
+    → substep 4a.13: running kept=285 rejected=173
+    → substep 4a.14: verify chunk 14/26…
+      · verify-14: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-14: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 183s ago
+    → substep 4a.14: running kept=285 rejected=185
+    → substep 4a.15: verify chunk 15/26…
+      · verify-15: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-15: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 215s ago
+    → substep 4a.15: running kept=286 rejected=196
+    → substep 4a.16: verify chunk 16/26…
+      · verify-16: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-16: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 245s ago
+    → substep 4a.16: running kept=293 rejected=201
+    → substep 4a.17: verify chunk 17/26…
+      · verify-17: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-17: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 276s ago
+    → substep 4a.17: running kept=296 rejected=210
+    → substep 4a.18: verify chunk 18/26…
+      · verify-18: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-18: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 311s ago
+    → substep 4a.18: running kept=304 rejected=214
+    → substep 4a.19: verify chunk 19/26…
+      · verify-19: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · verify-19: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 17s ago
+    → substep 4a.19: running kept=310 rejected=220
+    → substep 4a.20: verify chunk 20/26…
+      · verify-20: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-20: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 57s ago
+    → substep 4a.20: running kept=318 rejected=224
+    → substep 4a.21: verify chunk 21/26…
+      · verify-21: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-21: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 93s ago
+    → substep 4a.21: running kept=319 rejected=235
+    → substep 4a.22: verify chunk 22/26…
+      · verify-22: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-22: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 128s ago
+    → substep 4a.22: running kept=319 rejected=247
+    → substep 4a.23: verify chunk 23/26…
+      · verify-23: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-23: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 158s ago
+    → substep 4a.23: running kept=322 rejected=256
+    → substep 4a.24: verify chunk 24/26…
+      · verify-24: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-24: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 193s ago
+    → substep 4a.24: running kept=324 rejected=266
+    → substep 4a.25: verify chunk 25/26…
+      · verify-25: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-25: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 226s ago
+    → substep 4a.25: running kept=327 rejected=275
+    → substep 4a.26: verify chunk 26/26…
+      · verify-26: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-26: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 253s ago
+    → substep 4a.26: running kept=327 rejected=277
+    → substep 4a done: kept=327 rejected=277 (required=Brand / Marketer)
+    → substep 4b: write rejected list (277)
+    → substep 4c: market gate kept 327/327 (dropped 0)
+  [web_expand] merged +9; total unique=186 (target=600)
+  [chatgpt] fill ALL table rows this pass: 186 (merged=186, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 186 rows already carry their report columns
+    → substep 5c: merged filled rows into list (186 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 186 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] drop 'Sungrow Power Supply Co., Ltd.': out of market
+  [relevance] drop 'Sunman (Shanghai) Energy Co., Ltd.': out of market
+  [relevance] Global Solar Rooftop Market: in=186 geo_drop=0 heur_drop=0 llm_drop=2 kept=183 market_type=B2C uniform_role=Brand / Marketer
+  [xy] market-fit filter (B2C): 186 -> 184 companies (roles=['Brand / Marketer'])
+  [xy] industry=Others/Energy axis_def=llm | X=Product Strength ['Module Efficiency & Power Density', 'System Design & Installation Quality', 'Product Durability & Warranty', 'Smart Monitoring & Grid Integration', 'Supply Chain & Manufacturing Scale'] | Y=Business Strength ['Geographic Market Coverage', 'Customer Acquisition & Retention', 'Financial Strength & Profitability', 'Project Pipeline & Growth Rate', 'Channel Partnerships & Brand Equity']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 184 companies (1/query, 2 queries per batch)
+      · params [1-1]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [2-2]: 1/1 companies detailed
+      · params [3-3]: 1/1 companies detailed
+      · params [4-4]: 1/1 companies detailed
+      · params [5-5]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [6-6]: 1/1 companies detailed
+      · params [7-7]: 1/1 companies detailed
+      · params [8-8]: 1/1 companies detailed
+      · params [9-9]: 1/1 companies detailed
+      · params [10-10]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [11-11]: 1/1 companies detailed
+      · params [12-12]: 1/1 companies detailed
+      · params [13-13]: 1/1 companies detailed
+      · params [14-14]: 1/1 companies detailed
+      · params [15-15]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [16-16]: 1/1 companies detailed
+      · params [17-17]: 1/1 companies detailed
+      · params [18-18]: 1/1 companies detailed
+      · params [19-19]: 1/1 companies detailed
+      · params [20-20]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [21-21]: 1/1 companies detailed
+      · params [22-22]: 1/1 companies detailed
+      · params [23-23]: 1/1 companies detailed
+      · params [24-24]: 1/1 companies detailed
+      · params [25-25]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [26-26]: 1/1 companies detailed
+      · params [27-27]: 1/1 companies detailed
+      · params [28-28]: 1/1 companies detailed
+      · params [29-29]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · params [30-30]: 1/1 companies detailed
+      · params [31-31]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [32-32]: 1/1 companies detailed
+      · params [33-33]: 1/1 companies detailed
+      · params [34-34]: 1/1 companies detailed
+      · params [35-35]: 1/1 companies detailed
+      · params [36-36]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [37-37]: 1/1 companies detailed
+      · params [38-38]: 1/1 companies detailed
+      · params [39-39] Business Strength: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.google.com/sea
+      · params [39-39]: 0/1 companies detailed
+      · params [40-40]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [41-41]: 1/1 companies detailed
+      · params [42-42]: 1/1 companies detailed
+      · params [43-43]: 1/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+      · params [45-45]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [46-46]: 1/1 companies detailed
+      · params [47-47]: 1/1 companies detailed
+      · params [48-48]: 0/1 companies detailed
+      · params [49-49]: 1/1 companies detailed
+      · params [50-50]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [51-51]: 1/1 companies detailed
+      · params [52-52]: 1/1 companies detailed
+      · params [53-53]: 0/1 companies detailed
+      · params [54-54]: 1/1 companies detailed
+      · params [55-55]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [56-56]: 1/1 companies detailed
+      · params [57-57]: 1/1 companies detailed
+      · params [58-58]: 1/1 companies detailed
+      · params [59-59]: 1/1 companies detailed
+      · params [60-60]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [61-61]: 1/1 companies detailed
+      · params [62-62]: 1/1 companies detailed
+      · params [63-63]: 1/1 companies detailed
+      · params [64-64]: 1/1 companies detailed
+      · params [65-65]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [66-66]: 1/1 companies detailed
+      · params [67-67]: 1/1 companies detailed
+      · params [68-68]: 1/1 companies detailed
+      · params [69-69]: 1/1 companies detailed
+      · params [70-70]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · params [71-71]: 1/1 companies detailed
+      · params [72-72]: 1/1 companies detailed
+      · params [73-73]: 1/1 companies detailed
+      · params [74-74]: 1/1 companies detailed
+      · params [75-75]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · params [76-76]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · params [77-77]: 1/1 companies detailed
+      · params [78-78]: 1/1 companies detailed
+      · params [79-79]: 1/1 companies detailed
+      · params [80-80]: 1/1 companies detailed
+      · params [81-81]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · params [82-82]: 1/1 companies detailed
+      · params [83-83]: 1/1 companies detailed
+      · params [84-84]: 1/1 companies detailed
+      · params [85-85]: 1/1 companies detailed
+      · params [86-86]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+      · params [87-87]: 1/1 companies detailed
+      · params [88-88]: 1/1 companies detailed
+      · params [89-89]: 1/1 companies detailed
+      · params [90-90]: 1/1 companies detailed
+      · params [91-91]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (24 this run) — solve it in the browser window
+      · params [92-92]: 1/1 companies detailed
+      · params [93-93]: 1/1 companies detailed
+      · params [94-94]: 1/1 companies detailed
+      · params [95-95]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (25 this run) — solve it in the browser window
+      · params [96-96]: 1/1 companies detailed
+      · params [97-97]: 1/1 companies detailed
+      · params [98-98]: 1/1 companies detailed
+      · params [99-99]: 1/1 companies detailed
+      · params [100-100]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (26 this run) — solve it in the browser window
+      · params [101-101]: 1/1 companies detailed
+      · params [102-102]: 1/1 companies detailed
+      · params [103-103]: 1/1 companies detailed
+      · params [104-104]: 1/1 companies detailed
+      · params [105-105]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (27 this run) — solve it in the browser window
+      · params [106-106]: 1/1 companies detailed
+      · params [107-107]: 1/1 companies detailed
+      · params [108-108]: 1/1 companies detailed
+      · params [109-109]: 1/1 companies detailed
+      · params [110-110]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (28 this run) — solve it in the browser window
+      · params [111-111]: 1/1 companies detailed
+      · params [112-112]: 1/1 companies detailed
+      · params [113-113]: 1/1 companies detailed
+      · params [114-114]: 1/1 companies detailed
+      · params [115-115]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (29 this run) — solve it in the browser window
+      · params [116-116]: 1/1 companies detailed
+      · params [117-117]: 1/1 companies detailed
+      · params [118-118]: 1/1 companies detailed
+      · params [119-119]: 1/1 companies detailed
+      · params [120-120]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (30 this run) — solve it in the browser window
+      · params [121-121]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #3)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [122-122]: 1/1 companies detailed
+      · params [123-123]: 1/1 companies detailed
+      · params [124-124]: 1/1 companies detailed
+      · params [125-125]: 1/1 companies detailed
+      · params [126-126]: 1/1 companies detailed
+      · params [127-127]: 0/1 companies detailed
+      · params [128-128]: 1/1 companies detailed
+      · params [129-129]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (31 this run) — solve it in the browser window
+      · params [130-130]: 1/1 companies detailed
+      · params [131-131]: 1/1 companies detailed
+      · params [132-132]: 1/1 companies detailed
+      · params [133-133]: 1/1 companies detailed
+      · params [134-134]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (32 this run) — solve it in the browser window
+      · params [135-135]: 1/1 companies detailed
+      · params [136-136]: 1/1 companies detailed
+      · params [137-137]: 1/1 companies detailed
+      · params [138-138]: 1/1 companies detailed
+      · params [139-139]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (33 this run) — solve it in the browser window
+      · params [140-140]: 1/1 companies detailed
+      · params [141-141]: 0/1 companies detailed
+      · params [142-142]: 1/1 companies detailed
+      · params [143-143]: 1/1 companies detailed
+      · params [144-144]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (34 this run) — solve it in the browser window
+      · params [145-145]: 1/1 companies detailed
+      · params [146-146]: 1/1 companies detailed
+      · params [147-147]: 0/1 companies detailed
+      · params [148-148]: 1/1 companies detailed
+      · params [149-149]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (35 this run) — solve it in the browser window
+      · params [150-150]: 1/1 companies detailed
+      · params [151-151]: 1/1 companies detailed
+      · params [152-152]: 1/1 companies detailed
+      · params [153-153]: 1/1 companies detailed
+      · params [154-154]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (36 this run) — solve it in the browser window
+      · params [155-155]: 1/1 companies detailed
+      · params [156-156]: 1/1 companies detailed
+      · params [157-157]: 1/1 companies detailed
+      · params [158-158]: 1/1 companies detailed
+      · params [159-159]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (37 this run) — solve it in the browser window
+      · params [160-160]: 1/1 companies detailed
+      · params [161-161]: 1/1 companies detailed
+      · params [162-162]: 1/1 companies detailed
+      · params [163-163]: 1/1 companies detailed
+      · params [164-164]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (38 this run) — solve it in the browser window
+      · params [165-165]: 1/1 companies detailed
+      · params [166-166]: 1/1 companies detailed
+      · params [167-167]: 1/1 companies detailed
+      · params [168-168]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (39 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #4)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [169-169]: 1/1 companies detailed
+      · params [170-170]: 1/1 companies detailed
+      · params [171-171]: 1/1 companies detailed
+      · params [172-172]: 1/1 companies detailed
+      · params [173-173]: 1/1 companies detailed
+      · params [174-174]: 1/1 companies detailed
+      · params [175-175]: 1/1 companies detailed
+      · params [176-176]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (40 this run) — solve it in the browser window
+      · params [177-177]: 1/1 companies detailed
+      · params [178-178]: 1/1 companies detailed
+      · params [179-179]: 1/1 companies detailed
+      · params [180-180]: 1/1 companies detailed
+      · params [181-181]: 1/1 companies detailed
+      · params [182-182]: 1/1 companies detailed
+      · params [183-183]: 1/1 companies detailed
+      · params [184-184]: 1/1 companies detailed
+  [xy] parameter detail done: 179/184 companies
+    → [xy] score 1/184 ABCSolar
+    → [xy] score 2/184 Abundance Solar Panels Industries LLC
+    → [xy] score 3/184 aleo solar GmbH
+    → [xy] score 4/184 Alfanar Company
+    → [xy] score 5/184 Alumo Energy
+    → [xy] score 6/184 Andes Solar SpA
+    → [xy] score 7/184 ARTsolar (Pty) Ltd
+    → [xy] score 8/184 Autarco Group B.V.
+    → [xy] score 9/184 Balfar Solar Indústria Fotoelétrica S/A
+    → [xy] score 10/184 Bauer Solar GmbH
+    → [xy] score 11/184 BISOL Group d.o.o.
+    → [xy] score 12/184 Blue Sol Energia Solar Ltda.
+    → [xy] score 13/184 Blue Sol Participações S.A.
+    → [xy] score 14/184 Brasol Participações e Empreendimentos S.A.
+    → [xy] score 15/184 Brio Energy S.A. de C.V.
+    → [xy] score 16/184 Canadian Solar Inc.
+    → [xy] score 17/184 Celsia S.A. E.S.P.
+    → [xy] score 18/184 Chint New Energy Technology Co., Ltd.
+    → [xy] score 19/184 Cleantech Solar Development Company Pte. Ltd.
+    → [xy] score 20/184 Compañía Alborada de América S.A.P.I. de C.V.
+    → [xy] score 21/184 Desert Technologies Industries
+    → [xy] score 22/184 DuSol Industries LLC
+    → [xy] score 23/184 ECOpotencia Solar Energy
+    → [xy] score 24/184 EcoPower Solar Energy
+    → [xy] score 25/184 Ekarat Solar Co., Ltd.
+    → [xy] score 26/184 Elgin S.A.
+    → [xy] score 27/184 Emmvee Photovoltaic Power Limited
+    → [xy] score 28/184 Enerclima, S. de R.L. de C.V.
+    → [xy] score 29/184 Energía Ciudad Luz SpA
+    → [xy] score 30/184 Energía Real S.A. de C.V.
+    → [xy] score 31/184 Energía Solev Colombia SAS
+    → [xy] score 32/184 Enernova Solar
+    → [xy] score 33/184 Enlight México
+    → [xy] score 34/184 Enphase Energy, Inc.
+    → [xy] score 35/184 Erco Energía S.A.S.
+    → [xy] score 36/184 Erdm Solar, S.A. de C.V.
+    → [xy] score 37/184 Ergosol Energia Solar
+    → [xy] score 38/184 Eshraq Clean Energy Co.
+    → [xy] score 39/184 ESS SpA
+      · score ESS SpA: unparsed reply 'Searching \n70'
+      · score ESS SpA: unparsed reply 'Thinking a little longer\n30'
+    → [xy] no score for ESS SpA (AI Mode unavailable) — left unscored for retry
+    → [xy] score 40/184 Evol Energy
+    → [xy] score 41/184 EXO S.A.
+    → [xy] score 42/184 Flux Solar Energias Renovables SpA
+    → [xy] score 43/184 Fronius International GmbH
+    → [xy] score 44/184 FSolar Energy Equipment
+    → [xy] score 45/184 Galt Energy S. de R.L. de C.V.
+    → [xy] score 46/184 GCL System Integration Technology Co., Ltd.
+    → [xy] score 47/184 Gera Energia Brasil S.A.
+    → [xy] score 48/184 GetSolar Pte. Ltd.
+  [ai-mode] CAPTCHA (41 this run) — solve it in the browser window
+      · score GetSolar Pte. Ltd.: unparsed reply '27\nIf you want to adjust the individual scores or weightings for Geographic Coverage, Financial Stre'
+    → [xy] no score for GetSolar Pte. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 49/184 Ginlong Technologies Co., Ltd.
+    → [xy] score 50/184 Globo Brasil Indústria de Painéis Solares Ltda.
+    → [xy] score 51/184 Goldi Solar Private Limited
+    → [xy] score 52/184 GoodWe Technologies Co., Ltd.
+    → [xy] score 53/184 Green Solar
+      · score Green Solar: unparsed reply 'Searching \nUNKNOWN'
+      · score Green Solar: unparsed reply 'UNKNOWN'
+    → [xy] no score for Green Solar (AI Mode unavailable) — left unscored for retry
+    → [xy] score 54/184 Green Technology Co., Ltd.
+    → [xy] score 55/184 Grupo BedinSat
+    → [xy] score 56/184 GSPARX Sdn. Bhd.
+    → [xy] score 57/184 Hanwha Q CELLS Co., Ltd.
+    → [xy] score 58/184 Hayonik Indústria e Comércio de Produtos Eletrônic
+    → [xy] score 59/184 Heckert Solar GmbH
+    → [xy] score 60/184 Helia Solar Geração Distribuída S.A.
+    → [xy] score 61/184 Heliotek Sistemas de Energia Solar Ltda
+    → [xy] score 62/184 Hengdian Group DMEGC Magnetics Co., Ltd.
+    → [xy] score 63/184 Hybrytec S.A.S.
+    → [xy] score 64/184 Ideal Solar Energy Co. Ltd.
+    → [xy] score 65/184 Ilumisol Energia Solar
+    → [xy] score 66/184 Iluméxico
+    → [xy] score 67/184 Infinity Power
+    → [xy] score 68/184 Insole Solar Energy S.A.
+    → [xy] score 69/184 Intelbras S.A.
+    → [xy] score 70/184 Intelbras S.A. Indústria de Telecomunicação Eletrô
+    → [xy] score 71/184 Inteligen Energía S.A. de C.V.
+    → [xy] score 72/184 Iusasol S.A. de C.V.
+    → [xy] score 73/184 JA Solar Technology Co., Ltd.
+    → [xy] score 74/184 JFA Eletrônica Ltda.
+    → [xy] score 75/184 Jiangsu Seraphim Solar System Co., Ltd.
+    → [xy] score 76/184 JinkoSolar Holding Co., Ltd.
+    → [xy] score 77/184 KarmSolar
+    → [xy] score 78/184 L8 Energy
+    → [xy] score 79/184 Leapton Energy Co., Ltd.
+    → [xy] score 80/184 LONGi Green Energy Technology Co., Ltd.
+    → [xy] score 81/184 Loom Solar Pvt. Ltd.
+    → [xy] score 82/184 Lábramo Centronics Ind. Com. Ltda.
+    → [xy] score 83/184 Maxeon Solar Technologies, Ltd.
+    → [xy] score 84/184 Maysun Solar FZCO
+    → [xy] score 85/184 Meyer Burger Technology AG
+    → [xy] score 86/184 MINASOL PAINEIS FOTOVOLTAICOS
+    → [xy] score 87/184 MtySolar
+    → [xy] score 88/184 Multimercantes Ltda.
+    → [xy] score 89/184 Mundra Solar PV Limited
+    → [xy] score 90/184 MyNova Eco S.A. de C.V.
+    → [xy] score 91/184 Navitas Green Solutions Private Limited
+    → [xy] score 92/184 Neosolar Energia Ltda.
+    → [xy] score 93/184 NHS Sistemas Eletrônicos Ltda.
+    → [xy] score 94/184 OK Energy Importação e Exportação Ltda.
+    → [xy] score 95/184 Panasonic Corporation
+    → [xy] score 96/184 PHB Eletrônica Ltda.
+    → [xy] score 97/184 Philadelphia Solar L.L.C.
+    → [xy] score 98/184 Phono Solar Technology Co., Ltd.
+    → [xy] score 99/184 Portal Solar Ltda.
+    → [xy] score 100/184 PosiGen, LLC
+    → [xy] score 101/184 Premier Energies Limited
+    → [xy] score 102/184 Qatar Solar Energy WLL
+    → [xy] score 103/184 Rayzon Solar Limited
+    → [xy] score 104/184 REC Solar Holdings AS
+    → [xy] score 105/184 RenewSys India Private Limited
+    → [xy] score 106/184 Renovigi Energia Solar
+    → [xy] score 107/184 Risen Energy Co., Ltd.
+    → [xy] score 108/184 Ruuf SpA
+    → [xy] score 109/184 Saatvik Green Energy Limited
+    → [xy] score 110/184 SAECSA Energía Solar
+    → [xy] score 111/184 Safeer Solar
+    → [xy] score 112/184 Salo Tech Thailand Co., Ltd.
+    → [xy] score 113/184 Sengi Solar
+    → [xy] score 114/184 Shanghai Aiko Solar Energy Co., Ltd.
+    → [xy] score 115/184 Sharp Corporation
+    → [xy] score 116/184 Shenzhen Growatt New Energy Co., Ltd.
+    → [xy] score 117/184 Silfab Solar Inc.
+    → [xy] score 118/184 Siraj Power Contracting LLC
+    → [xy] score 119/184 SMA Solar Technology AG
+    → [xy] score 120/184 Smart Energy Group Pty Ltd
+    → [xy] score 121/184 SOLA Group
+    → [xy] score 122/184 Solar Arabia Limited
+    → [xy] score 123/184 Solar Change SA de CV
+    → [xy] score 124/184 Solar Concepts
+    → [xy] score 125/184 Solar Group Comercial Ltda.
+    → [xy] score 126/184 Solar Power Energy Ltda
+    → [xy] score 127/184 Solar Power, S.A. de C.V.
+      · score Solar Power, S.A. de C.V.: unparsed reply 'Searching \nUNKNOWN'
+      · score Solar Power, S.A. de C.V.: unparsed reply 'UNKNOWN'
+    → [xy] no score for Solar Power, S.A. de C.V. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 128/184 Solar PPM Co., Ltd.
+    → [xy] score 129/184 Solar Roof Ltda
+    → [xy] score 130/184 SolarEdge Technologies, Inc.
+    → [xy] score 131/184 Solarever Tecnología de América S.A. de C.V.
+    → [xy] score 132/184 Solarfy
+    → [xy] score 133/184 Solaris Tecnologia Fotovoltaica Ltda.
+    → [xy] score 134/184 Solarity SpA
+    → [xy] score 135/184 SolarizEgypt
+    → [xy] score 136/184 SolarOn
+    → [xy] score 137/184 Solaroo Systems Sdn. Bhd.
+    → [xy] score 138/184 Solarprime Franquias Ltda.
+    → [xy] score 139/184 Solartec S.A.
+    → [xy] score 140/184 Solarvatio, S.A. de C.V.
+    → [xy] score 141/184 SolarVolt Energia
+      · score SolarVolt Energia: unparsed reply 'Searching \n44'
+    → [xy] no score for SolarVolt Energia (AI Mode unavailable) — left unscored for retry
+    → [xy] score 142/184 Solarwatt GmbH
+    → [xy] score 143/184 SolaX Power Network Technology (Zhejiang) Co., Ltd
+    → [xy] score 144/184 Solcor SpA
+    → [xy] score 145/184 Solfium México, S.A. de C.V.
+    → [xy] score 146/184 Solinc East Africa Ltd.
+    → [xy] score 147/184 Solis Energy, Inc.
+    → [xy] score 148/184 Suna Energy S.A. de C.V.
+    → [xy] score 149/184 SunColombia S.A.S.
+    → [xy] score 150/184 Suncolombia SAS
+    → [xy] score 151/184 Suncore México
+    → [xy] score 152/184 Sunew Filmes Fotovoltaicos Impressos S.A.
+    → [xy] score 153/184 SUNEX Solar Energy
+    → [xy] score 154/184 Sunrun Inc.
+    → [xy] score 155/184 Suzhou Talesun Solar Technologies Co., Ltd.
+    → [xy] score 156/184 Tecnologia Quantum Indústria Eletrônica Ltda.
+    → [xy] score 157/184 The Solaria Corporation
+    → [xy] score 158/184 Thermoelectric Wire and Cable de Colombia S.A.S.
+    → [xy] score 159/184 Tindo Solar Pty Ltd
+    → [xy] score 160/184 Tonalli Energía Solar
+    → [xy] score 161/184 Tongwei Solar Co., Ltd.
+    → [xy] score 162/184 Tracel S.A.
+    → [xy] score 163/184 Trina Solar Co., Ltd.
+    → [xy] score 164/184 TS Shara Indústria e Comércio de Eletroeletrônicos
+    → [xy] score 165/184 UAB SoliTek Cells
+    → [xy] score 166/184 Unicoba da Amazônia S.A.
+    → [xy] score 167/184 United Renewable Energy Co., Ltd.
+    → [xy] score 168/184 Verano Capital SpA
+    → [xy] score 169/184 Vietnam Sunergy Joint Stock Company
+    → [xy] score 170/184 Vikram Solar Limited
+    → [xy] score 171/184 Voltec Solar SAS
+    → [xy] score 172/184 Voreios
+    → [xy] score 173/184 Waaree Energies Ltd.
+    → [xy] score 174/184 WEG S.A.
+    → [xy] score 175/184 Wetility Proprietary Limited
+    → [xy] score 176/184 Win Win Precision Technology Co., Ltd.
+    → [xy] score 177/184 Wuxi Suntech Power Co., Ltd.
+    → [xy] score 178/184 Yellow Door Energy Limited
+    → [xy] score 179/184 Yingli Energy Development Co., Ltd.
+    → [xy] score 180/184 Yuhuan Sinosola Science and Technology Co., Ltd.
+    → [xy] score 181/184 Zakh Renewable Energy and Engineering Manufacturin
+    → [xy] score 182/184 ZEN Energy Pty Ltd
+    → [xy] score 183/184 Ziklo Solar S.A.S.
+    → [xy] score 184/184 Órigo Energia
+    → [xy] scored 184 rows (Others/Energy) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] city/country filled=0 kept=184 blank=0
+    → [table] 184 rows | graph top 20 | html=global_solar_rooftop_market_global_report.html
+
+=== OpenAI cost (this run) ===
+  run_id : 9998135a
+  market : Global Solar Rooftop Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (184 rows) → global_solar_rooftop_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 184 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_solar_rooftop_market_global\global_solar_rooftop_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_solar_rooftop_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Solar Rooftop Market",
+  "country": "global",
+  "batch": "all",
+  "family": "renewable",
+  "target": 300,
+  "existing_before": 177,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 302,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 327,
+  "rejected_mid": 277,
+  "chatgpt_filled": 186,
+  "rejected_final": 0,
+  "total_after": 184,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\global_solar_rooftop_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "9998135a",
+    "market": "Global Solar Rooftop Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-17T09:50:50.462264+00:00",
+    "ended_at": "2026-09-17T17:07:25.901458+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "renewable",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 184,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\global_solar_rooftop_market_global_FINAL.xlsx",
+      "rejected_mid": 277,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Others",
+    "industry_category": "Energy",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the unique drivers of the global solar rooftop market: product strength focuses on efficiency, installation, durability, smart features, and supply chain, while business strength emphasizes geographic reach, customer metrics, financials, pipeline, and partnerships. They are concrete and assessable from public evidence such as product specs, financial reports, and market data.",
+    "parameter_definitions": {
+      "x": {
+        "Module Efficiency & Power Density": "The conversion efficiency and power output per square meter of solar modules, critical for maximizing rooftop energy generation in limited space. Evidence includes third-party efficiency ratings, temperature coefficients, and performance under low-light conditions.",
+        "System Design & Installation Quality": "The ease and speed of installing rooftop solar systems, including mounting structures, wiring, and inverter integration, which affects labor costs and system reliability. Strength shown by standardized kits, rapid installation times, and minimal roof penetration.",
+        "Product Durability & Warranty": "The longevity and degradation rate of solar panels and components under real-world conditions, backed by comprehensive warranties. Evidence includes 25-year performance warranties, PID resistance, and certifications for harsh weather.",
+        "Smart Monitoring & Grid Integration": "Advanced monitoring software and hardware that optimize energy production, enable remote diagnostics, and facilitate grid interaction. Strength indicated by real-time analytics, smart inverter capabilities, and compatibility with virtual power plants.",
+        "Supply Chain & Manufacturing Scale": "The ability to produce and deliver solar components at scale with cost efficiency and supply reliability. Evidence includes vertical integration, production capacity, and lead times for key components like panels and inverters."
+      },
+      "y": {
+        "Geographic Market Coverage": "The extent of sales and operations across different countries and regions, including local presence and adaptation to varying regulations. Strength shown by number of countries served, local offices, and revenue distribution.",
+        "Customer Acquisition & Retention": "The ability to attract and keep residential, commercial, and industrial customers through effective sales and service. Evidence includes customer growth rates, churn rates, and net promoter scores.",
+        "Financial Strength & Profitability": "The financial health and profitability of the company, including margins, cash flow, and balance sheet strength. Evidence includes gross margins, EBITDA, and return on invested capital.",
+        "Project Pipeline & Growth Rate": "The volume of contracted and prospective rooftop solar projects, indicating future revenue potential. Strength shown by backlog size, year-over-year growth, and market share expansion.",
+        "Channel Partnerships & Brand Equity": "The strength of relationships with distributors, installers, and financiers, plus brand recognition among consumers. Evidence includes partnership agreements, co-marketing, and brand surveys."
+      }
+    },
+    "x_features": [
+      "Module Efficiency & Power Density",
+      "System Design & Installation Quality",
+      "Product Durability & Warranty",
+      "Smart Monitoring & Grid Integration",
+      "Supply Chain & Manufacturing Scale"
+    ],
+    "y_features": [
+      "Geographic Market Coverage",
+      "Customer Acquisition & Retention",
+      "Financial Strength & Profitability",
+      "Project Pipeline & Growth Rate",
+      "Channel Partnerships & Brand Equity"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 81.0,
+    "quadrant_mid_y": 66.0,
+    "scored": 184,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 186,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 2,
+      "kept": 183,
+      "player_type": "B2C",
+      "market_type": "B2C",
+      "market_definition": "The global market for solar photovoltaic systems installed on rooftops of residential, commercial, and industrial buildings.",
+      "keep_roles": [
+        "Brand / Marketer"
+      ],
+      "uniform_role": "Brand / Marketer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 184  (target 300)

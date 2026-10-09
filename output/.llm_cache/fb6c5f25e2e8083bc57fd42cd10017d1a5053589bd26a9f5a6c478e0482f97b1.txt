@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions broad portfolio including medicines, vaccines, and consumer healthcare, but no specific GLP-1 products or brands are disclosed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of specific therapeutic areas or differentiation in GLP-1; only general mention of diabetes medications."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of clinical trials, pipeline, or R&D in GLP-1; only digital transformation collaborations with IBM and SAP."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence indicates extensive manufacturing facilities and emphasis on quality and safety, but no specifics on GLP-1 manufacturing scale."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company emphasizes quality and safety, but no evidence of specific regulatory approvals or compliance in GLP-1."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Presence only in UAE; no evidence of broader geographic reach or market access for GLP-1."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Described as major regional pharmaceutical company, but no specific reputation in GLP-1 or HCP perception."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions strong financial performance but no specific figures or GLP-1 revenue."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of any GLP-1 pipeline or indication roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Partnerships with IBM and SAP for digital transformation, but no GLP-1 related partnerships or expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

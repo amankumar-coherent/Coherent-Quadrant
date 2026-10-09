@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions AT-Patch (ATP-C130/ATP-C70) and AT-Report software, but no other products or portfolio breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA 510(k) clearance indicates safety and performance for AT-Patch, but no clinical trial data or outcomes are cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company focuses on developing next-generation products and has a wearable ECG platform, but no specific R&D details or patents are provided."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Regulatory approvals imply manufacturing quality, but no explicit evidence of manufacturing facilities or quality systems is present."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "AT-Patch obtained FDA 510(k) K242583, CE MDD, PMDA in Japan, and MFDS in South Korea, indicating multi-market regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Contracted with over 30 countries, including 150+ major hospitals in Japan, and secured a US supply deal starting in NY/FL/AZ."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Adoption in 150+ Japanese hospitals and US distributor deal indicate trust, but limited evidence of broader clinical adoption or brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Secured $7 million funding and a ₩50B (~450,000 units) supply contract, but no revenue or profitability figures are disclosed."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Focus on wearable ECG and AT-Patch, but no explicit pipeline or new indications beyond current ECG monitoring are mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Signed a landmark US supply deal with major distributors and has investors like DreamStone Private Equity, indicating business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

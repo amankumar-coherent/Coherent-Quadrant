@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions Bloomlife's contraction monitor and the newly cleared MFM-Pro, indicating a narrow portfolio focused on maternal/fetal monitoring."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "FDA clearance of MFM-Pro suggests clinical validation, but no specific performance or safety data is provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Collaboration with imec on a prototype 5-channel ECG chip demonstrates innovative R&D in fetal monitoring."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence regarding manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Received FDA clearance for MFM-Pro in January 2024, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions shift from consumer to clinical market, but no specific geographic reach or channel details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "FDA clearance and partnership with Perigen may enhance trust, but adoption evidence is limited."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only mentions of funding history and valuation without specifics."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "MFM-Pro is first maternal and fetal monitoring device, indicating expansion from contraction monitoring to broader monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Perigen for high-risk pregnancy monitoring and collaboration with imec for ECG chip development."
+    }
+  ],
+  "evidence_used": true
+}

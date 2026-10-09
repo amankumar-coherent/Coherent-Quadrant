@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Qualcomm offers a range of compute options including CPUs, GPUs, and custom accelerators, primarily for edge and mobile, with growing data center relevance.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design. It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "Qualcomm's accelerators are known for high power efficiency, but specific performance per watt benchmarks for data center products are not detailed in the knowledge base.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Qualcomm's compute products support major AI frameworks, especially in edge and mobile, with increasing data center software compatibility.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Qualcomm provides high-speed networking solutions, including 400G/800G Ethernet, for data center fabrics, leveraging its wireless and networking expertise.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "Qualcomm's interconnect technology offers competitive latency and bandwidth, but specific real-world deployment metrics are not in the knowledge base.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "Qualcomm's networking products are compatible with major switch vendors and open standards, given their industry leadership in connectivity.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Qualcomm does not provide data center designs or equipment, so typical PUE is not applicable; their focus is on chips, not full data center infrastructure.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Qualcomm offers power-efficient chip designs but does not provide liquid cooling solutions for data centers.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Qualcomm's power management features are advanced, particularly in mobile and edge, contributing to energy savings in real-world operations.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Qualcomm does not provide a comprehensive data center orchestration platform; their software focus is on device and edge management.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Qualcomm's orchestration software is not widely known for Kubernetes or OpenStack compatibility in data centers.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Qualcomm provides some automation for edge workloads, but not comprehensive data center provisioning and scaling.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Qualcomm offers specialized AI hardware and software optimizations, particularly for edge and mobile, with growing data center relevance.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Qualcomm's AI solutions provide significant performance improvements for edge AI, but less so for large-scale data center training.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Qualcomm provides tools for AI workload optimization, but they are more focused on edge and mobile frameworks.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 4,
+      "answer": "Qualcomm does not operate data centers; they are a chip designer, so the number of regions is not applicable.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "Qualcomm does not have data centers, so geographic distribution is not applicable.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "Qualcomm does not plan data center expansions as they are not a data center operator.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Qualcomm partners with major cloud providers for edge and mobile, but not as a primary data center hardware supplier.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Qualcomm's revenue is primarily from mobile, with enterprise and hyperscaler data center revenue being a small portion.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Qualcomm has case studies in mobile and edge, but not specifically for Fortune 500 data center solutions.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Qualcomm does not disclose specific data center revenue, but it is a small part of their overall semiconductor revenue.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Qualcomm's gross margins are high overall, but data center segment margins are not separately reported.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Qualcomm has shown growth in data center-related products, but not consistently as a major segment.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "Qualcomm has a small market share in the global data center systems market, primarily in networking and edge.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Qualcomm's growth in data center is slower than the overall market, which is dominated by larger players.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "Qualcomm is not a major player in AI servers or storage, so they are not gaining significant share.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["It provides chips for mobile devices and increasingly for data center applications, including networking and edge computing."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Qualcomm has strategic alliances with major tech providers, but more in mobile and edge than data center.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Qualcomm has made acquisitions to enhance its data center capabilities, such as in networking, but details are not in the knowledge base.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["The company's innovations support advanced data processing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Qualcomm engages in joint development for next-gen technologies, but specific data center co-development agreements are not documented.",
+      "evidence_urls": ["https://qualcomm.com"],
+      "evidence_snippets": ["Qualcomm is a global leader in wireless technology and semiconductor design."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

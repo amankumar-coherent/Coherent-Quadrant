@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mercuria is a commodity trader with LNG activities; evidence mentions expansion into physical LNG and shipping, but no owned liquefaction or regas assets. It supplies feedstock to Commonwealth LNG, indicating involvement but not ownership."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of operational throughput or efficiency metrics for LNG assets. As a trader, it may charter vessels but no specific data."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on asset reliability or performance. Trader role suggests no direct asset operations."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific evidence on safety or regulatory compliance in LNG operations. General commodity trader reputation but not LNG-specific."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mercuria states it has an active role in transition to cleaner fuels and signed LNG deal with Guangzhou Gas to advance clean energy cooperation. But no specific CCS or transition projects."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows global operations: deals with Oman LNG (Middle East), Guangzhou Gas (China), expansion into Latin America and Central Asia, and involvement in US LNG (Commonwealth LNG). This indicates multi-region reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Signed 10-year SPA with Oman LNG for 800,000 mt/year, five-year deal with Guangzhou Gas, and feedstock supply to Commonwealth LNG. Shows significant contracted offtake."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Profit of $1.43B in 2025, one of world's five largest independent energy traders, strong performance with disciplined risk management. Financial strength evident."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Expanding into metals, LNG, and shipping; plotting LNG expansion; involvement in Commonwealth LNG project. Shows growth trajectory but not a massive pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Eni in commodity trading, long-term deals with Oman LNG and Guangzhou Gas, and supply deal with Commonwealth LNG. Demonstrates active partnerships and expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

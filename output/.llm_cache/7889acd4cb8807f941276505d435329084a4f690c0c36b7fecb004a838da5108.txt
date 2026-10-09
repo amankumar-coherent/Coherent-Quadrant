@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "TOK is a leading supplier of photoresists and process materials for advanced semiconductor nodes, but the knowledge base does not specify exact node capabilities.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "TOK is recognized for its high-purity chemical technology and photoresist expertise, but specific process technology leadership like FinFET or GAA is not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/who-we-are/core-technology"],
+      "evidence_snippets": ["TOKが世界に誇る2つのコアテクノロジーと事業戦略を紹介します。"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "The knowledge base does not provide a specific roadmap for next-generation nodes, but TOK's ongoing R&D in photoresists suggests alignment with industry advancements.",
+      "evidence_urls": ["https://www.tok.co.jp/products"],
+      "evidence_snippets": ["半導体というナノの世界を通じ、「社会の期待」に応え続けています。"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "TOK offers products across semiconductor front-end, back-end, image sensors, and MEMS, indicating a broad portfolio within semiconductor materials.",
+      "evidence_urls": ["https://www.tok.co.jp/products"],
+      "evidence_snippets": ["半導体製造前工程", "半導体製造後工程", "イメージセンサー・MEMS製造分野"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type, but TOK's portfolio spans multiple semiconductor segments.",
+      "evidence_urls": ["https://www.tok.co.jp/products"],
+      "evidence_snippets": ["半導体製造前工程", "半導体製造後工程", "イメージセンサー・MEMS製造分野"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "TOK provides materials for semiconductor back-end processes, which may include packaging-related chemicals, but does not offer OSAT services directly.",
+      "evidence_urls": ["https://www.tok.co.jp/products/semiconductor-post"],
+      "evidence_snippets": ["半導体製造後工程"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "TOK is a materials supplier and does not own CPU, GPU, or AI accelerator IP; its proprietary technology lies in chemical formulations and processes.",
+      "evidence_urls": ["https://www.tok.co.jp/who-we-are/core-technology"],
+      "evidence_snippets": ["TOKが世界に誇る2つのコアテクノロジーと事業戦略を紹介します。"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "TOK does not license design IP; it supplies materials to semiconductor manufacturers who use third-party IP.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "TOK's materials are essential for advanced semiconductor manufacturing, indirectly supporting AI, 5G, and automotive chips, but it does not design architectures.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide wafer fabrication capacity or utilization rates, as TOK is a materials supplier, not a wafer fab.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Yield rates are not applicable to TOK as a materials supplier; its focus is on high-purity chemicals that enable high yields in customer fabs.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "TOK provides materials for back-end processes, which may include advanced packaging chemicals, but does not offer packaging services itself.",
+      "evidence_urls": ["https://www.tok.co.jp/products/semiconductor-post"],
+      "evidence_snippets": ["半導体製造後工程"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "TOK likely holds ISO 9001 and other quality certifications as a chemical manufacturer, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/sustainability"],
+      "evidence_snippets": ["サステナビリティ"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "TOK ensures high purity and reliability of its materials, but specific defect rates (DPPM) are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "TOK demonstrates commitment to environmental compliance through sustainability initiatives, but specific RoHS/REACH details are not in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/sustainability"],
+      "evidence_snippets": ["サステナビリティ"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "TOK has global operations with domestic and overseas bases, indicating significant presence in Japan and other regions.",
+      "evidence_urls": ["https://www.tok.co.jp/company/internal", "https://www.tok.co.jp/company/overseas"],
+      "evidence_snippets": ["国内拠点", "海外拠点"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "TOK serves semiconductor manufacturing, which spans multiple end-markets, but specific revenue contributions are not provided.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "TOK's global footprint helps mitigate regional risks, but specific risk mitigation strategies are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/company/overseas"],
+      "evidence_snippets": ["海外拠点"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific customers, but as a major materials supplier, TOK likely serves leading semiconductor manufacturers.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "TOK likely collaborates with equipment makers and research consortia, but specific partnerships are not mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/products"],
+      "evidence_snippets": ["事業・製品"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "TOK works with foundries and OSATs by supplying materials, but detailed collaboration strategies are not in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "The knowledge base does not provide financial figures, but TOK is a listed company with public financial reports.",
+      "evidence_urls": ["https://www.tok.co.jp/ir"],
+      "evidence_snippets": ["株主・投資家情報"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not available in the knowledge base, but as a materials company, TOK likely invests in production capacity.",
+      "evidence_urls": ["https://www.tok.co.jp/ir"],
+      "evidence_snippets": ["株主・投資家情報"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the knowledge base, but TOK's ongoing operations suggest financial stability.",
+      "evidence_urls": ["https://www.tok.co.jp/ir"],
+      "evidence_snippets": ["株主・投資家情報"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "The knowledge base mentions a medium-term plan and integrated reports, but specific roadmap milestones are not detailed.",
+      "evidence_urls": ["https://www.tok.co.jp/ir/library/medium_term_plan"],
+      "evidence_snippets": ["中期経営計画"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "TOK's materials are critical for emerging semiconductor technologies, but a specific roadmap for AI or quantum is not in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "TOK's focus on high-purity materials aligns with industry trends toward advanced nodes and new applications.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "The knowledge base does not mention specific fab expansion projects, as TOK is not a wafer fab operator.",
+      "evidence_urls": ["https://www.tok.co.jp/eng"],
+      "evidence_snippets": ["Tokyo Ohka Kogyo supplies photoresists and high-purity process materials used in semiconductor manufacturing."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Revenue growth figures are not in the knowledge base, but TOK's continued investment suggests growth.",
+      "evidence_urls": ["https://www.tok.co.jp/ir"],
+      "evidence_snippets": ["株主・投資家情報"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "answer": "TOK likely funds expansions through operational cash flow and financing, but specific plans are not in the knowledge base.",
+      "evidence_urls": ["https://www.tok.co.jp/ir"],
+      "evidence_snippets": ["株主・投資家情報"],
+      "grounding": "insufficient",
+      "score": 5
+    }
+  ]
+}

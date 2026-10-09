@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Onera STS wearable patch for polysomnography and a wearable biomedical chip, indicating a narrow portfolio focused on sleep diagnostics."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Onera STS received FDA clearance (510(k) K223573) and CE mark, indicating regulatory recognition of clinical performance and safety."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Introduced a wearable biomedical chip at CES 2022 and received a €2.5M EIC grant for development of medical-grade remote care, showing strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No direct evidence on manufacturing capabilities or quality systems; only regulatory clearances imply some quality compliance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Onera STS received FDA 510(k) clearance (K223573) and CE mark in Europe, demonstrating strong regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Headquartered in Netherlands with office in Palo Alto, and presence in Europe and North America per market report, indicating multi-market but not global scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Described as 'leader in transforming sleep medicine' and 'leading innovator in sleep diagnostics', with regulatory clearances enhancing trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "One source claims $26.6M ARR and bootstrapped, but another mentions €30M Series C funding, conflicting; no official financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "EIC grant for development of remote care for sleep and chronic patients suggests expansion beyond sleep, but no specific pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No explicit partnerships mentioned; presence in market reports and funding indicate business expansion but limited partnership evidence."
+    }
+  ],
+  "evidence_used": true
+}

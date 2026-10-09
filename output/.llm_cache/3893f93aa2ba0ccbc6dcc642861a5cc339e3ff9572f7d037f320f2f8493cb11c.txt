@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Hamamatsu Photonics is not a semiconductor foundry and does not offer advanced logic process nodes like 3nm or 2nm; its focus is on photonic sensors and devices.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Photonic sensors and imaging devices for semiconductor inspection."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Hamamatsu leads in specialized photonic sensor technologies such as photomultiplier tubes and MPPCs, but not in mainstream logic process technologies like FinFET or GAA.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Photomultiplier tube (PMT) In the photosensor field, photomultiplier tubes are known to have particularly high sensitivity."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "Hamamatsu does not have a public roadmap for next-generation semiconductor nodes; its roadmap focuses on photonic devices and imaging systems.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["New product HyperGauge® Thickness measurement system"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Hamamatsu is specialized in photonic sensors, optical components, cameras, and light sources, not a broad semiconductor product company covering logic, memory, and power.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Optical sensors", "Optical components", "Cameras", "Light & radiation sources", "Lasers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; Hamamatsu's portfolio is heavily focused on photonics and sensors.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Photonic sensors and imaging devices for semiconductor inspection."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Hamamatsu does not provide OSAT services; it manufactures its own photonic components and systems.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Manufacturing support systems", "Semiconductor manufacturing support systems"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Hamamatsu owns proprietary design IP in photonic sensors and imaging technologies, such as MPPCs and PMTs, but not in CPU/GPU/AI accelerators.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["MPPC (SiPMs) / SPADs", "Photomultiplier tubes (PMTs)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Hamamatsu does not license its IP to other firms; it relies on its own technology and does not use third-party CPU IP like ARM.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Why Hamamatsu?"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Hamamatsu's architecture is strong in photonic sensing for automotive and industrial applications, but not in AI or 5G processing.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Automotive", "Industrial equipment"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Wafer fabrication capacity is not disclosed; Hamamatsu is not a major foundry and focuses on photonic devices.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Photonic sensors and imaging devices for semiconductor inspection."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not publicly disclosed; Hamamatsu's manufacturing is specialized for photonic components, not leading-edge logic.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Quality Control", "We are actively taking measures to improve product quality levels."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Hamamatsu does not offer advanced packaging like 2.5D/3D or chiplets; it provides optical components and modules.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Optical components", "Fiber optic plates (FOP)"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Hamamatsu mentions quality control and compliance with RoHS and CE marking, but specific certifications like ISO 9001 are not listed in the KB.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["RoHS compliant products", "CE marked products", "Quality Control"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rates (DPPM) are not disclosed; Hamamatsu emphasizes quality improvement but lacks specific reliability metrics in the KB.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["We are actively taking measures to improve product quality levels."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Hamamatsu provides RoHS compliance search and CE marking, indicating attention to environmental regulations, but conflict minerals policy is not mentioned.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["RoHS compliant products", "CE marked products"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Hamamatsu has a global presence with regional selections for Africa, Americas, Asia/Pacific, Europe, and Middle East, indicating significant international reach.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Select your region or country. Africa Americas Asia/Pacific Europe Middle East"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary end-markets include medical, life sciences, industrial equipment, automotive, and semiconductor, as listed in applications.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Medical", "Life sciences", "Industrial equipment", "Automotive", "Semiconductor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Global presence across multiple regions helps mitigate regional risks, but specific risk mitigation strategies are not detailed.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Global organizations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "Top customers are not disclosed; customer concentration risk cannot be assessed from the KB.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Hamamatsu likely has partnerships in research and industry, but no specific partnerships are mentioned in the KB.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Research and development"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Hamamatsu collaborates with ecosystem players through its product offerings and applications, but specific collaborations are not detailed.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Applications", "Support"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not provided in the KB; Hamamatsu is a public company but revenue and income are not listed.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Investors", "Financial highlights"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "CapEx data is not available in the KB; no information on capital expenditure as percentage of revenue.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not provided; Hamamatsu's financial stability is not assessable from the KB.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "The KB mentions new products like HyperGauge and laser fusion research, but a detailed 3-5 year roadmap is not provided.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["New product HyperGauge® Thickness measurement system", "Research and development Laser fusion"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No clear roadmap for AI chips, quantum, or advanced memory is mentioned; focus is on photonics and imaging.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Research and development"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Hamamatsu's roadmap aligns with trends in photonics for medical, automotive, and semiconductor inspection, but not with AI or advanced memory.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Medical", "Automotive", "Semiconductor"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "No new fab or expansion projects are announced in the KB; Hamamatsu is not a major foundry.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided; Hamamatsu's financial performance is not detailed in the KB.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": ["Financial highlights"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "Funding and execution plans for capacity expansion are not discussed; no specific expansion projects are mentioned.",
+      "evidence_urls": ["https://www.hamamatsu.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

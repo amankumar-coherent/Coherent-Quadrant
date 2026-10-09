@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions BioSticker and BioButton, with BioButton having single-patient and multi-patient versions, but no other devices."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA clearance indicates safety and performance for continuous monitoring; evidence highlights proactive detection of patient decline."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Development of BioButton Multi-Patient and BioDashboard shows innovation; partnership with iRhythm for technology licensing indicates R&D strength."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No direct evidence on manufacturing or quality systems; only mention of FDA clearance implies some quality compliance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA clearance for BioButton and BioButton Multi-Patient demonstrates regulatory compliance; evidence mentions FDA approval."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence listed only in the United States; no evidence of international reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnerships with health systems like Ardent Health Services and iRhythm indicate some clinical adoption and trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Annual revenues estimated at $10-$100 million, but no exact figures or profitability evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Expansion from single-patient to multi-patient BioButton and licensing for cardiac monitoring technologies indicate pipeline growth."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnerships with Ardent Health Services and iRhythm, plus FDA clearance for multi-patient device, show business expansion."
+    }
+  ],
+  "evidence_used": true
+}

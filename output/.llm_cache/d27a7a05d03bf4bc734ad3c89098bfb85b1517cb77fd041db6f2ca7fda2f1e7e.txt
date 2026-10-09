@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only one product, Bigfoot Unity Diabetes Management System, with no other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "System is FDA cleared (510(k) K202145) and designed to support adherence, but no clinical outcome data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Described as 'first-of-its kind' and 'innovative, FDA cleared system', but no specific R&D investments or pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA cleared (510(k) K202145) and integrated with FreeStyle Libre 2 sensor, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Milpitas, CA, but no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Abbott in 2023, which may enhance trust, but no adoption metrics or testimonials beyond one patient story."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; acquisition by Abbott suggests some value but no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of future products or expansion into new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired by Abbott in 2023, and partners with healthcare providers; also compatible with major insulin pen brands."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions hearing screening and diagnostic solutions, but no specific products listed; portfolio appears narrow."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims 'clinically-validated' and 'evidence-based' but no specific clinical data or outcomes provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Described as 'award-winning digital hearing health technology' and 'smart screening' but no specific R&D details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions ISO 13485 certification and SOC 2 Type II, but no details on manufacturing scale or processes."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Lists FDA Registered, ISO 13485 Certified, SAHPRA Registered, HIPAA Compliant, GDPR Compliant, POPIA Compliant."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Presence in South Africa and US, but wind-down of US operations indicates reduced reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims 'trusted globally' and top Google ratings, but no specific adoption metrics or clinical references."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "partial",
+      "why": "Wind-down of US operations and lack of financial data suggest financial instability."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline or new indications; focus on existing screening and diagnostic solutions."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Merged into LXE Hearing in 2025, but no other partnerships or expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

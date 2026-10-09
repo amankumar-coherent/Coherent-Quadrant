@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Coherent Quadrant — Global GLP-1 Receptor Agonist Market</title><style>
+:root { --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --navy:#002857; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 0 3rem 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--ink); background: #f8fafc;
+}
+.page { max-width: 1180px; margin: 0 auto; padding: 1.5rem 1.25rem; }
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0d9488 100%);
+  color: #f8fafc; border-radius: 14px; padding: 1.5rem 1.75rem; margin-bottom: 1.5rem;
+}
+.hero h1 { margin: 0 0 0.4rem 0; font-size: 1.65rem; letter-spacing: -0.02em; }
+.hero p { margin: 0; opacity: 0.9; line-height: 1.45; }
+.meta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0 1.25rem; }
+.pill {
+  background: #fff; border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.35rem 0.85rem; font-size: 0.85rem; font-weight: 600;
+}
+h2 { font-size: 1.2rem; margin: 1.75rem 0 0.85rem; }
+.cq-chart-frame { display: flex; align-items: stretch; gap: 0.5rem; }
+.cq-y-label {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; color: #334155;
+  text-align: center; padding: 0.5rem 0;
+}
+.cq-x-label {
+  text-align: center; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.06em; color: #334155; margin-top: 0.45rem;
+}
+.cq-plot {
+  position: relative; flex: 1; min-height: 560px; height: 600px;
+  background: repeating-linear-gradient(-45deg, #0b1f3a, #0b1f3a 8px, #0d2748 8px, #0d2748 16px);
+  border: 2px solid #93c5fd; border-radius: 4px; overflow: hidden;
+}
+.cq-cross-h, .cq-cross-v { position: absolute; background: rgba(255,255,255,0.35); z-index: 1; }
+.cq-cross-h { left: 0; right: 0; top: 50%; height: 1px; }
+.cq-cross-v { top: 0; bottom: 0; left: 50%; width: 1px; }
+.cq-quad-label {
+  position: absolute; z-index: 2; color: rgba(255,255,255,0.85);
+  font-size: 0.78rem; font-weight: 600;
+}
+.cq-tl { top: 10px; left: 12px; } .cq-tr { top: 10px; right: 12px; }
+.cq-bl { bottom: 10px; left: 12px; } .cq-br { bottom: 10px; right: 12px; }
+.cq-axis-y-max, .cq-axis-y-min, .cq-axis-x-min, .cq-axis-x-max {
+  position: absolute; color: rgba(255,255,255,0.55); font-size: 0.7rem; z-index: 2;
+}
+.cq-axis-y-max { top: 8px; left: 6px; } .cq-axis-y-min { bottom: 8px; left: 6px; }
+.cq-axis-x-min { bottom: 4px; left: 28px; } .cq-axis-x-max { bottom: 4px; right: 8px; }
+/* Marker is the only positioned center — labels must NOT shift the dot out of its cell */
+.cq-dot {
+  position: absolute; width: 12px; height: 12px;
+  transform: translate(-50%, -50%); z-index: 3;
+}
+.cq-dot-mark {
+  display: block; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--dot, #7EB6FF); border: 2px solid #fff;
+  box-sizing: border-box;
+}
+.cq-dot-label {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  color: #fff; font-size: 0.62rem; font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+  white-space: nowrap; max-width: 88px; overflow: hidden; text-overflow: ellipsis;
+  pointer-events: none;
+}
+.cq-dot.label-right .cq-dot-label { left: 14px; }
+.cq-dot.label-left .cq-dot-label { right: 14px; left: auto; }
+.cq-dot.label-below .cq-dot-label {
+  left: 50%; top: 14px; transform: translate(-50%, 0); max-width: 100px;
+}
+.cq-dot.label-above .cq-dot-label {
+  left: 50%; bottom: 14px; top: auto; transform: translate(-50%, 0); max-width: 100px;
+}
+/* Keep labels from visually spilling across the 50% crosshairs */
+.cq-dot.quad-leaders .cq-dot-label,
+.cq-dot.quad-trailblazers .cq-dot-label { max-width: min(110px, 28vw); }
+.cq-dot.quad-challengers .cq-dot-label,
+.cq-dot.quad-emerging .cq-dot-label { max-width: min(110px, 28vw); }
+.cq-explain-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem;
+}
+@media (max-width: 900px) {
+  .cq-explain-grid { grid-template-columns: 1fr; }
+  .cq-plot { min-height: 360px; height: 380px; }
+}
+.cq-explain-card {
+  border-radius: 10px; padding: 1rem 1.1rem; color: #fff; min-height: 130px;
+}
+.cq-explain-card h4 { margin: 0 0 0.35rem; letter-spacing: 0.04em; }
+.cq-explain-sub { font-size: 0.78rem; opacity: 0.9; margin-bottom: 0.55rem; font-weight: 600; }
+.cq-explain-card p { margin: 0; font-size: 0.88rem; line-height: 1.45; opacity: 0.95; }
+.panel {
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.1rem 1.25rem; margin-bottom: 1.25rem;
+}
+.table-scroll { overflow-x: auto; }
+table.cq {
+  width: 100%; border-collapse: collapse; font-size: 0.88rem;
+}
+table.cq thead th {
+  background: var(--navy); color: #fff; text-align: left;
+  padding: 0.65rem 0.75rem; font-size: 0.72rem; letter-spacing: 0.03em;
+}
+table.cq td {
+  padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--line); vertical-align: middle;
+}
+table.cq tr:nth-child(even) td { background: #f1f5f9; }
+.cq-tier {
+  display: inline-block; padding: 0.2rem 0.55rem; border-radius: 999px;
+  font-size: 0.72rem; font-weight: 700; color: #fff;
+}
+.cq-tier-1 { background: #002857; }
+.cq-tier-2 { background: #2563eb; }
+.cq-tier-3 { background: #93c5fd; color: #0f172a; }
+.cq-score {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2rem; height: 2rem; border-radius: 50%; font-weight: 700;
+  font-size: 0.8rem; color: #fff;
+}
+.cq-score-hi { background: #16a34a; }
+.cq-score-mid { background: #ca8a04; }
+.cq-score-lo { background: #dc2626; }
+.cq-rate-dots { display: inline-flex; gap: 3px; align-items: center; }
+.cq-rate-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.cq-dot-on { background: #2563eb; }
+.cq-dot-off { background: #cbd5e1; }
+.scorecard th { white-space: nowrap; font-size: 0.68rem; }
+.scorecard td { text-align: center; }
+.scorecard td:first-child { text-align: left; font-weight: 600; }
+.legend { font-size: 0.8rem; color: #475569; margin: 0 0 0.75rem; }
+.footer { color: var(--muted); font-size: 0.8rem; margin-top: 1.5rem; }
+</style></head><body><div class="page"><div class="hero"><h1>Coherent Quadrant</h1><p>Global GLP-1 Receptor Agonist Market · global · 80 brands scored on Therapeutic &amp; Manufacturing Capability (X) and Commercial Reach &amp; Pipeline Strategy (Y)</p></div><div class="meta"><span class="pill">Market: Global GLP-1 Receptor Agonist Market</span><span class="pill">Geography: global</span><span class="pill">Brands: 80</span><span class="pill">Pharmaceutical</span><span class="pill">X: Therapeutic &amp; Manufacturing Capability</span><span class="pill">Y: Commercial Reach &amp; Pipeline Strategy</span></div>
+<div class="panel">
+  <h2>Market Scoring Parameters</h2>
+  <p style="margin:0 0 1rem 0;color:#64748b;font-size:.92rem;line-height:1.45">
+    X and Y axes and these 10 parameters are defined for
+    <strong>Global GLP-1 Receptor Agonist Market</strong>
+    and used to calculate company scores below.
+  </p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.1rem">
+      <div style="font-weight:700;color:#0f172a;margin-bottom:.5rem">X — Therapeutic &amp; Manufacturing Capability</div>
+      <ol style="margin:0;padding-left:1.2rem;line-height:1.55;color:#334155"><li>Product / Molecule Portfolio</li><li>Therapeutic Coverage &amp; Differentiation</li><li>Innovation &amp; Clinical R&amp;D</li><li>Manufacturing &amp; Supply Reliability</li><li>Regulatory &amp; Quality Compliance</li></ol>
+    </div>
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.1rem">
+      <div style="font-weight:700;color:#0f172a;margin-bottom:.5rem">Y — Commercial Reach &amp; Pipeline Strategy</div>
+      <ol style="margin:0;padding-left:1.2rem;line-height:1.55;color:#334155"><li>Geographic Market Access</li><li>Brand / HCP Reputation</li><li>Financial Performance</li><li>Pipeline &amp; Indication Roadmap</li><li>Partnerships &amp; Business Expansion</li></ol>
+    </div>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Quadrant Positioning <span style="font-weight:500;font-size:0.85rem;opacity:.75">
+  (18 on chart · 80 in table · ~equal per quadrant · country-diverse)</span></h2>
+  <div class="cq-chart-frame">
+    <div class="cq-y-label">COMMERCIAL REACH &amp; PIPELINE STRATEGY ( Y AXIS ) →</div>
+    <div class="cq-plot">
+      <div class="cq-axis-y-max">100</div>
+      <div class="cq-axis-y-min">0</div>
+      <div class="cq-axis-x-min">0</div>
+      <div class="cq-axis-x-max">100</div>
+      <div class="cq-quad-label cq-tl">Challengers</div>
+      <div class="cq-quad-label cq-tr">Leaders</div>
+      <div class="cq-quad-label cq-bl">Emerging Players</div>
+      <div class="cq-quad-label cq-br">Trailblazers</div>
+      <div class="cq-cross-h"></div>
+      <div class="cq-cross-v"></div>
+      <div class="cq-dot label-below quad-trailblazers" style="left:64%;top:64%;--dot:#C4B5FD" title="Altimmune, Inc."><span class="cq-dot-mark"></span><span class="cq-dot-label">Altimmune, Inc.</span></div><div class="cq-dot label-right quad-challengers" style="left:10%;top:18%;--dot:#7EB6FF" title="biomm s.a."><span class="cq-dot-mark"></span><span class="cq-dot-label">biomm s.a.</span></div><div class="cq-dot label-right quad-leaders" style="left:74%;top:20%;--dot:#7CFC00" title="Boehringer Ingelheim"><span class="cq-dot-mark"></span><span class="cq-dot-label">Boehringer Ingelheim</span></div><div class="cq-dot label-right quad-emerging" style="left:15%;top:90%;--dot:#A7F3D0" title="CrystalGenomics"><span class="cq-dot-mark"></span><span class="cq-dot-label">CrystalGenomics</span></div><div class="cq-dot label-above quad-challengers" style="left:15%;top:36%;--dot:#7EB6FF" title="CSPC Pharmaceutical Group Limited"><span class="cq-dot-mark"></span><span class="cq-dot-label">CSPC Pharmaceutical Group Limited</span></div><div class="cq-dot label-left quad-emerging" style="left:28%;top:83%;--dot:#A7F3D0" title="Dong-A ST"><span class="cq-dot-mark"></span><span class="cq-dot-label">Dong-A ST</span></div><div class="cq-dot label-left quad-leaders" style="left:88%;top:25%;--dot:#7CFC00" title="Eli Lilly do Brasil"><span class="cq-dot-mark"></span><span class="cq-dot-label">Eli Lilly do Brasil</span></div><div class="cq-dot label-right quad-leaders" style="left:64%;top:31%;--dot:#7CFC00" title="Fresenius Kabi"><span class="cq-dot-mark"></span><span class="cq-dot-label">Fresenius Kabi</span></div><div class="cq-dot label-left quad-emerging" style="left:36%;top:71%;--dot:#A7F3D0" title="Gedeon Richter"><span class="cq-dot-mark"></span><span class="cq-dot-label">Gedeon Richter</span></div><div class="cq-dot label-left quad-trailblazers" style="left:85%;top:88%;--dot:#C4B5FD" title="Hanmi Pharmaceutical"><span class="cq-dot-mark"></span><span class="cq-dot-label">Hanmi Pharmaceutical</span></div><div class="cq-dot label-below quad-emerging" style="left:10%;top:65%;--dot:#A7F3D0" title="Hexal AG"><span class="cq-dot-mark"></span><span class="cq-dot-label">Hexal AG</span></div><div class="cq-dot label-above quad-leaders" style="left:78%;top:36%;--dot:#7CFC00" title="Innovent Biologics"><span class="cq-dot-mark"></span><span class="cq-dot-label">Innovent Biologics</span></div><div class="cq-dot label-above quad-challengers" style="left:30%;top:33%;--dot:#7EB6FF" title="Laboratórios Servier do Brasil"><span class="cq-dot-mark"></span><span class="cq-dot-label">Laboratórios Servier do Brasil</span></div><div class="cq-dot label-left quad-challengers" style="left:23%;top:10%;--dot:#7EB6FF" title="Viatris"><span class="cq-dot-mark"></span><span class="cq-dot-label">Viatris</span></div><div class="cq-dot label-left quad-leaders" style="left:87%;top:10%;--dot:#7CFC00" title="Novo Nordisk"><span class="cq-dot-mark"></span><span class="cq-dot-label">Novo Nordisk</span></div><div class="cq-dot label-left quad-challengers" style="left:36%;top:19%;--dot:#7EB6FF" title="prati-donaduzzi"><span class="cq-dot-mark"></span><span class="cq-dot-label">prati-donaduzzi</span></div><div class="cq-dot label-right quad-trailblazers" style="left:72%;top:81%;--dot:#C4B5FD" title="STADA Arzneimittel"><span class="cq-dot-mark"></span><span class="cq-dot-label">STADA Arzneimittel</span></div><div class="cq-dot label-left quad-trailblazers" style="left:83%;top:70%;--dot:#C4B5FD" title="Yuhan Corporation"><span class="cq-dot-mark"></span><span class="cq-dot-label">Yuhan Corporation</span></div>
+    </div>
+  </div>
+  <div class="cq-x-label">THERAPEUTIC &amp; MANUFACTURING CAPABILITY ( X AXIS ) →</div>
+  <div class="cq-country-mix" style="margin-top:.75rem;font-size:.82rem;color:#475569;line-height:1.45"><div style="font-weight:600;margin-bottom:.25rem">Countries on chart (by quadrant)</div><strong>Leaders</strong>: Unknown×5 · <strong>Challengers</strong>: Unknown×5 · <strong>Trailblazers</strong>: Unknown×4 · <strong>Emerging Players</strong>: Unknown×4</div>
+</div>
+<div class="panel"><h2>Understanding the Coherent Quadrant</h2><div class="cq-explain-grid"><div class="cq-explain-card" style="background:#002857"><h4>Leaders</h4><div class="cq-explain-sub">Strong Therapeutic &amp; Manufacturing Capability, Strong Commercial Reach &amp; Pipeline Strategy</div><p>Established, scalable brands with strong capabilities, proven market adoption, and broad commercial reach.</p></div><div class="cq-explain-card" style="background:#1d4ed8"><h4>Challengers</h4><div class="cq-explain-sub">Strong Commercial Reach &amp; Pipeline Strategy, Developing Therapeutic &amp; Manufacturing Capability</div><p>Brands with strong market reach and commercial presence, while continuing to expand their capabilities and product depth.</p></div><div class="cq-explain-card" style="background:#0f766e"><h4>Trailblazers</h4><div class="cq-explain-sub">Strong Therapeutic &amp; Manufacturing Capability, Focused Commercial Reach &amp; Pipeline Strategy</div><p>Innovative brands with advanced capabilities and differentiated offerings, with opportunities to broaden their market reach.</p></div><div class="cq-explain-card" style="background:#3b82f6"><h4>Emerging Players</h4><div class="cq-explain-sub">Focused Therapeutic &amp; Manufacturing Capability, Focused Commercial Reach &amp; Pipeline Strategy</div><p>Focused brands developing specialized capabilities and offerings around specific applications or customer needs.</p></div></div></div>
+<div class="panel">
+  <h2>Company Details <span style="font-weight:500;font-size:0.85rem;opacity:.75">
+  (80 rows)</span></h2>
+  <div class="table-scroll">
+    <table class="cq">
+      <thead>
+        <tr>
+          <th>BRAND</th><th>COMPANY</th><th>ROLE</th><th>QUADRANT</th>
+          <th>X (Therapeutic &amp; Manufacturing Capability)</th><th>Y (Commercial Reach &amp; Pipeline Strategy)</th><th>OVERALL</th>
+          <th>FOUND IN</th>
+        </tr>
+      </thead>
+      <tbody><tr><td>Aché Laboratórios Farmacêuticos</td><td>Aché Laboratórios Farmacêuticos</td><td>Marketer</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>São Paulo, Brazil</td></tr><tr><td>Alkem Laboratories</td><td>Alkem Laboratories</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Mumbai, India</td></tr><tr><td>Altimmune, Inc.</td><td>Altimmune, Inc.</td><td>Brand</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Gaithersburg, Maryland</td></tr><tr><td>Amgen</td><td>Amgen</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">75</span></td><td><span class="cq-score cq-score-hi">70</span></td><td><span class="cq-score cq-score-hi">72</span></td><td>Thousand Oaks, California, USA</td></tr><tr><td>Aspen Pharmacare</td><td>Aspen Pharmacare</td><td>Marketer</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>uMhlanga, South Africa</td></tr><tr><td>AstraZeneca</td><td>AstraZeneca</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">73</span></td><td><span class="cq-score cq-score-hi">71</span></td><td>England, United, Kingdom</td></tr><tr><td>Aurobindo Pharma</td><td>Aurobindo Pharma</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">70</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">70</span></td><td>Hyderabad, India, Its</td></tr><tr><td>Bausch Health Companies Inc.</td><td>Bausch Health Companies Inc.</td><td>Marketer</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Laval, Quebec</td></tr><tr><td>Biocon</td><td>Biocon</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Bengaluru, India</td></tr><tr><td>biomm s.a.</td><td>biomm s.a.</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Nova, Lima</td></tr><tr><td>Blau Farmacêutica</td><td>Blau Farmacêutica</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Cotia, Brazil</td></tr><tr><td>Boehringer Ingelheim</td><td>Boehringer Ingelheim</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">82</span></td><td><span class="cq-score cq-score-hi">79</span></td><td><span class="cq-score cq-score-hi">80</span></td><td>Ingelheim am Rhein, Germany</td></tr><tr><td>Bristol-Myers Squibb</td><td>Bristol-Myers Squibb</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Princeton, USA</td></tr><tr><td>Carmot Therapeutics, Inc.</td><td>Carmot Therapeutics, Inc.</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>California, United, States</td></tr><tr><td>Cipla</td><td>Cipla</td><td>Marketer</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Mumbai, India, Its</td></tr><tr><td>Cristália Produtos Químicos Farmacêuticos</td><td>Cristália Produtos Químicos Farmacêuticos</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Itapira, State of São Paulo, Brazil</td></tr><tr><td>CrystalGenomics</td><td>CrystalGenomics</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>South, Korea, Its</td></tr><tr><td>CSPC Pharmaceutical Group Limited</td><td>CSPC Pharmaceutical Group Limited</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Province, China, Its</td></tr><tr><td>Dong-A ST</td><td>Dong-A ST</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Seoul, South Korea</td></tr><tr><td>Dr. Reddy&#x27;s Laboratories</td><td>Dr. Reddy&#x27;s Laboratories</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td>Hyderabad, India, Its</td></tr><tr><td>Eli Lilly do Brasil</td><td>Eli Lilly do Brasil</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">96</span></td><td><span class="cq-score cq-score-hi">94</span></td><td><span class="cq-score cq-score-hi">95</span></td><td>São Paulo, Brazil</td></tr><tr><td>Emcure Pharmaceuticals</td><td>Emcure Pharmaceuticals</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Maharashtra, India, Its</td></tr><tr><td>Eurofarma</td><td>Eurofarma</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">70</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">69</span></td><td>São Paulo, Brazil</td></tr><tr><td>FDC Ltd.</td><td>FDC Ltd.</td><td>Brand</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Maharashtra, India, Its</td></tr><tr><td>Fresenius Kabi</td><td>Fresenius Kabi</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">77</span></td><td><span class="cq-score cq-score-hi">77</span></td><td><span class="cq-score cq-score-hi">77</span></td><td>Bad Homburg, Germany</td></tr><tr><td>Gan &amp; Lee Pharmaceuticals</td><td>Gan &amp; Lee Pharmaceuticals</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Beijing, China</td></tr><tr><td>Gedeon Richter</td><td>Gedeon Richter</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Budapest, Hungary</td></tr><tr><td>Gilead Sciences Canada</td><td>Gilead Sciences Canada</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">65</span></td><td>Mississauga, Canada</td></tr><tr><td>GlaxoSmithKline</td><td>GlaxoSmithKline</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Mumbai, Maharashtra, India</td></tr><tr><td>Glenmark Pharmaceuticals</td><td>Glenmark Pharmaceuticals</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td>Mumbai, India, Its</td></tr><tr><td>Hanmi Pharmaceutical</td><td>Hanmi Pharmaceutical</td><td>Brand</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">70</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Seoul, South, Korea</td></tr><tr><td>Hansoh Pharmaceutical Group</td><td>Hansoh Pharmaceutical Group</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">77</span></td><td><span class="cq-score cq-score-hi">73</span></td><td><span class="cq-score cq-score-hi">75</span></td><td>Lianyungang and Shanghai, China</td></tr><tr><td>Hexal AG</td><td>Hexal AG</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Holzkirchen, Germany, Its</td></tr><tr><td>Hikma Pharmaceuticals</td><td>Hikma Pharmaceuticals</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>United, Kingdom, Hikma</td></tr><tr><td>Innovent Biologics</td><td>Innovent Biologics</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">81</span></td><td><span class="cq-score cq-score-hi">74</span></td><td><span class="cq-score cq-score-hi">78</span></td><td>Province, China, Its</td></tr><tr><td>Intarcia Therapeutics</td><td>Intarcia Therapeutics</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">65</span></td><td>United, States, Its</td></tr><tr><td>Intas Pharmaceuticals</td><td>Intas Pharmaceuticals</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Gujarat, India, Its</td></tr><tr><td>Jiangsu Hansoh Pharmaceutical</td><td>Jiangsu Hansoh Pharmaceutical</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">74</span></td><td><span class="cq-score cq-score-hi">71</span></td><td><span class="cq-score cq-score-hi">72</span></td><td>Jiangsu, Province, China</td></tr><tr><td>Jiangsu Hengrui Medicine</td><td>Jiangsu Hengrui Medicine</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">77</span></td><td><span class="cq-score cq-score-hi">73</span></td><td><span class="cq-score cq-score-hi">75</span></td><td>Province, China, Its</td></tr><tr><td>Johnson &amp; Johnson</td><td>Johnson &amp; Johnson</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>New Brunswick, USA</td></tr><tr><td>Julphar</td><td>Julphar</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Ras Al Khaimah, United Arab Emirates</td></tr><tr><td>Kallyope, Inc.</td><td>Kallyope, Inc.</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>States, Kallyope, Inc</td></tr><tr><td>Ratiopharm GmbH</td><td>Ratiopharm GmbH</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">71</span></td><td><span class="cq-score cq-score-hi">71</span></td><td><span class="cq-score cq-score-hi">71</span></td><td>Ulm, Germany</td></tr><tr><td>Laboratorios Bago</td><td>Laboratorios Bago</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Buenos Aires, Argentina</td></tr><tr><td>Laboratorios Silanes</td><td>Laboratorios Silanes</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Mexico, City, Mexico</td></tr><tr><td>Laboratório Farmacêutico EMS</td><td>Laboratório Farmacêutico EMS</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Hortolândia, Brazil</td></tr><tr><td>laboratório teuto brasileiro</td><td>laboratório teuto brasileiro</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Anápolis, Brazil</td></tr><tr><td>Laboratórios Servier do Brasil</td><td>Laboratórios Servier do Brasil</td><td>Marketer</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Rio de Janeiro, Brazil</td></tr><tr><td>LG Chem Ltd.</td><td>LG Chem Ltd.</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">71</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">70</span></td><td>Seoul, South, Korea</td></tr><tr><td>Lupin</td><td>Lupin</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Maharashtra, India, Lupin</td></tr><tr><td>Mankind Pharma</td><td>Mankind Pharma</td><td>Marketer</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>New, Delhi, India</td></tr><tr><td>MannKind Corporation</td><td>MannKind Corporation</td><td>Brand</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Danbury, Connecticut, USA</td></tr><tr><td>Merck &amp; Co.</td><td>Merck &amp; Co.</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">74</span></td><td><span class="cq-score cq-score-hi">76</span></td><td><span class="cq-score cq-score-hi">75</span></td><td>Rahway, New, Jersey</td></tr><tr><td>Merck KGaA</td><td>Merck KGaA</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">65</span></td><td>Darmstadt, Germany</td></tr><tr><td>Micro Labs</td><td>Micro Labs</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Bengaluru, India</td></tr><tr><td>Moksha8</td><td>Moksha8</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Berwyn, Pennsylvania</td></tr><tr><td>Viatris</td><td>Viatris</td><td>Marketer</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>United, States, Viatris</td></tr><tr><td>nordic pharma</td><td>nordic pharma</td><td>Marketer</td><td>Challengers</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>São Paulo, Brazil</td></tr><tr><td>Novo Nordisk</td><td>Novo Nordisk</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">100</span></td><td><span class="cq-score cq-score-hi">100</span></td><td><span class="cq-score cq-score-hi">100</span></td><td>Bagsværd, Denmark</td></tr><tr><td>Pfizer</td><td>Pfizer</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td>New York City, USA</td></tr><tr><td>Pharmascience Inc.</td><td>Pharmascience Inc.</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Montreal, Quebec, Canada</td></tr><tr><td>prati-donaduzzi</td><td>prati-donaduzzi</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Toledo, Brazil</td></tr><tr><td>Productos Científicos</td><td>Productos Científicos</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Mexico City, Mexico</td></tr><tr><td>Provention Bio</td><td>Provention Bio</td><td>Brand</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">65</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Bank, New, Jersey</td></tr><tr><td>Química Ariston</td><td>Química Ariston</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Mexico City, Mexico</td></tr><tr><td>Roche</td><td>Roche</td><td>Brand</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Basel, Switzerland</td></tr><tr><td>Sanofi</td><td>Sanofi</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">71</span></td><td><span class="cq-score cq-score-hi">70</span></td><td>Paris, France</td></tr><tr><td>Shanghai Benemae Pharmaceutical</td><td>Shanghai Benemae Pharmaceutical</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Shanghai, China</td></tr><tr><td>STADA Arzneimittel</td><td>STADA Arzneimittel</td><td>Marketer</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Vilbel, Germany, Its</td></tr><tr><td>Structure Therapeutics</td><td>Structure Therapeutics</td><td>Brand</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>San, Francisco, California</td></tr><tr><td>Sumitomo Pharma Co., Ltd.</td><td>Sumitomo Pharma Co., Ltd.</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Osaka, Japan</td></tr><tr><td>Sun Pharmaceutical</td><td>Sun Pharmaceutical</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">67</span></td><td>Mumbai, India, Its</td></tr><tr><td>Tecnoquímicas</td><td>Tecnoquímicas</td><td>Marketer</td><td>Emerging Players</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Cali, Colombia</td></tr><tr><td>Tonghua Dongbao</td><td>Tonghua Dongbao</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>China, Jilin, Tonghua</td></tr><tr><td>USV Private Limited</td><td>USV Private Limited</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">68</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Mumbai, India</td></tr><tr><td>Viking Therapeutics</td><td>Viking Therapeutics</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">69</span></td><td>United, States, Its</td></tr><tr><td>Wockhardt</td><td>Wockhardt</td><td>Marketer</td><td>Challengers</td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">67</span></td><td><span class="cq-score cq-score-hi">66</span></td><td>Mumbai, Maharashtra, India</td></tr><tr><td>Yuhan Corporation</td><td>Yuhan Corporation</td><td>Brand</td><td>Trailblazers</td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">66</span></td><td><span class="cq-score cq-score-hi">68</span></td><td>Seoul, South, Korea</td></tr><tr><td>Zealand Pharma</td><td>Zealand Pharma</td><td>Brand</td><td>Leaders</td><td><span class="cq-score cq-score-hi">74</span></td><td><span class="cq-score cq-score-hi">75</span></td><td><span class="cq-score cq-score-hi">74</span></td><td>Søborg, Denmark</td></tr><tr><td>Zydus Lifesciences</td><td>Zydus Lifesciences</td><td>Marketer</td><td>Leaders</td><td><span class="cq-score cq-score-hi">73</span></td><td><span class="cq-score cq-score-hi">69</span></td><td><span class="cq-score cq-score-hi">71</span></td><td>Ahmedabad, India</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Parameter Definitions</h2>
+  <p style="margin:0 0 1rem 0;color:#64748b;font-size:.92rem;line-height:1.45">
+    What each scoring parameter means for
+    <strong>Global GLP-1 Receptor Agonist Market</strong>
+    (generated for this market — not a fixed template).
+  </p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem">
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.1rem">
+      <div style="font-weight:700;color:#0f172a;margin-bottom:.75rem;font-size:1.02rem">
+        X — Therapeutic &amp; Manufacturing Capability
+      </div>
+      <div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Product / Molecule Portfolio</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Breadth of approved GLP-1 RA products (e.g., semaglutide, liraglutide, tirzepatide) and formulations (oral, injectable). Strength shown by number of marketed products and diverse delivery options.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Therapeutic Coverage &amp; Differentiation</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Range of indications covered (T2D, obesity, cardiovascular risk) and unique mechanisms (dual/triple agonists). Strength shown by label expansions and clinical differentiation vs competitors.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Innovation &amp; Clinical R&amp;D</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Investment in next-generation GLP-1s, novel delivery systems, and combination therapies. Strength shown by pipeline assets in Phase II/III and published trial results.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Manufacturing &amp; Supply Reliability</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Capacity for large-scale production of peptides, fill-finish capabilities, and supply chain resilience. Strength shown by manufacturing sites, capacity expansions, and ability to meet global demand.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Regulatory &amp; Quality Compliance</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Track record of FDA/EMA approvals, post-marketing safety, and GMP compliance. Strength shown by approval history, inspection outcomes, and absence of major recalls.</div></div>
+    </div>
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.1rem">
+      <div style="font-weight:700;color:#0f172a;margin-bottom:.75rem;font-size:1.02rem">
+        Y — Commercial Reach &amp; Pipeline Strategy
+      </div>
+      <div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Geographic Market Access</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Presence and reimbursement coverage in key markets (US, EU, Japan). Strength shown by approvals in multiple regions, pricing agreements, and formulary inclusion.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Brand / HCP Reputation</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Perception among physicians and patients, driven by efficacy, safety, and real-world evidence. Strength shown by prescription trends, guideline inclusion, and KOL endorsements.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Financial Performance</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Revenue growth, profitability, and market share in GLP-1 segment. Strength shown by quarterly sales, growth rates, and contribution to company revenue.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Pipeline &amp; Indication Roadmap</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Future catalysts including new indications (e.g., NASH, CKD) and combination trials. Strength shown by Phase III programs and expected regulatory filings.</div></div><div style="margin:0 0 .85rem 0"><div style="font-weight:700;color:#0f172a;margin-bottom:.2rem">Partnerships &amp; Business Expansion</div><div style="color:#475569;line-height:1.5;font-size:.92rem">Strategic alliances, licensing deals, and M&amp;A that expand capabilities or market reach. Strength shown by notable partnerships, acquisitions, and geographic expansion initiatives.</div></div>
+    </div>
+  </div>
+</div>
+<p class="footer">Generated by Coherent Quadrant · open this file after a terminal run</p></div></body></html>

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 3,
+      "answer": "SK hynix focuses on memory products (DRAM, NAND, SSDs) and does not offer CPUs, GPUs, or custom accelerators for data centers.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "SK hynix does not produce accelerators, so performance per watt of their latest accelerator is not applicable.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "SK hynix's memory products are compatible with AI frameworks indirectly, but they do not offer compute products with direct software stack compatibility.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "SK hynix does not provide high-speed networking solutions like Ethernet or InfiniBand; they focus on memory and storage.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "SK hynix does not offer interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "SK hynix does not produce networking products, so compatibility with switch vendors or open standards is not applicable.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "SK hynix does not design data centers, so typical PUE is not provided; their memory products may contribute to energy efficiency but no specific PUE data is available.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "SK hynix does not offer liquid cooling solutions for data centers; they focus on memory and storage products.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "SK hynix's memory products may have power management features, but specific data on energy consumption reduction is not available in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "SK hynix does not provide a software platform for managing data center resources; they are a hardware manufacturer.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "SK hynix does not offer orchestration software, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "SK hynix does not provide automation features for provisioning, scaling, or monitoring workloads as they are not a software vendor.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "SK hynix offers memory products like HBM that are optimized for AI workloads, but they do not provide specialized hardware or software optimizations beyond memory.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "SK hynix's high-bandwidth memory (HBM) can improve AI workload performance, but they do not offer full solutions compared to general-purpose alternatives.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "SK hynix does not provide tools for workload profiling and optimization; they focus on memory hardware.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 4,
+      "answer": "SK hynix does not operate data centers; they are a semiconductor manufacturer, so the number of data center regions is not applicable.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "SK hynix does not have data centers, so geographic distribution is not applicable.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "SK hynix does not operate data centers, so expansion plans are not applicable.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "SK hynix likely supplies memory to hyperscalers, but specific customer names are not listed in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Revenue share between enterprise and hyperscaler customers is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials from Fortune 500 companies are available in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "SK hynix's annual revenue from data center products is not specified, but they are a major memory supplier for data centers.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Gross margin for their data center segment is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "SK hynix has shown revenue growth in memory markets, but specific data center revenue growth is not available.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "SK hynix is a major player in the memory market, but their share in the overall data center systems market is not specified.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "SK hynix's growth rate in memory is strong, but comparison to overall data center market growth is not available.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "SK hynix is gaining share in AI memory (HBM), but specific data on AI servers or storage is not in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "SK hynix has partnerships with major tech companies, but specific alliances in the last two years are not listed in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No recent acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "SK hynix likely has joint ventures for memory technology, but specific co-development agreements are not in the knowledge base.",
+      "evidence_urls": ["https://product.skhynix.com"],
+      "evidence_snippets": ["DRAM · CMM · SSD · NAND Storage · MCP AI · Server · Networking · Mobile · PC · Consumer · Automotive"],
+      "grounding": "partial"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Operates the Zeebrugge LNG terminal and has multiple infrastructure companies (Dunkerque LNG, Interconnector, FluxSwiss, etc.) but no evidence of multi-basin LNG scale."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions auction for Recondenser Liquefaction Short Term Capacity at Zeebrugge, indicating operational activity, but no throughput figures."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No direct evidence of reliability metrics; only mentions of auctions and maintenance impacts on adjacent systems."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'Safety & environment' sections for Dunkerque LNG and Interconnector, but no specific safety records or regulatory compliance details."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Committed to 100% carbon-neutral energy system by 2050, supports Paris Agreement, and has hydrogen and CO2 activities."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Operates in Europe, Middle East, and South America (Fluxys Brasil, Fluxys Chile) and supplies multiple European countries, but not a global LNG trader."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific offtake or customer contracts mentioned; only general shipper journey and capacity booking information."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only mentions of annual reports and financial information pages."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Has projects for hydrogen and CO2 infrastructure, and mentions construction projects, but no LNG-specific growth pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Strategy includes 'Connect: Create low-carbon energy value chains through partnerships', but no specific LNG partnerships or expansions cited."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

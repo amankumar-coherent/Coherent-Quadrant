@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions only GlucoTrack, a single non-invasive glucose monitoring device. No other products are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "GlucoTrack uses patented ultrasonic, electromagnetic, and thermal technologies to measure glucose. Claims of accuracy are mentioned but no specific clinical trial data or safety outcomes are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "The company developed a truly non-invasive glucose monitor using a patented combination of technologies, indicating significant R&D investment over more than a decade."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems is provided."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No explicit mention of FDA clearance or other regulatory approvals. The device is described as non-invasive but regulatory status is not stated."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The company is Israeli and has some international presence (e.g., Australia trade article), but no detailed distribution or market reach information is provided."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "GlucoTrack is described as 'first truly noninvasive system' and has been featured in trade publications, but no adoption metrics or endorsements from medical professionals are cited."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue figures, or funding information is provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "The evidence focuses on GlucoTrack for type 2 diabetes management. No other pipeline products or expansion into other indications are mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No partnerships or business expansion activities are mentioned in the evidence."
+    }
+  ],
+  "evidence_used": true
+}

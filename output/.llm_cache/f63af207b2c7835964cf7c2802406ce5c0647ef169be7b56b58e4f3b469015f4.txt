@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only the ECG247 Smart Heart Sensor, a single wearable ECG device. No other products are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "A study on diagnostic accuracy and usability of ECG247 Smart Heart Sensor is published in PMC, indicating clinical validation. CE certified according to EU Medical Device Directive."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Developed a unique medically certified sensor for continuous long-term monitoring, using BLE and Nordic nRF52832 SoC, showing innovative design."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Partnership with Kitron for manufacturing suggests some capability, but no detailed quality systems evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "CE certified according to EU Medical Device Directive (93/42/EEC) as stated in the PMC article."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Norway-based, with distribution via Stevn Technologies AB (Sweden) and presence in Europe. No global scale evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Published clinical study and CE certification support trust. Used for arrhythmia detection, with mention in European Society of Cardiology guidelines context."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on arrhythmia detection and stroke prevention, but no explicit pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Kitron for manufacturing and with Stevn Technologies for distribution, indicating business expansion efforts."
+    }
+  ],
+  "evidence_used": true
+}

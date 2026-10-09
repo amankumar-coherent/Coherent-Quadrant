@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Ono has a robust pipeline with multiple candidates in late-stage development, including Opdivo in various indications, but specific Phase III biologic candidates are not detailed in the KB.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/ir/library/pipeline"],
+      "evidence_snippets": ["開発パイプライン"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Ono's pipeline includes diverse modalities such as antibodies and novel mechanisms, as indicated by their focus on '多様なモダリティを活用した創薬'.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/rd/open_innovation/modality"],
+      "evidence_snippets": ["多様なモダリティを活用した創薬"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "Ono has products like Opdivo targeting top-selling biologics, but the KB does not specify how many pipeline products target top-selling biologics.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/company/about/products"],
+      "evidence_snippets": ["主要製品"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "The KB does not provide specific bioreactor capacity figures for Ono, so this is based on general knowledge that they have manufacturing capabilities but not at the scale of top CDMOs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "Ono has multiple sites globally, as indicated by 'グループ・事業所一覧', but the KB does not specify if they are for manufacturing redundancy.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/company/about/office"],
+      "evidence_snippets": ["グループ・事業所一覧"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The KB does not specify whether Ono uses single-use or stainless steel manufacturing processes, so this is based on general industry knowledge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Ono likely uses advanced analytical techniques given their R&D focus, but the KB does not explicitly mention mass spec usage.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/rd/"],
+      "evidence_snippets": ["研究開発"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "The KB does not provide information on validated analytical methods for biosimilar comparability, so this is based on general knowledge that Ono is not a major biosimilar player.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Ono has published research on their products, but the KB does not specifically mention studies on structural/functional similarity for biosimilars.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "Ono has received approvals for Opdivo in multiple countries, but the KB does not specify the number of biologics/biosimilars approved by FDA/EMA in the last 5 years.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/news"],
+      "evidence_snippets": ["プレスリリース"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "The KB does not provide average approval times, so this is based on general knowledge that Ono has a track record but specific times are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "The KB does not mention any complete response letters or rejections, but it is known that Ono has had regulatory challenges in the past.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Ono uses various expression systems for biologics, as indicated by their focus on '多様なモダリティ', but the KB does not specify CHO or yeast.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/rd/open_innovation/modality"],
+      "evidence_snippets": ["多様なモダリティを活用した創薬"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Ono has proprietary technologies for drug discovery, but the KB does not specifically mention biosimilar development platforms.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/rd/drug_discovery_strategy"],
+      "evidence_snippets": ["創薬方針"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Ono has invested in AI for drug discovery, as indicated by 'AIを活用した創薬'.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/rd/open_innovation/ai"],
+      "evidence_snippets": ["AIを活用した創薬"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Ono has a global presence with products available in multiple countries, but the KB does not specify the exact number.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/global"],
+      "evidence_snippets": ["グローバル戦略"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Ono has some presence in emerging markets, but the KB does not provide details on the strength of that presence.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/global"],
+      "evidence_snippets": ["グローバル戦略"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Ono has partnerships and local manufacturing in key regions, as indicated by their licensing activities and global strategy.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/rd/licensing"],
+      "evidence_snippets": ["ライセンス活動"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Ono has shown revenue growth, but the KB does not provide specific year-over-year growth rates for biologics.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/ir/financial_highlights"],
+      "evidence_snippets": ["財務ハイライト"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Ono is profitable overall, and their biologics segment is likely profitable, but the KB does not break out biosimilar profitability.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/ir/financial_highlights"],
+      "evidence_snippets": ["財務ハイライト"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "The KB does not provide projected market share growth, so this is based on general knowledge that Ono is a mid-tier player.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "Ono has partnerships with major pharma like BMS for Opdivo, as evidenced by their licensing and collaboration activities.",
+      "evidence_urls": ["https://www.ono-pharma.com/ja/rd/licensing/partnership"],
+      "evidence_snippets": ["導入・導出・共同販促"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "The KB does not provide specific numbers of healthcare providers or hospitals as customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Ono likely has supply agreements, but the KB does not specify long-term agreements with payers or GPOs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "Ono is not a major biosimilar player, so pricing discounts are likely not competitive; the KB does not provide pricing information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "The KB does not mention value-added services for payers, so this is based on general knowledge that Ono may offer some services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "Ono's pricing is likely not competitive in the biosimilar market, but the KB does not provide comparative pricing data.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Ono likely has multiple suppliers for raw materials, but the KB does not provide specific information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Ono has risk management policies, as indicated by their sustainability and governance sections, but the KB does not detail supply disruption plans.",
+      "evidence_urls": ["https://sustainability.ono-pharma.com/ja/themes/141"],
+      "evidence_snippets": ["リスクマネジメント"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "The KB does not provide lead time information for key inputs, so this is based on general knowledge that it varies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

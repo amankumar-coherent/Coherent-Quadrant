@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Signos markets FDA-cleared CGM weight-management programs using Dexcom sensors, but evidence shows only one product (Signos Glucose Monitoring System with Dexcom Stelo) and no broad portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions FDA clearance and real-time glucose data, but no clinical trial results or safety data are cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Signos uses AI-powered app and has raised $20M to expand CGM use, indicating some innovation, but no specific R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; relies on Dexcom sensors."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Signos has FDA clearance for first over-the-counter CGM for weight management, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions US-based operations and online availability, but no global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Signos has reviews and media coverage, but no evidence of hospital adoption or clinical endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Revenue estimates: $22.6M ARR in 2023 and $37.5M annual revenue, indicating moderate financial performance."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Raised $20M to expand CGM use beyond diabetes into weight management, but no specific pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Dexcom for sensors and raised $20M for expansion, indicating business growth."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

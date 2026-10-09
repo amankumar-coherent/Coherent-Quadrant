@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Spire Health Tag and a COPD study; no broad portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims of 'clinical-grade accuracy' and 'unparalleled adherence' but no specific clinical data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Recognized as 'market-leader in continuous-respiration sensing' and 'start from the ground up' for unobtrusive wearable."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Machine-washable wearable suggests manufacturing capability, but no details on quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No explicit FDA/CE clearances mentioned; only clinical trial registration."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in San Francisco; partnership with Redox for US health systems, but no global scale evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Backed by Rock Health and Stanford StartX; positive reviews; but limited adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Revenue $35.1M and funding $48.1M; acquired by Wellinks, but no profitability details."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "COPD study indicates expansion, but no other pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Redox to connect RPM to US health systems; backing from investors."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

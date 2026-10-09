@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Besi is an assembly equipment provider, not a chip manufacturer, so it does not offer process nodes like 3nm or 2nm.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Besi leads in advanced packaging technologies like hybrid bonding and thermo-compression bonding, which are critical for leading-edge chips, but it does not compete in process technology like FinFET or GAA.",
+      "evidence_urls": ["https://www.besi.com/products-technology/productgroup/hybrid-bonding/", "https://www.besi.com/products-technology/productgroup/thermo-compression-bonding/"],
+      "evidence_snippets": ["Hybrid Bonding", "Thermo Compression Bonding"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Besi's roadmap focuses on advanced packaging equipment for next-gen nodes, but specific node timelines are not disclosed as it is not a chipmaker.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Besi offers equipment for a wide range of semiconductor packaging applications across logic, memory, analog, power, and more, but it is specialized in assembly rather than full product categories.",
+      "evidence_urls": ["https://www.besi.com"],
+      "evidence_snippets": ["develops leading edge assembly processes and equipment for leadframe, substrate and wafer level packaging applications in a wide range of end-user markets including electronics, mobile internet, cloud server, computing, automotive, industrial, LED and solar energy."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Besi does not publicly disclose revenue split by product type; its portfolio is diversified across packaging equipment but not by semiconductor category.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Besi partners with OSATs and provides equipment used in OSAT processes, but it does not offer OSAT services itself.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Besi owns proprietary process technology and equipment designs, but not CPU/GPU/AI accelerator IP; its differentiation lies in packaging equipment.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Besi does not license IP like ARM or RISC-V; it develops its own equipment technology and may use third-party components.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Besi's packaging technology is strong in high-growth areas like AI and automotive, as advanced packaging is essential for these applications.",
+      "evidence_urls": ["https://www.besi.com"],
+      "evidence_snippets": ["wide range of end-user markets including electronics, mobile internet, cloud server, computing, automotive, industrial, LED and solar energy."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Besi does not operate wafer fabs; it manufactures assembly equipment, so it has no wafer fabrication capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Yield rate is not applicable to Besi as it does not fabricate wafers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "Besi is a leader in advanced packaging equipment, including hybrid bonding and thermo-compression bonding for 2.5D/3D and chiplets, though it does not have packaging capacity itself.",
+      "evidence_urls": ["https://www.besi.com/products-technology/productgroup/hybrid-bonding/", "https://www.besi.com/products-technology/productgroup/thermo-compression-bonding/"],
+      "evidence_snippets": ["Hybrid Bonding", "Thermo Compression Bonding"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Besi likely holds standard quality certifications like ISO 9001, but specific certifications are not mentioned in the provided knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Besi ensures reliability through precision equipment, but specific defect rate (DPPM) data is not publicly available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Besi addresses environmental compliance through its sustainability efforts, but specific RoHS/REACH details are not in the KB.",
+      "evidence_urls": ["https://www.besi.com/company/corporate-responsibility/"],
+      "evidence_snippets": ["Sustainability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Besi has significant global presence with headquarters in the Netherlands and operations in Asia and the United States, as indicated in the KB.",
+      "evidence_urls": ["https://www.besi.com"],
+      "evidence_snippets": ["Netherlands; Asia; United States"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Besi serves diverse end-markets including electronics, automotive, industrial, and more, but revenue contribution by market is not disclosed.",
+      "evidence_urls": ["https://www.besi.com"],
+      "evidence_snippets": ["wide range of end-user markets including electronics, mobile internet, cloud server, computing, automotive, industrial, LED and solar energy."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Besi's global footprint across multiple regions helps mitigate regional risks, though specific risk management strategies are not detailed.",
+      "evidence_urls": ["https://www.besi.com"],
+      "evidence_snippets": ["Netherlands; Asia; United States"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Besi's top customers are not publicly disclosed, so customer concentration risk cannot be assessed from the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Besi likely has partnerships with equipment makers and research consortia, but specific partnerships are not listed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Besi collaborates with ecosystem players like OSATs and foundries to provide complete packaging solutions, but details are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Besi's financials are not provided in the KB, but as a public company it reports revenue and income; specific figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available in the KB; Besi's capital expenditure as a percentage of revenue is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Besi's balance sheet strength is not detailed in the KB, but as a profitable equipment maker it likely has adequate resources.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Besi's roadmap includes advancing hybrid bonding and thermo-compression bonding technologies, but specific milestones are not in the KB.",
+      "evidence_urls": ["https://www.besi.com/products-technology/productgroup/hybrid-bonding/", "https://www.besi.com/products-technology/productgroup/thermo-compression-bonding/"],
+      "evidence_snippets": ["Hybrid Bonding", "Thermo Compression Bonding"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Besi's technology is relevant to AI chips and advanced memory through advanced packaging, but no explicit roadmap for quantum is mentioned.",
+      "evidence_urls": ["https://www.besi.com"],
+      "evidence_snippets": ["cloud server, computing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Besi's focus on advanced packaging aligns with industry trends toward heterogeneous integration and chiplets, meeting customer demands.",
+      "evidence_urls": ["https://www.besi.com/products-technology/productgroup/hybrid-bonding/"],
+      "evidence_snippets": ["Hybrid Bonding"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "Besi does not announce fab expansions as it is an equipment maker; it may expand its own manufacturing but not wafer fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Besi's revenue growth is not provided in the KB, but as a cyclical semiconductor equipment maker it has grown with industry trends.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Besi likely funds capacity expansions through operating cash flow and debt, but specific plans are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

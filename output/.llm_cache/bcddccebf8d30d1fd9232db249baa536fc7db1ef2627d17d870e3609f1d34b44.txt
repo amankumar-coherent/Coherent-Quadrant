@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "TC Energy operates a 94,000 km natural gas pipeline network and power generation assets, but evidence does not show LNG liquefaction or regasification terminals; it transports gas to LNG export facilities."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The company transports over 25% of North American natural gas consumption, indicating significant throughput, but no specific LNG throughput or operational metrics are provided."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions 'safe and reliable operations' and 'high-quality, long-life energy infrastructure assets', but no specific reliability metrics for LNG assets."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Safety is stated as 'our number one value' with a goal for pipeline and energy facilities to operate safely; also mentions compliance and community engagement."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Report on Sustainability, 75% of power capacity is low carbon (nuclear/renewable), and they transport renewable natural gas, showing transition efforts."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Presence in Canada and US, with pipelines supplying North America, but no evidence of global LNG corridors or multi-continent reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG offtake agreements or customer contracts; as a pipeline operator, it may have transportation contracts but not LNG-specific."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'strong results' and 'strengthened financial performance', but no specific financial figures or LNG revenue breakdown."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'advanced critical energy infrastructure' and 'building for tomorrow', but no specific LNG growth projects or pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Engages with Indigenous groups and community partners, but no evidence of LNG-specific partnerships or M&A in LNG."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

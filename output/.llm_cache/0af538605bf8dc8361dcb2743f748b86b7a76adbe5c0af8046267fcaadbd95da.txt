@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "XMOS does not disclose specific process nodes, but as a fabless multicore SoC designer it likely uses mature nodes (e.g., 28nm or above) rather than leading-edge nodes.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["XMOS designs deterministic multicore SoCs for voice, audio and real-time edge applications."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "XMOS differentiates with its xcore architecture for deterministic real-time processing, but it does not lead in specific process technologies like FinFET or GAA.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["xcore generative / real-time SoCs for voice, audio, DSP and physical AI."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No public roadmap for next-generation nodes is available; XMOS likely follows foundry offerings rather than leading node adoption.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "XMOS is specialized in multicore SoCs for voice, audio, and edge AI, not offering memory, analog, or power products.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["XMOS designs deterministic multicore SoCs for voice, audio and real-time edge applications."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Revenue split by product type is not disclosed, but the portfolio is narrow, focused on SoCs for specific applications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "As a fabless company, XMOS likely partners with OSAT providers, but no specific partnerships are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "XMOS owns the xcore architecture, a deterministic multicore design with unique real-time processing capabilities for voice and AI.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["xcore generative / real-time SoCs for voice, audio, DSP and physical AI."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "XMOS uses its proprietary xcore IP and does not license to others; it may use third-party IP but this is not specified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "XMOS's architecture is strong in edge AI and voice, but less relevant in 5G or automotive compared to larger players.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["Multicore SoC; Voice; Edge AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "XMOS is fabless and does not own wafer fabrication capacity; no capacity figures are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rates are not disclosed; as a fabless company, yields depend on foundry partners and are not a differentiator.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No information on advanced packaging; XMOS likely relies on standard packaging from OSAT partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No specific quality certifications are mentioned in the knowledge base; as a fabless designer, certifications may be held by manufacturing partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "Defect rates and reliability processes are not disclosed; no evidence of specific reliability programs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "Compliance with RoHS, REACH, and conflict minerals is not mentioned; likely standard for the industry but not evidenced.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "XMOS has presence in the UK, US, and Asia, with headquarters in Bristol, UK, indicating a global reach.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["United Kingdom; United States; Asia", "Bristol, United Kingdom"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include voice, audio, and edge AI applications, but revenue contribution by market is not disclosed.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["voice, audio and real-time edge applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification across UK, US, and Asia helps mitigate regional risks, but the extent is not detailed.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["United Kingdom; United States; Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "Top customers and concentration risk are not disclosed; no customer names are available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No specific partnerships with equipment makers, EDA vendors, or research consortia are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "As a fabless company, XMOS likely collaborates with foundries and OSATs, but no specific ecosystem partnerships are detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "Financial figures such as revenue, net income, and free cash flow are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "CapEx data is not available; as a fabless company, CapEx is likely lower than IDMs but not specified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "Balance sheet details are not available; no evidence of debt or cash reserves.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No explicit roadmap milestones are provided, but the focus on generative and physical AI suggests a direction toward edge AI.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["xcore generative / real-time SoCs for voice, audio, DSP and physical AI."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "XMOS is involved in edge AI but has no public roadmap for quantum or advanced memory.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["Edge AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "The roadmap aligns with trends in voice and edge AI, but lacks detail on broader industry alignment.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["voice, audio and real-time edge applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No new fab or expansion projects are announced; as a fabless company, capacity expansion is not directly applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rate is not disclosed; no financial projections are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No information on funding or execution of capacity expansions; likely relies on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Amgen has a robust pipeline with multiple candidates in Phase III or filed, as evidenced by their extensive R&D strategy and pipeline focus.",
+      "evidence_urls": ["https://www.amgen.com/science/research-and-development-strategy", "https://www.amgenpipeline.com/"],
+      "evidence_snippets": ["Research & Development Strategy", "Pipeline"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Amgen's pipeline includes diverse modalities such as antibodies, fusion proteins, and novel targets, as indicated by their focus on 'Novel Targets & Modalities'.",
+      "evidence_urls": ["https://www.amgen.com/science/research-and-development-strategy/novel-targets-and-modalities"],
+      "evidence_snippets": ["Novel Targets & Modalities"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Amgen's pipeline includes biosimilars targeting top-selling biologics, as they have a dedicated biosimilars section and a history of developing such products.",
+      "evidence_urls": ["https://www.amgen.com/science/biosimilars"],
+      "evidence_snippets": ["Biosimilars"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Amgen is a major biologics manufacturer with global capacity, though specific liter capacity is not disclosed in the KB.",
+      "evidence_urls": ["https://www.amgen.com/science/manufacturing"],
+      "evidence_snippets": ["Manufacturing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 8,
+      "answer": "Amgen operates multiple manufacturing sites globally, ensuring redundancy, as indicated by their global presence and manufacturing focus.",
+      "evidence_urls": ["https://www.amgen.com/science/manufacturing"],
+      "evidence_snippets": ["Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Amgen likely uses both single-use and stainless steel technologies, but specific details are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Amgen likely uses advanced mass spec for characterization, given its leadership in biologics, but no direct evidence in KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Amgen has validated analytical methods for biosimilar comparability, but specific numbers are not available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Amgen has published studies on similarity for its biosimilars, but no direct evidence in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "Amgen has a strong track record of FDA/EMA approvals for biologics and biosimilars, as evidenced by its product portfolio and regulatory success.",
+      "evidence_urls": ["https://www.amgen.com/products"],
+      "evidence_snippets": ["Products"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Average approval times are not disclosed, but Amgen's experience suggests efficient regulatory processes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Amgen has had some regulatory setbacks, but overall success is high; specific CRLs are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Amgen uses advanced expression systems like CHO cells, as it is a pioneer in biologic manufacturing.",
+      "evidence_urls": ["https://www.amgen.com/science"],
+      "evidence_snippets": ["Science"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Amgen has proprietary platform technologies for biologics development, but specifics are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Amgen has invested in AI and data science for R&D, as evidenced by their 'AI & Data Science' section.",
+      "evidence_urls": ["https://www.amgen.com/science/research-and-development-strategy/ai-in-research-and-development"],
+      "evidence_snippets": ["AI & Data Science"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Amgen products are available in numerous countries globally, given its worldwide presence and global operations.",
+      "evidence_urls": ["https://www.amgen.com/amgen-worldwide"],
+      "evidence_snippets": ["Amgen Worldwide"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Amgen has a presence in emerging markets, but specific details are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Amgen has manufacturing and partnerships in key regions, but specifics are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Amgen has shown consistent revenue growth, but specific YoY growth rates are not in the KB.",
+      "evidence_urls": ["https://www.amgen.com/investors"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Amgen's biosimilar segment is profitable, but specific financials are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Projected market share growth is not available in the KB, but Amgen's strong position suggests positive outlook.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "Amgen has partnerships with major pharma and distributors, as indicated by 'Brand Partners' section.",
+      "evidence_urls": ["https://www.amgen.com/about/brand-partners"],
+      "evidence_snippets": ["Brand Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "Amgen serves many healthcare providers, but specific numbers are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Amgen likely has long-term supply agreements, but no evidence in KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Amgen offers competitive discounts on biosimilars, but specific discount percentages are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Amgen provides value-added services, but specifics are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Amgen's pricing is competitive, but direct comparisons are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Amgen likely has multiple suppliers for resilience, but specifics are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Amgen has risk management plans, but details are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Lead times are not disclosed, but Amgen's scale suggests reasonable efficiency.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

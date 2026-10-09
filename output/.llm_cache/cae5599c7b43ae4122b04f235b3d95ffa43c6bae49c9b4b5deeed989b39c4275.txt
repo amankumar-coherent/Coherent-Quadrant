@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence shows multiple products: UbiqVue 2A, LP1100, LP1250, ECG patch, but portfolio appears focused on biosensors and ECG monitoring, not broad range."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA 510(k) clearances and CE marks indicate validated clinical performance and safety for continuous monitoring of multiple parameters."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Proprietary LC1100 chip enables scaling and new features; integrated multi-electrode ECG sensor architecture shows innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company has 92-200 employees and operates across continents, but no specific evidence of manufacturing scale or quality certifications beyond regulatory clearances."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Multiple FDA 510(k) clearances (LP1100, UbiqVue 2A) and CE marks for ECG patch and UbiqVue 2A demonstrate strong regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Employees across 4 continents (Asia, North America, Europe) and EU certification indicate international presence, but no specific sales or distribution evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "FDA clearances and clinical-grade positioning build trust, but no evidence of widespread adoption or key opinion leader endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or profitability data provided; only employee count and private company status."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "UbiqVue 2A adds SpO2 and 12 parameters, LP1250 for ECG in multiple settings, and cloud-based Holter solution indicate expansion, but no explicit pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No specific partnerships mentioned, but presence in multiple continents and multiple product launches suggest business expansion."
+    }
+  ],
+  "evidence_used": true
+}

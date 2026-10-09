@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Signos markets FDA-cleared CGM weight-management programs using Dexcom sensors; evidence mentions Dexcom or Abbott Libre models, but no proprietary device portfolio breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance for weight management support is mentioned, but no specific clinical performance or safety data is provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Uses AI-powered app for personalized glucose targets and meal timing; evidence indicates innovative approach but no detailed R&D pipeline."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities; relies on Dexcom sensors, so likely not a manufacturer."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA approval for Signos Glucose Monitoring System for weight management is cited; indicates regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in San Francisco, USA; evidence does not specify global reach or channel breadth."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mentioned in reviews and comparisons (Signos vs Levels, Nutrisense, etc.), indicating some brand recognition; FDA clearance adds trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Estimated annual revenue $37.5M per year (Growjo) and $22.6M ARR in 2023 (GetLatka) indicate solid financial performance."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA approval for weight management is an expansion beyond diabetes; no further pipeline evidence."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Partnership with Dexcom for sensors is implied; no other partnerships or expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

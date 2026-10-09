@@ -1,0 +1,132 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Accounts Payable Automation Market
+  target : 50
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=50 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=70d0377e → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand_half2\accounts_payable_automation_market_global\accounts_payable_automation_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] checkpoint → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand_half2\accounts_payable_automation_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      · 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_42_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · 0c-market-analysis: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Solution Provider
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers are finance departments, accounting teams, and corporate enterprises looking to automate their invoice processing and payment workflows.
+  [chatgpt] Step 0c/6: roles present in market: Solution Provider, Integrator / Consultant
+  [chatgpt] Step 0c/6: why this player type: Solution Provider was chosen because the competitive landscape is entirely built around technology companies selling software-as-a-service (SaaS) or platform solutions to automate enterprise workflows, while other roles like integrators are secondary implementation channels.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 50)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +10 (total 10)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +10 (total 20)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +10 (total 30)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.4: +10 (total 40)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 21s ago
+    → substep 1a.5: +10 (total 50)
+    → substep 1a done: 50 companies in 5 rounds (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 50)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (50 = 0 seeds + 50 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 50 candidates as Solution Provider in 5 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/5…
+  [ai-mode] WARNING prompt truncated 6869 -> 6620 chars to stay under the 7800-char URL limit
+      · verify-1: prompt encodes to 7799 URL chars (limit 7800) — would be truncated and lose its output template; using the API backend for this structured call
+      · verify-1: calling DeepSeek (deepseek-v4-flash) attempt 1/3…
+      · verify-1: tokens in=1548 out=864 cost~$0.0009 (run total ~$0.0009)
+      · verify-1: got response (3487 chars, finish=stop)
+      · verify-1: JSON parse OK
+    → substep 4a.1: running kept=11 rejected=1
+    → substep 4a.2: verify chunk 2/5…
+  [ai-mode] WARNING prompt truncated 6832 -> 6619 chars to stay under the 7800-char URL limit
+      · verify-2: prompt encodes to 7800 URL chars (limit 7800) — would be truncated and lose its output template; using the API backend for this structured call
+      · verify-2: calling DeepSeek (deepseek-v4-flash) attempt 1/3…
+      · verify-2: tokens in=1564 out=884 cost~$0.0009 (run total ~$0.0018)
+      · verify-2: got response (3636 chars, finish=stop)
+      · verify-2: JSON parse OK
+    → substep 4a.2: running kept=23 rejected=1
+    → substep 4a.3: verify chunk 3/5…
+  [ai-mode] WARNING prompt truncated 6869 -> 6630 chars to stay under the 7800-char URL limit
+      · verify-3: prompt encodes to 7799 URL chars (limit 7800) — would be truncated and lose its output template; using the API backend for this structured call
+      · verify-3: calling DeepSeek (deepseek-v4-flash) attempt 1/3…
+      · verify-3: tokens in=1544 out=906 cost~$0.0009 (run total ~$0.0028)
+      · verify-3: got response (3890 chars, finish=stop)
+      · verify-3: JSON parse OK
+    → substep 4a.3: running kept=35 rejected=1
+    → substep 4a.4: verify chunk 4/5…
+  [ai-mode] WARNING prompt truncated 7131 -> 6651 chars to stay under the 7800-char URL limit
+      · verify-4: prompt encodes to 7798 URL chars (limit 7800) — would be truncated and lose its output template; using the API backend for this structured call
+      · verify-4: calling DeepSeek (deepseek-v4-flash) attempt 1/3…
+      · verify-4: tokens in=1589 out=857 cost~$0.0009 (run total ~$0.0037)
+      · verify-4: got response (3526 chars, finish=stop)
+      · verify-4: JSON parse OK
+    → substep 4a.4: running kept=47 rejected=1
+    → substep 4a.5: verify chunk 5/5…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_42_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-5: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 77s ago
+    → substep 4a.5: running kept=49 rejected=1
+    → substep 4a done: kept=49 rejected=1 (required=Solution Provider)
+    → substep 4b: write rejected list (1)
+    → substep 4c: market gate kept 49/49 (dropped 0)
+  [web_expand] merged +49; total unique=49 (target=100)
+  [chatgpt] fill ALL table rows this pass: 49 (merged=49, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 49 rows already carry their report columns
+    → substep 5c: merged filled rows into list (49 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 49 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] Accounts Payable Automation Market: in=49 geo_drop=0 heur_drop=0 llm_drop=0 kept=49 market_type=B2B uniform_role=AP Automation Platform Provider
+  [xy] market-fit filter (B2B): 49 -> 49 companies (roles=['AP Automation Platform Provider'])
+  [xy] industry=ICT, Automation, Semiconductor/Information and Communication Technology axis_def=llm | X=Product Strength ['Invoice Capture & OCR Accuracy', 'Workflow Automation & Approval Routing', 'ERP & Accounting System Integration', 'AI & Machine Learning Capabilities', 'Supplier Network & Payment Execution'] | Y=Business Strength ['Customer Base & Contract Wins', 'Revenue & Growth Metrics', 'Geographic Coverage & Localization', 'Partner Ecosystem & Channel Network', 'Funding & Financial Stability']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 49 companies (1/query, 2 queries per batch)
+      · params [1-1]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [2-2]: 1/1 companies detailed
+      · params [3-3]: 1/1 companies detailed
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36565:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:71910:59)
+    at DispatcherConnection.dispatch (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26024:14)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4047,
+  syscall: 'write',
+  code: 'EPIPE'
+}
+
+Node.js v24.18.1

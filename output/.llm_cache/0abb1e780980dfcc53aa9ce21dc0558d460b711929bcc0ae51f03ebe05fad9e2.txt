@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions Seer Home™ for epilepsy monitoring, but no other devices or portfolio breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance indicates clinical validation, but no specific performance or safety data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mention of next generation model for EEG/ECG monitoring suggests ongoing R&D, but limited detail."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Received FDA 510(k) clearance for Seer Home™, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in Australia and FDA clearance for US, but no evidence of broader channel reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and mention of faster diagnosis suggest some trust, but no adoption metrics."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Company placed in voluntary administration, indicating financial distress."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Next generation model for epilepsy monitoring indicates pipeline, but no other indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Breakthrough Victoria-backed, but no other partnerships or expansion evidence."
+    }
+  ],
+  "evidence_used": true
+}

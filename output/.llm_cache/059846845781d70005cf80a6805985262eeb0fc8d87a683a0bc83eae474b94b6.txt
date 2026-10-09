@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the C3w monitor and C3 device, with no other product lines; portfolio appears narrow."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Claims 800,000+ ECG reports delivered, 8M hours analyzed, and human verification by cardiology specialists, but no published clinical outcomes."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mentions AI-supported reporting and cloud-based Apex software, and ongoing clinical trials in Germany, indicating R&D activity."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "States products are developed, designed, and produced in Denmark, and CE and ISO certified, but lacks detailed quality system evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "CE and ISO certified, and clinical trials approved by German authorities (BfArM), but no FDA clearance mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "LinkedIn states availability in more than 20 countries, and website has distribution page."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "2,300+ HCPs using Cortrium and testimonial from Preventicum, but limited independent adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Estimated revenue $14.1M per year (Growjo) and raised $1.6M, but no official financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Clinical trials for C3 on cancer patients in Germany, but no clear pipeline for new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Collaborates with leading organizations and raised funds from Myant, but no specific partnerships detailed."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

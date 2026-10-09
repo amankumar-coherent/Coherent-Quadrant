@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only CardioTag device; no other products or portfolio breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance indicates safety and performance review, but no clinical outcome data or studies cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Company leverages wearable technology, signal processing, and deep learning; CardioTag captures multiple signals simultaneously, indicating innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Received FDA 510(k) clearance for CardioTag, demonstrating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of geographic presence or distribution channels beyond US FDA clearance."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and media coverage suggest some trust, but no evidence of clinical adoption or market traction."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Raised $15.1 million in 2022, but no revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company aims to expand to provide clinicians and patients with tools, but no specific pipeline or new indications mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion activities."
+    }
+  ],
+  "evidence_used": true
+}

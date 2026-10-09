@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions MoMe ARC as 3rd generation remote ECG monitoring device and a 2nd generation system, but no other product lines or breadth beyond cardiac monitoring."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance indicates safety and efficacy, but no specific clinical performance data or outcomes are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Multiple generations of MoMe (2nd and 3rd) and inclusion of AI analysis and Bluetooth diagnostic sensor demonstrate ongoing innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Received FDA 510(k) clearance for MoMe ARC and second-generation system, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions inclusion in Epic Showroom and worldwide offices, but no specific geographic market presence or distribution scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "CEO quotes and press releases indicate adoption and growth, but no quantitative adoption metrics or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mention of 'rapid growth' and revenue generation, but no financial figures or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Development of 3rd generation MoMe ARC and inclusion of AI analysis suggest pipeline expansion, but no specific new indications beyond arrhythmia."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Inclusion in Epic Showroom and patent spat with BioTelemetry indicate partnerships and business activity, but no major strategic partnerships detailed."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 7,
+      "grounding": "supported",
+      "why": "CNOOC is 'one of the largest state-owned oil companies' and 'largest offshore oil and gas producer in China' with 'leading position in LNG business in China through construction of several key LNG receiving terminals' (abarrelfull). Also has stake in Tangguh LNG (Rigzone) and Mozambique offtake (World Finance)."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions operation of several LNG terminals and LNG carrier project (MOL) but no specific throughput or efficiency metrics."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows force majeure on prompt LNG deliveries (Arab News), indicating reliability issues; no other performance data."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No direct evidence on safety or regulatory compliance; only general state-owned status."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on sustainability initiatives or transition strategies; only mention of gas and power generation."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "CNOOC has LNG interests in China, Indonesia (Tangguh), Mozambique (offtake), and Canada (via PETRONAS deal) (Rigzone, World Finance, Egypt Oil & Gas)."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Secured long-term offtake agreements in Mozambique (11 mtpa with partners including CNOOC) and PETRONAS supply deal of 2.2 mtpa (World Finance, Egypt Oil & Gas)."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence of acquisition of Tangguh stake for $275 million (Rigzone) but no overall financial metrics."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Aims to expand LNG business (Petromindo), acquired stake in Tangguh, and involved in Mozambique LNG (Rigzone, CLBrief)."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnerships with PETRONAS, MOL (LNG carrier project), and stake in Tangguh with BP (Egypt Oil & Gas, India Sea Trade News, Rigzone)."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "The company offers a range of avocado oil products including organic and refined varieties, as evidenced by their website listing.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com/en/avocado-oil/"],
+      "evidence_snippets": ["Organic Extra Virgin Avocado Oil", "Organic Refined Avocado Oil", "Extra Virgin Avocado Oil", "Refined Avocado Oil"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "The company offers organic avocado oil options, as listed on their website, but no explicit non-GMO or specialty claims are mentioned.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com/en/avocado-oil/"],
+      "evidence_snippets": ["Organic Extra Virgin Avocado Oil", "Organic Refined Avocado Oil"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "The website does not provide specific details on packaging sizes for retail, foodservice, or industrial segments, so this is partially supported.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "The company mentions certifications like IFS, organic, and Kosher, but no specific sustainability reports or certifications like Rainforest Alliance or Fair Trade are mentioned.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["IFS FOOD certification", "certification of organic production with the European seal of organic farming; and the Kosher certification."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "No specific initiatives to reduce water usage or carbon footprint in avocado farming are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The company emphasizes quality and agility but does not provide explicit details on fair labor practices or community support.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "The knowledge base does not mention multiple sourcing regions for avocado oil; the company is based in Spain and focuses on olive oil.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "The company is family-run and has its own factory, suggesting vertical integration, but no long-term contracts with growers are mentioned.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["family run company", "All our olive oils are produced in our own factory"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "No contingency plans for supply disruptions are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "The company is based in Spain and does not mention distribution centers in key global markets.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No mention of temperature-controlled logistics for avocado oil transit.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "The company emphasizes agility and tailored operations, but no specific lead times are mentioned.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["OUR AGILITY Thanks to the knowlegde and the history of the business men, we can make tailore-made operations, right away, for each one of our clients."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No evidence of sales offices or partnerships in multiple continents.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No evidence of availability in major retail chains across different countries.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "The company likely adapts to regional regulations given its certifications, but no explicit mention of packaging adaptation.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["IFS FOOD certification", "certification of organic production with the European seal of organic farming; and the Kosher certification."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "The company's mission focuses on olive oil tradition and quality, not specifically on avocado oil health benefits.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["Tradition and ACEITERA PENINSULAR ESPAÑOLA in Olive Oil experience"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "No specific marketing investments for avocado oil as a premium cooking oil are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "The company offers organic products, aligning with clean label trends, but no explicit plant-based diet alignment is mentioned.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com/en/avocado-oil/"],
+      "evidence_snippets": ["Organic Extra Virgin Avocado Oil"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "The company serves both bulk and bottled oil markets, indicating B2B and B2C customers, but no explicit mention of food manufacturers.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["Bulk", "Bottled Oil"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No testimonials or case studies from major food brands are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No evidence of growing adoption in emerging markets.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No mention of collaborations with avocado growers' cooperatives or agricultural associations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No mention of partnerships with research institutions for product innovation.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "The company likely works with distributors and retailers given its bottling operations, but no explicit partnerships are mentioned.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["Bottled Oil"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No pricing information is available, so competitiveness cannot be assessed from the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No pricing details are provided, but the company offers bulk options, suggesting potential volume discounts.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["Bulk"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "The company's certifications (IFS, organic, Kosher) may justify a premium pricing strategy, but no explicit pricing strategy is mentioned.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["IFS FOOD certification", "certification of organic production with the European seal of organic farming; and the Kosher certification."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "The company is family-run and has been operating for five generations, suggesting stability, but no financial details are available.",
+      "evidence_urls": ["https://www.aceiterapeninsular.com"],
+      "evidence_snippets": ["family run company", "working in the world of olive oil for five generations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No financial reports or revenue growth data are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No financial reports or news indicating a strong balance sheet are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

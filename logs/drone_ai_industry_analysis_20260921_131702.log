@@ -1,0 +1,121 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Drone AI Industry Analysis
+  target : 280
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=280 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=04489122 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_ai_industry_analysis_india\drone_ai_industry_analysis_india_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] checkpoint → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_ai_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      · 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_06_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · 0c-market-analysis: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Solution Provider
+  [chatgpt] Step 0c/6: why B2B: The drone AI market primarily serves commercial enterprises, defense departments, and industrial organizations that integrate intelligent software into autonomous aerial hardware.
+  [chatgpt] Step 0c/6: roles present in market: Solution Provider, OEM / Drone Manufacturer, Systems Integrator / Engineering Provider
+  [chatgpt] Step 0c/6: why this player type: I chose Solution Provider because the defining value of this specific market is the technology—the AI software algorithms, analytics platforms, and autonomy models—rather than the physical drone aircraft or hardware components themselves.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 280)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +10 (total 10)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +5 (total 15)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +10 (total 25)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.4: +8 (total 33)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.5: +10 (total 43)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.6: +7 (total 50)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.7: +10 (total 60)
+      · discover-round-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-8: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.8: +4 (total 64)
+      · discover-round-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-9: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.9: +4 (total 68)
+      · discover-round-10: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-10: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 34s ago
+    → substep 1a.10: +9 (total 77)
+      · discover-round-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-11: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 71s ago
+    → substep 1a.11: +3 (total 80)
+      · discover-round-12: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-12: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 110s ago
+    → substep 1a.12: +2 (total 82)
+      · discover-round-13: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-13: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 152s ago
+    → substep 1a.13: +4 (total 86)
+      · discover-round-14: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-14: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 202s ago
+    → substep 1a.14: +2 (total 88)
+      · discover-round-15: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-15: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 237s ago
+    → substep 1a.15: +8 (total 96)
+      · discover-round-16: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-16: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 267s ago
+    → substep 1a.16: +1 (total 97)
+      · discover-round-17: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-17: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 307s ago
+    → substep 1a.17: +1 (total 98)
+      · discover-round-18: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-18: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 344s ago
+    → substep 1a.18: +0 (total 98)
+      · discover-round-19: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · discover-round-19: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 25s ago
+    → substep 1a.19: +2 (total 100)
+      · discover-round-20: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-20: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 69s ago
+    → substep 1a.20: +4 (total 104)
+      · discover-round-21: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-21: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 112s ago
+    → substep 1a.21: +0 (total 104)
+      · discover-round-22: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-22: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 161s ago
+    → substep 1a.22: +3 (total 107)
+      · discover-round-23: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-23: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 198s ago
+    → substep 1a.23: +3 (total 110)
+      · discover-round-24: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-24: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 235s ago
+    → substep 1a.24: +2 (total 112)
+      · discover-round-25: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-25: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 279s ago
+    → substep 1a.25: +0 (total 112)
+      · discover-round-26: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-26: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 323s ago
+    → substep 1a.26: +2 (total 114)
+      · discover-round-27: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-27: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 363s ago
+    → substep 1a.27: +3 (total 117)
+      · discover-round-28: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · discover-round-28: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 40s ago
+    → substep 1a.28: +2 (total 119)
+      · discover-round-29: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-29: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 73s ago
+    → substep 1a.29: +2 (total 121)
+      · discover-round-30: calling Google AI Mode (udm=50) attempt 1/4…

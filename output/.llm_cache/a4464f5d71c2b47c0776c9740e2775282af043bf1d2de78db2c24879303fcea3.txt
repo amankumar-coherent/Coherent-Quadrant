@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "IQE is an epitaxial wafer supplier, not a logic chip manufacturer, so it does not offer process nodes like 3nm or 2nm; its technology is focused on compound semiconductor epitaxy.",
+      "evidence_urls": ["https://www.iqep.com"],
+      "evidence_snippets": ["The leading supplier of advanced wafer products and material solutions to the semiconductor industry."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "IQE leads in specific epitaxial technologies for compound semiconductors (GaN, GaAs, InP) but does not compete in mainstream logic process technologies like FinFET or GAA.",
+      "evidence_urls": ["https://www.iqep.com/products/gan/", "https://www.iqep.com/products/gaas/", "https://www.iqep.com/products/inp/"],
+      "evidence_snippets": ["Gallium Nitride (GaN)", "Gallium Arsenide (GaAs)", "Indium Phosphide (InP)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "IQE's roadmap focuses on advancing epitaxial wafer technologies for AI, datacentres, and communications, not on next-generation logic nodes like 2nm or 1.4nm.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-secures-14-million-production-order-with-strategic-customer-for-ai-and-datacentre-markets/"],
+      "evidence_snippets": ["IQE secures $14 million production order with strategic customer for AI and datacentre markets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "IQE specializes in compound semiconductor epitaxial wafers across multiple material systems (GaN, GaAs, InP, GaSb) serving various applications, but does not offer logic, memory, or analog chips.",
+      "evidence_urls": ["https://www.iqep.com/products/"],
+      "evidence_snippets": ["Discover our epitaxy and substrate product portfolio"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "The knowledge base does not provide revenue split by product type; IQE's portfolio is specialized in epitaxial wafers rather than diversified across logic, memory, and analog.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "IQE does not provide OSAT services; it focuses on epitaxial wafer manufacturing and has not indicated any OSAT partnerships in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "IQE's proprietary IP is in epitaxial growth processes and material solutions, not in CPU, GPU, or AI accelerator designs.",
+      "evidence_urls": ["https://www.iqep.com"],
+      "evidence_snippets": ["The leading supplier of advanced wafer products and material solutions to the semiconductor industry."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "IQE does not license CPU/GPU IP; it provides epitaxial wafers that are used by chipmakers, and it does not rely on third-party IP like ARM or RISC-V.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "IQE's architecture strength lies in enabling high-growth areas like AI and datacentres through advanced InP and GaAs epitaxy, but it is not a chip architecture provider.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-secures-14-million-production-order-with-strategic-customer-for-ai-and-datacentre-markets/"],
+      "evidence_snippets": ["IQE secures $14 million production order with strategic customer for AI and datacentre markets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "The knowledge base does not disclose IQE's wafer fabrication capacity or utilization rates.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No yield rate data is available in the knowledge base; IQE's epitaxial processes are specialized, but no benchmarks are provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "IQE does not offer advanced packaging (2.5D/3D, chiplets); it focuses on epitaxial wafer growth, not packaging services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "IQE mentions quality and accreditations on its website, but specific certifications like ISO 9001 or IATF 16949 are not listed in the provided knowledge base.",
+      "evidence_urls": ["https://www.iqep.com/about-us/responsibility/quality/"],
+      "evidence_snippets": ["Quality"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No defect rate (DPPM) data is available in the knowledge base; IQE emphasizes quality but does not provide specific metrics.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "IQE has a responsibility section covering environment and supply chain, but specific compliance with RoHS, REACH, or conflict minerals is not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.iqep.com/about-us/responsibility/environment/", "https://www.iqep.com/about-us/responsibility/supply-chain/"],
+      "evidence_snippets": ["Environment", "Supply Chain"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "IQE has a global footprint with operations in the UK, US, and Asia, as indicated by its global footprint page and being a UK-based supplier.",
+      "evidence_urls": ["https://www.iqep.com/about-us/sites/"],
+      "evidence_snippets": ["Global footprint"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "IQE serves markets including automotive, consumer electronics, AI/datacentres, aerospace/defense, and communications infrastructure, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://www.iqep.com/markets/"],
+      "evidence_snippets": ["Automotive and Industrial", "Consumer Electronics", "AI and Datacentres", "Aerospace and Defence", "Communications Infrastructure"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "IQE's global footprint across multiple regions helps mitigate regional risks, but the knowledge base does not provide specific risk mitigation strategies.",
+      "evidence_urls": ["https://www.iqep.com/about-us/sites/"],
+      "evidence_snippets": ["Global footprint"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "IQE has strategic customers, including a $14 million production order and a multi-year supply agreement with Tower Semiconductor, but top customer concentration is not disclosed.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-secures-14-million-production-order-with-strategic-customer-for-ai-and-datacentre-markets/", "https://www.iqep.com/media/press-releases/2026/iqe-and-tower-semiconductor-announce-multi-year-inp-epiwafer-supply-agreement/"],
+      "evidence_snippets": ["IQE secures $14 million production order with strategic customer for AI and datacentre markets", "IQE and Tower Semiconductor announce multi-year InP epiwafer supply agreement"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "IQE has a partnership with Tower Semiconductor, but no partnerships with equipment makers, EDA vendors, or research consortia are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-and-tower-semiconductor-announce-multi-year-inp-epiwafer-supply-agreement/"],
+      "evidence_snippets": ["IQE and Tower Semiconductor announce multi-year InP epiwafer supply agreement"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "IQE collaborates with customers like Tower Semiconductor to supply epiwafers, but broader ecosystem collaboration with foundries, OSATs, or software is not detailed.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-and-tower-semiconductor-announce-multi-year-inp-epiwafer-supply-agreement/"],
+      "evidence_snippets": ["IQE and Tower Semiconductor announce multi-year InP epiwafer supply agreement"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "The knowledge base does not provide IQE's annual revenue, net income, or free cash flow for the last fiscal year.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "No CapEx data is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "The knowledge base does not include balance sheet details such as debt-to-equity or cash reserves.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "IQE's roadmap includes expanding in AI and datacentre markets and securing production orders, but specific 3-5 year milestones are not detailed.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-secures-14-million-production-order-with-strategic-customer-for-ai-and-datacentre-markets/"],
+      "evidence_snippets": ["IQE secures $14 million production order with strategic customer for AI and datacentre markets"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "IQE is involved in AI and datacentre markets through its epitaxial wafers, but there is no explicit roadmap for quantum or advanced memory.",
+      "evidence_urls": ["https://www.iqep.com/markets/ai-and-datacentres/"],
+      "evidence_snippets": ["AI and Datacentres"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "IQE's focus on AI, datacentres, and communications aligns with industry trends, as evidenced by recent orders and partnerships.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-secures-14-million-production-order-with-strategic-customer-for-ai-and-datacentre-markets/"],
+      "evidence_snippets": ["IQE secures $14 million production order with strategic customer for AI and datacentre markets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "The knowledge base does not mention any new fab or expansion projects; IQE's recent news focuses on orders and agreements, not capacity expansion.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rate is not provided in the knowledge base; recent orders suggest growth in AI/datacentre markets, but no historical figures are available.",
+      "evidence_urls": ["https://www.iqep.com/media/press-releases/2026/iqe-secures-14-million-production-order-with-strategic-customer-for-ai-and-datacentre-markets/"],
+      "evidence_snippets": ["IQE secures $14 million production order with strategic customer for AI and datacentre markets"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No information on funding or execution plans for capacity expansions is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

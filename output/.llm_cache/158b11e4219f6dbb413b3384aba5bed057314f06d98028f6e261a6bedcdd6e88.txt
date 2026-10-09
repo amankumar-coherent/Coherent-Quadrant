@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions Lifetouch smart patch, Lifetemp thermometer, and Patient Status Engine (PSE) as an end-to-end system, but no explicit count of devices or breadth beyond these."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Lifetouch is described as 'validated and clinically proven' with over 150,000 hours of data from acute care settings; PSE is 'clinically trusted' and deployed in multiple major hospitals."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Named a pioneer in wearable monitoring; developed world's first cloud-ready medical device (CE mark); building Isansys Healthcare Cloud for scalability."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Ricardo helped scale up production due to increased demand, indicating manufacturing capability, but no detailed quality systems evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "PSE is Class IIa CE, UKCA, and Class II FDA medical device; Lifetouch is CE Class IIa and FDA Class II; CE mark for cloud-ready device."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Deployed in multiple major hospitals globally since 2014; presence in UK and India; partners with healthcare providers in India and worldwide."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Named one of UK's top 10 medtech companies; 'clinically trusted'; used in acute care settings with 150,000+ hours of data; featured on BBC."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific financial data (revenue, profitability) provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Expanding from hospital to home monitoring; developing cloud-based platform; but no explicit pipeline of new indications or products beyond current."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partners with India's and world's respected healthcare providers; collaboration with Ricardo for production scale-up; featured in SBRI Healthcare."
+    }
+  ],
+  "evidence_used": true
+}

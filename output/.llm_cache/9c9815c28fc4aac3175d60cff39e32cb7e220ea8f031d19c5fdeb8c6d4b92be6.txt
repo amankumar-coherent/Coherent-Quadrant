@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only one product, EvieMED Ring, with FDA clearance for pulse oximetry. No other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Exemplary SpO2 clinical trial results submitted to FDA; heart rate RMSE ~2 BPM in line with FDA requirements; FDA clearance received."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Designed smallest custom RF-enabled chip for non-invasive cuffless blood pressure and glucose monitoring; applying deep learning for heart rate monitoring."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Received FDA 510(k) clearance for EvieMED Ring pulse oximeter; submitted exemplary SpO2 results."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of geographic presence or channel reach beyond US FDA clearance."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and medical-grade positioning may build trust, but no evidence of clinical adoption or partnerships with healthcare providers."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Revenue listed as N/A; company is independent and recently merged with Corvex, but no financial figures provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Plans to file for FDA clearance of SpO2 and heart rate metrics; developing non-invasive blood pressure and glucose monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mention of unlocking partnership opportunities with FDA clearance; merger with Corvex announced, but no specific partnerships detailed."
+    }
+  ],
+  "evidence_used": true
+}

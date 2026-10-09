@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions 'Mexico injectables' as key brands and 'more than 1,500 brands of medicines' but no specific GLP-1 products are listed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Company has '17 lines of specialty' but no evidence of GLP-1 specific therapeutic differentiation."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Website mentions 'infrastructure and technological innovation' but no specific GLP-1 R&D or clinical trials."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence states '14 production plants' and '30,000 collaborators' indicating strong manufacturing capability, but not GLP-1 specific."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Company promotes pharmacovigilance and has certifications, but no GLP-1 specific regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Presence in Mexico, Latin America, and United States, but no evidence of GLP-1 market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Recognized as socially responsible and has a strong Mexican presence, but no GLP-1 specific reputation."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 pipeline or indication roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion in GLP-1."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

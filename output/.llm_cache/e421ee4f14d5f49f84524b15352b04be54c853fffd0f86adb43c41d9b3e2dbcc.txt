@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Single project: developing an LNG terminal in Stade, Germany; no evidence of other assets."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Planned regasification capacity of 13.3 bcm/year, but not yet operational; no throughput data."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of operational reliability or asset performance; project in development."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Received BImSchG approval and FID; regulatory compliance mentioned, but no operational safety record."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Plans for ammonia-ready, hydrogen ramp-up, and green gases (Bio-LNG, SNG); supports energy transition."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only presence in Germany; single terminal location in Stade; no international reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 5,
+      "grounding": "partial",
+      "why": "MOU with EnBW for 3 bcmy; no long-term SPA details; limited customer evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data disclosed; ownership not public; project financing not detailed."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Single project with FID and construction start; no other pipeline projects mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partners include Buss Group, Partners Group, Enagás, Dow; Enagás as industrial partner; Dow minority stake."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

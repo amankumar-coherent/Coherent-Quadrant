@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence shows trading and downstream presence but no LNG-specific assets or terminals; only mentions 'LNG and oil products marketing'."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG throughput or operational metrics; only general trading and downstream operations."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG asset reliability or performance; only mentions of trading and distribution."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'Code of Conduct' and 'Anti-Slavery Statement' but no specific LNG safety or regulatory compliance evidence."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence shows investments in renewables (Solarcentury Africa), carbon trading, and low-carbon initiatives like electric vehicle battery swaps."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in Europe, Middle East, Africa, Asia-Pacific, Americas with offices in UAE, UK, Singapore, USA, Belgium, Switzerland, and more."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG offtake agreements or customer contracts; only mentions of trading and distribution."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions a USD 272.5 million revolving credit facility and revenue figures but no detailed financials."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Evidence shows expansion into LPG distribution in Zambia, renewable projects (860 MW under development, 4GW pipeline), and new trading offices."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Evidence shows partnerships like Solarcentury Africa acquisition, involvement in SAPP, and investments in Ampersand and Sun Mobility."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

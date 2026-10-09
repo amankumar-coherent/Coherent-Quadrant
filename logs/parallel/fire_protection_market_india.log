@@ -1,0 +1,49 @@
+[pipeline 15:47:53] market: Fire Protection Market (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_protection_market_india
+[pipeline 15:47:53] 1. verified rows: 120
+[pipeline 15:47:53] 2. axes: X=Service Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_protection_market_india\_pipeline\axes_spec.json
+[pipeline 15:47:53] 3. 120 names -> 120 companies after dedupe (0 groups merged)
+[pipeline 15:47:53] 3b. 1 companies left out (not active or excluded by review): ['Samarth Fire Protection Universal LLP'] -> _pipeline/excluded_companies.json
+[pipeline 15:47:53] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 15:47:53] 3c. ownership 120 / identity 3 / scope 120 answers: 1 more left out ['Nexus Engineering'], 1 owner labels, 30 adjacent-segment (not on the chart) ['Abhishek Millennium Contracts Private Limited', 'Avenue Turnkey Solutions', 'Blue Fence Systems Pvt Ltd', 'DK Engineers (India) Pvt Ltd', 'Decon Infratech Private Limited', 'Elixir Engineering Private Limited'] -> _pipeline/auto_review.json
+[pipeline 15:47:53] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 15:47:53]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_protection_market_india\_pipeline\evidence_pool.json
+[pipeline 15:47:53] 5. evidence round 1: 2 companies with gaps
+[pipeline 15:47:53] reasoning_r1: 2 companies across 1 browser(s)
+[pipeline 15:47:55] reasoning_r1: 1/1 shard(s) still running
+[pipeline 15:48:55] reasoning_r1: 1/1 shard(s) still running
+[pipeline 15:49:55] reasoning_r1: 1/1 shard(s) still running
+[pipeline 15:50:55] reasoning_r1: 1/1 shard(s) still running
+[pipeline 15:51:55] reasoning_r1: 1/1 shard(s) still running
+[pipeline 15:52:55] reasoning_r1: 1/1 shard(s) still running
+[pipeline 15:53:55] reasoning_r1: 1/1 shard(s) still running
+[pipeline 15:54:55]    WARNING: only 118 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 15:54:55]    --keep 120: 20 chart/evidence + 98 long tail kept, 0 lower-scored dropped
+[pipeline 15:54:55]    20 companies with full evidence, 98 in the long tail
+[pipeline 15:54:55] 6. composite scores (5 per quadrant)
+[pipeline 15:54:57] 7. rewriting hedge wording / first person in evidence
+[pipeline 15:54:59] 7b. supporting points: 2 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 15:54:59] 7b. current name for Avenue Turnkey Solutions: AvenueCorp India Pvt Ltd (listed brand is legacy)
+[pipeline 15:54:59] 7b. owner of Firepro Systems Private Limited: Panasonic
+[pipeline 15:54:59] 8. building HTML / JSON / CSV report
+[pipeline 15:55:01] 8. report page: interactive design (fire_protection_market_india_report.html); static copy fire_protection_market_india_report_classic.html
+[pipeline 15:55:41] 8b. PDF report: fire_protection_market_india_report.pdf
+[pipeline 15:56:39] 8b. Word report: fire_protection_market_india_report.docx
+[pipeline 15:56:41] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Service Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 118 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 15:56:41] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_protection_market_india\fire_protection_market_india_report.html

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 10,
+      "answer": "ASML leads in lithography technology enabling the most advanced nodes like 3nm and 2nm through its EUV and High-NA EUV systems, as evidenced by its High NA EUV milestone for high-volume logic products.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone"],
+      "evidence_snippets": ["High NA EUV reaches new readiness milestone with first high-volume Logic product"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 10,
+      "answer": "ASML is the undisputed leader in EUV lithography, a critical process technology for advanced nodes, with no peer offering comparable High-NA EUV systems.",
+      "evidence_urls": ["https://www.asml.com/en/products/euv-lithography-systems"],
+      "evidence_snippets": ["EUV lithography systems are fundamental to mass producing semiconductor chips."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 9,
+      "answer": "ASML's roadmap includes High-NA EUV for next-generation nodes like 2nm and beyond, with recent milestones indicating readiness for high-volume manufacturing.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone"],
+      "evidence_snippets": ["High NA EUV reaches new readiness milestone with first high-volume Logic product"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "ASML specializes in lithography systems for all semiconductor categories (logic, memory, etc.), providing essential equipment rather than end-products across categories.",
+      "evidence_urls": ["https://www.asml.com/en/products"],
+      "evidence_snippets": ["Our lithography technology is fundamental to mass producing semiconductor chips."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "ASML does not disclose revenue split by product type; its portfolio is diversified across EUV, DUV, metrology, and computational lithography, serving logic and memory customers.",
+      "evidence_urls": ["https://www.asml.com/en/products"],
+      "evidence_snippets": ["Products: EUV lithography, DUV lithography, Metrology & inspection, Computational lithography"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "ASML does not provide OSAT services; it partners with chipmakers and fabs, but OSAT is not part of its core business.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "ASML's proprietary IP is in lithography systems and computational lithography software, not in chip design IP like CPU or GPU.",
+      "evidence_urls": ["https://www.asml.com/en/products/computational-lithography"],
+      "evidence_snippets": ["Computational lithography"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "ASML does not license chip design IP; it develops its own system IP and collaborates with customers, but does not rely on ARM or RISC-V.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "ASML's architecture is strong in enabling AI, 5G, and automotive chips through advanced lithography, but it is not a chip designer.",
+      "evidence_urls": ["https://www.asml.com/en/technology"],
+      "evidence_snippets": ["Our lithography technology is fundamental to mass producing semiconductor chips."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "ASML does not operate wafer fabs; it manufactures lithography systems, so wafer capacity metrics are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "ASML's systems achieve high yield in customer fabs, but ASML itself does not have yield rates as it is not a chip manufacturer.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "ASML does not offer advanced packaging; it focuses on lithography, though its systems enable advanced packaging processes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "ASML likely holds ISO 9001 and other certifications for its manufacturing, but specific certifications are not mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "ASML ensures reliability through rigorous testing and customer support, but specific defect rates are not disclosed.",
+      "evidence_urls": ["https://www.asml.com/en/products/customer-support"],
+      "evidence_snippets": ["Customer support"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "ASML addresses environmental compliance through its sustainability initiatives, but specific RoHS/REACH details are not in the knowledge base.",
+      "evidence_urls": ["https://www.asml.com/en/company/sustainability"],
+      "evidence_snippets": ["Sustainability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 10,
+      "answer": "ASML has a global presence with locations in the Netherlands, US, Taiwan, South Korea, China, Germany, and Japan, covering major semiconductor regions.",
+      "evidence_urls": ["https://www.asml.com/en/company/about-asml/locations"],
+      "evidence_snippets": ["Three continents, over 60 locations", "The Netherlands", "United States", "Taiwan", "South Korea", "Chinese mainland", "Germany", "Japan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "ASML serves all major semiconductor end-markets (logic, memory, etc.) through its customers, but does not disclose revenue by end-market.",
+      "evidence_urls": ["https://www.asml.com/en/products"],
+      "evidence_snippets": ["Our lithography technology is fundamental to mass producing semiconductor chips."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "ASML's global footprint across multiple regions mitigates risks from regional disruptions, as evidenced by its extensive locations and customer support sites.",
+      "evidence_urls": ["https://www.asml.com/en/company/about-asml/locations"],
+      "evidence_snippets": ["Three continents, over 60 locations"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "ASML's top customers include Intel, TSMC, and Samsung, as indicated by its US, Taiwan, and Korea operations, but concentration risk is not quantified.",
+      "evidence_urls": ["https://www.asml.com/en/company/about-asml/locations"],
+      "evidence_snippets": ["Our US locations service Intel and other customers", "work closely with TSMC and major semiconductor fabs", "work closely with Samsung and other customers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "ASML collaborates with customers and has strategic partnerships like the one with Tata Electronics, and works with research consortia, though EDA partnerships are not detailed.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"],
+      "evidence_snippets": ["Tata Electronics and ASML Announce Strategic Partnership to Advance the Semiconductor Manufacturing Ecosystem in India"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "ASML collaborates with chipmakers and fabs to deliver holistic lithography solutions, as described in its holistic lithography approach.",
+      "evidence_urls": ["https://www.asml.com/en/technology"],
+      "evidence_snippets": ["Discover holistic lithography"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 9,
+      "answer": "ASML reported €9.3 billion total net sales and €2.9 billion net income in Q2 2026, indicating strong financial performance.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"],
+      "evidence_snippets": ["ASML reports €9.3 billion total net sales and €2.9 billion net income in Q2 2026"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "ASML's CapEx details are not in the knowledge base, but as a capital-intensive equipment maker, it likely invests significantly in R&D and manufacturing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 7,
+      "answer": "ASML's strong financial results and market position suggest a solid balance sheet, but specific debt-to-equity or cash reserves are not provided.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"],
+      "evidence_snippets": ["ASML reports €9.3 billion total net sales and €2.9 billion net income in Q2 2026"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 9,
+      "answer": "ASML's roadmap includes High-NA EUV for next-generation nodes, with recent milestones indicating progress toward high-volume manufacturing.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone"],
+      "evidence_snippets": ["High NA EUV reaches new readiness milestone with first high-volume Logic product"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "ASML's technology enables AI chips and advanced memory, but it does not have a direct roadmap for quantum or other emerging chip types.",
+      "evidence_urls": ["https://www.asml.com/en/technology"],
+      "evidence_snippets": ["Our lithography technology is fundamental to mass producing semiconductor chips."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "ASML's roadmap aligns with industry trends toward smaller nodes and advanced packaging, as evidenced by its High-NA EUV development.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone"],
+      "evidence_snippets": ["High NA EUV reaches new readiness milestone with first high-volume Logic product"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "ASML is expanding its manufacturing sites, such as in Taiwan and the US, but specific capacity additions are not detailed.",
+      "evidence_urls": ["https://www.asml.com/en/company/about-asml/locations"],
+      "evidence_snippets": ["We have the largest ASML manufacturing site in Asia", "two factories, and three R&D centers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 8,
+      "answer": "ASML's revenue growth is strong, with Q2 2026 net sales of €9.3 billion, but historical growth rates are not provided.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"],
+      "evidence_snippets": ["ASML reports €9.3 billion total net sales and €2.9 billion net income in Q2 2026"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "ASML funds expansions through its strong cash flow and financial results, but specific funding plans are not disclosed.",
+      "evidence_urls": ["https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"],
+      "evidence_snippets": ["ASML reports €9.3 billion total net sales and €2.9 billion net income in Q2 2026"],
+      "grounding": "partial"
+    }
+  ]
+}

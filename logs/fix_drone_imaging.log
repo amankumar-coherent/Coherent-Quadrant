@@ -1,0 +1,25 @@
+[pipeline 11:18:36] market: Drone Imaging Industry Analysis (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_imaging_industry_analysis_india
+[pipeline 11:18:36] 1. verified rows: 135
+[pipeline 11:18:36] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_imaging_industry_analysis_india\_pipeline\axes_spec.json
+[pipeline 11:18:36] 3. 131 names -> 126 companies after dedupe (5 groups merged)
+[pipeline 11:18:36] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 11:18:36]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_imaging_industry_analysis_india\_pipeline\evidence_pool.json
+[pipeline 11:18:36]    --keep 120: 20 chart/evidence + 100 long tail kept, 6 lower-scored dropped
+[pipeline 11:18:36]    20 companies with full evidence, 100 in the long tail
+[pipeline 11:18:36] 6. composite scores (5 per quadrant)
+[pipeline 11:18:37] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:18:39] 8. building HTML / JSON / CSV report
+[pipeline 11:18:40] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 120 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 11:18:40] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_imaging_industry_analysis_india\drone_imaging_industry_analysis_india_report.html

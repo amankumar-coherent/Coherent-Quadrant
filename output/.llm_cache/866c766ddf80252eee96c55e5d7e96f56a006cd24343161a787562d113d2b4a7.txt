@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only ViSi Mobile as a single product; no other devices in portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "ViSi Mobile continuously monitors multiple vital signs (blood pressure, heart rate, ECG, SpO2, respiration, skin temperature) and is designed to improve patient safety by early detection of deterioration."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Developed ViSi Mobile over more than half a decade, indicating sustained R&D; uses machine learning for patient safety."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Received FDA 510k clearance for ViSi Mobile (K180472) and has regulatory affairs personnel; also FDA approval mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence listed only in United States; no evidence of global distribution."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Piloted at Scripps Health and marketed for hospital use; but limited evidence of widespread adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Revenue estimated at 1 to 10 crores (likely small); private company with limited financial data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No explicit pipeline details; only current product for hospital monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Partnership with Scripps Health for pilot; also name change to Sotera, Inc. in 2022, but no major partnerships mentioned."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Only one product line (IDUN Guardian 4) mentioned; no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "In-ear EEG validated in research for past decade; device not medical, not FDA evaluated; safety info in docs."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Advanced features: Dryode sensors, real-time classifiers, SDK/API, LSL support; in-ear EEG innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Plans for CE and FCC certification by Q2 2026; currently not medical device, not FDA evaluated."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "HQ in Switzerland; presale online; no evidence of global distribution or market presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Research validation mentioned; but no evidence of clinical adoption or brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data; only presale pricing."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Classifiers in development (fatigue, relaxation, cognitive workload, etc.) indicate pipeline expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No partnerships or business expansion mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

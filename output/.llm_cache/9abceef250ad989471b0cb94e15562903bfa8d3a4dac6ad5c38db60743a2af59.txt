@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only one product, Biolinq Shine, with no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence cites completed pivotal trial and new clinical findings supporting the device, but no detailed performance metrics."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Described as 'first fully autonomous, needle-free glucose sensor' and 'first-of-its-kind' LED system, indicating strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions semiconductor manufacturing inspiration and FDA clearance, but no explicit details on manufacturing scale or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA cleared and de novo classification received, indicating strong regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions US launch plans but no global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "FDA clearance and clinical trial data support credibility, but no evidence of widespread adoption or market share."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Raised $58M and $100M in funding, indicating strong investor confidence, but no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions first-generation sensor and future protein sensor, but no detailed pipeline beyond that."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions investors and clinical trial management with MTEC, but no major commercial partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

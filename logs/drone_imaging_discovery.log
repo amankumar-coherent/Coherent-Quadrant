@@ -1,0 +1,37 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Drone Imaging Industry Analysis
+  target : 400
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=400 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=979f4746 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_imaging_industry_analysis_india\drone_imaging_industry_analysis_india_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=1_recall substep=1a.17 status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_imaging_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Solution Provider
+  [chatgpt] Step 0c/6: why B2B: The primary buyers are businesses, agricultural enterprises, construction firms, and government agencies seeking specialized data, mapping, and inspection services.
+  [chatgpt] Step 0c/6: roles present in market: Technology Provider, Service Provider, Manufacturer
+  [chatgpt] Step 0c/6: why this player type: I chose Solution Provider because the core value and competitive differentiation in drone imaging lies in the software, data processing platforms, and AI analytics used to interpret aerial data rather than the commoditized drone hardware or basic flight services.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 400, resuming with 75)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:/Users/aman.kumar/Downloads/Coherent-Quadrant/data/ai_mode_batch_53_chromium)
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-1: rate limited (rate limited by Google (1 CAPTCHAs this run)) — cooling off 5 min before retrying
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 2/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · discover-round-1: rate limited (rate limited by Google (2 CAPTCHAs this run)) — cooling off 10 min before retrying
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 3/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · discover-round-1: rate limited (rate limited by Google (3 CAPTCHAs this run)) — cooling off 15 min before retrying

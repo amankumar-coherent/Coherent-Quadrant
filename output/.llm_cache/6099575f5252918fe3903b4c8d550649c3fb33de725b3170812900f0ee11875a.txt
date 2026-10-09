@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single product, the Mawi Heart Band, with multiple setup options (Extended Holter, Event, MCT) but no other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Claims 2-channel detection, AI beat-to-beat analysis, and reports validated by certified technicians, but no clinical trial data or peer-reviewed evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Highlights AI algorithms, X-shaped vectors, and a fully disposable single-use design, indicating innovation, but no specific R&D investment or pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities, quality systems, or certifications (e.g., ISO 13485)."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "HQ in Atlanta, USA, and mentions US-specific (up to 5 days in US) but no evidence of global distribution or channel partners."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Website includes a testimonial from a cardiologist (John Doe) but no evidence of hospital adoption, key opinion leader endorsements, or published outcomes."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue figures, or funding information provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions Mobile Cardiac Telemetry (MCT) 'available soon' and covers a risk spectrum, indicating pipeline expansion, but no specific timeline or regulatory plans."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Website has 'Become a Provider' and contact forms, suggesting potential partnerships, but no named partners or business expansion deals."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

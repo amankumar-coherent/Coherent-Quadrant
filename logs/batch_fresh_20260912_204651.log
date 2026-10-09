@@ -1,0 +1,67 @@
+[batch 20:46:52] 6 market(s) queued, target=300 each
+[batch 20:46:52]   1. Global Silicon Carbide Market
+[batch 20:46:52]   2. Global Wearable Glucometer Market
+[batch 20:46:52]   3. Global Dry Eye Treatment Market
+[batch 20:46:52]   4. Global Solar Rooftop Market
+[batch 20:46:52]   5. Global Polyurethane Market
+[batch 20:46:52]   6. Global Communication Platform as a Service Market
+[batch 20:46:52] 
+[batch 20:46:52] === [1/6] START Global Silicon Carbide Market ===
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Silicon Carbide Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=f29b8bed → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=6c.8 status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers are industrial, automotive, electronics, and energy enterprises purchasing materials for component and device manufacturing.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because companies in this market fundamentally compete on producing and supplying physical silicon carbide materials and semiconductor devices under their own operational capacity, whereas distributors merely handle logistics and resale.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: SKIP (checkpoint) — 300 recalled
+  [chatgpt] Step 2/6: SKIP (checkpoint) — 0 openai-discovered
+  [chatgpt] Step 3/6: SKIP (checkpoint) — 0 ddgs extracted
+  [chatgpt] Step 4/6: SKIP (checkpoint) — kept=257 rejected=43
+    → substep 4c: SKIP merge (checkpoint) — merged=231 to_fill=231
+  [chatgpt] Step 5/6: SKIP (checkpoint) — 231 filled
+    → substep 5c: merged filled rows into list (231 total)
+  [chatgpt] Step 6/6: SKIP (checkpoint) — kept=231 rejected=0
+    → substep 6p: SKIP purity (checkpoint) — 231 rows
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] drop 'Thermlyte Monolithic Pvt Ltd': out of market
+  [relevance] Global Silicon Carbide Market: in=231 geo_drop=0 heur_drop=0 llm_drop=1 kept=228 market_type=B2B uniform_role=Manufacturer
+  [xy] market-fit filter (B2B): 231 -> 230 companies (roles=['Manufacturer'])
+  [xy] industry=Chemical and Materials/Advanced Materials axis_def=llm | X=Product Strength ['Substrate & Epitaxy Quality', 'Device Performance & Reliability', 'Wafer Size & Defect Density', 'R&D and Patent Strength', 'Manufacturing Yield & Scalability'] | Y=Business Strength ['Market Share & Customer Base', 'Revenue Growth & Profitability', 'Capacity Expansion & Supply Chain', 'Geographic & Application Diversification', 'Strategic Partnerships & Alliances']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+    → [xy] score 2/230 Abadan Silicon Carbide Production Complex
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+    → [xy] no score for Abadan Silicon Carbide Production Complex (AI Mode unavailable) — left unscored for retry
+    → [xy] score 3/230 Adesis Vacuum and Semiconductor
+    → [xy] no score for Adesis Vacuum and Semiconductor (AI Mode unavailable) — left unscored for retry
+    → [xy] score 6/230 Alpha and Omega Semiconductor Limited
+    → [xy] no score for Alpha and Omega Semiconductor Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 9/230 Anhui Aishei Power Semiconductor Co., Ltd.
+    → [xy] no score for Anhui Aishei Power Semiconductor Co., Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 10/230 APSEMI CO.,LTD
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+    → [xy] no score for APSEMI CO.,LTD (AI Mode unavailable) — left unscored for retry
+    → [xy] score 11/230 Aritech Chemazone Pvt Ltd
+    → [xy] no score for Aritech Chemazone Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 12/230 Atecom Technology Co., Ltd.

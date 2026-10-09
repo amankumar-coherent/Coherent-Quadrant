@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "LFB has a limited pipeline in late-stage biologics, with focus on plasma-derived products rather than biosimilars.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "LFB's product diversity is moderate, primarily in plasma-derived therapies and some recombinant products, but not broad across antibody formats.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "LFB has few pipeline products targeting top-selling biologics, as its focus is on niche plasma-derived products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "LFB has multiple production sites in France, but total bioreactor capacity is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.groupe-lfb.com/le-groupe/le-lfb-dans-le-monde/"],
+      "evidence_snippets": ["Le LFB possède 5 sites en France"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "LFB has multiple manufacturing sites in France, providing some redundancy, though not globally distributed.",
+      "evidence_urls": ["https://www.groupe-lfb.com/le-groupe/le-lfb-dans-le-monde/"],
+      "evidence_snippets": ["Le LFB possède 5 sites en France"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "The knowledge base does not specify whether LFB uses single-use or stainless steel, but as a plasma fractionator, it likely uses traditional stainless steel.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "LFB likely uses advanced analytical techniques, but no specific evidence of mass spec usage is in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No information on validated analytical methods for biosimilar comparability is available; LFB is not a major biosimilar player.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "No published studies on structural/functional similarity are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "LFB has a few approved biologics, but recent FDA/EMA approvals are not detailed; it is not a major biosimilar filer.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No data on average approval times is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "No evidence of complete response letters or rejections, but also no evidence of a flawless record.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "LFB uses plasma fractionation and recombinant technologies, but not necessarily novel expression systems like CHO or yeast for biosimilars.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "LFB has proprietary processes for plasma-derived products, but not specifically for biosimilar development.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No evidence of AI or automation investment in R&D is present in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "LFB has a broad international presence, with products available in many countries across Europe, Americas, and rest of world.",
+      "evidence_urls": ["https://www.groupe-lfb.com/le-groupe/le-lfb-dans-le-monde/"],
+      "evidence_snippets": ["Le LFB est présent en Europe : Allemagne, Autriche, Belgique, Espagne, Finlande, France, Grèce, Hongrie, Italie, Lituanie, Luxembourg, Pays-Bas, Pologne, République tchèque, Royaume-Uni, Slovaquie, Slovénie, Suisse."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "LFB has presence in emerging markets like Colombia, Mexico, Algeria, India, and Turkey, indicating some strength.",
+      "evidence_urls": ["https://www.groupe-lfb.com/le-groupe/le-lfb-dans-le-monde/"],
+      "evidence_snippets": ["Le LFB est implanté en Amériques : en Colombie, aux États-Unis et au Mexique.", "Dans le reste du monde le LFB est implanté en Algérie, aux Émirats Arabes Unis, à Hong Kong, en Inde, au Koweit, au Liban, au Maroc, en Tunisie et en Turquie."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "LFB has manufacturing sites in France and international presence, but local manufacturing in key regions is limited.",
+      "evidence_urls": ["https://www.groupe-lfb.com/le-groupe/le-lfb-dans-le-monde/"],
+      "evidence_snippets": ["Le LFB possède 5 sites en France"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "LFB reported revenue of 500.2 M€ in 2025, but growth rate for biologics specifically is not provided.",
+      "evidence_urls": ["https://www.groupe-lfb.com/"],
+      "evidence_snippets": ["500,2 M€ Chiffre d’affaires 2025"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "LFB is likely profitable overall, but profitability of a biosimilar segment is not applicable as they are not a major biosimilar player.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No projections for market share growth are available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "LFB has partnerships, such as with Sartorius for biomanufacturing, and is part of a new professional syndicate with other pharma companies.",
+      "evidence_urls": ["https://www.groupe-lfb.com/wp-content/uploads/2026/06/cp-lfb-biomanufacturing-sartorius-23062026-final.pdf"],
+      "evidence_snippets": ["Sartorius et LFB BIOMANUFACTURING renforcent leur collaboration"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No specific data on number of healthcare providers or hospitals as customers is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No evidence of long-term supply agreements with payers or GPOs is present.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "LFB is not a major biosimilar player, so discount data is not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No evidence of value-added services for payers is present.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No pricing comparison data is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "LFB likely has multiple suppliers for plasma and other materials, but no specific evidence is in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "LFB emphasizes biological security and operational excellence, suggesting risk management, but no explicit supply disruption plan is mentioned.",
+      "evidence_urls": ["https://www.groupe-lfb.com/developper-linnovation/la-securisation-biologique-au-lfb/"],
+      "evidence_snippets": ["La sécurisation biologique au LFB"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No data on lead times for key inputs is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

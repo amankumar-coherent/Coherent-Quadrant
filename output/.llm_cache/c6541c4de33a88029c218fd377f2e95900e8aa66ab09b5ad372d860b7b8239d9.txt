@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions S-Patch Ex, S-Patch ExL, and S-Patch Medi variants, but portfolio is limited to wearable ECG patches."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "FDA clearance for S-Patch and S-Patch ExL indicates safety and performance validation, but no detailed clinical outcomes cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Spun off from Samsung SDS, developing AI-powered cardiac monitoring with AccurKardia partnership and cloud analytics."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No direct evidence of manufacturing scale or quality systems; only product specifications and FDA clearances."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA-cleared S-Patch and S-Patch ExL, with international registrations mentioned; strong regulatory evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Global distribution pipeline spanning over 2,000 clinics and hospitals worldwide, entry into US and Indian markets."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnerships with HeartcoR and AccurKardia, presence at Heart Rhythm Society, and adoption in hospitals."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No revenue or profitability figures; only mentions of startup status and funding via Preqin profile."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Upcoming cardiac solutions mentioned, but no specific pipeline details or new indications beyond ECG monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Strategic partnerships with AccurKardia, HeartcoR, and distribution deals for US and India; CCO appointment for expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

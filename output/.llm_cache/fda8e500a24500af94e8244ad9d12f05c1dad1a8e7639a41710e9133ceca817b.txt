@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Lenovo offers a broad portfolio of servers and storage, including ThinkSystem servers with Intel/AMD CPUs and NVIDIA GPUs, but does not offer custom accelerators.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/", "https://www.lenovo.com/in/en/servers-storage/solutions/ai/"],
+      "evidence_snippets": ["Lenovo designs and manufactures a broad portfolio of data center infrastructure, including servers, storage, and networking", "Hybrid AI Servers Accelerate and scale AI solutions efficiently while protecting your data."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "Lenovo's Neptune liquid cooling improves performance per watt, but specific benchmark comparisons for their latest accelerators are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/neptune/"],
+      "evidence_snippets": ["Neptune® Liquid Cooling Power AI and HPC workloads without compromise."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Lenovo's AI solutions are designed to integrate with major frameworks, as evidenced by their AI infrastructure leadership and partnerships, though specific compatibility details are not in the KB.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/solutions/ai/"],
+      "evidence_snippets": ["Explore Lenovo’s comprehensive AI solutions across smart devices, hybrid infrastructure, data and services."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Lenovo offers networking products as part of their data center portfolio, but specific high-speed networking solutions like 400G/800G Ethernet are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/"],
+      "evidence_snippets": ["Lenovo designs and manufactures a broad portfolio of data center infrastructure, including servers, storage, and networking"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "No specific latency or bandwidth metrics for Lenovo's interconnect technology are provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Lenovo's networking products are likely compatible with industry standards, but no specific evidence of compatibility with major switch vendors is present in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Lenovo emphasizes energy efficiency and sustainability, but specific PUE figures for their data center designs are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/solutions/sustainability-solutions/"],
+      "evidence_snippets": ["Sustainability Accelerate and scale AI solutions efficiently while protecting your data."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 9,
+      "answer": "Lenovo offers Neptune liquid cooling, a patented advanced cooling solution for high-density compute, as highlighted in multiple customer stories.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/neptune/"],
+      "evidence_snippets": ["Neptune® Liquid Cooling Power AI and HPC workloads without compromise.", "Lenovo's workstations and patented Neptune® Liquid Cooling technology enable DreamWorks’ artists and filmmakers to bring their imaginations to life."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Lenovo's power management features are implied through their sustainability solutions, but specific energy reduction metrics are not detailed in the KB.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/solutions/sustainability-solutions/"],
+      "evidence_snippets": ["Sustainability Accelerate and scale AI solutions efficiently while protecting your data."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "Lenovo provides management software like XClarity and solutions like TruScale, indicating a comprehensive software platform for data center management.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/solutions/truscale/"],
+      "evidence_snippets": ["TruScale Simplify your transformation with a scalable and cost-effective solution.", "XClarity Management Software"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Lenovo's orchestration software is likely compatible with Kubernetes and OpenStack, but no explicit evidence is in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Lenovo's solutions include automation features for provisioning and scaling, as seen in their hyperconverged infrastructure and management software, but specifics are not detailed.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/"],
+      "evidence_snippets": ["ThinkAgile VX Integrated Systems", "XClarity Management Software"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Lenovo offers specialized AI servers and hybrid AI solutions, including GPU-accelerated systems and liquid cooling, demonstrating strong AI optimization.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/solutions/ai/", "https://www.lenovo.com/in/en/servers-storage/neptune/"],
+      "evidence_snippets": ["Hybrid AI Servers Accelerate and scale AI solutions efficiently while protecting your data.", "Neptune® Liquid Cooling Power AI and HPC workloads without compromise."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Lenovo's AI solutions, including Neptune cooling and high-performance servers, improve AI workload performance, as evidenced by customer success stories like DreamWorks.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/neptune/"],
+      "evidence_snippets": ["Lenovo's workstations and patented Neptune® Liquid Cooling technology enable DreamWorks’ artists and filmmakers to bring their imaginations to life."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Lenovo provides tools for workload management, but specific profiling and optimization tools for diverse AI frameworks are not mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "Lenovo does not operate its own data centers; they provide infrastructure to data center operators, so the number of regions is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Lenovo's global presence is implied by their international operations, but specific data center geographic distribution is not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "No specific expansion plans for data centers are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Lenovo has partnerships with major sports and entertainment organizations, but no explicit hyperscaler customers are listed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No revenue breakdown between enterprise and hyperscaler customers is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "Lenovo provides case studies with major enterprises like Formula 1, DreamWorks, and Dallas Cowboys, demonstrating strong enterprise adoption.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/sports-partners/formula1"],
+      "evidence_snippets": ["Discover how Lenovo devices and IT infrastructure support the breakneck pace of innovation in the world’s most popular motorsport."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Lenovo's overall revenue is known, but specific data center revenue is not disclosed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No gross margin data for Lenovo's data center segment is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Lenovo's growth in AI infrastructure is implied by their leadership recognition, but specific revenue growth figures are not in the KB.",
+      "evidence_urls": ["https://lenovopress.lenovo.com/lp2473-lenovo-recognized-as-a-leader-2026-isg-provider-lens-repo rt"],
+      "evidence_snippets": ["Lenovo named as a leader in 2026 ISG AI-Ready Infrastructure Solutions report."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Lenovo is a major player in the data center systems market, but specific market share figures are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Lenovo's growth in AI infrastructure is recognized, but comparison to overall market growth is not quantified in the KB.",
+      "evidence_urls": ["https://lenovopress.lenovo.com/lp2473-lenovo-recognized-as-a-leader-2026-isg-provider-lens-repo rt"],
+      "evidence_snippets": ["Lenovo named as a leader in 2026 ISG AI-Ready Infrastructure Solutions report."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Lenovo's AI server leadership suggests gaining share, but specific share changes are not in the KB.",
+      "evidence_urls": ["https://lenovopress.lenovo.com/lp2473-lenovo-recognized-as-a-leader-2026-isg-provider-lens-repo rt"],
+      "evidence_snippets": ["Lenovo named as a leader in 2026 ISG AI-Ready Infrastructure Solutions report."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Lenovo has partnerships with major technology providers like NVIDIA and Intel, as implied by their AI server offerings, but specific recent alliances are not detailed in the KB.",
+      "evidence_urls": ["https://www.lenovo.com/in/en/servers-storage/solutions/ai/"],
+      "evidence_snippets": ["Hybrid AI Servers Accelerate and scale AI solutions efficiently while protecting your data."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No recent acquisitions are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No joint ventures or co-development agreements are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

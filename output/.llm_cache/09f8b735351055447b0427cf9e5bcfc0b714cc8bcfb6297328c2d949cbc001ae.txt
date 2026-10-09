@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Shanghai Benemae offers only one GLP-1 RA molecule, beinaglutide, with no evidence of multiple molecules or dosing forms.",
+      "evidence_urls": ["https://www.benemae.com/product/introduce.html"],
+      "evidence_snippets": ["成功研发上市氨基酸序列与人源完全一致的GLP-1类药物——贝那鲁肽注射液"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "The company's only product is an injectable; no oral formulation is mentioned.",
+      "evidence_urls": ["https://www.benemae.com/product/introduce.html"],
+      "evidence_snippets": ["贝那鲁肽注射液"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "No combination therapies or fixed-dose combinations are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Beinaglutide is approved for type 2 diabetes and has evidence for weight loss, with a real-world study showing significant weight reduction.",
+      "evidence_urls": ["https://www.benemae.com/product/introduce.html"],
+      "evidence_snippets": ["用于成人2型糖尿病患者控制血糖", "具有显著而持久的降低体重能力"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "No cardiovascular benefit claims are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "Beinaglutide is administered with meals (likely multiple times daily), not once-weekly.",
+      "evidence_urls": ["https://www.benemae.com/product/introduce.html"],
+      "evidence_snippets": ["餐时给药"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "The company is conducting clinical studies for new indications (e.g., PCOS) but no oral GLP-1 or next-generation molecules are mentioned.",
+      "evidence_urls": ["https://www.benemae.com/news/details/700.html"],
+      "evidence_snippets": ["肥胖PCOS女性生育结局改善临床研究在北京大学第三医院启动"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 1,
+      "answer": "No head-to-head trials against competitors are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "The company is exploring PCOS and obesity-related indications, but not NASH, CKD, or heart failure.",
+      "evidence_urls": ["https://www.benemae.com/news/details/700.html"],
+      "evidence_snippets": ["肥胖PCOS女性生育结局改善临床研究"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "No FDA-approved manufacturing sites are mentioned; the company is based in China.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No supply shortages or recalls are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No explicit capacity expansion plans are mentioned, but the company is investing in R&D and has ongoing clinical trials.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 2,
+      "answer": "The product is approved by China's NMPA, not by FDA, EMA, or PMDA.",
+      "evidence_urls": ["https://www.benemae.com/product/introduce.html"],
+      "evidence_snippets": ["2016年12月，贝那鲁肽注射液取得《新药证书》"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "The company has a pharmacovigilance system as indicated by the adverse event reporting link, but no details are provided.",
+      "evidence_urls": ["https://www.benemae.com/record.html"],
+      "evidence_snippets": ["不良事件/反应报告"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "No FDA Form 483s or import alerts are mentioned; the company is not FDA-regulated.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 1,
+      "answer": "The product is only available in China, not in 50 countries or the US/EU.",
+      "evidence_urls": ["https://www.benemae.com/about.html"],
+      "evidence_snippets": ["1999年成立于上海"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 1,
+      "answer": "No reimbursement agreements with major payers like Medicare or NICE are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "The company is based in China and has launched its product there, with ongoing clinical trials in China.",
+      "evidence_urls": ["https://www.benemae.com/about.html"],
+      "evidence_snippets": ["1999年成立于上海"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "Beinaglutide is a first-in-class drug in China but not among the top 3 most prescribed globally.",
+      "evidence_urls": ["https://www.benemae.com/product/introduce.html"],
+      "evidence_snippets": ["中国糖尿病治疗领域第一个拥有自主知识产权的创新药"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "The company has presence at domestic events like the上交会, but not major international congresses like ADA or EASD.",
+      "evidence_urls": ["https://www.benemae.com/news/details/698.html"],
+      "evidence_snippets": ["仁会生物“贝那鲁肽”登陆第十二届上交会"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No major safety controversies or lawsuits are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No financial data is provided in the knowledge base to assess revenue growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 1,
+      "answer": "The company is a small biotech, not a large-cap with $100B market cap.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No R&D spending figures are available, but the company emphasizes R&D and has many patents.",
+      "evidence_urls": ["https://www.benemae.com/science/technology.html"],
+      "evidence_snippets": ["127项国内外专利申请"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 1,
+      "answer": "No Phase 3 trial for an oral GLP-1 or combination therapy is mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 2,
+      "answer": "No pediatric indications are mentioned; the company focuses on adult type 2 diabetes and obesity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 2,
+      "answer": "No plans for cardiovascular or renal indications are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "No strategic alliances for GLP-1 development or commercialization are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 1,
+      "answer": "No licensing agreements for geographic expansion are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 2,
+      "answer": "No partnerships for novel delivery technologies are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

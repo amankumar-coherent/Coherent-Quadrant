@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No GLP-1 products listed; company focuses on digital therapeutics, not owning GLP-1 molecules."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 therapeutic coverage; digital treatments for other conditions only."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence shows digital therapeutic R&D (CT-152, CT-155) but no GLP-1 clinical trials."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 1,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing or supply for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "FDA clearance for CT-152 (Rejoyn) but not for any GLP-1 product."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "Presence only in US; no evidence of GLP-1 market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Known in digital therapeutics but not in GLP-1 space."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data provided; private company."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "Pipeline includes digital therapeutics for depression, migraine, schizophrenia; no GLP-1 indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Partnerships with Boehringer Ingelheim and Otsuka for digital therapeutics, not GLP-1."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

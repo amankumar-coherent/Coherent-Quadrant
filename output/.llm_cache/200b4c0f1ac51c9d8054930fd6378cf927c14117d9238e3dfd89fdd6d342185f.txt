@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions Spire Health Tag as a wearable for respiratory monitoring and sleep tracking, but no other devices or portfolio breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims of 'clinical-grade accuracy' and 'unparalleled adherence' from BioSpace, but no specific clinical trial results or safety data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Recognized as 'market-leader in continuous-respiration sensing' and 'real-time interventions' (MedDeviceOnline); launched COPD study (FierceBiotech)."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Machine-washable wearable indicates manufacturing capability, but no details on quality systems or scale."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No explicit FDA clearance or CE marking mentioned; only 'clinical-grade accuracy' claim."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Partnership with Redox to connect to US health systems (BioSpace), but no global market presence evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Backed by Rock Health and Stanford StartX (MedDeviceOnline), but no hospital adoption or physician endorsement evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Revenue of $35.1 million and funding of $48.1M (RocketReach, Tracxn), but no profitability or growth trend."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "COPD study launched (FierceBiotech) and continuous respiratory monitoring for chronic care, indicating expansion beyond initial indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Redox (BioSpace) and acquisition by Wellinks (Tracxn) show business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

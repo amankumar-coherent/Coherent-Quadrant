@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence indicates Beijing SL Pharmaceutical is a China-based company in GLP-1 landscape, but no specific marketed GLP-1 products are listed; only a Phase 1 study of an undisclosed molecule is mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of therapeutic differentiation or coverage beyond generic GLP-1 involvement; no specific indications or unique mechanisms are described."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "A Phase 1 clinical trial (PMC article) shows early-stage R&D activity, but no late-stage pipeline or innovative differentiation is evidenced."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain reliability for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality certifications for GLP-1 products; only a Phase 1 study implies some regulatory interaction."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence is limited to China; no evidence of global market access or commercial launches."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Company is known as 'SL PHARM' in biotech, but no evidence of strong brand reputation in GLP-1 space specifically."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data or revenue figures are provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Phase 1 study indicates early pipeline, but no clear roadmap or late-stage indications are evidenced."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships, licensing deals, or business expansion activities."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

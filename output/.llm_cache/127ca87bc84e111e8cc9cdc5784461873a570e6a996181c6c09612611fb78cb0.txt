@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Magnachip does not disclose advanced process nodes like 3nm or 2nm; its focus is on mature specialty processes for power and display.",
+      "evidence_urls": ["https://www.magnachip.com/power-solutions/overview/"],
+      "evidence_snippets": ["Power Solutions Enabling a Smarter, Smaller, Faster World"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Magnachip is a specialty foundry and IDM with expertise in analog and mixed-signal, but does not lead in FinFET or GAA; it focuses on mature nodes.",
+      "evidence_urls": ["https://www.magnachip.com"],
+      "evidence_snippets": ["Designs and manufactures analog and mixed-signal semiconductor products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No public roadmap for next-generation nodes like 2nm or 1.4nm is available; Magnachip focuses on specialty process enhancements.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Magnachip offers a broad portfolio including power solutions (MOSFETs, IGBTs, SiC), display solutions, and automotive solutions, but not logic or memory.",
+      "evidence_urls": ["https://www.magnachip.com/power-solutions/overview/", "https://www.magnachip.com/display-solutions/overview/"],
+      "evidence_snippets": ["Power Solutions", "Display Solutions", "Automotive Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; the company appears focused on power and display, but exact figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Magnachip is a fabless semiconductor company and likely partners with OSAT providers, but no specific OSAT partnerships are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Magnachip has proprietary design capabilities in power and display ICs, but no specific IP like CPU or GPU is mentioned.",
+      "evidence_urls": ["https://www.magnachip.com/power-solutions/power-ics/overview/"],
+      "evidence_snippets": ["Power ICs Overview"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No information on IP licensing; Magnachip likely uses a mix of proprietary and third-party IP, but specifics are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Magnachip has automotive solutions and power ICs, but no clear architecture strength in AI or 5G; its focus is on power and display.",
+      "evidence_urls": ["https://www.magnachip.com/power-solutions/automotive-solutions/"],
+      "evidence_snippets": ["Automotive Solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "No wafer fabrication capacity or utilization data is provided; Magnachip is fabless, so it relies on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No yield data is available; as a fabless company, yields depend on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No advanced packaging offerings like 2.5D/3D or chiplets are mentioned; Magnachip likely relies on standard packaging.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No specific quality certifications are listed in the KB, but as a semiconductor supplier, Magnachip likely holds ISO 9001 and possibly IATF 16949.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No defect rate or reliability data is provided; the company emphasizes quality but specifics are absent.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Magnachip has a corporate responsibility section covering environment and compliance, indicating attention to RoHS/REACH and conflict minerals.",
+      "evidence_urls": ["https://www.magnachip.com/about-us/corporate-responsibility/environment/"],
+      "evidence_snippets": ["Environment", "Sustainable Products and Services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Magnachip is headquartered in South Korea with global sales offices and channels, but specific R&D or manufacturing locations are not detailed.",
+      "evidence_urls": ["https://www.magnachip.com/contact-us/sales-offices-channels/"],
+      "evidence_snippets": ["Power Solution Sales Offices & Channels"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include display, power, and automotive, as indicated by product lines, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://www.magnachip.com/power-solutions/automotive-solutions/", "https://www.magnachip.com/display-solutions/overview/"],
+      "evidence_snippets": ["Automotive Solutions", "Display Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification is not explicitly discussed, but having global sales offices suggests some mitigation.",
+      "evidence_urls": ["https://www.magnachip.com/contact-us/sales-offices-channels/"],
+      "evidence_snippets": ["Power Solution Sales Offices & Channels"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not named in the KB; customer concentration risk cannot be assessed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Magnachip announced a strategic partnership with Navitas for SiC, indicating collaboration with industry players.",
+      "evidence_urls": ["https://www.magnachip.com/navitas-and-magnachip-announce-strategic-partnership-to-accelerate-high-voltage-and-ultra-high-voltage-silicon-carbide-adoption/"],
+      "evidence_snippets": ["Navitas and Magnachip Announce Strategic Partnership to Accelerate High-Voltage and Ultra-High-Voltage Silicon Carbide Adoption"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "The partnership with Navitas shows ecosystem collaboration, but details on foundry or OSAT partnerships are not provided.",
+      "evidence_urls": ["https://www.magnachip.com/navitas-and-magnachip-announce-strategic-partnership-to-accelerate-high-voltage-and-ultra-high-voltage-silicon-carbide-adoption/"],
+      "evidence_snippets": ["Strategic Partnership to Accelerate High-Voltage and Ultra-High-Voltage Silicon Carbide Adoption"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not available in the KB; Magnachip is a public company but specific revenue, net income, and cash flow are not listed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "The roadmap includes SiC development and partnerships, but specific milestones for the next 3-5 years are not detailed.",
+      "evidence_urls": ["https://www.magnachip.com/navitas-and-magnachip-announce-strategic-partnership-to-accelerate-high-voltage-and-ultra-high-voltage-silicon-carbide-adoption/"],
+      "evidence_snippets": ["Strategic Partnership to Accelerate High-Voltage and Ultra-High-Voltage Silicon Carbide Adoption"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No clear roadmap for AI chips, quantum, or advanced memory is mentioned; focus is on power and display.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "The SiC partnership aligns with trends in electric vehicles and renewable energy, but broader alignment is not detailed.",
+      "evidence_urls": ["https://www.magnachip.com/navitas-and-magnachip-announce-strategic-partnership-to-accelerate-high-voltage-and-ultra-high-voltage-silicon-carbide-adoption/"],
+      "evidence_snippets": ["Accelerate High-Voltage and Ultra-High-Voltage Silicon Carbide Adoption"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab or expansion projects are announced in the KB; as a fabless company, capacity expansion is likely through foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No details on funding or execution of capacity expansions are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

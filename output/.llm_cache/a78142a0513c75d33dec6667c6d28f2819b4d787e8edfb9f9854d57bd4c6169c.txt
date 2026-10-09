@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows 104 commercial brands and 25 market-leading brands, but no specific GLP-1 products are named. The company is a generic provider, not a GLP-1 innovator."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Therapeutic areas include Diabetes, but no differentiation in GLP-1 specifically. Positioned as #1 CVS company, not GLP-1 leader."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of clinical R&D or innovative GLP-1 pipeline. Focus is on generics and patient support services."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "As a subsidiary of Lupin, likely has manufacturing capabilities, but no specific evidence for GLP-1 manufacturing or supply reliability."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Operates in multiple African countries, implying regulatory compliance, but no specific GLP-1 regulatory approvals or quality certifications mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Presence in South Africa and several other African countries (Namibia, Botswana, Zambia, Zimbabwe, Mozambique, Angola, Kenya), but limited to Africa."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Leading generic provider in South Africa, #1 CVS company, with 25 market-leading brands, indicating strong reputation in its markets."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No specific financial figures, but parent Lupin is global. R6 million investment in 2024 suggests moderate financial activity."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 pipeline or indication roadmap. Focus on generics and existing brands."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Wholly owned subsidiary of Lupin Limited, providing global backing. Expansion across African markets indicates business growth."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

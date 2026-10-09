@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only one product (HeartBeam AIMIGo) and a 12-lead synthesis software; no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance for 3-lead ECG and 12-lead synthesis software for limited arrhythmias; no clinical trial data or outcomes in evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "First-ever cable-free synthesized 12-lead ECG; credit-card sized device; unique technology."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA clearance for 3-lead ECG and 12-lead synthesis software; but 12-lead software not cleared for all uses and not for sale in US."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "US-based company; product not available for sale in US; no evidence of international presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "FDA clearance and clinical-grade data claims; but no evidence of adoption or physician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "12-lead synthesis software is cleared for limited arrhythmias; potential for expansion but not evidenced."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No partnerships or business expansion mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

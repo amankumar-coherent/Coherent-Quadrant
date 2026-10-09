@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only Bigfoot Unity system, a diabetes wearable management system, and smart insulin pens. No other devices are mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific clinical performance or safety data provided in evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Described as 'first company to design, develop and deliver a novel insulin delivery solution built around continuous glucose monitoring' and has an integrated approach combining smart pen technology, CGM data, and mobile app."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence indicates FDA authorization for Bigfoot Unity (as it is on FDA's sensor-based digital health technology list), but no details on other regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions U.S. and Europe milestones, but no specific market presence details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Abbott, a major player, and has customer support, but no adoption metrics."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Revenue of $14.3 million and total funding of $202.9M, but no profitability or growth trends."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Focus on insulin-requiring diabetes, but no specific pipeline details beyond current system."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Acquired by Abbott in 2023, and had multi-year relationship with Abbott for CGM integration; also partnerships to connect CGM to insulin pumps."
+    }
+  ],
+  "evidence_used": true
+}

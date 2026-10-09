@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows two products: Peerbridge Cor (FDA-cleared) and Cor MDx (next-gen IoT wearable), but portfolio is narrow, focused on ambulatory ECG."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA-cleared, captures 31 cardiac rhythms, high-fidelity signal quality, 95.7% success rate, and ongoing trials (COR-INSIGHT, EF-ACT) to validate diagnostic capabilities."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Patented multi-lead design, proprietary algorithm for derived 12-lead, explainable AI markers, AI-enabled diagnostics, and next-gen Cor MDx with AT&T connectivity."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No direct evidence of manufacturing scale or quality systems; only mentions low-lift rollout and clinic-friendly platform."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA-cleared for Cor, FDA 510(k) submission for next-gen device, and ongoing clinical trials indicate regulatory engagement."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in New York, US-based customers (Texas, California, Northwell), but no evidence of international presence or broad channel reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Named customers include Texas Cardiac Arrhythmia Center, Saint Joseph Hospital, Northwell Health; physician endorsements from leading cardiac centers; selected for MedTech Innovator 2025 Cohort."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Estimated annual revenue $12.6M per Growjo, funding round close mentioned, but no official financials or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Roadmap expanding into structural, functional, hemodynamic, neurohormonal assessment; trials for ejection fraction and cardiopulmonary diagnostics; next-gen device in pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Strategic partnership with AT&T for wireless connectivity, collaboration with leading cardiac centers, and selection for MedTech Innovator cohort indicate business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

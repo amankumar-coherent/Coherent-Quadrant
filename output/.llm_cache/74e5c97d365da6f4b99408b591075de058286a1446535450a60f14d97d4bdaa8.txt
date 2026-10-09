@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 products listed in evidence; company focuses on metabolic, infectious, CNS diseases but no specific GLP-1 molecules mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions focus on metabolic diseases but no differentiation in GLP-1 space; no specific therapeutic coverage details."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has R&D and pipeline pages, but no GLP-1 specific clinical development evidence; focus on infectious diseases and other areas."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 manufacturing or supply capabilities; company is large pharma but no specific GLP-1 manufacturing data."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has compliance and governance sections, but no GLP-1 specific regulatory approvals or quality certifications mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Global presence indicated, but no evidence of GLP-1 market access or launches in specific regions."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 brand reputation or HCP awareness; company known for other areas."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has financial results and medium-term plan, but no GLP-1 revenue or financial performance specific to GLP-1."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Pipeline page exists but no GLP-1 pipeline or indication roadmap mentioned in evidence."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mention of M&A (Qpex) and open innovation, but no GLP-1 partnerships or expansion deals."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

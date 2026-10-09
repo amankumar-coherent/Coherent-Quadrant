@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only S-Patch Ex wearable ECG patch platform; no other products described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website text discusses continuous ECG monitoring for arrhythmia detection, but no specific clinical performance data or safety outcomes provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company focuses on wearable ECG and digital health, but no specific R&D investments or novel technology details in evidence."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific regulatory clearances or compliance certifications mentioned in evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Headquartered in Seoul, South Korea with U.S. subsidiary in Houston, Texas; plans to expand Texas operations. Serves hospitals, clinics, and CROs."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Partnership with HeartcoR Solutions for clinical trial use indicates some adoption, but no broad clinical adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Closed $13.5 million pre-IPO funding round; revenue estimated $500K-$1M, but no detailed financial performance."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or indication expansion beyond current ECG patch."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Exclusive partnership with HeartcoR Solutions to make S-Patch available to clinical trial partners; plans to expand Texas operations."
+    }
+  ],
+  "evidence_used": true
+}

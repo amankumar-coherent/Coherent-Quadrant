@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Rambus does not manufacture chips, so it does not offer process nodes; it designs IP and chipsets for others.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Rambus does not lead in process technology like FinFET or GAA; it focuses on memory interface and security IP.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Rambus does not have a process node roadmap as it is a fabless IP provider.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Rambus specializes in memory interface chips and silicon IP, with a focus on memory and security, not broad categories like analog or power.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["Memory Interface Chips", "Interface IP", "Security IP"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split is not disclosed in the knowledge base; Rambus is primarily focused on memory interface and security IP.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["Memory Interface Chips", "Interface IP", "Security IP"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Rambus does not provide OSAT services; it partners with foundries and OSATs for manufacturing.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Rambus owns proprietary design IP in memory interface and security, including Root of Trust and Quantum Safe Cryptography.",
+      "evidence_urls": ["https://www.rambus.com/security/root-of-trust/", "https://www.rambus.com/security/quantum-safe-cryptography/"],
+      "evidence_snippets": ["Root of Trust", "Quantum Safe Cryptography"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 8,
+      "answer": "Rambus licenses its IP to other firms, as it is a silicon IP provider.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["Silicon IP"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Rambus has strong IP for AI and data center markets, particularly memory interface and security, but less in automotive.",
+      "evidence_urls": ["https://www.rambus.com/artificial-intelligence-and-machine-learning/", "https://www.rambus.com/data-center/"],
+      "evidence_snippets": ["AI & Machine Learning", "Data Center"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Rambus is fabless and does not own wafer fabrication capacity.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Yield rates are not applicable as Rambus does not manufacture wafers.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Rambus offers memory interface chips that may involve advanced packaging, but no explicit 2.5D/3D packaging capacity is mentioned.",
+      "evidence_urls": ["https://www.rambus.com/memory-interface-chips/"],
+      "evidence_snippets": ["Memory Interface Chips"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Rambus mentions certifications for silicon IP, but specific quality certifications like ISO 9001 are not listed in the KB.",
+      "evidence_urls": ["https://www.rambus.com/certifications/"],
+      "evidence_snippets": ["Certified silicon IP solutions tailored to the specific needs of some of the world’s most demanding applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rate and DPPM are not disclosed; Rambus emphasizes reliability through certifications and security IP.",
+      "evidence_urls": ["https://www.rambus.com/certifications/"],
+      "evidence_snippets": ["Certified silicon IP solutions tailored to the specific needs of some of the world’s most demanding applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Rambus mentions corporate responsibility, but specific environmental compliance like RoHS or REACH is not detailed.",
+      "evidence_urls": ["https://www.rambus.com/corporate-social-responsibility/"],
+      "evidence_snippets": ["Corporate Responsibility"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Rambus has global presence with locations and sales representatives, but specific regions are not detailed in KB.",
+      "evidence_urls": ["https://www.rambus.com/locations/", "https://www.rambus.com/sales-representatives-and-distributors/"],
+      "evidence_snippets": ["Locations", "Sales Representatives and Distributors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary end-markets include data center, AI/ML, automotive, government, and IoT, with data center being prominent.",
+      "evidence_urls": ["https://www.rambus.com/data-center/", "https://www.rambus.com/artificial-intelligence-and-machine-learning/", "https://www.rambus.com/automotive/"],
+      "evidence_snippets": ["Data Center", "AI & Machine Learning", "Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Rambus's global presence and multiple markets help mitigate regional risks, but specific diversification strategies are not detailed.",
+      "evidence_urls": ["https://www.rambus.com/locations/"],
+      "evidence_snippets": ["Locations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Top customers are not disclosed; Rambus likely has a concentrated customer base in memory and data center markets.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Rambus has a partner program and collaborates with ecosystem players, but specific partnerships are not detailed.",
+      "evidence_urls": ["https://www.rambus.com/partners/rambus-partner-program/"],
+      "evidence_snippets": ["Rambus Partner Program"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Rambus collaborates with foundries and OSATs for manufacturing and with ecosystem partners to deliver complete solutions.",
+      "evidence_urls": ["https://www.rambus.com/partners/rambus-partner-program/"],
+      "evidence_snippets": ["Rambus Partner Program"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not in the KB; Rambus is a public company with revenue from IP licensing and chip sales.",
+      "evidence_urls": ["https://investor.rambus.com/"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx details are not available; as a fabless company, CapEx is likely lower than manufacturers.",
+      "evidence_urls": ["https://investor.rambus.com/"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in KB; Rambus is a profitable company with cash reserves, but specifics are unknown.",
+      "evidence_urls": ["https://investor.rambus.com/"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Rambus's roadmap includes DDR5, CXL, and advanced security IP, as indicated by product pages and webinars.",
+      "evidence_urls": ["https://www.rambus.com/memory-interface-chips/ddr5-dimm-chipset/", "https://www.rambus.com/cxl-memory-initiative/"],
+      "evidence_snippets": ["DDR5 Server DIMM Chipset", "CXL Memory Initiative"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Rambus has clear roadmap for AI and data center with HBM, CXL, and security IP, and is exploring quantum safe cryptography.",
+      "evidence_urls": ["https://www.rambus.com/interface-ip/hbm/", "https://www.rambus.com/security/quantum-safe-cryptography/"],
+      "evidence_snippets": ["HBM", "Quantum Safe Cryptography"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Rambus's roadmap aligns with industry trends like AI and data center performance, as seen in their focus on memory bandwidth.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["Enabling a New Era of Data Center Performance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "Rambus does not build fabs; it partners with foundries for manufacturing.",
+      "evidence_urls": ["https://www.rambus.com/"],
+      "evidence_snippets": ["At Rambus, we create cutting-edge semiconductor and IP products, providing industry-leading chips and silicon IP to make data faster and safer."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth is not in KB; Rambus is a stable company with growth in data center and AI markets.",
+      "evidence_urls": ["https://investor.rambus.com/"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Rambus plans to grow through IP licensing and partnerships, but specific funding plans are not detailed.",
+      "evidence_urls": ["https://www.rambus.com/partners/rambus-partner-program/"],
+      "evidence_snippets": ["Rambus Partner Program"],
+      "grounding": "partial"
+    }
+  ]
+}

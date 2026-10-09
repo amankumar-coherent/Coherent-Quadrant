@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only mentions a single product (Circul ring) with no other devices in portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions 'over 20 published research papers' supporting accuracy, but no specific clinical trial results or safety data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence indicates research papers and medical-grade features, but no details on R&D pipeline or novel technology."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence regarding manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of FDA clearance or other regulatory approvals for Circul."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only lists HQ in Los Angeles, no global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions 'medical-grade' and research papers, but no hospital adoption or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of future product plans or expansion into new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion activities."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

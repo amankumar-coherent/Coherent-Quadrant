@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows Tokyo Gas as a major LNG importer and distributor in Japan, with presence in Japan and categories including Gas, Electric Power, Overseas, Other. No specific LNG assets or projects detailed."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on operational efficiency or throughput metrics. Only general mention of LNG distribution and a news item about LNG truck loading exceeding 10 million tons cumulative."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No direct evidence on reliability or asset performance. Company website mentions safety and disaster prevention, but no specific performance data."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website includes sections on safety and disaster prevention, and news about a lost laptop with customer info, indicating some regulatory compliance focus. No detailed safety records."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence shows commitment to 2050 carbon neutral society, floating offshore wind projects, and solar battery introduction. No specific LNG transition projects."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence listed as Japan only, with overseas category mentioned but no specific international LNG corridors or multi-continent operations."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 5,
+      "grounding": "partial",
+      "why": "As a major LNG importer and distributor, it likely has offtake contracts, but no specific volumes or customers are mentioned in evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided. Only mention of share buyback and gas price adjustments, but no revenue or profit figures."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions floating offshore wind and solar battery projects, but no LNG-specific growth projects or pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "News mentions capital and business alliance with Cleatura, and group companies like Tokyo Gas Network and Engineering Solutions. No LNG-specific partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

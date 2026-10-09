@@ -1,0 +1,111 @@
+[batch 16:30:54] 6 market(s) queued, target=300 each
+[batch 16:30:54]   1. Global Silicon Carbide Market
+[batch 16:30:54]   2. Global Wearable Glucometer Market
+[batch 16:30:54]   3. Global Dry Eye Treatment Market
+[batch 16:30:54]   4. Global Solar Rooftop Market
+[batch 16:30:54]   5. Global Polyurethane Market
+[batch 16:30:54]   6. Global Communication Platform as a Service Market
+[batch 16:30:54] 
+[batch 16:30:54] === [1/6] START Global Silicon Carbide Market ===
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Silicon Carbide Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=1febea41 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] checkpoint → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      · 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · 0c-market-analysis: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = Hybrid B2B + B2C | player type = Manufacturer
+  [chatgpt] Step 0c/6: why Hybrid B2B + B2C: The market is a hybrid B2B + B2C landscape because silicon carbide is sold directly to commercial industries like automotive and electronics, but B2C was chosen because it has a genuine consumer-facing side via aftermarket automotive components and retail semiconductor devices.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Technology Provider, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because the defining offering of this market is a physical material and component produced by the companies themselves, making production capability and material quality the core basis of competition rather than software solutions or distribution services.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Manufacturer (batch 10, target 300)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +10 (total 10)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +10 (total 20)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +10 (total 30)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.4: +4 (total 34)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.5: +9 (total 43)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.6: +9 (total 52)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.7: +0 (total 52)
+      · discover-round-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-8: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.8: +7 (total 59)
+      · discover-round-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-9: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.9: +6 (total 65)
+      · discover-round-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-10: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.10: +4 (total 69)
+      · discover-round-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-11: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.11: +0 (total 69)
+      · discover-round-12: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-12: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 29s ago
+    → substep 1a.12: +0 (total 69)
+      · discover-round-13: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-13: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 71s ago
+    → substep 1a.13: +5 (total 74)
+      · discover-round-14: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-14: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 106s ago
+    → substep 1a.14: +9 (total 83)
+      · discover-round-15: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-15: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 136s ago
+    → substep 1a.15: +2 (total 85)
+      · discover-round-16: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-16: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 165s ago
+    → substep 1a.16: +9 (total 94)
+      · discover-round-17: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-17: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 196s ago
+    → substep 1a.17: +9 (total 103)
+      · discover-round-18: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-18: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 232s ago
+    → substep 1a.18: +8 (total 111)
+      · discover-round-19: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-19: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 265s ago
+    → substep 1a.19: +3 (total 114)
+      · discover-round-20: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-20: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 293s ago
+    → substep 1a.20: +8 (total 122)
+      · discover-round-21: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-21: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 322s ago
+    → substep 1a.21: +5 (total 127)
+      · discover-round-22: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-22: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 358s ago
+    → substep 1a.22: +5 (total 132)
+      · discover-round-23: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-23: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 391s ago
+    → substep 1a.23: +2 (total 134)
+      · discover-round-24: calling Google AI Mode (udm=50) attempt 1/4…

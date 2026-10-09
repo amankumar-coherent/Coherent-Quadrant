@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "LNG carrier owner-operator serving global LNG trade; fleet and partnerships mentioned but no specific fleet size or multi-basin asset details."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Emphasizes 'precision and perfection in LNG shipping' and 'operational excellence to protect cargo values' but no quantitative throughput data."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Incident response on GasLog Shanghai shows contingency procedures and safety commitment, but no fleet performance metrics."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Incident response highlights 'highest standards of safety and operational excellence' and effective emergency procedures; whistleblower hotline and governance sections indicate compliance focus."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'delivering cleaner energy to the world responsibly' and sustainability reports, but no specific transition initiatives or CCS evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Presence 'Global, especially Atlantic Basin and LNG exporting/importing regions'; incident in Strait of Hormuz indicates Middle East operations."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No specific offtake or customer contract details provided; only general 'partnerships' and 'relationships' mentioned."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Investor section with SEC filings, annual reports, dividends, and NOK bond indicates financial transparency, but no actual financial figures."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'capitalising on the growing demand for natural gas' and fleet expansion, but no specific growth projects or pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Dedicated 'Partnerships' section and emphasis on 'enduring partnerships' and 'increasing confidence' indicate active partnership strategy."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

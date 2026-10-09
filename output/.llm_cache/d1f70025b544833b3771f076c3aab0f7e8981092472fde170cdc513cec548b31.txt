@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "As an OSAT provider, UTAC does not offer process nodes like 3nm or 2nm; its focus is on packaging and test, not wafer fabrication.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["UTAC Group is a global OSAT provider"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "UTAC does not lead in wafer process technologies like FinFET or GAA, but it has expertise in advanced packaging for high-reliability applications.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["advanced packaging for AI and 5G applications"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "UTAC's roadmap focuses on packaging and test capabilities rather than next-generation wafer nodes, with plans for advanced packaging for AI and 5G.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["ramp of advanced packaging for AI and 5G applications"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "UTAC offers a broad portfolio across multiple packaging types and serves diverse end markets, but as an OSAT it does not manufacture logic or memory chips.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["products: Wafer-Level Packaging, Laminate Packaging, Leadframe Packaging, SiP Solutions, MEMS & Sensors Packaging, Power Packaging, Image Sensor Packaging, WLCSP and Bumping"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type; UTAC's portfolio is diversified across packaging types but financial breakdowns are unavailable.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 10,
+      "answer": "UTAC is explicitly an OSAT provider, offering semiconductor assembly and test services as its core business.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["UTAC Group is a global OSAT provider", "services: Semiconductor Assembly and Test (OSAT) services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "UTAC does not own proprietary CPU, GPU, or AI accelerator IP; its IP relates to packaging and test solutions.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["IP protection makes it a strategic supplier"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "UTAC likely relies on third-party IP for chip design, as it is an OSAT and does not design chips itself.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "UTAC's architecture strength lies in packaging for automotive and high-reliability applications, supporting AI and 5G growth areas.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["automotive-grade (AEC-Q100) solutions", "advanced packaging for AI and 5G applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "UTAC does not have wafer fabrication capacity; it has factory floor space for assembly and test, but no wafer-per-month figures are provided.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [">478,000m² Factory Floor Space"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not disclosed for UTAC; as an OSAT, yield metrics would apply to packaging processes, but no benchmarks are available.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "UTAC offers advanced packaging types like WLCSP, SiP, and power packaging, but specific 2.5D/3D or chiplet capabilities are not mentioned.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["products: Wafer-Level Packaging, Laminate Packaging, Leadframe Packaging, SiP Solutions, MEMS & Sensors Packaging, Power Packaging, Image Sensor Packaging, WLCSP and Bumping"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "UTAC emphasizes automotive-grade (AEC-Q100) solutions, implying quality certifications, but specific ISO or IATF certifications are not listed in the KB.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["automotive-grade (AEC-Q100) solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rates are not provided, but UTAC's focus on high-reliability and zero fatalities suggests strong quality practices.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["Zero fatalities"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "UTAC demonstrates strong environmental and ethical compliance, with 100% of direct suppliers meeting Responsible Minerals Initiative requirements and renewable energy usage.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["100% of direct suppliers met Responsible Minerals Initiative requirements", "21% of total energy consumption from renewable sources"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "UTAC has significant manufacturing presence in Singapore, Thailand, Indonesia, and China, serving global markets.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["offices: Singapore, Thailand, Indonesia, China", "regions_served: Global"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "UTAC serves automotive, communications, computing, consumer, and industrial end markets, but revenue contributions are not disclosed.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["industries: Automotive, Communications, Computing, Consumers, Industrial"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "UTAC's multi-country footprint in Southeast Asia and China provides geographic diversification, mitigating regional disruption risks.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["manufacturing footprint across Southeast Asia and China"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Customer names and concentration are not provided in the KB, so risk cannot be assessed.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No specific partnerships with equipment makers, EDA vendors, or consortia are mentioned in the KB.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "UTAC collaborates with ecosystem players as an OSAT, providing turnkey manufacturing and design services, but specific partnerships are not detailed.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["services: Turnkey Manufacturing", "Design Services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures such as revenue, net income, and free cash flow are not available in the KB.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not provided in the KB.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details such as debt-to-equity and cash reserves are not available in the KB.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "UTAC's roadmap includes capacity expansion in Singapore/Thailand/Indonesia and advanced packaging for AI and 5G, but specific milestones are not detailed.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["capacity expansion in Singapore/Thailand/Indonesia", "ramp of advanced packaging for AI and 5G applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "UTAC's roadmap mentions advanced packaging for AI and 5G, but no explicit plans for quantum or advanced memory are mentioned.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["advanced packaging for AI and 5G applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "UTAC's focus on automotive, AI, and 5G aligns with industry trends, and its investments in advanced packaging support customer demands.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["automotive-grade (AEC-Q100) solutions", "advanced packaging for AI and 5G applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "UTAC has announced capacity expansion in Singapore, Thailand, and Indonesia, but specific capacity additions are not quantified.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": ["capacity expansion in Singapore/Thailand/Indonesia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided in the KB.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "UTAC's funding and execution plans for capacity expansion are not detailed, but its existing scale and sustainability focus suggest capability.",
+      "evidence_urls": ["https://www.utacgroup.com"],
+      "evidence_snippets": [">478,000m² Factory Floor Space"],
+      "grounding": "partial"
+    }
+  ]
+}

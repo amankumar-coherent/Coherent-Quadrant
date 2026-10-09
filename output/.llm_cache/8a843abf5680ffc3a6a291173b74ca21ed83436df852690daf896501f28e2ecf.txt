@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Cor device (FDA-cleared ambulatory ECG) and a next-gen device (Cor MDx) under development; no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Cor captures 31 cardiac rhythms with high-fidelity signal quality; 95.7% success rate in early detection of heart failure trial; physician testimonials from Texas Cardiac Arrhythmia Center, Saint Joseph Hospital, Northwell Health."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Patented multi-lead, 2-channel wireless AECG patch; proprietary algorithm for derived 12-lead (under trial); explainable AI markers; expanding platform for heart failure mechanisms; selected for MedTech Innovator 2025 Cohort."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Cor is FDA-cleared; next-gen device has FDA 510(k) submission; compliance implied by FDA clearance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions AT&T partnership for wireless connectivity, but no specific countries or distribution channels; presence not detailed."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Physician testimonials from prominent institutions (Texas Cardiac Arrhythmia Center, Saint Joseph Hospital, Northwell Health); selected for MedTech Innovator 2025 Cohort."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Announced funding round close and expanded sales team, but no revenue figures or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Next-gen Cor MDx unveiled; COR-INSIGHT trial to validate AI-enabled cardiac diagnostics; expansion into primary care and medical research; heart failure detection focus."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "AT&T partnership for wireless connectivity; MedTech Innovator 2025 Cohort; funding round close with board appointment; sales team expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

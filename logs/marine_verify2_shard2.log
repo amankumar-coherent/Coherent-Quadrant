@@ -1,0 +1,52 @@
+shard 2/4: 183 companies of 734 total
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_43_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [5/183] +4/5 kept (0.2m elapsed)
+  [10/183] +2/5 kept (0.6m elapsed)
+  [15/183] +5/5 kept (0.9m elapsed)
+  [20/183] +5/5 kept (1.3m elapsed)
+  [25/183] +5/5 kept (1.7m elapsed)
+  [30/183] +4/5 kept (2.0m elapsed)
+  [35/183] +5/5 kept (2.5m elapsed)
+  [40/183] +5/5 kept (2.8m elapsed)
+  [45/183] +4/5 kept (3.1m elapsed)
+  [50/183] +4/5 kept (3.5m elapsed)
+  [55/183] +3/5 kept (3.9m elapsed)
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+  [60/183] +3/5 kept (4.6m elapsed)
+  [65/183] +0/5 kept (4.9m elapsed)
+  [70/183] +4/5 kept (5.3m elapsed)
+  [75/183] +4/5 kept (5.6m elapsed)
+  [80/183] +4/5 kept (6.0m elapsed)
+  [85/183] +5/5 kept (6.3m elapsed)
+  [90/183] +2/5 kept (6.7m elapsed)
+  [95/183] +2/5 kept (7.1m elapsed)
+  [100/183] +1/5 kept (7.5m elapsed)
+  [105/183] +1/5 kept (7.9m elapsed)
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+  [110/183] +2/5 kept (8.5m elapsed)
+  [115/183] +1/5 kept (8.9m elapsed)
+  [120/183] +1/5 kept (9.3m elapsed)
+  [125/183] +0/5 kept (9.6m elapsed)
+  [130/183] +1/5 kept (9.9m elapsed)
+  [135/183] +0/5 kept (10.4m elapsed)
+  [140/183] +3/5 kept (10.7m elapsed)
+  [145/183] +2/5 kept (11.1m elapsed)
+  [150/183] +0/5 kept (11.4m elapsed)
+  [155/183] +0/5 kept (11.8m elapsed)
+  [160/183] +1/5 kept (12.2m elapsed)
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+  [165/183] +0/5 kept (12.7m elapsed)
+  [170/183] +2/5 kept (13.2m elapsed)
+  [175/183] +0/5 kept (13.6m elapsed)
+  [180/183] +1/5 kept (14.0m elapsed)
+  [183/183] +0/3 kept (14.3m elapsed)
+
+retry pass 1: 8 companies never got a verdict -- asking again singly
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+
+retry pass 2: 2 companies never got a verdict -- asking again singly
+
+done: 183 verified, 91 kept in_market from this shard
+sidecar: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\marine_seismic_data_processing_services_market_global\verify_shard2.json
+run merge_verify.py once every shard has finished

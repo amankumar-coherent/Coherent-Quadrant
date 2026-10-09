@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Venture Global has four major projects in Louisiana (Calcasieu Pass, Plaquemines, CP2, CP3) with capacities 12+, 28+, 29+, 30+ MTPA, indicating multi-project scale but all in one region."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Calcasieu Pass currently has peak export capacity >12 MTPA; CP2 will have 20 MTPA with 36 trains and on-site power plant, but operational data is limited."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No evidence on uptime, performance metrics, or operational track record; only capacity figures and project descriptions."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "CP2 LNG has received DOE export and FERC approvals in 2025, indicating regulatory compliance, but no safety record details."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on emissions, CCS, or transition initiatives; only mention of low-cost LNG production."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "supported",
+      "why": "All projects are in Louisiana, USA; key markets listed as 'World' but no specific corridors or multi-continent presence."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Phase 1 SPAs signed for CP2, but customer names are not disclosed; evidence lacks details on offtake volumes or buyers."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data available; only capacity figures and project status."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Four major projects in development with capacities up to 30+ MTPA, indicating strong growth pipeline, though all in Louisiana."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No partners, investors, or customers listed; evidence lacks details on partnerships or expansion beyond Louisiana."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

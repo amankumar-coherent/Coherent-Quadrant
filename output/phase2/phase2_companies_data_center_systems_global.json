@@ -1,0 +1,1643 @@
+{
+  "phase": 2,
+  "phase2_mode": "fast",
+  "query": "Data Center Systems Market",
+  "mock_mode": false,
+  "completed_at": "2026-08-25T11:29:21.399229+00:00",
+  "scope": {
+    "market": "data center systems",
+    "geographies": [
+      "global"
+    ],
+    "geography": "global",
+    "company_type": "manufacturer, technology provider, supplier, integrator",
+    "industry_vertical": "data center infrastructure",
+    "industry_terms": [
+      "server",
+      "storage array",
+      "network switch",
+      "UPS",
+      "PDU",
+      "CRAC",
+      "CRAH",
+      "chiller"
+    ],
+    "ecosystem_functions": [
+      "component manufacturer",
+      "server OEM",
+      "storage OEM",
+      "networking OEM",
+      "power system manufacturer",
+      "cooling system manufacturer",
+      "physical infrastructure manufacturer",
+      "DCIM software vendor",
+      "orchestration software vendor",
+      "system integrator",
+      "managed service provider",
+      "colocation provider",
+      "OEM manufacturer",
+      "software vendor"
+    ],
+    "interpretation_summary": "The data center systems market encompasses the physical and logical infrastructure used to build and operate data centers, including servers, storage systems, networking equipment, power and cooling systems, and the soft",
+    "relevance_keywords": [
+      "data center",
+      "server",
+      "storage",
+      "networking",
+      "power",
+      "cooling",
+      "infrastructure",
+      "rack",
+      "UPS",
+      "DCIM",
+      "virtualization",
+      "cloud",
+      "colocation"
+    ],
+    "negative_keywords": [
+      "news",
+      "blog",
+      "review",
+      "job",
+      "career",
+      "event",
+      "webinar",
+      "consulting",
+      "market research",
+      "directory",
+      "cloud service",
+      "web hosting"
+    ],
+    "seed_companies": [
+      {
+        "canonical_name": "Dell Technologies",
+        "primary_domain": "dell.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "Hewlett Packard Enterprise",
+        "primary_domain": "hpe.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "Cisco Systems",
+        "primary_domain": "cisco.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "Vertiv",
+        "primary_domain": "vertiv.com",
+        "company_function": "facility infrastructure provider"
+      },
+      {
+        "canonical_name": "Schneider Electric",
+        "primary_domain": "se.com",
+        "company_function": "facility infrastructure provider"
+      },
+      {
+        "canonical_name": "Eaton",
+        "primary_domain": "eaton.com",
+        "company_function": "power systems manufacturer"
+      },
+      {
+        "canonical_name": "Intel",
+        "primary_domain": "intel.com",
+        "company_function": "component manufacturer"
+      },
+      {
+        "canonical_name": "IBM",
+        "primary_domain": "ibm.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "NVIDIA",
+        "primary_domain": "nvidia.com",
+        "company_function": "gpu accelerator manufacturer"
+      },
+      {
+        "canonical_name": "Samsung Electronics",
+        "primary_domain": "samsung.com",
+        "company_function": "memory and ssd manufacturer"
+      },
+      {
+        "canonical_name": "Broadcom",
+        "primary_domain": "broadcom.com",
+        "company_function": "networking switch and nic manufacturer"
+      },
+      {
+        "canonical_name": "Lenovo",
+        "primary_domain": "lenovo.com",
+        "company_function": "server oem"
+      },
+      {
+        "canonical_name": "NetApp",
+        "primary_domain": "netapp.com",
+        "company_function": "storage oem"
+      },
+      {
+        "canonical_name": "Pure Storage",
+        "primary_domain": "purestorage.com",
+        "company_function": "all-flash storage oem"
+      },
+      {
+        "canonical_name": "Rittal GmbH & Co. KG",
+        "primary_domain": "rittal.com",
+        "company_function": "rack and enclosure manufacturer"
+      }
+    ],
+    "search_topic": "data center systems",
+    "funnel_enabled": true,
+    "query_parsed": true,
+    "scope_source": "llm",
+    "intent": "market_map",
+    "product_category": "data center systems",
+    "include_keywords": [
+      "data center server",
+      "enterprise storage",
+      "network switch",
+      "uninterruptible power supply",
+      "precision cooling",
+      "data center infrastructure management",
+      "rack enclosure",
+      "hyperconverged infrastructure",
+      "all-flash storage",
+      "data center design"
+    ],
+    "exclude_keywords": [
+      "news",
+      "blog",
+      "directory",
+      "market report",
+      "job board",
+      "consulting",
+      "recruitment",
+      "training",
+      "event",
+      "webinar"
+    ],
+    "scope_version": 2,
+    "market_definition": "The data center systems market encompasses the physical and logical infrastructure used to build and operate data centers, including servers, storage systems, networking equipment, power and cooling systems, and the software and services that manage them. Participants include hardware manufacturers, component suppliers, system integrators, facility designers, and service providers. The market is global, covering enterprise, cloud, colocation, and edge data centers.",
+    "value_chain_layers": [
+      {
+        "layer_id": "L1",
+        "layer_name": "Hardware Components",
+        "description": "Manufacturers of core compute, storage, and networking hardware components that go into data center systems.",
+        "segments": [
+          {
+            "segment_name": "Server Components",
+            "sub_segments": [
+              "CPUs",
+              "GPUs",
+              "Memory modules",
+              "Motherboards",
+              "Storage drives"
+            ],
+            "participant_types": [
+              "component manufacturer",
+              "OEM supplier"
+            ],
+            "search_intents": [
+              "server CPU manufacturer official site",
+              "GPU accelerator manufacturer data center",
+              "server memory module manufacturer",
+              "enterprise SSD manufacturer official site"
+            ]
+          },
+          {
+            "segment_name": "Networking Components",
+            "sub_segments": [
+              "Ethernet switches",
+              "Optical transceivers",
+              "Network interface cards",
+              "Cables and connectors"
+            ],
+            "participant_types": [
+              "component manufacturer",
+              "OEM supplier"
+            ],
+            "search_intents": [
+              "data center switch manufacturer official site",
+              "optical transceiver manufacturer data center",
+              "network interface card manufacturer",
+              "high-speed cable assembly manufacturer data center"
+            ]
+          },
+          {
+            "segment_name": "Power and Cooling Components",
+            "sub_segments": [
+              "Power supplies",
+              "Cooling fans",
+              "Heat sinks",
+              "Liquid cooling plates"
+            ],
+            "participant_types": [
+              "component manufacturer",
+              "OEM supplier"
+            ],
+            "search_intents": [
+              "server power supply manufacturer",
+              "data center liquid cooling plate manufacturer",
+              "server cooling fan manufacturer",
+              "heat sink manufacturer data center"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L2",
+        "layer_name": "System Manufacturing",
+        "description": "OEMs that assemble complete servers, storage arrays, and networking equipment from components.",
+        "segments": [
+          {
+            "segment_name": "Server OEMs",
+            "sub_segments": [
+              "Rack servers",
+              "Tower servers",
+              "Blade servers",
+              "Edge servers"
+            ],
+            "participant_types": [
+              "OEM manufacturer",
+              "ODM"
+            ],
+            "search_intents": [
+              "rack server manufacturer official site",
+              "enterprise server OEM",
+              "edge server manufacturer",
+              "blade server manufacturer official site"
+            ]
+          },
+          {
+            "segment_name": "Storage OEMs",
+            "sub_segments": [
+              "SAN arrays",
+              "NAS systems",
+              "Hyperconverged infrastructure",
+              "All-flash arrays"
+            ],
+            "participant_types": [
+              "OEM manufacturer",
+              "ODM"
+            ],
+            "search_intents": [
+              "SAN storage manufacturer official site",
+              "NAS storage manufacturer enterprise",
+              "hyperconverged infrastructure vendor",
+              "all-flash array manufacturer"
+            ]
+          },
+          {
+            "segment_name": "Networking OEMs",
+            "sub_segments": [
+              "Ethernet switches",
+              "Routers",
+              "Load balancers",
+              "SDN controllers"
+            ],
+            "participant_types": [
+              "OEM manufacturer",
+              "ODM"
+            ],
+            "search_intents": [
+              "data center switch vendor official site",
+              "enterprise router manufacturer",
+              "load balancer manufacturer data center",
+              "SDN controller vendor"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L3",
+        "layer_name": "Facility Infrastructure",
+        "description": "Providers of power, cooling, and physical infrastructure systems for data center facilities.",
+        "segments": [
+          {
+            "segment_name": "Power Systems",
+            "sub_segments": [
+              "UPS systems",
+              "PDUs",
+              "Generators",
+              "Batteries",
+              "Switchgear"
+            ],
+            "participant_types": [
+              "manufacturer",
+              "system integrator"
+            ],
+            "search_intents": [
+              "UPS manufacturer data center official site",
+              "PDU manufacturer data center",
+              "diesel generator manufacturer data center",
+              "data center battery manufacturer"
+            ]
+          },
+          {
+            "segment_name": "Cooling Systems",
+            "sub_segments": [
+              "CRAC units",
+              "CRAH units",
+              "Chillers",
+              "Liquid cooling systems",
+              "Cooling towers"
+            ],
+            "participant_types": [
+              "manufacturer",
+              "system integrator"
+            ],
+            "search_intents": [
+              "CRAC unit manufacturer data center",
+              "CRAH unit manufacturer",
+              "data center chiller manufacturer",
+              "liquid cooling system manufacturer data center"
+            ]
+          },
+          {
+            "segment_name": "Physical Infrastructure",
+            "sub_segments": [
+              "Racks and enclosures",
+              "Cabling systems",
+              "Containment systems",
+              "Monitoring sensors"
+            ],
+            "participant_types": [
+              "manufacturer",
+              "system integrator"
+            ],
+            "search_intents": [
+              "server rack manufacturer official site",
+              "data center cabling manufacturer",
+              "hot aisle containment manufacturer",
+              "data center sensor manufacturer"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L4",
+        "layer_name": "Software and Management",
+        "description": "Software platforms for managing data center infrastructure, including DCIM, orchestration, and monitoring.",
+        "segments": [
+          {
+            "segment_name": "DCIM Software",
+            "sub_segments": [
+              "Asset management",
+              "Power monitoring",
+              "Cooling management",
+              "Capacity planning"
+            ],
+            "participant_types": [
+              "software vendor",
+              "SaaS provider"
+            ],
+            "search_intents": [
+              "DCIM software vendor official site",
+              "data center infrastructure management software",
+              "data center power monitoring software",
+              "data center capacity planning software"
+            ]
+          },
+          {
+            "segment_name": "Orchestration and Automation",
+            "sub_segments": [
+              "Workload automation",
+              "Infrastructure orchestration",
+              "AIOps"
+            ],
+            "participant_types": [
+              "software vendor",
+              "SaaS provider"
+            ],
+            "search_intents": [
+              "data center orchestration software vendor",
+              "infrastructure automation software",
+              "AIOps platform data center"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L5",
+        "layer_name": "Services and Integration",
+        "description": "Design, build, integration, and managed services for data center systems.",
+        "segments": [
+          {
+            "segment_name": "System Integrators",
+            "sub_segments": [
+              "Enterprise data center",
+              "Colocation",
+              "Edge",
+              "Hyperscale"
+            ],
+            "participant_types": [
+              "integrator",
+              "consultant"
+            ],
+            "search_intents": [
+              "data center system integrator official site",
+              "data center design build firm",
+              "edge data center integrator",
+              "hyperscale data center integrator"
+            ]
+          },
+          {
+            "segment_name": "Managed Services",
+            "sub_segments": [
+              "Remote monitoring",
+              "Maintenance",
+              "Colocation management"
+            ],
+            "participant_types": [
+              "managed service provider",
+              "colocation provider"
+            ],
+            "search_intents": [
+              "data center managed services provider",
+              "data center maintenance services",
+              "colocation provider official site"
+            ]
+          }
+        ]
+      }
+    ],
+    "market_boundary": {
+      "in_scope": [
+        "Server manufacturers (rack, tower, blade, edge)",
+        "Storage systems (SAN, NAS, hyperconverged, all-flash)",
+        "Networking equipment (switches, routers, load balancers)",
+        "Power infrastructure (UPS, PDU, generators, batteries)",
+        "Cooling systems (CRAC, CRAH, liquid cooling, chillers)",
+        "Data center infrastructure management (DCIM) software",
+        "System integrators and data center design/build firms",
+        "Colocation and cloud service providers (as end users)"
+      ],
+      "out_of_scope": [
+        "Enterprise software applications (ERP, CRM)",
+        "Telecommunications carrier networks (outside data center)",
+        "Consumer electronics and personal computing devices",
+        "Office building construction and general real estate",
+        "IT consulting and managed services (non-infrastructure)",
+        "Data center REITs and investment firms (financial)"
+      ]
+    },
+    "market_map_prompts": [
+      {
+        "id": "M1",
+        "level": "market_map",
+        "text": "server CPU manufacturer official site",
+        "sub_sector": "cpu_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M2",
+        "level": "market_map",
+        "text": "GPU accelerator manufacturer data center",
+        "sub_sector": "gpu_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M3",
+        "level": "market_map",
+        "text": "server memory module manufacturer",
+        "sub_sector": "memory_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M4",
+        "level": "market_map",
+        "text": "enterprise SSD manufacturer official site",
+        "sub_sector": "ssd_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M5",
+        "level": "market_map",
+        "text": "data center switch manufacturer official site",
+        "sub_sector": "switch_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M6",
+        "level": "market_map",
+        "text": "optical transceiver manufacturer data center",
+        "sub_sector": "transceiver_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M7",
+        "level": "market_map",
+        "text": "network interface card manufacturer",
+        "sub_sector": "nic_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M8",
+        "level": "market_map",
+        "text": "high-speed cable assembly manufacturer data center",
+        "sub_sector": "cable_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M9",
+        "level": "market_map",
+        "text": "server power supply manufacturer",
+        "sub_sector": "psu_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M10",
+        "level": "market_map",
+        "text": "data center liquid cooling plate manufacturer",
+        "sub_sector": "liquid_cooling_plate_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M11",
+        "level": "market_map",
+        "text": "server cooling fan manufacturer",
+        "sub_sector": "fan_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M12",
+        "level": "market_map",
+        "text": "heat sink manufacturer data center",
+        "sub_sector": "heat_sink_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M13",
+        "level": "market_map",
+        "text": "rack server manufacturer official site",
+        "sub_sector": "rack_server_oem",
+        "layer_id": "L2",
+        "segment": "Server OEMs"
+      },
+      {
+        "id": "M14",
+        "level": "market_map",
+        "text": "edge server manufacturer",
+        "sub_sector": "edge_server_oem",
+        "layer_id": "L2",
+        "segment": "Server OEMs"
+      },
+      {
+        "id": "M15",
+        "level": "market_map",
+        "text": "SAN storage manufacturer official site",
+        "sub_sector": "san_oem",
+        "layer_id": "L2",
+        "segment": "Storage OEMs"
+      },
+      {
+        "id": "M16",
+        "level": "market_map",
+        "text": "hyperconverged infrastructure vendor",
+        "sub_sector": "hci_vendor",
+        "layer_id": "L2",
+        "segment": "Storage OEMs"
+      },
+      {
+        "id": "M17",
+        "level": "market_map",
+        "text": "data center switch vendor official site",
+        "sub_sector": "switch_oem",
+        "layer_id": "L2",
+        "segment": "Networking OEMs"
+      },
+      {
+        "id": "M18",
+        "level": "market_map",
+        "text": "load balancer manufacturer data center",
+        "sub_sector": "load_balancer_oem",
+        "layer_id": "L2",
+        "segment": "Networking OEMs"
+      },
+      {
+        "id": "M19",
+        "level": "market_map",
+        "text": "UPS manufacturer data center official site",
+        "sub_sector": "ups_manufacturer",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M20",
+        "level": "market_map",
+        "text": "PDU manufacturer data center",
+        "sub_sector": "pdu_manufacturer",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M21",
+        "level": "market_map",
+        "text": "diesel generator manufacturer data center",
+        "sub_sector": "generator_manufacturer",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M22",
+        "level": "market_map",
+        "text": "CRAC unit manufacturer data center",
+        "sub_sector": "crac_manufacturer",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M23",
+        "level": "market_map",
+        "text": "data center chiller manufacturer",
+        "sub_sector": "chiller_manufacturer",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M24",
+        "level": "market_map",
+        "text": "liquid cooling system manufacturer data center",
+        "sub_sector": "liquid_cooling_system_manufacturer",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M25",
+        "level": "market_map",
+        "text": "server rack manufacturer official site",
+        "sub_sector": "rack_manufacturer",
+        "layer_id": "L3",
+        "segment": "Physical Infrastructure"
+      },
+      {
+        "id": "M26",
+        "level": "market_map",
+        "text": "hot aisle containment manufacturer",
+        "sub_sector": "containment_manufacturer",
+        "layer_id": "L3",
+        "segment": "Physical Infrastructure"
+      },
+      {
+        "id": "M27",
+        "level": "market_map",
+        "text": "DCIM software vendor official site",
+        "sub_sector": "dcim_vendor",
+        "layer_id": "L4",
+        "segment": "DCIM Software"
+      },
+      {
+        "id": "M28",
+        "level": "market_map",
+        "text": "data center power monitoring software",
+        "sub_sector": "power_monitoring_software",
+        "layer_id": "L4",
+        "segment": "DCIM Software"
+      },
+      {
+        "id": "M29",
+        "level": "market_map",
+        "text": "data center orchestration software vendor",
+        "sub_sector": "orchestration_vendor",
+        "layer_id": "L4",
+        "segment": "Orchestration and Automation"
+      },
+      {
+        "id": "M30",
+        "level": "market_map",
+        "text": "data center system integrator official site",
+        "sub_sector": "integrator",
+        "layer_id": "L5",
+        "segment": "System Integrators"
+      },
+      {
+        "id": "M31",
+        "level": "market_map",
+        "text": "data center design build firm",
+        "sub_sector": "design_build_firm",
+        "layer_id": "L5",
+        "segment": "System Integrators"
+      },
+      {
+        "id": "M32",
+        "level": "market_map",
+        "text": "data center managed services provider",
+        "sub_sector": "managed_service_provider",
+        "layer_id": "L5",
+        "segment": "Managed Services"
+      },
+      {
+        "id": "M33",
+        "level": "market_map",
+        "text": "colocation provider official site",
+        "sub_sector": "colocation_provider",
+        "layer_id": "L5",
+        "segment": "Managed Services"
+      },
+      {
+        "id": "M34",
+        "level": "market_map",
+        "text": "server CPU manufacturer Africa",
+        "sub_sector": "cpu_manufacturer_region",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M35",
+        "level": "market_map",
+        "text": "server manufacturer Middle East",
+        "sub_sector": "server_oem_region",
+        "layer_id": "L2",
+        "segment": "Server OEMs"
+      },
+      {
+        "id": "M36",
+        "level": "market_map",
+        "text": "UPS manufacturer Southeast Asia",
+        "sub_sector": "ups_manufacturer_region",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M37",
+        "level": "market_map",
+        "text": "data center cooling manufacturer Latin America",
+        "sub_sector": "cooling_manufacturer_region",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M38",
+        "level": "market_map",
+        "text": "data center integrator South Africa",
+        "sub_sector": "integrator_region",
+        "layer_id": "L5",
+        "segment": "System Integrators"
+      },
+      {
+        "id": "M39",
+        "level": "market_map",
+        "text": "colocation provider Indonesia",
+        "sub_sector": "colocation_region",
+        "layer_id": "L5",
+        "segment": "Managed Services"
+      }
+    ],
+    "market_map_source": "llm"
+  },
+  "phase1_plan_path": "D:\\Coherent-Quadrant\\output\\phase1\\phase1_plan_data_center_systems_global.json",
+  "companies": [
+    {
+      "name": "Ourworldindata",
+      "domain": "ourworldindata.org",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Aternos",
+      "domain": "aternos.org",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        },
+        {
+          "title": "",
+          "url": "https://aternos.org/",
+          "snippet": "The official server software with full modding support for your own Hytale server."
+        }
+      ]
+    },
+    {
+      "name": "Purestorage",
+      "domain": "purestorage.com",
+      "discovery_source": "search",
+      "company_function": "vendor",
+      "discovery_snippets": []
+    },
+    {
+      "name": "Dell",
+      "domain": "dell.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.dell.com/en-us?msockid=2e4da96f3f6c67033426beaf3e44662d",
+          "snippet": "Dell provides technology solutions, services & support. Buy Laptops, Touch Screen PCs, Desktops, Servers, Storage, Monitors, \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Eaton",
+      "domain": "eaton.com",
+      "discovery_source": "registry+searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://eaton.com/",
+          "snippet": "LLM seed: Eaton \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://eaton.com/",
+          "snippet": "LLM seed: Eaton \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://eaton.com/",
+          "snippet": "LLM seed: Eaton \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://www.eaton.com/us/en-us.html",
+          "snippet": "Eaton announces earnings on a quarterly basis and hosts a conference call to discuss results. The webcast replay and \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.eaton.com/in/en-us.html",
+          "snippet": "Eaton announces earnings on a quarterly basis and hosts a conference call to discuss results. The webcast replay and \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.eaton.com/us/en-us/products.html",
+          "snippet": "Eaton produces a broad range of products and services, from fuel-efficient systems, to power chain management tools and \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Hewlett Packard Enterprise",
+      "domain": "hpe.com",
+      "discovery_source": "registry",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://hpe.com/",
+          "snippet": "LLM seed: Hewlett Packard Enterprise \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://hpe.com/",
+          "snippet": "LLM seed: Hewlett Packard Enterprise \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://hpe.com/",
+          "snippet": "LLM seed: Hewlett Packard Enterprise \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        }
+      ]
+    },
+    {
+      "name": "Publicstorage",
+      "domain": "publicstorage.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.publicstorage.com/",
+          "snippet": "Start by searching for storage near you. With thousands of locations nationwide, we're always just around the corner. Reserve your \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.publicstorage.com/find-storage",
+          "snippet": "Public Storage offers self-storage units in thousands of storage facilities nationwide. Find self-storage units near you and make a \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.publicstorage.com/",
+          "snippet": "Start by searching for storage near you. With thousands of locations nationwide, we're always just around the corner. Reserve your \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.publicstorage.com/find-storage",
+          "snippet": "Public Storage offers self-storage units in thousands of storage facilities nationwide. Find self-storage units near you and make a \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.publicstorage.com/",
+          "snippet": "Start by searching for storage near you. With thousands of locations nationwide, we're always just around the corner. Reserve your \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.publicstorage.com/find-storage",
+          "snippet": "Public Storage offers self-storage units in thousands of storage facilities nationwide. Find self-storage units near you and make a \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Vertiv",
+      "domain": "vertiv.com",
+      "discovery_source": "registry+searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://vertiv.com/",
+          "snippet": "LLM seed: Vertiv \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://vertiv.com/",
+          "snippet": "LLM seed: Vertiv \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://vertiv.com/",
+          "snippet": "LLM seed: Vertiv \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://www.vertiv.com/en-us/learn-about/pdu/",
+          "snippet": "An intelligent PDU, or smart PDU, goes beyond distributing power to data center IT equipment. It is capable of monitoring, managing, \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.vertiv.com/",
+          "snippet": "Vertiv is a global leader in critical digital infrastructure for applications in data centers, communication networks, and commercial and \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Broadcom",
+      "domain": "broadcom.com",
+      "discovery_source": "registry",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://broadcom.com/",
+          "snippet": "LLM seed: Broadcom \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://broadcom.com/",
+          "snippet": "LLM seed: Broadcom \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://broadcom.com/",
+          "snippet": "LLM seed: Broadcom \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        }
+      ]
+    },
+    {
+      "name": "Cisco",
+      "domain": "cisco.com",
+      "discovery_source": "search",
+      "company_function": "vendor",
+      "discovery_snippets": []
+    },
+    {
+      "name": "Intel",
+      "domain": "intel.com",
+      "discovery_source": "registry",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://intel.com/",
+          "snippet": "LLM seed: Intel \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://intel.com/",
+          "snippet": "LLM seed: Intel \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://intel.com/",
+          "snippet": "LLM seed: Intel \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        }
+      ]
+    },
+    {
+      "name": "Lenovo",
+      "domain": "lenovo.com",
+      "discovery_source": "registry",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://lenovo.com/",
+          "snippet": "LLM seed: Lenovo \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://lenovo.com/",
+          "snippet": "LLM seed: Lenovo \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://lenovo.com/",
+          "snippet": "LLM seed: Lenovo \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        }
+      ]
+    },
+    {
+      "name": "NVIDIA",
+      "domain": "nvidia.com",
+      "discovery_source": "registry",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://nvidia.com/",
+          "snippet": "LLM seed: NVIDIA \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://nvidia.com/",
+          "snippet": "LLM seed: NVIDIA \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://nvidia.com/",
+          "snippet": "LLM seed: NVIDIA \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        }
+      ]
+    },
+    {
+      "name": "NetApp",
+      "domain": "netapp.com",
+      "discovery_source": "registry",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://netapp.com/",
+          "snippet": "LLM seed: NetApp \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://netapp.com/",
+          "snippet": "LLM seed: NetApp \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        },
+        {
+          "title": "",
+          "url": "https://netapp.com/",
+          "snippet": "LLM seed: NetApp \u2014 manufacturer, technology provider, supplier, integrator in data center systems (global; official domain)."
+        }
+      ]
+    },
+    {
+      "name": "Rittal",
+      "domain": "rittal.com",
+      "discovery_source": "search",
+      "company_function": "vendor",
+      "discovery_snippets": []
+    },
+    {
+      "name": "Samsung",
+      "domain": "samsung.com",
+      "discovery_source": "search",
+      "company_function": "vendor",
+      "discovery_snippets": []
+    },
+    {
+      "name": "Selfstorage",
+      "domain": "selfstorage.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.selfstorage.com/",
+          "snippet": "Learn more about the types of self storage to identify what type of storage unit you need. Self-storage units are most commonly used \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.selfstorage.com/",
+          "snippet": "Learn more about the types of self storage to identify what type of storage unit you need. Self-storage units are most commonly used \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.selfstorage.com/",
+          "snippet": "Learn more about the types of self storage to identify what type of storage unit you need. Self-storage units are most commonly used \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Storageseeker",
+      "domain": "storageseeker.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.storageseeker.com/find-storage/",
+          "snippet": "Storage Seeker allows you to easily find self-storage units by state, city, zip code or address. From there you can compare each \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.storageseeker.com/find-storage/",
+          "snippet": "Storage Seeker allows you to easily find self-storage units by state, city, zip code or address. From there you can compare each \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.storageseeker.com/find-storage/",
+          "snippet": "Storage Seeker allows you to easily find self-storage units by state, city, zip code or address. From there you can compare each \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Storagesense",
+      "domain": "storagesense.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.storagesense.com/",
+          "snippet": "Our Storage Sense facilities can provide a safe storage unit for residential storage or commercial storage. Rent storage units near \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.storagesense.com/",
+          "snippet": "Our Storage Sense facilities can provide a safe storage unit for residential storage or commercial storage. Rent storage units near \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://www.storagesense.com/",
+          "snippet": "Our Storage Sense facilities can provide a safe storage unit for residential storage or commercial storage. Rent storage units near \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Usselfstorage",
+      "domain": "usselfstorage.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://usselfstorage.com/",
+          "snippet": "Compare over 20,000 storage facilities and 2,000,000 available storage units across all 50 states, including Alaska, Hawaii, and \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://usselfstorage.com/",
+          "snippet": "Compare over 20,000 storage facilities and 2,000,000 available storage units across all 50 states, including Alaska, Hawaii, and \u2026"
+        },
+        {
+          "title": "",
+          "url": "https://usselfstorage.com/",
+          "snippet": "Compare over 20,000 storage facilities and 2,000,000 available storage units across all 50 states, including Alaska, Hawaii, and \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Techpowerup",
+      "domain": "techpowerup.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.techpowerup.com/gpuz/",
+          "snippet": "GPU-Z is a lightweight system utility designed to provide vital information about your video card and graphics processor."
+        },
+        {
+          "title": "",
+          "url": "https://www.techpowerup.com/download/techpowerup-gpu-z/",
+          "snippet": "Jun 16, 2026 \u00b7 GPU-Z is a lightweight utility designed to give you all information about your video card and GPU."
+        }
+      ]
+    },
+    {
+      "name": "Wwwapps",
+      "domain": "wwwapps.ups.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://wwwapps.ups.com/pickup/schedule?loc=en_US",
+          "snippet": "Schedule a One-Time Pickup Request an on-demand pickup for your UPS ground, air, and international shipments."
+        },
+        {
+          "title": "",
+          "url": "https://wwwapps.ups.com/pickup/schedule?loc=en_EX",
+          "snippet": "Schedule a Pickup Request an on-demand pickup for your UPS ground, air, and international shipments."
+        }
+      ]
+    },
+    {
+      "name": "Account",
+      "domain": "account.eaton.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://account.eaton.com/",
+          "snippet": "Access and manage your Eaton account easily for seamless experience with power management solutions and services."
+        }
+      ]
+    },
+    {
+      "name": "Chess",
+      "domain": "chess.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.chess.com/",
+          "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Comptia",
+      "domain": "comptia.org",
+      "discovery_source": "bing_html",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.comptia.org",
+          "snippet": "Deploy wired and wireless devices, covering IP addressing, ports, protocols, and network architecture for network deployment. \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Dcsinfosys",
+      "domain": "dcsinfosys.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.dcsinfosys.com/",
+          "snippet": "DCS is well known for its fast, straightforward and user friendly system and has been providing computer related information services \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Ecat",
+      "domain": "ecat.eaton.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://ecat.eaton.com/index",
+          "snippet": "Self-Service Portal Download the content/data for your requested Eaton items Go to the Self-Service Portal"
+        }
+      ]
+    },
+    {
+      "name": "Espn",
+      "domain": "espn.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.espn.com/college-football/scoreboard",
+          "snippet": "Oct 5, 2011 \u00b7 Live scores for every 2026 NCAAF season game on ESPN. Includes box scores, video highlights, play breakdowns and \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Fox35orlando",
+      "domain": "fox35orlando.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.fox35orlando.com/news/sullivan-walter-man-wrongfully-convicted-of-rape-at-17-exonerated-36-years-later",
+          "snippet": "Aug 26, 2022 \u00b7 Sullivan Walter was wrongfully convicted as a teenager for a New Orleans rape more than 36 years ago. He was \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Investors",
+      "domain": "investors.vertiv.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://investors.vertiv.com/overview/default.aspx",
+          "snippet": "Jul 29, 2026 \u00b7 Vertiv is a global leader in critical digital infrastructure for applications in data centers, communication networks, and \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Lianjer",
+      "domain": "lianjer.com",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.lianjer.com/pdus-in-data-centers/",
+          "snippet": "Mar 10, 2026 \u00b7 While it may sound technical, the concept is pretty simple: a PDU is responsible for delivering electricity to your \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Mani Mogo",
+      "domain": "mani-mogo.com",
+      "discovery_source": "searxng",
+      "company_function": "oem_manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.mani-mogo.com/",
+          "snippet": "we are back and open mondays \u2013 fridays 11 am to 4 pm reservations available from 1 pm per email order & pay mani mogo erich-thilo \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Maps",
+      "domain": "maps.google.co.in",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://maps.google.co.in/help/legalnotices_maps/",
+          "snippet": "The mapping data is protected by international copyright laws and international copyright conventions. Your use of mapping data is \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Obsproject",
+      "domain": "obsproject.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://obsproject.com/forum/resources/closed-captioning-via-google-speech-recognition.833/",
+          "snippet": "Jul 17, 2019 \u00b7 Provides closed captioning via Google Cloud Speech Recognition API as a standalone OBS plugin, no other tools \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Powerthesaurus",
+      "domain": "powerthesaurus.org",
+      "discovery_source": "searxng",
+      "company_function": "oem_manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.powerthesaurus.org/hate/antonyms",
+          "snippet": "Discover 3 646 antonyms of Hate to express ideas with clarity and contrast."
+        }
+      ]
+    },
+    {
+      "name": "San Diego International Airport",
+      "domain": "san.org",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://www.san.org/",
+          "snippet": "Find live flight tracking info, arrivals and departure times, news releases and blog posts, travel tips at SAN.org."
+        }
+      ]
+    },
+    {
+      "name": "Tearmoon Pr",
+      "domain": "tearmoon-pr.com",
+      "discovery_source": "searxng",
+      "company_function": "vendor",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://tearmoon-pr.com/",
+          "snippet": "\u30b7\u30ea\u30fc\u30ba\u7d2f\u8a08\u767a\u884c\u90e8\u6570200\u4e07\u90e8\u306e\u300e\u30c6\u30a3\u30a2\u30e0\u30fc\u30f3\u5e1d\u56fd\u7269\u8a9e\uff5e\u65ad\u982d\u53f0\u304b\u3089\u59cb\u307e\u308b\u3001\u59eb\u306e\u8ee2\u751f\u9006\u8ee2\u30b9\u30c8\u30fc\u30ea\u30fc\uff5e\u300f\uff08\u539f\u4f5c\uff1a\u9905\u6708\u671b\u300e\u30c6\u30a3 \u2026"
+        }
+      ]
+    },
+    {
+      "name": "Tlauncher",
+      "domain": "tlauncher.org",
+      "discovery_source": "searxng",
+      "company_function": "manufacturer",
+      "discovery_snippets": [
+        {
+          "title": "",
+          "url": "https://tlauncher.org/",
+          "snippet": "There are not so many good Minecraft launchers nowadays, and yet they exist \u2013 TLauncher being one of them. The launcher is \u2026"
+        }
+      ]
+    }
+  ],
+  "company_count": 38,
+  "discovery_stats": {
+    "raw_hits": 280,
+    "unique_names": 48,
+    "by_prompt_id": {
+      "D10": 4,
+      "D2": 4,
+      "D3": 4,
+      "D4": 4,
+      "D5": 4,
+      "D6": 4,
+      "D7": 1,
+      "D8": 2,
+      "D9": 4,
+      "HX0_serv": 4,
+      "HX1_serv": 4,
+      "L0": 4,
+      "L1": 4,
+      "L2": 4,
+      "M1": 1,
+      "M10": 4,
+      "M11": 1,
+      "M13": 1,
+      "M15": 1,
+      "M17": 4,
+      "M18": 1,
+      "M19": 3,
+      "M2": 2,
+      "M20": 2,
+      "M23": 4,
+      "M25": 1,
+      "M3": 1,
+      "M4": 1,
+      "M5": 4,
+      "M7": 1,
+      "M9": 1,
+      "SEED": 15,
+      "SEED2": 15,
+      "SEED3": 15,
+      "SE_ciscosyste_2": 1,
+      "SE_ciscosyste_3": 1,
+      "SE_delltechno_1": 1,
+      "SE_eaton_1": 5,
+      "SE_schneidere_1": 1,
+      "SE_schneidere_2": 1,
+      "SE_schneidere_3": 1,
+      "SE_vertiv_1": 2,
+      "SE_vertiv_2": 1,
+      "ST1a": 4,
+      "ST1b": 4,
+      "ST2a": 4,
+      "ST3a": 4,
+      "ST4a": 4,
+      "ST_L1_1": 4,
+      "ST_L1_2": 4,
+      "ST_L1_3": 4,
+      "ST_L2_4": 4,
+      "ST_L2_5": 4,
+      "ST_L2_6": 4,
+      "ST_L3_7": 4,
+      "ST_L3_8": 4,
+      "ST_L3_9": 4,
+      "ST_L4_10": 4,
+      "ST_L4_11": 4,
+      "ST_L5_12": 4,
+      "ST_L5_13": 4,
+      "T1a": 1,
+      "T1b": 1,
+      "T2a": 8,
+      "T2b": 8,
+      "V1": 4,
+      "V10": 1,
+      "V11": 4,
+      "V2": 4,
+      "V3": 4,
+      "V4": 4,
+      "V5": 4,
+      "V6": 4,
+      "V7": 4,
+      "V8": 1,
+      "V9": 8,
+      "W1": 4,
+      "W2": 1
+    },
+    "by_funnel_level": {
+      "L0": 49,
+      "L1": 4,
+      "L2": 4,
+      "discovery": 223
+    },
+    "widen_loops": 5
+  },
+  "warnings": [
+    "SKIP_DDGS=true \u2014 ddgs disabled; router fallbacks only (Bing HTML / SearXNG).",
+    "Website scrape: ddgs.extract() (SCRAPE_BACKEND=ddgs, fmt=text_markdown)"
+  ]
+}

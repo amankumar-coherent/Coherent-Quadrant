@@ -1,0 +1,12 @@
+[parallel 17:00:43] 3 market(s), 3 at a time (1 browser(s) each), browser slots 61..63 (Chromium)
+[parallel 17:00:43] extension(s) loaded in every browser: captchaplugin
+[parallel 17:00:43] slots 61: START Drone Propulsion Industry Analysis (india) -> drone_propulsion_industry_analysis_india.log
+[parallel 17:01:03] slots 62: START Drone Cybersecurity Industry Analysis (india) -> drone_cybersecurity_industry_analysis_india.log
+[parallel 17:01:23] slots 63: START Drone Charging Industry Analysis (india) -> drone_charging_industry_analysis_india.log
+[parallel 21:03:16] slots 63: CHECK Drone Charging Industry Analysis (india) exit=4294967295 VERIFY 0 pass / 0 fail, 242 min
+[parallel 23:25:51] slots 61: CHECK Drone Propulsion Industry Analysis (india) exit=4294967295 VERIFY 0 pass / 0 fail, 385 min
+[parallel 23:25:51] slots 62: CHECK Drone Cybersecurity Industry Analysis (india) exit=4294967295 VERIFY 0 pass / 0 fail, 385 min
+[parallel 23:25:55] done: 0/3 market(s) passed every VERIFY check -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\logs\parallel\summary.json
+[parallel 23:25:55]   CHECK Drone Charging Industry Analysis (india): exit=4294967295 fail=0 -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\logs\parallel\drone_charging_industry_analysis_india.log
+[parallel 23:25:55]   CHECK Drone Propulsion Industry Analysis (india): exit=4294967295 fail=0 -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\logs\parallel\drone_propulsion_industry_analysis_india.log
+[parallel 23:25:55]   CHECK Drone Cybersecurity Industry Analysis (india): exit=4294967295 fail=0 -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\logs\parallel\drone_cybersecurity_industry_analysis_india.log

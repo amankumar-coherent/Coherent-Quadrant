@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Levels offers CGM-based programs but relies on third-party sensors; no proprietary devices listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Reports improvements in HbA1c, fasting insulin, triglycerides from retrospective analysis; not a clinical trial."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Running one of the largest observational glucose studies in people without diabetes; combines proprietary metabolic datasets."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities; relies on third-party sensors."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "HIPAA compliant and SOC 2 compliant; no FDA clearance mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions global reach but no specific countries or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Claims 'most trusted name in metabolic health' and '100,000+ lives changed'; member testimonials."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue or funding data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Programs for glucose control, heart health, weight loss; but no formal pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'Partner With Us' and practitioner program, but no specific partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

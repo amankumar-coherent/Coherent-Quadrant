@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 6,
+      "answer": "ZOE publishes clinical validation data for its at-home test kits and CGM-based programs, but specific sensor accuracy data is not detailed in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "The knowledge base does not specify MARD or other accuracy metrics for ZOE's sensors, so the score is based on general market knowledge of CGM accuracy.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "ZOE's programs are available in the UK and USA, implying regulatory compliance, but specific certifications like FDA or CE are not mentioned in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["UK, USA"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "ZOE primarily offers a CGM-based testing kit and associated program, indicating a narrow device portfolio compared to multi-device wearable companies.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "ZOE focuses on metabolic health and nutrition, not multiple therapeutic areas like cardiac or respiratory, based on the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Metabolic program marketer; Nutrition"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "ZOE's CGM kits are consumer-oriented, but there is no evidence of clinical/professional device offerings in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "ZOE has published research in peer-reviewed journals, but the knowledge base does not provide specific citations.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "ZOE has conducted clinical studies for its programs, but the knowledge base does not mention ongoing or completed trials for wearable devices.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "ZOE collects real-world data from users through its app and CGM programs, but specific outcomes data is not in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "ZOE uses CGM sensors with typical battery life of 10-14 days, but this is not specified in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "CGM sensors are designed for continuous wear and are water-resistant, but the knowledge base does not detail these features.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "ZOE primarily offers a patch-style CGM, with no evidence of multiple form factors in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "There is no evidence that ZOE's devices integrate with EHR systems like Epic or Cerner.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "ZOE may have an API for its app, but the knowledge base does not mention open APIs or SDKs.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "ZOE likely supports standard data formats for its app, but the knowledge base does not specify HL7 or FHIR support.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "ZOE operates in the UK and USA, implying regulatory approvals, but specific FDA or CE marks are not listed in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["UK, USA"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "ZOE's programs are likely for general wellness and metabolic health, not specific medical indications, based on the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Metabolic program marketer; Nutrition"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "ZOE operates in the UK and USA, indicating approvals in at least two geographies, but not confirmed for Japan or other regions.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["UK, USA"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "ZOE has a significant user base, but the knowledge base does not provide specific numbers.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "ZOE sells directly to consumers online, but the knowledge base does not mention hospital or pharmacy partnerships.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "ZOE likely has user testimonials, but the knowledge base does not include healthcare provider case studies.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "There is no evidence that ZOE has CPT codes or reimbursement pathways for its programs.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "ZOE's programs are not typically covered by insurance, and the knowledge base does not mention payer coverage.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "ZOE offers subscription-based programs, which reduce upfront costs, but patient assistance programs are not mentioned.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "ZOE has shown revenue growth, but specific year-over-year figures are not in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "ZOE does not publicly report gross margins or profitability for its wearable segment in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "ZOE's subscription model provides recurring revenue, indicating sustainable revenue streams.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "ZOE collaborates with research institutions like King's College London, but the knowledge base does not list specific partnerships.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "ZOE has partnerships with CGM manufacturers, but no evidence of tech giant or pharma collaborations in the knowledge base.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "ZOE is not known to participate in industry standards bodies, and the knowledge base does not mention such involvement.",
+      "evidence_urls": ["https://zoe.com"],
+      "evidence_snippets": ["Markets personalized nutrition programs including CGM testing kits"],
+      "grounding": "insufficient"
+    }
+  ]
+}

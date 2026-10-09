@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Generium has several pipeline candidates in Phase II-III or registration, but none explicitly in Phase III or filed.",
+      "evidence_urls": ["https://generium.ru/pipeline/"],
+      "evidence_snippets": ["GNR-097 Миодистрофия Дюшенна (ГенЛП) ДКИ КИ I фазы КИ II-III фазы Регистрация"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Generium's pipeline covers diverse targets including antibodies, enzymes, and gene therapy, as evidenced by multiple INNs.",
+      "evidence_urls": ["https://generium.ru/pipeline/"],
+      "evidence_snippets": ["GNR-104 Гипофосфатазия (МНН: асфотаза альфа)", "GNR-118 Пароксизмальная ночная гемоглобинурия (МНН: равулизумаб)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "Generium's pipeline includes biosimilars of top-selling biologics like eculizumab and nusinersen, but not all are top-sellers.",
+      "evidence_urls": ["https://generium.ru/products/"],
+      "evidence_snippets": ["Элизария® МНН: экулизумаб", "Лантесенс® МНН: нусинерсен"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "KB does not specify bioreactor capacity in liters; only production area is mentioned.",
+      "evidence_urls": ["https://generium.ru/"],
+      "evidence_snippets": ["Производственные площади 61 000 м²"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Generium has multiple production sites including in Pokrov and Zelenograd, indicating multi-site manufacturing.",
+      "evidence_urls": ["https://generium.ru/contacts/"],
+      "evidence_snippets": ["Производство 601125, Владимирская область...", "Генериум-Некст(Зеленоград) 124460, г. Москва..."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "KB does not mention whether manufacturing processes are single-use or stainless steel.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "KB does not mention mass spec or specific analytical techniques.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "KB does not provide details on validated analytical methods for comparability.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "KB does not mention published studies on structural/functional similarity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "Generium has multiple products on the market, but KB does not specify FDA/EMA approvals; likely Russian approvals.",
+      "evidence_urls": ["https://generium.ru/products/"],
+      "evidence_snippets": ["Клотилия® МНН: веренафусп альфа", "Реадели® МНН: галсульфаза"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "KB does not provide approval times.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "KB does not mention any complete response letters or rejections.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Generium likely uses CHO or other mammalian systems for complex biologics, but KB does not specify.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Generium has proprietary R&D capabilities, but no specific platform technologies are mentioned.",
+      "evidence_urls": ["https://generium.ru/research/"],
+      "evidence_snippets": ["Наш R&D парк способен осуществить разработку любого препарата от создания молекулы до начала промышленного выпуска."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "KB does not mention AI or automation investments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "KB indicates products are available in Russia, but no global reach is mentioned.",
+      "evidence_urls": ["https://generium.ru/"],
+      "evidence_snippets": ["Лидер орфанного сегмента российских биотехнологий"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Generium is a Russian company with strong local presence, but emerging market expansion is not detailed.",
+      "evidence_urls": ["https://generium.ru/"],
+      "evidence_snippets": ["Лидер орфанного сегмента российских биотехнологий"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Generium has multiple manufacturing sites in Russia, indicating local production capabilities.",
+      "evidence_urls": ["https://generium.ru/contacts/"],
+      "evidence_snippets": ["Производство 601125, Владимирская область...", "Генериум-Некст(Зеленоград) 124460, г. Москва..."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "KB does not provide financial data on revenue growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "KB does not provide profitability information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "KB does not provide market share projections.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Generium collaborates with biotech companies and scientific institutes, but no major pharma partnerships are mentioned.",
+      "evidence_urls": ["https://generium.ru/research/"],
+      "evidence_snippets": ["Научные исследования ведутся совместно с биотехнологическими компаниями и научными институтами со всего мира."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "KB does not provide customer counts.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "KB does not mention supply agreements with payers or GPOs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "KB does not provide pricing information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "KB does not mention value-added services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "KB does not provide competitive pricing details.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "KB does not mention supplier diversity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "KB does not mention risk management plans.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "KB does not provide lead time information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

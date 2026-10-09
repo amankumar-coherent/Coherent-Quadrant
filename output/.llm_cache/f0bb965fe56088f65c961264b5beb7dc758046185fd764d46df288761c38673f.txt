@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only states 'portfolio in diabetes, including GLP-1 receptor agonists' with no specific products or molecules disclosed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of specific therapeutic indications or differentiation; only general mention of diabetes portfolio."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of clinical trials, R&D pipeline, or innovation in GLP-1; only mentions in unrelated research contexts."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1 products; only general company info."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality certifications for GLP-1 products; only general company presence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence indicates presence only in Colombia; no evidence of broader geographic reach."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of brand reputation or HCP perception specific to GLP-1; only mentions in unrelated contexts."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "One source lists Tecnoquimicas with $1.6 bn revenue, but no GLP-1-specific financials."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline or future indications for GLP-1 products."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion related to GLP-1; only mentions in unrelated research acknowledgments."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

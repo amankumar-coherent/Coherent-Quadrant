@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Offers two sensors: Vitals (bed sensor) and Bio Patch (wearable) plus care management software, but limited to long-term care focus."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Claims benefits like fall prevention and pressure ulcer reduction, but no clinical trial evidence or published outcomes; disclaimer states not for medical diagnosis."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Uses advanced machine learning for early prediction of deterioration and offers contact-free continuous monitoring, indicating innovative approach."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities, quality certifications, or production scale."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Explicitly states product is not subject to medical regulation, indicating no FDA/CE clearance; lacks regulatory compliance evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "supported",
+      "why": "HQ in Israel and presence in United States, but no evidence of broader global distribution or channel partnerships."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of hospital adoption, clinician endorsements, or brand recognition; claims staff satisfaction but no external validation."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue figures, or funding information available."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Current focus on long-term care with features like fall prevention and vital sign monitoring; potential for expansion but no explicit pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Integrates with common nursing home management software and nurse-call infrastructure, indicating some partnerships, but no named partners or expansion strategy."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

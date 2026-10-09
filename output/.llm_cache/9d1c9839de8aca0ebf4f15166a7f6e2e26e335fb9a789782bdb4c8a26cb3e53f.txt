@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence mentions ANNE One platform with multiple sensors (limb, chest) and Aria sensor, but portfolio is limited to a few devices."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA-cleared for neonatal and adult monitoring, with multiple clearances including pediatric and seventh clearance; designed for delicate neonatal skin."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Spun out of Northwestern University's John Rogers Research Group; developing AI-enabled analytics and new sensors like Aria for cough detection."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No direct evidence of manufacturing capabilities or quality systems; only mentions FDA clearances and CE mark, implying quality compliance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Received EU MDR Class IIb CE Mark and multiple FDA 510(k) clearances (seventh clearance), indicating strong regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in US and EU (CE mark), and selected for hospitals in Copenhagen, but no evidence of global scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA-cleared and used in clinical trials and hospitals; partnership with Dräger for Copenhagen hospitals indicates adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Raised $33M Series B, $39M Series C extension, and $3.5M grant; private company, no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Expanding from neonatal to adult and pediatric indications; developing Aria sensor for cough and ADAM for dermatitis."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Dräger for Copenhagen hospitals and with Maraho for ADAM sensor; collaborations with MTEC."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

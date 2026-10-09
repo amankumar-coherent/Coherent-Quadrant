@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Microchip does not lead in advanced process nodes; its products are typically on mature nodes (e.g., 28nm and above), with no announced 3nm or 2nm plans.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Microchip is not a leader in cutting-edge process technologies like FinFET or GAA; it focuses on mature nodes and specialized processes for embedded and analog.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Microchip's roadmap emphasizes mature node enhancements and specialized products rather than next-generation nodes like 2nm or 1.4nm.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Microchip offers a broad portfolio across microcontrollers, microprocessors, analog, memory, FPGAs, and more, as evidenced by its extensive product categories.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Microcontrollers", "Microprocessors", "Amplifiers and Linear ICs", "Memory Products", "FPGAs and PLDs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type, but Microchip's portfolio is diversified across many categories.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Microchip offers semiconductor packaging and assembly services, as listed under Services, indicating OSAT-like capabilities.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Semiconductor Packaging and Assembly Services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Microchip owns proprietary architectures like PIC and AVR MCUs, and PolarFire FPGAs, which are differentiated in embedded and low-power applications.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["PIC® MCUs", "AVR® Microcontrollers (MCUs)", "PolarFire® Mid-Range FPGAs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Microchip uses both proprietary cores (PIC, AVR) and licenses third-party IP like ARM and RISC-V, as seen in its product lines.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Arm® Cortex®-Based MCUs", "Mi-V RISC-V® Ecosystem"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Microchip has strengths in automotive, industrial, and IoT with functional safety and security features, but is not a leader in AI or 5G.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["ADAS and AV", "5G Network Infrastructure", "Functional Safety"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "The knowledge base does not provide wafer fabrication capacity or utilization rates; Microchip is primarily fab-lite, relying on foundries.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No yield data is available in the knowledge base; Microchip's mature node products likely have good yields but not leading-edge benchmarks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Microchip offers packaging services but does not highlight advanced packaging like 2.5D/3D or chiplets in the knowledge base.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Semiconductor Packaging and Assembly Services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Microchip likely holds standard certifications like ISO 9001, but the knowledge base does not list specific quality certifications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No defect rate data is provided, but Microchip emphasizes reliability for automotive and industrial applications.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Functional Safety", "Automotive Products"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Microchip likely complies with RoHS and REACH, but the knowledge base does not explicitly mention environmental compliance.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Microchip has global operations with headquarters in Arizona, USA, and likely sales and R&D worldwide, but specific regions are not detailed.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Chandler, Arizona, USA"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Microchip serves diverse end-markets including automotive, industrial, aerospace, and medical, as shown in its solutions pages.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Aerospace and Defense", "Automotive and Transportation", "Industrial", "Medical"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Microchip's global presence and diverse markets help mitigate regional risks, but specific risk mitigation strategies are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "The knowledge base does not list top customers or concentration risk.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Microchip has design partners and ecosystem collaborations, but specific partnerships with EDA vendors or consortia are not detailed.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Design Partners"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Microchip collaborates with ecosystem players through design partners and provides complete solutions, but specifics are limited.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Design Partners", "Solution Stacks"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial data is not provided in the knowledge base; Microchip is a large company but specific figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "Microchip's roadmap includes expanding RISC-V and FPGA ecosystems, but specific milestones are not detailed.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Mi-V RISC-V® Ecosystem", "PolarFire® SoC FPGAs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Microchip focuses on embedded and edge AI, but has no announced quantum or advanced memory roadmap.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Edge AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Microchip's roadmap aligns with trends in industrial automation, IoT, and automotive, but lacks leading-edge AI or 5G focus.",
+      "evidence_urls": ["https://www.microchip.com"],
+      "evidence_snippets": ["Smart Factory", "IoT Solutions", "ADAS and AV"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab announcements are in the knowledge base; Microchip is fab-lite and relies on foundries.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth data is not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and expansion plans are not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

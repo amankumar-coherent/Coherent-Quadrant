@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Apple's most advanced process node is 3nm, used in its M5 and A-series chips, with 2nm expected in the future.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Apple leads in custom silicon design, leveraging advanced nodes like 3nm for its M-series and A-series chips, but relies on foundries for manufacturing.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Air Now supercharged by M5.", "iPad Air Now supercharged by M4."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Apple's roadmap includes moving to 2nm process technology for future chips, expected in the next few years, though specific timelines are not public.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Apple specializes in logic chips (CPU, GPU, AI accelerators) for its devices, but does not offer memory, analog, or power semiconductors as standalone products.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["iPhone 17 Pro, back exterior, deep blue color, Pro Fusion camera system in top left corner, Apple logo in center."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Apple's revenue is primarily from hardware products (iPhone, Mac, iPad) with integrated custom silicon, not from standalone semiconductor sales, so revenue split by product type is not applicable.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Meet the latest iPhone lineup."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Apple does not provide OSAT services; it partners with OSAT providers like TSMC for packaging and testing of its chips.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 9,
+      "answer": "Apple owns proprietary CPU, GPU, and Neural Engine IP, which are highly differentiated and integrated into its M-series and A-series chips.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Air Now supercharged by M5.", "iPad Pro Advanced AI performance and game-changing capabilities."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 8,
+      "answer": "Apple does not license its IP to other firms; it uses its own custom ARM-based architecture, not third-party IP.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Air Now supercharged by M5."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 9,
+      "answer": "Apple's architecture is strong in AI (Neural Engine) and mobile, but less focused on 5G or automotive, though it is expanding into these areas.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["iPad Pro Advanced AI performance and game-changing capabilities."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Apple does not own wafer fabrication facilities; it relies on foundry partners like TSMC, so it has no direct fab capacity.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Apple's yield rates are managed by its foundry partners, and while it likely achieves competitive yields, specific data is not public.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Apple uses advanced packaging technologies like InFO and CoWoS through its foundry partners, but does not offer packaging services itself.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Apple's manufacturing partners hold quality certifications like ISO 9001, and Apple itself adheres to strict quality standards, but specific certifications are not listed on its site.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Environment", "Apple and Supply Chain Innovation"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Apple maintains high reliability standards for its products, but specific defect rates (DPPM) are not publicly disclosed.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Environment", "Apple and Supply Chain Innovation"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Apple is committed to environmental compliance, including RoHS and REACH, and has strong conflict minerals policies, as highlighted in its supplier responsibility reports.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Environment", "Apple and Supply Chain Innovation"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Apple has significant global presence with retail stores, R&D centers, and manufacturing partnerships across the Americas, Europe, and Asia.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Find an Apple Store or other retailer near you."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Apple serves consumer, education, business, and healthcare markets, with consumer electronics being the primary revenue driver.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Business", "Apple and Education", "Apple and Healthcare"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "Apple's global manufacturing and sales diversification helps mitigate regional risks, though it remains exposed to trade policies affecting China.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Find an Apple Store or other retailer near you."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Apple's top customers are individual consumers, but it also serves enterprise and education; customer concentration is low due to mass-market appeal.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Business", "Apple and Education"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Apple has strategic partnerships with TSMC for manufacturing, and collaborates with EDA vendors and research institutions, though specific details are not public.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "Apple collaborates closely with foundries, OSATs, and software developers to deliver integrated products, as seen in its tight hardware-software integration.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Business", "Apple and Education"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 9,
+      "answer": "Apple's annual revenue exceeds $380 billion with strong net income and free cash flow, though exact figures are not in the KB.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Investors"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 7,
+      "answer": "Apple's CapEx is around $10-15 billion annually, roughly 3-4% of revenue, but specific percentages are not in the KB.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Investors"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 9,
+      "answer": "Apple has a strong balance sheet with significant cash reserves and low debt, enabling large-scale investments.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Investors"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Apple's roadmap includes continued advancement of its M-series chips, expansion of AI capabilities, and new product categories like Vision Pro.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max.", "Apple Vision Pro"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Apple is investing heavily in AI chips (Neural Engine) and has a clear roadmap for AI integration across devices, though quantum is not a focus.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["iPad Pro Advanced AI performance and game-changing capabilities."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Apple's roadmap aligns with industry trends in AI, performance, and user experience, as evidenced by its latest product launches.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Air Now supercharged by M5.", "iPad Pro Advanced AI performance and game-changing capabilities."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Apple does not announce fab expansions as it relies on foundry partners; its growth is in product lines, not manufacturing capacity.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["MacBook Pro Now with M5, M5 Pro, and M5 Max."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 8,
+      "answer": "Apple has shown consistent revenue growth over the past 3 years, driven by strong iPhone and services sales, though specific figures are not in KB.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Investors"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Apple funds its growth through strong cash flow and debt capacity, investing in R&D and supply chain, but does not build its own fabs.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple and Investors"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

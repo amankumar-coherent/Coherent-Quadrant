@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "BMS has a robust pipeline with 49 compounds in development, but specific Phase III biologic/biosimilar candidates are not detailed in the KB.",
+      "evidence_urls": ["https://www.bms.com/research-and-development/pipeline.html"],
+      "evidence_snippets": ["49 Compounds in development"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "BMS focuses on diverse therapeutic areas including oncology, hematology, neuroscience, immunology, and cardiovascular, indicating a broad range of targets.",
+      "evidence_urls": ["https://www.bms.com/our-science/areas-of-focus.html"],
+      "evidence_snippets": ["Oncology", "Hematology", "Neuroscience", "Immunology", "Cardiovascular"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "BMS has a strong oncology portfolio with products like Opdivo and Yervoy, but specific pipeline products targeting top-selling biologics are not listed in the KB.",
+      "evidence_urls": ["https://www.bms.com/our-science/areas-of-focus/oncology.html"],
+      "evidence_snippets": ["Building on our heritage in the treatment of solid tumors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "No specific bioreactor capacity data is available in the KB; BMS is a major manufacturer but exact liters are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "BMS has global locations and manufacturing capabilities, but multi-site redundancy specifics are not detailed in the KB.",
+      "evidence_urls": ["https://www.bms.com/our-company/locations.html"],
+      "evidence_snippets": ["Locations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "No information on single-use vs. stainless steel processes is available in the KB; BMS likely uses both but specifics are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "BMS invests in advanced science and technologies, but specific mass spec usage for characterization is not mentioned in the KB.",
+      "evidence_urls": ["https://www.bms.com/our-science/technologies.html"],
+      "evidence_snippets": ["Technologies"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No data on validated analytical methods for biosimilar comparability is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "No published studies on structural/functional similarity are referenced in the KB; BMS likely has such studies but not in the crawl.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "BMS recently received FDA accelerated approval for a CELMoD therapy, indicating regulatory success, but the count of biologics/biosimilars approved in last 5 years is not specified.",
+      "evidence_urls": ["https://news.bms.com/news/corporate-financial/2026/U-S--FDA-Grants-Accelerated-Approval-to-Bristol-Myers-Squibbs-First-CELMoD-Therapy-ZENBEXUS-in-Combination-with-Daratumumab-and-Hyaluronidase-fihj-and-Dexamethasone-ZDd-for-Patients-with-Multiple-Myeloma-as-Early-as-First-Relapse/default.aspx"],
+      "evidence_snippets": ["The FDA has granted accelerated approval to our multiple myeloma treatment"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No data on average approval time is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "No information on complete response letters or rejections is available in the KB; BMS has had some setbacks historically but not in this crawl.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "BMS uses advanced technologies and has expertise in protein degradation, but specific expression systems like CHO or yeast are not mentioned.",
+      "evidence_urls": ["https://www.bms.com/our-science/technologies.html"],
+      "evidence_snippets": ["Technologies"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "BMS has proprietary platforms like CELMoD, but biosimilar-specific platforms are not detailed in the KB.",
+      "evidence_urls": ["https://www.bms.com/life-and-science/science/advancing-research-in-protein-degradation-with-unique-approach.html"],
+      "evidence_snippets": ["intentionally designed degraders"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "BMS is actively using AI and machine learning to accelerate protein degradation science, indicating investment in AI for R&D.",
+      "evidence_urls": ["https://www.bms.com/life-and-science/science/ai-driven-protein-degradation-drug-discovery.html"],
+      "evidence_snippets": ["Accelerating protein degradation science with AI and machine learning"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "BMS is a global company with products available in many countries, but the exact number is not in the KB.",
+      "evidence_urls": ["https://www.bms.com/our-company/locations.html"],
+      "evidence_snippets": ["Locations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "BMS has a commitment to bringing medicines to low- and middle-income countries, indicating emerging market presence.",
+      "evidence_urls": ["https://www.bms.com/life-and-science/insights/bringing-life-saving-medicines-to-lmic.html"],
+      "evidence_snippets": ["Bringing life-saving medicines to more patients: Our commitment to low- and middle-income countries"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "BMS has global locations and partnerships, but specific local manufacturing in key regions is not detailed.",
+      "evidence_urls": ["https://www.bms.com/our-company/partnerships-and-business-development.html"],
+      "evidence_snippets": ["Partnerships & business development"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "No revenue growth data for biologics is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No profitability data for biosimilar segment is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No market share projections are available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "BMS has partnerships and business development activities, but specific major pharma or distributor partnerships are not listed.",
+      "evidence_urls": ["https://www.bms.com/our-company/partnerships-and-business-development.html"],
+      "evidence_snippets": ["Partnerships & business development"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "No data on number of healthcare providers or hospitals as customers is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No information on long-term supply agreements with payers or GPOs is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No pricing data for biosimilars is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No information on value-added services for payers is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No competitive pricing data is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No supplier information is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No risk management plan details are available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No lead time data is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

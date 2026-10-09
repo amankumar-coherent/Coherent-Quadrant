@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows two monitors (Zio monitor and Zio AT) and supporting software (ZioSuite, MyZio app), but no other device categories."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Multiple studies (AVALON, CAMELOT, Barrett et al.) show high diagnostic yield, lowest retesting, and 99% physician agreement; over 12 million patients analyzed."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 9,
+      "grounding": "supported",
+      "why": "First FDA-cleared deep-learned algorithm, advanced AI, and continuous innovation evidenced by multiple clinical studies and product enhancements."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No direct evidence of manufacturing capabilities or quality systems; only mentions of FDA-cleared AI and regulatory approvals."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA 510K clearance, CE mark, UKCA mark, and PMDA-approval for deep-learned algorithm; FDA-cleared AI mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Presence in United States, United Kingdom, Japan, and Europe as indicated by region selectors on website."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Over 12 million patients analyzed, 99% physician agreement, and multiple large real-world studies (AVALON, CAMELOT) indicate strong clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Public company with investor relations and financials sections, but no specific revenue or profitability figures in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence of ongoing clinical studies and product enhancements (Zio AT, MyZio app), but no explicit pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions of EHR integration and telehealth, but no specific partnerships or expansion deals in evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "rich"
+}

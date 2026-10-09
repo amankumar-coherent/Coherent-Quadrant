@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions Oxitone 2000M and 1000M, but product list is empty; portfolio appears narrow."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims continuous monitoring of multiple vitals, but no clinical validation or safety data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Patented wrist ulna-bone multi-parameter biosensors and AI algorithms for automated follow-up."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality certifications."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No FDA/CE clearances mentioned; product not available for sale in U.S. suggests limited regulatory status."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence only in UK; no evidence of global distribution or multi-market sales."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Partnership with Ascom UMS for COVID-19 monitoring indicates some adoption, but limited evidence of broad clinical use."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Use cases include cardiopulmonary, sleep apnea, stress, and pregnancy; new product 2000M for blood pressure."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Ascom UMS partnership for COVID-19 monitoring; targets providers, payers, pharma/CRO segments."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

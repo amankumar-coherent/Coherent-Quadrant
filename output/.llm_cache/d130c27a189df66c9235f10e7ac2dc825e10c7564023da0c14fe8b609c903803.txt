@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "Cedar LNG is a proposed floating LNG facility with no operating liquefaction capacity.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility in British Columbia, backed by Pembina and Haisla Nation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "No operating liquefaction facilities exist, so no utilization rate is available.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "No liquefaction trains are in operation; the facility is proposed.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "No specific feedstock strategy is disclosed, but as a proposed BC project it would likely rely on local gas supply.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility in British Columbia"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "No feedstock contracts are disclosed; the project is not yet operational.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "No feedstock sources are disclosed; the project is in development.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 1,
+      "answer": "No operating trains exist, so no on-stream factor is available.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 1,
+      "answer": "No operational history, so no outages or force majeure events have occurred.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 1,
+      "answer": "No operating assets, so no maintenance track record exists.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "No operating LNG operations, so no TRIR is reported.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 1,
+      "answer": "No operating history, so no regulatory fines or sanctions are known.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 1,
+      "answer": "No certifications are disclosed for LNG assets as the facility is not built.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "No carbon intensity data is available as the facility is not operational.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No specific measures are disclosed, but as a proposed project it may incorporate modern emission controls.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "No sustainability reports are published as the project is not operational.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 1,
+      "answer": "No contracted LNG sales volumes are disclosed; the project is not yet selling LNG.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 1,
+      "answer": "No sales contracts exist, so no average duration can be determined.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 1,
+      "answer": "No spot sales exist as the project is not operational.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 1,
+      "answer": "No LNG exports have occurred, so no export destinations are known.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 1,
+      "answer": "No sales exist, so top customer concentration is not applicable.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 1,
+      "answer": "No portfolio exists, so geographic balance is not applicable.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 1,
+      "answer": "No revenue or EBITDA from LNG operations as the project is not operational.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 1,
+      "answer": "No financial ratios are disclosed; the project is in development.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 1,
+      "answer": "No free cash flow or liquidity details are disclosed.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "The project is proposed with no FID announced, so capacity under construction is zero.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No timeline is disclosed; the project is still in the proposal stage.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "The project itself is in early development, but no additional expansion projects are known.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 1,
+      "answer": "No market share as the project is not producing LNG.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Key partners are Pembina and Haisla Nation, providing credible backing.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["backed by Pembina and Haisla Nation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "As a proposed project, it lacks scale and cost position compared to operating competitors.",
+      "evidence_urls": ["https://www.cedarlng.com"],
+      "evidence_snippets": ["Proposed floating LNG facility"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

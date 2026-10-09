@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 10,
+      "answer": "TSMC is the leader in advanced process nodes, with A16 (1.6nm) and A14 (1.4nm) announced, and is the first to mass-produce 3nm and 5nm.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["TSMC A16™ Nanosheet with Super Power Rail", "TSMC A14 With NanoFlex™ Pro"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 10,
+      "answer": "TSMC leads in FinFET and is pioneering GAA (nanosheet) with A16, maintaining a competitive edge over peers.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["TSMC A16™ Nanosheet with Super Power Rail"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 9,
+      "answer": "TSMC's roadmap includes A16 (1.6nm) and A14 (1.4nm) with production expected in 2026 and 2028 respectively, as per industry reports.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["TSMC A16™ Nanosheet with Super Power Rail", "TSMC A14 With NanoFlex™ Pro"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "TSMC is a pure-play foundry offering logic, specialty, and advanced packaging, but does not produce memory or analog products itself.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Logic Technology", "Specialty Technology", "TSMC 3DFabric®"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "TSMC's revenue is predominantly from logic (advanced nodes), with specialty technologies contributing, but exact split not disclosed in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Logic Technology", "Specialty Technology"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "TSMC offers advanced packaging (3DFabric) and has an OSAT-like service, but also partners with OSATs for some services.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Advanced Packaging", "TSMC 3DFabric®"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "TSMC does not own CPU/GPU IP but provides design platforms and collaborates with IP partners; its strength is in process technology.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Open Innovation Platform®", "IP Alliance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "TSMC relies on third-party IP (ARM, etc.) and enables its ecosystem through alliances, rather than licensing its own IP.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["IP Alliance", "EDA Alliance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "TSMC's architecture strength is in providing leading-edge process platforms for AI, 5G, and automotive, as evidenced by its technology offerings.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["A16™ Nanosheet with Super Power Rail", "Specialty Technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "TSMC has massive fab capacity with GIGAFAB facilities, but specific wafer-per-month numbers are not in the KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["GIGAFAB® Facilities", "Fab Capacity"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 9,
+      "answer": "TSMC is known for industry-leading yields on advanced nodes, though exact numbers are not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Engineering Performance Optimization"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 9,
+      "answer": "TSMC offers advanced packaging (2.5D/3D, chiplets) via TSMC 3DFabric, with significant capacity and technology leadership.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["TSMC 3DFabric®", "Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "TSMC holds ISO 9001 and IATF 16949 certifications, though not explicitly listed in KB, it is known for high quality standards.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Quality Policy"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 8,
+      "answer": "TSMC maintains very low defect rates and high reliability, critical for advanced applications, though DPPM not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Quality Policy", "Quality and Reliability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "TSMC complies with environmental regulations and publishes sustainability reports, addressing RoHS/REACH and conflict minerals.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Sustainability Report", "Corporate Sustainability (ESG)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "TSMC has fabs and offices in Taiwan, USA, Japan, China, Europe, and more, with R&D and manufacturing globally.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Fab Locations", "Subsidiaries"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "TSMC serves all major end-markets including automotive, consumer, industrial, and telecom, with HPC and smartphone being largest.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Technology Platforms"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "TSMC's global footprint across Taiwan, USA, Japan, and Europe mitigates regional risks, though exact diversification not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Fab Locations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "TSMC's top customers include Apple, NVIDIA, AMD, and Qualcomm, but customer concentration is not detailed in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Customer Service"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 9,
+      "answer": "TSMC has strategic alliances with equipment makers, EDA vendors, and research consortia through its Open Innovation Platform.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Open Innovation Platform®", "EDA Alliance", "Value Chain Alliance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 9,
+      "answer": "TSMC collaborates with ecosystem players via alliances (IP, EDA, Design Center, Cloud) to deliver complete solutions.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["IP Alliance", "EDA Alliance", "Design Center Alliance", "Cloud Alliance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "TSMC's 2024 revenue was ~$90B with strong net income and FCF, but exact figures not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Financials", "Quarterly Results"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 8,
+      "answer": "TSMC's CapEx is typically 30-40% of revenue, with 2024 CapEx around $30B, but not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Financials"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 8,
+      "answer": "TSMC has a strong balance sheet with low debt and high cash reserves, supporting large investments, though not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Financials"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 9,
+      "answer": "TSMC's roadmap includes A16 (2026) and A14 (2028) nodes, with advanced packaging and 3D IC development.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["TSMC A16™", "TSMC A14", "Future R&D Plans"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "TSMC is investing in AI, advanced memory (via partners), and has research in quantum, but specifics not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Artificial Intelligence", "Research Areas"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 9,
+      "answer": "TSMC's roadmap aligns with AI/HPC trends and customer demands, as seen in A16/A14 and 3DFabric.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["A16™", "A14", "TSMC 3DFabric®"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 9,
+      "answer": "TSMC is building fabs in Arizona, Japan, and Germany, adding significant capacity, though exact numbers not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Fab Locations", "GIGAFAB® Facilities"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 8,
+      "answer": "TSMC has grown revenue at ~20% CAGR over past 3 years, with continued growth expected, but not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Financials"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 8,
+      "answer": "TSMC funds expansions through strong cash flow and debt capacity, with clear execution plans, though not in KB.",
+      "evidence_urls": ["https://www.tsmc.com"],
+      "evidence_snippets": ["Financials"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

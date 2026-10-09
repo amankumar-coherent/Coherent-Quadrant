@@ -1,0 +1,184 @@
+{
+  "features": [
+    {
+      "feature": "Product Pipeline Depth",
+      "axis": "Product Strength",
+      "questions": [
+        {
+          "text": "How many biologic/biosimilar candidates are in Phase III or filed?",
+          "weight": 0.4
+        },
+        {
+          "text": "What is the diversity of targets (e.g., antibodies, fusion proteins)?",
+          "weight": 0.3
+        },
+        {
+          "text": "How many pipeline products target top-selling biologics?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Manufacturing Scale & Capability",
+      "axis": "Product Strength",
+      "questions": [
+        {
+          "text": "What is total bioreactor capacity (in liters) globally?",
+          "weight": 0.4
+        },
+        {
+          "text": "Does the company have multi-site manufacturing for redundancy?",
+          "weight": 0.3
+        },
+        {
+          "text": "Are manufacturing processes single-use or stainless steel?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Analytical & Characterization Expertise",
+      "axis": "Product Strength",
+      "questions": [
+        {
+          "text": "Does the company use state-of-the-art mass spec for characterization?",
+          "weight": 0.4
+        },
+        {
+          "text": "How many analytical methods are validated for biosimilar comparability?",
+          "weight": 0.3
+        },
+        {
+          "text": "Are there published studies on structural/functional similarity?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Regulatory Approval Track Record",
+      "axis": "Product Strength",
+      "questions": [
+        {
+          "text": "How many biologics/biosimilars approved by FDA/EMA in last 5 years?",
+          "weight": 0.4
+        },
+        {
+          "text": "What is the average approval time from filing to approval?",
+          "weight": 0.3
+        },
+        {
+          "text": "Has the company received any complete response letters or rejections?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Technology Platform Innovation",
+      "axis": "Product Strength",
+      "questions": [
+        {
+          "text": "Does the company use novel expression systems (e.g., CHO, yeast)?",
+          "weight": 0.4
+        },
+        {
+          "text": "Are there proprietary platform technologies for biosimilar development?",
+          "weight": 0.3
+        },
+        {
+          "text": "Has the company invested in AI or automation for R&D?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Global Market Presence",
+      "axis": "Business Strategy",
+      "questions": [
+        {
+          "text": "In how many countries are products commercially available?",
+          "weight": 0.4
+        },
+        {
+          "text": "Does the company have a strong presence in emerging markets?",
+          "weight": 0.3
+        },
+        {
+          "text": "Are there local manufacturing or partnerships in key regions?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Revenue & Growth Trajectory",
+      "axis": "Business Strategy",
+      "questions": [
+        {
+          "text": "What is the year-over-year revenue growth rate for biologics?",
+          "weight": 0.4
+        },
+        {
+          "text": "Is the company profitable in its biosimilar segment?",
+          "weight": 0.3
+        },
+        {
+          "text": "What is the projected market share growth in next 3 years?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Customer Base & Partnerships",
+      "axis": "Business Strategy",
+      "questions": [
+        {
+          "text": "Does the company have partnerships with major pharma or distributors?",
+          "weight": 0.4
+        },
+        {
+          "text": "How many healthcare providers or hospitals are customers?",
+          "weight": 0.3
+        },
+        {
+          "text": "Are there long-term supply agreements with payers or GPOs?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Biosimilar Price Competitiveness",
+      "axis": "Business Strategy",
+      "questions": [
+        {
+          "text": "What is the average discount vs. reference biologic?",
+          "weight": 0.4
+        },
+        {
+          "text": "Does the company offer value-added services to payers?",
+          "weight": 0.3
+        },
+        {
+          "text": "How does pricing compare to other biosimilar competitors?",
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "feature": "Supply Chain Resilience",
+      "axis": "Business Strategy",
+      "questions": [
+        {
+          "text": "Are there multiple suppliers for raw materials and components?",
+          "weight": 0.4
+        },
+        {
+          "text": "Does the company have a risk management plan for supply disruptions?",
+          "weight": 0.3
+        },
+        {
+          "text": "What is the average lead time for key inputs?",
+          "weight": 0.3
+        }
+      ]
+    }
+  ]
+}

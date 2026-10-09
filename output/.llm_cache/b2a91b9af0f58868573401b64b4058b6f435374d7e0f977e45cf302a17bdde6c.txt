@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions 'complex, multifunctional, but miniature solution' and 'modular health monitoring platform' (Medive), but no detailed list of multiple devices."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No clinical trial data or safety evidence found; only general claims of 'hospital-grade care' and 'continuous ECG and vital sign tracking'."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Ambiq for edge AI cardiac monitor (Medive) with Apollo510, indicating advanced R&D; founder has 15+ years in electronic product development."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Founder involved in 'series production' but no specific manufacturing certifications or quality system evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA, CE marking, or other regulatory approvals in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Bucharest, Romania; presence in cardiac wearables and telemedicine; no evidence of global market reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentioned in startup interviews and partnership news, but no evidence of hospital adoption or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Platform aims at 'most stages of cardiovascular disease' and 'whole family' use, suggesting potential expansion, but no specific pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Ambiq for Medive platform; also listed on Crunchbase and CB Insights, indicating business development activity."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

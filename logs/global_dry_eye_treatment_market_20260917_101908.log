@@ -1,0 +1,752 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Dry Eye Treatment Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=dc81b3ac → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=181 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_dry_eye_treatment_market_global\global_dry_eye_treatment_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=done status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_dry_eye_treatment_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=Hybrid B2B + B2C
+  [chatgpt] Step 0c/6: market type = Hybrid B2B + B2C | player type = Brand / Marketer
+  [chatgpt] Step 0c/6: why Hybrid B2B + B2C: The market sells to both healthcare institutions/professionals and directly to individual consumers, and Hybrid B2B + B2C was chosen because it has a genuine consumer-facing side via over-the-counter remedies.
+  [chatgpt] Step 0c/6: why this player type: Brand / Marketer was chosen because the market's competitive landscape is defined by companies owning, clinically validating, and marketing therapeutic brands to both recommending eye care clinicians and end consumers.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Brand / Marketer (batch 10, target 300, resuming with 300)
+    → substep 1a done: 300 companies in 0 rounds (resumed with 300) (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 300)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (300 = 0 seeds + 300 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 300 candidates as Brand / Marketer in 25 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/25…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.1: running kept=291 rejected=21
+    → substep 4a.2: verify chunk 2/25…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.2: running kept=303 rejected=21
+    → substep 4a.3: verify chunk 3/25…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.3: running kept=315 rejected=21
+    → substep 4a.4: verify chunk 4/25…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-4: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.4: running kept=327 rejected=21
+    → substep 4a.5: verify chunk 5/25…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-5: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.5: running kept=338 rejected=22
+    → substep 4a.6: verify chunk 6/25…
+      · verify-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-6: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.6: running kept=349 rejected=23
+    → substep 4a.7: verify chunk 7/25…
+      · verify-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-7: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.7: running kept=349 rejected=35
+    → substep 4a.8: verify chunk 8/25…
+      · verify-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-8: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.8: running kept=360 rejected=36
+    → substep 4a.9: verify chunk 9/25…
+      · verify-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-9: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.9: running kept=372 rejected=36
+    → substep 4a.10: verify chunk 10/25…
+      · verify-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-10: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.10: running kept=384 rejected=36
+    → substep 4a.11: verify chunk 11/25…
+      · verify-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-11: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.11: running kept=396 rejected=36
+    → substep 4a.12: verify chunk 12/25…
+      · verify-12: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-12: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.12: running kept=406 rejected=38
+    → substep 4a.13: verify chunk 13/25…
+      · verify-13: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-13: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.13: running kept=417 rejected=39
+    → substep 4a.14: verify chunk 14/25…
+      · verify-14: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-14: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.14: running kept=429 rejected=39
+    → substep 4a.15: verify chunk 15/25…
+      · verify-15: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-15: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.15: running kept=440 rejected=40
+    → substep 4a.16: verify chunk 16/25…
+      · verify-16: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-16: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.16: running kept=440 rejected=52
+    → substep 4a.17: verify chunk 17/25…
+      · verify-17: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-17: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 22s ago
+    → substep 4a.17: running kept=452 rejected=52
+    → substep 4a.18: verify chunk 18/25…
+      · verify-18: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-18: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 54s ago
+    → substep 4a.18: running kept=463 rejected=52
+    → substep 4a.19: verify chunk 19/25…
+      · verify-19: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-19: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 85s ago
+    → substep 4a.19: running kept=473 rejected=54
+    → substep 4a.20: verify chunk 20/25…
+      · verify-20: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-20: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 119s ago
+    → substep 4a.20: running kept=484 rejected=55
+    → substep 4a.21: verify chunk 21/25…
+      · verify-21: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-21: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 146s ago
+    → substep 4a.21: running kept=496 rejected=55
+    → substep 4a.22: verify chunk 22/25…
+      · verify-22: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-22: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 177s ago
+    → substep 4a.22: running kept=508 rejected=55
+    → substep 4a.23: verify chunk 23/25…
+      · verify-23: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-23: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 206s ago
+    → substep 4a.23: running kept=520 rejected=55
+    → substep 4a.24: verify chunk 24/25…
+      · verify-24: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-24: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 235s ago
+    → substep 4a.24: running kept=531 rejected=56
+    → substep 4a.25: verify chunk 25/25…
+      · verify-25: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-25: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 271s ago
+    → substep 4a.25: running kept=543 rejected=56
+    → substep 4a done: kept=543 rejected=56 (required=Brand / Marketer)
+    → substep 4b: write rejected list (56)
+    → substep 4c: market gate kept 543/543 (dropped 0)
+  [web_expand] merged +4; total unique=185 (target=600)
+  [chatgpt] fill ALL table rows this pass: 185 (merged=185, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 185 rows already carry their report columns
+    → substep 5c: merged filled rows into list (185 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 185 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] drop 'Lumenis Ltd.': out of market
+  [relevance] Global Dry Eye Treatment Market: in=185 geo_drop=0 heur_drop=0 llm_drop=1 kept=181 market_type=B2C uniform_role=Brand / Marketer
+  [xy] market-fit filter (B2C): 185 -> 184 companies (roles=['Brand / Marketer'])
+  [xy] industry=Healthcare/Pharmaceutical axis_def=llm | X=Product Strength ['Product / Molecule Portfolio', 'Therapeutic Coverage & Differentiation', 'Innovation & Clinical R&D', 'Manufacturing & Supply Reliability', 'Regulatory & Quality Compliance'] | Y=Business Strength ['Geographic Market Access', 'Brand / HCP Reputation', 'Financial Performance', 'Pipeline & Indication Roadmap', 'Partnerships & Business Expansion']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 184 companies (1/query, 2 queries per batch)
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · params [1-1]: 1/1 companies detailed
+      · params [2-2]: 1/1 companies detailed
+      · params [3-3]: 1/1 companies detailed
+      · params [4-4]: 1/1 companies detailed
+      · params [5-5]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [6-6]: 1/1 companies detailed
+      · params [7-7]: 1/1 companies detailed
+      · params [8-8]: 1/1 companies detailed
+      · params [9-9]: 1/1 companies detailed
+      · params [10-10]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [11-11]: 1/1 companies detailed
+      · params [12-12]: 1/1 companies detailed
+      · params [13-13]: 1/1 companies detailed
+      · params [14-14]: 1/1 companies detailed
+      · params [15-15]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [16-16]: 1/1 companies detailed
+      · params [17-17]: 1/1 companies detailed
+      · params [18-18]: 1/1 companies detailed
+      · params [19-19]: 1/1 companies detailed
+      · params [20-20]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [21-21]: 1/1 companies detailed
+      · params [22-22]: 1/1 companies detailed
+      · params [23-23]: 1/1 companies detailed
+      · params [24-24]: 1/1 companies detailed
+      · params [25-25]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [26-26]: 1/1 companies detailed
+      · params [27-27]: 1/1 companies detailed
+      · params [28-28]: 1/1 companies detailed
+      · params [29-29]: 1/1 companies detailed
+      · params [30-30]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [31-31]: 1/1 companies detailed
+      · params [32-32]: 1/1 companies detailed
+      · params [33-33]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [34-34]: 1/1 companies detailed
+      · params [35-35]: 1/1 companies detailed
+      · params [36-36]: 1/1 companies detailed
+      · params [37-37]: 1/1 companies detailed
+      · params [38-38]: 1/1 companies detailed
+      · params [39-39]: 1/1 companies detailed
+      · params [40-40]: 1/1 companies detailed
+      · params [41-41]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #2)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [42-42]: 1/1 companies detailed
+      · params [43-43]: 1/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+      · params [45-45]: 1/1 companies detailed
+      · params [46-46]: 1/1 companies detailed
+      · params [47-47]: 1/1 companies detailed
+      · params [48-48]: 1/1 companies detailed
+      · params [49-49]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · params [50-50]: 1/1 companies detailed
+      · params [51-51]: 1/1 companies detailed
+      · params [52-52]: 1/1 companies detailed
+      · params [53-53]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · params [54-54]: 1/1 companies detailed
+      · params [55-55]: 1/1 companies detailed
+      · params [56-56]: 1/1 companies detailed
+      · params [57-57]: 1/1 companies detailed
+      · params [58-58]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [59-59]: 1/1 companies detailed
+      · params [60-60]: 1/1 companies detailed
+      · params [61-61]: 1/1 companies detailed
+      · params [62-62]: 1/1 companies detailed
+      · params [63-63]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [64-64]: 1/1 companies detailed
+      · params [65-65]: 1/1 companies detailed
+      · params [66-66]: 1/1 companies detailed
+      · params [67-67]: 1/1 companies detailed
+      · params [68-68]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [69-69]: 1/1 companies detailed
+      · params [70-70]: 1/1 companies detailed
+      · params [71-71]: 1/1 companies detailed
+      · params [72-72]: 1/1 companies detailed
+      · params [73-73]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [74-74]: 1/1 companies detailed
+      · params [75-75]: 1/1 companies detailed
+      · params [76-76]: 1/1 companies detailed
+      · params [77-77]: 0/1 companies detailed
+      · params [78-78]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [79-79]: 1/1 companies detailed
+      · params [80-80]: 1/1 companies detailed
+      · params [81-81]: 1/1 companies detailed
+      · params [82-82]: 0/1 companies detailed
+      · params [83-83]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [84-84]: 1/1 companies detailed
+      · params [85-85]: 1/1 companies detailed
+      · params [86-86]: 1/1 companies detailed
+      · params [87-87]: 1/1 companies detailed
+      · params [88-88]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #3)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · params [89-89]: 1/1 companies detailed
+      · params [90-90]: 1/1 companies detailed
+      · params [91-91]: 1/1 companies detailed
+      · params [92-92]: 1/1 companies detailed
+      · params [93-93]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [94-94]: 1/1 companies detailed
+      · params [95-95]: 1/1 companies detailed
+      · params [96-96]: 1/1 companies detailed
+      · params [97-97]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [98-98]: 1/1 companies detailed
+      · params [99-99]: 1/1 companies detailed
+      · params [100-100]: 1/1 companies detailed
+      · params [101-101]: 1/1 companies detailed
+      · params [102-102]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [103-103]: 1/1 companies detailed
+      · params [104-104]: 1/1 companies detailed
+      · params [105-105]: 1/1 companies detailed
+      · params [106-106]: 1/1 companies detailed
+      · params [107-107]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [108-108]: 1/1 companies detailed
+      · params [109-109]: 1/1 companies detailed
+      · params [110-110]: 1/1 companies detailed
+      · params [111-111]: 1/1 companies detailed
+      · params [112-112]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [113-113]: 1/1 companies detailed
+      · params [114-114]: 1/1 companies detailed
+      · params [115-115]: 1/1 companies detailed
+      · params [116-116]: 1/1 companies detailed
+      · params [117-117]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [118-118]: 1/1 companies detailed
+      · params [119-119]: 1/1 companies detailed
+      · params [120-120]: 1/1 companies detailed
+      · params [121-121]: 1/1 companies detailed
+      · params [122-122]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [123-123]: 1/1 companies detailed
+      · params [124-124]: 1/1 companies detailed
+      · params [125-125]: 1/1 companies detailed
+      · params [126-126]: 1/1 companies detailed
+      · params [127-127]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [128-128]: 1/1 companies detailed
+      · params [129-129]: 1/1 companies detailed
+      · params [130-130]: 1/1 companies detailed
+      · params [131-131]: 1/1 companies detailed
+      · params [132-132]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #4)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [133-133]: 1/1 companies detailed
+      · params [134-134]: 1/1 companies detailed
+      · params [135-135]: 1/1 companies detailed
+      · params [136-136]: 1/1 companies detailed
+      · params [137-137]: 1/1 companies detailed
+      · params [138-138]: 1/1 companies detailed
+      · params [139-139]: 1/1 companies detailed
+      · params [140-140]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · params [141-141]: 1/1 companies detailed
+      · params [142-142]: 1/1 companies detailed
+      · params [143-143]: 1/1 companies detailed
+      · params [144-144]: 1/1 companies detailed
+      · params [145-145]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · params [146-146]: 1/1 companies detailed
+      · params [147-147]: 1/1 companies detailed
+      · params [148-148]: 1/1 companies detailed
+      · params [149-149]: 1/1 companies detailed
+      · params [150-150]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · params [151-151]: 1/1 companies detailed
+      · params [152-152]: 1/1 companies detailed
+      · params [153-153]: 0/1 companies detailed
+      · params [154-154]: 1/1 companies detailed
+      · params [155-155]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+      · params [156-156]: 1/1 companies detailed
+      · params [157-157]: 1/1 companies detailed
+      · params [158-158]: 1/1 companies detailed
+      · params [159-159]: 1/1 companies detailed
+      · params [160-160]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (24 this run) — solve it in the browser window
+      · params [161-161]: 1/1 companies detailed
+      · params [162-162]: 1/1 companies detailed
+      · params [163-163]: 1/1 companies detailed
+      · params [164-164]: 1/1 companies detailed
+      · params [165-165]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (25 this run) — solve it in the browser window
+      · params [166-166]: 1/1 companies detailed
+      · params [167-167]: 1/1 companies detailed
+      · params [168-168]: 1/1 companies detailed
+      · params [169-169]: 1/1 companies detailed
+      · params [170-170]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (26 this run) — solve it in the browser window
+      · params [171-171]: 1/1 companies detailed
+      · params [172-172]: 1/1 companies detailed
+      · params [173-173]: 1/1 companies detailed
+      · params [174-174]: 1/1 companies detailed
+      · params [175-175]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (27 this run) — solve it in the browser window
+      · params [176-176]: 1/1 companies detailed
+      · params [177-177]: 1/1 companies detailed
+      · params [178-178]: 1/1 companies detailed
+      · params [179-179]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #5)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (28 this run) — solve it in the browser window
+      · params [180-180]: 0/1 companies detailed
+      · params [181-181]: 1/1 companies detailed
+      · params [182-182]: 1/1 companies detailed
+      · params [183-183]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (29 this run) — solve it in the browser window
+      · params [184-184]: 1/1 companies detailed
+  [xy] parameter detail done: 181/184 companies
+    → [xy] score 1/184 AbbVie Inc.
+    → [xy] score 2/184 Abdi İbrahim İlaç San. ve Tic. A.Ş.
+    → [xy] score 3/184 Aché Laboratórios Farmacêuticos S.A.
+    → [xy] score 4/184 ACS Pharma
+    → [xy] score 5/184 ACS Pharma (Pty) Ltd
+    → [xy] score 6/184 Adcock Ingram
+    → [xy] score 7/184 Adcock Ingram Limited
+    → [xy] score 8/184 Aelo Pty Ltd
+    → [xy] score 9/184 AFT Pharmaceuticals
+    → [xy] score 10/184 AFT Pharmaceuticals Ltd
+    → [xy] score 11/184 AFT Pharmaceuticals Ltd.
+    → [xy] score 12/184 AGEPHA Pharma
+    → [xy] score 13/184 AiPharma Healthcare Sdn Bhd
+    → [xy] score 14/184 AiPharma Healthcare Sdn. Bhd.
+    → [xy] score 15/184 Ajanta Pharma Limited
+    → [xy] score 16/184 Aju Pharmaceutical Co., Ltd.
+    → [xy] score 17/184 Alcon Inc.
+    → [xy] score 18/184 Alembic Pharmaceuticals Ltd.
+    → [xy] score 19/184 Allergan
+    → [xy] score 20/184 Allergan Sales, LLC
+    → [xy] score 21/184 Amman Pharmaceutical Industries
+    → [xy] score 22/184 Anóthen Wellness
+    → [xy] score 23/184 Apollo Hospitals Enterprise Ltd.
+    → [xy] score 24/184 Apotex Pty Ltd
+    → [xy] score 25/184 Arrotex Pharmaceuticals Pty Ltd
+    → [xy] score 26/184 Aspen Pharmacare Holdings Limited
+    → [xy] score 27/184 Aspen Pharmacare Holdings Ltd
+    → [xy] score 28/184 Aspen Remedies
+    → [xy] score 29/184 Aurolab
+    → [xy] score 30/184 Avizor S.A.
+    → [xy] score 31/184 Bausch & Lomb Inc.
+    → [xy] score 32/184 Bausch & Lomb Incorporated
+    → [xy] score 33/184 Bausch & Lomb Laboratories
+    → [xy] score 34/184 Bausch & Lomb South Africa
+    → [xy] score 35/184 Bioos
+    → [xy] score 36/184 Biopharma S.A.
+    → [xy] score 37/184 BioRevive Pty Ltd
+    → [xy] score 38/184 Blackmores Ltd
+    → [xy] score 39/184 BlephEx, LLC.
+    → [xy] score 40/184 Bruder Healthcare Company
+    → [xy] score 41/184 Brunel Laboratoria (Pty) Ltd
+    → [xy] score 42/184 Cipla Ltd.
+    → [xy] score 43/184 CorneaCare, Inc.
+    → [xy] score 44/184 Corneal Lens Corporation
+    → [xy] score 45/184 Cristália Produtos Químicos Farmacêuticos Ltda.
+    → [xy] score 46/184 Delta Grand Pharma for Pharmaceutical Industries
+    → [xy] score 47/184 DEVA Holding A.Ş.
+    → [xy] score 48/184 Disop S.A.
+    → [xy] score 49/184 Divisa Herbals Pvt. Ltd.
+    → [xy] score 50/184 Drugfield Pharmaceuticals Limited
+    → [xy] score 51/184 Duopharma Biotech Berhad
+    → [xy] score 52/184 East Midlands Pharma Ltd
+    → [xy] score 53/184 Egyptian International Pharmaceutical Industries C
+    → [xy] score 54/184 Elin Eyes
+    → [xy] score 55/184 EMS S.A.
+    → [xy] score 56/184 Ensight Pharmaceuticals Inc.
+    → [xy] score 57/184 Entod Pharmaceuticals Limited
+    → [xy] score 58/184 Entod Pharmaceuticals Ltd
+    → [xy] score 59/184 Entod Pharmaceuticals Ltd.
+    → [xy] score 60/184 Espansione Group
+    → [xy] score 61/184 Eurofarma Laboratórios S.A.
+    → [xy] score 62/184 EVA Pharma
+    → [xy] score 63/184 Eximore Ltd.
+    → [xy] score 64/184 Eyecirque Private Limited
+    → [xy] score 65/184 Eyeganics LLC
+    → [xy] score 66/184 FDC Limited
+    → [xy] score 67/184 Fischer Pharmaceuticals Ltd.
+    → [xy] score 68/184 Fithealth
+    → [xy] score 69/184 Gbio Farmacêutica
+    → [xy] score 70/184 Genomma Lab Internacional S.A.B. de C.V.
+    → [xy] score 71/184 Geolab Indústria Farmacêutica S/A
+    → [xy] score 72/184 Global Napi Pharmaceuticals
+    → [xy] score 73/184 GMG Ophthalmics
+    → [xy] score 74/184 Gulf Pharmaceutical Industries
+    → [xy] score 75/184 Hanmi Pharmaceutical Co., Ltd.
+    → [xy] score 76/184 Harrow, Inc.
+    → [xy] score 77/184 Health House
+      · score Health House: unparsed reply '20\nIf you would like, I can provide:\nA detailed breakdown of each individual parameter score\nA compa'
+      · score Health House: unparsed reply '5\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+    → [xy] no score for Health House (AI Mode unavailable) — left unscored for retry
+    → [xy] score 78/184 Health Right Australia Pty Ltd
+    → [xy] score 79/184 Horus Pharma
+    → [xy] score 80/184 Huons Co., Ltd.
+    → [xy] score 81/184 I-MED Pharma Inc.
+    → [xy] score 82/184 Inter Pharma Public Company Limited
+      · score Inter Pharma Public Company Limited: unparsed reply '42\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+      · score Inter Pharma Public Company Limited: unparsed reply '35\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+    → [xy] no score for Inter Pharma Public Company Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 83/184 Jadran-Galenski Laboratorij d.d.
+    → [xy] score 84/184 Jagat Pharma
+    → [xy] score 85/184 Jamjoom Pharmaceuticals Co.
+    → [xy] score 86/184 Jiangsu Hengrui Pharmaceuticals Co., Ltd.
+    → [xy] score 87/184 Johnson & Johnson Vision Care, Inc.
+    → [xy] score 88/184 Julphar Gulf Pharmaceutical Industries
+    → [xy] score 89/184 JW Pharmaceutical
+    → [xy] score 90/184 JW Pharmaceutical Corporation
+    → [xy] score 91/184 Kenvue Inc.
+    → [xy] score 92/184 Kwangdong Pharmaceutical Co., Ltd.
+    → [xy] score 93/184 Laboratoires SAIPH
+    → [xy] score 94/184 Laboratoires Théa
+    → [xy] score 95/184 Laboratoires Théa SAS
+    → [xy] score 96/184 Laboratorio Edgardo Jorge Gezzi
+    → [xy] score 97/184 Laboratorio Gramon Millet S.A.
+    → [xy] score 98/184 Laboratorios Elea S.A.C.I.F. y A.
+    → [xy] score 99/184 Laboratorios Poen S.A.
+    → [xy] score 100/184 Laboratorios Poen S.A.U.
+    → [xy] score 101/184 Laboratorios Saval S.A.
+    → [xy] score 102/184 Laboratorios Sophia, S.A. de C.V.
+    → [xy] score 103/184 Laboratório Cristália
+    → [xy] score 104/184 Laboratório Cristália S.A.
+    → [xy] score 105/184 Latinofarma Indústria Farmacêutica Ltda.
+    → [xy] score 106/184 Leeford Healthcare Ltd.
+    → [xy] score 107/184 Legrand Pharma Indústria Farmacêutica Ltda.
+    → [xy] score 108/184 Les Laboratoires UNIMED
+    → [xy] score 109/184 Lifezen Healthcare Private Limited
+    → [xy] score 110/184 Lion Corporation
+    → [xy] score 111/184 Lion Korea Corporation
+    → [xy] score 112/184 Lunatus Marketing & Consulting FZCO
+    → [xy] score 113/184 Macleods Pharmaceuticals Ltd.
+    → [xy] score 114/184 Mankind Pharma Limited
+    → [xy] score 115/184 Mankind Pharma Ltd.
+    → [xy] score 116/184 Maxvue Vision Sdn. Bhd.
+    → [xy] score 117/184 MD EyeCare Pty Ltd
+    → [xy] score 118/184 Medinox
+    → [xy] score 119/184 Medpharma
+    → [xy] score 120/184 Melcare Biomedical Pty Ltd
+    → [xy] score 121/184 Micro Labs Limited
+    → [xy] score 122/184 Micro Labs Ltd.
+    → [xy] score 123/184 Micropharma (M) Sdn. Bhd.
+    → [xy] score 124/184 Millimed BFS Co., Ltd.
+    → [xy] score 125/184 Moorfields Pharmaceuticals
+    → [xy] score 126/184 Naveh Pharma Ltd.
+    → [xy] score 127/184 Neon Laboratories Ltd.
+    → [xy] score 128/184 Next Biosciences
+    → [xy] score 129/184 Oasis Medical Inc.
+    → [xy] score 130/184 OcuSOFT, Inc.
+    → [xy] score 131/184 Optima Pharmazeutische GmbH
+    → [xy] score 132/184 Optus Pharmaceutical Co., Ltd.
+    → [xy] score 133/184 Orchidia Pharma
+    → [xy] score 134/184 Orchidia Pharmaceutical Industries
+    → [xy] score 135/184 Otsuka Pharmaceutical Co., Ltd.
+    → [xy] score 136/184 Oyster Point Pharma, Inc.
+    → [xy] score 137/184 Petrus Pharmaceuticals Pty Ltd
+    → [xy] score 138/184 Pharco Corporation
+    → [xy] score 139/184 Pharco Pharmaceuticals
+    → [xy] score 140/184 PharmaCare Laboratories Pty Ltd
+    → [xy] score 141/184 Prestige Consumer Healthcare Inc.
+    → [xy] score 142/184 PT Cendo Pharmaceutical Industries
+    → [xy] score 143/184 PT Combiphar
+    → [xy] score 144/184 PT Dexa Medica
+    → [xy] score 145/184 PT Kalbe Farma Tbk
+    → [xy] score 146/184 PT Konimex
+    → [xy] score 147/184 PT Sanbe Farma
+    → [xy] score 148/184 Rayner Pharmaceuticals Ltd
+    → [xy] score 149/184 Resono Ophthalmic S.r.l.
+    → [xy] score 150/184 Rohto Pharmaceutical Co., Ltd.
+    → [xy] score 151/184 Rxilient Biotech Pte. Ltd.
+    → [xy] score 152/184 Samil Pharmaceutical Co., Ltd.
+    → [xy] score 153/184 Santen Pharmaceutical Co., Ltd.
+      · score Santen Pharmaceutical Co., Ltd.: unparsed reply '86\nAI can make mistakes, so double-check responses'
+    → [xy] no score for Santen Pharmaceutical Co., Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 154/184 Savant Health Ltd
+    → [xy] score 155/184 Scope Ophthalmology Ltd
+    → [xy] score 156/184 Senju Pharmaceutical Co., Ltd.
+    → [xy] score 157/184 Sentiss Pharma Pvt. Ltd.
+    → [xy] score 158/184 Shenyang Xingqi Pharmaceutical Co., Ltd.
+    → [xy] score 159/184 Similasan AG
+    → [xy] score 160/184 Square Pharmaceuticals PLC
+    → [xy] score 161/184 Sreedhareeyam Ayurvedic Medicines Pvt. Ltd.
+    → [xy] score 162/184 STADA Philippines
+    → [xy] score 163/184 Steris Healthcare Pvt. Ltd.
+    → [xy] score 164/184 Stiltec Global Pty Ltd
+    → [xy] score 165/184 Sun Pharmaceutical Industries Inc.
+    → [xy] score 166/184 Sun Pharmaceutical Industries Limited
+    → [xy] score 167/184 Sunways India Private Limited
+    → [xy] score 168/184 Sunways India Pvt. Ltd.
+    → [xy] score 169/184 Taisho Pharmaceutical Co., Ltd.
+    → [xy] score 170/184 Talent Pharma
+    → [xy] score 171/184 Tarsus Pharmaceuticals, Inc.
+    → [xy] score 172/184 Tecnoquímicas S.A.
+    → [xy] score 173/184 Tenth of Ramadan for Pharmaceutical Industries and
+    → [xy] score 174/184 Tenth of Ramadan Pharmaceutical Industries and Dia
+    → [xy] score 175/184 The Body Doctor Ltd
+    → [xy] score 176/184 TRB Chemedica International SA
+    → [xy] score 177/184 Ultramedica Co., Ltd.
+    → [xy] score 178/184 Unimed Pharmaceuticals Inc.
+    → [xy] score 179/184 Ursapharm Arzneimittel GmbH
+    → [xy] score 180/184 VISUfarma B.V.
+      · score VISUfarma B.V.: unparsed reply '82\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.'
+      · score VISUfarma B.V.: unparsed reply '54.6\nThis is for informational purposes only. For medical advice or diagnosis, consult a professiona'
+    → [xy] no score for VISUfarma B.V. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 181/184 Wize Pharma, Inc.
+    → [xy] score 182/184 World Medicine İlaç San. ve Tic. A.Ş.
+    → [xy] score 183/184 Xepa-Soul Pattinson (Malaysia) Sdn Bhd
+    → [xy] score 184/184 Zocular LLC
+    → [xy] scored 184 rows (Healthcare/Pharmaceutical) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] blank 'Rxilient Biotech Pte. Ltd.' (wiki_miss)
+    → [found-in] blank 'Eyeganics LLC' (wiki_miss)
+    → [found-in] city/country filled=0 kept=182 blank=2
+    → [table] 184 rows | graph top 20 | html=global_dry_eye_treatment_market_global_report.html
+
+=== OpenAI cost (this run) ===
+  run_id : dc81b3ac
+  market : Global Dry Eye Treatment Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (184 rows) → global_dry_eye_treatment_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 184 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_dry_eye_treatment_market_global\global_dry_eye_treatment_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_dry_eye_treatment_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Dry Eye Treatment Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 300,
+  "existing_before": 181,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 300,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 543,
+  "rejected_mid": 56,
+  "chatgpt_filled": 185,
+  "rejected_final": 0,
+  "total_after": 184,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_dry_eye_treatment_market_global\\global_dry_eye_treatment_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "dc81b3ac",
+    "market": "Global Dry Eye Treatment Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-17T04:49:10.320686+00:00",
+    "ended_at": "2026-09-17T09:31:35.424684+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_dry_eye_treatment_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 184,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_dry_eye_treatment_market_global\\global_dry_eye_treatment_market_global_FINAL.xlsx",
+      "rejected_mid": 56,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Healthcare",
+    "industry_category": "Pharmaceutical",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the unique dynamics of the dry eye treatment market, where product differentiation hinges on molecule diversity, therapeutic coverage, and clinical innovation, while business strength depends on global access, specialist reputation, and strategic partnerships. They align with the fixed axes of Product Strength and Business Strength while being specific to ophthalmic pharmaceuticals.",
+    "parameter_definitions": {
+      "x": {
+        "Product / Molecule Portfolio": "Breadth and depth of approved dry eye treatments, including prescription and OTC products across artificial tears, anti-inflammatories, immunomodulators, and secretagogues. Strength is shown by multiple approved products covering different severity levels and mechanisms.",
+        "Therapeutic Coverage & Differentiation": "Ability to address diverse dry eye subtypes (aqueous-deficient, evaporative, mixed) and patient segments with differentiated efficacy, safety, or convenience. Evidence includes clinical data showing superiority over existing therapies and unique mechanisms of action.",
+        "Innovation & Clinical R&D": "Investment in novel dry eye therapies such as new formulations, biologics, gene therapies, and devices, with a robust pipeline of Phase II/III candidates. Strength is indicated by high R&D spend, number of active trials, and recent approvals.",
+        "Manufacturing & Supply Reliability": "Capacity to produce sterile ophthalmic products at scale with consistent quality and minimal supply disruptions. Evidence includes FDA inspection records, recall history, and ability to meet global demand.",
+        "Regulatory & Quality Compliance": "Track record of obtaining and maintaining approvals from agencies like FDA, EMA, and PMDA for dry eye products. Strength is shown by clean regulatory histories, timely approvals, and compliance with cGMP standards."
+      },
+      "y": {
+        "Geographic Market Access": "Extent of product availability and reimbursement across major markets (US, EU, Japan, China) and emerging regions. Strength is evidenced by number of countries with approved products, payer coverage, and local partnerships.",
+        "Brand / HCP Reputation": "Recognition and trust among ophthalmologists, optometrists, and patients for dry eye treatments. Strong reputation is shown by market share, prescription volume, and positive sentiment in medical communities.",
+        "Financial Performance": "Revenue growth, profitability, and financial stability from dry eye product sales. Evidence includes segment revenue, gross margins, and consistent earnings from ophthalmic franchises.",
+        "Pipeline & Indication Roadmap": "Strategic plan for expanding dry eye indications, formulations, or delivery methods, with clear timelines and milestones. Strength is indicated by late-stage candidates and lifecycle management strategies.",
+        "Partnerships & Business Expansion": "Collaborations with eye care specialists, distributors, and technology firms to enhance market reach and innovation. Evidence includes licensing deals, co-development agreements, and acquisitions in dry eye space."
+      }
+    },
+    "x_features": [
+      "Product / Molecule Portfolio",
+      "Therapeutic Coverage & Differentiation",
+      "Innovation & Clinical R&D",
+      "Manufacturing & Supply Reliability",
+      "Regulatory & Quality Compliance"
+    ],
+    "y_features": [
+      "Geographic Market Access",
+      "Brand / HCP Reputation",
+      "Financial Performance",
+      "Pipeline & Indication Roadmap",
+      "Partnerships & Business Expansion"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 79.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 184,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 185,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 1,
+      "kept": 181,
+      "player_type": "B2C",
+      "market_type": "B2C",
+      "market_definition": "The global market for pharmaceutical and device-based treatments for dry eye disease, including prescription drugs, OTC artificial tears, and in-office procedures.",
+      "keep_roles": [
+        "Brand / Marketer"
+      ],
+      "uniform_role": "Brand / Marketer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_dry_eye_treatment_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 184  (target 300)

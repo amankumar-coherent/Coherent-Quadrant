@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions MCOT and patch ECG monitoring, but no comprehensive portfolio details."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No specific clinical performance or safety data provided; only general remote cardiac monitoring."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mention of patch ECG monitoring development and acquisition by Philips suggests innovation, but no R&D specifics."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No explicit regulatory certifications mentioned; only general cardiac monitoring services."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Presence in United States only; no evidence of global reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Described as 'leader in cardiac medical devices and remote monitoring' and acquired by Philips."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Acquired for $2.8 billion indicates financial strength, but no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mention of patch ECG monitoring development suggests pipeline, but no specific indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired by Philips in 2021, a major business expansion."
+    }
+  ],
+  "evidence_used": true
+}

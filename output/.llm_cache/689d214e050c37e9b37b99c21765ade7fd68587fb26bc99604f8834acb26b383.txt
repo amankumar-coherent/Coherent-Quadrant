@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single product, the GutTracker® patch system, with no other products listed. The company focuses on GI monitoring only."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The website claims the system provides 'clinical insight not possible with other diagnostics' and includes a quote from a Mayo Clinic professor, but no specific clinical trial data or safety outcomes are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "The company lists numerous patents (e.g., 9,943,264; 11,826,170; 10,485,444) and describes core competencies in signal detection and algorithm development, indicating strong R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities, quality systems, or certifications (e.g., ISO) is provided."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "The company is based in Mountain View, CA, and mentions 'U.S. alone' for patient numbers, but no evidence of international presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "A quote from a Mayo Clinic professor suggests some clinical credibility, but no evidence of widespread adoption or hospital partnerships beyond that."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, funding, etc.) is provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The company targets multiple GI disorders (gastroparesis, constipation, IBS, IBD), but no specific pipeline products or expansion plans are mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions collaboration with Voler Systems and being a 'Company in Residence' at Fogarty Innovation, indicating some partnerships, but no major commercial deals."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

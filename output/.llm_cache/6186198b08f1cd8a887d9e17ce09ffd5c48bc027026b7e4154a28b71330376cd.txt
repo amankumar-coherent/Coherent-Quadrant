@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "Gujarat Gas is a city gas distributor and does not operate LNG liquefaction trains.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "As a distributor, Gujarat Gas does not operate liquefaction facilities, so utilization is not applicable.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "Gujarat Gas operates no liquefaction trains; it is a downstream distributor.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "Gujarat Gas secures natural gas feedstock through sourcing LNG and pipeline gas, but specific strategy details are not disclosed.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["sourcing LNG."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "The percentage of feedstock from long-term contracts versus spot is not publicly disclosed by Gujarat Gas.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Gujarat Gas's feedstock source diversification is not detailed, but as a major distributor it likely has multiple sources.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 1,
+      "answer": "Gujarat Gas does not operate LNG trains, so on-stream factor is not applicable.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 1,
+      "answer": "No liquefaction facilities exist, so no unplanned outages or force majeure events are relevant.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 1,
+      "answer": "Planned maintenance turnarounds are not applicable as Gujarat Gas has no liquefaction assets.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Gujarat Gas's TRIR for LNG operations is not publicly reported; as a distributor, its safety metrics focus on distribution networks.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No major regulatory fines or sanctions are known for Gujarat Gas in the last 5 years, but specific LNG-related incidents are not documented.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Gujarat Gas likely holds certifications like ISO 14001 for its distribution operations, but specific LNG asset certifications are not disclosed.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "Carbon intensity for LNG production is not applicable as Gujarat Gas does not produce LNG.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "Gujarat Gas may implement emission reduction measures in distribution, but no specific LNG production measures are known.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "Gujarat Gas publishes sustainability reports, but they focus on distribution, not LNG production.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "Gujarat Gas's contracted LNG sales volume is not disclosed; as a distributor, it purchases LNG rather than selling under long-term agreements.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "Average remaining duration of LNG sales contracts is not applicable or disclosed for Gujarat Gas.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 3,
+      "answer": "Spot LNG sales percentage is not disclosed; Gujarat Gas primarily sources LNG for distribution.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "Gujarat Gas operates primarily in Gujarat, India, and does not export LNG to multiple countries.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "Percentage of LNG sales to top 3 customers is not disclosed; as a distributor, customer concentration is not publicly detailed.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 3,
+      "answer": "Gujarat Gas's portfolio is concentrated in Gujarat, India, not balanced across Asia, Europe, and the Americas.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "Gujarat Gas's revenue and EBITDA from LNG operations are not separately disclosed; financials are for overall distribution.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "Debt-to-equity and interest coverage ratios are not provided in the knowledge base; as a large distributor, it likely has moderate leverage.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "Free cash flow and liquidity details are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 1,
+      "answer": "Gujarat Gas has no LNG liquefaction projects under construction or at FID.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 1,
+      "answer": "No new liquefaction capacity is expected as Gujarat Gas is not an LNG producer.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 1,
+      "answer": "No expansion projects in LNG liquefaction are in development for Gujarat Gas.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 1,
+      "answer": "Gujarat Gas has no global market share in LNG production or exports.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "Key joint venture partners in LNG projects are not applicable; Gujarat Gas is a distributor, not an LNG producer.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "Gujarat Gas's LNG portfolio is not comparable to producers; it is a downstream distributor with no liquefaction assets.",
+      "evidence_urls": ["https://www.gujaratgas.com"],
+      "evidence_snippets": ["Major city gas distributor in Gujarat, sourcing LNG."],
+      "grounding": "supported"
+    }
+  ]
+}

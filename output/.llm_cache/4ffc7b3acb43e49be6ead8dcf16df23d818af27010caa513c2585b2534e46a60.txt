@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Arteris is an IP provider, not a foundry, so it does not offer process nodes; its IP is designed for use across various nodes, but no specific advanced node leadership is evidenced.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Arteris does not lead in process technology; it provides interconnect IP that is process-agnostic, but no specific process technology leadership is documented.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Arteris does not have a process node roadmap; its IP supports various nodes, but no specific next-generation node plans are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Arteris is specialized in system IP (NoC, cache, and integration tools) rather than offering logic, memory, analog, or power products, but it covers a range of interconnect and cache IP.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["NoC, cache IP and system integration automation tools for modern SoC design and assembly."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Arteris does not disclose revenue split by product type; as an IP company, its revenue is primarily from IP licensing, but no specific breakdown is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Arteris does not provide OSAT services; it partners with foundries and OSATs indirectly through its IP, but no direct OSAT offerings are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Arteris owns proprietary interconnect IP such as FlexNoC, Ncore, and CodaCache, which are differentiated by their physical awareness and QoS features.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris coherent interconnect technology is critical for complex multi-core and heterogeneous systems", "FlexNoC Physically Aware IP allows early issue detection, aiding timing closure in backend design flows."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "Arteris licenses its IP to other firms and also supports third-party IP like Arm and RISC-V, as evidenced by partnerships and solution briefs.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris expands partnership with Arm to accelerate semiconductor cybersecurity", "Accelerate and Derisk RISC-V-based SoC Designs With Arteris"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Arteris has strong architecture for AI, automotive, and multi-die designs, with specific solutions and customer testimonials from AMD, NXP, and others.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris to provide FlexGen smart NoC IP in next-generation AMD AI chiplet designs", "NXP Semiconductors expands its use of Arteris system IP products across its AI enabled silicon solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Arteris is an IP company and does not have wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Arteris does not have yield rates as it does not manufacture; yield is the responsibility of foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Arteris offers multi-die and chiplet solutions, as evidenced by its multi-die solution and support for chiplet-based designs, though it does not have its own packaging capacity.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris multi-die solution delivers foundational technology for rapid chiplet-based innovation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "Arteris does not publicly list quality certifications like ISO 9001 or IATF 16949; as an IP provider, it may not hold manufacturing certifications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Arteris does not disclose defect rates; its IP is designed for reliability, but no specific DPPM data is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "Arteris does not provide specific information on RoHS, REACH, or conflict minerals compliance; as an IP company, it may not be directly subject to these regulations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Arteris has a global presence with offices in the US, Europe, and Asia, as indicated by its contact information and customer base.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["United States; Europe; Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Arteris serves multiple end-markets including automotive, industrial, consumer, and enterprise computing, with customers like AMD, NXP, and Bosch.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris products deliver the underlying data movement fabric in automotive, industrial, and consumer applications."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Arteris's global presence and diverse customer base across regions help mitigate regional risks, but specific risk mitigation strategies are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Arteris's top customers include AMD, Samsung, NXP, and Bosch, but customer concentration risk is not disclosed; the company appears to have a broad customer base.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Trusted by: AMD logo, Altera logo, Samsung logo, NXP logo, mobileye, Renesas logo, Microchip logo, Bosch logo, Baidu, Socionext logo, KYOCERA logo, TI logo, STMicroelectronics logo"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Arteris has strategic partnerships with Arm, AMD, Altera, and others, and participates in standards bodies, as evidenced by press releases and partner listings.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris expands partnership with Arm to accelerate semiconductor cybersecurity", "Arteris selected by Altera to advance intelligent computing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Arteris collaborates with foundries, EDA vendors, and ecosystem players to deliver complete solutions, as indicated by its partnerships and standards participation.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Partners", "Standards"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Arteris is a public company, but specific financial figures for revenue, net income, and free cash flow are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Arteris's capital expenditure details are not available; as an IP company, CapEx is likely minimal compared to manufacturers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Arteris's balance sheet details are not provided; as a public company, it may have access to capital markets, but no specific data is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Arteris's roadmap includes innovations in AI, multi-die, and security, as evidenced by recent press releases and product announcements.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris named to Fast Company’s World’s Most Innovative Companies list of 2026", "Arteris accelerates silicon innovation with expanded multi-die solution"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Arteris has a clear roadmap for AI and multi-die technologies, but no explicit plans for quantum or advanced memory are mentioned.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris to provide FlexGen smart NoC IP in next-generation AMD AI chiplet designs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Arteris's roadmap aligns with industry trends such as AI, chiplets, and security, as evidenced by its product developments and customer adoption.",
+      "evidence_urls": ["https://www.arteris.com"],
+      "evidence_snippets": ["Arteris continues to deliver key innovations to advance semiconductors in the AI era."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "Arteris does not have fabs or expansion projects; it is an IP company and does not manufacture.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Arteris's revenue growth rate is not provided, but its expanding partnerships and customer wins suggest growth; no specific figures are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Arteris does not need to fund capacity expansions as it is an IP company; its growth is driven by licensing and partnerships.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

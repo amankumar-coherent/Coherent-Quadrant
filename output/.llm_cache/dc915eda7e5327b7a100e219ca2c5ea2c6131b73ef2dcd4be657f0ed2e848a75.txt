@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single product line: in-ear wearable for physiological monitoring (core body temperature, heart rate, HRV, motion). No mention of multiple devices or variants."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "ClinicalTrials.gov lists a feasibility study (NCT03139955), and claims of accuracy to ECG gold standard for heart rate. However, no published results or regulatory clearance cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Described as 'first non-invasive in-ear safety solutions' and 'cutting-edge in-ear physiological monitoring technology' (Defence Online). Indicates innovative approach."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence found regarding manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "ClinicalTrials.gov study suggests regulatory engagement, but no FDA clearance or CE marking mentioned. No explicit compliance certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Headquartered in London, UK, with presence in industrial, emergency services, and defense sectors. Contract with US Navy via Defense Innovation Unit indicates international reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Featured in PCMag and Occupational Health & Safety, and partnership with Wesco suggests some trust. But limited evidence of widespread clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "PitchBook lists 18 employees, indicating small size. No revenue or funding figures provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expanding from safety to defense (US Navy pilots) and mentions of fatigue monitoring, heat stress, noise exposure. Shows potential for new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Wesco (global safety distributor) and contract with Defense Innovation Unit. Indicates business expansion."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only a single product: the Sunrise chin sensor wearable for home sleep apnea testing. No other products or portfolio breadth are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Claims 'clinical precision superior', '10 years of scientific research', '+15 recognized scientific publications', and '+95% patient satisfaction'. Also FDA De Novo and NICE recommendation imply clinical validation."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA De Novo granted for 'innovative technology without precedent', 10 years of research, and 15+ scientific publications indicate strong R&D and innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions ISO13485 certification, indicating quality management system, but no details on manufacturing scale or processes."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Explicitly states 'FDA De Novo granted', 'recommended in NICE guidelines', 'CE' marking, and ISO13485 certification, showing strong regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Website offers separate pages for EU, Europe/rest of world, and United States, indicating multi-market presence. Also has distributor page, but no specific countries or scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA De Novo and NICE recommendation enhance trust. Patient testimonials and high satisfaction rate (+95%) suggest adoption, but no hospital or physician adoption numbers."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, funding, profitability) is provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of future products, new indications, or pipeline beyond current sleep apnea diagnostic."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Has pages for practitioners, employers, insurers, and distributors, indicating potential partnerships, but no specific partnerships or expansion deals are mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

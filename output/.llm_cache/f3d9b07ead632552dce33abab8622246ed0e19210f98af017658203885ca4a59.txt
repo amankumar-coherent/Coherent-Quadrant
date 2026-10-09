@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only one product, Biolinq Shine, a needle-free CGM. No other devices or portfolio breadth are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence indicates a pivotal clinical trial was concluded and FDA De Novo clearance was granted, but no specific accuracy or safety data is provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Biolinq is described as pioneering precision multi-analyte wearable sensors and using semiconductor manufacturing inspiration, indicating strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions semiconductor manufacturing inspiration but no details on manufacturing scale or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA granted De Novo classification, and the company has regulatory strategy and FDA submission experience, indicating strong regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of geographic presence or distribution channels beyond FDA clearance in the US."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and media coverage suggest some trust, but no evidence of clinical adoption rates or physician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Secured $58 million in funding, indicating financial backing, but no revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Company is developing multi-analyte sensors and targeting metabolic health, but only one product is cleared for Type 2 diabetes."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mention of collaboration with MTEC for clinical trial management, but no other partnerships or expansion strategies detailed."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Sanofi has a robust pipeline with 61 compounds in clinical development and 20 in Phase 3, indicating a strong late-stage pipeline.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/our-pipeline"],
+      "evidence_snippets": ["61 Compounds in clinical development", "20 Clinical trials in phase 3"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Sanofi's pipeline spans diverse therapeutic areas including immunology, oncology, rare diseases, and vaccines, indicating a wide range of targets.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/therapeutic-areas"],
+      "evidence_snippets": ["Immunology", "Neurology", "Oncology", "Rare Diseases", "Vaccines"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "Sanofi's pipeline includes products targeting top-selling biologics like Dupixent, but specific biosimilar candidates are not detailed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "The KB does not provide specific bioreactor capacity figures, but Sanofi's global manufacturing network suggests significant capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 8,
+      "answer": "Sanofi has manufacturing sites globally, including for vaccines, indicating multi-site redundancy.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/manufacturing-and-supply"],
+      "evidence_snippets": ["Manufacturing and Supply", "Vaccines Manufacturing and Supply"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The KB does not specify whether Sanofi uses single-use or stainless steel processes, but the company likely uses both across its facilities.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Sanofi's R&D is AI-powered and includes advanced analytical techniques, as indicated by the mention of mass spectrometry in their labs.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/digital-artificial-intelligence"],
+      "evidence_snippets": ["Preparing samples for mass spectrometry analysis"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "The KB does not provide specific numbers on validated analytical methods for biosimilar comparability.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Sanofi publishes research and clinical trial results, but specific studies on biosimilar similarity are not mentioned in the KB.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/research-publications"],
+      "evidence_snippets": ["Research Publications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "Sanofi has recent approvals like MenQuadfi in the EU, indicating a strong regulatory track record, though not all are biologics.",
+      "evidence_urls": ["https://www.sanofi.com/en/media-room/press-releases"],
+      "evidence_snippets": ["Sanofi’s MenQuadfi approved in the EU"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "The KB does not provide average approval times, but Sanofi's experience suggests reasonable timelines.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Sanofi announced a decision not to submit amlitelimab for atopic dermatitis, indicating some regulatory setbacks.",
+      "evidence_urls": ["https://www.sanofi.com/en/media-room/press-releases"],
+      "evidence_snippets": ["Sanofi announces decision not to submit amlitelimab in atopic dermatitis for global regulatory reviews"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Sanofi uses various expression systems including CHO cells for biologics, as is standard in the industry.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Sanofi has proprietary platforms like its technology platforms for vaccines and biologics, but specifics are not detailed.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/technology-platforms"],
+      "evidence_snippets": ["Technology Platforms"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Sanofi is investing heavily in AI and digital for R&D, as stated in their strategy.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/digital-artificial-intelligence"],
+      "evidence_snippets": ["AI-powered biopharmaceutical company", "Artificial Intelligence in R&D"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Sanofi operates globally with products available in numerous countries, as indicated by its international presence.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-company"],
+      "evidence_snippets": ["Global Health Unit", "External Innovation in North America, Europe, China"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Sanofi has a strong presence in emerging markets like China, with dedicated external innovation and partnering focus.",
+      "evidence_urls": ["https://www.sanofi.com/en/partnering/partnering-focus-areas/china"],
+      "evidence_snippets": ["China"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "Sanofi has local manufacturing and partnerships in key regions, including China and Europe.",
+      "evidence_urls": ["https://www.sanofi.com/en/our-science/manufacturing-and-supply"],
+      "evidence_snippets": ["Manufacturing and Supply", "External Innovation in China"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "Sanofi reported double-digit sales growth in Q2 2026, indicating strong revenue growth.",
+      "evidence_urls": ["https://www.sanofi.com/en/media-room/press-releases"],
+      "evidence_snippets": ["Q2 2026: double-digit sales growth and strong business EPS growth"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Sanofi's overall profitability is strong, but specific biosimilar segment profitability is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Sanofi upgraded its 2026 guidance, suggesting positive growth outlook, but specific biosimilar market share projections are not available.",
+      "evidence_urls": ["https://www.sanofi.com/en/media-room/press-releases"],
+      "evidence_snippets": ["2026 guidance upgraded"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "Sanofi has numerous partnerships and collaborations, as indicated by its partnering focus areas and external innovation teams.",
+      "evidence_urls": ["https://www.sanofi.com/en/partnering"],
+      "evidence_snippets": ["Partnering Focus Areas", "External Innovation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "The KB does not provide specific numbers on healthcare providers or hospitals as customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "The KB does not mention specific long-term supply agreements with payers or GPOs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "The KB does not provide specific discount percentages for biosimilars.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "The KB does not mention value-added services for payers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "The KB does not provide comparative pricing information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Sanofi's global manufacturing network likely involves multiple suppliers, but specifics are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Sanofi likely has risk management plans given its scale, but not detailed in KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "The KB does not provide lead time information for key inputs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

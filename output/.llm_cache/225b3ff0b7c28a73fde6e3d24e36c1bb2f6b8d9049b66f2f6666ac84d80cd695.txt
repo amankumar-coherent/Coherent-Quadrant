@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only one product line: IDUN Guardian 4 (in-ear EEG earbuds) with variants (Starter, add-ons). No other products mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "In-ear EEG validated in research for past decade, but device is not a medical device and not FDA evaluated. No clinical trial data or safety certifications provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Advanced features: Dryode® sensors, real-time classifiers (jaw clench, eye movement), SDK/API, LSL support, and ongoing development of cognitive workload, fatigue tracking."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities, quality certifications (ISO), or production scale. Only presale and shipping plans mentioned."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Explicitly states not a medical device, not FDA evaluated. Plans for CE and FCC certification for consumer market in Q2 2026, but not yet achieved."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Based in Switzerland, sells via presale online. No evidence of global distribution or multi-market presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions validated in research and peer-reviewed literature, but no specific hospital or research institution adoption cited."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided. Only product pricing and presale status."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Clear roadmap: classifiers in development (fatigue, relaxation, cognitive workload, activity, brain-battery) and planned CE/FCC certification for consumer market."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No partnerships or business expansion mentioned. Only product team and developer offerings."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

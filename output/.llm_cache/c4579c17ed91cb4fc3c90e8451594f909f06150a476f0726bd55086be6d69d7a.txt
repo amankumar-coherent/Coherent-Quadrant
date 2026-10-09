@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions telemonitoring solutions for cardiology, neurology, oncology, and vital signs, but no specific product list or number of devices."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Claims 2,000,000+ hours of continuous data captured and 15+ vital signs, but no clinical outcome data or peer-reviewed studies."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'configure your own flow' and personalized data collection, but no specific R&D investments or novel technology details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 6,
+      "grounding": "supported",
+      "why": "States ISO 13485 and FDA 21 CFR Part 820 compliant, indicating quality management systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "CE-marked MDR 2017/745 and FDA 510(k) cleared (K192549), plus GDPR and HIPAA compliant."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Belgium, active in Africa per specialty, but no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website mentions 'trusted by leading healthcare providers' but no specific hospital names or adoption metrics."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expanding into oncology and neurology, but no specific pipeline details or clinical trials."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions partnerships with hospitals, lifesciences, and medtech, but no named partners or expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

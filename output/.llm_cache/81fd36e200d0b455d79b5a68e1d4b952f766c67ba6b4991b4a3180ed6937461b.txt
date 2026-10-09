@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions multiple device options (Trident Pro, LifeSense Arrythmia) and partnerships with manufacturers of FDA-cleared devices, but no comprehensive list or count."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions FDA-cleared devices and real-time monitoring, but no clinical outcome data or safety studies."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions cloud-based remote monitoring and integration with CardioOneConnect, but no specific R&D investments or novel technology details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence states FDA 510(k)-cleared devices and HIPAA-compliant software, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions expanding into African markets and presence in Hong Kong, but no specific countries or channel details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions partnerships with hospitals (CHOC) and monitoring centers, but no adoption metrics or testimonials."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions a $7M fundraise plan but no revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions expanding into African markets and integration with CardioOneConnect, but no specific pipeline products or new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence mentions partnerships with leading manufacturers of FDA-cleared devices and joining CardioOneConnect, indicating business expansion."
+    }
+  ],
+  "evidence_used": true
+}

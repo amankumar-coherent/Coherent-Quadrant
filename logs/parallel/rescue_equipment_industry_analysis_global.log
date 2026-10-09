@@ -1,0 +1,110 @@
+[pipeline 23:15:15] market: Rescue Equipment Industry Analysis (global) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\rescue_equipment_industry_analysis_global
+[pipeline 23:15:15] 1. verified rows: 120
+[pipeline 23:15:15] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\rescue_equipment_industry_analysis_global\_pipeline\axes_spec.json
+[pipeline 23:15:15] 3. 120 names -> 120 companies after dedupe (0 groups merged)
+[pipeline 23:15:15] 3b. operating-status check for 2 companies across 1 browser(s)
+[pipeline 23:15:47] 3b. 2 companies left out (not active or excluded by review): ['Rescue Solutions, Inc.', 'Respro South Africa'] -> _pipeline/excluded_companies.json
+[pipeline 23:15:47] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 23:15:47] 3c. ownership 118 / identity 5 / scope 118 answers: 8 more left out ['83 Mechanical Company', 'Crimpwell Services', 'HURST Jaws of Life', 'LIBERVIT S.A.S.', 'Mammut Sports Group AG', 'Ogura Clutch Co., Ltd.'], 24 owner labels, 69 adjacent-segment (not on the chart) ['A Yangın Güvenlik Sistemleri A.Ş.', 'A. J. Charnaud & Company (Pty) Ltd', 'ANCO Manufacturing PTY Ltd', 'AVP Engineering (M) Sdn. Bhd.', 'Abishai Capital (Pty) Ltd', 'Akron Brass Company'] -> _pipeline/auto_review.json
+[pipeline 23:15:47] 4. quick X/Y scorecard scoring needed for 7 companies (1 Product + 1 Business query each)
+[pipeline 23:15:47] overall: 7 companies across 2 browser(s)
+[pipeline 23:15:51] overall: 2/2 shard(s) still running
+[pipeline 23:16:51] overall: 2/2 shard(s) still running
+[pipeline 23:17:51] overall: 1/2 shard(s) still running
+[pipeline 23:18:51]    Top 20 chosen 5 per quadrant from 41 quick-scored companies
+[pipeline 23:18:51]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\rescue_equipment_industry_analysis_global\_pipeline\evidence_pool.json
+[pipeline 23:18:51] 5. evidence round 1: 20 companies with gaps
+[pipeline 23:18:51] evidence_r1: 20 companies across 2 browser(s)
+[pipeline 23:18:55] evidence_r1: 2/2 shard(s) still running
+[pipeline 23:19:55] evidence_r1: 2/2 shard(s) still running
+[pipeline 23:20:55] evidence_r1: 2/2 shard(s) still running
+[pipeline 23:21:55] reasoning_r1: 20 companies across 2 browser(s)
+[pipeline 23:21:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:22:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:23:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:24:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:25:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:26:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:27:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:28:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:29:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:30:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:31:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:32:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:33:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:34:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:35:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:36:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:37:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:38:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:39:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:40:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:41:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:42:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:43:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:44:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:45:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:46:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:47:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:48:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:49:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:50:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:51:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:52:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:53:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:54:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:55:59] reasoning_r1: 2/2 shard(s) still running
+[pipeline 23:56:59] reasoning_r1: 1/2 shard(s) still running
+[pipeline 23:57:59]    WARNING: only 110 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 23:57:59]    --keep 120: 20 chart/evidence + 90 long tail kept, 0 lower-scored dropped
+[pipeline 23:57:59]    20 companies with full evidence, 90 in the long tail
+[pipeline 23:57:59] 6. composite scores (5 per quadrant)
+[pipeline 23:58:02] 7. rewriting hedge wording / first person in evidence
+[pipeline 23:58:05] 7b. supporting points: 2 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 23:58:05] 7b. owner of AMKUS Rescue Systems: Task Force Tips, Inc.
+[pipeline 23:58:05] 7b. owner of Ativa Náutica: Lalizas
+[pipeline 23:58:05] 7b. owner of Bemco Hydraulics Limited: Mohta Capital Private Limited
+[pipeline 23:58:05] 7b. owner of Black Diamond Equipment, Ltd.: Clarus Corporation
+[pipeline 23:58:05] 7b. owner of Elkhart Brass Manufacturing Company, Inc.: Safe Fleet
+[pipeline 23:58:05] 7b. owner of Evac Systems Inc: FOL-DA-TANK
+[pipeline 23:58:05] 7b. owner of GAAM Emergency Products: Evergreen Capital, LLC
+[pipeline 23:58:05] 7b. owner of Holmatro Group: Madison Industries
+[pipeline 23:58:05] 7b. owner of International Safety Components Ltd: Birch Lake Investments Ltd.
+[pipeline 23:58:05] 7b. owner of LUKAS Hydraulik GmbH: IDEX Corporation
+[pipeline 23:58:05] 7b. owner of MFC International Ltd: Respirex International
+[pipeline 23:58:05] 7b. owner of Ortovox Sportartikel GmbH: Schwan-STABILO Group
+[pipeline 23:58:05] 7b. owner of Pacific Helmets NZ Ltd: Lakeland Industries, Inc.
+[pipeline 23:58:05] 7b. owner of RISSafety Pty Ltd: Anacacia Capital
+[pipeline 23:58:05] 7b. owner of Reach and Rescue Ltd: Abaris Group
+[pipeline 23:58:05] 7b. owner of Rock Exotica LLC: JPL Industries
+[pipeline 23:58:05] 7b. owner of Ruth Lee Ltd: Protect Medical Group
+[pipeline 23:58:05] 7b. owner of Safetyware Sdn. Bhd.: Safetyware Group Berhad
+[pipeline 23:58:05] 7b. owner of Singing Rock s.r.o.: Rudolf Bochenek
+[pipeline 23:58:05] 7b. owner of Spencer Italia S.r.l.: Protect Medical
+[pipeline 23:58:05] 7b. owner of Sterling Rope Co.: Sherrill, Inc.
+[pipeline 23:58:05] 7b. owner of Task Force Tips LLC: Madison Industries
+[pipeline 23:58:05] 7b. owner of Team Wendy, LLC: Avon Protection Systems, Inc.
+[pipeline 23:58:05] 7b. owner of Vetter GmbH: IDEX Corporation
+[pipeline 23:58:05] 8. building HTML / JSON / CSV report
+[pipeline 23:58:07] 8. report page: interactive design (rescue_equipment_industry_analysis_global_report.html); static copy rescue_equipment_industry_analysis_global_report_classic.html
+[pipeline 23:58:21] 8b. PDF report: rescue_equipment_industry_analysis_global_report.pdf
+[pipeline 23:58:55] 8b. Word report: rescue_equipment_industry_analysis_global_report.docx
+[pipeline 23:58:56] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 110 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 23:58:56] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\rescue_equipment_industry_analysis_global\rescue_equipment_industry_analysis_global_report.html

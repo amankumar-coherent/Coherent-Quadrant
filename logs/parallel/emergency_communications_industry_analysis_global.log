@@ -1,0 +1,67 @@
+[pipeline 13:55:05] market: Emergency Communications Industry Analysis (global) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\emergency_communications_industry_analysis_global
+[pipeline 13:55:05] 1. verified rows: 120
+[pipeline 13:55:05] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\emergency_communications_industry_analysis_global\_pipeline\axes_spec.json
+[pipeline 13:55:05] 3. 120 names -> 120 companies after dedupe (0 groups merged)
+[pipeline 13:55:05] 3b. 6 companies left out (not active or excluded by review): ['Asher Group', 'Barrett Communications Pty Ltd', 'Celltick Technologies', 'OnSolve LLC', 'Whispir Limited', 'eVigilo Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 13:55:05] 3c. ownership 114 / identity 1 / scope 114 answers: 2 more left out ['Aramco Digital Company', 'Rave Mobile Safety'], 22 owner labels, 47 adjacent-segment (not on the chart) ['ASELSAN Elektronik Sanayi ve Ticaret A.Ş.', 'Aiphone Co., Ltd.', 'Alai Secure S.L.', 'Atech Negócios em Tecnologias S/A', 'AtlasIED', 'Avantel Limited'] -> _pipeline/auto_review.json
+[pipeline 13:55:05] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 13:55:05]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\emergency_communications_industry_analysis_global\_pipeline\evidence_pool.json
+[pipeline 13:55:05] 5. evidence round 1: 2 companies with gaps
+[pipeline 13:55:05] reasoning_r1: 2 companies across 1 browser(s)
+[pipeline 13:55:07] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:56:07] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:57:07] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:58:07] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:59:07] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:00:07] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:01:07]    WARNING: only 112 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 14:01:07]    --keep 120: 20 chart/evidence + 92 long tail kept, 0 lower-scored dropped
+[pipeline 14:01:07]    20 companies with full evidence, 92 in the long tail
+[pipeline 14:01:07] 6. composite scores (5 per quadrant)
+[pipeline 14:01:09] 7. rewriting hedge wording / first person in evidence
+[pipeline 14:01:12] 7b. supporting points: 4 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 14:01:12] 7b. owner of AlertMedia, Inc.: Vista Equity Partners
+[pipeline 14:01:12] 7b. owner of Atech Negócios em Tecnologias S/A: Embraer
+[pipeline 14:01:12] 7b. owner of AtlasIED: MiTek Electronics & Communications
+[pipeline 14:01:12] 7b. owner of Beeper Communications Israel Ltd.: Elisha Yanay
+[pipeline 14:01:12] 7b. owner of Carbyne Ltd.: Axon Enterprise
+[pipeline 14:01:12] 7b. owner of Commend International GmbH: TKH Group
+[pipeline 14:01:12] 7b. owner of Commtact Ltd.: Aeronautics Defense Systems
+[pipeline 14:01:12] 7b. owner of CriticalArc Pty Ltd: Five V Capital
+[pipeline 14:01:12] 7b. owner of F24 AG: Altor Equity Partners
+[pipeline 14:01:12] 7b. owner of Hebei Far East Communication System Engineering Co., Ltd.: CETC Potevio Science & Technology Co., Ltd.
+[pipeline 14:01:12] 7b. owner of Intersec SA: Revaia, Tikehau Capital and management
+[pipeline 14:01:12] 7b. owner of Katim: EDGE Group
+[pipeline 14:01:12] 7b. owner of Omnitronics Pty Ltd: Software Combined
+[pipeline 14:01:12] 7b. owner of Sepura Limited: Epiris
+[pipeline 14:01:12] 7b. owner of Singlewire Software, LLC: Providence Equity Partners
+[pipeline 14:01:12] 7b. owner of Space-Communication Ltd.: 4iG Plc
+[pipeline 14:01:12] 7b. owner of TSG IT Advanced Systems Ltd.: Israel Aerospace Industries and Formula Systems
+[pipeline 14:01:12] 7b. owner of Talkaphone Co.: Capital For Business and Northcreek Mezzanine
+[pipeline 14:01:12] 7b. owner of Teltronic S.A.U.: Amper
+[pipeline 14:01:12] 7b. owner of Thuraya Telecommunications Company: Al Yah Satellite Communications Company (Yahsat)
+[pipeline 14:01:12] 7b. owner of Zenitel NV: 3d investors
+[pipeline 14:01:12] 7b. owner of Zetron, Inc.: Codan Limited
+[pipeline 14:01:12] 8. building HTML / JSON / CSV report
+[pipeline 14:01:14] 8. report page: interactive design (emergency_communications_industry_analysis_global_report.html); static copy emergency_communications_industry_analysis_global_report_classic.html
+[pipeline 14:01:34] 8b. PDF report: emergency_communications_industry_analysis_global_report.pdf
+[pipeline 14:02:22] 8b. Word report: emergency_communications_industry_analysis_global_report.docx
+[pipeline 14:02:23] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 112 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 14:02:23] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\emergency_communications_industry_analysis_global\emergency_communications_industry_analysis_global_report.html

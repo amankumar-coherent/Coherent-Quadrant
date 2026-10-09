@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions two products: Tinke (heart rate, HRV, blood oxygen, respiratory) and Being (fitness wearable with sleep, heart rate, steps, mood). Portfolio is narrow with only two devices."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "A clinical trial is registered on ClinicalTrials.gov (NCT04200495) for PSG validation of Zensorium biosensing wearable, indicating some clinical validation effort, but no results or safety data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Company developed proprietary algorithms for stress and sleep (SELF), and introduced innovative features like mood tracking in Being. However, no detailed R&D pipeline or recent innovations beyond 2015."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence found regarding manufacturing capabilities, quality systems, or certifications. Company appears small (30 employees per Growjo)."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Clinical trial registration suggests some regulatory engagement, but no FDA clearance, CE marking, or other regulatory approvals are mentioned in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "HQ in Singapore, distribution in Africa mentioned, and web traffic from Thailand indicates some international presence, but no clear multi-market commercial scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has been featured in tech media (Engadget, Forbes, PCWorld) and has a clinical trial, but limited evidence of hospital or clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Growjo estimates annual revenue of $5.9M and 30 employees, indicating small scale, but no official financial disclosures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Products cover stress, sleep, heart rate, blood oxygen, respiratory, and mood, showing some expansion, but no clear pipeline for new indications or products beyond existing ones."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mention of 'continuing pursuit for companies to partner' and distribution in Africa, but no specific partnerships or expansion deals detailed."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

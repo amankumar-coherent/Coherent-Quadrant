@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "NXP does not disclose leading-edge process nodes like 3nm or 2nm; it relies on foundries for advanced nodes and focuses on mature and specialty nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "NXP is a leader in mature and specialty process technologies, particularly in automotive and secure connectivity, but does not lead in FinFET or GAA.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "NXP's roadmap focuses on application-specific innovations rather than leading-edge node scaling, with no public 2nm or 1.4nm plans.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "NXP offers a broad portfolio across microcontrollers, processors, wireless connectivity, and secure authentication, but does not manufacture memory or provide OSAT services.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Products Applications Design Center Support Company", "Automotive, IoT & Industrial Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "NXP's revenue is diversified across automotive, industrial, and consumer segments, but exact revenue split by product type is not disclosed in the provided knowledge base.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Automotive, IoT & Industrial Solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "NXP is a fab-lite company and partners with OSAT providers, but does not offer OSAT services itself.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "NXP owns proprietary IP including the EIQ Neutron NPU and Ara discrete NPU for edge AI, and has strong security and connectivity IP.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["EIQ Neutron NPU", "Ara Discrete NPU", "Trimension Ultra-Wideband"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "NXP licenses some IP and uses third-party IP like ARM cores, but also develops proprietary IP for its products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "NXP has strong architecture in automotive and edge AI, with products like the S32M2 for motor control and the i.MX 94 for industrial applications.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["S32M2 for 12V Motor Control", "i.MX 94 Applications Processor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "NXP does not disclose wafer fabrication capacity or utilization rates, as it is fab-lite and relies on foundries.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "NXP does not publicly disclose yield rates for leading-edge nodes, and its focus is on mature and specialty nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "NXP offers some advanced packaging options through partnerships, but does not have its own advanced packaging capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "NXP holds standard quality certifications like ISO 9001 and IATF 16949 for automotive, though not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "NXP ensures reliability for critical applications through robust design and testing, but specific DPPM figures are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "NXP complies with environmental regulations like RoHS and REACH and has sustainability commitments, though specifics are not in the knowledge base.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Sustainability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "NXP has significant global presence with R&D and sales in Europe, Asia, and the Americas, as indicated by its multinational operations.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Wij zijn NXP. 我们是恩智浦. Nous sommes NXP. 우리는 NXP입니다. Wir sind NXP. 私たちはNXPです."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "NXP serves automotive, industrial, and consumer markets, with automotive being a primary focus, as shown by its product categories.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Automotive, IoT & Industrial Solutions", "Automotive", "Industrial", "Consumer"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "NXP's global footprint across multiple regions helps mitigate risks from regional disruptions, though specific details are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "NXP's top customers are not disclosed in the knowledge base, but it has a broad customer base across automotive and industrial sectors.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "NXP has strategic partnerships with companies like Bosch Rexroth and BMW, as highlighted in the knowledge base.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Bosch Rexroth and NXP help industrial developers build faster", "Trimension Ultra-Wideband powers BMW Digital Key Plus"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "NXP collaborates with ecosystem players through its partner directory and marketplace, and works with foundries and OSATs for manufacturing.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Partner Directory", "Partner Marketplace"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "NXP's financial details are not in the knowledge base, but it is a large semiconductor company with significant revenue.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "NXP's CapEx details are not disclosed in the knowledge base, but it invests in R&D and capacity as a fab-lite company.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "NXP's balance sheet strength is not detailed in the knowledge base, but it is a financially stable company.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "NXP's roadmap includes products like the i.MX 94 and Ara NPU, indicating focus on edge AI and industrial automation.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["i.MX 94 Applications Processor", "Ara240 discrete NPU"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "NXP has a clear roadmap for AI with its EIQ Neutron and Ara NPUs, but no public plans for quantum or advanced memory.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["EIQ Neutron NPU", "Ara Discrete NPU"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "NXP's roadmap aligns with trends in edge AI, automotive electrification, and industrial automation, as seen in its product focus.",
+      "evidence_urls": ["https://www.nxp.com"],
+      "evidence_snippets": ["Automotive, IoT & Industrial Solutions", "Edge AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "NXP has not announced new fabs in the knowledge base; it relies on foundry partnerships for capacity expansion.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "NXP's revenue growth is not detailed in the knowledge base, but it is a stable company with moderate growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "NXP plans to fund capacity through partnerships and investments, but specific plans are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "CEITEC operates an older wafer fab, likely at mature nodes (e.g., 0.6µm to 0.35µm), with no advanced node capability.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["operates a wafer fabrication plant in Porto Alegre, producing integrated circuits for smart cards and other applications."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "CEITEC does not lead in any advanced process technology; it focuses on mature-node smart card ICs.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards and other applications."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "No public roadmap for next-generation nodes; CEITEC is not a leading-edge player.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "CEITEC is specialized in smart card ICs, with limited breadth across semiconductor categories.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards and other applications."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "No revenue split available; portfolio is likely concentrated in smart card ICs.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards and other applications."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "No evidence of OSAT services; CEITEC is a wafer fab, not an OSAT provider.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["operates a wafer fabrication plant"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 2,
+      "answer": "No proprietary CPU/GPU/AI IP; CEITEC likely uses licensed or basic designs for smart cards.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "CEITEC likely relies on third-party IP for smart card ICs; no evidence of licensing its own IP.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 2,
+      "answer": "No architecture strength in AI, 5G, or automotive; focus is on smart cards.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "No public capacity data; CEITEC's fab is likely small and not leading-edge.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["operates a wafer fabrication plant"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "No yield data; as a mature-node fab, yields may be acceptable but not benchmarked.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 1,
+      "answer": "No advanced packaging capabilities; CEITEC is a wafer fab, not a packaging house.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["operates a wafer fabrication plant"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "No specific certifications mentioned; likely holds basic ISO but not automotive-grade.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 2,
+      "answer": "No defect rate data; reliability for smart cards is basic.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No compliance details; likely follows basic environmental regulations but not documented.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "Primarily Brazil-based with limited international presence.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["Brazil | Porto Alegre, Brazil"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "End-markets likely include government and banking for smart cards; no revenue split.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 2,
+      "answer": "Geographic concentration in Brazil increases risk from regional disruptions.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["Brazil | Porto Alegre, Brazil"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 2,
+      "answer": "No customer data; likely government-dependent with high concentration risk.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["State-owned semiconductor company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 2,
+      "answer": "No evidence of strategic partnerships with major equipment or EDA vendors.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 2,
+      "answer": "Limited ecosystem collaboration; as a state-owned fab, it may work with local partners but not global.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["State-owned semiconductor company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "No financial data available; as a state-owned company, profitability is unclear.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["State-owned semiconductor company"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 2,
+      "answer": "No CapEx data; likely limited due to state funding constraints.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["State-owned semiconductor company"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 2,
+      "answer": "No balance sheet data; state ownership may provide some support but not large-scale investment capacity.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["State-owned semiconductor company"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 2,
+      "answer": "No public roadmap; likely focused on maintaining existing smart card production.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 1,
+      "answer": "No roadmap for AI, quantum, or advanced memory; not a technology leader.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 2,
+      "answer": "Roadmap likely misaligned with high-growth trends; focus on mature smart card market.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["producing integrated circuits for smart cards"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 1,
+      "answer": "No expansion projects announced; fab is likely stagnant.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 2,
+      "answer": "No revenue growth data; likely flat or declining due to market constraints.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 2,
+      "answer": "No funding plans; state budget constraints limit expansion capability.",
+      "evidence_urls": ["https://ceitec.org.br"],
+      "evidence_snippets": ["State-owned semiconductor company"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "AIXTRON is a leading provider of deposition equipment for compound semiconductors, but does not offer process nodes like logic fabs; its technology is measured in material deposition capabilities rather than nanometer nodes.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["AIXTRON ist ein führender Anbieter von Depositionsanlagen für die Halbleiterindustrie."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "AIXTRON leads in MOCVD and SiC-CVD deposition technologies for compound semiconductors, with strong customer testimonials highlighting its advanced capabilities.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["AIXTRON ist ein führender Anbieter von Depositionsanlagen für die Halbleiterindustrie.", "Die AIX G5+ C Planetenanlage kombiniert eine hervorragende Homogenität der Waferoberfläche mit einer exzellenten Wiederholbarkeit (run-to-run) bei niedrigsten Betriebskosten"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "AIXTRON's roadmap focuses on advancing MOCVD and SiC-CVD technologies for applications like MicroLED and power electronics, but specific node timelines are not disclosed.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["MicroLED", "Energiemanagement"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "AIXTRON specializes in deposition equipment for compound semiconductors, serving multiple categories like LEDs, power electronics, and RF components, but does not produce logic or memory chips.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["AIXTRON ist ein führender Anbieter von Depositionsanlagen für die Halbleiterindustrie."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type; AIXTRON's portfolio is specialized in deposition equipment, not diversified across logic, memory, and analog.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "AIXTRON does not provide OSAT services; it supplies deposition equipment to semiconductor manufacturers, not assembly and test services.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["AIXTRON ist ein führender Anbieter von Depositionsanlagen für die Halbleiterindustrie."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "AIXTRON's proprietary IP lies in deposition technologies like MOCVD and SiC-CVD, not in CPU/GPU architectures, so it does not own design IP in the traditional sense.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["MOCVD", "Warmwand-Planeten-Prinzip (SiC-CVD)"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "AIXTRON does not license CPU/GPU IP; it develops its own deposition equipment technology and does not rely on third-party IP like ARM.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["AIXTRON Technologien"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "AIXTRON's technology is relevant to high-growth areas like power electronics and 5G through compound semiconductor deposition, but it does not design chips for AI or automotive directly.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["Leistungselektronik", "Optoelektronik"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "The knowledge base does not provide wafer fabrication capacity or utilization rates; AIXTRON manufactures deposition equipment, not wafers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "AIXTRON's equipment is praised for excellent homogeneity and repeatability, but yield rates for leading-edge nodes are not applicable as it does not fabricate chips.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["hervorragende Homogenität der Waferoberfläche", "exzellente Wiederholbarkeit (run-to-run)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "AIXTRON does not offer advanced packaging services; it focuses on deposition equipment for semiconductor manufacturing.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["AIXTRON ist ein führender Anbieter von Depositionsanlagen für die Halbleiterindustrie."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific quality certifications like ISO 9001 or IATF 16949, but AIXTRON emphasizes quality and reliability in its equipment.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["hohe Qualitätsanspruch", "beste Anlagen- und Servicequalität"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No defect rate (DPPM) data is available; AIXTRON highlights equipment reliability and customer trust, but specific metrics are not disclosed.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["großes Vertrauen in die AIX 2800G4-TM"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "AIXTRON addresses sustainability and environmental aspects, as indicated by its sustainability section, but specific compliance like RoHS/REACH is not detailed.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["Nachhaltigkeit bei AIXTRON umfasst ökologische, ökonomische und soziale Aspekte"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "AIXTRON has a global presence with offices and service centers in Europe, USA, Japan, Korea, Taiwan, and China, as evidenced by contact details.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["AIXTRON Europe", "AIXTRON Inc. (USA)", "AIXTRON K.K. (Japan)", "AIXTRON Korea Co., Ltd.", "AIXTRON Taiwan Co., Ltd."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "AIXTRON serves end-markets like LEDs, power electronics, and optoelectronics, but revenue contribution by end-market is not provided.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["Leuchtdioden, Solarzellen, Laser, Flachbildschirme oder Speicherchips"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "AIXTRON's global footprint across multiple regions reduces dependence on any single market, mitigating regional disruption risks.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["weltweiter Kundenservice", "AIXTRON 24/7 Technical Support Line"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "AIXTRON lists several customers like IQE, Lumentum, and Plessey, but customer concentration risk is not disclosed.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["IQE plc", "Lumentum Holdings Inc.", "Plessey Semiconductors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "AIXTRON collaborates with research institutions and customers, but specific partnerships with equipment makers or EDA vendors are not detailed.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["Forschung & Entwicklung", "Aktuelle Forschungsprojekte"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "AIXTRON works with customers to provide deposition solutions, but ecosystem collaboration with foundries or OSATs is not explicitly mentioned.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["Referenzen"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial data such as revenue, net income, and free cash flow are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details such as debt-to-equity and cash reserves are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "AIXTRON's roadmap focuses on advancing deposition technologies for MicroLED, power electronics, and other applications, but specific milestones are not detailed.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["MicroLED", "Energiemanagement"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "AIXTRON is involved in emerging areas like MicroLED and power electronics, but not AI chips or quantum computing.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["MicroLED", "Leistungselektronik"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "AIXTRON's roadmap aligns with industry trends in compound semiconductors for LEDs and power electronics, as evidenced by customer demand.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["Starkes Momentum in der Optoelektronik hält an"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab or expansion projects are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not provided, but the company mentions strong momentum in optoelectronics.",
+      "evidence_urls": ["https://www.aixtron.com"],
+      "evidence_snippets": ["Starkes Momentum in der Optoelektronik hält an"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and execution plans for capacity expansions are not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

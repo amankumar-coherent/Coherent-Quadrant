@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions two devices: GENEActiv and ActivInsights Band, indicating a narrow portfolio focused on activity, sleep, and lifestyle monitoring."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Devices are described as 'medical-grade' and used in clinical research and pharmaceutical drug development, but no specific clinical performance or safety data is provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company focuses on remote patient data collection and has partnerships for cardiology monitoring, but no explicit R&D investments or novel technology breakthroughs are cited."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems; only company size (20 employees) and revenue ($12M) are mentioned."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "GENEActiv has FDA 510(k) exemption status and EU CE marking, indicating regulatory compliance, but no details on broader quality certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in UK and presence in UK only; no evidence of global distribution or multi-market commercial presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Used in clinical research and pharmaceutical drug development, and partnership with Cardialysis indicates some clinical adoption, but limited evidence of broad brand trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Revenue of $12 million and 20 employees indicate small scale; no profitability or growth data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Focus on activity, sleep, and lifestyle; partnership in cardiology suggests potential expansion, but no explicit pipeline or new indications mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Cardialysis for cardiology monitoring is cited, and LinkedIn mentions accelerating pharmaceutical drug development, indicating business collaborations."
+    }
+  ],
+  "evidence_used": true
+}

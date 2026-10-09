@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only CGM sensors (additional CGM for 14 days) and app-based features like Face Scan; no other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims 80% of users improve blood sugar within 14 days, but no clinical trial data or peer-reviewed evidence; user testimonials only."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mentions Controlled-by-Design AI, Face Scan reading six biomarkers, and Hello Focus Study; indicates some innovation but limited details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; only mentions country-specific sensor models due to regulatory requirements."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions regulatory requirements for country-specific sensors and excludes type 1/2 diabetes users, but no specific certifications or clearances."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Operates in Europe (DE/CH and Rest of Europe) with online sales; no evidence of broader global reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Has 347 reviews and expert recommendation from Dr. Anne Latz, but limited evidence of widespread clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only product pricing (€90 for additional CGM)."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expanding into women's health (menopause, cycle) and metabolic health; mentions Hello Focus Study, but no specific pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No explicit partnerships mentioned; only 'Seen at' without specifics, and country-specific sensor models suggest some distribution partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

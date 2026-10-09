@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Renesas does not publicly detail its most advanced process node, but as a major IDM it likely utilizes mature nodes for its MCU and analog products, not leading-edge nodes like 3nm or 2nm.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Renesas is not known for leading in specific process technologies like FinFET or GAA; it focuses on mature nodes for embedded and analog applications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Renesas has not publicly announced a roadmap for next-generation nodes like 2nm or 1.4nm, as its focus is on mature and specialty processes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Renesas offers a broad portfolio across microcontrollers, analog, power, and connectivity, as evidenced by its product range and 'Winning Combinations' solutions.",
+      "evidence_urls": ["https://www.renesas.com/en/products/analog-semiconductors"],
+      "evidence_snippets": ["Renesas powers the complete analog signal chain", "Delivering comprehensive solutions with analog, power, embedded processing, and connectivity products."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type, but Renesas is known to have a diversified portfolio with significant revenue from automotive and industrial.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Renesas likely partners with OSAT providers for assembly and test, but the knowledge base does not specify its OSAT services or partnerships.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Renesas owns proprietary IP in MCUs, analog, and power, and its 'Winning Combinations' showcase integrated solutions, but it does not own leading CPU/GPU/AI accelerator IP.",
+      "evidence_urls": ["https://www.renesas.com/en/applications"],
+      "evidence_snippets": ["Delivering comprehensive solutions with analog, power, embedded processing, and connectivity products."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Renesas licenses third-party IP like Arm cores for its MCUs, and it also offers its own IP, but the knowledge base does not detail its licensing model.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Renesas has strong architecture in automotive and industrial, with recent focus on humanoid robots and AI, as shown by its 'Physical AI' and humanoid robot solutions.",
+      "evidence_urls": ["https://www.renesas.com/en/applications/industrial/robotics/humanoid-robots"],
+      "evidence_snippets": ["Enter the Era of Physical AI", "Ultra-high AI compute brain coordinating real-time perception, control, and human-like movement."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "The knowledge base does not provide specific wafer fabrication capacity or utilization rates for Renesas.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No yield rate data is available in the knowledge base; Renesas is not a leading-edge manufacturer, so yields on mature nodes are likely competitive but not benchmarked.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Renesas offers some advanced packaging like SiP (as seen in its products), but the knowledge base does not detail 2.5D/3D or chiplet capabilities.",
+      "evidence_urls": ["https://www.renesas.com/en/products/rrw22125"],
+      "evidence_snippets": ["RRW22125 Active 25W to 45W Digital AC/DC SSR Flyback SiP with 700V, 480mΩ GaN FET"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Renesas likely holds standard quality certifications like ISO 9001 and IATF 16949 for automotive, but the knowledge base does not list them.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Renesas is known for high reliability in automotive and industrial, but specific DPPM data is not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Renesas emphasizes sustainability and compliance, as seen in its 2025 Business & Sustainability Report, but specific RoHS/REACH details are not in the KB.",
+      "evidence_urls": ["https://www.renesas.com/en/about/sustainability/report2025"],
+      "evidence_snippets": ["Renesas’ 2025 Business & Sustainability Report highlights our strategic progress, financial and ESG performance."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Renesas has global presence with operations in Japan, and its website shows events in India, Germany, and the US, indicating broad geographic reach.",
+      "evidence_urls": ["https://www.renesas.com/en/about/profile"],
+      "evidence_snippets": ["Renesas Electronics Corporation", "Electronica India South Sep 16, 2026 - Sep 18, 2026", "Tech Day Irvine Oct 7, 2026"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Renesas serves automotive, industrial, and IoT markets, as evidenced by its focus on humanoid robots and automotive products, but revenue contribution is not detailed.",
+      "evidence_urls": ["https://www.renesas.com/en/applications"],
+      "evidence_snippets": ["Humanoid System Compute (Brain)", "RAA278831 Active ASIL B Video Display and Diagnostics OpenLDI Bridge IC for Automotive HUD Systems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Renesas has manufacturing in Japan and global sales, but the KB does not detail its risk mitigation strategies; its global presence likely helps.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list top customers or concentration risk; Renesas serves many customers across automotive and industrial, likely reducing concentration.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Renesas partners with ecosystem players like CUCKOO for AI cooktops and has design resources, but specific equipment/EDA partnerships are not in the KB.",
+      "evidence_urls": ["https://www.renesas.com/en/about/customer-success-stories/cuckoo"],
+      "evidence_snippets": ["CUCKOO Debuts AI-Powered Induction Range AI-enabled induction cooktop that detects boiling through Renesas MCUs and Reality AI software."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Renesas collaborates with customers and provides complete solutions via 'Winning Combinations' and design resources, indicating strong ecosystem collaboration.",
+      "evidence_urls": ["https://www.renesas.com/en/applications"],
+      "evidence_snippets": ["Delivering comprehensive solutions with analog, power, embedded processing, and connectivity products."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "The KB mentions financial results for Q2 2026 but does not provide specific revenue, net income, or free cash flow figures.",
+      "evidence_urls": ["https://www.renesas.com/en/about/newsroom/renesas-reports-financial-results-second-quarter-ended-june-30-2026"],
+      "evidence_snippets": ["Renesas Reports Financial Results for the Second Quarter Ended June 30, 2026"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No CapEx data is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Renesas is a large company with likely solid balance sheet, but specific debt-to-equity or cash reserves are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Renesas's roadmap includes humanoid robots and AI, as shown by its 'Physical AI' initiative, but specific milestones are not detailed.",
+      "evidence_urls": ["https://www.renesas.com/en/applications/industrial/robotics/humanoid-robots"],
+      "evidence_snippets": ["Enter the Era of Physical AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Renesas is investing in AI for robotics and has Reality AI software, but no clear roadmap for quantum or advanced memory is mentioned.",
+      "evidence_urls": ["https://www.renesas.com/en/about/customer-success-stories/cuckoo"],
+      "evidence_snippets": ["Reality AI software"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Renesas's focus on AI, robotics, and automotive aligns with industry trends, as evidenced by its humanoid robot solutions and automotive products.",
+      "evidence_urls": ["https://www.renesas.com/en/applications/industrial/robotics/humanoid-robots"],
+      "evidence_snippets": ["Humanoid System Compute (Brain)", "Dexterous Robotic Hand"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "The KB does not mention any new fab or expansion projects for Renesas.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Renesas has announced financial results, but revenue growth rate over past 3 years is not provided in the KB.",
+      "evidence_urls": ["https://www.renesas.com/en/about/newsroom/renesas-reports-financial-results-second-quarter-ended-june-30-2026"],
+      "evidence_snippets": ["Renesas Reports Financial Results for the Second Quarter Ended June 30, 2026"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No information on funding or execution of capacity expansions is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

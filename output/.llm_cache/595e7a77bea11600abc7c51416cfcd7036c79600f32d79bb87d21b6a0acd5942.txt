@@ -1,0 +1,32 @@
+{
+  "market_type": "B2B",
+  "market_type_reason": "The primary buyers of drone sensors are drone manufacturers, defense organizations, commercial operators, and government agencies, not individual consumers.",
+  "market_definition": "The market for sensors specifically designed for integration into unmanned aerial vehicles (drones), including inertial measurement units, gyroscopes, accelerometers, magnetometers, barometers, and other flight-critical sensors.",
+  "market_participants": [
+    {
+      "type": "Sensor Manufacturer",
+      "definition": "Companies that design, develop, and produce drone-specific sensors such as IMUs, gyroscopes, accelerometers, magnetometers, and barometers.",
+      "why_relevant": "They are the core technology providers whose products are integrated into drones."
+    },
+    {
+      "type": "Drone OEM",
+      "definition": "Original equipment manufacturers that build complete drone systems and integrate sensors into their platforms.",
+      "why_relevant": "They are the primary customers for drone sensors and drive demand based on their drone designs."
+    },
+    {
+      "type": "Distributor",
+      "definition": "Authorized resellers and distributors that supply drone sensors to drone manufacturers, integrators, and end users.",
+      "why_relevant": "They provide a sales channel and logistical support, especially for smaller OEMs and aftermarket sales."
+    },
+    {
+      "type": "Technology Provider",
+      "definition": "Companies offering sensor fusion algorithms, software, or reference designs that complement or enhance sensor performance.",
+      "why_relevant": "They enable sensor integration and add value to the sensor ecosystem, often partnering with sensor manufacturers."
+    },
+    {
+      "type": "Integrator",
+      "definition": "System integrators that combine sensors with other drone subsystems (e.g., flight controllers, navigation systems) to create functional payloads or complete solutions.",
+      "why_relevant": "They bridge the gap between sensor components and drone platforms, ensuring compatibility and performance."
+    }
+  ]
+}

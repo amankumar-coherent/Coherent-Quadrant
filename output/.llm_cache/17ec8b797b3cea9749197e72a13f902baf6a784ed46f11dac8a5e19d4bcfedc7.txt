@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Loop System, a single FDA-cleared wristband for COPD/RPM. No other products are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance indicates safety and efficacy for intended use, but no specific clinical performance data or outcomes are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Patented technology and FDA clearance for a novel wrist-worn device suggest innovation, but no details on ongoing R&D or pipeline are given."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems beyond FDA clearance, which implies some quality compliance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Multiple sources confirm FDA 510(k) clearance for the Loop System, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Based in Palo Alto, CA, and acquired by Itamar Medical (Israel), but no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and partnership with remote nurses during COVID suggest some clinical adoption, but no hospital names or adoption scale are provided."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue or financial data for Spry Health is provided. Acquisition by Itamar Medical implies some value, but specifics are absent."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Loop is cleared for COPD, but no evidence of expansion to other indications or pipeline products."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquired by Itamar Medical in 2021 and partnered with a network of remote nurses during COVID, indicating business expansion and partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

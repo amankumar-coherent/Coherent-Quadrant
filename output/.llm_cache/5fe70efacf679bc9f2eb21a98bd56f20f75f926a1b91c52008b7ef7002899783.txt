@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions Verily Study Watch and Verily Patch, but no comprehensive portfolio details."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Study Watch proved very accurate at identifying atrial fibrillation; Verily Patch received approval."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Verily Pre platform, NVIDIA collaboration, and AI-driven precision health initiatives show strong R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No direct evidence on manufacturing or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Verily Patch received approval; EU certified algorithm as medical device; FDA EUA for COVID-19 testing."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "U.S. consumer availability for Verily Me; global soccer games monitoring; no clear global market presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Study Watch used in clinical trials; collaborations with UCHealth and University of Colorado Anschutz."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "$300M funding round and $700 capital investment mentioned, but no revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Lifelong Health Study, Verily Me app, and expansion into AI-driven health solutions indicate pipeline growth."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Collaborations with Samsung, NVIDIA, UCHealth, and RefinedScience; independent company status."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

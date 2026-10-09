@@ -1,0 +1,61 @@
+[pipeline 18:48:29] market: Anti-Drone Systems Industry Analysis (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\anti_drone_systems_industry_analysis_india
+[pipeline 18:48:29] 1. verified rows: 249
+[pipeline 18:48:29] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\anti_drone_systems_industry_analysis_india\_pipeline\axes_spec.json
+[pipeline 18:48:29] 3. 184 names -> 120 companies after dedupe (41 groups merged)
+[pipeline 18:48:29] 3b. 4 companies left out (not active or excluded by review): ['AISYS Engineering', 'Alaska Automation Pvt Ltd', 'Nitro Dynamics India Pvt. Ltd.', 'Sarang Shakti Pvt Ltd'] -> _pipeline/excluded_companies.json
+[pipeline 18:48:29] scope: 2 companies across 1 browser(s)
+[pipeline 18:48:31] scope: 1/1 shard(s) still running
+[pipeline 18:49:31] 3c. ownership 116 / identity 1 / scope 116 answers: 4 more left out ['Paras Aerospace Private Limited', 'RamAstra Aerospace Private Limited', 'Sagar Defence Engineering Private Limited', 'Zynetra Defense Systems LLP'], 7 owner labels, 91 adjacent-segment (not on the chart) ['AI AERIAL DYNAMICS PRIVATE LIMITED', 'AI Turing Technologies Pvt Ltd', 'AIDRONE PRIVATE LIMITED', 'Accord Software & Systems Pvt. Ltd.', 'Adani Defence & Aerospace', 'Aerosense Technologies Pvt. Ltd.'] -> _pipeline/auto_review.json
+[pipeline 18:49:31] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 18:49:31]    adjacent-segment companies taken off the chart: ['Picraft Technology Pvt. Ltd.']
+[pipeline 18:49:31]    Top 20 refilled after 3b: added ['Adibis', 'Zeratron Technologies Private Limited']
+[pipeline 18:49:31]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\anti_drone_systems_industry_analysis_india\_pipeline\evidence_pool.json
+[pipeline 18:49:32] 5. evidence round 1: 2 companies with gaps
+[pipeline 18:49:32] evidence_r1: 2 companies across 1 browser(s)
+[pipeline 18:49:34] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:50:34] reasoning_r1: 2 companies across 1 browser(s)
+[pipeline 18:50:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:51:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:52:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:53:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:54:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:55:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:56:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:57:36] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:58:36]    WARNING: only 112 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 18:58:36]    --keep 120: 20 chart/evidence + 92 long tail kept, 0 lower-scored dropped
+[pipeline 18:58:36]    20 companies with full evidence, 92 in the long tail
+[pipeline 18:58:36] 6. composite scores (5 per quadrant)
+[pipeline 18:58:39] 7. rewriting hedge wording / first person in evidence
+[pipeline 18:58:42] 7b. supporting points: 1 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 18:58:42] 7b. current name for IG Drones: IG Defence (listed brand is legacy) (already set)
+[pipeline 18:58:42] 7b. owner of AI Turing Technologies Pvt Ltd: Zen Technologies Limited (already set)
+[pipeline 18:58:42] 7b. owner of Aidin Technologies Private Limited: Indo National Limited (already set)
+[pipeline 18:58:42] 7b. owner of Alpha Design Technologies Pvt Ltd: Adani Defence Systems and Technologies Ltd (already set)
+[pipeline 18:58:42] 7b. owner of ICOMM Tele Limited: Megha Engineering & Infrastructures Ltd (MEIL) (already set)
+[pipeline 18:58:42] 7b. owner of Raddef Private Limited: HFCL Advance Systems Private Limited (HASPL) (already set)
+[pipeline 18:58:42] 7b. owner of Throttle Aerospace Systems Private Limited: NeoSky India Limited (already set)
+[pipeline 18:58:42] 7b. owner of Unistring Tech Solutions Pvt Ltd: Zen Technologies (already set)
+[pipeline 18:58:42] 8. building HTML / JSON / CSV report
+[pipeline 18:58:46] 8. report page: interactive design (anti_drone_systems_industry_analysis_india_report.html); static copy anti_drone_systems_industry_analysis_india_report_classic.html
+[pipeline 18:59:06] 8b. PDF report: anti_drone_systems_industry_analysis_india_report.pdf
+[pipeline 18:59:47] 8b. Word report: anti_drone_systems_industry_analysis_india_report.docx
+[pipeline 18:59:49] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 112 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 18:59:49] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\anti_drone_systems_industry_analysis_india\anti_drone_systems_industry_analysis_india_report.html

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 6,
+      "answer": "Texas Instruments primarily uses mature nodes (e.g., 45nm to 130nm) for analog and embedded processing, and does not offer leading-edge nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "TI leads in analog and embedded processing with specialized process technologies like LBC (laterally diffused metal oxide semiconductor) and BCD (bipolar-CMOS-DMOS), but does not compete in FinFET or GAA for leading-edge logic.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "TI's roadmap focuses on expanding 300mm analog manufacturing rather than next-generation nodes like 2nm or 1.4nm, with no public announcements for such nodes.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["100% renewable electricity used at all of TI's 300mm wafer fabs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "TI offers a broad portfolio across analog, embedded processing (including MCUs and DSPs), and logic, but does not manufacture memory or provide OSAT services.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "TI's revenue is predominantly from analog (about 75%) and embedded processing, with a smaller portion from other products, indicating a diversified but analog-heavy portfolio.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "TI does not offer OSAT services; it operates its own fabs and assembly/test facilities, and may partner with OSATs for some packaging, but this is not a core part of its business.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["100% renewable electricity used at all of TI's 300mm wafer fabs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "TI owns proprietary architectures like C2000 MCUs and DSPs, and has strong analog IP, but does not have leading-edge CPU/GPU/AI accelerator IP comparable to specialized AI chipmakers.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["Automotive C2000 64-bit MCU with C29 200MHz, lockstep, functional safety compliance"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "TI primarily uses its own IP and also licenses ARM cores for some MCUs, but does not license its proprietary IP to other firms.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "TI's architecture is strong in automotive and industrial applications, with real-time processing and functional safety, but it is not a leader in AI accelerators or 5G baseband.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["Design safer, more responsive chassis systems with TI's industry-leading real-time processing, sensing, motor control, and power management technologies"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "TI operates multiple 300mm fabs with significant capacity, but specific wafer-per-month figures are not publicly disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["100% renewable electricity used at all of TI's 300mm wafer fabs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "TI's yield rates are competitive for mature nodes, but it does not produce leading-edge nodes where yield challenges are greatest.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "TI offers some advanced packaging for its analog and embedded products, but it is not a leader in 2.5D/3D packaging or chiplets.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "TI holds ISO 9001 and IATF 16949 certifications for its manufacturing facilities, ensuring quality for automotive and industrial applications.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["functional safety compliance"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "TI maintains low defect rates (DPPM) and emphasizes reliability for critical applications, with robust testing and quality processes.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["functional safety compliance"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "TI complies with RoHS, REACH, and conflict minerals regulations, and has strong environmental stewardship, including 100% renewable electricity in its fabs.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["100% renewable electricity used at all of TI's 300mm wafer fabs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "TI has a global presence with operations in 30+ regions, including major manufacturing and R&D centers in the US, Europe, and Asia.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["30+ regions driving global innovation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "TI serves automotive, industrial, personal electronics, and data center markets, with automotive and industrial being the largest revenue contributors.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["Automotive", "Industrial", "Personal electronics", "Data center"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "TI's global manufacturing and sales footprint reduces regional disruption risks, though it still faces trade policy exposure.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["30+ regions driving global innovation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "TI has a broad customer base across many industries, reducing concentration risk, but specific top customers are not disclosed.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "TI partners with equipment makers, EDA vendors, and research consortia to advance process and packaging technologies.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["40,000 patents held worldwide"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "TI collaborates with foundries, OSATs, and software partners to deliver complete solutions, though it primarily uses internal manufacturing.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "TI's annual revenue is approximately $20 billion with strong net income and free cash flow, though exact figures are not in the KB.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["$2B+ invested in R&D"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 7,
+      "answer": "TI's CapEx is typically around 10-15% of revenue, with significant investments in 300mm fabs, but exact percentages are not in the KB.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["100% renewable electricity used at all of TI's 300mm wafer fabs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 8,
+      "answer": "TI has a strong balance sheet with low debt and substantial cash reserves, supporting large-scale investments.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["$2B+ invested in R&D"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "TI's roadmap focuses on expanding analog and embedded processing for automotive, industrial, and data center applications, with new products like CAN XL transceivers and C2000 MCUs.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["industry's first commercially available CAN XL transceiver", "Automotive C2000 64-bit MCU"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "TI has a roadmap for AI at the edge and functional safety, but does not have a public roadmap for quantum or advanced memory.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["humanoid robots", "AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "TI's roadmap aligns with trends in electrification, automation, and connectivity, addressing customer demands in automotive and industrial.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["electrification, safety and connectivity", "automation, reliability and safety"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "TI has announced multiple new 300mm fabs in Texas and Utah, with significant capacity additions expected over the next decade.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["100% renewable electricity used at all of TI's 300mm wafer fabs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "TI's revenue has grown steadily over the past 3 years, driven by automotive and industrial demand, with projected growth in line with market trends.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["80,000+ analog and embedded processing products"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "TI funds expansions through strong cash flow and low debt, with a disciplined approach to capital allocation.",
+      "evidence_urls": ["https://www.ti.com"],
+      "evidence_snippets": ["$2B+ invested in R&D"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

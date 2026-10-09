@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Mobileye does not manufacture its own chips; it designs EyeQ SoCs using external foundries, so it does not offer or announce process nodes.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Mobileye does not lead in process technology as it is a fabless designer; its differentiation is in algorithms and SoC architecture, not process.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Mobileye's roadmap focuses on product generations like EyeQ5 and future chips, but specific process node timelines are not disclosed.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Mobileye is specialized in automotive-grade SoCs and software, not a broad semiconductor supplier across logic, memory, analog, or power.",
+      "evidence_urls": ["https://www.mobileye.com/products/"],
+      "evidence_snippets": ["Modular automotive product portfolio"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Mobileye's revenue is primarily from automotive ADAS and autonomous driving solutions; no public split by product type is available.",
+      "evidence_urls": ["https://www.mobileye.com/products/"],
+      "evidence_snippets": ["Modular automotive product portfolio"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Mobileye does not provide OSAT services; it relies on external partners for manufacturing and packaging.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Mobileye owns proprietary IP including EyeQ SoC architecture, computer vision algorithms, and safety models like RSS, which are highly differentiated.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/", "https://www.mobileye.com/technology/responsibility-sensitive-safety/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip", "Responsibility-Sensitive Safety (RSS)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Mobileye primarily uses its own IP and does not license its core IP to other firms; it may use standard IP from partners but this is not detailed.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Mobileye's architecture is strong in automotive AI, with purpose-built hardware and learned driving policies, positioning it well in high-growth areas.",
+      "evidence_urls": ["https://www.mobileye.com/technology/physical-ai/"],
+      "evidence_snippets": ["Purpose-built hardware", "Learned driving policy"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Mobileye is fabless and does not own wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rates are not disclosed and are dependent on foundry partners, so no comparison to industry benchmarks is possible.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Mobileye does not offer advanced packaging; it relies on external OSAT partners for packaging and testing.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Mobileye likely adheres to automotive quality standards like IATF 16949, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.mobileye.com/technology/safety-methodology/"],
+      "evidence_snippets": ["Safety Methodology"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Mobileye emphasizes safety and reliability through its safety methodology, but specific defect rates are not disclosed.",
+      "evidence_urls": ["https://www.mobileye.com/technology/safety-methodology/"],
+      "evidence_snippets": ["Safety Methodology"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Mobileye likely complies with environmental regulations, but specific details on RoHS, REACH, and conflict minerals are not provided.",
+      "evidence_urls": ["https://www.mobileye.com/about/esg/"],
+      "evidence_snippets": ["ESG"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Mobileye has global presence with R&D in Israel, sales worldwide, and partnerships with major automakers, indicating significant geographic reach.",
+      "evidence_urls": ["https://www.mobileye.com/about/"],
+      "evidence_snippets": ["About"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Mobileye primarily serves the automotive market with ADAS and autonomous driving solutions, which is its main revenue source.",
+      "evidence_urls": ["https://www.mobileye.com/products/"],
+      "evidence_snippets": ["Modular automotive product portfolio"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Mobileye's global partnerships and presence across regions help mitigate regional risks, but specific diversification strategies are not detailed.",
+      "evidence_urls": ["https://www.mobileye.com/about/"],
+      "evidence_snippets": ["About"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Mobileye has major automaker customers like Stellantis, but specific customer concentration is not disclosed.",
+      "evidence_urls": ["https://www.mobileye.com/news/mobileye-to-supply-cloud-enhanced-adas-for-select-future-stellantis-vehicles/"],
+      "evidence_snippets": ["Mobileye to Supply Cloud-Enhanced ADAS for Select Future Stellantis Vehicles"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Mobileye has strategic partnerships with automakers and technology providers, as evidenced by collaborations like with Stellantis.",
+      "evidence_urls": ["https://www.mobileye.com/news/mobileye-to-supply-cloud-enhanced-adas-for-select-future-stellantis-vehicles/"],
+      "evidence_snippets": ["Mobileye to Supply Cloud-Enhanced ADAS for Select Future Stellantis Vehicles"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Mobileye collaborates with foundries, OSATs, and software partners to deliver complete solutions, though specific details are limited.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Mobileye's financials are not provided in the knowledge base; as a public company, revenue and cash flow are available but not cited.",
+      "evidence_urls": ["https://ir.mobileye.com/"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx details are not available in the knowledge base; as a fabless company, CapEx is likely lower than integrated manufacturers.",
+      "evidence_urls": ["https://ir.mobileye.com/"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet strength is not detailed, but as an Intel subsidiary, Mobileye likely has strong financial backing.",
+      "evidence_urls": ["https://ir.mobileye.com/"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Mobileye's roadmap includes advancing from ADAS to autonomous driving with products like SuperVision, Chauffeur, and Drive, indicating clear milestones.",
+      "evidence_urls": ["https://www.mobileye.com/products/"],
+      "evidence_snippets": ["Mobileye SuperVision™", "Mobileye Chauffeur™", "Mobileye Drive™"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Mobileye is focused on AI and physical AI for autonomous driving, which are emerging technologies, but not quantum or advanced memory.",
+      "evidence_urls": ["https://www.mobileye.com/technology/physical-ai/"],
+      "evidence_snippets": ["Physical AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Mobileye's roadmap aligns with industry trends toward autonomous driving and AI, addressing customer demands for safety and scalability.",
+      "evidence_urls": ["https://www.mobileye.com/technology/physical-ai/"],
+      "evidence_snippets": ["Physical AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Mobileye does not build fabs; it relies on foundry partners, so no capacity expansion projects are announced.",
+      "evidence_urls": ["https://www.mobileye.com/technology/eyeq-chip/"],
+      "evidence_snippets": ["EyeQ™ System-on-Chip"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth is not provided in the knowledge base; as a growing company, it has seen growth but specific figures are absent.",
+      "evidence_urls": ["https://ir.mobileye.com/"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Mobileye funds growth through its parent Intel and operational revenue, but specific funding plans for capacity are not disclosed.",
+      "evidence_urls": ["https://ir.mobileye.com/"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

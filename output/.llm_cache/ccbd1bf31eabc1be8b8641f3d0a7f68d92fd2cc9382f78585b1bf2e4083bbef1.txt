@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence describes Moksha8 as a 'Latin America-focused specialty pharmaceutical marketer of GLP-1 receptor agonist products' but does not list specific molecules or brands."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of therapeutic differentiation; only general GLP-1 focus in Latin America, no specific indications or unique positioning."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 2,
+      "grounding": "partial",
+      "why": "No evidence of clinical R&D; one search result mentions a partnership with Daewoong for a GLP-1 agonist but no development details."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain; as a marketer, likely relies on partners."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality certifications; only regional presence in Latin America."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Evidence confirms presence in Latin America, indicating regional market access, but no global reach."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Limited public footprint; no evidence of strong brand recognition or HCP reputation."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data available; only a $50 million deal with Daewoong for a non-GLP-1 product (Fexuprazan)."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No pipeline details; one mention of a partnership for a GLP-1 agonist but no development stage."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Evidence shows partnership with Daewoong for Fexuprazan in Mexico, indicating business expansion, but not GLP-1 specific."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

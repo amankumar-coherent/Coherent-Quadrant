@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "The knowledge base does not mention clinical validation data for sensor accuracy, but as a medical device company, some validation is likely.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "No specific accuracy metrics like MARD are provided in the knowledge base, and the company focuses on adherence rather than vital signs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "The knowledge base does not list certifications, but as a medical device company, CE marking is likely for the European market.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "The knowledge base indicates a single product line (Respiro sensors), suggesting a narrow portfolio.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Respiro wearable smart inhaler sensors for respiratory adherence"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "The portfolio is focused solely on respiratory care, not covering multiple therapeutic areas.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Respiratory sensors; Connected therapeutics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "The devices are for patients with respiratory conditions, likely used in clinical settings, but no consumer-focused devices are mentioned.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Respiro wearable smart inhaler sensors for respiratory adherence"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "No peer-reviewed publications are mentioned in the knowledge base, but the company may have some given its medical focus.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No clinical trials are mentioned in the knowledge base, but as a medical device company, some trials may be ongoing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "The company's focus on adherence suggests they may collect real-world usage data, but no specific outcomes are cited.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Respiro wearable smart inhaler sensors for respiratory adherence"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Battery life is not specified in the knowledge base, but typical smart inhaler sensors last months on a coin cell.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "The sensors are designed to attach to inhalers, implying they are small and unobtrusive, but no explicit comfort or waterproofing details.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Respiro wearable smart inhaler sensors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "The knowledge base mentions only one form factor (inhaler sensor), not multiple.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Respiro wearable smart inhaler sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "No EHR integration is mentioned in the knowledge base, but as a connected therapeutic, some integration may exist.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No APIs or SDKs are mentioned, but connected devices often provide some developer access.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No mention of HL7/FHIR, but as a medical device, interoperability standards are likely considered.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific approvals, but as an EU company, CE marking is likely.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "The device is for respiratory adherence, which is a medical indication, suggesting regulatory approval for that use.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Respiro wearable smart inhaler sensors for respiratory adherence"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "The company is based in Italy, so EU approval is likely, but no evidence of US or Japan approvals.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Italy, Europe"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No user numbers are provided, but the company is established, suggesting some adoption.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No distribution details are given, but as a medical device company, partnerships with clinics are likely.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies are mentioned, but the company's focus on adherence may have provider testimonials.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No CPT codes or reimbursement pathways are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "No insurance coverage details are provided, but as a medical device, some coverage may exist in Europe.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No patient assistance programs are mentioned, but subscription models are common for connected devices.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue data is available, but the company's continued operation suggests some growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "No financial details are provided, so profitability is unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "The connected therapeutic model suggests potential for recurring revenue through software services.",
+      "evidence_urls": ["https://www.amiko.io"],
+      "evidence_snippets": ["Connected therapeutics"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No partnerships are mentioned, but as a medical device company, collaborations with research institutions are likely.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No specific partnerships are mentioned, but the company may collaborate with pharma for adherence programs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No participation in standards bodies is mentioned, but it is common for medical device companies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

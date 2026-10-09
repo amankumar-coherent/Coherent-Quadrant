@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Fujitsu offers a range of compute options including x86 servers and its own ARM-based A64FX processor, but lacks a broad GPU or custom accelerator portfolio.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company. It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "Fujitsu's A64FX processor is known for high performance per watt in HPC, but specific accelerator benchmarks are not provided in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Fujitsu's compute products, especially those based on ARM, are compatible with major AI frameworks, but evidence is limited.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Fujitsu provides networking gear for data centers, but specific high-speed solutions like 400G/800G Ethernet or InfiniBand are not detailed.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "No specific latency or bandwidth data for Fujitsu's interconnect technology is available in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Fujitsu's networking products are likely compatible with open standards, but no specific vendor or standard compatibility is mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "No PUE data for Fujitsu's data center designs or equipment is provided in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Fujitsu offers some cooling solutions, but advanced liquid cooling for high-density compute is not explicitly mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Fujitsu's power management features are not detailed in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "Fujitsu provides IT services and solutions, but a comprehensive data center orchestration platform is not explicitly mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["The company also provides IT services and solutions."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Fujitsu's orchestration software is likely compatible with Kubernetes and OpenStack, but no specific evidence is provided.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["The company also provides IT services and solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Automation features for provisioning, scaling, and monitoring are not detailed in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["The company also provides IT services and solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Fujitsu offers the A64FX processor optimized for HPC and AI, but specialized AI accelerators are not mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Fujitsu's A64FX provides good performance for AI workloads, but specific comparisons to general-purpose alternatives are not available.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["It produces a wide range of hardware including servers, storage systems, and networking gear used in data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No tools for workload profiling and optimization across AI frameworks are mentioned in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Fujitsu operates data centers globally, but the exact number of regions is not specified.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Fujitsu has a global presence, but specific geographic distribution of data centers is not detailed.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "No expansion plans for emerging markets are mentioned in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "No specific hyperscaler customers or partners are listed in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Revenue split between enterprise and hyperscaler customers is not available.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No case studies or testimonials from Fortune 500 companies are provided in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Annual revenue from data center products and services is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Gross margin for the data center segment is not available.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Revenue growth in the data center market over the past three years is not mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "Market share in the global data center systems market is not provided.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Growth rate compared to the market is not available.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "Gaining or losing share in AI servers or storage is not mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Fujitsu has partnerships with major technology providers, but specific alliances in the last two years are not detailed.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No recent acquisitions to strengthen data center capabilities are mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No joint ventures or co-development agreements for next-generation data center technologies are mentioned.",
+      "evidence_urls": ["https://fujitsu.com"],
+      "evidence_snippets": ["Fujitsu is a Japanese multinational IT equipment and services company."],
+      "grounding": "insufficient"
+    }
+  ]
+}

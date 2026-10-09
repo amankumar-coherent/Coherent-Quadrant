@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 products listed; company states it does not produce, distribute, or commercialize tirzepatide."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 therapeutic differentiation; company has broad therapeutic areas but not incretin-specific."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions R&D, clinical studies, and innovation centers, but no GLP-1 specific pipeline."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 manufacturing or supply capabilities."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has quality and compliance sections, but no GLP-1 regulatory approvals or filings."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in Brazil and Latin America, but no evidence of GLP-1 market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Established Brazilian pharma with recognized brands, but not specifically in GLP-1."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 pipeline or indication roadmap mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions licensing in/out and international expansion via Exzell, but not GLP-1 specific."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

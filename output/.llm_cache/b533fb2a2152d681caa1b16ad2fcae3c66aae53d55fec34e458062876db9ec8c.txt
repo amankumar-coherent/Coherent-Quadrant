@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Viawest is a data center services provider, not a compute hardware vendor, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "As a services provider, Viawest does not manufacture accelerators, so performance per watt metrics are not applicable.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Viawest does not produce compute products, so compatibility with AI frameworks is not relevant to its offerings.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "Viawest offers connectivity services as part of its data center solutions, but not high-speed networking hardware like 400G/800G Ethernet or InfiniBand.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["It operated multiple data centers and offered connectivity and security services."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "No specific latency or bandwidth data is available for Viawest's interconnect technology, as it is a services provider rather than a hardware vendor.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["It operated multiple data centers and offered connectivity and security services."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Viawest's networking services are likely compatible with industry standards, but no specific details on switch vendor compatibility are available.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["It operated multiple data centers and offered connectivity and security services."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "Viawest likely operates efficient data centers, but no specific PUE figures are provided in the knowledge base.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "No evidence that Viawest offers liquid cooling or advanced cooling solutions; as a colocation provider it may offer some cooling, but specifics are unknown.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 3,
+      "answer": "Viawest may implement power management features in its data centers, but no specific details are available in the knowledge base.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Viawest offers managed hosting and cloud solutions, which may include management platforms, but no comprehensive orchestration software is documented.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No evidence of compatibility with Kubernetes or OpenStack; as a services provider, it may support customer-managed stacks, but specifics are unknown.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Automation features are not documented; Viawest likely offers some management tools but not a full automation suite.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 2,
+      "answer": "Viawest does not offer specialized AI hardware or software optimizations; it provides general data center services.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 2,
+      "answer": "No AI-specific performance improvements are offered, as Viawest is not an AI hardware or software vendor.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 2,
+      "answer": "No tools for AI workload profiling or optimization are provided by Viawest.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "Viawest operated multiple data centers, but the exact number of regions is not specified; as a regional provider, its footprint is likely limited.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["It operated multiple data centers and offered connectivity and security services."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Viawest is based in Colorado and likely has a U.S.-centric footprint, but no detailed geographic distribution is available.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Founded / based in: Greenwood Village, Colorado"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 3,
+      "answer": "No information on expansion plans; Viawest merged into Flexential, so future plans are uncertain.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Parent / owner: Flexential | Ownership relation: merged_into"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "No evidence of hyperscaler customers or partnerships; Viawest likely served enterprise clients but specifics are unknown.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "Revenue breakdown between enterprise and hyperscaler customers is not available.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 3,
+      "answer": "No case studies or testimonials from Fortune 500 companies are documented in the knowledge base.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No revenue figures are available for Viawest; as a private company, financials are not public.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "Gross margin data is not available for Viawest's data center segment.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No revenue growth data is available; the company merged into Flexential, so historical performance is not documented.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Parent / owner: Flexential | Ownership relation: merged_into"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 3,
+      "answer": "Market share data is not available for Viawest; it was a regional player, likely with a small share.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "Growth rate relative to the market is unknown; no financial or market data is provided.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 3,
+      "answer": "No information on share gains or losses in AI servers or storage; Viawest is not a hardware vendor.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "No recent strategic alliances with major technology providers are documented for Viawest.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No acquisitions by Viawest are known; the company itself was merged into Flexential.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Parent / owner: Flexential | Ownership relation: merged_into"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No joint ventures or co-development agreements are documented for Viawest.",
+      "evidence_urls": ["https://viawest.com"],
+      "evidence_snippets": ["Viawest was a provider of data center services including colocation, managed hosting, and cloud solutions."],
+      "grounding": "insufficient"
+    }
+  ]
+}

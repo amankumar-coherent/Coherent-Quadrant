@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only a single product: a wearable continuous glucose monitoring device with sensor, transmitter, and applicator. No other products are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence notes the device targets smaller needle size to reduce insertion trauma and is designed for accurate monitoring, but no clinical trial results or safety data are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "The company is developing an 'industry-first dermal' CGM approach with a painless patch and precision sensor, indicating innovative R&D focus."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems is present."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals. The device is still in development."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Headquartered in Goleta, CA, but no evidence of market presence or distribution channels beyond company website and conference participation."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of clinical adoption, physician endorsements, or patient testimonials. Company is relatively unknown."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue or funding details are provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Only one product in development for diabetes; no mention of additional indications or pipeline expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows participation in industry events like Diabetes Technology Meeting and LSI Europe '24, suggesting networking, but no formal partnerships are mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

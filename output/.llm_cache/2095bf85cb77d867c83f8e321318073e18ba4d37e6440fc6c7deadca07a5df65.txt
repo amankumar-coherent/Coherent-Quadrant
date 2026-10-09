@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions only one product, EMP-401, an oral obesity therapy; no other molecules or marketed products."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Focus on oral obesity therapy, but no evidence of differentiation or coverage beyond that single indication."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Developing oral obesity therapy suggests some R&D, but no clinical trial phases or data are provided."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence only in Sweden; no evidence of broader market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of brand recognition or reputation among healthcare professionals."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only one product in development (EMP-401) for oral obesity; no other pipeline or indications mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion activities."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

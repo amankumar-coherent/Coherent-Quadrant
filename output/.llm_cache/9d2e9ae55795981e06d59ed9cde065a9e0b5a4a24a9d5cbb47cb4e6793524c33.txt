@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only one product, the iLet Bionic Pancreas, with variants for adults and children, and integration with Dexcom G7 and FreeStyle Libre 3 Plus sensors. No other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Website includes 'HCP Pivotal Trial Results' and 'Real World Data' sections, indicating clinical validation. Safety information is prominently provided, including indications and warnings."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "The iLet is described as 'like no other insulin pump' with automated insulin dosing and no carb counting, and there is an 'iLet Simulator' and 'Bionic Circle App', showing ongoing innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems. Only mention of 'Supplier Information' link, but no details."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "The iLet is indicated for type 1 diabetes 6 years and older and requires prescription, implying regulatory clearance. Safety information and user guides are provided, but no explicit FDA/CE marks."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions 'Pharmacy Advantage Program' and phone number with US area code, suggesting US focus. No evidence of global markets or international distribution."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence of 'iLet Reviews', 'Real World Data', and 'HCP Pivotal Trial Results' indicates clinical adoption and trust. Also, 'Bionic Circle' allows family involvement, enhancing patient engagement."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided. Only an 'Investors' link exists, but no revenue or funding details are in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "The iLet is available for adults and children, and there are updates like 'Color iLet' and integration with new sensors (FreeStyle Libre 3 Plus), indicating ongoing product enhancements."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnerships with Dexcom and Abbott are evident through sensor integrations. Also, 'Pharmacy Advantage Program' suggests channel partnerships, but no other business expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

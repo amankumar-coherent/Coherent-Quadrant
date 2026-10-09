@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions Eurofarma has a portfolio in diabetes care including GLP-1 receptor agonists, but no specific products are disclosed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of specific therapeutic differentiation or unique GLP-1 offerings; only general mention of diabetes care."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website invites clinical research collaboration, indicating some R&D activity, but no specific GLP-1 pipeline evidence."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Eurofarma is a multinational with over 50 years of experience, implying manufacturing capability, but no specific GLP-1 supply evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Operates in multiple countries, suggesting regulatory compliance, but no specific GLP-1 approvals or quality certifications cited."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in many Latin American and African countries (e.g., Brazil, Mexico, Angola) indicates broad regional access, but not global."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Described as a major Brazilian pharmaceutical company with over 50 years of experience, but no specific GLP-1 brand reputation evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Financial report exists (2024 results) but no specific revenue or profitability figures provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of specific GLP-1 pipeline or indication roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Broad geographic expansion and open innovation model, but no specific GLP-1 partnerships or M&A mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Fosun Pharma has a robust pipeline with several late-stage candidates, including biosimilars and innovative drugs, but specific Phase III counts are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/pipeline.html"],
+      "evidence_snippets": ["持续丰富创新产品管线，提升FIC与BIC新药的研究与临床开发能力"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "The company's pipeline includes diverse modalities such as monoclonal antibodies, CAR-T, and small molecules, indicating broad target diversity.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["汉斯状（抗PD-1单抗）", "奕凯达（CAR-T细胞治疗产品）", "苏可欣（小分子创新药）"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Fosun Pharma has biosimilars targeting top-selling biologics like rituximab and trastuzumab, but the full pipeline targeting other top sellers is not fully disclosed.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["汉利康（利妥昔单抗注射液）", "汉曲优（注射用曲妥珠单抗）"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide specific bioreactor capacity figures, so the score is based on general industry knowledge of Fosun's manufacturing scale.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Fosun Pharma operates multiple manufacturing sites globally, including in China and Europe, supporting redundancy, though specific details are not in the KB.",
+      "evidence_urls": ["https://www.fosunpharma.com/business/pharmaceutical.html"],
+      "evidence_snippets": ["直接运营的业务包括制药、医疗器械与医学诊断"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The knowledge base does not specify whether manufacturing processes are single-use or stainless steel, so the score is based on general industry practices.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Fosun Pharma likely uses advanced analytical techniques like mass spec for characterization, but no specific evidence is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "The number of validated analytical methods for biosimilar comparability is not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Fosun Pharma has published studies on biosimilar similarity, as evidenced by regulatory approvals, but specific publications are not cited in the KB.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["首个中欧双批的国产单抗生物类似药"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "Fosun Pharma has received approvals for biosimilars in China and Europe, including rituximab and trastuzumab, but the exact count in the last 5 years is not specified.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["汉利康（中国首个生物类似药）", "汉曲优（首个中欧双批的国产单抗生物类似药）"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Average approval times are not provided in the knowledge base, so the score is based on general industry knowledge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "No complete response letters or rejections are mentioned in the KB, but the company's successful approvals suggest a generally positive track record.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Fosun Pharma uses CHO cells for monoclonal antibody production, as is standard for biosimilars, but the KB does not specify expression systems.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "The company has proprietary platforms for developing biosimilars and innovative drugs, but specific platform details are not in the KB.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/platform.html"],
+      "evidence_snippets": ["创新平台"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No specific evidence of AI or automation investments is present in the KB, but the company's innovation focus suggests some adoption.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Fosun Pharma's products are available in numerous countries, including China, Europe, and emerging markets, as evidenced by approvals and commercial presence.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["Zercepac（150mg）已于英国、德国、西班牙、法国等近20个欧洲国家和地区成功上市"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Fosun Pharma has a strong presence in emerging markets, particularly through its anti-malarial drug Artesun and partnerships in Africa and Asia.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["救治了全球超5,600万重症疟疾患者"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Fosun Pharma has local manufacturing and partnerships in key regions, including Europe and China, but specific details are not fully in the KB.",
+      "evidence_urls": ["https://www.fosunpharma.com/business/"],
+      "evidence_snippets": ["直接运营的业务包括制药、医疗器械与医学诊断"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "The KB provides overall revenue growth (416.62亿元 in 2025) but not specific biologics growth rate, so the score is based on general performance.",
+      "evidence_urls": ["https://www.fosunpharma.com/"],
+      "evidence_snippets": ["2025年营业收入 416.62亿元"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Fosun Pharma is profitable overall, but profitability of the biosimilar segment specifically is not disclosed in the KB.",
+      "evidence_urls": ["https://www.fosunpharma.com/"],
+      "evidence_snippets": ["2025年归母净利润 33.71亿元"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Projected market share growth is not provided in the KB, so the score is based on general industry trends and company positioning.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "Fosun Pharma has partnerships with major pharma companies, such as BioNTech for mRNA vaccines, and distribution through Sinopharm.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["复必泰（mRNA新冠疫苗，即BNT162b2）"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "The number of healthcare providers or hospitals as customers is not specified, but the company's products are widely used in hospitals across China and globally.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["备案的治疗中心超过130家"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Fosun Pharma has long-term supply agreements, such as inclusion in China's national medical insurance, but specific payer/GPO contracts are not detailed.",
+      "evidence_urls": ["https://www.fosunpharma.com/innovate/"],
+      "evidence_snippets": ["苏可欣于2020年12月纳入国家医保目录"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Fosun Pharma's biosimilars are priced at a discount to reference biologics, but the exact average discount is not disclosed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No specific value-added services for payers are mentioned in the KB, but the company's patient support programs may count.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Fosun Pharma's pricing is competitive in China and Europe, but detailed comparisons with competitors are not available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "The KB does not provide information on supplier diversity for raw materials, so the score is based on general industry practices.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Fosun Pharma likely has risk management plans given its global operations, but no specific evidence is in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Average lead times for key inputs are not provided in the KB, so the score is based on general knowledge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

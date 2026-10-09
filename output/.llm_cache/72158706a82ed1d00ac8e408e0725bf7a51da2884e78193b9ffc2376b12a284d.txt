@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Only brilaroxazine (RP5063) is listed as a clinical-stage candidate; no GLP-1 product is mentioned. RP1208 is in preclinical for depression/obesity, but not GLP-1."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Focus is CNS, respiratory, metabolic; brilaroxazine targets neuropsychiatric indications, not GLP-1. No GLP-1 differentiation evidence."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "supported",
+      "why": "Clinical-stage with brilaroxazine in Phase III for schizophrenia; RP1208 in preclinical for depression/obesity. No GLP-1 clinical trials."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 1,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "FDA feedback on new brilaroxazine formulation mentioned, but no GLP-1 regulatory activity."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Presence only in United States; no GLP-1 market access evidence."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Clinical-stage company with no marketed GLP-1 products; reputation limited to CNS pipeline."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Reports Q2 2026 financial results, smaller loss, but flags going concern; no GLP-1 revenue."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Pipeline includes brilaroxazine for CNS and RP1208 for depression/obesity (preclinical), but no GLP-1 specific pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 1,
+      "grounding": "insufficient",
+      "why": "No partners, investors, or customers disclosed; no GLP-1 partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows two monitors (Zio monitor and Zio AT) and supporting services (ZioSuite, MyZio app), but no other device categories."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Multiple studies (AVALON, CAMELOT, Barrett et al.) show highest diagnostic yield, lowest retesting, and 99% physician agreement; over 12 million patients analyzed."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "First FDA-cleared deep-learned algorithm, advanced AI, and continuous innovation evidenced by Zio AT and MyZio app."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific evidence on manufacturing processes or quality systems; only mentions of FDA-cleared AI and regulatory approvals."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA 510K clearance, CE mark, UKCA mark, and PMDA-approval mentioned; FDA-cleared AI."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Presence in US, UK, Japan, and Europe indicated by region selectors on website; global reach implied."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Over 12 million patients analyzed, 2 billion hours of data, and multiple large real-world studies (AVALON, CAMELOT) indicate strong clinical adoption and trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "Investor relations and financials sections exist, but no specific revenue or financial metrics provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Zio AT is a newer product; ongoing studies (AVALON, CAMELOT) suggest expansion into broader indications, but no explicit pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "EHR integration and telehealth services suggest partnerships, but no specific partner names or expansion deals mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,35 @@
+shard 1/10: 19 companies
+pre-scoring 18 verified companies on slot 42
+  already done : 12
+  X axis       : Service Delivery Capability
+  Y axis       : Business and Commercial Strength
+  X parameters : FWI & Depth-Imaging Technical Leadership, Project Track Record, HPC Resourcing & Team Capacity...
+  Y parameters : Global Market Standing & Reputation, Relevant Client Portfolio & References, Delivery Reliability...
+  definitions  : 5 X, 5 Y
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_42_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  saved 13 companies total (1m elapsed)
+      · params [1-1]: 1/1 companies detailed
+Traceback (most recent call last):
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\scripts\prescore_verified.py", line 360, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\scripts\prescore_verified.py", line 292, in main
+    got = ai_mode_scorer.score_parameters_for_companies(
+        names,
+    ...<11 lines>...
+        y_axis_label=axis_y_label,
+    )
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\src\vendor_intel\quadrant\ai_mode_scorer.py", line 795, in score_parameters_for_companies
+    got = _ask_axis(chunk, label, params, tag, defs)
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\src\vendor_intel\quadrant\ai_mode_scorer.py", line 746, in _ask_axis
+    print(f"      · params {tag} {label}: 5-in-1 query "
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          f"returned {len(detail)}/{len(params)} for {company} "
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          f"-- asking {len(missing_params)} singly", flush=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aman.kumar\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0144' in position 94: character maps to <undefined>

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "SPIL is an OSAT, not a wafer fab, so it does not offer process nodes; its advanced packaging capabilities are not specified in the KB.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["SPIL is one of the leading service-oriented companies in the semiconductor manufacturing field and a world-class IC packaging and testing services provider."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "SPIL does not lead in wafer process technologies like FinFET or GAA; its focus is on packaging and testing, with no specific technology leadership mentioned.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["offering a comprehensive suite of assembly, test, bumping, and advanced integration technologies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No roadmap for next-generation nodes is available; SPIL's roadmap would be in packaging technologies, not wafer nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "SPIL offers a broad range of packaging and testing services across multiple semiconductor categories, including lead frame, substrate, and wafer-level packages, serving PC, handheld, consumer, and wire communication markets.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["Satisfies most applications for PC, hand-held product, consumer product and wire communication markets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed in the KB; SPIL's portfolio is diversified across packaging types but no specific revenue breakdown is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 10,
+      "answer": "SPIL is a major OSAT provider, offering comprehensive packaging, assembly, test, and bumping services, as confirmed by the KB.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["SPIL is one of the leading service-oriented companies in the semiconductor manufacturing field and a world-class IC packaging and testing services provider."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "SPIL does not own proprietary design IP like CPU or GPU; it is a packaging and testing service provider, not a chip designer.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "SPIL does not license design IP; it relies on customer-provided designs and focuses on manufacturing services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "SPIL's architecture strength is not applicable as it is not a chip architect; its relevance to AI, 5G, or automotive is through packaging services, but no specific strengths are documented.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "SPIL is an OSAT, so it does not have wafer fabrication capacity; its capacity is in packaging and testing, but specific numbers are not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rate for wafer nodes is not applicable; packaging yield metrics are not disclosed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "SPIL offers advanced packaging services including bumping, wafer-level packaging, and stacked die, but specific 2.5D/3D or chiplet capabilities are not detailed.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["Bumping", "Wafer Level (WLCSP)", "Stacked Die"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Quality certifications are not listed in the KB, but as a major OSAT, SPIL likely holds ISO 9001 and IATF 16949; this is inferred from industry standards.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rate (DPPM) is not provided; SPIL reports 90% customer satisfaction, but no specific reliability metrics are given.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["customer_satisfaction: 90%"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "SPIL demonstrates strong environmental compliance with 100% conflict-free materials and a 90% recycling rate, indicating robust adherence to regulations like RoHS and REACH.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["conflict_free_material: 100%", "recycling_rate: 90%"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "SPIL has a significant presence in Taiwan (Taichung) and operations in Malaysia, as noted in the KB, indicating a global footprint.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["Major OSAT with operations in Malaysia, providing advanced packaging services. | Malaysia | Taichung, Taiwan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include PC, handheld, consumer, and wire communication, but revenue contribution by market is not specified.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["Satisfies most applications for PC, hand-held product, consumer product and wire communication markets"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Geographic diversification with operations in Taiwan and Malaysia helps mitigate regional risks, but the KB does not detail the extent of mitigation.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["Major OSAT with operations in Malaysia, providing advanced packaging services. | Malaysia | Taichung, Taiwan"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not listed in the KB; customer concentration risk cannot be assessed from available data.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No specific partnerships with equipment makers, EDA vendors, or research consortia are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "As an OSAT, SPIL collaborates with foundries and design houses, but specific ecosystem partnerships are not documented in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Revenue is listed as NTD 0 Billion, which is likely a placeholder; actual financials are not available in the KB.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["revenue: NTD 0 Billion"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "CapEx data is not provided in the KB; as a major OSAT, SPIL likely invests significantly, but no figures are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "Balance sheet details such as debt-to-equity and cash reserves are not disclosed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No specific technology roadmap milestones are provided in the KB; SPIL's focus on advanced integration suggests ongoing development, but details are lacking.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No explicit roadmap for AI chips, quantum, or advanced memory is mentioned; SPIL's packaging services may support these, but no specifics are given.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "SPIL's emphasis on miniaturization and multifunctional integration aligns with industry trends, but a detailed roadmap is not available.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["high performance, miniaturization, and multifunctional integration as core value drivers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "No new fab or expansion projects are announced in the KB; SPIL's capacity expansion plans are not documented.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rate is not provided; the KB mentions monthly sales reports but no historical growth data.",
+      "evidence_urls": ["https://www.spil.com.tw"],
+      "evidence_snippets": ["Financial news indicates regular monthly sales report releases"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "Funding and execution plans for capacity expansion are not detailed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

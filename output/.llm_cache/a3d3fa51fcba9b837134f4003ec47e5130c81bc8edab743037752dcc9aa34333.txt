@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Cisco's portfolio focuses on networking and security, not on compute accelerators like CPUs, GPUs, or custom accelerators for data centers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 3,
+      "answer": "Cisco does not offer accelerators, so performance per watt comparisons are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Cisco's compute products are not designed for AI frameworks; their focus is on networking and security.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "Cisco offers high-speed networking solutions including 400G/800G Ethernet and AI-optimized networking, as highlighted in their AI networking solutions.",
+      "evidence_urls": ["/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html"],
+      "evidence_snippets": ["AI-optimized networking that unifies scale, speed, and resilience—so AI workloads run faster, more efficiently, and at global scale."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Cisco's networking technology is known for low latency and high bandwidth, but specific real-world deployment metrics are not provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Cisco's networking products support open standards and are compatible with major switch vendors, as they are a leading networking vendor.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Cisco does not provide data center designs or equipment with PUE metrics; their focus is on networking and security.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Cisco offers some cooling solutions for networking equipment, but not specifically for high-density compute.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Cisco's networking equipment includes power management features, but specific energy reduction metrics are not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "Cisco provides comprehensive software platforms like Cisco Cloud Control and AI Canvas for managing and orchestrating data center resources.",
+      "evidence_urls": ["/site/us/en/solutions/artificial-intelligence/agentic-ops/cisco-cloud-control/index.html", "/site/us/en/solutions/artificial-intelligence/agentic-ops/ai-canvas/index.html"],
+      "evidence_snippets": ["The unified platform with one shared view across every IT domain.", "Move beyond visibility to autonomous operations with trusted, policy-bound agents that execute complex workflows at machine speed."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 7,
+      "answer": "Cisco's orchestration software is compatible with industry standards like Kubernetes, given their enterprise focus, but specific compatibility is not detailed in KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "Cisco's platforms include automation features for provisioning, scaling, and monitoring, as indicated by AI Canvas and Cisco IQ.",
+      "evidence_urls": ["/site/us/en/solutions/artificial-intelligence/agentic-ops/ai-canvas/index.html", "/site/us/en/solutions/artificial-intelligence/agentic-ops/cisco-cloud-control/index.html"],
+      "evidence_snippets": ["Move beyond visibility to autonomous operations with trusted, policy-bound agents that execute complex workflows at machine speed.", "The unified platform with one shared view across every IT domain."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Cisco offers AI-optimized networking and security solutions, but not specialized compute hardware for AI workloads.",
+      "evidence_urls": ["/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html"],
+      "evidence_snippets": ["AI-optimized networking that unifies scale, speed, and resilience—so AI workloads run faster, more efficiently, and at global scale."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Cisco's AI networking improves performance for AI workloads by providing high-speed, low-latency connectivity, but not compute acceleration.",
+      "evidence_urls": ["/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html"],
+      "evidence_snippets": ["AI-optimized networking that unifies scale, speed, and resilience—so AI workloads run faster, more efficiently, and at global scale."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Cisco provides observability tools like Splunk and Cisco IQ for monitoring and optimization, but specific AI workload profiling tools are not detailed.",
+      "evidence_urls": ["/site/us/en/products/observability/index.html"],
+      "evidence_snippets": ["Observe and secure AI agents, models, and infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "Cisco does not operate data centers; they provide networking equipment and software for data centers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Cisco's data center footprint is not applicable as they are not a cloud provider.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Cisco's expansion plans are not focused on data center regions but on networking solutions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "Cisco lists major customers like Nestlé, McLaren, and Tripadvisor, and is trusted by 99% of the Fortune 500, indicating strong enterprise relationships.",
+      "evidence_urls": ["/site/us/en/about/case-studies-customer-stories/nestle.html", "/site/us/en/about/why-cisco/mclaren-racing.html", "/site/us/en/about/case-studies-customer-stories/tripadvisor.html"],
+      "evidence_snippets": ["Trusted by 99% of the Fortune 500 and over 1 million customers worldwide", "Nestlé depends on Cisco networking and assurance for connectivity, proactive troubleshooting, and full visibility across 1700 sites."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Cisco's revenue split between enterprise and hyperscalers is not disclosed, but they have a strong enterprise focus.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 9,
+      "answer": "Cisco provides case studies from Fortune 500 companies like Nestlé, McLaren, and Tripadvisor, demonstrating their solutions.",
+      "evidence_urls": ["/site/us/en/about/case-studies-customer-stories/nestle.html", "/site/us/en/about/why-cisco/mclaren-racing.html", "/site/us/en/about/case-studies-customer-stories/tripadvisor.html"],
+      "evidence_snippets": ["Nestlé depends on Cisco networking and assurance for connectivity, proactive troubleshooting, and full visibility across 1700 sites.", "The McLaren Mastercard Formula 1 Team relies on Cisco networking and security for AI workloads processing race data."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Cisco's annual revenue from data center products is not specified, but they are a major networking vendor with significant revenue.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Cisco's gross margin for data center segment is not disclosed, but they have strong margins overall.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 7,
+      "answer": "Cisco has shown consistent growth in networking and security, but specific data center revenue growth is not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Cisco is a leader in networking equipment, but their share in the overall data center systems market is moderate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Cisco's growth rate in data center systems is not specified, but they are investing in AI networking.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Cisco is gaining share in AI networking, but not in AI servers or storage.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Cisco has strategic alliances with major technology providers, including the acquisition of Splunk and partnerships with NVIDIA.",
+      "evidence_urls": ["https://www.splunk.com/en_us/products/agent-observability.html"],
+      "evidence_snippets": ["Powered by the Galileo acquisition. Observe and secure AI agents, models, and infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 8,
+      "answer": "Cisco recently acquired Splunk and Galileo to strengthen their observability and AI capabilities.",
+      "evidence_urls": ["https://www.splunk.com/en_us/products/agent-observability.html"],
+      "evidence_snippets": ["Powered by the Galileo acquisition. Observe and secure AI agents, models, and infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Cisco has co-development agreements for AI networking, but specific joint ventures are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

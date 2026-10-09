@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Veeco does not directly manufacture chips at advanced nodes; it provides process equipment for semiconductor manufacturing, so the question is not directly applicable.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco is an innovative manufacturer of semiconductor process equipment serving the IC, compound semi, and wafer-level packaging with a broad portfolio of products and comprehensive services."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Veeco leads in specific process technologies such as laser spike annealing, ion beam deposition/etch, and MOCVD, which are critical for advanced nodes and compound semiconductors.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco has developed revolutionary technology to enable thermal annealing solutions at the most advanced technology nodes.", "Veeco's unmatched ion beam know-how delivers proven etch and deposition performance that has enabled the data storage and MEMS markets for decades."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Veeco's roadmap focuses on enabling advanced packaging and compound semiconductor production rather than specific next-generation logic nodes, with limited public details on node-specific timelines.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco provides advanced capital equipment that addresses front-end processes and advanced packaging needs, tackling challenges like 3D device architectures, EUV photomask production, and material integration for high-performance, low-power devices."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Veeco offers a broad portfolio across multiple semiconductor categories including logic, memory, compound semiconductors, and data storage, as well as advanced packaging equipment.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco is an innovative manufacturer of semiconductor process equipment serving the IC, compound semi, and wafer-level packaging with a broad portfolio of products and comprehensive services."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type, but Veeco's portfolio spans multiple markets, suggesting some diversification.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Veeco provides equipment for wafer-level packaging and has announced partnerships for advanced packaging applications, but does not offer OSAT services directly.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Agreement with IBM to Explore Wet Processing System for Advanced Packaging Applications", "Veeco Announces Over $50 Million in Wet Processing System Orders Supporting Advanced Packaging for AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "Veeco does not own CPU, GPU, or AI accelerator IP; its proprietary IP is in process equipment technologies like MOCVD and ion beam systems.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco's unmatched ion beam know-how delivers proven etch and deposition performance", "Veeco offers a range of industry-leading GaN and As/P MOCVD systems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Veeco does not license chip design IP; it develops its own equipment technology and may use third-party components, but this is not detailed in the KB.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Veeco's equipment supports high-growth areas like AI, 5G, and automotive through advanced packaging and compound semiconductor solutions, but it does not have its own chip architecture.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Over $50 Million in Wet Processing System Orders Supporting Advanced Packaging for AI", "The compound semiconductor market is one of Veeco’s driving forces, fueled mainly by 5G/6G, display, power electronics, and photonics end-markets."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Veeco is an equipment manufacturer, not a wafer fab, so it does not have wafer fabrication capacity or utilization rates.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco is an innovative manufacturer of semiconductor process equipment"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Veeco does not produce wafers, so yield rates are not applicable; its equipment aims to improve customer yields, but no specific yield data is provided.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Our solutions are engineered to enhance device performance, yield, and cost of ownership"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Veeco offers advanced packaging equipment such as wet processing and lithography systems, and has announced significant orders for advanced packaging for AI.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Over $50 Million in Wet Processing System Orders Supporting Advanced Packaging for AI", "Veeco is the market leader in advanced packaging lithography systems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The KB does not list specific quality certifications, but Veeco likely holds standard ISO certifications as a semiconductor equipment manufacturer.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No specific defect rate data is provided, but Veeco emphasizes low defectivity in its equipment, which helps customers achieve high reliability.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco’s WaferStorm and WaferEtch platforms are the industry choice for several critical solvent-based processes as they provide high uniformity combined with low defectivity"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Veeco mentions sustainable practices and environmental health & safety, but specific compliance details like RoHS or REACH are not in the KB.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Surface preparation using sustainable practices is critical to ensuring the reliability of advanced microelectronics", "Environmental Health & Safety"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Veeco has a global presence with operations in the United States and Asia, and serves customers worldwide.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Instruments | United States; Asia | Plainview, New York, USA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Veeco serves multiple end-markets including semiconductors, compound semiconductors, data storage, and scientific applications, with a focus on AI, 5G, and automotive.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["The compound semiconductor market is one of Veeco’s driving forces, fueled mainly by 5G/6G, display, power electronics, and photonics end-markets.", "Data Storage: The promise of generative AI requires fundamental changes in our data storage infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Veeco's presence in both the US and Asia provides some geographic diversification, but the KB does not detail risk mitigation strategies.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Instruments | United States; Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "The KB does not list specific customers, but Veeco's announcements with IBM and over $50 million in orders suggest relationships with major players.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Agreement with IBM to Explore Wet Processing System for Advanced Packaging Applications", "Veeco Announces Over $50 Million in Wet Processing System Orders Supporting Advanced Packaging for AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Veeco has partnerships like the one with IBM and likely collaborates with research consortia, but the KB does not detail EDA or equipment maker partnerships.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Agreement with IBM to Explore Wet Processing System for Advanced Packaging Applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Veeco collaborates with ecosystem players through its equipment solutions and partnerships, but the KB does not provide detailed collaboration models.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Through collaboration and innovation, Veeco enables progress across the entire semiconductor supply chain"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "The KB does not provide financial figures, but Veeco is a publicly traded company with reported quarterly results.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Reports Second Quarter 2026 Financial Results"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "No CapEx data is available in the KB, and as an equipment maker, its capital expenditure patterns differ from fabs.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "The KB does not provide balance sheet details, but Veeco's 30-year listing on NASDAQ suggests financial stability.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Rings NASDAQ Bell Celebrating 30 Years of Being Listed"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Veeco's roadmap includes advancements in wet processing for advanced packaging, SiC epitaxy, and MOCVD systems for compound semiconductors.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Agreement with IBM to Explore Wet Processing System for Advanced Packaging Applications", "Veeco’s new EpiStrideTM system for silicon carbide epitaxy"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Veeco's equipment supports emerging technologies like AI, quantum computing, and advanced memory through its process solutions, but it does not have a chip-level roadmap.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Our technologies enable breakthroughs in semiconductors, optoelectronics, MEMS, and more—fueling innovation in 5G/6G, quantum computing, and IoT applications."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Veeco's roadmap aligns with industry trends such as AI-driven advanced packaging and compound semiconductors for 5G and electric vehicles.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Over $50 Million in Wet Processing System Orders Supporting Advanced Packaging for AI", "The compound semiconductor market is one of Veeco’s driving forces, fueled mainly by 5G/6G, display, power electronics, and photonics end-markets."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Veeco does not build fabs, but it expands its product lines and has announced significant orders, indicating growth in equipment capacity.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Over $50 Million in Wet Processing System Orders Supporting Advanced Packaging for AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "The KB does not provide revenue growth rates, but recent announcements suggest growth in advanced packaging and compound semiconductor markets.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": ["Veeco Announces Over $50 Million in Wet Processing System Orders Supporting Advanced Packaging for AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Veeco likely funds expansions through operational cash flow and strategic investments, but the KB does not detail funding plans.",
+      "evidence_urls": ["https://www.veeco.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Carnation Ambulatory Monitor (CAM) as primary product; no other devices listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "CAM is described as P-wave centric, delivering clarity, convenience, and comfort; but no specific clinical outcome data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Founded by electrophysiologist Gust Bardy with new approach to signal processing and ECG reader training; raised $35.5M for development."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Hillrom (later Baxter) which likely has manufacturing capabilities, but no direct evidence of Bardy's own systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Listed in FDA/CE certified wearable devices table; acquired by large medical device company, implying compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Based in Seattle, acquired by Hillrom (global), but no direct evidence of international sales or distribution."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Featured in healthcare IT and remote monitoring guides; acquired by Hillrom for $375M indicating market recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Annualized revenue of $30M and net operating losses >$20M at acquisition; raised $35.5M earlier."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Focus on arrhythmia detection; no evidence of new indications or pipeline beyond CAM."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquired by Hillrom (later Baxter) providing scale; also mentioned in connected health vendor guide."
+    }
+  ],
+  "evidence_used": true
+}

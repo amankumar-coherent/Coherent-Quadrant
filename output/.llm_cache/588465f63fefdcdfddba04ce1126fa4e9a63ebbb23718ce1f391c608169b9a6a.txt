@@ -1,0 +1,527 @@
+{
+  "market_definition": "The avocado oil market encompasses the production, processing, and distribution of oil extracted from avocado fruit, used primarily in culinary applications (cooking, salad dressings) and increasingly in cosmetics and personal care products. Participants include growers, oil processors, refiners, brand owners, and distributors across global regions, with major production in Mexico, Kenya, and other tropical/subtropical countries.",
+  "market_boundary": {
+    "in_scope": [
+      "Avocado oil producers and processors",
+      "Refined and extra-virgin avocado oil manufacturers",
+      "Avocado oil brand owners and packagers",
+      "Avocado oil distributors and wholesalers",
+      "Private label avocado oil suppliers",
+      "Avocado oil importers/exporters",
+      "Organic and cold-pressed avocado oil specialists",
+      "Avocado oil for cosmetics and personal care"
+    ],
+    "out_of_scope": [
+      "Avocado fruit fresh market and growers (unless vertically integrated)",
+      "Other edible oils (olive, coconut, etc.)",
+      "Avocado-based food products (guacamole, spreads)",
+      "Cosmetic products containing avocado oil (finished creams, lotions)",
+      "Market research reports and industry news sites",
+      "Agricultural equipment and farming supplies"
+    ]
+  },
+  "value_chain_layers": [
+    {
+      "layer_id": "L1",
+      "layer_name": "Upstream / Raw Material Supply",
+      "description": "Avocado fruit sourcing and initial oil extraction. Includes growers, processors who extract crude oil, and suppliers of avocado pulp or pits.",
+      "segments": [
+        {
+          "segment_name": "Avocado growers and fruit suppliers",
+          "sub_segments": ["Organic growers", "Conventional growers", "Vertical integration with processing"],
+          "participant_types": ["grower", "cooperative", "supplier"],
+          "search_intents": [
+            "avocado oil producer official site",
+            "avocado oil manufacturer company"
+          ]
+        },
+        {
+          "segment_name": "Crude avocado oil extractors",
+          "sub_segments": ["Cold-pressed", "Solvent extraction", "Centrifugal extraction"],
+          "participant_types": ["processor", "extractor"],
+          "search_intents": [
+            "cold pressed avocado oil manufacturer",
+            "avocado oil extraction company"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L2",
+      "layer_name": "Processing and Refining",
+      "description": "Refining, bleaching, deodorizing, and quality control of crude avocado oil to produce food-grade or cosmetic-grade oil. Includes contract manufacturers and toll processors.",
+      "segments": [
+        {
+          "segment_name": "Refiners and processors",
+          "sub_segments": ["Refined avocado oil", "Extra-virgin avocado oil", "Organic certified"],
+          "participant_types": ["refiner", "processor", "contract manufacturer"],
+          "search_intents": [
+            "avocado oil refining company",
+            "avocado oil contract manufacturing"
+          ]
+        },
+        {
+          "segment_name": "Private label and bulk suppliers",
+          "sub_segments": ["Bulk oil suppliers", "Private label packaging"],
+          "participant_types": ["supplier", "packager"],
+          "search_intents": [
+            "bulk avocado oil supplier",
+            "private label avocado oil manufacturer"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L3",
+      "layer_name": "Branding and Packaging",
+      "description": "Companies that brand, bottle, and package avocado oil for retail and foodservice. Includes marketing and distribution of finished consumer products.",
+      "segments": [
+        {
+          "segment_name": "Consumer brand owners",
+          "sub_segments": ["Retail brands", "Foodservice brands", "Gourmet/specialty"],
+          "participant_types": ["brand owner", "marketer"],
+          "search_intents": [
+            "avocado oil brand official site",
+            "avocado oil company website"
+          ]
+        },
+        {
+          "segment_name": "Packaging and bottling services",
+          "sub_segments": ["Bottling lines", "Labeling services"],
+          "participant_types": ["packager", "co-packer"],
+          "search_intents": [
+            "avocado oil bottling company",
+            "avocado oil packaging services"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L4",
+      "layer_name": "Distribution and Retail",
+      "description": "Wholesale distribution, import/export, and retail channels that bring avocado oil to end consumers and foodservice operators.",
+      "segments": [
+        {
+          "segment_name": "Distributors and wholesalers",
+          "sub_segments": ["Foodservice distributors", "Specialty food distributors", "Import/export"],
+          "participant_types": ["distributor", "wholesaler", "importer", "exporter"],
+          "search_intents": [
+            "avocado oil distributor",
+            "avocado oil wholesale supplier"
+          ]
+        },
+        {
+          "segment_name": "E-commerce and specialty retailers",
+          "sub_segments": ["Online retailers", "Specialty food stores"],
+          "participant_types": ["retailer", "e-commerce"],
+          "search_intents": [
+            "buy avocado oil online official",
+            "avocado oil retail company"
+          ]
+        }
+      ]
+    }
+  ],
+  "ecosystem_functions": [
+    "avocado fruit grower",
+    "crude oil extractor",
+    "oil refiner",
+    "contract manufacturer",
+    "private label supplier",
+    "bulk oil supplier",
+    "brand owner",
+    "packager",
+    "bottler",
+    "distributor",
+    "wholesaler",
+    "importer",
+    "exporter",
+    "e-commerce retailer"
+  ],
+  "industry_terms": [
+    "avocado oil",
+    "extra virgin avocado oil",
+    "refined avocado oil",
+    "cold-pressed avocado oil",
+    "organic avocado oil",
+    "crude avocado oil",
+    "avocado oil bulk",
+    "avocado oil private label",
+    "avocado oil supplier",
+    "avocado oil manufacturer",
+    "avocado oil producer",
+    "avocado oil extraction",
+    "avocado oil refining",
+    "avocado oil bottling"
+  ],
+  "include_keywords": [
+    "avocado oil",
+    "extra virgin",
+    "cold-pressed",
+    "refined",
+    "organic",
+    "bulk",
+    "private label",
+    "manufacturer",
+    "supplier",
+    "producer"
+  ],
+  "exclude_keywords": [
+    "news",
+    "blog",
+    "market report",
+    "directory",
+    "job board",
+    "consulting",
+    "research firm",
+    "recipes",
+    "health benefits",
+    "guacamole"
+  ],
+  "relevance_keywords": [
+    "avocado oil",
+    "extra virgin",
+    "cold-pressed",
+    "refined",
+    "organic",
+    "bulk",
+    "private label",
+    "manufacturer",
+    "supplier",
+    "producer",
+    "bottling",
+    "packaging"
+  ],
+  "negative_keywords": [
+    "news",
+    "blog",
+    "market",
+    "report",
+    "directory",
+    "jobs",
+    "careers",
+    "consulting",
+    "recipes",
+    "guacamole"
+  ],
+  "discovery_prompts": [
+    {
+      "id": "M1",
+      "layer_id": "L1",
+      "segment": "Avocado growers and fruit suppliers",
+      "sub_sector": "avocado_grower",
+      "text": "avocado oil producer official site"
+    },
+    {
+      "id": "M2",
+      "layer_id": "L1",
+      "segment": "Avocado growers and fruit suppliers",
+      "sub_sector": "avocado_grower",
+      "text": "avocado oil manufacturer company"
+    },
+    {
+      "id": "M3",
+      "layer_id": "L1",
+      "segment": "Crude avocado oil extractors",
+      "sub_sector": "crude_oil_extractor",
+      "text": "cold pressed avocado oil manufacturer"
+    },
+    {
+      "id": "M4",
+      "layer_id": "L1",
+      "segment": "Crude avocado oil extractors",
+      "sub_sector": "crude_oil_extractor",
+      "text": "avocado oil extraction company"
+    },
+    {
+      "id": "M5",
+      "layer_id": "L2",
+      "segment": "Refiners and processors",
+      "sub_sector": "refiner",
+      "text": "avocado oil refining company"
+    },
+    {
+      "id": "M6",
+      "layer_id": "L2",
+      "segment": "Refiners and processors",
+      "sub_sector": "refiner",
+      "text": "avocado oil contract manufacturing"
+    },
+    {
+      "id": "M7",
+      "layer_id": "L2",
+      "segment": "Private label and bulk suppliers",
+      "sub_sector": "bulk_supplier",
+      "text": "bulk avocado oil supplier"
+    },
+    {
+      "id": "M8",
+      "layer_id": "L2",
+      "segment": "Private label and bulk suppliers",
+      "sub_sector": "private_label",
+      "text": "private label avocado oil manufacturer"
+    },
+    {
+      "id": "M9",
+      "layer_id": "L3",
+      "segment": "Consumer brand owners",
+      "sub_sector": "brand_owner",
+      "text": "avocado oil brand official site"
+    },
+    {
+      "id": "M10",
+      "layer_id": "L3",
+      "segment": "Consumer brand owners",
+      "sub_sector": "brand_owner",
+      "text": "avocado oil company website"
+    },
+    {
+      "id": "M11",
+      "layer_id": "L3",
+      "segment": "Packaging and bottling services",
+      "sub_sector": "packager",
+      "text": "avocado oil bottling company"
+    },
+    {
+      "id": "M12",
+      "layer_id": "L3",
+      "segment": "Packaging and bottling services",
+      "sub_sector": "packager",
+      "text": "avocado oil packaging services"
+    },
+    {
+      "id": "M13",
+      "layer_id": "L4",
+      "segment": "Distributors and wholesalers",
+      "sub_sector": "distributor",
+      "text": "avocado oil distributor"
+    },
+    {
+      "id": "M14",
+      "layer_id": "L4",
+      "segment": "Distributors and wholesalers",
+      "sub_sector": "wholesaler",
+      "text": "avocado oil wholesale supplier"
+    },
+    {
+      "id": "M15",
+      "layer_id": "L4",
+      "segment": "E-commerce and specialty retailers",
+      "sub_sector": "retailer",
+      "text": "buy avocado oil online official"
+    },
+    {
+      "id": "M16",
+      "layer_id": "L4",
+      "segment": "E-commerce and specialty retailers",
+      "sub_sector": "retailer",
+      "text": "avocado oil retail company"
+    },
+    {
+      "id": "M17",
+      "layer_id": "L1",
+      "segment": "Avocado growers and fruit suppliers",
+      "sub_sector": "africa_grower",
+      "text": "avocado oil producer Kenya"
+    },
+    {
+      "id": "M18",
+      "layer_id": "L1",
+      "segment": "Avocado growers and fruit suppliers",
+      "sub_sector": "latin_america_grower",
+      "text": "avocado oil manufacturer Mexico"
+    },
+    {
+      "id": "M19",
+      "layer_id": "L2",
+      "segment": "Refiners and processors",
+      "sub_sector": "south_asia_processor",
+      "text": "avocado oil supplier India"
+    },
+    {
+      "id": "M20",
+      "layer_id": "L2",
+      "segment": "Refiners and processors",
+      "sub_sector": "middle_east_processor",
+      "text": "avocado oil producer Middle East"
+    },
+    {
+      "id": "M21",
+      "layer_id": "L4",
+      "segment": "Distributors and wholesalers",
+      "sub_sector": "africa_distributor",
+      "text": "avocado oil distributor South Africa"
+    },
+    {
+      "id": "M22",
+      "layer_id": "L4",
+      "segment": "Distributors and wholesalers",
+      "sub_sector": "southeast_asia_distributor",
+      "text": "avocado oil supplier Indonesia"
+    },
+    {
+      "id": "M23",
+      "layer_id": "L1",
+      "segment": "Avocado growers and fruit suppliers",
+      "sub_sector": "brazil_grower",
+      "text": "produtor de óleo de abacate"
+    },
+    {
+      "id": "M24",
+      "layer_id": "L2",
+      "segment": "Refiners and processors",
+      "sub_sector": "brazil_refiner",
+      "text": "fabricante de óleo de abacate"
+    },
+    {
+      "id": "M25",
+      "layer_id": "L4",
+      "segment": "Distributors and wholesalers",
+      "sub_sector": "brazil_distributor",
+      "text": "distribuidor de óleo de abacate"
+    },
+    {
+      "id": "M26",
+      "layer_id": "L1",
+      "segment": "Avocado growers and fruit suppliers",
+      "sub_sector": "mexico_grower",
+      "text": "productor de aceite de aguacate"
+    },
+    {
+      "id": "M27",
+      "layer_id": "L2",
+      "segment": "Refiners and processors",
+      "sub_sector": "mexico_refiner",
+      "text": "fabricante de aceite de aguacate"
+    },
+    {
+      "id": "M28",
+      "layer_id": "L4",
+      "segment": "Distributors and wholesalers",
+      "sub_sector": "mexico_distributor",
+      "text": "distribuidor de aceite de aguacate"
+    }
+  ],
+  "seed_companies": [
+    {
+      "canonical_name": "Chosen Foods",
+      "primary_domain": "chosenfoods.com",
+      "company_function": "Brand owner and producer of avocado oil",
+      "segment": "Consumer brand owners"
+    },
+    {
+      "canonical_name": "La Tourangelle",
+      "primary_domain": "latourangelle.com",
+      "company_function": "Producer of specialty oils including avocado oil",
+      "segment": "Consumer brand owners"
+    },
+    {
+      "canonical_name": "Olivado",
+      "primary_domain": "olivado.com",
+      "company_function": "Avocado oil producer and exporter",
+      "segment": "Producers and exporters"
+    },
+    {
+      "canonical_name": "AvoPure",
+      "primary_domain": "avopure.com",
+      "company_function": "Avocado oil manufacturer and supplier",
+      "segment": "Bulk and private label suppliers"
+    },
+    {
+      "canonical_name": "Bella Vado",
+      "primary_domain": "bellavado.com",
+      "company_function": "Avocado oil producer",
+      "segment": "Producers"
+    },
+    {
+      "canonical_name": "Kevala",
+      "primary_domain": "kevala.net",
+      "company_function": "Importer and distributor of avocado oil",
+      "segment": "Distributors and wholesalers"
+    },
+    {
+      "canonical_name": "BetterBody Foods",
+      "primary_domain": "betterbodyfoods.com",
+      "company_function": "Brand owner of avocado oil",
+      "segment": "Consumer brand owners"
+    },
+    {
+      "canonical_name": "Spectrum Naturals",
+      "primary_domain": "spectrumnaturals.com",
+      "company_function": "Producer of organic oils including avocado oil",
+      "segment": "Consumer brand owners"
+    },
+    {
+      "canonical_name": "Nutiva",
+      "primary_domain": "nutiva.com",
+      "company_function": "Brand owner of avocado oil",
+      "segment": "Consumer brand owners"
+    },
+    {
+      "canonical_name": "Tierra de Oliva",
+      "primary_domain": "tierradeoliva.com",
+      "company_function": "Producer of avocado oil",
+      "segment": "Producers"
+    },
+    {
+      "canonical_name": "Avocado Oil Company",
+      "primary_domain": "avocadooilcompany.com",
+      "company_function": "Producer and supplier of avocado oil",
+      "segment": "Producers and suppliers"
+    },
+    {
+      "canonical_name": "Mara Avocado Oil",
+      "primary_domain": "maraavocadooil.com",
+      "company_function": "Producer of avocado oil",
+      "segment": "Producers"
+    },
+    {
+      "canonical_name": "Avocado Oil Mexico",
+      "primary_domain": "avocadooilmexico.com",
+      "company_function": "Producer and exporter of avocado oil from Mexico",
+      "segment": "Producers and exporters"
+    },
+    {
+      "canonical_name": "Aceite de Aguacate",
+      "primary_domain": "aceitedeaguacate.com",
+      "company_function": "Producer of avocado oil",
+      "segment": "Producers"
+    },
+    {
+      "canonical_name": "Avocado Oil Kenya",
+      "primary_domain": "avocadooilkenya.com",
+      "company_function": "Producer and exporter of avocado oil from Kenya",
+      "segment": "Producers and exporters"
+    },
+    {
+      "canonical_name": "Kenya Avocado Oil",
+      "primary_domain": "kenyaavocadooil.com",
+      "company_function": "Producer and exporter of avocado oil",
+      "segment": "Producers and exporters"
+    },
+    {
+      "canonical_name": "Avocado Oil Brazil",
+      "primary_domain": "avocadooilbrazil.com",
+      "company_function": "Producer of avocado oil in Brazil",
+      "segment": "Producers"
+    },
+    {
+      "canonical_name": "Oleo de Abacate",
+      "primary_domain": "oleodeabacate.com",
+      "company_function": "Producer of avocado oil in Brazil",
+      "segment": "Producers"
+    },
+    {
+      "canonical_name": "Avocado Oil India",
+      "primary_domain": "avocadooilindia.com",
+      "company_function": "Supplier and distributor of avocado oil in India",
+      "segment": "Distributors and wholesalers"
+    },
+    {
+      "canonical_name": "Avocado Oil South Africa",
+      "primary_domain": "avocadooilsa.co.za",
+      "company_function": "Producer and distributor of avocado oil in South Africa",
+      "segment": "Producers and distributors"
+    }
+  ]
+}

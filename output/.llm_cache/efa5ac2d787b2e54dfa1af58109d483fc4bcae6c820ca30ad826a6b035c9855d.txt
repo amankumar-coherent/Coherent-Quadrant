@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Everion device and its multi-sensor capabilities; no other products in portfolio are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Studies show moderate relationship with nurse measurements and limitations in SpO2 accuracy; FDA-cleared for physiological monitoring without arrhythmia detection."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Device measures 22 parameters in real-time and has over 60 global patents, indicating strong R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence indicates CE class IIa certification and FDA clearance, but no details on manufacturing scale or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Everion is FDA-cleared (Class II) and CE class IIa certified, demonstrating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Switzerland, but evidence does not show broad global market presence; acquired by Biofourmis (US) but no distribution details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Used in FDA collaboration for heart failure endpoints and clinical validation studies, indicating some clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No revenue or financial data for Everion; acquisition by Biofourmis in 2019 but no financial details."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Device is used in heart failure monitoring research, but no explicit pipeline for new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquired by Biofourmis in 2019, and collaboration with FDA for heart failure endpoints indicates partnerships."
+    }
+  ],
+  "evidence_used": true
+}

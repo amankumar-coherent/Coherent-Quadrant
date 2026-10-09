@@ -1,0 +1,165 @@
+[rounds 00:15:15] round 1: 178/250 verified (keep rate 88%) -> discovering 99 more
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 202, resuming with 103)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_45_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +0 (total 103)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +0 (total 103)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +2 (total 105)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+identify+the+BRANDS+sold+in+a+market+and+the+COMPANY+behind+each+brand.+No+invented+names%2C+no+media%2C+associations%2C+research+firms+or+geo+labels.+Return+compact+JSON+only%3A+%7B%22companies%22%3A%5B%7B%22brand%22%3A%22...%22%2C%22company%22%3A%22...%22%2C%22website%22%3A%22https%3A%2F%2F...%22%2C%22headquarters%22%3A%22City%2C+Country%22%2C%22ownership%22%3A%22...%22%2C%22ownership_confidence%22%3A%22high%7Cmedium%7Clow%22%2C%22verdict%22%3A%22...%22%2C%22why_related%22%3A%22...%22%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0AMarket%3A+%22Connected+Fleet+Mobility+Solutions+Market%22%0A%0AGive+me+10+BRANDS+sold+in+this+market+whose+company+is+HEADQUARTERED+IN+united+kingdom%2C+each+with+the+company+behind+it.%0A%0AThe+company%27s+own+global+headquarters+must+be+in+united+kingdom+%E2%80%94+a+local+sales+office%2C+plant%2C+subsidiary+or+distributor+of+a+foreign+company+does+NOT+qualify.+Include+national+and+regional+companies%2C+not+only+the+largest+few.+If+there+genuinely+are+no+more+such+companies%2C+return+%7B%22companies%22%3A%5B%5D%7D+%E2%80%94+do+NOT+substitute+a+company+from+another+country+and+do+NOT+invent+one.%0A%0AWHO+QUALIFIES%3A%0AA+qualifying+company%27s+PRIMARY+business+must+make+it+a+Solution+Provider+in+this+market.+That+is+what+it+IS%2C+not+something+it+also+does.%0A%0ASTRICTLY+EXCLUDE%2C+even+if+related+to+this+market%3A%0A-+Consultancies%2C+market-research+firms%2C+news+outlets+and+industry+associations+%E2%80%94+reporting+on+or+advising+a+market+is+not+operating+in+it.%0A-+Distributors+and+resellers+%E2%80%94+they+carry+other+companies%27+product.%0A-+CONTRACT+MANUFACTURERS%2C+OEM%2FODM+makers%2C+white-label+and+private-label+producers+%E2%80%94+they+build+to+another+company%27s+specification+and+own+no+brand+of+their+own+here.+If+a+company%27s+business+is+making+products+that+are+sold+under+SOMEONE+ELSE%27S+brand%2C+EXCLUDE+it+and+name+the+brand+owner+instead.%0A-+Equipment+and+materials+suppliers+%E2%80%94+they+sell+TO+this+market%2C+not+IN+it.%0A-+A+parent+that+does+not+itself+sell+in+THIS+market+%28name+the+operating+subsidiary+instead%29.%0AIf+unsure%2C+EXCLUDE.%0A%0ADo+NOT+repeat+any+of+these+%28including+subsidiaries%2C+aliases+or+former+names%29%3A%0A-+PaceTrack%0A-+Sure-Track%0A-+CheckedSafe%0A-+VNC+Automotive%0A-+Ctrack%0A-+Autoscribe+Fleet%0A-+ViperTelematics%0A-+Phantom%0A-+CanTrack%0A-+Astra+Telematics%0A-+AssetGo%0A-+VAPTA%0A-+Haloniq%0A-+Fleetclear%0A-+Freeway+Fleet+Systems%0A-+Connected+Management+Services%0A-+Simplytrak%0A-+OpenFleet%0A-+Smart+Strix%0A-+Telematics+Pro%0A-+Ctrack%0A-+Exeros%0A-+Fleetview+Solutions%0A-+Fleet+Witness%0A-+Fleet+Focus%0A-+Truckfile%0A-+Matrix+Telematics%0A-+i247+Group%0A-+Matrix+Telematics%0A-+Stream%0A-+Fleet+Witness%0A-+Fargo+Systems%0A-+Qargo%0A-+Pocket+Box%0A-+Fleetloc8%0A-+Connected+Management+Services%0A-+ACSS%0A-+Asset+Monitoring+Solutions%0A-+Rewire+Security%0A-+Trackitnow%0A-+...and+65+more+already-collected+companies.+Do+NOT+repeat+any+well-known+company+you+would+expect+to+have+been+listed+already%3B+prefer+smaller%2C+regional+or+specialist+companies+not+yet+named.%0A%0AFIELD+RULES%3A%0A-+brand%3A+the+product+%2F+consumer-facing+BRAND+name+as+buyers+know+it+%28e.g.+%22Milton%22%29.+A+brand+is+NOT+a+distributor+and+NOT+a+product+category.+If+the+company+genuinely+sells+only+under+its+own+corporate+name%2C+repeat+that+name+here+rather+than+inventing+a+brand.%0A-+company%3A+the+legal+entity+that+OWNS%2C+manufactures+under%2C+or+is+responsible+for+that+brand+%28e.g.+%22Hamilton+Housewares+Pvt.+Ltd.%22%29.+NEVER+a+distributor%2C+reseller+or+channel+partner+%E2%80%94+those+carry+the+brand%2C+they+do+not+own+it.+If+a+contract+manufacturer+merely+makes+the+product%2C+the+brand+OWNER+still+goes+here.%0A-+website%3A+the+real+official+company+domain.+NEVER+a+LinkedIn%2C+Bloomberg%2C+Crunchbase+or+Wikipedia+page.%0A-+headquarters%3A+%22City%2C+Country%22+%E2%80%94+exactly+one+global+HQ%2C+with+the+state+for+US+companies+%28e.g.+%22Thousand+Oaks%2C+California%2C+USA%22%29.+NEVER+write+%22Global%22%2C+%22Worldwide%22%2C+a+bare+region%2C+or+a+count+like+%2250%2B+countries%22.%0A-+ownership%3A+%22Independent%22%2C+or+%22Acquired+by+%3CParent%3E%22+%2F+%22Subsidiary+of+%3CParent%3E%22+using+the+real+parent+name.+State+an+acquisition+ONLY+if+you+can+support+it+from+the+official+company%2Fbrand+site%2C+an+acquisition+announcement%2C+an+investor-relations+page%2C+a+regulatory+filing+or+a+reputable+business+source.+NEVER+infer+one+from+similar+names.+If+you+cannot+verify+it%2C+write+%22Independent%22.%0A-+ownership_confidence%3A+high+%3D+an+official+company%2Fbrand+source+confirms+it%3B+medium+%3D+multiple+reputable+sources+agree%3B+low+%3D+only+weak+or+indirect+evidence.+Be+honest+%E2%80%94+a+low+is+useful%2C+a+wrong+high+is+not.%0A-+verdict%3A+%22in_market%22+only+if+it+genuinely+operates+in+this+market%3B+otherwise+%22unrelated%22+or+%22unknown%22.+NEVER+guess+this+field.+Include+the+company+ONLY+if+verdict+is+%22in_market%22.%0A-+why_related%3A+one+sentence+naming+what+it+actually+makes%2C+supplies+or+does+in+THIS+market.%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+A+wrong+value+is+much+worse+than+an+empty+one.&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 2/4…
+      · discover-round-4: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+identify+the+BRANDS+sold+in+a+market+and+the+COMPANY+behind+each+brand.+No+invented+names%2C+no+media%2C+associations%2C+research+firms+or+geo+labels.+Return+compact+JSON+only%3A+%7B%22companies%22%3A%5B%7B%22brand%22%3A%22...%22%2C%22company%22%3A%22...%22%2C%22website%22%3A%22https%3A%2F%2F...%22%2C%22headquarters%22%3A%22City%2C+Country%22%2C%22ownership%22%3A%22...%22%2C%22ownership_confidence%22%3A%22high%7Cmedium%7Clow%22%2C%22verdict%22%3A%22...%22%2C%22why_related%22%3A%22...%22%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0AMarket%3A+%22Connected+Fleet+Mobility+Solutions+Market%22%0A%0AGive+me+10+BRANDS+sold+in+this+market+whose+company+is+HEADQUARTERED+IN+united+kingdom%2C+each+with+the+company+behind+it.%0A%0AThe+company%27s+own+global+headquarters+must+be+in+united+kingdom+%E2%80%94+a+local+sales+office%2C+plant%2C+subsidiary+or+distributor+of+a+foreign+company+does+NOT+qualify.+Include+national+and+regional+companies%2C+not+only+the+largest+few.+If+there+genuinely+are+no+more+such+companies%2C+return+%7B%22companies%22%3A%5B%5D%7D+%E2%80%94+do+NOT+substitute+a+company+from+another+country+and+do+NOT+invent+one.%0A%0AWHO+QUALIFIES%3A%0AA+qualifying+company%27s+PRIMARY+business+must+make+it+a+Solution+Provider+in+this+market.+That+is+what+it+IS%2C+not+something+it+also+does.%0A%0ASTRICTLY+EXCLUDE%2C+even+if+related+to+this+market%3A%0A-+Consultancies%2C+market-research+firms%2C+news+outlets+and+industry+associations+%E2%80%94+reporting+on+or+advising+a+market+is+not+operating+in+it.%0A-+Distributors+and+resellers+%E2%80%94+they+carry+other+companies%27+product.%0A-+CONTRACT+MANUFACTURERS%2C+OEM%2FODM+makers%2C+white-label+and+private-label+producers+%E2%80%94+they+build+to+another+company%27s+specification+and+own+no+brand+of+their+own+here.+If+a+company%27s+business+is+making+products+that+are+sold+under+SOMEONE+ELSE%27S+brand%2C+EXCLUDE+it+and+name+the+brand+owner+instead.%0A-+Equipment+and+materials+suppliers+%E2%80%94+they+sell+TO+this+market%2C+not+IN+it.%0A-+A+parent+that+does+not+itself+sell+in+THIS+market+%28name+the+operating+subsidiary+instead%29.%0AIf+unsure%2C+EXCLUDE.%0A%0ADo+NOT+repeat+any+of+these+%28including+subsidiaries%2C+aliases+or+former+names%29%3A%0A-+PaceTrack%0A-+Sure-Track%0A-+CheckedSafe%0A-+VNC+Automotive%0A-+Ctrack%0A-+Autoscribe+Fleet%0A-+ViperTelematics%0A-+Phantom%0A-+CanTrack%0A-+Astra+Telematics%0A-+AssetGo%0A-+VAPTA%0A-+Haloniq%0A-+Fleetclear%0A-+Freeway+Fleet+Systems%0A-+Connected+Management+Services%0A-+Simplytrak%0A-+OpenFleet%0A-+Smart+Strix%0A-+Telematics+Pro%0A-+Ctrack%0A-+Exeros%0A-+Fleetview+Solutions%0A-+Fleet+Witness%0A-+Fleet+Focus%0A-+Truckfile%0A-+Matrix+Telematics%0A-+i247+Group%0A-+Matrix+Telematics%0A-+Stream%0A-+Fleet+Witness%0A-+Fargo+Systems%0A-+Qargo%0A-+Pocket+Box%0A-+Fleetloc8%0A-+Connected+Management+Services%0A-+ACSS%0A-+Asset+Monitoring+Solutions%0A-+Rewire+Security%0A-+Trackitnow%0A-+...and+65+more+already-collected+companies.+Do+NOT+repeat+any+well-known+company+you+would+expect+to+have+been+listed+already%3B+prefer+smaller%2C+regional+or+specialist+companies+not+yet+named.%0A%0AFIELD+RULES%3A%0A-+brand%3A+the+product+%2F+consumer-facing+BRAND+name+as+buyers+know+it+%28e.g.+%22Milton%22%29.+A+brand+is+NOT+a+distributor+and+NOT+a+product+category.+If+the+company+genuinely+sells+only+under+its+own+corporate+name%2C+repeat+that+name+here+rather+than+inventing+a+brand.%0A-+company%3A+the+legal+entity+that+OWNS%2C+manufactures+under%2C+or+is+responsible+for+that+brand+%28e.g.+%22Hamilton+Housewares+Pvt.+Ltd.%22%29.+NEVER+a+distributor%2C+reseller+or+channel+partner+%E2%80%94+those+carry+the+brand%2C+they+do+not+own+it.+If+a+contract+manufacturer+merely+makes+the+product%2C+the+brand+OWNER+still+goes+here.%0A-+website%3A+the+real+official+company+domain.+NEVER+a+LinkedIn%2C+Bloomberg%2C+Crunchbase+or+Wikipedia+page.%0A-+headquarters%3A+%22City%2C+Country%22+%E2%80%94+exactly+one+global+HQ%2C+with+the+state+for+US+companies+%28e.g.+%22Thousand+Oaks%2C+California%2C+USA%22%29.+NEVER+write+%22Global%22%2C+%22Worldwide%22%2C+a+bare+region%2C+or+a+count+like+%2250%2B+countries%22.%0A-+ownership%3A+%22Independent%22%2C+or+%22Acquired+by+%3CParent%3E%22+%2F+%22Subsidiary+of+%3CParent%3E%22+using+the+real+parent+name.+State+an+acquisition+ONLY+if+you+can+support+it+from+the+official+company%2Fbrand+site%2C+an+acquisition+announcement%2C+an+investor-relations+page%2C+a+regulatory+filing+or+a+reputable+business+source.+NEVER+infer+one+from+similar+names.+If+you+cannot+verify+it%2C+write+%22Independent%22.%0A-+ownership_confidence%3A+high+%3D+an+official+company%2Fbrand+source+confirms+it%3B+medium+%3D+multiple+reputable+sources+agree%3B+low+%3D+only+weak+or+indirect+evidence.+Be+honest+%E2%80%94+a+low+is+useful%2C+a+wrong+high+is+not.%0A-+verdict%3A+%22in_market%22+only+if+it+genuinely+operates+in+this+market%3B+otherwise+%22unrelated%22+or+%22unknown%22.+NEVER+guess+this+field.+Include+the+company+ONLY+if+verdict+is+%22in_market%22.%0A-+why_related%3A+one+sentence+naming+what+it+actually+makes%2C+supplies+or+does+in+THIS+market.%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+A+wrong+value+is+much+worse+than+an+empty+one.&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 3/4…
+      · discover-round-4: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+identify+the+BRANDS+sold+in+a+market+and+the+COMPANY+behind+each+brand.+No+invented+names%2C+no+media%2C+associations%2C+research+firms+or+geo+labels.+Return+compact+JSON+only%3A+%7B%22companies%22%3A%5B%7B%22brand%22%3A%22...%22%2C%22company%22%3A%22...%22%2C%22website%22%3A%22https%3A%2F%2F...%22%2C%22headquarters%22%3A%22City%2C+Country%22%2C%22ownership%22%3A%22...%22%2C%22ownership_confidence%22%3A%22high%7Cmedium%7Clow%22%2C%22verdict%22%3A%22...%22%2C%22why_related%22%3A%22...%22%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0AMarket%3A+%22Connected+Fleet+Mobility+Solutions+Market%22%0A%0AGive+me+10+BRANDS+sold+in+this+market+whose+company+is+HEADQUARTERED+IN+united+kingdom%2C+each+with+the+company+behind+it.%0A%0AThe+company%27s+own+global+headquarters+must+be+in+united+kingdom+%E2%80%94+a+local+sales+office%2C+plant%2C+subsidiary+or+distributor+of+a+foreign+company+does+NOT+qualify.+Include+national+and+regional+companies%2C+not+only+the+largest+few.+If+there+genuinely+are+no+more+such+companies%2C+return+%7B%22companies%22%3A%5B%5D%7D+%E2%80%94+do+NOT+substitute+a+company+from+another+country+and+do+NOT+invent+one.%0A%0AWHO+QUALIFIES%3A%0AA+qualifying+company%27s+PRIMARY+business+must+make+it+a+Solution+Provider+in+this+market.+That+is+what+it+IS%2C+not+something+it+also+does.%0A%0ASTRICTLY+EXCLUDE%2C+even+if+related+to+this+market%3A%0A-+Consultancies%2C+market-research+firms%2C+news+outlets+and+industry+associations+%E2%80%94+reporting+on+or+advising+a+market+is+not+operating+in+it.%0A-+Distributors+and+resellers+%E2%80%94+they+carry+other+companies%27+product.%0A-+CONTRACT+MANUFACTURERS%2C+OEM%2FODM+makers%2C+white-label+and+private-label+producers+%E2%80%94+they+build+to+another+company%27s+specification+and+own+no+brand+of+their+own+here.+If+a+company%27s+business+is+making+products+that+are+sold+under+SOMEONE+ELSE%27S+brand%2C+EXCLUDE+it+and+name+the+brand+owner+instead.%0A-+Equipment+and+materials+suppliers+%E2%80%94+they+sell+TO+this+market%2C+not+IN+it.%0A-+A+parent+that+does+not+itself+sell+in+THIS+market+%28name+the+operating+subsidiary+instead%29.%0AIf+unsure%2C+EXCLUDE.%0A%0ADo+NOT+repeat+any+of+these+%28including+subsidiaries%2C+aliases+or+former+names%29%3A%0A-+PaceTrack%0A-+Sure-Track%0A-+CheckedSafe%0A-+VNC+Automotive%0A-+Ctrack%0A-+Autoscribe+Fleet%0A-+ViperTelematics%0A-+Phantom%0A-+CanTrack%0A-+Astra+Telematics%0A-+AssetGo%0A-+VAPTA%0A-+Haloniq%0A-+Fleetclear%0A-+Freeway+Fleet+Systems%0A-+Connected+Management+Services%0A-+Simplytrak%0A-+OpenFleet%0A-+Smart+Strix%0A-+Telematics+Pro%0A-+Ctrack%0A-+Exeros%0A-+Fleetview+Solutions%0A-+Fleet+Witness%0A-+Fleet+Focus%0A-+Truckfile%0A-+Matrix+Telematics%0A-+i247+Group%0A-+Matrix+Telematics%0A-+Stream%0A-+Fleet+Witness%0A-+Fargo+Systems%0A-+Qargo%0A-+Pocket+Box%0A-+Fleetloc8%0A-+Connected+Management+Services%0A-+ACSS%0A-+Asset+Monitoring+Solutions%0A-+Rewire+Security%0A-+Trackitnow%0A-+...and+65+more+already-collected+companies.+Do+NOT+repeat+any+well-known+company+you+would+expect+to+have+been+listed+already%3B+prefer+smaller%2C+regional+or+specialist+companies+not+yet+named.%0A%0AFIELD+RULES%3A%0A-+brand%3A+the+product+%2F+consumer-facing+BRAND+name+as+buyers+know+it+%28e.g.+%22Milton%22%29.+A+brand+is+NOT+a+distributor+and+NOT+a+product+category.+If+the+company+genuinely+sells+only+under+its+own+corporate+name%2C+repeat+that+name+here+rather+than+inventing+a+brand.%0A-+company%3A+the+legal+entity+that+OWNS%2C+manufactures+under%2C+or+is+responsible+for+that+brand+%28e.g.+%22Hamilton+Housewares+Pvt.+Ltd.%22%29.+NEVER+a+distributor%2C+reseller+or+channel+partner+%E2%80%94+those+carry+the+brand%2C+they+do+not+own+it.+If+a+contract+manufacturer+merely+makes+the+product%2C+the+brand+OWNER+still+goes+here.%0A-+website%3A+the+real+official+company+domain.+NEVER+a+LinkedIn%2C+Bloomberg%2C+Crunchbase+or+Wikipedia+page.%0A-+headquarters%3A+%22City%2C+Country%22+%E2%80%94+exactly+one+global+HQ%2C+with+the+state+for+US+companies+%28e.g.+%22Thousand+Oaks%2C+California%2C+USA%22%29.+NEVER+write+%22Global%22%2C+%22Worldwide%22%2C+a+bare+region%2C+or+a+count+like+%2250%2B+countries%22.%0A-+ownership%3A+%22Independent%22%2C+or+%22Acquired+by+%3CParent%3E%22+%2F+%22Subsidiary+of+%3CParent%3E%22+using+the+real+parent+name.+State+an+acquisition+ONLY+if+you+can+support+it+from+the+official+company%2Fbrand+site%2C+an+acquisition+announcement%2C+an+investor-relations+page%2C+a+regulatory+filing+or+a+reputable+business+source.+NEVER+infer+one+from+similar+names.+If+you+cannot+verify+it%2C+write+%22Independent%22.%0A-+ownership_confidence%3A+high+%3D+an+official+company%2Fbrand+source+confirms+it%3B+medium+%3D+multiple+reputable+sources+agree%3B+low+%3D+only+weak+or+indirect+evidence.+Be+honest+%E2%80%94+a+low+is+useful%2C+a+wrong+high+is+not.%0A-+verdict%3A+%22in_market%22+only+if+it+genuinely+operates+in+this+market%3B+otherwise+%22unrelated%22+or+%22unknown%22.+NEVER+guess+this+field.+Include+the+company+ONLY+if+verdict+is+%22in_market%22.%0A-+why_related%3A+one+sentence+naming+what+it+actually+makes%2C+supplies+or+does+in+THIS+market.%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+A+wrong+value+is+much+worse+than+an+empty+one.&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 4/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-4: rate limited (rate limited by Google (1 CAPTCHAs this run)) — cooling off 20 min before retrying
+    → substep 1a.4: +0 (total 105)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · discover-round-5: rate limited (rate limited by Google (2 CAPTCHAs this run)) — cooling off 5 min before retrying
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 2/4…
+      · discover-round-5: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 372s ago
+    → substep 1a.5: +0 (total 105)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 391s ago
+    → substep 1a.6: +0 (total 105)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 414s ago
+    → substep 1a.7: +0 (total 105)
+      · discover-round-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-8: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 523s ago
+    → substep 1a.8: +0 (total 105)
+      · discover-round-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-9: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 576s ago
+    → substep 1a.9: +3 (total 108)
+      · discover-round-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-10: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 603s ago
+    → substep 1a.10: +0 (total 108)
+    → substep 1a done: 108 companies in 10 rounds (resumed with 103) (exhausted)
+[rounds 00:33:20] round 1: verifying 6 new companies
+    → substep 4a: verify 6 candidates as Solution Provider in 1 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/1…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-1: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 653s ago
+    → substep 4a.1: running kept=4 rejected=2
+    → substep 4a done: kept=4 rejected=2 (required=Solution Provider)
+[rounds 00:34:10] round 1: +4 verified, 2 rejected
+[rounds 00:34:10] round 2: 180/250 verified (keep rate 87%) -> discovering 97 more
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 205, resuming with 108)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 680s ago
+    → substep 1a.1: +1 (total 109)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 717s ago
+    → substep 1a.2: +0 (total 109)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 746s ago
+    → substep 1a.3: +1 (total 110)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 771s ago
+    → substep 1a.4: +0 (total 110)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 804s ago
+    → substep 1a.5: +0 (total 110)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 835s ago
+    → substep 1a.6: +0 (total 110)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 862s ago
+    → substep 1a.7: +0 (total 110)
+      · discover-round-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-8: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 890s ago
+    → substep 1a.8: +2 (total 112)
+      · discover-round-9: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · discover-round-9: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 41s ago
+    → substep 1a.9: +0 (total 112)
+    → substep 1a done: 112 companies in 9 rounds (resumed with 108) (exhausted)
+[rounds 00:39:01] round 2: verifying 2 new companies
+    → substep 4a: verify 2 candidates as Solution Provider in 1 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/1…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-1: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 69s ago
+    → substep 4a.1: running kept=2 rejected=0
+    → substep 4a done: kept=2 rejected=0 (required=Solution Provider)
+[rounds 00:39:29] round 2: +2 verified, 0 rejected
+[rounds 00:39:29] round 3: 182/250 verified (keep rate 88%) -> discovering 94 more
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 206, resuming with 112)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 102s ago
+    → substep 1a.1: +0 (total 112)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 134s ago
+    → substep 1a.2: +0 (total 112)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 169s ago
+    → substep 1a.3: +0 (total 112)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 204s ago
+    → substep 1a.4: +0 (total 112)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 231s ago
+    → substep 1a.5: +2 (total 114)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 258s ago
+    → substep 1a.6: +0 (total 114)
+    → substep 1a done: 114 companies in 6 rounds (resumed with 112) (exhausted)
+[rounds 00:42:44] round 3: verifying 1 new companies
+    → substep 4a: verify 1 candidates as Solution Provider in 1 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/1…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-1: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 281s ago
+    → substep 4a.1: running kept=1 rejected=0
+    → substep 4a done: kept=1 rejected=0 (required=Solution Provider)
+[rounds 00:43:01] round 3: +1 verified, 0 rejected
+[rounds 00:43:01] round 4: 183/250 verified (keep rate 88%) -> discovering 92 more
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 206, resuming with 114)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 310s ago
+    → substep 1a.1: +2 (total 116)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · discover-round-2: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 46s ago
+    → substep 1a.2: +1 (total 117)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 77s ago
+    → substep 1a.3: +0 (total 117)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 101s ago
+    → substep 1a.4: +1 (total 118)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 129s ago
+    → substep 1a.5: +0 (total 118)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 151s ago
+    → substep 1a.6: +1 (total 119)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 184s ago
+    → substep 1a.7: +0 (total 119)
+      · discover-round-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-8: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 215s ago
+    → substep 1a.8: +0 (total 119)
+      · discover-round-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-9: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 251s ago
+    → substep 1a.9: +0 (total 119)
+      · discover-round-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-10: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 291s ago
+    → substep 1a.10: +3 (total 122)
+      · discover-round-11: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window

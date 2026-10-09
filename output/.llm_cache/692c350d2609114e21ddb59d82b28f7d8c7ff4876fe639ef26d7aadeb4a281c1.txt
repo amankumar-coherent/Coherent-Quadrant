@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Achronix does not disclose specific process nodes, but its Speedster7t FPGAs are typically built on 7nm-class technology, which is behind leading-edge nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["Speedster7t FPGAs", "Optimized for high-bandwidth workloads"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Achronix uses advanced FinFET processes for its FPGAs, but it does not lead in process technology compared to major foundries or IDMs.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["High-performance FPGAs and eFPGA IP"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "No public roadmap for next-generation nodes is available; Achronix likely relies on foundry partners for future nodes, but no specific plans are disclosed.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Achronix is specialized in FPGAs and eFPGA IP, not offering logic, memory, analog, or power products, thus limited portfolio breadth.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["High-performance FPGAs and eFPGA IP"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "No revenue split by product type is disclosed; the company is primarily FPGA-focused, indicating low diversification.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Achronix does not provide OSAT services and no OSAT partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Achronix owns proprietary FPGA architecture and eFPGA IP, including Speedster7t with 2D NoC and MLPs, which are differentiated for AI acceleration.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["Speedster7t FPGAs", "integrated MLPs, 2D NoC"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Achronix licenses its eFPGA IP (Speedcore) to other firms, indicating a dual model of product sales and IP licensing.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["Speedcore eFPGA IP"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Achronix's architecture is strong in AI acceleration and networking, with specific products like VectorPath cards and AI console targeting high-growth areas.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["FPGA-based AI acceleration", "AI evaluation console"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Achronix is fabless and does not own wafer fabrication capacity; no capacity or utilization data is available.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "As a fabless company, Achronix does not have its own yield rates; reliance on foundry partners means yields are not publicly disclosed.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No advanced packaging offerings or partnerships are mentioned; Achronix likely uses standard packaging from OSATs but no details are available.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No quality certifications are listed in the knowledge base; as a fabless company, certifications may be held by manufacturing partners.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No defect rate or reliability data is provided; typical for a fabless FPGA company without disclosed quality metrics.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No specific compliance information is available, but as a semiconductor company it likely adheres to RoHS/REACH; no evidence in KB.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Achronix is headquartered in Santa Clara, California, indicating a US presence, but no global footprint details are provided.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["Santa Clara, California, USA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Target markets include AI, networking, automotive, compute acceleration, test & measurement, and 6G infrastructure, but revenue contributions are not disclosed.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["Target markets include artificial intelligence, networking, automotive, compute acceleration, test & measurement, and 6G infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "Limited geographic diversification is evident from the KB; reliance on US headquarters and no global manufacturing may increase risk.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "No named customers are disclosed, and customer concentration risk cannot be assessed from available information.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["no named customers or investors disclosed on the homepage"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No specific partnerships with equipment makers, EDA vendors, or research consortia are mentioned in the KB.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Achronix provides design software and accelerator cards, indicating some ecosystem collaboration, but no specific partnerships are detailed.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["ACE design software", "VectorPath accelerator cards"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No financial data is available in the knowledge base; Achronix is a private company and does not disclose revenue or income.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 2,
+      "answer": "No capital expenditure information is available; as a fabless company, CapEx is likely lower than IDMs but not disclosed.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No balance sheet information is available; financial strength cannot be assessed from the KB.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No explicit roadmap milestones are provided, but the company's focus on AI acceleration and 6G suggests future developments in those areas.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["Target markets include ... 6G infrastructure."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Achronix has a clear focus on AI chips and acceleration, with products like VectorPath and AI console, but no roadmap for quantum or advanced memory.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["FPGA-based AI acceleration", "AI evaluation console"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "The roadmap aligns with AI and networking trends, but lacks public details on how it will meet evolving customer demands.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": ["Target markets include artificial intelligence, networking, automotive, compute acceleration, test & measurement, and 6G infrastructure."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No new fab or expansion projects are announced; as a fabless company, capacity expansion is not applicable.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No revenue growth data is available; the company is private and does not disclose financials.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No funding or expansion plans are disclosed; as a private company, details are limited.",
+      "evidence_urls": ["https://www.achronix.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "i": 0,
+      "in_market": true,
+      "roles": [
+        {
+          "type": "Drone OEM",
+          "reason": "Manufactures core drone electronics including flight controllers, ESC stacks, and GNSS modules, which are integrated into complete drone systems."
+        }
+      ],
+      "confidence": 0.8
+    },
+    {
+      "i": 1,
+      "in_market": true,
+      "roles": [
+        {
+          "type": "Drone OEM",
+          "reason": "Manufactures complete autopilot flight control systems and sensor modules for unmanned aerial vehicles, integrating sensors into its platforms."
+        }
+      ],
+      "confidence": 0.8
+    },
+    {
+      "i": 2,
+      "in_market": true,
+      "roles": [
+        {
+          "type": "Sensor Manufacturer",
+          "reason": "Manufactures indigenously designed sensor-fusion navigation modules for drones, which are drone-specific sensors."
+        },
+        {
+          "type": "Drone OEM",
+          "reason": "Manufactures autopilot units, which are core components of complete drone systems."
+        }
+      ],
+      "confidence": 0.85
+    },
+    {
+      "i": 3,
+      "in_market": true,
+      "roles": [
+        {
+          "type": "Sensor Manufacturer",
+          "reason": "Manufactures proprietary and indigenous navigation sensors for drones."
+        },
+        {
+          "type": "Drone OEM",
+          "reason": "Manufactures drone autopilot systems and computing architectures, which are integrated into complete drone platforms."
+        }
+      ],
+      "confidence": 0.85
+    }
+  ]
+}

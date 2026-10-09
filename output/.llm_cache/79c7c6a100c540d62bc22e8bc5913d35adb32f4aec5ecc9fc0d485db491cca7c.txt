@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions glucose meters, test strips, patch insulin pump, and CGM (AiDEX) but limited to diabetes wearables."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific clinical performance or safety data provided in evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "R&D centre in Silicon Valley and 20+ years of Microsensors technology development (Medinol)."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Alibaba listing suggests manufacturing capability, but no explicit quality systems evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Listed on HKEX and exports to developed countries (US, Germany, Japan) imply regulatory compliance, but no specific certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Exports to US, Germany, Japan; listed on HKEX; global presence via Alibaba and WEF."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "WEF membership and IPO suggest some trust, but no clinical adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Raised $250M in IPO and $88.2M from Tencent and IDG Capital."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on diabetes wearables; no explicit pipeline details beyond existing products."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Part of Medinol Group, R&D centre in Silicon Valley, and investors like Tencent and IDG."
+    }
+  ],
+  "evidence_used": true
+}

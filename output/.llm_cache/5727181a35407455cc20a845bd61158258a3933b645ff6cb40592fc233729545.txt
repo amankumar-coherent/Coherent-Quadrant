@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only one product (KnowU) is mentioned; platform claims 100+ applications but no other products are detailed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Claims 'medical-grade device with high level of accuracy' and 'on the path to FDA clinical trials' but no clinical data or trial results are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Proprietary RF dielectric spectroscopy, 270+ patents, and 100+ diagnostic applications indicate strong innovation and R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'on the path to FDA clinical trials for clearance' but no FDA clearance or CE mark is evidenced."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of geographic presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presented at ADA Scientific Sessions and joined Wyss Institute program, but no clinical adoption or market trust evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data or revenue information provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Platform claims 100+ diagnostic applications and potential to measure glucose, oxygen, alcohol, drugs, etc., indicating broad pipeline potential."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Joined Wyss Institute Industrial Participant Program and has KTL Technology Licensing, but no major commercial partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

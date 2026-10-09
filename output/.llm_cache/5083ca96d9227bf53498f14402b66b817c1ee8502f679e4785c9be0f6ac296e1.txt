@@ -1,0 +1,331 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Intas has a robust pipeline with several biosimilars in late-stage development, though specific Phase III counts are not detailed in the KB.",
+      "evidence_urls": ["https://www.intaspharma.com/research-and-developement/overview/"],
+      "evidence_snippets": ["R & D is at the heart of Intas’ success... a progressive threefold product basket that includes world-class generics, oncology and parenteral as well as added-value products (AVPs)."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "feature": "Product Pipeline Depth",
+      "axis": "Product Strength",
+      "question": "What is the diversity of targets (e.g., antibodies, fusion proteins)?",
+      "score": 7,
+      "answer": "Intas' portfolio includes monoclonal antibodies (e.g., Bevatas, Mabtas) and plasma-derived products, indicating target diversity, but fusion proteins are not explicitly mentioned.",
+      "evidence_urls": ["https://www.intaspharma.com/products/"],
+      "evidence_snippets": ["[Bevatas]", "[Mabtas]", "[Globucel]"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "feature": "Product Pipeline Depth",
+      "axis": "Product Strength",
+      "question": "How many pipeline products target top-selling biologics?",
+      "score": 6,
+      "answer": "Intas markets biosimilars to top-selling biologics like bevacizumab and trastuzumab, but the KB does not specify pipeline counts.",
+      "evidence_urls": ["https://www.intaspharma.com/products/"],
+      "evidence_snippets": ["[Bevatas]", "[Mabtas]"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "feature": "Manufacturing Scale & Capability",
+      "axis": "Product Strength",
+      "question": "What is total bioreactor capacity (in liters) globally?",
+      "score": 4,
+      "answer": "The KB does not provide bioreactor capacity figures, indicating insufficient evidence for this metric.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "feature": "Manufacturing Scale & Capability",
+      "axis": "Product Strength",
+      "question": "Does the company have multi-site manufacturing for redundancy?",
+      "score": 7,
+      "answer": "Intas has multiple manufacturing facilities including dedicated centers for biologics, cell & gene therapy, and plasma fractionation, suggesting multi-site capability.",
+      "evidence_urls": ["https://www.intaspharma.com/manufacturing/overview/"],
+      "evidence_snippets": ["Manufacturing Overview", "Biologics Business Unit", "Cell & Gene Therapy Centre", "Plasma Fractionation Centre"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "feature": "Manufacturing Scale & Capability",
+      "axis": "Product Strength",
+      "question": "Are manufacturing processes single-use or stainless steel?",
+      "score": 4,
+      "answer": "The KB does not specify the type of manufacturing technology used, so this cannot be assessed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "feature": "Analytical & Characterization Expertise",
+      "axis": "Product Strength",
+      "question": "Does the company use state-of-the-art mass spec for characterization?",
+      "score": 5,
+      "answer": "The KB mentions advanced R&D facilities but does not specifically mention mass spectrometry, so this is based on general industry knowledge.",
+      "evidence_urls": ["https://www.intaspharma.com/research-and-developement/overview/"],
+      "evidence_snippets": ["Over 1,00,000 sq ft dedicated R&D space", "550+ Scientists and Researchers"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "feature": "Analytical & Characterization Expertise",
+      "axis": "Product Strength",
+      "question": "How many analytical methods are validated for biosimilar comparability?",
+      "score": 4,
+      "answer": "The KB does not provide specific numbers of validated analytical methods, so this is insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "feature": "Analytical & Characterization Expertise",
+      "axis": "Product Strength",
+      "question": "Are there published studies on structural/functional similarity?",
+      "score": 5,
+      "answer": "Intas has launched biosimilars, implying comparability studies, but the KB does not cite specific publications.",
+      "evidence_urls": ["https://www.intaspharma.com/media"],
+      "evidence_snippets": ["Intas Pharmaceuticals becomes the first to launch Romiplostim in India"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "feature": "Regulatory Approval Track Record",
+      "axis": "Product Strength",
+      "question": "How many biologics/biosimilars approved by FDA/EMA in last 5 years?",
+      "score": 6,
+      "answer": "Intas has approvals in regulated markets like EU and US, but the KB does not list specific FDA/EMA approvals.",
+      "evidence_urls": ["https://www.intaspharma.com/about-us/overview/"],
+      "evidence_snippets": ["Around 70% of its revenues come from the international markets, particularly the highly regulated markets of EU and US."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "feature": "Regulatory Approval Track Record",
+      "axis": "Product Strength",
+      "question": "What is the average approval time from filing to approval?",
+      "score": 4,
+      "answer": "The KB does not provide approval time data, so this is insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "feature": "Regulatory Approval Track Record",
+      "axis": "Product Strength",
+      "question": "Has the company received any complete response letters or rejections?",
+      "score": 4,
+      "answer": "The KB does not mention any CRLs or rejections, so this is unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "feature": "Technology Platform Innovation",
+      "axis": "Product Strength",
+      "question": "Does the company use novel expression systems (e.g., CHO, yeast)?",
+      "score": 6,
+      "answer": "Intas produces biosimilars and biologics, which typically use CHO cells, but the KB does not specify expression systems.",
+      "evidence_urls": ["https://www.intaspharma.com/research-and-developement/platform-technologies/"],
+      "evidence_snippets": ["Platform Technologies"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "feature": "Technology Platform Innovation",
+      "axis": "Product Strength",
+      "question": "Are there proprietary platform technologies for biosimilar development?",
+      "score": 6,
+      "answer": "Intas has platform technologies and a dedicated biologics unit, but the KB does not detail proprietary aspects.",
+      "evidence_urls": ["https://www.intaspharma.com/research-and-developement/platform-technologies/"],
+      "evidence_snippets": ["Platform Technologies"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "feature": "Technology Platform Innovation",
+      "axis": "Product Strength",
+      "question": "Has the company invested in AI or automation for R&D?",
+      "score": 4,
+      "answer": "The KB does not mention AI or automation investments, so this is insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "feature": "Global Market Presence",
+      "axis": "Business Strategy",
+      "question": "In how many countries are products commercially available?",
+      "score": 9,
+      "answer": "Intas operates in more than 85 countries, demonstrating a very strong global presence.",
+      "evidence_urls": ["https://www.intaspharma.com/about-us/overview/"],
+      "evidence_snippets": ["Intas is present in more than 85 countries worldwide"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "feature": "Global Market Presence",
+      "axis": "Business Strategy",
+      "question": "Does the company have a strong presence in emerging markets?",
+      "score": 8,
+      "answer": "Intas has a significant presence in emerging markets, with 70% of revenues from international markets including emerging regions.",
+      "evidence_urls": ["https://www.intaspharma.com/about-us/overview/"],
+      "evidence_snippets": ["Around 70% of its revenues come from the international markets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "feature": "Global Market Presence",
+      "axis": "Business Strategy",
+      "question": "Are there local manufacturing or partnerships in key regions?",
+      "score": 7,
+      "answer": "Intas has manufacturing facilities in India and a global presence, but the KB does not detail local partnerships.",
+      "evidence_urls": ["https://www.intaspharma.com/manufacturing/overview/"],
+      "evidence_snippets": ["Manufacturing Overview"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "feature": "Revenue & Growth Trajectory",
+      "axis": "Business Strategy",
+      "question": "What is the year-over-year revenue growth rate for biologics?",
+      "score": 7,
+      "answer": "Intas is growing at ~22% CAGR overall, but specific biologics revenue growth is not broken out.",
+      "evidence_urls": ["https://www.intaspharma.com/about-us/overview/"],
+      "evidence_snippets": ["growing at ~22% CAGR"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "feature": "Revenue & Growth Trajectory",
+      "axis": "Business Strategy",
+      "question": "Is the company profitable in its biosimilar segment?",
+      "score": 6,
+      "answer": "Intas is a profitable company overall, but the KB does not provide segment-specific profitability.",
+      "evidence_urls": ["https://www.intaspharma.com/about-us/overview/"],
+      "evidence_snippets": ["$ Billion Turnover"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "feature": "Revenue & Growth Trajectory",
+      "axis": "Business Strategy",
+      "question": "What is the projected market share growth in next 3 years?",
+      "score": 4,
+      "answer": "The KB does not provide market share projections, so this is insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "feature": "Customer Base & Partnerships",
+      "axis": "Business Strategy",
+      "question": "Does the company have partnerships with major pharma or distributors?",
+      "score": 6,
+      "answer": "Intas has a global distribution network, but specific partnerships are not detailed in the KB.",
+      "evidence_urls": ["https://www.intaspharma.com/about-us/overview/"],
+      "evidence_snippets": ["trusted by healthcare professionals across more than 85 countries"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "feature": "Customer Base & Partnerships",
+      "axis": "Business Strategy",
+      "question": "How many healthcare providers or hospitals are customers?",
+      "score": 4,
+      "answer": "The KB does not provide specific numbers of healthcare providers or hospitals.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "feature": "Customer Base & Partnerships",
+      "axis": "Business Strategy",
+      "question": "Are there long-term supply agreements with payers or GPOs?",
+      "score": 4,
+      "answer": "The KB does not mention any supply agreements with payers or GPOs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "feature": "Biosimilar Price Competitiveness",
+      "axis": "Business Strategy",
+      "question": "What is the average discount vs. reference biologic?",
+      "score": 5,
+      "answer": "Intas likely offers competitive pricing, but the KB does not provide specific discount percentages.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "feature": "Biosimilar Price Competitiveness",
+      "axis": "Business Strategy",
+      "question": "Does the company offer value-added services to payers?",
+      "score": 4,
+      "answer": "The KB does not mention any value-added services for payers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "feature": "Biosimilar Price Competitiveness",
+      "axis": "Business Strategy",
+      "question": "How does pricing compare to other biosimilar competitors?",
+      "score": 5,
+      "answer": "Intas is a major player in biosimilars, likely competitive, but no specific pricing data is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "feature": "Supply Chain Resilience",
+      "axis": "Business Strategy",
+      "question": "Are there multiple suppliers for raw materials and components?",
+      "score": 4,
+      "answer": "The KB does not provide information on supplier diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "feature": "Supply Chain Resilience",
+      "axis": "Business Strategy",
+      "question": "Does the company have a risk management plan for supply disruptions?",
+      "score": 4,
+      "answer": "The KB does not mention any risk management plans.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "feature": "Supply Chain Resilience",
+      "axis": "Business Strategy",
+      "question": "What is the average lead time for key inputs?",
+      "score": 4,
+      "answer": "The KB does not provide lead time data.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only the Alio SmartPatch for dialysis patient monitoring; no other products or portfolio breadth described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The WEAR study is designed to evaluate patient and clinician use per FDA cleared indications, but no clinical outcomes or safety data are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The company is conducting a long-term interventional study (WEAR) indicating ongoing R&D, but no details on innovation pipeline or R&D investment."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "The Alio platform is FDA cleared, as stated in the WEAR study description: 'per its FDA cleared indications.'"
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "HQ in San Francisco, but no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The WEAR study suggests clinical adoption interest, but no evidence of widespread adoption or brand trust metrics."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data or revenue figures provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The WEAR study may support long-term wear and expanded use, but no explicit pipeline or new indications are mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No partnerships or business expansion activities are described in the evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "NextDC is a data center provider, not a compute hardware vendor, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "As a data center operator, NextDC does not produce accelerators, so performance per watt metrics are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "NextDC does not manufacture compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "NextDC offers high-speed interconnectivity services including cloud access and cross connects, but not specific Ethernet or InfiniBand products.",
+      "evidence_urls": [],
+      "evidence_snippets": ["AXON Interconnectivity Platform", "Cross Connects", "Data Centre Interconnects"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "No specific latency or bandwidth metrics are provided in the knowledge base, but their interconnectivity platform suggests competitive performance.",
+      "evidence_urls": [],
+      "evidence_snippets": ["AXON Interconnectivity Platform"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "NextDC supports major cloud providers and offers carrier-neutral data centers, indicating compatibility with industry standards.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Azure ExpressRoute", "AWS Direct Connect", "Google Cloud Interconnect", "Carrier Neutral Data Centres"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "No specific PUE values are mentioned, but NextDC emphasizes environmental sustainability and carbon neutral options.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Environmental Sustainability", "Carbon Neutral (NEXTneutral)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "NextDC offers liquid cooling solutions for high-density compute, as listed in their solutions.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Liquid Cooling"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "NextDC provides sustainability services like e-waste recycling and carbon neutral options, but specific power management features are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": ["E-Waste Recycling, IT Asset Destruction and Disposal", "Carbon Neutral (NEXTneutral)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "NextDC offers self-service portals like ONEDC and AXON for managing data center resources.",
+      "evidence_urls": [],
+      "evidence_snippets": ["ONEDC Self Service Hub", "AXON Virtual Connections Hub"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No explicit mention of Kubernetes or OpenStack compatibility, but their cloud connectivity suggests some standard support.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Public Cloud", "Private Cloud", "Hybrid Cloud"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Self-service portals likely include automation features, but specific provisioning, scaling, and monitoring capabilities are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": ["ONEDC Self Service Hub", "AXON Virtual Connections Hub"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "NextDC provides AI-ready data centers and high-performance computing, but not specialized hardware or software optimizations.",
+      "evidence_urls": [],
+      "evidence_snippets": ["High Performance Computing", "AI-Ready Data Centre"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No specific performance improvements are documented, but their AI-ready facilities suggest optimized infrastructure.",
+      "evidence_urls": [],
+      "evidence_snippets": ["AI-Ready Data Centre"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No tools for workload profiling or optimization are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "NextDC operates numerous data centers across Australia and has international presence in New Zealand, Japan, and Malaysia.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Sydney", "Melbourne", "Brisbane", "Perth", "Canberra", "Adelaide", "Darwin", "Sunshine Coast", "New Zealand", "Japan", "Malaysia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Geographic distribution is primarily in Australia with emerging presence in Asia-Pacific, but not in North America or Europe.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Australia", "New Zealand", "Japan", "Malaysia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "NextDC has plans for expansion with facilities in planning or development in Australia and internationally.",
+      "evidence_urls": [],
+      "evidence_snippets": ["S4 Horsley Park (In Planning)", "M4 Port Melbourne (In Development)", "AK1 New Zealand (In Development)", "TK1 Japan (In Planning)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "NextDC provides direct cloud access to major hyperscalers like AWS, Azure, Google, IBM, and Oracle, indicating strong partnerships.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Azure ExpressRoute", "AWS Direct Connect", "Google Cloud Interconnect", "IBM Cloud Direct Link", "Oracle FastConnect"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Revenue split between enterprise and hyperscalers is not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "NextDC has customer stories and serves government and enterprise clients, but specific Fortune 500 case studies are not mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Customer stories", "Government Solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Annual revenue figures are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Gross margin data is not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No financial data is provided, but the company's expansion suggests growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "Market share data is not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "Growth rate comparison is not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No information on market share gains or losses in specific segments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "NextDC has partnerships with major cloud providers and offers a partner ecosystem, but specific alliances with NVIDIA, Intel, or VMware are not mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Channel Partner Program", "Explore partner ecosystem"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No recent acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No joint ventures or co-development agreements are mentioned, but their expansion into new markets suggests potential collaborations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "GigaDevice does not disclose specific process nodes; as a fabless company, it relies on foundry partners, with products typically at mature nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "No evidence of leadership in specific process technologies like FinFET or GAA; GigaDevice focuses on flash memory and MCUs, not leading-edge logic.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No public roadmap for next-generation nodes; as a fabless company, process node advancements depend on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "GigaDevice offers a broad portfolio across flash memory, MCUs, sensors, analog products, and EEPROM, covering multiple semiconductor categories.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Flash Memory", "32-bit Microcontrollers (MCUs)", "Sensor", "Analog Products", "I2C EEPROM"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; GigaDevice is known for flash memory and MCUs as primary revenue drivers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "GigaDevice is fabless and likely partners with OSAT providers, but no specific OSAT partnerships are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "GigaDevice owns proprietary MCU architectures (GD32 series) and flash memory technology, but no CPU/GPU/AI accelerator IP is evident.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["GD32F50x Featuring flexible memory, high integration, enhanced security."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "GigaDevice uses ARM Cortex-M cores for its GD32 MCUs, indicating reliance on third-party IP, and does not appear to license its own IP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "GigaDevice has automotive and industrial MCUs, but no specific AI or 5G architecture leadership is mentioned; its strength is in general-purpose MCUs.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Automotive MCUs", "Industrial"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "GigaDevice is fabless and does not own wafer fabrication capacity; no data on wafers per month or utilization is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rates are not disclosed; as a fabless company, yields depend on foundry partners and are not publicly benchmarked.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No evidence of advanced packaging capabilities; GigaDevice likely relies on OSAT partners for standard packaging, not 2.5D/3D or chiplets.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "GigaDevice mentions quality and reliability, but specific certifications like ISO 9001 or IATF 16949 are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Quality and Reliability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate (DPPM) is not disclosed; GigaDevice emphasizes reliability for automotive and industrial applications, but no specific metrics are provided.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Automotive", "Industrial"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "GigaDevice has a sustainability section covering ESG, environment, and governance, implying compliance with environmental regulations, but no explicit RoHS/REACH mention.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Sustainability", "Environment", "Governance"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "GigaDevice has a global sales network with presence in Europe, America, and Asia, and is headquartered in Beijing, China.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Global Sales Network", "Europe and America", "Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary end-markets include automotive, industrial, PC and peripherals, consumer electronics, IoT, network communication, and mobile, as listed on the website.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Automotive", "Industrial", "PC and Peripherals", "Consumer Electronics", "Internet of Things (IoT)", "Network Communication", "Mobile"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "GigaDevice's global sales network and presence in multiple regions provide some diversification, but manufacturing is likely concentrated in Asia, posing some risk.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Global Sales Network"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Specific top customers are not disclosed; GigaDevice has design wins with companies like Tury in automotive, but customer concentration is unknown.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["GigaDevice Secures Broad Multi-Product Automotive Design Wins with Tury"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "GigaDevice has strategic partnerships, such as with Qt Group for embedded GUI and with distributor ACP in Brazil, indicating ecosystem collaboration.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["GigaDevice and Qt Group Announce Global Partnership", "GigaDevice Strengthens Brazil Expansion with ACP as Strategic Distributor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "GigaDevice collaborates with ecosystem players like Qt Group for software and distributors for market reach, and provides development tools and cross-reference searches.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["GD32 Development Tools", "MCU Cross-Reference Search"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not provided in the knowledge base; GigaDevice is a publicly listed company, but specific revenue, net income, and cash flow are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not disclosed; as a fabless company, capital expenditure is likely lower than integrated device manufacturers, but no figures are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not available; GigaDevice's ability to invest is inferred from its ongoing product launches and partnerships, but no financial metrics are provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "GigaDevice's roadmap includes new product launches like GD32F5HC, GD32M531, and GD24CL EEPROM, and expansion into humanoid robotics and optical modules.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["GD32F5HC Series MCU Grand Launch", "GD32M531 MCU", "GD24CL Series I²C EEPROM", "Powering the Humanoid Robotics Era"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "GigaDevice is focusing on emerging areas like humanoid robotics and optical communication, but no explicit AI chip or quantum computing roadmap is mentioned.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Powering the Humanoid Robotics Era", "Optical Communication Portfolio"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "GigaDevice's roadmap aligns with trends in embedded GUI, humanoid robotics, and motor control, addressing customer demands in industrial and consumer applications.",
+      "evidence_urls": ["https://www.gigadevice.com"],
+      "evidence_snippets": ["Embedded GUI Ecosystem", "Humanoid Robotics", "Motor Control"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab or expansion projects are announced; as a fabless company, GigaDevice does not build fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rate is not provided; GigaDevice's expansion into new markets and products suggests growth, but no specific figures are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding and execution plans for capacity expansion are not disclosed; GigaDevice likely relies on foundry partners for manufacturing capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

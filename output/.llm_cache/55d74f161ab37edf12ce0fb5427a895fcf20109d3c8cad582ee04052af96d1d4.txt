@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Kedrion's pipeline is focused on plasma-derived therapies for rare diseases, not biologics/biosimilars, with limited Phase III candidates.",
+      "evidence_urls": ["https://www.kedrion.com/research-development/"],
+      "evidence_snippets": ["Research & Development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 3,
+      "answer": "Kedrion's pipeline is primarily plasma-derived proteins, lacking diversity in biologic targets like antibodies or fusion proteins.",
+      "evidence_urls": ["https://www.kedrion.com/therapies/"],
+      "evidence_snippets": ["Therapies"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Kedrion does not target top-selling biologics; its focus is on niche plasma-derived products for rare diseases.",
+      "evidence_urls": ["https://www.kedrion.com/therapies/"],
+      "evidence_snippets": ["Therapies"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Kedrion has multiple production plants globally, but total bioreactor capacity is not disclosed and is likely smaller than major biologics manufacturers.",
+      "evidence_urls": ["https://www.kedrion.com/our-production-plants/"],
+      "evidence_snippets": ["Our Production Plants"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Kedrion operates multiple production plants across different countries, providing manufacturing redundancy.",
+      "evidence_urls": ["https://www.kedrion.com/our-production-plants/"],
+      "evidence_snippets": ["Melville Production Plant", "Bolognana Production Plant", "Sant’antimo Production Plant", "Laval Production Plant", "Elstree production plant"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Kedrion's manufacturing processes are likely stainless steel for plasma fractionation, but no specific information on single-use or stainless steel is available.",
+      "evidence_urls": ["https://www.kedrion.com/our-production-plants/"],
+      "evidence_snippets": ["Our Production Plants"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Kedrion likely uses standard analytical techniques for plasma products, but no evidence of state-of-the-art mass spec for characterization.",
+      "evidence_urls": ["https://www.kedrion.com/quality-safety/"],
+      "evidence_snippets": ["Quality & Safety"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "Kedrion does not develop biosimilars, so validated analytical methods for biosimilar comparability are not applicable.",
+      "evidence_urls": ["https://www.kedrion.com/research-development/"],
+      "evidence_snippets": ["Research & Development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "Kedrion may have published studies on plasma product similarity, but not specifically on biosimilar structural/functional similarity.",
+      "evidence_urls": ["https://www.kedrion.com/research-development/"],
+      "evidence_snippets": ["Research & Development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Kedrion has received FDA/EMA approvals for plasma products, but not for biologics/biosimilars in the last 5 years.",
+      "evidence_urls": ["https://www.kedrion.com/news-archive/"],
+      "evidence_snippets": ["EMA grants Orphan Drug Designation to Kedrion’s Factor V program"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No specific data on approval times for Kedrion's products is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "No evidence of complete response letters or rejections for Kedrion's products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "Kedrion uses plasma-derived processes, not novel expression systems like CHO or yeast.",
+      "evidence_urls": ["https://www.kedrion.com/plasma/"],
+      "evidence_snippets": ["Plasma"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Kedrion has proprietary plasma fractionation technology, but not for biosimilar development.",
+      "evidence_urls": ["https://www.kedrion.com/technology-transfer/"],
+      "evidence_snippets": ["Technology transfer"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No evidence of AI or automation investments in R&D for Kedrion.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Kedrion has commercial presence in multiple countries across Europe, Americas, and Asia, as indicated by country-specific websites.",
+      "evidence_urls": ["https://www.kedrion.com/kedrion-in-the-world/"],
+      "evidence_snippets": ["Italy", "Germany", "Austria", "Portugal", "Poland", "Switzerland", "Hungary", "United States", "Mexico", "Turkey", "United Kingdom", "Brazil"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Kedrion has presence in emerging markets like Mexico, Turkey, and Brazil, but not as strong as in developed markets.",
+      "evidence_urls": ["https://www.kedrion.com/kedrion-in-the-world/"],
+      "evidence_snippets": ["Mexico", "Turkey", "Brazil"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Kedrion has production plants in multiple countries, providing local manufacturing in key regions.",
+      "evidence_urls": ["https://www.kedrion.com/our-production-plants/"],
+      "evidence_snippets": ["Melville Production Plant", "Bolognana Production Plant", "Sant’antimo Production Plant", "Laval Production Plant", "Elstree production plant"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Kedrion reported strong financial performance in 2025, but specific revenue growth for biologics is not disclosed.",
+      "evidence_urls": ["https://www.kedrion.com/kedrion-delivers-strong-financial-performance-in-2025/"],
+      "evidence_snippets": ["Kedrion delivers strong financial performance in 2025"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Kedrion is profitable overall, but biosimilar segment profitability is not applicable as they do not sell biosimilars.",
+      "evidence_urls": ["https://www.kedrion.com/kedrion-delivers-strong-financial-performance-in-2025/"],
+      "evidence_snippets": ["Kedrion delivers strong financial performance in 2025"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No projections for market share growth in biosimilars are available for Kedrion.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Kedrion engages in partnerships and collaborations, such as with European institutions, but not specifically with major pharma for biosimilars.",
+      "evidence_urls": ["https://www.kedrion.com/fostering-dialogue-between-industry-and-european-institutions/"],
+      "evidence_snippets": ["Fostering dialogue between industry and European institutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No specific data on number of healthcare providers or hospitals as customers is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No evidence of long-term supply agreements with payers or GPOs for Kedrion.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 2,
+      "answer": "Kedrion does not sell biosimilars, so no discount vs. reference biologic is applicable.",
+      "evidence_urls": ["https://www.kedrion.com/therapies/"],
+      "evidence_snippets": ["Therapies"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "Kedrion may offer patient support services, but not value-added services to payers for biosimilars.",
+      "evidence_urls": ["https://www.kedrion.com/services/"],
+      "evidence_snippets": ["Services"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 2,
+      "answer": "Kedrion does not compete in the biosimilar market, so pricing comparison is not applicable.",
+      "evidence_urls": ["https://www.kedrion.com/therapies/"],
+      "evidence_snippets": ["Therapies"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Kedrion likely has multiple suppliers for plasma and raw materials, but no specific evidence is available.",
+      "evidence_urls": ["https://www.kedrion.com/plasma/"],
+      "evidence_snippets": ["Plasma"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Kedrion likely has risk management plans for supply chain, but no specific evidence is available.",
+      "evidence_urls": ["https://www.kedrion.com/quality-safety/"],
+      "evidence_snippets": ["Quality & Safety"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No data on average lead times for key inputs is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

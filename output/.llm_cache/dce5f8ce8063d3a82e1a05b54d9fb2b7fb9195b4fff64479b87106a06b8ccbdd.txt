@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single product: 7-lead ECG patch with cloud platform. No other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mention of clinical validation and comparative trials, but no specific outcomes or safety data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "AI analytics, machine learning for arrhythmia detection, and cloud-based SaaS platform indicate strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "CE Class IIa certification and FDA 510(k) clearance for 7L platform are clear evidence of regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Already widely used in Europe and India, with FDA clearance enabling US entry."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Used overseas and FDA clearance, but limited evidence of adoption metrics or key opinion leader endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Estimated revenue <$1M and seed stage funding, indicating early-stage financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on cardiology and remote monitoring, but no explicit pipeline for new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mention of MTEC and Venture Kick, but no major partnerships or distribution deals detailed."
+    }
+  ],
+  "evidence_used": true
+}

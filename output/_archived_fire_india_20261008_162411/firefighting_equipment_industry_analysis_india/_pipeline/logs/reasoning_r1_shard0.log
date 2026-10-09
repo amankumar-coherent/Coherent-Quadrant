@@ -1,0 +1,39 @@
+shard 0/2: 75 total gap slots, 38 assigned to this shard
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_47_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [1/38] Manoj Fire Equipment Limited / Firefighting Equipment Product Range (x): OK
+  [2/38] Manoj Fire Equipment Limited / R&D and Innovation in Firefighting Tech (x): OK
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+  [3/38] Manoj Fire Equipment Limited / Compliance with Indian Fire Safety Standards (x): OK
+  [4/38] Agni Controls / Equipment Performance & Reliability (x): OK
+  [5/38] Agni Controls / Manufacturing & Quality Control (x): OK
+  [6/38] Eben Stones Private Limited / Firefighting Equipment Product Range (x): OK
+  [7/38] Eben Stones Private Limited / R&D and Innovation in Firefighting Tech (x): OK
+  [8/38] Eben Stones Private Limited / Compliance with Indian Fire Safety Standards (x): OK
+  [9/38] Flying Fire Service Pvt Ltd / Equipment Performance & Reliability (x): OK
+  [10/38] Flying Fire Service Pvt Ltd / Manufacturing & Quality Control (x): OK
+  [11/38] NewAge Fire Fighting Co. Ltd. / Firefighting Equipment Product Range (x): OK
+  [12/38] NewAge Fire Fighting Co. Ltd. / R&D and Innovation in Firefighting Tech (x): OK
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+  [13/38] NewAge Fire Fighting Co. Ltd. / Compliance with Indian Fire Safety Standards (x): OK
+  [14/38] Supremex Equipments / Customer Base & Contracts (y): OK
+  [15/38] Supremex Equipments / After-Sales Service & Maintenance (y): OK
+  [16/38] Integrated Fire Protection Pvt. Ltd. / Revenue & Profitability in India (y): OK
+  [16/38] Integrated Fire Protection Pvt. Ltd. / Distribution & Sales Network (y): MISS
+  [17/38] Integrated Fire Protection Pvt. Ltd. / Market Share & Growth in India (y): OK
+  [18/38] Ashoka Engineering Company / Customer Base & Contracts (y): OK
+  [19/38] Ashoka Engineering Company / After-Sales Service & Maintenance (y): OK
+  [20/38] Aska Equipments Private Limited / Revenue & Profitability in India (y): OK
+  [21/38] Aska Equipments Private Limited / Distribution & Sales Network (y): OK
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+  [22/38] Aska Equipments Private Limited / Market Share & Growth in India (y): OK
+  [23/38] AGS Technologies (India) Pvt. Ltd. / Customer Base & Contracts (y): OK
+  [24/38] AGS Technologies (India) Pvt. Ltd. / After-Sales Service & Maintenance (y): OK
+Traceback (most recent call last):
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\scripts\fill_missing_assessed_on.py", line 149, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\scripts\fill_missing_assessed_on.py", line 139, in main
+    os.replace(tmp, side)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\firefighting_equipment_industry_analysis_india\\param_detail_prescored_pipe_r1_1.json.tmp' -> 'C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\firefighting_equipment_industry_analysis_india\\param_detail_prescored_pipe_r1_1.json'

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Juniper Networks does not offer compute or accelerator products; it focuses on networking equipment and software.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "No accelerator products exist, so performance per watt is not applicable.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "No compute products to be compatible with AI frameworks.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "Juniper offers high-speed networking solutions including 400GbE and 800GbE capabilities for data center fabrics.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper's Ai-Native routing solution delivers robust 400GbE and 800GbE capabilities for unmatched performance, reliability, and sustainability at scale."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Juniper's networking products are designed for high performance, but specific latency and bandwidth metrics are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper's Ai-Native routing solution delivers robust 400GbE and 800GbE capabilities for unmatched performance, reliability, and sustainability at scale."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Juniper supports open standards and interoperability, as evidenced by their validated designs and broad ecosystem.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Validated Designs (JVD)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Juniper does not provide data center designs or PUE metrics; their focus is on networking equipment.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Juniper does not offer liquid cooling solutions; they focus on networking hardware and software.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Juniper emphasizes sustainability in their routing solutions, but specific power management features are not detailed.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper's Ai-Native routing solution delivers robust 400GbE and 800GbE capabilities for unmatched performance, reliability, and sustainability at scale."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "Juniper provides comprehensive management and orchestration software like Apstra and Marvis AI for data center operations.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Apstra Data Center Director", "Marvis AI Assistant for Data Center"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 7,
+      "answer": "Juniper's orchestration tools are compatible with industry standards, though specific Kubernetes/OpenStack support is not explicitly mentioned.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Apstra Data Center Director"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "Juniper offers automation features for provisioning, scaling, and monitoring through products like Apstra and Paragon Insights.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Paragon Insights", "Paragon Pathfinder", "Apstra Data Center Director"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Juniper offers AI-native networking solutions and optimizations for AI workloads, including AI data center solutions.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["AI data center solutions", "Ops4AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Juniper's AI-native networking improves performance for AI workloads through optimized network design and management.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper’s AI data center solution is a quick way to deploy high performing AI training and inference networks that are the most flexible to design and easiest to manage with limited IT resources."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "Juniper provides tools like Marvis AI and Paragon Insights for workload monitoring and optimization, though not specifically for AI frameworks.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Marvis AI", "Paragon Insights"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "Juniper does not operate data centers; they provide networking equipment for data centers.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "Juniper does not have data centers; they have a global presence but not data center regions.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 3,
+      "answer": "Juniper does not have data center expansion plans as they are not a data center provider.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper Networks designs and sells high-performance networking equipment and software, including switches, routers, and security solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Juniper partners with major cloud providers and serves large enterprises, but specific hyperscaler names are not listed in the KB.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Cloud operator overview", "Cloud operator validated designs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Revenue split between enterprise and hyperscaler customers is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Juniper provides case studies and testimonials from various industries, including healthcare and retail, but not specifically Fortune 500 data center solutions.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Healthcare IT leaders discuss the challenges to deliver quality patient care and the role of AI-native networking.", "global retail leaders share how Juniper is redefining IT infrastructure for the industry’s future."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Juniper's annual revenue from data center products is not explicitly stated in the knowledge base.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Gross margin for data center segment is not provided in the knowledge base.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Juniper has shown growth in networking, but specific data center revenue growth is not detailed.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper is transitioning to HPE.com — One home for all networking innovation."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Juniper is a leader in enterprise networking, but specific market share in data center systems is not provided.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Gartner® has named Juniper a Leader in the 2025 Magic Quadrant™ for Enterprise Wired and Wireless LAN Infrastructure."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Juniper's growth rate is not compared to market growth in the KB, but their leadership position suggests competitive growth.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Gartner® has named Juniper a Leader in the 2025 Magic Quadrant™ for Enterprise Wired and Wireless LAN Infrastructure."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Juniper is gaining share in AI networking, but specific share changes in AI servers or storage are not mentioned.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["AI data center solutions", "Ops4AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Juniper has strategic partnerships with major technology providers, including HPE (acquisition) and collaborations with industry leaders.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper.net is transitioning to HPE.com — One home for all networking innovation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Juniper has made acquisitions like Mist Systems and Apstra to strengthen AI and data center capabilities.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Mist AI-Native Networking Platform", "Apstra Data Center Director"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Juniper engages in co-development and partnerships, such as with HPE, for next-generation networking technologies.",
+      "evidence_urls": ["https://www.juniper.net"],
+      "evidence_snippets": ["Juniper.net is transitioning to HPE.com — One home for all networking innovation."],
+      "grounding": "partial"
+    }
+  ]
+}

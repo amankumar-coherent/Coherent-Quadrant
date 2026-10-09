@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Chindata Group is a data center operator, not a compute hardware vendor, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "As a data center operator, Chindata does not produce accelerators, so performance per watt of their latest accelerator is not applicable.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Chindata does not manufacture compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "Chindata operates data centers but does not provide networking hardware like Ethernet or InfiniBand switches.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "Chindata does not sell interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Chindata does not produce networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Chindata emphasizes energy efficiency and sustainable operations, likely achieving good PUE, but specific PUE figures are not provided in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["The company emphasizes energy efficiency and sustainable operations."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Chindata may offer advanced cooling solutions as part of its data center designs, but no specific mention of liquid cooling is in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["The company emphasizes energy efficiency and sustainable operations."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Chindata's focus on energy efficiency suggests power management features, but specific details are not in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["The company emphasizes energy efficiency and sustainable operations."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Chindata is a data center operator and does not provide a software platform for managing resources; it likely uses third-party tools.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Chindata does not offer orchestration software, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Chindata does not provide automation software for provisioning or monitoring workloads.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "Chindata does not offer specialized hardware or software for AI workloads; it provides data center infrastructure.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "Chindata does not provide AI-specific optimizations, so performance improvements for AI workloads are not applicable.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "Chindata does not offer workload profiling tools for AI frameworks.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Chindata operates in Asia-Pacific, but the exact number of regions is not specified in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Chindata's footprint is in Asia-Pacific, but specific geographic distribution is not detailed in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["Chindata Group is a leading provider of hyperscale data center solutions in Asia-Pacific."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "No information on expansion plans is available in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Chindata serves large internet and cloud companies, which likely include hyperscalers, but no specific names are in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": ["It focuses on building and operating data centers for large internet and cloud companies."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No revenue breakdown by customer type is available in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials are mentioned in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No revenue figures are provided in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No margin data is available in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No historical revenue data is in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No market share data is available in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No growth rate data is available in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No segment share data is available in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No strategic alliances are mentioned in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No acquisitions are mentioned in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No joint ventures or co-development agreements are mentioned in the KB.",
+      "evidence_urls": ["https://chindatagroup.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

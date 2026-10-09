@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows a single product line (Eversense CGM) with multiple versions (90-day, 180-day, 365-day), but no other device categories."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA approval for long-term implantable CGM and clinical trials (PROMISE) indicate validated performance and safety."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "First long-term implantable CGM, extending sensor life from 90 to 180 and 365 days, shows strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA approvals for Eversense (90-day, 180-day, 365-day) demonstrate regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in US and partnership for Scandinavia, but limited global scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "First commercial patients using Eversense 365, but adoption not widespread compared to competitors."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Revenue surge of 150% but profitability still distant; Q3 earnings miss and lowered guidance."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Extending sensor life to 365 days and integration with insulin delivery systems indicate pipeline expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnerships with Companion Medical and Rubin Medical, plus collaboration with University Hospitals ACO."
+    }
+  ],
+  "evidence_used": true
+}

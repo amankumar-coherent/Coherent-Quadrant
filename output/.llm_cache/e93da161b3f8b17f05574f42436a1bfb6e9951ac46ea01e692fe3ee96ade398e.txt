@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Allegro MicroSystems does not disclose advanced process nodes like 3nm or 2nm; as an analog/power IC company, it typically uses mature nodes (e.g., 180nm-350nm) for its products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Allegro specializes in magnetic sensor and power IC technologies, but does not lead in leading-edge digital process technologies like FinFET or GAA; its differentiation lies in proprietary packaging and sensing techniques.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Allegro's roadmap focuses on enhancing its analog and power IC capabilities, not on next-generation digital nodes; no public roadmap for 2nm or 1.4nm is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Allegro offers a specialized portfolio of sensors, regulators, and drivers, primarily in analog and power categories, but does not cover logic or memory products.",
+      "evidence_urls": ["https://www.allegromicro.com/en/products"],
+      "evidence_snippets": ["Products: Sensors, Regulators, Drivers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Allegro does not publicly disclose revenue split by product type; its portfolio is heavily focused on automotive magnetic sensors and power ICs, indicating limited diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Allegro likely partners with OSAT providers for assembly and test, but does not offer OSAT services itself; no specific partnerships are disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Allegro owns proprietary design IP in magnetic sensing and power management, such as Hall-effect and inductive position sensing, which are differentiated for automotive and industrial applications.",
+      "evidence_urls": ["https://www.allegromicro.com/en/products/sense/current-sensor-ics/integrated-current-sensors/acs37200"],
+      "evidence_snippets": ["Ultra-Low-Loss Isolated Hall-Effect Current Sensor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Allegro primarily relies on its own proprietary IP and does not license IP to other firms; it may use third-party IP for standard interfaces, but this is not publicly detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Allegro's architecture is strong in automotive and industrial high-growth areas, particularly in electric vehicles and clean energy, with products like isolated gate drivers and current sensors.",
+      "evidence_urls": ["https://www.allegromicro.com/en/products/motor-drivers/gate-drivers/ahv85311"],
+      "evidence_snippets": ["Self Powered Isolated SiC Gate Driver"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Allegro is a fabless semiconductor company and does not own wafer fabrication facilities; it relies on foundry partners, so it does not report wafer capacity or utilization.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "As a fabless company, Allegro's yield rates depend on foundry partners and are not publicly disclosed; no comparison to industry benchmarks is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Allegro offers advanced packaging solutions for its products, such as PSOF-8 for current sensors, but does not provide 2.5D/3D or chiplet packaging; capacity details are not disclosed.",
+      "evidence_urls": ["https://www.allegromicro.com/en/products/sense/current-sensor-ics/integrated-current-sensors/acs37200"],
+      "evidence_snippets": ["Compact PSOF-8 Package"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Allegro likely holds ISO 9001 and IATF 16949 certifications for its automotive products, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Allegro emphasizes quality and reliability for automotive applications, but specific defect rates (DPPM) are not publicly disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Allegro addresses environmental compliance through its ESG initiatives and likely adheres to RoHS and REACH, but specific details are not in the knowledge base.",
+      "evidence_urls": ["https://www.allegromicro.com/en/about-allegro/corporate-responsibility"],
+      "evidence_snippets": ["ESG"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Allegro has a global presence with operations in the United States, Asia, and Europe, as indicated in its company description.",
+      "evidence_urls": ["https://www.allegromicro.com"],
+      "evidence_snippets": ["United States; Asia; Europe"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Allegro primarily serves automotive, industrial, and consumer markets, with a strong focus on automotive applications like braking and motor control.",
+      "evidence_urls": ["https://www.allegromicro.com/en/applications"],
+      "evidence_snippets": ["Automotive, Industrial, Consumer"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Allegro's presence in multiple regions helps mitigate regional risks, but its heavy reliance on automotive and Asia-based manufacturing could expose it to trade policy changes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Allegro does not disclose its top customers or customer concentration; as a supplier to automotive OEMs, it likely has some concentration risk, but specifics are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Allegro has partnerships, such as with RAM Innovations for GaN solutions, and likely collaborates with equipment and EDA vendors, but details are limited.",
+      "evidence_urls": ["https://www.allegromicro.com/en/insights-and-innovations/blogs/powering-the-next-generation-of-high-density-gan-modules-ram-innovations"],
+      "evidence_snippets": ["Allegro and RAM Innovations deliver the next generation of high-density GaN solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Allegro collaborates with foundries, OSATs, and software partners to deliver complete solutions, as evidenced by its design support and software portal, but specific ecosystem details are not disclosed.",
+      "evidence_urls": ["https://www.allegromicro.com/en/design-support"],
+      "evidence_snippets": ["Design Support, Software Portal"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Allegro's financial details are not provided in the knowledge base; as a public company, its revenue and cash flow are available in investor reports, but not summarized here.",
+      "evidence_urls": ["https://investors.allegromicro.com"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Allegro's CapEx details are not disclosed in the knowledge base; as a fabless company, its CapEx is likely lower than integrated device manufacturers, but specific figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Allegro's balance sheet strength is not detailed in the knowledge base; as a profitable public company, it likely has manageable debt, but specific ratios are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Allegro's roadmap includes innovations in safety PMICs, isolated gate drivers, and GaN solutions, as highlighted in recent press releases and blogs.",
+      "evidence_urls": ["https://www.allegromicro.com/en/about-allegro/newsroom/press-releases/2026/safety-pmic-with-integrated-wheel-speed-sensor-interface-a81415"],
+      "evidence_snippets": ["A81415: First Safety PMIC with an Integrated Wheel-Speed Sensor Interface"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Allegro's roadmap focuses on automotive and industrial applications, including SiC gate drivers and GaN solutions, but does not include AI chips, quantum, or advanced memory.",
+      "evidence_urls": ["https://www.allegromicro.com/en/products/motor-drivers/gate-drivers/ahv85311"],
+      "evidence_snippets": ["Self Powered Isolated SiC Gate Driver"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Allegro's roadmap aligns with industry trends toward electrification, clean energy, and automation, as evidenced by its focus on e-mobility and robotics.",
+      "evidence_urls": ["https://www.allegromicro.com/en/insights-and-innovations/allegro-technology"],
+      "evidence_snippets": ["driving e-mobility, clean energy, automation, and robotics forward"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "Allegro has not announced any new fab or expansion projects; as a fabless company, it does not invest in wafer fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Allegro's revenue growth rate is not provided in the knowledge base; as a company in the automotive semiconductor market, it has likely grown, but specific figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Allegro plans to fund growth through partnerships and product innovation, but specific capacity expansion plans are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

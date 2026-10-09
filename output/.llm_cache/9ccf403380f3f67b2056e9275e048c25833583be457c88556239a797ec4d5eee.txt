@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only lists Techfields Pharma as a US company in the metabolic/obesity landscape with brand 'Metabolic'; no specific GLP-1 products or molecules are mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of therapeutic differentiation in GLP-1; company focus appears to be on prodrug design and transdermal delivery for pain/osteoarthritis, not GLP-1."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "MTEC source mentions clinical trial management (Phase I-III) and regulatory strategy, but no specific GLP-1 pipeline or clinical trials are evidenced."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality compliance for GLP-1 products; only general mention of regulatory strategy in MTEC."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "Evidence indicates presence only in the United States, with no marketed GLP-1 products or market access details."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of brand recognition or reputation among HCPs in the GLP-1 space; company is not mentioned in any GLP-1 comparisons or guides."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data or revenue information is provided for Techfields Pharma."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of a GLP-1 pipeline or indication roadmap; company's focus appears to be on pain/osteoarthritis, not metabolic indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion in GLP-1; only mention of collaboration with key opinion leaders in osteoarthritis pipeline."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

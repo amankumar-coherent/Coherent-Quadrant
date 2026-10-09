@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the iLet Bionic Pancreas System and iLet ACE Pump, with no other devices in portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "supported",
+      "why": "FDA Warning Letter cites failure to investigate leak complaints, including 18 with hyperglycemic health effects; 107 serious injury MDRs for severe hypoglycemia."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "iLet Bionic Pancreas uses autonomous learning; FDA granted Breakthrough Device designation; IDE approval to expand trials to Senseonics Eversense CGM."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 2,
+      "grounding": "supported",
+      "why": "FDA inspection in June 2025 identified failures to adequately investigate complaints and respond to patient harm; Warning Letter issued."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "FDA Warning Letter dated 01/28/2026 for complaint-investigation procedural deficiencies; non-compliance with quality system regulations."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions headquarters in Irvine, CA and San Diego, CA, but no explicit global reach or channel details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Described as 'emerged as a leader' but FDA warning and safety issues undermine trust; no adoption metrics."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Revenue data exists (Stock Analysis, Annual Report) but no specific figures or performance details in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "IDE approval to expand clinical trials to include Senseonics Eversense CGM; Phase 3 pivotal trial planned for 2020."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Collaboration with Dexcom and Senseonics for CGM integration; no other partnerships or expansion details."
+    }
+  ],
+  "evidence_used": true
+}

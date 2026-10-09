@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Operates the Sakhalin-2 project, a single LNG export terminal (Prigorodnoye) with two trains; evidence mentions only this project, no multi-basin or multi-project portfolio."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence: 'producing 11 percent above its design capacity' and 'record amount of LNG: 178.6 standard cargos ... more than 11.6 million tonnes' indicating strong operational performance."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence: 'record amount of LNG production' and 'best Sakhalin-2 LNG plant annual performance ever' indicating high reliability and asset performance."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website has sections on 'Safety' and 'Environment' but no specific evidence of incidents or compliance; limited public data."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence: 'leader of the first independent international ESG-index of environmental responsibility of marine users' and website has ESG overview, but no specific transition projects or CCS."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Exports LNG to Asia (Japan, etc.) from Russia's Far East; evidence mentions 'exporting LNG to Asia' and 'first time Russia has supplied gas to Japan', but no multi-continent reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence: 'long-term deals with Asian buyers' and 'actively engaging with buyers as part of LNG marketing for the third liquefaction train', but no specific SPA volumes or customer names."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence: 'could generate twice the revenue this year than it did before the Ukraine conflict' indicating strong financials, but no detailed financials."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence: 'actively engaging with buyers as part of LNG marketing for the third liquefaction train' and 'Gazprom Discusses Sakhalin T3 with Partners' indicating potential expansion, but no FID or timeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence: 'shareholders are Gazprom 50% plus one share; Shell 27.5% less one share; Japan’s Mitsui 12.5% and Mitsubishi 10%' showing major partnerships, but no new expansion beyond T3."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

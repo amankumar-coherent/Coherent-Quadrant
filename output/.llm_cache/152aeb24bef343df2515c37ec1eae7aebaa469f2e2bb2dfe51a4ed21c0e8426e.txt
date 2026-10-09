@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the eWave 6-lead ECG monitor and cardiac monitoring service; no other devices are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and 6-lead capability are mentioned, but no clinical performance data or safety outcomes are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The eWave is described as the first FDA-cleared 6-lead cardiac monitor with multidimensional views, indicating innovation, but no R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA 510(k) clearance for eWave is explicitly mentioned, and IDTF status indicates regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquisition of AMI Cardiac Monitoring expands services to all 50 states, but no evidence of international presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "LinkedIn followers and IDTF with 33 years of patient care suggest some trust, but no adoption metrics or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Funding of $31.3M and series A status indicate investment, but no revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or expansion into new indications beyond current ECG monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquisition of AMI Cardiac Monitoring is a clear business expansion; partnerships mentioned on PitchBook but not detailed."
+    }
+  ],
+  "evidence_used": true
+}

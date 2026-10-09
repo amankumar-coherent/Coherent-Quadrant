@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only one product (CeQur Simplicity) and a prior Paq device, indicating a narrow portfolio focused on insulin patch delivery."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence states 'clinically tested to lower A1C and improve time-in-range results' and FDA clearance, indicating validated clinical performance."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence shows iterative development (Paq to Simplicity) and extended wear duration, but no detailed R&D pipeline or breakthrough innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific evidence on manufacturing capabilities or quality systems; only mention of company size and location."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence confirms FDA 510(k) clearance and CE marking, indicating strong regulatory compliance in multiple markets."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions pilot commercial launch in early 2021 and presence in US and Switzerland, but no clear global scale or channel details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence indicates clinical testing and FDA clearance, but limited adoption metrics or physician endorsements beyond that."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence from Growjo estimates annual revenue of $33.6M and 134 employees, indicating modest financial scale."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions development from Paq to Simplicity and extended wear, but no clear pipeline for new indications or products."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific partnerships or business expansion strategies mentioned; only company overview and competitor comparisons."
+    }
+  ],
+  "evidence_used": true
+}

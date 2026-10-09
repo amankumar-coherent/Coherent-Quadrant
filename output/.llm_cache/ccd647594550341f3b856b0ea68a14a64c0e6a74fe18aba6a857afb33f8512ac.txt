@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Cerebras uses a proprietary wafer-scale process, but the specific node size is not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Cerebras leads in wafer-scale integration, a unique process technology that enables its large chip, but details on specific process tech like FinFET are not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "The knowledge base mentions scaling CS-3 production and expansion plans, but no specific next-generation node roadmap is disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras and Flex are expanding U.S. manufacturing in Milpitas, California."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "Cerebras is highly specialized in AI accelerators (wafer-scale engines) and does not offer a broad portfolio across logic, memory, analog, or power.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "No revenue split by product type is available; the company is focused on AI compute, indicating a lack of diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Cerebras partners with Flex for manufacturing, but it does not offer OSAT services itself; the KB mentions manufacturing expansion but not OSAT specifics.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras and Flex are expanding U.S. manufacturing in Milpitas, California."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 9,
+      "answer": "Cerebras owns proprietary wafer-scale engine architecture, which is highly differentiated and purpose-built for ultra-fast AI inference.",
+      "evidence_urls": [],
+      "evidence_snippets": ["The Cerebras Wafer-Scale Engine is purpose-built for ultra-fast AI. It is 58x larger and 15x faster than GPUs."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Cerebras does not license its IP; it relies on its own architecture, but the KB does not mention third-party IP usage.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 9,
+      "answer": "Cerebras's architecture is extremely strong in AI, with world-record inference speeds and partnerships with major AI companies.",
+      "evidence_urls": [],
+      "evidence_snippets": ["The world's fastest inference enables more context, more validation, and more trusted decisions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "The KB mentions scaling production by 7x and expanding manufacturing, but specific wafer capacity or utilization rates are not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Scaling CS-3 Production by 7x"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No yield rate data is available in the KB; the company's wafer-scale approach may have unique yield challenges, but this is not documented.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Cerebras uses wafer-scale integration, which is a form of advanced packaging, but the KB does not detail 2.5D/3D or chiplet packaging capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No specific quality certifications are mentioned in the KB; the company likely adheres to industry standards but evidence is lacking.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No defect rate or reliability data is provided; the company emphasizes enterprise-grade quality but specifics are absent.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Enterprise-Grade, Developer-Friendly"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No information on environmental compliance or conflict minerals is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Cerebras has a global presence with expansion in Europe and manufacturing in the U.S., but specific R&D locations are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras is scaling to 200MW of AI compute capacity by the end of 2027", "expanding U.S. manufacturing in Milpitas, California."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary end-markets include AI inference for enterprises and cloud providers, with customers like OpenAI, Meta, and GSK, but revenue contribution is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": ["OpenAI’s compute strategy is to build a resilient portfolio...", "Cerebras is helping developers everywhere to move faster..."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Geographic diversification is emerging with European expansion and U.S. manufacturing, but the KB does not discuss risk mitigation explicitly.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras is scaling to 200MW of AI compute capacity by the end of 2027"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Top customers include OpenAI, Meta, GSK, Mayo Clinic, and others, but customer concentration risk is not addressed.",
+      "evidence_urls": [],
+      "evidence_snippets": ["OpenAI’s compute strategy is to build a resilient portfolio...", "Cerebras is helping developers everywhere to move faster..."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Strategic partnerships include AMD, AWS, CrowdStrike, and Flex, indicating strong ecosystem collaboration.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras and AMD Partner on Disaggregated Inference", "CrowdStrike and Cerebras Partner to Transform Cybersecurity", "Cerebras and Flex are expanding U.S. manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "Cerebras collaborates with cloud providers, enterprises, and manufacturing partners to deliver complete solutions, as evidenced by partnerships with AWS and Flex.",
+      "evidence_urls": [],
+      "evidence_snippets": ["AWS... splitting the inference workload across Trainium and the CS-3", "Cerebras and Flex are expanding U.S. manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial data such as revenue, net income, and free cash flow are not disclosed in the KB; the company is private and has investor relations but no figures.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx details are not provided, but the company is investing in manufacturing expansion and 200MW compute capacity, indicating significant capital spending.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras is scaling to 200MW of AI compute capacity by the end of 2027"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not available; the company has investor relations but no financial statements in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Key milestones include scaling CS-3 production, expanding to 200MW capacity, and partnerships with AMD and CrowdStrike, but a detailed 3-5 year roadmap is not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Scaling CS-3 Production by 7x", "Cerebras is scaling to 200MW of AI compute capacity by the end of 2027"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Cerebras has a clear focus on AI chips and inference, with continuous innovation in wafer-scale technology, but no explicit roadmap for quantum or advanced memory.",
+      "evidence_urls": [],
+      "evidence_snippets": ["The Cerebras Wafer-Scale Engine is purpose-built for ultra-fast AI."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "The roadmap aligns with industry trends toward faster AI inference and low-latency applications, as evidenced by partnerships with major AI companies.",
+      "evidence_urls": [],
+      "evidence_snippets": ["The world's fastest inference enables more context, more validation, and more trusted decisions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Cerebras announced scaling CS-3 production by 7x and expanding manufacturing with Flex, but specific capacity additions are not quantified.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Scaling CS-3 Production by 7x", "Cerebras and Flex are expanding U.S. manufacturing in Milpitas, California."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not disclosed, but the company is expanding capacity and forming partnerships, indicating growth.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras is scaling to 200MW of AI compute capacity by the end of 2027"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Funding and execution plans are not detailed, but partnerships with Flex and expansion to 200MW suggest a strategy for capacity growth.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Cerebras and Flex are expanding U.S. manufacturing", "Cerebras is scaling to 200MW of AI compute capacity by the end of 2027"],
+      "grounding": "partial"
+    }
+  ]
+}

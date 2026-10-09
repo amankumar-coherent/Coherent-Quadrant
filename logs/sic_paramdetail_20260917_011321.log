@@ -1,0 +1,26 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Silicon Carbide Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] SKIP done market: 'Global Silicon Carbide Market' (checkpoint status=done, final_rows≈230) → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+{
+  "skipped": true,
+  "reason": "already_done",
+  "query": "Global Silicon Carbide Market",
+  "country": "global",
+  "family": "general",
+  "final_path": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+  "companies": 230,
+  "total_after": 230,
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\chatgpt_checkpoint_batch_all.json"
+}
+
+  rows: 230  (target 300)

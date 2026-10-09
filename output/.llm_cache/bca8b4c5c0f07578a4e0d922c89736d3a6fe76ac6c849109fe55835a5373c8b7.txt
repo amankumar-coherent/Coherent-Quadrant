@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only one product line: NextSense Smartbuds (EEG earbuds). No other devices or portfolio breadth are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence claims 'clinically accurate EEG' and 'six EEG sensors' but no clinical trial data, safety certifications, or peer-reviewed outcomes are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence highlights 'world's first truly wireless earbuds with EEG sensors' and real-time brain-sensing technology that actively improves sleep, indicating strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities, quality systems, or production scale."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence explicitly states the technology 'isn’t considered a medical device' and no regulatory approvals or compliance details are mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions product launch and ordering but no specific geographic markets, distribution channels, or global presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence includes positive user testimonials ('added an hour to my sleep') and media coverage, but no clinical adoption metrics or healthcare professional endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence reports a $16 million Series A funding round, indicating investor confidence, but no revenue or profitability figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence focuses on sleep improvement and brain health optimization, but no explicit pipeline for additional indications or future products."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions funding led by Ascension Ventures, but no other partnerships or business expansion strategies are detailed."
+    }
+  ],
+  "evidence_used": true
+}

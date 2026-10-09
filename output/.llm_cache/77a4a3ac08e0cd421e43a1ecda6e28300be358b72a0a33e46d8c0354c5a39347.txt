@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Offers CGM program, dietitian coaching, stress management, and bring-your-own-sensor, but no proprietary devices; relies on Abbott/Dexcom sensors."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Cites member survey outcomes (9/10 build habits, 84% reached goals, 2x weight loss success) but no clinical trials or safety data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Innovative platform with Nora AI and glucose certification course, but no evidence of proprietary device R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities; relies on third-party sensors."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No FDA/CE clearances mentioned; only mentions insurance coverage and dietitian credentialing."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Online platform with global reach implied, but no specific countries or distribution channels mentioned."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Over 110,000 members, Trustpilot rating, and dietitian certification program indicate adoption and trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Dexcom in 2026, but no revenue figures or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expanding into stress management and bring-your-own-sensor, but no new clinical indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquired by Dexcom, partners with Abbott/Dexcom for sensors, and offers dietitian certification."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

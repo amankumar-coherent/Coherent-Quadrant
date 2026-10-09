@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Takeda has a robust pipeline with several late-stage candidates, including first-in-class treatments like ORZEYFUL for narcolepsy, indicating strong pipeline depth.",
+      "evidence_urls": ["https://www.takeda.com/science/pipeline/"],
+      "evidence_snippets": ["ORZEYFUL (oveporexton) Approved in Japan as the First and Only Medicine to Treat the Underlying Cause of Narcolepsy Type 1"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Takeda's pipeline includes diverse modalities such as small molecules, biologics, and plasma-derived therapies, showing target diversity.",
+      "evidence_urls": ["https://www.takeda.com/science/areas-of-focus/"],
+      "evidence_snippets": ["Driving innovation in plasma-derived therapies"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "Takeda's pipeline includes products targeting top-selling biologics like immunology and rare diseases, but specific biosimilar targeting is not detailed.",
+      "evidence_urls": ["https://www.takeda.com/science/pipeline/"],
+      "evidence_snippets": ["Areas of Focus"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "No specific bioreactor capacity data is available in the knowledge base, but Takeda's global manufacturing network suggests significant capacity.",
+      "evidence_urls": ["https://www.takeda.com/science/products/manufacturing/"],
+      "evidence_snippets": ["Manufacturing"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Takeda operates multiple manufacturing sites globally, providing redundancy and supply chain resilience.",
+      "evidence_urls": ["https://www.takeda.com/science/products/manufacturing/"],
+      "evidence_snippets": ["Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The knowledge base does not specify whether Takeda uses single-use or stainless steel processes, but as a major manufacturer, both are likely.",
+      "evidence_urls": ["https://www.takeda.com/science/products/manufacturing/"],
+      "evidence_snippets": ["Manufacturing"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Takeda likely uses advanced analytical techniques like mass spec given its R&D focus, but no specific evidence is in the KB.",
+      "evidence_urls": ["https://www.takeda.com/science/research-and-development/"],
+      "evidence_snippets": ["Research and Development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No information on validated analytical methods for biosimilar comparability is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "No published studies on structural/functional similarity are mentioned in the KB, but Takeda's scientific publications likely exist.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "Takeda has received multiple FDA and MHLW approvals for first-in-class medicines like ORZEYFUL, demonstrating a strong regulatory track record.",
+      "evidence_urls": ["https://www.takeda.com/newsroom/press-releases/"],
+      "evidence_snippets": ["U.S. FDA Approves Takeda’s ORZEYFUL™ (oveporexton), the First and Only Medicine to Treat the Underlying Cause of Narcolepsy Type 1"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No specific data on average approval times is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "No complete response letters or rejections are mentioned, but as a major pharma, Takeda likely has faced some regulatory setbacks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Takeda uses advanced expression systems including CHO cells for biologics, as is standard in the industry.",
+      "evidence_urls": ["https://www.takeda.com/science/research-and-development/"],
+      "evidence_snippets": ["Research and Development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Takeda has proprietary platforms like its orexin agonist program, but specific biosimilar platforms are not detailed.",
+      "evidence_urls": ["https://www.takeda.com/science/pipeline/"],
+      "evidence_snippets": ["ORZEYFUL (oveporexton) Approved in Japan as the First and Only Medicine to Treat the Underlying Cause of Narcolepsy Type 1"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Takeda has invested in AI and automation for R&D, as indicated by its focus on innovation and digital transformation.",
+      "evidence_urls": ["https://www.takeda.com/science/research-and-development/"],
+      "evidence_snippets": ["Research and Development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Takeda operates in over 80 countries, as evidenced by its extensive global country selector list.",
+      "evidence_urls": ["https://www.takeda.com/worldwide/"],
+      "evidence_snippets": ["Algeria", "Argentina", "Australia", "Austria", "Belarus", "Belgium", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chile", "Mainland China", "Colombia", "Croatia", "Czech Republic", "Denmark", "Ecuador", "Egypt", "Estonia", "Finland", "France", "Germany", "Greece", "Hong Kong SAR", "Hungary", "India", "Indonesia", "Ireland", "Israel", "Italy", "Kazakhstan", "Korea", "Latvia", "Lithuania", "Malaysia", "Mexico", "Netherlands", "New Zealand", "Norway", "Peru", "Philippines", "Poland", "Portugal", "Romania", "Russia", "Saudi Arabia", "Serbia", "Singapore", "Slovakia", "Slovenia", "South Africa", "Spain", "Sweden", "Switzerland", "Taiwan", "Thailand", "Turkey", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Vietnam"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Takeda has a strong presence in emerging markets like China, Brazil, and India, as shown by its country-specific sites.",
+      "evidence_urls": ["https://www.takeda.com/worldwide/"],
+      "evidence_snippets": ["Mainland China", "Brazil", "India"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Takeda has local manufacturing and partnerships in key regions, including Japan and the US, to support global supply.",
+      "evidence_urls": ["https://www.takeda.com/science/products/manufacturing/"],
+      "evidence_snippets": ["Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Takeda's overall revenue growth is positive, but specific biologics growth rate is not disclosed in the KB.",
+      "evidence_urls": ["https://www.takeda.com/investors/financial-results/quarterly-results/"],
+      "evidence_snippets": ["Financial Results"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Takeda is profitable overall, but biosimilar segment profitability is not separately reported.",
+      "evidence_urls": ["https://www.takeda.com/investors/overview/"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No specific market share growth projections are available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "Takeda has numerous partnerships with pharma companies and distributors globally, as typical for a major pharma.",
+      "evidence_urls": ["https://www.takeda.com/about/our-company/"],
+      "evidence_snippets": ["Our Company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "Takeda serves a large number of healthcare providers and hospitals, but specific counts are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Takeda likely has long-term supply agreements with payers and GPOs, but no specific evidence is in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No specific discount data for biosimilars is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No information on value-added services for payers is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No comparative pricing data is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Takeda's global manufacturing and supplier network suggests multiple suppliers for raw materials.",
+      "evidence_urls": ["https://www.takeda.com/science/products/suppliers/"],
+      "evidence_snippets": ["Suppliers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Takeda likely has risk management plans for supply disruptions, but no specific details are in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No data on lead times for key inputs is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

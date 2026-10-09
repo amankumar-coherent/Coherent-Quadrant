@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Marvell is a fabless semiconductor company that leverages leading-edge foundry nodes (e.g., 5nm/3nm) for its custom ASICs and data infrastructure products, though it does not own fabs.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Marvell designs custom silicon tailored for any application and offers the industry’s most comprehensive portfolio of interconnects and network switch products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Marvell is a leader in custom silicon and advanced process adoption for data infrastructure, but it does not own a specific process technology like FinFET or GAA; it relies on foundry partners.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Marvell designs custom silicon tailored for any application and offers the industry’s most comprehensive portfolio of interconnects and network switch products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Marvell's roadmap includes next-generation custom silicon and networking products, but specific node timelines are not disclosed in the provided knowledge base.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Marvell designs custom silicon tailored for any application and offers the industry’s most comprehensive portfolio of interconnects and network switch products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Marvell offers a broad portfolio across compute, networking, storage, and custom ASICs, but it is not a memory or analog/power provider; it is specialized in data infrastructure.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Compute: CXL, Data Processing Units, Security; Networking: Coherent DSPs, Data Center Switches, Ethernet Controllers; Storage: Fibre Channel, HDD, SSD Controllers; Custom: ASIC."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type, but Marvell's portfolio is diversified across compute, networking, storage, and custom silicon.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Compute: CXL, Data Processing Units, Security; Networking: Coherent DSPs, Data Center Switches, Ethernet Controllers; Storage: Fibre Channel, HDD, SSD Controllers; Custom: ASIC."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Marvell is fabless and likely partners with OSAT providers, but the knowledge base does not mention specific OSAT partnerships or services.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Marvell owns proprietary design IP in networking, storage, and custom compute, including coherent DSPs, Ethernet controllers, and custom ASIC capabilities.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Networking: Coherent DSPs, Data Center Switches, Ethernet Controllers; Storage: Fibre Channel, HDD, SSD Controllers; Custom: ASIC."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Marvell primarily uses its own IP and also licenses third-party IP like ARM for some products, but the knowledge base does not specify licensing details.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Marvell has strong architecture in AI infrastructure, 5G, and data center networking, as evidenced by its custom silicon and interconnect portfolio.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Marvell enables the world’s most advanced AI infrastructure.", "Marvell compute, security and networking platforms effectively operate on a global scale with the performance and programmability that enable carriers to sustainably innovate in this frontier without compromise."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Marvell is fabless and does not own wafer fabrication capacity; it relies on foundry partners, so specific capacity figures are not applicable.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "As a fabless company, Marvell's yield rates depend on foundry partners; no specific yield data is provided in the knowledge base.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Marvell likely uses advanced packaging for its custom silicon and networking products, but the knowledge base does not detail packaging capabilities.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific quality certifications for Marvell, but as a major semiconductor company it likely holds ISO 9001 and other relevant certifications.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No defect rate or reliability data is provided in the knowledge base; Marvell's reliability is inferred from its role in critical data infrastructure.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Marvell likely complies with environmental regulations like RoHS and REACH, but the knowledge base does not provide specific compliance details.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Marvell has global operations with R&D and sales presence in the US, Asia, and Europe, but the knowledge base does not list specific locations.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Contact: Locations, Sales, Support."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Marvell serves data center, enterprise, and carrier markets, with a strong focus on AI infrastructure and 5G, as highlighted in the knowledge base.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Markets: DATA CENTER, ENTERPRISE, CARRIER.", "Marvell Data Center Solutions: Scaling AI.", "Marvell 5G wireless carrier solutions: Connecting the World with 5G Network Silicon."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Marvell's global presence likely mitigates regional risks, but the knowledge base does not provide specific diversification strategies.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Marvell's top customers include hyperscalers and OEMs, but the knowledge base does not name specific customers or concentration risk.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Marvell designs custom silicon tailored for any application and offers the industry’s most comprehensive portfolio of interconnects and network switch products."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Marvell has strategic partnerships, including with NVIDIA for NVLink Fusion and with Polariton for optical connectivity, as mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Strategic partnership: Expand the AI ecosystem with NVlink Fusion.", "Marvell Acquires Polariton: Advancing the future of optical connectivity."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Marvell collaborates with foundries, OSATs, and software partners to deliver complete solutions, but specific details are not in the knowledge base.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide financial figures; Marvell's revenue is in the billions, but exact numbers are not available.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx data is not provided in the knowledge base; as a fabless company, Marvell's CapEx is lower than IDMs but still significant for R&D and acquisitions.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the knowledge base; Marvell's financial health is inferred from its market position and investments.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Marvell's roadmap includes milestones like the first monolithic 102.4 Tbps switch, 1.6T optical DSPs, and next-generation CXL switches, as highlighted in the knowledge base.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["First Monolithic 102.4 Tbps Switch.", "Industry-first 1.6T Optical DSPs.", "Next-generation CXL Switch."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Marvell has a clear roadmap for AI infrastructure, including custom silicon and advanced interconnect, as well as optical connectivity and memory infrastructure.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["Marvell Enables AI Infrastructure.", "FMS 2026: Advancing AI memory infrastructure.", "Marvell Acquires Polariton: Advancing the future of optical connectivity."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Marvell's roadmap aligns with industry trends in AI, 5G, and data center scaling, as evidenced by its focus on custom silicon and high-speed interconnect.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": ["To realize the promise of AI, hyperscalers are undertaking one of the largest infrastructure buildouts in history—and they rely on Marvell as a critical AI infrastructure partner."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Marvell does not own fabs, so it does not announce fab expansions; it relies on foundry partners for capacity.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "The knowledge base does not provide revenue growth figures, but Marvell's investments in AI and acquisitions suggest growth.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Marvell plans to fund growth through revenue and strategic acquisitions, but specific funding plans are not in the knowledge base.",
+      "evidence_urls": ["https://www.marvell.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

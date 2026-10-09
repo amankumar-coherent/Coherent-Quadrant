@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence shows only one product, Biolinq Shine, with no other products listed on their website."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA cleared, pivotal trial completed, and described as first needle-free CGM with FDA clearance."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "First fully autonomous needle-free glucose sensor, integrating glucose, activity, and sleep; uses semiconductor technology."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mention of semiconductor manufacturing inspiration, but no detailed evidence of manufacturing scale or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA de novo clearance for Biolinq Shine, with regulatory strategy and FDA submission mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of global market presence; only mentions US FDA clearance and commercial efforts."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and pivotal trial suggest credibility, but no evidence of widespread clinical adoption or market share."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Raised $58M and $100M in funding, indicating investor confidence, but no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Currently indicated for Type 2 diabetes not on insulin; no evidence of expansion to other indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No specific partnerships mentioned; only investor funding and plans for commercialization."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

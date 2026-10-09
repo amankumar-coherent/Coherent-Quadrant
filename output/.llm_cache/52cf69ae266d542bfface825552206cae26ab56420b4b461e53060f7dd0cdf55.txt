@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence shows a range of products including blood pressure monitors, pulse oximeters, thermometers, glucose monitors, scales, and rapid tests, but no smartwatches or fitness trackers are listed on the site."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims 'Clinical Accuracy' for blood pressure monitor and 'FDA Authorized' for COVID-19 test, but no detailed clinical performance data or safety certifications for wearables."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence of connected devices and iHealth Cloud suggests some innovation, but no explicit R&D investments or novel technology details in evidence."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No information on manufacturing facilities, quality certifications (e.g., ISO), or production processes in the evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence mentions 'FDA Authorized' for COVID-19 test and 'FSA/HSA Accepted' for some devices, indicating some regulatory compliance, but no comprehensive regulatory portfolio details."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "supported",
+      "why": "HQ in USA and specialty mentions Latin America, but evidence only shows US website with no explicit global distribution or channel details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'Clinical Accuracy' and 'FDA Authorized' which build trust, but no evidence of hospital adoption or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, profitability) provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "New product arrivals like PT9S thermometer and RSV/COVID/Flu test indicate some pipeline activity, but no clear roadmap for wearable expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'Enterprise Purchase' and 'Remote Patient Monitoring' suggesting B2B efforts, but no specific partnerships or expansion deals in evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only SimpleSense as a product, with potential applications in multiple areas but no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Claims FDA approval and clinical-grade data, but no specific clinical trial results or peer-reviewed publications cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Awards for innovation (Frost & Sullivan, Philips Wearables Challenge, SXSW, etc.) and proprietary cloth-based nanosensors capturing 85+ biomarkers."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mention of AFFOA competition win and domestic textiles, but no explicit manufacturing capabilities or quality certifications beyond FDA."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Multiple mentions of FDA approval for platform and undergarment, indicating regulatory clearance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No explicit global market presence; only mentions of US-based awards and programs, no international sales or distribution."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Awards from ACC, UCSF, and selection into accelerators like HeartX and StartX indicate growing trust, but no evidence of widespread clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence lists potential applications: structural cardiology, heart failure, sleep apnea, COPD, hypertension, post-surgical recovery, indicating pipeline expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnerships with Google Launchpad, StartX, HeartX, and AdvaMed Accel board membership, plus awards from Philips and Accenture, show business expansion efforts."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

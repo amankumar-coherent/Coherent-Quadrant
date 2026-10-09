@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Yemen LNG has a nameplate capacity of 6.7 MTPA from two trains, but production is halted due to conflict.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["Operates a major LNG plant in Yemen, though production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "Utilization is effectively zero as production has been halted due to conflict.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Yemen LNG has two trains with a combined capacity of 6.7 MTPA, but they are not currently operating.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["Operates a major LNG plant in Yemen, though production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "Feedstock is sourced from Yemen's central gas fields, but supply is disrupted due to conflict.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "No current feedstock contracts are active due to halted production.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Feedstock is solely from Yemen's Marib basin, offering no diversification.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["Operates a major LNG plant in Yemen"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 2,
+      "answer": "On-stream factor is zero as the plant is not operating.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 2,
+      "answer": "Force majeure has been in effect since 2015 due to conflict, causing prolonged shutdown.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 2,
+      "answer": "No maintenance turnarounds are possible while the plant is shut down.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "No recent TRIR data is available due to halted operations.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No major regulatory fines are known, but operations are suspended due to conflict.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Certifications are not publicly disclosed; plant is not operating.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["Not publicly disclosed"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "Carbon intensity data is not reported; plant is idle.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No emission reduction measures are known; plant is not operating.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No sustainability reports are published.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["Not publicly disclosed"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "Long-term contracts existed for 6.7 MTPA but are suspended due to force majeure.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "Contract durations are uncertain due to force majeure and halted production.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 2,
+      "answer": "Spot sales are zero as no LNG is being produced.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "Historically exported to Asia and Europe, but current exports are zero.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 2,
+      "answer": "No current sales; top customer concentration is not applicable.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 2,
+      "answer": "No active portfolio; exports are halted.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "No revenue or EBITDA from LNG operations due to halted production.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 2,
+      "answer": "Financial ratios are not publicly available; company is in distress.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 2,
+      "answer": "Free cash flow is negative or zero; liquidity is severely constrained.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 1,
+      "answer": "No projects under construction or FID; company is focused on restarting existing plant.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 1,
+      "answer": "No timeline for new capacity; restart of existing plant is uncertain.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 1,
+      "answer": "No expansion projects in development.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "Global market share is negligible due to halted production.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Key partners include Total, Hunt Oil, and others, but operations are suspended.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["Operates a major LNG plant in Yemen"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 2,
+      "answer": "Portfolio is not competitive due to shutdown and high cost position.",
+      "evidence_urls": ["https://www.yemenlng.com"],
+      "evidence_snippets": ["production is halted due to conflict."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

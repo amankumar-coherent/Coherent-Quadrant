@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Operates a single LNG regasification terminal in Quintero, Chile; evidence shows only one terminal with associated infrastructure (muelle, tanks, vaporizers, truck loading)."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Reports 2025 figures: 1,207 million Sm³ delivered by pipeline, 461,000 m³ delivered by truck, 2.69 million m³ LNG unloaded, 23 LNG ships received, and 99.67% average plant availability."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "High availability (99.67%) and scheduled maintenance coordinated with authorities and clients, indicating reliable operations."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions high standards of quality, safety, and environmental management; also has a dedicated 'Seguridad' section and sustainability reports, but no specific safety metrics or regulatory details."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Publishes sustainability reports, has a 'Sostenibilidad' section including environment and community, and a green hydrogen project (Hidrógeno Verde Bahía Quintero) approved by environmental commission."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence only in Chile (Quintero and Santiago offices); serves central Chile gas demand, no evidence of international reach or multi-country operations."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Delivers gas via pipeline and truck to customers; mentions coordination with client companies for maintenance, but no specific contract details or customer names."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only operational metrics like volumes and availability."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Has a green hydrogen project (Hidrógeno Verde Bahía Quintero) approved, indicating some growth initiatives, but no other expansion projects mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions coordination with authorities and client companies; also has shareholders (though not detailed) and community partnerships, but no major M&A or strategic alliances."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

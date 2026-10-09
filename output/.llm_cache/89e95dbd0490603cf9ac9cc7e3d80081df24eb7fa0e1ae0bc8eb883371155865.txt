@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence shows only one product, INVU, a remote pregnancy monitoring platform. No other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "FDA clearance indicates safety and efficacy for fetal/maternal heart rate monitoring, but no clinical outcome data or comparative studies cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "INVU is described as 'first FDA-cleared, self-administered remote monitoring system' for pregnancy, indicating innovation, but no R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems beyond FDA clearance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA clearance for INVU is documented (K210025), and CE Mark is mentioned in one source, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions 'worldwide' maternal health initiatives and Israel startup scene, but no specific countries or distribution channels detailed."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA clearance and 'first' positioning suggest trust, but no adoption metrics or clinician endorsements cited."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided; only stock quote availability."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only one indication (pregnancy monitoring) mentioned; no evidence of expansion into other conditions."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No specific partnerships mentioned; only general 'maternal health initiatives worldwide' and presence at a booth."
+    }
+  ],
+  "evidence_used": true
+}

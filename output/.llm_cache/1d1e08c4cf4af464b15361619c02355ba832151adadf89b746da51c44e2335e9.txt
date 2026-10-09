@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence shows only one product (TempTraq patch) with no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA cleared, accuracy conforms to ASTM E1112-00, three hospital studies show accuracy and equivalency, detects fevers earlier (140-180 minutes)."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "First wireless continuous temperature monitor in patch form, ongoing clinical trials (CAR T), but limited R&D details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No direct evidence of manufacturing capabilities or quality systems; only mentions disposable patch and eco-friendly batteries."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA cleared Class II, CE and TGA cleared, HIPAA-compliant cloud service."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "supported",
+      "why": "US-focused (site says only applicable to USA), but CE and TGA cleared indicate international presence; no specific markets listed."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Used in hospital studies (Cleveland Clinic, University Hospitals), compatible with military BATDOK, listed as leading RPM company."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Observational trial in CAR T patient monitoring, potential applications in hospital and clinical trial settings."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with BMS for CAR T trial, integration with HeartcoR Solutions, military compatibility."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

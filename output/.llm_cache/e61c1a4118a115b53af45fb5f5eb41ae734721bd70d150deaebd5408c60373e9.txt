@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Offers a 3-lead ECG sensor and ECG analysis software, but portfolio is narrow (only one device and software)."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Claims 94% AF detection accuracy and 14-day continuous monitoring, but no published clinical trials or peer-reviewed evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "AI-powered analysis, real-time monitoring, and MDR-compliant development indicate innovation, but no R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "MDR compliance mentioned, but no evidence of manufacturing scale or quality certifications beyond MDR."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Explicitly states MDR-compliant development for EU market, indicating regulatory focus, but no FDA or other clearances."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Targets European market, with office in Netherlands, but no evidence of multi-country sales or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No customer names, hospital adoption, or clinical validation cited; only claims of primary care focus."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Ambition to support 1 million people in 10 years suggests growth plans, but no specific pipeline or new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No named partnerships or investors; only a LinkedIn presence and a university project mention."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

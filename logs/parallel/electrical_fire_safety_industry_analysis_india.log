@@ -1,0 +1,12 @@
+[pipeline 17:30:33] market: Electrical Fire Safety Industry Analysis (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\electrical_fire_safety_industry_analysis_india
+[pipeline 17:30:33] 1. verified rows: 137
+[pipeline 17:30:33] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\electrical_fire_safety_industry_analysis_india\_pipeline\axes_spec.json
+[pipeline 17:30:33] 3. 137 names -> 137 companies after dedupe (0 groups merged)
+[pipeline 17:30:33] 3b. operating-status check for 3 companies across 1 browser(s)
+[pipeline 17:37:05] 3b. 2 companies left out (not active or excluded by review): ['Armex Industry Private Limited', 'Sudhakar Irrigation Systems Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 17:37:05] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 17:37:05] ownership: 3 companies across 1 browser(s)
+[pipeline 17:37:07] ownership: 1/1 shard(s) still running
+[pipeline 17:38:07] 3c. ownership 135 / identity 16 / scope 0 answers: 0 more left out [], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 17:38:08] 8. report updated from base_report.json: 137 -> 135 companies (2 removed: ['Armex Industry Private Limited', 'Sudhakar Irrigation Systems Pvt. Ltd.']), 2 owner labels, chart 20 -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\electrical_fire_safety_industry_analysis_india\electrical_fire_safety_industry_analysis_india_report.html
+[pipeline 17:39:00] 8b. PDF / Word written; checks-only update finished

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Kioxia leads in 3D NAND flash memory with its BiCS FLASH™ generation 8, featuring CBA wafer bonding technology, though it does not offer logic process nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/memory/bics.html"],
+      "evidence_snippets": ["BiCS FLASH: generation 8 3D flash memory A novel architectural innovation with CBA wafer bonding technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Kioxia leads in 3D NAND flash memory technology, particularly with its BiCS FLASH™ and CBA (CMOS directly Bonded to Array) technology, which is a distinct process innovation compared to logic-focused peers.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/memory/bics.html"],
+      "evidence_snippets": ["What is CMOS directly Bonded to Array (CBA) Technology?"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Kioxia's roadmap includes advancing 3D NAND generations, such as the recently announced high-performance QLC 3D flash memory for AI, but specific next-generation node timelines are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["Kioxia and Sandisk Unveil New High-Performance QLC 3D Flash Memory Technology Designed for AI and Data-Intensive Applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Kioxia is specialized in memory products, primarily NAND flash and SSDs, and does not offer a broad portfolio across logic, analog, or power semiconductors.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/memory.html", "https://www.kioxia.com/en-jp/business/ssd.html"],
+      "evidence_snippets": ["Memory", "SSD"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type, but Kioxia's portfolio is heavily focused on NAND flash memory and SSDs, indicating limited diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Kioxia does not appear to offer OSAT services; it focuses on memory manufacturing and likely partners with OSAT providers for packaging and testing, but no specific partnerships are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Kioxia owns proprietary design IP for its 3D NAND flash memory, including BiCS FLASH™ and XL-FLASH™, which are differentiated in the memory market, though not CPU or GPU IP.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/memory/bics.html", "https://www.kioxia.com/en-jp/business/memory/xlflash.html"],
+      "evidence_snippets": ["3D Flash Memory “BiCS FLASH™”", "XL-FLASH™ | Storage Class Memory (SCM)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Kioxia does not license its memory IP to other firms; it relies on its own proprietary technology and partnerships like with Sandisk, but no third-party IP licensing is mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Kioxia's architecture is strong in high-growth areas like AI and data-intensive applications, as evidenced by its new QLC 3D flash memory and high-IOPS SSDs, though not in 5G or automotive logic.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["Kioxia and Sandisk Unveil New High-Performance QLC 3D Flash Memory Technology Designed for AI and Data-Intensive Applications", "KIOXIA GP Series Super High IOPS SSD Named 'Best of Show' at FMS"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "Kioxia has world-leading production scale at its Yokkaichi and Kitakami plants, but specific wafer capacity and utilization rates are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["KIOXIA Group’s manufacturing sites have world-leading production scale"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Kioxia is a leading memory manufacturer with advanced 3D NAND technology, implying competitive yields, but specific yield benchmarks are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Kioxia offers advanced packaging through its CBA (CMOS directly Bonded to Array) technology, which is a form of 3D integration for NAND flash, but capacity details are not provided.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/memory/bics.html"],
+      "evidence_snippets": ["What is CMOS directly Bonded to Array (CBA) Technology?"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The knowledge base does not mention specific quality certifications like ISO 9001 or IATF 16949, but as a major manufacturer, Kioxia likely holds such certifications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Kioxia emphasizes reliability for automotive and industrial applications, but specific defect rates (DPPM) are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/memory/automotive.html"],
+      "evidence_snippets": ["UFS for Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Kioxia likely complies with environmental regulations like RoHS and REACH, but the knowledge base does not provide specific compliance details.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Kioxia has a global presence with regional websites for Japan, Asia Pacific, Americas, Europe, and Middle East & Africa, and manufacturing in Japan (Yokkaichi and Kitakami).",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["Select your country or region (language)", "Yokkaichi Plant and Kitakami Plant"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Kioxia serves multiple end-markets including enterprise storage, data centers, client computing, mobile, automotive, consumer, and industrial, as indicated by its application pages.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/application.html"],
+      "evidence_snippets": ["Enterprise Storage Applications", "Data Center Storage Applications", "Client Computing Applications", "Mobile Applications", "Automotive Applications", "Consumer Applications", "Industrial Applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Kioxia's global sales offices and manufacturing in Japan provide some diversification, but the knowledge base does not detail risk mitigation strategies.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/where-to-purchase.html"],
+      "evidence_snippets": ["Global Sales Offices"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific customers, but Kioxia's memory products are likely sold to major device manufacturers, implying some concentration risk.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Kioxia has a strategic partnership with Sandisk for NAND flash development, as mentioned in a news release, and likely collaborates with equipment makers and research consortia.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["Kioxia and Sandisk Unveil New High-Performance QLC 3D Flash Memory Technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Kioxia collaborates with ecosystem players like Sandisk and provides complete storage solutions, but specific details on foundry or OSAT partnerships are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide financial data, but Kioxia is a major memory manufacturer with significant revenue, though exact figures are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not provided in the knowledge base, but Kioxia's large-scale manufacturing suggests substantial capital expenditure.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not available, but Kioxia's investments in new plants indicate financial capacity, though specifics are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Kioxia's roadmap includes advancing 3D NAND technology with CBA and QLC for AI, as well as high-IOPS SSDs, but specific milestones for the next 3-5 years are not detailed.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["Kioxia and Sandisk Unveil New High-Performance QLC 3D Flash Memory Technology", "KIOXIA GP Series Super High IOPS SSD Named 'Best of Show' at FMS"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Kioxia has a clear roadmap for advanced memory technologies like QLC 3D NAND and XL-FLASH for AI and data-intensive applications, but not for quantum or AI chips.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/business/memory/xlflash.html"],
+      "evidence_snippets": ["XL-FLASH™ | Storage Class Memory (SCM)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Kioxia's roadmap aligns with industry trends toward AI and data-intensive workloads, as shown by its QLC and high-IOPS SSD developments.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["Kioxia and Sandisk Unveil New High-Performance QLC 3D Flash Memory Technology Designed for AI and Data-Intensive Applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Kioxia has manufacturing plants in Yokkaichi and Kitakami, but specific expansion projects and capacity additions are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.kioxia.com/en-jp/top.html"],
+      "evidence_snippets": ["Yokkaichi Plant and Kitakami Plant"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not provided, but Kioxia's recent product launches suggest growth, though exact figures are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding and execution plans for capacity expansion are not disclosed, but Kioxia's ongoing operations indicate a strategy for growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

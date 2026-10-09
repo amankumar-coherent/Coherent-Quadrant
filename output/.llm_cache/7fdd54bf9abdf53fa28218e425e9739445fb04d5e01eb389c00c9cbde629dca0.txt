@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Website shows multiple devices: blood pressure monitors (Neo, Track, Jurni), pulse oximeter, thermometer, glucose monitor, scale, TENS unit, and rapid tests; but no smartwatches or activity trackers listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims 'Clinical Accuracy' for blood pressure monitor and FDA authorization for COVID test, but no clinical study data or performance metrics provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Products like wireless BP monitor and connected scale suggest some innovation, but no explicit R&D pipeline or novel technology details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing facilities, quality certifications, or production capabilities."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Mentions 'FDA Authorized' for COVID test and 'FSA/HSA Accepted' for devices, indicating some regulatory compliance, but no CE marks or other global certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Presence in US and distribution in Latin America; online store with direct sales, but no evidence of broad retail or hospital channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Has consumer brand presence and some clinical accuracy claims, but no evidence of hospital adoption or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, profitability, or funding data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "New product launches like PT9S thermometer and 4-in-1 rapid test suggest expansion, but no formal pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'Enterprise Purchase' and 'Remote Patient Monitoring' suggesting B2B efforts, but no specific partnerships or expansion plans."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Onera Health publishes clinical validation data for its sleep patch, but the knowledge base does not provide specific accuracy metrics.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Onera STS wearable patch polysomnography for home sleep testing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "No specific accuracy rates like MARD are mentioned in the knowledge base, but the product is positioned for clinical sleep testing.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Onera STS wearable patch polysomnography for home sleep testing"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "The company operates in Europe and USA, implying regulatory clearances, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Europe, USA"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "The knowledge base mentions only one device, the Onera STS patch, indicating a narrow portfolio.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Onera STS wearable patch polysomnography for home sleep testing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "The only therapeutic area mentioned is sleep, so the portfolio does not cover multiple therapeutic areas.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Sleep wearable; Polysomnography"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The device is for clinical use (home sleep testing), but no consumer device is mentioned.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["home sleep testing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "The company likely has peer-reviewed publications given its clinical focus, but none are cited in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Polysomnography"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "No clinical trials are mentioned in the knowledge base, but the product's clinical positioning suggests they exist.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Polysomnography"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "No real-world evidence is provided in the knowledge base, but the product is used in home settings.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["home sleep testing"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Battery life is not specified in the knowledge base, but sleep testing typically requires overnight wear.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["wearable patch"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "The patch form factor is likely designed for continuous wear during sleep, but no specific features like waterproofing are mentioned.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["wearable patch"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Only one form factor (patch) is mentioned, so the company does not offer multiple form factors.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["wearable patch"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No EHR integration is mentioned in the knowledge base, but clinical use suggests some data management.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Polysomnography"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No APIs or SDKs are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No support for HL7 or FHIR is mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "The company operates in Europe and USA, implying regulatory approvals, but specific ones are not listed.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Europe, USA"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "The device is for polysomnography, a medical indication, so approvals are likely for medical use.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Polysomnography"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "The company is present in Europe and USA, indicating multi-geography approvals.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Europe, USA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No user numbers are provided in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No distribution partnerships are mentioned, but the company's clinical focus suggests some network.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["home sleep testing"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials are provided in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No CPT codes or reimbursement pathways are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No insurance coverage information is provided in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No patient assistance programs or subscription models are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue growth data is available in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No financial details are provided in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No information on recurring revenue is available in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No partnerships are mentioned, but the clinical nature suggests collaborations with healthcare entities.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": ["Polysomnography"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No collaborations with tech or pharma are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No participation in standards bodies is mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.onerahealth.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

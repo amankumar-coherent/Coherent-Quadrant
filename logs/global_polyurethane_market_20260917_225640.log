@@ -1,0 +1,201 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Polyurethane Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=ed0dc55b → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=257 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_polyurethane_market_global\global_polyurethane_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=done status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_polyurethane_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because polyurethane materials are purchased by industrial manufacturers and commercial entities to be used as raw inputs or components in other finished goods.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because the defining offering of this market is a physical material and chemical product, making the companies that produce it the primary competitive players, while distributors act merely as transactional channels.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: SKIP (checkpoint) — 300 recalled
+  [chatgpt] Step 2/6: SKIP (checkpoint) — 0 openai-discovered
+  [chatgpt] Step 3/6: SKIP (checkpoint) — 0 ddgs extracted
+  [chatgpt] Step 4/6: SKIP (checkpoint) — kept=290 rejected=10
+    → substep 4c: SKIP merge (checkpoint) — merged=257 to_fill=257
+  [chatgpt] Step 5/6: SKIP (checkpoint) — 257 filled
+    → substep 5c: merged filled rows into list (257 total)
+  [chatgpt] Step 6/6: SKIP (checkpoint) — kept=257 rejected=0
+    → substep 6p: SKIP purity (checkpoint) — 257 rows
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] Global Polyurethane Market: in=257 geo_drop=0 heur_drop=0 llm_drop=0 kept=254 market_type=B2B uniform_role=Manufacturer
+  [xy] market-fit filter (B2B): 257 -> 257 companies (roles=['Manufacturer'])
+  [xy] industry=Chemical and Materials/Polymers and Resins axis_def=llm | X=Product Strength ['Polyol & Isocyanate Integration', 'Formulation & Application Breadth', 'Product Performance & Consistency', 'Sustainable & Bio-based PU Technology', 'Manufacturing Scale & Process Efficiency'] | Y=Business Strength ['Global Production & Distribution Footprint', 'Customer & End-Market Diversification', 'Financial Strength & Margin Stability', 'Innovation Pipeline & Commercialization', 'Strategic Growth & Capacity Expansion']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 257 companies (1/query, 2 queries per batch)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [1-1]: 1/1 companies detailed
+      · params [2-2]: 1/1 companies detailed
+      · params [3-3]: 1/1 companies detailed
+      · params [4-4]: 1/1 companies detailed
+      · params [5-5]: 1/1 companies detailed
+      · params [6-6]: 1/1 companies detailed
+      · params [7-7]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · params [8-8]: 1/1 companies detailed
+      · params [9-9]: 1/1 companies detailed
+      · params [10-10]: 1/1 companies detailed
+      · params [11-11]: 1/1 companies detailed
+      · params [12-12]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · params [13-13]: 1/1 companies detailed
+      · params [14-14]: 1/1 companies detailed
+      · params [15-15]: 1/1 companies detailed
+      · params [16-16]: 1/1 companies detailed
+      · params [17-17]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [18-18]: 1/1 companies detailed
+      · params [19-19]: 1/1 companies detailed
+      · params [20-20]: 1/1 companies detailed
+      · params [21-21]: 1/1 companies detailed
+      · params [22-22]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [23-23]: 1/1 companies detailed
+      · params [24-24]: 0/1 companies detailed
+      · params [25-25]: 1/1 companies detailed
+      · params [26-26]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [27-27]: 1/1 companies detailed
+      · params [28-28]: 1/1 companies detailed
+      · params [29-29]: 1/1 companies detailed
+      · params [30-30]: 1/1 companies detailed
+      · params [31-31]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [32-32]: 1/1 companies detailed
+      · params [33-33]: 1/1 companies detailed
+      · params [34-34]: 1/1 companies detailed
+      · params [35-35]: 1/1 companies detailed
+      · params [36-36]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [37-37]: 1/1 companies detailed
+      · params [38-38]: 1/1 companies detailed
+      · params [39-39]: 1/1 companies detailed
+      · params [40-40]: 1/1 companies detailed
+      · params [41-41]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [42-42]: 1/1 companies detailed
+      · params [43-43]: 1/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+      · params [45-45]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [46-46]: 1/1 companies detailed
+      · params [47-47]: 1/1 companies detailed
+      · params [48-48]: 1/1 companies detailed
+      · params [49-49]: 1/1 companies detailed
+      · params [50-50]: 1/1 companies detailed
+      · params [51-51]: 1/1 companies detailed
+      · params [52-52]: 1/1 companies detailed
+      · params [53-53]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [54-54]: 1/1 companies detailed
+      · params [55-55]: 1/1 companies detailed
+      · params [56-56]: 1/1 companies detailed
+      · params [57-57]: 1/1 companies detailed
+      · params [58-58]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · params [59-59]: 1/1 companies detailed
+      · params [60-60]: 1/1 companies detailed
+      · params [61-61]: 1/1 companies detailed
+      · params [62-62]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [63-63]: 1/1 companies detailed
+      · params [64-64]: 1/1 companies detailed
+      · params [65-65]: 1/1 companies detailed
+      · params [66-66]: 1/1 companies detailed
+      · params [67-67]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [68-68]: 1/1 companies detailed
+      · params [69-69]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [70-70]: 1/1 companies detailed
+      · params [71-71]: 1/1 companies detailed
+      · params [72-72]: 1/1 companies detailed
+      · params [73-73]: 1/1 companies detailed
+      · params [74-74]: 1/1 companies detailed
+      · params [75-75]: 1/1 companies detailed
+      · params [76-76]: 1/1 companies detailed
+      · params [77-77]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [78-78]: 1/1 companies detailed
+      · params [79-79]: 1/1 companies detailed
+      · params [80-80]: 1/1 companies detailed
+      · params [81-81]: 1/1 companies detailed
+      · params [82-82]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [83-83]: 1/1 companies detailed
+      · params [84-84]: 1/1 companies detailed
+      · params [85-85]: 1/1 companies detailed
+      · params [86-86]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [87-87]: 1/1 companies detailed
+      · params [88-88]: 1/1 companies detailed
+      · params [89-89]: 1/1 companies detailed
+      · params [90-90]: 1/1 companies detailed
+      · params [91-91]: 1/1 companies detailed
+      · params [92-92]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [93-93]: 1/1 companies detailed
+      · params [94-94]: 1/1 companies detailed
+      · params [95-95]: 1/1 companies detailed
+      · params [96-96] Business Strength: AiModeUnavailable: navigation failed: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.google.com/se
+      · params [96-96]: 0/1 companies detailed
+      · params [97-97]: 1/1 companies detailed
+      · params [98-98]: 1/1 companies detailed
+      · params [99-99]: 1/1 companies detailed
+      · params [100-100]: 1/1 companies detailed
+      · params [101-101]: 1/1 companies detailed
+      · params [102-102]: 1/1 companies detailed
+      · params [103-103]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [104-104]: 1/1 companies detailed
+      · params [105-105]: 1/1 companies detailed
+      · params [106-106]: 1/1 companies detailed
+      · params [107-107]: 1/1 companies detailed
+      · params [108-108]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [109-109]: 1/1 companies detailed
+      · params [110-110]: 1/1 companies detailed
+      · params [111-111]: 1/1 companies detailed
+      · params [112-112]: 1/1 companies detailed
+      · params [113-113]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · params [114-114]: 1/1 companies detailed
+      · params [115-115]: 1/1 companies detailed
+      · params [116-116]: 1/1 companies detailed
+      · params [117-117]: 1/1 companies detailed
+      · params [118-118]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · params [119-119]: 1/1 companies detailed
+      · params [120-120]: 1/1 companies detailed
+      · params [121-121]: 1/1 companies detailed
+      · params [122-122]: 1/1 companies detailed
+      · params [123-123]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · params [124-124]: 1/1 companies detailed
+      · params [125-125]: 1/1 companies detailed
+      · params [126-126]: 1/1 companies detailed
+      · params [127-127]: 1/1 companies detailed

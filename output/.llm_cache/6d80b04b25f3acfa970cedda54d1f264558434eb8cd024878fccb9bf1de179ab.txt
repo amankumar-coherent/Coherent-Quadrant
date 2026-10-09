@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Offers CGM sensors and app; additional CGM for 14 days; country-specific sensor models; no other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims 80% improve blood sugar, 70% fewer cravings; but no clinical trial data or peer-reviewed evidence; excludes type 1/2 diabetes."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Features AI meal tracker, face scan for biomarkers, personalized programs; mentions 'Controlled-by-Design AI' and white paper."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; relies on external CGM sensors."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions regulatory requirements for country-specific sensors; no specific certifications or clearances listed."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Sells in Europe (DE/CH, Rest of Europe); online store; no global presence evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "347 reviews, expert recommendation (Dr. Anne Latz), user testimonials; but no hospital or clinical adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on women's health (menopause, cycle) and metabolic health; expanding content and programs; no formal pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'Seen at' (media?) and 'Hello Focus Study'; no specific partnerships or expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

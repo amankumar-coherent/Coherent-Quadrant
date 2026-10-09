@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 3,
+      "answer": "CyrusOne is a data center provider, not a compute hardware vendor, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 3,
+      "answer": "As a data center operator, CyrusOne does not manufacture accelerators, so performance per watt comparisons are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "CyrusOne does not produce compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "CyrusOne provides data center infrastructure but does not manufacture networking hardware like switches or NICs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "No specific latency or bandwidth metrics for interconnect technology are provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "CyrusOne does not produce networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "CyrusOne emphasizes sustainability and efficiency, but specific PUE figures are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": ["We're pioneering sustainable data center solutions with our commitment to become climate neutral by 2030."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "CyrusOne's Intelliscale platform is designed for high-density AI workloads, implying advanced cooling solutions, though liquid cooling is not explicitly mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Intelliscale™, our purpose-built AI infrastructure solution, addresses the intense computational demands of artificial intelligence applications. This advanced platform delivers the power density, cooling efficiency, and scalability required for next-generation AI workloads."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "CyrusOne focuses on energy efficiency and sustainability, but specific power management features are not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Our comprehensive approach focuses on climate action, water conservation, biodiversity protection, and circular economy practices."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "CyrusOne provides data center services but does not offer a comprehensive software platform for managing resources.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No information about orchestration software compatibility with Kubernetes or OpenStack is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Automation features for provisioning and monitoring are not mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "CyrusOne offers Intelliscale, a specialized platform for AI and high-density computing, indicating optimizations for AI workloads.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Intelliscale™, our purpose-built AI infrastructure solution, addresses the intense computational demands of artificial intelligence applications."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Intelliscale is designed to deliver power density and cooling efficiency for AI workloads, but specific performance improvements are not quantified.",
+      "evidence_urls": [],
+      "evidence_snippets": ["This advanced platform delivers the power density, cooling efficiency, and scalability required for next-generation AI workloads."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No tools for workload profiling or optimization across AI frameworks are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "CyrusOne operates in 9 countries with 60+ operational data centers, indicating a substantial global footprint.",
+      "evidence_urls": [],
+      "evidence_snippets": ["9 countries served globally", "60 + operational data centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "CyrusOne has data centers across North America, EMEA, and APAC, including major markets like the US, UK, Germany, and Japan.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Our global presence across North America, EMEA, and APAC enables us to deliver state-of-the-art solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "CyrusOne has 50+ data centers in development, indicating expansion plans, but specific emerging markets are not mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": ["50 + data centers in development"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "CyrusOne serves 'world's leading enterprises' and hyperscale customers, but specific names like AWS or Azure are not listed.",
+      "evidence_urls": [],
+      "evidence_snippets": ["CyrusOne leads in hyperscale data center solutions, delivering the performance, availability, and scalability required by the world's largest companies."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Revenue split between enterprise and hyperscaler customers is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No specific case studies or testimonials from Fortune 500 companies are provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Annual revenue figures are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Gross margin data is not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No financial history is provided, but the company's expansion suggests growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "Market share data is not available, but CyrusOne is a significant player with 60+ data centers.",
+      "evidence_urls": [],
+      "evidence_snippets": ["60 + operational data centers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Growth rate compared to market is not provided, but development of 50+ new data centers suggests aggressive expansion.",
+      "evidence_urls": [],
+      "evidence_snippets": ["50 + data centers in development"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No specific data on share gains or losses in AI servers or storage.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "CyrusOne has partnerships implied by its hyperscale solutions, but specific alliances with NVIDIA, Intel, or VMware are not mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": ["CyrusOne leads in hyperscale data center solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No recent acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No joint ventures or co-development agreements are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "QT Medical's PCA 500 is a 12-lead ECG system, and while the KB mentions its clinical use, it does not explicitly publish sensor accuracy validation data.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["PCA 500 wearable/portable 12-lead ECG system"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "The KB does not report any accuracy metrics like MARD for heart rate or other vitals.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "The PCA 500 is a medical device, implying regulatory clearance, but the KB does not specify FDA or CE certifications.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["PCA 500 wearable/portable 12-lead ECG system"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "The KB only mentions one device, the PCA 500, indicating a narrow portfolio.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["PCA 500 wearable/portable 12-lead ECG system"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "The PCA 500 is focused solely on cardiac diagnostics, not covering multiple therapeutic areas.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["ECG; Cardiac diagnostics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "The PCA 500 is a medical device for clinical use, but the KB does not indicate consumer-oriented devices.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["PCA 500 wearable/portable 12-lead ECG system"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "No peer-reviewed publications are mentioned in the KB, but the device's clinical nature suggests some evidence exists.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "The KB does not mention clinical trials, but as a medical device, trials are likely; however, no evidence is provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "No real-world evidence or outcomes data is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "The KB does not specify battery life for the PCA 500.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "The PCA 500 is wearable and portable, but no details on waterproofing or comfort are provided.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["PCA 500 wearable/portable 12-lead ECG system"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "Only one form factor (PCA 500) is mentioned, so no multiple form factors.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["PCA 500 wearable/portable 12-lead ECG system"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "No EHR integration is mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No APIs or SDKs are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No support for HL7 or FHIR is mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "The PCA 500 is a medical device, implying regulatory approval, but specific approvals are not listed in the KB.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["PCA 500 wearable/portable 12-lead ECG system"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "The device is for cardiac diagnostics, indicating a medical indication, but the KB does not specify the clearance type.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["ECG; Cardiac diagnostics"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "The KB mentions USA and Asia, suggesting multi-geography presence, but no specific approvals are listed.",
+      "evidence_urls": ["https://www.qtmedical.com"],
+      "evidence_snippets": ["USA, Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "No user numbers or units sold are provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No distribution partnerships are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 3,
+      "answer": "No case studies or testimonials are provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No CPT codes or reimbursement pathways are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "No insurance coverage information is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No patient assistance programs or subscription models are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 3,
+      "answer": "No revenue growth data is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "No financial metrics like gross margins are provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 3,
+      "answer": "No evidence of recurring revenue or repeat purchases is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No partnerships with healthcare systems or research institutions are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No collaborations with tech or pharma companies are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No participation in standards bodies or joint ventures is mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

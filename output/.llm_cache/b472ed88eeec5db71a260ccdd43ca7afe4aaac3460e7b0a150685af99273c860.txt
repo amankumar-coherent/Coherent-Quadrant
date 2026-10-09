@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence shows products like wrist blood pressure monitor (BW 315), inhalers (IN 700), and mentions of smartwatches, wearables, fitness trackers, connected devices. But no comprehensive list or depth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "BW 315 is certified medical device for precise blood pressure measurement; IN 700 is medical device. No clinical studies or performance data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of R&D investments, patents, or novel technology. Only mentions of standard products."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company develops, manufactures, and markets medical devices. No details on quality certifications or manufacturing scale."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Products are certified medical devices (e.g., BW 315, IN 700). No explicit ISO or FDA mentions, but EU presence suggests CE marking."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Presence in Germany, Netherlands/Belgium/Luxemburg, France, Switzerland. Sold on Amazon UK. 5 office locations. Not global scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Established since 1981, but no evidence of clinical adoption or professional endorsements. Consumer brand."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided. Acquired by Ogawa Smart HealthCare in 2016, but no revenue or growth figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of new product pipeline or expansion into new indications beyond current categories."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Ogawa Smart HealthCare (Xiamen Comfort Science) in 2016, indicating some business expansion. No other partnerships mentioned."
+    }
+  ],
+  "evidence_used": true
+}

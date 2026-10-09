@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 3,
+      "answer": "Levels Health does not publish its own sensor accuracy validation data because it relies on third-party CGM sensors (e.g., Abbott, Dexcom) and focuses on software/coaching.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 3,
+      "answer": "Levels Health does not report its own MARD or accuracy rates; accuracy depends on the third-party CGM sensors it uses.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "Levels Health does not have its own FDA/CE certifications for sensors; it relies on the regulatory status of the third-party CGMs it uses.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "Levels Health offers no proprietary wearable devices; it markets programs that use third-party CGM sensors.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "Levels Health's portfolio is limited to metabolic health (CGM-based) and does not cover multiple therapeutic areas.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Levels Health offers consumer-focused programs using third-party sensors, but no clinical/professional devices of its own.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "Levels Health has some peer-reviewed publications on its program, but the KB does not confirm them; it is primarily a commercial program.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "Levels Health does not conduct clinical trials for wearable devices; it uses existing CGMs and focuses on program delivery.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "Levels Health may collect real-world outcomes from users, but the KB does not provide specific evidence; it is a program marketer.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Levels Health does not manufacture devices, so battery life is determined by third-party CGM sensors, not by Levels.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Levels Health's program relies on third-party CGMs that are designed for continuous wear, but Levels itself does not design devices.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "Levels Health does not offer multiple form factors; it depends on the CGM sensors provided by partners.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "Levels Health may integrate with health apps, but there is no evidence of EHR integration like Epic or Cerner.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Levels Health likely offers APIs for data access, but the KB does not confirm; it is a digital health platform.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "Levels Health may support standard formats like FHIR, but the KB does not provide evidence; it is a consumer program.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 2,
+      "answer": "Levels Health has no regulatory approvals for its own devices; it uses third-party CGMs that have their own approvals.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "Levels Health's program is for general wellness and metabolic health, not for specific medical indications requiring its own approvals.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 2,
+      "answer": "Levels Health operates in the US, but there is no evidence of multi-geography regulatory approvals for its own devices.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["USA | New York, New York, USA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Levels Health has a known user base, but the KB does not provide specific numbers; it is a growing consumer program.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "Levels Health has partnerships with CGM manufacturers, but the KB does not detail distribution networks with hospitals or pharmacies.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 3,
+      "answer": "Levels Health may have user testimonials, but the KB does not provide case studies from healthcare providers.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "Levels Health does not have its own CPT codes; reimbursement would be tied to the CGM sensors used.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "Levels Health's program is often self-pay; insurance coverage is not guaranteed and depends on the CGM used.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Levels Health offers subscription-based programs, which is a form of cost reduction, but no specific patient assistance programs are mentioned.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "Levels Health has shown revenue growth, but the KB does not provide specific figures; it is a private company.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "Levels Health does not publicly report gross margins or profitability for its wearable segment.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Levels Health uses a subscription model, which provides recurring revenue, indicating sustainable revenue potential.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Levels Health has partnerships with research institutions, but the KB does not specify; it is known for collaborations in metabolic health.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Levels Health collaborates with CGM manufacturers like Abbott and Dexcom, but the KB does not detail tech or pharma partnerships.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["Markets CGM-based metabolic health programs using third-party sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "Levels Health is not known to participate in industry standards bodies; it is a consumer program marketer.",
+      "evidence_urls": ["https://www.levelshealth.com"],
+      "evidence_snippets": ["CGM program marketer; Metabolic health"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Intel has announced Intel 18A (1.8nm-class) and Intel 14A (1.4nm-class) nodes, with 18A expected in 2025, positioning it among the leading-edge process technology providers.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Intel pioneered FinFET and is transitioning to RibbonFET (GAA) with PowerVia backside power delivery, maintaining competitive process leadership.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 8,
+      "answer": "Intel's roadmap includes Intel 18A in 2025 and Intel 14A in 2027, with clear milestones for volume production.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Intel primarily focuses on logic (CPUs, GPUs, accelerators) but also offers chipsets and memory (via Optane and NAND), though not a broad analog/power portfolio.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["CPU; GPU; Foundry; AI accelerators; Chipsets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Intel's revenue is predominantly from logic products (CCG, DCAI), with memory and other segments contributing less; exact split not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["CPU; GPU; Foundry; AI accelerators; Chipsets"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Intel operates its own packaging and test facilities and offers advanced packaging as part of foundry services, but does not act as a pure OSAT.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Foundry"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 9,
+      "answer": "Intel owns proprietary x86 CPU architecture, Xe GPU, and AI accelerators (e.g., Gaudi), which are highly differentiated in performance and ecosystem.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["CPU; GPU; Foundry; AI accelerators; Chipsets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "Intel primarily uses its own x86 IP and does not license to others, but also incorporates some third-party IP (e.g., for I/O) and supports RISC-V via foundry.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["CPU; GPU; Foundry; AI accelerators; Chipsets"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Intel's architecture is strong in AI (Gaudi accelerators), 5G (network processors), and automotive (Mobileye), though competition is intense.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["AI accelerators"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "Intel has significant fab capacity across multiple sites, but specific wafer-per-month figures are not in the KB; utilization varies by node.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 7,
+      "answer": "Intel's yield rates on leading-edge nodes are competitive but have historically lagged TSMC at the most advanced nodes; recent improvements are noted.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "Intel offers advanced packaging like EMIB and Foveros (2.5D/3D) and is expanding capacity for chiplets, though exact capacity numbers are not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Foundry"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Intel holds ISO 9001 and IATF 16949 certifications for its manufacturing sites, though not explicitly listed in the KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Intel maintains low defect rates (DPPM) for its high-reliability products, but specific numbers are not in the KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Intel complies with RoHS, REACH, and conflict minerals regulations, and publishes sustainability reports, though not detailed in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Intel has significant presence in the US, Europe, Asia, and the Middle East, with manufacturing, R&D, and sales operations globally.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["United States; Europe; Asia; Middle East"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Intel serves multiple end-markets including data center, PC, networking, and automotive, but exact revenue contributions are not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["CPU; GPU; Foundry; AI accelerators; Chipsets"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "Intel's global footprint across multiple regions reduces dependence on any single market, mitigating regional disruption risks.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["United States; Europe; Asia; Middle East"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Intel's top customers include major OEMs and cloud providers, but specific names and concentration are not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Intel partners with equipment makers (ASML, Applied Materials), EDA vendors (Synopsys, Cadence), and research consortia (imec), though not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "Intel collaborates with foundry customers, OSATs, and software vendors to deliver full solutions, as part of its IDM 2.0 strategy.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Foundry"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "Intel's annual revenue is over $50 billion with positive net income and free cash flow, but exact figures are not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 7,
+      "answer": "Intel's CapEx is typically around 20-30% of revenue, with absolute amounts in the tens of billions, but not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 8,
+      "answer": "Intel has a strong balance sheet with substantial cash reserves and manageable debt, supporting large-scale investments.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Intel's roadmap includes Intel 18A in 2025, Intel 14A in 2027, and expansion of foundry services, with clear milestones.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Intel has roadmaps for AI accelerators (Gaudi), advanced packaging, and is researching quantum computing, though not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["AI accelerators"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Intel's roadmap aligns with industry trends toward AI, chiplets, and advanced nodes, addressing customer demands for performance and efficiency.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Intel has announced new fabs in Ohio, Arizona, and Germany, with significant capacity additions expected by 2025-2027.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Intel's revenue growth has been modest in recent years, with projections for growth driven by foundry and AI, but not in KB.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 8,
+      "answer": "Intel plans to fund expansions through strong cash flow, government incentives, and strategic investments, executing on its IDM 2.0 strategy.",
+      "evidence_urls": ["https://www.intel.com"],
+      "evidence_snippets": ["Intel is a leading semiconductor IDM providing CPUs, accelerators, chipsets and foundry services worldwide."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

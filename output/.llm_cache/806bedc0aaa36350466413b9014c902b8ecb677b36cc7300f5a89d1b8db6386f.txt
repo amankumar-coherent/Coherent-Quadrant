@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "GlobalFoundries does not offer leading-edge nodes like 3nm or 2nm; its most advanced nodes are 12nm FinFET and 22nm FD-SOI, focusing on specialty technologies.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["GF is a leading pure-play semiconductor manufacturer with a strong focus on specialty technologies such as RF-SOI, SiGe, GaN, silicon photonics, and advanced packaging."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "GlobalFoundries leads in FD-SOI (22FDX) and specialty technologies like RF-SOI and SiGe, differentiating from peers who focus on FinFET or GAA.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Includes FDX™ FD-SOI, Feature-rich CMOS, and FinFET."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "GlobalFoundries' roadmap emphasizes specialty technologies and advanced packaging rather than next-generation nodes like 2nm, with no announced 2nm or 1.4nm plans.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["GF is a leading pure-play semiconductor manufacturer with a strong focus on specialty technologies such as RF-SOI, SiGe, GaN, silicon photonics, and advanced packaging."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "GlobalFoundries offers a broad portfolio across logic (CMOS, FinFET, FD-SOI), power (BCD, GaN), and advanced packaging, but not memory.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Products: Advanced packaging, CMOS, Power (BCD and Power GaN), Quantum technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type, but the portfolio appears diversified across logic, power, and packaging.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "GlobalFoundries offers advanced packaging services including 2.5D/3D and interposer-based architectures, but it is not an OSAT; it likely partners with OSATs for some services.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Advanced packaging: Compact, high-performance, energy-efficient systems with 2.5D/3D, W2W and D2W bonding and interposer-based architectures"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "GlobalFoundries does not own proprietary CPU, GPU, or AI accelerator IP; it focuses on manufacturing technologies and process IP.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["GF is a leading pure-play semiconductor manufacturer with a strong focus on specialty technologies"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "As a foundry, GlobalFoundries relies on third-party IP from customers and partners; it does not license its own processor IP.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "GlobalFoundries has strong architecture in RF and power for 5G and automotive, but not in AI accelerators; it enables AI at scale through specialty technologies.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["GF is a leading pure-play semiconductor manufacturer with a strong focus on specialty technologies such as RF-SOI, SiGe, GaN, silicon photonics, and advanced packaging."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide specific wafer capacity or utilization rates, but GlobalFoundries has multiple fabs across the U.S., Europe, and Asia.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["global footprint spanning the U.S., Europe and Asia", "high-volume manufacturing hub in Singapore"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Yield rates are not disclosed in the knowledge base; as a mature specialty foundry, yields are likely competitive for its nodes but not leading-edge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "GlobalFoundries offers advanced packaging including 2.5D/3D, W2W, D2W bonding, and interposer-based architectures, indicating strong packaging capability.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Advanced packaging: Compact, high-performance, energy-efficient systems with 2.5D/3D, W2W and D2W bonding and interposer-based architectures"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific quality certifications, but as a major foundry, GlobalFoundries likely holds ISO 9001 and IATF 16949.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rates are not provided, but GlobalFoundries emphasizes trusted and reliable manufacturing for critical applications like automotive and aerospace.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["The company emphasizes trusted and reliable manufacturing for customers worldwide."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "GlobalFoundries publishes a Sustainability Report, indicating attention to environmental compliance, but specific RoHS/REACH details are not in the KB.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["The 2026 Sustainability Report marks its 1"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "GlobalFoundries has a global footprint with manufacturing in the U.S., Europe, and Asia, including sites in Malta, Burlington, Dresden, Singapore, and Guangzhou.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["GF's manufacturing footprint spans the U.S., Europe, and Asia, with key sites in Malta (NY), Burlington (VT), Dresden, Singapore, and Guangzhou."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "End markets include aerospace & defense, automotive, data center & communications infrastructure, IoT, physical AI, and smart mobile devices, but revenue contribution is not provided.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["End markets include aerospace & defense, automotive, data center & communications infrastructure, IoT, physical AI, and smart mobile devices."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "GlobalFoundries' presence in multiple regions reduces dependence on any single market, mitigating risks from regional disruptions or trade policies.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["GF's manufacturing footprint spans the U.S., Europe, and Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "The knowledge base does not list top customers or concentration risk; as a foundry, it likely has a diversified customer base but specific names are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "GlobalFoundries likely partners with equipment makers and EDA vendors, but specific partnerships are not in the KB; it collaborates with ecosystem players.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "GlobalFoundries collaborates with ecosystem players through its MIPS subsidiary and advanced packaging offerings, enabling complete solutions.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Its MIPS subsidiary provides virtual platforms and compute capabilities."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not provided in the knowledge base; GlobalFoundries is a public company but specific revenue, net income, and cash flow are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not in the knowledge base; as a capital-intensive foundry, it likely invests heavily, but specific figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the KB; GlobalFoundries received a $300 million proposed award, indicating some financial support, but debt and cash are unknown.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["$300 million LOI with U.S. Department of Commerce"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "GlobalFoundries' roadmap focuses on expanding specialty technologies and silicon photonics, with a $300 million award to enhance capabilities, but specific milestones are not detailed.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["expanding its silicon photonics capabilities with a $300 million proposed award from the U.S. Department of Commerce"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "GlobalFoundries has a clear roadmap for AI-enabling technologies like silicon photonics and advanced packaging, and is exploring quantum technology.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["GF is a leading pure-play semiconductor manufacturer with a strong focus on specialty technologies such as RF-SOI, SiGe, GaN, silicon photonics, and advanced packaging."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "GlobalFoundries' roadmap aligns with industry trends toward AI, 5G, and automotive, focusing on specialty technologies that address these high-growth markets.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["End markets include aerospace & defense, automotive, data center & communications infrastructure, IoT, physical AI, and smart mobile devices."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "GlobalFoundries has announced expansion of silicon photonics capabilities with a $300 million award, but specific new fabs or capacity additions are not detailed.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["expanding its silicon photonics capabilities with a $300 million proposed award from the U.S. Department of Commerce"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided in the knowledge base; as a mature foundry, growth is likely moderate but specific figures are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding for expansions is not detailed, but the $300 million award suggests government support; execution plans are not in the KB.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["$300 million LOI with U.S. Department of Commerce"],
+      "grounding": "partial"
+    }
+  ]
+}

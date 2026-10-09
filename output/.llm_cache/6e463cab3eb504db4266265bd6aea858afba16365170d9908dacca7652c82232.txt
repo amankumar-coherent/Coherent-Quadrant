@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Everion device, a multi-sensor wearable, but no other products in portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Multiple clinical validation studies on surgical wards and pediatric patients show reliability and accuracy, e.g., 'Continuous monitoring of vital signs with the Everion biosensor on the surgical ward: a clinical validation study'."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Everion is described as a multi-sensor device with built-in AI and accuracy metrics, indicating innovative capability, but no explicit R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing processes or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Device is commercially available and used in clinical studies, implying regulatory clearance, but no explicit FDA/CE details in evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "HQ in Switzerland, but evidence mentions applicability in African healthcare and distribution partners worldwide, indicating some reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Used in multiple clinical studies and adopted in hospital settings, e.g., 'Continuous monitoring of vital signs with the Everion biosensor on the surgical ward'."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only acquisition by Biofourmis in 2019."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows use in various settings (surgical ward, pediatric, temperature monitoring), suggesting expansion, but no explicit pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquired by Biofourmis, and case study with Eseye indicates partnerships for remote patient care."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

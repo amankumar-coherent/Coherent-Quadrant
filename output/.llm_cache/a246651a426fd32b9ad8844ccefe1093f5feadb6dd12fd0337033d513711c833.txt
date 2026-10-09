@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "T5 Data Centers is a data center developer and operator, not a compute hardware provider, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "T5 does not manufacture accelerators, so performance per watt metrics are not applicable.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "T5 does not produce compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 1,
+      "answer": "T5 does not provide networking hardware; it focuses on data center development and operations.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "T5 does not offer interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "T5 does not produce networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "T5 emphasizes efficient data center operations but does not publicly disclose typical PUE values.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["Mission-critical operations focused on uptime, safety, and long-term performance at scale."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 8,
+      "answer": "T5 has demonstrated liquid cooling capability, as evidenced by a case study of a liquid-cooled facility for AI workloads.",
+      "evidence_urls": ["https://t5datacenters.com/liquid-cooling-case-study/"],
+      "evidence_snippets": ["Discover how T5 delivered a 40,000 sq. ft. liquid-cooled facility in just 12 months, powering dense GPU clusters."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "T5 focuses on operational efficiency but does not provide specific power management features for reducing energy consumption.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["Mission-critical operations focused on uptime, safety, and long-term performance at scale."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "T5 does not offer a software platform for managing data center resources; it provides physical infrastructure services.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 1,
+      "answer": "T5 does not provide orchestration software, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 1,
+      "answer": "T5 does not offer automation features for provisioning or scaling workloads as it is not a software provider.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "T5 supports AI workloads through specialized facilities like liquid-cooled data centers, but does not offer hardware or software optimizations itself.",
+      "evidence_urls": ["https://t5datacenters.com/liquid-cooling-case-study/"],
+      "evidence_snippets": ["Discover how T5 delivered a 40,000 sq. ft. liquid-cooled facility in just 12 months, powering dense GPU clusters."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "T5's liquid-cooled facilities enable high-density AI workloads, but they do not provide performance improvements over general-purpose alternatives directly.",
+      "evidence_urls": ["https://t5datacenters.com/liquid-cooling-case-study/"],
+      "evidence_snippets": ["Discover how T5 delivered a 40,000 sq. ft. liquid-cooled facility in just 12 months, powering dense GPU clusters."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "T5 does not offer tools for workload profiling or optimization.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "T5 has developed 22 data centers, but the number of regions is not specified in the knowledge base.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["# 22 ## Data Centers Developed"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "T5 operates primarily in North America, but specific geographic distribution is not detailed in the knowledge base.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "No information about expansion plans is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "T5 mentions serving 'hyperscale' customers but does not name specific hyperscalers like AWS or Azure.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["T5 Data Centers develops and operates data centers, offering colocation and build-to-suit solutions for enterprise and hyperscale customers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Revenue split between enterprise and hyperscaler customers is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "T5 provides case studies involving major cloud providers, indicating enterprise and hyperscale clientele.",
+      "evidence_urls": ["https://info.t5datacenters.com/t5-construction-case-study-2025"],
+      "evidence_snippets": ["Explore how T5 re-engineered a live data center in Chicagoland, doubling power, upgrading networks, and delivering tailored solutions for one of the world’s fastest-growing cloud providers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "T5 does not publicly disclose annual revenue figures.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Gross margin information is not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "T5 has been operating since 2008 and shows growth with 3GW+ managed, but specific revenue growth is not disclosed.",
+      "evidence_urls": ["https://t5datacenters.com"],
+      "evidence_snippets": ["3GW+ Managed", "4M SF Data Center Space Developed"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "Market share data is not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "Growth rate comparison to market is not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No information on market share gains or losses in specific segments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No specific strategic alliances with technology providers are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No recent acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No joint ventures or co-development agreements are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

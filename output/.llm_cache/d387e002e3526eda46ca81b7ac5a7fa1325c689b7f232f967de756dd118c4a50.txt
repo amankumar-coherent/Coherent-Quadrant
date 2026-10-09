@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions EOPatch (wearable insulin pump) and EOPancreas (artificial pancreas system) but no other devices; portfolio appears narrow."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "EOPancreas received FDA Breakthrough Device Designation, indicating potential clinical significance, but no clinical performance or safety data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "EOPatch is a tubeless, wearable, fully disposable insulin delivery device; EOPancreas is a wearable artificial pancreas system with FDA BDD, showing innovative R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Submitted 510(k) to FDA for EOPatch and received Breakthrough Device Designation for EOPancreas, indicating regulatory engagement, but no approvals yet."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Based in South Korea with 2 locations; no evidence of global commercial presence beyond regulatory submissions."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Medtronic's acquisition interest and partnership with Diabeloop suggest some trust, but no evidence of widespread clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Total funding of $28M and 5 employees indicate small scale; no revenue figures provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "EOPancreas (artificial pancreas) in pipeline with FDA BDD; partnership with Diabeloop for AID system shows expansion beyond basic pump."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Medtronic agreed to acquire EOFlow for $738M (though later exited) and partnership with Diabeloop for AID system, indicating business expansion efforts."
+    }
+  ],
+  "evidence_used": true
+}

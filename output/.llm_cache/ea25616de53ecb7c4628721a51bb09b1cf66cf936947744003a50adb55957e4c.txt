@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Amkor is an OSAT and does not offer process nodes; it focuses on packaging and test services.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services, including advanced packaging technologies."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "Amkor does not lead in process technology like FinFET or GAA; it specializes in packaging, not wafer fabrication.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Amkor does not have a roadmap for next-generation nodes as it is not a foundry.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Amkor offers a broad portfolio across packaging types for logic, memory, analog, power, and more, as an OSAT.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Laminate packaging: CABGA/FBGA, DSMBGA, FCBGA, fcCSP, FlipStack CSP, Interposer PoP, PBGA/TEPBGA, Stacked CSP", "Leadframe packaging: ePad LQFP/TQFP, ePad TSSOP/SOIC/SSOP, fcMLF, LQFP, Micro LeadFrame, SOIC, SSOP/QSOP, TQFP, TSSOP/MSOP", "Memory packaging", "Power packaging: D2PAK (TO-263), DPAK (TO-252), HSON8, LFPAK56, PowerCSP, PQFN, PSMC, SO8-FL, SOD123-FL, SOD128-FL, TO-220FP, TOLL, TSON8-FL"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "No revenue split by product type is provided in the knowledge base, so the diversification is qualitative.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 10,
+      "answer": "Amkor is a leading OSAT provider, offering assembly and test services as its core business.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Amkor owns proprietary packaging technologies like S-Connect and S-SWIFT, which are differentiated in advanced packaging.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Key technology differentiators include S-Connect bridge die interposer and S-SWIFT for chiplets/memory integration."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Amkor does not license IP like CPU or GPU; it uses third-party IP in its packaging designs.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Amkor's advanced packaging for AI and high-performance computing is strong, evidenced by partnerships with NVIDIA and TSMC.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility and a long-term partnership with TSMC, while also partnering with NVIDIA for AI infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Amkor does not have wafer fabrication capacity; it is an OSAT providing packaging and test.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Yield rates for wafer fabrication are not applicable to Amkor as it does not fabricate wafers.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 9,
+      "answer": "Amkor offers advanced packaging including 2.5D/3D TSV and chiplets, with a global footprint and new U.S. facility expansion.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Advanced packaging technologies: 2.5D/3D TSV, 3D Stacked Die, AiP/AoP, Chip-on-Chip, Copper Pillar, Edge Protection, Flip Chip, Interconnect, Optical Sensors, Package-on-Package, S-Connect, S-SWIFT, SWIFT", "Amkor is expanding its U.S. advanced packaging and test presence with a new facility."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No specific quality certifications are listed in the knowledge base, but as a major OSAT, Amkor likely holds standard certifications.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No defect rate data is provided, but Amkor's role in critical applications like automotive and AI suggests robust reliability practices.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["The company serves AI, automotive, communications, computing, consumer, industrial, IoT, and networking end markets."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No specific compliance details are in the knowledge base, but as a global OSAT, Amkor likely adheres to environmental regulations.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Amkor has a global footprint in 12 countries, including a new U.S. facility, indicating broad geographic presence.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["The company serves AI, automotive, communications, computing, consumer, industrial, IoT, and networking end markets across a global footprint in 12 countries."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Amkor serves multiple end markets including AI, automotive, communications, computing, consumer, industrial, IoT, and networking, but revenue contribution is not specified.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["The company serves AI, automotive, communications, computing, consumer, industrial, IoT, and networking end markets."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Amkor's global footprint across 12 countries provides geographic diversification, mitigating regional risks.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["The company serves AI, automotive, communications, computing, consumer, industrial, IoT, and networking end markets across a global footprint in 12 countries."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Amkor's top customers include NVIDIA and TSMC, but customer concentration risk is not detailed.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility and a long-term partnership with TSMC, while also partnering with NVIDIA for AI infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Amkor has strategic partnerships with TSMC and NVIDIA, indicating strong ecosystem ties.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility and a long-term partnership with TSMC, while also partnering with NVIDIA for AI infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Amkor collaborates with foundries like TSMC and customers like NVIDIA to deliver advanced packaging solutions.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility and a long-term partnership with TSMC, while also partnering with NVIDIA for AI infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No financial data is available in the knowledge base, so revenue and profitability are unknown.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No CapEx data is provided in the knowledge base.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No balance sheet information is available in the knowledge base.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Amkor's roadmap includes expanding U.S. advanced packaging and test presence, with key technologies like S-Connect and S-SWIFT.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility and a long-term partnership with TSMC, while also partnering with NVIDIA for AI infrastructure.", "Key technology differentiators include S-Connect bridge die interposer and S-SWIFT for chiplets/memory integration."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Amkor's advanced packaging for AI and chiplets aligns with emerging technology trends, though no explicit quantum or advanced memory roadmap is mentioned.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Key technology differentiators include S-Connect bridge die interposer and S-SWIFT for chiplets/memory integration."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Amkor's roadmap aligns with industry trends toward advanced packaging for AI and high-performance computing, as seen in partnerships with NVIDIA and TSMC.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility and a long-term partnership with TSMC, while also partnering with NVIDIA for AI infrastructure."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Amkor announced a new U.S. facility for advanced packaging and test, but specific capacity additions are not detailed.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No revenue growth data is provided in the knowledge base.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor Technology provides semiconductor packaging and test services."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Amkor's expansion plans are mentioned, but funding details are not available.",
+      "evidence_urls": ["https://amkor.com"],
+      "evidence_snippets": ["Amkor is expanding its U.S. advanced packaging and test presence with a new facility."],
+      "grounding": "partial"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions a smartphone app and a portal for healthcare providers, but no other devices or wearables are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Nature study shows superior or equivalent sensitivity/specificity compared to seven FDA-cleared devices; FDA-cleared and CE-marked."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "AI-powered platform using smartphone cameras; clinically validated AI-algorithm; developed with hospital and university."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 9,
+      "grounding": "supported",
+      "why": "FDA-cleared (K232804) and CE-marked as Class IIa medical device; only FDA-cleared smartphone app for heart rhythm monitoring with ECG equivalence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Over 1 million users in 43 countries; implemented by over 2000 clinical practices; entered US market with FDA clearance."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Trusted by physicians and researchers worldwide; implemented by over 2000 clinical practices; developed with reputable hospital and university."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on AFib detection; no explicit mention of future indications or pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Collaboration with Belgian hospital and university; implemented in remote monitoring programs, health systems, and health plans; but no specific partnerships named."
+    }
+  ],
+  "evidence_used": true
+}

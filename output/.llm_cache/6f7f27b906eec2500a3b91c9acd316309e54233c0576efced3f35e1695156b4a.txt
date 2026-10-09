@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence shows only a single licensed GLP-1 molecule (Bofanglutide) from Gan & Lee; no other products mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Bofanglutide is for diabetes and overweight/obesity, but no differentiation details or additional therapeutic areas are evidenced."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 2,
+      "grounding": "partial",
+      "why": "No evidence of in-house R&D; the company is a marketer/licensee, not a developer."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain details; as a marketer, likely relies on licensor."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Exclusive license for LATAM implies regulatory approvals in some countries, but no specific quality or compliance evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Exclusive LATAM license indicates regional access, but evidence only mentions Mexico presence and LATAM license, not specific launches."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of brand recognition or HCP reputation; only a website mention."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data provided; company is independent but size and revenue unknown."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Bofanglutide is in pipeline for diabetes and obesity, but no further indications or development stages are evidenced."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Exclusive LATAM license from Gan & Lee (Carnot) is a significant partnership, but no other expansion evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

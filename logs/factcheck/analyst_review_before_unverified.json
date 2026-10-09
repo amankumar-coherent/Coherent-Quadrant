@@ -1,0 +1,105 @@
+{
+  "exclude": [
+    {
+      "company": "Trackunit Telematics Ltd",
+      "reason": "The UK entity behind the Satrak brand is dissolved and not operating; Trackunit (Denmark) was acquired by Goldman Sachs Alternatives in 2025, so it is not a UK-headquartered active provider.",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: status check (Companies House status reported dissolved)."
+    }
+  ],
+  "corrections": [
+    {
+      "company": "Fleeta Limited",
+      "find": "The company reports that its FLEETA platform operates directly via BlackVue dashcam hardware, featuring a 3-axis acceleration sensor, built-in GPS/GLONASS, and optional external LTE modules to transmit cloud footage without traditional multi-year complex hardware agreements.",
+      "replace": "",
+      "reason": "Describes BlackVue's FLEETA platform (Pittasoft), a different company from Fleeta Limited of Ipswich (Fleetalyse).",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: BlackVue FLEETA official documentation (blackvue.com, fleeta.io)"
+    },
+    {
+      "company": "Fleeta Limited",
+      "find": "Fleeta Limited operates commercial fleet platforms including Fleetalyse (live GPS trackers and fleet technology) and OperatorCompliance.co.uk (operator licence compliance software), offering services such as a provider membership plan priced at £10 per month plus VAT.",
+      "replace": "Fleeta Limited operates commercial fleet platforms including Fleetalyse (live GPS trackers and fleet technology) and OperatorCompliance.co.uk (operator licence compliance software), offering services such as a Starter subscription plan priced at £90 billed yearly.",
+      "reason": "Fact-check correction: - provider - membership + Starter + subscription + £90 + billed + yearly. - £10 - per - month - plus - VAT.",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://operatorcompliance.co.uk"
+    },
+    {
+      "company": "Microlise Group PLC",
+      "find": "The company reports a 58% UK market share among large (500+) heavy goods vehicle (HGV) fleets, including 88% of UK grocery retailers, alongside an adjusted group revenue increase from £81.0m to £84.0m (a 3.7% YoY increase) for the 12 months ended 31 December 2025 as disclosed in its Investors Report (https://www.microlise.com/investors/).",
+      "replace": "The company reports a 58% UK market share among large (500+) heavy goods vehicle (HGV) fleets, including 88% of UK grocery retailers, alongside an adjusted group revenue increase to £84.0m (a 3.7% YoY increase) for the 12 months ended 31 December 2025 as disclosed in its Investors Report (https://www.microlise.com/investors/).",
+      "reason": "Fact-check correction: - from - £81.0m",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Microlise Investors Page (https://www.microlise.com/investors/) and London Stock Exchange filings. The historical 58% market share and 88% grocery retail stats date back to their 2021 IPO Admission document rather than originating fresh within the FY25 metrics context, but more crucially, the baseline group revenue increased *to* £84.0m (from £81.0m is not explicitly in the summary data, though the 3.7% YoY growth matches)."
+    },
+    {
+      "company": "Ashwoods Lightfoot Limited",
+      "find": "Lightfoot provides a RESTful developer API (supporting OAuth2 and JSON structures via data.lightfoot.co.uk) that allows customers to pull real-time telematics, driver, and vehicle metadata into third-party scheduling, routing, fuel, and back-office enterprise systems, according to the official Lightfoot Driver API Documentation.",
+      "replace": "Lightfoot provides a RESTful developer API (supporting Basic Auth and JSON structures via devapi.lightfoot.co.uk) that allows customers to pull real-time telematics, driver, and vehicle metadata into third-party scheduling, routing, fuel, and back-office enterprise systems, according to the official Lightfoot Driver API Documentation.",
+      "reason": "Fact-check correction: + Basic - OAuth2 + Auth - data.lightfoot.co.uk) + devapi.lightfoot.co.uk)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Lightfoot Driver API Documentation (https://driverdocs.lightfoot.co.uk/)"
+    },
+    {
+      "company": "Ashwoods Lightfoot Limited",
+      "find": "A public sector implementation by Gateshead Council deployed the company's in-vehicle driver behaviour technology program within 10 municipal vehicles to monitor characteristics and deliver dashboard alerts.",
+      "replace": "A public sector implementation by Gateshead Council deployed the company's in-vehicle driver behaviour technology program within 16 municipal vehicles to monitor characteristics and deliver dashboard alerts.",
+      "reason": "Fact-check correction: - 10 + 16",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Transport Engineer Magazine (https://www.transportengineer.org.uk/content/features/cutting-the-cost)"
+    },
+    {
+      "company": "BigChange Limited",
+      "find": "A public case study published by BigChange details that global mining, energy, and logistics company Hargreaves Services Plc awarded a mobile technology contract to the company to supply its three-in-one JobWatch system across a 500-strong fleet of specialist aggregates vehicles.",
+      "replace": "A public case study published by BigChange details that global mining, energy, and logistics company Hargreaves Services Plc awarded a mobile technology contract to the company to supply its three-in-one JobWatch system across a 500-strong fleet of specialist logistics vehicles.",
+      "reason": "Fact-check correction: - aggregates + logistics",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: BigChange Press Release via Hub-4 & Agg-Net"
+    },
+    {
+      "company": "Radius Limited",
+      "find": "In UK Companies House statutory filings for the specific telematics subsidiary, Radius Telematics Limited (Company No. 09970051), net assets increased by 159.1% to £14.88 million for the financial period ending 31 March 2025.",
+      "replace": "In UK Companies House statutory filings for the specific telematics subsidiary, Radius Telematics Limited (Company No. 09970051), total assets increased by 159.1% to £14.88 million for the financial period ending 31 March 2025.",
+      "reason": "Fact-check correction: - net + total",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: endole.co.uk"
+    },
+    {
+      "company": "Corvia Limited",
+      "find": "The Liverpool City Region Combined Authority selected Ticketer in September 2026 to deliver automatic vehicle location (AVL), real-time information, and ticketing technology services using its TK300 devices, as announced by Euro Bus Expo.",
+      "replace": "The Liverpool City Region Combined Authority selected Ticketer in May 2026 to deliver automatic vehicle location (AVL), real-time information, and ticketing technology services using its TK300 devices, as announced by Euro Bus Expo.",
+      "reason": "Fact-check correction: - September + May",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://eurobusxpo.com"
+    },
+    {
+      "company": "Corvia Limited",
+      "find": "The company rolled out its Ticketer TK300 hardware and software platform for the Highland Council to manage real-time ticketing and fleet information metrics following a trial period, as published in September 2026.",
+      "replace": "The company rolled out its Ticketer TK300 hardware and software platform for the Highland Council to manage real-time ticketing and fleet information metrics following a trial period, as published in August 2026.",
+      "reason": "Fact-check correction: - September + August",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://highland.gov.uk"
+    },
+    {
+      "company": "Corvia Limited",
+      "find": "West Midlands Other IT Hardware Contracts reports that Corvia Limited (trading as Ticketer) was awarded a public contract for the provision of Fixed ITSO Electronic Ticketing Machines (ETMs) and support hardware.",
+      "replace": "West Midlands Combined Authority reports that Corvia Limited (trading as Ticketer) was awarded a public contract for the provision of Fixed ITSO Electronic Ticketing Machines (ETMs) and support hardware.",
+      "reason": "Fact-check correction: + Combined + Authority - Other - IT - Hardware - Contracts",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://bidstats.uk/tenders/?q=sam+framework"
+    },
+    {
+      "company": "Trackershop LTD",
+      "find": "The company reports that its MoreFleet vehicle tracking system scales to accommodate business fleets ranging in size from 1 to 10,000 vehicles.",
+      "replace": "The company reports that its MoreFleet vehicle tracking system scales to accommodate business fleets ranging in size from 1 to 1,000 vehicles.",
+      "reason": "Fact-check correction: - 10,000 + 1,000",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Trackershop UK Official Website / MoreFleet"
+    },
+    {
+      "company": "Trackershop LTD",
+      "find": "A data evaluation indicates a localized corporate scale, with a total headcount of 12 employees and customer support availability limited to 08:00–20:00 Monday to Friday and 10:00–14:00 on weekends, rather than 24/7 service.",
+      "replace": "A data evaluation indicates a localized corporate scale, with a total headcount of 12 employees and customer support availability limited to 08:00–18:00 Monday to Friday and 10:00–14:00 on weekends, rather than 24/7 service.",
+      "reason": "Fact-check correction: - 08:00–20:00 + 08:00–18:00",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Trackershop UK Official Website Contact Us Page (Phone Line Opening Times)"
+    },
+    {
+      "company": "Satmo Vehicle Tracking",
+      "find": "The company reports a headcount of approximately 2 to 10 employees (with third-party databases specifying approximately 4 employees), and provides customer support during standard business hours of Monday to Friday, 9 AM to 5 PM.",
+      "replace": "The company reports a headcount of approximately 2 to 10 employees (with third-party databases specifying approximately 4 employees), and provides customer support during standard business hours of Monday to Friday, 8:30 AM to 5 PM (closing at 4 PM on Fridays).",
+      "reason": "Fact-check correction: - 9 + 8:30 - PM. + PM + (closing + at + 4 + PM + on + Fridays).",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Yell Listing for Satmo Vehicle Tracking (https://www.yell.com/biz/satmo-vehicle-tracking-bradford-10892508/) and LinkedIn Company Profile (https://uk.linkedin.com/company/satmo-vehicle-tracking)"
+    }
+  ],
+  "hq": [],
+  "ownership": [],
+  "keep": []
+}

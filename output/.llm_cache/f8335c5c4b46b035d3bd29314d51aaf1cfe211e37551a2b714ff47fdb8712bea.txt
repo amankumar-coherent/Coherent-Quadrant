@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence states Servier has a presence in Brazil and markets diabetes medications, including GLP-1 receptor agonists, but no specific GLP-1 products are named."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Servier's website lists three therapeutic areas including cardiometabolism, but no differentiation in GLP-1 space is evidenced."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions ~20% of revenue invested in R&D and participation in international diabetes research, but no specific GLP-1 pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing or supply capabilities for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website includes pharmacovigilance and medical information sections, indicating regulatory compliance, but no GLP-1-specific approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in Brazil only; global group distributes to 130+ countries, but GLP-1 access is not specified."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Servier is a known pharmaceutical company with patient support programs, but no GLP-1 brand reputation evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Group revenue of €6.9 billion in 2024/2025, but no GLP-1-specific financials."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 pipeline or indication roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "News mentions acquisition with Day One Biopharmaceuticals for rare cancers, but no GLP-1 partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions AcuPebble SA100 and AcuPebble RE100, indicating at least two devices, but no broad portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Clinically validated diagnosis; first wearable to obtain CE mark for automated OSA diagnosis; FDA clearance."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "World's first medical device to extract respiratory biomarkers continuously and accurately; innovative technology."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific evidence on manufacturing or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 9,
+      "grounding": "supported",
+      "why": "CE mark in Europe and FDA 510(k) clearance for AcuPebble SA100; also FDA clearance for RE100."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Based in London, plans to launch in US; presence in Europe and US, but limited evidence of global scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Award-winning company; first CE mark for automated OSA diagnosis; clinically validated; likely trusted."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Raised €11m Series A funding; indicates investor confidence but no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "AcuPebble RE100 for remote patient monitoring; plans to launch FDA-cleared version in US; potential for expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Series A round joined by KHP Ventures (NHS-anchored); plans to challenge ResMed; but limited partnership details."
+    }
+  ],
+  "evidence_used": true
+}

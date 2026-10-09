@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "No clinical validation data is mentioned in the knowledge base, but as a medical device company, it likely has some validation, though not publicly detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Specific accuracy metrics like MARD are not provided in the knowledge base, but the device is designed for continuous vital monitoring, implying reasonable accuracy.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "The knowledge base does not list certifications, but as a medical device, it likely has CE marking or FDA clearance, though not confirmed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "The knowledge base mentions only a single wearable device for continuous monitoring, indicating a narrow portfolio.",
+      "evidence_urls": ["https://currenthealth.com"],
+      "evidence_snippets": ["Provides a wearable device for continuous monitoring of vitals at home."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The device focuses on general vital monitoring, not specifically multiple therapeutic areas, based on available information.",
+      "evidence_urls": ["https://currenthealth.com"],
+      "evidence_snippets": ["Provides a wearable device for continuous monitoring of vitals at home."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The device is for home use, which could be consumer-oriented, but it is also used in clinical settings, though not explicitly stated.",
+      "evidence_urls": ["https://currenthealth.com"],
+      "evidence_snippets": ["Provides a wearable device for continuous monitoring of vitals at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "No peer-reviewed publications are mentioned in the knowledge base, but as a medical device company, it likely has some evidence.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "No clinical trials are mentioned, but the company may have conducted studies to support its device.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Real-world evidence is not mentioned, but the company likely collects outcomes data from its home monitoring service.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Battery life is not specified, but continuous monitoring devices typically have multi-day battery life.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "The device is designed for continuous monitoring at home, implying it is wearable and likely comfortable for extended wear.",
+      "evidence_urls": ["https://currenthealth.com"],
+      "evidence_snippets": ["Provides a wearable device for continuous monitoring of vitals at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Only one form factor is mentioned, suggesting limited variety in device types.",
+      "evidence_urls": ["https://currenthealth.com"],
+      "evidence_snippets": ["Provides a wearable device for continuous monitoring of vitals at home."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No EHR integration is mentioned, but as a healthcare solution, it likely integrates with some systems.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No APIs or SDKs are mentioned, but the company may offer them for developers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No mention of HL7 or FHIR, but as a healthcare company, it likely supports standard formats.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "No specific regulatory approvals are listed, but the device is likely CE marked or FDA cleared given its medical use.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "The device is for continuous monitoring, which could be for medical indications, but not specified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "The company is UK-based, so it likely has CE marking, but US FDA approval is uncertain.",
+      "evidence_urls": ["https://currenthealth.com"],
+      "evidence_snippets": ["Founded / based in: United Kingdom"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "No user numbers are provided, but as part of Best Buy Health, it may have a significant user base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Being part of Best Buy Health provides a strong retail distribution channel, though not explicitly stated.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No case studies are mentioned, but the company likely has testimonials from healthcare providers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "No CPT codes are mentioned, but the company may have reimbursement pathways for its remote monitoring service.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "No payer coverage is mentioned, but remote patient monitoring is often reimbursed by Medicare.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No assistance programs are mentioned, but subscription models are common for such services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No revenue data is available, but as part of Best Buy Health, it likely has steady growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No financial details are provided, but the company likely reports some metrics as part of a larger entity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "The service model suggests recurring revenue through subscriptions or contracts, indicating sustainability.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "As part of Best Buy Health, it likely has partnerships with healthcare systems, though not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Best Buy Health may collaborate with tech companies, but no specific partnerships are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No participation in standards bodies is mentioned, but it may be involved in industry groups.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

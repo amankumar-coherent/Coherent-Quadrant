@@ -1,0 +1,156 @@
+[pipeline 15:41:41] market: Drone Charging Industry Analysis (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india
+[pipeline 15:41:41] 1b. 49 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 15:41:45] 1b. now 49 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 15:41:45] 1. verified rows: 55
+[pipeline 15:41:45] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india\_pipeline\axes_spec.json
+[pipeline 15:41:45] 3. 55 names -> 49 companies after dedupe (5 groups merged)
+[pipeline 15:41:45] 3b. operating-status check for 49 companies across 1 browser(s)
+[pipeline 15:50:02] 3b. 9 companies left out (not active or excluded by review): ['7RD.ai', 'Austin Hybrid Power Private Limited', 'Bharat Skytech Private Limited', 'Marut Dronetech Pvt. Ltd.', 'Nexalt Drone Technologies', 'Raphael Global Tech Pvt. Ltd.', 'Raphe mPhibr Private Limited', 'Sciroit Technologies LLP'] -> _pipeline/excluded_companies.json
+[pipeline 15:50:02] ownership: 40 companies across 1 browser(s)
+[pipeline 15:50:04] ownership: 1/1 shard(s) still running
+[pipeline 15:51:04] ownership: 1/1 shard(s) still running
+[pipeline 15:52:04] ownership: 1/1 shard(s) still running
+[pipeline 15:53:04] scope: 40 companies across 1 browser(s)
+[pipeline 15:53:06] scope: 1/1 shard(s) still running
+[pipeline 15:54:06] scope: 1/1 shard(s) still running
+[pipeline 15:55:06] scope: 1/1 shard(s) still running
+[pipeline 15:56:06] scope: 1/1 shard(s) still running
+[pipeline 15:57:06] hq: 40 companies across 1 browser(s)
+[pipeline 15:57:08] hq: 1/1 shard(s) still running
+[pipeline 15:58:08] hq: 1/1 shard(s) still running
+[pipeline 15:59:08] hq: 1/1 shard(s) still running
+[pipeline 16:00:08] hq: 1/1 shard(s) still running
+[pipeline 16:01:08] 3c. ownership 40 / identity 0 / scope 40 answers: 5 more left out ['ASUN Technologies', 'Paras Defence & Space Technologies Limited', 'Space NXT Labs (Pvt) Ltd', 'Thanos Technologies Pvt. Ltd.', 'Tolle Labs Pvt Ltd'], 2 owner labels, 28 adjacent-segment (not on the chart) ['Aero A2Z Services Private Limited', 'Airborne Fidelity Private Limited', 'Azansys Technologies LLP', 'Bajrang Drone Tech Pvt Ltd', 'Dhaksha Unmanned Systems Private Limited', 'EndureAir Systems Pvt. Ltd.'] -> _pipeline/auto_review.json
+[pipeline 16:01:08] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 16:01:08]    adjacent-segment companies taken off the chart: ['Aero A2Z Services Private Limited', 'Sagar Defence Engineering Limited', 'RRP Drones Innovation Pvt Ltd', 'Tech Eagle Innovations Private Limited', 'ideaForge Technology Limited', 'Indo Wings Private Limited', 'Throttle Aerospace Systems Pvt. Ltd.', 'Syuniqe Energies Private Limited', 'Dhaksha Unmanned Systems Private Limited', 'Technit Space and Aero Works Pvt. Ltd.', 'Skye Air Mobility Pvt. Ltd.']
+[pipeline 16:01:08]    Top 20 refilled after 3b: added ['Aerogravity Private Limited', 'SkyK Aerospace Private Limited', 'Watt Wave Energy Pvt Ltd']
+[pipeline 16:01:08]    evidence pool: 7 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india\_pipeline\evidence_pool.json
+[pipeline 16:01:08] 5. 7 supporting point(s) on invalid sources removed before gap-fill
+[pipeline 16:01:08] 5. evidence round 1: 3 companies with gaps
+[pipeline 16:01:08] evidence_r1: 3 companies across 1 browser(s)
+[pipeline 16:01:10] evidence_r1: 1/1 shard(s) still running
+[pipeline 16:02:10] evidence_r1: 1/1 shard(s) still running
+[pipeline 16:03:10] reasoning_r1: 3 companies across 1 browser(s)
+[pipeline 16:03:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:04:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:05:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:06:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:07:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:08:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:09:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:10:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:11:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:12:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:13:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:14:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:15:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 16:16:12]    WARNING: only 35 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 16:16:12]    --keep 120: 7 chart/evidence + 28 long tail kept, 0 lower-scored dropped
+[pipeline 16:16:12]    7 companies with full evidence, 28 in the long tail
+[pipeline 16:16:12] 6. composite scores (5 per quadrant)
+[pipeline 16:16:14] 7. rewriting hedge wording / first person in evidence
+[pipeline 16:16:16] 7b. supporting points: 73 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 16:16:16] 7b. owner of Dhaksha Unmanned Systems Private Limited: Coromandel International Limited
+[pipeline 16:16:16] 7b. owner of Throttle Aerospace Systems Pvt. Ltd.: RattanIndia Enterprises Ltd
+[pipeline 16:16:16] 8. building HTML / JSON / CSV report
+[pipeline 16:16:19] 8. report page: interactive design (drone_charging_industry_analysis_india_report.html); static copy drone_charging_industry_analysis_india_report_classic.html
+[pipeline 16:16:34] 8b. PDF report: drone_charging_industry_analysis_india_report.pdf
+[pipeline 16:16:55] 8b. Word report: drone_charging_industry_analysis_india_report.docx
+[pipeline 16:16:55] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 35 companies
+   [FAIL] Chart has 20 companies  -> 7 on chart
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [FAIL] No hedge wording / first person in report  -> ['no specific public evidence']
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 16:16:55] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india\drone_charging_industry_analysis_india_report.html
+[pipeline 17:54:51] market: Drone Charging Industry Analysis (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india
+[pipeline 17:54:51] 1b. 49 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 17:54:55] 1b. now 49 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 17:54:55] 1. verified rows: 55
+[pipeline 17:54:55] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india\_pipeline\axes_spec.json
+[pipeline 17:54:55] 3. 55 names -> 49 companies after dedupe (5 groups merged)
+[pipeline 17:54:55] 3b. 9 companies left out (not active or excluded by review): ['7RD.ai', 'Austin Hybrid Power Private Limited', 'Bharat Skytech Private Limited', 'Marut Dronetech Pvt. Ltd.', 'Nexalt Drone Technologies', 'Raphael Global Tech Pvt. Ltd.', 'Raphe mPhibr Private Limited', 'Sciroit Technologies LLP'] -> _pipeline/excluded_companies.json
+[pipeline 17:54:55] 3c. ownership 40 / identity 0 / scope 40 answers: 5 more left out ['ASUN Technologies', 'Paras Defence & Space Technologies Limited', 'Space NXT Labs (Pvt) Ltd', 'Thanos Technologies Pvt. Ltd.', 'Tolle Labs Pvt Ltd'], 2 owner labels, 28 adjacent-segment (not on the chart) ['Aero A2Z Services Private Limited', 'Airborne Fidelity Private Limited', 'Azansys Technologies LLP', 'Bajrang Drone Tech Pvt Ltd', 'Dhaksha Unmanned Systems Private Limited', 'EndureAir Systems Pvt. Ltd.'] -> _pipeline/auto_review.json
+[pipeline 17:54:55] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 17:54:55]    only 7 core companies for 20 chart slots: 13 strongest adjacent companies fill the rest ['Aero A2Z Services Private Limited', 'Ergen Technovation', 'HelloGeo Technologies Private Limited', 'Simactricals Private Limited', 'Vecros Technologies Private Limited', 'Sagar Defence Engineering Limited', 'Throttle Aerospace Systems Pvt. Ltd.', 'Indo Wings Private Limited']
+[pipeline 17:54:55]    Top 20 refilled after 3b: added ['Aero A2Z Services Private Limited', 'Ergen Technovation', 'HelloGeo Technologies Private Limited', 'Simactricals Private Limited', 'Vecros Technologies Private Limited', 'Sagar Defence Engineering Limited', 'Throttle Aerospace Systems Pvt. Ltd.', 'Indo Wings Private Limited', 'Tech Eagle Innovations Private Limited', 'RRP Drones Innovation Pvt Ltd', 'Zebu AI Private Limited', 'Enord Pvt. Ltd.', 'Airborne Fidelity Private Limited']
+[pipeline 17:54:55]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india\_pipeline\evidence_pool.json
+[pipeline 17:54:55] 5. evidence round 1: 7 companies with gaps
+[pipeline 17:54:55] evidence_r1: 7 companies across 1 browser(s)
+[pipeline 17:54:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 17:55:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 17:56:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 17:57:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 17:58:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 17:59:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:00:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:01:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:02:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:03:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:04:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:05:57] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:06:57] reasoning_r1: 5 companies across 1 browser(s)
+[pipeline 18:06:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:07:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:08:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:09:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:10:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:11:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:12:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:13:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:14:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:15:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:16:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:17:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:18:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:19:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:20:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:21:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:22:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:23:59] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:24:59] 5. evidence round 2: 1 companies with gaps
+[pipeline 18:24:59] reasoning_r2: 1 companies across 1 browser(s)
+[pipeline 18:25:01] reasoning_r2: 1/1 shard(s) still running
+[pipeline 18:26:01]    WARNING: only 35 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 18:26:01]    --keep 120: 20 chart/evidence + 15 long tail kept, 0 lower-scored dropped
+[pipeline 18:26:01]    20 companies with full evidence, 15 in the long tail
+[pipeline 18:26:01] 6. composite scores (5 per quadrant)
+[pipeline 18:26:03] 7. rewriting hedge wording / first person in evidence
+[pipeline 18:26:06] 7b. owner of Dhaksha Unmanned Systems Private Limited: Coromandel International Limited (already set)
+[pipeline 18:26:06] 7b. owner of Throttle Aerospace Systems Pvt. Ltd.: RattanIndia Enterprises Ltd (already set)
+[pipeline 18:26:06] 8. building HTML / JSON / CSV report
+[pipeline 18:26:08] 8. report page: interactive design (drone_charging_industry_analysis_india_report.html); static copy drone_charging_industry_analysis_india_report_classic.html
+[pipeline 18:26:25] 8b. PDF report: drone_charging_industry_analysis_india_report.pdf
+[pipeline 18:26:53] 8b. Word report: drone_charging_industry_analysis_india_report.docx
+[pipeline 18:26:54] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 35 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [FAIL] No hedge wording / first person in report  -> ['remains undisclosed']
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 18:26:54] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_charging_industry_analysis_india\drone_charging_industry_analysis_india_report.html
+exit=1 

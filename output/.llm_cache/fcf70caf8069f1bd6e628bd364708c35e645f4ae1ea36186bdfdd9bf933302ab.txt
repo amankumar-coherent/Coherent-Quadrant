@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only one product (KnowU) mentioned; platform claims 100+ applications but no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Claims 'high level of accuracy' and 'on the path to FDA clinical trials' but no clinical data or trial results provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "270+ patents issued/pending/in-process worldwide; novel RF dielectric spectroscopy; 100+ diagnostic applications."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'on the path to FDA clinical trials for clearance' but no FDA clearance or CE marking evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "HQ in Seattle, USA; no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Quote from CMO but no evidence of clinical adoption or partnerships with healthcare providers."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Revenue data shows N/A for 2024 and 2023, indicating no revenue."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Platform claims 100+ diagnostic applications beyond glucose (oxygen, alcohol, metabolized drugs) but only glucose product in development."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Mentions KTL Technology Licensing but no specific partnerships or expansion deals."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

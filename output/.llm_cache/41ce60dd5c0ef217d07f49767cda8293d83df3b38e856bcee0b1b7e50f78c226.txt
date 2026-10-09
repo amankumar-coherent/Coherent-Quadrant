@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "NAURA is a Chinese semiconductor equipment maker, but the knowledge base does not specify its most advanced process node support.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "NAURA's process technology leadership is not detailed in the knowledge base, but it is a known supplier of etch and deposition equipment for mature nodes.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "NAURA's roadmap for next-generation nodes is not disclosed in the knowledge base, but as a major Chinese equipment vendor it likely supports advanced nodes in development.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "NAURA offers etch, PVD/CVD, and cleaning equipment, which serve multiple semiconductor categories including logic, memory, and power, but the knowledge base does not detail the full breadth.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type, and such financial details are not publicly available in the provided sources.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "NAURA is primarily an equipment maker and does not appear to offer OSAT services directly, but may partner with OSAT providers; the knowledge base is silent on this.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "NAURA is an equipment manufacturer, not a chip designer, so it does not own proprietary CPU, GPU, or AI accelerator IP.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "As an equipment maker, NAURA does not license chip IP; it likely uses third-party IP in its equipment, but the knowledge base does not specify.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 3,
+      "answer": "NAURA's architecture strength in AI, 5G, or automotive is not relevant as it does not design chips; its equipment supports manufacturing for these sectors.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "The knowledge base does not provide NAURA's wafer fabrication capacity or utilization rate, and as an equipment maker it does not operate fabs.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "NAURA does not manufacture wafers, so yield rate comparisons are not applicable; the knowledge base lacks relevant data.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "NAURA does not offer advanced packaging services; it provides equipment that may be used in packaging, but the knowledge base does not mention packaging capacity.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list NAURA's quality certifications, but as a major equipment supplier it likely holds ISO 9001 and possibly IATF 16949.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "NAURA's defect rate and reliability measures are not disclosed in the knowledge base, and such data is typically proprietary.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "NAURA likely complies with RoHS and REACH as a global equipment supplier, but the knowledge base does not provide specific compliance details.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "NAURA is based in Beijing, China, and primarily serves the Chinese semiconductor market, but the knowledge base does not detail global presence.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["China | Beijing, China"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "NAURA's primary end-markets are semiconductor fabs, likely including memory, logic, and power, but revenue contribution is not specified in the knowledge base.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Fab equipment"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "NAURA's geographic concentration in China may increase risk from trade policies, but the knowledge base does not discuss mitigation strategies.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["China | Beijing, China"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "The knowledge base does not list NAURA's top customers or customer concentration, and such information is not publicly available in the provided sources.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "NAURA likely has partnerships with research consortia and possibly EDA vendors, but the knowledge base does not mention any specific partnerships.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "NAURA collaborates with fabs and possibly OSATs to integrate its equipment, but the knowledge base does not provide details on ecosystem collaboration.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Fab equipment"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "The knowledge base does not provide NAURA's financial figures, and such data is not included in the crawl.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "NAURA's capital expenditure details are not available in the knowledge base, and financial reports are not provided.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "NAURA's balance sheet strength is not documented in the knowledge base, and such financial details are not available.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "NAURA's technology roadmap is not detailed in the knowledge base, but as a leading Chinese equipment maker it likely has plans for advanced nodes and new products.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "NAURA's roadmap for emerging technologies like AI chips or advanced memory is not specified, but its equipment is essential for manufacturing such chips.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "NAURA's roadmap likely aligns with industry trends toward advanced nodes and increased automation, but the knowledge base does not provide explicit alignment details.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": ["Etch, PVD/CVD and cleaning equipment for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "The knowledge base does not mention any new fab or expansion projects by NAURA, but as an equipment maker it may expand its own manufacturing capacity.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "NAURA's revenue growth rate is not provided in the knowledge base, but the company has likely grown due to China's semiconductor push.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "NAURA's funding and execution plans for capacity expansion are not detailed in the knowledge base, but as a state-backed company it likely has access to capital.",
+      "evidence_urls": ["https://www.naura.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

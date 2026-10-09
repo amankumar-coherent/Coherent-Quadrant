@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Tokyo Electron supports leading-edge nodes through advanced deposition, etch, and cleaning systems, though it does not manufacture chips itself.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Manufactures etch, deposition, and cleaning systems for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Tokyo Electron is a leader in deposition and etch processes critical for FinFET and GAA architectures, though it does not own a specific process technology.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Manufactures etch, deposition, and cleaning systems for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Tokyo Electron's roadmap includes systems for EUV patterning and advanced packaging, but specific 2nm/1.4nm timelines are not disclosed.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Launches Acrevia™, a Gas Cluster Beam System for Ultra-Fine Patterning in EUV Lithography"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Tokyo Electron offers equipment across logic, memory, and other categories, but is specialized in semiconductor manufacturing equipment rather than end products.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Manufactures etch, deposition, and cleaning systems for fabs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base, but the company is known to serve both logic and memory segments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Tokyo Electron does not provide OSAT services; it partners with fabs and OSATs indirectly through equipment supply.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Tokyo Electron owns process equipment IP but not chip design IP like CPU or GPU; its IP is in manufacturing technology.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Wins Recognition as a Clarivate Top 100 Global Innovator 2026"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Tokyo Electron does not license chip IP; it develops its own equipment technology and may use third-party components.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Tokyo Electron's architecture strength lies in manufacturing equipment for AI chips, with recent AI-related awards and collaborations.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Wins “AI Semiconductor Manufacturing Solution of the Year” Award in 2026 AI Breakthrough Awards Program"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Tokyo Electron does not operate fabs; it manufactures equipment, so wafer capacity is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not applicable as Tokyo Electron does not fabricate wafers; its equipment impacts customer yields.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Tokyo Electron offers systems for advanced packaging, such as wafer bonding and thinning, but does not provide packaging services itself.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Launches Ulucus™ LX, an Extreme Laser Lift Off System for 300ｍｍ Wafer-Bonded Devices"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Tokyo Electron likely holds ISO 9001 and other certifications, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rates are not disclosed, but the company emphasizes quality and has received supplier excellence awards.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Recognized for the Texas Instruments 2025 Supplier Excellence Award"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "Tokyo Electron demonstrates commitment to sustainability and compliance through RBA VAP Platinum status and inclusion in sustainability indices.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Kyushu achieves Platinum Status in RBA VAP", "Tokyo Electron is chosen for “FTSE4Good Index Series”"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Tokyo Electron has global presence with operations in Japan, Asia, and the Americas, as evidenced by conference participation and subsidiary mergers.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["SEMICON / FPD China 2026", "SEMICON KOREA 2026", "Merger of Tokyo Electron America, Inc. and TEL Technology Center, America"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include semiconductor fabs for logic, memory, and other devices, but revenue contribution is not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Tokyo Electron's global footprint across multiple regions helps mitigate regional risks, though specific risk assessments are not provided.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["SEMICON / FPD China 2026", "SEMICON KOREA 2026"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Top customers are not disclosed, but the company likely serves major fabs; customer concentration risk is not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Tokyo Electron has strategic partnerships, including with NVIDIA for AI and robotics, and participates in industry events and consortia.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron and NVIDIA Expand Collaboration for Agentic AI and Robotics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Tokyo Electron collaborates with ecosystem players through equipment supply and partnerships, such as with NVIDIA, to deliver integrated solutions.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron and NVIDIA Expand Collaboration for Agentic AI and Robotics"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Financial figures are not in the knowledge base, but Tokyo Electron is a major player with consistent profitability.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not available, but the company invests in R&D and capacity expansion.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Balance sheet strength is not detailed, but the company's ongoing investments and share repurchases suggest solid financial health.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Notice regarding the Status of Share Repurchase and its Completion"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Tokyo Electron's roadmap includes new products like EVAROS™, LEXIA™-EX, and Acrevia™, indicating continuous innovation in deposition, etch, and EUV patterning.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Releases EVAROS™, a Batch Thermal Processing System for 300 mm Wafers", "Tokyo Electron Launches Acrevia™, a Gas Cluster Beam System for Ultra-Fine Patterning in EUV Lithography"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Tokyo Electron is investing in AI-related manufacturing solutions and has won awards for AI semiconductor manufacturing, indicating alignment with emerging tech.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Wins “AI Semiconductor Manufacturing Solution of the Year” Award in 2026 AI Breakthrough Awards Program"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Tokyo Electron's roadmap aligns with industry trends like EUV and AI, as shown by product launches and partnerships.",
+      "evidence_urls": ["https://www.tel.com"],
+      "evidence_snippets": ["Tokyo Electron Launches Acrevia™, a Gas Cluster Beam System for Ultra-Fine Patterning in EUV Lithography", "Tokyo Electron and NVIDIA Expand Collaboration for Agentic AI and Robotics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No specific fab expansion projects are mentioned; Tokyo Electron expands through equipment development and facility investments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Revenue growth is not detailed, but the company's ongoing product launches and awards suggest steady growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding for expansions is not detailed, but the company's financial stability and share repurchases indicate capacity to invest.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

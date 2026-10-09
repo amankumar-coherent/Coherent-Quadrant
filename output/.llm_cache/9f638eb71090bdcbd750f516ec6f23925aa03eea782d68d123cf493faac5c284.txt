@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence only mentions a single LNG import terminal in Milford Haven, UK; no other assets or projects are detailed."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website mentions 'reliable and flexible supply of natural gas' and completed 'first major turnaround of our re-liquefaction plant', but no throughput figures."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "States 'excellent safety record as well as a reliable and flexible supply' and completed major turnaround, indicating reliability."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Mentions 'excellent safety record' and has a 'Health, Safety, Security, Environment and Major Accident Prevention Policy'."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence shows solar panels operational since March 2023 and planning approval for 3 wind turbines, indicating transition efforts."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Only presence in United Kingdom; no evidence of multi-region reach or international corridors."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific offtake or customer contracts mentioned; only general statement of supplying homes and businesses across UK."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only mention of shareholders' investments."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions '2029 Capacity Offer' and wind turbine project, indicating some growth initiatives, but details are limited."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Owned by Shell and VTTI, and works with community and industry partners; but no major M&A or expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

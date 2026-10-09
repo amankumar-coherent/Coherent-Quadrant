@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Silicon Labs does not disclose advanced process nodes like 3nm or 2nm; as an IoT-focused fabless company, it relies on mature nodes for its wireless SoCs and MCUs.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Our wireless portfolio features unmatched breadth and depth, with solutions for the most important protocols and ecosystems."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Silicon Labs does not lead in specific process technologies like FinFET or GAA; its differentiation lies in low-power wireless integration rather than process node leadership.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["We’re the leading innovator in low-power wireless connectivity, building embedded technology that connects devices and improves lives."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Silicon Labs has not publicly detailed a roadmap for next-generation nodes like 2nm or 1.4nm, focusing instead on IoT-specific product enhancements.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["BG2B Is Coming — and It’s Built for the Next Wave of Bluetooth LE"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Silicon Labs is specialized in IoT-focused products including wireless SoCs, MCUs, sensors, and power management, but does not offer memory or OSAT services.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Embedded Hardware: Boards and Kits, MCUs, Power Management, Sensors, USB Bridges, Wireless Modules, Wireless SoCs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Silicon Labs does not publicly disclose revenue split by product type, but its portfolio is heavily weighted toward wireless connectivity and embedded hardware.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Our wireless portfolio features unmatched breadth and depth, with solutions for the most important protocols and ecosystems."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Silicon Labs does not provide OSAT services; as a fabless company, it partners with external foundries and OSAT providers for manufacturing and assembly.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Services: Custom Part Manufacturing, Developer Services, SDK Extended Maintenance Service"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Silicon Labs owns proprietary low-power wireless IP and AI/ML hardware accelerators in its Series 2 SoCs, differentiating in IoT applications.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Support for machine learning in all Series 1 and Series 2 SoCs, including our BG24 and MG24 products featuring built-in AI/ML hardware accelerator."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Silicon Labs primarily uses ARM-based cores and does not license its own IP to other firms; it relies on third-party IP for CPU architectures.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Simplicity SDK for Zephyr"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Silicon Labs has strong architecture for IoT and AI/ML at the edge, but is not a leader in high-performance AI, 5G, or automotive domains.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Support for machine learning in all Series 1 and Series 2 SoCs, including our BG24 and MG24 products featuring built-in AI/ML hardware accelerator."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Silicon Labs is fabless and does not own wafer fabrication capacity; it relies on external foundry partners.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Services: Custom Part Manufacturing"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Silicon Labs does not publicly disclose yield rates; as a fabless company, yields are managed by its foundry partners.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Quality and Packaging"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Silicon Labs does not offer advanced packaging like 2.5D/3D or chiplets; it focuses on standard packaging for its IoT products.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Quality and Packaging"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Silicon Labs likely holds standard quality certifications like ISO 9001, but specific certifications are not detailed in the provided knowledge base.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Quality and Packaging"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Silicon Labs emphasizes security and reliability in its IoT products, but specific defect rates (DPPM) are not publicly disclosed.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Security has become a critical design consideration and our portfolio offers industry-leading technology to protect against evolving threats."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Silicon Labs addresses environmental compliance through its sustainability and quality programs, but specific RoHS/REACH details are not in the KB.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Sustainability: Environmental, Social & Governance, Quality, Supply Chain Responsibility"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Silicon Labs has global presence with offices in Hyderabad, other global offices, and operations in the US, indicating significant R&D and sales reach.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Careers: Hyderabad Office, Other Global Offices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Silicon Labs serves smart home, industrial IoT, smart cities, smart retail, and connected health, with a strong focus on IoT applications.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Smart Home, Industrial IoT, Smart Cities, Smart Retail, Connected Health"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Silicon Labs' global presence and diverse end-markets help mitigate regional risks, though specific revenue contributions are not disclosed.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Other Global Offices"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Silicon Labs does not publicly list top customers or concentration risk, but its broad ecosystem suggests a diversified customer base.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Customer Stories"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Silicon Labs has partnerships with ecosystem players like Tuya and supports major protocols (Matter, Amazon Sidewalk), indicating strong collaborations.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Tuya and Silicon Labs Accelerate Smart Lighting Innovation with No-Code Artificial Intelligence of Things Development Platform"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Silicon Labs collaborates with foundries, OSATs, and software providers to deliver complete IoT solutions, as evidenced by its ecosystem and services.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Ecosystem Partners, Partner Network, Services: Custom Part Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Silicon Labs' financials are not provided in the knowledge base; as a public company, it reports revenue and cash flow, but specifics are unavailable here.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Investor Relations: Annual Report & Proxies, Quarterly Results, SEC Filings"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Silicon Labs' CapEx details are not in the knowledge base; as a fabless company, its CapEx is likely lower than integrated device manufacturers.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Silicon Labs' balance sheet strength is not detailed in the KB, but as a profitable public company, it likely has adequate cash reserves for investments.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Silicon Labs' roadmap includes AI-enabled SDKs, new Bluetooth LE products like BG2B, and ultra-low power SoCs, indicating a clear IoT-focused trajectory.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["BG2B Is Coming — and It’s Built for the Next Wave of Bluetooth LE", "Introducing the Ultra-Low Power IoT-Optimized FG23L Sub-GHz SoC"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Silicon Labs has a roadmap for AI/ML at the edge and energy harvesting, but not for quantum or advanced memory, focusing on IoT-specific innovations.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["AI-Enabled Simplicity Ecosystem", "Energy Harvesting"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Silicon Labs' roadmap aligns with IoT trends like Matter, AI/ML, and low-power connectivity, meeting customer demands for secure, intelligent devices.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Matter drives the convergence between the major IoT ecosystems to create one easy, reliable, secure wireless protocol to connect all devices and networks."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "Silicon Labs has not announced new fab expansions; as a fabless company, it does not own fabs and relies on foundry partners for capacity.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Services: Custom Part Manufacturing"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Silicon Labs' revenue growth is not detailed in the KB, but its continuous product launches suggest steady growth in the IoT market.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Introducing the Ultra-Low Power IoT-Optimized FG23L Sub-GHz SoC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Silicon Labs funds capacity through its operating cash flow and partnerships with foundries, but specific expansion plans are not disclosed.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

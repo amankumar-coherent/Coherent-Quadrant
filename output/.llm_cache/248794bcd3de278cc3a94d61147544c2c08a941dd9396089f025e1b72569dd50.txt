@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Arm does not manufacture chips, so it does not offer process nodes; it designs IP that is fabricated by partners.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm designs processor architectures and licenses them, building the foundational technology for semiconductors."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Arm does not lead in process technology as it is an IP licensor, not a foundry.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm designs processor architectures and licenses them, building the foundational technology for semiconductors."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Arm's roadmap focuses on CPU architectures and compute subsystems, not on process nodes.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm's full potfolio of CPUs, CSS, & IP."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Arm offers a broad portfolio of processor IP (CPU, GPU, NPU) but does not produce memory, analog, or power products.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm's full potfolio of CPUs, CSS, & IP.", "Mali GPUs", "Ethos NPUs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Arm's revenue is primarily from IP licensing and royalties, not product sales, so revenue split by product type is not applicable.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["IP licensing models to build custom silicon & platforms."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Arm does not provide OSAT services; it partners with foundries and OSATs for manufacturing.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm approved partners", "Design partners"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 9,
+      "answer": "Arm owns extensive CPU, GPU, and NPU IP, with architectures like Cortex and Neoverse that are industry-leading.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Neoverse CPUs", "Cortex-A", "Mali GPUs", "Ethos NPUs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 10,
+      "answer": "Arm licenses its IP to hundreds of partners, making it the dominant IP licensor in the industry.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["IP licensing models to build custom silicon & platforms."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 9,
+      "answer": "Arm's architecture is strong in AI, automotive, and cloud, with dedicated products like Ethos NPUs and Neoverse CPUs.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Ethos NPUs", "Neoverse CPUs", "AI-defined vehicles"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "Arm does not operate fabs, so it has no wafer fabrication capacity.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm designs processor architectures and licenses them."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 1,
+      "answer": "Arm does not manufacture, so yield rates are not applicable.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm designs processor architectures and licenses them."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Arm does not offer packaging; it provides IP for chiplets and compute subsystems but relies on partners for packaging.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Compute Subsystems (CSS)"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Arm likely holds ISO 9001 for its design processes, but specific certifications are not mentioned in the KB.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Arm ensures reliability through rigorous design validation, but defect rates are not disclosed.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Arm addresses environmental compliance through its sustainability initiatives, but specific certifications are not detailed.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm’s environmental sustainability strategy & initiatives"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Arm has global presence with headquarters in the UK and operations worldwide, including R&D and sales.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Cambridge, United Kingdom"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Arm serves diverse end-markets including cloud, automotive, mobile, and IoT, with broad revenue contribution.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Cloud AI", "Edge AI", "Physical AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Arm's global footprint and licensing model mitigate regional risks, but specific details are not in KB.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Cambridge, United Kingdom"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Arm's customers include major tech companies, but specific names and concentration are not disclosed in KB.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm Partner Ecosystem"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 9,
+      "answer": "Arm has strategic partnerships with EDA vendors, foundries, and research institutions, as evidenced by its partner ecosystem.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm Total Design", "Arm approved partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 9,
+      "answer": "Arm collaborates with foundries, OSATs, and software partners to deliver complete solutions, as shown by its partner programs.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm Total Design", "Design partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Arm is a publicly traded company with strong financials, but specific figures are not in KB.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Arm's CapEx is relatively low as an IP company, but specific numbers are not available.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Arm has a strong balance sheet, but detailed financials are not in KB.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Arm's roadmap includes new CPU architectures and compute subsystems for AI and cloud, as indicated by product announcements.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Arm AGI CPU", "Neoverse CSS"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Arm has clear roadmap for AI with dedicated NPUs and compute subsystems, and is exploring emerging technologies.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Ethos NPUs", "Arm AGI CPU"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Arm's roadmap aligns with industry trends toward AI, cloud, and edge computing, as seen in its market focus.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Cloud AI", "Edge AI", "Physical AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "Arm does not build fabs; it expands through IP licensing and partnerships.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["IP licensing models"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Arm has experienced strong revenue growth driven by AI and data center demand, but specific figures are not in KB.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Cloud AI", "Data center AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Arm funds growth through licensing revenue and investments, but specific plans are not detailed.",
+      "evidence_urls": ["https://www.arm.com"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "partial"
+    }
+  ]
+}

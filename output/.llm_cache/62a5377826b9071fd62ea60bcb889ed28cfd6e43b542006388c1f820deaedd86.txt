@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Pure Storage focuses on data storage, not compute or accelerators.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "No accelerator products; performance per watt not applicable.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "No compute products; compatibility with AI frameworks not applicable.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "Pure Storage does not provide networking solutions like Ethernet or InfiniBand.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "No interconnect technology; latency and bandwidth not applicable.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "No networking products; compatibility with switch vendors not applicable.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Pure Storage emphasizes energy efficiency, claiming up to 85% reduction in energy use compared to rival all-flash storage, but does not specify PUE.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Shrink energy use up to 85% compared to rival all-flash storage"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "No evidence of liquid cooling solutions; focus is on storage efficiency.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Pure Storage claims significant energy savings through all-flash architecture, but specific power management features are not detailed.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Shrink energy use up to 85% compared to rival all-flash storage"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "Pure Storage offers a comprehensive platform (Everpure) for managing data storage, including orchestration and automation.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["The Everpure Platform", "Enterprise Data Cloud", "Manage and govern data as one intelligent system"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Pure Storage supports Kubernetes via Portworx, but no evidence for OpenStack compatibility.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Portworx", "Containers and Kubernetes"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Pure Storage provides automation for provisioning, scaling, and monitoring, but specifics are limited.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["automated, policy-driven control", "Workflow Automation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Pure Storage offers storage optimizations for AI workloads, but not specialized compute hardware.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Enable AI projects at any scale", "High-performance storage for data pipelines, training, and inferencing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Pure Storage improves AI workload performance through high-throughput, low-latency storage, but not compute acceleration.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Predictable throughput for faster training and ingest", "Optimized GPU utilization"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No specific tools for workload profiling mentioned; general optimization for AI pipelines.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["One data layer for pipelines from ingest to serve"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 4,
+      "answer": "Pure Storage does not operate data centers; it sells storage for use in customer data centers.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "No data center regions; global presence is through sales and support offices.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Choose Your Region" with multiple countries listed],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "No plans for data center expansion; focus is on product development.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "Pure Storage mentions a second top-five hyperscaler agreement, indicating hyperscaler partnerships.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Everpure Lands New Design Win with Second Top-Five Hyperscaler"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No revenue breakdown between enterprise and hyperscaler customers.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Pure Storage provides customer stories and testimonials, but not specifically Fortune 500.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Customer Stories"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "No specific revenue figures provided; company is publicly traded (NYSE: P).",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["NYSE: P"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "No gross margin data available in knowledge base.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Pure Storage has shown growth, but specific three-year data not provided.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Everpure is a Leader in the 2026 Gartner® Magic Quadrant™ for Enterprise Storage Platforms"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Pure Storage is a recognized leader in enterprise storage, but exact market share not provided.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Leader in the 2026 Gartner® Magic Quadrant™ for Enterprise Storage Platforms"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Pure Storage's growth is likely above market, but no specific comparison.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Everpure is a Leader in the 2026 Gartner® Magic Quadrant™ for Enterprise Storage Platforms"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Pure Storage is gaining share in storage, especially for AI, but not in servers.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Enable AI projects at any scale", "High-performance storage for data pipelines, training, and inferencing"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Pure Storage has partnerships with major cloud providers and technology companies, but specifics not detailed.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Cloud AWS, Azure", "Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No recent acquisitions mentioned in knowledge base.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No joint ventures or co-development agreements mentioned.",
+      "evidence_urls": ["https://www.purestorage.com"],
+      "evidence_snippets": ["Pure Storage designs and sells all-flash data storage hardware and software for enterprise data centers."],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Sanofi's GLP-1 portfolio is limited to lixisenatide (Adlyxin), a single molecule, lacking the multiple molecules like semaglutide or tirzepatide.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "Sanofi's GLP-1 product lixisenatide is only available as an injectable, with no oral formulation.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "Sanofi does not have combination therapies like GLP-1/GIP in its GLP-1 portfolio.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "Lixisenatide is approved for type 2 diabetes but not for obesity, lacking dual indication coverage.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "Lixisenatide does not have cardiovascular benefit claims like reduced MACE in its label.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "Lixisenatide is a daily injection, not once-weekly, lacking the convenience of weekly competitors.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "Sanofi's pipeline includes some GLP-1 related research, but no active oral GLP-1 RA trials are evident from the KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Our Pipeline", "61 Compounds in clinical development"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 2,
+      "answer": "No head-to-head trials like SURPASS or SUSTAIN are mentioned in the KB for Sanofi's GLP-1 products.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Clinical Trials & Results"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 3,
+      "answer": "Sanofi's pipeline includes exploration of various indications, but no specific GLP-1 trials for NASH, CKD, or heart failure are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Our Pipeline", "Therapeutic Areas"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Sanofi has manufacturing sites for vaccines and other products, but no specific FDA-approved sites for GLP-1 products are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Manufacturing and Supply", "Vaccines Manufacturing and Supply"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No supply shortages or recalls for GLP-1 products are mentioned in the KB, but the absence of evidence is not proof of absence.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Sanofi has manufacturing and supply pages, but no specific capacity expansion plans for GLP-1 are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Manufacturing and Supply"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "Lixisenatide is approved by FDA and EMA, but no information on PMDA or warning letters is available.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Sanofi as a large pharma likely has robust pharmacovigilance, but no specific evidence in KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No FDA Form 483s or import alerts are mentioned in the KB, but absence of evidence is not proof.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "Lixisenatide is available in some countries, but not clearly in 50+ including US and EU.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 2,
+      "answer": "No reimbursement agreements for obesity are mentioned, as lixisenatide is not approved for obesity.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 3,
+      "answer": "Sanofi has a presence in China, but no specific GLP-1 launches in emerging markets are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["China"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 2,
+      "answer": "Lixisenatide is not among the top 3 most prescribed GLP-1 RAs, given competition from Novo Nordisk and Eli Lilly.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Developed and marketed lixisenatide (Adlyxin)."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Sanofi has a presence at major congresses, but no specific GLP-1 data presentations are highlighted in the KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Press Releases", "Stories"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No major safety controversies or lawsuits are mentioned in the KB, but absence of evidence is not proof.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "Sanofi's overall sales growth is double-digit, but GLP-1 franchise revenue growth is not specified.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Q2 2026: double-digit sales growth and strong business EPS growth"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 7,
+      "answer": "Sanofi is a large pharmaceutical company with a market cap likely exceeding $100 billion, indicating financial stability.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["We are an R&D driven, AI-powered biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Sanofi's R&D spending is significant, but the specific percentage on GLP-1 is not disclosed.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Our Science", "Our Pipeline"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 2,
+      "answer": "No Phase 3 trial for an oral GLP-1 RA or combination therapy is mentioned in the KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Our Pipeline"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "No pediatric obesity or type 2 diabetes indications are mentioned in the KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Therapeutic Areas"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 3,
+      "answer": "No specific plans to expand GLP-1 into cardiovascular or renal indications are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Our Pipeline"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Sanofi has partnerships in various areas, but no specific strategic alliances for GLP-1 development are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Partnering"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No licensing agreements specifically for GLP-1 geographic expansion are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Partnering"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No acquisitions or partnerships for novel delivery technologies like oral or patch are mentioned.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Partnering"],
+      "grounding": "partial"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions ZGGS34 (TriTEs) and ZG005, but no specific GLP-1 product is listed; company is focused on metabolic diseases but portfolio details are thin."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Company is focused on metabolic diseases, but no evidence of differentiated GLP-1 therapies or approved products; differentiation unclear."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows NMPA approval for clinical trial of ZGGS34 and ZG005 combination, indicating active R&D, but no late-stage GLP-1 pipeline."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or supply chain for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "NMPA approval for clinical trials indicates regulatory engagement, but no marketed GLP-1 product approvals or quality certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence is China only; no evidence of global market access or approvals outside China."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Company is known in China for biopharmaceuticals, but no specific GLP-1 brand reputation or HCP recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Revenue of 299.99M CNY in Q2 2026 with 44.22% growth; annual revenue 810.48M in 2025 with 52.07% growth; market cap $5.1B."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Pipeline includes ZGGS34 and ZG005, but no GLP-1 specific indications or late-stage trials; no clear roadmap for GLP-1."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Evidence shows partnership with AbbVie for option-to-license on alveltamig (ZG006), indicating business expansion, but not GLP-1 specific."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

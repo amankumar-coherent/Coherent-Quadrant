@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Signos markets a single CGM system (Dexcom Stelo) for weight management; no evidence of a broad device portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA-cleared for weight management, indicating clinical evidence of safety and effectiveness; system combines Dexcom sensor with AI platform."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "First FDA-cleared OTC CGM for weight management, leveraging AI and real-time data; demonstrates innovative capability."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of Signos's own manufacturing; relies on Dexcom's sensor, so quality systems are not directly evidenced."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 9,
+      "grounding": "supported",
+      "why": "FDA clearance for the system indicates regulatory compliance; first-ever clearance in its category."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions US-based HQ and OTC availability, but no specific geographic reach or channel details beyond that."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA clearance and media coverage (CNBC, Healthline) suggest growing trust; adoption is emerging."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Reported $22.6M ARR in 2023 (bootstrapped), indicating moderate financial performance but limited recent data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Current focus on weight management; no evidence of pipeline for other indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Dexcom for sensor; no evidence of other major partnerships or expansion."
+    }
+  ],
+  "evidence_used": true
+}

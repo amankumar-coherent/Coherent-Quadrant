@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only one product: the Abbott Libre Sense glucose sport biosensor, marketed by Supersapiens. No other devices are mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "User testimonials mention performance improvements and glucose insights, but no clinical trial data or safety evidence is provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "The company offers an app, energy band, and desktop portal, indicating some innovation, but no explicit R&D investment or pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; the company is a marketer of Abbott's sensor."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The product is described as 'No prescription necessary' and available in multiple countries, implying some regulatory clearance, but no specific FDA/CE details."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Website lists multiple countries (UK, Austria, France, Germany, Ireland, Italy, Luxembourg, Switzerland, Global) and offers online ordering, indicating multi-market presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Testimonials from athletes and users, plus app store rating of 4.5, suggest positive brand perception, but no hospital or clinical adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, funding, profitability) is provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The company focuses on sports performance, but no explicit pipeline for new indications or products is mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Abbott for the Libre Sense sensor and integrations with health/fitness apps are mentioned, indicating business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

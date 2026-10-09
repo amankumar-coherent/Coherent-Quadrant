@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence focuses on a single product (CAM Patch) with no mention of a broader portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "96% patient preference over Holter, high clinical diagnostic accuracy, award-winning ECG technologies."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Novel P-wave centric approach, signal processing, reader training, and report analysis tools; MedTech Breakthrough Award."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence provided on manufacturing or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "CE mark for 14-day version mentioned, but no FDA clearance or other regulatory details."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Home enrollment program expansion and CE mark suggest some international reach, but no specific countries or channel details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Award-winning, preferred by patients, acquired by Baxter/Hillrom, and used in clinical settings."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Annualized revenue of ~$30 million but net operating losses >$20 million at acquisition."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expansion of home enrollment and 14-day version indicate some pipeline activity, but no clear indication expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquired by Hillrom (later Baxter) and has partnerships with healthcare providers."
+    }
+  ],
+  "evidence_used": true
+}

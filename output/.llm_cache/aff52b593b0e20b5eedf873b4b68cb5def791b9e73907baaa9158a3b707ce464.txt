@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single product (CardioSignal app) for atrial fibrillation detection, with mention of developing digital cardiac biomarker for other heart diseases, but no multi-device portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence cites 96% accuracy in detecting atrial fibrillation, CE marking as class IIa/IIb medical device, and validation in clinical studies with academic collaboration."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence highlights breakthrough technology using smartphone sensors without specialized hardware, winning ACC Innovation Prize, and ongoing clinical validation funded by $10M Series A."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems; only CE marking implies some quality compliance but no details."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows CE marking as class IIa and IIb medical device in Europe, indicating regulatory compliance; no FDA clearance mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence indicates presence in Finland and US, available in over 10 countries, and partnerships with OMRON and Roche (cobas pulse) expanding reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows ACC Innovation Prize, partnerships with established healthcare companies (OMRON, Roche), and validation in clinical studies, indicating growing trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows $23M total funding and $10M Series A, but no revenue or profitability data; private company with 30 employees."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence mentions developing digital cardiac biomarker for other major heart diseases, indicating pipeline expansion beyond atrial fibrillation."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows partnerships with OMRON Healthcare and Roche (navify/cobas pulse), and expansion into multiple countries, indicating active business development."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Limited public evidence of clinical validation data for sensor accuracy; iHealth is known for consumer devices but specific gold-standard comparisons are not widely published.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "No specific accuracy rates like MARD are publicly reported for iHealth's wearables in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "iHealth devices likely have FDA clearance for some products (e.g., blood pressure monitors), but independent studies are not cited in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "iHealth offers a range of devices including blood pressure monitors, pulse oximeters, and activity trackers, but the exact count is not specified.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "The portfolio covers cardiovascular (blood pressure) and respiratory (pulse oximetry) areas, but not diabetes or other therapeutic areas.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "iHealth products are primarily consumer-focused, but some devices like blood pressure monitors are also used in clinical settings.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "No peer-reviewed publications are mentioned in the knowledge base; iHealth is not known for a strong clinical research presence.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No ongoing or completed clinical trials are referenced in the knowledge base for iHealth wearables.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "Real-world evidence or outcomes data from patient use is not provided in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Battery life specifics are not available in the knowledge base; typical consumer wearables last days, but iHealth's exact figures are unknown.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "iHealth devices are likely designed for regular wear, but continuous wear features like waterproofing are not confirmed in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "iHealth offers multiple form factors including wrist-worn blood pressure monitors and finger-clip pulse oximeters, but not patches or chest straps.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "No evidence of EHR integration (e.g., Epic, Cerner) for iHealth devices in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Open APIs or SDKs for third-party developers are not mentioned in the knowledge base; iHealth may have some but not confirmed.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "Support for standard health data formats like HL7 or FHIR is not documented in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "iHealth has FDA clearance for some devices (e.g., blood pressure monitors), but specific approvals are not listed in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "answer": "Approvals are likely for specific medical indications like blood pressure monitoring, but not detailed in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge",
+      "score": 6
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "iHealth sells in Latin America and the US, suggesting multiple geographies, but specific regulatory approvals in each are not confirmed.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": ["Manufactures wearable blood pressure monitors, pulse oximeters, and activity trackers sold in Latin America."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "No user numbers or units sold are provided in the knowledge base; iHealth is a known brand but scale is unclear.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "iHealth likely has distribution through pharmacies and online retailers, but specific partnerships are not in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials from healthcare providers are mentioned in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No CPT codes or reimbursement pathways are mentioned for iHealth devices in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Insurance coverage or Medicare/Medicaid acceptance is not documented in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No patient assistance programs or subscription models are mentioned, but iHealth products are generally affordable.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue growth data is available in the knowledge base; iHealth is a private company and does not disclose financials.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "Gross margins or profitability for the wearable segment are not reported in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No evidence of recurring revenue models; iHealth likely relies on one-time device sales.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No partnerships with healthcare systems or research institutions are mentioned in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No collaborations with tech giants or pharma companies are documented in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Participation in industry standards bodies or joint ventures is not mentioned in the knowledge base.",
+      "evidence_urls": ["https://ihealthlabs.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

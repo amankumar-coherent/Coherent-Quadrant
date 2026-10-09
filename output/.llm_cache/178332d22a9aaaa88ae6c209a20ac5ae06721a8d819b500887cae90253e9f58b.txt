@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows Propeller as a single sensor for inhalers (respiratory sensors; connected therapeutics) with no other products listed; parent ResMed has broad portfolio but Propeller itself is narrow."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No clinical data, safety records, or performance metrics provided in evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Propeller is a connected therapeutic sensor, indicating some innovation, but no specific R&D investments or pipeline details are given."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No information on manufacturing capabilities or quality systems for Propeller."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No FDA/CE clearances or regulatory details are mentioned in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Propeller is part of ResMed, which has a global presence with country selectors for Africa, Americas, Asia Pacific, and Europe, indicating broad reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Propeller is a recognized brand in respiratory monitoring, but evidence does not quantify clinical adoption or trust metrics."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Acquired by ResMed in 2022, indicating financial backing, but no revenue or profitability figures are provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of new indications or pipeline expansion for Propeller."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquisition by ResMed and integration into ResMed's digital health solutions (listed under Digital & Business Solutions) indicates business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

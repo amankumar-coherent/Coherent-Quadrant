@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Ampere uses advanced process nodes from TSMC (e.g., 5nm for AmpereOne), but specific node details are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Altra platforms deliver extremely efficient, high-performance computing especially for power constrained racks."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "Ampere leads in ARM-based cloud-native processor architecture with a focus on efficiency, but does not lead in process technology itself as a fabless company.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company that emphasizes efficiency and sustainability for AI workloads."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "Ampere's roadmap includes next-generation ARM processors, but specific node timelines are not detailed in the knowledge base.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The company is expanding its European footprint with new cloud deployments."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "Ampere is specialized in cloud-native processors and does not offer a broad portfolio across logic, memory, analog, or power categories.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company that designs high-performance, efficient processors for cloud and AI workloads."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Revenue split by product type is not disclosed; Ampere's portfolio is focused solely on processors, indicating low diversification.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Altra Platforms deliver extremely efficient, high-performance computing."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Ampere is fabless and likely partners with OSAT providers, but no specific OSAT partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Ampere owns proprietary ARM-based processor IP with a unique single-threaded core architecture that delivers predictable performance for cloud-native applications.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Single threaded core architecture, high frequency operation, and large low latency private caches deliver predictable high performance for cloud native applications."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Ampere relies on ARM architecture licenses and does not license its own IP to other firms, based on industry knowledge.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Ampere's architecture is strong in AI inference and edge AI, targeting high-growth areas like autonomous vehicles and telecom.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Its processor platforms target key markets including Telecom, Networking, Autonomous Vehicles, and Edge AI."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "As a fabless company, Ampere does not own wafer fabrication capacity; specific capacity figures are not available.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not disclosed; as a fabless designer, Ampere relies on foundry yields, which are not detailed in the knowledge base.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Ampere does not offer advanced packaging itself; it likely relies on foundry packaging services, but no specific details are provided.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No quality certifications are mentioned in the knowledge base; as a fabless company, manufacturing certifications would apply to foundry partners.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rates are not disclosed; reliability is implied through product claims but no specific metrics are provided.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Altra platforms deliver extremely efficient, high-performance computing especially for power constrained racks."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Compliance with environmental regulations is not mentioned, but as a major semiconductor company, it is likely compliant with RoHS and REACH.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Ampere has a global presence with headquarters in Santa Clara, California, and is expanding in Europe, but specific R&D or manufacturing locations are not detailed.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The company is expanding its European footprint with new cloud deployments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include Telecom, Networking, Autonomous Vehicles, and Edge AI, with a case study in life sciences/HPC, but revenue contributions are not disclosed.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Its processor platforms target key markets including Telecom, Networking, Autonomous Vehicles, and Edge AI."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification is limited, with a focus on the US and Europe, which may not fully mitigate regional disruptions.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The company is expanding its European footprint with new cloud deployments."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Only one customer (University of Miami) is mentioned, indicating potential concentration risk, but the full customer base is unknown.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The case study with University of Miami demonstrates adoption in life sciences / HPC."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Ampere has a strategic partnership with SoftBank Group as its parent, but no specific equipment maker or EDA partnerships are mentioned.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["As part of SoftBank Group, it benefits from a strong parent organization."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Ampere collaborates with cloud providers and system integrators, but specific ecosystem partnerships are not detailed in the knowledge base.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The company is expanding its European footprint with new cloud deployments."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not available in the knowledge base; as a private company, revenue and income are not publicly disclosed.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available; as a fabless company, capital expenditure is likely lower than IDMs, but no figures are provided.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not disclosed, but backing from SoftBank Group suggests strong financial support for investments.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["As part of SoftBank Group, it benefits from a strong parent organization."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Ampere's roadmap includes expanding into new markets and regions, but specific technology milestones are not detailed.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The company is expanding its European footprint with new cloud deployments."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Ampere is focused on AI inference and edge AI, but no explicit roadmap for quantum or advanced memory is mentioned.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The company positions itself as a low-cost, energy-efficient alternative for AI inference and cloud computing."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Ampere's roadmap aligns with industry trends toward energy-efficient AI and cloud computing, as evidenced by its product positioning.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company that emphasizes efficiency and sustainability for AI workloads."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab or expansion projects are announced; as a fabless company, capacity expansion would be through foundry partners.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["Ampere Computing is a cloud-native processor company."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth is not disclosed, but the company is expanding in Europe, indicating growth initiatives.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["The company is expanding its European footprint with new cloud deployments."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding for expansions is likely supported by SoftBank Group, but specific plans are not detailed.",
+      "evidence_urls": ["https://amperecomputing.com"],
+      "evidence_snippets": ["As part of SoftBank Group, it benefits from a strong parent organization."],
+      "grounding": "supported"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence shows Regeneron has metabolic drug development and GLP-1/incretin therapies as specialty, but no specific GLP-1 products or pipeline candidates are listed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Website mentions cardiovascular & metabolic diseases as a research area, but no specific GLP-1 therapeutic differentiation is evidenced."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Regeneron states 'Nearly 50 candidates in development' and has a pipeline page, but no GLP-1 specific clinical trials are mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Regeneron has a page on 'Making Our Medicines' indicating manufacturing capability, but no evidence specific to GLP-1 manufacturing."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Regeneron has 15 approved medicines developed in-house, indicating regulatory experience, but no GLP-1 approvals are evidenced."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Regeneron has global operations with websites for Canada, France, Germany, India, Ireland, Italy, Japan, Spain, Netherlands, UK, indicating broad reach, but no GLP-1 specific market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Regeneron is a well-known biotech with 15 approved medicines, but no GLP-1 brand reputation is evidenced."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Regeneron reports financial results (Q2 2026) and has 13,000+ employees, indicating financial stability, but no GLP-1 revenue is mentioned."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Regeneron has a pipeline with nearly 50 candidates and a cardiovascular/metabolic research area, but no specific GLP-1 pipeline details are provided."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Regeneron has a collaborations page and global presence, but no GLP-1 specific partnerships are evidenced."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

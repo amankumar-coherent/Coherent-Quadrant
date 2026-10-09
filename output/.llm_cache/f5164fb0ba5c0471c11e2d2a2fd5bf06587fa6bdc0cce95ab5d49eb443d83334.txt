@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 6,
+      "answer": "Isansys publishes some clinical validation data, but the knowledge base does not provide specific details on accuracy vs. gold standard.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "No specific accuracy metrics like MARD are mentioned in the knowledge base, so the score is based on limited public information.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "The knowledge base does not list certifications, but as a medical device company in the UK, CE marking is likely; however, no evidence is provided.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "The knowledge base mentions wireless wearable sensors but does not specify the number of distinct devices offered.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The focus appears to be on patient monitoring, likely cardiac and respiratory, but the knowledge base does not confirm multiple therapeutic areas.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The knowledge base indicates both hospital and home use, suggesting both clinical and consumer applications, but no specific devices are listed.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "No peer-reviewed publications are mentioned in the knowledge base, but the company's clinical focus suggests some evidence exists.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "The knowledge base does not mention clinical trials, but as a medical device company, trials are likely; however, no evidence is provided.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "No real-world evidence or outcomes data is mentioned in the knowledge base, but the company's focus on hospital monitoring suggests some usage data.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Battery life is not specified in the knowledge base, and no public data is available, so the score is low due to lack of information.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "The devices are designed for continuous monitoring, implying wearability, but no specific features like waterproofing are mentioned.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "The knowledge base does not specify form factors, but the company likely offers patches or similar, but no evidence.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No EHR integration is mentioned, but as a hospital-focused company, some integration is likely; however, no evidence.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No APIs or SDKs are mentioned in the knowledge base, and no public information is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No support for HL7 or FHIR is mentioned, and no evidence is available in the knowledge base.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "The knowledge base does not list specific approvals, but as a UK-based medical device company, CE marking is likely; FDA approval is uncertain.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "The company's focus on patient monitoring suggests medical indications, but no specific approvals are mentioned.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "No multi-geography approvals are mentioned, but the company may have CE marking for Europe; no evidence for US or Japan.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No user numbers or units sold are provided in the knowledge base, and no public data is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "The company's focus on hospitals suggests some distribution, but no specific partnerships are mentioned.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No case studies or testimonials are mentioned, but the company's clinical focus implies some usage, but no evidence.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No CPT codes or reimbursement pathways are mentioned, and no public information is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No insurance coverage or Medicare/Medicaid is mentioned, and no evidence is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No patient assistance programs or subscription models are mentioned, and no evidence is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue growth data is provided in the knowledge base, and no public financials are available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No gross margins or profitability data is provided, and no public financials are available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No recurring revenue models are mentioned, and no evidence is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "The company's focus on hospitals suggests partnerships, but no specific institutions are mentioned.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": ["Develops wireless wearable sensors for continuous monitoring of patients in hospitals and at home."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No collaborations with tech giants or pharma are mentioned, and no evidence is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No participation in standards bodies or joint ventures is mentioned, and no evidence is available.",
+      "evidence_urls": ["https://www.isansys.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

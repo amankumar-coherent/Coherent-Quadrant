@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only states Laboratorio Chile markets diabetes medications including GLP-1 receptor agonists, but no specific products or molecules are listed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of therapeutic differentiation; website focuses on general health topics (VIH, oncology, migraines) without GLP-1 specifics."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of clinical R&D or innovation in GLP-1; as a subsidiary of Teva, likely relies on parent company."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities; website shows product availability checker for Chile, but no manufacturing details."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website includes sections for pharmacovigilance and quality objections, indicating some regulatory compliance, but no specific GLP-1 approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence only in Chile; website provides product availability across Chilean regions, but no international reach."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "As Teva subsidiary, has some brand recognition; website offers professional resources and programs, but no specific GLP-1 reputation evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only ownership by Teva is noted."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline or future indications for GLP-1."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Subsidiary of Teva, indicating partnership, but no evidence of expansion or new partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Apple publishes clinical validation data for Apple Watch sensors, including heart rate and ECG, through peer-reviewed studies and regulatory submissions.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Apple reports high accuracy for heart rate and ECG, but does not publicly disclose MARD for glucose as it does not offer glucose monitoring.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 9,
+      "answer": "Apple Watch has FDA clearance for ECG and irregular rhythm notification, and CE marking in Europe, confirming sensor performance.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Apple offers primarily the Apple Watch series and some accessories, but not a wide range of distinct medical wearable devices like patches or rings.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Apple Watch covers cardiac (ECG, heart rate), fall detection, and blood oxygen, but not diabetes or respiratory monitoring directly.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Apple Watch serves both consumer fitness and clinical research use, with FDA-cleared features and researchKit studies.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Apple has numerous peer-reviewed publications on Apple Watch health features, including heart rate and ECG studies.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "Apple has conducted and supported clinical studies, such as the Apple Heart Study, and continues trials for new features.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Apple provides real-world evidence through research studies and health data collection, but not extensive outcomes data for all features.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "Apple Watch battery life is typically 18 hours to 2 days, which is shorter than many dedicated medical wearables.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 8,
+      "answer": "Apple Watch is water-resistant, comfortable, and designed for continuous wear, though battery life limits continuous monitoring.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Apple offers only wrist-worn form factors (Apple Watch) and not patches or chest straps, limiting variety for different use cases.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Apple HealthKit integrates with some EHR systems like Epic and Cerner, but not universally or directly for all clinical data flow.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 9,
+      "answer": "Apple provides HealthKit APIs and ResearchKit for developers, enabling broad third-party access to health data.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Apple supports FHIR for health records on iPhone and HealthKit, facilitating interoperability with healthcare systems.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Apple has FDA clearance for ECG and irregular rhythm notification, and CE marking for these features in Europe.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Apple's FDA clearances are for specific medical indications like ECG and atrial fibrillation detection, not just general wellness.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "Apple has regulatory approvals in the US (FDA) and EU (CE), and likely other regions, but not all geographies.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 9,
+      "answer": "Apple Watch has sold over 100 million units, with a large active user base, making it a market leader in wearables.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Apple distributes through its own stores and online, and partners with hospitals for health studies, but not pharmacies.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Apple has case studies from healthcare providers using Apple Watch in clinical settings, but not extensive testimonials.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Apple does not have CPT codes for its devices, as they are consumer products, though some features may be reimbursed in certain settings.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Apple Watch is not generally covered by insurance or Medicare, but some health plans offer incentives for fitness trackers.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Apple offers installment plans and trade-in programs, but not patient assistance programs or subscription models for devices.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Apple's wearables segment has shown strong year-over-year growth, though specific revenue figures are not disclosed.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Apple reports segment revenue for Wearables, Home, and Accessories, but not gross margins specifically for wearables.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Apple generates recurring revenue through services like Apple Fitness+ and AppleCare, and repeat purchases of new Watch models.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Produces consumer smartwatches that integrate medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Apple partners with major healthcare systems like Stanford Medicine for studies, and has research collaborations.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Apple collaborates with tech companies and research institutions, but not typically with pharma for distribution.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Apple participates in health data standards efforts like FHIR and is a member of industry groups, but not joint ventures.",
+      "evidence_urls": ["https://www.apple.com"],
+      "evidence_snippets": ["Apple designs and manufactures smartwatches with medical-grade health monitoring features."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Powertech Technology is an OSAT provider, not a foundry, so it does not offer advanced process nodes like 3nm or 2nm.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "As an OSAT, Powertech does not lead in process technologies like FinFET or GAA; its focus is on packaging and testing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Powertech does not have a roadmap for next-generation process nodes; its roadmap is for packaging and testing technologies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Powertech specializes in memory and logic IC packaging and testing, but does not manufacture logic, memory, or analog chips itself.",
+      "evidence_urls": ["https://www.powertech.com.tw"],
+      "evidence_snippets": ["Specializes in memory and logic IC packaging and testing."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type, but as an OSAT, Powertech's revenue is from packaging and testing services across memory and logic.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 10,
+      "answer": "Powertech is an OSAT provider, offering outsourced semiconductor assembly and test services.",
+      "evidence_urls": ["https://www.powertech.com.tw"],
+      "evidence_snippets": ["Powertech specializes in IC packaging and testing, building and owning the technology for these processes."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "Powertech does not own proprietary CPU, GPU, or AI accelerator IP; its IP is in packaging and testing processes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "Powertech does not license design IP; it provides manufacturing services and likely uses third-party equipment and materials.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Powertech's architecture strength is in packaging and testing for memory and logic, which supports AI, 5G, and automotive applications indirectly.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Powertech does not have wafer fabrication capacity; it is an OSAT with packaging and testing capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Yield rate for wafer fabrication is not applicable to Powertech as it does not fabricate wafers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Powertech offers advanced packaging and testing services, but specific capacity for 2.5D/3D or chiplets is not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.powertech.com.tw"],
+      "evidence_snippets": ["Powertech specializes in IC packaging and testing, building and owning the technology for these processes."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Powertech holds ISO9001-2008 certification for its quality management system, but other certifications like IATF 16949 are not mentioned.",
+      "evidence_urls": ["https://www.powertech.com.tw"],
+      "evidence_snippets": ["Power Tech moulds your parts under our ISO9001-2008 approved quality management system."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No specific defect rate (DPPM) data is available, but ISO9001 certification suggests a quality management system is in place.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No specific information on RoHS, REACH, or conflict minerals compliance is provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Powertech is based in Taiwan with facilities there, but the knowledge base does not detail global sales or R&D presence.",
+      "evidence_urls": ["https://www.powertech.com.tw"],
+      "evidence_snippets": ["Taiwan | Hsinchu, Taiwan"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Primary end-markets are not specified, but as an OSAT for memory and logic, it likely serves consumer, industrial, and automotive sectors.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification is limited to Taiwan, which may concentrate risk, but the company likely serves global customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not identified in the knowledge base, so customer concentration risk cannot be assessed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No specific partnerships with equipment makers, EDA vendors, or research consortia are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "As an OSAT, Powertech collaborates with foundries and chip designers, but specific ecosystem collaborations are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial data such as revenue, net income, and free cash flow are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details such as debt-to-equity and cash reserves are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "The knowledge base does not mention specific technology roadmap milestones for the next 3-5 years.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No roadmap for emerging technologies like AI chips, quantum, or advanced memory is mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "As an OSAT, Powertech's roadmap likely aligns with industry trends in packaging and testing, but specific alignment is not documented.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab or expansion projects are announced in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rate over the past 3 years is not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and execution plans for capacity expansions are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

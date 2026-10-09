@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows a single device (RS01X connected inhaler) and add-on sensors, but also mentions 'a wide range of inhalers' and custom sensors, indicating some breadth within respiratory."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "RCT shows +5.9 ACT points (p=0.007), 73% improved technique (p<0.0001), €466 cost saving (p=0.04), 82% adherence; RS01X validated in 97 people with near-perfect agreement."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "PNRR project with ARTES 4.0 for CFD simulation and automation, 40% less development time; 10+ peer-reviewed publications; 6,000+ participants."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 6,
+      "grounding": "partial",
+      "why": "ISO 13485:2016 certified, but no specific manufacturing scale or capacity details; mentions 'better connected hardware reaches patients sooner'."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "CE-marked under EU MDR, ISO 13485:2016 certified, GDPR compliant; but no FDA clearance mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Milan, Italy; mentions EU data protection and CE-marking, but no explicit global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Peer-reviewed publications in Chest, ERJ, J. Aerosol Medicine; 40+ clinical and commercial programmes supported; evidence of real-world pharmacy service."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial metrics provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on asthma and COPD; mentions 'next generation of inhaler sensors' and custom sensors for therapies, but no specific pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with ARTES 4.0 and PNRR backing; offers SDK, APIs, white-label options for partners; but no named pharma or provider partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

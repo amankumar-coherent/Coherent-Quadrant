@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Cadence provides design tools and IP for advanced nodes down to 3nm and below, but does not manufacture chips itself.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Innovus+ Platform Synthesis and implementation for advanced nodes"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Cadence is a leader in EDA for advanced process technologies like FinFET and GAA, with tools supporting these nodes.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Advanced Node", "Innovus+ Platform Synthesis and implementation for advanced nodes"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Cadence's roadmap includes support for 2nm and beyond, but specific volume production timelines are not disclosed.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Advanced Node"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "Cadence offers a broad portfolio across IC design, verification, system analysis, and IP, covering logic, analog, and mixed-signal.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Virtuoso Studio Analog and custom IC design", "Spectre Simulation Analog and mixed-signal SoC verification", "Silicon Solutions IP, Chiplets, and Services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Cadence does not disclose revenue split by product type; as an EDA company, it is diversified across design and analysis tools.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["All Products (A-Z)"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Cadence provides chiplet design services and partners with OSATs, but does not offer OSAT services directly.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Chiplet Design Services", "Silicon Solutions IP, Chiplets, and Services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Cadence owns Tensilica processor IP and AI accelerators, which are differentiated for on-device AI and embedded applications.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Tensilica AI Platform On-device AI IP", "Tensilica Processor IP Courses"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "Cadence licenses its own IP (e.g., Tensilica) and also supports third-party IP like Arm-based solutions.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Arm-Based Solutions", "Tensilica AI Platform On-device AI IP"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Cadence has strong architecture for AI, 5G, and automotive, with dedicated solutions and platforms.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["5G Systems and Subsystems", "Automotive", "Artificial Intelligence"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Cadence is an EDA company and does not operate wafer fabs, so it has no wafer fabrication capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Cadence does not manufacture chips, so yield rates are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "Cadence offers advanced packaging design tools and services for 2.5D/3D and chiplets, but does not have packaging capacity.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Allegro AI Studio AI-driven platform for full-flow advanced packaging, PCB, and multiphysics analysis", "3D-IC Design", "Chiplets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Cadence likely holds ISO 9001, but specific certifications are not mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Cadence ensures reliability through rigorous verification tools, but defect rates are not disclosed.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Verisium Verification Platform AI-driven verification platform"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Cadence addresses environmental compliance through corporate responsibility, but specific RoHS/REACH details are not in the KB.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Corporate Social Responsibility"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Cadence has global presence with R&D and sales worldwide, including major regions like North America, Europe, and Asia.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Alliances", "Channel Partners", "Technology Partners"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Cadence serves diverse end-markets including automotive, aerospace, data center, and life sciences, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Automotive", "Aerospace and Defense", "Data Center Solutions", "Life Sciences"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Cadence's global footprint and diverse end-markets help mitigate regional risks, but specific strategies are not detailed.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Alliances", "Channel Partners"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Cadence's top customers are not listed, but as an EDA leader it likely has a broad customer base with low concentration risk.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Cadence has strategic partnerships with technology partners, channel partners, and alliances, including foundries and EDA ecosystem.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Alliances", "Channel Partners", "Technology Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "Cadence collaborates with foundries, OSATs, and software partners to deliver complete solutions, as seen in its ecosystem.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Alliances", "Technology Partners", "Chiplet Design Services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Cadence is a large public company with strong financials, but specific figures are not in the KB.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Cadence's CapEx is not disclosed, but as an EDA company it likely has lower CapEx than manufacturers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Cadence has a strong balance sheet with significant cash reserves, but specific debt-to-equity is not in KB.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Cadence's roadmap includes AI-driven platforms, 3D-IC, and advanced node support, with clear milestones in product development.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Cadence.AI", "3D-IC Design", "Advanced Node"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Cadence has a clear roadmap for AI with Cadence.AI and Millennium Platform, and is investing in emerging technologies.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Cadence.AI", "Millennium Platform AI-driven digital twin supercomputer"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Cadence's roadmap aligns with industry trends like AI, 3D-IC, and chiplets, addressing customer demands.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Artificial Intelligence", "3D-IC Design", "Chiplets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "Cadence does not build fabs; it is an EDA company, so no fab expansion projects.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Cadence has shown consistent revenue growth, but specific rates are not in KB.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Cadence funds growth through its financial strength, but specific expansion plans are not detailed.",
+      "evidence_urls": ["https://www.cadence.com"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

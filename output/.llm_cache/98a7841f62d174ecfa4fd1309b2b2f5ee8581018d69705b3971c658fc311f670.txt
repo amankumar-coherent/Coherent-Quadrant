@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No specific LNG assets or projects mentioned; only general business sections like 'Gas Business' and 'Offshore projects' on website."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No data on LNG throughput or operational efficiency; website mentions 'HYDROCARBONS OUTPUT IN 2025 246,6 million toe' but not LNG-specific."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence on LNG asset reliability or performance; only general corporate information."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website has 'Health, Safety and Environment' section and 'Hot line of safety Rosneft', but no LNG-specific safety record."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Rosneft recognized as leading Russian oil and gas company in sustainability rankings, but no LNG-specific transition initiatives."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Presence only in Russia; no evidence of LNG corridors or international reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of LNG offtake agreements or customer contracts."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Annual reports and financial statements exist, but no LNG-specific financials."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Specialty is 'Developing LNG projects', but no specific projects or pipeline details in evidence."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions cooperation agreements (e.g., with Rosatom) and Russia-China Energy Business Forum, but no LNG-specific partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Single 7-lead ECG patch with multiple service types (Holter, Extended Holter, MCT, Event Monitoring) but no other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Claims excellent accuracy, proven to match manual analysis in clinical trials, 10+ clinical studies, 100% approval from top electrophysiologists."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "SmartNeuralNet AI, full disclosure analysis, 7-lead patch with 14-day wear, remote switch between modes, developed from millions of annotated ECG segments."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mention of reusable sensor and low-cost disposable patch, but no explicit manufacturing scale or quality certifications beyond CE and FDA."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA clearance for outpatient cardiac telemetry (Nov 2024) and CE Class IIa in Europe for SCaAI patch and cloud platform."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Presence in Switzerland (HQ), US, and India; FDA clearance enables US market entry; CE certification for Europe."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "100+ hospitals, millions of patient hours, top electrophysiologists 100% approval, 10+ clinical studies."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No revenue or financial data provided; only mentions acquisition of Cardiomedix."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Platform supports cardiac screening to post-discharge monitoring, and acquisition of Cardiomedix to deliver end-to-end services in US."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired Cardiomedix (Dec 2024) to expand US services; collaborations implied with hospitals and clinical studies."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

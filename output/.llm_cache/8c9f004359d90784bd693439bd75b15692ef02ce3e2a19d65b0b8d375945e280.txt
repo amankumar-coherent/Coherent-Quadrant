@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Keysight does not manufacture semiconductors; it provides test and measurement equipment for semiconductor validation, so it does not offer process nodes.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Keysight does not lead in process technology; it supports semiconductor testing but does not develop FinFET or GAA processes.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Keysight does not have a roadmap for next-generation nodes as it is not a semiconductor manufacturer.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Keysight offers test and measurement products across various semiconductor categories but does not manufacture logic, memory, analog, or power devices.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Keysight does not disclose revenue split by semiconductor product type as it is not a semiconductor vendor.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Keysight provides test solutions for semiconductor manufacturing but does not offer OSAT services itself.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Semiconductor and Manufacturing", "In-Circuit Test For Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Keysight owns design IP for test and measurement instruments, but not CPU, GPU, or AI accelerator IP.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Keysight licenses its own software and IP for test solutions, but does not license semiconductor IP like ARM or RISC-V.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Keysight has strong test solutions for AI, 5G, and automotive, but its architecture is not a chip architecture.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["End-to-End Validation for AI Data Center", "Automotive Communications Testing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Keysight does not operate wafer fabs, so it has no wafer fabrication capacity.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Keysight does not have yield rates as it does not manufacture semiconductors.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Keysight provides test solutions for advanced packaging but does not offer packaging services itself.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Semiconductor and Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Keysight likely holds quality certifications like ISO 9001, but specific certifications are not mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Keysight ensures reliability for its test equipment, but defect rates for semiconductor manufacturing are not applicable.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Keysight complies with environmental regulations for its products, but specific details are not in the knowledge base.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Keysight has a global presence with sales and R&D in the US, Europe, and Asia, as indicated by its country selection menu.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["United States", "China", "Japan", "Germany", "France", "India", "Malaysia", "United Kingdom", "Australia", "Singapore"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Keysight serves multiple end-markets including communications, aerospace, defense, and semiconductor, but revenue contribution is not detailed.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Automotive Communications Testing", "Semiconductor and Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Keysight's global footprint across many countries helps mitigate regional risks, though specific risk mitigation strategies are not detailed.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["United States", "China", "Japan", "Germany", "France", "India", "Malaysia", "United Kingdom", "Australia", "Singapore"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Keysight's top customers are not disclosed in the knowledge base, but it likely serves major electronics and semiconductor companies.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Keysight partners with ecosystem players like EDA vendors and research consortia, but specific partnerships are not listed in the KB.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Keysight collaborates with foundries and OSATs to provide test solutions, but specific collaborations are not detailed.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Semiconductor and Manufacturing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Keysight's financials are not in the KB, but as a public company it has substantial revenue and cash flow.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Keysight's CapEx details are not available in the KB, but it invests in R&D and facilities.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Keysight has a strong balance sheet, but specific debt-to-equity and cash reserves are not in the KB.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Keysight's roadmap focuses on test solutions for AI, 5G, and quantum, but specific milestones are not in the KB.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["End-to-End Validation for AI Data Center", "Quantum Design and Test"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Keysight has clear offerings for AI, quantum, and advanced communications, indicating a roadmap aligned with emerging tech.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["End-to-End Validation for AI Data Center", "Quantum Design and Test"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Keysight's roadmap aligns with industry trends in AI, 5G, and quantum, as evidenced by its product focus.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["End-to-End Validation for AI Data Center", "Quantum Design and Test"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Keysight does not announce fab expansions as it is not a semiconductor manufacturer.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Keysight's revenue growth is not in the KB, but it is a stable company with moderate growth.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Keysight funds its growth through operational cash flow, but specific expansion plans are not in the KB.",
+      "evidence_urls": ["https://www.keysight.com"],
+      "evidence_snippets": ["Electronic test and measurement for semiconductor validation."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

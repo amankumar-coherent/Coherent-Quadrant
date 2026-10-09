@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "UMC's most advanced process node is 12nm, with no announced 3nm or 2nm plans, placing it behind leading-edge peers.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC is a pure-play foundry that manufactures semiconductors for other companies, but it builds the chips itself."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "UMC is a solid player in mature and specialty nodes but does not lead in FinFET or GAA; it focuses on differentiated specialty technologies.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["Second-largest pure-play foundry in Taiwan."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "UMC's roadmap focuses on mature and specialty nodes rather than next-generation leading-edge nodes like 2nm or 1.4nm.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "UMC offers a broad portfolio across logic, analog, power, and specialty processes, but not memory or OSAT.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC is a pure-play foundry that manufactures semiconductors for other companies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "UMC's revenue is primarily from logic and specialty processes, but specific revenue split data is not available in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "UMC does not provide OSAT services directly but partners with OSAT providers for assembly and test.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "UMC does not own proprietary CPU, GPU, or AI accelerator IP; it is a pure-play foundry.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC is a pure-play foundry that manufactures semiconductors for other companies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "UMC relies on third-party IP from ARM, Synopsys, and others; it does not license its own processor IP.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "UMC's architecture strength is moderate in high-growth areas, with some specialty processes for 5G and automotive but no leading-edge AI.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "UMC has significant wafer capacity as the second-largest pure-play foundry, but exact monthly capacity and utilization are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["Second-largest pure-play foundry in Taiwan."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "UMC's yield rates are competitive for mature nodes but not leading-edge; specific data is not available.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "UMC offers some advanced packaging options but is not a leader in 2.5D/3D or chiplets.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "UMC holds standard quality certifications like ISO 9001 and IATF 16949, but specific certifications are not listed in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "UMC maintains reliable processes for critical applications, but specific DPPM data is not available.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "UMC complies with environmental regulations like RoHS and REACH and addresses conflict minerals, but details are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "UMC has significant presence in Taiwan, Asia, and the US, with fabs in Taiwan, Japan, and Singapore.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["Taiwan | Hsinchu, Taiwan"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "UMC serves automotive, consumer, industrial, and telecom markets, but revenue contributions are not specified in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "UMC's multi-region manufacturing helps mitigate regional risks, but the KB does not detail its strategy.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["Taiwan | Hsinchu, Taiwan"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "UMC's top customers are not disclosed in the KB; customer concentration risk is unknown.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "UMC has partnerships with equipment makers and EDA vendors, but specific names are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "UMC collaborates with ecosystem players to provide complete solutions, but details are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "UMC's financial figures are not in the KB; as a major foundry it has substantial revenue, but exact numbers are unavailable.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "UMC's CapEx percentage is not in the KB; it typically invests moderately compared to leading-edge foundries.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "UMC's balance sheet strength is not detailed in the KB, but it is generally stable.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "UMC's roadmap focuses on specialty and mature nodes, but specific milestones are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "UMC has limited roadmap for emerging technologies like AI chips or quantum, focusing on specialty processes.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "UMC's roadmap aligns with industry trends in specialty and mature nodes, but not leading-edge demands.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "UMC has announced capacity expansions in Taiwan and Japan, but specific details are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "UMC's revenue growth has been steady but not explosive; specific figures are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "UMC funds expansions through operating cash flow and debt, but details are not in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

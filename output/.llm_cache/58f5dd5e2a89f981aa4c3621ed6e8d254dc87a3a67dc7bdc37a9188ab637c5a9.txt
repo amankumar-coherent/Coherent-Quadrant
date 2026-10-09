@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "SambaNova does not disclose specific process nodes for its RDU chips, but as a fabless AI chip company it relies on foundry nodes without public announcements.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "SambaNova differentiates with its Dataflow architecture and RDU, which is a unique approach compared to GPU-based peers, though it does not lead in traditional process technology like FinFET or GAA.",
+      "evidence_urls": ["https://sambanova.ai/products/dataflow-architecture", "https://sambanova.ai/products/rdu-ai-chips"],
+      "evidence_snippets": ["Dataflow technology and memory architecture delivers the performance and speed required for ever-growing AI models.", "RDU chips are able to achieve much faster inference using a lot less power than other architectures."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "SambaNova has not publicly disclosed a roadmap for next-generation process nodes, focusing instead on system-level improvements like the SN50.",
+      "evidence_urls": ["https://sambanova.ai/products/sambarack"],
+      "evidence_snippets": ["SambaRack SN50 is our fifth-generation system optimized for fast agentic inference."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "SambaNova is highly specialized in AI inference hardware and software, not offering products across logic, memory, analog, or power categories.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "SambaNova does not disclose revenue by product type, and its portfolio is concentrated on AI inference solutions, lacking diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "SambaNova does not provide OSAT services and has not publicly disclosed partnerships with OSAT providers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "SambaNova owns proprietary RDU chips and Dataflow architecture, which are differentiated for AI inference with high speed and efficiency.",
+      "evidence_urls": ["https://sambanova.ai/products/rdu-ai-chips", "https://sambanova.ai/products/dataflow-architecture"],
+      "evidence_snippets": ["RDU chips are able to achieve much faster inference using a lot less power than other architectures.", "Dataflow technology and memory architecture delivers the performance and speed required for ever-growing AI models."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "SambaNova does not license its IP to other firms; it uses its own proprietary architecture and does not rely on third-party IP like ARM or RISC-V.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "SambaNova's architecture is strong in AI inference, a high-growth area, with demonstrated speed advantages on models like MiniMax M2.7 and DeepSeek.",
+      "evidence_urls": ["https://sambanova.ai/blog/first-disaggregated-inference-demo-for-ai-agents-live"],
+      "evidence_snippets": ["SambaNova leads on speed at 435 output tokens/s, >3x faster than any other provider.", "DeepSeek-V3.1 achieves remarkable speeds of up to 200 tokens / second."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "SambaNova is fabless and does not own wafer fabrication capacity, so it does not report wafers per month or utilization.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "As a fabless company, SambaNova does not disclose yield rates, and its manufacturing is outsourced to foundries.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "SambaNova offers system-level packaging like SambaRack but does not detail advanced packaging capabilities such as 2.5D/3D or chiplets.",
+      "evidence_urls": ["https://sambanova.ai/products/sambarack"],
+      "evidence_snippets": ["SambaRack™ is a state-of-the-art system that can be set up easily in data centers to run AI inference workloads."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "SambaNova does not publicly list quality certifications like ISO 9001 or IATF 16949 for its manufacturing processes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "SambaNova does not disclose defect rates or DPPM, and its reliability focus is on system performance rather than manufacturing quality metrics.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "SambaNova does not publicly address environmental compliance like RoHS or REACH, nor conflict minerals policies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "SambaNova has a global presence with sovereign AI partners in Australia, Europe, and the UK, and is based in the US.",
+      "evidence_urls": ["https://sambanova.ai/press/sambanova-powers-the-ai-backbone-for-three-sovereign-ai-providers-across-australia-europe-and-the-u.k"],
+      "evidence_snippets": ["SambaNova Powers 4 Sovereign AI Providers in Australia, Europe & the UK"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "SambaNova primarily serves enterprise and government sectors with AI inference, but does not disclose revenue contribution by end-market.",
+      "evidence_urls": ["https://sambanova.ai/solutions/government-public-sector"],
+      "evidence_snippets": ["Government & Public Sector"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "SambaNova's partnerships across multiple regions provide some diversification, but its reliance on foundries and limited manufacturing footprint may pose risks.",
+      "evidence_urls": ["https://sambanova.ai/solutions/sovereign-ai"],
+      "evidence_snippets": ["Sovereign AI around the world Meet our network of sovereign AI data center partners."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "SambaNova lists JPMorganChase as a customer and has sovereign AI partners, but does not disclose customer concentration.",
+      "evidence_urls": ["https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation"],
+      "evidence_snippets": ["JPMorganChase is the latest to select SambaNova RDUs for fast, on-prem AI inference."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "SambaNova has partnerships with Meta, OpenAI, and research institutions like Argonne and Los Alamos, indicating strong ecosystem ties.",
+      "evidence_urls": ["https://sambanova.ai"],
+      "evidence_snippets": ["As a launch partner for Meta's Llama 4 series", "OpenAI recently released gpt-oss-120b", "Argonne", "Los Alamos"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "SambaNova collaborates with model providers and data center partners to deliver integrated solutions, but does not detail foundry or OSAT collaborations.",
+      "evidence_urls": ["https://sambanova.ai/solutions/inference-providers"],
+      "evidence_snippets": ["Inference Providers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "SambaNova is private and does not disclose revenue, net income, or free cash flow; it recently raised $1B at an $11B valuation.",
+      "evidence_urls": ["https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation"],
+      "evidence_snippets": ["SambaNova Completes First Close of $1B Financing at $11B Valuation"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "SambaNova does not disclose capital expenditure figures or CapEx as a percentage of revenue.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "SambaNova's $1B financing round indicates strong investor support, but its debt-to-equity and cash reserves are not publicly disclosed.",
+      "evidence_urls": ["https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation"],
+      "evidence_snippets": ["General Atlantic leads the round with significant investment from Seligman Ventures and T. Rowe Price Associates, Inc."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "SambaNova's roadmap includes the SN50 system and disaggregated inference for AI agents, but lacks detailed multi-year milestones.",
+      "evidence_urls": ["https://sambanova.ai/blog/first-disaggregated-inference-demo-for-ai-agents-live"],
+      "evidence_snippets": ["The First Disaggregated Inference Demo for AI Agents Is Live"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "SambaNova is focused on AI chips and inference, with clear advancements in agentic AI, but does not have public plans for quantum or advanced memory.",
+      "evidence_urls": ["https://sambanova.ai/blog/first-disaggregated-inference-demo-for-ai-agents-live"],
+      "evidence_snippets": ["The First Disaggregated Inference Demo for AI Agents Is Live"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "SambaNova's roadmap aligns with the growing demand for fast, efficient AI inference, as evidenced by partnerships with leading model providers.",
+      "evidence_urls": ["https://sambanova.ai"],
+      "evidence_snippets": ["Build with the best open-source models", "SambaNova leads on speed at 435 output tokens/s"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "SambaNova has not announced new fab expansions; it partners with data center providers for capacity, but details are limited.",
+      "evidence_urls": ["https://sambanova.ai/solutions/sovereign-ai"],
+      "evidence_snippets": ["Sovereign AI around the world Meet our network of sovereign AI data center partners."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "SambaNova does not disclose revenue growth rates, but its $1B funding round suggests investor confidence in growth.",
+      "evidence_urls": ["https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation"],
+      "evidence_snippets": ["SambaNova Completes First Close of $1B Financing at $11B Valuation"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "SambaNova plans to fund expansions through private financing and partnerships, but lacks detailed execution plans.",
+      "evidence_urls": ["https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation"],
+      "evidence_snippets": ["SambaNova Completes First Close of $1B Financing at $11B Valuation"],
+      "grounding": "partial"
+    }
+  ]
+}

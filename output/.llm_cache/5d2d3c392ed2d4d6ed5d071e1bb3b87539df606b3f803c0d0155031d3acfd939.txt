@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "NVIDIA does not manufacture its own chips but designs leading-edge GPUs and AI accelerators using advanced nodes from TSMC, such as 4nm and 3nm.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "NVIDIA leads in GPU and AI accelerator design, leveraging advanced process technologies like FinFET through foundry partners, though it does not own fabs.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "NVIDIA's roadmap includes next-gen architectures like Blackwell and Rubin, expected to use advanced nodes such as 3nm and 2nm, with volume production in coming years.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["DGX Spark A Grace Blackwell AI supercomputer on your desk"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "NVIDIA is specialized in GPUs, AI accelerators, and related software, not a broad semiconductor supplier across memory, analog, or power.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "NVIDIA's revenue is predominantly from data center and gaming GPUs, with minimal diversification into other semiconductor categories.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "NVIDIA does not provide OSAT services but partners with OSAT providers for packaging and testing of its chips.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 9,
+      "answer": "NVIDIA owns proprietary GPU and AI accelerator architectures like CUDA, Tensor Cores, and RTX, which are highly differentiated in performance and ecosystem.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "NVIDIA licenses some IP like CUDA and certain technologies, but primarily relies on its own proprietary designs rather than third-party CPU IP.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 9,
+      "answer": "NVIDIA's architecture is dominant in AI, with strong positions in automotive (DRIVE) and data center, leading in high-growth areas.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["DRIVE AGX Powerful in-vehicle computing for AI-driven autonomous vehicle systems"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "NVIDIA is fabless and does not own wafer fabrication capacity; it relies on foundry partners like TSMC.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "NVIDIA's yield rates depend on foundry partners; as a designer, it does not directly control yields but works closely with partners.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "NVIDIA offers advanced packaging solutions like 2.5D/3D and chiplets in its products, leveraging foundry and OSAT partners for capacity.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "NVIDIA as a fabless designer does not hold manufacturing certifications like ISO 9001, but its partners do; NVIDIA itself follows quality standards for design.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "NVIDIA ensures reliability through rigorous design validation and works with partners to achieve low defect rates, but specific DPPM data is not public.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "NVIDIA complies with environmental regulations like RoHS and REACH and has policies on conflict minerals, though specifics are not in the KB.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "NVIDIA has global sales and R&D presence across the Americas, Europe, and Asia, as indicated by regional websites and offices.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["Visit your regional NVIDIA website for local content, pricing, and where to buy partners specific to your country."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "NVIDIA serves diverse end-markets including gaming, data center, automotive, and professional visualization, with data center being the largest revenue contributor.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["Gaming", "Data Center", "Autonomous Vehicles"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "NVIDIA's global presence mitigates regional risks, but it relies heavily on Asian foundries, which could be a vulnerability.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["Visit your regional NVIDIA website for local content, pricing, and where to buy partners specific to your country."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "NVIDIA's top customers include major cloud providers and OEMs, but specific names and concentration are not disclosed in the KB.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "NVIDIA has strategic partnerships with foundries like TSMC, EDA vendors, and research consortia, though not detailed in the KB.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "NVIDIA collaborates with ecosystem players including foundries, OSATs, and software partners to deliver full-stack solutions, as seen in its product offerings.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA NGC Accelerated, containerized AI models and SDKs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "NVIDIA's financials are strong with high revenue and profitability, but exact figures are not in the KB.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "NVIDIA's CapEx is relatively low as a fabless company, focusing on R&D and strategic investments, but specific percentages are not in the KB.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 7,
+      "answer": "NVIDIA has a strong balance sheet with substantial cash reserves and low debt, supporting large-scale investments, though not detailed in the KB.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "NVIDIA's roadmap includes next-gen architectures like Blackwell and Rubin, with milestones in AI, data center, and automotive, as indicated by product announcements.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["DGX Spark A Grace Blackwell AI supercomputer on your desk"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "NVIDIA has clear roadmaps for AI chips, quantum computing, and advanced memory, as seen in its product lines and research.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["Quantum Computing Fast-tracking the advancement of scientific innovations with QPUs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "NVIDIA's roadmap aligns with industry trends in AI, accelerated computing, and autonomous vehicles, meeting customer demands.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["Artificial Intelligence Computing Leadership from NVIDIA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "NVIDIA does not build fabs; it relies on foundry partners for capacity expansion, so no direct fab announcements.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 8,
+      "answer": "NVIDIA has experienced significant revenue growth over the past 3 years, driven by AI demand, with strong projected growth.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["Artificial Intelligence Computing Leadership from NVIDIA"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "NVIDIA funds capacity expansion through its strong cash flows and strategic investments in foundry partnerships, though specifics are not in the KB.",
+      "evidence_urls": ["https://www.nvidia.com"],
+      "evidence_snippets": ["NVIDIA designs GPUs and AI accelerators."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

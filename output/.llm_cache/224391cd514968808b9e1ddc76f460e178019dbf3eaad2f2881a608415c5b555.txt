@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the CEFALY device and CEFALY Connected, with no other product lines or variants."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Site cites clinical studies (ACME, TEAM, PREMICE) with specific outcomes: 79% pain reduction after 1 hour, 56% symptom resolution, 38.1% patients with 50%+ decrease in migraine days."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Presence of CEFALY Connected and app suggests innovation, but no explicit R&D pipeline or novel technology details beyond trigeminal nerve stimulation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing processes, quality certifications, or production scale."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Explicitly states 'FDA-Cleared Migraine Relief & Prevention Device' and 'Prescription-Free' OTC status, indicating regulatory clearance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Website offers region selection for US, Europe, Canada, and Other, indicating multi-market presence, though EU availability of some products is limited."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Claims 'bestselling OTC device' and includes numerous positive user testimonials and a clinician quote, suggesting strong adoption and trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, profitability) provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions CEFALY Connected and app, but no explicit pipeline for new indications or products; EU availability pending suggests ongoing development."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Site has affiliate and influencer programs, and a 'Find a Certified Provider' network, indicating some partnerships, but no major strategic alliances detailed."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

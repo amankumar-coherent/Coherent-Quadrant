@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "KB does not detail pipeline phases; as a major vaccine and biologics producer, Bio Farma likely has some late-stage candidates, but evidence is insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "KB mentions life sciences and health services but not specific target diversity; model knowledge suggests focus on vaccines and biosimilars, but not confirmed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No evidence of pipeline targeting top-selling biologics; KB focuses on vaccines and public health, not biosimilar commercial targets.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "KB does not provide bioreactor capacity; as a state-owned vaccine manufacturer, capacity is likely significant but unquantified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "KB indicates multiple facilities (head office, breeding facility, representative office) and group structure, suggesting multi-site operations, but not specifically for manufacturing redundancy.",
+      "evidence_urls": ["https://www.biofarma.co.id/id/holding-bumn-farmasi"],
+      "evidence_snippets": ["Bio Farma Group includes PT Bio Farma, Kimia Farma, Indofarma, PT INUKI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "KB does not mention single-use or stainless steel processes; model knowledge suggests traditional vaccine manufacturing, but no evidence.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "No evidence of mass spec usage; KB mentions GMP compliance but not specific analytical techniques.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Setiap produk yang kami produksi telah melalui tahapan penelitian ... sesuai dengan Good Manufacturing Practices (GMP)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No evidence of validated analytical methods for biosimilar comparability; KB does not discuss biosimilars specifically.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "No published studies on similarity found in KB; model knowledge suggests some research but not confirmed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "KB does not list FDA/EMA approvals; as a major vaccine producer, likely has WHO prequalifications but not FDA/EMA in last 5 years.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No data on approval times; insufficient evidence.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No evidence of complete response letters or rejections; insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "KB does not specify expression systems; model knowledge suggests vaccine production using established platforms, but not confirmed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No evidence of proprietary platform technologies; KB mentions R&D but not specific platforms.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No evidence of AI or automation investment; KB does not mention such initiatives.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "KB mentions global role and international partnerships, but does not specify number of countries; model knowledge suggests exports to multiple countries.",
+      "evidence_urls": ["https://www.biofarma.co.id/id/peran-global"],
+      "evidence_snippets": ["Peran Global"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "As a state-owned Indonesian company, Bio Farma has strong presence in emerging markets, especially Southeast Asia; KB supports global role.",
+      "evidence_urls": ["https://www.biofarma.co.id/id/peran-global"],
+      "evidence_snippets": ["Peran Global"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "KB shows group structure with multiple entities and distribution network, suggesting local partnerships, but not specific regional manufacturing.",
+      "evidence_urls": ["https://www.biofarma.co.id/id/holding-bumn-farmasi"],
+      "evidence_snippets": ["Bio Farma Group includes PT Bio Farma, Kimia Farma, Indofarma, PT INUKI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No financial data in KB; model knowledge suggests growth but not quantified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No profitability data for biosimilar segment; insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No market share projections in KB; insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "KB shows partnerships within BUMN holding and with government agencies, indicating strong partnerships, but not specifically with major pharma.",
+      "evidence_urls": ["https://www.biofarma.co.id/id/holding-bumn-farmasi"],
+      "evidence_snippets": ["Bio Farma Group includes PT Bio Farma, Kimia Farma, Indofarma, PT INUKI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "No specific customer counts; model knowledge suggests extensive network in Indonesia, but not quantified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No evidence of long-term supply agreements with payers or GPOs; insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No pricing data in KB; model knowledge suggests competitive pricing in emerging markets, but not confirmed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No evidence of value-added services for payers; KB mentions health services but not specifically for payers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No comparative pricing data; insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No evidence on supplier diversity; model knowledge suggests government-owned company likely has multiple suppliers, but not confirmed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No evidence of risk management plan; KB mentions ESG and disaster response, but not supply chain risk.",
+      "evidence_urls": [],
+      "evidence_snippets": ["Bio Farma Group Satukan Sumber Daya Kesehatan Terpadu untuk Mendukung Penanganan Bencana"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No lead time data; insufficient.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

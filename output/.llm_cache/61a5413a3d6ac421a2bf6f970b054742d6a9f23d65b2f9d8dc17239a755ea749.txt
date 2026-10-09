@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only CART BP and Apollon, no broad portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "CART BP completed ESH awake/asleep test, clinical trials with Seoul National University Hospital."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "World's first to complete ESH test, CES 2025 Innovation Award honoree for AI."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Completed ESH validation, but no FDA or other regulatory clearances mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Only presence in South Korea, no global distribution evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Clinical trials with Seoul National University Hospital, but limited adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No revenue or funding data for Sky Labs (only Skylab Technologies, unrelated)."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Working with Bayer for innovative healthcare business, analyzing heart disease data."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Bayer, clinical collaboration with Seoul National University Hospital."
+    }
+  ],
+  "evidence_used": true
+}

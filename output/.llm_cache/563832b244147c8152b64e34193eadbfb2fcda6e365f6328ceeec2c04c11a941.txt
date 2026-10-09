@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "MegaChips is a fabless company and does not own fabs, so it does not offer process nodes directly; it relies on foundry partners.",
+      "evidence_urls": ["https://www.megachips.com/english/company/who-we-are/business-model.html"],
+      "evidence_snippets": ["MegaChips is a global fabless semiconductor company"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "MegaChips does not lead in specific process technologies like FinFET or GAA; it focuses on analog and digital LSI design.",
+      "evidence_urls": ["https://www.megachips.com/english/"],
+      "evidence_snippets": ["unique LSI, based on analog and digital technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "No public roadmap for next-generation nodes is available; as a fabless company, it depends on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "MegaChips offers ASIC, ASSP, and modules, covering logic and some analog, but not memory or power as primary categories.",
+      "evidence_urls": ["https://www.megachips.com/english/product/"],
+      "evidence_snippets": ["ASIC full turn-key services, ASSP, and module"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; the company is primarily focused on ASIC and ASSP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "MegaChips does not provide OSAT services but likely partners with OSAT providers for manufacturing; no explicit details in KB.",
+      "evidence_urls": ["https://www.megachips.com/english/manufacturing/partnership/"],
+      "evidence_snippets": ["Partnership"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "MegaChips has proprietary technology in analog and digital LSI, but specific IP like CPU or GPU is not detailed in KB.",
+      "evidence_urls": ["https://www.megachips.com/english/"],
+      "evidence_snippets": ["unique LSI, based on analog and digital technology"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No information on IP licensing; as a fabless company, it likely uses third-party IP but not confirmed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "MegaChips has some presence in automotive (e.g., Ethernet PHY) but not a leader in AI or 5G; architecture strength is moderate.",
+      "evidence_urls": ["https://www.megachips.com/english/product/assps/100base-t1/"],
+      "evidence_snippets": ["100BASE-T1 Ethernet PHY"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "As a fabless company, MegaChips does not own wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": ["https://www.megachips.com/english/company/who-we-are/business-model.html"],
+      "evidence_snippets": ["fabless semiconductor company"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rates are not disclosed; as a fabless company, yields depend on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No evidence of advanced packaging offerings; MegaChips focuses on design and may rely on partners for packaging.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Quality certifications are not listed in KB, but the company emphasizes Japanese Monozukuri quality; likely has ISO certifications.",
+      "evidence_urls": ["https://www.megachips.com/english/manufacturing/quality/"],
+      "evidence_snippets": ["Japanese Monozukuri quality"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rates are not disclosed; the company emphasizes quality but no specific DPPM data.",
+      "evidence_urls": ["https://www.megachips.com/english/manufacturing/quality/"],
+      "evidence_snippets": ["safe and reliable products"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Sustainability section indicates environmental compliance, but specific RoHS/REACH details are not in KB.",
+      "evidence_urls": ["https://www.megachips.com/english/sustainability/"],
+      "evidence_snippets": ["response to issues surrounding sustainability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "MegaChips has a global network with presence in Japan and other regions, but specific locations are not detailed.",
+      "evidence_urls": ["https://www.megachips.com/english/company/who-we-are/global.html"],
+      "evidence_snippets": ["Global Network"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Primary end-markets include consumer electronics and industrial applications, but revenue contribution is not specified.",
+      "evidence_urls": ["https://www.megachips.com"],
+      "evidence_snippets": ["consumer electronics and industrial applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Global network suggests some diversification, but no specific risk mitigation details.",
+      "evidence_urls": ["https://www.megachips.com/english/company/who-we-are/global.html"],
+      "evidence_snippets": ["Global Network"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not disclosed; customer concentration risk cannot be assessed from KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Partnerships are mentioned in manufacturing, but no specific strategic partners are named.",
+      "evidence_urls": ["https://www.megachips.com/english/manufacturing/partnership/"],
+      "evidence_snippets": ["Partnership"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Collaboration with ecosystem players is implied through fabless model, but no specific details.",
+      "evidence_urls": ["https://www.megachips.com/english/company/who-we-are/business-model.html"],
+      "evidence_snippets": ["fabless semiconductor company"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not in KB; the company is publicly traded but no specific revenue or income data.",
+      "evidence_urls": ["https://www.megachips.com/english/irinfo/"],
+      "evidence_snippets": ["Investor Relations"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "CapEx data is not available; as a fabless company, capital expenditure is likely lower than IDMs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not in KB; no debt-to-equity or cash reserve information.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No specific technology roadmap milestones are provided in KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No clear roadmap for AI, quantum, or advanced memory is mentioned; focus is on ASIC/ASSP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "The company's roadmap is not detailed, but its product focus aligns with industrial and consumer trends.",
+      "evidence_urls": ["https://www.megachips.com/english/product/"],
+      "evidence_snippets": ["strategic solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "As a fabless company, MegaChips does not announce new fabs; expansion is through foundry partnerships.",
+      "evidence_urls": ["https://www.megachips.com/english/company/who-we-are/business-model.html"],
+      "evidence_snippets": ["fabless semiconductor company"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rate is not provided in KB; no historical or projected figures.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No details on funding or executing capacity expansions; relies on partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

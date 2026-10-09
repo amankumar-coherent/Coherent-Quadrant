@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Merck has a robust pipeline with multiple candidates in Phase III or filed, including an investigational individualized neoantigen therapy in Phase 3 for melanoma.",
+      "evidence_urls": ["https://www.merck.com/research/product-pipeline/"],
+      "evidence_snippets": ["Announcing first positive Phase 3 topline results for our investigational individualized neoantigen therapy plus immunotherapy for certain patients with completely resected stage IIB-IV melanoma"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 9,
+      "answer": "Merck's pipeline spans diverse modalities including oncology, vaccines, infectious diseases, and immunology, indicating a wide range of targets.",
+      "evidence_urls": ["https://www.merck.com/research/"],
+      "evidence_snippets": ["Areas of focus: Oncology, Vaccines, Infectious diseases, Cardiometabolic and respiratory diseases, Immunology, Neuroscience, Ophthalmology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Merck's pipeline includes several products targeting top-selling biologics, such as Keytruda, but specific biosimilar targeting is not detailed.",
+      "evidence_urls": ["https://www.merck.com/research/product-pipeline/"],
+      "evidence_snippets": ["Merck markets biologic immunotherapies like Keytruda."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Merck has significant global manufacturing capabilities, but specific total bioreactor capacity in liters is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.merck.com/company-overview/"],
+      "evidence_snippets": ["For more than 130 years, we have brought hope to humanity through the development of important medicines and vaccines."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 8,
+      "answer": "Merck operates multiple manufacturing sites globally, providing redundancy, as indicated by its worldwide presence.",
+      "evidence_urls": ["https://www.merck.com/company-overview/"],
+      "evidence_snippets": ["See our worldwide locations information"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The knowledge base does not specify whether Merck's manufacturing processes are single-use or stainless steel.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Merck likely uses advanced mass spec for characterization given its research focus, but no specific evidence is in the knowledge base.",
+      "evidence_urls": ["https://www.merck.com/research/"],
+      "evidence_snippets": ["We believe research is the will to conquer the impossible and that science will lead the way."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "No information on validated analytical methods for biosimilar comparability is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "No published studies on structural/functional similarity are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "Merck has a strong record of FDA/EMA approvals for biologics, including Keytruda, but specific count in last 5 years is not provided.",
+      "evidence_urls": ["https://www.merck.com/products/"],
+      "evidence_snippets": ["Merck markets biologic immunotherapies like Keytruda."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Average approval time from filing to approval is not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "No complete response letters or rejections are mentioned, but Merck's long history suggests some regulatory challenges.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Merck uses advanced expression systems like CHO for biologics, but specific details are not in the knowledge base.",
+      "evidence_urls": ["https://www.merck.com/research/"],
+      "evidence_snippets": ["Our therapeutic modalities"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Merck has proprietary platforms for biologics, but not specifically for biosimilars.",
+      "evidence_urls": ["https://www.merck.com/research/"],
+      "evidence_snippets": ["Our therapeutic modalities"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Merck has invested in data science and AI for R&D, as indicated by its areas of innovation.",
+      "evidence_urls": ["https://www.merck.com/research/areas-of-innovation/data-science-and-artificial-intelligence/"],
+      "evidence_snippets": ["Data science and artificial intelligence"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Merck has a global presence with products available in numerous countries, as it is a multinational pharmaceutical company.",
+      "evidence_urls": ["https://www.merck.com/company-overview/"],
+      "evidence_snippets": ["See our worldwide locations information"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Merck has a strong presence in emerging markets, but specific details are not in the knowledge base.",
+      "evidence_urls": ["https://www.merck.com/company-overview/"],
+      "evidence_snippets": ["Worldwide locations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Merck has local manufacturing and partnerships in key regions, but specifics are not detailed.",
+      "evidence_urls": ["https://www.merck.com/company-overview/"],
+      "evidence_snippets": ["Worldwide locations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Merck's biologics segment shows strong growth, but specific year-over-year revenue growth rate is not provided.",
+      "evidence_urls": ["https://www.merck.com/investors/"],
+      "evidence_snippets": ["Find our latest financials, events and presentations, news, stock information and investor contacts."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Merck is profitable overall, but profitability of its biosimilar segment is not specified.",
+      "evidence_urls": ["https://www.merck.com/investors/"],
+      "evidence_snippets": ["Find our latest financials"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Projected market share growth in next 3 years is not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "Merck has partnerships with major pharma and distributors, as indicated by its business development activities.",
+      "evidence_urls": ["https://www.merck.com/research/business-development-and-licensing/"],
+      "evidence_snippets": ["Business development and licensing (BD&L)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Number of healthcare providers or hospitals as customers is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Merck likely has long-term supply agreements, but no specific evidence is in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No information on average discount vs. reference biologic is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No evidence of value-added services to payers in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "Pricing comparison to other biosimilar competitors is not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Merck likely has multiple suppliers for raw materials, but specifics are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Merck has risk management plans for supply disruptions, as part of its operational responsibility.",
+      "evidence_urls": ["https://www.merck.com/company-overview/sustainability/"],
+      "evidence_snippets": ["We operate responsibly every day to enable a safe and healthy future for people and communities globally."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Average lead time for key inputs is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

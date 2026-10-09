@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions 'portfolio in diabetes, including GLP-1 receptor agonists' but no specific products or molecules are listed; website shows no product details."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of specific therapeutic differentiation or coverage beyond general diabetes portfolio; no details on GLP-1 indications."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website emphasizes 'commitment to research and development' and '90 years of history and innovation', but no specific GLP-1 R&D programs or clinical trials are mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1 products; website mentions 'plants' but numbers are not disclosed."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality certifications for GLP-1 products; only general mention of pharmacovigilance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Presence only in Argentina; no evidence of GLP-1 product availability or market access in other regions."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has '90 years of history' and is described as 'synonym of excellence', but no specific reputation in GLP-1 market."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; website shows counters but values are zero."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 pipeline or future indications; only general R&D commitment."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion related to GLP-1; only mention of 'Bagó en el mundo' but no details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

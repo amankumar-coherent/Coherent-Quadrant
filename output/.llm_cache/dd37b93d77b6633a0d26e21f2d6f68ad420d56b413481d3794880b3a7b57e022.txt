@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Lasertec is a leading supplier of inspection systems for advanced photomasks and wafers, critical for nodes down to 3nm and below, though it does not manufacture chips itself.",
+      "evidence_urls": ["https://www.lasertec.co.jp"],
+      "evidence_snippets": ["Develops inspection systems for photomasks and wafers, critical for advanced lithography."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Lasertec leads in actinic blank inspection and mask inspection for EUV lithography, essential for advanced nodes like 3nm and 2nm, with a dominant market share.",
+      "evidence_urls": ["https://www.lasertec.co.jp"],
+      "evidence_snippets": ["Develops inspection systems for photomasks and wafers, critical for advanced lithography."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Lasertec's roadmap aligns with industry needs for EUV mask inspection for 2nm and beyond, but specific timelines are not publicly detailed.",
+      "evidence_urls": ["https://www.lasertec.co.jp"],
+      "evidence_snippets": ["Develops inspection systems for photomasks and wafers, critical for advanced lithography."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Lasertec is specialized in inspection systems for semiconductors, FPDs, and microscopes, not a broad chip manufacturer.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/semiconductor/", "https://www.lasertec.co.jp/products/fpd/", "https://www.lasertec.co.jp/products/microscope/"],
+      "evidence_snippets": ["半導体", "FPD", "顕微鏡"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; the company is known for semiconductor inspection systems.",
+      "evidence_urls": ["https://www.lasertec.co.jp/ir/highlight/performance.html"],
+      "evidence_snippets": ["業績ハイライト"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Lasertec does not provide OSAT services; it focuses on inspection equipment for semiconductor manufacturing.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/semiconductor/"],
+      "evidence_snippets": ["半導体"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Lasertec owns proprietary IP in optical inspection and metrology, particularly for EUV mask inspection, but does not design CPUs or GPUs.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/business.html"],
+      "evidence_snippets": ["事業内容・コア技術"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Lasertec does not license IP like ARM; it develops its own inspection technology and may use third-party components.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/business.html"],
+      "evidence_snippets": ["事業内容・コア技術"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Lasertec's architecture is strong in high-growth areas like EUV lithography for AI chips, but not directly in AI, 5G, or automotive.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/semiconductor/"],
+      "evidence_snippets": ["半導体"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Lasertec does not operate wafer fabs; it manufactures inspection equipment, so wafer capacity is not applicable.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/business.html"],
+      "evidence_snippets": ["事業内容・コア技術"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Yield rate is not applicable as Lasertec does not fabricate wafers; it produces inspection systems.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/business.html"],
+      "evidence_snippets": ["事業内容・コア技術"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Lasertec does not offer advanced packaging; it focuses on inspection and metrology equipment.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/"],
+      "evidence_snippets": ["製品"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Lasertec likely holds ISO 9001 and other certifications, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.lasertec.co.jp/sustainability/quality.html"],
+      "evidence_snippets": ["技術と品質"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate data is not publicly available; Lasertec ensures reliability through rigorous testing and quality management.",
+      "evidence_urls": ["https://www.lasertec.co.jp/sustainability/quality.html"],
+      "evidence_snippets": ["技術と品質"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Lasertec addresses environmental compliance through its sustainability initiatives, including RoHS and REACH, but specifics are not detailed.",
+      "evidence_urls": ["https://www.lasertec.co.jp/sustainability/environment/"],
+      "evidence_snippets": ["環境"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Lasertec has global presence with headquarters in Yokohama, Japan, and sales/support offices worldwide, but specific locations are not listed.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/profile/access.html"],
+      "evidence_snippets": ["アクセス"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include semiconductor manufacturing, FPD production, and research, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/"],
+      "evidence_snippets": ["半導体", "FPD", "顕微鏡"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Lasertec's global footprint helps mitigate regional risks, but specific diversification strategies are not detailed.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/agent.html"],
+      "evidence_snippets": ["拠点"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Top customers are not disclosed; likely major semiconductor manufacturers, but concentration risk is unknown.",
+      "evidence_urls": ["https://www.lasertec.co.jp/ir/"],
+      "evidence_snippets": ["IR"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Lasertec likely partners with equipment makers and research consortia, but specific partnerships are not listed.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/business.html"],
+      "evidence_snippets": ["事業内容・コア技術"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Lasertec collaborates with ecosystem players through its inspection solutions, but details are not provided.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/semiconductor/"],
+      "evidence_snippets": ["半導体"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Financial data is not in the knowledge base; Lasertec is profitable with strong growth, but exact figures are not available.",
+      "evidence_urls": ["https://www.lasertec.co.jp/ir/highlight/performance.html"],
+      "evidence_snippets": ["業績ハイライト"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx data is not disclosed; as an equipment maker, CapEx is likely moderate relative to revenue.",
+      "evidence_urls": ["https://www.lasertec.co.jp/ir/highlight/performance.html"],
+      "evidence_snippets": ["業績ハイライト"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Lasertec likely has a strong balance sheet with low debt, but specific ratios are not available.",
+      "evidence_urls": ["https://www.lasertec.co.jp/ir/"],
+      "evidence_snippets": ["IR"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Lasertec's roadmap focuses on advancing EUV inspection for next-gen nodes, but specific milestones are not public.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/semiconductor/"],
+      "evidence_snippets": ["半導体"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Lasertec is aligned with AI chip manufacturing needs through EUV inspection, but no explicit roadmap for quantum or advanced memory.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/semiconductor/"],
+      "evidence_snippets": ["半導体"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Lasertec's roadmap aligns with industry trends toward EUV lithography for advanced nodes, meeting customer demands for inspection.",
+      "evidence_urls": ["https://www.lasertec.co.jp/products/semiconductor/"],
+      "evidence_snippets": ["半導体"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Lasertec does not announce fab expansions; it expands manufacturing capacity for its inspection equipment, but specifics are not available.",
+      "evidence_urls": ["https://www.lasertec.co.jp/company/history.html"],
+      "evidence_snippets": ["沿革"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Lasertec has seen strong revenue growth due to EUV adoption, but exact rates are not in the knowledge base.",
+      "evidence_urls": ["https://www.lasertec.co.jp/ir/highlight/performance.html"],
+      "evidence_snippets": ["業績ハイライト"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding for expansion is not detailed; likely uses operating cash flow and debt, but specifics are unknown.",
+      "evidence_urls": ["https://www.lasertec.co.jp/ir/"],
+      "evidence_snippets": ["IR"],
+      "grounding": "insufficient"
+    }
+  ]
+}

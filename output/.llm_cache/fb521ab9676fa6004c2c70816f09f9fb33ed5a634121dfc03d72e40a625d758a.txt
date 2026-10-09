@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Force10 Networks focuses on Ethernet switching and routing, not compute or accelerators.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "No accelerator products exist, so performance per watt is not applicable.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "No compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Force10 provides high-performance Ethernet switching, but specific 400G/800G or InfiniBand support is not documented.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "No specific latency or bandwidth data is available in the knowledge base.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "As a networking vendor, likely supports open standards, but no explicit evidence in KB.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "No data center designs or PUE information provided; focus is on networking equipment.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "No evidence of liquid cooling or advanced cooling solutions.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "Networking equipment may have power management, but no specific features are documented.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "No software platform for data center management is mentioned.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No orchestration software or compatibility with Kubernetes/OpenStack is indicated.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No automation features for provisioning or monitoring are documented.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 2,
+      "answer": "No specialized AI hardware or software optimizations are offered.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 2,
+      "answer": "No AI-specific performance improvements are available.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 2,
+      "answer": "No tools for AI workload profiling or optimization exist.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "No information on data center regions; company is a networking vendor, not a data center operator.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "No geographic distribution data available.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 3,
+      "answer": "No expansion plans are mentioned.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No specific hyperscaler customers are listed, but as a networking vendor it may have served them.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "No revenue breakdown is available.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials are provided.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No revenue figures are available.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "No margin data is provided.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No historical revenue growth information is available.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 3,
+      "answer": "No market share data is provided.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "No growth rate comparison is available.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 3,
+      "answer": "No segment share information is provided.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No recent strategic alliances are documented, but as a networking vendor it may have had partnerships.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No joint ventures or co-development agreements are mentioned.",
+      "evidence_urls": ["https://force10networks.com"],
+      "evidence_snippets": ["Force10 Networks was a provider of high-performance Ethernet switching and routing solutions for data centers."],
+      "grounding": "insufficient"
+    }
+  ]
+}

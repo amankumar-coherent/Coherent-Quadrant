@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Silvaco is a TCAD/EDA and IP provider, not a chip manufacturer, so it does not offer process nodes itself but supports development for advanced nodes.",
+      "evidence_urls": ["https://silvaco.com/tcad/"],
+      "evidence_snippets": ["Silvaco’s TCAD-to-Signoff flow encompasses simulation tools to develop and optimize new semiconductor processes and devices prior to manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Silvaco provides TCAD tools that support various process technologies like FinFET and GAA, but it does not lead in any specific process technology as a manufacturer.",
+      "evidence_urls": ["https://silvaco.com/tcad/"],
+      "evidence_snippets": ["Silvaco’s TCAD-to-Signoff flow encompasses simulation tools to develop and optimize new semiconductor processes and devices prior to manufacturing."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "Silvaco's roadmap focuses on enabling next-generation nodes through simulation and digital twin technology, but it does not have its own node roadmap.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["Silvaco to Accelerate Physics-Based Digital Twins for Semiconductor Design and Manufacturing Using NVIDIA AI and Accelerated Computing"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Silvaco offers a broad portfolio including TCAD, analog design, IP (standard cells, memory compilers, interface IP), and services for power, display, and automotive, but not manufacturing.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["TCAD", "Analog Custom Design and Analysis", "IP", "Solutions: Automotive, Display Technology, Power Devices, Optoelectronics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Silvaco does not disclose revenue split by product type; as an EDA/IP company, its revenue is from software licenses and IP royalties, not physical chips.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["Silvaco Reports Second Quarter 2026 Financial Results"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Silvaco does not provide OSAT services; it partners with foundries and provides PDKs and simulation tools for manufacturing.",
+      "evidence_urls": ["https://silvaco.com/available-pdks/"],
+      "evidence_snippets": ["Process Design Kits"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Silvaco owns design IP including standard cell libraries, memory compilers, AMBA IP, automotive IP, and Mixel PHY IP, which are production-ready and differentiated.",
+      "evidence_urls": ["https://silvaco.com/design-ip/"],
+      "evidence_snippets": ["Production Ready IP", "Standard Cell Libraries", "Memory Compilers", "AMBA IP", "Automotive IP", "Mixel PHY and More"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "Silvaco licenses its own IP (e.g., Mixel PHY) and also provides embedded processors, but it also supports third-party IP integration as part of its EDA flow.",
+      "evidence_urls": ["https://silvaco.com/design-ip/"],
+      "evidence_snippets": ["Design IP Overview", "Embedded Processors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Silvaco has automotive IP and solutions for power devices and optoelectronics, but its architecture strength in AI/5G is not prominently featured.",
+      "evidence_urls": ["https://silvaco.com/solutions/automotive/"],
+      "evidence_snippets": ["Automotive", "Power Devices", "Optoelectronics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Silvaco does not operate wafer fabs, so it has no wafer fabrication capacity or utilization rate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Silvaco does not manufacture chips, so it has no yield rate to compare.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Silvaco does not offer advanced packaging; it provides simulation and IP for chip design, not packaging services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "Silvaco does not publicly list quality certifications like ISO 9001 or IATF 16949 on its website.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Silvaco does not disclose defect rates or reliability metrics as it is not a manufacturer.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "Silvaco does not provide specific information on RoHS, REACH, or conflict minerals compliance on its website.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Silvaco has global presence with offices in the US, Asia, and Europe, and participates in events like SEMICON Taiwan.",
+      "evidence_urls": ["https://silvaco.com/corporate/contact-us/"],
+      "evidence_snippets": ["Locations & Contact", "SEMICON TAIWAN"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Silvaco serves automotive, display, power, and optoelectronics markets, but revenue contribution by end-market is not disclosed.",
+      "evidence_urls": ["https://silvaco.com/solutions/automotive/"],
+      "evidence_snippets": ["Automotive", "Display Technology", "Power Devices", "Optoelectronics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Silvaco's global presence across US, Asia, and Europe helps mitigate regional risks, but specific strategies are not detailed.",
+      "evidence_urls": ["https://silvaco.com/corporate/contact-us/"],
+      "evidence_snippets": ["Locations & Contact"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Silvaco does not disclose its top customers or customer concentration risk.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Silvaco has partnerships with NVIDIA for AI-accelerated computing and with ITRI for MCU development, indicating strategic collaborations.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["Silvaco to Accelerate Physics-Based Digital Twins for Semiconductor Design and Manufacturing Using NVIDIA AI and Accelerated Computing", "Silvaco Partners with ITRI to Support MCU Development and Startup Innovation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Silvaco collaborates with foundries and ecosystem partners through PDKs and solutions like FTCO, enabling complete design-to-manufacturing workflows.",
+      "evidence_urls": ["https://silvaco.com/solutions/ftco/"],
+      "evidence_snippets": ["Fab Technology Co-Optimization (FTCO™)", "Process Design Kits"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Silvaco reports financial results, but specific revenue, net income, and free cash flow figures are not provided in the knowledge base.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["Silvaco Reports Second Quarter 2026 Financial Results"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Silvaco does not disclose CapEx figures or percentage of revenue.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Silvaco's balance sheet details are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Silvaco's roadmap includes AI-powered digital twins and FTCO for manufacturing-aware simulations, indicating a focus on advanced simulation and co-optimization.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["Silvaco to Accelerate Physics-Based Digital Twins for Semiconductor Design and Manufacturing Using NVIDIA AI and Accelerated Computing", "Fab Technology Co-Optimization (FTCO™)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Silvaco is investing in AI-driven digital twins and has solutions for power devices and optoelectronics, but no explicit roadmap for quantum or advanced memory.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["AI-Powered Surrogates: From Process Geometry to I‑V Curves"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Silvaco's roadmap aligns with industry trends toward AI-accelerated simulation and manufacturing co-optimization, addressing customer needs for faster time-to-market.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["Accelerate your time to market with Silvaco Production-Ready IP"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "Silvaco does not announce fab expansions as it is not a manufacturer.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Silvaco reports financial results, but specific revenue growth rates are not provided in the knowledge base.",
+      "evidence_urls": ["https://silvaco.com/"],
+      "evidence_snippets": ["Silvaco Reports Second Quarter 2026 Financial Results"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Silvaco does not detail funding or execution plans for capacity expansions as it does not have fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "SCREEN is a leading supplier of wet process equipment for advanced nodes, but does not fabricate chips itself.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "SCREEN leads in wet cleaning and coating/developing equipment, essential for FinFET and GAA processes, but does not compete in process technology leadership directly.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "SCREEN's roadmap focuses on enabling next-gen nodes through advanced cleaning and coating equipment, but specific timelines are not disclosed in the KB.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "SCREEN offers a broad portfolio including semiconductor manufacturing equipment, display equipment, printed circuit board related equipment, and packaging equipment, covering multiple categories.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置", "ディスプレー製造装置 および成膜装置", "プリント基板関連機器", "半導体パッケージ関連機器"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Revenue split by product type is not provided in the KB, but SCREEN's portfolio is diversified across electronics, media, life sciences, and energy.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["エレクトロニクス", "メディア・情報", "ライフサイエンス", "エネルギー"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "SCREEN offers semiconductor packaging related equipment, indicating involvement in OSAT processes, but does not provide OSAT services directly.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体パッケージ関連機器"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "SCREEN does not own CPU/GPU/AI IP; its proprietary technology is in wet process equipment and coating/developing systems.",
+      "evidence_urls": ["https://www.screen.co.jp/about/coretech"],
+      "evidence_snippets": ["SCREENの技術"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "SCREEN does not license design IP; it relies on its own equipment technology and does not use third-party CPU IP.",
+      "evidence_urls": ["https://www.screen.co.jp/about/coretech"],
+      "evidence_snippets": ["SCREENの技術"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "SCREEN's architecture strength is in manufacturing equipment for AI, 5G, and automotive chips, but not in chip design architecture.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "SCREEN does not operate wafer fabs; it manufactures equipment, so wafer capacity is not applicable.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rate is not applicable as SCREEN does not fabricate wafers; its equipment contributes to yield improvement.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "SCREEN offers semiconductor packaging related equipment, indicating advanced packaging capabilities, but specific capacity is not disclosed.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体パッケージ関連機器"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "SCREEN likely holds ISO certifications, but specific quality certifications are not listed in the KB.",
+      "evidence_urls": ["https://www.screen.co.jp/sustainability/iso"],
+      "evidence_snippets": ["ISO認証取得状況"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate data is not provided, but SCREEN emphasizes quality in its equipment manufacturing.",
+      "evidence_urls": ["https://www.screen.co.jp/sustainability"],
+      "evidence_snippets": ["サステナビリティ"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "SCREEN addresses environmental regulations through its sustainability initiatives, including pollution prevention and resource efficiency.",
+      "evidence_urls": ["https://www.screen.co.jp/sustainability/environment"],
+      "evidence_snippets": ["汚染の予防", "資源の有効利用"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "SCREEN has global presence with operations in Japan, North America, Europe, and Asia-Oceania.",
+      "evidence_urls": ["https://www.screen.co.jp/about/north_america", "https://www.screen.co.jp/about/europe", "https://www.screen.co.jp/about/asia_oceania"],
+      "evidence_snippets": ["北米", "ヨーロッパ", "アジア&オセアニア"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include electronics, media, life sciences, and energy, but revenue contribution is not detailed.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["エレクトロニクス", "メディア・情報", "ライフサイエンス", "エネルギー"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Geographic diversification across multiple regions helps mitigate regional risks, as evidenced by global operations.",
+      "evidence_urls": ["https://www.screen.co.jp/about/north_america", "https://www.screen.co.jp/about/europe", "https://www.screen.co.jp/about/asia_oceania"],
+      "evidence_snippets": ["北米", "ヨーロッパ", "アジア&オセアニア"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Top customers are not disclosed, but SCREEN likely serves major semiconductor manufacturers, implying some concentration risk.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "SCREEN likely partners with equipment makers and research consortia, but specific partnerships are not listed in the KB.",
+      "evidence_urls": ["https://www.screen.co.jp/about/organization"],
+      "evidence_snippets": ["グループ体制"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "SCREEN collaborates with ecosystem players through its equipment solutions, but specific collaborations are not detailed.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not provided in the KB, but SCREEN is a major equipment supplier with significant revenue.",
+      "evidence_urls": ["https://www.screen.co.jp/ir"],
+      "evidence_snippets": ["IR情報"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx data is not available in the KB, but as a capital-intensive equipment maker, CapEx is likely substantial.",
+      "evidence_urls": ["https://www.screen.co.jp/ir"],
+      "evidence_snippets": ["IR情報"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the KB, but SCREEN's stable operations suggest adequate financial strength.",
+      "evidence_urls": ["https://www.screen.co.jp/ir"],
+      "evidence_snippets": ["IR情報"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "SCREEN's roadmap focuses on advancing wet process and coating technologies for next-gen semiconductors, but specific milestones are not public.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "SCREEN is likely developing equipment for emerging technologies like AI chips and advanced memory, but no explicit roadmap is in the KB.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "SCREEN's equipment is essential for advanced nodes, aligning with industry trends toward miniaturization and new architectures.",
+      "evidence_urls": ["https://www.screen.co.jp/products"],
+      "evidence_snippets": ["半導体製造装置"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "SCREEN does not announce fab expansions as it is an equipment maker, but it may expand its own manufacturing capacity.",
+      "evidence_urls": ["https://www.screen.co.jp/about"],
+      "evidence_snippets": ["国内事業所一覧"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Revenue growth is not in the KB, but SCREEN's market position suggests steady growth aligned with semiconductor industry cycles.",
+      "evidence_urls": ["https://www.screen.co.jp/ir"],
+      "evidence_snippets": ["IR情報"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding and expansion plans are not detailed, but SCREEN's global footprint indicates capability to support expansions.",
+      "evidence_urls": ["https://www.screen.co.jp/about"],
+      "evidence_snippets": ["グループ体制"],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

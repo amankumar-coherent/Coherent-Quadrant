@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions only the LEAF Patient Monitoring System, a single product for pressure injury prevention. No other devices are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Clinical trial showed compliance with turn protocols increased to 98% from 64%, demonstrating effectiveness in preventing bedsores."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "The device is described as 'novel' and 'high-tech', but no specific R&D pipeline or ongoing innovation details are provided."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "The device has been cleared for sale by FDA 510(k), indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Pleasanton, CA, and acquired by Smith+Nephew (global), but no specific evidence of global distribution or channel reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Clinical trial results and FDA clearance support trust; adoption evidenced by improved compliance in hospital settings."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No revenue or financial data provided; only private company status and acquisition by Smith+Nephew."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only pressure injury prevention indication mentioned; no evidence of expansion to other indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Acquired by Smith+Nephew in 2019, indicating business expansion and partnership."
+    }
+  ],
+  "evidence_used": true
+}

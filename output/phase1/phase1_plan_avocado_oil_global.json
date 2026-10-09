@@ -1,0 +1,1177 @@
+{
+  "phase": 1,
+  "query": "Avocado Oil Market",
+  "mock_mode": false,
+  "completed_at": "2026-08-10T13:51:02.955383+00:00",
+  "llm_provider": "deepseek",
+  "search_primary": "duckduckgo",
+  "search_backup": "searxng",
+  "funnel_levels": [
+    "L0",
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "scope": {
+    "market": "avocado oil",
+    "geographies": [
+      "global"
+    ],
+    "geography": "global",
+    "company_type": "producer, processor, brand owner, distributor",
+    "industry_vertical": "food and beverage",
+    "industry_terms": [
+      "avocado oil",
+      "extra virgin avocado oil",
+      "refined avocado oil",
+      "cold-pressed avocado oil",
+      "organic avocado oil",
+      "crude avocado oil",
+      "avocado oil bulk",
+      "avocado oil private label",
+      "avocado oil supplier",
+      "avocado oil manufacturer"
+    ],
+    "ecosystem_functions": [
+      "avocado fruit grower",
+      "crude oil extractor",
+      "oil refiner",
+      "contract manufacturer",
+      "private label supplier",
+      "bulk oil supplier",
+      "brand owner",
+      "packager",
+      "bottler",
+      "distributor",
+      "wholesaler",
+      "importer",
+      "exporter",
+      "e-commerce retailer"
+    ],
+    "interpretation_summary": "The avocado oil market encompasses the production, processing, and distribution of oil extracted from avocado fruit, used primarily in culinary applications (cooking, salad dressings) and increasingly in cosmetics and pe",
+    "relevance_keywords": [
+      "avocado oil",
+      "extra virgin",
+      "cold-pressed",
+      "refined",
+      "organic",
+      "bulk",
+      "private label",
+      "manufacturer",
+      "supplier",
+      "producer",
+      "bottling",
+      "packaging"
+    ],
+    "negative_keywords": [
+      "news",
+      "blog",
+      "market",
+      "report",
+      "directory",
+      "jobs",
+      "careers",
+      "consulting",
+      "recipes",
+      "guacamole"
+    ],
+    "seed_companies": [
+      {
+        "canonical_name": "Chosen Foods",
+        "primary_domain": "chosenfoods.com",
+        "company_function": "brand owner and producer of avocado oil"
+      },
+      {
+        "canonical_name": "La Tourangelle",
+        "primary_domain": "latourangelle.com",
+        "company_function": "producer of specialty oils including avocado oil"
+      },
+      {
+        "canonical_name": "Olivado",
+        "primary_domain": "olivado.com",
+        "company_function": "avocado oil producer and exporter"
+      },
+      {
+        "canonical_name": "AvoPure",
+        "primary_domain": "avopure.com",
+        "company_function": "avocado oil manufacturer and supplier"
+      },
+      {
+        "canonical_name": "Bella Vado",
+        "primary_domain": "bellavado.com",
+        "company_function": "avocado oil producer"
+      },
+      {
+        "canonical_name": "Kevala",
+        "primary_domain": "kevala.net",
+        "company_function": "importer and distributor of avocado oil"
+      },
+      {
+        "canonical_name": "BetterBody Foods",
+        "primary_domain": "betterbodyfoods.com",
+        "company_function": "brand owner of avocado oil"
+      },
+      {
+        "canonical_name": "Spectrum Naturals",
+        "primary_domain": "spectrumnaturals.com",
+        "company_function": "producer of organic oils including avocado oil"
+      },
+      {
+        "canonical_name": "Nutiva",
+        "primary_domain": "nutiva.com",
+        "company_function": "Brand owner of avocado oil",
+        "segment": "Consumer brand owners",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Tierra de Oliva",
+        "primary_domain": "tierradeoliva.com",
+        "company_function": "Producer of avocado oil",
+        "segment": "Producers",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Avocado Oil Company",
+        "primary_domain": "avocadooilcompany.com",
+        "company_function": "Producer and supplier of avocado oil",
+        "segment": "Producers and suppliers",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Mara Avocado Oil",
+        "primary_domain": "maraavocadooil.com",
+        "company_function": "Producer of avocado oil",
+        "segment": "Producers",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Avocado Oil Mexico",
+        "primary_domain": "avocadooilmexico.com",
+        "company_function": "Producer and exporter of avocado oil from Mexico",
+        "segment": "Producers and exporters",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Aceite de Aguacate",
+        "primary_domain": "aceitedeaguacate.com",
+        "company_function": "Producer of avocado oil",
+        "segment": "Producers",
+        "source": "market_map_llm"
+      }
+    ],
+    "search_topic": "avocado oil",
+    "funnel_enabled": true,
+    "query_parsed": true,
+    "scope_source": "llm",
+    "intent": "market_map",
+    "product_category": "avocado oil",
+    "include_keywords": [
+      "avocado oil",
+      "extra virgin",
+      "cold-pressed",
+      "refined",
+      "organic",
+      "bulk",
+      "private label",
+      "manufacturer",
+      "supplier",
+      "producer"
+    ],
+    "exclude_keywords": [
+      "news",
+      "blog",
+      "market report",
+      "directory",
+      "job board",
+      "consulting",
+      "research firm",
+      "recipes",
+      "health benefits",
+      "guacamole"
+    ],
+    "scope_version": 2,
+    "market_definition": "The avocado oil market encompasses the production, processing, and distribution of oil extracted from avocado fruit, used primarily in culinary applications (cooking, salad dressings) and increasingly in cosmetics and personal care products. Participants include growers, oil processors, refiners, brand owners, and distributors across global regions, with major production in Mexico, Kenya, and other tropical/subtropical countries.",
+    "value_chain_layers": [
+      {
+        "layer_id": "L1",
+        "layer_name": "Upstream / Raw Material Supply",
+        "description": "Avocado fruit sourcing and initial oil extraction. Includes growers, processors who extract crude oil, and suppliers of avocado pulp or pits.",
+        "segments": [
+          {
+            "segment_name": "Avocado growers and fruit suppliers",
+            "sub_segments": [
+              "Organic growers",
+              "Conventional growers",
+              "Vertical integration with processing"
+            ],
+            "participant_types": [
+              "grower",
+              "cooperative",
+              "supplier"
+            ],
+            "search_intents": [
+              "avocado oil producer official site",
+              "avocado oil manufacturer company"
+            ]
+          },
+          {
+            "segment_name": "Crude avocado oil extractors",
+            "sub_segments": [
+              "Cold-pressed",
+              "Solvent extraction",
+              "Centrifugal extraction"
+            ],
+            "participant_types": [
+              "processor",
+              "extractor"
+            ],
+            "search_intents": [
+              "cold pressed avocado oil manufacturer",
+              "avocado oil extraction company"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L2",
+        "layer_name": "Processing and Refining",
+        "description": "Refining, bleaching, deodorizing, and quality control of crude avocado oil to produce food-grade or cosmetic-grade oil. Includes contract manufacturers and toll processors.",
+        "segments": [
+          {
+            "segment_name": "Refiners and processors",
+            "sub_segments": [
+              "Refined avocado oil",
+              "Extra-virgin avocado oil",
+              "Organic certified"
+            ],
+            "participant_types": [
+              "refiner",
+              "processor",
+              "contract manufacturer"
+            ],
+            "search_intents": [
+              "avocado oil refining company",
+              "avocado oil contract manufacturing"
+            ]
+          },
+          {
+            "segment_name": "Private label and bulk suppliers",
+            "sub_segments": [
+              "Bulk oil suppliers",
+              "Private label packaging"
+            ],
+            "participant_types": [
+              "supplier",
+              "packager"
+            ],
+            "search_intents": [
+              "bulk avocado oil supplier",
+              "private label avocado oil manufacturer"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L3",
+        "layer_name": "Branding and Packaging",
+        "description": "Companies that brand, bottle, and package avocado oil for retail and foodservice. Includes marketing and distribution of finished consumer products.",
+        "segments": [
+          {
+            "segment_name": "Consumer brand owners",
+            "sub_segments": [
+              "Retail brands",
+              "Foodservice brands",
+              "Gourmet/specialty"
+            ],
+            "participant_types": [
+              "brand owner",
+              "marketer"
+            ],
+            "search_intents": [
+              "avocado oil brand official site",
+              "avocado oil company website"
+            ]
+          },
+          {
+            "segment_name": "Packaging and bottling services",
+            "sub_segments": [
+              "Bottling lines",
+              "Labeling services"
+            ],
+            "participant_types": [
+              "packager",
+              "co-packer"
+            ],
+            "search_intents": [
+              "avocado oil bottling company",
+              "avocado oil packaging services"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L4",
+        "layer_name": "Distribution and Retail",
+        "description": "Wholesale distribution, import/export, and retail channels that bring avocado oil to end consumers and foodservice operators.",
+        "segments": [
+          {
+            "segment_name": "Distributors and wholesalers",
+            "sub_segments": [
+              "Foodservice distributors",
+              "Specialty food distributors",
+              "Import/export"
+            ],
+            "participant_types": [
+              "distributor",
+              "wholesaler",
+              "importer",
+              "exporter"
+            ],
+            "search_intents": [
+              "avocado oil distributor",
+              "avocado oil wholesale supplier"
+            ]
+          },
+          {
+            "segment_name": "E-commerce and specialty retailers",
+            "sub_segments": [
+              "Online retailers",
+              "Specialty food stores"
+            ],
+            "participant_types": [
+              "retailer",
+              "e-commerce"
+            ],
+            "search_intents": [
+              "buy avocado oil online official",
+              "avocado oil retail company"
+            ]
+          }
+        ]
+      }
+    ],
+    "market_boundary": {
+      "in_scope": [
+        "Avocado oil producers and processors",
+        "Refined and extra-virgin avocado oil manufacturers",
+        "Avocado oil brand owners and packagers",
+        "Avocado oil distributors and wholesalers",
+        "Private label avocado oil suppliers",
+        "Avocado oil importers/exporters",
+        "Organic and cold-pressed avocado oil specialists",
+        "Avocado oil for cosmetics and personal care"
+      ],
+      "out_of_scope": [
+        "Avocado fruit fresh market and growers (unless vertically integrated)",
+        "Other edible oils (olive, coconut, etc.)",
+        "Avocado-based food products (guacamole, spreads)",
+        "Cosmetic products containing avocado oil (finished creams, lotions)",
+        "Market research reports and industry news sites",
+        "Agricultural equipment and farming supplies"
+      ]
+    },
+    "market_map_prompts": [
+      {
+        "id": "M1",
+        "level": "market_map",
+        "text": "avocado oil producer official site",
+        "sub_sector": "avocado_grower",
+        "layer_id": "L1",
+        "segment": "Avocado growers and fruit suppliers"
+      },
+      {
+        "id": "M2",
+        "level": "market_map",
+        "text": "avocado oil manufacturer company",
+        "sub_sector": "avocado_grower",
+        "layer_id": "L1",
+        "segment": "Avocado growers and fruit suppliers"
+      },
+      {
+        "id": "M3",
+        "level": "market_map",
+        "text": "cold pressed avocado oil manufacturer",
+        "sub_sector": "crude_oil_extractor",
+        "layer_id": "L1",
+        "segment": "Crude avocado oil extractors"
+      },
+      {
+        "id": "M4",
+        "level": "market_map",
+        "text": "avocado oil extraction company",
+        "sub_sector": "crude_oil_extractor",
+        "layer_id": "L1",
+        "segment": "Crude avocado oil extractors"
+      },
+      {
+        "id": "M5",
+        "level": "market_map",
+        "text": "avocado oil refining company",
+        "sub_sector": "refiner",
+        "layer_id": "L2",
+        "segment": "Refiners and processors"
+      },
+      {
+        "id": "M6",
+        "level": "market_map",
+        "text": "avocado oil contract manufacturing",
+        "sub_sector": "refiner",
+        "layer_id": "L2",
+        "segment": "Refiners and processors"
+      },
+      {
+        "id": "M7",
+        "level": "market_map",
+        "text": "bulk avocado oil supplier",
+        "sub_sector": "bulk_supplier",
+        "layer_id": "L2",
+        "segment": "Private label and bulk suppliers"
+      },
+      {
+        "id": "M8",
+        "level": "market_map",
+        "text": "private label avocado oil manufacturer",
+        "sub_sector": "private_label",
+        "layer_id": "L2",
+        "segment": "Private label and bulk suppliers"
+      },
+      {
+        "id": "M9",
+        "level": "market_map",
+        "text": "avocado oil brand official site",
+        "sub_sector": "brand_owner",
+        "layer_id": "L3",
+        "segment": "Consumer brand owners"
+      },
+      {
+        "id": "M10",
+        "level": "market_map",
+        "text": "avocado oil company website",
+        "sub_sector": "brand_owner",
+        "layer_id": "L3",
+        "segment": "Consumer brand owners"
+      },
+      {
+        "id": "M11",
+        "level": "market_map",
+        "text": "avocado oil bottling company",
+        "sub_sector": "packager",
+        "layer_id": "L3",
+        "segment": "Packaging and bottling services"
+      },
+      {
+        "id": "M12",
+        "level": "market_map",
+        "text": "avocado oil packaging services",
+        "sub_sector": "packager",
+        "layer_id": "L3",
+        "segment": "Packaging and bottling services"
+      },
+      {
+        "id": "M13",
+        "level": "market_map",
+        "text": "avocado oil distributor",
+        "sub_sector": "distributor",
+        "layer_id": "L4",
+        "segment": "Distributors and wholesalers"
+      },
+      {
+        "id": "M14",
+        "level": "market_map",
+        "text": "avocado oil wholesale supplier",
+        "sub_sector": "wholesaler",
+        "layer_id": "L4",
+        "segment": "Distributors and wholesalers"
+      },
+      {
+        "id": "M15",
+        "level": "market_map",
+        "text": "buy avocado oil online official",
+        "sub_sector": "retailer",
+        "layer_id": "L4",
+        "segment": "E-commerce and specialty retailers"
+      },
+      {
+        "id": "M16",
+        "level": "market_map",
+        "text": "avocado oil retail company",
+        "sub_sector": "retailer",
+        "layer_id": "L4",
+        "segment": "E-commerce and specialty retailers"
+      },
+      {
+        "id": "M17",
+        "level": "market_map",
+        "text": "avocado oil producer Kenya",
+        "sub_sector": "africa_grower",
+        "layer_id": "L1",
+        "segment": "Avocado growers and fruit suppliers"
+      },
+      {
+        "id": "M18",
+        "level": "market_map",
+        "text": "avocado oil manufacturer Mexico",
+        "sub_sector": "latin_america_grower",
+        "layer_id": "L1",
+        "segment": "Avocado growers and fruit suppliers"
+      },
+      {
+        "id": "M19",
+        "level": "market_map",
+        "text": "avocado oil supplier India",
+        "sub_sector": "south_asia_processor",
+        "layer_id": "L2",
+        "segment": "Refiners and processors"
+      },
+      {
+        "id": "M20",
+        "level": "market_map",
+        "text": "avocado oil producer Middle East",
+        "sub_sector": "middle_east_processor",
+        "layer_id": "L2",
+        "segment": "Refiners and processors"
+      },
+      {
+        "id": "M21",
+        "level": "market_map",
+        "text": "avocado oil distributor South Africa",
+        "sub_sector": "africa_distributor",
+        "layer_id": "L4",
+        "segment": "Distributors and wholesalers"
+      },
+      {
+        "id": "M22",
+        "level": "market_map",
+        "text": "avocado oil supplier Indonesia",
+        "sub_sector": "southeast_asia_distributor",
+        "layer_id": "L4",
+        "segment": "Distributors and wholesalers"
+      },
+      {
+        "id": "M23",
+        "level": "market_map",
+        "text": "produtor de \u00f3leo de abacate",
+        "sub_sector": "brazil_grower",
+        "layer_id": "L1",
+        "segment": "Avocado growers and fruit suppliers"
+      },
+      {
+        "id": "M24",
+        "level": "market_map",
+        "text": "fabricante de \u00f3leo de abacate",
+        "sub_sector": "brazil_refiner",
+        "layer_id": "L2",
+        "segment": "Refiners and processors"
+      },
+      {
+        "id": "M25",
+        "level": "market_map",
+        "text": "distribuidor de \u00f3leo de abacate",
+        "sub_sector": "brazil_distributor",
+        "layer_id": "L4",
+        "segment": "Distributors and wholesalers"
+      },
+      {
+        "id": "M26",
+        "level": "market_map",
+        "text": "productor de aceite de aguacate",
+        "sub_sector": "mexico_grower",
+        "layer_id": "L1",
+        "segment": "Avocado growers and fruit suppliers"
+      },
+      {
+        "id": "M27",
+        "level": "market_map",
+        "text": "fabricante de aceite de aguacate",
+        "sub_sector": "mexico_refiner",
+        "layer_id": "L2",
+        "segment": "Refiners and processors"
+      },
+      {
+        "id": "M28",
+        "level": "market_map",
+        "text": "distribuidor de aceite de aguacate",
+        "sub_sector": "mexico_distributor",
+        "layer_id": "L4",
+        "segment": "Distributors and wholesalers"
+      }
+    ],
+    "market_map_source": "llm"
+  },
+  "scope_source": "llm",
+  "industry_vertical": "food and beverage",
+  "results_per_query": 28,
+  "api_status": {
+    "internet_dns": {
+      "status": "active",
+      "detail": ""
+    },
+    "duckduckgo": {
+      "status": "active",
+      "package": "ddgs(backend=brave,mojeek,duckduckgo,yahoo)",
+      "installed": true,
+      "backends": [
+        "brave",
+        "mojeek",
+        "duckduckgo",
+        "yahoo"
+      ],
+      "detail": "1 sample result(s)"
+    },
+    "searxng": {
+      "status": "active",
+      "url": "http://127.0.0.1:8080",
+      "detail": "reachable"
+    },
+    "llm": {
+      "status": "active",
+      "provider": "deepseek",
+      "detail": "compiler returned valid JSON (or partial scope) this run"
+    },
+    "wikidata": {
+      "status": "inactive",
+      "enabled": true,
+      "detail": "sample parent lookup: none"
+    },
+    "web_fetch": {
+      "status": "active",
+      "enabled": true,
+      "detail": "ddgs.extract OK \u2192 https://example.com"
+    },
+    "google_alerts": {
+      "status": "skipped",
+      "enabled": false,
+      "detail": "GOOGLE_ALERTS_ENABLED=false"
+    }
+  },
+  "funnel_prompts": [
+    {
+      "id": "L0",
+      "level": "L0",
+      "text": "avocado oil companies official websites"
+    },
+    {
+      "id": "L1",
+      "level": "L1",
+      "text": "avocado oil manufacturer corporate site"
+    },
+    {
+      "id": "L2",
+      "level": "L2",
+      "text": "avocado oil producer headquarters"
+    }
+  ],
+  "discovery_prompts": [
+    {
+      "id": "P1",
+      "level": "market_map",
+      "text": "avocado oil producer official site"
+    },
+    {
+      "id": "P2",
+      "level": "market_map",
+      "text": "avocado oil manufacturer company"
+    },
+    {
+      "id": "P3",
+      "level": "market_map",
+      "text": "cold pressed avocado oil manufacturer"
+    },
+    {
+      "id": "P4",
+      "level": "market_map",
+      "text": "avocado oil extraction company"
+    },
+    {
+      "id": "P5",
+      "level": "market_map",
+      "text": "avocado oil refining company"
+    },
+    {
+      "id": "P6",
+      "level": "market_map",
+      "text": "avocado oil contract manufacturing"
+    },
+    {
+      "id": "P7",
+      "level": "market_map",
+      "text": "bulk avocado oil supplier"
+    },
+    {
+      "id": "P8",
+      "level": "market_map",
+      "text": "private label avocado oil manufacturer"
+    },
+    {
+      "id": "P9",
+      "level": "market_map",
+      "text": "avocado oil brand official site"
+    },
+    {
+      "id": "P10",
+      "level": "market_map",
+      "text": "avocado oil company website"
+    },
+    {
+      "id": "P11",
+      "level": "market_map",
+      "text": "avocado oil bottling company"
+    },
+    {
+      "id": "P12",
+      "level": "market_map",
+      "text": "avocado oil packaging services"
+    }
+  ],
+  "discovery_prompt_count": 12,
+  "search_prompt_count": 10,
+  "search_smoke_test": {
+    "L0": {
+      "query": "avocado oil companies official websites",
+      "level": "L0",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Naturism video, Teen Nudism, Purenudism - Rutube",
+          "link": "https://rutube.ru/video/9102c266dc43c4efba5ae3faf3a769c3/",
+          "snippet": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u0432\u0438\u0434\u0435\u043e \u043e\u043d\u043b\u0430\u0439\u043d \u00abNaturism video, Teen Nudism, Purenudism\u00bb \u043d\u0430 \u043a\u0430\u043d\u0430\u043b\u0435 \u00abRoaring Rumble\u00bb \u0432 \u0445\u043e\u0440\u043e\u0448\u0435\u043c \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0438 \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Naturism video, Teen Nudism, Purenudism - Rutube",
+          "link": "https://rutube.ru/video/9102c266dc43c4efba5ae3faf3a769c3/",
+          "snippet": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u0432\u0438\u0434\u0435\u043e \u043e\u043d\u043b\u0430\u0439\u043d \u00abNaturism video, Teen Nudism, Purenudism\u00bb \u043d\u0430 \u043a\u0430\u043d\u0430\u043b\u0435 \u00abRoaring Rumble\u00bb \u0432 \u0445\u043e\u0440\u043e\u0448\u0435\u043c \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0438 \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "L1": {
+      "query": "avocado oil manufacturer corporate site",
+      "level": "L1",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "YouTube Creator Awards - YouTube Help - Google Help",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "YouTube Creator Awards - YouTube Help - Google Help",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "L2": {
+      "query": "avocado oil producer headquarters",
+      "level": "L2",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "View, delete, or turn on or off watch history",
+          "link": "https://support.google.com/youtube/answer/95725?hl=en&co=GENIE.Platform%3DDesktop",
+          "snippet": "YouTube watch history makes it easy to find videos you recently watched, and, when it\u2019s turned on, allows us to give relevant video \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "View, delete, or turn on or off watch history",
+          "link": "https://support.google.com/youtube/answer/95725?hl=en&co=GENIE.Platform%3DDesktop",
+          "snippet": "YouTube watch history makes it easy to find videos you recently watched, and, when it\u2019s turned on, allows us to give relevant video \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P1": {
+      "query": "avocado oil producer official site",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Visual Studio Code - The open source AI code editor | Your home for ...",
+          "link": "https://code.visualstudio.com/",
+          "snippet": "Code anywhere Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev). Built-in Source Control \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Visual Studio Code - The open source AI code editor | Your home for ...",
+          "link": "https://code.visualstudio.com/",
+          "snippet": "Code anywhere Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev). Built-in Source Control \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P2": {
+      "query": "avocado oil manufacturer company",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "\u516c\u53f8\u91cc\u7684\u7535\u8111\u76d1\u63a7\u8f6f\u4ef6\u4e00\u822c\u80fd\u591f\u76d1\u63a7\u5230\u4ec0\u4e48\u7a0b\u5ea6\uff1f - \u77e5\u4e4e",
+          "link": "https://www.zhihu.com/question/19768795",
+          "snippet": "\u521a\u597d\u524d\u51e0\u5929\u548c\u51e0\u4e2a\u540c\u4e8b\u4e5f\u8ba8\u8bba\u8fc7\u8fd9\u4e2a\u95ee\u9898\u3002 \u4e00\u3001\u5982\u679c\u7535\u8111\u5ba2\u6237\u7aef\u6709\u5b89\u88c5\u7b2c\u4e09\u65b9\u5b89\u5168\u7c7b\u8f6f\u4ef6 (\u6b64\u5b89\u5168\u975e\u6740\u6bd2\u8f6f\u4ef6)\u6216\u8005\u76d1\u63a7\u8f6f\u4ef6\uff0c\u90a3\u4e48\u4f60 \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "\u516c\u53f8\u91cc\u7684\u7535\u8111\u76d1\u63a7\u8f6f\u4ef6\u4e00\u822c\u80fd\u591f\u76d1\u63a7\u5230\u4ec0\u4e48\u7a0b\u5ea6\uff1f - \u77e5\u4e4e",
+          "link": "https://www.zhihu.com/question/19768795",
+          "snippet": "\u521a\u597d\u524d\u51e0\u5929\u548c\u51e0\u4e2a\u540c\u4e8b\u4e5f\u8ba8\u8bba\u8fc7\u8fd9\u4e2a\u95ee\u9898\u3002 \u4e00\u3001\u5982\u679c\u7535\u8111\u5ba2\u6237\u7aef\u6709\u5b89\u88c5\u7b2c\u4e09\u65b9\u5b89\u5168\u7c7b\u8f6f\u4ef6 (\u6b64\u5b89\u5168\u975e\u6740\u6bd2\u8f6f\u4ef6)\u6216\u8005\u76d1\u63a7\u8f6f\u4ef6\uff0c\u90a3\u4e48\u4f60 \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P3": {
+      "query": "cold pressed avocado oil manufacturer",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Common Cold (Rhinovirus): Symptoms & Causes - Cleveland Clinic",
+          "link": "https://my.clevelandclinic.org/health/diseases/12342-common-cold",
+          "snippet": "The common cold is an upper respiratory infection that affects your nose, throat, sinuses and windpipe. Colds usually go away on their own within a week to 10 days.",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Common Cold (Rhinovirus): Symptoms & Causes - Cleveland Clinic",
+          "link": "https://my.clevelandclinic.org/health/diseases/12342-common-cold",
+          "snippet": "The common cold is an upper respiratory infection that affects your nose, throat, sinuses and windpipe. Colds usually go away on their own within a week to 10 days.",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P4": {
+      "query": "avocado oil extraction company",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "PDF to WORD | Convert PDF to Word online for free - iLovePDF",
+          "link": "https://www.ilovepdf.com/pdf_to_word",
+          "snippet": "Convert PDF to editable Word documents for free. PDF to Word conversion is fast, secure and almost 100% accurate. Convert \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "PDF to WORD | Convert PDF to Word online for free - iLovePDF",
+          "link": "https://www.ilovepdf.com/pdf_to_word",
+          "snippet": "Convert PDF to editable Word documents for free. PDF to Word conversion is fast, secure and almost 100% accurate. Convert \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P5": {
+      "query": "avocado oil refining company",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "VR Church + MMO Church \u00b7 The Metaverse Church",
+          "link": "https://vrchurch.org/",
+          "snippet": "VR Church launched in 2016, when a small group put on headsets and held the first known worship service inside virtual reality. Bishop D.J. Soto led the gathering which was part experiment, part \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "VR Church + MMO Church \u00b7 The Metaverse Church",
+          "link": "https://vrchurch.org/",
+          "snippet": "VR Church launched in 2016, when a small group put on headsets and held the first known worship service inside virtual reality. Bishop D.J. Soto led the gathering which was part experiment, part \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P6": {
+      "query": "avocado oil contract manufacturing",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Download GitHub Desktop",
+          "link": "https://desktop.github.com/download/",
+          "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Download GitHub Desktop",
+          "link": "https://desktop.github.com/download/",
+          "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P7": {
+      "query": "bulk avocado oil supplier",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "YouTube Creator Awards",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build thriving communities, responsibly. To be eligible for a Creator Award, ",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "YouTube Creator Awards",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build thriving communities, responsibly. To be eligible for a Creator Award, ",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "D1": {
+      "query": "avocado oil manufacturer official website",
+      "level": "volume_supplement",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "YouTube Creator Awards - YouTube Help - Google Help",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build thriving communities, responsibly. To be eligible for a Creator Award, ",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "YouTube Creator Awards - YouTube Help - Google Help",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build thriving communities, responsibly. To be eligible for a Creator Award, ",
+          "backend": "searxng"
+        }
+      ],
+      "note": "Auto supplement \u2014 low Phase 1 hit count"
+    },
+    "D2": {
+      "query": "avocado oil manufacturing company corporate site",
+      "level": "volume_supplement",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "\u600e\u4e48\u67e5\u8be2\u5230\u4e00\u4e2a\u4eba\u7684\u6296\u97f3\u53f7\u5462? - \u77e5\u4e4e",
+          "link": "https://www.zhihu.com/question/10920003233",
+          "snippet": "Jan 31, 2025 \u00b7 7. **\u901a\u8fc7\u6296\u97f3\u6d3b\u52a8\u6216\u6311\u6218** - **\u6b65\u9aa4**\uff1a\u5982\u679c\u5bf9\u65b9\u53c2\u4e0e\u4e86\u67d0\u4e2a\u6296\u97f3\u6d3b\u52a8\u6216\u6311\u6218\uff0c\u53ef\u4ee5\u5728\u76f8\u5173\u89c6\u9891\u4e0b\u627e\u5230\u5176\u6296\u97f3\u53f7\u3002 - **\u64cd \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "\u600e\u4e48\u67e5\u8be2\u5230\u4e00\u4e2a\u4eba\u7684\u6296\u97f3\u53f7\u5462? - \u77e5\u4e4e",
+          "link": "https://www.zhihu.com/question/10920003233",
+          "snippet": "Jan 31, 2025 \u00b7 7. **\u901a\u8fc7\u6296\u97f3\u6d3b\u52a8\u6216\u6311\u6218** - **\u6b65\u9aa4**\uff1a\u5982\u679c\u5bf9\u65b9\u53c2\u4e0e\u4e86\u67d0\u4e2a\u6296\u97f3\u6d3b\u52a8\u6216\u6311\u6218\uff0c\u53ef\u4ee5\u5728\u76f8\u5173\u89c6\u9891\u4e0b\u627e\u5230\u5176\u6296\u97f3\u53f7\u3002 - **\u64cd \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "note": "Auto supplement \u2014 low Phase 1 hit count"
+    },
+    "D3": {
+      "query": "avocado oil supplier official corporate site",
+      "level": "volume_supplement",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "\u5982\u4f55\u5f3a\u5236\u64ad\u653e Netflix 1080P \u6e05\u6670\u5ea6\u89c6\u9891\uff1f - \u77e5\u4e4e",
+          "link": "https://www.zhihu.com/question/406310327",
+          "snippet": "Jan 25, 2019 \u00b7 \u5f88\u591a\u4eba\u90fd\u4ee5\u4e3a Netflix \u53ea\u80fd\u81ea\u52a8\u5339\u914d\u6e05\u6670\u5ea6\uff0c\u4e0d\u80fd\u624b\u52a8\u9009\u62e9\uff0c\u5176\u5b9e\u662f\u6709\u529e\u6cd5\u5f3a\u5236\u5f00\u542f 1080P \u7684\uff0c\u672c\u6587\u5c06\u6559\u4f60\u5982\u4f55\u5f00\u542f\u3002 \u5f71\u54cd\u4f60\u89c2\u770b Netflix \u89c6\u9891\u6e05\u6670\u5ea6\u7684\u6709\u4e09\u4e2a\u56e0\u7d20\uff1a Netflix \u4f1a\u5458\u2014\u2014\u53ea\u6709\u9ad8\u7ea7 \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "\u5982\u4f55\u5f3a\u5236\u64ad\u653e Netflix 1080P \u6e05\u6670\u5ea6\u89c6\u9891\uff1f - \u77e5\u4e4e",
+          "link": "https://www.zhihu.com/question/406310327",
+          "snippet": "Jan 25, 2019 \u00b7 \u5f88\u591a\u4eba\u90fd\u4ee5\u4e3a Netflix \u53ea\u80fd\u81ea\u52a8\u5339\u914d\u6e05\u6670\u5ea6\uff0c\u4e0d\u80fd\u624b\u52a8\u9009\u62e9\uff0c\u5176\u5b9e\u662f\u6709\u529e\u6cd5\u5f3a\u5236\u5f00\u542f 1080P \u7684\uff0c\u672c\u6587\u5c06\u6559\u4f60\u5982\u4f55\u5f00\u542f\u3002 \u5f71\u54cd\u4f60\u89c2\u770b Netflix \u89c6\u9891\u6e05\u6670\u5ea6\u7684\u6709\u4e09\u4e2a\u56e0\u7d20\uff1a Netflix \u4f1a\u5458\u2014\u2014\u53ea\u6709\u9ad8\u7ea7 \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "note": "Auto supplement \u2014 low Phase 1 hit count"
+    },
+    "D4": {
+      "query": "avocado oil exporter official company",
+      "level": "volume_supplement",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Gmail - Google Accounts",
+          "link": "https://accounts.google.com/login?service=mail",
+          "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that\u2019s intuitive, efficient, and useful. 15 \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Gmail - Google Accounts",
+          "link": "https://accounts.google.com/login?service=mail",
+          "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that\u2019s intuitive, efficient, and useful. 15 \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "note": "Auto supplement \u2014 low Phase 1 hit count"
+    },
+    "D5": {
+      "query": "avocado oil company headquarters official site",
+      "level": "volume_supplement",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+          "link": "https://www.microsoft.com/en-in/microsoft-365/word?msockid=13ad39af382762282de72e1e39be6354",
+          "snippet": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+          "link": "https://www.microsoft.com/en-in/microsoft-365/word?msockid=13ad39af382762282de72e1e39be6354",
+          "snippet": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "note": "Auto supplement \u2014 low Phase 1 hit count"
+    },
+    "D6": {
+      "query": "avocado oil subsidiary corporate profile",
+      "level": "volume_supplement",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "YouTube Creator Awards - YouTube Help - Google Help",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build thriving communities, responsibly. To be eligible for a Creator Award, ",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "YouTube Creator Awards - YouTube Help - Google Help",
+          "link": "https://support.google.com/youtube/answer/7682560?hl=en",
+          "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build thriving communities, responsibly. To be eligible for a Creator Award, ",
+          "backend": "searxng"
+        }
+      ],
+      "note": "Auto supplement \u2014 low Phase 1 hit count"
+    }
+  },
+  "export_column_spec": {
+    "company_list": [
+      "display_name",
+      "parent_group",
+      "primary_domain",
+      "company_type",
+      "tier",
+      "score",
+      "inclusion_reason",
+      "inclusion_sources",
+      "funnel_levels_seen",
+      "evidence_urls",
+      "company_description"
+    ],
+    "parent_group_list": [
+      "parent_name",
+      "brands_in_company_list",
+      "listing_mode"
+    ],
+    "suppressed_brands": [
+      "name",
+      "reason"
+    ],
+    "run_summary": [
+      "run_id",
+      "query",
+      "interpretation_summary",
+      "company_count",
+      "mock_mode",
+      "search_primary",
+      "funnel_levels"
+    ]
+  },
+  "warnings": [
+    "SKIP_DDGS=true \u2014 ddgs disabled; router fallbacks only (Bing HTML / SearXNG).",
+    "Website scrape: ddgs.extract() (SCRAPE_BACKEND=ddgs, fmt=text_markdown)",
+    "Low search volume in Phase 1 smoke test (10 total hits). Phase 2 will run more prompts; set SKIP_BING_HTML=false or start SearXNG if search is thin."
+  ],
+  "searxng_active_url": "http://127.0.0.1:8080",
+  "duckduckgo_package": "ddgs(backend=brave,mojeek,duckduckgo,yahoo)",
+  "volume_supplement_searches": 6
+}

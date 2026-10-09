@@ -1,0 +1,369 @@
+[batch 00:35:56] 6 market(s) queued, target=300 each
+[batch 00:35:56]   1. Global Silicon Carbide Market
+[batch 00:35:56]   2. Global Wearable Glucometer Market
+[batch 00:35:56]   3. Global Dry Eye Treatment Market
+[batch 00:35:56]   4. Global Solar Rooftop Market
+[batch 00:35:56]   5. Global Polyurethane Market
+[batch 00:35:56]   6. Global Communication Platform as a Service Market
+[batch 00:35:56] 
+[batch 00:35:56] === [1/6] START Global Silicon Carbide Market ===
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Silicon Carbide Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=0fd2e7e4 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=230 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=6c_score status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers are industrial, automotive, electronics, and energy enterprises purchasing materials for component and device manufacturing.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because companies in this market fundamentally compete on producing and supplying physical silicon carbide materials and semiconductor devices under their own operational capacity, whereas distributors merely handle logistics and resale.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: SKIP (checkpoint) — 300 recalled
+  [chatgpt] Step 2/6: SKIP (checkpoint) — 0 openai-discovered
+  [chatgpt] Step 3/6: SKIP (checkpoint) — 0 ddgs extracted
+  [chatgpt] Step 4/6: SKIP (checkpoint) — kept=257 rejected=43
+    → substep 4c: SKIP merge (checkpoint) — merged=231 to_fill=231
+  [chatgpt] Step 5/6: SKIP (checkpoint) — 231 filled
+    → substep 5c: merged filled rows into list (231 total)
+  [chatgpt] Step 6/6: SKIP (checkpoint) — kept=231 rejected=0
+    → substep 6p: SKIP purity (checkpoint) — 231 rows
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] drop 'Thermlyte Monolithic Pvt Ltd': out of market
+  [relevance] Global Silicon Carbide Market: in=231 geo_drop=0 heur_drop=0 llm_drop=1 kept=228 market_type=B2B uniform_role=Manufacturer
+  [xy] market-fit filter (B2B): 231 -> 230 companies (roles=['Manufacturer'])
+  [xy] industry=Chemical and Materials/Advanced Materials axis_def=llm | X=Product Strength ['Substrate & Epitaxy Quality', 'Device Performance & Reliability', 'Wafer Size & Defect Density', 'R&D and Patent Strength', 'Manufacturing Yield & Scalability'] | Y=Business Strength ['Market Share & Customer Base', 'Revenue Growth & Profitability', 'Capacity Expansion & Supply Chain', 'Geographic & Application Diversification', 'Strategic Partnerships & Alliances']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+    → [xy] score 2/230 Abadan Silicon Carbide Production Complex
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+    → [xy] score 3/230 Adesis Vacuum and Semiconductor
+    → [xy] score 6/230 Alpha and Omega Semiconductor Limited
+    → [xy] score 9/230 Anhui Aishei Power Semiconductor Co., Ltd.
+      · score Anhui Aishei Power Semiconductor Co., Lt: unparsed reply 'UNKNOWN'
+      · score Anhui Aishei Power Semiconductor Co., Lt: unparsed reply 'UNKNOWN'
+    → [xy] no score for Anhui Aishei Power Semiconductor Co., Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 10/230 APSEMI CO.,LTD
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+    → [xy] score 11/230 Aritech Chemazone Pvt Ltd
+    → [xy] score 12/230 Atecom Technology Co., Ltd.
+    → [xy] score 13/230 Aum Industry
+      · score Aum Industry: unparsed reply '0'
+    → [xy] no score for Aum Industry (AI Mode unavailable) — left unscored for retry
+    → [xy] score 14/230 Bhukhanvala Industries Pvt Ltd
+      · score Bhukhanvala Industries Pvt Ltd: unparsed reply 'UNKNOWN'
+    → [xy] no score for Bhukhanvala Industries Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 15/230 BJS Ceramics GmbH
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · score BJS Ceramics GmbH: unparsed reply '0'
+    → [xy] no score for BJS Ceramics GmbH (AI Mode unavailable) — left unscored for retry
+    → [xy] score 16/230 Blasch Precision Ceramics, Inc.
+    → [xy] score 17/230 BorgWarner Inc.
+    → [xy] score 18/230 Boroptik Mühendislik A.Ş.
+      · score Boroptik Mühendislik A.Ş.: unparsed reply '0'
+    → [xy] no score for Boroptik Mühendislik A.Ş. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 19/230 Bruckewell Technology Corp., Ltd.
+    → [xy] score 20/230 BYD Semiconductor Co., Ltd.
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+    → [xy] score 21/230 C&S Mining Services Pty Ltd
+      · score C&S Mining Services Pty Ltd: unparsed reply '0'
+    → [xy] no score for C&S Mining Services Pty Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 22/230 Calyco Mining Equipment Supplies
+      · score Calyco Mining Equipment Supplies: unparsed reply '0'
+    → [xy] no score for Calyco Mining Equipment Supplies (AI Mode unavailable) — left unscored for retry
+    → [xy] score 23/230 Carbograf Industrial S.A. de C.V.
+      · score Carbograf Industrial S.A. de C.V.: unparsed reply '0'
+    → [xy] no score for Carbograf Industrial S.A. de C.V. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 24/230 CARBORUNDUM ELECTRITE a.s.
+    → [xy] score 25/230 Carborundum Universal Limited
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · score Carborundum Universal Limited: unparsed reply '32 If you would like to adjust the weightings or need a breakdown for a different market segment (su'
+    → [xy] no score for Carborundum Universal Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 26/230 CEC Compound Semiconductor Co., Ltd.
+    → [xy] score 27/230 CeramTec GmbH
+    → [xy] score 28/230 Cermet Sintered Technology LLP
+      · score Cermet Sintered Technology LLP: unparsed reply '0'
+    → [xy] no score for Cermet Sintered Technology LLP (AI Mode unavailable) — left unscored for retry
+    → [xy] score 29/230 Christy Refractories Company LLC
+    → [xy] score 30/230 Cissoid S.A.
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+    → [xy] score 31/230 Coherent Corp.
+    → [xy] score 32/230 Compagnie de Saint-Gobain S.A.
+      · score Compagnie de Saint-Gobain S.A.: unparsed reply '0'
+    → [xy] no score for Compagnie de Saint-Gobain S.A. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 33/230 Continental Device India Private Limited
+    → [xy] score 34/230 CoolCAD Electronics LLC
+    → [xy] score 35/230 CoorsTek, Inc.
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+    → [xy] score 36/230 Corona Cadinhos e Produtos Refratários Ltda.
+    → [xy] score 37/230 CVSIC Element Co., Ltd.
+      · score CVSIC Element Co., Ltd.: unparsed reply '0'
+    → [xy] no score for CVSIC Element Co., Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 38/230 DACO Semiconductor Co., Ltd.
+    → [xy] score 39/230 Diodes Incorporated
+    → [xy] score 40/230 Diotec Semiconductor AG
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+    → [xy] score 41/230 Dongguan XY New Material Co., Ltd.
+    → [xy] score 42/230 Dynex Semiconductor Ltd
+      · score Dynex Semiconductor Ltd: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Dynex Semiconductor Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 43/230 Egyptian Abrasives Co. (EACO)
+      · score Egyptian Abrasives Co. (EACO): unparsed reply '0'
+      · score Egyptian Abrasives Co. (EACO): TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Egyptian Abrasives Co. (EACO) (AI Mode unavailable) — left unscored for retry
+    → [xy] score 44/230 Egyptian Abrasives Company
+      · score Egyptian Abrasives Company: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Egyptian Abrasives Company: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Egyptian Abrasives Company (AI Mode unavailable) — left unscored for retry
+    → [xy] score 45/230 Electro Abrasives, LLC
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · score Electro Abrasives, LLC: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Electro Abrasives, LLC: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Electro Abrasives, LLC (AI Mode unavailable) — left unscored for retry
+    → [xy] score 46/230 Elfusa Geral de Eletrofusão Ltda.
+      · score Elfusa Geral de Eletrofusão Ltda.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Elfusa Geral de Eletrofusão Ltda.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Elfusa Geral de Eletrofusão Ltda. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 47/230 Elkem ASA
+      · score Elkem ASA: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Elkem ASA: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Elkem ASA (AI Mode unavailable) — left unscored for retry
+    → [xy] score 48/230 Entegris, Inc.
+      · score Entegris, Inc.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Entegris, Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 49/230 Epiworld International Co., Ltd.
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · score Epiworld International Co., Ltd.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Epiworld International Co., Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 50/230 ESD-SIC b.v.
+      · score ESD-SIC b.v.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score ESD-SIC b.v.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for ESD-SIC b.v. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 51/230 ESK-SiC GmbH
+      · score ESK-SiC GmbH: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score ESK-SiC GmbH: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for ESK-SiC GmbH (AI Mode unavailable) — left unscored for retry
+    → [xy] score 52/230 EYEQ Lab Inc.
+      · score EYEQ Lab Inc.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score EYEQ Lab Inc.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for EYEQ Lab Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 53/230 Ferrotec Holdings Corporation
+      · score Ferrotec Holdings Corporation: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Ferrotec Holdings Corporation: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Ferrotec Holdings Corporation (AI Mode unavailable) — left unscored for retry
+    → [xy] score 54/230 Fetek Technology Corp.
+      · score Fetek Technology Corp.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · score Fetek Technology Corp.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Fetek Technology Corp. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 55/230 Fiven ASA
+      · score Fiven ASA: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Fiven ASA: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Fiven ASA (AI Mode unavailable) — left unscored for retry
+    → [xy] score 56/230 FMS - Enterprises Migun LTD
+      · score FMS - Enterprises Migun LTD: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score FMS - Enterprises Migun LTD: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for FMS - Enterprises Migun LTD (AI Mode unavailable) — left unscored for retry
+    → [xy] score 57/230 Fortune Minerals And Engineering Private Limited
+      · score Fortune Minerals And Engineering Private: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Fortune Minerals And Engineering Private: unparsed reply 'UNKNOWN'
+    → [xy] no score for Fortune Minerals And Engineering Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 58/230 Fountyl Technologies Pte. Ltd.
+    → [xy] score 59/230 Fuji Electric Co., Ltd.
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+    → [xy] score 60/230 FX Minerals Inc.
+      · score FX Minerals Inc.: unparsed reply '0'
+    → [xy] no score for FX Minerals Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 61/230 GeneSiC Semiconductor Inc.
+    → [xy] score 62/230 Gipfel Engineering
+      · score Gipfel Engineering: unparsed reply '0'
+    → [xy] no score for Gipfel Engineering (AI Mode unavailable) — left unscored for retry
+    → [xy] score 63/230 Global Power Technologies Group
+      · score Global Power Technologies Group: unparsed reply 'UNKNOWN'
+    → [xy] no score for Global Power Technologies Group (AI Mode unavailable) — left unscored for retry
+    → [xy] score 64/230 Global Power Technologies Group Inc.
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · score Global Power Technologies Group Inc.: unparsed reply '33 If you would like me to adjust the individual parameter scores or evaluate another company in the'
+    → [xy] no score for Global Power Technologies Group Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 65/230 GlobalWafers Co., Ltd.
+    → [xy] score 66/230 Grindwell Norton Limited
+      · score Grindwell Norton Limited: unparsed reply '0'
+    → [xy] no score for Grindwell Norton Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 67/230 GT Advanced Technologies Inc.
+    → [xy] score 68/230 Guangdong TySiC Semiconductor Co., Ltd.
+    → [xy] score 69/230 Harini Engineering
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · score Harini Engineering: unparsed reply 'UNKNOWN'
+    → [xy] no score for Harini Engineering (AI Mode unavailable) — left unscored for retry
+    → [xy] score 70/230 Hebei Synlight Crystal Co., Ltd.
+    → [xy] score 71/230 Hebei Synlight Semiconductor Co., Ltd.
+    → [xy] score 72/230 Hermetic Seals and Components
+      · score Hermetic Seals and Components: unparsed reply '0'
+    → [xy] no score for Hermetic Seals and Components (AI Mode unavailable) — left unscored for retry
+    → [xy] score 73/230 Hitachi Energy Ltd
+    → [xy] score 74/230 Hitachi Energy Ltd.
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+    → [xy] score 75/230 Hunan Sanan Semiconductor Co., Ltd.
+    → [xy] score 76/230 Imerys Fused Minerals Salto Ltda.
+    → [xy] score 77/230 Imerys S.A.
+      · score Imerys S.A.: unparsed reply '0'
+    → [xy] no score for Imerys S.A. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 78/230 Indian Abrasives
+      · score Indian Abrasives: unparsed reply '0'
+    → [xy] no score for Indian Abrasives (AI Mode unavailable) — left unscored for retry
+    → [xy] score 79/230 Infineon Technologies AG
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+    → [xy] score 80/230 Infinite Abrasives Company
+    → [xy] score 81/230 Intelligent Materials Private Limited
+      · score Intelligent Materials Private Limited: unparsed reply 'UNKNOWN'
+    → [xy] no score for Intelligent Materials Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 82/230 International Company for Silicon Carbide Producti
+      · score International Company for Silicon Carbid: unparsed reply 'UNKNOWN'
+      · score International Company for Silicon Carbid: unparsed reply 'UNKNOWN'
+    → [xy] no score for International Company for Silicon Carbide Producti (AI Mode unavailable) — left unscored for retry
+    → [xy] score 83/230 Inventchip Technology Co., Ltd.
+    → [xy] score 84/230 Italker S.r.l.
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · score Italker S.r.l.: unparsed reply '0'
+    → [xy] no score for Italker S.r.l. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 85/230 Ithayela Installation & Refractory Projects (Pty) 
+      · score Ithayela Installation & Refractory Proje: unparsed reply 'UNKNOWN'
+    → [xy] no score for Ithayela Installation & Refractory Projects (Pty)  (AI Mode unavailable) — left unscored for retry
+    → [xy] score 86/230 IXYS Corporation
+    → [xy] score 87/230 Jiangsu JieJie Microelectronics Co., Ltd.
+    → [xy] score 88/230 JS Abrasives India Private Limited
+      · score JS Abrasives India Private Limited: unparsed reply '0'
+    → [xy] no score for JS Abrasives India Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 89/230 JXT Semi Technology Co., Ltd.
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+    → [xy] score 90/230 Kanthal AB
+    → [xy] score 91/230 Kares Seramik Sanayi ve Ticaret Ltd. Sti.
+      · score Kares Seramik Sanayi ve Ticaret Ltd. Sti: unparsed reply '0'
+    → [xy] no score for Kares Seramik Sanayi ve Ticaret Ltd. Sti. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 92/230 Kares Seramik Sanayi ve Ticaret Ltd. Şti.
+      · score Kares Seramik Sanayi ve Ticaret Ltd. Şti: unparsed reply '0'
+    → [xy] no score for Kares Seramik Sanayi ve Ticaret Ltd. Şti. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 93/230 KEC Corporation
+    → [xy] score 94/230 Kiselkarbid i Stockholm AB
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+    → [xy] score 95/230 KRAM Engineering (Pty) Ltd
+    → [xy] score 96/230 Kyocera Corporation
+    → [xy] score 97/230 L.S. Abrasives & Trading Co.
+      · score L.S. Abrasives & Trading Co.: unparsed reply 'UNKNOWN'
+    → [xy] no score for L.S. Abrasives & Trading Co. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 98/230 Laxmipriya Abrasives
+      · score Laxmipriya Abrasives: unparsed reply '0'
+    → [xy] no score for Laxmipriya Abrasives (AI Mode unavailable) — left unscored for retry
+    → [xy] score 99/230 Lianyungang City Rong Tai Silicon Carbide Co., Ltd
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · score Lianyungang City Rong Tai Silicon Carbid: unparsed reply '1.0 Would you like to analyze a different semiconductor industry player or recalculate with weighted'
+    → [xy] no score for Lianyungang City Rong Tai Silicon Carbide Co., Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 100/230 Littelfuse, Inc.
+    → [xy] score 101/230 MacMic Science & Technology Co., Ltd.
+    → [xy] score 102/230 Mandeep Minerals
+      · score Mandeep Minerals: unparsed reply '0'
+    → [xy] no score for Mandeep Minerals (AI Mode unavailable) — left unscored for retry
+    → [xy] score 103/230 MaxPower Semiconductor Inc.
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · score MaxPower Semiconductor Inc.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score MaxPower Semiconductor Inc.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for MaxPower Semiconductor Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 104/230 Mersen Boostec
+      · score Mersen Boostec: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Mersen Boostec (AI Mode unavailable) — left unscored for retry
+    → [xy] score 105/230 Mersen SA
+      · score Mersen SA: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Mersen SA: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Mersen SA (AI Mode unavailable) — left unscored for retry
+    → [xy] score 106/230 Mi Technovation Berhad
+      · score Mi Technovation Berhad: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Mi Technovation Berhad: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Mi Technovation Berhad (AI Mode unavailable) — left unscored for retry
+    → [xy] score 107/230 Micro Blaster
+      · score Micro Blaster: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Micro Blaster: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Micro Blaster (AI Mode unavailable) — left unscored for retry
+    → [xy] score 108/230 Micro Commercial Components Corp.
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · score Micro Commercial Components Corp.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Micro Commercial Components Corp.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Micro Commercial Components Corp. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 109/230 Microchip Technology Inc.
+      · score Microchip Technology Inc.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Microchip Technology Inc.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Microchip Technology Inc. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 110/230 Microfine Carbides
+      · score Microfine Carbides: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Microfine Carbides: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Microfine Carbides (AI Mode unavailable) — left unscored for retry
+    → [xy] score 111/230 Mitsubishi Electric Corporation
+      · score Mitsubishi Electric Corporation: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Mitsubishi Electric Corporation: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Mitsubishi Electric Corporation (AI Mode unavailable) — left unscored for retry
+    → [xy] score 112/230 Morgan Advanced Materials plc
+      · score Morgan Advanced Materials plc: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Morgan Advanced Materials plc: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Morgan Advanced Materials plc (AI Mode unavailable) — left unscored for retry
+    → [xy] score 113/230 Navarro SiC S.A.
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · score Navarro SiC S.A.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Navarro SiC S.A.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Navarro SiC S.A. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 114/230 Navitas Semiconductor Corp.
+      · score Navitas Semiconductor Corp.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Navitas Semiconductor Corp.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Navitas Semiconductor Corp. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 115/230 Naxos Australia Pty Ltd
+      · score Naxos Australia Pty Ltd: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score Naxos Australia Pty Ltd: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Naxos Australia Pty Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 116/230 New He Qiao Shareholdings Company
+      · score New He Qiao Shareholdings Company: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+      · score New He Qiao Shareholdings Company: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for New He Qiao Shareholdings Company (AI Mode unavailable) — left unscored for retry
+    → [xy] score 117/230 Nexperia B.V.
+      · score Nexperia B.V.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Nexperia B.V. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 118/230 Ningxia Long Silicon Material Co., Ltd.
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+      · score Ningxia Long Silicon Material Co., Ltd.: TypeError: resolve_channel() missing 1 required positional argument: 'extensions'
+    → [xy] no score for Ningxia Long Silicon Material Co., Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 119/230 NTB High Tech Ceramics
+    → [xy] score 120/230 Nurol Teknoloji Sanayi ve Ticaret A.S.
+    → [xy] score 121/230 NXP Semiconductors N.V.
+      · score NXP Semiconductors N.V.: unparsed reply '0'
+    → [xy] no score for NXP Semiconductors N.V. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 122/230 Omkar Abrasives
+      · score Omkar Abrasives: unparsed reply '0'
+    → [xy] no score for Omkar Abrasives (AI Mode unavailable) — left unscored for retry
+    → [xy] score 123/230 Omkar Grindtech
+  [ai-mode] CAPTCHA (24 this run) — solve it in the browser window
+      · score Omkar Grindtech: unparsed reply '0'
+    → [xy] no score for Omkar Grindtech (AI Mode unavailable) — left unscored for retry
+    → [xy] score 124/230 onsemi Corporation
+    → [xy] score 125/230 Pacific Rundum Co., Ltd.
+    → [xy] score 126/230 PANJIT International Inc.
+    → [xy] score 127/230 Pennekamp Middle East FZCO
+      · score Pennekamp Middle East FZCO: unparsed reply '0'
+    → [xy] no score for Pennekamp Middle East FZCO (AI Mode unavailable) — left unscored for retry
+    → [xy] score 128/230 PJSC Volzhsky Abrasive Works
+  [ai-mode] CAPTCHA (25 this run) — solve it in the browser window
+    → [xy] score 129/230 PJSC Zaporozhsky Abrasivny Combinat
+    → [xy] score 130/230 PN Junction Semiconductor Co., Ltd.
+    → [xy] score 131/230 Power Integrations, Inc.
+    → [xy] score 132/230 Power Master Semiconductor Co., Ltd.

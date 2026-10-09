@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Nordic Semiconductor focuses on ultra-low-power wireless SoCs and does not disclose advanced process nodes like 3nm or 2nm; its products typically use mature nodes (e.g., 22nm for nRF54 series).",
+      "evidence_urls": ["https://www.nordicsemi.com/Products/Technologies/Edge-AI"],
+      "evidence_snippets": ["nRF54L15 SoC ... ultra-low power consumption"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Nordic leads in ultra-low-power wireless connectivity (Bluetooth LE, proprietary 2.4GHz) but does not compete in leading-edge logic process technologies like FinFET or GAA.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["ultra-low power wireless connectivity solutions"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Nordic's roadmap focuses on enhancing its nRF54 series with edge AI and improved power efficiency, but it does not publicly detail next-generation node transitions like 2nm or 1.4nm.",
+      "evidence_urls": ["https://www.nordicsemi.com/Products/Technologies/Edge-AI"],
+      "evidence_snippets": ["nRF54LM20 DK now available"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Nordic is specialized in wireless connectivity SoCs and SiPs, with some PMICs and software, but does not offer broad categories like memory or high-performance logic.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["ultra-low power wireless connectivity solutions"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Nordic's revenue is primarily from wireless connectivity SoCs, with no public breakdown across logic, memory, or analog; portfolio is not diversified across major semiconductor categories.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Nordic is a fabless company and partners with OSAT providers for assembly and test, but does not offer OSAT services itself.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Nordic owns proprietary radio and low-power architecture IP, including its 2.4GHz transceivers and protocol stacks, but does not design CPUs or GPUs.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["ultra-low power wireless connectivity solutions"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Nordic relies on third-party CPU IP (Arm Cortex-M) and RISC-V for some products, and does not license its core IP to other firms.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["dual Arm Cortex-M33 processors"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Nordic's architecture is strong in low-power wireless for IoT and edge AI, but not in high-performance AI, 5G, or automotive domains.",
+      "evidence_urls": ["https://www.nordicsemi.com/Products/Technologies/Edge-AI"],
+      "evidence_snippets": ["unlock ultra-low-power edge AI"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Nordic is fabless and does not own wafer fabrication capacity; it relies on foundry partners, so no wafers per month or utilization data.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "As a fabless company, Nordic does not have its own yield rates; yields are managed by foundry partners, and no public benchmarks are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Nordic offers SiP (system-in-package) modules and works with OSAT partners for packaging, but does not offer advanced packaging like 2.5D/3D or chiplets.",
+      "evidence_urls": ["https://www.nordicsemi.com/Products/Development-hardware/nRF93M1-DK"],
+      "evidence_snippets": ["Cat 1 bis module"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Nordic likely holds ISO 9001 and other standard certifications, but specific certifications are not mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Nordic emphasizes reliability for IoT applications, but no specific DPPM data or detailed reliability processes are provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Nordic complies with environmental regulations like RoHS and REACH as a standard practice, but no specific evidence is in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Nordic has global sales and R&D presence, with headquarters in Norway and offices worldwide, but manufacturing is outsourced.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["Nordic Semiconductor — channel participant"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Nordic serves consumer, healthcare, and industrial IoT markets, with a strong focus on Bluetooth LE and low-power wireless.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["consumer, healthcare, and industrial IoT"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Nordic's global sales and R&D presence mitigate regional risks, but its reliance on foundries and OSATs in Asia introduces supply chain concentration.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Nordic has a broad customer base across IoT, but specific top customers are not disclosed; customer concentration risk is not publicly detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Nordic partners with ecosystem players like Skylo, LooUQ, and Memfault, and participates in industry events, but specific EDA or research consortia partnerships are not mentioned.",
+      "evidence_urls": ["https://www.nordicsemi.com/Nordic-news/2026/08/Nordics-nRF9151-opens-satellite-and-cellular-IoT-to-a-new-class-of-connected-devices"],
+      "evidence_snippets": ["Nordic's nRF9151 opens satellite and cellular IoT"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Nordic collaborates with cloud providers (nRF Cloud), module makers, and software partners to deliver chip-to-cloud solutions.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["chip-to-cloud solution for device management"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Nordic's financial details (revenue, net income, free cash flow) are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Nordic's CapEx as a percentage of revenue is not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Nordic's balance sheet metrics (debt-to-equity, cash reserves) are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Nordic's roadmap includes nRF54 series with edge AI, nRF93M1 Cat 1 bis modules, and nRF Cloud services, indicating a focus on low-power IoT and cellular.",
+      "evidence_urls": ["https://www.nordicsemi.com/Nordic-news/2026/03/Nordic-Semiconductor-strengthens-nRF54L-Series-leadership-in-ultra-low-power-edge-AI"],
+      "evidence_snippets": ["nRF54LM20 DK now available"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Nordic has a clear roadmap for edge AI and low-power wireless, but not for quantum or advanced memory.",
+      "evidence_urls": ["https://www.nordicsemi.com/Products/Technologies/Edge-AI"],
+      "evidence_snippets": ["Edge AI is more accessible and scalable than ever"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Nordic's roadmap aligns with IoT trends toward low-power, secure, and cloud-integrated devices, as seen in its nRF Cloud and edge AI initiatives.",
+      "evidence_urls": ["https://www.nordicsemi.com"],
+      "evidence_snippets": ["chip-to-cloud solution"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Nordic is fabless and does not announce fab expansions; it relies on foundry partners for capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Nordic's revenue growth is not detailed in the knowledge base, but its product launches suggest steady growth in IoT.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Nordic funds capacity through its fabless model, relying on foundry partners, but specific plans are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

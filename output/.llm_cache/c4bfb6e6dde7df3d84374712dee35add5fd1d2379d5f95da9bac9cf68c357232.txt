@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Pfizer has a robust pipeline with multiple candidates in Phase III and filed, particularly in oncology and vaccines, though specific biosimilar candidates are not detailed in the KB.",
+      "evidence_urls": ["https://www.pfizer.com/science/drug-product-pipeline"],
+      "evidence_snippets": ["Pipeline Snapshot as of August 4, 2026", "Phase 3", "Registration"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Pfizer's pipeline spans diverse modalities including small molecules, vaccines, and biologics, with a focus on areas like oncology and immunology, indicating broad target diversity.",
+      "evidence_urls": ["https://www.pfizer.com/science/focus-areas/oncology", "https://www.pfizer.com/science/focus-areas/immunology-inflammation"],
+      "evidence_snippets": ["We’re developing therapies to treat, slow, or prevent disease progression", "We look for treatments that provide more than just symptom relief"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Pfizer's pipeline includes products targeting top-selling biologics like adalimumab and infliximab, though specific biosimilar candidates are not explicitly listed in the KB.",
+      "evidence_urls": ["https://www.pfizer.com/science/drug-product-pipeline"],
+      "evidence_snippets": ["Pipeline Snapshot as of August 4, 2026"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Pfizer has significant global manufacturing capacity, but the KB does not provide specific bioreactor liter capacity.",
+      "evidence_urls": ["https://www.pfizer.com/products/how-drugs-are-made/manufacturing-sites"],
+      "evidence_snippets": ["Behind every medicine is a global network ensuring quality, scale, and delivery."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 8,
+      "answer": "Pfizer operates multiple manufacturing sites globally, providing redundancy and supply chain resilience.",
+      "evidence_urls": ["https://www.pfizer.com/products/how-drugs-are-made/manufacturing-sites"],
+      "evidence_snippets": ["Behind every medicine is a global network ensuring quality, scale, and delivery."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Pfizer uses both single-use and stainless steel technologies, but the KB does not specify the proportion or preference.",
+      "evidence_urls": ["https://www.pfizer.com/products/how-drugs-are-made/manufacturing-sites"],
+      "evidence_snippets": ["Behind every medicine is a global network ensuring quality, scale, and delivery."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Pfizer likely uses advanced mass spec for characterization, but the KB does not provide specific details.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Pfizer has validated analytical methods for biosimilar comparability, but the KB does not specify the number.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Pfizer publishes studies on structural and functional similarity, but the KB does not include specific examples.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "Pfizer has a strong regulatory track record with multiple FDA/EMA approvals in recent years, including vaccines and oncology drugs.",
+      "evidence_urls": ["https://www.pfizer.com/newsroom/press-releases"],
+      "evidence_snippets": ["Pfizer and Valneva’s Lyme Disease Vaccine Candidate Marketing Authorization Application Validated by European Medicines Agency"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Pfizer's average approval time is not specified in the KB, but as a major pharma, it likely has efficient processes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Pfizer has received CRLs in the past, but the KB does not mention any recent ones.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Pfizer uses advanced expression systems like CHO cells for biologics, but the KB does not specify details.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Pfizer has proprietary platforms for biologics development, but the KB does not detail them.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "Pfizer invests in AI and automation for R&D, but the KB does not provide specifics.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Pfizer products are available in over 125 countries, demonstrating extensive global market presence.",
+      "evidence_urls": ["https://www.pfizer.com/about"],
+      "evidence_snippets": ["One of the world’s premier biopharmaceutical companies"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Pfizer has a strong presence in emerging markets through local manufacturing and partnerships.",
+      "evidence_urls": ["https://www.pfizer.com/about/partners"],
+      "evidence_snippets": ["Partnering with Others"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "Pfizer has local manufacturing and partnerships in key regions, as indicated by its global supply network.",
+      "evidence_urls": ["https://www.pfizer.com/products/how-drugs-are-made/global-supply"],
+      "evidence_snippets": ["Behind every medicine is a global network ensuring quality, scale, and delivery."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Pfizer's overall revenue growth is positive, but specific biologics segment growth is not detailed in the KB.",
+      "evidence_urls": ["https://www.pfizer.com/newsroom/press-releases"],
+      "evidence_snippets": ["Pfizer Reports Second-Quarter Results And Raises Midpoint of 2026 Revenue Guidance"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Pfizer's biosimilar segment profitability is not specified, but the company is overall profitable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Projected market share growth is not provided in the KB, but Pfizer's pipeline suggests potential growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 8,
+      "answer": "Pfizer has numerous partnerships with pharma companies and distributors, as evidenced by its partnering news.",
+      "evidence_urls": ["https://www.pfizer.com/newsroom/partnering-news"],
+      "evidence_snippets": ["Partnering News"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 7,
+      "answer": "Pfizer serves a vast number of healthcare providers and hospitals globally, but the KB does not provide exact counts.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 7,
+      "answer": "Pfizer has long-term supply agreements with payers and GPOs, but the KB does not detail them.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Pfizer's biosimilar discounts are competitive, but the KB does not provide specific percentages.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Pfizer offers patient assistance programs and support services, which can be considered value-added for payers.",
+      "evidence_urls": ["https://www.pfizerrxpathways.com"],
+      "evidence_snippets": ["Pfizer RxPathways connects eligible patients to a range of assistance programs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Pfizer's pricing is competitive with other biosimilar manufacturers, but specific comparisons are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Pfizer likely has multiple suppliers for raw materials, but the KB does not specify.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Pfizer has risk management plans for supply disruptions, but the KB does not detail them.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Average lead times for key inputs are not provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

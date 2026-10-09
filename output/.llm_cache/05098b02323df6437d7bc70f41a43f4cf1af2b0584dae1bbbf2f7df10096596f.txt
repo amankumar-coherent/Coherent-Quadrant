@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Biotest has a limited pipeline with only a few candidates in Phase III or filed, such as Yimmugo (BT595) for PID and ITP, but the depth is modest compared to larger players.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["IgG Next Generation / Yimmugo (BT595) - Primäre Immundefizienz (PID)", "IgG Next Generation / Yimmugo (BT595) - Immunthrombocytopenie (ITP)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Biotest's pipeline focuses mainly on plasma-derived and recombinant immunoglobulins, with limited diversity in targets such as antibodies and fusion proteins.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Spezialist für Immunwissenschaften", "Forschungsschwerpunkte: Klinische Immunologie, Intensivmedizin"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "Biotest's pipeline does not appear to target top-selling biologics like adalimumab or etanercept; its focus is on niche plasma products.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Produktorientierte Innovationen von der Forschung bis zum klinischen Einsatz"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "Biotest does not publicly disclose total bioreactor capacity in liters, but as a plasma-derived product manufacturer, its capacity is likely smaller than major biotech companies.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Biotest stellt verschiedene, aus dem menschlichen Plasma gewonnene Produkte her."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "Biotest has multiple sites including Germany, Austria, Switzerland, and Hungary, indicating some manufacturing redundancy.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Standorte: Deutschland, Österreich, Schweiz, Ungarn"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Biotest primarily uses plasma fractionation and traditional stainless steel processes; no evidence of single-use technology adoption.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Biotest stellt verschiedene, aus dem menschlichen Plasma gewonnene Produkte her."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "Biotest likely uses standard analytical techniques for plasma products, but there is no public evidence of state-of-the-art mass spec for characterization.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Forschung und Entwicklung: Spezialist für Immunwissenschaften"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "No public information on validated analytical methods for biosimilar comparability; Biotest focuses on plasma-derived products, not biosimilars.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Produkte: Hämatologie, Klinische Immunologie, Intensivmedizin"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "Biotest publishes research, but no specific studies on structural/functional similarity for biosimilars were found.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Publikationen"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Biotest has not received FDA/EMA approvals for biologics/biosimilars in the last 5 years; its products are primarily plasma-derived with existing approvals.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Produkte: Haemoctin SDH, Haemonine, Yimmugo, etc."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No data available on average approval time from filing to approval for Biotest.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No public record of complete response letters or rejections for Biotest, but also no evidence of recent regulatory successes.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Biotest uses plasma-derived processes and some recombinant technology, but no evidence of novel expression systems like CHO or yeast.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Biotest stellt verschiedene, aus dem menschlichen Plasma gewonnene Produkte her."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Biotest has proprietary processes for plasma fractionation, but not specifically for biosimilar development.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Prozesse"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No evidence of investment in AI or automation for R&D at Biotest.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Biotest has a global presence with subsidiaries in several countries and plasma centers, but the exact number of countries is not specified.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Biotest Tochtergesellschaften", "Plasmazentren", "Biotest globales Netzwerk"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Biotest has some presence in emerging markets, but it is not a major focus compared to Europe.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Internationale Aufträge und Anfragen"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Biotest has manufacturing in Germany and Hungary, but limited partnerships in key regions like Asia or Americas.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Standorte: Deutschland, Österreich, Schweiz, Ungarn"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No specific revenue growth data for Biotest's biologics segment is available in the knowledge base.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Geschäftsberichte"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Biotest is not primarily a biosimilar company, so profitability in that segment is not applicable.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 3,
+      "answer": "No projections for market share growth in the next 3 years are available.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Biotest has some partnerships and distributors, but no major pharma partnerships are publicly highlighted.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": ["Internationale Aufträge und Anfragen"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No specific data on the number of healthcare providers or hospitals as customers.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "No evidence of long-term supply agreements with payers or GPOs.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 3,
+      "answer": "Biotest does not market biosimilars, so discount vs. reference biologic is not applicable.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "No evidence of value-added services to payers.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 3,
+      "answer": "Not applicable as Biotest is not a biosimilar competitor.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No public information on multiple suppliers for raw materials and components.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No explicit risk management plan for supply disruptions is mentioned.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No data on average lead time for key inputs.",
+      "evidence_urls": ["https://www.biotest.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

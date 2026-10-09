@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "MaxLinear is a fabless semiconductor company and does not own or announce advanced process nodes; it relies on foundry partners for manufacturing.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["RF, analog and mixed-signal ICs for broadband and connectivity."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "MaxLinear does not lead in specific process technologies like FinFET or GAA; it designs mixed-signal ICs using standard foundry processes.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["RF, analog and mixed-signal ICs for broadband and connectivity."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "MaxLinear's roadmap focuses on product innovations like AI infrastructure control-plane and 224G DSPs, not on next-generation process nodes.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["MaxLinear Introduces RackCommander™ Control-Plane Portfolio for Next-Generation AI Infrastructure", "224G DSPs for Scale-up Retimers and AEC"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "MaxLinear offers a broad portfolio across access, connectivity, infrastructure, power management, and interface, but is specialized in analog/mixed-signal and RF rather than logic or memory.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["Access Solutions that bring 10Gbps to the home over copper, coax, and fiber", "Power Management, Interface, and G.hn solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type; MaxLinear's portfolio is diversified across several analog/mixed-signal categories.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["RF, analog and mixed-signal ICs for broadband and connectivity."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "MaxLinear is fabless and does not provide OSAT services; it likely partners with OSAT providers, but no specific partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "MaxLinear owns proprietary design IP in areas like AnyWAN gateway processors, PAM4 DSPs, and RF SoCs, but does not have CPU/GPU/AI accelerator IP.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["AnyWAN™ Gateway Processors", "Data Center Connectivity PAM4 DSPs & TIAs", "RF Radio SoCs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "MaxLinear likely uses third-party IP like ARM for some products and does not license its own IP; no evidence of IP licensing in the knowledge base.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "MaxLinear has strong architecture in broadband and connectivity, with recent AI infrastructure products, but is not a leader in AI, 5G, or automotive compared to larger peers.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["MaxLinear Introduces RackCommander™ Control-Plane Portfolio for Next-Generation AI Infrastructure", "Trinity Platform: Cloud-Managed, AI-Enabled 5G Backhaul"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "MaxLinear is fabless and does not own wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "As a fabless company, MaxLinear's yield rates depend on foundry partners and are not publicly disclosed; no comparison to industry benchmarks is available.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "MaxLinear does not offer advanced packaging; it likely relies on OSAT partners for packaging, but no specific packaging capabilities are mentioned.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "MaxLinear mentions quality information and environmental compliance on its website, but specific certifications like ISO 9001 or IATF 16949 are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["Quality Information (CMRT, Quality Policy, etc.)", "Environmental Information (RoHS, REACH, CA65, Halogen Free)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No defect rate (DPPM) data is available in the knowledge base; MaxLinear likely follows industry-standard reliability practices but specifics are not provided.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["Quality Information (CMRT, Quality Policy, etc.)"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "MaxLinear provides environmental compliance information including RoHS, REACH, CA65, and Halogen Free, and addresses conflict minerals via CMRT.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["Environmental Information (RoHS, REACH, CA65, Halogen Free)", "Quality Information (CMRT, Quality Policy, etc.)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "MaxLinear is headquartered in Carlsbad, California, with sales and R&D presence in the US and Asia, but specific regional details are limited.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["Carlsbad, California, USA", "United States; Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "MaxLinear serves telecom, data center, industrial, and consumer markets, but revenue contribution by end-market is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["Access Solutions that bring 10Gbps to the home over copper, coax, and fiber", "Data Infrastructure 400G/800G/1.6T/3.2T optical/electrical data center interconnect", "Industrial Power Management, Interface, and G.hn solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "MaxLinear's presence in the US and Asia provides some geographic diversification, but the knowledge base does not detail how this mitigates regional risks.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["United States; Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "The knowledge base does not list specific customers or customer concentration; as a fabless semiconductor company, MaxLinear likely has a diversified customer base but specifics are unknown.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "MaxLinear collaborates with LANL on HPC storage and has partnerships for AI infrastructure, but no details on EDA or research consortia partnerships are provided.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["MaxLinear and LANL advance hardware-accelerated OpenZFS for modern HPC environments"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "MaxLinear partners with foundries and OSATs as a fabless company, and collaborates with ecosystem players like LANL, but specific collaboration details are limited.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["MaxLinear and LANL advance hardware-accelerated OpenZFS"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial data such as revenue, net income, and free cash flow are not available in the knowledge base; MaxLinear is a public company but specifics are not provided.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available in the knowledge base; as a fabless company, MaxLinear's CapEx is likely lower than integrated device manufacturers.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details such as debt-to-equity and cash reserves are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "MaxLinear's roadmap includes AI infrastructure control-plane products, 224G DSPs, and 200G TIA for AI data centers, indicating focus on high-speed connectivity.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["MaxLinear Introduces RackCommander™ Control-Plane Portfolio for Next-Generation AI Infrastructure", "224G DSPs for Scale-up Retimers and AEC", "Washington 200G TIA for AI Data Center Optics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "MaxLinear has a clear roadmap for AI infrastructure and high-speed data center connectivity, but not for quantum or advanced memory.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["MaxLinear Introduces RackCommander™ Control-Plane Portfolio for Next-Generation AI Infrastructure", "224G DSPs for Scale-up Retimers and AEC"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "MaxLinear's roadmap aligns with industry trends in AI data centers and 5G backhaul, as evidenced by recent product launches.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": ["Trinity Platform: Cloud-Managed, AI-Enabled 5G Backhaul", "224G DSPs for Scale-up Retimers and AEC"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "MaxLinear is fabless and does not announce new fab expansions; it relies on foundry partners for capacity.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth data is not available in the knowledge base; MaxLinear's growth is not quantified.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "As a fabless company, MaxLinear funds capacity through foundry partnerships, but specific plans are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.maxlinear.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

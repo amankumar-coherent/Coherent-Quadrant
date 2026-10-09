@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions a single product 'Medive' and a 'complex system for fully remote patient monitoring' but no clear multi-device portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Claims 'medical-grade accuracy' and 'hospital-grade care' but no specific clinical trial data or safety certifications."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Ambiq for edge AI cardiac monitor, 'advanced modular health monitoring platform', and founder's 15+ years in electronic product development."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; only mentions 'prototyping stage'."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Based in Romania, but no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Startup status, limited evidence of adoption by healthcare providers or patients."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data available; Crunchbase profile exists but no funding or revenue figures cited."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on cardiac care, but no clear pipeline for other indications beyond heart disease."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnership with Ambiq for Medive platform, indicating business expansion and collaboration."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,726 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Silicon Carbide Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=278e5fd8 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=230 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=6c_crawl status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers are industrial, automotive, electronics, and energy enterprises purchasing materials for component and device manufacturing.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because companies in this market fundamentally compete on producing and supplying physical silicon carbide materials and semiconductor devices under their own operational capacity, whereas distributors merely handle logistics and resale.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: SKIP (checkpoint) — 300 recalled
+  [chatgpt] Step 2/6: SKIP (checkpoint) — 0 openai-discovered
+  [chatgpt] Step 3/6: SKIP (checkpoint) — 0 ddgs extracted
+  [chatgpt] Step 4/6: SKIP (checkpoint) — kept=257 rejected=43
+    → substep 4c: SKIP merge (checkpoint) — merged=231 to_fill=231
+  [chatgpt] Step 5/6: SKIP (checkpoint) — 231 filled
+    → substep 5c: merged filled rows into list (231 total)
+  [chatgpt] Step 6/6: SKIP (checkpoint) — kept=231 rejected=0
+    → substep 6p: SKIP purity (checkpoint) — 231 rows
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] drop 'Thermlyte Monolithic Pvt Ltd': out of market
+  [relevance] Global Silicon Carbide Market: in=231 geo_drop=0 heur_drop=0 llm_drop=1 kept=228 market_type=B2B uniform_role=Manufacturer
+  [xy] market-fit filter (B2B): 231 -> 230 companies (roles=['Manufacturer'])
+  [xy] industry=Chemical and Materials/Advanced Materials axis_def=llm | X=Product Strength ['Substrate & Epitaxy Quality', 'Device Performance & Reliability', 'Wafer Size & Defect Density', 'R&D and Patent Strength', 'Manufacturing Yield & Scalability'] | Y=Business Strength ['Market Share & Customer Base', 'Revenue Growth & Profitability', 'Capacity Expansion & Supply Chain', 'Geographic & Application Diversification', 'Strategic Partnerships & Alliances']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 230 companies (1/query, 2 queries per batch)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [1-1]: 1/1 companies detailed
+      · params [2-2]: 1/1 companies detailed
+      · params [3-3]: 1/1 companies detailed
+      · params [4-4]: 1/1 companies detailed
+      · params [5-5]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · params [6-6]: 1/1 companies detailed
+      · params [7-7]: 1/1 companies detailed
+      · params [8-8]: 1/1 companies detailed
+      · params [9-9]: 1/1 companies detailed
+      · params [10-10]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · params [11-11]: 1/1 companies detailed
+      · params [12-12]: 1/1 companies detailed
+      · params [13-13]: 1/1 companies detailed
+      · params [14-14]: 1/1 companies detailed
+      · params [15-15]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [16-16]: 1/1 companies detailed
+      · params [17-17]: 1/1 companies detailed
+      · params [18-18]: 1/1 companies detailed
+      · params [19-19]: 1/1 companies detailed
+      · params [20-20]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [21-21]: 1/1 companies detailed
+      · params [22-22]: 1/1 companies detailed
+      · params [23-23]: 1/1 companies detailed
+      · params [24-24]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [25-25]: 1/1 companies detailed
+      · params [26-26]: 1/1 companies detailed
+      · params [27-27]: 1/1 companies detailed
+      · params [28-28]: 1/1 companies detailed
+      · params [29-29]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [30-30]: 1/1 companies detailed
+      · params [31-31]: 1/1 companies detailed
+      · params [32-32]: 1/1 companies detailed
+      · params [33-33]: 1/1 companies detailed
+      · params [34-34]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [35-35]: 1/1 companies detailed
+      · params [36-36]: 1/1 companies detailed
+      · params [37-37]: 1/1 companies detailed
+      · params [38-38]: 1/1 companies detailed
+      · params [39-39]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [40-40]: 1/1 companies detailed
+      · params [41-41]: 1/1 companies detailed
+      · params [42-42]: 1/1 companies detailed
+      · params [43-43]: 1/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [45-45]: 1/1 companies detailed
+      · params [46-46]: 1/1 companies detailed
+      · params [47-47]: 1/1 companies detailed
+      · params [48-48]: 1/1 companies detailed
+      · params [49-49]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · params [50-50]: 1/1 companies detailed
+      · params [51-51]: 1/1 companies detailed
+      · params [52-52]: 1/1 companies detailed
+      · params [53-53]: 1/1 companies detailed
+      · params [54-54]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [55-55]: 1/1 companies detailed
+      · params [56-56]: 1/1 companies detailed
+      · params [57-57]: 1/1 companies detailed
+      · params [58-58]: 1/1 companies detailed
+      · params [59-59]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [60-60]: 1/1 companies detailed
+      · params [61-61]: 1/1 companies detailed
+      · params [62-62]: 1/1 companies detailed
+      · params [63-63]: 1/1 companies detailed
+      · params [64-64]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [65-65]: 1/1 companies detailed
+      · params [66-66]: 1/1 companies detailed
+      · params [67-67]: 1/1 companies detailed
+      · params [68-68]: 1/1 companies detailed
+      · params [69-69]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [70-70]: 1/1 companies detailed
+      · params [71-71]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [72-72]: 1/1 companies detailed
+      · params [73-73]: 1/1 companies detailed
+      · params [74-74]: 1/1 companies detailed
+      · params [75-75]: 1/1 companies detailed
+      · params [76-76]: 1/1 companies detailed
+      · params [77-77]: 1/1 companies detailed
+      · params [78-78]: 1/1 companies detailed
+      · params [79-79]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [80-80]: 1/1 companies detailed
+      · params [81-81]: 1/1 companies detailed
+      · params [82-82]: 1/1 companies detailed
+      · params [83-83]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [84-84]: 1/1 companies detailed
+      · params [85-85]: 1/1 companies detailed
+      · params [86-86]: 1/1 companies detailed
+      · params [87-87]: 1/1 companies detailed
+      · params [88-88]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [89-89]: 1/1 companies detailed
+      · params [90-90]: 1/1 companies detailed
+      · params [91-91]: 1/1 companies detailed
+      · params [92-92]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [93-93]: 1/1 companies detailed
+      · params [94-94]: 1/1 companies detailed
+      · params [95-95]: 1/1 companies detailed
+      · params [96-96]: 1/1 companies detailed
+      · params [97-97]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · params [98-98]: 1/1 companies detailed
+      · params [99-99]: 1/1 companies detailed
+      · params [100-100]: 1/1 companies detailed
+      · params [101-101]: 1/1 companies detailed
+      · params [102-102]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · params [103-103]: 1/1 companies detailed
+      · params [104-104]: 1/1 companies detailed
+      · params [105-105]: 1/1 companies detailed
+      · params [106-106]: 1/1 companies detailed
+      · params [107-107]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · params [108-108]: 1/1 companies detailed
+      · params [109-109]: 1/1 companies detailed
+      · params [110-110]: 1/1 companies detailed
+      · params [111-111]: 1/1 companies detailed
+      · params [112-112]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · params [113-113]: 1/1 companies detailed
+      · params [114-114]: 1/1 companies detailed
+      · params [115-115]: 1/1 companies detailed
+      · params [116-116]: 1/1 companies detailed
+      · params [117-117]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [118-118]: 1/1 companies detailed
+      · params [119-119]: 1/1 companies detailed
+      · params [120-120]: 1/1 companies detailed
+      · params [121-121]: 1/1 companies detailed
+      · params [122-122]: 1/1 companies detailed
+      · params [123-123]: 1/1 companies detailed
+      · params [124-124]: 1/1 companies detailed
+      · params [125-125]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (24 this run) — solve it in the browser window
+      · params [126-126]: 1/1 companies detailed
+      · params [127-127]: 1/1 companies detailed
+      · params [128-128]: 1/1 companies detailed
+      · params [129-129]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (25 this run) — solve it in the browser window
+      · params [130-130]: 1/1 companies detailed
+      · params [131-131]: 1/1 companies detailed
+      · params [132-132]: 1/1 companies detailed
+      · params [133-133]: 1/1 companies detailed
+      · params [134-134]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (26 this run) — solve it in the browser window
+      · params [135-135]: 1/1 companies detailed
+      · params [136-136]: 1/1 companies detailed
+      · params [137-137]: 1/1 companies detailed
+      · params [138-138]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (27 this run) — solve it in the browser window
+      · params [139-139]: 1/1 companies detailed
+      · params [140-140]: 1/1 companies detailed
+      · params [141-141]: 1/1 companies detailed
+      · params [142-142]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (28 this run) — solve it in the browser window
+      · params [143-143]: 1/1 companies detailed
+      · params [144-144]: 1/1 companies detailed
+      · params [145-145]: 1/1 companies detailed
+      · params [146-146]: 1/1 companies detailed
+      · params [147-147]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (29 this run) — solve it in the browser window
+      · params [148-148]: 1/1 companies detailed
+      · params [149-149]: 1/1 companies detailed
+      · params [150-150]: 1/1 companies detailed
+      · params [151-151]: 1/1 companies detailed
+      · params [152-152]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (30 this run) — solve it in the browser window
+      · params [153-153]: 1/1 companies detailed
+      · params [154-154]: 1/1 companies detailed
+      · params [155-155]: 1/1 companies detailed
+      · params [156-156]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (31 this run) — solve it in the browser window
+      · params [157-157]: 1/1 companies detailed
+      · params [158-158]: 1/1 companies detailed
+      · params [159-159]: 1/1 companies detailed
+      · params [160-160]: 1/1 companies detailed
+      · params [161-161]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (32 this run) — solve it in the browser window
+      · params [162-162]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #3)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [163-163]: 1/1 companies detailed
+      · params [164-164]: 1/1 companies detailed
+      · params [165-165]: 1/1 companies detailed
+      · params [166-166]: 1/1 companies detailed
+      · params [167-167]: 1/1 companies detailed
+      · params [168-168]: 1/1 companies detailed
+      · params [169-169]: 1/1 companies detailed
+      · params [170-170]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (33 this run) — solve it in the browser window
+      · params [171-171]: 1/1 companies detailed
+      · params [172-172]: 1/1 companies detailed
+      · params [173-173]: 1/1 companies detailed
+      · params [174-174]: 1/1 companies detailed
+      · params [175-175]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (34 this run) — solve it in the browser window
+      · params [176-176]: 1/1 companies detailed
+      · params [177-177]: 1/1 companies detailed
+      · params [178-178]: 1/1 companies detailed
+      · params [179-179]: 1/1 companies detailed
+      · params [180-180]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (35 this run) — solve it in the browser window
+      · params [181-181]: 1/1 companies detailed
+      · params [182-182]: 1/1 companies detailed
+      · params [183-183]: 1/1 companies detailed
+      · params [184-184]: 1/1 companies detailed
+      · params [185-185]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (36 this run) — solve it in the browser window
+      · params [186-186]: 1/1 companies detailed
+      · params [187-187]: 1/1 companies detailed
+      · params [188-188]: 1/1 companies detailed
+      · params [189-189]: 1/1 companies detailed
+      · params [190-190]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (37 this run) — solve it in the browser window
+      · params [191-191]: 1/1 companies detailed
+      · params [192-192]: 1/1 companies detailed
+      · params [193-193]: 1/1 companies detailed
+      · params [194-194]: 1/1 companies detailed
+      · params [195-195]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (38 this run) — solve it in the browser window
+      · params [196-196]: 1/1 companies detailed
+      · params [197-197]: 1/1 companies detailed
+      · params [198-198]: 1/1 companies detailed
+      · params [199-199]: 1/1 companies detailed
+      · params [200-200]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (39 this run) — solve it in the browser window
+      · params [201-201]: 1/1 companies detailed
+      · params [202-202]: 1/1 companies detailed
+      · params [203-203]: 1/1 companies detailed
+      · params [204-204]: 1/1 companies detailed
+      · params [205-205]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (40 this run) — solve it in the browser window
+      · params [206-206]: 1/1 companies detailed
+      · params [207-207]: 1/1 companies detailed
+      · params [208-208]: 1/1 companies detailed
+      · params [209-209]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #4)
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [210-210]: 1/1 companies detailed
+      · params [211-211]: 1/1 companies detailed
+      · params [212-212]: 1/1 companies detailed
+      · params [213-213]: 1/1 companies detailed
+      · params [214-214]: 1/1 companies detailed
+      · params [215-215]: 1/1 companies detailed
+      · params [216-216]: 1/1 companies detailed
+      · params [217-217]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (41 this run) — solve it in the browser window
+      · params [218-218]: 1/1 companies detailed
+      · params [219-219]: 1/1 companies detailed
+      · params [220-220]: 1/1 companies detailed
+      · params [221-221]: 1/1 companies detailed
+      · params [222-222]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (42 this run) — solve it in the browser window
+      · params [223-223]: 1/1 companies detailed
+      · params [224-224]: 1/1 companies detailed
+      · params [225-225]: 1/1 companies detailed
+      · params [226-226]: 1/1 companies detailed
+      · params [227-227]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (43 this run) — solve it in the browser window
+      · params [228-228]: 1/1 companies detailed
+      · params [229-229]: 1/1 companies detailed
+      · params [230-230]: 1/1 companies detailed
+  [xy] parameter detail done: 230/230 companies
+    → [xy] score 1/230 A-One Coated Abrasive
+    → [xy] score 2/230 Abadan Silicon Carbide Production Complex
+    → [xy] score 3/230 Adesis Vacuum and Semiconductor
+    → [xy] score 4/230 Advanced Power Electronics Corp.
+    → [xy] score 5/230 AGC Inc.
+    → [xy] score 6/230 Alpha and Omega Semiconductor Limited
+    → [xy] score 7/230 Alpha Power Solutions Co., Ltd.
+    → [xy] score 8/230 Anbon Semiconductor Co., Ltd.
+    → [xy] score 9/230 Anhui Aishei Power Semiconductor Co., Ltd.
+    → [xy] score 10/230 APSEMI CO.,LTD
+    → [xy] score 11/230 Aritech Chemazone Pvt Ltd
+    → [xy] score 12/230 Atecom Technology Co., Ltd.
+    → [xy] score 13/230 Aum Industry
+    → [xy] score 14/230 Bhukhanvala Industries Pvt Ltd
+    → [xy] score 15/230 BJS Ceramics GmbH
+    → [xy] score 16/230 Blasch Precision Ceramics, Inc.
+    → [xy] score 17/230 BorgWarner Inc.
+    → [xy] score 18/230 Boroptik Mühendislik A.Ş.
+    → [xy] score 19/230 Bruckewell Technology Corp., Ltd.
+    → [xy] score 20/230 BYD Semiconductor Co., Ltd.
+    → [xy] score 21/230 C&S Mining Services Pty Ltd
+    → [xy] score 22/230 Calyco Mining Equipment Supplies
+    → [xy] score 23/230 Carbograf Industrial S.A. de C.V.
+    → [xy] score 24/230 CARBORUNDUM ELECTRITE a.s.
+    → [xy] score 25/230 Carborundum Universal Limited
+    → [xy] score 26/230 CEC Compound Semiconductor Co., Ltd.
+    → [xy] score 27/230 CeramTec GmbH
+    → [xy] score 28/230 Cermet Sintered Technology LLP
+    → [xy] score 29/230 Christy Refractories Company LLC
+    → [xy] score 30/230 Cissoid S.A.
+    → [xy] score 31/230 Coherent Corp.
+    → [xy] score 32/230 Compagnie de Saint-Gobain S.A.
+    → [xy] score 33/230 Continental Device India Private Limited
+    → [xy] score 34/230 CoolCAD Electronics LLC
+    → [xy] score 35/230 CoorsTek, Inc.
+    → [xy] score 36/230 Corona Cadinhos e Produtos Refratários Ltda.
+    → [xy] score 37/230 CVSIC Element Co., Ltd.
+    → [xy] score 38/230 DACO Semiconductor Co., Ltd.
+    → [xy] score 39/230 Diodes Incorporated
+    → [xy] score 40/230 Diotec Semiconductor AG
+    → [xy] score 41/230 Dongguan XY New Material Co., Ltd.
+    → [xy] score 42/230 Dynex Semiconductor Ltd
+    → [xy] score 43/230 Egyptian Abrasives Co. (EACO)
+    → [xy] score 44/230 Egyptian Abrasives Company
+    → [xy] score 45/230 Electro Abrasives, LLC
+    → [xy] score 46/230 Elfusa Geral de Eletrofusão Ltda.
+    → [xy] score 47/230 Elkem ASA
+    → [xy] score 48/230 Entegris, Inc.
+    → [xy] score 49/230 Epiworld International Co., Ltd.
+    → [xy] score 50/230 ESD-SIC b.v.
+    → [xy] score 51/230 ESK-SiC GmbH
+    → [xy] score 52/230 EYEQ Lab Inc.
+    → [xy] score 53/230 Ferrotec Holdings Corporation
+    → [xy] score 54/230 Fetek Technology Corp.
+    → [xy] score 55/230 Fiven ASA
+    → [xy] score 56/230 FMS - Enterprises Migun LTD
+    → [xy] score 57/230 Fortune Minerals And Engineering Private Limited
+    → [xy] score 58/230 Fountyl Technologies Pte. Ltd.
+    → [xy] score 59/230 Fuji Electric Co., Ltd.
+    → [xy] score 60/230 FX Minerals Inc.
+    → [xy] score 61/230 GeneSiC Semiconductor Inc.
+    → [xy] score 62/230 Gipfel Engineering
+    → [xy] score 63/230 Global Power Technologies Group
+    → [xy] score 64/230 Global Power Technologies Group Inc.
+    → [xy] score 65/230 GlobalWafers Co., Ltd.
+    → [xy] score 66/230 Grindwell Norton Limited
+    → [xy] score 67/230 GT Advanced Technologies Inc.
+    → [xy] score 68/230 Guangdong TySiC Semiconductor Co., Ltd.
+    → [xy] score 69/230 Harini Engineering
+    → [xy] score 70/230 Hebei Synlight Crystal Co., Ltd.
+    → [xy] score 71/230 Hebei Synlight Semiconductor Co., Ltd.
+    → [xy] score 72/230 Hermetic Seals and Components
+    → [xy] score 73/230 Hitachi Energy Ltd
+    → [xy] score 74/230 Hitachi Energy Ltd.
+    → [xy] score 75/230 Hunan Sanan Semiconductor Co., Ltd.
+    → [xy] score 76/230 Imerys Fused Minerals Salto Ltda.
+    → [xy] score 77/230 Imerys S.A.
+    → [xy] score 78/230 Indian Abrasives
+    → [xy] score 79/230 Infineon Technologies AG
+    → [xy] score 80/230 Infinite Abrasives Company
+    → [xy] score 81/230 Intelligent Materials Private Limited
+    → [xy] score 82/230 International Company for Silicon Carbide Producti
+    → [xy] score 83/230 Inventchip Technology Co., Ltd.
+    → [xy] score 84/230 Italker S.r.l.
+    → [xy] score 85/230 Ithayela Installation & Refractory Projects (Pty) 
+    → [xy] score 86/230 IXYS Corporation
+    → [xy] score 87/230 Jiangsu JieJie Microelectronics Co., Ltd.
+    → [xy] score 88/230 JS Abrasives India Private Limited
+    → [xy] score 89/230 JXT Semi Technology Co., Ltd.
+    → [xy] score 90/230 Kanthal AB
+    → [xy] score 91/230 Kares Seramik Sanayi ve Ticaret Ltd. Sti.
+    → [xy] score 92/230 Kares Seramik Sanayi ve Ticaret Ltd. Şti.
+    → [xy] score 93/230 KEC Corporation
+    → [xy] score 94/230 Kiselkarbid i Stockholm AB
+    → [xy] score 95/230 KRAM Engineering (Pty) Ltd
+    → [xy] score 96/230 Kyocera Corporation
+    → [xy] score 97/230 L.S. Abrasives & Trading Co.
+    → [xy] score 98/230 Laxmipriya Abrasives
+    → [xy] score 99/230 Lianyungang City Rong Tai Silicon Carbide Co., Ltd
+    → [xy] score 100/230 Littelfuse, Inc.
+    → [xy] score 101/230 MacMic Science & Technology Co., Ltd.
+    → [xy] score 102/230 Mandeep Minerals
+    → [xy] score 103/230 MaxPower Semiconductor Inc.
+    → [xy] score 104/230 Mersen Boostec
+    → [xy] score 105/230 Mersen SA
+    → [xy] score 106/230 Mi Technovation Berhad
+    → [xy] score 107/230 Micro Blaster
+    → [xy] score 108/230 Micro Commercial Components Corp.
+    → [xy] score 109/230 Microchip Technology Inc.
+    → [xy] score 110/230 Microfine Carbides
+    → [xy] score 111/230 Mitsubishi Electric Corporation
+    → [xy] score 112/230 Morgan Advanced Materials plc
+    → [xy] score 113/230 Navarro SiC S.A.
+    → [xy] score 114/230 Navitas Semiconductor Corp.
+    → [xy] score 115/230 Naxos Australia Pty Ltd
+    → [xy] score 116/230 New He Qiao Shareholdings Company
+    → [xy] score 117/230 Nexperia B.V.
+    → [xy] score 118/230 Ningxia Long Silicon Material Co., Ltd.
+    → [xy] score 119/230 NTB High Tech Ceramics
+    → [xy] score 120/230 Nurol Teknoloji Sanayi ve Ticaret A.S.
+    → [xy] score 121/230 NXP Semiconductors N.V.
+    → [xy] score 122/230 Omkar Abrasives
+    → [xy] score 123/230 Omkar Grindtech
+    → [xy] score 124/230 onsemi Corporation
+    → [xy] score 125/230 Pacific Rundum Co., Ltd.
+    → [xy] score 126/230 PANJIT International Inc.
+    → [xy] score 127/230 Pennekamp Middle East FZCO
+    → [xy] score 128/230 PJSC Volzhsky Abrasive Works
+    → [xy] score 129/230 PJSC Zaporozhsky Abrasivny Combinat
+    → [xy] score 130/230 PN Junction Semiconductor Co., Ltd.
+    → [xy] score 131/230 Power Integrations, Inc.
+    → [xy] score 132/230 Power Master Semiconductor Co., Ltd.
+    → [xy] score 133/230 PowerCubeSemi Co., Ltd.
+    → [xy] score 134/230 Precision Ceramics USA Inc.
+    → [xy] score 135/230 Qingdao Newthink New Materials Co., Ltd.
+    → [xy] score 136/230 Qorvo, Inc.
+    → [xy] score 137/230 QuadQuantum Pvt. Ltd.
+    → [xy] score 138/230 Quantech Sealing System LLC
+    → [xy] score 139/230 Queensland Semiconductor Technologies Pty Ltd
+    → [xy] score 140/230 RATH AG
+    → [xy] score 141/230 Renesas Electronics Corporation
+    → [xy] score 142/230 Resonac Holdings Corporation
+    → [xy] score 143/230 RIR Power Electronics Limited
+    → [xy] score 144/230 RIR Power Electronics Ltd.
+    → [xy] score 145/230 Robert Bosch GmbH
+    → [xy] score 146/230 ROHM Co., Ltd.
+    → [xy] score 147/230 SabiNano (Pty) Ltd
+    → [xy] score 148/230 Sagar Semiconductors Private Limited
+    → [xy] score 149/230 Saint-Gobain Ceramics & Plastics, Inc.
+    → [xy] score 150/230 Sanan Semiconductor Co., Ltd.
+    → [xy] score 151/230 Sanwariya Emery Udyog
+    → [xy] score 152/230 Saveer Matrix Nano Pvt. Ltd.
+    → [xy] score 153/230 Schunk Carbon Technology GmbH
+    → [xy] score 154/230 Schunk Ingenieurkeramik GmbH
+    → [xy] score 155/230 Semicera Semiconductor Technology Co., Ltd.
+    → [xy] score 156/230 Semiconductor Components Industries, LLC
+    → [xy] score 157/230 Semiconductor Wafer Inc.
+    → [xy] score 158/230 Semicorex Advanced Material Technologies Co., Ltd.
+    → [xy] score 159/230 Semikron Danfoss GmbH & Co. KG
+    → [xy] score 160/230 SemiQ Inc.
+    → [xy] score 161/230 SENIC Inc.
+    → [xy] score 162/230 Sensitron Semiconductor
+    → [xy] score 163/230 SGL Carbon SE
+    → [xy] score 164/230 Shanxi TYSTC Semiconductor Co., Ltd.
+    → [xy] score 165/230 Shenzhen BASiC Semiconductor Ltd.
+    → [xy] score 166/230 Shenzhen Maplesemi Semiconductor Co., Ltd.
+    → [xy] score 167/230 Shenzhen Sanrise Technology Co., Ltd.
+    → [xy] score 168/230 Shindengen Electric Manufacturing Co., Ltd.
+    → [xy] score 169/230 Shree Bajrang Sales (P) Ltd.
+    → [xy] score 170/230 Sica New Materials Thailand Co. Ltd.
+    → [xy] score 171/230 SiCBRAS Carbeto de Silício do Brasil Ltda.
+    → [xy] score 172/230 SICC Co., Ltd.
+    → [xy] score 173/230 SiChain Semiconductor Co., Ltd.
+    → [xy] score 174/230 SiCrystal GmbH
+    → [xy] score 175/230 SiCSem Private Limited
+    → [xy] score 176/230 SiCure Semiconductor SpA
+    → [xy] score 177/230 Silcarb Recrystallized Pvt. Ltd.
+    → [xy] score 178/230 Silergy Corp.
+    → [xy] score 179/230 Silicon Carbide Products, Inc.
+    → [xy] score 180/230 SiPower Inc.
+    → [xy] score 181/230 SK Siltron Co., Ltd.
+    → [xy] score 182/230 SK siltron css, LLC
+    → [xy] score 183/230 Snam Abrasives Private Limited
+    → [xy] score 184/230 Soitec SA
+    → [xy] score 185/230 Solcera do Brasil Cerâmicas Avançadas Ltda.
+    → [xy] score 186/230 Solid State Devices, Inc.
+    → [xy] score 187/230 Solitron Devices, Inc.
+    → [xy] score 188/230 Specialty Materials, Inc.
+    → [xy] score 189/230 StarPower Semiconductor Ltd.
+    → [xy] score 190/230 Stefmet Technologies (Pty) Ltd
+    → [xy] score 191/230 Stefmet Technologies (Pty) Ltd.
+    → [xy] score 192/230 STMicroelectronics N.V.
+    → [xy] score 193/230 Sublime Technologies Pty Ltd
+    → [xy] score 194/230 Super India Spares
+    → [xy] score 195/230 Supershine Abrasives
+    → [xy] score 196/230 SuperSiC (Malaysia) Sdn. Bhd.
+    → [xy] score 197/230 Surya Abrasives
+    → [xy] score 198/230 Suzhou Oriental Semiconductor Co., Ltd.
+    → [xy] score 199/230 SweGaN AB
+    → [xy] score 200/230 Taiwan Applied Crystal Co., Ltd.
+    → [xy] score 201/230 TanKeBlue Semiconductor Co., Ltd.
+    → [xy] score 202/230 TekSiC AB
+    → [xy] score 203/230 Tershion
+    → [xy] score 204/230 Th. Scholten GmbH & Co. KG
+    → [xy] score 205/230 Topdiode Manufacturing Company
+    → [xy] score 206/230 Toshiba Electronic Devices & Storage Corporation
+    → [xy] score 207/230 Ultrananotech Private Limited
+    → [xy] score 208/230 United Silicon Carbide, Inc.
+    → [xy] score 209/230 Valley Design Corp.
+    → [xy] score 210/230 Viet Nam Abrasives Company Limited
+    → [xy] score 211/230 Vincotech GmbH
+    → [xy] score 212/230 Vishay Intertechnology, Inc.
+    → [xy] score 213/230 Vulcan Refractories Limited
+    → [xy] score 214/230 Wafer Works Corporation
+    → [xy] score 215/230 Washington Mills
+    → [xy] score 216/230 Washington Mills Company
+    → [xy] score 217/230 WeEn Semiconductors Co., Ltd.
+    → [xy] score 218/230 Winsheng Material Technology Co., Ltd.
+    → [xy] score 219/230 Wolfspeed, Inc.
+    → [xy] score 220/230 Wuxi Leapers Semiconductor Co., Ltd.
+    → [xy] score 221/230 Wuxi Reasunos Semiconductor Technology Co., Ltd.
+    → [xy] score 222/230 Xiamen Powerway Advanced Material Co., Ltd.
+    → [xy] score 223/230 Yichang Enterprise (Asia) Co., Ltd.
+    → [xy] score 224/230 Zadient Technologies SAS
+    → [xy] score 225/230 Zhejiang HIITIO New Energy Co., Ltd.
+    → [xy] score 226/230 Zhuzhou CRRC Times Electric Co., Ltd.
+    → [xy] score 227/230 Zibo Anda Industrial Co., Ltd.
+    → [xy] score 228/230 Zibo Sankyo Abrasives Co., Ltd.
+    → [xy] score 229/230 Zibo Shengkai New Materials Co., Ltd.
+    → [xy] score 230/230 Zische Schleifwerkzeuge GmbH
+    → [xy] scored 230 rows (Chemical and Materials/Advanced Materials) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] city/country filled=0 kept=230 blank=0
+    → [table] 230 rows | graph top 20 | html=global_silicon_carbide_market_global_report.html
+
+=== OpenAI cost (this run) ===
+  run_id : 278e5fd8
+  market : Global Silicon Carbide Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (230 rows) → global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 230 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Silicon Carbide Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 300,
+  "existing_before": 230,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 300,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 257,
+  "rejected_mid": 43,
+  "chatgpt_filled": 231,
+  "rejected_final": 0,
+  "total_after": 230,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "278e5fd8",
+    "market": "Global Silicon Carbide Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-16T19:59:12.382921+00:00",
+    "ended_at": "2026-09-17T00:14:52.167443+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 230,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+      "rejected_mid": 43,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Chemical and Materials",
+    "industry_category": "Advanced Materials",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters address the unique characteristics of the SiC market, where substrate quality, device reliability, and wafer size are critical product differentiators, while business strength hinges on customer wins, capacity expansion, and financial performance in a rapidly growing industry.",
+    "parameter_definitions": {
+      "x": {
+        "Substrate & Epitaxy Quality": "Measures the crystalline quality, uniformity, and low defect density of SiC substrates and epitaxial layers, critical for high-performance power devices. Evidence includes defect density metrics, wafer bow, and surface roughness data from customer qualifications.",
+        "Device Performance & Reliability": "Assesses the electrical characteristics (breakdown voltage, on-resistance, switching speed) and long-term reliability of SiC MOSFETs, diodes, and modules. Evidence includes datasheet parameters, qualification test results (e.g., HTGB, HTRB), and field failure rates.",
+        "Wafer Size & Defect Density": "Evaluates the ability to produce larger diameter wafers (150mm, 200mm) with low defect density, directly impacting die cost and throughput. Evidence includes wafer diameter offerings, defect density maps, and transition roadmaps to 200mm.",
+        "R&D and Patent Strength": "Captures investment in next-generation SiC technology (e.g., trench MOSFETs, superjunction) and intellectual property portfolio. Evidence includes R&D spending as % of revenue, patent counts, and technical publications.",
+        "Manufacturing Yield & Scalability": "Reflects production efficiency, yield rates, and ability to scale output to meet demand. Evidence includes yield percentages, capacity utilization, and announced fab expansions or conversions."
+      },
+      "y": {
+        "Market Share & Customer Base": "Measures the company's share of the global SiC market and the breadth/quality of its customer base, including automotive, industrial, and energy customers. Evidence includes market share estimates, design wins, and long-term supply agreements.",
+        "Revenue Growth & Profitability": "Assesses financial performance through revenue growth, gross margin, and profitability in the SiC business segment. Evidence includes segment financials, margin trends, and return on invested capital.",
+        "Capacity Expansion & Supply Chain": "Evaluates the ability to secure raw materials (e.g., high-purity silicon, graphite) and expand manufacturing capacity to meet demand. Evidence includes announced capacity expansions, vertical integration, and supply agreements.",
+        "Geographic & Application Diversification": "Captures the spread of sales across regions and applications (EVs, renewables, industrial) to reduce dependence on any single market. Evidence includes revenue breakdown by geography and application.",
+        "Strategic Partnerships & Alliances": "Reflects the strength of collaborations with key customers, suppliers, and technology partners to accelerate adoption and innovation. Evidence includes joint ventures, co-development agreements, and long-term contracts."
+      }
+    },
+    "x_features": [
+      "Substrate & Epitaxy Quality",
+      "Device Performance & Reliability",
+      "Wafer Size & Defect Density",
+      "R&D and Patent Strength",
+      "Manufacturing Yield & Scalability"
+    ],
+    "y_features": [
+      "Market Share & Customer Base",
+      "Revenue Growth & Profitability",
+      "Capacity Expansion & Supply Chain",
+      "Geographic & Application Diversification",
+      "Strategic Partnerships & Alliances"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 81.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 230,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 231,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 1,
+      "kept": 228,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The global silicon carbide market encompasses the production and sale of silicon carbide in various forms (e.g., raw materials, powders, substrates, and devices) used in semiconductors, power electronics, abrasives, and refractories.",
+      "keep_roles": [
+        "Manufacturer"
+      ],
+      "uniform_role": "Manufacturer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 230  (target 300)

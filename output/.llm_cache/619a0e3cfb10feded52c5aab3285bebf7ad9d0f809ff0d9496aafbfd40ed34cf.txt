@@ -1,0 +1,331 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Pragmatic Semiconductor does not offer traditional silicon process nodes like 3nm or 2nm; instead, it uses flexible thin-film transistor technology on flexible substrates, which is a different category.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/flexics/"],
+      "evidence_snippets": ["FlexICs are ultra-thin, physically flexible chips with a low carbon footprint. Using thin-film transistor technology on a flexible substrate, they go where other semiconductors can’t."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "feature": "Process / Node & Technology Leadership",
+      "axis": "Process & Product Capability",
+      "question": "Does the company lead in any specific process technology (e.g., FinFET, GAA, FD-SOI) and how does it compare to peers?",
+      "score": 6,
+      "answer": "Pragmatic leads in flexible thin-film transistor technology, a niche area, but does not compete in mainstream silicon process technologies like FinFET or GAA.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/flexics/"],
+      "evidence_snippets": ["Using thin-film transistor technology on a flexible substrate, they go where other semiconductors can’t."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "feature": "Process / Node & Technology Leadership",
+      "axis": "Process & Product Capability",
+      "question": "What is the company's roadmap for next-generation nodes (e.g., 2nm, 1.4nm) and expected volume production timelines?",
+      "score": 3,
+      "answer": "The knowledge base does not mention any roadmap for traditional silicon nodes; the company focuses on flexible ICs, not conventional node scaling.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "feature": "Product Portfolio Breadth (logic, memory, analog, power, OSAT)",
+      "axis": "Process & Product Capability",
+      "question": "Does the company offer products across multiple semiconductor categories (logic, memory, analog, power) or is it specialized?",
+      "score": 5,
+      "answer": "Pragmatic specializes in flexible ICs, primarily for NFC applications, and does not offer a broad portfolio across logic, memory, analog, or power.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/products/"],
+      "evidence_snippets": ["Products: NFC Connect, NFC Protect, Inlay assembly"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "feature": "Product Portfolio Breadth (logic, memory, analog, power, OSAT)",
+      "axis": "Process & Product Capability",
+      "question": "What is the revenue split by product type (e.g., logic vs. memory vs. analog) and how diversified is the portfolio?",
+      "score": 2,
+      "answer": "No revenue split or financial data is available in the knowledge base, and the product portfolio appears narrow, focused on NFC products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "feature": "Product Portfolio Breadth (logic, memory, analog, power, OSAT)",
+      "axis": "Process & Product Capability",
+      "question": "Does the company provide OSAT (outsourced semiconductor assembly and test) services or partner with OSAT providers?",
+      "score": 4,
+      "answer": "Pragmatic mentions inlay assembly as part of its offerings, which is a form of packaging, but it is not a traditional OSAT provider.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/inlay-assembly/"],
+      "evidence_snippets": ["Inlay assembly"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "feature": "Design IP & Architecture Strength",
+      "axis": "Process & Product Capability",
+      "question": "What proprietary design IP (e.g., CPU, GPU, AI accelerators) does the company own and how are they differentiated?",
+      "score": 4,
+      "answer": "The knowledge base does not detail proprietary design IP such as CPU or GPU; the company focuses on flexible IC technology, not complex processor IP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "feature": "Design IP & Architecture Strength",
+      "axis": "Process & Product Capability",
+      "question": "Does the company license its IP to other firms or rely on third-party IP (e.g., ARM, RISC-V)?",
+      "score": 3,
+      "answer": "No information about IP licensing or reliance on third-party IP is provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "feature": "Design IP & Architecture Strength",
+      "axis": "Process & Product Capability",
+      "question": "How strong is the company's architecture in high-growth areas like AI, 5G, or automotive?",
+      "score": 3,
+      "answer": "Pragmatic's focus is on flexible NFC and IoT applications, not high-performance AI, 5G, or automotive architectures.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/applications/"],
+      "evidence_snippets": ["Applications: Consumer electronics, Smart packaging, Healthcare, Supply chain, Apparel, Toys and games, Security, Factory automation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "feature": "Manufacturing Capacity, Yield & Packaging",
+      "axis": "Process & Product Capability",
+      "question": "What is the company's current wafer fabrication capacity (in wafers per month) and utilization rate?",
+      "score": 2,
+      "answer": "The knowledge base does not provide any wafer fabrication capacity or utilization figures.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "feature": "Manufacturing Capacity, Yield & Packaging",
+      "axis": "Process & Product Capability",
+      "question": "How does the company's yield rate compare to industry benchmarks for leading-edge nodes?",
+      "score": 2,
+      "answer": "No yield rate data is available, and the company's flexible technology is not comparable to leading-edge silicon nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "feature": "Manufacturing Capacity, Yield & Packaging",
+      "axis": "Process & Product Capability",
+      "question": "Does the company offer advanced packaging (e.g., 2.5D/3D, chiplets) and what is its packaging capacity?",
+      "score": 3,
+      "answer": "Pragmatic offers inlay assembly, which is a form of packaging, but not advanced 2.5D/3D or chiplet packaging.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/inlay-assembly/"],
+      "evidence_snippets": ["Inlay assembly"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "feature": "Quality, Reliability & Compliance",
+      "axis": "Process & Product Capability",
+      "question": "What quality certifications (e.g., ISO 9001, IATF 16949) does the company hold for its manufacturing processes?",
+      "score": 3,
+      "answer": "The knowledge base mentions a Quality page but does not list specific certifications.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/company/quality/"],
+      "evidence_snippets": ["Quality"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "feature": "Quality, Reliability & Compliance",
+      "axis": "Process & Product Capability",
+      "question": "What is the company's defect rate (DPPM) and how does it ensure reliability for critical applications?",
+      "score": 2,
+      "answer": "No defect rate or reliability data is provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "feature": "Quality, Reliability & Compliance",
+      "axis": "Process & Product Capability",
+      "question": "How does the company address compliance with environmental regulations (e.g., RoHS, REACH) and conflict minerals?",
+      "score": 5,
+      "answer": "Pragmatic emphasizes sustainability and low carbon footprint, but specific compliance details are not in the knowledge base.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/company/esg/"],
+      "evidence_snippets": ["ESG"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "feature": "Geographic & End-Market Reach",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "In which geographic regions does the company have significant sales, manufacturing, or R&D presence?",
+      "score": 5,
+      "answer": "Pragmatic is based in Cambridge, UK, and likely has European presence, but no detailed geographic footprint is provided.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/company/"],
+      "evidence_snippets": ["Cambridge, United Kingdom"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "feature": "Geographic & End-Market Reach",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "What are the primary end-markets served (e.g., automotive, consumer, industrial, telecom) and their revenue contribution?",
+      "score": 5,
+      "answer": "The company lists applications in consumer electronics, smart packaging, healthcare, supply chain, apparel, toys, security, and factory automation, but no revenue contributions.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/applications/"],
+      "evidence_snippets": ["Applications: Consumer electronics, Smart packaging, Healthcare, Supply chain, Apparel, Toys and games, Security, Factory automation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "feature": "Geographic & End-Market Reach",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "How does the company's geographic diversification mitigate risks from regional disruptions or trade policies?",
+      "score": 3,
+      "answer": "With limited geographic footprint, the company may be exposed to regional risks, but no mitigation details are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "feature": "Customer / Ecosystem Partnerships",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "Who are the company's top customers and what is the customer concentration risk?",
+      "score": 2,
+      "answer": "No customer names or concentration data are provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "feature": "Customer / Ecosystem Partnerships",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "Does the company have strategic partnerships with equipment makers, EDA vendors, or research consortia?",
+      "score": 4,
+      "answer": "The knowledge base does not mention specific partnerships, but the company has an academic page suggesting some collaboration.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/company/academic/"],
+      "evidence_snippets": ["Academic"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "feature": "Customer / Ecosystem Partnerships",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "How does the company collaborate with ecosystem players (e.g., foundries, OSATs, software) to deliver complete solutions?",
+      "score": 4,
+      "answer": "Pragmatic operates its own foundry and offers inlay assembly, but details on broader ecosystem collaboration are not provided.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/foundry/"],
+      "evidence_snippets": ["FlexIC Foundry"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "feature": "Financial Strength & CapEx Capacity",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "What is the company's annual revenue, net income, and free cash flow for the last fiscal year?",
+      "score": 2,
+      "answer": "No financial data is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "feature": "Financial Strength & CapEx Capacity",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "What is the company's capital expenditure (CapEx) as a percentage of revenue and its absolute amount?",
+      "score": 2,
+      "answer": "No CapEx data is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "feature": "Financial Strength & CapEx Capacity",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "How does the company's balance sheet (debt-to-equity, cash reserves) support large-scale investments?",
+      "score": 2,
+      "answer": "No balance sheet information is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "feature": "Technology & Product Roadmap",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "What are the key milestones in the company's technology roadmap for the next 3-5 years?",
+      "score": 4,
+      "answer": "The knowledge base mentions product expansions like NFC Protect, but no detailed roadmap is provided.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/product-portfolio-expands-with-pragmatic-nfc-protect/"],
+      "evidence_snippets": ["Pragmatic Semiconductor expands product portfolio with Pragmatic NFC Protect to combat product tampering and counterfeiting"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "feature": "Technology & Product Roadmap",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "Does the company have a clear roadmap for emerging technologies like AI chips, quantum, or advanced memory?",
+      "score": 2,
+      "answer": "No roadmap for AI, quantum, or advanced memory is mentioned; the focus is on flexible NFC and IoT.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "feature": "Technology & Product Roadmap",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "How does the company's roadmap align with industry trends and customer demands?",
+      "score": 5,
+      "answer": "The company's focus on flexible, sustainable chips aligns with trends in IoT and sustainability, but specific alignment details are not provided.",
+      "evidence_urls": ["https://www.pragmaticsemi.com/flexics/"],
+      "evidence_snippets": ["FlexICs are ultra-thin, physically flexible chips with a low carbon footprint."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "feature": "Capacity Expansion & Business Growth",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "What new fabs or expansion projects has the company announced and what is their expected capacity addition?",
+      "score": 2,
+      "answer": "No expansion projects or capacity additions are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "feature": "Capacity Expansion & Business Growth",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "What is the company's revenue growth rate over the past 3 years and its projected growth?",
+      "score": 2,
+      "answer": "No revenue growth data is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "feature": "Capacity Expansion & Business Growth",
+      "axis": "Scale & Go-to-Market Strategy",
+      "question": "How does the company plan to fund and execute capacity expansions to meet future demand?",
+      "score": 2,
+      "answer": "No funding or expansion plans are detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

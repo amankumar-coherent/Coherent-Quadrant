@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "SiFive is an IP provider, not a foundry, so it does not offer process nodes but its IP is designed for leading-edge nodes like 5nm and 3nm.",
+      "evidence_urls": ["https://www.sifive.com/risc-v-core-ip"],
+      "evidence_snippets": ["SiFive delivers high-performance, scalable processor core IP solutions tailored to your needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "SiFive leads in RISC-V processor IP, not in specific process technologies like FinFET or GAA, which are foundry capabilities.",
+      "evidence_urls": ["https://www.sifive.com/risc-v-core-ip"],
+      "evidence_snippets": ["SiFive delivers high-performance, scalable processor core IP solutions tailored to your needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "SiFive's roadmap focuses on high-performance RISC-V cores for data center and AI, but process node specifics are not disclosed.",
+      "evidence_urls": ["https://www.sifive.com/blog/how-sifive-is-driving-ai-and-datacenter-innovation"],
+      "evidence_snippets": ["Read about SiFive’s data center strategy"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "SiFive specializes in RISC-V processor IP and related system IP, not in memory, analog, or power products.",
+      "evidence_urls": ["https://www.sifive.com/risc-v-core-ip", "https://www.sifive.com/system-ip"],
+      "evidence_snippets": ["SiFive delivers high-performance, scalable processor core IP solutions tailored to your needs.", "View All SiFive System IP"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed; SiFive is primarily an IP licensor, so revenue is from IP royalties and licenses.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "SiFive does not provide OSAT services but partners with foundries and OSATs for manufacturing and packaging.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 9,
+      "answer": "SiFive owns RISC-V processor IP including scalar, vector, and matrix solutions, and is a leader in high-performance RISC-V cores.",
+      "evidence_urls": ["https://www.sifive.com/risc-v-core-ip", "https://www.sifive.com/blog/sifive-sets-new-bar-for-high-performance-risc-v-with-third-generation-performance-p550-and-p570-ip"],
+      "evidence_snippets": ["SiFive announced the launch of the SiFive Performance™ P570 Gen 3, the most powerful and efficient out-of-order processor core in its class", "Customizable High-Performance Scalar, Vector, and Matrix Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 9,
+      "answer": "SiFive licenses its RISC-V IP to other firms and is a leading licensor of RISC-V processor IP.",
+      "evidence_urls": ["https://www.sifive.com/risc-v-core-ip"],
+      "evidence_snippets": ["SiFive delivers high-performance, scalable processor core IP solutions tailored to your needs."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "SiFive's architecture is strong in AI/ML, automotive, and data center markets, with dedicated product families and solutions.",
+      "evidence_urls": ["https://www.sifive.com/solutions/ai-ml", "https://www.sifive.com/solutions/automotive", "https://www.sifive.com/solutions/data-center"],
+      "evidence_snippets": ["AI & ML: Accelerate AI innovations with SIFive’s powerful computing solutions.", "Automotive: Power advanced driver-assistance systems and in-vehicle infotainment with high-efficiency processors.", "Datacenter: Optimize cloud performance and power efficiency in high-demand computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "SiFive is an IP company and does not own wafer fabrication facilities, so it has no wafer capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "SiFive does not manufacture wafers, so yield rates are not applicable; it relies on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "SiFive offers system IP and supports chiplet-based designs, but does not provide advanced packaging itself.",
+      "evidence_urls": ["https://www.sifive.com/system-ip"],
+      "evidence_snippets": ["View All SiFive System IP"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "SiFive likely holds ISO 9001 and other quality certifications, but specific certifications are not listed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "SiFive ensures reliability through rigorous design and validation, but specific DPPM figures are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "SiFive complies with environmental regulations as a global company, but specific compliance details are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "SiFive has global presence with locations in the US and Asia, and serves customers worldwide.",
+      "evidence_urls": ["https://www.sifive.com/locations"],
+      "evidence_snippets": ["Locations"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "SiFive serves multiple end-markets including AI/ML, automotive, edge computing, IoT, consumer, data center, aerospace/defense, and storage.",
+      "evidence_urls": ["https://www.sifive.com/solutions"],
+      "evidence_snippets": ["All Solutions: AI & ML, Automotive, Edge Computing, IoT / Embedded, Consumer, Datacenter, Space / A&D, Storage"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "SiFive's global presence and diverse end-markets help mitigate regional risks, but specific risk mitigation strategies are not detailed.",
+      "evidence_urls": ["https://www.sifive.com/locations"],
+      "evidence_snippets": ["Locations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "SiFive's top customers are not publicly disclosed, but it has a broad customer base across various industries.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "SiFive has strategic partnerships with companies like Cycuity, BAE Systems, and HighTec EDV-Systeme, and collaborates with foundries and EDA vendors.",
+      "evidence_urls": ["https://www.sifive.com/blog/sifive-and-hightec-edv-systeme-together-strengthening-the-risc-v-ecosystem-for-safe-and-secure-automotive-and-industrial-applications", "https://www.sifive.com/blog/cycuity-partnership"],
+      "evidence_snippets": ["Collaborating with Cycuity and BAE Systems means better security for all", "SiFive is collaborating with HighTec EDV-Systeme, a leading provider of automotive compiler solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "SiFive collaborates with ecosystem partners including foundries, OSATs, and software providers to deliver complete solutions, as evidenced by partnerships and its software tools.",
+      "evidence_urls": ["https://www.sifive.com/software", "https://www.sifive.com/partners"],
+      "evidence_snippets": ["Software & Tools: Core Designer, SiFive Freedom Studio, Freedom SDK for Linux, Freedom SDK for Metal, SiFive Freedom Tools, SiFive Kernel Library, Trace & Debug, SiFive Models", "Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "SiFive raised $400 million in Series G funding at a $3.65 billion valuation, but annual revenue and net income are not disclosed.",
+      "evidence_urls": ["https://www.sifive.com/blog/sifive-raises-400-million-to-accelerate-high-performance-risc-v-data-center-solutions-company-valuation-now-stands-at-3-65-billion"],
+      "evidence_snippets": ["SiFive Raises $400 Million to Accelerate High-Performance RISC-V Data Center Solutions; Company Valuation Now Stands at $3.65 Billion"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx details are not disclosed; as an IP company, SiFive's capital expenditure is likely lower than that of manufacturers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "SiFive's $400 million funding round and $3.65 billion valuation indicate strong financial support for investments.",
+      "evidence_urls": ["https://www.sifive.com/blog/sifive-raises-400-million-to-accelerate-high-performance-risc-v-data-center-solutions-company-valuation-now-stands-at-3-65-billion"],
+      "evidence_snippets": ["SiFive Raises $400 Million to Accelerate High-Performance RISC-V Data Center Solutions; Company Valuation Now Stands at $3.65 Billion"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "SiFive's roadmap includes third-generation Performance cores (P550/P570), expansion into data center and AI, and new product families like the P500 series.",
+      "evidence_urls": ["https://www.sifive.com/blog/sifive-sets-new-bar-for-high-performance-risc-v-with-third-generation-performance-p550-and-p570-ip", "https://www.sifive.com/blog/introducing-performance-gen-3-p500-series"],
+      "evidence_snippets": ["SiFive announced the launch of the SiFive Performance™ P570 Gen 3, the most powerful and efficient out-of-order processor core in its class", "INTRODUCING Performance Gen 3 P500 Series"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "SiFive has a clear roadmap for AI and data center solutions, with dedicated product families and investments, but not for quantum or advanced memory.",
+      "evidence_urls": ["https://www.sifive.com/blog/how-sifive-is-driving-ai-and-datacenter-innovation"],
+      "evidence_snippets": ["Read about SiFive’s data center strategy"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "SiFive's roadmap aligns with industry trends toward RISC-V, AI, and data center growth, as evidenced by its product launches and funding.",
+      "evidence_urls": ["https://www.sifive.com/blog/sifive-raises-400-million-to-accelerate-high-performance-risc-v-data-center-solutions-company-valuation-now-stands-at-3-65-billion"],
+      "evidence_snippets": ["SiFive Raises $400 Million to Accelerate High-Performance RISC-V Data Center Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "SiFive does not own fabs, so it does not announce fab expansions; it partners with foundries for manufacturing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "SiFive's revenue growth is not disclosed, but its $400 million funding round and valuation increase indicate strong growth.",
+      "evidence_urls": ["https://www.sifive.com/blog/sifive-raises-400-million-to-accelerate-high-performance-risc-v-data-center-solutions-company-valuation-now-stands-at-3-65-billion"],
+      "evidence_snippets": ["SiFive Raises $400 Million to Accelerate High-Performance RISC-V Data Center Solutions; Company Valuation Now Stands at $3.65 Billion"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "SiFive plans to fund growth through its $400 million funding round and partnerships with foundries for capacity.",
+      "evidence_urls": ["https://www.sifive.com/blog/sifive-raises-400-million-to-accelerate-high-performance-risc-v-data-center-solutions-company-valuation-now-stands-at-3-65-billion"],
+      "evidence_snippets": ["SiFive Raises $400 Million to Accelerate High-Performance RISC-V Data Center Solutions"],
+      "grounding": "supported"
+    }
+  ]
+}

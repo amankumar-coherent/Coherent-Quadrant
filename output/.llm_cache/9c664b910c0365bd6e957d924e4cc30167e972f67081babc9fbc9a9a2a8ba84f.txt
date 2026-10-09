@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the eq02+ LifeMonitor as flagship product; no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Described as clinical-grade, FDA 510(k) cleared, CE marked, and used in military and clinical research; comparative study published in Frontiers."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows a specialized multi-parameter wearable with advanced features, but no explicit R&D pipeline or innovation details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems beyond regulatory certifications."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Explicitly stated FDA 510(k) cleared, CE marked, and ATEX certified."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Headquartered in Cambridge, UK, with 2 locations; used by US soldiers, but no clear global distribution evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Used in military, first response, health and safety, CBRN, and clinical research; partnership with ADInstruments indicates trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "partial",
+      "why": "Craft reports only 5 employees and no funding raised; no revenue figures, suggesting small scale."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of new indications or pipeline beyond current physiological monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with ADInstruments; used by military and Red Bull, indicating collaborations, but no other expansion details."
+    }
+  ],
+  "evidence_used": true
+}

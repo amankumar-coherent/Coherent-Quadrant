@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "TOK supplies photoresists and process materials for leading-edge semiconductor manufacturing, but specific node details are not disclosed in the KB.",
+      "evidence_urls": ["https://www.tok.co.jp/products/semiconductor-pre"],
+      "evidence_snippets": ["半導体製造前工程"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "TOK is a leader in photoresist and high-purity process materials, but specific process technology leadership (e.g., FinFET, GAA) is not detailed in the KB.",
+      "evidence_urls": ["https://www.tok.co.jp/who-we-are/core-technology"],
+      "evidence_snippets": ["TOKが世界に誇る2つのコアテクノロジー"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "TOK's roadmap for next-generation nodes is not publicly detailed in the KB, but as a key material supplier it likely aligns with industry node transitions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "TOK specializes in semiconductor materials (photoresists, process chemicals) rather than offering products across logic, memory, analog, or power categories.",
+      "evidence_urls": ["https://www.tok.co.jp/products"],
+      "evidence_snippets": ["半導体製造前工程", "半導体製造後工程"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Revenue split by product type is not disclosed in the KB, but TOK's portfolio is focused on semiconductor materials, indicating limited diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "TOK does not provide OSAT services; it supplies materials for semiconductor manufacturing, including post-processing, but does not offer assembly/test services.",
+      "evidence_urls": ["https://www.tok.co.jp/products/semiconductor-post"],
+      "evidence_snippets": ["半導体製造後工程"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "TOK does not own CPU, GPU, or AI accelerator IP; its proprietary technology is in high-purity chemical synthesis and photoresist formulation.",
+      "evidence_urls": ["https://www.tok.co.jp/who-we-are/core-technology"],
+      "evidence_snippets": ["高純度化技術"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "TOK does not license design IP; it supplies materials and relies on its own chemical expertise, not third-party IP like ARM or RISC-V.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "TOK's architecture strength is not applicable as it is a materials supplier, but its products support high-growth areas like AI and automotive indirectly.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "TOK does not operate wafer fabs; it manufactures chemicals, so wafer capacity and utilization are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rate is not applicable as TOK does not fabricate wafers; its focus is on material purity and consistency.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "TOK does not offer advanced packaging; it supplies materials for packaging processes but does not provide packaging services.",
+      "evidence_urls": ["https://www.tok.co.jp/products/semiconductor-post"],
+      "evidence_snippets": ["半導体製造後工程"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "TOK likely holds ISO 9001 and other quality certifications, but specific certifications are not listed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate (DPPM) is not disclosed, but TOK emphasizes high purity and quality in its materials, which is critical for semiconductor applications.",
+      "evidence_urls": ["https://www.tok.co.jp/who-we-are/core-technology"],
+      "evidence_snippets": ["高純度化技術"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "TOK addresses environmental compliance through its sustainability initiatives, but specific RoHS/REACH compliance is not detailed in the KB.",
+      "evidence_urls": ["https://www.tok.co.jp/sustainability"],
+      "evidence_snippets": ["サステナビリティ"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "TOK has global operations with domestic and overseas bases, as indicated by the KB, but specific regions are not enumerated.",
+      "evidence_urls": ["https://www.tok.co.jp/company/internal", "https://www.tok.co.jp/company/overseas"],
+      "evidence_snippets": ["国内拠点", "海外拠点"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "TOK serves the semiconductor industry, which spans multiple end-markets, but revenue contribution by end-market is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "TOK's global presence likely mitigates regional risks, but specific diversification strategies are not detailed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Top customers are not disclosed, but as a key material supplier, TOK likely has a concentrated customer base among major semiconductor manufacturers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "TOK likely collaborates with equipment makers and research consortia, but specific partnerships are not mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "TOK collaborates with ecosystem players by supplying materials to foundries and OSATs, but details of these collaborations are not in the KB.",
+      "evidence_urls": ["https://www.tok.co.jp/products"],
+      "evidence_snippets": ["半導体製造前工程", "半導体製造後工程"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not provided in the KB, but TOK is a listed company with public financials available on its IR page.",
+      "evidence_urls": ["https://www.tok.co.jp/ir"],
+      "evidence_snippets": ["株主・投資家情報"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx data is not in the KB, but as a materials manufacturer, TOK's CapEx is likely lower than that of wafer fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the KB, but TOK's stable operations suggest a solid financial position.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "TOK's roadmap is not explicitly detailed, but its focus on core technologies and new business fields indicates ongoing innovation.",
+      "evidence_urls": ["https://www.tok.co.jp/who-we-are/core-technology", "https://www.tok.co.jp/products/newfield"],
+      "evidence_snippets": ["コアテクノロジー", "新規事業分野"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "TOK's roadmap for emerging technologies like AI chips or quantum is not specified, but it likely supports these through advanced materials.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "TOK's roadmap aligns with semiconductor industry trends by focusing on high-purity materials for advanced nodes, but specific alignment is not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No new fab expansions are announced because TOK is a materials supplier, not a wafer fab operator.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth is not disclosed in the KB, but TOK's stable position in the semiconductor materials market suggests steady growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "TOK likely funds expansions through operating cash flow and debt, but specific plans are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

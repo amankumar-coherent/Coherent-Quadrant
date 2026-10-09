@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence indicates a GLP-1 receptor agonist biosimilar candidate in development, but no marketed GLP-1 products or additional incretin assets are mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "The GLP-1 biosimilar is in development with no differentiation details; company's other products (e.g., TROP2 ADC) are outside GLP-1 space."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has clinical R&D capabilities evidenced by registrational studies in oncology, but GLP-1 candidate is only in development with no phase specified."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has manufacturing capabilities (DMF, CEP) and international exports, but no specific evidence for GLP-1 manufacturing scale."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has NMPA approvals for other products and regulatory filings, but no GLP-1 approvals or quality certifications specifically cited."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in China and international exports, but no evidence of GLP-1 product launches or market access in multiple regions."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company is known in China for pharmaceuticals, but no specific reputation in GLP-1 space; GLP-1 brand is only a biosimilar candidate."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided for the company or its GLP-1 business."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "GLP-1 biosimilar in development, but no details on indications or clinical phases; other pipeline assets are in oncology."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows partnership with MSD for TROP2 ADC, indicating business expansion capability, but no GLP-1-specific partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

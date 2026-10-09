@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions BioButton and BioSticker as FDA-cleared sensors, but only BioButton is detailed. Portfolio appears narrow."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Multiple peer-reviewed studies cited showing reduced ICU admissions, rapid response activations, and length of stay; Houston Methodist study on 1,120 patients."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Continuous monitoring technology with BioButton, BioHub gateways, and BioDashboard; but no explicit R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "BioSticker and BioButton are FDA-cleared; trademarks and legal pages indicate compliance focus."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "HQ and presence only in United States; no evidence of international reach or channel partners."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Adoption at Houston Methodist and other hospitals; published studies and news highlight clinical trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Privately held; no revenue or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Expanding from in-facility to at-home monitoring; Rural Health Transformation program; but no specific pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions Rural Health Transformation program and collaborations with hospitals like Houston Methodist; but no formal partnership announcements."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,23 @@
+[pipeline 02:08:49] market: Global Wearable Glucometer Market (global) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global
+[pipeline 02:08:49] 1. verified rows: 510
+[pipeline 02:08:49] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global\_pipeline\axes_spec.json
+[pipeline 02:08:49] 3. 201 names -> 169 companies after dedupe (27 groups merged)
+[pipeline 02:08:49] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 02:08:49]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global\_pipeline\evidence_pool.json
+[pipeline 02:08:49]    20 companies with full evidence, 149 in the long tail
+[pipeline 02:08:49] 6. composite scores (5 per quadrant)
+[pipeline 02:08:52] 7. rewriting hedge wording / first person in evidence
+[pipeline 02:08:56] 8. building HTML / JSON / CSV report
+[pipeline 02:09:00] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 02:09:00] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_wearable_glucometer_market_global\global_wearable_glucometer_market_global_report.html

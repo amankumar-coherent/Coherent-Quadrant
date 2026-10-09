@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions broad portfolio in metabolic and other therapeutic areas, but no specific GLP-1 products are listed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has presence in metabolic area, but no differentiation in GLP-1 specifically is evidenced."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence states commitment to innovation, developing biosimilars and biotechnological solutions, but no specific GLP-1 pipeline."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Operates three specialized manufacturing plants for sterile, biotechnological, and generic drugs, indicating manufacturing capability."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Certified with ISO 9001 and designed under international quality, safety, and regulatory standards."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in 16 international markets in America and Europe, with base in Mexico and Latin America."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Established Mexican pharmaceutical company with 88 years of history, but no specific GLP-1 brand reputation."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions development of biosimilars and biotechnological solutions, but no specific GLP-1 pipeline or indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Exports to 16 markets and invests in infrastructure, but no specific partnerships or GLP-1 deals mentioned."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

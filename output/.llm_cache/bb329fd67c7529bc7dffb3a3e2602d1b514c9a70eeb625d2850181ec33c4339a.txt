@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "As a processor IP provider, Codasip does not offer or announce process nodes; its IP is process-agnostic and typically implemented on partner foundry nodes.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Customizable RISC-V processor IP."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Codasip does not lead in specific process technologies like FinFET or GAA; its focus is on RISC-V processor IP and design automation, not process technology.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Codasip is a pioneer of CHERI technology and a provider of RISC-V processor IP and design automation tools."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Codasip does not have a roadmap for next-generation process nodes; its roadmap is centered on processor IP and security features, not manufacturing nodes.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Codasip is positioning itself as a leader in security-first RISC-V processor IP, particularly via CHERI technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Codasip is specialized in RISC-V processor IP and design tools, not offering products across multiple semiconductor categories like memory, analog, or power.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["RISC-V processor IP including high-performance embedded cores, application cores, and automotive cores."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Revenue split by product type is not disclosed; as an IP company, revenue is primarily from licensing and services, but no breakdown is available.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Codasip is positioning itself as a leader in security-first RISC-V processor IP."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "No evidence that Codasip provides OSAT services or has partnerships with OSAT providers; its focus is on processor IP.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Customizable RISC-V processor IP."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Codasip owns proprietary RISC-V processor IP, including CHERI-enabled cores and design automation tools, differentiated by security features and customizability.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["CHERI-based memory protection to prevent cyberattacks from out-of-bounds memory accesses.", "RISC-V processor IP including high-performance embedded cores, application cores, and automotive cores."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 8,
+      "answer": "Codasip licenses its RISC-V processor IP to customers, as evidenced by the licensing agreement with EnSilica, and uses the open RISC-V architecture.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["licensing agreements such as with EnSilica."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Codasip's architecture is strong in security and automotive (ASIL-D certified), but less prominent in AI or 5G; it targets regulated markets.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Functional safety solutions for regulated markets, including ASIL-D certified RISC-V processors.", "targets highly regulated markets including critical national infrastructure, defense/avionics/aerospace, and automotive/industrial/IoT."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Codasip is an IP company and does not own wafer fabrication facilities, so it has no wafer capacity or utilization.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Codasip is a provider of RISC-V processor IP and design automation tools."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Yield rate is not applicable as Codasip does not manufacture wafers; it designs IP that is fabricated by partners.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Codasip is a provider of RISC-V processor IP and design automation tools."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No evidence that Codasip offers advanced packaging; its focus is on processor IP, not packaging services.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Customizable RISC-V processor IP."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Codasip holds ASIL-D certification for its automotive processors, indicating compliance with functional safety standards, but other quality certifications are not mentioned.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["ASIL-D certification"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate (DPPM) is not disclosed; however, ASIL-D certification implies high reliability for automotive applications.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["ASIL-D certification"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No specific information on RoHS, REACH, or conflict minerals compliance is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Codasip has presence in Germany, Europe, and the United States, with headquarters in Munich, Germany.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Germany; Europe; United States", "Munich, Germany"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary end-markets include critical national infrastructure, defense/avionics/aerospace, and automotive/industrial/IoT, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["targets highly regulated markets including critical national infrastructure, defense/avionics/aerospace, and automotive/industrial/IoT."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification is limited to Europe and the US, which may not fully mitigate risks from regional disruptions, but no detailed analysis is available.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Germany; Europe; United States"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Only one customer, EnSilica, is mentioned, indicating potential concentration risk, but no revenue figures are available.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["customers: [\"EnSilica\"]"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No specific partnerships with equipment makers, EDA vendors, or research consortia are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No details on collaborations with foundries, OSATs, or software providers are available; only licensing to customers like EnSilica is noted.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["licensing agreements such as with EnSilica."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "Financial data such as revenue, net income, and free cash flow are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "CapEx figures are not available; as an IP company, capital expenditure is likely lower than manufacturers, but no data is provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "Balance sheet details such as debt-to-equity and cash reserves are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Codasip's roadmap includes advancing CHERI security and functional safety, with 15+ years of CHERI development, but specific milestones are not detailed.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["15+ years of CHERI development", "Functional safety solutions for regulated markets, including ASIL-D certified RISC-V processors."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No clear roadmap for AI chips, quantum, or advanced memory is mentioned; focus is on security and RISC-V processors.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Codasip is positioning itself as a leader in security-first RISC-V processor IP."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Codasip's roadmap aligns with industry trends toward security and functional safety in regulated markets, as evidenced by its focus on CHERI and ASIL-D.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["targets highly regulated markets including critical national infrastructure, defense/avionics/aerospace, and automotive/industrial/IoT."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No new fab or expansion projects are announced; as an IP company, Codasip does not build fabs.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["Codasip is a provider of RISC-V processor IP and design automation tools."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rate is not disclosed; the company is undergoing a strategic pivot and divestiture, which may impact growth.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["The company is pursuing a strategic pivot and divestiture process."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No details on funding or execution of capacity expansions; as an IP company, expansion is likely through licensing and partnerships, but specifics are absent.",
+      "evidence_urls": ["https://codasip.com"],
+      "evidence_snippets": ["licensing agreements such as with EnSilica."],
+      "grounding": "partial"
+    }
+  ]
+}

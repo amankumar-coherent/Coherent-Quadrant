@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "AirTrunk is a data center provider, not a compute hardware vendor, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": [],
+      "evidence_snippets": ["AirTrunk designs, builds, and operates hyperscale data centers in the Asia-Pacific region, serving cloud providers and large enterprises."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "AirTrunk does not manufacture accelerators, so performance per watt of their latest accelerator is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "AirTrunk does not provide compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 1,
+      "answer": "AirTrunk does not offer networking hardware; it provides data center infrastructure, not networking products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "AirTrunk does not provide interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "AirTrunk does not sell networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "AirTrunk emphasizes energy-efficient data center designs, but specific PUE values are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://airtrunk.com/sustainability/"],
+      "evidence_snippets": ["They offer scalable, energy-efficient data center solutions to support digital infrastructure needs."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "AirTrunk likely uses advanced cooling solutions given their focus on efficiency, but no specific mention of liquid cooling in the KB.",
+      "evidence_urls": ["https://airtrunk.com/sustainability/"],
+      "evidence_snippets": ["They offer scalable, energy-efficient data center solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "AirTrunk's power management features are implied through their sustainability commitment, but specific real-world reductions are not detailed.",
+      "evidence_urls": ["https://airtrunk.com/sustainability/"],
+      "evidence_snippets": ["They offer scalable, energy-efficient data center solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "AirTrunk does not provide a software platform for managing data center resources; they focus on physical infrastructure.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 1,
+      "answer": "AirTrunk does not offer orchestration software, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 1,
+      "answer": "AirTrunk does not provide automation software for provisioning or monitoring workloads.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "AirTrunk does not offer specialized hardware or software for AI workloads; they provide data center facilities.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 1,
+      "answer": "AirTrunk does not provide AI-specific solutions, so performance improvements over general-purpose alternatives are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "AirTrunk does not offer tools for workload profiling or optimization.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "AirTrunk operates in multiple regions across Asia-Pacific and Middle East, with numerous locations in Australia, Hong Kong, India, Japan, Malaysia, and Singapore.",
+      "evidence_urls": ["https://airtrunk.com/locations/"],
+      "evidence_snippets": ["Locations: Australia, Hong Kong, India, Japan, Malaysia, Saudi Arabia, Singapore"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "AirTrunk's data centers are distributed across Asia-Pacific and Middle East, with a strong presence in Australia, Japan, India, and Malaysia.",
+      "evidence_urls": ["https://airtrunk.com/locations/"],
+      "evidence_snippets": ["Locations: Australia, Hong Kong, India, Japan, Malaysia, Saudi Arabia, Singapore"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "AirTrunk recently expanded in Malaysia and entered India, indicating active expansion plans in emerging markets.",
+      "evidence_urls": ["https://airtrunk.com/airtrunk-doubles-down-in-malaysia-with-two-new-hyperscale-campuses-in-johor-bahru/", "https://airtrunk.com/airtrunk-announces-entry-into-india/"],
+      "evidence_snippets": ["AIRTRUNK EXPANDS MALAYSIA PLATFORM TO 700MW+", "AIRTRUNK ANNOUNCES ENTRY INTO INDIA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "AirTrunk serves cloud providers and large enterprises, but specific hyperscaler names are not listed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": ["serving cloud providers and large enterprises"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Revenue split between enterprise and hyperscaler customers is not disclosed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No case studies or testimonials from Fortune 500 companies are present in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "AirTrunk's annual revenue is not disclosed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Gross margin for AirTrunk's data center segment is not available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "AirTrunk's expansion into new markets suggests growth, but specific revenue growth figures are not provided.",
+      "evidence_urls": ["https://airtrunk.com/airtrunk-doubles-down-in-malaysia-with-two-new-hyperscale-campuses-in-johor-bahru/"],
+      "evidence_snippets": ["AIRTRUNK EXPANDS MALAYSIA PLATFORM TO 700MW+"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "AirTrunk's market share in the global data center systems market is not specified in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "AirTrunk's rapid expansion suggests growth above market average, but specific growth rates are not provided.",
+      "evidence_urls": ["https://airtrunk.com/airtrunk-doubles-down-in-malaysia-with-two-new-hyperscale-campuses-in-johor-bahru/"],
+      "evidence_snippets": ["AIRTRUNK EXPANDS MALAYSIA PLATFORM TO 700MW+"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No data on market share changes in AI servers or storage is available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No specific strategic alliances with technology providers are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "AirTrunk acquired Lumina Cloudinfra, as indicated in the KB, to strengthen its capabilities.",
+      "evidence_urls": ["https://airtrunk.com/airtrunk-acquires-lumina-cloudinfra/"],
+      "evidence_snippets": ["AIRTRUNK ACQUIRES LUMINA CLOUDINFRA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No joint ventures or co-development agreements are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

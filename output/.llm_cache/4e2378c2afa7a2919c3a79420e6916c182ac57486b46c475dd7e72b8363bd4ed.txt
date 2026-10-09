@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only one product, NightOwl, and no other devices in portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "CE-marked device indicates compliance with EU safety standards, but no specific clinical performance data cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Company uses microelectronics, biological signal processing, and data science; founded by engineers; but no specific R&D pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems beyond CE marking."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "CE-marked device indicates compliance with EU Medical Device Regulation; acquired by ResMed (a major player) suggests quality oversight."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Based in Belgium, CE-marked for EU market; presence at European conferences; but no evidence of global reach beyond Europe."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Featured in Sleep Foundation review; acquired by ResMed (trust signal); but limited evidence of widespread clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Raised $1.91M in funding; acquired by ResMed in 2021; but no revenue or profitability figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of new indications or pipeline beyond sleep apnea diagnostic device."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired by ResMed in 2021, indicating strategic partnership and expansion; also had investors like Saffelberg Investments and imec.istart."
+    }
+  ],
+  "evidence_used": true
+}

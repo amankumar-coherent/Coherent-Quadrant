@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only SensiumVitals, a single wearable patch for continuous monitoring of heart rate, respiration, and temperature. No other wearable devices are listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No clinical performance data, safety studies, or outcomes for SensiumVitals are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The company describes a vision to 'disrupt the healthcare market through agility, integrity, and reliability' and mentions 'evidence-based solutions', but no specific R&D investments or innovation pipeline for wearables are detailed."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No information about manufacturing capabilities or quality systems for SensiumVitals is present in the evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No regulatory clearances (e.g., FDA, CE) for SensiumVitals are mentioned. The evidence only discusses FDA clearances for TSC Life products like Fluido Airguard, not for Sensium."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Sensium is based in the UK and has presence in the UK. The parent company TSC Life mentions '5 Direct markets' and '78 Distribution Partners', but this is for TSC Life, not specifically for Sensium."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of clinical adoption, testimonials, or brand trust for SensiumVitals. The testimonials provided are for TSC Life products like Broncoflex and Mistral-Air, not Sensium."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, profitability) for Sensium is provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No information about pipeline products or expansion into new indications for SensiumVitals is present."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Sensium is a subsidiary of The Surgical Company Group, indicating some business structure. The parent company mentions '78 Distribution Partners' and global presence, but specific partnerships for Sensium are not detailed."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single device (Coala Heart Monitor) with app and portal, but no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Study validating diagnostic accuracy vs 12-lead ECG for AF detection; RedHeart study on ~1000 women; P-wave-based AF detection."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "More than 10 years of R&D, 30+ patents, 15+ industry awards, unique dual ECG/heart sound, algorithm-based interpretation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "partial",
+      "why": "MDR certification in process to resume manufacturing; no details on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "CE marked as Class IIa under MDR; originally CE marked; in process of MDR certification."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in Europe and US; website has SE and US versions; US RPM programs; 10,000 patients in Europe and US."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "1700 clinicians connected, 500 healthcare providers actively use, 10,000 patients used; study led by Karolinska Institute."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Areas of use mentioned but not detailed; platform suitable for arrhythmia investigations and long-term monitoring; no specific pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "QorumPartners (US only) mentioned; no other partnerships detailed; new website launch indicates expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows Mitsubishi Tanabe Pharma is a distributor for Eli Lilly's tirzepatide (Mounjaro/Zepbound) in Japan, but no owned GLP-1 molecule portfolio is mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Active in diabetes and metabolic therapies, but differentiation is limited to distribution of a partner's product; no unique therapeutic positioning evidenced."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of own clinical R&D in GLP-1; only distribution role for Lilly's products."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities for GLP-1; role is as distributor, not manufacturer."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "As a distributor, it must comply with Japanese regulations, but no specific regulatory achievements or quality certifications are cited."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Strong presence in Japan with distribution agreements for Mounjaro and Zepbound, but no evidence of global reach beyond Japan."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Established Japanese pharma with partnerships with Eli Lilly, but no direct brand reputation in GLP-1 as owner."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Sales growth of 3% to 349 billion yen in first nine months, and acquisition by Bain for $3.3B, indicating financial stability but not GLP-1-specific."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No own pipeline in GLP-1; only distribution of Lilly's products, so no independent roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Exclusive sales collaboration with Eli Lilly Japan for tirzepatide in Japan, and acquisition by Bain for expansion, showing strategic partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Evidence shows only one product: 'Sana wearable audiovisual neuromodulation mask for pain / sleep' and the website lists no products in the crawl."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Website mentions 'clinical investigations are ongoing' for PTSD, but no results or safety data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Innovative audiovisual technology described, and funded by Department of Defense for PTSD, indicating some R&D support."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Explicitly states 'The Sana Device is not cleared for the management of PTSD in any geography at this time', indicating lack of regulatory clearance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "HQ in Oxford, UK and presence in South Africa, but no evidence of broader market reach or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 2,
+      "grounding": "partial",
+      "why": "No evidence of clinical adoption or brand trust; website only describes product and ongoing trials."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Ongoing clinical investigations for PTSD suggest pipeline expansion, but no other indications mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Funded by Department of Defense for PTSD, indicating a partnership, but no other business expansion evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

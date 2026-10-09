@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "JW Pharmaceutical only commercializes Bofanglutide, a single GLP-1 RA, in South Korea, lacking a portfolio of multiple molecules.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["South Korean pharmaceutical company commercializing Bofanglutide, a GLP-1 receptor agonist, in South Korea."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "Bofanglutide is only available as an injectable; no oral formulation is mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["commercializing Bofanglutide, a GLP-1 receptor agonist"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "No combination therapies or fixed-dose combinations are mentioned; the portfolio is limited to Bofanglutide monotherapy.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["commercializing Bofanglutide, a GLP-1 receptor agonist"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "Bofanglutide is a GLP-1 RA but no indication details are provided; likely only for diabetes, not obesity.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["GLP-1 receptor agonist"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "No cardiovascular benefit claims are mentioned for Bofanglutide.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Bofanglutide is likely a daily injection; no once-weekly option is indicated.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 2,
+      "answer": "No clinical trials for oral GLP-1 or next-generation molecules are mentioned; Bofanglutide is the only product.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["commercializing Bofanglutide"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 1,
+      "answer": "No head-to-head trial publications are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 1,
+      "answer": "No exploration of novel indications like NASH or heart failure is mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "No FDA-approved manufacturing sites are mentioned; company is South Korean and likely lacks FDA approval.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["South Korean pharmaceutical company"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No supply shortages or recalls are mentioned, but lack of evidence prevents a high score.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "No capacity expansion plans are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "Bofanglutide is not approved by FDA, EMA, or PMDA; only commercialized in South Korea.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["commercializing Bofanglutide ... in South Korea"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No information on pharmacovigilance systems; as a pharmaceutical company, some system likely exists but not evidenced.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "No FDA Form 483s or import alerts are mentioned, but company likely not subject to FDA inspections.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 1,
+      "answer": "Bofanglutide is only available in South Korea, not in 50 countries or the US/EU.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["commercializing Bofanglutide ... in South Korea"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 1,
+      "answer": "No reimbursement agreements with major payers are mentioned; product is not in US/EU markets.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 1,
+      "answer": "No launches in emerging markets like China, India, or Brazil are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 1,
+      "answer": "Bofanglutide is not among the top 3 prescribed GLP-1 RAs globally; it is a niche product in Korea.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": ["commercializing Bofanglutide"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 1,
+      "answer": "No presence at major congresses like ADA or EASD is mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No safety controversies or lawsuits are mentioned, but lack of evidence prevents a high score.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "No revenue growth data is provided; as a small company, likely not 20% YoY growth.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 1,
+      "answer": "JW Pharmaceutical's market cap is far below $100 billion; it is a mid-sized Korean pharma.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 2,
+      "answer": "No R&D spending data is provided; likely not 15% of revenue on GLP-1 specifically.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 1,
+      "answer": "No Phase 3 trials for oral GLP-1 or combination therapies are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 1,
+      "answer": "No pursuit of pediatric indications is mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 1,
+      "answer": "No plans to expand into cardiovascular or renal indications are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No strategic alliances for GLP-1 development or commercialization are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 1,
+      "answer": "No licensing agreements to expand into new geographic markets are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 1,
+      "answer": "No partnerships for novel delivery technologies are mentioned.",
+      "evidence_urls": ["https://www.jw-pharma.co.kr"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

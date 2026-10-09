@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows Glenmark has launched its own GLP-1 receptor agonist (liraglutide biosimilar) in India, but no other GLP-1 products are mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "The GLP-1 product is a low-cost biosimilar of liraglutide, offering no differentiation in a crowded market; company focus is respiratory, dermatology, oncology."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Glenmark is research-led but no specific GLP-1 pipeline or clinical trials are evidenced; only a biosimilar launch."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Glenmark operates in 80+ countries with 16k+ employees, indicating manufacturing scale, but no specific GLP-1 manufacturing evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has global regulatory approvals for other products, but no specific GLP-1 regulatory approvals beyond India launch."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Glenmark serves 80+ countries, but GLP-1 product is only launched in India, limiting GLP-1 geographic reach."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Glenmark is a known global pharma, but GLP-1 brand (Lirafit) is new and low-cost, not yet established in GLP-1 market."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Financial results are announced, but no specific GLP-1 revenue figures are provided; company is profitable but not GLP-1 leader."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of future GLP-1 pipeline or indication expansion beyond the single biosimilar launch."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No specific partnerships or M&A related to GLP-1 are mentioned in the evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

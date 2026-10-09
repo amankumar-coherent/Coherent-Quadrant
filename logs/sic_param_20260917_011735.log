@@ -1,0 +1,202 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Silicon Carbide Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=bf3afd31 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=230 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=done status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers are industrial, automotive, electronics, and energy enterprises purchasing materials for component and device manufacturing.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because companies in this market fundamentally compete on producing and supplying physical silicon carbide materials and semiconductor devices under their own operational capacity, whereas distributors merely handle logistics and resale.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: SKIP (checkpoint) — 300 recalled
+  [chatgpt] Step 2/6: SKIP (checkpoint) — 0 openai-discovered
+  [chatgpt] Step 3/6: SKIP (checkpoint) — 0 ddgs extracted
+  [chatgpt] Step 4/6: SKIP (checkpoint) — kept=257 rejected=43
+    → substep 4c: SKIP merge (checkpoint) — merged=231 to_fill=231
+  [chatgpt] Step 5/6: SKIP (checkpoint) — 231 filled
+    → substep 5c: merged filled rows into list (231 total)
+  [chatgpt] Step 6/6: SKIP (checkpoint) — kept=231 rejected=0
+    → substep 6p: SKIP purity (checkpoint) — 231 rows
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] drop 'Thermlyte Monolithic Pvt Ltd': out of market
+  [relevance] Global Silicon Carbide Market: in=231 geo_drop=0 heur_drop=0 llm_drop=1 kept=228 market_type=B2B uniform_role=Manufacturer
+  [xy] market-fit filter (B2B): 231 -> 230 companies (roles=['Manufacturer'])
+  [xy] industry=Chemical and Materials/Advanced Materials axis_def=llm | X=Product Strength ['Substrate & Epitaxy Quality', 'Device Performance & Reliability', 'Wafer Size & Defect Density', 'R&D and Patent Strength', 'Manufacturing Yield & Scalability'] | Y=Business Strength ['Market Share & Customer Base', 'Revenue Growth & Profitability', 'Capacity Expansion & Supply Chain', 'Geographic & Application Diversification', 'Strategic Partnerships & Alliances']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+    → [xy] scored 230 rows (Chemical and Materials/Advanced Materials) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] city/country filled=0 kept=230 blank=0
+    → [table] 230 rows | graph top 20 | html=global_silicon_carbide_market_global_report.html
+
+=== OpenAI cost (this run) ===
+  run_id : bf3afd31
+  market : Global Silicon Carbide Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (230 rows) → global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 230 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Silicon Carbide Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 300,
+  "existing_before": 230,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 300,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 257,
+  "rejected_mid": 43,
+  "chatgpt_filled": 231,
+  "rejected_final": 0,
+  "total_after": 230,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "bf3afd31",
+    "market": "Global Silicon Carbide Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-16T19:47:37.821991+00:00",
+    "ended_at": "2026-09-16T19:47:38.775869+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 230,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+      "rejected_mid": 43,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Chemical and Materials",
+    "industry_category": "Advanced Materials",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters address the unique characteristics of the SiC market, where substrate quality, device reliability, and wafer size are critical product differentiators, while business strength hinges on customer wins, capacity expansion, and financial performance in a rapidly growing industry.",
+    "parameter_definitions": {
+      "x": {
+        "Substrate & Epitaxy Quality": "Measures the crystalline quality, uniformity, and low defect density of SiC substrates and epitaxial layers, critical for high-performance power devices. Evidence includes defect density metrics, wafer bow, and surface roughness data from customer qualifications.",
+        "Device Performance & Reliability": "Assesses the electrical characteristics (breakdown voltage, on-resistance, switching speed) and long-term reliability of SiC MOSFETs, diodes, and modules. Evidence includes datasheet parameters, qualification test results (e.g., HTGB, HTRB), and field failure rates.",
+        "Wafer Size & Defect Density": "Evaluates the ability to produce larger diameter wafers (150mm, 200mm) with low defect density, directly impacting die cost and throughput. Evidence includes wafer diameter offerings, defect density maps, and transition roadmaps to 200mm.",
+        "R&D and Patent Strength": "Captures investment in next-generation SiC technology (e.g., trench MOSFETs, superjunction) and intellectual property portfolio. Evidence includes R&D spending as % of revenue, patent counts, and technical publications.",
+        "Manufacturing Yield & Scalability": "Reflects production efficiency, yield rates, and ability to scale output to meet demand. Evidence includes yield percentages, capacity utilization, and announced fab expansions or conversions."
+      },
+      "y": {
+        "Market Share & Customer Base": "Measures the company's share of the global SiC market and the breadth/quality of its customer base, including automotive, industrial, and energy customers. Evidence includes market share estimates, design wins, and long-term supply agreements.",
+        "Revenue Growth & Profitability": "Assesses financial performance through revenue growth, gross margin, and profitability in the SiC business segment. Evidence includes segment financials, margin trends, and return on invested capital.",
+        "Capacity Expansion & Supply Chain": "Evaluates the ability to secure raw materials (e.g., high-purity silicon, graphite) and expand manufacturing capacity to meet demand. Evidence includes announced capacity expansions, vertical integration, and supply agreements.",
+        "Geographic & Application Diversification": "Captures the spread of sales across regions and applications (EVs, renewables, industrial) to reduce dependence on any single market. Evidence includes revenue breakdown by geography and application.",
+        "Strategic Partnerships & Alliances": "Reflects the strength of collaborations with key customers, suppliers, and technology partners to accelerate adoption and innovation. Evidence includes joint ventures, co-development agreements, and long-term contracts."
+      }
+    },
+    "x_features": [
+      "Substrate & Epitaxy Quality",
+      "Device Performance & Reliability",
+      "Wafer Size & Defect Density",
+      "R&D and Patent Strength",
+      "Manufacturing Yield & Scalability"
+    ],
+    "y_features": [
+      "Market Share & Customer Base",
+      "Revenue Growth & Profitability",
+      "Capacity Expansion & Supply Chain",
+      "Geographic & Application Diversification",
+      "Strategic Partnerships & Alliances"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 70.0,
+    "quadrant_mid_y": 70.0,
+    "scored": 230,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 231,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 1,
+      "kept": 228,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The global silicon carbide market encompasses the production and sale of silicon carbide in various forms (e.g., raw materials, powders, substrates, and devices) used in semiconductors, power electronics, abrasives, and refractories.",
+      "keep_roles": [
+        "Manufacturer"
+      ],
+      "uniform_role": "Manufacturer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 230  (target 300)

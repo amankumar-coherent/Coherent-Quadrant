@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions Jacobio as 'China-based pharmaceutical company involved in metabolic and oncology therapeutic areas' and 'GLP-1 / incretin therapies', but no specific GLP-1 products are listed. Most evidence focuses on oncology (KRAS, SHP2, BET inhibitors)."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of differentiated GLP-1 therapeutic coverage. Company is described as 'metabolic oncology adj' but no specific GLP-1 indications or differentiation are provided."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows IND clearance for JAR-2203 Injection (likely GLP-1 related) and ongoing oncology trials, but no GLP-1 clinical trial data or late-stage pipeline is mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1 products. Company is clinical-stage with focus on oncology."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows NMPA IND clearance for JAR-2203 Injection, indicating regulatory engagement in China, but no GLP-1 approvals or quality compliance details."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Company is based in Beijing, China, with presence in China. No evidence of GLP-1 market access or commercial launches."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 brand reputation or HCP awareness. Company is known for oncology, not GLP-1."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions milestone payments and upfront for oncology deals (e.g., RMB50 million milestone, RMB200 million upfront), but no GLP-1 revenue or financials."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows IND clearance for JAR-2203 Injection (likely GLP-1) and oncology pipeline, but no GLP-1 indication roadmap or late-stage trials."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows out-licensing of oncology assets (KRAS G12C inhibitor to Allist) and portfolio company Jacobio-Raikang, but no GLP-1 partnerships or expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

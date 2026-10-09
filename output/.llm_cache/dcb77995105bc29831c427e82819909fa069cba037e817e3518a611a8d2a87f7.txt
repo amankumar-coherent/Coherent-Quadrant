@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Silicon Labs does not disclose leading-edge process nodes; as an IoT-focused fabless company, it typically uses mature nodes (e.g., 40nm, 28nm) rather than 3nm/2nm.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products; designs and sells its own chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Silicon Labs does not lead in advanced process technologies like FinFET or GAA; its strength lies in low-power IoT and analog integration on mature nodes.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Silicon Labs has not publicly announced next-generation node roadmaps like 2nm or 1.4nm, as its products target mature nodes for IoT and analog.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Silicon Labs is specialized in IoT, timing, and isolation products, not a broad multi-category supplier like logic, memory, and power.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "No revenue split by product type is available in the knowledge base; the company is known for IoT-focused products, implying limited diversification.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Silicon Labs is fabless and likely partners with OSAT providers, but no specific OSAT partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Silicon Labs owns proprietary IoT-focused IP such as low-power wireless and analog, but not high-profile CPU/GPU/AI accelerators.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Silicon Labs primarily uses ARM cores and does not license its own IP to other firms; it relies on third-party IP.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Silicon Labs has some presence in IoT and automotive, but its architecture is not a leader in AI or 5G compared to specialized vendors.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Silicon Labs is fabless and does not own wafer fabrication capacity; no capacity or utilization data is available.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not disclosed; as a fabless company, yields depend on foundry partners, and no benchmarks are available.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Silicon Labs does not offer advanced packaging like 2.5D/3D or chiplets; its packaging needs are standard for IoT and analog.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Silicon Labs likely holds standard certifications like ISO 9001, but no specific certifications are listed in the knowledge base.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rate (DPPM) data is not available; the company emphasizes reliability for IoT but no specific metrics are provided.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Silicon Labs complies with environmental regulations like RoHS and REACH as a standard practice, but no specific details are in the KB.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Silicon Labs is headquartered in Austin, Texas, with global sales and R&D, but the KB only confirms the US location.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["United States | Austin, Texas, USA"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-markets include IoT, industrial, and consumer, but revenue contribution is not disclosed in the KB.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification is not detailed; the company has global operations but specific risk mitigation is unknown.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["United States | Austin, Texas, USA"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not identified in the KB; customer concentration risk cannot be assessed.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Silicon Labs likely has partnerships with EDA vendors and foundries, but no specific partnerships are mentioned in the KB.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "As a fabless company, Silicon Labs collaborates with foundries and OSATs, but specific ecosystem details are absent.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not provided in the KB; Silicon Labs is a public company but specific revenue and cash flow are unknown.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available; as a fabless company, CapEx is likely lower than IDMs, but no figures are given.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not in the KB; financial health cannot be accurately assessed.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No specific roadmap milestones are provided; Silicon Labs is known for IoT product evolution but details are lacking.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No clear roadmap for AI chips, quantum, or advanced memory is evident; focus remains on IoT and analog.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Silicon Labs' roadmap aligns with IoT growth trends, but specific alignment details are not in the KB.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "No fab expansion projects are announced; as a fabless company, capacity expansion is not a primary strategy.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided; the company's growth is tied to IoT markets but specific figures are unknown.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["Focuses on IoT, timing, and isolation products."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and expansion plans are not disclosed; as a fabless company, it likely relies on foundry partnerships.",
+      "evidence_urls": ["https://www.silabs.com"],
+      "evidence_snippets": ["designs and sells its own chips."],
+      "grounding": "insufficient"
+    }
+  ]
+}

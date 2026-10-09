@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only one product, ViSi Mobile, with no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence highlights continuous monitoring of multiple vital signs, machine learning from millions of hours of patient data, and early detection of deterioration, but lacks specific clinical outcome data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence mentions machine learning integration and continuous cuff-less monitoring, indicating innovation, but no specific R&D investments or pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence found regarding manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence states ViSi Mobile has CE mark and FDA clearance for NIBP and continuous monitoring of several parameters."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence indicates presence only in the United States, with no mention of international distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence mentions use in general care settings and integration into hospital workflows, but lacks specific adoption metrics or testimonials."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence focuses on current monitoring capabilities, with no mention of future indications or pipeline expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No partnerships or business expansion details found in evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

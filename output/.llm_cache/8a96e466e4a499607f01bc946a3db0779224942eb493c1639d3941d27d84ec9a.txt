@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "BPCL is an Indian refiner/marketer with LNG import for refineries; no evidence of LNG production or export assets."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows refineries and gas portfolio but no LNG throughput data."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No specific LNG asset performance or reliability data provided."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website mentions HSE Policy, Safety, and regulatory compliance (PNGRB) but not LNG-specific."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website includes Sustainability, Green Refineries, and gas portfolio as part of energy transition."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence only in India; no evidence of international LNG corridors."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Imports LNG for refineries and marketing; has 'Empanelment of LNG supplier' but no specific SPA details."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website has 'Financial Performance' section but no LNG-specific financials."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'Future Plans and Projects' for refineries and gas portfolio, but no LNG-specific growth pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions Joint Ventures and gas portfolio expansion, but no LNG-specific partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

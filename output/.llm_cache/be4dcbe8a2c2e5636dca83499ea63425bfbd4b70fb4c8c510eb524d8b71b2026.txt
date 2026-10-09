@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "MPS is a power management IC company and does not offer leading-edge digital process nodes like 3nm or 2nm; it typically uses mature nodes for analog/power.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "MPS is known for proprietary BCD (Bipolar-CMOS-DMOS) process technology for power management, but it does not lead in FinFET or GAA for digital logic.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "MPS focuses on power management and does not have a public roadmap for advanced digital nodes like 2nm or 1.4nm.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "MPS is specialized in power management ICs and analog, not offering logic, memory, or OSAT services.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["Power management; Analog"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "MPS's revenue is primarily from power management ICs, with limited diversification across other semiconductor categories.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "MPS does not provide OSAT services; it likely partners with OSAT providers for packaging and testing.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "MPS owns proprietary power management architectures and control algorithms, but not CPU/GPU/AI accelerator IP.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "MPS primarily uses its own proprietary IP and does not license CPU/GPU IP; it may use standard process IP from foundries.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "MPS has strong power management architectures relevant for automotive and industrial, but not for AI/5G digital processing.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "MPS is fab-lite and does not own large wafer fabs; it relies on foundry partners, so its own capacity is limited.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "MPS's yield rates are not publicly disclosed, but as a fab-lite company it depends on foundry yields for mature nodes.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "MPS does not offer advanced packaging like 2.5D/3D; it uses standard packaging for power ICs.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "MPS likely holds ISO 9001 and IATF 16949 certifications for automotive, but specific certifications are not in the KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "MPS is known for high reliability in power ICs, but specific DPPM figures are not publicly available.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "MPS complies with RoHS and REACH for its products, as is standard for semiconductor companies, but specifics are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "MPS has global presence with headquarters in the US and operations in Asia and Europe, as indicated in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["United States; Asia; Europe"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "MPS serves multiple end-markets including automotive, industrial, consumer, and communications, but revenue split is not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "MPS's presence in US, Asia, and Europe provides some geographic diversification, but details on risk mitigation are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["United States; Asia; Europe"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "MPS has a broad customer base but specific top customers and concentration risk are not disclosed in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "MPS partners with foundries and OSATs, but specific strategic partnerships are not listed in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "MPS collaborates with foundries and OSATs for manufacturing, but detailed ecosystem collaboration is not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "MPS is a profitable company with strong revenue, but specific financials are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "MPS's CapEx is relatively low as a fab-lite company, but exact figures are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "MPS has a strong balance sheet with low debt, but specific ratios are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "MPS focuses on power management innovations, but specific roadmap milestones are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "MPS does not have a public roadmap for AI chips or quantum; it focuses on power management for such applications.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "MPS's roadmap aligns with trends in power efficiency and electrification, but specific alignment is not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "MPS does not own fabs and has not announced major fab expansions; it relies on foundry capacity.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "MPS has shown strong revenue growth in recent years, but specific growth rates are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "MPS funds expansions through operating cash flow and possibly debt, but specific plans are not in KB.",
+      "evidence_urls": ["https://www.monolithicpower.com"],
+      "evidence_snippets": ["High-performance power management ICs."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

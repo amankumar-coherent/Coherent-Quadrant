@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "As a supplier of critical subsystems and components, UCT does not offer process nodes; its technology is tied to the equipment it supports, with no announced node capabilities.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services, primarily for the semiconductor industry."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "UCT does not lead in specific process technologies like FinFET or GAA; its role is enabling equipment for such nodes, not developing them.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services, primarily for the semiconductor industry."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "UCT's roadmap is not publicly detailed for next-generation nodes; as a subsystem supplier, it aligns with equipment makers' roadmaps rather than defining its own node transitions.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services, primarily for the semiconductor industry."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "UCT serves multiple semiconductor categories through its broad product portfolio including gas and chemical delivery, mechatronics, and fluid solutions, though it is not a chipmaker.",
+      "evidence_urls": ["https://www.uct.com/products/chemical-and-gas-delivery/default.aspx", "https://www.uct.com/products/mechatronics/default.aspx", "https://www.uct.com/products/fluid-solutions/default.aspx"],
+      "evidence_snippets": ["Gas & Chemical Delivery", "Mechatronics", "Fluid Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; UCT's portfolio spans subsystems and services but lacks specific financial breakdowns.",
+      "evidence_urls": ["https://www.uct.com/investors/financials-and-filings/default.aspx"],
+      "evidence_snippets": ["Financials & Filings"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "UCT does not provide OSAT services; its offerings focus on subsystems, components, and cleaning/coating services, not assembly and test.",
+      "evidence_urls": ["https://www.uct.com/services/overview/default.aspx"],
+      "evidence_snippets": ["Services: Overview"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "UCT does not own CPU, GPU, or AI accelerator IP; its proprietary technology lies in precision components and subsystems, not chip architectures.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "UCT does not license chip IP; it relies on its own engineering for subsystems and does not use third-party processor IP like ARM.",
+      "evidence_urls": ["https://www.uct.com/capabilities/engineering-and-development/default.aspx"],
+      "evidence_snippets": ["Engineering & Development"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "UCT's architecture strength is not in AI, 5G, or automotive chips; it supports semiconductor equipment broadly, with no specific high-growth architecture leadership.",
+      "evidence_urls": ["https://www.uct.com/industries/semiconductor/default.aspx"],
+      "evidence_snippets": ["Semiconductor"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "UCT does not operate wafer fabs; it manufactures subsystems and components, so wafer capacity and utilization are not applicable.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Yield rate comparisons are not applicable as UCT does not fabricate wafers; its focus is on equipment subsystems and services.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "UCT does not offer advanced packaging like 2.5D/3D or chiplets; its capabilities are in subsystems and cleaning/coating, not packaging.",
+      "evidence_urls": ["https://www.uct.com/services/coating/default.aspx"],
+      "evidence_snippets": ["Coating"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "UCT likely holds quality certifications like ISO 9001 given its semiconductor focus, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.uct.com/about-uct/quality/default.aspx"],
+      "evidence_snippets": ["Quality"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rate (DPPM) data is not provided; UCT emphasizes quality but specific reliability metrics are not disclosed.",
+      "evidence_urls": ["https://www.uct.com/about-uct/quality/default.aspx"],
+      "evidence_snippets": ["Quality"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "UCT addresses environmental compliance through its ESG commitments, but specific RoHS/REACH or conflict minerals details are not in the knowledge base.",
+      "evidence_urls": ["https://www.uct.com/about-uct/esg/default.aspx"],
+      "evidence_snippets": ["ESG"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "UCT has a global presence with operations in the US, Asia, and Europe, as indicated by its worldwide locations and regional language sites.",
+      "evidence_urls": ["https://www.uct.com/contact-us/worldwide-locations/default.aspx"],
+      "evidence_snippets": ["Worldwide Locations"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "UCT primarily serves the semiconductor industry, with additional focus on energy and other industries, though revenue contributions are not detailed.",
+      "evidence_urls": ["https://www.uct.com/industries/semiconductor/default.aspx", "https://www.uct.com/industries/energy/default.aspx"],
+      "evidence_snippets": ["Semiconductor", "Energy"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "UCT's global footprint across multiple regions helps mitigate regional disruptions, though specific risk assessments are not provided.",
+      "evidence_urls": ["https://www.uct.com/contact-us/worldwide-locations/default.aspx"],
+      "evidence_snippets": ["Worldwide Locations"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not disclosed in the knowledge base; as a supplier to semiconductor equipment makers, concentration risk is unknown.",
+      "evidence_urls": ["https://www.uct.com/investors/overview/default.aspx"],
+      "evidence_snippets": ["Investors: Overview"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "UCT likely partners with equipment makers given its role, but specific partnerships with EDA vendors or consortia are not mentioned.",
+      "evidence_urls": ["https://www.uct.com/industries/semiconductor-equipment/default.aspx"],
+      "evidence_snippets": ["Semiconductor Equipment"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "UCT collaborates with ecosystem players through its supply chain and services, but detailed collaboration models are not described.",
+      "evidence_urls": ["https://www.uct.com/capabilities/supply-chain/default.aspx"],
+      "evidence_snippets": ["Supply Chain"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not provided in the knowledge base; UCT is a public company but revenue, net income, and cash flow are not listed.",
+      "evidence_urls": ["https://www.uct.com/investors/financials-and-filings/default.aspx"],
+      "evidence_snippets": ["Financials & Filings"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available in the knowledge base; as a capital-intensive business, UCT likely invests significantly but specifics are absent.",
+      "evidence_urls": ["https://www.uct.com/investors/financials-and-filings/default.aspx"],
+      "evidence_snippets": ["Financials & Filings"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not disclosed; UCT's financial health is not assessable from the knowledge base.",
+      "evidence_urls": ["https://www.uct.com/investors/financials-and-filings/default.aspx"],
+      "evidence_snippets": ["Financials & Filings"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "UCT's technology roadmap is not publicly detailed, but as a subsystem supplier it likely aligns with semiconductor equipment trends.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "UCT does not have a public roadmap for AI chips, quantum, or advanced memory; its focus is on enabling equipment for such technologies.",
+      "evidence_urls": ["https://www.uct.com/industries/semiconductor/default.aspx"],
+      "evidence_snippets": ["Semiconductor"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "UCT's roadmap likely aligns with industry trends given its role, but specific alignment details are not provided.",
+      "evidence_urls": ["https://www.uct.com/about-uct/overview/default.aspx"],
+      "evidence_snippets": ["leading developer and supplier of critical subsystems, components, parts, and ultra-high purity cleaning and analytical services"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "UCT has not announced new fabs; as a supplier, it expands manufacturing capacity but specific projects are not disclosed.",
+      "evidence_urls": ["https://www.uct.com/about-uct/operations/default.aspx"],
+      "evidence_snippets": ["Operations"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided in the knowledge base; UCT's growth is tied to semiconductor industry cycles.",
+      "evidence_urls": ["https://www.uct.com/investors/financials-and-filings/default.aspx"],
+      "evidence_snippets": ["Financials & Filings"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and execution plans for capacity expansion are not detailed; UCT likely uses operating cash flow and debt, but specifics are absent.",
+      "evidence_urls": ["https://www.uct.com/investors/financials-and-filings/default.aspx"],
+      "evidence_snippets": ["Financials & Filings"],
+      "grounding": "insufficient"
+    }
+  ]
+}

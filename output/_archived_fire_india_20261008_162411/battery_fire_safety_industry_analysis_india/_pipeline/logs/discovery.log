@@ -1,0 +1,836 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Battery Fire Safety Industry Analysis
+  target : 120
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=120 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=c143ca83 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\battery_fire_safety_industry_analysis_india\battery_fire_safety_industry_analysis_india_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=1_recall substep=1a.9 status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\battery_fire_safety_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers are industrial companies, electric vehicle automakers, energy storage developers, and electronic device manufacturers seeking to protect their commercial systems and end-products from thermal runaway.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Solution Provider, Testing and Certification Provider
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because the market's defining competitive landscape is built around companies producing and selling physical containment materials, barriers, and specialized suppression hardware that physically prevent or mitigate thermal runaway.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Manufacturer (batch 10, target 120, resuming with 28)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_43_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +7 (total 35)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +2 (total 37)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-3: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 26s ago
+    → substep 1a.3: +5 (total 42)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 72s ago
+    → substep 1a.4: +5 (total 47)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 117s ago
+    → substep 1a.5: +2 (total 49)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 159s ago
+    → substep 1a.6: +4 (total 53)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 203s ago
+    → substep 1a.7: +3 (total 56)
+      · discover-round-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-8: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 250s ago
+    → substep 1a.8: +3 (total 59)
+      · discover-round-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-9: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 298s ago
+    → substep 1a.9: +1 (total 60)
+      · discover-round-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-10: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 349s ago
+    → substep 1a.10: +3 (total 63)
+      · discover-round-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-11: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 396s ago
+    → substep 1a.11: +2 (total 65)
+      · discover-round-12: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · discover-round-12: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 25s ago
+    → substep 1a.12: +2 (total 67)
+      · discover-round-13: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-13: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 68s ago
+    → substep 1a.13: +2 (total 69)
+      · discover-round-14: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-14: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 102s ago
+    → substep 1a.14: +0 (total 69)
+      · discover-round-15: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-15: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 157s ago
+    → substep 1a.15: +0 (total 69)
+      · discover-round-16: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-16: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 209s ago
+    → substep 1a.16: +2 (total 71)
+      · discover-round-17: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-17: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 262s ago
+    → substep 1a.17: +1 (total 72)
+      · discover-round-18: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-18: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 293s ago
+    → substep 1a.18: +0 (total 72)
+      · discover-round-19: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-19: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 325s ago
+    → substep 1a.19: +0 (total 72)
+      · discover-round-20: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-20: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 376s ago
+    → substep 1a.20: +2 (total 74)
+      · discover-round-21: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · discover-round-21: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 29s ago
+    → substep 1a.21: +4 (total 78)
+      · discover-round-22: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-22: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 72s ago
+    → substep 1a.22: +2 (total 80)
+      · discover-round-23: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-23: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 121s ago
+    → substep 1a.23: +2 (total 82)
+      · discover-round-24: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-24: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 165s ago
+    → substep 1a.24: +2 (total 84)
+      · discover-round-25: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-25: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 215s ago
+    → substep 1a.25: +0 (total 84)
+      · discover-round-26: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-26: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 262s ago
+    → substep 1a.26: +1 (total 85)
+      · discover-round-27: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-27: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 308s ago
+    → substep 1a.27: +2 (total 87)
+      · discover-round-28: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-28: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 360s ago
+    → substep 1a.28: +1 (total 88)
+      · discover-round-29: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-29: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 401s ago
+    → substep 1a.29: +1 (total 89)
+      · discover-round-30: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · discover-round-30: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 42s ago
+    → substep 1a.30: +1 (total 90)
+      · discover-round-31: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-31: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 92s ago
+    → substep 1a.31: +1 (total 91)
+      · discover-round-32: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-32: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 136s ago
+    → substep 1a.32: +3 (total 94)
+      · discover-round-33: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-33: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 181s ago
+    → substep 1a.33: +2 (total 96)
+      · discover-round-34: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-34: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 228s ago
+    → substep 1a.34: +0 (total 96)
+      · discover-round-35: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-35: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 268s ago
+    → substep 1a.35: +0 (total 96)
+      · discover-round-36: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-36: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 298s ago
+    → substep 1a.36: +1 (total 97)
+      · discover-round-37: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-37: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 338s ago
+    → substep 1a.37: +2 (total 99)
+      · discover-round-38: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-38: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 375s ago
+    → substep 1a.38: +2 (total 101)
+      · discover-round-39: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · discover-round-39: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 42s ago
+    → substep 1a.39: +0 (total 101)
+      · discover-round-40: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-40: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 109s ago
+    → substep 1a.40: +1 (total 102)
+      · discover-round-41: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-41: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 154s ago
+    → substep 1a.41: +1 (total 103)
+      · discover-round-42: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-42: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 206s ago
+    → substep 1a.42: +1 (total 104)
+      · discover-round-43: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-43: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 250s ago
+    → substep 1a.43: +0 (total 104)
+      · discover-round-44: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-44: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 298s ago
+    → substep 1a.44: +1 (total 105)
+      · discover-round-45: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-45: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 342s ago
+    → substep 1a.45: +0 (total 105)
+      · discover-round-46: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-46: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 390s ago
+    → substep 1a.46: +1 (total 106)
+      · discover-round-47: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-47: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 441s ago
+    → substep 1a.47: +0 (total 106)
+      · discover-round-48: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · discover-round-48: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 32s ago
+    → substep 1a.48: +0 (total 106)
+      · discover-round-49: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-49: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 72s ago
+    → substep 1a.49: +0 (total 106)
+      · discover-round-50: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-50: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 116s ago
+    → substep 1a.50: +0 (total 106)
+      · discover-round-51: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-51: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 157s ago
+    → substep 1a.51: +0 (total 106)
+      · discover-round-52: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-52: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 191s ago
+    → substep 1a.52: +0 (total 106)
+      · discover-round-53: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-53: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 246s ago
+    → substep 1a.53: +2 (total 108)
+      · discover-round-54: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-54: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 290s ago
+    → substep 1a.54: +8 (total 116)
+      · discover-round-55: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-55: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 332s ago
+    → substep 1a.55: +0 (total 116)
+      · discover-round-56: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-56: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 366s ago
+    → substep 1a.56: +0 (total 116)
+      · discover-round-57: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-57: AI Mode JSON parse OK — 6 CAPTCHAs this run, last 420s ago
+    → substep 1a.57: +9 (total 125)
+    → substep 1a done: 125 companies in 57 rounds (resumed with 28) (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 125)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (125 = 0 seeds + 125 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 125 candidates as Manufacturer in 11 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/11…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · verify-1: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 26s ago
+    → substep 4a.1: running kept=12 rejected=0
+    → substep 4a.2: verify chunk 2/11…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 72s ago
+    → substep 4a.2: running kept=24 rejected=0
+    → substep 4a.3: verify chunk 3/11…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 125s ago
+    → substep 4a.3: running kept=35 rejected=1
+    → substep 4a.4: verify chunk 4/11…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-4: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 169s ago
+    → substep 4a.4: running kept=43 rejected=5
+    → substep 4a.5: verify chunk 5/11…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-5: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 214s ago
+    → substep 4a.5: running kept=54 rejected=6
+    → substep 4a.6: verify chunk 6/11…
+      · verify-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-6: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 259s ago
+    → substep 4a.6: running kept=61 rejected=11
+    → substep 4a.7: verify chunk 7/11…
+      · verify-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-7: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 313s ago
+    → substep 4a.7: running kept=70 rejected=14
+    → substep 4a.8: verify chunk 8/11…
+      · verify-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-8: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 357s ago
+    → substep 4a.8: running kept=79 rejected=17
+    → substep 4a.9: verify chunk 9/11…
+      · verify-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-9: AI Mode JSON parse OK — 7 CAPTCHAs this run, last 392s ago
+    → substep 4a.9: running kept=87 rejected=21
+    → substep 4a.10: verify chunk 10/11…
+      · verify-10: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · verify-10: AI Mode JSON parse OK — 8 CAPTCHAs this run, last 31s ago
+    → substep 4a.10: running kept=95 rejected=25
+    → substep 4a.11: verify chunk 11/11…
+      · verify-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-11: AI Mode JSON parse OK — 8 CAPTCHAs this run, last 68s ago
+    → substep 4a.11: running kept=97 rejected=28
+    → substep 4a done: kept=97 rejected=28 (required=Manufacturer)
+    → substep 4b: write rejected list (28)
+    → substep 4c: market gate kept 97/97 (dropped 0)
+  [web_expand] merged +82; total unique=82 (target=240)
+  [chatgpt] fill ALL table rows this pass: 82 (merged=82, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 82 rows already carry their report columns
+    → substep 5c: merged filled rows into list (82 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 82 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] Battery Fire Safety Industry Analysis: in=82 geo_drop=0 heur_drop=0 llm_drop=0 kept=82 market_type=B2B uniform_role=Manufacturer
+  [xy] market-fit filter (B2B): 82 -> 82 companies (roles=['Manufacturer'])
+  [xy] industry=Others/Energy axis_def=llm | X=Product Strength ['Fire-Resistant Battery Chemistry & Materials', 'Thermal Runaway Prevention & Suppression Systems', 'Battery Management System (BMS) Safety Features', 'Compliance with Indian & International Safety Standards', 'R&D and Innovation in Battery Fire Safety'] | Y=Business Strength ['Tier-1 OEM Partnerships & Supply Contracts', 'Revenue & Growth in Indian Market', 'Manufacturing Capacity & Localization in India', 'After-Sales Service & Support Network', 'Regulatory Approvals & Certifications']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 82 companies (1/query, 2 queries per batch)
+      · params [1-1]: 0/1 companies detailed
+      · params [2-2]: 0/1 companies detailed
+      · params [3-3]: 0/1 companies detailed
+      · params [4-4]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [5-5]: 0/1 companies detailed
+      · params [6-6]: 0/1 companies detailed
+      · params [7-7]: 0/1 companies detailed
+      · params [8-8]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · params [9-9]: 0/1 companies detailed
+      · params [10-10]: 0/1 companies detailed
+      · params [11-11]: 0/1 companies detailed
+      · params [12-12]: 0/1 companies detailed
+      · params [13-13]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [14-14]: 1/1 companies detailed
+      · params [15-15]: 0/1 companies detailed
+      · params [16-16]: 0/1 companies detailed
+      · params [17-17]: 1/1 companies detailed
+      · params [18-18]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_43_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [19-19]: 0/1 companies detailed
+      · params [20-20]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · params [21-21]: 1/1 companies detailed
+      · params [22-22]: 0/1 companies detailed
+      · params [23-23]: 0/1 companies detailed
+      · params [24-24]: 0/1 companies detailed
+      · params [25-25]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · params [26-26]: 0/1 companies detailed
+      · params [27-27]: 0/1 companies detailed
+      · params [28-28]: 0/1 companies detailed
+      · params [29-29]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [30-30]: 0/1 companies detailed
+      · params [31-31]: 1/1 companies detailed
+      · params [32-32]: 1/1 companies detailed
+      · params [33-33]: 0/1 companies detailed
+      · params [34-34]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [35-35]: 0/1 companies detailed
+      · params [36-36]: 0/1 companies detailed
+      · params [37-37]: 0/1 companies detailed
+      · params [38-38]: 0/1 companies detailed
+      · params [39-39]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [40-40]: 0/1 companies detailed
+      · params [41-41]: 0/1 companies detailed
+      · params [42-42]: 0/1 companies detailed
+      · params [43-43]: 0/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [45-45]: 0/1 companies detailed
+      · params [46-46]: 0/1 companies detailed
+      · params [47-47]: 0/1 companies detailed
+      · params [48-48]: 0/1 companies detailed
+      · params [49-49]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [50-50]: 0/1 companies detailed
+      · params [51-51]: 0/1 companies detailed
+      · params [52-52]: 0/1 companies detailed
+      · params [53-53]: 1/1 companies detailed
+      · params [54-54]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [55-55]: 0/1 companies detailed
+      · params [56-56]: 0/1 companies detailed
+      · params [57-57]: 0/1 companies detailed
+      · params [58-58]: 1/1 companies detailed
+      · params [59-59]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [60-60]: 0/1 companies detailed
+      · params [61-61]: 0/1 companies detailed
+      · params [62-62]: 0/1 companies detailed
+      · params [63-63]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_43_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · params [64-64]: 1/1 companies detailed
+      · params [65-65]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [66-66]: 0/1 companies detailed
+      · params [67-67]: 0/1 companies detailed
+      · params [68-68]: 0/1 companies detailed
+      · params [69-69]: 1/1 companies detailed
+      · params [70-70]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [71-71]: 0/1 companies detailed
+      · params [72-72]: 0/1 companies detailed
+      · params [73-73]: 0/1 companies detailed
+      · params [74-74]: 0/1 companies detailed
+      · params [75-75]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [76-76]: 1/1 companies detailed
+      · params [77-77]: 1/1 companies detailed
+      · params [78-78]: 1/1 companies detailed
+      · params [79-79]: 0/1 companies detailed
+      · params [80-80]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [81-81]: 0/1 companies detailed
+      · params [82-82]: 1/1 companies detailed
+  [xy] parameter detail done: 40/82 companies
+    → [xy] score 1/82 Adhesive Specialities
+      · score Adhesive Specialities: unparsed reply '62\nSkip to previous prompt'
+      · score Adhesive Specialities: unparsed reply '52\nSkip to previous prompt'
+    → [xy] no score for Adhesive Specialities (AI Mode unavailable) — left unscored for retry
+    → [xy] score 2/82 AGNI Devices Pvt. Ltd.
+      · score AGNI Devices Pvt. Ltd.: unparsed reply '45\nSkip to previous prompt'
+      · score AGNI Devices Pvt. Ltd.: unparsed reply '71\nSkip to previous prompt'
+    → [xy] no score for AGNI Devices Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 3/82 Alkraft Thermotechnologies Pvt. Ltd.
+      · score Alkraft Thermotechnologies Pvt. Ltd.: unparsed reply '58\nSkip to previous prompt'
+      · score Alkraft Thermotechnologies Pvt. Ltd.: unparsed reply '79\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Alkraft Thermotechnologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 4/82 Arunoday Composit Corporation
+      · score Arunoday Composit Corporation: unparsed reply '50\nShow Code\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · score Arunoday Composit Corporation: unparsed reply '65\nSkip to previous prompt'
+    → [xy] no score for Arunoday Composit Corporation (AI Mode unavailable) — left unscored for retry
+    → [xy] score 5/82 Asean Rubber Pvt. Ltd.
+      · score Asean Rubber Pvt. Ltd.: unparsed reply '45\nSkip to previous prompt'
+      · score Asean Rubber Pvt. Ltd.: unparsed reply '78\nSkip to previous prompt'
+    → [xy] no score for Asean Rubber Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 6/82 Asha Enterprise
+      · score Asha Enterprise: unparsed reply '52\nSkip to previous prompt'
+      · score Asha Enterprise: unparsed reply '25\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Asha Enterprise (AI Mode unavailable) — left unscored for retry
+    → [xy] score 7/82 Aska Equipments Private Limited
+      · score Aska Equipments Private Limited: unparsed reply '48\nSkip to previous prompt'
+      · score Aska Equipments Private Limited: unparsed reply '71\nSkip to previous prompt'
+    → [xy] no score for Aska Equipments Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 8/82 Axis Fire Protection
+      · score Axis Fire Protection: unparsed reply '34\nSkip to previous prompt'
+      · score Axis Fire Protection: unparsed reply '30\nSkip to previous prompt'
+    → [xy] no score for Axis Fire Protection (AI Mode unavailable) — left unscored for retry
+    → [xy] score 9/82 Bharati Fire Engineers
+      · score Bharati Fire Engineers: unparsed reply '70\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · score Bharati Fire Engineers: unparsed reply '77\nSkip to previous prompt'
+    → [xy] no score for Bharati Fire Engineers (AI Mode unavailable) — left unscored for retry
+    → [xy] score 10/82 Bharati Fire Engineers Pvt. Ltd.
+      · score Bharati Fire Engineers Pvt. Ltd.: unparsed reply '58\nSkip to previous prompt'
+      · score Bharati Fire Engineers Pvt. Ltd.: unparsed reply '81\nSkip to previous prompt'
+    → [xy] no score for Bharati Fire Engineers Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 11/82 Brio Fire Safety Device
+      · score Brio Fire Safety Device: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+      · score Brio Fire Safety Device: unparsed reply '10\nSkip to previous prompt'
+    → [xy] no score for Brio Fire Safety Device (AI Mode unavailable) — left unscored for retry
+    → [xy] score 12/82 Ceasefire Industries Private Limited
+      · score Ceasefire Industries Private Limited: unparsed reply '54.4\nShow Code\nSkip to previous prompt'
+      · score Ceasefire Industries Private Limited: unparsed reply '88\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Ceasefire Industries Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 13/82 Darq Industries Private Limited
+      · score Darq Industries Private Limited: unparsed reply '60\nSkip to previous prompt'
+      · score Darq Industries Private Limited: unparsed reply '15\nSkip to previous prompt'
+    → [xy] no score for Darq Industries Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 14/82 Darshan Safety Zone
+    → [xy] score 15/82 Drownfire Private Limited
+      · score Drownfire Private Limited: unparsed reply '36\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · score Drownfire Private Limited: unparsed reply '12\nSkip to previous prompt'
+    → [xy] no score for Drownfire Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 16/82 DSS Industries
+      · score DSS Industries: unparsed reply '53\nSkip to previous prompt'
+      · score DSS Industries: unparsed reply '24\nShow Code\nSkip to previous prompt'
+    → [xy] no score for DSS Industries (AI Mode unavailable) — left unscored for retry
+    → [xy] score 17/82 Enersafe Industry
+    → [xy] score 18/82 Fire Engineering Technology
+      · score Fire Engineering Technology: unparsed reply '51.4\nSkip to previous prompt'
+      · score Fire Engineering Technology: unparsed reply '52\nSkip to previous prompt'
+    → [xy] no score for Fire Engineering Technology (AI Mode unavailable) — left unscored for retry
+    → [xy] score 19/82 Fire Guards
+      · score Fire Guards: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+      · score Fire Guards: unparsed reply '30\nSkip to previous prompt'
+    → [xy] no score for Fire Guards (AI Mode unavailable) — left unscored for retry
+    → [xy] score 20/82 Fire Knight
+      · score Fire Knight: unparsed reply '60.4\nSkip to previous prompt'
+      · score Fire Knight: unparsed reply '40\nSkip to previous prompt'
+    → [xy] no score for Fire Knight (AI Mode unavailable) — left unscored for retry
+    → [xy] score 21/82 Fire Safety Devices Pvt. Ltd.
+    → [xy] score 22/82 Firemark (OPC) Private Limited
+      · score Firemark (OPC) Private Limited: unparsed reply '30\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · score Firemark (OPC) Private Limited: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for Firemark (OPC) Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 23/82 Firepanda Private Limited
+      · score Firepanda Private Limited: unparsed reply '60.4\nSkip to previous prompt'
+      · score Firepanda Private Limited: unparsed reply '18\nSkip to previous prompt'
+    → [xy] no score for Firepanda Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 24/82 Fireshield Engineers (India) Limited
+      · score Fireshield Engineers (India) Limited: unparsed reply '34\nSkip to previous prompt'
+      · score Fireshield Engineers (India) Limited: unparsed reply '45\nSkip to previous prompt'
+    → [xy] no score for Fireshield Engineers (India) Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 25/82 Firetech Equipment & Systems Private Limited
+      · score Firetech Equipment & Systems Private Lim: unparsed reply '48\nSkip to previous prompt'
+      · score Firetech Equipment & Systems Private Lim: unparsed reply '74\nSkip to previous prompt'
+    → [xy] no score for Firetech Equipment & Systems Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 26/82 Firetech Equipment & Systems Pvt. Ltd.
+      · score Firetech Equipment & Systems Pvt. Ltd.: unparsed reply '60.4\nSkip to previous prompt'
+      · score Firetech Equipment & Systems Pvt. Ltd.: unparsed reply '72\nSkip to previous prompt'
+    → [xy] no score for Firetech Equipment & Systems Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 27/82 Firetech Equipment and Systems Pvt. Ltd.
+      · score Firetech Equipment and Systems Pvt. Ltd.: unparsed reply '54\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · score Firetech Equipment and Systems Pvt. Ltd.: unparsed reply '79\nSkip to previous prompt'
+    → [xy] no score for Firetech Equipment and Systems Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 28/82 HD Fire Protect Limited
+      · score HD Fire Protect Limited: unparsed reply '39\nSkip to previous prompt'
+      · score HD Fire Protect Limited: unparsed reply '80\nSkip to previous prompt'
+    → [xy] no score for HD Fire Protect Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 29/82 Heatcon Sensors Pvt. Ltd.
+      · score Heatcon Sensors Pvt. Ltd.: unparsed reply '51\nSkip to previous prompt'
+      · score Heatcon Sensors Pvt. Ltd.: unparsed reply '63\nSkip to previous prompt'
+    → [xy] no score for Heatcon Sensors Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 30/82 Hicare Protective Wear Pvt. Ltd.
+      · score Hicare Protective Wear Pvt. Ltd.: unparsed reply '44\nSkip to previous prompt'
+      · score Hicare Protective Wear Pvt. Ltd.: unparsed reply '58\nSkip to previous prompt'
+    → [xy] no score for Hicare Protective Wear Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 31/82 Hicare Safety Solutions
+    → [xy] score 32/82 Hiren Industrial Corporation
+    → [xy] score 33/82 Horiaki India Private Limited
+      · score Horiaki India Private Limited: unparsed reply '38\nSkip to previous prompt'
+  [ai-mode] quota — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_43_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · score Horiaki India Private Limited: unparsed reply '50\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+    → [xy] no score for Horiaki India Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 34/82 Horus Fire Private Limited
+      · score Horus Fire Private Limited: unparsed reply '10\nSkip to previous prompt'
+      · score Horus Fire Private Limited: unparsed reply '15\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Horus Fire Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 35/82 Incenditech Pvt Ltd
+      · score Incenditech Pvt Ltd: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+      · score Incenditech Pvt Ltd: unparsed reply '10\nSkip to previous prompt'
+    → [xy] no score for Incenditech Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 36/82 Integrated Fire Protection Private Limited
+      · score Integrated Fire Protection Private Limit: unparsed reply '60.4\nSkip to previous prompt'
+      · score Integrated Fire Protection Private Limit: unparsed reply '71\nSkip to previous prompt'
+    → [xy] no score for Integrated Fire Protection Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 37/82 Intime Fire Appliances Pvt. Ltd.
+      · score Intime Fire Appliances Pvt. Ltd.: unparsed reply '47\nShow Code\nSkip to previous prompt'
+      · score Intime Fire Appliances Pvt. Ltd.: unparsed reply '70\nSkip to previous prompt'
+    → [xy] no score for Intime Fire Appliances Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 38/82 Ionex Fire
+      · score Ionex Fire: unparsed reply '50\nSkip to previous prompt'
+      · score Ionex Fire: unparsed reply '30\nSkip to previous prompt'
+    → [xy] no score for Ionex Fire (AI Mode unavailable) — left unscored for retry
+    → [xy] score 39/82 Kanex Fire
+      · score Kanex Fire: unparsed reply '54\nSkip to previous prompt'
+      · score Kanex Fire: unparsed reply '39\nSkip to previous prompt'
+    → [xy] no score for Kanex Fire (AI Mode unavailable) — left unscored for retry
+    → [xy] score 40/82 KV Fire Chemicals (India) Pvt. Ltd.
+      · score KV Fire Chemicals (India) Pvt. Ltd.: unparsed reply '50\nSkip to previous prompt'
+      · score KV Fire Chemicals (India) Pvt. Ltd.: unparsed reply '68\nSkip to previous prompt'
+    → [xy] no score for KV Fire Chemicals (India) Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 41/82 Marichi Fire And Safety
+      · score Marichi Fire And Safety: unparsed reply '9.6\nShow Code\nSkip to previous prompt'
+      · score Marichi Fire And Safety: unparsed reply '15\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Marichi Fire And Safety (AI Mode unavailable) — left unscored for retry
+    → [xy] score 42/82 Modi International
+      · score Modi International: unparsed reply '25.4\nShow Code\nSkip to previous prompt'
+      · score Modi International: unparsed reply '52\nSkip to previous prompt'
+    → [xy] no score for Modi International (AI Mode unavailable) — left unscored for retry
+    → [xy] score 43/82 Murugappa Morgan Thermal Ceramics Ltd.
+      · score Murugappa Morgan Thermal Ceramics Ltd.: unparsed reply '66.2\nShow Code\nSkip to previous prompt'
+      · score Murugappa Morgan Thermal Ceramics Ltd.: unparsed reply '68\nSkip to previous prompt'
+    → [xy] no score for Murugappa Morgan Thermal Ceramics Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 44/82 Nasa Fire Technology Limited
+    → [xy] score 45/82 NewAge Fire Protection Industries Pvt. Ltd.
+      · score NewAge Fire Protection Industries Pvt. L: unparsed reply '38\nShow Code\nSkip to previous prompt'
+      · score NewAge Fire Protection Industries Pvt. L: unparsed reply '68\nShow Code\nSkip to previous prompt'
+    → [xy] no score for NewAge Fire Protection Industries Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 46/82 Nitin Fire Protection Industries Ltd.
+      · score Nitin Fire Protection Industries Ltd.: unparsed reply '34\nSkip to previous prompt'
+      · score Nitin Fire Protection Industries Ltd.: unparsed reply '34\nSkip to previous prompt'
+    → [xy] no score for Nitin Fire Protection Industries Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 47/82 NOTOFIRE PVT LTD
+      · score NOTOFIRE PVT LTD: unparsed reply '16\nSkip to previous prompt'
+      · score NOTOFIRE PVT LTD: unparsed reply '71\nSkip to previous prompt'
+    → [xy] no score for NOTOFIRE PVT LTD (AI Mode unavailable) — left unscored for retry
+    → [xy] score 48/82 Palladium Safety Solutions Pvt. Ltd.
+      · score Palladium Safety Solutions Pvt. Ltd.: unparsed reply '43.4\nShow Code\nSkip to previous prompt'
+      · score Palladium Safety Solutions Pvt. Ltd.: unparsed reply '42\nSkip to previous prompt'
+    → [xy] no score for Palladium Safety Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 49/82 Pluss Advanced Technologies Pvt. Ltd.
+      · score Pluss Advanced Technologies Pvt. Ltd.: unparsed reply '73\nSkip to previous prompt'
+    → [xy] no score for Pluss Advanced Technologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 50/82 Prosafe Safety Equipment's Pvt Ltd
+      · score Prosafe Safety Equipment's Pvt Ltd: unparsed reply '43.4\nSkip to previous prompt'
+      · score Prosafe Safety Equipment's Pvt Ltd: unparsed reply '50\nSkip to previous prompt'
+    → [xy] no score for Prosafe Safety Equipment's Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 51/82 Resguardo Industries Pvt. Ltd.
+      · score Resguardo Industries Pvt. Ltd.: unparsed reply '50\nSkip to previous prompt'
+      · score Resguardo Industries Pvt. Ltd.: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for Resguardo Industries Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 52/82 RNG Performance Materials
+      · score RNG Performance Materials: unparsed reply '42\nSkip to previous prompt'
+      · score RNG Performance Materials: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for RNG Performance Materials (AI Mode unavailable) — left unscored for retry
+    → [xy] score 53/82 Ruby Mica Company Limited
+    → [xy] score 54/82 S-Square Enterprises
+      · score S-Square Enterprises: unparsed reply '50\nSkip to previous prompt'
+      · score S-Square Enterprises: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for S-Square Enterprises (AI Mode unavailable) — left unscored for retry
+    → [xy] score 55/82 Safe Pro Fire Services Pvt. Ltd.
+      · score Safe Pro Fire Services Pvt. Ltd.: unparsed reply '60.4\nSkip to previous prompt'
+      · score Safe Pro Fire Services Pvt. Ltd.: unparsed reply '80\nSkip to previous prompt'
+    → [xy] no score for Safe Pro Fire Services Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 56/82 Safex Fire Services Limited
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #4)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_43_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · score Safex Fire Services Limited: unparsed reply '48\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Safex Fire Services Limited: unparsed reply '82\nIf you would like, I can provide:\nA detailed breakdown of the individual scores assigned to each '
+    → [xy] no score for Safex Fire Services Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 57/82 Sankar Advanced Mobility Solutions Pvt. Ltd.
+      · score Sankar Advanced Mobility Solutions Pvt. : unparsed reply '74\nSkip to previous prompt'
+      · score Sankar Advanced Mobility Solutions Pvt. : unparsed reply '62\nSkip to previous prompt'
+    → [xy] no score for Sankar Advanced Mobility Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 58/82 Sea Max Fire Engineering Works
+    → [xy] score 59/82 Sempros Fire N Safety Systems
+      · score Sempros Fire N Safety Systems: unparsed reply '33\nSkip to previous prompt'
+      · score Sempros Fire N Safety Systems: unparsed reply '36\nSkip to previous prompt'
+    → [xy] no score for Sempros Fire N Safety Systems (AI Mode unavailable) — left unscored for retry
+    → [xy] score 60/82 Shah Bhogilal Jethalal & Bros.
+      · score Shah Bhogilal Jethalal & Bros.: unparsed reply '30\nSkip to previous prompt'
+      · score Shah Bhogilal Jethalal & Bros.: unparsed reply '74\nSkip to previous prompt'
+    → [xy] no score for Shah Bhogilal Jethalal & Bros. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 61/82 Sheffer Industries
+      · score Sheffer Industries: unparsed reply '35\nIf you want to adjust the weights or provide specific scores for each parameter, let me know how '
+      · score Sheffer Industries: unparsed reply '44\nSkip to previous prompt'
+    → [xy] no score for Sheffer Industries (AI Mode unavailable) — left unscored for retry
+    → [xy] score 62/82 Shimnit New Fire Pvt. Ltd.
+      · score Shimnit New Fire Pvt. Ltd.: unparsed reply '64\nShow Code\nSkip to previous prompt'
+      · score Shimnit New Fire Pvt. Ltd.: unparsed reply '74\nSkip to previous prompt'
+    → [xy] no score for Shimnit New Fire Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 63/82 Sigma Fire Industries
+      · score Sigma Fire Industries: unparsed reply '44\nSkip to previous prompt'
+      · score Sigma Fire Industries: unparsed reply "28\nIf you would like a detailed breakdown of each parameter's rating or want to adjust the weights f"
+    → [xy] no score for Sigma Fire Industries (AI Mode unavailable) — left unscored for retry
+    → [xy] score 64/82 Spectra Fire Systems Pvt. Ltd.
+    → [xy] score 65/82 Supertech Fabrics Private Limited
+      · score Supertech Fabrics Private Limited: unparsed reply '60\nSkip to previous prompt'
+      · score Supertech Fabrics Private Limited: unparsed reply '84\nSkip to previous prompt'
+    → [xy] no score for Supertech Fabrics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 66/82 Supertech Fabrics Pvt. Ltd.
+      · score Supertech Fabrics Pvt. Ltd.: unparsed reply '44\nSkip to previous prompt'
+      · score Supertech Fabrics Pvt. Ltd.: unparsed reply '58\nSkip to previous prompt'
+    → [xy] no score for Supertech Fabrics Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 67/82 Supremex Equipments
+      · score Supremex Equipments: unparsed reply '51\nSkip to previous prompt'
+      · score Supremex Equipments: unparsed reply '72\nSkip to previous prompt'
+    → [xy] no score for Supremex Equipments (AI Mode unavailable) — left unscored for retry
+    → [xy] score 68/82 Swastik Synergy Engineering Private Limited
+      · score Swastik Synergy Engineering Private Limi: unparsed reply '55\nSkip to previous prompt'
+      · score Swastik Synergy Engineering Private Limi: unparsed reply '68\nSkip to previous prompt'
+    → [xy] no score for Swastik Synergy Engineering Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 69/82 Technomatic Industries
+    → [xy] score 70/82 Tek Chand & Sons
+      · score Tek Chand & Sons: unparsed reply '48\nSkip to previous prompt'
+      · score Tek Chand & Sons: unparsed reply '74\nSkip to previous prompt'
+    → [xy] no score for Tek Chand & Sons (AI Mode unavailable) — left unscored for retry
+    → [xy] score 71/82 The Fire Knight
+      · score The Fire Knight: unparsed reply '48\nSkip to previous prompt'
+      · score The Fire Knight: unparsed reply '48\nIf you would like to adjust the individual scores for any of the five parameters (OEM Partnership'
+    → [xy] no score for The Fire Knight (AI Mode unavailable) — left unscored for retry
+    → [xy] score 72/82 United Fire and Safety Services
+      · score United Fire and Safety Services: unparsed reply '1\nSkip to previous prompt'
+      · score United Fire and Safety Services: unparsed reply '35\nSkip to previous prompt'
+    → [xy] no score for United Fire and Safety Services (AI Mode unavailable) — left unscored for retry
+    → [xy] score 73/82 United Fire Equipment Pvt. Ltd.
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · score United Fire Equipment Pvt. Ltd.: AiModeCaptcha: rate limited by Google (1 CAPTCHAs this run)
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+    → [xy] no score for United Fire Equipment Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 74/82 United Fire Equipments Pvt. Ltd.
+      · score United Fire Equipments Pvt. Ltd.: unparsed reply '54\nSkip to previous prompt'
+    → [xy] no score for United Fire Equipments Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 75/82 Usha Fire Safety Equipments Pvt. Ltd.
+    → [xy] score 76/82 Varia FireTech Industries
+    → [xy] score 77/82 Vimal Fire Controls Private Limited
+    → [xy] score 78/82 Vimal Fire Controls Pvt. Ltd.
+    → [xy] score 79/82 Vintex Fire Protection Pvt. Ltd.
+      · score Vintex Fire Protection Pvt. Ltd.: unparsed reply '48\nSkip to previous prompt'
+      · score Vintex Fire Protection Pvt. Ltd.: unparsed reply '54\nSkip to previous prompt'
+    → [xy] no score for Vintex Fire Protection Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 80/82 Wedge Industries Limited
+      · score Wedge Industries Limited: unparsed reply '52\nSkip to previous prompt'
+      · score Wedge Industries Limited: unparsed reply '46\nIf you want, I can provide a detailed breakdown of the individual scores for each of the five par'
+    → [xy] no score for Wedge Industries Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 81/82 Window Techs India PVT LTD
+      · score Window Techs India PVT LTD: unparsed reply '30\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · score Window Techs India PVT LTD: unparsed reply '74\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Window Techs India PVT LTD (AI Mode unavailable) — left unscored for retry
+    → [xy] score 82/82 Zedex Fire
+    → [xy] scored 82 rows (Others/Energy) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] city/country filled=0 kept=82 blank=0
+  [chatgpt] Company Details mapping skipped: TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+
+=== OpenAI cost (this run) ===
+  run_id : c143ca83
+  market : Battery Fire Safety Industry Analysis
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (82 rows) → battery_fire_safety_industry_analysis_india_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 82 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\battery_fire_safety_industry_analysis_india\battery_fire_safety_industry_analysis_india_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\battery_fire_safety_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Battery Fire Safety Industry Analysis",
+  "country": "india",
+  "batch": "all",
+  "family": "general",
+  "target": 120,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 125,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 97,
+  "rejected_mid": 28,
+  "chatgpt_filled": 82,
+  "rejected_final": 0,
+  "total_after": 82,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\battery_fire_safety_industry_analysis_india_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "c143ca83",
+    "market": "Battery Fire Safety Industry Analysis",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-25T09:57:57.155176+00:00",
+    "ended_at": "2026-09-25T13:53:15.496738+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 120,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 82,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\battery_fire_safety_industry_analysis_india_FINAL.xlsx",
+      "rejected_mid": 28,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Others",
+    "industry_category": "Energy",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters focus on battery fire safety technology and commercial factors specific to the Indian market, including local regulations, OEM partnerships, and manufacturing localization. They enable a comprehensive assessment of companies in this niche industry.",
+    "parameter_definitions": {
+      "x": {
+        "Fire-Resistant Battery Chemistry & Materials": "Use of inherently safer battery chemistries (e.g., LFP, solid-state) and flame-retardant materials in cell and pack design to reduce fire risk. Evidence includes material specifications, safety test results (e.g., nail penetration, overcharge), and third-party certifications.",
+        "Thermal Runaway Prevention & Suppression Systems": "Design features and active/passive systems that prevent or mitigate thermal runaway, such as cooling systems, venting, and fire suppression agents. Strength shown by successful test outcomes (e.g., no fire propagation) and integration in commercial products.",
+        "Battery Management System (BMS) Safety Features": "Advanced BMS with real-time monitoring, fault detection, and fail-safe mechanisms to prevent overcharging, overheating, and short circuits. Evidence includes BMS algorithms, sensor accuracy, and response times in safety-critical scenarios.",
+        "Compliance with Indian & International Safety Standards": "Adherence to standards like AIS-156 (India), IEC 62619, UL 1973, and UN38.3 for battery safety. Strength indicated by certifications, test reports, and compliance with evolving Indian regulations.",
+        "R&D and Innovation in Battery Fire Safety": "Ongoing research and development focused on improving battery safety, including new materials, designs, and testing methodologies. Evidence includes patents, R&D expenditure, collaborations with research institutions, and published innovations."
+      },
+      "y": {
+        "Tier-1 OEM Partnerships & Supply Contracts": "Contracts and partnerships with major Indian electric vehicle (EV) manufacturers, energy storage integrators, or electronics OEMs. Evidence includes named customers, contract values, and duration of agreements.",
+        "Revenue & Growth in Indian Market": "Sales revenue and growth rate specifically from the Indian market for battery products with fire safety features. Evidence includes financial statements, investor presentations, and market share reports.",
+        "Manufacturing Capacity & Localization in India": "Production capacity and degree of local manufacturing in India, including cell and pack assembly. Evidence includes factory locations, capacity figures (GWh), and localization commitments under PLI schemes.",
+        "After-Sales Service & Support Network": "Extent of service centers, technical support, and warranty offerings across India. Evidence includes number of service points, response times, and customer satisfaction metrics.",
+        "Regulatory Approvals & Certifications": "Obtained approvals and certifications from Indian regulatory bodies (e.g., ARAI, ICAT) and international organizations. Evidence includes certificate numbers, approval dates, and compliance with BIS standards."
+      }
+    },
+    "x_features": [
+      "Fire-Resistant Battery Chemistry & Materials",
+      "Thermal Runaway Prevention & Suppression Systems",
+      "Battery Management System (BMS) Safety Features",
+      "Compliance with Indian & International Safety Standards",
+      "R&D and Innovation in Battery Fire Safety"
+    ],
+    "y_features": [
+      "Tier-1 OEM Partnerships & Supply Contracts",
+      "Revenue & Growth in Indian Market",
+      "Manufacturing Capacity & Localization in India",
+      "After-Sales Service & Support Network",
+      "Regulatory Approvals & Certifications"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 72.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 82,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 82,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 82,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The battery fire safety market encompasses products and services designed to prevent, detect, and suppress fires in lithium-ion and other battery systems used in electric vehicles, energy storage, and industrial applications.",
+      "keep_roles": [
+        "Manufacturer"
+      ],
+      "uniform_role": "Manufacturer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 82  (target 120)

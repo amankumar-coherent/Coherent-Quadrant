@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence states Mylan Pharmaceuticals ULC (now Viatris) markets generic GLP-1 receptor agonists in Canada, but no specific molecules or breadth are disclosed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of differentiated therapeutic coverage; only generic GLP-1 agonists in Canada, with no details on indications or differentiation."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of clinical R&D or innovation; as a generic marketer, likely limited internal R&D."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "As part of Viatris, a large global pharma, manufacturing capability is implied, but no specific evidence for GLP-1 manufacturing or supply reliability."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Markets generic GLP-1 agonists in Canada, implying regulatory approvals, but no specific evidence of quality compliance or scope."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence indicates presence only in Canada, with no other geographic reach mentioned."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "As a generic player under Viatris, brand reputation is not evidenced; no specific HCP reputation data."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided for Mylan Pharmaceuticals ULC or its GLP-1 business."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline or future indications; as a generic marketer, likely limited pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Mylan merged into Viatris, indicating business consolidation, but no specific GLP-1 partnerships or expansion evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

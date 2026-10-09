@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Autotalks is a fabless V2X chip designer, not a foundry, so it does not offer process nodes; it relies on foundry partners.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Israeli fabless semiconductor company specializing in V2X communication chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Autotalks does not lead in process technology; as a fabless company, it depends on foundry processes and focuses on V2X chip design.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No public roadmap for next-generation nodes is available; as a fabless company, its node roadmap is tied to foundry partners.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "Autotalks is highly specialized in V2X communication chips, not offering a broad portfolio across logic, memory, analog, or power.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "Revenue split by product type is not disclosed; the company is focused solely on V2X chips, indicating minimal diversification.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "As a fabless company, Autotalks likely partners with OSAT providers, but no specific OSAT partnerships are disclosed.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Autotalks owns proprietary V2X chip designs, but specific IP details (e.g., CPU, GPU) are not publicly detailed.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["designing its own V2X chips."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Autotalks likely uses third-party IP (e.g., ARM) for its chips, but no licensing details are available.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["designing its own V2X chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Autotalks has strong architecture in automotive V2X, a high-growth area, but not in AI or 5G.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "As a fabless company, Autotalks does not own wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rates are not disclosed; as a fabless company, yields depend on foundry partners and are not publicly benchmarked.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No advanced packaging offerings are disclosed; as a fabless company, packaging is likely outsourced.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Autotalks likely holds automotive quality certifications like IATF 16949, but no specific certifications are mentioned in the KB.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rates are not disclosed; as an automotive supplier, reliability is critical, but no specific DPPM data is available.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Autotalks likely complies with RoHS/REACH and conflict minerals regulations, but no specific compliance details are in the KB.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "Autotalks is headquartered in Israel, but its sales and R&D presence globally is not detailed in the KB.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Founded / based in: Israel | Headquarters: Israel"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Primary end-market is automotive V2X, but revenue contribution by region or segment is not disclosed.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "Geographic diversification is unclear; being based in Israel may expose it to regional risks, but no mitigation details are available.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Founded / based in: Israel | Headquarters: Israel"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not disclosed; as a fabless V2X chip supplier, customer concentration risk is unknown.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No specific partnerships are mentioned in the KB, but as a fabless company it likely partners with foundries and EDA vendors.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Autotalks likely collaborates with foundries and OSATs for manufacturing, but no specific ecosystem partnerships are disclosed.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "Financial data (revenue, net income, free cash flow) is not publicly available in the KB.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 2,
+      "answer": "CapEx data is not disclosed; as a fabless company, capital expenditure is likely lower than IDMs, but no figures are available.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "Balance sheet details are not available; as a private company, financial strength is unknown.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "No specific roadmap milestones are disclosed, but as a V2X specialist, it likely focuses on advancing V2X technology.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No roadmap for AI, quantum, or advanced memory is mentioned; focus is on V2X communication chips.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Autotalks' roadmap aligns with automotive V2X trends, which are growing, but limited to that niche.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["specializing in V2X (vehicle-to-everything) communication chips."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No fab expansion projects are announced; as a fabless company, it does not build fabs.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "Revenue growth rate is not disclosed; no financial projections are available.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "Funding and execution plans for capacity expansion are not disclosed; as a fabless company, it likely relies on foundry partners.",
+      "evidence_urls": ["https://www.auto-talks.com"],
+      "evidence_snippets": ["Fabless semiconductor company designing its own V2X chips."],
+      "grounding": "insufficient"
+    }
+  ]
+}

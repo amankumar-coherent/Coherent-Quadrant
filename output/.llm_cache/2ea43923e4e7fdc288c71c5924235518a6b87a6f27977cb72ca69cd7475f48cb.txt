@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions MEMO Patch M, MEMO Patch, Vital Picasso, and smartwatch/chest patch, but portfolio appears narrow (ECG-focused)."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Clinically-tested wearables and FDA clearance for MEMO Patch M, but no detailed clinical performance data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "AI-based telemetry, predictive analytics (Vital Picasso), and continuous innovation evidenced by partnerships and product launches."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "MEMO Patch M received U.S. FDA 510(k) clearance; CE certification mentioned for another company, not Huinno."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Presence in Korea and expansion to U.S. via Yuhan partnership; limited global evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnerships with Seoul National University Hospital, Korea University Hospital, and Yuhan Corp indicate clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Estimated revenue per employee $243k, but no overall revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Expanding from ECG to AI telemetry and predictive analytics (Vital Picasso) for general ward patients."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partnerships with Yuhan Corp for U.S. market, Korea University Hospital, and deployment in H+ Yangji Hospital."
+    }
+  ],
+  "evidence_used": true
+}

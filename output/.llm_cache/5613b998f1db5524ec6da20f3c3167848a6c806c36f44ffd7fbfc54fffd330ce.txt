@@ -1,0 +1,720 @@
+{
+  "market_definition": "The global flexible packaging market encompasses the production and supply of flexible packaging materials and products—such as pouches, bags, films, and wraps—made from plastic, paper, aluminum foil, and multi-layer laminates. Participants include raw material suppliers, film and foil converters, packaging manufacturers, brand owners, and end-use industries like food and beverage, personal care, and pharmaceuticals. The market is global, with production and consumption across all regions, and is characterized by a diverse value chain from resin and substrate production to converting and printing.",
+  "market_boundary": {
+    "in_scope": [
+      "Flexible packaging converters (pouch, bag, film manufacturers)",
+      "Raw material suppliers (resins, films, foils, adhesives, inks)",
+      "Laminators and coaters",
+      "Printing and converting equipment manufacturers",
+      "Packaging machinery (form-fill-seal, bagging) manufacturers",
+      "Brand owners and end-users (food, beverage, personal care, pharma)",
+      "Recycling and sustainability solution providers",
+      "Distributors and traders of flexible packaging materials"
+    ],
+    "out_of_scope": [
+      "Rigid packaging (bottles, cans, jars, boxes)",
+      "Paperboard and corrugated packaging",
+      "Glass and metal packaging",
+      "Packaging design agencies (non-manufacturing)",
+      "Packaging machinery for rigid formats",
+      "Retail and e-commerce packaging (non-flexible)",
+      "Market research and consulting firms",
+      "Packaging industry news and media"
+    ]
+  },
+  "value_chain_layers": [
+    {
+      "layer_id": "L1",
+      "layer_name": "Raw Materials & Substrates",
+      "description": "Suppliers of base materials used in flexible packaging: polymer resins, plastic films (BOPP, BOPET, PE, PP), aluminum foil, paper, adhesives, coatings, and inks.",
+      "segments": [
+        {
+          "segment_name": "Polymer Resin Producers",
+          "sub_segments": ["Polyethylene (PE)", "Polypropylene (PP)", "Polyester (PET)", "Polyamide (PA)", "EVOH"],
+          "participant_types": ["manufacturer", "supplier"],
+          "search_intents": [
+            "polyethylene resin manufacturer official site",
+            "polypropylene resin supplier for flexible packaging",
+            "EVOH barrier resin manufacturer"
+          ]
+        },
+        {
+          "segment_name": "Film & Foil Manufacturers",
+          "sub_segments": ["BOPP film", "BOPET film", "Cast film", "Aluminum foil", "Metallized film"],
+          "participant_types": ["manufacturer", "converter"],
+          "search_intents": [
+            "BOPP film manufacturer official site",
+            "BOPET film manufacturer flexible packaging",
+            "aluminum foil manufacturer for packaging"
+          ]
+        },
+        {
+          "segment_name": "Adhesives, Coatings & Inks",
+          "sub_segments": ["Laminating adhesives", "Solvent-based inks", "Water-based inks", "UV coatings", "Barrier coatings"],
+          "participant_types": ["manufacturer", "supplier"],
+          "search_intents": [
+            "laminating adhesive manufacturer flexible packaging",
+            "flexographic ink manufacturer packaging",
+            "barrier coating supplier flexible packaging"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L2",
+      "layer_name": "Converting & Manufacturing",
+      "description": "Companies that convert raw materials into flexible packaging products through processes like extrusion, lamination, printing, slitting, and pouch making.",
+      "segments": [
+        {
+          "segment_name": "Flexible Packaging Converters",
+          "sub_segments": ["Pouch manufacturers", "Bag manufacturers", "Rollstock film producers", "Shrink film producers", "Stand-up pouch specialists"],
+          "participant_types": ["manufacturer", "converter"],
+          "search_intents": [
+            "flexible packaging converter official site",
+            "stand-up pouch manufacturer",
+            "rollstock film manufacturer flexible packaging"
+          ]
+        },
+        {
+          "segment_name": "Laminators & Coaters",
+          "sub_segments": ["Multi-layer lamination", "Extrusion coating", "Solventless lamination"],
+          "participant_types": ["manufacturer", "converter"],
+          "search_intents": [
+            "lamination coating company flexible packaging",
+            "extrusion coating manufacturer packaging"
+          ]
+        },
+        {
+          "segment_name": "Printing & Converting Equipment",
+          "sub_segments": ["Flexographic printing presses", "Gravure printing presses", "Slitting and rewinding machines", "Pouch making machines"],
+          "participant_types": ["equipment manufacturer"],
+          "search_intents": [
+            "flexographic printing press manufacturer",
+            "gravure printing machine manufacturer",
+            "pouch making machine manufacturer"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L3",
+      "layer_name": "Packaging Machinery & Automation",
+      "description": "Suppliers of machinery used to fill, seal, and package products into flexible formats, including form-fill-seal machines, bagging machines, and automated packaging lines.",
+      "segments": [
+        {
+          "segment_name": "Form-Fill-Seal (FFS) Machinery",
+          "sub_segments": ["Vertical FFS", "Horizontal FFS", "Pre-made pouch filling"],
+          "participant_types": ["equipment manufacturer"],
+          "search_intents": [
+            "vertical form fill seal machine manufacturer",
+            "horizontal form fill seal machine manufacturer"
+          ]
+        },
+        {
+          "segment_name": "Bagging & Wrapping Machinery",
+          "sub_segments": ["Bagging machines", "Shrink wrapping machines", "Flow wrapping machines"],
+          "participant_types": ["equipment manufacturer"],
+          "search_intents": [
+            "bagging machine manufacturer official site",
+            "flow wrapping machine manufacturer"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L4",
+      "layer_name": "End-Use & Brand Owners",
+      "description": "Companies that purchase flexible packaging for their products, including food and beverage, personal care, pharmaceuticals, and industrial applications.",
+      "segments": [
+        {
+          "segment_name": "Food & Beverage Brands",
+          "sub_segments": ["Snack food", "Beverages", "Fresh produce", "Frozen food"],
+          "participant_types": ["brand owner", "end-user"],
+          "search_intents": [
+            "snack food packaging supplier",
+            "beverage flexible packaging supplier"
+          ]
+        },
+        {
+          "segment_name": "Personal Care & Pharmaceutical",
+          "sub_segments": ["Cosmetics", "Healthcare products", "Pharmaceutical sachets"],
+          "participant_types": ["brand owner", "end-user"],
+          "search_intents": [
+            "pharmaceutical flexible packaging supplier",
+            "personal care packaging manufacturer"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L5",
+      "layer_name": "Sustainability & Recycling",
+      "description": "Providers of recyclable materials, compostable films, and recycling services for flexible packaging, addressing environmental regulations and brand sustainability goals.",
+      "segments": [
+        {
+          "segment_name": "Recyclable & Compostable Materials",
+          "sub_segments": ["Recyclable mono-material films", "Compostable films", "Bio-based polymers"],
+          "participant_types": ["manufacturer", "supplier"],
+          "search_intents": [
+            "recyclable flexible packaging material manufacturer",
+            "compostable film manufacturer packaging"
+          ]
+        },
+        {
+          "segment_name": "Recycling & Circular Solutions",
+          "sub_segments": ["Plastic recycling", "Chemical recycling", "Collection and sorting"],
+          "participant_types": ["recycler", "service provider"],
+          "search_intents": [
+            "flexible packaging recycling company",
+            "plastic film recycling service"
+          ]
+        }
+      ]
+    }
+  ],
+  "ecosystem_functions": [
+    "resin_producer",
+    "film_manufacturer",
+    "foil_manufacturer",
+    "adhesive_supplier",
+    "ink_supplier",
+    "coating_supplier",
+    "flexible_packaging_converter",
+    "laminator",
+    "coater",
+    "printing_press_manufacturer",
+    "slitting_machine_manufacturer",
+    "pouch_making_machine_manufacturer",
+    "form_fill_seal_machine_manufacturer",
+    "bagging_machine_manufacturer",
+    "wrapping_machine_manufacturer",
+    "brand_owner",
+    "end_user",
+    "recycler",
+    "sustainability_solution_provider"
+  ],
+  "industry_terms": [
+    "BOPP film",
+    "BOPET film",
+    "polyethylene resin",
+    "polypropylene resin",
+    "aluminum foil",
+    "metallized film",
+    "laminating adhesive",
+    "flexographic ink",
+    "gravure ink",
+    "barrier coating",
+    "stand-up pouch",
+    "form-fill-seal",
+    "rollstock",
+    "shrink film",
+    "compostable film",
+    "recyclable film"
+  ],
+  "include_keywords": [
+    "flexible packaging manufacturer",
+    "pouch manufacturer",
+    "film converter",
+    "laminating adhesive",
+    "flexographic printing",
+    "form-fill-seal machine",
+    "stand-up pouch",
+    "rollstock film",
+    "shrink film",
+    "recyclable packaging"
+  ],
+  "exclude_keywords": [
+    "news",
+    "blog",
+    "directory",
+    "market report",
+    "job board",
+    "consulting",
+    "rigid packaging",
+    "glass packaging",
+    "metal packaging",
+    "paperboard"
+  ],
+  "relevance_keywords": [
+    "flexible packaging",
+    "pouch",
+    "bag",
+    "film",
+    "lamination",
+    "printing",
+    "converting",
+    "food packaging",
+    "pharmaceutical packaging",
+    "recyclable",
+    "compostable",
+    "BOPP",
+    "BOPET"
+  ],
+  "negative_keywords": [
+    "news",
+    "blog",
+    "directory",
+    "market research",
+    "consulting",
+    "job",
+    "career",
+    "rigid",
+    "glass",
+    "metal",
+    "paperboard"
+  ],
+  "discovery_prompts": [
+    {
+      "id": "M1",
+      "layer_id": "L1",
+      "segment": "Polymer Resin Producers",
+      "sub_sector": "polyethylene_resin_manufacturer",
+      "text": "polyethylene resin manufacturer official site"
+    },
+    {
+      "id": "M2",
+      "layer_id": "L1",
+      "segment": "Polymer Resin Producers",
+      "sub_sector": "polypropylene_resin_manufacturer",
+      "text": "polypropylene resin supplier flexible packaging"
+    },
+    {
+      "id": "M3",
+      "layer_id": "L1",
+      "segment": "Film & Foil Manufacturers",
+      "sub_sector": "bopp_film_manufacturer",
+      "text": "BOPP film manufacturer official site"
+    },
+    {
+      "id": "M4",
+      "layer_id": "L1",
+      "segment": "Film & Foil Manufacturers",
+      "sub_sector": "bopp_film_manufacturer",
+      "text": "BOPET film manufacturer flexible packaging"
+    },
+    {
+      "id": "M5",
+      "layer_id": "L1",
+      "segment": "Film & Foil Manufacturers",
+      "sub_sector": "aluminum_foil_manufacturer",
+      "text": "aluminum foil manufacturer for packaging"
+    },
+    {
+      "id": "M6",
+      "layer_id": "L1",
+      "segment": "Adhesives, Coatings & Inks",
+      "sub_sector": "laminating_adhesive_manufacturer",
+      "text": "laminating adhesive manufacturer flexible packaging"
+    },
+    {
+      "id": "M7",
+      "layer_id": "L1",
+      "segment": "Adhesives, Coatings & Inks",
+      "sub_sector": "flexographic_ink_manufacturer",
+      "text": "flexographic ink manufacturer packaging"
+    },
+    {
+      "id": "M8",
+      "layer_id": "L1",
+      "segment": "Adhesives, Coatings & Inks",
+      "sub_sector": "barrier_coating_supplier",
+      "text": "barrier coating supplier flexible packaging"
+    },
+    {
+      "id": "M9",
+      "layer_id": "L2",
+      "segment": "Flexible Packaging Converters",
+      "sub_sector": "flexible_packaging_converter",
+      "text": "flexible packaging converter official site"
+    },
+    {
+      "id": "M10",
+      "layer_id": "L2",
+      "segment": "Flexible Packaging Converters",
+      "sub_sector": "stand_up_pouch_manufacturer",
+      "text": "stand-up pouch manufacturer"
+    },
+    {
+      "id": "M11",
+      "layer_id": "L2",
+      "segment": "Flexible Packaging Converters",
+      "sub_sector": "rollstock_film_manufacturer",
+      "text": "rollstock film manufacturer flexible packaging"
+    },
+    {
+      "id": "M12",
+      "layer_id": "L2",
+      "segment": "Laminators & Coaters",
+      "sub_sector": "lamination_coating_company",
+      "text": "lamination coating company flexible packaging"
+    },
+    {
+      "id": "M13",
+      "layer_id": "L2",
+      "segment": "Laminators & Coaters",
+      "sub_sector": "extrusion_coating_manufacturer",
+      "text": "extrusion coating manufacturer packaging"
+    },
+    {
+      "id": "M14",
+      "layer_id": "L2",
+      "segment": "Printing & Converting Equipment",
+      "sub_sector": "flexographic_press_manufacturer",
+      "text": "flexographic printing press manufacturer"
+    },
+    {
+      "id": "M15",
+      "layer_id": "L2",
+      "segment": "Printing & Converting Equipment",
+      "sub_sector": "gravure_press_manufacturer",
+      "text": "gravure printing machine manufacturer"
+    },
+    {
+      "id": "M16",
+      "layer_id": "L2",
+      "segment": "Printing & Converting Equipment",
+      "sub_sector": "pouch_making_machine_manufacturer",
+      "text": "pouch making machine manufacturer"
+    },
+    {
+      "id": "M17",
+      "layer_id": "L3",
+      "segment": "Form-Fill-Seal (FFS) Machinery",
+      "sub_sector": "vertical_ffs_machine_manufacturer",
+      "text": "vertical form fill seal machine manufacturer"
+    },
+    {
+      "id": "M18",
+      "layer_id": "L3",
+      "segment": "Form-Fill-Seal (FFS) Machinery",
+      "sub_sector": "horizontal_ffs_machine_manufacturer",
+      "text": "horizontal form fill seal machine manufacturer"
+    },
+    {
+      "id": "M19",
+      "layer_id": "L3",
+      "segment": "Bagging & Wrapping Machinery",
+      "sub_sector": "bagging_machine_manufacturer",
+      "text": "bagging machine manufacturer official site"
+    },
+    {
+      "id": "M20",
+      "layer_id": "L3",
+      "segment": "Bagging & Wrapping Machinery",
+      "sub_sector": "flow_wrapping_machine_manufacturer",
+      "text": "flow wrapping machine manufacturer"
+    },
+    {
+      "id": "M21",
+      "layer_id": "L4",
+      "segment": "Food & Beverage Brands",
+      "sub_sector": "snack_food_packaging_supplier",
+      "text": "snack food packaging supplier"
+    },
+    {
+      "id": "M22",
+      "layer_id": "L4",
+      "segment": "Food & Beverage Brands",
+      "sub_sector": "beverage_flexible_packaging_supplier",
+      "text": "beverage flexible packaging supplier"
+    },
+    {
+      "id": "M23",
+      "layer_id": "L4",
+      "segment": "Personal Care & Pharmaceutical",
+      "sub_sector": "pharmaceutical_flexible_packaging_supplier",
+      "text": "pharmaceutical flexible packaging supplier"
+    },
+    {
+      "id": "M24",
+      "layer_id": "L4",
+      "segment": "Personal Care & Pharmaceutical",
+      "sub_sector": "personal_care_packaging_manufacturer",
+      "text": "personal care packaging manufacturer"
+    },
+    {
+      "id": "M25",
+      "layer_id": "L5",
+      "segment": "Recyclable & Compostable Materials",
+      "sub_sector": "recyclable_film_manufacturer",
+      "text": "recyclable flexible packaging material manufacturer"
+    },
+    {
+      "id": "M26",
+      "layer_id": "L5",
+      "segment": "Recyclable & Compostable Materials",
+      "sub_sector": "compostable_film_manufacturer",
+      "text": "compostable film manufacturer packaging"
+    },
+    {
+      "id": "M27",
+      "layer_id": "L5",
+      "segment": "Recycling & Circular Solutions",
+      "sub_sector": "flexible_packaging_recycler",
+      "text": "flexible packaging recycling company"
+    },
+    {
+      "id": "M28",
+      "layer_id": "L5",
+      "segment": "Recycling & Circular Solutions",
+      "sub_sector": "plastic_film_recycling_service",
+      "text": "plastic film recycling service"
+    },
+    {
+      "id": "M29",
+      "layer_id": "L2",
+      "segment": "Flexible Packaging Converters",
+      "sub_sector": "flexible_packaging_converter_asia",
+      "text": "flexible packaging converter Asia official site"
+    },
+    {
+      "id": "M30",
+      "layer_id": "L2",
+      "segment": "Flexible Packaging Converters",
+      "sub_sector": "flexible_packaging_converter_europe",
+      "text": "flexible packaging converter Europe official site"
+    }
+  ],
+  "seed_companies": [
+    {
+      "canonical_name": "Amcor plc",
+      "primary_domain": "amcor.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Sealed Air Corporation",
+      "primary_domain": "sealedair.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Berry Global Group",
+      "primary_domain": "berryglobal.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Constantia Flexibles",
+      "primary_domain": "constantiaflexibles.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Huhtamäki Oyj",
+      "primary_domain": "huhtamaki.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Mondi plc",
+      "primary_domain": "mondi.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Uflex Ltd",
+      "primary_domain": "uflexltd.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Winpak Ltd",
+      "primary_domain": "winpak.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "ProAmpac",
+      "primary_domain": "proampac.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "TC Transcontinental",
+      "primary_domain": "tctranscontinental.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Dow Inc.",
+      "primary_domain": "dow.com",
+      "company_function": "Resin producer",
+      "segment": "Polymer Resin Producers"
+    },
+    {
+      "canonical_name": "ExxonMobil Chemical",
+      "primary_domain": "exxonmobilchemical.com",
+      "company_function": "Resin producer",
+      "segment": "Polymer Resin Producers"
+    },
+    {
+      "canonical_name": "LyondellBasell",
+      "primary_domain": "lyondellbasell.com",
+      "company_function": "Resin producer",
+      "segment": "Polymer Resin Producers"
+    },
+    {
+      "canonical_name": "SABIC",
+      "primary_domain": "sabic.com",
+      "company_function": "Resin producer",
+      "segment": "Polymer Resin Producers"
+    },
+    {
+      "canonical_name": "Toray Industries",
+      "primary_domain": "toray.com",
+      "company_function": "Film manufacturer",
+      "segment": "Film & Foil Manufacturers"
+    },
+    {
+      "canonical_name": "Mitsubishi Chemical",
+      "primary_domain": "m-chemical.co.jp",
+      "company_function": "Film manufacturer",
+      "segment": "Film & Foil Manufacturers"
+    },
+    {
+      "canonical_name": "Jindal Films",
+      "primary_domain": "jindalfilms.com",
+      "company_function": "Film manufacturer",
+      "segment": "Film & Foil Manufacturers"
+    },
+    {
+      "canonical_name": "Taghleef Industries",
+      "primary_domain": "taghleefindustries.com",
+      "company_function": "Film manufacturer",
+      "segment": "Film & Foil Manufacturers"
+    },
+    {
+      "canonical_name": "Henkel AG & Co. KGaA",
+      "primary_domain": "henkel.com",
+      "company_function": "Adhesive supplier",
+      "segment": "Adhesives, Coatings & Inks"
+    },
+    {
+      "canonical_name": "Bostik (Arkema)",
+      "primary_domain": "bostik.com",
+      "company_function": "Adhesive supplier",
+      "segment": "Adhesives, Coatings & Inks"
+    },
+    {
+      "canonical_name": "Sun Chemical",
+      "primary_domain": "sunchemical.com",
+      "company_function": "Ink supplier",
+      "segment": "Adhesives, Coatings & Inks"
+    },
+    {
+      "canonical_name": "Flint Group",
+      "primary_domain": "flintgrp.com",
+      "company_function": "Ink supplier",
+      "segment": "Adhesives, Coatings & Inks"
+    },
+    {
+      "canonical_name": "Windmöller & Hölscher",
+      "primary_domain": "w-h.com",
+      "company_function": "Printing press manufacturer",
+      "segment": "Printing & Converting Equipment"
+    },
+    {
+      "canonical_name": "Bobst Group",
+      "primary_domain": "bobst.com",
+      "company_function": "Printing press manufacturer",
+      "segment": "Printing & Converting Equipment"
+    },
+    {
+      "canonical_name": "BHS Corrugated",
+      "primary_domain": "bhs-world.com",
+      "company_function": "Converting equipment manufacturer",
+      "segment": "Printing & Converting Equipment"
+    },
+    {
+      "canonical_name": "KHS Group",
+      "primary_domain": "khs.com",
+      "company_function": "Packaging machinery manufacturer",
+      "segment": "Form-Fill-Seal (FFS) Machinery"
+    },
+    {
+      "canonical_name": "Bosch Packaging Technology",
+      "primary_domain": "boschpackaging.com",
+      "company_function": "Packaging machinery manufacturer",
+      "segment": "Form-Fill-Seal (FFS) Machinery"
+    },
+    {
+      "canonical_name": "Ishida Co., Ltd.",
+      "primary_domain": "ishida.com",
+      "company_function": "Packaging machinery manufacturer",
+      "segment": "Bagging & Wrapping Machinery"
+    },
+    {
+      "canonical_name": "Tetra Pak",
+      "primary_domain": "tetrapak.com",
+      "company_function": "Packaging machinery manufacturer",
+      "segment": "Form-Fill-Seal (FFS) Machinery"
+    },
+    {
+      "canonical_name": "Nestlé S.A.",
+      "primary_domain": "nestle.com",
+      "company_function": "Brand owner",
+      "segment": "Food & Beverage Brands"
+    },
+    {
+      "canonical_name": "PepsiCo",
+      "primary_domain": "pepsico.com",
+      "company_function": "Brand owner",
+      "segment": "Food & Beverage Brands"
+    },
+    {
+      "canonical_name": "Procter & Gamble",
+      "primary_domain": "pg.com",
+      "company_function": "Brand owner",
+      "segment": "Personal Care & Pharmaceutical"
+    },
+    {
+      "canonical_name": "Johnson & Johnson",
+      "primary_domain": "jnj.com",
+      "company_function": "Brand owner",
+      "segment": "Personal Care & Pharmaceutical"
+    },
+    {
+      "canonical_name": "Novolex",
+      "primary_domain": "novolex.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "Coveris",
+      "primary_domain": "coveris.com",
+      "company_function": "Flexible packaging converter",
+      "segment": "Flexible Packaging Converters"
+    },
+    {
+      "canonical_name": "RKW Group",
+      "primary_domain": "rkw-group.com",
+      "company_function": "Film manufacturer",
+      "segment": "Film & Foil Manufacturers"
+    },
+    {
+      "canonical_name": "Klöckner Pentaplast",
+      "primary_domain": "kpfilms.com",
+      "company_function": "Film manufacturer",
+      "segment": "Film & Foil Manufacturers"
+    },
+    {
+      "canonical_name": "Avery Dennison",
+      "primary_domain": "averydennison.com",
+      "company_function": "Adhesive supplier",
+      "segment": "Adhesives, Coatings & Inks"
+    },
+    {
+      "canonical_name": "Siegwerk Druckfarben",
+      "primary_domain": "siegwerk.com",
+      "company_function": "Ink supplier",
+      "segment": "Adhesives, Coatings & Inks"
+    },
+    {
+      "canonical_name": "Comexi Group",
+      "primary_domain": "comexi.com",
+      "company_function": "Converting equipment manufacturer",
+      "segment": "Printing & Converting Equipment"
+    }
+  ]
+}

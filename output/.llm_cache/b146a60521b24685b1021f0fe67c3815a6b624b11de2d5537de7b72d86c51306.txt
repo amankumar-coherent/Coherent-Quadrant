@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 3,
+      "answer": "Sanofi offers only lixisenatide (Adlyxin) and the combination Soliqua, lacking multiple GLP-1 molecules like semaglutide or tirzepatide.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "Sanofi's GLP-1 products are injectable only; no oral GLP-1 formulation is available.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "Sanofi has Soliqua, a fixed-dose combination of lixisenatide and insulin glargine, but lacks GLP-1/GIP combinations.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["the combination Soliqua"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "Sanofi's GLP-1 products are approved for type 2 diabetes, but not for obesity; lixisenatide is not indicated for weight management.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Lixisenatide has shown cardiovascular safety but not a labeled CV benefit claim like reduced MACE; no evidence of such claim in KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Lixisenatide is a once-daily injection; Sanofi does not offer a once-weekly GLP-1 option.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "Sanofi has no active clinical trials for oral GLP-1 RAs or next-generation molecules in the KB; pipeline is limited.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 2,
+      "answer": "No head-to-head trials like SURPASS or SUSTAIN are mentioned in the KB; Sanofi's GLP-1 trials are not prominent.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 3,
+      "answer": "No evidence in KB of Sanofi exploring NASH, CKD, or heart failure for its GLP-1 products.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Sanofi is a large manufacturer with multiple sites, but KB does not specify FDA-approved sites for GLP-1 products.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No supply shortages or recalls are mentioned in KB; Sanofi has had past issues but not specific to GLP-1.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No capacity expansion plans for GLP-1 are mentioned in KB; Sanofi has not announced major new facilities for these products.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Sanofi's GLP-1 products are approved in major markets, but KB does not confirm PMDA approval or absence of warning letters.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Sanofi has a global pharmacovigilance system, but KB does not provide details specific to GLP-1.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No FDA Form 483s or import alerts are mentioned in KB; Sanofi has had quality issues historically but not specific to GLP-1.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Sanofi's GLP-1 products are available in many countries, likely over 50, but KB does not specify exact count.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Global", "Paris, France"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "No reimbursement agreements for obesity are mentioned; Sanofi's GLP-1s are not approved for obesity, so reimbursement is limited.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Sanofi has a global presence, likely including emerging markets, but KB does not confirm specific launches.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Global"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "Sanofi's GLP-1 brands are not top 3 in class; lixisenatide has low market share compared to competitors.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Sanofi presents at major congresses, but not with leading GLP-1 data; presence is moderate.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "No major safety controversies or lawsuits are mentioned in KB; Sanofi has had legal issues but not specific to GLP-1.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "Sanofi's GLP-1 franchise revenue is not growing at 20% YoY; lixisenatide sales have been flat or declining.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Sanofi's market cap is around $100 billion, but not exceeding it consistently; financial stability is moderate.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Sanofi's R&D spending is around 15% of revenue, but not specifically on GLP-1; overall R&D is significant.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 2,
+      "answer": "No Phase 3 trial for oral GLP-1 or combination therapy is mentioned in KB; Sanofi's pipeline lacks such candidates.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "No evidence of pursuing pediatric obesity or type 2 diabetes indications for GLP-1 products.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 3,
+      "answer": "No plans to expand into cardiovascular or renal indications are mentioned in KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Sanofi has had partnerships in diabetes, but KB does not mention specific GLP-1 alliances.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Sanofi is a global biopharmaceutical company"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Sanofi has global reach, but no licensing agreements for GLP-1 are mentioned in KB.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["Global"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No acquisitions or partnerships for novel delivery technologies are mentioned in KB; Sanofi has not invested heavily in oral GLP-1 delivery.",
+      "evidence_urls": ["https://www.sanofi.com"],
+      "evidence_snippets": ["marketing GLP-1 receptor agonists such as lixisenatide (Adlyxin) and the combination Soliqua"],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence states Ratiopharm is a German generic company and part of Teva, and markets generic GLP-1 receptor agonists, but no specific GLP-1 products are listed on their website."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Website shows broad OTC and generic portfolio (e.g., Synofen, IBU-LYSIN) but no differentiation in GLP-1 space; no specific GLP-1 therapeutic claims."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of GLP-1 clinical R&D; website mentions access to Teva's research but no specific GLP-1 pipeline."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "As part of Teva, benefits from global manufacturing scale; website mentions serialization compliance and sustainable production, but no GLP-1 specific supply evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website highlights high quality standards and serialization compliance; as Teva subsidiary, likely meets regulatory standards, but no GLP-1 specific approvals cited."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence primarily in Germany; no evidence of multi-region GLP-1 market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website claims 'best-known pharmaceutical brand in Germany' and strong HCP engagement via Fachkreis, but no GLP-1 specific reputation evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No specific financials disclosed; as part of Teva, likely stable, but no GLP-1 revenue data."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No GLP-1 pipeline or indication roadmap mentioned; website focuses on OTC and generics."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Part of Teva, providing access to broader portfolio and research; no specific GLP-1 partnerships or expansion evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

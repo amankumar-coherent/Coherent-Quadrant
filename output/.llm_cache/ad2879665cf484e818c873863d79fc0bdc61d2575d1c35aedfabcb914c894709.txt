@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions RootiRx ECG patch and CardioPad, but portfolio appears narrow with limited product range."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA 510(k) clearance and CE certification indicate safety and performance, but no clinical outcome data or studies cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Products like RootiRx and CardioPad show innovation, but no evidence of ongoing R&D pipeline or research publications."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "CE certification includes Full Quality Assurance System, but no details on manufacturing scale or quality processes."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA 510(k) K163694 and CE certification (FI16/07021) demonstrate regulatory compliance in major markets."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Presence in Taiwan and San Francisco, but no evidence of broad global distribution or channel partnerships."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Used in a clinical study (PMC article), but limited evidence of widespread adoption or brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Tracxn states 'unfunded' and 'has not raised any funding yet', indicating weak financial backing."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "CardioPad suggests expansion into other vitals, but no clear pipeline or new indications beyond arrhythmia monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentioned as joint venture with San Francisco and Taipei, but no specific partnerships or expansion deals cited."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

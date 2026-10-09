@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions only one product, Cicer, a wearable ECG patch. No other devices are listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No clinical data, safety studies, or performance metrics are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The company has developed a wearable ECG patch, indicating some innovation, but no details on R&D investment or pipeline."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No information on manufacturing capabilities or quality management systems is available."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals (e.g., CE mark, FDA clearance) or quality certifications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence is limited to India, with no evidence of distribution channels or international reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of brand recognition, clinical adoption, or testimonials from healthcare providers."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue figures, or funding information is provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of future product development or expansion into new indications beyond cardiac monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No partnerships, collaborations, or business expansion activities are mentioned."
+    }
+  ],
+  "evidence_used": true
+}

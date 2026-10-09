@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "HealthWatch Technologies produces wearable garments with embedded sensors for continuous ECG, respiration, and temperature monitoring, but the knowledge base does not specify published clinical validation data.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Produces wearable garments with embedded sensors for continuous ECG, respiration, and temperature monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide specific accuracy metrics like MARD for HealthWatch's sensors, so the score is based on general industry knowledge of similar wearable sensors.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "HealthWatch's wearable garments are medical-grade, but the knowledge base does not list specific FDA or CE certifications, so the score reflects partial evidence.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Produces wearable garments with embedded sensors for continuous ECG, respiration, and temperature monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "HealthWatch offers wearable garments with embedded sensors, which may include multiple product variants, but the knowledge base does not enumerate distinct devices.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Produces wearable garments with embedded sensors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "HealthWatch's garments monitor ECG, respiration, and temperature, covering cardiac and respiratory areas, but not diabetes or other therapeutic areas.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["continuous ECG, respiration, and temperature monitoring"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "HealthWatch's products appear clinical-grade, but the knowledge base does not indicate consumer-focused devices, so the score is moderate.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Produces wearable garments with embedded sensors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "The knowledge base does not mention peer-reviewed publications for HealthWatch, so the score is based on model knowledge of the company's clinical focus.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "No information about clinical trials is available in the knowledge base, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "The knowledge base does not provide real-world evidence or outcomes data, so the score is based on typical industry practices.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Battery life specifics are not provided in the knowledge base, so the score is an estimate based on similar wearable garments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Wearable garments are likely designed for continuous wear, but the knowledge base does not confirm waterproofing or comfort features.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Produces wearable garments with embedded sensors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "HealthWatch focuses on garments, so form factor variety is limited compared to companies offering patches, watches, and straps.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Produces wearable garments"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No information about EHR integration is available in the knowledge base, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "The knowledge base does not mention APIs or SDKs, so the score is based on typical industry offerings.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No evidence of HL7/FHIR support is in the knowledge base, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "HealthWatch's medical-grade garments suggest regulatory approvals, but the knowledge base does not list specific FDA or CE marks.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Produces wearable garments with embedded sensors for continuous ECG, respiration, and temperature monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "answer": "The monitoring of vital signs indicates medical indications, but the knowledge base does not specify approval scope.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["continuous ECG, respiration, and temperature monitoring"],
+      "grounding": "partial",
+      "score": 6
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "The company is based in Israel and Canada, but the knowledge base does not confirm regulatory approvals in multiple geographies.",
+      "evidence_urls": ["https://www.healthwatchtech.com"],
+      "evidence_snippets": ["Canada | Kfar Saba, Israel"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "No user numbers or sales figures are provided in the knowledge base, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "The knowledge base does not mention distribution partnerships, so the score is based on typical market presence.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No case studies or testimonials are in the knowledge base, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "No information about CPT codes or reimbursement pathways is available, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "The knowledge base does not mention insurance coverage, so the score is based on typical industry practices.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No patient assistance programs or subscription models are mentioned, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "Revenue growth data is not available in the knowledge base, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "No financial details are provided, so the score is based on typical industry performance.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "The knowledge base does not indicate recurring revenue models, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No partnerships with healthcare systems are mentioned in the knowledge base, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No collaborations with tech or pharma companies are noted, so the score is based on typical industry practices.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No participation in standards bodies is mentioned, so the score is a neutral estimate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

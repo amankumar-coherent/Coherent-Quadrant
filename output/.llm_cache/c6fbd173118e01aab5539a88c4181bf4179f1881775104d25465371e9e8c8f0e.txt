@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions a 12-lead ECG smart digital garment and a vest with up to 12 sensor points, but no other product lines are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "The device is CE Mark and FDA approved, indicating regulatory clearance, but no specific clinical performance data or safety outcomes are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Described as 'sensor innovative' and 'next generation healthcare wearables', with patented MasterCaution platform technology."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Explicitly stated as 'CE Mark medical device approved and FDA approved' and 'CE and FDA cleared'."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "HQ in Canada, presence in Canada, but also described as Israeli startup; no clear multi-market commercial presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA and CE approvals suggest some trust, but no evidence of clinical adoption rates or key opinion leader endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Received $20 million investment from Yiling Pharmaceuticals in 2017, but no revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or expansion into new indications beyond current ECG/respiration/temperature monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Yiling Pharmaceuticals invested $20 million, indicating a partnership; also mentioned as part of startup ecosystem."
+    }
+  ],
+  "evidence_used": true
+}

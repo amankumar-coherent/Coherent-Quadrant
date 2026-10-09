@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only MEMO Patch and MEMO Patch M, indicating a narrow product portfolio focused on wearable ECG."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence indicates FDA 510(k) clearance for MEMO Patch M and clinical trials in Vietnam, but no detailed clinical performance data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Company is described as an AI-based biosignal analysis startup with AI telemetry deployment, suggesting innovative capabilities."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence regarding manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "MEMO Patch M received U.S. FDA 510(k) clearance, indicating regulatory compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence shows expansion to Korea University and preparation for clinical trials in Vietnam, indicating multi-country presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Deployment at Korea University and partnerships with Yuhan suggest some clinical adoption, but limited evidence of broad trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Estimated revenue of $14.8M and total funding of $47.6M indicate moderate financial scale."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Clinical trials in Vietnam suggest pipeline expansion, but no specific new indications mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Yuhan and expansion to Korea University demonstrate business expansion activities."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Site lists multiple Oticon models (Zeal, Own SI, Intent, Real, Zircon, Jet PX) and types (BTE, ITE, invisible, rechargeable), but no other device categories."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions features like AI sound processing, speech clarity, and risk-free trial, but no clinical outcome data or safety certifications."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Highlights Oticon's AI and Polaris platform, but no evidence of own R&D; relies on parent Demant's technology."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing or quality systems; only mentions AfterCare program for maintenance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marks, or ISO certifications; only insurance and privacy policy references."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "600+ locations, US presence, and online channels (online hearing test, chat, email) indicate broad US reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "4.8/5 rating from 81,890 reviews, customer stories, and 'Awards & Recognition' page suggest strong trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue or financial data provided; only pricing tiers and financing options."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Offers tinnitus treatment and online hearing test, but no new indications or pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Works with most insurance, has senior living facilities, and selling practice program, but no specific partnerships named."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

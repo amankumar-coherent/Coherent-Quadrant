@@ -1,0 +1,69 @@
+[pipeline 00:20:26] market: Drone Sensors Industry Analysis (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_sensors_industry_analysis_india
+[pipeline 00:20:26] 1. verified rows: 157
+[pipeline 00:20:26] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_sensors_industry_analysis_india\_pipeline\axes_spec.json
+[pipeline 00:20:26] 3. 144 names -> 120 companies after dedupe (21 groups merged)
+[pipeline 00:20:26] 3b. 4 companies left out (not active or excluded by review): ['Drone Aerospace Systems Pvt Ltd', 'Gurutvaa Systems Private Limited', 'Jaywing Technologies Private Limited', 'Safear Defense Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 00:20:26] 3c. ownership 116 / identity 1 / scope 116 answers: 7 more left out ['Heatcon Sensors Private Limited', 'Misochain Technologies Pvt. Ltd.', 'RFMW Innovations Lab Pvt. Ltd.', 'Sika Interplant Systems Limited', 'Sree Sai Aerotech Innovations Pvt. Ltd.', 'Unisem Electronics Pvt. Ltd.'], 4 owner labels, 99 adjacent-segment (not on the chart) ['8OL Robotics Private Limited', 'AKSI Aerospace Group', 'ASTROC AS Technology Pvt. Ltd.', 'Accord Software & Systems Pvt. Ltd.', 'Advanced MechIntel Dynamics', 'AeroGCS Technologies Pvt. Ltd.'] -> _pipeline/auto_review.json
+[pipeline 00:20:26] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 00:20:26]    only 10 core companies for 20 chart slots: 10 strongest adjacent companies fill the rest ['ideaForge Technology Limited', 'Paras Defence & Space Technologies Ltd.', 'Apollo Micro Systems Limited', 'Mistral Solutions Pvt. Ltd.', 'IoTechWorld Avigation Pvt. Ltd.', 'Zen Technologies Limited', 'Cyran AI Solutions Private Limited', 'Bit Mapper Integration Technologies Pvt. Ltd.']
+[pipeline 00:20:26]    adjacent-segment companies taken off the chart: ['Paras Aerospace Private Limited']
+[pipeline 00:20:26]    Top 20 refilled after 3b: added ['Optimized Electrotech Private Limited']
+[pipeline 00:20:26]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_sensors_industry_analysis_india\_pipeline\evidence_pool.json
+[pipeline 00:20:26] 5. evidence round 1: 7 companies with gaps
+[pipeline 00:20:26] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 00:20:28] evidence_r1: 1/1 shard(s) still running
+[pipeline 00:21:28] evidence_r1: 1/1 shard(s) still running
+[pipeline 00:22:28] evidence_r1: 1/1 shard(s) still running
+[pipeline 00:23:28] evidence_r1: 1/1 shard(s) still running
+[pipeline 00:24:28] evidence_r1: 1/1 shard(s) still running
+[pipeline 00:25:28] reasoning_r1: 6 companies across 1 browser(s)
+[pipeline 00:25:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:26:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:27:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:28:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:29:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:30:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:31:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:32:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:33:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:34:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:35:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:36:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:37:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:38:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:39:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:40:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:41:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 00:42:30]    WARNING: only 109 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 00:42:30]    --keep 120: 20 chart/evidence + 89 long tail kept, 0 lower-scored dropped
+[pipeline 00:42:30]    20 companies with full evidence, 89 in the long tail
+[pipeline 00:42:30] 6. composite scores (5 per quadrant)
+[pipeline 00:42:32] 7. rewriting hedge wording / first person in evidence
+[pipeline 00:42:35] 7b. supporting points: 1 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 00:42:35] 7b. owner of Bit Mapper Integration Technologies Pvt. Ltd.: Phoenix Group (already set)
+[pipeline 00:42:35] 7b. owner of DELOPT: JK Paper Limited (already set)
+[pipeline 00:42:35] 7b. owner of Defsys Solutions Pvt. Ltd.: HFCL Advance Systems Private Limited (already set)
+[pipeline 00:42:35] 7b. owner of Unistring Tech Solutions Pvt. Ltd.: Zen Technologies Ltd (already set)
+[pipeline 00:42:35] 8. building HTML / JSON / CSV report
+[pipeline 00:42:37] 8. report page: interactive design (drone_sensors_industry_analysis_india_report.html); static copy drone_sensors_industry_analysis_india_report_classic.html
+[pipeline 00:43:04] 8b. PDF report: drone_sensors_industry_analysis_india_report.pdf
+[pipeline 00:44:17] 8b. Word report: drone_sensors_industry_analysis_india_report.docx
+[pipeline 00:44:18] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 109 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 00:44:18] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_sensors_industry_analysis_india\drone_sensors_industry_analysis_india_report.html

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows two insulin pump systems (Tandem Mobi and t:slim X2) with multiple CGM options and infusion sets, but limited to insulin pumps."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Claims 'Best-in-Class Outcomes Starting on Day 1' with reference to a study (Beck RW, et al.) and detailed safety information for Control-IQ+ technology."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Features Control-IQ+ technology described as 'the only predictive algorithm with AutoBolus', remote software updates, and mobile/cloud apps."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No direct evidence on manufacturing or quality systems; only mentions limited warranty and support."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Provides detailed Indications for Use and Important Safety Information, indicating regulatory compliance for devices."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions US availability for mobile app and website in English, but no global market presence details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Includes testimonials from patients and parents, and claims 'Best-in-Class Outcomes' with clinical study reference."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Control-IQ+ technology now available for ages 2+ (type 1) and 18+ (type 2), indicating expansion of indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Compatibility with Dexcom G7 and FreeStyle Libre 3 Plus sensors indicates partnerships, but no other business expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

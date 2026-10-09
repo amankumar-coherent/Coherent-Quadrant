@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Himax does not disclose advanced process nodes like 3nm or 2nm; as a fabless IC designer, it relies on foundries for manufacturing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Himax is a leader in display driver ICs and microdisplay technologies, but not in leading-edge process technologies like FinFET or GAA.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Himax does not publicly detail next-generation node roadmaps; its focus is on specialized display and imaging solutions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Himax is specialized in display drivers and imaging solutions, with a portfolio including CMOS image sensors, touch controllers, and WiseEye AI processors.",
+      "evidence_urls": ["https://www.himax.com.tw/products/"],
+      "evidence_snippets": ["Display Drivers", "Microdisplay Products", "Touch Panel Controller", "CMOS Image Sensor", "WiseEye™ Ultralow Power AI Sensing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type; Himax is primarily known for display drivers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Himax is a fabless company and likely partners with OSAT providers, but no specific OSAT partnerships are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Himax owns proprietary design IP for display drivers, microdisplays, and WiseEye AI processors, which are differentiated in ultralow power sensing.",
+      "evidence_urls": ["https://www.himax.com.tw/products/wiseeye-ai-sensing/"],
+      "evidence_snippets": ["WiseEye™ – The Ultralow Power Sensor Fusion AIoT Processor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Himax likely uses third-party IP for some components but also has proprietary IP; no licensing details are provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Himax's WiseEye AI processor targets AIoT and smart sensing applications, showing strength in AI-related low-power edge processing.",
+      "evidence_urls": ["https://www.himax.com.tw/products/wiseeye-ai-sensing/"],
+      "evidence_snippets": ["WiseEye™ – The Ultralow Power Sensor Fusion AIoT Processor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Himax is fabless and does not own wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not disclosed; as a fabless company, yields depend on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Himax offers wafer level optics and microdisplay products, but advanced packaging like 2.5D/3D is not mentioned.",
+      "evidence_urls": ["https://www.himax.com.tw/products/wafer-level-optics/"],
+      "evidence_snippets": ["Wafer Level Optics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Himax mentions quality policy but specific certifications like ISO 9001 or IATF 16949 are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.himax.com.tw/company/quality-policy/"],
+      "evidence_snippets": ["Quality Policy"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rates are not disclosed; Himax likely follows industry standards for reliability but no specifics are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Himax has environmental and safety policies, but specific compliance with RoHS, REACH, or conflict minerals is not detailed.",
+      "evidence_urls": ["https://www.himax.com.tw/company/environmental-and-safety-policy/"],
+      "evidence_snippets": ["Environmental and Safety Policy"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Himax has a global presence with operations in Taiwan, China, and the United States, as indicated in the knowledge base.",
+      "evidence_urls": ["https://www.himax.com.tw/contact/locations/"],
+      "evidence_snippets": ["Taiwan; China; United States"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Himax serves consumer electronics, smart home, and automotive markets, but revenue contribution by end-market is not provided.",
+      "evidence_urls": ["https://www.himax.com.tw/products/"],
+      "evidence_snippets": ["Smart Home Appliance", "Intelligent Home Security & Safety", "Wise City & Building", "Brilliant Consumer Devices"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Himax's presence in multiple regions provides some diversification, but the knowledge base does not detail risk mitigation strategies.",
+      "evidence_urls": ["https://www.himax.com.tw/contact/locations/"],
+      "evidence_snippets": ["Taiwan; China; United States"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not disclosed; customer concentration risk cannot be assessed from the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No specific partnerships with equipment makers, EDA vendors, or research consortia are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Himax likely collaborates with foundries and OSATs, but no specific ecosystem partnerships are detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not provided in the knowledge base; Himax is a publicly traded company with reported results.",
+      "evidence_urls": ["https://www.himax.com.tw/investors/financial-information/"],
+      "evidence_snippets": ["Financial Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx details are not available; as a fabless company, CapEx is likely lower than integrated device manufacturers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not provided, but Himax's ongoing operations suggest financial stability.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Himax's roadmap includes new products like the T2000 Tcon for E Ink and iToF depth decoder ICs, indicating focus on display and 3D sensing.",
+      "evidence_urls": ["https://www.himax.com.tw/wp-content/uploads/2026/06/PR-Himax-Latest-T2000-Tcon-to-Power-the-Evolution-of-E-Ink-Next-Generation-Color-ePaper-into-Dynamic-Content-Applications-Final.pdf", "https://www.himax.com.tw/wp-content/uploads/2026/06/PR-Himax-Strengthens-3D-Sensing-Portfolio-with-Launch-of-New-iToF-Depth-Decoder-ICs-for-Robotics-and-Intelligent-Vision-Applications-Final.pdf"],
+      "evidence_snippets": ["Himax Latest T2000 Tcon to Power the Evolution of E Ink Next-Generation Color ePaper", "Himax Strengthens 3D Sensing Portfolio with Launch of New iToF Depth Decoder ICs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Himax is investing in AI sensing with WiseEye and 3D sensing, but no roadmap for quantum or advanced memory is mentioned.",
+      "evidence_urls": ["https://www.himax.com.tw/products/wiseeye-ai-sensing/"],
+      "evidence_snippets": ["WiseEye™ – The Ultralow Power Sensor Fusion AIoT Processor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Himax's roadmap aligns with trends in AIoT, smart home, and 3D sensing, as evidenced by recent product launches.",
+      "evidence_urls": ["https://www.himax.com.tw/products/wiseeye-ai-sensing/"],
+      "evidence_snippets": ["WiseEye™ – The Ultralow Power Sensor Fusion AIoT Processor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab or expansion projects are announced; Himax is fabless and relies on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not provided in the knowledge base; Himax reports quarterly results but specifics are absent.",
+      "evidence_urls": ["https://www.himax.com.tw/investors/financial-information/"],
+      "evidence_snippets": ["Financial Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and execution plans for capacity expansion are not disclosed; as a fabless company, expansion is via foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

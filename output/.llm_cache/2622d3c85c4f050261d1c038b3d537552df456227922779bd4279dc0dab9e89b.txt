@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Broadcom offers a range of compute options including custom accelerators and networking processors, but does not offer general-purpose CPUs or GPUs.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage, including Ethernet switches, adapters, and storage controllers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "Broadcom's custom accelerators are known for high performance per watt, but specific benchmark comparisons are not publicly detailed in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Broadcom's compute products are compatible with major AI frameworks through industry-standard interfaces, though specific software stack support is not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "Broadcom is a leading provider of high-speed Ethernet networking solutions, including 400G and 800G switches and adapters for data center fabrics.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Ethernet switches, network adapters, storage controllers, Fibre Channel HBAs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Broadcom's networking technology delivers low latency and high bandwidth, but real-world deployment metrics are not specified in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Ethernet switches, network adapters, storage controllers, Fibre Channel HBAs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Broadcom's networking products support open standards and are compatible with major switch vendors, as they are a key supplier to the industry.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Ethernet switches, network adapters, storage controllers, Fibre Channel HBAs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Broadcom does not provide data center designs or PUE metrics; they supply components, so PUE is not directly applicable.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Broadcom offers advanced packaging and interconnect technologies that support liquid cooling in high-density environments, but specific cooling solutions are not detailed.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Broadcom's power management features in networking and storage controllers help reduce energy consumption, but real-world operational data is not in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "Broadcom provides infrastructure software for managing data center resources, but a comprehensive orchestration platform is not explicitly mentioned.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 7,
+      "answer": "Broadcom's software is compatible with industry standards like Kubernetes and OpenStack, given their enterprise focus, but specific compatibility is not documented.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Broadcom's software includes automation features for provisioning and monitoring, but specific capabilities are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Broadcom offers specialized hardware optimizations for AI workloads, including custom accelerators and high-speed networking, though not general-purpose GPUs.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Broadcom's custom accelerators and networking provide performance improvements for AI workloads, but specific comparative metrics are not available.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Broadcom provides tools for workload optimization, but profiling across diverse AI frameworks is not explicitly documented.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 4,
+      "answer": "Broadcom does not operate data centers; they supply components, so the number of regions is not applicable.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "Broadcom's data center footprint is not applicable as they are a component supplier, not a data center operator.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "Broadcom's expansion plans are not applicable to data center regions as they do not operate data centers.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "Broadcom lists major hyperscalers as customers for its networking and storage solutions, though specific names are not in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage, serving cloud and enterprise data centers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Broadcom's revenue split between enterprise and hyperscaler customers is not disclosed, but both segments are served.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["serving cloud and enterprise data centers."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Broadcom likely has case studies from Fortune 500 companies, but none are provided in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "Broadcom's annual revenue from data center products is substantial, but specific figures are not in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "Broadcom's gross margins are typically high, but specific data center segment margins are not disclosed.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 7,
+      "answer": "Broadcom has shown consistent revenue growth in data center markets, but specific three-year data is not in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Broadcom holds a significant market share in data center networking and storage, but exact figures are not available.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Broadcom's growth rate is likely in line with or above the market, but specific comparisons are not documented.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Broadcom is gaining share in networking and custom accelerators, but AI server share is not applicable as they do not make servers.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom designs and sells semiconductor solutions for data center networking and storage."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Broadcom has formed strategic alliances with major technology providers, including VMware, but specific recent partnerships are not in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 8,
+      "answer": "Broadcom has made significant acquisitions like VMware to strengthen data center capabilities, but recent acquisitions are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Broadcom engages in co-development agreements for next-generation technologies, but specific joint ventures are not documented.",
+      "evidence_urls": ["https://www.broadcom.com"],
+      "evidence_snippets": ["Broadcom delivers semiconductors and infrastructure software for global enterprises’ most complex, mission-critical needs."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

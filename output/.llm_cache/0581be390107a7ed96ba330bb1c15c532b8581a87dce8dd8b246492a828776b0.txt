@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence shows two main products: Ultrahuman Ring AIR (sleep tracking) and Ultrahuman M1 CGM (glucose monitoring). No evidence of a broader portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FAQ mentions no interference with pacemakers/ICDs, but no clinical validation or performance data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Ring AIR is described as world's lightest sleep tracker, and M1 uses world's #1 CGM sensor, indicating some innovation but limited R&D evidence."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance or other regulatory approvals in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Presence in India (HQ) and global website, but no specific multi-market sales evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Some media coverage and user reviews, but no clinical adoption metrics or endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Revenue growing 20% month-on-month, targeting $50M ARR by March; estimated annual revenue $62.8M."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or expansion into new indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "M1 uses sensor from partner (implied), and company has raised $159M, but no explicit partnership details."
+    }
+  ],
+  "evidence_used": true
+}

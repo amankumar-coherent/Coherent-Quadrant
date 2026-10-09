@@ -1,0 +1,45 @@
+      · claims: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_45_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · claims: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · claims: calling Google AI Mode (udm=50) attempt 2/4…
+      · claims: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+{
+ "results": [
+  {
+   "n": 1,
+   "verdict": "correct",
+   "corrected": "",
+   "note": "",
+   "source": "https://tracxn.com/d/legal-entities/united-kingdom/ffavs-ltd/__MIIASXfS1z46U-pFV7yNwKXU4RNpJ36_AttqCpd4JsQ"
+  },
+  {
+   "n": 2,
+   "verdict": "correct",
+   "corrected": "",
+   "note": "",
+   "source": "https://www.fleetfocus.co.uk/"
+  },
+  {
+   "n": 3,
+   "verdict": "correct",
+   "corrected": "",
+   "note": "",
+   "source": "https://www.fleetfocus.co.uk/"
+  },
+  {
+   "n": 4,
+   "verdict": "incorrect",
+   "corrected": "In July 2026 Bretts Transport equipped 24 vehicles with Fleet Focus cloud-connected four-way camera systems.",
+   "note": "",
+   "source": "https://www.commercialmotor.com/news/article/bretts-completes-fleetwide-camera-rollout-with-fleet-focus"
+  },
+  {
+   "n": 5,
+   "verdict": "correct",
+   "corrected": "",
+   "note": "",
+   "source": "https://www.fleetfocus.co.uk/"
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single product line: a reusable 3-lead ECG sensor, plus software and dashboard. No other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Claims 94% AF detection accuracy and 14-day continuous monitoring, but no published clinical trial data or peer-reviewed evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "AI-supported arrhythmia detection and integrated platform indicate innovation, but no R&D investment or pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "MDR-compliant development mentioned, but no evidence of manufacturing scale, certifications, or quality system details."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Explicitly states MDR-compliant development for EU market, but no FDA clearance or other regulatory approvals mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Targets Netherlands and European Union, but no evidence of actual market presence, distribution channels, or sales."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "LinkedIn shows 308 followers and some academic collaboration, but no hospital adoption, clinician endorsements, or customer testimonials."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data available in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Aims to support 1 million people in 10 years, but no specific pipeline products or new indications beyond AF detection."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mention of collaboration with TU Delft for device redesign, but no commercial partnerships or distribution agreements."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "Arista Networks does not offer compute products such as CPUs, GPUs, or accelerators; they focus on networking hardware and software.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "No accelerator products exist, so performance per watt is not applicable.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "Compute products are not offered, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "Arista provides high-speed networking solutions including 400G and 800G Ethernet switches for data center fabrics.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["800G Solutions Designed for the next generation of accelerated computing, large scale virtualized and cloud networks, and service provider backbones.", "400G Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Arista's products are designed for high performance, but specific latency and bandwidth metrics are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["High performance 800G systems for Accelerated Computing, Data Center and Service Providers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Arista supports open standards and interoperability, as indicated by their participation in open networking and compatibility with various platforms.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Cloud scale fixed configuration leaf and spine switches", "open networking"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Arista does not provide data center designs or PUE metrics; their focus is on networking equipment, so PUE is not directly addressed.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Arista does not offer liquid cooling solutions; their products are networking switches, not compute or cooling systems.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Arista emphasizes power efficiency in their switch designs, but specific power management features are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["power efficiency", "High performance and power efficient feature rich datacenter 1GbE switch"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 9,
+      "answer": "Arista offers CloudVision, a comprehensive platform for network automation and observability, which is a key part of data center management.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["CloudVision Overview A Platform for Cloud Automation and Visibility", "CloudVision Universal Network Observability (CV UNO)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 7,
+      "answer": "Arista's CloudVision supports open standards and integrates with various orchestration tools, though specific compatibility with Kubernetes or OpenStack is not mentioned.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["CloudVision Overview A Platform for Cloud Automation and Visibility"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "CloudVision provides automation for provisioning, monitoring, and analytics, as indicated by its description as a platform for cloud automation and visibility.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["CloudVision Overview A Platform for Cloud Automation and Visibility", "Pervasive network visibility, security monitoring and contextual analytics for networks at any scale"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Arista offers networking optimizations for AI workloads, such as 800G solutions designed for accelerated computing, but not specialized compute hardware.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["800G Solutions Designed for the next generation of accelerated computing", "High performance 800G systems for Accelerated Computing, Data Center and Service Providers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Arista's high-speed networking can improve AI workload performance by reducing bottlenecks, but specific performance comparisons are not provided.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["800G Solutions Designed for the next generation of accelerated computing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Arista provides network observability tools that can aid in workload profiling, but specific AI framework optimization tools are not mentioned.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Network Observability", "Telemetry and Analytics"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 1,
+      "answer": "Arista does not operate data centers; they sell networking equipment, so they have no data center regions.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 1,
+      "answer": "As a networking vendor, Arista does not have data centers, so geographic distribution is not applicable.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 1,
+      "answer": "Arista does not operate data centers, so expansion plans are not applicable.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Arista Networks designs and sells high-performance Ethernet switches and network software for data centers and cloud computing environments."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "Arista is known to serve major cloud providers and large enterprises, though specific names are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": ["Their products are used by large enterprises and cloud providers to build scalable, reliable networks."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Revenue split between enterprise and hyperscalers is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Arista likely has case studies from Fortune 500 companies, but none are provided in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Arista's annual revenue is not provided in the knowledge base, but as a public company, it is known to be significant.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Gross margin data is not available in the knowledge base, but Arista is known for high margins in the networking industry.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Arista has shown consistent revenue growth in recent years, but specific data is not in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Arista holds a significant share in the data center networking market, but exact figures are not in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Arista's growth rate has been strong, often outpacing the market, but specific comparisons are not in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Arista is gaining share in AI networking, but specific segment data is not in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Arista has partnerships with major technology providers, but specific recent alliances are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No recent acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No joint ventures or co-development agreements are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.arista.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence indicates Sumitomo Pharma markets GLP-1 receptor agonists in Japan, including lixisenatide (Lyxumia) through partnerships, but no details on breadth or ownership."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Markets GLP-1 for diabetes in Japan, but no evidence of differentiation or additional indications like obesity."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Pipeline page shows other therapeutic areas (e.g., DSP-0038 for CNS), but no GLP-1 R&D mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No specific regulatory approvals or quality certifications mentioned for GLP-1 products."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in Japan only, marketing GLP-1 through partnerships; no global reach."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Known as a pharmaceutical company in Japan, but no specific reputation evidence for GLP-1 brands."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided for GLP-1 segment or overall company."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Pipeline page shows non-GLP-1 candidates; no GLP-1 pipeline or indication expansion mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Markets lixisenatide through partnerships, indicating some collaboration, but no expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

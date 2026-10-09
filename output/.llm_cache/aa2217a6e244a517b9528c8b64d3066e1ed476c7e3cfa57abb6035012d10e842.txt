@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "NetApp is a data storage company and does not offer compute products such as CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "NetApp does not provide compute accelerators, so performance per watt is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "NetApp does not offer compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "NetApp does not provide high-speed networking solutions like Ethernet or InfiniBand; their focus is on storage networking.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "NetApp does not offer interconnect technology, so latency and bandwidth metrics are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "NetApp does not provide networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "NetApp does not publish PUE for their storage systems, but they emphasize energy efficiency in their products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "NetApp does not offer liquid cooling solutions; they focus on storage efficiency and data management.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "NetApp provides power management features in their storage systems to reduce energy consumption, but specifics are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "NetApp offers NetApp Console (formerly BlueXP) for hybrid cloud data services management, which is a comprehensive platform for data infrastructure.",
+      "evidence_urls": ["https://console.netapp.com/"],
+      "evidence_snippets": ["BlueXP is now NetApp Console", "Monitor and run hybrid cloud data services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 7,
+      "answer": "NetApp's orchestration software supports Kubernetes and other standards through its cloud-native integrations, though specifics are not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "NetApp provides automation features for provisioning, scaling, and monitoring through its data services and console, but detailed documentation is not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "NetApp offers AI Data Engine and optimizations for AI workloads, focusing on data management for AI pipelines.",
+      "evidence_urls": ["/aide/"],
+      "evidence_snippets": ["AI Data Engine"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "NetApp's solutions improve AI workload performance through efficient data management and tiering, but not as directly as specialized compute.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "NetApp provides tools for data classification and insights, but not specifically for workload profiling across AI frameworks.",
+      "evidence_urls": ["/data-services/classification/"],
+      "evidence_snippets": ["Classification"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "NetApp operates globally with data centers in multiple regions, but the exact number is not specified in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "NetApp has a global presence with offices and operations across major markets, but specific data center distribution is not detailed.",
+      "evidence_urls": ["/company/global-office-locations/"],
+      "evidence_snippets": ["Global Office Locations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "NetApp has not publicly announced specific expansion plans for emerging markets in the next 12-24 months.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "NetApp is a first-party service in AWS, Azure, and Google Cloud, indicating strong partnerships with major hyperscalers.",
+      "evidence_urls": ["/aws/", "/azure/", "/google-cloud/"],
+      "evidence_snippets": ["Native in all three major clouds", "First-party service in AWS, Azure, and Google Cloud"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "NetApp does not disclose revenue breakdown between enterprise and hyperscaler customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "NetApp features customer stories from major enterprises like DreamWorks, Porsche Motorsport, and S&P Global, indicating strong enterprise adoption.",
+      "evidence_urls": ["/customer-stories/"],
+      "evidence_snippets": ["Dreamworks logo", "Porsche Motorsport logo", "S&P Global logo"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "NetApp's annual revenue from data center products is not disclosed in the KB, but as a major storage vendor, it is substantial.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "NetApp's gross margin for data center segment is not publicly detailed, but storage companies typically have healthy margins.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "NetApp has shown consistent growth in the data storage market, but specific revenue growth figures are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "NetApp holds a significant share in the storage systems market, but exact market share numbers are not provided.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "NetApp's growth rate is not compared to the overall market in the KB, but they are a stable player.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "NetApp is gaining share in storage for AI workloads with their AI Data Engine, but specifics are not detailed.",
+      "evidence_urls": ["/aide/"],
+      "evidence_snippets": ["AI Data Engine"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "NetApp has strategic alliances with major technology providers like NVIDIA, as evidenced by the NVIDIA logo on their site.",
+      "evidence_urls": ["/alliances/"],
+      "evidence_snippets": ["NVIDIA logo"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "NetApp has made acquisitions like Instaclustr to strengthen their data capabilities, but recent ones are not detailed.",
+      "evidence_urls": ["https://www.instaclustr.com/platform/"],
+      "evidence_snippets": ["Instaclustr"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "NetApp has partnerships but no specific joint ventures or co-development agreements are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

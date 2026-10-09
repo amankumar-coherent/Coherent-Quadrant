@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Novatek is a fabless IC design company, so it does not own process nodes; it relies on foundries like TSMC, and its most advanced products are typically at 7nm or 5nm for SoCs, but no specific node is announced in the KB.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek, established in 1997, is a leading global Display IC total solution provider and the world's primary display driver IC suppliers for TFT LCD displays."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Novatek is a leader in display driver ICs and SoC solutions, but it does not lead in specific process technologies like FinFET or GAA; it leverages foundry processes.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is committed to the development of creative, customer-focused technologies that optimize the performance and utilization of digital devices."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "The KB does not provide a specific roadmap for next-generation nodes; as a fabless company, Novatek's roadmap depends on foundry partners, and no details are available.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is committed to the development of creative, customer-focused technologies."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "Novatek specializes in display driver ICs and SoCs, so it is not broadly diversified across logic, memory, analog, and power; it focuses on display-related semiconductors.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Products: Display Driver IC, SoC"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The KB does not provide revenue split by product type, but Novatek is known for display driver ICs as its primary revenue source, with SoCs as a secondary segment.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Products: Display Driver IC, SoC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 3,
+      "answer": "Novatek is a fabless company and does not provide OSAT services; it likely partners with OSAT providers for packaging and testing, but no specific partnerships are mentioned in the KB.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is a leading global Display IC total solution provider."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Novatek owns proprietary display driver and SoC designs, but the KB does not detail specific IP like CPU or GPU; its differentiation lies in display technologies.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is committed to the development of creative, customer-focused technologies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Novatek likely relies on third-party IP for its SoCs (e.g., ARM cores) and does not license its own IP; the KB does not mention IP licensing.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Products: Display Driver IC, SoC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Novatek's architecture is strong in display and SoC areas, but it is not a leader in AI, 5G, or automotive; its focus is on consumer display applications.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is a leading global Display IC total solution provider."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "As a fabless company, Novatek does not own wafer fabrication capacity; it relies on foundry partners, so it has no direct capacity or utilization data.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is a leading global Display IC total solution provider."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rates are not disclosed in the KB; as a fabless company, yields depend on foundry partners, and Novatek's influence is limited.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is committed to the development of creative, customer-focused technologies."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "The KB does not mention advanced packaging capabilities; Novatek likely uses standard packaging from OSAT partners, not advanced 2.5D/3D or chiplets.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Products: Display Driver IC, SoC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Novatek mentions quality policies and AEO policy on its website, but specific certifications like ISO 9001 or IATF 16949 are not listed in the KB; it likely holds ISO 9001.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Quality Policy", "AEO Policy"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rate (DPPM) is not disclosed in the KB; Novatek emphasizes quality but no specific reliability metrics are provided.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Striving to achieve and deliver the highest level of innovation and quality."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Novatek has an Environment Policy and AEO Policy, indicating compliance with environmental regulations, but specific RoHS/REACH details are not in the KB.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Environment Policy", "AEO Policy"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Novatek has a global presence with offices worldwide, as indicated by 'Novatek Worldwide' in the KB, and is headquartered in Taiwan, with significant R&D and sales in Asia.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek Worldwide"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Novatek primarily serves consumer electronics and display markets, but the KB does not provide revenue contribution by end-market; it is known for display driver ICs for TVs, monitors, and smartphones.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Display driver IC; SoC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Novatek's global offices provide some geographic diversification, but the KB does not detail how it mitigates regional risks; its heavy reliance on Asia could be a risk.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek Worldwide"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The KB does not list specific customers, but Novatek's products are 'well received by global brand names,' indicating major customers in display and consumer electronics; concentration risk is not disclosed.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Our products and services are well received and endorsed by global brand names."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "The KB does not mention partnerships with equipment makers, EDA vendors, or research consortia; Novatek likely collaborates with foundries and OSATs but no specifics are given.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is committed to the development of creative, customer-focused technologies."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "As a fabless company, Novatek collaborates with foundries and OSATs to deliver solutions, but the KB does not provide details on these partnerships.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is a leading global Display IC total solution provider."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "The KB does not provide financial figures, but Novatek is a profitable company with significant revenue; specific numbers are not available.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Financial Information"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not in the KB; as a fabless company, Novatek's CapEx is relatively low compared to IDMs, but no figures are provided.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Financial Information"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "The KB does not provide balance sheet details, but Novatek is likely financially stable; no debt-to-equity or cash reserve data is available.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Financial Information"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "The KB does not detail a technology roadmap, but Novatek's milestones page suggests a history of achievements; future roadmap is not disclosed.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Accomplished Milestones"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No roadmap for AI, quantum, or advanced memory is mentioned in the KB; Novatek's focus remains on display and SoC technologies.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Products: Display Driver IC, SoC"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "Novatek's roadmap aligns with display and consumer electronics trends, but the KB does not provide specific alignment details.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is committed to the development of creative, customer-focused technologies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "As a fabless company, Novatek does not build fabs; it relies on foundry partners for capacity, so no expansion projects are announced.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is a leading global Display IC total solution provider."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "The KB does not provide revenue growth rates, but Novatek has been growing with the display market; specific figures are not available.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Financial Information"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "The KB does not discuss funding or execution of capacity expansions; as a fabless company, Novatek's expansion is tied to foundry partnerships.",
+      "evidence_urls": ["https://www.novatek.com.tw"],
+      "evidence_snippets": ["Novatek is committed to the development of creative, customer-focused technologies."],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence shows Litasco is a trading company, not an LNG asset owner; no LNG terminals, liquefaction, or FSRU assets mentioned."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG throughput or operational metrics; only oil trading volumes mentioned (4 million bpd in 2019)."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG asset reliability or performance; company is under sanctions and shrinking."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Evidence indicates significant regulatory issues: US sanctions, EU/UK sanctions targeting Russian LNG, and Litasco Middle East DMCC designated."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of sustainability initiatives or energy transition efforts; focus is on oil and LNG trading."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows global trading operations, primarily in oil and petroleum products, with presence in Geneva and Dubai (Litasco Middle East DMCC)."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No specific LNG offtake or customer contracts mentioned; only general trading activities."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Evidence indicates significant losses and shrinking operations due to sanctions; 'crumbles under US sanctions' and 'significant losses to the Group'."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Evidence shows contraction, not growth: staff departing, trading volumes down, and sanctions limiting expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions partnerships in Bulgaria and Romania (refinery in Ploiești) but no LNG-specific partnerships; also legal issues with Palmali."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "MACOM does not disclose specific process nodes like 3nm or 2nm; it focuses on specialized RF, microwave, and optical technologies.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["MACOM's growing portfolio of high performance analog ICs and photonics supports leading edge electrical and optical communications."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "MACOM leads in specialized process technologies such as GaN-on-SiC and InP for RF and optical applications, though not in mainstream logic nodes.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["28V GaN-on-SiC RF Transistors Offer Leading Efficiency and Reliability", "featuring Silicon Phonics, Indium Phosphide and Thin Film Lithium Niobate modulators"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "MACOM's roadmap focuses on enhancing existing RF and optical technologies rather than next-generation logic nodes, with no public timeline for nodes like 2nm.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Every year we release to production over 150 new standard products and many more custom products!"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "MACOM offers a broad portfolio across RF, microwave, optical, and networking products, but is specialized in analog and mixed-signal rather than logic or memory.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["RF/Microwave & mmWave", "Optical", "Networking"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "MACOM does not publicly disclose revenue split by product type; its portfolio is diversified across RF, optical, and networking but not logic or memory.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "MACOM operates its own wafer fabs and offers foundry services, but does not provide OSAT services; it likely partners with OSAT providers for packaging.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["We invite you to take a video tour of our wafer fabs, operations facilities and design centers"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "MACOM owns proprietary design IP in RF, microwave, and optical components, such as modulator drivers and TIAs, but not CPU/GPU/AI accelerators.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["high performance modulator drivers, transimpedance amplifiers, clock/data recovery circuits, linear equalizers, photodiodes, and lasers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "MACOM primarily uses its own proprietary IP and does not license CPU/GPU IP; it may use third-party IP for standard interfaces.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "MACOM's architecture is strong in high-growth areas like data center optical connectivity and 5G RF, with products for 400G/800G/1.6T optical modules.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["MACOM is at the Center of High Speed Connectivity", "Whether you're building 400G, 800G or 1.6T single and multi-wavelength systems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "MACOM does not publicly disclose wafer fabrication capacity or utilization rates.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "MACOM does not disclose yield rates; as a specialty fab, yields are likely competitive for its niche processes but not comparable to leading-edge logic.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "MACOM offers some packaging options like air cavity and plastic DFN for its RF transistors, but does not offer advanced 2.5D/3D packaging or chiplets.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Choose from bare die, air cavity or cost-effective plastic DFN packages"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "MACOM likely holds ISO 9001 and other quality certifications, but specific certifications are not listed in the provided knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Our product qualification and release process is robust and demanding"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "MACOM emphasizes reliability for mission-critical applications, with JEDEC compliance for GaN transistors, but does not disclose DPPM.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["JEDEC RF-biased HAST Compliant—built to last in high-humidity, high-stress conditions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "MACOM likely complies with RoHS and REACH, but specific environmental compliance details are not in the provided knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "MACOM has significant global presence with operations in the US, Europe, and Asia, including wafer fabs in multiple US locations and a design center in Taiwan.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Durham NC Morrisville NC Ann Arbor, MI Limeil-Brévannes, France Morgan Hill, CA Newport Beach, CA Lowell, MA & Nashua, NH Hsinchu, Taiwan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "MACOM serves aerospace/defense, data center, telecom, and industrial markets, with a strong focus on high-speed connectivity and RF.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Aerospace and Defense", "Data Center", "Satellite Communications (SATCOM)", "5G Communications / Wireless Network Infrastructure"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "MACOM's global footprint across the US, Europe, and Asia provides geographic diversification, reducing risk from regional disruptions.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["United States; Europe; Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "MACOM does not publicly disclose its top customers or customer concentration risk.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "MACOM likely has partnerships with equipment makers and EDA vendors, but no specific partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "MACOM collaborates with foundries and OSATs for manufacturing and packaging, and offers foundry services itself, but specific ecosystem partnerships are not detailed.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Foundry & Design Services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "MACOM's financial details such as revenue, net income, and free cash flow are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "MACOM's capital expenditure details are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "MACOM's balance sheet details are not available in the knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "MACOM's roadmap includes releasing over 150 new standard products annually and advancing coherent optical and GaN-on-SiC technologies.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Every year we release to production over 150 new standard products", "MACOM is powering the next wave of campus, metro and long-haul optical networks"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "MACOM's roadmap focuses on optical and RF technologies for AI data centers and 5G, but not on quantum or advanced memory.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["Each of these product families include a broad variety of options specifically tailored for the unique needs of AI buildouts."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "MACOM's roadmap aligns with industry trends toward higher-speed optical connectivity and GaN-based RF for defense and 5G.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["MACOM is at the Center of High Speed Connectivity", "28V GaN-on-SiC RF Transistors Offer Leading Efficiency and Reliability"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "MACOM has not announced new fab expansions in the knowledge base; it operates existing fabs.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": ["We invite you to take a video tour of our wafer fabs"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "MACOM's revenue growth rate is not provided in the knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "MACOM's funding and execution plans for capacity expansion are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.macom.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

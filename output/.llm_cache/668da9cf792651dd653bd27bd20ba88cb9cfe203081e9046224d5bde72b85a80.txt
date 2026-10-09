@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence shows Glencore's website lists metals, minerals, coal, oil, and marketing, but no specific LNG assets or projects are mentioned."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG operational metrics, throughput, or efficiency data."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG asset reliability or performance records."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website mentions Ethics and Compliance, Responsible Sourcing, and publications of Ethics and Compliance Report, but not specific to LNG."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website details Climate Action Transition Plan with emission reduction targets, but not LNG-specific."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Global presence indicated by offices in Switzerland, UK, USA, Singapore, China, and operations in multiple countries, but no LNG-specific corridors."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG offtake agreements or customer contracts."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website shows share price and investor relations, but no LNG-specific financials."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of LNG growth projects or pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website lists many subsidiaries and joint ventures (e.g., Collahuasi, Antamina), but none LNG-specific."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

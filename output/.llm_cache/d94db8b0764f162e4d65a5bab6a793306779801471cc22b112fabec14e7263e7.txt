@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "UMC's most advanced process node is 14nm, which lags behind industry leaders offering 3nm/2nm.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC provides comprehensive technologies across logic, RF, eHV, BCD and eNVM"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "UMC does not lead in FinFET or GAA; it focuses on mature and specialty nodes, with some leadership in specialty technologies like eHV and BCD.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC is a leader in providing various process technology solution for the computing sector, such as eHV, low-power platforms, eFlash, and BCD"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "UMC has not announced a roadmap for 2nm or 1.4nm nodes, focusing instead on mature and specialty nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "UMC offers a broad portfolio across logic, RF, eHV, BCD, eNVM, and MEMS, covering multiple categories but not memory or OSAT.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC provides comprehensive technologies across logic, RF, eHV, BCD and eNVM", "UMC provides diversified process technology solutions to power the IoT and wearable world, including logic/mixed-mode, eNVM, BCD and MEMS technologies"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type, but UMC is primarily a logic and specialty foundry.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "UMC does not offer OSAT services directly, but likely partners with OSAT providers; no specific evidence in KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "UMC does not own proprietary CPU/GPU/AI IP; it provides process technology and IP for customers, but not differentiated design IP.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["~16,700 semiconductor IP patents granted worldwide"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "UMC relies on third-party IP and provides process design kits, but does not license its own CPU/GPU IP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "UMC has some presence in IoT and mobile, but its architecture strength in AI/5G/automotive is limited compared to leading-edge foundries.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC provides comprehensive technologies across logic, RF, eHV, BCD and eNVM to allow customers to have more options to choose the right foundry process solutions and related devices for their mobile and wireless communication ICs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 6,
+      "answer": "UMC has 12 fabs across Asia, but specific wafer capacity and utilization rates are not provided in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["12 fabs located across Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Yield rates are not disclosed in the KB; UMC is competitive in mature nodes but not leading-edge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "UMC does not offer advanced packaging like 2.5D/3D or chiplets; it focuses on wafer fabrication.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "UMC likely holds standard certifications like ISO 9001 and IATF 16949, but specific certifications are not listed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rates and reliability measures are not mentioned in the KB; UMC is a reputable foundry but specifics are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "UMC likely complies with environmental regulations, but no specific evidence is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "UMC has 12 fabs across Asia, indicating significant manufacturing presence in the region, but no R&D or sales details are given.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["12 fabs located across Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "UMC serves mobile, wireless, IoT, and computing sectors, but revenue contribution by end-market is not provided.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC provides comprehensive technologies across logic, RF, eHV, BCD and eNVM to allow customers to have more options to choose the right foundry process solutions and related devices for their mobile and wireless communication ICs", "UMC provides diversified process technology solutions to power the IoT and wearable world"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "UMC's presence in Asia provides some diversification, but the KB does not detail risk mitigation strategies.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["12 fabs located across Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Top customers and concentration risk are not disclosed in the KB; UMC is a major foundry with a diverse customer base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "UMC likely has partnerships with equipment and EDA vendors, but no specific evidence is in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "UMC collaborates with customers and ecosystem players, but specific details are not provided in the KB.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["Through continuous technology and close work with our customers, UMC is well-poised to be a leading IoT foundry player and partner."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not provided in the KB; UMC is a top-3 pure-play foundry, indicating significant revenue.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["Top 3 in global pure-play foundry market share"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not in the KB; UMC's investment levels are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the KB; UMC is a stable company but specifics are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "UMC's roadmap is not detailed in the KB; it focuses on specialty and mature nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No evidence of a roadmap for AI chips, quantum, or advanced memory; UMC focuses on IoT and mobile.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC provides diversified process technology solutions to power the IoT and wearable world"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "UMC's focus on IoT, mobile, and computing aligns with industry trends, but lacks leading-edge nodes.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["UMC provides comprehensive technologies across logic, RF, eHV, BCD and eNVM to allow customers to have more options to choose the right foundry process solutions and related devices for their mobile and wireless communication ICs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No specific expansion projects are mentioned in the KB; UMC has 12 fabs but no new announcements.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["12 fabs located across Asia"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not provided in the KB; UMC is a top-3 foundry but growth specifics are unknown.",
+      "evidence_urls": ["https://www.umc.com"],
+      "evidence_snippets": ["Top 3 in global pure-play foundry market share"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding and execution plans for capacity expansion are not detailed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

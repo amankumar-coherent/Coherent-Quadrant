@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows one product (Mawi Heart Band) with multiple modes (Extended Holter, Event, MCT) but no other devices; Mawi Watch mentioned in search but not detailed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims AI beat-to-beat analysis and detection of critical rhythm abnormalities, but no clinical trial data or peer-reviewed evidence provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mentions AI algorithms, X-shaped vectors, and telehealth capabilities; indicates ongoing development (MCT 'available soon'), but no R&D investment details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities, quality systems, or certifications (e.g., ISO) in the provided text."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions 'Up to 5 days in US' implying FDA clearance for US, but no explicit FDA or CE marking details; no regulatory documentation cited."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "US address (Wilmington, DE) and mention of US-specific duration; no evidence of global distribution or channel partnerships."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Testimonial from a cardiologist (John Doe) and provider login portal suggest some clinical interest, but no evidence of hospital adoption or key opinion leader endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue figures, or funding information in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "MCT mode 'available soon' indicates pipeline expansion; also Mawi Watch mentioned for chronic patients, but no detailed timeline or regulatory status."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Search result mentions a partnership to integrate ECG analytics into Mawi's monitoring watch, but no details on partners or business expansion strategy."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only the Alio SmartPatch for dialysis patient monitoring; no other products or portfolio breadth described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The WEAR study is a long-term interventional study to evaluate patient and clinician use of the Alio platform per its FDA cleared indications, but no results or safety data are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The Alio platform is a wearable biosensor for renal care, and the WEAR study indicates ongoing research, but no specific R&D pipeline or novel technology details are given."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Alio received FDA 510(k) clearance for its remote patient monitoring system, and the WEAR study is conducted per its FDA cleared indications."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of geographic presence or channel reach beyond the US; no international markets mentioned."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The WEAR study and FDA clearance suggest some clinical adoption, but no evidence of widespread use or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data or revenue figures provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The WEAR study may support long-term use, but no explicit pipeline for new indications or products is mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Alio announced a partnership with Carium to increase access to healthcare through remote patient monitoring, indicating business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

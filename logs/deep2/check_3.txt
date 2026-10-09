@@ -1,0 +1,29 @@
+      · claims: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · claims: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+{
+ "results": [
+  {
+   "n": 1,
+   "verdict": "incorrect",
+   "corrected": "TT-Matics Ltd (company number 08919932) files small company or micro-entity accounts at Companies House rather than dormant company accounts.",
+   "note": "",
+   "source": "Companies House (find-and-update.company-information.service.gov.uk/company/08919932/filing-history)"
+  },
+  {
+   "n": 2,
+   "verdict": "correct",
+   "corrected": "",
+   "note": "",
+   "source": "TT-Matics Official Website (ttmatics.co.uk/fleet-tracking-management-services/)"
+  },
+  {
+   "n": 3,
+   "verdict": "correct",
+   "corrected": "",
+   "note": "",
+   "source": "TT-Matics Official Website (ttmatics.co.uk/ and ttmatics.co.uk/electricians/)"
+  }
+ ]
+}

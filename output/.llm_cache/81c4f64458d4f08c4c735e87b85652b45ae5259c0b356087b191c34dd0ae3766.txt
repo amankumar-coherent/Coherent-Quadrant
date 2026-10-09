@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows a single product line: Smart Skin patches supporting EEG, EMG, and ECG in one array, but no specific product variants or catalog details are provided."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Claims 'medical-grade quality signal' and 'accurate and consistent data', but no clinical study results or safety data are cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Technology based on IP from Prof. Yael Hanein's Neuro Engineering lab, with unique capabilities like multi-modal EEG/EMG/ECG in a single patch, indicating strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities, quality systems, or certifications."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Partners include hospitals (Sheba, Levinstein, Assuta) and Google for Startups, suggesting some reach, but no explicit global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Partnerships with hospitals and research institutions indicate some trust, but no evidence of widespread clinical adoption or market share."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue figures, or funding details provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Blog posts on facial EMG and EEG research suggest ongoing development, but no formal pipeline or indication expansion details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partners include hospitals (Sheba, Levinstein, Assuta), Google for Startups, EMOTIV, Coller, Arc, NBT, and EIC, indicating active collaborations."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

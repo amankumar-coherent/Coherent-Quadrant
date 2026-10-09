@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 1,
+      "answer": "Stulz GmbH specializes in cooling solutions, not compute hardware, so it does not offer CPUs, GPUs, or accelerators.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "As a cooling company, Stulz does not produce accelerators, so performance per watt of accelerators is not applicable.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 1,
+      "answer": "Stulz does not offer compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 1,
+      "answer": "Stulz does not provide networking solutions like Ethernet or InfiniBand; it focuses on cooling.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "Stulz does not offer interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 1,
+      "answer": "Stulz does not produce networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Stulz provides energy-efficient cooling solutions that help achieve low PUE, though specific PUE values are not disclosed.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Energy-efficient cooling solutions for mission-critical applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 9,
+      "answer": "Stulz offers advanced liquid cooling solutions for high-density compute, as highlighted in their product portfolio.",
+      "evidence_urls": ["https://www.stulz.com/products/liquid-cooling/"],
+      "evidence_snippets": ["Liquid Cooling", "Future-proof solutions from a single source"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Stulz emphasizes energy efficiency and sustainability in their cooling solutions, reducing energy consumption in operations.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["resources can be consistently saved, thus reducing the CO2 footprint"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Stulz offers monitoring solutions but not a comprehensive software platform for data center resource orchestration.",
+      "evidence_urls": ["https://www.stulz.com/products/monitoring/"],
+      "evidence_snippets": ["Monitoring"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Stulz's monitoring software is not known to be compatible with Kubernetes or OpenStack; it focuses on cooling control.",
+      "evidence_urls": ["https://www.stulz.com/products/monitoring/"],
+      "evidence_snippets": ["Monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "Stulz provides basic monitoring and control for cooling systems, but not advanced automation for provisioning or scaling workloads.",
+      "evidence_urls": ["https://www.stulz.com/products/monitoring/"],
+      "evidence_snippets": ["Monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "Stulz does not offer specialized hardware or software for AI workloads; it focuses on cooling infrastructure.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 1,
+      "answer": "Stulz does not provide AI workload optimizations; its solutions are for thermal management.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 1,
+      "answer": "Stulz does not offer tools for AI workload profiling or optimization.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Precision cooling systems for centers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Stulz has a global presence with 35 subsidiaries and 10 production sites across multiple continents, indicating broad market access.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["approx. 8,200 people at 35 subsidiaries, including 10 production sites in America, Africa, Asia, Europe and Oceania"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Stulz has subsidiaries in North America, Europe, Asia, Oceania, and Africa, providing wide geographic coverage.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["35 subsidiaries, including 10 production sites in America, Africa, Asia, Europe and Oceania"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "No specific expansion plans are mentioned, but their global network suggests ongoing development.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Thanks to our global network, we are able to support our customers in their projects any time, anywhere."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Stulz serves data center customers but does not publicly list hyperscalers as clients; their solutions target mission-critical applications.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["cooling solutions for reliable applications and data centers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "Revenue breakdown between enterprise and hyperscaler customers is not disclosed.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Stulz mentions projects but does not provide specific case studies from Fortune 500 companies in the crawled content.",
+      "evidence_urls": ["https://www.stulz.com/projects/"],
+      "evidence_snippets": ["Projects"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "Stulz does not publicly disclose annual revenue figures for data center products and services.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "Gross margin data for Stulz's data center segment is not available.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Stulz has been in business for over 50 years and is a leading pioneer, suggesting stability, but specific revenue growth data is not provided.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["With over 50 years of experience, STULZ is a leading pioneer in the field of cooling solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "Stulz is a significant player in precision cooling but exact market share in the broader data center systems market is not disclosed.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["leading pioneer in the field of cooling solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Growth rate relative to the market is not specified, but their global expansion indicates positive momentum.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["global network"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "Stulz is gaining share in cooling solutions for high-density compute, but not in AI servers or storage.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["Liquid Cooling"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Stulz likely partners with technology providers, but no specific alliances are mentioned in the crawled content.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "No recent acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Stulz has a global network and subsidiaries, but no specific joint ventures or co-development agreements are disclosed.",
+      "evidence_urls": ["https://www.stulz.com"],
+      "evidence_snippets": ["global network"],
+      "grounding": "partial"
+    }
+  ]
+}

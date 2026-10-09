@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 6,
+      "answer": "STMicroelectronics does not lead in leading-edge nodes like 3nm or 2nm; its most advanced nodes are 18nm FD-SOI and 16nm FinFET, which are trailing industry leaders.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "STMicroelectronics is a leader in FD-SOI technology, particularly with its 28nm FD-SOI for RF and automotive, and has a strong partnership with Samsung for 18nm FD-SOI.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "STMicroelectronics' roadmap focuses on FD-SOI and embedded non-volatile memory, but it has not announced leading-edge nodes like 2nm or 1.4nm, instead relying on partners for advanced logic.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "STMicroelectronics offers a broad portfolio across microcontrollers, power, analog, sensors, and automotive, as evidenced by its product categories on st.com.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Products: Amplifiers and comparators, Audio ICs, Automotive ADAS devices, Automotive analog and power, Automotive infotainment and telematics, Automotive logic ICs, Automotive microcontrollers, Clocks and timers, Data converters, Digital set-top box ICs, Diodes and rectifiers, Imaging and photonics solutions, Interfaces and transceivers, Memories, MEMS and sensors, Microcontrollers & microprocessors, Motor drivers, NFC, Positioning, Power management, Power modules and IPM, Power transistors, Protections and EMI filters, Radio frequency transistors, Reset and supervisor ICs, Secure MCUs, SiC devices, Space products, Switches and multiplexers, Thyristors (SCR) and AC switches, Touch and display controllers, Wireless connectivity"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "STMicroelectronics is diversified across analog, power, and microcontrollers, but exact revenue split is not provided in the KB; model knowledge indicates a balanced mix with strong automotive and industrial exposure.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "STMicroelectronics operates its own back-end facilities and also partners with OSATs for some packaging and test, but the KB does not detail specific OSAT partnerships.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "STMicroelectronics owns proprietary IP including the STM32 MCU architecture, edge AI accelerators, and secure elements, which are differentiated in the market.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Secure MCUs", "Edge AI solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "STMicroelectronics licenses ARM cores for many MCUs and also uses RISC-V for some products, while also licensing its own IP to select partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "STMicroelectronics has strong architectures in automotive (e.g., Stellar) and edge AI (e.g., ST Edge AI Suite), but is less prominent in 5G baseband.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["ST Edge AI Suite", "Automotive ADAS devices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "The KB does not provide specific wafer capacity or utilization figures; model knowledge suggests ST has multiple fabs with significant capacity, but not leading-edge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Yield rates are not disclosed in the KB; ST's mature nodes likely have good yields, but leading-edge yields are not comparable to TSMC or Samsung.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "STMicroelectronics offers advanced packaging like embedded die and fan-out, but not 2.5D/3D at scale; the KB does not detail packaging capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "STMicroelectronics holds ISO 9001 and IATF 16949 certifications, but the KB does not explicitly list them; model knowledge confirms these certifications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "STMicroelectronics has robust reliability testing for automotive and industrial, but specific DPPM figures are not available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "STMicroelectronics is committed to sustainability and compliance with RoHS, REACH, and conflict minerals, as indicated by its sustainability section on st.com.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Sustainability"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "STMicroelectronics has significant presence in Europe, Asia-Pacific, and the Americas, with manufacturing in France, Italy, and Singapore, and R&D worldwide.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Manufacturing", "About ST"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "STMicroelectronics serves automotive, industrial, personal electronics, and IoT, with automotive being a major revenue driver; the KB highlights these applications.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Automotive", "Industrial", "IoT applications", "Personal electronics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "STMicroelectronics' global footprint across multiple regions reduces risk from regional disruptions, as it can shift production and sales across geographies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The KB does not list top customers; model knowledge suggests ST has a broad customer base with no extreme concentration, but automotive customers like Tesla are significant.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "STMicroelectronics has partnerships with equipment makers, EDA vendors, and research consortia, but the KB does not detail them; model knowledge confirms collaborations with Synopsys, Cadence, and CEA-Leti.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "STMicroelectronics collaborates with foundries like TSMC and Samsung, OSATs, and software partners to deliver complete solutions, as seen in its ecosystem approach.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Partner program", "Ecosystems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "The KB does not provide financials; model knowledge indicates ST's 2023 revenue was around $17.3 billion with positive net income and free cash flow.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "STMicroelectronics' CapEx is typically around 20% of revenue, but exact figures are not in the KB; model knowledge suggests significant investment in fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 7,
+      "answer": "STMicroelectronics has a solid balance sheet with manageable debt and strong cash reserves, but the KB does not provide specifics; model knowledge supports this.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "STMicroelectronics' roadmap includes advancing FD-SOI, expanding SiC and GaN, and enhancing edge AI capabilities, as indicated by recent product announcements.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["700 V PowerGaN", "Next-gen sensing", "ST Edge AI Suite"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "STMicroelectronics has a clear roadmap for edge AI and power technologies, but not for quantum or advanced memory; the KB highlights edge AI and power innovations.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Edge AI solutions", "Power & energy management solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "STMicroelectronics' roadmap aligns with trends in automotive electrification, industrial automation, and edge AI, as seen in its focus areas on st.com.",
+      "evidence_urls": ["https://www.st.com"],
+      "evidence_snippets": ["Smart Mobility", "Power & Energy", "Cloud-connected Autonomous Things"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "STMicroelectronics has announced expansions in Italy and Singapore, but the KB does not provide details; model knowledge indicates new capacity for SiC and FD-SOI.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "STMicroelectronics has shown steady revenue growth, but the KB does not provide growth rates; model knowledge suggests mid-single-digit growth over the past 3 years.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "STMicroelectronics funds expansions through strong cash flow and strategic partnerships, but the KB does not detail funding plans; model knowledge indicates a balanced approach.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

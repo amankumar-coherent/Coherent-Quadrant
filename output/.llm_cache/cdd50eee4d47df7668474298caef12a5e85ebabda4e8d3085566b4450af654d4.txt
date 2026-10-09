@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only AT-Patch (ATP-C130/ATP-C70) as flagship product; no other devices mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "FDA 510(k) clearance indicates safety and effectiveness for ECG recording, but no clinical performance data or outcomes provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company specializes in wearable ECG monitoring and digital cardiac diagnostics, but no specific R&D investments or novel technology details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "AT-Patch obtained FDA, CE MDD, PMDA in Japan, and MFDS in South Korea, indicating multi-regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Regulatory approvals in US, EU, Japan, South Korea suggest market presence in those regions, but no distribution or sales channel details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Regulatory approvals and FDA clearance imply some trust, but no evidence of clinical adoption or physician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Revenue of $1,967,765 and valuation of $6,300,000 from Prospeo, but no official financial statements."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or expansion into new indications beyond current ECG monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion activities."
+    }
+  ],
+  "evidence_used": true
+}

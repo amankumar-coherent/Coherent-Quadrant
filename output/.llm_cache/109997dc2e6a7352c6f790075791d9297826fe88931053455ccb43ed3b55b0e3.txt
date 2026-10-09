@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company markets GLP-1 products in Brazil but specific GLP-1 brands not disclosed; overall portfolio includes 350 medicines."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Markets GLP-1 products but no evidence of differentiation; company is leader in anesthetics, not GLP-1."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Invests 8% of revenue in R&D, has 131 patents, and is among five most innovative pharma in Brazil, but no GLP-1 specific R&D mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Has 11 production plants, including biotech plants, and acquired Takeda facility with Anvisa GMP certificate."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Anvisa GMP certificate for acquired plant; but no specific GLP-1 regulatory approvals or compliance details."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence only in Brazil; participates in Brazilian trade shows; no evidence of international GLP-1 market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Recognized as innovative and leader in anesthetics in Brazil; but no specific GLP-1 brand reputation evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial figures disclosed; only investment amounts in new plants."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Has 30 new drug projects in development, but no GLP-1 specific pipeline mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired Takeda plant and expanding biotech capacity; but no GLP-1 partnerships or licensing deals evidenced."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

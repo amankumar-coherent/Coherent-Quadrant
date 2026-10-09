@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Elmos does not disclose advanced process nodes like 3nm or 2nm; it focuses on mature mixed-signal automotive ICs.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Develops and manufactures mixed-signal ICs for automotive, industrial, and consumer applications."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Elmos specializes in mixed-signal and analog automotive ICs but does not lead in cutting-edge process technologies like FinFET or GAA.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Develops and manufactures mixed-signal ICs for automotive, industrial, and consumer applications."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "No public roadmap for next-generation nodes is available; Elmos likely relies on mature nodes for automotive reliability.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Elmos offers a broad portfolio of analog, mixed-signal, and sensor ICs, but not logic or memory products.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Motor Control ICs", "Interface ICs", "Sensor ICs", "Power Management ICs", "LED Driver IC"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; Elmos is primarily analog/mixed-signal focused.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Elmos likely uses OSAT partners for assembly and test, but no specific partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Elmos has proprietary design IP in automotive mixed-signal ICs, such as motor control and sensor interfaces, but not CPU/GPU/AI.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Motor Control ICs", "Sensor ICs", "Ultrasonic Distance IC", "PSI5 Transceiver"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Elmos likely uses some third-party IP (e.g., ARM) and does not license its own IP; no evidence in KB.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Elmos has strong architecture in automotive applications like ADAS, body electronics, and lighting, but not in AI or 5G.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["ADAS & Safety", "Body & Convenience", "Lighting", "Powertrain"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Elmos does not disclose wafer fabrication capacity or utilization rates; it is a fab-lite company.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No yield data is available; Elmos focuses on mature nodes where yields are typically high but not disclosed.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Elmos does not offer advanced packaging like 2.5D/3D or chiplets; it focuses on standard automotive packaging.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Elmos likely holds ISO 9001 and IATF 16949 certifications for automotive quality, but specific certifications are not listed in KB.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Qualität und Zertifikate"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Elmos emphasizes quality and reliability for automotive applications, but specific DPPM figures are not provided.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Innovation & Qualität, Partnerschaft, Performance"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Elmos likely complies with RoHS and REACH for automotive components, but no explicit evidence in KB.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Nachhaltigkeit"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Elmos has significant presence in Germany and Europe, with global sales and distribution, but KB does not detail all regions.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Standorte", "Elmos Sales", "Distribution"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "Elmos primarily serves the automotive market, with additional industrial and smart home applications.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Automotive", "Non-Automotive", "Smart Home", "Industrial Automation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Elmos has some geographic diversification with operations in Germany and sales worldwide, but heavy reliance on automotive may pose risks.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Standorte", "Elmos Sales"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not disclosed; Elmos likely has a diversified customer base in automotive, but concentration risk is unknown.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Elmos likely partners with automotive Tier 1s and EDA vendors, but no specific partnerships are mentioned in KB.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Elmos collaborates with foundries and OSATs for manufacturing, but details are not in KB; it provides complete solutions via its product portfolio.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["ASIC Design", "Automotive Safety IC"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not provided in the knowledge base; Elmos is a mid-sized company with revenue in the hundreds of millions.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Finanzberichte & Präsentationen"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available; as a fab-lite company, CapEx is likely moderate relative to revenue.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Elmos likely has a solid balance sheet for its size, but specific debt and cash figures are not disclosed.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Investor", "Finanzberichte & Präsentationen"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "Elmos has a roadmap focused on automotive megatrends like ADAS and electrification, but specific milestones are not public.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Our Solutions - Serving global automotive megatrends"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "Elmos does not have a roadmap for AI chips, quantum, or advanced memory; it focuses on automotive mixed-signal.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Elmos's roadmap aligns with automotive trends like ADAS, electrification, and connectivity, as evidenced by its product categories.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["ADAS & Safety", "Body & Convenience", "Lighting", "Powertrain"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No new fab or expansion projects are announced in the KB; Elmos is fab-lite and likely relies on foundry partners.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth is not disclosed; Elmos has been stable but growth rates are unknown.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": ["Finanznachrichten"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Elmos likely funds expansions through operating cash flow and debt, but no specific plans are disclosed.",
+      "evidence_urls": ["https://www.elmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

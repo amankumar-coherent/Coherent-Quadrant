@@ -1,0 +1,68 @@
+[pipeline 13:55:25] market: Fire Detection Market (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_detection_market_india
+[pipeline 13:55:25] 1b. 119 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 13:55:28] 1b. now 119 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 13:55:28] 1. verified rows: 119
+[pipeline 13:55:28] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_detection_market_india\_pipeline\axes_spec.json
+[pipeline 13:55:28] 3. 119 names -> 119 companies after dedupe (0 groups merged)
+[pipeline 13:55:28] 3b. 1 companies left out (not active or excluded by review): ['NFire Labs Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 13:55:28] 3c. ownership 118 / identity 4 / scope 118 answers: 10 more left out ['Agasti Tank Works Private Limited', 'Agni Instruments Engineers India Private Limited', 'Areca Embedded Systems Pvt. Ltd.', 'Binix Electrosystems Private Limited', 'Brilltech Engineers Pvt. Ltd.', 'Infinity Electrical Controls Pvt. Ltd.'], 2 owner labels, 70 adjacent-segment (not on the chart) ['Ambetronics Engineers Pvt. Ltd.', 'Ardent Fire India Private Limited', 'Argus Retail Product Pvt. Ltd.', 'Atigo Electronics India Pvt Ltd', 'Brio Fire Safety Device', 'Ceasefire Industries Pvt. Ltd.'] -> _pipeline/auto_review.json
+[pipeline 13:55:28] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 13:55:28]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_detection_market_india\_pipeline\evidence_pool.json
+[pipeline 13:55:28] 5. evidence round 1: 7 companies with gaps
+[pipeline 13:55:28] reasoning_r1: 7 companies across 1 browser(s)
+[pipeline 13:55:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:56:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:57:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:58:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 13:59:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:00:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:01:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:02:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:03:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:04:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:05:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:06:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:07:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:08:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:09:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:10:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:11:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:12:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:13:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:14:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:15:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:16:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:17:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:18:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:19:30] reasoning_r1: 1/1 shard(s) still running
+[pipeline 14:20:30]    WARNING: only 108 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 14:20:30]    --keep 120: 20 chart/evidence + 88 long tail kept, 0 lower-scored dropped
+[pipeline 14:20:30]    20 companies with full evidence, 88 in the long tail
+[pipeline 14:20:30] 6. composite scores (5 per quadrant)
+[pipeline 14:20:31] 7. rewriting hedge wording / first person in evidence
+[pipeline 14:20:35] 7b. current name for Pyrotech Electronics Pvt. Ltd.: Pyrotech Technologies Pvt. Ltd. (listed brand is legacy)
+[pipeline 14:20:35] 7b. owner of Nitin Fire Protection Industries Ltd.: Elysian Wealth Fund
+[pipeline 14:20:35] 7b. owner of Safeguard Industries: Kee Safety
+[pipeline 14:20:35] 8. building HTML / JSON / CSV report
+[pipeline 14:20:37] 8. report page: interactive design (fire_detection_market_india_report.html); static copy fire_detection_market_india_report_classic.html
+[pipeline 14:20:55] 8b. PDF report: fire_detection_market_india_report.pdf
+[pipeline 14:21:35] 8b. Word report: fire_detection_market_india_report.docx
+[pipeline 14:21:35] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 108 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 14:21:35] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\fire_detection_market_india\fire_detection_market_india_report.html

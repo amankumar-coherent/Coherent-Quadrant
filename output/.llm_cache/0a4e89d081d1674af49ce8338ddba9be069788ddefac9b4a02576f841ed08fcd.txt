@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows only one product, Bigfoot Unity, with no other products listed (products: [])."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Bigfoot Unity is FDA cleared (510(k) K202145) and integrates FreeStyle Libre 2 for hypoglycemia alerts, but no clinical outcome data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Described as 'first-of-its kind' and 'innovative, FDA cleared system'; also mentions clinical trial for artificial pancreas."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA cleared (510(k) K202145) and mentions compliance with standards; also acquired by Abbott."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "US-based (Milpitas, CA) and acquired by Abbott, but no explicit global market presence or distribution channels mentioned."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Has patient testimonials and partnerships with HCPs, but no quantitative adoption data."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Abbott in 2023, indicating financial backing, but no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Clinical trial for artificial pancreas device in Type 1 diabetes; also expanding impact with Abbott."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired by Abbott, partnerships with HCPs, and compatible with most major insulin pens."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

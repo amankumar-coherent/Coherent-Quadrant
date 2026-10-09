@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 9,
+      "answer": "Intel offers a broad portfolio including Xeon CPUs, GPUs, and FPGAs for data centers, as evidenced by their product lines.",
+      "evidence_urls": ["https://intel.com"],
+      "evidence_snippets": ["CPUs, GPUs, accelerators for center servers", "Xeon processors, Core processors, GPUs, FPGAs"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 6,
+      "answer": "Intel's performance per watt is competitive but not leading; specific benchmarks are not in the knowledge base, so this is based on general industry knowledge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 8,
+      "answer": "Intel's compute products are widely compatible with major AI frameworks and software stacks, a well-known industry standard.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Intel provides networking solutions like Ethernet and silicon photonics, but the knowledge base does not specify 400G/800G or InfiniBand.",
+      "evidence_urls": ["https://intel.com"],
+      "evidence_snippets": ["CPUs, GPUs, accelerators for center servers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "Intel's interconnect technology is competitive, but specific latency and bandwidth figures are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Intel's networking products support open standards and are compatible with major switch vendors, as is standard in the industry.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Intel does not operate data centers, so PUE is not directly applicable; their equipment efficiency is not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "Intel offers liquid cooling solutions for high-density compute, a known part of their portfolio.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Intel's power management features are well-regarded, but specific real-world energy reduction data is not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "Intel provides software tools like oneAPI and management platforms, but a comprehensive orchestration platform is not explicitly in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 8,
+      "answer": "Intel's software is compatible with Kubernetes and other standards, as is common for major vendors.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Intel offers automation features, but specifics are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "Intel offers specialized AI hardware like Gaudi accelerators and software optimizations like oneAPI, which are well-known.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Intel's AI optimizations improve performance, but specific comparative metrics are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "Intel provides profiling tools like VTune, but not explicitly mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 4,
+      "answer": "Intel does not operate data centers; it is a hardware vendor, so this question is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "Intel does not have a data center footprint as a service provider.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "Intel's expansion plans are not relevant to data center regions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 8,
+      "answer": "Intel has major hyperscalers as customers, a well-known fact, though not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Intel's revenue split between enterprise and hyperscalers is not publicly detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Intel has many case studies with Fortune 500 companies, but none are cited in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "Intel's data center revenue is substantial, but exact figures are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 6,
+      "answer": "Intel's gross margins are known but not compared to industry average in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Intel's data center revenue has fluctuated, but no trend data is in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Intel holds a significant share in the data center CPU market, but exact figures are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Intel's growth rate is competitive but not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Intel is facing competition in AI servers, but specific share changes are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Intel has strategic alliances with major tech providers, a known fact, though not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "Intel has made acquisitions like Habana Labs, but not mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Intel engages in joint development, but specifics are not in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

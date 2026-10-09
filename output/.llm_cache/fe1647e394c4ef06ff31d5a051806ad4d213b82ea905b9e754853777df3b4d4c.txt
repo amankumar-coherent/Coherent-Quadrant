@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "IndianOil has multiple refineries and pipelines, but evidence does not show LNG-specific assets like liquefaction terminals or FSRUs. It imports LNG for refineries and city gas distribution."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific LNG throughput or operational efficiency data provided. Only general refinery and pipeline operations mentioned."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on LNG asset reliability or performance metrics. General safety and pipeline safety sections exist but not LNG-specific."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website includes sections on Safety, HSE Policy, and Pipeline Safety, indicating a focus on compliance, but no LNG-specific regulatory evidence."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions Sustainability, Net Zero Goal, and Green Fuel Alternatives, but no LNG-specific transition initiatives like CCS or bio-LNG."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in India, with group companies in Sri Lanka, Mauritius, and Middle East, but no evidence of multi-continent LNG corridors or global LNG trade."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No specific LNG offtake agreements or customer contracts mentioned. Only imports for own refineries and city gas distribution."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Financial performance sections exist (e.g., Q1 2026-27 standalone performance), but no LNG-specific financials or revenue breakdown."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'Our Upcoming Projects' and 'Projects under Implementation' but no LNG-specific growth projects like new terminals or FSRUs."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Has group companies and JVs (e.g., Lanka IOC, IOC Middle East FZE), but no evidence of LNG-specific partnerships or expansion in LNG value chain."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

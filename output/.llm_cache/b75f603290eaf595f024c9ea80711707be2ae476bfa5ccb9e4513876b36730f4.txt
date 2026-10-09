@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Single project: 'Commonwealth LNG is developing a 9.5 Mtpa liquefaction and export facility' with no other LNG assets mentioned."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Project is under development; modularization described as 'designed to streamline schedule and reduce capital costs' but no operational throughput yet."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of operating assets or reliability metrics; project is pre-FID."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "States 'Commonwealth LNG uses inherently safe design principles' and 'prioritize safety above all other business goals' but no regulatory track record."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No direct evidence for Commonwealth; related Caturus operations mention MiQ certification and emissions management, but not specific to LNG project."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Located on U.S. Gulf Coast near Cameron, Louisiana, with pipeline interconnection to two major systems; but only one location, no global reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence of offtake agreements: 'long-term agreement with a Saudi Aramco subsidiary', '20-year HOA with MET Group', 'HOA to potentially supply Australia's Woodside', and 'Gunvor committed to take up to 3 MTPA'."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only mentions FID target and offtake progress."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Single project under development with target FID and first cargo expected 2027; no other pipeline projects."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnerships with Technip Energies, Gunvor (strategic agreement), and offtake agreements with Aramco, MET Group, Woodside; but no evidence of broader expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions LifeVest wearable defibrillator and other cardiac monitoring wearables, plus electrodes and AEDs, but no comprehensive portfolio details."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "LifeVest is described as providing temporary protection against sudden cardiac death, and a cost-utility analysis exists, indicating clinical evaluation."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Patent US20240148353A1 describes a wearable medical device transmitting heart sounds data, showing active R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No direct evidence on manufacturing or quality systems; only mention of electrodes and defibrillators."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "FDA PMA for non-wearable AEDs is mentioned, but not specifically for ZOLL's wearable devices; LifeVest is FDA-cleared but not explicitly stated."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Presence in US and Singapore, plus jobs in Israel, but no global scale evidence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "LifeVest is referenced in a Frontiers article as a developed product for SCD protection, indicating clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided; only ownership by Asahi Kasei."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Patent suggests new capabilities, and ZOLL Itamar focuses on sleep apnea tests, indicating expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by Asahi Kasei, and has jobs in Israel, but no explicit partnerships or expansion strategies."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Lam Research is a leading supplier of etch and deposition equipment for advanced nodes, supporting chipmakers at 3nm and below, though it does not manufacture chips itself.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/", "https://www.lamresearch.com/products/our-processes/"],
+      "evidence_snippets": ["Making semiconductors is a highly complex and iterative process. And as technology gets smaller, we think bigger meeting the challenges of precision control at the atomic scale."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Lam Research leads in etch and deposition process technology, essential for FinFET and GAA architectures, with solutions like cryogenic etching and advanced metallization.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/cryogenic-etching/", "https://www.lamresearch.com/products/our-solutions/metallization/"],
+      "evidence_snippets": ["Cryogenic Etching", "Metallization"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Lam Research's roadmap focuses on enabling next-generation nodes through innovations in etch, deposition, and advanced packaging, though specific 2nm/1.4nm timelines are not publicly detailed.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/", "https://www.lamresearch.com/products/our-processes/"],
+      "evidence_snippets": ["For every innovative product you see, we’re already thinking… what’s next?"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Lam Research serves multiple semiconductor categories including logic, memory (DRAM), and advanced packaging, but is specialized in wafer fabrication equipment rather than analog or power.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/dram/", "https://www.lamresearch.com/products/our-solutions/packaging-solutions/"],
+      "evidence_snippets": ["DRAM", "Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue split by product type; however, Lam Research is known to have significant exposure to memory and logic customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Lam Research provides advanced packaging solutions and partners with OSATs, but does not offer OSAT services directly.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/packaging-solutions/"],
+      "evidence_snippets": ["Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Lam Research owns process and equipment IP, but not CPU/GPU/accelerator design IP; its differentiation lies in etch and deposition technologies.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-processes/"],
+      "evidence_snippets": ["Etch", "Deposition"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Lam Research does not license CPU/GPU IP; it develops proprietary process equipment and software, and may use third-party IP in its tools.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Lam Research's architecture is strong in AI and advanced memory applications through its etch and deposition capabilities, though not directly in 5G or automotive.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/"],
+      "evidence_snippets": ["DRAM"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Lam Research is an equipment supplier, not a wafer fab, so it does not have wafer fabrication capacity; it manufactures equipment.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "As an equipment maker, Lam Research does not have yield rates; its tools are designed to help customers achieve high yields.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "Lam Research offers advanced packaging solutions including 2.5D/3D and chiplets, with a strong portfolio in packaging equipment.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/packaging-solutions/"],
+      "evidence_snippets": ["Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Lam Research likely holds ISO 9001 and other certifications, but the knowledge base does not specify them.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Lam Research ensures reliability through rigorous testing, but specific DPPM figures are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "Lam Research addresses environmental compliance through its ESG strategy, including responsible supply chain and sustainable product innovation.",
+      "evidence_urls": ["https://www.lamresearch.com/company/environmental-social-and-governance/", "https://www.lamresearch.com/company/environmental-social-and-governance/responsible-supply-chain/"],
+      "evidence_snippets": ["Responsible Supply Chain", "Sustainable Product Innovation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Lam Research has global presence with manufacturing and R&D in the US, Malaysia, Taiwan, Korea, Japan, and India, as indicated by its global opportunities.",
+      "evidence_urls": ["https://www.lamresearch.com/company/locations/", "https://www.lamresearch.com/careers/global-opportunities/"],
+      "evidence_snippets": ["Lam Manufacturing Malaysia", "Lam Manufacturing Taiwan", "Korea Technology Center"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Lam Research serves semiconductor manufacturers across end-markets like consumer, automotive, and industrial, but revenue contribution is not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Lam Research's global footprint across multiple regions helps mitigate regional disruptions, though specific risk assessments are not provided.",
+      "evidence_urls": ["https://www.lamresearch.com/company/locations/"],
+      "evidence_snippets": ["Locations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Lam Research's top customers are major chipmakers, but specific names and concentration are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Lam Research collaborates with ecosystem partners, including research consortia and EDA vendors, but specific partnerships are not listed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Lam Research works closely with foundries and OSATs to integrate its equipment into complete solutions, as evidenced by its advanced packaging and customer support focus.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/packaging-solutions/", "https://www.lamresearch.com/customer-support/"],
+      "evidence_snippets": ["Advanced Packaging", "Customer Support"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Lam Research's financials are not in the knowledge base, but it is a major public company with significant revenue and cash flow.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not available in the knowledge base; Lam Research's capital expenditure is typically moderate as an equipment maker.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Lam Research has a strong balance sheet with low debt and high cash reserves, supporting large-scale investments, though not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Lam Research's roadmap includes advancing etch, deposition, and packaging technologies for future nodes, as indicated by its product solutions and processes.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/", "https://www.lamresearch.com/products/our-processes/"],
+      "evidence_snippets": ["Our Solutions", "Our Processes"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Lam Research is investing in emerging technologies like advanced memory and AI-related chip manufacturing, but quantum specifics are not mentioned.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/dram/"],
+      "evidence_snippets": ["DRAM"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Lam Research's roadmap aligns with industry trends toward smaller nodes and advanced packaging, as seen in its focus on atomic-scale precision and packaging solutions.",
+      "evidence_urls": ["https://www.lamresearch.com/products/our-solutions/packaging-solutions/"],
+      "evidence_snippets": ["Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Lam Research has announced manufacturing expansions in Malaysia and Taiwan, but specific capacity additions are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.lamresearch.com/careers/global-opportunities/"],
+      "evidence_snippets": ["Lam Manufacturing Malaysia", "Lam Manufacturing Taiwan"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth figures are not in the knowledge base; Lam Research has historically grown with the semiconductor industry.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Lam Research funds expansions through its strong cash flow and balance sheet, but specific funding plans are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

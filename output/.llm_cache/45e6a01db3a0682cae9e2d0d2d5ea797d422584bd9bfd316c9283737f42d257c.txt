@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions SYH2086 (oral GLP-1) licensed out, and GLP-1 products approved in China, but no details on marketed brands or breadth."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "GLP-1 products approved in China, but no evidence of differentiation or coverage beyond basic approval."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Has oral GLP-1 (SYH2086) and partnership with AstraZeneca for obesity/T2D programs, indicating R&D activity."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing scale or supply reliability for GLP-1 products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "GLP-1 products approved in China, and other drugs approved by NMPA and FDA (monkeypox vaccine), suggesting regulatory capability."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in China only; no evidence of global market access for GLP-1."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of brand reputation or HCP perception in GLP-1 space."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Listed on Hong Kong stock exchange, but no financial figures provided."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Partnership with AstraZeneca for obesity/T2D programs and oral GLP-1 licensed out, indicating pipeline activity."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "AstraZeneca partnership for obesity/T2D therapies, and licensing out SYH2086, show business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

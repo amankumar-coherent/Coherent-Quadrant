@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Offers four products (Clinician Nutrition Monitor, January AI Platform, B2B APIs & White-Label, January App) but no physical devices; CGM program marketer, not device manufacturer."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Reports HbA1c lowered 6.9% to 6.2% over 6 months, Time in Healthy Glucose Range improved 49.7% to 57.4%, and 74.4% weight loss in app users; published in npj Digital Medicine 2025."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "AI Health Context Engine ingests EHR, labs, wearables, genomics; glucose prediction without sensor; 54M verified-food database; SOC 2 Type II; qualified on Mayo Clinic Platform."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; company markets software, not hardware devices."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "SOC 2 Type II certified; Health Context Engine PT-04821; but FDA clearance not mentioned; disclaimer states claims not reviewed by FDA."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Trusted by clinicians and health platforms worldwide; app used by 200,000+ people; listed in CMS Medicare App Library; but no specific country or market details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Trusted by clinicians and health platforms; featured in NYT, WSJ, Forbes, FT, STAT; qualified on Mayo Clinic Platform; used by 200,000+ people with 4.5★ rating."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; no revenue, funding, or profitability information."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Expanding from consumer app to clinician tools and B2B APIs; GLP-1 support; but no specific pipeline or new indications mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Partners include Wanda Health, AyurAI, Vitaliti, QBio, Medikarma, BioTrax.ai; qualified on Mayo Clinic Platform; B2B APIs and white-label offerings."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

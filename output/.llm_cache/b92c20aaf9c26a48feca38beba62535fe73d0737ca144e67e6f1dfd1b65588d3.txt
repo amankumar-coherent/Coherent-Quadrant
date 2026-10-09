@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions Biostrap Kairos wearable and a configurable platform, but no explicit list of multiple devices or product lines."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Claims 'clinical-grade accuracy' and 'clinically reliable devices', but no specific clinical validation data or safety certifications are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Highlights proprietary Pulse Engine™, novel biometrics, raw waveform data, and advanced cloud processing, indicating strong R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing processes, quality systems, or certifications like ISO."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions HIPAA-compliant platform and research environment, but no FDA clearance or CE marking evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "States 'research across the world' and lists global logos (Stanford, NASA, Pfizer), but no specific countries or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Trusted by Stanford, UCLA, NASA, NIH, Pfizer, and others, indicating strong institutional trust and adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Targets multiple use cases (occupational performance, health optimization, clinical research, chronic condition management) and mentions new Kairos wearable, but no formal pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Lists partnerships with major organizations (Stanford, NASA, Pfizer, NIH, Therabody) and mentions Biostrap is now Sensor Bio, indicating business evolution."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

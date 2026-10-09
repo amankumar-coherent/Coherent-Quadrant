@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Tonix's pipeline includes TNX-102 SL, TNX-1300, TNX-4800, TNX-801, TNX-4200, TNX-1500, TNX-1700, TNX-4700, TNX-2900, but no GLP-1 or incretin products are listed; all are investigational and not approved."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Therapeutic areas focus on CNS, infectious disease, immunology, and rare disease; no GLP-1 or metabolic differentiation is mentioned."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "supported",
+      "why": "Company has multiple Phase 2 programs (e.g., TNX-102 SL, TNX-4800) and preclinical assets, but none are in GLP-1; R&D is broad but not in this space."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1 products; company is clinical-stage with no approved products."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "supported",
+      "why": "Has FDA interactions (Type C meeting for TNX-4800) and Orphan Drug designation for TNX-2900, but no GLP-1 regulatory activity."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Presence only in the United States; no evidence of global market access or GLP-1 product commercialization."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 2,
+      "grounding": "supported",
+      "why": "No marketed GLP-1 products; brand is known for CNS and infectious disease, not GLP-1; no HCP reputation in this area."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No financial data provided; company is clinical-stage with no approved products, implying no GLP-1 revenue."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Pipeline includes CNS, infectious disease, immunology, and rare disease programs; no GLP-1 or incretin pipeline mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion in GLP-1; company appears independent with no relevant deals."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

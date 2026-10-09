@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "SMIC's most advanced process node is 7nm, which is behind leading-edge peers like TSMC and Samsung who are at 3nm/2nm.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "SMIC has developed FinFET technology for its 14nm and 7nm nodes, but it does not lead in FinFET or GAA compared to TSMC and Samsung.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "SMIC's roadmap for next-generation nodes is constrained by export controls, with no clear timeline for 2nm or 1.4nm production.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "SMIC offers a broad portfolio across logic, analog, power, mixed-signal, RF, and IoT, as evidenced by its process platforms.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["Analog&Power", "DDIC", "IGBT", "eNVM", "NVM", "Mixed Signal&RF", "IoT Solutions", "Automotive"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide a revenue split by product type, but SMIC's portfolio suggests diversification across logic, analog, and power.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "SMIC provides back-end one-stop services including assembly and testing, as indicated by its '后段一站式服务' offering.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["后段一站式服务", "中芯后段服务"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "SMIC is a foundry and does not own proprietary CPU, GPU, or AI accelerator IP; it focuses on manufacturing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "SMIC relies on third-party IP and provides design services, but the KB does not detail IP licensing specifics.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["IP设计/服务/成熟度", "IP生态圈"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "SMIC has platforms for IoT and automotive, but its architecture strength in AI and 5G is limited compared to leading-edge foundries.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["IoT Solutions", "Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "The KB does not provide specific wafer capacity or utilization rates, but SMIC is a major foundry with significant capacity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "SMIC's yield rates for leading-edge nodes are generally considered lower than TSMC's, but specific data is not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "SMIC offers back-end services including packaging and testing, but advanced packaging like 2.5D/3D is not explicitly mentioned in the KB.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["后段一站式服务", "中芯后段服务"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "SMIC likely holds standard certifications like ISO 9001, but the KB does not list specific quality certifications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "SMIC emphasizes quality and reliability, but specific defect rates (DPPM) are not provided in the KB.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["质量与可靠性"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "SMIC addresses environmental compliance and responsible minerals, as indicated by its CSR sections on environmental measures and responsible minerals.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["负责任矿物", "环境保护措施", "清洁生产"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "SMIC has a global presence with manufacturing in China and sales/R&D worldwide, as indicated by '中芯国际全球'.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["中芯国际全球"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "SMIC serves multiple end-markets including IoT and automotive, but revenue contribution by market is not detailed in the KB.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["IoT Solutions", "Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "SMIC's geographic diversification is limited compared to global peers, but it has some international presence to mitigate risks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "SMIC's top customers are not listed in the KB, but it is known to serve major fabless companies, with some concentration risk.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "SMIC collaborates with equipment and EDA vendors, but specific partnerships are not detailed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "SMIC has an IP ecosystem and design support services, indicating collaboration with ecosystem players to deliver solutions.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["IP生态圈", "IP生态联盟", "设计支持"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "SMIC's 2025 annual revenue was $93.27 billion, with a 16.2% increase, but net income and free cash flow are not provided.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["全年实现销售收入93.27亿美元，同比增长16.2%"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not in the KB, but SMIC is known for high capital expenditure relative to revenue.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "SMIC's balance sheet strength is not detailed in the KB, but it has access to capital markets for funding.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "SMIC's roadmap is not explicitly detailed in the KB, but it is likely focused on mature nodes and specialty technologies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "SMIC has not publicly detailed a roadmap for AI chips, quantum, or advanced memory in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "SMIC's roadmap aligns with industry trends in IoT and automotive, but its advanced node roadmap is constrained.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["IoT Solutions", "Automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "SMIC has announced expansion projects like the Shaoxing project, but specific capacity additions are not in the KB.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["中芯绍兴项目开工奠基"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "SMIC's revenue grew 16.2% in 2025, and it has shown strong growth in recent quarters, but projected growth is not provided.",
+      "evidence_urls": ["https://www.smics.com"],
+      "evidence_snippets": ["全年实现销售收入93.27亿美元，同比增长16.2%"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "SMIC plans to fund expansions through cash flow and capital markets, but specific plans are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

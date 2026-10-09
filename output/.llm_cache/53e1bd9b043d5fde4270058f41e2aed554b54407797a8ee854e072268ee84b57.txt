@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Portfolio includes semaglutide injection, dual GLP-1/GIP agonist THDBH120, small molecule GLP-1, and insulin biosimilars (lispro, aspart, glargine) per evidence."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Covers diabetes and obesity with GLP-1 and dual agonists, but differentiation is limited as products are biosimilars or early-stage; THDBH120 shows 9.36% weight loss in Phase Ib."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Phase Ib for THDBH120, Phase 3 for THDB0206 (ultra-rapid insulin), and semaglutide biosimilar development; early-stage but multiple programs."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions partnerships for commercialization and insulin biosimilars, but no direct evidence of manufacturing scale or supply reliability."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "NMPA approvals for clinical trials (THDBH120) and insulin glargine biosimilar approval in China; no global regulatory footprint."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Presence primarily in China; exclusive commercialization rights for Huisheng drugs in mainland China; no evidence of global market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Known in China for diabetes care; partnerships with Adocia and Meitheal indicate some reputation, but limited global recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence; only mentions of milestone payments and partnerships."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Pipeline includes semaglutide, dual GLP-1/GIP, small molecule GLP-1, and insulin biosimilars; Phase Ib for obesity and Phase 3 for insulin."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnerships with Adocia (BC Lispro), Meitheal (insulin biosimilars), and Huisheng (exclusive commercialization rights) show expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

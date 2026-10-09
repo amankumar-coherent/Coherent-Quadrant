@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Single project (Rio Grande LNG) with 8 trains (~48 MTPA) potential capacity, but only one site in Texas."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of operational throughput; project under construction and development."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of asset performance or reliability metrics."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Has 'Safety & Sustainability' section on website, but no specific safety records or regulatory compliance details."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Mentions 'lower-carbon energy' and CCS solutions (NEXT Carbon Solutions), but no specific CCS project details."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Only presence in United States (Texas), no evidence of multi-region reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of offtake agreements or customer contracts."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Priced $3.50 billion senior secured notes, indicating financing activity, but no revenue or profitability data."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Rio Grande LNG has 8 trains (~48 MTPA) under construction/development, with space for up to 10 trains."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions CCS solutions (NEXT Carbon Solutions) but no specific partnerships or expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "eMemory's NeoFuse and NeoBit OTP IP are widely adopted in advanced nodes, but the KB does not specify the most advanced node (e.g., 3nm/2nm) offered.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Products/OTP/NeoFuse", "https://www.ememory.com.tw/en-US/Products/OTP/NeoBit"],
+      "evidence_snippets": ["NeoFuse (anti-fuse OTP silicon IP)", "NeoBit (OTP silicon IP)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "eMemory leads in logic NVM IP with a comprehensive platform, but specific process technology leadership (e.g., FinFET) is not detailed in the KB.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Products"],
+      "evidence_snippets": ["We offer industry leading comprehensive platforms for Logic NVM silicon IPs."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "The KB does not provide a specific roadmap for next-generation nodes, but eMemory's ongoing product development suggests continued advancement.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "eMemory is specialized in embedded NVM IP (OTP, MTP, eFlash) and security IP, not a broad semiconductor product company.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Products"],
+      "evidence_snippets": ["We offer industry leading comprehensive platforms for Logic NVM silicon IPs."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The KB does not provide revenue split by product type, but eMemory's portfolio is focused on NVM IP and security solutions.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Products"],
+      "evidence_snippets": ["Products: Security, OTP, MTP, eFlash"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The KB does not mention OSAT services or partnerships, but as an IP provider, eMemory likely partners with foundries and OSATs indirectly.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "eMemory owns proprietary NVM and PUF-based security IP (NeoPUF, PUFrt, PUFcc) that are differentiated in the market.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Products/Security/NeoPUF", "https://www.pufsecurity.com/products/pufrt/"],
+      "evidence_snippets": ["NeoPUF (Hardware security IP)", "PUFrt anchors the security of Silicon Labs’ SoC"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 7,
+      "answer": "eMemory licenses its IP to other firms, as evidenced by its partnership with Silicon Labs and its IP catalog.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Resources/IP_Catalog", "https://www.ememory.com.tw/en-US/News/News?guid=25103117324645"],
+      "evidence_snippets": ["PUFsecurity’s PUFrt Anchors the Security of Silicon Labs’ SoC"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "eMemory's security IP and NVM solutions are relevant to AI, 5G, and automotive markets, but specific architecture strength is not detailed.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Applications/Markets/AI", "https://www.ememory.com.tw/en-US/Applications/Markets/5G", "https://www.ememory.com.tw/en-US/Applications/Markets/Automotive"],
+      "evidence_snippets": ["Markets: 5G, AI, Automotive, IoT"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "The KB does not provide wafer fabrication capacity or utilization rates; eMemory is an IP provider, not a foundry.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "The KB does not provide yield rate data; as an IP provider, yield is dependent on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "The KB does not mention advanced packaging capabilities; eMemory is an IP provider, not a packaging house.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "The KB mentions a Quality Management page but does not list specific certifications like ISO 9001 or IATF 16949.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/About/Quality"],
+      "evidence_snippets": ["Quality Management"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "The KB does not provide defect rate or reliability metrics, but eMemory's IP is used in automotive and security applications implying reliability.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Applications/Markets/Automotive"],
+      "evidence_snippets": ["Automotive"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "The KB does not detail environmental compliance, but as a semiconductor IP company, eMemory likely adheres to RoHS/REACH.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "eMemory is headquartered in Taiwan and has global presence, but the KB does not specify regional sales or R&D locations.",
+      "evidence_urls": ["https://www.ememory.com.tw"],
+      "evidence_snippets": ["Hsinchu, Taiwan"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "eMemory serves multiple markets including 5G, AI, automotive, IoT, and mobile computing, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Applications/Markets/Overview"],
+      "evidence_snippets": ["Markets: 5G, AI, Automotive, IoT, Mobile Computing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "eMemory's global customer base and multiple market segments likely mitigate regional risks, but specific diversification strategy is not in KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "The KB mentions Silicon Labs as a customer, but does not provide a full customer list or concentration risk.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/News/News?guid=25103117324645"],
+      "evidence_snippets": ["PUFsecurity’s PUFrt Anchors the Security of Silicon Labs’ SoC"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "eMemory has partnerships with foundries like TSMC (evidenced by TSMC symposiums) and PUFsecurity for security IP.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Resources/Events"],
+      "evidence_snippets": ["TSMC 2026 Technology Symposium"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "eMemory collaborates with foundries and ecosystem partners to deliver IP solutions, as seen in its TSMC symposium participation and PUFsecurity partnership.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Resources/Events", "https://www.ememory.com.tw/en-US/About/Partners"],
+      "evidence_snippets": ["TSMC 2026 Technology Symposium", "Partners"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "The KB does not provide financial data such as revenue, net income, or free cash flow.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "The KB does not provide capital expenditure data.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "The KB does not provide balance sheet details, but as a profitable IP company, eMemory likely has a healthy balance sheet.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "eMemory's roadmap includes advancements in PUF-based security and post-quantum cryptography, as evidenced by recent certifications.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/News/News?guid=26011610540360"],
+      "evidence_snippets": ["eMemory and PUFsecurity’s PUF-PQC Achieves NIST FIPS 205 and SP 800-208 Certification"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "eMemory has a clear roadmap for emerging security technologies like post-quantum cryptography and PUF-based solutions.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Products/Security/NeoPUF", "https://www.ememory.com.tw/en-US/News/News?guid=26011610540360"],
+      "evidence_snippets": ["PUF-PQC Achieves NIST FIPS 205 and SP 800-208 Certification"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "eMemory's focus on security and NVM aligns with industry trends in IoT, automotive, and data security.",
+      "evidence_urls": ["https://www.ememory.com.tw/en-US/Applications/Markets/Overview"],
+      "evidence_snippets": ["Markets: 5G, AI, Automotive, IoT"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "The KB does not mention any fab expansion projects; eMemory is an IP provider and does not operate fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "The KB does not provide revenue growth data, but eMemory's continued product releases suggest growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "The KB does not detail funding or execution plans for capacity expansion; as an IP company, expansion is not in fabs but in IP development.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

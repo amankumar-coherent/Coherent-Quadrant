@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only mentions 'Has GLP-1 RA candidates in pipeline' with no specific molecules or marketed GLP-1 products."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of therapeutic differentiation in GLP-1; only generic pipeline mention."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Novartis has R&D capabilities and a pipeline, but no specific GLP-1 clinical data or phase details."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Novartis has manufacturing and quality sections on website, but no GLP-1-specific supply evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Novartis mentions quality management system and regulatory inspections, but no GLP-1-specific approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Novartis has global presence with many country sites, but no GLP-1-specific market access evidence."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Novartis is a large pharma with HCP resources, but no GLP-1 brand reputation evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Novartis has investor relations and financial data, but no GLP-1 revenue or sales figures."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Only 'Has GLP-1 RA candidates in pipeline' with no details on phases or indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of GLP-1 partnerships or M&A in the provided data."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

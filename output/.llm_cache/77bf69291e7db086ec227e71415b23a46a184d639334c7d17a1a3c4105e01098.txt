@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Operates the Swinoujscie LNG terminal (regasification) and is developing FSRU terminals in Gdansk and a third LNG terminal in Poland (evidence: 'GAZ-SYSTEM to develop third LNG terminal in Poland', 'A second FSRU terminal will be constructed in the Gulf of Gdansk'). However, this is a single-country, import-focused portfolio, not multi-basin global scale."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Expanded Swinoujscie regasification capacity to 8.3 bcm/year (evidence: 'taking its regasification capacity to 8.3 billion cubic metres (cbm) per year'). Also, PGNiG received 0.98 bcm in Q1 2020, up 34% (evidence: 'received 0.98 bcm of LNG in the first quarter of this year, up 34 per cent'). Demonstrates operational throughput but not global scale."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence indicates the terminal is in operation and expansion completed (evidence: 'GAZ-SYSTEM completes Swinoujscie LNG terminal expansion'), but no specific reliability metrics or uptime data are provided."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "As a state-owned TSO, it operates under regulatory oversight (evidence: 'state-owned Polish gas TSO'), but no specific safety or compliance records are cited."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Natural gas is positioned as a transition fuel (evidence: 'natural gas will serve as a crucial transition fuel, supporting Poland’s incremental energy transition towards Net Zero'), but no specific CCS or renewable initiatives are mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Operates in Poland and aims to serve the Baltic Sea region (evidence: 'increasing the flexibility of the gas system across both Poland and the broader Baltic Sea region'), but no multi-continent presence."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Has contracts with PGNiG and ORLEN (evidence: 'PGNiG takes more regas capacity at Polish LNG terminal', 'ORLEN will be the exclusive user of the Gdańsk FSRU for the entire 15-year period'), indicating long-term offtake agreements, but limited to domestic customers."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data (revenues, profits) is provided in the evidence."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Has a clear growth pipeline: expansion of Swinoujscie completed, and two FSRU projects in development (evidence: 'GAZ-SYSTEM to develop third LNG terminal in Poland', 'A second FSRU terminal will be constructed in the Gulf of Gdansk'), showing significant expansion plans."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Merged with Polskie LNG (evidence: 'Gaz-System merges with Polish LNG terminal operator'), and has partnerships with PGNiG and ORLEN (evidence: 'PGNiG takes more regas capacity', 'ORLEN will be the exclusive user'), but no international partnerships or M&A beyond domestic."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

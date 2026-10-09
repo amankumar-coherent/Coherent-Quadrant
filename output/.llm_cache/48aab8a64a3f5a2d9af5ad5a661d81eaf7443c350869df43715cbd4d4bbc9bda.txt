@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Kansai Electric is a major LNG importer for power generation, but evidence shows no owned liquefaction or regas terminals; only offtake agreements (e.g., Oman LNG SPA 0.4 mtpa, APLNG first shipment)."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of operational throughput, terminal capacity, or efficiency metrics."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of asset performance, availability, or reliability records."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of safety records, regulatory compliance, or HSE performance."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions LNG is planned to remain an important energy source even after achieving carbon neutrality, but no specific transition projects or CCS initiatives."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows LNG offtake from Australia (APLNG) and Oman (Oman LNG), indicating multi-country sourcing, but primarily for domestic Japanese power generation."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence confirms long-term SPA with Oman LNG for 0.4 mtpa starting 2026, and APLNG first shipment to Kansai Electric, indicating contracted offtake."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Only evidence is intangible assets at $0, no revenue or profitability data."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of new LNG projects or expansion plans; only existing offtake agreements."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Evidence shows partnership agreement with ENGIE on LNG shipping and SPA with Oman LNG, indicating business expansion in LNG procurement."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

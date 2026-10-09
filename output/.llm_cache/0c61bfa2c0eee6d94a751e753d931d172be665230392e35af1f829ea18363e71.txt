@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Richter Pharma's KB mentions veterinary pharmaceuticals and over 800 drug approvals but does not specify a vaccine portfolio for major livestock species.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["über mehr als 800 Arzneimittelzulassungen verfügt"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "No evidence of novel biologics like recombinant or vector vaccines in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "Richter Pharma is a regional player in Austria, not a global leader in veterinary vaccines, so market share is likely minimal.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["marktführender Veterinärpharmahandel in Österreich"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 5,
+      "answer": "KB indicates a broad veterinary portfolio but does not detail specific endectocide classes like macrocyclic lactones or isoxazolines.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["Sortiment", "Tiergesundheit"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "No specific evidence of combination products for parasite control in cattle and swine.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "No mention of pipeline for anti-infectives addressing antimicrobial resistance.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "KB mentions IT services for veterinarians but no specific point-of-care diagnostic tests.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["Eigens entwickelte IT-Services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "KB mentions IT services and software for veterinarians, suggesting some digital integration, but no herd health monitoring platform is specified.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["Eigens entwickelte IT-Services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "No evidence of data analytics capabilities for animal health outcomes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "KB mentions a production site in Austria (VetViva) and logistics centers, but not a global network of manufacturing sites.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["Produktionsstandort für Veterinärarzneimittel in Österreich"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No specific evidence on supply chain resilience during disruptions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "No evidence of redundant production lines for critical vaccines or parasiticides.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "KB mentions over 800 drug approvals but does not specify recent approvals in the last 3 years.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["über mehr als 800 Arzneimittelzulassungen verfügt"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No explicit strategy for antimicrobial use compliance, but as a pharmaceutical company they likely follow regulations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "No information on recalls or regulatory warnings in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "KB states exports to more than 50 countries, indicating a broad international reach.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["exportieren wir unsere Produkte in mehr als 50 Länder weltweit"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 4,
+      "answer": "No revenue breakdown by region is provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "No specific evidence of presence in emerging markets like Brazil, China, or India.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No NPS data available in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "KB mentions educational programs and seminars for veterinarians, indicating strong technical support.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["Forbildungen & Seminare", "ständige Weiterbildung"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No independent survey data available, but being market leader in Austria suggests good brand preference.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["marktführender Veterinärpharmahandel in Österreich"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No specific revenue figures for animal health products are provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No operating margin data available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No R&D investment data available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No specific pipeline information for late-stage products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No strategy for label expansion is mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No recent label expansions are mentioned.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "KB mentions founding VetViva Richter GmbH as a 100% subsidiary in 2023, indicating strategic expansion.",
+      "evidence_urls": ["https://www.richter-pharma.at"],
+      "evidence_snippets": ["VetViva Richter GmbH ... wurde 2023 als 100%-Tochterunternehmen der Richter Pharma AG gegründet"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No evidence of alliances with biotech firms or universities.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No comparative M&A activity data available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

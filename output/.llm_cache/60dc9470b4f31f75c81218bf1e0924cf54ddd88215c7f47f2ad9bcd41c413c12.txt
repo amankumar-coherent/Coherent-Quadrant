@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only one product, ECG247, with no other devices or portfolio breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "ECG247 is described as 'medically certified' and used in hospitals and clinics, but no specific clinical performance data or safety studies are cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "ECG247 features two ECG channels, continuous recording, and cloud storage, indicating some innovation, but no explicit R&D investment or pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "partial",
+      "why": "ECG247 is 'medically certified' and available via Norwegian online pharmacies, implying regulatory compliance, but specific certifications (CE/FDA) are not mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence indicates use in multiple countries, Norwegian online pharmacies, and a partnership in Saudi Arabia, but no global scale or detailed channel reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Used in hospitals, heart specialist clinics, and GP offices, indicating clinical adoption, but limited evidence of broad brand trust."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data or revenue figures provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline or expansion into new indications beyond arrhythmia detection."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Partnership with Zahrawi Group for distribution in Saudi Arabia and mention of international interest, but limited other partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

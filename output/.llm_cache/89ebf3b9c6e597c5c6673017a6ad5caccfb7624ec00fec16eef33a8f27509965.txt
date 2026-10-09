@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Portfolio includes Smart Boot, Smart Socks, Smart Plug, and Smart Knee Brace, but no cardiac monitoring devices mentioned despite specialty."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Claims 'clinically validated devices' and 'independently validated devices by clinical research teams', but no specific clinical data or safety outcomes provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Emphasizes AI/ML algorithms, sensor-to-cloud platform, and SDK for raw sensor data, indicating strong R&D focus."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; only mentions 'scalable sensor and microelectronic technology' for partners."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions 'Medicare-reimbursable pathways for RPM and RTM', implying regulatory awareness, but no FDA/CE clearances or certifications cited."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Presence in United States and Italy, but no evidence of broader global distribution or channel partnerships."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Claims 'Trusted by Leading Researchers and Institutions' and lists research partners for various conditions, indicating some clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue, or funding information provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Products target multiple indications (diabetic foot ulcers, MS, Parkinson's, spinal cord injury, rehab), showing expansion across conditions."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Offers partnership opportunities for co-development and customization, and mentions research collaborations, but no specific named partners."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

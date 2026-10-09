@@ -1,0 +1,91 @@
+[batch 18:49:59] 6 market(s) queued, target=300 each
+[batch 18:49:59]   1. Global Silicon Carbide Market
+[batch 18:49:59]   2. Global Wearable Glucometer Market
+[batch 18:49:59]   3. Global Dry Eye Treatment Market
+[batch 18:49:59]   4. Global Solar Rooftop Market
+[batch 18:49:59]   5. Global Polyurethane Market
+[batch 18:49:59]   6. Global Communication Platform as a Service Market
+[batch 18:49:59] 
+[batch 18:49:59] === [1/6] START Global Silicon Carbide Market ===
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Silicon Carbide Market
+  target : 300
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Brand / Marketer (tech=Solution Provider, other=Brand/Marketer) | target=300 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=54c07581 → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\global_silicon_carbide_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=6c_xy substep=6c_score status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\global_silicon_carbide_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=Hybrid B2B + B2C
+  [chatgpt] Step 0c/6: market type = Hybrid B2B + B2C | player type = Manufacturer
+  [chatgpt] Step 0c/6: why Hybrid B2B + B2C: The market is a hybrid B2B + B2C landscape because silicon carbide is sold directly to commercial industries like automotive and electronics, but B2C was chosen because it has a genuine consumer-facing side via aftermarket automotive components and retail semiconductor devices.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Technology Provider, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because the defining offering of this market is a physical material and component produced by the companies themselves, making production capability and material quality the core basis of competition rather than software solutions or distribution services.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: SKIP (checkpoint) — 216 recalled
+  [chatgpt] Step 2/6: SKIP (checkpoint) — 0 openai-discovered
+  [chatgpt] Step 3/6: SKIP (checkpoint) — 0 ddgs extracted
+  [chatgpt] Step 4/6: SKIP (checkpoint) — kept=173 rejected=43
+    → substep 4c: SKIP merge (checkpoint) — merged=152 to_fill=152
+  [chatgpt] Step 5/6: SKIP (checkpoint) — 152 filled
+    → substep 5c: merged filled rows into list (152 total)
+  [chatgpt] Step 6/6: SKIP (checkpoint) — kept=152 rejected=0
+    → substep 6p: SKIP purity (checkpoint) — 152 rows
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] Global Silicon Carbide Market: in=152 geo_drop=0 heur_drop=0 llm_drop=0 kept=151 market_type=B2B uniform_role=Manufacturer
+  [xy] market-fit filter (B2B): 152 -> 152 companies (roles=['Manufacturer'])
+  [xy] industry=Chemical and Materials/Advanced Materials axis_def=llm | X=Product Strength ['Substrate & Epitaxy Quality', 'Device Performance & Reliability', 'Wafer Size & Defect Density', 'R&D and Patent Strength', 'Manufacturing Yield & Scalability'] | Y=Business Strength ['Market Share & Customer Base', 'Revenue Growth & Profitability', 'Capacity Expansion & Supply Chain', 'Geographic & Application Diversification', 'Strategic Partnerships & Alliances']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+    → [xy] score 3/152 Adesis Vakum ve Yari Iletken Teknolojileri San. Ti
+  [ai-mode] managed Chrome ignores --load-extension — using bundled Chromium so the extension loads (expect more CAPTCHAs than real Chrome)
+  [ai-mode] browser ready (chromium, headless=False, profile=data/ai_mode_chrome_profile_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+    → [xy] score 4/152 Advanced Silicon Carbide Materials LLC
+    → [xy] score 5/152 Allegro MicroSystems, LLC
+    → [xy] score 6/152 Alpha and Omega Semiconductor Limited
+    → [xy] no score for Alpha and Omega Semiconductor Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 7/152 AscenPower Semiconductors Co., Ltd.
+    → [xy] score 8/152 Atecom Technology Co., Ltd.
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+    → [xy] score 9/152 Beijing TankeBlue Semiconductor Co., Ltd.
+    → [xy] score 10/152 Bulldog Abrasives Southern Africa (Pty) Ltd
+    → [xy] score 11/152 C&S Mining Services
+    → [xy] score 12/152 Calyco Mining Equipment Supplies
+    → [xy] score 13/152 Carborundum Universal (Australia) Pty Ltd
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36565:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:71910:59)
+    at DispatcherConnection.sendCreate (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:25866:14)
+    at new Dispatcher (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:25758:27)
+    at new _ResponseDispatcher (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:57046:9)
+    at _ResponseDispatcher.from (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:57061:27)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4047,
+  syscall: 'write',
+  code: 'EPIPE'
+}
+
+Node.js v24.18.1

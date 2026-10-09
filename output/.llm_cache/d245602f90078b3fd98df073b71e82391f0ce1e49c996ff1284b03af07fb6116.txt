@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 3,
+      "answer": "XMOS does not disclose advanced process nodes; as a fabless microcontroller vendor it likely uses mature nodes (e.g., 28nm or above), not leading-edge nodes.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["UK-based developer of multicore microcontrollers for edge AI and IoT."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "XMOS specializes in multicore microcontrollers with a unique xcore architecture, but it does not lead in process technology like FinFET or GAA.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["Develops multicore microcontrollers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "No public roadmap for next-generation nodes is available; as a fabless company, XMOS relies on foundry partners and does not announce node transitions.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "XMOS is specialized in multicore microcontrollers for edge AI and IoT, not offering a broad portfolio across logic, memory, analog, or power.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["UK-based developer of multicore microcontrollers for edge AI and IoT."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Revenue split by product type is not disclosed; the company is focused on microcontrollers, indicating low diversification.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "XMOS likely partners with OSAT providers for assembly and test, but no specific partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "XMOS owns the xcore architecture, a differentiated multicore design with hardware threading and flexible I/O, which is a strong IP asset for edge AI and IoT.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["Develops multicore microcontrollers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "XMOS uses its proprietary xcore IP and does not license it; it may use third-party IP for peripherals, but this is not documented.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "XMOS's architecture is well-suited for edge AI and IoT with real-time processing, but it is not a leader in high-growth areas like automotive or 5G compared to larger players.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["edge AI and IoT."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "As a fabless company, XMOS does not own wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Yield rates are not disclosed; as a fabless company, yields depend on foundry partners and are not publicly benchmarked.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No information on advanced packaging offerings; XMOS likely uses standard packaging from OSAT partners.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No quality certifications are listed in the knowledge base; as a fabless company, manufacturing certifications would be held by foundry partners.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "Defect rates are not disclosed; reliability for critical applications is not documented.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "Compliance with RoHS/REACH is likely but not documented in the knowledge base; typical for semiconductor companies.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "XMOS is headquartered in the UK and likely has global sales, but no specific regional presence is detailed.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["Headquarters: United Kingdom"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Primary end-markets are edge AI and IoT, but revenue contribution by market is not disclosed.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["edge AI and IoT."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "Geographic diversification is limited by UK-centric operations; no evidence of manufacturing or R&D in multiple regions.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["Headquarters: United Kingdom"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 3,
+      "answer": "Top customers are not disclosed; customer concentration risk cannot be assessed.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No strategic partnerships are mentioned in the knowledge base; likely has some with foundries and EDA vendors but not documented.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "As a fabless company, XMOS collaborates with foundries and OSATs, but no specific ecosystem partnerships are documented.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 2,
+      "answer": "Financial data (revenue, net income, free cash flow) is not publicly available in the knowledge base.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 2,
+      "answer": "CapEx figures are not disclosed; as a fabless company, CapEx is likely low relative to revenue.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "Balance sheet details are not available; private company status limits public financial information.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No specific roadmap milestones are provided; XMOS continues to develop multicore microcontrollers for edge AI and IoT.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["Develops multicore microcontrollers."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "XMOS is focused on edge AI, which is an emerging technology, but no roadmap for quantum or advanced memory is known.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["edge AI and IoT."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "The roadmap aligns with edge AI and IoT trends, but lacks public detail on how it meets evolving customer demands.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": ["edge AI and IoT."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "No fab expansion projects are announced; as a fabless company, XMOS does not build fabs.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "Revenue growth rate is not disclosed; no financial projections are available.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "Funding and capacity expansion plans are not documented; likely relies on foundry partners for capacity.",
+      "evidence_urls": ["https://www.xmos.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only CardioWatch 287 as a single product; no other devices listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Claims CE-MDR and FDA 510(k) clearance, validated vital sign algorithms, and use in over 100 clinical trials."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Involved in research consortia (LifeTime, Watch-It, DETECT) and offers raw data access for AI/ML development."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions 'develops and manufactures' but no specific details on manufacturing scale or quality certifications."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Explicitly states CE-MDR Medical Certification and FDA 510(k) Cleared, plus GDPR and HIPAA compliance."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Presence in Netherlands, but partnerships with Medtronic (U.S.) and Netcare (South Africa) indicate expanding reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Testimonials from clinicians and researchers, proven with 10,000+ patients, and involvement in over 100 clinical trials."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided; private company with no revenue figures."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Biomarker development for hypertension, cardiac arrest, oncology, frailty, sepsis; expanding into remote monitoring and home care."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Strategic partnerships with Medtronic and Netcare, plus collaborations with hospitals and research consortia."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

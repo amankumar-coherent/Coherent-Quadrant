@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Kailera Therapeutics is a clinical-stage company with a single molecule, HRS9531, and does not offer multiple GLP-1 RA molecules.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["Clinical-stage biopharmaceutical company developing HRS9531, a dual GLP-1/GIP receptor agonist licensed from Hansoh Pharma, for obesity and metabolic diseases."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "There is no evidence of any oral formulation; the company's focus is on HRS9531, which is likely injectable.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["developing HRS9531, a dual GLP-1/GIP receptor agonist"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 8,
+      "answer": "HRS9531 is a dual GLP-1/GIP receptor agonist, which is a combination therapy targeting two incretin pathways.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["dual GLP-1/GIP receptor agonist"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "HRS9531 is in clinical development for obesity and metabolic diseases, but not yet approved for either indication.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["developing HRS9531 ... for obesity and metabolic diseases."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "There is no evidence of cardiovascular benefit claims for HRS9531.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "As a clinical-stage molecule, dosing frequency is not established, but many GLP-1/GIP agonists are once-weekly; no specific evidence.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "The company is actively developing HRS9531, a next-generation dual agonist, in clinical trials.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["Clinical-stage biopharmaceutical company developing HRS9531"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 1,
+      "answer": "No evidence of head-to-head trials against competitors.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 3,
+      "answer": "The company focuses on obesity and metabolic diseases, but no specific mention of NASH, CKD, or heart failure.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["for obesity and metabolic diseases."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 1,
+      "answer": "As a clinical-stage company, it has no FDA-approved manufacturing sites for GLP-1 products.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "No evidence of supply shortages or recalls, but the company has no marketed products.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "No evidence of capacity expansion plans; the company is early-stage.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 1,
+      "answer": "No products are approved by any major regulator.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No evidence of a pharmacovigilance system, but as a clinical-stage company it is not yet required.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No evidence of FDA Form 483s or import alerts, but no manufacturing operations.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 1,
+      "answer": "The product is not launched in any country.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q1",
+      "score": 1,
+      "answer": "No reimbursement agreements exist for an unapproved product.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 1,
+      "answer": "No launches in any market, including emerging markets.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q0",
+      "score": 1,
+      "answer": "The brand is not marketed, so it cannot be among the top prescribed.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "No evidence of presence at major congresses, but as a clinical-stage company it may present data.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No known safety controversies or lawsuits, but the company is too early to have a track record.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 1,
+      "answer": "No revenue from GLP-1 franchise as the product is not marketed.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 1,
+      "answer": "Market cap is not disclosed, but as a clinical-stage biotech it is unlikely to exceed $100 billion.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "R&D spending is not disclosed, but clinical-stage companies typically spend heavily on R&D.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 3,
+      "answer": "No evidence of a Phase 3 trial for an oral GLP-1 RA or combination therapy; HRS9531 is in earlier stages.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["Clinical-stage biopharmaceutical company developing HRS9531"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 2,
+      "answer": "No evidence of pursuing pediatric indications.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 3,
+      "answer": "No evidence of plans to expand into cardiovascular or renal indications.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Kailera has a strategic alliance with Hansoh Pharma for the license of HRS9531.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["licensed from Hansoh Pharma"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "The licensing agreement with Hansoh Pharma likely provides access to certain geographic markets, though specifics are not detailed.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": ["licensed from Hansoh Pharma"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 3,
+      "answer": "No evidence of partnerships for novel delivery technologies.",
+      "evidence_urls": ["https://www.kailera.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

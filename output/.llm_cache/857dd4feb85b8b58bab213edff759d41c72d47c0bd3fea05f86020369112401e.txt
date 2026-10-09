@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Valens Semiconductor does not disclose specific process nodes for its connectivity chips, and as a fabless company it relies on foundry partners, so it does not lead in advanced node technology.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Valens focuses on high-performance connectivity with proprietary technology like HDBaseT and A-PHY, but it does not lead in specific process technologies such as FinFET or GAA, which are typically associated with larger semiconductor manufacturers.",
+      "evidence_urls": ["https://www.valens.com/technology/"],
+      "evidence_snippets": ["The Highest Bandwidth", "The Longest Reach", "The Lowest Error Rate"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Valens does not publicly disclose a roadmap for next-generation process nodes, as it is a fabless company that relies on foundry partners for manufacturing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Valens is specialized in high-performance connectivity chipsets for automotive and audio/video markets, not a broad portfolio across logic, memory, analog, and power.",
+      "evidence_urls": ["https://www.valens.com"],
+      "evidence_snippets": ["Our chipsets are the hidden gems embedded inside countless devices"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Valens does not disclose revenue split by product type, but its portfolio is focused on connectivity solutions, indicating limited diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Valens does not provide OSAT services and does not publicly detail partnerships with OSAT providers, though as a fabless company it likely uses such services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Valens owns proprietary connectivity IP, including HDBaseT and MIPI A-PHY, which are differentiated in the market for high-performance, long-reach, low-latency links.",
+      "evidence_urls": ["https://www.valens.com/technology/"],
+      "evidence_snippets": ["120 patents granted", "1 Emmy Award"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Valens licenses its technology to partners and also uses standard interfaces like MIPI A-PHY, but it does not primarily license CPU or GPU IP like ARM or RISC-V.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Valens has strong architecture in automotive connectivity (A-PHY) and video conferencing, which are high-growth areas, but it is not a leader in AI or 5G.",
+      "evidence_urls": ["https://www.valens.com/solutions/adas-autonomous/", "https://www.valens.com/solutions/video-conferencing/"],
+      "evidence_snippets": ["ADAS & Autonomous", "Video Conferencing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Valens is fabless and does not own wafer fabrication capacity, so it has no wafers per month or utilization rate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Valens does not disclose yield rates, and as a fabless company it depends on foundry partners for manufacturing, so it cannot compare to industry benchmarks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Valens does not offer advanced packaging like 2.5D/3D or chiplets; its focus is on connectivity chipsets, not packaging services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Valens mentions a quality page but does not specify certifications like ISO 9001 or IATF 16949 in the provided knowledge base.",
+      "evidence_urls": ["https://www.valens.com/quality-page/"],
+      "evidence_snippets": [],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Valens claims reliable, error-free connectivity for safety-critical systems, but does not disclose defect rates (DPPM) or detailed reliability processes.",
+      "evidence_urls": ["https://www.valens.com"],
+      "evidence_snippets": ["Reliable, error-free connectivity for safety-critical systems."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "Valens does not publicly detail compliance with environmental regulations like RoHS or REACH, though as a semiconductor company it likely adheres to them.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Valens has global offices and serves customers worldwide, with a notable presence in Israel (HQ) and operations in Asia, Europe, and the Americas.",
+      "evidence_urls": ["https://www.valens.com"],
+      "evidence_snippets": ["7 Global Offices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Valens primarily serves automotive (ADAS, in-cabin) and professional audio/video markets (video conferencing, digital signage, medical, industrial), with automotive being a key growth area.",
+      "evidence_urls": ["https://www.valens.com/solutions/adas-autonomous/", "https://www.valens.com/solutions/video-conferencing/"],
+      "evidence_snippets": ["ADAS & Autonomous", "Video Conferencing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Valens' global presence and diverse end-markets provide some mitigation against regional disruptions, but its reliance on foundry partners and specific markets like automotive could pose risks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Valens has customers like Mobileye and major carmakers, but does not disclose customer concentration; its design wins with premium carmakers indicate strong relationships.",
+      "evidence_urls": ["https://www.valens.com/newsroom/mobileye-selects-valens-semiconductors-va7000-mipi-a-phy-chipsets-for-automated-and-autonomous-driving-projects/"],
+      "evidence_snippets": ["Mobileye selects Valens Semiconductor’s VA7000 MIPI A-PHY chipsets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Valens has strategic partnerships with Mobileye and other ecosystem players, and is a member of the MIPI Alliance, which helps shape standards like A-PHY.",
+      "evidence_urls": ["https://www.valens.com/newsroom/mobileye-selects-valens-semiconductors-va7000-mipi-a-phy-chipsets-for-automated-and-autonomous-driving-projects/"],
+      "evidence_snippets": ["Mobileye selects Valens Semiconductor’s VA7000 MIPI A-PHY chipsets"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Valens collaborates with foundries, OSATs, and software partners to deliver complete solutions, but specific details are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Valens does not disclose financial details like revenue, net income, or free cash flow in the provided knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Valens does not disclose capital expenditure figures or its percentage of revenue.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Valens does not provide balance sheet details such as debt-to-equity or cash reserves in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Valens' roadmap includes expanding its VA7000 A-PHY chipsets for automotive and advancing its video conferencing solutions, but specific milestones are not detailed.",
+      "evidence_urls": ["https://www.valens.com/product-va7000/"],
+      "evidence_snippets": ["VA7000"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Valens focuses on connectivity for automotive and AV, not on AI chips, quantum, or advanced memory, so its roadmap is limited in those emerging areas.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Valens' roadmap aligns with trends in autonomous driving and hybrid video conferencing, as evidenced by its design wins and market leadership claims.",
+      "evidence_urls": ["https://www.valens.com"],
+      "evidence_snippets": ["Leaders in High-Performance Connectivity"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "Valens does not own fabs and has not announced capacity expansion projects; it relies on foundry partners for manufacturing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Valens has grown through design wins and partnerships, but specific revenue growth rates are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Valens does not disclose funding or execution plans for capacity expansions, as it is fabless and depends on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

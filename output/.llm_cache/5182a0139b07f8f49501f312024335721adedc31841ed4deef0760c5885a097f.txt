@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions multiple CGM models (G4, G6, G7) but all are in the same category (CGM for diabetes). No evidence of diversification into other wearable device types."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence states Dexcom CGM provides 'accurate real-time glucose readings' and 'proven results', and is FDA-cleared for specific clinical indications. Also, G6 has clinical data submitted for FDA approval."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence highlights recent launch of G7, which 'improved functionality, accessibility, and wear time' relative to prior offerings, indicating ongoing innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No specific evidence about manufacturing capabilities or quality systems. Only mentions presence in multiple countries (US, Malaysia, Ireland, Philippines) which may imply manufacturing sites."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence states Dexcom devices carry FDA clearance for specific clinical indications, and G6 was submitted for FDA approval. Also, CMS coverage decision for therapeutic CGMs."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows presence in US, Malaysia, Ireland, Philippines, and global sales. Also, mentions availability via insurance and direct purchase options."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Evidence states 'Dexcom is the leader in the market of Continuous Glucose Monitoring' and is among top 18 medical-grade wearables. Also, CMS coverage decision indicates clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 9,
+      "grounding": "supported",
+      "why": "Evidence reports Q2 2026 revenue of $1.308 billion, 13% YoY growth, and estimated revenue of $4B with valuation near $43.4B. Ranked 35th largest medical device company."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions G7 launch and improvements, but no explicit pipeline details or expansion into new indications beyond diabetes."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "insufficient",
+      "why": "No specific partnerships or business expansion strategies mentioned in evidence. Only presence in multiple countries and financial growth."
+    }
+  ],
+  "evidence_used": true
+}

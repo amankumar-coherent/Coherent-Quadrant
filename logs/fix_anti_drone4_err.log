@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.argv=['run_quadrant_pipeline.py','--market','Anti-Drone Systems Industry Analysis','--country','india','--keep','120','--slots','61']; sys.path.insert(0,'src'); exec(open('scripts/run_quadrant_pipeline.py').read())
+                                                                                                                                                                                     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 60, in <module>
+NameError: name '__file__' is not defined. Did you mean: '__name__'?

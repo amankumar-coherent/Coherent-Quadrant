@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Rockchip does not disclose specific process nodes, but its products like RK3576 are typically manufactured on mature nodes (e.g., 8nm or 12nm), not leading-edge nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Rockchip does not lead in specific process technologies like FinFET or GAA; it relies on standard foundry processes and focuses on SoC design.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "No public roadmap for next-generation nodes is available; Rockchip's focus is on AIoT and edge AI, not leading-edge process technology.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Rockchip specializes in application processors and SoCs for AIoT, but also offers some analog and power management components, though not a broad portfolio across all categories.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed, but the company is primarily focused on processor chips, indicating limited diversification.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Rockchip likely partners with OSAT providers for packaging and testing, but no specific details are available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Rockchip has proprietary NPU and AI accelerator IP, as seen in products like RV1126B with 3 TOPS NPU and RK3576 with 6 TOPS AI unit.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/product/RV11xilie/2025/1208/2117.html"],
+      "evidence_snippets": ["配置 3 TOPS NPU，支持2B以内大模型", "内置6TOPS*自研高效率AI处理器单元"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Rockchip uses ARM cores and RISC-V in some products, and does not license its IP to others; it relies on third-party CPU IP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "Rockchip's architecture is strong in AI and edge computing, with NPUs supporting large models and AI-ISP, but not in 5G or automotive.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/product/RV11xilie/2025/1208/2117.html"],
+      "evidence_snippets": ["配置 3 TOPS NPU，支持2B以内大模型", "支持AI Remosaic、PDAF"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Rockchip is a fabless company and does not own wafer fabrication capacity; it relies on foundries.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "As a fabless company, Rockchip's yield rates depend on foundry partners and are not publicly disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Rockchip does not offer advanced packaging like 2.5D/3D or chiplets; it likely uses standard packaging from OSAT partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "No specific quality certifications are mentioned in the knowledge base, but as a public company, Rockchip likely holds ISO 9001; IATF 16949 is less likely.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rate (DPPM) is not disclosed; reliability for critical applications is not highlighted in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Compliance with RoHS, REACH, and conflict minerals is not mentioned, but as a global supplier, Rockchip likely adheres to these regulations.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Rockchip has offices in China (Fuzhou, Shenzhen, Shanghai, Beijing, Hangzhou, Hong Kong) and sells globally, but manufacturing is outsourced.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/aboutme/gongsijianjie/gsjj.html"],
+      "evidence_snippets": ["总部位于福州，在深圳、上海、北京、杭州、香港设有分/子公司"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary end-markets include AIoT, consumer electronics, and edge AI devices; revenue contribution is not disclosed but these are the main focus.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/aboutme/gongsijianjie/gsjj.html"],
+      "evidence_snippets": ["专注于集成电路设计与研发，目前已发展为领先的物联网（IoT）及人工智能物联网（AIoT）处理器芯片企业"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Geographic diversification is limited, with most operations in China, which increases exposure to regional disruptions and trade policies.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not disclosed; as a fabless SoC provider, customer concentration risk is unknown but likely moderate.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "Rockchip has partnerships with companies like Agora (声网) for robotics solutions and Mianbi Intelligent for automotive AI, indicating strategic collaborations.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/news/rockchip/2026/0709/2171.html"],
+      "evidence_snippets": ["瑞芯微 × 声网联合发布机器人平行操控一体化解决方案"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Rockchip collaborates with foundries, OSATs, and software partners to deliver complete solutions, as seen in its AIoT and automotive offerings.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/news/rockchip/2026/0507/2166.html"],
+      "evidence_snippets": ["北京车展现场直击｜瑞芯微车载 AI BOX 方案正式亮相，携手面壁智能共筑座舱算力新生态"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial data is not provided in the knowledge base; as a public company, revenue and net income are available but not cited here.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx details are not disclosed; as a fabless company, CapEx is likely lower than IDMs but still significant for R&D.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet strength is not detailed, but as a profitable public company, it likely has adequate cash reserves for investments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Rockchip's roadmap includes new AIoT processors like RK3572 and RK182X series with advanced NPUs for large language models, indicating a focus on edge AI.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/news/rockchip/2026/0508/2168.html"],
+      "evidence_snippets": ["瑞芯微推出RK3572：新一代八核AIoT平台，性能翻倍，功耗减半"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Rockchip has a clear roadmap for AI chips, including NPUs supporting 3B/7B LLMs, but not for quantum or advanced memory.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/product/RK18xilie/2025/1114/2113.html"],
+      "evidence_snippets": ["集成多核高算力NPU，支持3B/ 7B大语言模型及传统CNN推理的本地化部署"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Rockchip's roadmap aligns with industry trends in edge AI and AIoT, addressing customer demands for on-device AI processing.",
+      "evidence_urls": ["https://www.rock-chips.com/a/cn/news/rockchip/2026/0525/2169.html"],
+      "evidence_snippets": ["端侧OCR开启大模型时代，瑞芯微RK182X实测PaddleOCR-VL优势突出"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "Rockchip is fabless and does not announce new fabs; capacity expansion is dependent on foundry partners.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Revenue growth is not disclosed, but the company is expanding its product line and partnerships, indicating positive growth trajectory.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Capacity expansion is not applicable as Rockchip is fabless; it funds R&D and product development rather than fabs.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

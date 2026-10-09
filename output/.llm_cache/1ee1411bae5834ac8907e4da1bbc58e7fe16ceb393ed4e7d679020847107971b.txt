@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Sabey Data Centers is a data center operator and developer, not a compute hardware vendor, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "As a data center operator, Sabey does not manufacture accelerators, so performance per watt of their latest accelerator is not applicable.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Sabey does not produce compute products, so compatibility with AI frameworks is not applicable to their offerings.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "Sabey does not provide networking hardware; they operate data centers that may host such equipment, but they do not sell high-speed networking solutions.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "Sabey does not develop interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Sabey does not sell networking products, so compatibility with switch vendors or open standards is not applicable.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Sabey emphasizes sustainability and has achieved over 25% carbon emissions cut, but specific PUE figures are not provided in the knowledge base.",
+      "evidence_urls": ["https://sabey.com/news/sabey-achieves-over-25-carbon-emissions-cut-pioneers-advanced-nuclear-p artnership"],
+      "evidence_snippets": ["Sabey Achieves Over 25% Carbon Emissions Cut, Pioneers Advanced Nuclear Partnership"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Sabey's focus is on data center development and operation; no specific mention of liquid cooling or advanced cooling solutions is found in the knowledge base.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Sabey reports a significant carbon emissions cut, indicating energy efficiency efforts, but specific power management features are not detailed.",
+      "evidence_urls": ["https://sabey.com/news/sabey-achieves-over-25-carbon-emissions-cut-pioneers-advanced-nuclear-p artnership"],
+      "evidence_snippets": ["Sabey Achieves Over 25% Carbon Emissions Cut, Pioneers Advanced Nuclear Partnership"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Sabey does not offer a software platform for managing data center resources; they provide physical infrastructure and services.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Sabey does not provide orchestration software, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "Sabey does not offer automation features for provisioning, scaling, or monitoring workloads as a software product.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "Sabey does not offer specialized hardware or software optimizations for AI; they provide data center space that may host AI workloads.",
+      "evidence_urls": ["https://sabey.com/news/sdc-manhattan-the-ideal-hub-for-ai-inference-deployments"],
+      "evidence_snippets": ["SDC Manhattan: The Ideal Hub for AI Inference Deployments"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "Sabey's data centers may support AI workloads, but they do not provide performance improvements over general-purpose alternatives.",
+      "evidence_urls": ["https://sabey.com/news/sdc-manhattan-the-ideal-hub-for-ai-inference-deployments"],
+      "evidence_snippets": ["SDC Manhattan: The Ideal Hub for AI Inference Deployments"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 2,
+      "answer": "Sabey does not offer tools for workload profiling or optimization across AI frameworks.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Sabey Data Centers designs, builds, and operates multi-tenant data centers, offering colocation services to enterprise and government clients."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Sabey operates multiple data center locations across the U.S., but the exact number of regions is not specified in the knowledge base.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Operating more than 3.5 million square feet of mission-critical data center space and nearly 400 MW of critical capacity under management"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Sabey's data centers are primarily in the U.S., with locations like Tukwila, Manhattan, and Umatilla, but no international presence is mentioned.",
+      "evidence_urls": ["https://sabey.com/real-estate/375-pearl-manhattan", "https://sabey.com/real-estate/12500-tukwila"],
+      "evidence_snippets": ["375 Pearl", "12500 Tukwila"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Sabey is expanding domestically, as seen in the SDC Umatilla milestone, but no plans for emerging markets are mentioned.",
+      "evidence_urls": ["https://sabey.com/news/sabey-data-centers-celebrates-going-vertical-milestone-at-sdc-umatilla"],
+      "evidence_snippets": ["Sabey Data Centers Celebrates 'Going Vertical' Milestone at SDC Umatilla"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Sabey does not list hyperscalers as customers or partners in the knowledge base, but they serve enterprise and government clients.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["offering colocation services to enterprise and government clients"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 3,
+      "answer": "Revenue split between enterprise and hyperscaler customers is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["offering colocation services to enterprise and government clients"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials from Fortune 500 companies are provided in the knowledge base.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["offering colocation services to enterprise and government clients"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Sabey's annual revenue is not disclosed in the knowledge base, but they are a major operator with significant capacity.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Operating more than 3.5 million square feet of mission-critical data center space and nearly 400 MW of critical capacity under management"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "Gross margin for Sabey's data center segment is not available in the knowledge base.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["Operating more than 3.5 million square feet of mission-critical data center space and nearly 400 MW of critical capacity under management"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Sabey has shown growth through expansions and strategic investment, but specific revenue growth figures are not provided.",
+      "evidence_urls": ["https://sabey.com/news/sabey-data-center-properties-welcomes-strategic-investment-from-ares-st rengthening-platform-for-continued-growth"],
+      "evidence_snippets": ["SDC Welcomes Strategic Investment from Ares"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "Sabey's market share in the global data center systems market is not specified, but they are a significant player in the U.S.",
+      "evidence_urls": ["https://sabeydatacenters.com/"],
+      "evidence_snippets": ["one of the largest privately-owned multi-tenant data center operators and developers in the world"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Sabey is expanding, but their growth rate relative to the market is not quantified in the knowledge base.",
+      "evidence_urls": ["https://sabey.com/news/sabey-data-centers-celebrates-going-vertical-milestone-at-sdc-umatilla"],
+      "evidence_snippets": ["Sabey Data Centers Celebrates 'Going Vertical' Milestone at SDC Umatilla"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "Sabey is gaining share in data center space, but no specific segment data for AI servers or storage is available.",
+      "evidence_urls": ["https://sabey.com/news/sdc-manhattan-the-ideal-hub-for-ai-inference-deployments"],
+      "evidence_snippets": ["SDC Manhattan: The Ideal Hub for AI Inference Deployments"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Sabey has formed a strategic partnership with Ares for investment, but no technology alliances with NVIDIA, Intel, or VMware are mentioned.",
+      "evidence_urls": ["https://sabey.com/news/sabey-data-center-properties-welcomes-strategic-investment-from-ares-st rengthening-platform-for-continued-growth"],
+      "evidence_snippets": ["SDC Welcomes Strategic Investment from Ares"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Sabey has not made acquisitions to strengthen data center capabilities; they received a strategic investment from Ares.",
+      "evidence_urls": ["https://sabey.com/news/sabey-data-center-properties-welcomes-strategic-investment-from-ares-st rengthening-platform-for-continued-growth"],
+      "evidence_snippets": ["SDC Welcomes Strategic Investment from Ares"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Sabey has a nuclear partnership for advanced energy, but no joint ventures for next-generation data center technologies are mentioned.",
+      "evidence_urls": ["https://sabey.com/news/sabey-achieves-over-25-carbon-emissions-cut-pioneers-advanced-nuclear-p artnership"],
+      "evidence_snippets": ["Pioneers Advanced Nuclear Partnership"],
+      "grounding": "partial"
+    }
+  ]
+}

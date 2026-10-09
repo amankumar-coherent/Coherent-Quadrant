@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions 'metabolic biologics, including GLP-1 receptor agonist candidates' but no specific products or approvals."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Company focuses on nephrology, oncology, autoimmune, ophthalmology, dermatology; GLP-1 is only a candidate, no differentiation evidence."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company integrates R&D and has GLP-1 candidates, but no clinical phase or trial details provided."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company has production capabilities, but no specific GLP-1 manufacturing evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No regulatory approvals or quality certifications for GLP-1 products mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence primarily in China; no global GLP-1 market access evidence."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Known as leading Chinese biopharmaceutical enterprise, but not specifically for GLP-1."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "2024 interim results show revenue up 16% YoY, with TPIAO sales ~RMB 2.48B; but no GLP-1 revenue."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "GLP-1 candidates in pipeline, but no specific indications or phases disclosed."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No partnerships or expansion deals mentioned in evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

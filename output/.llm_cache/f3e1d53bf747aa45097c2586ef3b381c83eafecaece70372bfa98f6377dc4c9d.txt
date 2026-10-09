@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Energy Transfer is a US midstream major with a large diversified portfolio (125,000 miles of pipeline) but LNG-specific assets are limited to the Lake Charles LNG project, which is still in development."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of current LNG liquefaction or regasification operations; the Lake Charles project is planned to convert an existing import terminal to export, but no throughput data is provided."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of operational reliability or asset performance for LNG assets; the project is not yet operational."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The Lake Charles LNG project is affected by the Biden administration's freeze on LNG export permits, indicating regulatory challenges; no specific safety record is mentioned."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of sustainability initiatives or energy transition efforts specific to LNG; the company is a midstream player with no disclosed CCS or transition projects in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Presence in US Gulf Coast, Midwest, Northeast; Lake Charles LNG is on the Gulf Coast, but no evidence of international LNG corridors or multi-continent reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Signed 20-year LNG supply agreements with Chevron, totaling 3 mtpa from Lake Charles LNG, indicating strong offtake commitments."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No financial data provided; company is public but no revenue or profitability figures are cited."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Lake Charles LNG project is in development with FID delayed; Chevron offtake agreements support project progress, but no other LNG projects are mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Expanded LNG supply agreement with Chevron, indicating a strategic partnership; also has existing infrastructure and pipeline network for expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

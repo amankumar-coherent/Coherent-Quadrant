@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence shows only a single licensed GLP-1 molecule (bofanglutide) for Korea; no other GLP-1 products mentioned."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Bofanglutide is a GLP-1 RA but no differentiation or therapeutic coverage details beyond basic mechanism."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "partial",
+      "why": "As a marketer, JW has development/commercialization rights but no evidence of own clinical R&D or innovation."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or supply chain for GLP-1."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of regulatory approvals or quality compliance specific to GLP-1."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Exclusive rights only in South Korea; no evidence of other geographies."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No evidence of brand recognition or HCP reputation for GLP-1."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "supported",
+      "why": "Revenue data shows ~775B KRW annual revenue (2025) with growth, but not GLP-1 specific."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Only bofanglutide licensed; no evidence of additional pipeline or indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Exclusive license from Gan & Lee for Korea demonstrates partnership, but limited to one deal."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

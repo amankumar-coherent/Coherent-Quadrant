@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions EOPatch and EOPancreas, but portfolio is narrow (insulin patch pump and closed-loop system)."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No direct clinical performance data; FDA breakthrough designation suggests potential but not proven performance."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA breakthrough device designation for EOPancreas and partnership with Diabeloop indicate innovative R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Medtronic acquisition mentions scaling manufacturing, but no direct evidence of EOFlow's own manufacturing quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Has FDA breakthrough designation and 510(k) submission, but also faces sales bans in Europe due to patent issues."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows presence in Korea and plans for US, but sales banned in 17 European countries."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Trade secret case loss and sales bans may harm trust; limited adoption evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Acquired by Medtronic for $738M, but revenue and profitability not detailed."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "EOPancreas in development with FDA breakthrough designation; partnership with Diabeloop for AID."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Medtronic acquisition and Diabeloop partnership indicate strong business expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

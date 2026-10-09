@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Operates the first LNG import terminal in Wilhelmshaven, Germany; evidence mentions FSRU Hoegh Esperanza and plans for loading LNG onto ships and bunker barges, but no multi-terminal or multi-basin portfolio."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence indicates 100th LNG carrier arrived, ship-to-ship transfer at max rate of 9000 m3/h, each delivery ~160,000 m3, indicating operational activity, but no throughput capacity figures."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Terminal has received 100th LNG carrier, but also planned pause in Q1 2025, indicating reliability concerns."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Terminal includes special equipment like fire-fighting system and maintenance cranes, but no explicit safety record or regulatory compliance details."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 4,
+      "grounding": "partial",
+      "why": "LNG is positioned as a transition fuel in Germany's energy shift away from pipeline gas, but no specific sustainability initiatives or CCS evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Located in Wilhelmshaven, Germany, serving German market; evidence mentions imports from US (Cameron LNG, Calcasieu Pass) and Oman, but no multi-continent presence."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions binding capacity interest and deliveries from various sources, but no specific long-term SPA details or customer names."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Plans for phase 2 permanent expanded port solution by 2025, and potential for loading LNG onto ships and bunker barges, but no major expansion pipeline."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Partnerships with Hoegh LNG (FSRU owner), MOL (FSRU operator), Uniper (build/operate), and ExxonMobil deal, but no evidence of broader expansion."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

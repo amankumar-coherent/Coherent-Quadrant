@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions 'Prizma and wearable multi-parameter mobile medical devices' and 'Mobile medical; Wearable monitoring', indicating a narrow portfolio focused on a few product lines."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No specific clinical performance data, safety records, or trial results are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The company is introducing new home health test kits (e.g., Monkeypox) and expanding testing labs, suggesting some innovation, but no detailed R&D pipeline or technology breakthroughs are cited."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence regarding manufacturing capabilities, quality systems, or certifications."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearances, CE marks, or other regulatory approvals in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions storefront testing locations in California and plans to expand in the U.S., indicating some U.S. presence but limited global reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of hospital adoption, clinician endorsements, or brand recognition in the medical community."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data (revenue, profitability) is provided; only forward-looking statements about revenue growth are mentioned."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows expansion into COVID-19 testing and home health test kits, indicating pipeline growth beyond wearables, but no specific clinical pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mention of opening labs and expanding testing locations suggests business expansion, but no specific partnerships are cited."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

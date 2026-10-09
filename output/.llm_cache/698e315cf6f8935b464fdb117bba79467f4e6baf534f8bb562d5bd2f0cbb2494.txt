@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Asset / Project Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "SK Gas Trading is a subsidiary of SK Group involved in LNG trading and supply; constructing an import terminal in Ulsan, Korea, but no evidence of multiple LNG assets or global portfolio."
+    },
+    {
+      "feature": "Operational Efficiency & Throughput",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of operational throughput or efficiency metrics; only mention of constructing an import terminal."
+    },
+    {
+      "feature": "Reliability & Asset Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of asset performance or reliability track record."
+    },
+    {
+      "feature": "Safety & Regulatory Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of safety or regulatory compliance record."
+    },
+    {
+      "feature": "Sustainability & Energy Transition",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of sustainability initiatives or energy transition efforts."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Corridor Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Presence in United States and South Korea; trading entity in US, parent constructing terminal in Korea, indicating cross-Pacific reach."
+    },
+    {
+      "feature": "Offtake / Customer Contracts",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Signed 18-year LNG supply deal with Energy Transfer, indicating long-term offtake contract."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Growth & Project Pipeline",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Constructing an import terminal in Ulsan, Korea, expected to complete by end of 2024, indicating growth in LNG infrastructure."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Subsidiary of SK Group; partnership with Energy Transfer for LNG supply; expanding from LPG to LNG business."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

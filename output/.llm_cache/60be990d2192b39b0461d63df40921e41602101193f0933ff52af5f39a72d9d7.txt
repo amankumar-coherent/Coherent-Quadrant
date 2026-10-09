@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence shows RootiRx ECG patch and CardioPad, but portfolio appears narrow with only a few products."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "A study on ECG data acquisition and diagnostic performance exists, but no detailed outcomes or safety data provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company introduced new mHealth products at Medica 2015, indicating some innovation, but limited R&D details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Has CE certification for Full Quality Assurance System, but no specific manufacturing scale or capabilities mentioned."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA 510(k) clearance (K163694) and CE certification (FI16/07021) are explicitly mentioned."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Based in Taipei with presence in San Francisco, but no evidence of broad global market penetration."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Used in a clinical study, but no evidence of widespread hospital adoption or strong brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Tracxn states Rooti Labs is unfunded and has not raised any funding, indicating weak financial backing."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Products like CardioPad for blood pressure and neuropathy suggest some expansion, but no clear pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Described as a joint venture between San Francisco and Taipei, but no specific partnerships or expansion plans detailed."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

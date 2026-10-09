@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "onsemi does not offer leading-edge digital process nodes like 3nm or 2nm; it focuses on power and sensing technologies using mature nodes.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["onsemi designs and manufactures power and sensing semiconductors."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "onsemi leads in specialized power process technologies such as SiC and GaN, but not in digital logic processes like FinFET or GAA.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["Silicon Carbide (SiC): Reliable supply of Silicon Carbide (SiC). Continuous supply of confidence.", "Gallium Nitride (GaN): Designed to deliver higher efficiency, greater power density, and fast switching performance."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "onsemi's roadmap focuses on advancing SiC and GaN technologies rather than next-generation digital nodes, with no announced 2nm or 1.4nm plans.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["onsemi Introduces GaNEXUS Gallium Nitride Power Portfolio"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "onsemi offers a broad portfolio across power, analog, sensors, and connectivity, but not logic or memory.",
+      "evidence_urls": ["https://www.onsemi.com/products"],
+      "evidence_snippets": ["Discrete & Power Modules", "Power Management", "Sensors", "Wireless Connectivity"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Revenue split is not disclosed in the knowledge base, but onsemi is primarily focused on power and sensing products.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["onsemi designs and manufactures power and sensing semiconductors."],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "onsemi likely partners with OSAT providers for packaging and test, but no specific details are available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "onsemi owns proprietary IP in power and sensing, including the Treo platform and Hyperlux sensors, but not CPU/GPU/AI accelerators.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["Treo Platform: The industry’s most advanced analog and mixed-signal platform.", "Hyperlux Sensors: Range of image and depth sensors for automotive, industrial and commercial."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "onsemi likely uses some third-party IP for digital blocks but primarily relies on its own analog and power IP; no licensing details are in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "onsemi's architecture is strong in automotive and industrial power/sensing, but not in AI or 5G digital processing.",
+      "evidence_urls": ["https://www.onsemi.com/solutions"],
+      "evidence_snippets": ["Automotive: ADAS, Electric and Hybrid Powertrain", "Industrial: Energy Infrastructure, Industrial Automation"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Specific wafer fabrication capacity and utilization rates are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Yield rates for leading-edge nodes are not applicable as onsemi does not produce leading-edge digital logic; its mature process yields are likely competitive but not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "onsemi offers some packaging solutions but not advanced 2.5D/3D or chiplet packaging; no specific capacity details are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "onsemi likely holds ISO 9001 and IATF 16949 certifications given its automotive focus, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.onsemi.com/company/quality-and-reliability"],
+      "evidence_snippets": ["Quality and Reliability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate (DPPM) is not disclosed, but onsemi emphasizes reliability for automotive and industrial applications.",
+      "evidence_urls": ["https://www.onsemi.com/company/quality-and-reliability"],
+      "evidence_snippets": ["Quality and Reliability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "onsemi provides RoHS and material composition data, indicating compliance with environmental regulations, but conflict minerals policy is not detailed.",
+      "evidence_urls": ["https://www.onsemi.com/products"],
+      "evidence_snippets": ["Material Composition (RoHS)", "Material Composition (China RoHS)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "onsemi has significant global presence with sales offices and distributors across Americas, Asia-Pacific, Europe, and Japan.",
+      "evidence_urls": ["https://www.onsemi.com/company/locations"],
+      "evidence_snippets": ["Asia & Pacific Distributors", "Americas Distributors", "Europe, Middle East & Africa Distributors", "Japan Distributors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "onsemi serves automotive, industrial, computing, consumer, and medical markets, with automotive and industrial being primary.",
+      "evidence_urls": ["https://www.onsemi.com/solutions"],
+      "evidence_snippets": ["Automotive", "Industrial", "Data Center", "Consumer", "Medical"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "onsemi's global manufacturing and sales footprint provides diversification, but specific risk mitigation strategies are not detailed.",
+      "evidence_urls": ["https://www.onsemi.com/company/locations"],
+      "evidence_snippets": ["Locations"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers and concentration risk are not disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "onsemi has partnerships like the acquisition of Synaptics and collaborations with ecosystem players, but specific details are limited.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["onsemi to Acquire Synaptics To enable the Next Generation of Intelligent Systems for Physical AI."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "onsemi collaborates with distributors and provides design tools, but specific ecosystem partnerships are not detailed.",
+      "evidence_urls": ["https://www.onsemi.com/design"],
+      "evidence_snippets": ["Elite Power Simulator", "System Solution Guides"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx details are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "onsemi's roadmap includes GaNEXUS GaN portfolio, Treo platform, and SiC expansion, with a focus on AI, electrification, and intelligent energy systems.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["onsemi Introduces GaNEXUS Gallium Nitride Power Portfolio", "Treo Platform: The industry’s most advanced analog and mixed-signal platform."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "onsemi is investing in GaN and SiC for AI power and electrification, but not in quantum or advanced memory.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["onsemi is helping power the future of AI, electrification and intelligent energy systems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "onsemi's roadmap aligns with trends in electrification, AI infrastructure, and sustainability, as evidenced by its product focus and sustainability report.",
+      "evidence_urls": ["https://www.onsemi.com/"],
+      "evidence_snippets": ["2025 Sustainability Report: onsemi is helping power the future of AI, electrification and intelligent energy systems"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No specific fab expansion projects are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and execution plans for capacity expansion are not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

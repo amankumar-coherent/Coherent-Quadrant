@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "CGD focuses on GaN power transistors, not on advanced silicon nodes like 3nm or 2nm, so it does not compete in that space.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "CGD leads in enhancement-mode GaN IC technology with its ICeGaN platform, offering ease-of-use and high performance compared to peers.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Industry-First, Easy to Use e-Mode GaN Integrated Circuit Enhancement Mode GaN: a novel platform with state-of-the-art static and dynamic performance increased ease-of-use and intelligent temperature control for the internal gate terminal for enhanced gate reliability."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "CGD's roadmap includes next-generation GaN developments, as indicated by its collaboration with NXP for early access, but specific node timelines are not disclosed.",
+      "evidence_urls": ["https://camgandevices.com/en/p/cgd-joins-forces-with-nxp-semiconductors-to-accelerate-time-to-market/"],
+      "evidence_snippets": ["early access to next-generation CGD GaN developments"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "CGD is specialized in GaN power transistors and does not offer products across multiple semiconductor categories like logic, memory, or analog.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 2,
+      "answer": "CGD's revenue is entirely from GaN power devices, with no diversification across product types.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "CGD likely partners with OSAT providers for packaging and testing, but no specific OSAT partnerships are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "CGD owns proprietary ICeGaN technology, which integrates smart features into GaN transistors, differentiating it from standard GaN devices.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Unlike other existing GaN devices, our smart ICeGaN® transistor can be operated with standard silicon gate drivers and does not require negative voltages for shutdown, hence removing the need for external, costly driving and clamping interfaces."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "CGD does not license its IP to other firms; it uses its own proprietary technology, and there is no evidence of reliance on third-party IP like ARM.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "CGD's architecture is strong in automotive and industrial applications, with a new 650V device for EVs and energy savings up to 50%.",
+      "evidence_urls": ["https://camgandevices.com/en/p/new-650v-icegan-device-for-automotive-applications-from-cgd-helps-increase-ev-range/"],
+      "evidence_snippets": ["CGD's new 650V ICeGaN® device with low on-resistance improves inverter efficiency for reduced thermal management provision and enables higher frequency switching for system size and weight reduction."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "CGD is a fabless company and does not own wafer fabrication capacity; it relies on foundry partners.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates are not disclosed, but as a fabless company, yields depend on foundry partners and are not directly comparable to leading-edge node benchmarks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "CGD does not offer advanced packaging like 2.5D/3D or chiplets; its focus is on GaN power devices.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "CGD likely holds standard quality certifications for automotive and industrial applications, but specific certifications are not mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "CGD emphasizes reliability through its ICeGaN technology, but specific defect rates (DPPM) are not disclosed.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["intelligent temperature control for the internal gate terminal for enhanced gate reliability"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "CGD publishes an Impact Report showing commitment to sustainability, including emissions intensity, but specific compliance details like RoHS or REACH are not mentioned.",
+      "evidence_urls": ["https://camgandevices.com/p/esg"],
+      "evidence_snippets": ["From improving the efficiency of our GaN technology to reducing emissions intensity to 4.93 tCO₂e per employee, CGD is taking measurable steps towards a lower-impact future."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "CGD has offices in the UK and Taiwan, indicating presence in Europe and Asia, but no manufacturing or R&D details are provided.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["UK Office Jeffreys Building, Suite 8 Cowley Road Cambridge CB4 0DS United Kingdom", "Taiwan Office 1106, 11F, No. 502, Section 2, Ren'ai Rd, Linkou District, New Taipei City"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "CGD targets automotive and industrial applications, as evidenced by its 650V device for EVs and energy savings claims, but revenue contribution is not disclosed.",
+      "evidence_urls": ["https://camgandevices.com/en/p/new-650v-icegan-device-for-automotive-applications-from-cgd-helps-increase-ev-range/"],
+      "evidence_snippets": ["CGD's new 650V ICeGaN® device with low on-resistance improves inverter efficiency for reduced thermal management provision and enables higher frequency switching for system size and weight reduction."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "CGD's presence in the UK and Taiwan provides some geographic diversification, but the extent of mitigation against regional disruptions is not detailed.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["UK Office", "Taiwan Office"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "CGD's top customers are not disclosed, but its partnership with NXP suggests a significant relationship; customer concentration risk is unknown.",
+      "evidence_urls": ["https://camgandevices.com/en/p/cgd-joins-forces-with-nxp-semiconductors-to-accelerate-time-to-market/"],
+      "evidence_snippets": ["CGD Joins Forces With NXP Semiconductors to Accelerate Time to Market"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "CGD has a strategic partnership with NXP Semiconductors, a major player, which is a strong ecosystem collaboration.",
+      "evidence_urls": ["https://camgandevices.com/en/p/cgd-joins-forces-with-nxp-semiconductors-to-accelerate-time-to-market/"],
+      "evidence_snippets": ["This new long-term collaboration will enable NXP to develop GaN-based system solutions, leveraging CGD’s advanced GaN products, early access to next-generation CGD GaN developments, and the team’s extensive expertise in GaN processes and technologies."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "CGD collaborates with NXP to deliver complete GaN-based solutions, but other ecosystem partnerships (foundries, OSATs, software) are not detailed.",
+      "evidence_urls": ["https://camgandevices.com/en/p/cgd-joins-forces-with-nxp-semiconductors-to-accelerate-time-to-market/"],
+      "evidence_snippets": ["This new long-term collaboration will enable NXP to develop GaN-based system solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "CGD's financial data (revenue, net income, free cash flow) is not publicly disclosed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "CGD's capital expenditure details are not available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "CGD's balance sheet information is not disclosed, so its ability to support large-scale investments is unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "CGD's roadmap includes next-generation GaN developments and new automotive devices, but specific milestones for 3-5 years are not detailed.",
+      "evidence_urls": ["https://camgandevices.com/en/p/cgd-joins-forces-with-nxp-semiconductors-to-accelerate-time-to-market/", "https://camgandevices.com/en/p/new-650v-icegan-device-for-automotive-applications-from-cgd-helps-increase-ev-range/"],
+      "evidence_snippets": ["early access to next-generation CGD GaN developments", "New 650 V ICeGaN Device for Automotive Applications"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "CGD's roadmap focuses on GaN power technology, not on AI chips, quantum, or advanced memory.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "CGD's roadmap aligns with industry trends toward electrification and energy efficiency, as seen in its automotive and energy-saving products.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["As electrification advances worldwide, so does the demand for highly efficient and innovative solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "CGD has not announced any new fab or expansion projects; as a fabless company, it relies on foundry partners.",
+      "evidence_urls": ["https://camgandevices.com"],
+      "evidence_snippets": ["Develops GaN power transistors, builds its own technology."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "CGD's revenue growth rate is not disclosed, but its partnership with NXP and new product launches suggest growth potential.",
+      "evidence_urls": ["https://camgandevices.com/en/p/cgd-joins-forces-with-nxp-semiconductors-to-accelerate-time-to-market/"],
+      "evidence_snippets": ["CGD Joins Forces With NXP Semiconductors to Accelerate Time to Market"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "CGD's funding and execution plans for capacity expansion are not detailed; it likely relies on foundry partnerships.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

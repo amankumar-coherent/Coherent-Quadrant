@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "MediaTek is a fabless semiconductor company and does not own process nodes; it relies on foundry partners like TSMC for advanced nodes, with recent flagship chips using 4nm/3nm-class processes.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions, powering smartphones, smart homes, and more."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "MediaTek does not lead in process technology as a fabless designer; it leverages foundry nodes and focuses on chip design innovation, not process development.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "MediaTek's roadmap for next-generation nodes depends on foundry partners; it has announced flagship chips using advanced nodes but does not publicly detail its own node roadmap.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek Dimensity 9500s", "MediaTek Dimensity 8500"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "MediaTek offers a broad portfolio across smartphone, smart home, networking, IoT, automotive, and personal computing, but is primarily focused on logic chips (SoCs) rather than memory, analog, or power.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Products: Smartphone, Smart Home, Networking and Connectivity, Internet of Things, Personal Computing, Automotive, Data Center"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "MediaTek does not publicly disclose a detailed revenue split by product type; its portfolio is heavily weighted toward smartphone and smart home SoCs, with growing IoT and automotive segments.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is the #1 provider of chipsets for smartphones globally."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "MediaTek is fabless and does not provide OSAT services; it partners with OSAT providers for assembly and test, but no specific partners are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "MediaTek owns proprietary IP including AI accelerators (NPUs), HyperEngine gaming technology, MiraVision display, and Imagiq camera, which differentiate its SoCs.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek HyperEngine", "MiraVision Display", "Imagiq for Smartphone Cameras"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "MediaTek licenses CPU and GPU IP from ARM for its smartphone and other SoCs, while also developing proprietary IP for AI, display, and camera; it does not license its own IP to others.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek Dimensity 5G", "MediaTek Helio 4G"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "MediaTek has strong architecture in AI (NPUs), 5G modems, and automotive cockpit platforms, positioning it well in high-growth areas.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Generative AI: MediaTek NPUs empower innovative devices", "5G Modems", "Auto Cockpit Platforms"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "MediaTek is fabless and does not own wafer fabrication capacity; it relies on foundry partners like TSMC, so it has no direct wafers-per-month capacity.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "As a fabless company, MediaTek does not control yield rates; yields are managed by its foundry partners, and MediaTek does not publicly disclose yield data.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "MediaTek does not offer advanced packaging itself but works with OSAT partners; it has not publicly detailed its packaging capabilities or capacity.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "MediaTek likely holds standard quality certifications like ISO 9001, but specific certifications are not mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "MediaTek does not publicly disclose defect rates (DPPM) or detailed reliability processes; it emphasizes quality in its products but specifics are not available.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "MediaTek likely complies with environmental regulations like RoHS and REACH, but specific compliance details are not in the knowledge base.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Sustainability at MediaTek"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "MediaTek has global presence with R&D and sales offices worldwide, including Taiwan (HQ), and serves markets across Asia, Europe, and the Americas.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Office Locations", "MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "MediaTek serves multiple end-markets including smartphones, smart home, IoT, automotive, and personal computing, with smartphones being the largest revenue contributor.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is the #1 provider of chipsets for smartphones globally."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "MediaTek's global footprint and diverse end-markets help mitigate regional risks, but it is heavily reliant on Asia for manufacturing and sales.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Office Locations", "MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "MediaTek's top customers include major smartphone OEMs like Samsung, Xiaomi, and Oppo, but specific customer concentration is not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is the #1 provider of chipsets for smartphones globally."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "MediaTek has strategic partnerships with NVIDIA for RTX Spark, Google for Googlebook, and likely with foundries and EDA vendors, though not all are detailed.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek Collaborates with NVIDIA on RTX Spark", "A New Era of AI Computing with Googlebook x MediaTek"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "MediaTek collaborates with ecosystem players like foundries (TSMC) and software partners, but specific details are not fully covered in the knowledge base.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "MediaTek's financials are not provided in the knowledge base; as a public company, it reports revenue and income, but specific figures are not available here.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Investor Relations", "Financial Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "MediaTek's CapEx data is not in the knowledge base; as a fabless company, its CapEx is lower than IDMs, but exact figures are not available.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Investor Relations", "Financial Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "MediaTek's balance sheet strength is not detailed in the knowledge base; it is a profitable company with cash reserves, but specifics are not provided.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Investor Relations", "Financial Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "MediaTek's roadmap includes AI edge computing, 5G advancements, Wi-Fi 7/8, and automotive platforms, as evidenced by its product and technology pages.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Generative AI: MediaTek NPUs empower innovative devices", "Wi-Fi 7", "5G Progress"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "MediaTek has a clear roadmap for AI chips (NPUs), 5G, and Wi-Fi 7/8, but no mention of quantum or advanced memory in the knowledge base.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Generative AI", "5G", "Wi-Fi 7"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "MediaTek's roadmap aligns with industry trends in AI, 5G, and connectivity, as shown by its focus on edge AI and next-gen Wi-Fi.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Leading the next wave of edge AI", "Wi-Fi 7"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "MediaTek does not own fabs, so it does not announce fab expansions; it relies on foundry partners for capacity.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "MediaTek's revenue growth is not provided in the knowledge base; it has grown in recent years due to 5G and AI, but specific figures are not available.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["Investor Relations", "Financial Information"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "MediaTek plans to fund capacity through foundry partnerships, but specific funding and execution details are not in the knowledge base.",
+      "evidence_urls": ["https://www.mediatek.com"],
+      "evidence_snippets": ["MediaTek is a global leader in semiconductor solutions."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

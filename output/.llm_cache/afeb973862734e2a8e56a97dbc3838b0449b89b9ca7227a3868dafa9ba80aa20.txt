@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Murata is not a semiconductor foundry and does not offer advanced process nodes like 3nm or 2nm; its focus is on electronic components and modules.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Murata does not lead in semiconductor process technologies such as FinFET or GAA; it specializes in ceramic-based components and modules.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Murata's roadmap focuses on component miniaturization and integration, not on next-generation semiconductor nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Murata offers a broad portfolio of electronic components including capacitors, inductors, sensors, and modules, but not logic, memory, or analog semiconductors.",
+      "evidence_urls": ["https://www.murata.com/en-us/products"],
+      "evidence_snippets": ["Capacitor", "Inductors", "Sensors", "Connectivity Modules"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Revenue split by product type is not disclosed in the provided knowledge base; Murata's portfolio is diversified across passive components and modules.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Murata does not provide OSAT services; it manufactures its own components and modules, and may partner with OSATs for some processes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Murata owns proprietary design IP in areas like RF modules, sensors, and power products, but not in CPU/GPU/AI accelerators.",
+      "evidence_urls": ["https://www.murata.com/en-us/products"],
+      "evidence_snippets": ["RFID Products", "Connectivity Modules", "Sensors"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Murata primarily uses its own IP and may license third-party IP for certain modules, but specific licensing details are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Murata has strong architectures in automotive and IoT applications, with products like in-vehicle Ethernet components and sensors.",
+      "evidence_urls": ["https://www.murata.com/en-us/news/emc/emifil/2026/0730"],
+      "evidence_snippets": ["Murata Commercializes 1210 inch size Metal Terminal Type Common Mode Choke Coils for the '10Base-T1S' In-Vehicle Ethernet Standard"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Murata does not operate semiconductor wafer fabs; it manufactures ceramic components and modules, so wafer capacity is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rates for semiconductor nodes are not applicable to Murata's component manufacturing; it focuses on high-quality passive components.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Murata offers advanced packaging for its modules, but not 2.5D/3D chiplets; its packaging is tailored to component integration.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Murata likely holds ISO 9001 and IATF 16949 certifications for its manufacturing, given its automotive-grade products, but specific certifications are not in the KB.",
+      "evidence_urls": ["https://www.murata.com/en-us/news/capacitor/ceramiccapacitor/2026/0715"],
+      "evidence_snippets": ["Murata Launches Automotive Safety-Certified Lead-Type Disc Ceramic Capacitors with Y1 Class Certification"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Defect rate (DPPM) is not disclosed in the KB; Murata emphasizes reliability through automotive-grade products and testing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Murata explicitly addresses environmental compliance with EU RoHS/REACH and California Proposition 65, as shown on its website.",
+      "evidence_urls": ["https://www.murata.com/en-us/support/compliance"],
+      "evidence_snippets": ["EU RoHS / REACH & California Proposition 65 Approach for chemical regulation for Murata Products."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Murata has a global presence with regional sites for Americas, EMEA, Southeast Asia, India, and Japan, indicating significant geographic reach.",
+      "evidence_urls": ["https://www.murata.com/en-us"],
+      "evidence_snippets": ["Select your region/language. Americas - English EMEA - English Southeast Asia - English India - English Global - English"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "Murata serves automotive, consumer, industrial, and healthcare markets, but revenue contribution by end-market is not in the KB.",
+      "evidence_urls": ["https://solution.murata.com/en-global/service/rfid-solution/"],
+      "evidence_snippets": ["RFID solution For fashion, retail, healthcare, and manufacturing industries"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Murata's global manufacturing and sales presence across multiple regions helps mitigate regional disruptions, though specific risk assessments are not in the KB.",
+      "evidence_urls": ["https://www.murata.com/en-us"],
+      "evidence_snippets": ["Select your region/language. Americas - English EMEA - English Southeast Asia - English India - English Global - English"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Top customers are not disclosed in the KB; Murata likely has a diversified customer base across industries, but concentration risk is unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Murata collaborates with Synopsys to provide simulation models, indicating strategic partnerships with EDA vendors.",
+      "evidence_urls": ["https://www.murata.com/en-us/news/other/other/2026/0616"],
+      "evidence_snippets": ["Murata Collaborates with Synopsys to Provide Simulation Models Through Ansys Electromagnetic and Thermal Analysis Tools"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Murata works with ecosystem players like Synopsys and provides solutions across RFID and renewable energy, but details on foundry/OSAT collaborations are not in the KB.",
+      "evidence_urls": ["https://solution.murata.com/en-global/service/efinnos/"],
+      "evidence_snippets": ["Integrated Renewable Energy Control Solution efinnos Realizing self-consumption-type renewable energy control using AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures are not provided in the KB; Murata is a major manufacturer, but specific revenue, net income, and cash flow are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not in the KB; Murata likely invests in manufacturing capacity, but specific percentages are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the KB; Murata is a stable company, but debt-to-equity and cash reserves are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Murata's roadmap includes innovations in robotics, AI power delivery, and automotive Ethernet, as indicated by recent news and campaigns.",
+      "evidence_urls": ["https://www.murata.com/en-us/campaigns/robotics", "https://www.murata.com/en-us/news/other/other/2026/0810"],
+      "evidence_snippets": ["Application guide: Advancing Humanoid Robotics: Murata’s Innovations for Robotics", "Powering AI at the Last Millimeter: Murata Heads to Hot Chips 2026"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Murata is involved in AI-related power solutions and robotics, but not in quantum or advanced memory; its roadmap focuses on component-level innovations.",
+      "evidence_urls": ["https://www.murata.com/en-us/news/other/other/2026/0810"],
+      "evidence_snippets": ["Powering AI at the Last Millimeter: Murata Heads to Hot Chips 2026"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Murata's roadmap aligns with trends in AI, automotive, and robotics, as seen in its product news and campaigns.",
+      "evidence_urls": ["https://www.murata.com/en-us/campaigns/robotics"],
+      "evidence_snippets": ["Application guide: Advancing Humanoid Robotics: Murata’s Innovations for Robotics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No specific fab expansion projects are mentioned in the KB; Murata may expand component manufacturing, but details are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Revenue growth rates are not provided in the KB; Murata is a stable company, but specific growth figures are unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding and expansion plans are not detailed in the KB; Murata likely invests in capacity, but specifics are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions only sugarBEAT CGM and proBEAT (in SEC filing), indicating a narrow portfolio focused on glucose monitoring."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "sugarBEAT is CE-marked and received SFDA approval, but no clinical performance data or safety outcomes are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Non-invasive wearable glucose sensing is innovative, and the company has filed a PMA with FDA, indicating ongoing R&D, but no specific R&D investments or pipeline details are given."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "sugarBEAT is CE-marked and received SFDA approval in Saudi Arabia; PMA filed with US FDA, indicating regulatory progress."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows first purchase order from U.S. health provider HealthFleet and provisional order from Middle East, plus SFDA approval, indicating some market entry but limited global scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Received purchase orders and regulatory approvals, but no evidence of widespread clinical adoption or brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "partial",
+      "why": "No revenue figures provided; company is on OTC (OTCPK:NMRD) suggesting small-cap, and evidence does not show profitability or strong financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions proBEAT in SEC filing, but no details on pipeline or expansion into other indications beyond glucose monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows purchase orders from HealthFleet and Middle East, and mentions partnerships in market reports, but no major strategic partnerships detailed."
+    }
+  ],
+  "evidence_used": true
+}

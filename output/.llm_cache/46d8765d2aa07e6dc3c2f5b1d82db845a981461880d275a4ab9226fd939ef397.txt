@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence shows only one device, MEMO Patch M, a single-channel ECG monitor (fda.innolitics.com). No other products mentioned."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "FDA 510(k) clearance indicates safety and performance review, but no clinical trial data or outcomes are cited."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "AI cardiac monitoring and wearable ECG suggest innovation, but no specific R&D pipeline or patents are mentioned."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems beyond FDA clearance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Has at least one FDA 510(k) clearance for MEMO Patch M (MedTracker, fda.innolitics.com)."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Based in Seoul, South Korea, but no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "partial",
+      "why": "FDA clearance suggests some trust, but no evidence of hospital adoption or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Estimated revenue of $14.8M and funding of $47.6M (compworth.com, tracxn.com), but no profitability or growth data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or expansion into new indications beyond current ECG monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "partial",
+      "why": "No specific partnerships mentioned; only investor funding from 17 investors (tracxn.com)."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

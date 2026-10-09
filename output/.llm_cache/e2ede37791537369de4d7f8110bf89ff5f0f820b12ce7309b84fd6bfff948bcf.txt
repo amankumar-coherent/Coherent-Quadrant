@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Acurable publishes clinical validation data for AcuPebble, a CE-marked wearable for home sleep apnoea diagnosis, indicating validation against gold standard.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["AcuPebble CE-marked wearable for home sleep apnoea diagnosis"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "No specific accuracy metrics like MARD are provided in the knowledge base, but the device is clinically validated for sleep apnoea diagnosis.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["AcuPebble CE-marked wearable for home sleep apnoea diagnosis"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 8,
+      "answer": "AcuPebble has CE marking, confirming sensor performance for medical use in Europe.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["AcuPebble CE-marked wearable for home sleep apnoea diagnosis"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "The knowledge base mentions only one device, AcuPebble, indicating a narrow portfolio.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["AcuPebble CE-marked wearable for home sleep apnoea diagnosis"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "AcuPebble focuses solely on respiratory diagnostics (sleep apnoea), not multiple therapeutic areas.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["Respiratory diagnostics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "AcuPebble is a clinical device for home use, but no consumer-focused devices are mentioned.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["home sleep apnoea diagnosis"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "The CE mark implies clinical validation, but peer-reviewed publications are not explicitly cited in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["CE-marked wearable"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "No ongoing or completed clinical trials are mentioned in the knowledge base, but the device is CE-marked for clinical use.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["CE-marked wearable"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Real-world evidence is not explicitly mentioned, but the device is intended for home use, implying real-world application.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["home sleep apnoea diagnosis"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Battery life is not specified in the knowledge base, but as a wearable for home sleep studies, it likely lasts at least one night.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["wearable"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "The device is designed for home use, suggesting comfort and ease of wear, but specific features like waterproofing are not mentioned.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["home sleep apnoea diagnosis"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Only one form factor (AcuPebble) is mentioned, with no indication of multiple options.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["AcuPebble"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 3,
+      "answer": "No EHR integration is mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "No APIs or SDKs are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "No support for HL7 or FHIR is mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "AcuPebble has CE marking, a regulatory approval for medical devices in Europe.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["CE-marked wearable"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 8,
+      "answer": "The CE mark is for a specific medical indication: home sleep apnoea diagnosis.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["home sleep apnoea diagnosis"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "The company is based in the UK and targets Europe and USA, but only CE marking is mentioned.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": ["UK, Europe, USA"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No user numbers or sales figures are provided in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "No distribution partnerships are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No CPT codes or reimbursement pathways are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No insurance coverage information is provided in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No patient assistance or subscription models are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue growth data is available in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No financial details are provided in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No subscription or repeat purchase models are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No partnerships with healthcare systems or research institutions are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No collaborations with tech or pharma companies are mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No participation in standards bodies or joint ventures is mentioned in the knowledge base.",
+      "evidence_urls": ["https://acurable.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

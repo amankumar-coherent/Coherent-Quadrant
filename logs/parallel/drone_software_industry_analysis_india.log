@@ -1,0 +1,169 @@
+[pipeline 17:33:12] market: Drone Software Industry Analysis (india) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india
+[pipeline 17:33:12] 1. verified rows: 188
+[pipeline 17:33:12] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india\_pipeline\axes_spec.json
+[pipeline 17:33:12] 3. 154 names -> 128 companies after dedupe (22 groups merged)
+[pipeline 17:33:12] 3b. operating-status check for 128 companies across 1 browser(s)
+[pipeline 17:46:59] 3b. 6 companies left out (not active or excluded by review): ['AirProbe Innovations Pvt. Ltd.', 'Airosspace R&D Private Limited', 'Throttle Aerospace Systems Pvt. Ltd.', 'V Drone Agro', 'Vizbee Robotic Solutions Pvt. Ltd.', 'Vizzbee Robotic Solutions Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 17:46:59] 3b. 5 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 17:46:59] ownership: 122 companies across 1 browser(s)
+[pipeline 17:47:01] ownership: 1/1 shard(s) still running
+[pipeline 17:48:01] ownership: 1/1 shard(s) still running
+[pipeline 17:49:01] ownership: 1/1 shard(s) still running
+[pipeline 17:50:01] ownership: 1/1 shard(s) still running
+[pipeline 17:51:01] ownership: 1/1 shard(s) still running
+[pipeline 17:52:01] ownership: 1/1 shard(s) still running
+[pipeline 17:53:01] ownership: 1/1 shard(s) still running
+[pipeline 17:54:01] ownership: 1/1 shard(s) still running
+[pipeline 17:55:01] ownership: 1/1 shard(s) still running
+[pipeline 17:56:01] ownership: 1/1 shard(s) still running
+[pipeline 17:57:01] ownership: 1/1 shard(s) still running
+[pipeline 17:58:01] ownership: 1/1 shard(s) still running
+[pipeline 17:59:01] ownership: 1/1 shard(s) still running
+[pipeline 18:00:01] ownership: 1/1 shard(s) still running
+[pipeline 18:01:01] ownership: 1/1 shard(s) still running
+[pipeline 18:02:01] ownership: 1/1 shard(s) still running
+[pipeline 18:03:01] ownership: 1/1 shard(s) still running
+[pipeline 18:04:01] ownership: 1/1 shard(s) still running
+[pipeline 18:05:01] identity: 5 companies across 1 browser(s)
+[pipeline 18:05:03] identity: 1/1 shard(s) still running
+[pipeline 18:06:03] identity: 1/1 shard(s) still running
+[pipeline 18:07:03] scope: 122 companies across 1 browser(s)
+[pipeline 18:07:05] scope: 1/1 shard(s) still running
+[pipeline 18:08:05] scope: 1/1 shard(s) still running
+[pipeline 18:09:05] scope: 1/1 shard(s) still running
+[pipeline 18:10:05] scope: 1/1 shard(s) still running
+[pipeline 18:11:05] scope: 1/1 shard(s) still running
+[pipeline 18:12:05] scope: 1/1 shard(s) still running
+[pipeline 18:13:05] scope: 1/1 shard(s) still running
+[pipeline 18:14:05] hq: 122 companies across 1 browser(s)
+[pipeline 18:14:07] hq: 1/1 shard(s) still running
+[pipeline 18:15:07] hq: 1/1 shard(s) still running
+[pipeline 18:16:07] hq: 1/1 shard(s) still running
+[pipeline 18:17:07] hq: 1/1 shard(s) still running
+[pipeline 18:18:07] hq: 1/1 shard(s) still running
+[pipeline 18:19:07] hq: 1/1 shard(s) still running
+[pipeline 18:20:07] hq: 1/1 shard(s) still running
+[pipeline 18:21:07] hq: 1/1 shard(s) still running
+[pipeline 18:22:07] 3c. ownership 122 / identity 5 / scope 122 answers: 6 more left out ['AeroVision', 'Autrik Technologies Pvt. Ltd.', 'Huviair Technologies Pvt. Ltd.', 'Passenger Drone Research Labs Pvt. Ltd.', 'Pureform Dynamics Pvt Limited', 'Zen Technologies Limited'], 7 owner labels, 87 adjacent-segment (not on the chart) ['1 Martian Way', 'AMX Innovations Private Limited', 'ARKin Labs Private Limited', 'ASTROC AS Technology', 'Aarav Unmanned Systems Pvt. Ltd.', 'Aerolyt'] -> _pipeline/auto_review.json
+[pipeline 18:22:07] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 18:22:07]    adjacent-segment companies taken off the chart: ['ideaForge Technology Ltd.', 'NewSpace Research and Technologies', 'Asteria Aerospace Limited', 'ASTROC AS Technology', 'Indo Wings Private Limited', 'GarudaUAV Soft Solution Private Limited', 'BharatRohan Airborne Innovations Private Limited', 'Okulo Aerospace Private Limited', 'Aeronica Advance Technologies Pvt. Ltd.', 'AMX Innovations Private Limited', 'Airpix', 'Aiotize Private Limited', 'Vayunotics Technologies Pvt. Ltd.', 'Hawking Defence Services Private Limited', 'Automaton AI Infosystem Pvt. Ltd.']
+[pipeline 18:22:07]    Top 20 refilled after 3b: added ['Passenger Drone Research Pvt. Ltd. (PDRL)', 'Skylark Drones', 'Passenger Drone Research Pvt. Ltd.', 'NavStik Labs', 'Rebhu Computing Pvt. Ltd.', 'SUIND Private Limited', 'Vyorius Drones Private Limited', 'Deepmatrix Private Limited', 'AlgoBotix Private Limited', 'Vortex Autonomous Systems Private Limited', 'Aerial Kinetics Private Limited', 'Aakashe Innovations Private Limited', 'Beavoice Infotech Private Limited', 'Avianco Technologies Private Limited', 'Kesowa Infinite Ventures Pvt Ltd', 'VyomOS Private Limited', 'VSol4U Technologies Private Limited']
+[pipeline 18:22:07]    evidence pool: 20 companies -> C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india\_pipeline\evidence_pool.json
+[pipeline 18:22:07] 5. 26 supporting point(s) on invalid sources removed before gap-fill
+[pipeline 18:22:07] 5. evidence round 1: 18 companies with gaps
+[pipeline 18:22:07] evidence_r1: 17 companies across 1 browser(s)
+[pipeline 18:22:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:23:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:24:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:25:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:26:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:27:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:28:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:29:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:30:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:31:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 18:32:09] reasoning_r1: 18 companies across 1 browser(s)
+[pipeline 18:32:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:33:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:34:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:35:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:36:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:37:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:38:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:39:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:40:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:41:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:42:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:43:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:44:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:45:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:46:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:47:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:48:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:49:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:50:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:51:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:52:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:53:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:54:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:55:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:56:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:57:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:58:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 18:59:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:00:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:01:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:02:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:03:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:04:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:05:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:06:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:07:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:08:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:09:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:10:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:11:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:12:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:13:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:14:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:15:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:16:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:17:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:18:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:19:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:20:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:21:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:22:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:23:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:24:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:25:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:26:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:27:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:28:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:29:11] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:30:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:31:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:32:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:33:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:34:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:35:12] reasoning_r1: 1/1 shard(s) still running
+[pipeline 19:36:12] 5. evidence round 2: 1 companies with gaps
+[pipeline 19:36:12] reasoning_r2: 1 companies across 1 browser(s)
+[pipeline 19:36:14] reasoning_r2: 1/1 shard(s) still running
+[pipeline 19:37:14]    WARNING: only 116 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 19:37:14]    --keep 120: 20 chart/evidence + 96 long tail kept, 0 lower-scored dropped
+[pipeline 19:37:14]    20 companies with full evidence, 96 in the long tail
+[pipeline 19:37:14] 6. composite scores (5 per quadrant)
+[pipeline 19:37:16] 7. rewriting hedge wording / first person in evidence
+[pipeline 19:37:18] 7b. supporting points: 7 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 19:37:18] 7b. current name for NavStik Labs: FlytBase (listed brand is legacy)
+[pipeline 19:37:18] 7b. owner of Asteria Aerospace Limited: Reliance Strategic Business Ventures Ltd
+[pipeline 19:37:18] 7b. owner of Dhaksha Unmanned Systems Private Limited: Coromandel International Limited
+[pipeline 19:37:18] 7b. owner of GarudaUAV Soft Solution Private Limited: Trentar Private Limited
+[pipeline 19:37:18] 7b. owner of General Aeronautics Pvt. Ltd.: Adani Defence Systems and Technologies Limited
+[pipeline 19:37:18] 7b. owner of Geokno India Private Limited: GMR Group
+[pipeline 19:37:18] 7b. owner of Indrones Solutions Private Limited: MapmyIndia
+[pipeline 19:37:18] 7b. owner of Navifly Aerospace Technologies India Private Limited: Skye Air Mobility
+[pipeline 19:37:18] 8. building HTML / JSON / CSV report
+[pipeline 19:37:20] 8. report page: interactive design (drone_software_industry_analysis_india_report.html); static copy drone_software_industry_analysis_india_report_classic.html
+[pipeline 19:37:44] 8b. PDF report: drone_software_industry_analysis_india_report.pdf
+[pipeline 19:38:24] 8b. Word report: drone_software_industry_analysis_india_report.docx
+[pipeline 19:38:25] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 116 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+[pipeline 19:38:25] report: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india\drone_software_industry_analysis_india_report.html

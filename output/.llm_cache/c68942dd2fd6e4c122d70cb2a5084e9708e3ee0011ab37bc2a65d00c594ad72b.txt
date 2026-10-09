@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only a single device (NightOwl) and categories like Smartwatches, Wearables, Fitness Trackers, but no portfolio breadth beyond that."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA-cleared (K191031) and described as 'clinically validated' in ResMed acquisition press release; used for home sleep apnea testing."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Described as 'leader in connected home sleep testing' and 'clinically validated, consumer-friendly devices' indicating innovation, but no specific R&D details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No direct evidence on manufacturing capabilities or quality systems; only FDA clearance implies some quality compliance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "CE-marked and FDA-cleared (K191031) for prescription use; also mentioned as FDA approved in SleepApnea.org review."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Based in Belgium, acquired by ResMed (global company), and sold in many markets per ResMed statement; but specific country presence not detailed."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA clearance, positive reviews from Sleep Foundation and SleepApnea.org, and acquisition by ResMed indicate trust and adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Acquired by ResMed in 2021 suggests financial viability, but no revenue figures or profitability data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "No explicit pipeline details; only current use for sleep apnea diagnosis, no mention of future indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired by ResMed, a major player, which is a significant partnership/expansion; also exhibited at European conferences."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

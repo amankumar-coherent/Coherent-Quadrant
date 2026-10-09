@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only the HeartBeam System, a 3-lead ECG recorder; no other products are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No clinical trial data, safety outcomes, or performance metrics are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "The credit-card sized VECG wearable is described as a specialty, indicating some innovation, but no R&D details are given."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No information about manufacturing capabilities or quality systems is present in the evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The device is described as FDA-cleared (implied by 'intended to be used' and company IR), but no explicit regulatory details are provided."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "Evidence mentions a partnership with Atelier Health in Beverly Hills, indicating limited geographic reach; no global presence details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of clinical adoption, physician endorsements, or brand trust metrics."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "supported",
+      "why": "Revenue is reported as $747,000 with 33 employees, indicating very low financial performance."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or expansion into new indications beyond the current ECG device."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions a commercial partnership with Atelier Health, indicating some business expansion, but limited scope."
+    }
+  ],
+  "evidence_used": true
+}

@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions a single product line (VITALERTER platform) with contact-free monitoring of vital signs and body motion, but no details on multiple devices or breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No clinical trial data, safety studies, or performance metrics are provided in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Described as innovative with contact-free IoT biosensors and predictive alerts, but no specific R&D investments or pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of manufacturing capabilities or quality systems; company is small (5-7 employees)."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence listed as United States, but also described as Israeli startup; no evidence of multi-market commercial presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentioned as used in long-term care organizations, but no evidence of widespread adoption or brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Estimated revenue $2.0M (range $1.2M-$3.5M) with 5-7 employees; funding undisclosed, indicating small scale."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of pipeline products or expansion into new indications beyond current monitoring."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Investor CDI Startups mentioned, but no evidence of strategic partnerships or business expansion activities."
+    }
+  ],
+  "evidence_used": true
+}

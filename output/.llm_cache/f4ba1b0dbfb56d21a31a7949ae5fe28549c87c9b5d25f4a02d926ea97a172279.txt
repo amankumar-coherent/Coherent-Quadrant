@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Advantest is a leading provider of semiconductor test systems, supporting the most advanced nodes through products like the V93000 EXA Scale for SoC testing and the T5801 for next-generation memory, but does not manufacture chips itself.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["SoCテストシステム V93000 EXA Scale 新時代のテスト技術課題に応える最先端半導体テスト・ソリューション", "メモリテストシステム T5801 次世代超高速DRAMのGDDR7、LPDDR6、DDR6を試験可能なメモリテストシステム"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Advantest leads in test technology for advanced nodes, with products like the V93000 EXA Scale and T5801 for next-gen memory, but does not compete in process technology like FinFET or GAA.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["SoCテストシステム V93000 EXA Scale 新時代のテスト技術課題に応える最先端半導体テスト・ソリューション", "メモリテストシステム T5801 次世代超高速DRAMのGDDR7、LPDDR6、DDR6を試験可能なメモリテストシステム"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Advantest's roadmap includes continuous innovation in test solutions for next-generation nodes, as evidenced by recent product launches like the T2000 AiR2X and M5241, but specific node timelines are not disclosed.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["2025/12/11 製品情報 アドバンテストが空冷式のSoC・パワーアナログ対応テストソリューション「T2000 AiR2X」を発表", "2025/12/10 製品情報 アドバンテストがAIデバイス向け次世代メモリハンドラ「M5241」を発表"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 9,
+      "answer": "Advantest offers a broad portfolio across SoC, memory, power semiconductor, and analog test systems, as well as test handlers, probers, and other peripherals, covering multiple semiconductor categories.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["半導体テストシステム", "テストシステム周辺機器", "SoCテストシステム", "パワー半導体テストシステム", "メモリテストシステム"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "The knowledge base does not provide revenue split by product type, but Advantest's product range suggests a diversified portfolio across SoC, memory, and power test systems.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["SoCテストシステム", "パワー半導体テストシステム", "メモリテストシステム"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "Advantest provides test solutions used by OSATs and offers services like test cell automation and device qualification, but does not directly provide OSAT services.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["テストセル・オートメーション", "デバイス総合認定試験"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "Advantest owns proprietary test IP such as the V93000 EXA Scale and T5801, and software solutions like ACS and SiConic, which are differentiated in the test market.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["SoCテストシステム V93000 EXA Scale", "メモリテストシステム T5801", "Advantest® Cloud Solutions", "Advantest SiConic®"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Advantest primarily develops its own test IP and does not license CPU/GPU IP; it may use third-party IP in its systems, but this is not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Advantest's architecture is strong in high-growth areas like AI and advanced memory, with products like the M5241 handler for AI devices and T5801 for next-gen DRAM.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["2025/12/10 製品情報 アドバンテストがAIデバイス向け次世代メモリハンドラ「M5241」を発表", "メモリテストシステム T5801 次世代超高速DRAMのGDDR7、LPDDR6、DDR6を試験可能"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Advantest does not operate wafer fabs; it designs and manufactures test equipment, so wafer capacity and utilization are not applicable.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Yield rate is not applicable as Advantest does not fabricate wafers; its focus is on test systems that ensure device quality.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Advantest offers test interface boards, substrates, and sockets through Advantest Interconnect Solutions, which support advanced packaging, but does not provide packaging services itself.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["Advantest Interconnect Solutions™", "テスト用インタフェースボード", "サブストレート", "テストソケット"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Advantest likely holds ISO 9001 and other quality certifications, but specific certifications are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Advantest ensures reliability through rigorous testing solutions, but specific defect rates (DPPM) are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 8,
+      "answer": "Advantest demonstrates strong environmental compliance with CDP supplier engagement top rating and EcoVadis Gold Medal, indicating robust sustainability practices.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["CDP「サプライヤーエンゲージメント評価」で最高評価", "EcoVadis社のサステナビリティ評価で「ゴールドメダル」を取得"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Advantest has a global presence with offices in Japan, Americas, Europe, Southeast Asia, Korea, Taiwan, and China, indicating significant geographic reach.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["拠点・関係会社 (日本)", "拠点・関係会社 (アメリカ)", "拠点・関係会社 (ヨーロッパ)", "拠点・関係会社 (東南アジア)", "拠点・関係会社 (韓国)", "拠点・関係会社 (台湾)", "拠点・関係会社 (中国)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Advantest serves semiconductor manufacturers across various end-markets including AI, automotive, and consumer electronics, but revenue contribution by end-market is not detailed.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["AIデバイス向け次世代メモリハンドラ", "パワー半導体デバイス向け統合テストプラットフォーム"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "Advantest's global footprint across multiple regions helps mitigate risks from regional disruptions, as evidenced by its extensive office network.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["拠点・関係会社 (日本)", "拠点・関係会社 (アメリカ)", "拠点・関係会社 (ヨーロッパ)", "拠点・関係会社 (東南アジア)", "拠点・関係会社 (韓国)", "拠点・関係会社 (台湾)", "拠点・関係会社 (中国)"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Advantest's top customers are major semiconductor manufacturers, but specific names and concentration risk are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Advantest has strategic partnerships, such as with OpenLight for silicon photonics test solutions, and participates in industry events like VOICE developer conference.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["アドバンテストとOpenLight社がシリコンフォトニクス向けテストソリューションの開発で協業", "「VOICE 2026 Developer Conference」を米国スコッツデールで開催"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 8,
+      "answer": "Advantest collaborates with ecosystem players through solutions like SiConic for design-to-test integration and ACS cloud solutions, enabling complete test workflows.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["Advantest SiConic® 最先端SoCの設計検証、シリコン検証、そしてテストを統合する、自動化と拡張性に優れたエコシステム", "Advantest® Cloud Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Financial figures are not provided in the knowledge base, but Advantest is a major player with consistent profitability; specific numbers require external sources.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "CapEx details are not available in the knowledge base; as a test equipment maker, CapEx is typically lower than fabs, but no specific data is provided.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Advantest's balance sheet is likely strong given its market position, but specific debt-to-equity and cash reserves are not in the knowledge base.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 8,
+      "answer": "Advantest's roadmap includes new products like T2000 AiR2X, M5241, and MTe, indicating focus on power, AI, and advanced memory test solutions over the next few years.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["2025/12/11 製品情報 アドバンテストが空冷式のSoC・パワーアナログ対応テストソリューション「T2000 AiR2X」を発表", "2025/12/10 製品情報 アドバンテストがAIデバイス向け次世代メモリハンドラ「M5241」を発表", "2025/10/30 製品情報 アドバンテストがパワー半導体デバイス向け統合テストプラットフォーム「MTe」を発表"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Advantest has clear roadmap for AI and advanced memory with products like M5241 and T5801, and is exploring silicon photonics with OpenLight, but quantum is not mentioned.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["2025/12/10 製品情報 アドバンテストがAIデバイス向け次世代メモリハンドラ「M5241」を発表", "メモリテストシステム T5801 次世代超高速DRAMのGDDR7、LPDDR6、DDR6を試験可能", "アドバンテストとOpenLight社がシリコンフォトニクス向けテストソリューションの開発で協業"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Advantest's roadmap aligns with industry trends in AI, advanced memory, and power semiconductors, as shown by recent product launches targeting these areas.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": ["2025/12/10 製品情報 アドバンテストがAIデバイス向け次世代メモリハンドラ「M5241」を発表", "2025/10/30 製品情報 アドバンテストがパワー半導体デバイス向け統合テストプラットフォーム「MTe」を発表"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Advantest does not build fabs; it expands through new product development and possibly manufacturing capacity, but specific expansion projects are not detailed.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 6,
+      "answer": "Revenue growth data is not in the knowledge base, but Advantest's continuous product launches suggest growth; specific rates require financial reports.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Advantest likely funds expansions through operating cash flow and debt, but specific plans are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.advantest.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

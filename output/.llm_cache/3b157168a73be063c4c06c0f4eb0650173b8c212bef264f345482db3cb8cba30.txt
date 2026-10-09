@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Company website mentions +50 products in market and therapeutic areas including diabetes and obesity, but no specific GLP-1 product names or details."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website states focus on hypertension, diabetes, dyslipidemia, and obesity, but no evidence of differentiated GLP-1 therapies."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website has sections for Investigación y Desarrollo, Desarrollo de Productos, and Estudios Clínicos, and mentions +150 patents, but no specific GLP-1 pipeline details."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website claims products developed with high quality and safety standards, but no specific manufacturing or supply evidence for GLP-1."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions pharmacovigilance and quality standards, but no specific regulatory approvals or compliance details for GLP-1."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Website states presence in 15 countries, but no specific GLP-1 market access details."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website claims to be a driver of health in Mexico and mentions +3 million patients treated, but no specific GLP-1 brand reputation evidence."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided in evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions R&D and clinical studies, but no specific GLP-1 pipeline or indication roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion in GLP-1."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

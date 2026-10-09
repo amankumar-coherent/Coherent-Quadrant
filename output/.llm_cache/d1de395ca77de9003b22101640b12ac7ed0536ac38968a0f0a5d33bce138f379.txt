@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only mentions 'Developing GLP-1 RA biosimilars' with no specific products or molecules listed."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of therapeutic differentiation in GLP-1; company focuses on IV drugs, nutrition, MedTech, and biopharma for autoimmune diseases and cancer."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No clinical trial data or R&D specifics for GLP-1 biosimilars; only general mention of development."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Fresenius Kabi is a global healthcare company with broad portfolio and global presence, but no specific GLP-1 manufacturing evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company emphasizes quality commitment and certified systems, but no specific GLP-1 regulatory approvals or compliance details."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Global presence with websites in many countries, but no evidence of GLP-1 product availability in those markets."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Recognized as Top Employer in 13 countries, but no specific reputation in GLP-1 space."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Parent Fresenius reports strong Q2 performance and raised guidance, but no GLP-1-specific financials."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Only 'Developing GLP-1 RA biosimilars' with no pipeline details or indication roadmap."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of partnerships or business expansion specific to GLP-1."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

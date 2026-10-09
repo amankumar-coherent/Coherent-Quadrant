@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Tokyo Gas is primarily an LNG importer and distributor, not a liquefaction operator, so it has no nameplate liquefaction capacity.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "As Tokyo Gas does not operate liquefaction facilities, it has no utilization rate for such assets.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Tokyo Gas operates no liquefaction trains; its role is importing and distributing LNG.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "As a major LNG importer, Tokyo Gas secures feedstock through long-term contracts and diversified supply sources, though specific strategy details are not in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "The percentage of feedstock from long-term versus spot is not disclosed in the KB, but as a major importer, Tokyo Gas likely relies heavily on long-term contracts.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Tokyo Gas likely diversifies feedstock sources across regions to ensure supply security, but specific basin diversification is not detailed in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 2,
+      "answer": "Tokyo Gas does not operate LNG trains, so it has no on-stream factor for liquefaction assets.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 2,
+      "answer": "No unplanned outages or force majeure events are reported for Tokyo Gas because it does not operate liquefaction facilities.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 2,
+      "answer": "Tokyo Gas has no liquefaction plants, so planned maintenance turnarounds are not applicable.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Tokyo Gas does not operate LNG liquefaction facilities, so it does not report a TRIR for such operations.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "No major regulatory fines or sanctions are mentioned in the KB, but as a major utility, Tokyo Gas likely maintains good compliance.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Tokyo Gas likely holds certifications like ISO 14001 for its operations, but specific certifications are not listed in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 2,
+      "answer": "Tokyo Gas does not produce LNG, so it does not report carbon intensity for liquefaction facilities.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Tokyo Gas likely implements measures to reduce emissions in its import and distribution operations, but specific measures are not in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "As a major energy company, Tokyo Gas likely publishes sustainability reports, but this is not confirmed in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Tokyo Gas likely has significant long-term LNG purchase contracts, but contracted sales volume is not disclosed in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "The average remaining duration of Tokyo Gas's LNG contracts is not specified in the KB, but long-term contracts are typical for major importers.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Spot LNG sales percentage is not provided in the KB, but Tokyo Gas likely has some spot purchases to balance supply.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Tokyo Gas likely imports LNG from multiple countries, but the exact number of export countries is not in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "The percentage of LNG sales to top 3 customers is not disclosed, but as a utility, Tokyo Gas likely has a diverse customer base.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Tokyo Gas's portfolio is likely focused on Japan, with limited exports to other regions, so it may not be balanced across Asia, Europe, and the Americas.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Financial figures for LNG operations are not in the KB, but Tokyo Gas is a major company with substantial revenue.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Debt-to-equity and interest coverage ratios are not provided in the KB, but Tokyo Gas likely maintains a stable financial profile.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Free cash flow and liquidity details are not in the KB, but Tokyo Gas likely has adequate liquidity as a major utility.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 2,
+      "answer": "Tokyo Gas does not have LNG liquefaction projects under construction or at FID, as it is not a liquefaction developer.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 2,
+      "answer": "No timeline for new liquefaction capacity exists for Tokyo Gas because it does not build LNG plants.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 2,
+      "answer": "Tokyo Gas has no expansion projects in early development for liquefaction, as it is not an LNG producer.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 2,
+      "answer": "Tokyo Gas has negligible global market share in LNG production or exports because it is an importer, not a producer.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Tokyo Gas likely has joint ventures in LNG procurement and distribution, but specific partners are not listed in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Tokyo Gas's LNG portfolio is focused on import and distribution, so it differs from producers in scale and cost position, but comparison details are not in the KB.",
+      "evidence_urls": ["https://www.tokyo-gas.co.jp"],
+      "evidence_snippets": ["Major LNG importer and distributor in Japan, owns and markets LNG."],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

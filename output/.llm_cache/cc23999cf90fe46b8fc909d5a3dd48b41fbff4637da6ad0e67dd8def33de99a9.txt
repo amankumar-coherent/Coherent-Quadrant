@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "Micron is a leader in memory process technology, with advanced nodes like 1γ DRAM and G9 NAND, though it does not compete in logic nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["1γ DRAM technology", "G9 NAND technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "Micron leads in memory-specific process technologies, particularly DRAM and NAND, with innovations like 1γ DRAM and G9 NAND, but does not focus on logic processes like FinFET or GAA.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["1γ DRAM technology", "G9 NAND technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Micron's roadmap includes continued advancement in DRAM and NAND nodes, with plans for U.S. expansion and next-generation memory technologies, but specific timelines for 2nm or 1.4nm logic nodes are not applicable.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["U.S. expansion", "Building memory and R&D manufacturing in the U.S."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Micron is specialized in memory and storage solutions (DRAM, NAND, NOR) and does not offer logic, analog, or power products, making its portfolio narrow compared to diversified semiconductor companies.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Memory", "Storage", "Multichip packages"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Micron's revenue is primarily from memory and storage products, but the knowledge base does not provide specific revenue split percentages, so the diversification is limited to memory categories.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Memory", "Storage"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Micron does not offer OSAT services; it focuses on memory manufacturing and may partner with OSAT providers, but the knowledge base lacks details on such partnerships.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Micron owns proprietary design IP for memory architectures like HBM and DDR5, but it does not have CPU, GPU, or AI accelerator IP, focusing instead on memory-specific innovations.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM", "DDR5 TEP resources"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Micron primarily relies on its own memory IP and does not license CPU or GPU IP; it may use third-party IP for interfaces, but the knowledge base does not specify licensing practices.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Micron's architecture is strong in AI and data center memory, with HBM4 designed for NVIDIA and high-bandwidth solutions, positioning it well in high-growth areas.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin", "AI data center"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide specific wafer fabrication capacity or utilization rates, but Micron is a major memory manufacturer with global fabs.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["U.S. expansion", "Building memory and R&D manufacturing in the U.S."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Micron is known for high yields in memory manufacturing, but specific yield rates are not disclosed in the knowledge base; it is considered a leader in DRAM and NAND yield.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "Micron offers advanced packaging for memory, such as HBM and multichip packages, but the knowledge base does not detail 2.5D/3D or chiplet packaging capacity.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Multichip packages", "HBM"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Micron likely holds standard quality certifications like ISO 9001 and IATF 16949 for automotive, but the knowledge base does not list specific certifications.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Quality", "Functional safety for automotive"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "Micron emphasizes quality and reliability, especially for automotive and industrial applications, but specific defect rates (DPPM) are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Quality", "zero-defect mindset"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 7,
+      "answer": "Micron addresses environmental compliance and responsible sourcing, as indicated by sustainability sections, but specific RoHS/REACH details are not in the knowledge base.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Sustainability", "Responsible sourcing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Micron has a global presence with manufacturing and R&D in the U.S., Asia, and Europe, as indicated by its global operations and language-specific sites.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["China - 简体中文", "Japan - 日本語", "Malaysia - English", "Singapore - English", "Taiwan – 繁體中文"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Micron serves multiple end-markets including AI, automotive, client PC, consumer, data center, industrial IoT, mobile, and network infrastructure, but revenue contribution is not detailed.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["AI", "Automotive", "Client PC", "Consumer", "Data center and servers", "Industrial IoT", "Mobile", "Network infrastructure"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Micron's global footprint across multiple regions helps mitigate regional disruptions, but the knowledge base does not provide specific risk mitigation strategies.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["U.S. expansion", "Global culture and workforce"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "The knowledge base does not list specific top customers or concentration risk, but Micron likely has major customers in data center and mobile sectors.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Micron has strategic partnerships with ecosystem players like NVIDIA (HBM4) and participates in technology enablement programs, but details on EDA or research consortia are not provided.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin", "Technology Enablement Program (TEP)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Micron collaborates with partners through programs like TEP and has a partner network, but the knowledge base does not detail how it works with foundries or OSATs.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Partner networks", "Technology Enablement Program (TEP)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide financial figures, but Micron is a major memory manufacturer with significant revenue; specific numbers are not available.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Micron's capital expenditure is substantial, especially with U.S. expansion plans, but specific CapEx figures are not in the knowledge base.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["With more than $250 billion in planned investment through 2035"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Micron's planned $250 billion investment indicates strong financial capacity, but balance sheet details like debt-to-equity are not provided.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["With more than $250 billion in planned investment through 2035"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Micron's roadmap includes HBM4 for NVIDIA, PCIe Gen6 SSDs, and U.S. fab expansions, indicating clear milestones for memory and storage.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin", "World’s first PCIe® Gen6 SSD in mass production", "U.S. expansion"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 8,
+      "answer": "Micron has a clear roadmap for advanced memory (HBM4, DDR5) and storage (PCIe Gen6, 245TB SSD), aligning with AI and data center trends.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin", "Industry leading 245TB SSD now shipping"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 8,
+      "answer": "Micron's roadmap aligns with industry trends in AI, data center, and edge computing, as evidenced by its focus on HBM, high-capacity SSDs, and edge AI solutions.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["AI data center", "Edge AI", "HBM4 designed for NVIDIA Vera Rubin"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "Micron has announced major U.S. fab expansions in Idaho, New York, and Virginia with $250 billion planned investment, significantly increasing capacity.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["U.S. expansion", "With more than $250 billion in planned investment through 2035"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide revenue growth rates, but Micron's expansion plans suggest expected growth; specific numbers are not available.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 7,
+      "answer": "Micron plans to fund expansions through its $250 billion investment, indicating strong financial commitment, but specific funding mechanisms are not detailed.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["With more than $250 billion in planned investment through 2035"],
+      "grounding": "partial"
+    }
+  ]
+}

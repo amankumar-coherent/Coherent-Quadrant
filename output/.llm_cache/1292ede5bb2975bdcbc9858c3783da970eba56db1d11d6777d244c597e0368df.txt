@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence shows only insulin glargine product; no GLP-1 product named."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 therapeutic differentiation evidenced; only insulin glargine for diabetes."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No clinical pipeline or R&D for GLP-1 mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "National production pioneer for insulin glargine in Brazil, but no GLP-1 manufacturing evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Listed on B3 and supplies SUS, implying regulatory compliance, but no GLP-1 specific approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence in Brazil with SUS access for insulin glargine, but no GLP-1 market access evidence."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Recognized as 100% Brazilian biotech with strategic milestone, but no GLP-1 brand reputation."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data provided."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No GLP-1 pipeline or indication roadmap mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Partnership with Brazilian Ministry of Health for insulin, but no GLP-1 partnerships."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

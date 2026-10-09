@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence mentions only one product, Cicer, a wearable ECG patch. No other devices are listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Cicer is described as 'clinical grade' and uses predictive analytics, but no clinical trial data or safety outcomes are provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Uses proprietary IoT tech and predictive analytics, indicating innovation. Raised funding to expand product, suggesting ongoing R&D."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Presence only in India; no evidence of global reach or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Raised funding from investors, but no evidence of hospital adoption or clinician endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Raised pre-Series A and angel funding, but revenue and profitability are undisclosed."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Plans to expand Cicer, but no specific new indications or pipeline products mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "supported",
+      "why": "Has investor partnerships (Pi Ventures, ITI Growth Opportunities Fund) and plans to expand product, but no strategic partnerships with hospitals or distributors."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

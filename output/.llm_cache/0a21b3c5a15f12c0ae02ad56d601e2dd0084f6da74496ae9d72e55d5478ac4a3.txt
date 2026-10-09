@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Nexperia does not offer leading-edge logic nodes like 3nm or 2nm; its focus is on mature nodes for discrete and analog products.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Nexperia offers a broad portfolio of low- / middle-voltage (12-200 V) P- and N-channel silicon MOSFETs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Nexperia leads in specific mature process technologies for power and discrete semiconductors, such as low VCEsat bipolar transistors and advanced field-stop IGBTs, but not in FinFET or GAA.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Breakthrough In Small Signal series of low VCEsat devices", "robust and cost-effective carrier stored trench-gate (CSTBT) advanced field-stop (FS) construction"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 3,
+      "answer": "Nexperia's roadmap focuses on enhancing existing power and discrete technologies rather than next-generation logic nodes like 2nm or 1.4nm.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Raising the bar for robust and reliable power switching, Nexperia’s Silicon Carbide (SiC) diodes and MOSFETs"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "Nexperia offers a broad portfolio across multiple categories including bipolar transistors, diodes, ESD protection, MOSFETs, SiC, GaN, IGBTs, and analog & logic ICs, but not memory.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Discover Nexperia’s extensive portfolio of essential semiconductors which enable the basic functionality of virtually every commercial electronic design in the world"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide revenue split by product type, but Nexperia's portfolio is diversified across power and logic, with a strong focus on discretes.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["All products: Bipolar transistors, Diodes, ESD protection, TVS, signal conditioning, MOSFETs, SiC power devices, GaN FETs, IGBTs, Analog & Logic ICs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Nexperia operates its own fabs and does not appear to offer OSAT services, but it likely partners with OSAT providers for some packaging needs.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Nexperia owns proprietary design IP in areas like low VCEsat bipolar transistors and advanced field-stop IGBTs, but not in high-end CPU/GPU/AI accelerators.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Breakthrough In Small Signal series of low VCEsat devices", "carrier stored trench-gate (CSTBT) advanced field-stop (FS) construction"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Nexperia likely licenses some third-party IP for logic and interface products, but also develops its own proprietary power and discrete IP.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Alongside a comprehensive portfolio of logic functions, analog switches and I²C interface portfolio"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Nexperia has strong architecture in automotive and power applications, with AEC-Q100/Q101 qualified products and SiC/GaN for EVs, but not in AI or 5G.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Helping enable connected electric and hybrid vehicles, Nexperia's offers fully qualified AEC-Q100/Q101 devices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "The knowledge base does not provide specific wafer fabrication capacity or utilization rates for Nexperia.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "No yield rate data is available in the knowledge base; Nexperia's focus on mature nodes likely yields well, but no benchmarks are provided.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Nexperia offers a range of package options for its products, but no evidence of advanced packaging like 2.5D/3D or chiplets.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["wide range of space-saving and efficient package options"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Nexperia likely holds ISO 9001 and IATF 16949 certifications given its automotive focus, but the knowledge base does not explicitly list them.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["fully qualified AEC-Q100/Q101 devices"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "No defect rate data is provided, but Nexperia emphasizes reliability and robustness in its products, especially for automotive.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["proven quality and stable high-volume supply alongside lifetime reliability and product longevity"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Nexperia likely complies with RoHS and REACH given its global operations, but the knowledge base does not mention specific environmental compliance details.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Nexperia is headquartered in the Netherlands and has global operations, but the knowledge base does not detail specific regional presence.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Netherlands | Nijmegen, Netherlands"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Nexperia serves automotive, industrial, mobile, and consumer markets, with a strong emphasis on automotive and industrial applications.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["from automotive and industrial to mobile and consumer applications"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Nexperia's global footprint likely mitigates regional risks, but the knowledge base does not provide specific diversification strategies.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "The knowledge base does not list top customers or concentration risk for Nexperia.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Nexperia likely has partnerships with equipment makers and EDA vendors, but the knowledge base does not mention specific ones.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 6,
+      "answer": "Nexperia collaborates with ecosystem players through reference designs and evaluation boards, but specific partnerships are not detailed.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Explore our extensive collection of Nexperia reference designs and third-party evaluation boards and reference designs."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial data such as revenue, net income, and free cash flow is not provided in the knowledge base.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available in the knowledge base.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "Balance sheet details are not provided in the knowledge base.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Nexperia's roadmap includes expanding SiC and GaN power devices and enhancing power conversion solutions, but specific milestones are not detailed.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["Raising the bar for robust and reliable power switching, Nexperia’s Silicon Carbide (SiC) diodes and MOSFETs", "Nexperia GaN FETs deliver the fastest transition / switching capability"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Nexperia's roadmap focuses on power semiconductors and does not include AI chips, quantum, or advanced memory.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Nexperia's roadmap aligns with industry trends in electrification, renewable energy, and high-efficiency power conversion.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": ["ideal for EV charging infrastructure, photovoltaic inverters and motor drives"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "No specific fab expansion projects are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth data is not provided in the knowledge base.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "Funding and execution plans for capacity expansion are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.nexperia.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

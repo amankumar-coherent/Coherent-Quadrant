@@ -1,0 +1,64 @@
+{
+  "scope": {
+    "market": "data center systems",
+    "geographies": ["global"],
+    "geography": "global",
+    "company_type": "manufacturer, technology provider, supplier, integrator",
+    "industry_vertical": "data center infrastructure",
+    "industry_terms": ["data center hardware", "server OEM", "data center cooling", "DCIM software", "data center integration"],
+    "ecosystem_functions": ["component manufacturer", "OEM manufacturer", "system integrator", "software vendor", "facility infrastructure provider", "managed service provider", "distributor", "consultant"],
+    "interpretation_summary": "The data center systems market covers hardware, software, and services for building and operating data centers globally.",
+    "relevance_keywords": ["data center", "server", "storage", "networking", "cooling", "power", "DCIM", "rack", "UPS", "colocation"],
+    "negative_keywords": ["cloud service", "web hosting", "software development", "consumer electronics", "telecom carrier", "IT consulting", "data analytics", "cybersecurity"],
+    "seed_companies": [
+      {"canonical_name": "Dell Technologies", "primary_domain": "dell.com", "company_function": "OEM manufacturer"},
+      {"canonical_name": "Hewlett Packard Enterprise", "primary_domain": "hpe.com", "company_function": "OEM manufacturer"},
+      {"canonical_name": "Cisco Systems", "primary_domain": "cisco.com", "company_function": "OEM manufacturer"},
+      {"canonical_name": "Vertiv", "primary_domain": "vertiv.com", "company_function": "facility infrastructure provider"},
+      {"canonical_name": "Schneider Electric", "primary_domain": "se.com", "company_function": "facility infrastructure provider"},
+      {"canonical_name": "Eaton Corporation", "primary_domain": "eaton.com", "company_function": "power systems manufacturer"},
+      {"canonical_name": "Intel Corporation", "primary_domain": "intel.com", "company_function": "component manufacturer"},
+      {"canonical_name": "IBM", "primary_domain": "ibm.com", "company_function": "OEM manufacturer"}
+    ]
+  },
+  "funnel_prompts": [
+    {"id": "L0", "text": "data center systems companies official websites"},
+    {"id": "L1", "text": "data center hardware manufacturers corporate site"},
+    {"id": "L2", "text": "data center cooling and power system providers official site"}
+  ],
+  "discovery_prompts": [
+    {"id": "P1", "text": "server CPU manufacturer official site"},
+    {"id": "P2", "text": "data center switch manufacturer official site"},
+    {"id": "P3", "text": "server power supply manufacturer official site"},
+    {"id": "P4", "text": "rack server manufacturer official site"},
+    {"id": "P5", "text": "SAN storage manufacturer official site"},
+    {"id": "P6", "text": "data center switch vendor official site"},
+    {"id": "P7", "text": "UPS manufacturer data center official site"},
+    {"id": "P8", "text": "CRAC unit manufacturer data center"},
+    {"id": "P9", "text": "server rack manufacturer official site"},
+    {"id": "P10", "text": "DCIM software vendor official site"},
+    {"id": "P11", "text": "data center orchestration software vendor"},
+    {"id": "P12", "text": "data center system integrator official site"}
+  ],
+  "gates": {
+    "must_have": ["data center", "server", "storage", "networking", "cooling", "power", "DCIM", "rack", "UPS", "colocation"],
+    "must_not_have": ["cloud service", "web hosting", "software development", "consumer electronics", "telecom carrier", "IT consulting", "data analytics", "cybersecurity"]
+  },
+  "listing_rules": {
+    "min_employees": 50,
+    "min_revenue_usd": 10000000,
+    "website_required": true,
+    "country_required": false
+  },
+  "ranking": {
+    "criteria": ["relevance", "market_share", "brand_recognition", "product_breadth"]
+  },
+  "evidence_policy": {
+    "required_evidence": ["official website", "product pages", "corporate profile"],
+    "min_sources": 2
+  },
+  "freshness_policy": {
+    "max_age_days": 365,
+    "check_interval_days": 30
+  }
+}

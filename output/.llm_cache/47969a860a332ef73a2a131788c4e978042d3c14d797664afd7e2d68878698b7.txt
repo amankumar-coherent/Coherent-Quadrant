@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Telehouse is a colocation and data center services provider, not a compute hardware vendor, so it does not offer CPUs, GPUs, or custom accelerators.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/colocation/"],
+      "evidence_snippets": ["Colocation, Cloud Connect, Managed Services, Connectivity"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 2,
+      "answer": "As a data center services provider, Telehouse does not manufacture accelerators, so performance per watt metrics are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Telehouse does not produce compute products, so compatibility with AI frameworks is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 7,
+      "answer": "Telehouse provides high-speed networking solutions including 400G connectivity through its NYIIX Astron platform, but does not manufacture networking hardware.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/connectivity/"],
+      "evidence_snippets": ["NYIIX Celebrates 30 Years as a Leading Internet Exchange, Announces NYIIX Astron™ Platform with 400G Connectivity"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Telehouse offers carrier-neutral interconnection and peering services, but specific latency and bandwidth metrics for their interconnect technology are not publicly detailed.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/connectivity/peering/"],
+      "evidence_snippets": ["Join the largest global network of open Peering Exchanges and enjoy the benefits."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Telehouse's networking services are carrier-neutral and support open peering exchanges, indicating compatibility with major switch vendors and open standards.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/connectivity/"],
+      "evidence_snippets": ["Join the largest global network of open Peering Exchanges and enjoy the benefits."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Telehouse emphasizes energy efficiency and sustainability, but specific PUE values for their data centers are not publicly disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.telehouse.com/about-us/our-standards/telehouse-green/"],
+      "evidence_snippets": ["Telehouse Green"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Telehouse offers high-density colocation solutions, but there is no specific mention of liquid cooling or advanced cooling options in the knowledge base.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/colocation/"],
+      "evidence_snippets": ["High-Density Colocation in NYC: Why Telehouse Stands Out"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Telehouse provides metered power solutions to help customers manage energy consumption, but detailed real-world energy reduction metrics are not available.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/colocation/metered-power-solutions/"],
+      "evidence_snippets": ["Metered Power Solutions"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q0",
+      "score": 5,
+      "answer": "Telehouse offers managed services and cloud solutions, but does not provide a comprehensive software platform for data center resource orchestration.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/managed-services/"],
+      "evidence_snippets": ["Managed Services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Telehouse does not offer orchestration software, so compatibility with Kubernetes or OpenStack is not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Telehouse provides remote hands and monitoring services, but automation features for provisioning and scaling are not detailed.",
+      "evidence_urls": ["https://www.telehouse.com/solutions/managed-services/remote-hands/"],
+      "evidence_snippets": ["Remote Hands"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "Telehouse supports AI workloads through high-density colocation and connectivity, but does not offer specialized AI hardware or software optimizations.",
+      "evidence_urls": ["https://www.telehouse.com/category/blog-posts/"],
+      "evidence_snippets": ["How data centers power AI and the edge"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Telehouse's infrastructure supports AI workloads, but specific performance improvements over general-purpose alternatives are not documented.",
+      "evidence_urls": ["https://www.telehouse.com/category/blog-posts/"],
+      "evidence_snippets": ["How data centers power AI and the edge"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 3,
+      "answer": "Telehouse does not provide tools for workload profiling or optimization across AI frameworks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "Telehouse operates over 45 data centers globally, demonstrating a substantial global footprint.",
+      "evidence_urls": ["https://www.telehouse.com/global-data-centers/"],
+      "evidence_snippets": ["With over 45 Data Centers globally, get connected wherever you do business."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 9,
+      "answer": "Telehouse has data centers across the Americas, EMEA, and Asia, including major markets like New York, London, Paris, Frankfurt, Tokyo, Singapore, and more.",
+      "evidence_urls": ["https://www.telehouse.com/global-data-centers/"],
+      "evidence_snippets": ["Global Data Centers", "Americas", "EMEA", "Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Telehouse has expanded into emerging markets like Hanoi and Bangkok, indicating ongoing expansion, but specific 12-24 month plans are not detailed.",
+      "evidence_urls": ["https://www.telehouse.com/global-data-centers/asia/hanoi-data-centers/", "https://www.telehouse.com/global-data-centers/asia/bangkok-data-center/"],
+      "evidence_snippets": ["Hanoi Data Centers", "Bangkok Data Centers"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Telehouse lists partners like AT&T and Fujitsu, but does not explicitly name hyperscalers like AWS, Azure, or Google as customers.",
+      "evidence_urls": ["https://www.telehouse.com/our-partners/partner-alliances/att/", "https://www.telehouse.com/our-partners/partner-alliances/fujitsu/"],
+      "evidence_snippets": ["AT&T", "Fujitsu"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Telehouse does not disclose revenue breakdown between enterprise and hyperscaler customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Telehouse provides case studies and testimonials from clients, and mentions a 95% customer retention rate, indicating strong enterprise satisfaction.",
+      "evidence_urls": ["https://www.telehouse.com/resources/case-studies/", "https://www.telehouse.com/about-us/clients/"],
+      "evidence_snippets": ["95% customer retention rate", "Case Studies"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Telehouse's annual revenue is not publicly disclosed in the knowledge base, though it is a subsidiary of KDDI, a Global Fortune 300 company.",
+      "evidence_urls": ["https://www.telehouse.com/about-us/company-overview/our-parent-company-kddi/"],
+      "evidence_snippets": ["subsidiary of KDDI, the Global Fortune 300 telecommunications giant"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "Gross margin for Telehouse's data center segment is not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Telehouse has been operating since 1988 and maintains a 95% customer retention rate, suggesting stability, but specific revenue growth figures are not available.",
+      "evidence_urls": ["https://www.telehouse.com/about-us/company-overview/history/"],
+      "evidence_snippets": ["Founded year: 1988", "95% customer retention rate"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "Telehouse is a significant global colocation provider with over 45 data centers, but its exact market share in the data center systems market is not specified.",
+      "evidence_urls": ["https://www.telehouse.com/global-data-centers/"],
+      "evidence_snippets": ["With over 45 Data Centers globally"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "Telehouse is expanding its global footprint, but specific growth rate comparisons to the market are not provided.",
+      "evidence_urls": ["https://www.telehouse.com/global-data-centers/"],
+      "evidence_snippets": ["With over 45 Data Centers globally"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "Telehouse is investing in high-density colocation and AI-ready infrastructure, but market share gains in AI servers or storage are not quantified.",
+      "evidence_urls": ["https://www.telehouse.com/category/blog-posts/"],
+      "evidence_snippets": ["High-Density Colocation in NYC: Why Telehouse Stands Out"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Telehouse has strategic alliances with major technology providers like AT&T, Fujitsu, and KDDI, and partners with Avant, but recent alliances with NVIDIA or Intel are not mentioned.",
+      "evidence_urls": ["https://www.telehouse.com/our-partners/partner-alliances/att/", "https://www.telehouse.com/our-partners/partner-alliances/fujitsu/", "https://www.telehouse.com/our-partners/partner-alliances/kddi/"],
+      "evidence_snippets": ["AT&T", "Fujitsu", "KDDI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No recent acquisitions by Telehouse are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Telehouse collaborates with partners like KDDI and Atlantic Metro, but specific joint ventures or co-development agreements for next-gen technologies are not detailed.",
+      "evidence_urls": ["https://www.telehouse.com/our-partners/partner-alliances/kddi/", "https://www.telehouse.com/our-partners/partner-alliances/atlantic-metro/"],
+      "evidence_snippets": ["KDDI", "Atlantic Metro"],
+      "grounding": "partial"
+    }
+  ]
+}

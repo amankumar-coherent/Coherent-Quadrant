@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "GlobalFoundries does not offer leading-edge nodes like 3nm or 2nm; its most advanced is 12nm FinFET, focusing on differentiated technologies.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Includes FDX™ FD-SOI, Feature-rich CMOS, FinFET; power efficiency, competitive PPA, RF features"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "GlobalFoundries leads in FD-SOI (FDX) and RF-SOI, with strong differentiation in RF and power technologies, though not in leading-edge logic.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["specializes in differentiated technologies such as RF-SOI, SiGe, GaN, and silicon photonics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "GlobalFoundries has not announced a roadmap for 2nm or 1.4nm nodes, focusing instead on mature and specialty nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "GlobalFoundries offers a broad portfolio including logic (FDX, FinFET), power (BCD, GaN), RF-SOI, and advanced packaging, but not memory.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["CMOS", "Power", "RF-SOI", "Advanced packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 4,
+      "answer": "Revenue split by product type is not disclosed in the knowledge base; GF is primarily a foundry with a diversified technology mix.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "GlobalFoundries offers advanced packaging internally and likely partners with OSATs for some services, but specifics are not in the KB.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Advanced packaging: 2.5D/3D, W2W and D2W bonding, interposer-based architectures"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "GlobalFoundries does not own proprietary CPU/GPU IP; it provides process technologies and design support, relying on customer IP.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["offers comprehensive design support and manufacturing services"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "GlobalFoundries relies on third-party IP and collaborates with ecosystem partners, but does not license its own processor IP.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "GlobalFoundries has strong architecture in RF-SOI and silicon photonics for AI and 5G, but not in digital compute architectures.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["targeting high-growth markets including automotive, data centers, and smart mobile devices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Specific wafer capacity and utilization rates are not disclosed in the knowledge base; GF has multiple fabs globally.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["key sites in Malta (NY), Burlington (VT), Dresden, Singapore, and Guangzhou"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "Yield rates for leading-edge nodes are not applicable as GF does not produce leading-edge; yields for specialty nodes are competitive but not quantified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "GlobalFoundries offers advanced packaging including 2.5D/3D and interposer-based architectures, indicating strong capability.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["Advanced packaging: 2.5D/3D, W2W and D2W bonding, interposer-based architectures for heterogeneous integration"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "Quality certifications like ISO 9001 or IATF 16949 are not mentioned in the knowledge base, but GF likely holds them as a major manufacturer.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "Defect rates (DPPM) are not disclosed; GF emphasizes reliability for automotive and aerospace, but no specific metrics are provided.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["high performance, signal power and reliability for mobile, automotive, infrastructure and aerospace/defense"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "GlobalFoundries publishes a sustainability report, indicating attention to environmental compliance, but specific RoHS/REACH details are not in KB.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["12th annual Sustainability Report (2026)"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 9,
+      "answer": "GlobalFoundries has a global footprint with manufacturing in the U.S., Europe, and Asia, and R&D presence in multiple regions.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["global footprint spanning the U.S., Europe and Asia", "key sites in Malta (NY), Burlington (VT), Dresden, Singapore, and Guangzhou"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Primary end-markets include automotive, data centers, and smart mobile devices, but revenue contribution is not quantified.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["targeting high-growth markets including automotive, data centers, and smart mobile devices"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 8,
+      "answer": "GlobalFoundries' multi-region manufacturing and sales presence reduces risk from regional disruptions, as evidenced by its global footprint.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["global footprint spanning the U.S., Europe and Asia"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "Top customers are not listed in the knowledge base; GF is known to serve major companies, but concentration risk is unknown.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 6,
+      "answer": "GlobalFoundries likely has partnerships with equipment and EDA vendors, but no specific partnerships are mentioned in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "GlobalFoundries offers design support and manufacturing services, indicating collaboration with ecosystem players, but specifics are limited.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["offers comprehensive design support and manufacturing services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "Financial figures such as revenue, net income, and free cash flow are not provided in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "CapEx data is not available in the knowledge base; GF's investments are known but not quantified here.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Balance sheet details are not in the KB; GF's $300 million LOI suggests some investment capacity, but overall financial strength is unknown.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["$300 million LOI with U.S. Department of Commerce for silicon photonics R&D"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "GlobalFoundries' roadmap includes silicon photonics and advanced packaging, but specific milestones and timelines are not detailed.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["$300 million LOI with U.S. Department of Commerce to accelerate silicon photonics R&D"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "GlobalFoundries has a clear focus on silicon photonics for AI and quantum technology, indicating a roadmap for emerging tech.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["silicon photonics", "Quantum technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "GlobalFoundries' roadmap aligns with AI and high-performance computing trends, as seen in its silicon photonics investment.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["reinforcing its strategic focus on AI and high-performance computing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "No new fab expansions are announced in the KB; GF has existing sites but no specific capacity additions are mentioned.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["key sites in Malta (NY), Burlington (VT), Dresden, Singapore, and Guangzhou"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "Revenue growth rates are not provided in the knowledge base; GF's financial performance is not detailed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Funding and execution plans for capacity expansion are not detailed; the LOI suggests some investment, but overall strategy is unclear.",
+      "evidence_urls": ["https://gf.com"],
+      "evidence_snippets": ["$300 million LOI with U.S. Department of Commerce"],
+      "grounding": "partial"
+    }
+  ]
+}

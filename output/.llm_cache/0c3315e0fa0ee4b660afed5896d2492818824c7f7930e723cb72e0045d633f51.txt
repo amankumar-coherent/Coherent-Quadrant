@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence mentions only one product, Cicer, a wearable ECG patch; no other devices or portfolio details are provided."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No clinical trial data, safety studies, or performance metrics are cited in the evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The company is described as creating Cicer, a wearable ECG patch, indicating some innovation, but no R&D details or pipeline are provided."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No information about manufacturing capabilities or quality systems is present in the evidence."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No mention of FDA clearance, CE marking, or other regulatory approvals in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Evidence indicates presence in India only, with no details on distribution channels or global reach."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of hospital adoption, physician endorsements, or brand recognition in the medical community."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "partial",
+      "why": "One source mentions raised total funding of $637K over 3 rounds from 16 investors, but no revenue or profitability data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No evidence of additional indications or pipeline products beyond the single ECG patch."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No partnerships, collaborations, or expansion plans are mentioned in the evidence."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

@@ -1,0 +1,738 @@
+{
+  "market_definition": "The data center systems market encompasses the physical and logical infrastructure used to build and operate data centers, including servers, storage systems, networking equipment, power and cooling systems, and the software and services that manage them. Participants include hardware manufacturers, component suppliers, system integrators, facility designers, and service providers. The market is global, covering enterprise, cloud, colocation, and edge data centers.",
+  "market_boundary": {
+    "in_scope": [
+      "Server manufacturers (rack, tower, blade, edge)",
+      "Storage systems (SAN, NAS, hyperconverged, all-flash)",
+      "Networking equipment (switches, routers, load balancers)",
+      "Power infrastructure (UPS, PDU, generators, batteries)",
+      "Cooling systems (CRAC, CRAH, liquid cooling, chillers)",
+      "Data center infrastructure management (DCIM) software",
+      "System integrators and data center design/build firms",
+      "Colocation and cloud service providers (as end users)"
+    ],
+    "out_of_scope": [
+      "Enterprise software applications (ERP, CRM)",
+      "Telecommunications carrier networks (outside data center)",
+      "Consumer electronics and personal computing devices",
+      "Office building construction and general real estate",
+      "IT consulting and managed services (non-infrastructure)",
+      "Data center REITs and investment firms (financial)"
+    ]
+  },
+  "value_chain_layers": [
+    {
+      "layer_id": "L1",
+      "layer_name": "Hardware Components",
+      "description": "Manufacturers of core compute, storage, and networking hardware components that go into data center systems.",
+      "segments": [
+        {
+          "segment_name": "Server Components",
+          "sub_segments": ["CPUs", "GPUs", "Memory modules", "Motherboards", "Storage drives"],
+          "participant_types": ["component manufacturer", "OEM supplier"],
+          "search_intents": [
+            "server CPU manufacturer official site",
+            "GPU accelerator manufacturer data center",
+            "server memory module manufacturer",
+            "enterprise SSD manufacturer official site"
+          ]
+        },
+        {
+          "segment_name": "Networking Components",
+          "sub_segments": ["Ethernet switches", "Optical transceivers", "Network interface cards", "Cables and connectors"],
+          "participant_types": ["component manufacturer", "OEM supplier"],
+          "search_intents": [
+            "data center switch manufacturer official site",
+            "optical transceiver manufacturer data center",
+            "network interface card manufacturer",
+            "high-speed cable assembly manufacturer data center"
+          ]
+        },
+        {
+          "segment_name": "Power and Cooling Components",
+          "sub_segments": ["Power supplies", "Cooling fans", "Heat sinks", "Liquid cooling plates"],
+          "participant_types": ["component manufacturer", "OEM supplier"],
+          "search_intents": [
+            "server power supply manufacturer",
+            "data center liquid cooling plate manufacturer",
+            "server cooling fan manufacturer",
+            "heat sink manufacturer data center"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L2",
+      "layer_name": "System Manufacturing",
+      "description": "OEMs that assemble complete servers, storage arrays, and networking equipment from components.",
+      "segments": [
+        {
+          "segment_name": "Server OEMs",
+          "sub_segments": ["Rack servers", "Tower servers", "Blade servers", "Edge servers"],
+          "participant_types": ["OEM manufacturer", "ODM"],
+          "search_intents": [
+            "rack server manufacturer official site",
+            "enterprise server OEM",
+            "edge server manufacturer",
+            "blade server manufacturer official site"
+          ]
+        },
+        {
+          "segment_name": "Storage OEMs",
+          "sub_segments": ["SAN arrays", "NAS systems", "Hyperconverged infrastructure", "All-flash arrays"],
+          "participant_types": ["OEM manufacturer", "ODM"],
+          "search_intents": [
+            "SAN storage manufacturer official site",
+            "NAS storage manufacturer enterprise",
+            "hyperconverged infrastructure vendor",
+            "all-flash array manufacturer"
+          ]
+        },
+        {
+          "segment_name": "Networking OEMs",
+          "sub_segments": ["Ethernet switches", "Routers", "Load balancers", "SDN controllers"],
+          "participant_types": ["OEM manufacturer", "ODM"],
+          "search_intents": [
+            "data center switch vendor official site",
+            "enterprise router manufacturer",
+            "load balancer manufacturer data center",
+            "SDN controller vendor"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L3",
+      "layer_name": "Facility Infrastructure",
+      "description": "Providers of power, cooling, and physical infrastructure systems for data center facilities.",
+      "segments": [
+        {
+          "segment_name": "Power Systems",
+          "sub_segments": ["UPS systems", "PDUs", "Generators", "Batteries", "Switchgear"],
+          "participant_types": ["manufacturer", "system integrator"],
+          "search_intents": [
+            "UPS manufacturer data center official site",
+            "PDU manufacturer data center",
+            "diesel generator manufacturer data center",
+            "data center battery manufacturer"
+          ]
+        },
+        {
+          "segment_name": "Cooling Systems",
+          "sub_segments": ["CRAC units", "CRAH units", "Chillers", "Liquid cooling systems", "Cooling towers"],
+          "participant_types": ["manufacturer", "system integrator"],
+          "search_intents": [
+            "CRAC unit manufacturer data center",
+            "CRAH unit manufacturer",
+            "data center chiller manufacturer",
+            "liquid cooling system manufacturer data center"
+          ]
+        },
+        {
+          "segment_name": "Physical Infrastructure",
+          "sub_segments": ["Racks and enclosures", "Cabling systems", "Containment systems", "Monitoring sensors"],
+          "participant_types": ["manufacturer", "system integrator"],
+          "search_intents": [
+            "server rack manufacturer official site",
+            "data center cabling manufacturer",
+            "hot aisle containment manufacturer",
+            "data center sensor manufacturer"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L4",
+      "layer_name": "Software and Management",
+      "description": "Software platforms for managing data center infrastructure, including DCIM, orchestration, and monitoring.",
+      "segments": [
+        {
+          "segment_name": "DCIM Software",
+          "sub_segments": ["Asset management", "Power monitoring", "Cooling management", "Capacity planning"],
+          "participant_types": ["software vendor", "SaaS provider"],
+          "search_intents": [
+            "DCIM software vendor official site",
+            "data center infrastructure management software",
+            "data center power monitoring software",
+            "data center capacity planning software"
+          ]
+        },
+        {
+          "segment_name": "Orchestration and Automation",
+          "sub_segments": ["Workload automation", "Infrastructure orchestration", "AIOps"],
+          "participant_types": ["software vendor", "SaaS provider"],
+          "search_intents": [
+            "data center orchestration software vendor",
+            "infrastructure automation software",
+            "AIOps platform data center"
+          ]
+        }
+      ]
+    },
+    {
+      "layer_id": "L5",
+      "layer_name": "Services and Integration",
+      "description": "Design, build, integration, and managed services for data center systems.",
+      "segments": [
+        {
+          "segment_name": "System Integrators",
+          "sub_segments": ["Enterprise data center", "Colocation", "Edge", "Hyperscale"],
+          "participant_types": ["integrator", "consultant"],
+          "search_intents": [
+            "data center system integrator official site",
+            "data center design build firm",
+            "edge data center integrator",
+            "hyperscale data center integrator"
+          ]
+        },
+        {
+          "segment_name": "Managed Services",
+          "sub_segments": ["Remote monitoring", "Maintenance", "Colocation management"],
+          "participant_types": ["managed service provider", "colocation provider"],
+          "search_intents": [
+            "data center managed services provider",
+            "data center maintenance services",
+            "colocation provider official site"
+          ]
+        }
+      ]
+    }
+  ],
+  "ecosystem_functions": [
+    "component manufacturer",
+    "server OEM",
+    "storage OEM",
+    "networking OEM",
+    "power system manufacturer",
+    "cooling system manufacturer",
+    "physical infrastructure manufacturer",
+    "DCIM software vendor",
+    "orchestration software vendor",
+    "system integrator",
+    "managed service provider",
+    "colocation provider"
+  ],
+  "industry_terms": [
+    "server",
+    "storage array",
+    "network switch",
+    "UPS",
+    "PDU",
+    "CRAC",
+    "CRAH",
+    "chiller",
+    "liquid cooling",
+    "rack",
+    "DCIM",
+    "hyperconverged infrastructure",
+    "all-flash array",
+    "optical transceiver"
+  ],
+  "include_keywords": [
+    "data center server",
+    "enterprise storage",
+    "network switch",
+    "uninterruptible power supply",
+    "precision cooling",
+    "data center infrastructure management",
+    "rack enclosure",
+    "hyperconverged infrastructure",
+    "all-flash storage",
+    "data center design"
+  ],
+  "exclude_keywords": [
+    "news",
+    "blog",
+    "directory",
+    "market report",
+    "job board",
+    "consulting",
+    "recruitment",
+    "training",
+    "event",
+    "webinar"
+  ],
+  "relevance_keywords": [
+    "data center",
+    "server",
+    "storage",
+    "networking",
+    "power",
+    "cooling",
+    "infrastructure",
+    "rack",
+    "UPS",
+    "DCIM",
+    "virtualization",
+    "cloud"
+  ],
+  "negative_keywords": [
+    "news",
+    "blog",
+    "review",
+    "job",
+    "career",
+    "event",
+    "webinar",
+    "consulting",
+    "market research",
+    "directory"
+  ],
+  "discovery_prompts": [
+    {
+      "id": "M1",
+      "layer_id": "L1",
+      "segment": "Server Components",
+      "sub_sector": "cpu_manufacturer",
+      "text": "server CPU manufacturer official site"
+    },
+    {
+      "id": "M2",
+      "layer_id": "L1",
+      "segment": "Server Components",
+      "sub_sector": "gpu_manufacturer",
+      "text": "GPU accelerator manufacturer data center"
+    },
+    {
+      "id": "M3",
+      "layer_id": "L1",
+      "segment": "Server Components",
+      "sub_sector": "memory_manufacturer",
+      "text": "server memory module manufacturer"
+    },
+    {
+      "id": "M4",
+      "layer_id": "L1",
+      "segment": "Server Components",
+      "sub_sector": "ssd_manufacturer",
+      "text": "enterprise SSD manufacturer official site"
+    },
+    {
+      "id": "M5",
+      "layer_id": "L1",
+      "segment": "Networking Components",
+      "sub_sector": "switch_manufacturer",
+      "text": "data center switch manufacturer official site"
+    },
+    {
+      "id": "M6",
+      "layer_id": "L1",
+      "segment": "Networking Components",
+      "sub_sector": "transceiver_manufacturer",
+      "text": "optical transceiver manufacturer data center"
+    },
+    {
+      "id": "M7",
+      "layer_id": "L1",
+      "segment": "Networking Components",
+      "sub_sector": "nic_manufacturer",
+      "text": "network interface card manufacturer"
+    },
+    {
+      "id": "M8",
+      "layer_id": "L1",
+      "segment": "Networking Components",
+      "sub_sector": "cable_manufacturer",
+      "text": "high-speed cable assembly manufacturer data center"
+    },
+    {
+      "id": "M9",
+      "layer_id": "L1",
+      "segment": "Power and Cooling Components",
+      "sub_sector": "psu_manufacturer",
+      "text": "server power supply manufacturer"
+    },
+    {
+      "id": "M10",
+      "layer_id": "L1",
+      "segment": "Power and Cooling Components",
+      "sub_sector": "liquid_cooling_plate_manufacturer",
+      "text": "data center liquid cooling plate manufacturer"
+    },
+    {
+      "id": "M11",
+      "layer_id": "L1",
+      "segment": "Power and Cooling Components",
+      "sub_sector": "fan_manufacturer",
+      "text": "server cooling fan manufacturer"
+    },
+    {
+      "id": "M12",
+      "layer_id": "L1",
+      "segment": "Power and Cooling Components",
+      "sub_sector": "heat_sink_manufacturer",
+      "text": "heat sink manufacturer data center"
+    },
+    {
+      "id": "M13",
+      "layer_id": "L2",
+      "segment": "Server OEMs",
+      "sub_sector": "rack_server_oem",
+      "text": "rack server manufacturer official site"
+    },
+    {
+      "id": "M14",
+      "layer_id": "L2",
+      "segment": "Server OEMs",
+      "sub_sector": "edge_server_oem",
+      "text": "edge server manufacturer"
+    },
+    {
+      "id": "M15",
+      "layer_id": "L2",
+      "segment": "Storage OEMs",
+      "sub_sector": "san_oem",
+      "text": "SAN storage manufacturer official site"
+    },
+    {
+      "id": "M16",
+      "layer_id": "L2",
+      "segment": "Storage OEMs",
+      "sub_sector": "hci_vendor",
+      "text": "hyperconverged infrastructure vendor"
+    },
+    {
+      "id": "M17",
+      "layer_id": "L2",
+      "segment": "Networking OEMs",
+      "sub_sector": "switch_oem",
+      "text": "data center switch vendor official site"
+    },
+    {
+      "id": "M18",
+      "layer_id": "L2",
+      "segment": "Networking OEMs",
+      "sub_sector": "load_balancer_oem",
+      "text": "load balancer manufacturer data center"
+    },
+    {
+      "id": "M19",
+      "layer_id": "L3",
+      "segment": "Power Systems",
+      "sub_sector": "ups_manufacturer",
+      "text": "UPS manufacturer data center official site"
+    },
+    {
+      "id": "M20",
+      "layer_id": "L3",
+      "segment": "Power Systems",
+      "sub_sector": "pdu_manufacturer",
+      "text": "PDU manufacturer data center"
+    },
+    {
+      "id": "M21",
+      "layer_id": "L3",
+      "segment": "Power Systems",
+      "sub_sector": "generator_manufacturer",
+      "text": "diesel generator manufacturer data center"
+    },
+    {
+      "id": "M22",
+      "layer_id": "L3",
+      "segment": "Cooling Systems",
+      "sub_sector": "crac_manufacturer",
+      "text": "CRAC unit manufacturer data center"
+    },
+    {
+      "id": "M23",
+      "layer_id": "L3",
+      "segment": "Cooling Systems",
+      "sub_sector": "chiller_manufacturer",
+      "text": "data center chiller manufacturer"
+    },
+    {
+      "id": "M24",
+      "layer_id": "L3",
+      "segment": "Cooling Systems",
+      "sub_sector": "liquid_cooling_system_manufacturer",
+      "text": "liquid cooling system manufacturer data center"
+    },
+    {
+      "id": "M25",
+      "layer_id": "L3",
+      "segment": "Physical Infrastructure",
+      "sub_sector": "rack_manufacturer",
+      "text": "server rack manufacturer official site"
+    },
+    {
+      "id": "M26",
+      "layer_id": "L3",
+      "segment": "Physical Infrastructure",
+      "sub_sector": "containment_manufacturer",
+      "text": "hot aisle containment manufacturer"
+    },
+    {
+      "id": "M27",
+      "layer_id": "L4",
+      "segment": "DCIM Software",
+      "sub_sector": "dcim_vendor",
+      "text": "DCIM software vendor official site"
+    },
+    {
+      "id": "M28",
+      "layer_id": "L4",
+      "segment": "DCIM Software",
+      "sub_sector": "power_monitoring_software",
+      "text": "data center power monitoring software"
+    },
+    {
+      "id": "M29",
+      "layer_id": "L4",
+      "segment": "Orchestration and Automation",
+      "sub_sector": "orchestration_vendor",
+      "text": "data center orchestration software vendor"
+    },
+    {
+      "id": "M30",
+      "layer_id": "L5",
+      "segment": "System Integrators",
+      "sub_sector": "integrator",
+      "text": "data center system integrator official site"
+    },
+    {
+      "id": "M31",
+      "layer_id": "L5",
+      "segment": "System Integrators",
+      "sub_sector": "design_build_firm",
+      "text": "data center design build firm"
+    },
+    {
+      "id": "M32",
+      "layer_id": "L5",
+      "segment": "Managed Services",
+      "sub_sector": "managed_service_provider",
+      "text": "data center managed services provider"
+    },
+    {
+      "id": "M33",
+      "layer_id": "L5",
+      "segment": "Managed Services",
+      "sub_sector": "colocation_provider",
+      "text": "colocation provider official site"
+    },
+    {
+      "id": "M34",
+      "layer_id": "L1",
+      "segment": "Server Components",
+      "sub_sector": "cpu_manufacturer_region",
+      "text": "server CPU manufacturer Africa"
+    },
+    {
+      "id": "M35",
+      "layer_id": "L2",
+      "segment": "Server OEMs",
+      "sub_sector": "server_oem_region",
+      "text": "server manufacturer Middle East"
+    },
+    {
+      "id": "M36",
+      "layer_id": "L3",
+      "segment": "Power Systems",
+      "sub_sector": "ups_manufacturer_region",
+      "text": "UPS manufacturer Southeast Asia"
+    },
+    {
+      "id": "M37",
+      "layer_id": "L3",
+      "segment": "Cooling Systems",
+      "sub_sector": "cooling_manufacturer_region",
+      "text": "data center cooling manufacturer Latin America"
+    },
+    {
+      "id": "M38",
+      "layer_id": "L5",
+      "segment": "System Integrators",
+      "sub_sector": "integrator_region",
+      "text": "data center integrator South Africa"
+    },
+    {
+      "id": "M39",
+      "layer_id": "L5",
+      "segment": "Managed Services",
+      "sub_sector": "colocation_region",
+      "text": "colocation provider Indonesia"
+    }
+  ],
+  "seed_companies": [
+    {
+      "canonical_name": "Intel Corporation",
+      "primary_domain": "intel.com",
+      "company_function": "server CPU manufacturer",
+      "segment": "Server Components"
+    },
+    {
+      "canonical_name": "NVIDIA Corporation",
+      "primary_domain": "nvidia.com",
+      "company_function": "GPU accelerator manufacturer",
+      "segment": "Server Components"
+    },
+    {
+      "canonical_name": "Samsung Electronics",
+      "primary_domain": "samsung.com",
+      "company_function": "memory and SSD manufacturer",
+      "segment": "Server Components"
+    },
+    {
+      "canonical_name": "Broadcom Inc.",
+      "primary_domain": "broadcom.com",
+      "company_function": "networking switch and NIC manufacturer",
+      "segment": "Networking Components"
+    },
+    {
+      "canonical_name": "Cisco Systems",
+      "primary_domain": "cisco.com",
+      "company_function": "networking OEM",
+      "segment": "Networking OEMs"
+    },
+    {
+      "canonical_name": "Dell Technologies",
+      "primary_domain": "dell.com",
+      "company_function": "server and storage OEM",
+      "segment": "Server OEMs"
+    },
+    {
+      "canonical_name": "Hewlett Packard Enterprise",
+      "primary_domain": "hpe.com",
+      "company_function": "server and storage OEM",
+      "segment": "Server OEMs"
+    },
+    {
+      "canonical_name": "Lenovo",
+      "primary_domain": "lenovo.com",
+      "company_function": "server OEM",
+      "segment": "Server OEMs"
+    },
+    {
+      "canonical_name": "NetApp",
+      "primary_domain": "netapp.com",
+      "company_function": "storage OEM",
+      "segment": "Storage OEMs"
+    },
+    {
+      "canonical_name": "Pure Storage",
+      "primary_domain": "purestorage.com",
+      "company_function": "all-flash storage OEM",
+      "segment": "Storage OEMs"
+    },
+    {
+      "canonical_name": "Vertiv Group",
+      "primary_domain": "vertiv.com",
+      "company_function": "power and cooling systems manufacturer",
+      "segment": "Power Systems"
+    },
+    {
+      "canonical_name": "Schneider Electric",
+      "primary_domain": "se.com",
+      "company_function": "power and cooling systems manufacturer",
+      "segment": "Power Systems"
+    },
+    {
+      "canonical_name": "Eaton Corporation",
+      "primary_domain": "eaton.com",
+      "company_function": "UPS and power distribution manufacturer",
+      "segment": "Power Systems"
+    },
+    {
+      "canonical_name": "Rittal GmbH & Co. KG",
+      "primary_domain": "rittal.com",
+      "company_function": "rack and enclosure manufacturer",
+      "segment": "Physical Infrastructure"
+    },
+    {
+      "canonical_name": "Schneider Electric",
+      "primary_domain": "se.com",
+      "company_function": "DCIM software vendor",
+      "segment": "DCIM Software"
+    },
+    {
+      "canonical_name": "Nlyte Software",
+      "primary_domain": "nlyte.com",
+      "company_function": "DCIM software vendor",
+      "segment": "DCIM Software"
+    },
+    {
+      "canonical_name": "VMware",
+      "primary_domain": "vmware.com",
+      "company_function": "orchestration and virtualization software vendor",
+      "segment": "Orchestration and Automation"
+    },
+    {
+      "canonical_name": "IBM Corporation",
+      "primary_domain": "ibm.com",
+      "company_function": "system integrator and technology provider",
+      "segment": "System Integrators"
+    },
+    {
+      "canonical_name": "Equinix",
+      "primary_domain": "equinix.com",
+      "company_function": "colocation provider",
+      "segment": "Managed Services"
+    },
+    {
+      "canonical_name": "Digital Realty",
+      "primary_domain": "digitalrealty.com",
+      "company_function": "colocation provider",
+      "segment": "Managed Services"
+    },
+    {
+      "canonical_name": "NTT Data",
+      "primary_domain": "nttdata.com",
+      "company_function": "system integrator",
+      "segment": "System Integrators"
+    },
+    {
+      "canonical_name": "Fujitsu",
+      "primary_domain": "fujitsu.com",
+      "company_function": "server OEM and system integrator",
+      "segment": "Server OEMs"
+    },
+    {
+      "canonical_name": "Huawei Technologies",
+      "primary_domain": "huawei.com",
+      "company_function": "networking and server OEM",
+      "segment": "Networking OEMs"
+    },
+    {
+      "canonical_name": "Juniper Networks",
+      "primary_domain": "juniper.net",
+      "company_function": "networking OEM",
+      "segment": "Networking OEMs"
+    },
+    {
+      "canonical_name": "A10 Networks",
+      "primary_domain": "a10networks.com",
+      "company_function": "load balancer manufacturer",
+      "segment": "Networking OEMs"
+    },
+    {
+      "canonical_name": "CoolIT Systems",
+      "primary_domain": "coolit.com",
+      "company_function": "liquid cooling manufacturer",
+      "segment": "Cooling Systems"
+    },
+    {
+      "canonical_name": "Asetek",
+      "primary_domain": "asetek.com",
+      "company_function": "liquid cooling manufacturer",
+      "segment": "Cooling Systems"
+    },
+    {
+      "canonical_name": "Cummins Inc.",
+      "primary_domain": "cummins.com",
+      "company_function": "generator manufacturer",
+      "segment": "Power Systems"
+    },
+    {
+      "canonical_name": "Legrand",
+      "primary_domain": "legrand.com",
+      "company_function": "PDU and power distribution manufacturer",
+      "segment": "Power Systems"
+    },
+    {
+      "canonical_name": "Panduit",
+      "primary_domain": "panduit.com",
+      "company_function": "cabling and physical infrastructure manufacturer",
+      "segment": "Physical Infrastructure"
+    }
+  ]
+}

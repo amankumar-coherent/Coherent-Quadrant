@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Product / Molecule Portfolio",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence states Aché markets products for diabetes including GLP-1 receptor agonists, but no specific GLP-1 products are listed in the crawled data."
+    },
+    {
+      "feature": "Therapeutic Coverage & Differentiation",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Aché is present in major therapeutic classes and has a portfolio including prescription, OTC, and biosimilar products, but no differentiation in GLP-1 is evidenced."
+    },
+    {
+      "feature": "Innovation & Clinical R&D",
+      "score": 4,
+      "grounding": "partial",
+      "why": "The website highlights innovation and open innovation, but no specific GLP-1 R&D or clinical pipeline is mentioned."
+    },
+    {
+      "feature": "Manufacturing & Supply Reliability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence shows expansion of a factory in Suape with R$267 million investment and 3,000 jobs, indicating manufacturing scale, but not specific to GLP-1."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Aché has ISO certifications (45001, 14001, 50001) and participates in Farmácia Popular, but no specific GLP-1 regulatory approvals are cited."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic Market Access",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Presence is Brazil only, with no evidence of international GLP-1 market access."
+    },
+    {
+      "feature": "Brand / HCP Reputation",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Aché has won marketing awards (Lupa de Ouro) and is recognized for communication, but not specifically for GLP-1."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Financial statements and ratings are mentioned on the website, but no specific figures are provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Roadmap",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence of a GLP-1 pipeline or indication roadmap is found in the crawled data."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "The company has strategic alliances and is expanding manufacturing capacity, but no GLP-1-specific partnerships are cited."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "thin"
+}

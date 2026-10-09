@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Hexoskin publishes clinical validation data for its sensors, as indicated by its positioning as a clinical-grade monitoring brand.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Smart shirts for clinical-grade vital signs monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "Specific accuracy metrics like MARD are not publicly disclosed in the knowledge base, but the brand emphasizes clinical-grade accuracy.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["clinical-grade vital signs monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "Hexoskin is a medical device brand, implying regulatory certifications, but specific FDA or CE details are not in the knowledge base.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["wearable medical device brand"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "The knowledge base mentions only smart shirts, indicating a narrow product portfolio.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Smart shirts"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Hexoskin's smart shirts monitor vital signs, potentially covering cardiac and respiratory areas, but no explicit multi-therapeutic evidence is present.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["vital signs monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 6,
+      "answer": "Hexoskin serves both clinical and consumer markets, as it is a medical device brand with consumer-accessible smart shirts.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["wearable medical device brand", "Smart shirts"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Hexoskin's clinical-grade positioning suggests peer-reviewed publications, but none are cited in the knowledge base.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["clinical-grade vital signs monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "No information about clinical trials is available in the knowledge base, but the brand's medical focus implies some research activity.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["wearable medical device brand"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Real-world evidence is not mentioned, but clinical monitoring use cases suggest some outcomes data may exist.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Clinical monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Battery life specifics are not provided in the knowledge base, but smart shirts typically have multi-day battery life.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Smart shirts"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 6,
+      "answer": "Smart shirts are designed for continuous wear and are likely comfortable, but waterproofing is not mentioned.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Smart shirts"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Only smart shirts are mentioned, indicating a single form factor.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Smart shirts"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No EHR integration is mentioned, but clinical monitoring suggests some data sharing capabilities.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Clinical monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No APIs or SDKs are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No mention of HL7 or FHIR support, but clinical monitoring implies some interoperability.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Clinical monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Hexoskin is a medical device brand, likely with FDA or CE clearance, but specific approvals are not listed.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["wearable medical device brand"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "The brand's clinical-grade positioning suggests approvals for medical indications, not just wellness.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["clinical-grade vital signs monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 5,
+      "answer": "Hexoskin operates globally, but specific regulatory approvals in multiple geographies are not detailed.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Canada, USA, global"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No user numbers are provided, but the brand's niche focus suggests limited adoption compared to consumer giants.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "No distribution partnerships are mentioned, but clinical monitoring implies some hospital or research use.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Clinical monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No case studies are cited, but clinical monitoring suggests provider testimonials may exist.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Clinical monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "No CPT codes or reimbursement pathways are mentioned.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "No insurance coverage information is available.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No patient assistance programs are mentioned, but subscription models are common for wearables.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue data is available, but the niche market suggests modest growth.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 3,
+      "answer": "No financial disclosures are present.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No subscription model is mentioned, but repeat purchases are possible for garments.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Smart shirts"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Hexoskin's clinical focus implies partnerships with research institutions, but none are specified.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": ["Clinical monitoring"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No collaborations with tech or pharma are mentioned.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No participation in standards bodies is mentioned.",
+      "evidence_urls": ["https://www.hexoskin.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

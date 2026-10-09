@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 8,
+      "answer": "HPE offers a broad compute portfolio including ProLiant servers with CPUs and GPUs, and Cray supercomputers, but lacks custom accelerators.",
+      "evidence_urls": ["https://www.hpe.com/us/en/products/compute.html"],
+      "evidence_snippets": ["HPE ProLiant Compute", "HPE Cray Supercomputing"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "No specific performance per watt data is provided in the knowledge base, but HPE is known for efficient enterprise systems.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "HPE supports major AI frameworks through partnerships with NVIDIA and its AI solutions, but specific compatibility details are not in the KB.",
+      "evidence_urls": ["https://www.hpe.com/us/en/ai.html"],
+      "evidence_snippets": ["NVIDIA AI Computing by HPE"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 8,
+      "answer": "HPE offers high-speed networking solutions including Juniper PTX and QFX series routers, which support 400G/800G Ethernet.",
+      "evidence_urls": ["https://www.hpe.com/us/en/networking.html"],
+      "evidence_snippets": ["Juniper PTX Series Routers", "Juniper QFX Series Routers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "No specific latency or bandwidth metrics are provided in the KB, but HPE's networking products are enterprise-grade.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q2",
+      "score": 7,
+      "answer": "HPE networking supports open standards and is compatible with major vendors, as indicated by its leadership in the Gartner Magic Quadrant.",
+      "evidence_urls": ["https://www.hpe.com/us/en/networking.html"],
+      "evidence_snippets": ["Leader in the 2026 Magic Quadrant for Enterprise Wired and Wireless LAN Infrastructure"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 4,
+      "answer": "No specific PUE data is available in the KB, but HPE emphasizes energy efficiency in its products.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "HPE offers liquid cooling for high-density compute, particularly in its Cray supercomputing line, though not detailed in the KB.",
+      "evidence_urls": ["https://www.hpe.com/us/en/supercomputing.html"],
+      "evidence_snippets": ["HPE Cray Supercomputing"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "HPE's power management features are not detailed in the KB, but the company is known for energy-efficient enterprise solutions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 8,
+      "answer": "HPE provides GreenLake and HPE Morpheus Software for unified management and orchestration of hybrid cloud and data center resources.",
+      "evidence_urls": ["https://www.hpe.com/us/en/greenlake.html"],
+      "evidence_snippets": ["HPE delivers unified agentic IT operations with GreenLake and HPE Morpheus Software"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 7,
+      "answer": "HPE's orchestration software supports Kubernetes and other standards, as it is designed for hybrid cloud environments.",
+      "evidence_urls": ["https://www.hpe.com/us/en/software.html"],
+      "evidence_snippets": ["One unified control plane for AI and enterprise workloads"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 7,
+      "answer": "HPE GreenLake includes automation for provisioning, scaling, and monitoring, as part of its hybrid cloud management platform.",
+      "evidence_urls": ["https://www.hpe.com/us/en/greenlake.html"],
+      "evidence_snippets": ["Hybrid Cloud Management", "Operational Intelligence Everywhere"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 8,
+      "answer": "HPE offers specialized AI solutions including NVIDIA AI Computing by HPE and HPE Private Cloud AI, with optimizations for AI workloads.",
+      "evidence_urls": ["https://www.hpe.com/us/en/ai.html"],
+      "evidence_snippets": ["NVIDIA AI Computing by HPE", "HPE Private Cloud AI"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 6,
+      "answer": "HPE's AI solutions are designed to improve performance for AI workloads, but specific performance comparisons are not in the KB.",
+      "evidence_urls": ["https://www.hpe.com/us/en/ai.html"],
+      "evidence_snippets": ["Turnkey AI Factories", "Enterprise-Grade Data Security"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "HPE provides tools for AI workload optimization, such as Marvis AI and Mist AI, but detailed profiling tools are not specified.",
+      "evidence_urls": ["https://www.hpe.com/us/en/networking.html"],
+      "evidence_snippets": ["Marvis AI", "Mist AI"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 5,
+      "answer": "HPE does not operate its own data centers but provides infrastructure for data centers; the number of regions is not specified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "HPE has a global presence, but specific data center distribution is not detailed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "No specific expansion plans are mentioned in the KB, but HPE is a global company with ongoing investments.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "HPE partners with NVIDIA and serves major enterprises, but specific hyperscaler customers are not listed in the KB.",
+      "evidence_urls": ["https://www.hpe.com/us/en/ai.html"],
+      "evidence_snippets": ["NVIDIA AI Computing by HPE"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Revenue split between enterprise and hyperscaler customers is not disclosed in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "HPE provides case studies from companies like Inter Miami CF and Siemens Energy, indicating enterprise adoption.",
+      "evidence_urls": ["https://www.hpe.com/us/en/customer-stories.html"],
+      "evidence_snippets": ["Inter Miami CF", "Siemens Energy"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "HPE reports record-breaking results, but specific revenue figures for data center products are not in the KB.",
+      "evidence_urls": ["https://www.hpe.com/us/en/newsroom.html"],
+      "evidence_snippets": ["HPE reports FY26 second quarter results"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "Gross margin data for the data center segment is not provided in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "HPE reports record-breaking results, suggesting consistent growth, but specific three-year data is not in the KB.",
+      "evidence_urls": ["https://www.hpe.com/us/en/newsroom.html"],
+      "evidence_snippets": ["HPE reports FY26 second quarter results"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "HPE is a major player in data center systems, but specific market share figures are not in the KB.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "HPE's growth rate is not compared to the market in the KB, but the company is investing in AI and cloud.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "HPE is gaining share in AI servers and storage, as indicated by its leadership in the Gartner Magic Quadrant for Enterprise Storage.",
+      "evidence_urls": ["https://www.hpe.com/us/en/storage.html"],
+      "evidence_snippets": ["Leader in the 2026 Magic Quadrant for Enterprise Storage Platforms"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 8,
+      "answer": "HPE has strategic alliances with NVIDIA and other major providers, as shown in its AI solutions.",
+      "evidence_urls": ["https://www.hpe.com/us/en/ai.html"],
+      "evidence_snippets": ["NVIDIA AI Computing by HPE"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 7,
+      "answer": "HPE acquired Juniper Networks, strengthening its networking portfolio, as evidenced by the inclusion of Juniper products.",
+      "evidence_urls": ["https://www.hpe.com/us/en/networking.html"],
+      "evidence_snippets": ["Juniper PTX Series Routers", "Juniper QFX Series Routers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "HPE has collaborations for next-gen technologies, such as quantum computing, but specific joint ventures are not detailed.",
+      "evidence_urls": ["https://www.hpe.com/us/en/quantum.html"],
+      "evidence_snippets": ["HPE advances quantum computing at scale with expanded industry collaborations"],
+      "grounding": "supported"
+    }
+  ]
+}

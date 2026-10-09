@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "Tata Electronics is entering semiconductor manufacturing with a focus on mature nodes and has not announced leading-edge process nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://www.tataelectronics.com/semiconductor-foundry"],
+      "evidence_snippets": ["At our AI-enabled Semiconductor Fab, we deploy next-generation automation capabilities to manufacture wafers on a large scale."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Tata Electronics does not claim leadership in specific process technologies like FinFET or GAA; it is a new entrant focusing on manufacturing capabilities.",
+      "evidence_urls": ["https://www.tataelectronics.com/semiconductor-foundry"],
+      "evidence_snippets": ["At our AI-enabled Semiconductor Fab, we deploy next-generation automation capabilities to manufacture wafers on a large scale."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 4,
+      "answer": "Tata Electronics has not publicly detailed a roadmap for next-generation nodes; its focus is on establishing a fab and leveraging automation.",
+      "evidence_urls": ["https://www.tataelectronics.com/semiconductor-foundry"],
+      "evidence_snippets": ["At our AI-enabled Semiconductor Fab, we deploy next-generation automation capabilities to manufacture wafers on a large scale."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Tata Electronics offers a broad portfolio including EMS, OSAT, foundry, and design services, covering multiple segments of the semiconductor value chain.",
+      "evidence_urls": ["https://www.tataelectronics.com/what-we-do"],
+      "evidence_snippets": ["Tata Electronics is a prominent global player in the electronics & semiconductor manufacturing industry, with strong capabilities in Electronics Manufacturing Services (EMS), Semiconductor Assembly & Test (OSAT), Semiconductor Foundry, and Design Services."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Tata Electronics does not disclose revenue split by product type; as a new entrant, its revenue is likely minimal and not diversified.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 8,
+      "answer": "Tata Electronics explicitly offers OSAT services with multiple packaging technologies, including traditional, advanced, and wafer platforms.",
+      "evidence_urls": ["https://www.tataelectronics.com/semiconductor-assembly-and-test"],
+      "evidence_snippets": ["Our Semiconductor Assembly and Test business focuses on multiple packaging technologies categorised into traditional, advanced, and wafer platforms."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "Tata Electronics does not own proprietary design IP like CPU or GPU; it offers design services but relies on third-party IP.",
+      "evidence_urls": ["https://www.tataelectronics.com/design-services"],
+      "evidence_snippets": ["We provide customisable Design Services to manufacture chips for specific needs and migrate current products to new process technologies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "Tata Electronics likely relies on third-party IP and does not license its own IP, given its design services focus.",
+      "evidence_urls": ["https://www.tataelectronics.com/design-services"],
+      "evidence_snippets": ["We provide customisable Design Services to manufacture chips for specific needs and migrate current products to new process technologies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "Tata Electronics has not demonstrated strong architecture in AI, 5G, or automotive; its design services are generic.",
+      "evidence_urls": ["https://www.tataelectronics.com/design-services"],
+      "evidence_snippets": ["We provide customisable Design Services to manufacture chips for specific needs and migrate current products to new process technologies."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Tata Electronics has not disclosed wafer fabrication capacity or utilization rates; its fab is still in planning/early stages.",
+      "evidence_urls": ["https://www.tataelectronics.com/semiconductor-foundry"],
+      "evidence_snippets": ["At our AI-enabled Semiconductor Fab, we deploy next-generation automation capabilities to manufacture wafers on a large scale."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 3,
+      "answer": "Tata Electronics has not published yield data, and as a new entrant, it likely does not yet meet industry benchmarks for leading-edge nodes.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 6,
+      "answer": "Tata Electronics offers advanced packaging technologies through its OSAT business, but specific capacity details are not disclosed.",
+      "evidence_urls": ["https://www.tataelectronics.com/semiconductor-assembly-and-test"],
+      "evidence_snippets": ["Our Semiconductor Assembly and Test business focuses on multiple packaging technologies categorised into traditional, advanced, and wafer platforms."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "Tata Electronics does not list specific quality certifications on its website, though as a manufacturer it likely pursues ISO standards.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 3,
+      "answer": "Tata Electronics has not disclosed defect rates or reliability measures for critical applications.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Tata Electronics emphasizes sustainability and circular economies, suggesting compliance with environmental regulations, but specific certifications are not mentioned.",
+      "evidence_urls": ["https://www.tataelectronics.com/caring-for-the-earth"],
+      "evidence_snippets": ["We are striving for Net Zero carbon emissions by implementing a range of sustainability initiatives."],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 6,
+      "answer": "Tata Electronics is based in India and has announced partnerships with global companies like ASML and Intel, indicating a growing global presence.",
+      "evidence_urls": ["https://www.tataelectronics.com/w/tata-electronics-and-asml-announce-strategic-partnership-to-advance-the-semiconductor-manufacturing-ecosystem-in-india", "https://www.tataelectronics.com/w/tata-and-intel-announce-strategic-alliance-to-establish-silicon-and-compute-ecosystem-in-india"],
+      "evidence_snippets": ["Tata Electronics and ASML Announce Strategic Partnership to Advance the Semiconductor Manufacturing Ecosystem in India", "Tata and Intel Announce Strategic Alliance to Establish Silicon and Compute Ecosystem in India"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "Tata Electronics serves multiple end-markets including automotive (via Qualcomm partnership) and consumer electronics, but revenue contributions are not disclosed.",
+      "evidence_urls": ["https://www.tataelectronics.com/w/qualcomm-and-tata-electronics-partner-to-manufacture-qualcomm-automotive-modules-in-india"],
+      "evidence_snippets": ["Qualcomm and Tata Electronics Partner to Manufacture Qualcomm Automotive Modules in India"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Tata Electronics' focus on India provides a geopolitically stable supply chain, as highlighted in its positioning, mitigating regional disruption risks.",
+      "evidence_urls": ["https://www.tataelectronics.com/who-we-are"],
+      "evidence_snippets": ["Our distinctive capabilities provide a geopolitically stable and resilient supply chain for our global customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "Tata Electronics has announced partnerships with Qualcomm, ROHM, and Intel, but specific customer names and concentration are not disclosed.",
+      "evidence_urls": ["https://www.tataelectronics.com/w/qualcomm-and-tata-electronics-partner-to-manufacture-qualcomm-automotive-modules-in-india", "https://www.tataelectronics.com/w/rohm-and-tata-electronics-form-strategic-partnership-in-the-semiconductor-business"],
+      "evidence_snippets": ["Qualcomm and Tata Electronics Partner to Manufacture Qualcomm Automotive Modules in India", "ROHM and Tata Electronics Form Strategic Partnership in the Semiconductor Business"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "Tata Electronics has strategic partnerships with major equipment maker ASML and chip giant Intel, as well as ROHM and Qualcomm.",
+      "evidence_urls": ["https://www.tataelectronics.com/w/tata-electronics-and-asml-announce-strategic-partnership-to-advance-the-semiconductor-manufacturing-ecosystem-in-india", "https://www.tataelectronics.com/w/tata-and-intel-announce-strategic-alliance-to-establish-silicon-and-compute-ecosystem-in-india"],
+      "evidence_snippets": ["Tata Electronics and ASML Announce Strategic Partnership to Advance the Semiconductor Manufacturing Ecosystem in India", "Tata and Intel Announce Strategic Alliance to Establish Silicon and Compute Ecosystem in India"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Tata Electronics collaborates with ecosystem players like ASML, Intel, and C-DAC to build a complete semiconductor ecosystem, including design and manufacturing.",
+      "evidence_urls": ["https://www.tataelectronics.com/w/tata-electronics-and-meity-s-centre-for-development-of-advanced-computing-sign-mou-to-develop-domestic-semiconductor-design-and-ip-ecosystem"],
+      "evidence_snippets": ["Tata Electronics and MeitY’s Centre for Development of Advanced Computing sign MoU to develop domestic semiconductor design and IP ecosystem"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "Tata Electronics does not disclose financials; as a new venture, revenue and profitability are not publicly available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "Tata Electronics has not disclosed CapEx figures, but as a greenfield venture, it likely has significant investment from Tata Group.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Tata Electronics is backed by Tata Group, a large conglomerate, suggesting strong financial support, but specific balance sheet details are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Tata Electronics has announced partnerships and MoUs indicating a roadmap to build semiconductor manufacturing and design capabilities in India.",
+      "evidence_urls": ["https://www.tataelectronics.com/w/tata-electronics-and-asml-announce-strategic-partnership-to-advance-the-semiconductor-manufacturing-ecosystem-in-india", "https://www.tataelectronics.com/w/tata-and-intel-announce-strategic-alliance-to-establish-silicon-and-compute-ecosystem-in-india"],
+      "evidence_snippets": ["Tata Electronics and ASML Announce Strategic Partnership to Advance the Semiconductor Manufacturing Ecosystem in India", "Tata and Intel Announce Strategic Alliance to Establish Silicon and Compute Ecosystem in India"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "Tata Electronics has not publicly detailed a roadmap for emerging technologies like AI chips or quantum; its focus is on manufacturing and design services.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 6,
+      "answer": "Tata Electronics' roadmap aligns with India's push for semiconductor self-reliance and global supply chain diversification, as seen in its partnerships.",
+      "evidence_urls": ["https://www.tataelectronics.com/who-we-are"],
+      "evidence_snippets": ["Our distinctive capabilities provide a geopolitically stable and resilient supply chain for our global customers."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Tata Electronics has announced a semiconductor fab in Dholera, India, but specific capacity details are not disclosed.",
+      "evidence_urls": ["https://www.tataelectronics.com/semiconductor-foundry"],
+      "evidence_snippets": ["At our AI-enabled Semiconductor Fab, we deploy next-generation automation capabilities to manufacture wafers on a large scale."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 3,
+      "answer": "Tata Electronics has not disclosed revenue growth rates; as a new venture, it likely has minimal revenue to date.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Tata Electronics plans to fund expansions through Tata Group's resources and government initiatives like India's semiconductor mission, but specific funding details are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

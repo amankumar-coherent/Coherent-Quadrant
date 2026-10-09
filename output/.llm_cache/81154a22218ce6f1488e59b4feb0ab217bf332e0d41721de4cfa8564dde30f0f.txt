@@ -1,0 +1,331 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Formycon has three approved biosimilars and several candidates in late-stage development, indicating a solid pipeline depth.",
+      "evidence_urls": ["https://www.formycon.com/biosimilars/fyb201-ranibizumab/", "https://www.formycon.com/biosimilars/fyb202-ustekinumab/", "https://www.formycon.com/biosimilars/fyb203-aflibercept/", "https://www.formycon.com/biosimilars/entwicklungs-pipeline/"],
+      "evidence_snippets": ["Zugelassene Biosimilars", "Biosimilar-Kandidaten"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "feature": "Product Pipeline Depth",
+      "axis": "Product Strength",
+      "question": "What is the diversity of targets (e.g., antibodies, fusion proteins)?",
+      "score": 6,
+      "answer": "The pipeline includes monoclonal antibodies (ranibizumab, ustekinumab, aflibercept, pembrolizumab, dupilumab) but lacks fusion proteins, showing moderate diversity.",
+      "evidence_urls": ["https://www.formycon.com/biosimilars/fyb201-ranibizumab/", "https://www.formycon.com/biosimilars/fyb202-ustekinumab/", "https://www.formycon.com/biosimilars/fyb203-aflibercept/", "https://www.formycon.com/biosimilars/fyb206-pembrolizumab-biosimilar-kandidat/", "https://www.formycon.com/biosimilars/fyb208-dupilumab-biosimilar-kandidat/"],
+      "evidence_snippets": ["FYB201 Ranibizumab", "FYB202 Ustekinumab", "FYB203 Aflibercept", "FYB206 Pembrolizumab-Biosimilar-Kandidat", "FYB208 Dupilumab-Biosimilar-Kandidat"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "feature": "Product Pipeline Depth",
+      "axis": "Product Strength",
+      "question": "How many pipeline products target top-selling biologics?",
+      "score": 8,
+      "answer": "All pipeline products target top-selling biologics such as ranibizumab, ustekinumab, aflibercept, pembrolizumab, and dupilumab, which are blockbuster drugs.",
+      "evidence_urls": ["https://www.formycon.com/biosimilars/fyb201-ranibizumab/", "https://www.formycon.com/biosimilars/fyb202-ustekinumab/", "https://www.formycon.com/biosimilars/fyb203-aflibercept/", "https://www.formycon.com/biosimilars/fyb206-pembrolizumab-biosimilar-kandidat/", "https://www.formycon.com/biosimilars/fyb208-dupilumab-biosimilar-kandidat/"],
+      "evidence_snippets": ["FYB201 Ranibizumab", "FYB202 Ustekinumab", "FYB203 Aflibercept", "FYB206 Pembrolizumab-Biosimilar-Kandidat", "FYB208 Dupilumab-Biosimilar-Kandidat"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "feature": "Manufacturing Scale & Capability",
+      "axis": "Product Strength",
+      "question": "What is total bioreactor capacity (in liters) globally?",
+      "score": 4,
+      "answer": "The knowledge base does not provide specific bioreactor capacity figures, but Formycon is a development-focused company, likely relying on partners for manufacturing.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q1",
+      "feature": "Manufacturing Scale & Capability",
+      "axis": "Product Strength",
+      "question": "Does the company have multi-site manufacturing for redundancy?",
+      "score": 5,
+      "answer": "Formycon has announced a strategic partnership with OneSource Specialty Pharma for manufacturing, but no evidence of multi-site redundancy is present.",
+      "evidence_urls": ["https://www.formycon.com/blog/press-release/formycon-und-onesource-specialty-pharma-geben-strategische-partnerschaft-fuer-die-herstellung-von-biosimilars-bekannt/"],
+      "evidence_snippets": ["strategische Partnerschaft für die Herstellung von Biosimilars"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "feature": "Manufacturing Scale & Capability",
+      "axis": "Product Strength",
+      "question": "Are manufacturing processes single-use or stainless steel?",
+      "score": 3,
+      "answer": "No information about manufacturing process technology is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "feature": "Analytical & Characterization Expertise",
+      "axis": "Product Strength",
+      "question": "Does the company use state-of-the-art mass spec for characterization?",
+      "score": 5,
+      "answer": "No specific details on analytical techniques are provided, but as a biosimilar developer, advanced characterization is expected.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "feature": "Analytical & Characterization Expertise",
+      "axis": "Product Strength",
+      "question": "How many analytical methods are validated for biosimilar comparability?",
+      "score": 4,
+      "answer": "The knowledge base does not mention validated analytical methods for comparability.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "feature": "Analytical & Characterization Expertise",
+      "axis": "Product Strength",
+      "question": "Are there published studies on structural/functional similarity?",
+      "score": 5,
+      "answer": "No published studies are referenced in the knowledge base, but as a biosimilar company, such studies are likely.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "feature": "Regulatory Approval Track Record",
+      "axis": "Product Strength",
+      "question": "How many biologics/biosimilars approved by FDA/EMA in last 5 years?",
+      "score": 7,
+      "answer": "Formycon has three approved biosimilars (FYB201, FYB202, FYB203) as indicated by 'Zugelassene Biosimilars', suggesting approvals in recent years.",
+      "evidence_urls": ["https://www.formycon.com/biosimilars/fyb201-ranibizumab/", "https://www.formycon.com/biosimilars/fyb202-ustekinumab/", "https://www.formycon.com/biosimilars/fyb203-aflibercept/"],
+      "evidence_snippets": ["Zugelassene Biosimilars"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "feature": "Regulatory Approval Track Record",
+      "axis": "Product Strength",
+      "question": "What is the average approval time from filing to approval?",
+      "score": 4,
+      "answer": "No data on approval times is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "feature": "Regulatory Approval Track Record",
+      "axis": "Product Strength",
+      "question": "Has the company received any complete response letters or rejections?",
+      "score": 5,
+      "answer": "No information about CRLs or rejections is present, but the company has approvals, suggesting a generally positive track record.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "feature": "Technology Platform Innovation",
+      "axis": "Product Strength",
+      "question": "Does the company use novel expression systems (e.g., CHO, yeast)?",
+      "score": 5,
+      "answer": "No specific expression systems are mentioned, but CHO cells are standard for biosimilars.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "feature": "Technology Platform Innovation",
+      "axis": "Product Strength",
+      "question": "Are there proprietary platform technologies for biosimilar development?",
+      "score": 6,
+      "answer": "Formycon positions itself as a specialized biosimilar developer, implying proprietary know-how, but no specific platform is detailed.",
+      "evidence_urls": ["https://www.formycon.com/unternehmen/ueber-uns/"],
+      "evidence_snippets": ["Commercial Stage Biosimilar-Entwickler"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "feature": "Technology Platform Innovation",
+      "axis": "Product Strength",
+      "question": "Has the company invested in AI or automation for R&D?",
+      "score": 3,
+      "answer": "No evidence of AI or automation investments is found in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "feature": "Global Market Presence",
+      "axis": "Business Strategy",
+      "question": "In how many countries are products commercially available?",
+      "score": 5,
+      "answer": "The knowledge base does not specify the number of countries, but as a global player, it likely has multiple markets.",
+      "evidence_urls": ["https://www.formycon.com/unternehmen/ueber-uns/"],
+      "evidence_snippets": ["global operierender, unabhängiger Biosimilar-Entwickler"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "feature": "Global Market Presence",
+      "axis": "Business Strategy",
+      "question": "Does the company have a strong presence in emerging markets?",
+      "score": 4,
+      "answer": "No specific information about emerging markets is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "feature": "Global Market Presence",
+      "axis": "Business Strategy",
+      "question": "Are there local manufacturing or partnerships in key regions?",
+      "score": 6,
+      "answer": "Formycon has a strategic partnership with OneSource Specialty Pharma for manufacturing, indicating some regional collaboration.",
+      "evidence_urls": ["https://www.formycon.com/blog/press-release/formycon-und-onesource-specialty-pharma-geben-strategische-partnerschaft-fuer-die-herstellung-von-biosimilars-bekannt/"],
+      "evidence_snippets": ["strategische Partnerschaft für die Herstellung von Biosimilars"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "feature": "Revenue & Growth Trajectory",
+      "axis": "Business Strategy",
+      "question": "What is the year-over-year revenue growth rate for biologics?",
+      "score": 6,
+      "answer": "The H1 2026 report mentions 'deutlich verbesserte Finanzzahlen im Vergleich zum Vorjahreszeitraum', indicating improved financials, but no specific growth rate.",
+      "evidence_urls": ["https://www.formycon.com/blog/press-release/formycon-berichtet-ueber-wichtige-operative-erfolge-im-ersten-halbjahr-2026-und-zeigt-deutlich-verbesserte-finanzzahlen-im-vergleich-zum-vorjahreszeitraum/"],
+      "evidence_snippets": ["deutlich verbesserte Finanzzahlen im Vergleich zum Vorjahreszeitraum"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "feature": "Revenue & Growth Trajectory",
+      "axis": "Business Strategy",
+      "question": "Is the company profitable in its biosimilar segment?",
+      "score": 5,
+      "answer": "The company reports improved financials, but profitability is not explicitly stated.",
+      "evidence_urls": ["https://www.formycon.com/blog/press-release/formycon-berichtet-ueber-wichtige-operative-erfolge-im-ersten-halbjahr-2026-und-zeigt-deutlich-verbesserte-finanzzahlen-im-vergleich-zum-vorjahreszeitraum/"],
+      "evidence_snippets": ["deutlich verbesserte Finanzzahlen"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "feature": "Revenue & Growth Trajectory",
+      "axis": "Business Strategy",
+      "question": "What is the projected market share growth in next 3 years?",
+      "score": 4,
+      "answer": "No projections for market share growth are available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "feature": "Customer Base & Partnerships",
+      "axis": "Business Strategy",
+      "question": "Does the company have partnerships with major pharma or distributors?",
+      "score": 7,
+      "answer": "Formycon has a strategic partnership with OneSource Specialty Pharma for manufacturing, indicating collaboration with a major player.",
+      "evidence_urls": ["https://www.formycon.com/blog/press-release/formycon-und-onesource-specialty-pharma-geben-strategische-partnerschaft-fuer-die-herstellung-von-biosimilars-bekannt/"],
+      "evidence_snippets": ["strategische Partnerschaft für die Herstellung von Biosimilars"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "feature": "Customer Base & Partnerships",
+      "axis": "Business Strategy",
+      "question": "How many healthcare providers or hospitals are customers?",
+      "score": 3,
+      "answer": "No information on the number of healthcare providers or hospitals is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "feature": "Customer Base & Partnerships",
+      "axis": "Business Strategy",
+      "question": "Are there long-term supply agreements with payers or GPOs?",
+      "score": 3,
+      "answer": "No evidence of long-term supply agreements with payers or GPOs is present.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "feature": "Biosimilar Price Competitiveness",
+      "axis": "Business Strategy",
+      "question": "What is the average discount vs. reference biologic?",
+      "score": 4,
+      "answer": "No pricing data is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "feature": "Biosimilar Price Competitiveness",
+      "axis": "Business Strategy",
+      "question": "Does the company offer value-added services to payers?",
+      "score": 3,
+      "answer": "No information on value-added services for payers is found.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "feature": "Biosimilar Price Competitiveness",
+      "axis": "Business Strategy",
+      "question": "How does pricing compare to other biosimilar competitors?",
+      "score": 4,
+      "answer": "No comparative pricing information is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "feature": "Supply Chain Resilience",
+      "axis": "Business Strategy",
+      "question": "Are there multiple suppliers for raw materials and components?",
+      "score": 3,
+      "answer": "No information on supplier diversification is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "feature": "Supply Chain Resilience",
+      "axis": "Business Strategy",
+      "question": "Does the company have a risk management plan for supply disruptions?",
+      "score": 4,
+      "answer": "No explicit risk management plan is mentioned, but the partnership with OneSource may mitigate some risks.",
+      "evidence_urls": ["https://www.formycon.com/blog/press-release/formycon-und-onesource-specialty-pharma-geben-strategische-partnerschaft-fuer-die-herstellung-von-biosimilars-bekannt/"],
+      "evidence_snippets": ["strategische Partnerschaft für die Herstellung von Biosimilars"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "feature": "Supply Chain Resilience",
+      "axis": "Business Strategy",
+      "question": "What is the average lead time for key inputs?",
+      "score": 3,
+      "answer": "No lead time data is available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

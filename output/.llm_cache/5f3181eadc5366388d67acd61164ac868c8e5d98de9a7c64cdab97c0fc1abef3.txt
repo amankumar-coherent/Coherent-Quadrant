@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only the Spire Health Tag, a single device for respiratory monitoring. No other products are described."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Described as 'FDA approved continuous respiratory monitoring device' with 'clinical-grade accuracy' and 'unparalleled adherence'."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Developed a machine-washable wearable from the ground up, uses AI for early detection, and is conducting COPD studies for digital biomarkers."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No direct evidence on manufacturing or quality systems, but FDA approval implies some quality compliance."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Explicitly stated as 'FDA approved continuous respiratory monitoring device'."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Based in San Francisco, but no evidence of global scale or multi-market presence."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Called 'market leader' and 'leading digital healthcare company' with backing from Rock Health and Stanford StartX."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Revenue of $35.1 million and funding of $48.1M, but no profitability or growth data."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Launched COPD study to develop digital biomarkers for predicting exacerbations, indicating expansion beyond current indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Tooploox for development, and acquired by Wellinks, indicating business expansion."
+    }
+  ],
+  "evidence_used": true
+}

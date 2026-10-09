@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions a wearable device for physiological monitoring (heart rate, core body temperature) and a separate Echo H2 patch for hydration, lactic acid, glucose, but no broad portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 6,
+      "grounding": "partial",
+      "why": "CNN reports device can predict core body temperature and prevent overheating, indicating some clinical validation, but no detailed clinical trial data."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "partial",
+      "why": "CRN lists Kenzen among coolest wearables 2020, and technology combines wearable, app, dashboard, showing innovation, but limited R&D details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence of FDA clearance or other regulatory approvals."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence shows presence in US, trials in Dubai, and occupational health in Africa, indicating some international reach but not broad global scale."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Featured in CRN, CNN, and Energies Media, suggesting recognition, but limited evidence of widespread clinical adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 4,
+      "grounding": "partial",
+      "why": "PitchBook profile indicates 15 employees and private ownership, but no revenue or funding details."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Echo H2 patch for hydration, lactic acid, glucose suggests expansion beyond heat stress, but no clear pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Mention of partners on PitchBook and trials in Dubai indicate partnerships, but limited specifics."
+    }
+  ],
+  "evidence_used": true
+}

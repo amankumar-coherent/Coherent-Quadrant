@@ -1,0 +1,67 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence mentions connected glucose/BP devices and integration with Dexcom CGM, but portfolio is limited to chronic care (diabetes, hypertension) and not broad wearable range."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No direct clinical outcome data or safety records in evidence; only mentions pilot-testing with Dexcom and coaching support."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Evidence shows integration with Dexcom CGM and aggregation of data from connected devices, indicating innovative digital health platform."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "insufficient",
+      "why": "No evidence on manufacturing capabilities or quality systems; only mentions connected devices but not production."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "No direct FDA clearance for Livongo devices; only mentions Dexcom's FDA go-ahead for pairing, not Livongo's own regulatory status."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Evidence shows US presence (BBB profile, US only for some devices) and partnerships, but no global scale mentioned."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Acquired by Teladoc Health, partnerships with Dexcom and Cambia, and BBB profile indicate established trust and adoption."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Evidence shows $170.2M annual revenue in FY 2019 and $18.5B acquisition by Teladoc, indicating solid financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Expanding from diabetes to hypertension and weight management, and integrating CGM data, but no specific pipeline details."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Strong partnerships with Dexcom, Cambia Health, and acquisition by Teladoc Health demonstrate significant business expansion."
+    }
+  ],
+  "evidence_used": true
+}

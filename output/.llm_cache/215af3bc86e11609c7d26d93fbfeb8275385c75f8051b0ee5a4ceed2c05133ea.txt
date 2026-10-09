@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Coala Life markets its heart monitor with clinical validation, but specific published accuracy data is not detailed in the provided knowledge base.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Coala Heart Monitor dual ECG/heart sound wearable"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 5,
+      "answer": "The knowledge base does not specify accuracy rates like MARD for Coala's devices, so the score reflects limited public information.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Coala Heart Monitor dual ECG/heart sound wearable"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Coala's heart monitor is a medical device with regulatory presence in Sweden, USA, and Europe, implying certifications, but specific FDA/CE details are not in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Sweden, USA, Europe"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 4,
+      "answer": "The knowledge base only mentions one device, the Coala Heart Monitor, indicating a narrow portfolio.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Coala Heart Monitor dual ECG/heart sound wearable"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "Coala focuses solely on cardiac monitoring, with no evidence of devices for other therapeutic areas.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Cardiac monitoring"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The Coala Heart Monitor is used in clinical settings, but there is no indication of a consumer-focused device variant.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Cardiac monitoring; Digital health"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Coala likely has clinical publications given its medical positioning, but none are cited in the knowledge base.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Coala Heart Monitor dual ECG/heart sound wearable"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "No clinical trial information is present in the knowledge base, though the company's medical focus suggests some activity.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Cardiac monitoring"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "Real-world evidence is not mentioned in the KB, but the device's use in digital health implies some outcomes tracking.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Digital health"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 4,
+      "answer": "Battery life is not specified in the knowledge base, and the device's form factor (dual ECG/heart sound) may limit battery longevity.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Coala Heart Monitor dual ECG/heart sound wearable"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "The Coala Heart Monitor is wearable but not described as waterproof or designed for continuous wear in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["wearable"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 3,
+      "answer": "Only one form factor is mentioned, the Coala Heart Monitor, with no indication of multiple device types.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Coala Heart Monitor"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 4,
+      "answer": "No EHR integration is mentioned in the knowledge base, though the company's clinical focus suggests possible integrations.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Cardiac monitoring"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "No APIs or SDKs are mentioned in the KB, but as a digital health company, some developer access is plausible.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Digital health"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "No mention of HL7 or FHIR support in the KB, but medical device interoperability is likely a consideration.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Cardiac monitoring"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Coala operates in Sweden, USA, and Europe, implying regulatory approvals like CE and FDA, but specifics are not in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Sweden, USA, Europe"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q1",
+      "score": 6,
+      "answer": "The device is for cardiac monitoring, suggesting medical indications, but the KB does not specify approval scope.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Cardiac monitoring"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Presence in Sweden, USA, and Europe indicates multi-geography regulatory activity.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Sweden, USA, Europe"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No user numbers or sales data are provided in the KB, making adoption estimates difficult.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Coala Heart Monitor"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "The company's international presence suggests some distribution, but no specific partnerships are mentioned.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Sweden, USA, Europe"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q2",
+      "score": 4,
+      "answer": "No case studies or testimonials are present in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No CPT codes or reimbursement pathways are mentioned in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No insurance coverage information is provided in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 4,
+      "answer": "No patient assistance or subscription models are mentioned in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue growth data is available in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No financial metrics like gross margins are disclosed in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 4,
+      "answer": "No evidence of recurring revenue models in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "Coala's clinical focus suggests partnerships with healthcare systems, but none are listed in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": ["Cardiac monitoring"],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No collaborations with tech or pharma are mentioned in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "No participation in standards bodies or joint ventures is mentioned in the KB.",
+      "evidence_urls": ["https://www.coalalife.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

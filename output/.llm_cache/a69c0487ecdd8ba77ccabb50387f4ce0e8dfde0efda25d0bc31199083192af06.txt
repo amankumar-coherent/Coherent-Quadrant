@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Phison has announced the E28 as the world's first 6nm AI-computing SSD, indicating advanced node adoption for its controllers, though it is not a foundry offering leading-edge nodes like 3nm or 2nm.",
+      "evidence_urls": ["https://www.phison.com/phison-e28-the-worlds-first-6nm-ai-computing-ssd-wins-the-2026-taiwan-excellence-gold-award/"],
+      "evidence_snippets": ["Phison E28 – World’s First 6nm AI-Computing SSD"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Phison leads in NAND controller technology with its 6nm AI-computing SSD, but it does not compete in leading-edge logic process technologies like FinFET or GAA, which are dominated by foundries.",
+      "evidence_urls": ["https://www.phison.com/phison-e28-the-worlds-first-6nm-ai-computing-ssd-wins-the-2026-taiwan-excellence-gold-award/"],
+      "evidence_snippets": ["Phison E28 – World’s First 6nm AI-Computing SSD"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 6,
+      "answer": "Phison's roadmap includes advanced 6nm controllers and AI-integrated storage solutions, but specific next-generation node timelines (e.g., 2nm) are not disclosed in the knowledge base.",
+      "evidence_urls": ["https://www.phison.com/phison-e28-the-worlds-first-6nm-ai-computing-ssd-wins-the-2026-taiwan-excellence-gold-award/"],
+      "evidence_snippets": ["Phison E28 – World’s First 6nm AI-Computing SSD"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Phison is specialized in NAND flash controllers and storage solutions, not a broad semiconductor supplier across logic, memory, analog, and power categories.",
+      "evidence_urls": ["https://www.phison.com"],
+      "evidence_snippets": ["A World Leader in NAND Controllers & Flash Storage Solutions"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 5,
+      "answer": "Phison's portfolio is focused on NAND storage products, and the knowledge base does not provide a revenue split by product type, indicating limited diversification.",
+      "evidence_urls": ["https://www.phison.com"],
+      "evidence_snippets": ["Consumer, industrial & enterprise NAND SSDs"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 4,
+      "answer": "Phison does not appear to offer OSAT services; it focuses on controller design and storage solutions, with no mention of OSAT partnerships in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 8,
+      "answer": "Phison owns proprietary NAND controller IP and AI integration technologies, as evidenced by its aiDAPTIV+ platform and custom ASIC design services.",
+      "evidence_urls": ["https://www.phison.com/imagin-plus-platform-customized-nand-flash-storage-solutions-and-asic-design-services/"],
+      "evidence_snippets": ["Phison's aiDAPTIV+ integrates AI and machine learning technologies directly into NAND controllers and algorithms"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 6,
+      "answer": "Phison primarily develops its own IP for NAND controllers and offers custom ASIC design services, but the knowledge base does not indicate whether it licenses IP to others or relies on third-party IP.",
+      "evidence_urls": ["https://www.phison.com/imagin-plus-platform-customized-nand-flash-storage-solutions-and-asic-design-services/"],
+      "evidence_snippets": ["custom SSD design services"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q2",
+      "score": 8,
+      "answer": "Phison's architecture is strong in AI and automotive, with dedicated aiDAPTIV+ AI solutions and automotive-grade storage, though 5G is not explicitly mentioned.",
+      "evidence_urls": ["https://www.phison.com/automotive/", "https://www.phisonenterprise.com/pascari-aidaptiv/"],
+      "evidence_snippets": ["Phison offers secure and reliable automotive-grade flash storage", "Phison's aiDAPTIV+ integrates AI and machine learning technologies"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Phison is a fabless company and does not own wafer fabrication facilities, so it has no internal wafer capacity or utilization rates.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "As a fabless company, Phison does not have its own yield rates; it relies on foundry partners, and the knowledge base does not provide yield benchmarks.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "Phison does not offer advanced packaging itself; it focuses on controller design and storage solutions, with no mention of packaging capabilities in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Phison likely holds standard quality certifications like ISO 9001, but the knowledge base does not list specific certifications, so this is based on general industry knowledge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Phison emphasizes reliability in its storage solutions, but specific defect rate (DPPM) data is not available in the knowledge base.",
+      "evidence_urls": ["https://www.phison.com/automotive/"],
+      "evidence_snippets": ["Phison offers secure and reliable automotive-grade flash storage"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Phison addresses environmental compliance through its ESG initiatives, including sustainability reporting, but specific RoHS/REACH details are not in the knowledge base.",
+      "evidence_urls": ["https://www.phison.com/phison-included-in-the-sp-global-sustainability-yearbook-for-four-consecutive-years/"],
+      "evidence_snippets": ["Phison Included in the S&P Global Sustainability Yearbook for Four Consecutive Years"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 7,
+      "answer": "Phison is headquartered in Taiwan and serves global markets, with a worldwide presence indicated by its international operations and partnerships.",
+      "evidence_urls": ["https://www.phison.com"],
+      "evidence_snippets": ["Taiwan; Global"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Phison serves multiple end-markets including consumer, enterprise, automotive, gaming, and embedded, but revenue contribution by market is not disclosed.",
+      "evidence_urls": ["https://www.phison.com/consumer/", "https://www.phison.com/enterprise/", "https://www.phison.com/automotive/", "https://www.phison.com/gaming/"],
+      "evidence_snippets": ["Consumer, industrial & enterprise NAND SSDs", "Phison offers secure and reliable automotive-grade flash storage"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 6,
+      "answer": "Phison's global presence and diverse end-markets help mitigate regional risks, but the knowledge base does not detail specific risk mitigation strategies.",
+      "evidence_urls": ["https://www.phison.com"],
+      "evidence_snippets": ["Taiwan; Global"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Phison is trusted by top ODM, OEM, enterprise, and consumer technology providers, but specific customer names and concentration risk are not disclosed.",
+      "evidence_urls": ["https://www.phison.com"],
+      "evidence_snippets": ["Trusted by the Top ODM, OEM, Enterprise, and Consumer Technology Providers"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 7,
+      "answer": "Phison has strategic partnerships, including with Intel for AI PC platforms and Micron as a supplier, indicating strong ecosystem collaboration.",
+      "evidence_urls": ["https://www.phison.com/phison-collaborates-with-intel-to-bring-larger-local-ai-workloads-to-intel-ai-pc-platforms/", "https://www.phison.com/phison-receives-micron-outstanding-supplier-performance-award/"],
+      "evidence_snippets": ["Phison Collaborates with Intel to Bring Larger Local AI Workloads to Intel AI PC Platforms", "Phison Receives Micron Outstanding Supplier Performance Award"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "Phison collaborates with ecosystem players through its IMAGIN+ design services and partnerships with foundries and memory makers, delivering complete storage solutions.",
+      "evidence_urls": ["https://www.phison.com/imagin-plus-platform-customized-nand-flash-storage-solutions-and-asic-design-services/"],
+      "evidence_snippets": ["IMAGIN+ empowers global partners and customers with NAND Flash R&D resource sharing, custom SSD design services"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 5,
+      "answer": "Phison's financial details such as revenue, net income, and free cash flow are not provided in the knowledge base, so this is based on general knowledge of the company's public financials.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Phison's capital expenditure details are not in the knowledge base; as a fabless company, its CapEx is likely lower than integrated device manufacturers, but specific figures are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Phison's balance sheet strength is not detailed in the knowledge base, but as a profitable company it likely has adequate cash reserves; specific debt-to-equity ratios are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "Phison's roadmap includes AI-integrated storage, 6nm controllers, and enterprise SSDs with ultra-high capacity, as evidenced by recent product launches and awards.",
+      "evidence_urls": ["https://www.phison.com/phison-e28-the-worlds-first-6nm-ai-computing-ssd-wins-the-2026-taiwan-excellence-gold-award/", "https://www.phison.com/phisons-pascari-enterprise-storage-honored-with-computex-best-choice-golden-award-for-breakthrough-245-76-tb-capacity/"],
+      "evidence_snippets": ["Phison E28 – World’s First 6nm AI-Computing SSD", "Pascari D206V Enterprise SSD Up to 245.76 TB"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 7,
+      "answer": "Phison has a clear roadmap for AI and advanced memory, with products like aiDAPTIV+ and high-capacity enterprise SSDs, but no mention of quantum computing.",
+      "evidence_urls": ["https://www.phisonenterprise.com/pascari-aidaptiv/", "https://www.phison.com/phisons-pascari-enterprise-storage-honored-with-computex-best-choice-golden-award-for-breakthrough-245-76-tb-capacity/"],
+      "evidence_snippets": ["Phison's aiDAPTIV+ integrates AI and machine learning technologies", "Pascari D206V Enterprise SSD Up to 245.76 TB"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Phison's roadmap aligns with industry trends in AI and data center storage, as shown by its AI-focused products and enterprise SSD innovations.",
+      "evidence_urls": ["https://www.phison.com/phison-unlocks-a-full-scale-ai-deployment-across-industries-building-an-ecosystem-with-pascari-aidaptiv/"],
+      "evidence_snippets": ["Phison Unlocks Full-Scale AI Deployment Across Industries"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 4,
+      "answer": "Phison does not own fabs, so it has no new fab expansion projects; it may expand through partnerships, but no specific capacity additions are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "Phison's revenue growth rate is not provided in the knowledge base, but the company is expanding its product lines and partnerships, suggesting positive growth.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Phison likely funds expansions through operating cash flow and partnerships, but specific funding plans are not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

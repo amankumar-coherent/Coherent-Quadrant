@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 2,
+      "answer": "Micron does not offer CPUs, GPUs, or custom accelerators; it focuses on memory and storage solutions.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 1,
+      "answer": "Micron does not produce accelerators, so performance per watt is not applicable.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 2,
+      "answer": "Micron's memory products are compatible with AI frameworks, but they do not offer compute products.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 2,
+      "answer": "Micron does not provide networking solutions like Ethernet or InfiniBand; it focuses on memory and storage.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 1,
+      "answer": "Micron does not offer interconnect technology, so latency and bandwidth metrics are not applicable.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 2,
+      "answer": "Micron does not produce networking products, so compatibility with switch vendors is not applicable.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q0",
+      "score": 3,
+      "answer": "Micron does not design data centers, so PUE is not directly applicable; their products may influence efficiency but no specific PUE data is provided.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 3,
+      "answer": "Micron does not offer cooling solutions; they focus on memory and storage components.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q2",
+      "score": 4,
+      "answer": "Micron's memory products are designed for low power, but specific power management features for data centers are not detailed.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 2,
+      "answer": "Micron does not provide a data center orchestration platform; it offers design tools and software for memory management.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Design tools Access our design tools and resources to test, build, and maintain high-performance solutions to support your design process."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q1",
+      "score": 2,
+      "answer": "Micron's software tools are not orchestration platforms and do not integrate with Kubernetes or OpenStack.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Design tools Access our design tools and resources to test, build, and maintain high-performance solutions to support your design process."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q2",
+      "score": 2,
+      "answer": "Micron's software tools focus on memory configuration and monitoring, not workload orchestration.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Design tools Access our design tools and resources to test, build, and maintain high-performance solutions to support your design process."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 7,
+      "answer": "Micron offers HBM and high-bandwidth memory optimized for AI workloads, as evidenced by HBM4 for NVIDIA.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin in high volume production"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q1",
+      "score": 7,
+      "answer": "Micron's HBM and high-bandwidth memory provide significant performance improvements for AI workloads compared to general-purpose memory.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin in high volume production"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q2",
+      "score": 5,
+      "answer": "Micron provides design tools and resources that help optimize memory for AI workloads, but not full profiling tools.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Design tools Access our design tools and resources to test, build, and maintain high-performance solutions to support your design process."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q0",
+      "score": 3,
+      "answer": "Micron does not operate data centers; it manufactures memory and storage, so the number of regions is not applicable.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 3,
+      "answer": "Micron has global manufacturing and sales presence, but not data centers; geographic distribution of data centers is not applicable.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 4,
+      "answer": "Micron is expanding manufacturing in the U.S., but not data center regions.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["With more than $250 billion in planned investment through 2035, Micron's memory fabs in Idaho, New York, and Virginia will strengthen U.S. economic and national security."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 7,
+      "answer": "Micron partners with major technology companies like NVIDIA, as evidenced by HBM4 for NVIDIA, but not specifically hyperscalers.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin in high volume production"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q1",
+      "score": 4,
+      "answer": "Micron does not disclose revenue split between enterprise and hyperscaler customers.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Micron provides customer success stories, but not specifically from Fortune 500 companies using data center solutions.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Customer and partner storage success"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 6,
+      "answer": "Micron's revenue is primarily from memory and storage, which are essential for data centers, but specific data center revenue is not disclosed.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "Micron's gross margins are not disclosed by segment, but as a memory manufacturer, they are cyclical.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q2",
+      "score": 6,
+      "answer": "Micron has shown growth in memory demand for data centers, but specific revenue growth figures are not provided.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q0",
+      "score": 6,
+      "answer": "Micron is a leading memory supplier, but market share in data center systems is not specified.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "Micron's growth is tied to memory demand, which is growing with AI, but specific comparisons are not provided.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["Micron Technology is a leading manufacturer of memory and storage solutions, including DRAM, NAND flash, and solid-state drives."],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "Micron is gaining share in AI memory with HBM and high-capacity SSDs, as evidenced by HBM4 and 245TB SSD.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin in high volume production", "Industry leading 245TB SSD now shipping"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 7,
+      "answer": "Micron has strategic alliances with NVIDIA for HBM4, but not with Intel or VMware specifically.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin in high volume production"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "No recent acquisitions are mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 6,
+      "answer": "Micron collaborates with NVIDIA on HBM4, indicating co-development, but no formal joint ventures are mentioned.",
+      "evidence_urls": ["https://www.micron.com"],
+      "evidence_snippets": ["HBM4 designed for NVIDIA Vera Rubin in high volume production"],
+      "grounding": "supported"
+    }
+  ]
+}

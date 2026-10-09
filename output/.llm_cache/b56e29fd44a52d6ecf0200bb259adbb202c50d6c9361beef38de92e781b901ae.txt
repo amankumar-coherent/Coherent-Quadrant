@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions only AT-Patch (ATP-C130/ATP-C70) and AT-Report software; no other products listed."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 5,
+      "grounding": "partial",
+      "why": "AT-Patch offers 14-day continuous ECG monitoring, water-resistant, and is used in hospitals; no clinical trial data or performance metrics provided."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Company states focus on developing next-generation products and innovative healthcare platform; no specific R&D details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Evidence mentions supply deals and cumulative exports, implying manufacturing capability, but no details on quality systems or certifications."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "ATP-C130 obtained FDA 510(k) clearance (K242583), CE MDD, PMDA in Japan, MFDS in South Korea; ATP-C70 obtained PMDA and MFDS."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Contracted with over 30 countries, including 150+ major hospitals in Japan; signed US supply deal with distributors in NY/FL/AZ."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "partial",
+      "why": "Adopted in 150+ hospitals in Japan and cumulative exports of 53,000 units; but limited evidence of broader clinical adoption or brand recognition."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Secured $7 million investment and a 3-year supply contract worth about ₩50B (~450,000 units); no revenue figures disclosed."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Focus on wearable ECG and next-generation products; no specific pipeline details or new indications mentioned."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Signed major US supply agreement with distributor; investors include DreamStone Private Equity, DAYLI Partners, Hana Financial Group, etc."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

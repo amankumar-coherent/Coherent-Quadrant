@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Battery Fire Safety Industry Analysis",
+  "country": "india",
+  "batch": "all",
+  "family": "general",
+  "target": 120,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 125,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 97,
+  "rejected_mid": 28,
+  "chatgpt_filled": 82,
+  "rejected_final": 0,
+  "total_after": 82,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\battery_fire_safety_industry_analysis_india_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "c143ca83",
+    "market": "Battery Fire Safety Industry Analysis",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-25T09:57:57.155176+00:00",
+    "ended_at": "2026-09-25T13:53:15.496738+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 120,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 82,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\battery_fire_safety_industry_analysis_india_FINAL.xlsx",
+      "rejected_mid": 28,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Others",
+    "industry_category": "Energy",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters focus on battery fire safety technology and commercial factors specific to the Indian market, including local regulations, OEM partnerships, and manufacturing localization. They enable a comprehensive assessment of companies in this niche industry.",
+    "parameter_definitions": {
+      "x": {
+        "Fire-Resistant Battery Chemistry & Materials": "Use of inherently safer battery chemistries (e.g., LFP, solid-state) and flame-retardant materials in cell and pack design to reduce fire risk. Evidence includes material specifications, safety test results (e.g., nail penetration, overcharge), and third-party certifications.",
+        "Thermal Runaway Prevention & Suppression Systems": "Design features and active/passive systems that prevent or mitigate thermal runaway, such as cooling systems, venting, and fire suppression agents. Strength shown by successful test outcomes (e.g., no fire propagation) and integration in commercial products.",
+        "Battery Management System (BMS) Safety Features": "Advanced BMS with real-time monitoring, fault detection, and fail-safe mechanisms to prevent overcharging, overheating, and short circuits. Evidence includes BMS algorithms, sensor accuracy, and response times in safety-critical scenarios.",
+        "Compliance with Indian & International Safety Standards": "Adherence to standards like AIS-156 (India), IEC 62619, UL 1973, and UN38.3 for battery safety. Strength indicated by certifications, test reports, and compliance with evolving Indian regulations.",
+        "R&D and Innovation in Battery Fire Safety": "Ongoing research and development focused on improving battery safety, including new materials, designs, and testing methodologies. Evidence includes patents, R&D expenditure, collaborations with research institutions, and published innovations."
+      },
+      "y": {
+        "Tier-1 OEM Partnerships & Supply Contracts": "Contracts and partnerships with major Indian electric vehicle (EV) manufacturers, energy storage integrators, or electronics OEMs. Evidence includes named customers, contract values, and duration of agreements.",
+        "Revenue & Growth in Indian Market": "Sales revenue and growth rate specifically from the Indian market for battery products with fire safety features. Evidence includes financial statements, investor presentations, and market share reports.",
+        "Manufacturing Capacity & Localization in India": "Production capacity and degree of local manufacturing in India, including cell and pack assembly. Evidence includes factory locations, capacity figures (GWh), and localization commitments under PLI schemes.",
+        "After-Sales Service & Support Network": "Extent of service centers, technical support, and warranty offerings across India. Evidence includes number of service points, response times, and customer satisfaction metrics.",
+        "Regulatory Approvals & Certifications": "Obtained approvals and certifications from Indian regulatory bodies (e.g., ARAI, ICAT) and international organizations. Evidence includes certificate numbers, approval dates, and compliance with BIS standards."
+      }
+    },
+    "x_features": [
+      "Fire-Resistant Battery Chemistry & Materials",
+      "Thermal Runaway Prevention & Suppression Systems",
+      "Battery Management System (BMS) Safety Features",
+      "Compliance with Indian & International Safety Standards",
+      "R&D and Innovation in Battery Fire Safety"
+    ],
+    "y_features": [
+      "Tier-1 OEM Partnerships & Supply Contracts",
+      "Revenue & Growth in Indian Market",
+      "Manufacturing Capacity & Localization in India",
+      "After-Sales Service & Support Network",
+      "Regulatory Approvals & Certifications"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 72.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 82,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 82,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 82,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The battery fire safety market encompasses products and services designed to prevent, detect, and suppress fires in lithium-ion and other battery systems used in electric vehicles, energy storage, and industrial applications.",
+      "keep_roles": [
+        "Manufacturer"
+      ],
+      "uniform_role": "Manufacturer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\battery_fire_safety_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

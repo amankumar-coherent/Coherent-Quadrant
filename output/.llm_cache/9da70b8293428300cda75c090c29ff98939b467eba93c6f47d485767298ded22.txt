@@ -1,0 +1,63 @@
+{
+  "scope": {
+    "market": "avocado oil",
+    "geographies": ["global"],
+    "geography": "global",
+    "company_type": "producer, processor, brand owner, distributor",
+    "industry_vertical": "food and beverage",
+    "industry_terms": ["avocado oil", "extra virgin avocado oil", "refined avocado oil", "cold-pressed avocado oil", "organic avocado oil"],
+    "ecosystem_functions": ["avocado fruit grower", "crude oil extractor", "oil refiner", "contract manufacturer", "private label supplier", "bulk oil supplier", "brand owner", "packager", "bottler", "distributor", "wholesaler", "importer", "exporter", "e-commerce retailer"],
+    "interpretation_summary": "The avocado oil market includes growers, processors, refiners, brand owners, and distributors of avocado oil for culinary and cosmetic use.",
+    "relevance_keywords": ["avocado oil", "extra virgin", "cold-pressed", "refined", "organic", "bulk", "private label", "manufacturer", "supplier", "producer"],
+    "negative_keywords": ["news", "blog", "market", "report", "directory", "jobs", "careers", "consulting", "recipes", "guacamole"],
+    "seed_companies": [
+      {"canonical_name": "Chosen Foods", "primary_domain": "chosenfoods.com", "company_function": "Brand owner and producer of avocado oil"},
+      {"canonical_name": "La Tourangelle", "primary_domain": "latourangelle.com", "company_function": "Producer of specialty oils including avocado oil"},
+      {"canonical_name": "Olivado", "primary_domain": "olivado.com", "company_function": "Avocado oil producer and exporter"},
+      {"canonical_name": "AvoPure", "primary_domain": "avopure.com", "company_function": "Avocado oil manufacturer and supplier"},
+      {"canonical_name": "Bella Vado", "primary_domain": "bellavado.com", "company_function": "Avocado oil producer"},
+      {"canonical_name": "Kevala", "primary_domain": "kevala.net", "company_function": "Importer and distributor of avocado oil"},
+      {"canonical_name": "BetterBody Foods", "primary_domain": "betterbodyfoods.com", "company_function": "Brand owner of avocado oil"},
+      {"canonical_name": "Spectrum Naturals", "primary_domain": "spectrumnaturals.com", "company_function": "Producer of organic oils including avocado oil"}
+    ]
+  },
+  "funnel_prompts": [
+    {"id": "L0", "text": "avocado oil companies official websites"},
+    {"id": "L1", "text": "avocado oil manufacturer corporate site"},
+    {"id": "L2", "text": "avocado oil producer headquarters"}
+  ],
+  "discovery_prompts": [
+    {"id": "P1", "text": "avocado oil grower official site"},
+    {"id": "P2", "text": "avocado oil extraction company website"},
+    {"id": "P3", "text": "avocado oil refiner corporate profile"},
+    {"id": "P4", "text": "avocado oil contract manufacturer official site"},
+    {"id": "P5", "text": "avocado oil private label supplier website"},
+    {"id": "P6", "text": "avocado oil bulk supplier corporate site"},
+    {"id": "P7", "text": "avocado oil brand owner official site"},
+    {"id": "P8", "text": "avocado oil packager corporate website"},
+    {"id": "P9", "text": "avocado oil bottler official site"},
+    {"id": "P10", "text": "avocado oil distributor corporate site"},
+    {"id": "P11", "text": "avocado oil importer official website"},
+    {"id": "P12", "text": "avocado oil e-commerce retailer site"}
+  ],
+  "gates": {
+    "must_have": ["avocado oil", "official", "corporate", "company"],
+    "must_not_have": ["news", "blog", "market", "report", "directory", "jobs", "careers", "consulting", "recipes", "guacamole"]
+  },
+  "listing_rules": {
+    "max_companies": 50,
+    "min_evidence": 1,
+    "require_website": true
+  },
+  "ranking": {
+    "criteria": ["relevance", "company_size", "market_presence"]
+  },
+  "evidence_policy": {
+    "min_evidence": 1,
+    "types": ["official_website", "corporate_profile", "product_page"]
+  },
+  "freshness_policy": {
+    "max_age_days": 365,
+    "check_interval_days": 30
+  }
+}

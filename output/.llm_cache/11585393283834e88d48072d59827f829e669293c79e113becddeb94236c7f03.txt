@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 4,
+      "answer": "EVG is an equipment supplier, not a chipmaker, so it does not offer process nodes; its technology enables advanced packaging and lithography for nodes down to 200nm interconnect pitch.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy"],
+      "evidence_snippets": ["Imec and EV Group demonstrate wafer-to-wafer hybrid bonding with 200nm interconnect pitch"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q1",
+      "score": 8,
+      "answer": "EVG leads in wafer bonding and lithography technologies, particularly hybrid bonding and nanoimprint lithography, as evidenced by its record overlay accuracy and industry recognition.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy", "https://www.evgroup.com/company/news/detail/ev-group-continues-to-top-customer-rankings-in-techinsights-2026-customer-satisfaction-survey-with-fourteenth-consecutive-triple-crown-win-of-global-semiconductor-supplier-awards"],
+      "evidence_snippets": ["record high overlay accuracy", "Fourteenth Consecutive Triple Crown Win of Global Semiconductor Supplier Awards"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "EVG's roadmap focuses on enabling next-gen packaging and lithography, but specific node timelines are not disclosed; its technologies support advanced nodes like 200nm pitch hybrid bonding.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy"],
+      "evidence_snippets": ["200nm interconnect pitch"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "EVG specializes in wafer processing equipment for micro- and nanoelectronics, covering lithography, bonding, and metrology, but does not produce logic, memory, or analog chips itself.",
+      "evidence_urls": ["https://www.evgroup.com/products"],
+      "evidence_snippets": ["Industry-leading wafer processing equipment for high-volume manufacturing of micro- and nanoelectronics"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q1",
+      "score": 3,
+      "answer": "EVG does not disclose revenue split by product type; as an equipment maker, its portfolio is diversified across lithography, bonding, and metrology, but not chip categories.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "EVG partners with OSATs and research institutes like Imec to enable advanced packaging, but does not provide OSAT services itself.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy"],
+      "evidence_snippets": ["Imec and EV Group demonstrate wafer-to-wafer hybrid bonding"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q0",
+      "score": 7,
+      "answer": "EVG owns proprietary technologies like SmartNIL, ComBond, and IR LayerRelease, which are differentiated in nanoimprint lithography and bonding.",
+      "evidence_urls": ["https://www.evgroup.com/technologies/nanoimprint-lithography-smartnil", "https://www.evgroup.com/technologies/combond-technology", "https://www.evgroup.com/technologies/ir-layerrelease-technology"],
+      "evidence_snippets": ["Nanoimprint Lithography (NIL) - SmartNIL®", "ComBond® Technology", "IR LayerRelease™ Technology"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "EVG does not license CPU/GPU IP; it develops its own process technologies and collaborates with partners, but does not rely on third-party IP like ARM.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 7,
+      "answer": "EVG's technologies are strong in high-growth areas like AI and advanced packaging, as evidenced by its hybrid bonding and layer transfer solutions for heterogeneous integration.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-highlights-hybrid-bonding-layer-transfer-and-maskless-lithography-technologies-for-heterogeneous-integration-and-advanced-packaging-at-ectc-2026"],
+      "evidence_snippets": ["Hybrid Bonding, Layer Transfer and Maskless Lithography Technologies for Heterogeneous Integration and Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "EVG does not operate wafer fabs; it manufactures equipment, so wafer capacity and utilization are not applicable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "EVG's equipment enables high-yield processes, but specific yield rates are not disclosed; its customer satisfaction awards suggest reliable performance.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-continues-to-top-customer-rankings-in-techinsights-2026-customer-satisfaction-survey-with-fourteenth-consecutive-triple-crown-win-of-global-semiconductor-supplier-awards"],
+      "evidence_snippets": ["Fourteenth Consecutive Triple Crown Win of Global Semiconductor Supplier Awards"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q2",
+      "score": 8,
+      "answer": "EVG offers advanced packaging solutions including hybrid bonding, layer transfer, and maskless lithography, with demonstrated capabilities like 200nm pitch hybrid bonding.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy", "https://www.evgroup.com/company/news/detail/ev-group-highlights-hybrid-bonding-layer-transfer-and-maskless-lithography-technologies-for-heterogeneous-integration-and-advanced-packaging-at-ectc-2026"],
+      "evidence_snippets": ["wafer-to-wafer hybrid bonding with 200nm interconnect pitch", "Hybrid Bonding, Layer Transfer and Maskless Lithography Technologies for Heterogeneous Integration and Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f4_q0",
+      "score": 5,
+      "answer": "EVG likely holds ISO certifications as a global equipment manufacturer, but specific certifications are not mentioned in the provided knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 4,
+      "answer": "EVG's equipment reliability is implied by its customer satisfaction awards, but specific defect rates are not disclosed.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-continues-to-top-customer-rankings-in-techinsights-2026-customer-satisfaction-survey-with-fourteenth-consecutive-triple-crown-win-of-global-semiconductor-supplier-awards"],
+      "evidence_snippets": ["Fourteenth Consecutive Triple Crown Win of Global Semiconductor Supplier Awards"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q2",
+      "score": 4,
+      "answer": "EVG likely complies with environmental regulations as a global company, but no specific certifications or policies are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "EVG has a global presence with headquarters in Austria, eight wholly owned subsidiaries, and a worldwide customer support network, indicating significant reach.",
+      "evidence_urls": ["https://www.evgroup.com/company/global-presence"],
+      "evidence_snippets": ["Global headquarters in Austria", "Eight fully owned subsidiaries in major markets", "Worldwide customer support network"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 5,
+      "answer": "EVG serves semiconductor and microelectronics markets, but specific end-market revenue contributions are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "EVG's global footprint with subsidiaries and local representatives mitigates regional risks, though specific risk management strategies are not detailed.",
+      "evidence_urls": ["https://www.evgroup.com/company/global-presence"],
+      "evidence_snippets": ["Eight fully owned subsidiaries in major markets", "Local representatives in many other countries"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 5,
+      "answer": "EVG's top customers are not disclosed, but its customer satisfaction awards suggest strong relationships; concentration risk is unknown.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-continues-to-top-customer-rankings-in-techinsights-2026-customer-satisfaction-survey-with-fourteenth-consecutive-triple-crown-win-of-global-semiconductor-supplier-awards"],
+      "evidence_snippets": ["Fourteenth Consecutive Triple Crown Win of Global Semiconductor Supplier Awards"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 8,
+      "answer": "EVG has strategic partnerships with research consortia like Imec and Silicon Austria Labs, as evidenced by collaborative announcements.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy", "https://www.evgroup.com/company/news/detail/silicon-austria-labs-and-ev-group-strengthen-collaboration-in-optical-technology-research"],
+      "evidence_snippets": ["Imec and EV Group demonstrate", "Silicon Austria Labs and EV Group strengthen Collaboration"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q2",
+      "score": 7,
+      "answer": "EVG collaborates with ecosystem players like Imec and Silicon Austria Labs to develop complete solutions, as shown in joint R&D projects.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy", "https://www.evgroup.com/company/news/detail/silicon-austria-labs-and-ev-group-strengthen-collaboration-in-optical-technology-research"],
+      "evidence_snippets": ["Imec and EV Group demonstrate", "Silicon Austria Labs and EV Group strengthen Collaboration"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f7_q0",
+      "score": 3,
+      "answer": "EVG's financial data is not publicly disclosed in the knowledge base; as a private company, revenue and net income are not available.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 3,
+      "answer": "EVG's CapEx details are not available; as a private company, such financial metrics are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 3,
+      "answer": "EVG's balance sheet information is not available; as a private company, debt and cash reserves are not disclosed.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 7,
+      "answer": "EVG's roadmap includes advancing hybrid bonding, layer transfer, and maskless lithography, as highlighted in recent news and events.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-highlights-hybrid-bonding-layer-transfer-and-maskless-lithography-technologies-for-heterogeneous-integration-and-advanced-packaging-at-ectc-2026"],
+      "evidence_snippets": ["Hybrid Bonding, Layer Transfer and Maskless Lithography Technologies for Heterogeneous Integration and Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f8_q1",
+      "score": 6,
+      "answer": "EVG's technologies support emerging areas like AI and advanced packaging, but specific roadmap for AI chips or quantum is not detailed.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-highlights-hybrid-bonding-layer-transfer-and-maskless-lithography-technologies-for-heterogeneous-integration-and-advanced-packaging-at-ectc-2026"],
+      "evidence_snippets": ["Heterogeneous Integration and Advanced Packaging"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f8_q2",
+      "score": 7,
+      "answer": "EVG's roadmap aligns with industry trends toward heterogeneous integration and advanced packaging, as evidenced by its focus on these areas.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-highlights-hybrid-bonding-layer-transfer-and-maskless-lithography-technologies-for-heterogeneous-integration-and-advanced-packaging-at-ectc-2026"],
+      "evidence_snippets": ["Heterogeneous Integration and Advanced Packaging"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f9_q0",
+      "score": 3,
+      "answer": "EVG does not operate fabs; it expands its equipment manufacturing capabilities, but specific expansion projects are not detailed in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 4,
+      "answer": "EVG's revenue growth is not disclosed; its continued customer satisfaction awards suggest stable performance, but no financials are provided.",
+      "evidence_urls": ["https://www.evgroup.com/company/news/detail/ev-group-continues-to-top-customer-rankings-in-techinsights-2026-customer-satisfaction-survey-with-fourteenth-consecutive-triple-crown-win-of-global-semiconductor-supplier-awards"],
+      "evidence_snippets": ["Fourteenth Consecutive Triple Crown Win"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f9_q2",
+      "score": 4,
+      "answer": "EVG's funding and expansion plans are not disclosed; as a private company, details on capital allocation are unavailable.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "scope": {
+    "market": "flexible packaging",
+    "geographies": ["global"],
+    "geography": "global",
+    "company_type": "manufacturer",
+    "industry_vertical": "packaging",
+    "industry_terms": ["flexible packaging", "pouches", "films", "laminates", "packaging materials"],
+    "ecosystem_functions": ["resin_producer", "film_manufacturer", "foil_manufacturer", "adhesive_supplier", "ink_supplier", "coating_supplier", "converter", "machinery_manufacturer"],
+    "interpretation_summary": "Global market for flexible packaging materials, converting, and machinery.",
+    "relevance_keywords": ["flexible packaging", "pouches", "bags", "films", "laminates", "converting", "printing", "packaging solutions", "food packaging", "stand-up pouch"],
+    "negative_keywords": ["rigid packaging", "glass bottles", "metal cans", "paperboard", "corrugated", "packaging design agency", "packaging distributor"],
+    "seed_companies": [
+      {"canonical_name": "Amcor", "primary_domain": "amcor.com", "company_function": "converter"},
+      {"canonical_name": "Sealed Air", "primary_domain": "sealedair.com", "company_function": "converter"},
+      {"canonical_name": "Berry Global", "primary_domain": "berryglobal.com", "company_function": "converter"},
+      {"canonical_name": "Huhtamaki", "primary_domain": "huhtamaki.com", "company_function": "converter"},
+      {"canonical_name": "Mondi", "primary_domain": "mondi.com", "company_function": "converter"},
+      {"canonical_name": "Constantia Flexibles", "primary_domain": "cflex.com", "company_function": "converter"},
+      {"canonical_name": "Toray Industries", "primary_domain": "toray.com", "company_function": "film_manufacturer"},
+      {"canonical_name": "Uflex", "primary_domain": "uflexltd.com", "company_function": "converter"}
+    ]
+  },
+  "funnel_prompts": [
+    {"id": "L0", "text": "flexible packaging companies official websites"},
+    {"id": "L1", "text": "flexible packaging manufacturer corporate site"},
+    {"id": "L2", "text": "flexible packaging converter product portfolio"}
+  ],
+  "discovery_prompts": [
+    {"id": "P1", "text": "polyethylene resin manufacturer flexible packaging official site"},
+    {"id": "P2", "text": "BOPP film manufacturer flexible packaging corporate website"},
+    {"id": "P3", "text": "aluminum foil manufacturer for packaging official site"},
+    {"id": "P4", "text": "laminating adhesive manufacturer flexible packaging corporate site"},
+    {"id": "P5", "text": "flexographic ink manufacturer packaging official website"},
+    {"id": "P6", "text": "barrier coating supplier flexible packaging corporate site"},
+    {"id": "P7", "text": "flexible packaging converter official website"},
+    {"id": "P8", "text": "stand-up pouch manufacturer corporate site"},
+    {"id": "P9", "text": "vertical form fill seal machine manufacturer official site"},
+    {"id": "P10", "text": "flexographic printing press manufacturer packaging official site"},
+    {"id": "P11", "text": "recyclable flexible packaging material manufacturer corporate site"},
+    {"id": "P12", "text": "flexible packaging recycling company official website"}
+  ],
+  "gates": {
+    "must_have": ["company website", "relevant product or service"],
+    "must_not_have": ["listicle", "directory", "news article"]
+  },
+  "listing_rules": {
+    "include": ["manufacturers", "converters", "material suppliers", "machinery makers"],
+    "exclude": ["distributors", "agents", "traders"]
+  },
+  "ranking": {
+    "criteria": ["relevance", "company size", "global presence"]
+  },
+  "evidence_policy": {
+    "required": ["official website", "product pages"]
+  },
+  "freshness_policy": {
+    "max_age_days": 365
+  }
+}

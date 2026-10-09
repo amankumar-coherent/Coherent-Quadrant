@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 7,
+      "answer": "Biogen has a robust pipeline with several candidates in late-stage development, though specific Phase III biosimilar candidates are not detailed in the knowledge base.",
+      "evidence_urls": ["https://www.biogen.com/science-and-innovation/pipeline.html"],
+      "evidence_snippets": ["Driving an Innovative Pipeline", "develop potential breakthrough therapies in neurology, immunology, and rare diseases"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q1",
+      "score": 7,
+      "answer": "Biogen's pipeline spans multiple modalities including antibodies and gene therapies, but the knowledge base does not specify the diversity of targets for biosimilars.",
+      "evidence_urls": ["https://www.biogen.com/science-and-innovation/pipeline.html"],
+      "evidence_snippets": ["develop potential breakthrough therapies in neurology, immunology, and rare diseases"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f0_q2",
+      "score": 5,
+      "answer": "The knowledge base does not indicate which pipeline products target top-selling biologics, so this is based on general industry knowledge.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q0",
+      "score": 6,
+      "answer": "Biogen has significant manufacturing capabilities, but the knowledge base does not provide specific bioreactor capacity in liters.",
+      "evidence_urls": ["https://www.biogen.com/science-and-innovation/manufacturing.html"],
+      "evidence_snippets": ["Making Medicines Safely & Reliably"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q1",
+      "score": 7,
+      "answer": "Biogen operates multiple manufacturing sites globally, as indicated by its extensive international presence, but the knowledge base does not explicitly confirm redundancy.",
+      "evidence_urls": ["https://www.biogen.com/science-and-innovation/manufacturing.html"],
+      "evidence_snippets": ["Making Medicines Safely & Reliably"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "The knowledge base does not specify whether Biogen's manufacturing processes are single-use or stainless steel.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q0",
+      "score": 6,
+      "answer": "Biogen likely uses advanced analytical techniques, but the knowledge base does not mention mass spec specifically.",
+      "evidence_urls": ["https://www.biogen.com/science-and-innovation/scientific-expertise.html"],
+      "evidence_snippets": ["R&D Expertise"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f2_q1",
+      "score": 4,
+      "answer": "The knowledge base does not provide information on the number of validated analytical methods for biosimilar comparability.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f2_q2",
+      "score": 5,
+      "answer": "No published studies on structural/functional similarity are mentioned in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q0",
+      "score": 7,
+      "answer": "Biogen has a strong track record of FDA/EMA approvals for innovative medicines, but the knowledge base does not list specific biosimilar approvals in the last 5 years.",
+      "evidence_urls": ["https://investors.biogen.com/news"],
+      "evidence_snippets": ["News"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f3_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide data on average approval times.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f3_q2",
+      "score": 5,
+      "answer": "The knowledge base does not mention any complete response letters or rejections.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Biogen uses advanced expression systems, but the knowledge base does not specify CHO or yeast.",
+      "evidence_urls": ["https://www.biogen.com/science-and-innovation/scientific-expertise.html"],
+      "evidence_snippets": ["R&D Expertise"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "The knowledge base does not mention proprietary platform technologies for biosimilar development.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Biogen is investing in innovation, but the knowledge base does not specifically mention AI or automation in R&D.",
+      "evidence_urls": ["https://www.biogen.com/science-and-innovation.html"],
+      "evidence_snippets": ["Science & Innovation"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Biogen has a global presence with products available in numerous countries across the Americas, Asia Pacific, Europe, and Middle East.",
+      "evidence_urls": ["https://www.biogen.com"],
+      "evidence_snippets": ["United States - Global Website", "Argentina", "Brazil", "Canada", "China", "India", "Japan", "Germany", "United Kingdom"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Biogen has a presence in emerging markets like China, India, and Brazil, indicating a strong foothold.",
+      "evidence_urls": ["https://www.biogen.com"],
+      "evidence_snippets": ["China", "India", "Brazil"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Biogen has local manufacturing and partnerships in key regions, as evidenced by its global operations, though specifics are not detailed.",
+      "evidence_urls": ["https://www.biogen.com"],
+      "evidence_snippets": ["Global website", "International HQ"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q0",
+      "score": 6,
+      "answer": "Biogen is a major biotech with steady revenue, but the knowledge base does not provide specific year-over-year growth rates for biologics.",
+      "evidence_urls": ["https://investors.biogen.com"],
+      "evidence_snippets": ["Investors"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide segment-level profitability for biosimilars.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "No projections for market share growth are available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q0",
+      "score": 7,
+      "answer": "Biogen has partnerships with major pharma and distributors, as indicated by its partner page, but specifics are not in the knowledge base.",
+      "evidence_urls": ["https://www.biogen.com/partner-with-biogen.html"],
+      "evidence_snippets": ["Partners"],
+      "grounding": "partial"
+    },
+    {
+      "id": "f7_q1",
+      "score": 5,
+      "answer": "The knowledge base does not provide information on the number of healthcare providers or hospitals as customers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "No information on long-term supply agreements with payers or GPOs is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide pricing discounts for biosimilars.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 5,
+      "answer": "The knowledge base does not mention value-added services for payers.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "No comparative pricing data is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q0",
+      "score": 5,
+      "answer": "The knowledge base does not provide information on supplier diversity.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "The knowledge base does not mention risk management plans for supply disruptions.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "No lead time data for key inputs is available in the knowledge base.",
+      "evidence_urls": [],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    }
+  ]
+}

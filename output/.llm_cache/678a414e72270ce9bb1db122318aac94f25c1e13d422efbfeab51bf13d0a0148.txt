@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions a single platform (Biofourmis Platform) and services like Hospital at Home, but no specific wearable devices or breadth of portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Evidence cites '70% reduction in 30-day readmissions', 'detect deterioration 21 hours sooner', and 'reductions in cost of care by up to 38%'."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA Breakthrough Device Designation for BiovitalsHF and AI-driven analytics (RhythmAnalytics trained on 4M ECGs) indicate strong innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence about manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 8,
+      "grounding": "supported",
+      "why": "FDA Breakthrough Device Designation for BiovitalsHF and mention of FDA-cleared ECG monitoring wearables indicate regulatory engagement."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 7,
+      "grounding": "supported",
+      "why": "Key markets include United States and Worldwide; presence in Singapore; partnerships with GE HealthCare and health systems."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Over 50 global health systems and payers, named customers AdventHealth and Lee Health, and partnerships with GE HealthCare."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Conflicting revenue estimates: $37.7M ARR (GetLatka) vs $143.7M (CompWorth); raised $465M, valuation $1.3B; but no official financials."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 7,
+      "grounding": "supported",
+      "why": "FDA Breakthrough for heart failure, merger with CopilotIQ for AI-driven in-home care, and acquisition of life science business by ActiGraph indicate expansion."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Partnerships with GE HealthCare, ImagineMIC, and merger with CopilotIQ; acquisition of life science business by ActiGraph."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

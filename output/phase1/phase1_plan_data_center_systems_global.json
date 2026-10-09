@@ -1,0 +1,1625 @@
+{
+  "phase": 1,
+  "query": "Data Center Systems Market",
+  "mock_mode": false,
+  "completed_at": "2026-08-25T12:32:50.815024+00:00",
+  "llm_provider": "deepseek",
+  "search_primary": "duckduckgo",
+  "search_backup": "searxng",
+  "funnel_levels": [
+    "L0",
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "scope": {
+    "market": "data center systems",
+    "geographies": [
+      "global"
+    ],
+    "geography": "global",
+    "company_type": "manufacturer, technology provider, supplier, integrator",
+    "industry_vertical": "data center infrastructure",
+    "industry_terms": [
+      "server",
+      "storage array",
+      "network switch",
+      "UPS",
+      "PDU",
+      "CRAC",
+      "CRAH",
+      "chiller",
+      "liquid cooling",
+      "rack"
+    ],
+    "ecosystem_functions": [
+      "component manufacturer",
+      "server OEM",
+      "storage OEM",
+      "networking OEM",
+      "power system manufacturer",
+      "cooling system manufacturer",
+      "physical infrastructure manufacturer",
+      "DCIM software vendor",
+      "orchestration software vendor",
+      "system integrator",
+      "managed service provider",
+      "colocation provider",
+      "OEM manufacturer",
+      "software vendor"
+    ],
+    "interpretation_summary": "The data center systems market encompasses the physical and logical infrastructure used to build and operate data centers, including servers, storage systems, networking equipment, power and cooling systems, and the soft",
+    "relevance_keywords": [
+      "data center",
+      "server",
+      "storage",
+      "networking",
+      "power",
+      "cooling",
+      "infrastructure",
+      "rack",
+      "UPS",
+      "DCIM",
+      "virtualization",
+      "cloud",
+      "colocation"
+    ],
+    "negative_keywords": [
+      "news",
+      "blog",
+      "review",
+      "job",
+      "career",
+      "event",
+      "webinar",
+      "consulting",
+      "market research",
+      "directory",
+      "cloud service",
+      "web hosting"
+    ],
+    "seed_companies": [
+      {
+        "canonical_name": "Dell Technologies",
+        "primary_domain": "dell.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "Hewlett Packard Enterprise",
+        "primary_domain": "hpe.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "Cisco Systems",
+        "primary_domain": "cisco.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "Vertiv",
+        "primary_domain": "vertiv.com",
+        "company_function": "facility infrastructure provider"
+      },
+      {
+        "canonical_name": "Schneider Electric",
+        "primary_domain": "se.com",
+        "company_function": "facility infrastructure provider"
+      },
+      {
+        "canonical_name": "Eaton",
+        "primary_domain": "eaton.com",
+        "company_function": "power systems manufacturer"
+      },
+      {
+        "canonical_name": "Intel",
+        "primary_domain": "intel.com",
+        "company_function": "component manufacturer"
+      },
+      {
+        "canonical_name": "IBM",
+        "primary_domain": "ibm.com",
+        "company_function": "oem manufacturer"
+      },
+      {
+        "canonical_name": "NVIDIA Corporation",
+        "primary_domain": "nvidia.com",
+        "company_function": "GPU accelerator manufacturer",
+        "segment": "Server Components",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Samsung Electronics",
+        "primary_domain": "samsung.com",
+        "company_function": "memory and SSD manufacturer",
+        "segment": "Server Components",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Broadcom Inc.",
+        "primary_domain": "broadcom.com",
+        "company_function": "networking switch and NIC manufacturer",
+        "segment": "Networking Components",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Lenovo",
+        "primary_domain": "lenovo.com",
+        "company_function": "server OEM",
+        "segment": "Server OEMs",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "NetApp",
+        "primary_domain": "netapp.com",
+        "company_function": "storage OEM",
+        "segment": "Storage OEMs",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Pure Storage",
+        "primary_domain": "purestorage.com",
+        "company_function": "all-flash storage OEM",
+        "segment": "Storage OEMs",
+        "source": "market_map_llm"
+      },
+      {
+        "canonical_name": "Rittal GmbH & Co. KG",
+        "primary_domain": "rittal.com",
+        "company_function": "rack and enclosure manufacturer",
+        "segment": "Physical Infrastructure",
+        "source": "market_map_llm"
+      }
+    ],
+    "search_topic": "data center systems",
+    "funnel_enabled": true,
+    "query_parsed": true,
+    "scope_source": "llm",
+    "intent": "market_map",
+    "product_category": "data center systems",
+    "include_keywords": [
+      "data center server",
+      "enterprise storage",
+      "network switch",
+      "uninterruptible power supply",
+      "precision cooling",
+      "data center infrastructure management",
+      "rack enclosure",
+      "hyperconverged infrastructure",
+      "all-flash storage",
+      "data center design"
+    ],
+    "exclude_keywords": [
+      "news",
+      "blog",
+      "directory",
+      "market report",
+      "job board",
+      "consulting",
+      "recruitment",
+      "training",
+      "event",
+      "webinar"
+    ],
+    "scope_version": 2,
+    "market_definition": "The data center systems market encompasses the physical and logical infrastructure used to build and operate data centers, including servers, storage systems, networking equipment, power and cooling systems, and the software and services that manage them. Participants include hardware manufacturers, component suppliers, system integrators, facility designers, and service providers. The market is global, covering enterprise, cloud, colocation, and edge data centers.",
+    "value_chain_layers": [
+      {
+        "layer_id": "L1",
+        "layer_name": "Hardware Components",
+        "description": "Manufacturers of core compute, storage, and networking hardware components that go into data center systems.",
+        "segments": [
+          {
+            "segment_name": "Server Components",
+            "sub_segments": [
+              "CPUs",
+              "GPUs",
+              "Memory modules",
+              "Motherboards",
+              "Storage drives"
+            ],
+            "participant_types": [
+              "component manufacturer",
+              "OEM supplier"
+            ],
+            "search_intents": [
+              "server CPU manufacturer official site",
+              "GPU accelerator manufacturer data center",
+              "server memory module manufacturer",
+              "enterprise SSD manufacturer official site"
+            ]
+          },
+          {
+            "segment_name": "Networking Components",
+            "sub_segments": [
+              "Ethernet switches",
+              "Optical transceivers",
+              "Network interface cards",
+              "Cables and connectors"
+            ],
+            "participant_types": [
+              "component manufacturer",
+              "OEM supplier"
+            ],
+            "search_intents": [
+              "data center switch manufacturer official site",
+              "optical transceiver manufacturer data center",
+              "network interface card manufacturer",
+              "high-speed cable assembly manufacturer data center"
+            ]
+          },
+          {
+            "segment_name": "Power and Cooling Components",
+            "sub_segments": [
+              "Power supplies",
+              "Cooling fans",
+              "Heat sinks",
+              "Liquid cooling plates"
+            ],
+            "participant_types": [
+              "component manufacturer",
+              "OEM supplier"
+            ],
+            "search_intents": [
+              "server power supply manufacturer",
+              "data center liquid cooling plate manufacturer",
+              "server cooling fan manufacturer",
+              "heat sink manufacturer data center"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L2",
+        "layer_name": "System Manufacturing",
+        "description": "OEMs that assemble complete servers, storage arrays, and networking equipment from components.",
+        "segments": [
+          {
+            "segment_name": "Server OEMs",
+            "sub_segments": [
+              "Rack servers",
+              "Tower servers",
+              "Blade servers",
+              "Edge servers"
+            ],
+            "participant_types": [
+              "OEM manufacturer",
+              "ODM"
+            ],
+            "search_intents": [
+              "rack server manufacturer official site",
+              "enterprise server OEM",
+              "edge server manufacturer",
+              "blade server manufacturer official site"
+            ]
+          },
+          {
+            "segment_name": "Storage OEMs",
+            "sub_segments": [
+              "SAN arrays",
+              "NAS systems",
+              "Hyperconverged infrastructure",
+              "All-flash arrays"
+            ],
+            "participant_types": [
+              "OEM manufacturer",
+              "ODM"
+            ],
+            "search_intents": [
+              "SAN storage manufacturer official site",
+              "NAS storage manufacturer enterprise",
+              "hyperconverged infrastructure vendor",
+              "all-flash array manufacturer"
+            ]
+          },
+          {
+            "segment_name": "Networking OEMs",
+            "sub_segments": [
+              "Ethernet switches",
+              "Routers",
+              "Load balancers",
+              "SDN controllers"
+            ],
+            "participant_types": [
+              "OEM manufacturer",
+              "ODM"
+            ],
+            "search_intents": [
+              "data center switch vendor official site",
+              "enterprise router manufacturer",
+              "load balancer manufacturer data center",
+              "SDN controller vendor"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L3",
+        "layer_name": "Facility Infrastructure",
+        "description": "Providers of power, cooling, and physical infrastructure systems for data center facilities.",
+        "segments": [
+          {
+            "segment_name": "Power Systems",
+            "sub_segments": [
+              "UPS systems",
+              "PDUs",
+              "Generators",
+              "Batteries",
+              "Switchgear"
+            ],
+            "participant_types": [
+              "manufacturer",
+              "system integrator"
+            ],
+            "search_intents": [
+              "UPS manufacturer data center official site",
+              "PDU manufacturer data center",
+              "diesel generator manufacturer data center",
+              "data center battery manufacturer"
+            ]
+          },
+          {
+            "segment_name": "Cooling Systems",
+            "sub_segments": [
+              "CRAC units",
+              "CRAH units",
+              "Chillers",
+              "Liquid cooling systems",
+              "Cooling towers"
+            ],
+            "participant_types": [
+              "manufacturer",
+              "system integrator"
+            ],
+            "search_intents": [
+              "CRAC unit manufacturer data center",
+              "CRAH unit manufacturer",
+              "data center chiller manufacturer",
+              "liquid cooling system manufacturer data center"
+            ]
+          },
+          {
+            "segment_name": "Physical Infrastructure",
+            "sub_segments": [
+              "Racks and enclosures",
+              "Cabling systems",
+              "Containment systems",
+              "Monitoring sensors"
+            ],
+            "participant_types": [
+              "manufacturer",
+              "system integrator"
+            ],
+            "search_intents": [
+              "server rack manufacturer official site",
+              "data center cabling manufacturer",
+              "hot aisle containment manufacturer",
+              "data center sensor manufacturer"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L4",
+        "layer_name": "Software and Management",
+        "description": "Software platforms for managing data center infrastructure, including DCIM, orchestration, and monitoring.",
+        "segments": [
+          {
+            "segment_name": "DCIM Software",
+            "sub_segments": [
+              "Asset management",
+              "Power monitoring",
+              "Cooling management",
+              "Capacity planning"
+            ],
+            "participant_types": [
+              "software vendor",
+              "SaaS provider"
+            ],
+            "search_intents": [
+              "DCIM software vendor official site",
+              "data center infrastructure management software",
+              "data center power monitoring software",
+              "data center capacity planning software"
+            ]
+          },
+          {
+            "segment_name": "Orchestration and Automation",
+            "sub_segments": [
+              "Workload automation",
+              "Infrastructure orchestration",
+              "AIOps"
+            ],
+            "participant_types": [
+              "software vendor",
+              "SaaS provider"
+            ],
+            "search_intents": [
+              "data center orchestration software vendor",
+              "infrastructure automation software",
+              "AIOps platform data center"
+            ]
+          }
+        ]
+      },
+      {
+        "layer_id": "L5",
+        "layer_name": "Services and Integration",
+        "description": "Design, build, integration, and managed services for data center systems.",
+        "segments": [
+          {
+            "segment_name": "System Integrators",
+            "sub_segments": [
+              "Enterprise data center",
+              "Colocation",
+              "Edge",
+              "Hyperscale"
+            ],
+            "participant_types": [
+              "integrator",
+              "consultant"
+            ],
+            "search_intents": [
+              "data center system integrator official site",
+              "data center design build firm",
+              "edge data center integrator",
+              "hyperscale data center integrator"
+            ]
+          },
+          {
+            "segment_name": "Managed Services",
+            "sub_segments": [
+              "Remote monitoring",
+              "Maintenance",
+              "Colocation management"
+            ],
+            "participant_types": [
+              "managed service provider",
+              "colocation provider"
+            ],
+            "search_intents": [
+              "data center managed services provider",
+              "data center maintenance services",
+              "colocation provider official site"
+            ]
+          }
+        ]
+      }
+    ],
+    "market_boundary": {
+      "in_scope": [
+        "Server manufacturers (rack, tower, blade, edge)",
+        "Storage systems (SAN, NAS, hyperconverged, all-flash)",
+        "Networking equipment (switches, routers, load balancers)",
+        "Power infrastructure (UPS, PDU, generators, batteries)",
+        "Cooling systems (CRAC, CRAH, liquid cooling, chillers)",
+        "Data center infrastructure management (DCIM) software",
+        "System integrators and data center design/build firms",
+        "Colocation and cloud service providers (as end users)"
+      ],
+      "out_of_scope": [
+        "Enterprise software applications (ERP, CRM)",
+        "Telecommunications carrier networks (outside data center)",
+        "Consumer electronics and personal computing devices",
+        "Office building construction and general real estate",
+        "IT consulting and managed services (non-infrastructure)",
+        "Data center REITs and investment firms (financial)"
+      ]
+    },
+    "market_map_prompts": [
+      {
+        "id": "M1",
+        "level": "market_map",
+        "text": "server CPU manufacturer official site",
+        "sub_sector": "cpu_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M2",
+        "level": "market_map",
+        "text": "GPU accelerator manufacturer data center",
+        "sub_sector": "gpu_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M3",
+        "level": "market_map",
+        "text": "server memory module manufacturer",
+        "sub_sector": "memory_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M4",
+        "level": "market_map",
+        "text": "enterprise SSD manufacturer official site",
+        "sub_sector": "ssd_manufacturer",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M5",
+        "level": "market_map",
+        "text": "data center switch manufacturer official site",
+        "sub_sector": "switch_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M6",
+        "level": "market_map",
+        "text": "optical transceiver manufacturer data center",
+        "sub_sector": "transceiver_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M7",
+        "level": "market_map",
+        "text": "network interface card manufacturer",
+        "sub_sector": "nic_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M8",
+        "level": "market_map",
+        "text": "high-speed cable assembly manufacturer data center",
+        "sub_sector": "cable_manufacturer",
+        "layer_id": "L1",
+        "segment": "Networking Components"
+      },
+      {
+        "id": "M9",
+        "level": "market_map",
+        "text": "server power supply manufacturer",
+        "sub_sector": "psu_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M10",
+        "level": "market_map",
+        "text": "data center liquid cooling plate manufacturer",
+        "sub_sector": "liquid_cooling_plate_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M11",
+        "level": "market_map",
+        "text": "server cooling fan manufacturer",
+        "sub_sector": "fan_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M12",
+        "level": "market_map",
+        "text": "heat sink manufacturer data center",
+        "sub_sector": "heat_sink_manufacturer",
+        "layer_id": "L1",
+        "segment": "Power and Cooling Components"
+      },
+      {
+        "id": "M13",
+        "level": "market_map",
+        "text": "rack server manufacturer official site",
+        "sub_sector": "rack_server_oem",
+        "layer_id": "L2",
+        "segment": "Server OEMs"
+      },
+      {
+        "id": "M14",
+        "level": "market_map",
+        "text": "edge server manufacturer",
+        "sub_sector": "edge_server_oem",
+        "layer_id": "L2",
+        "segment": "Server OEMs"
+      },
+      {
+        "id": "M15",
+        "level": "market_map",
+        "text": "SAN storage manufacturer official site",
+        "sub_sector": "san_oem",
+        "layer_id": "L2",
+        "segment": "Storage OEMs"
+      },
+      {
+        "id": "M16",
+        "level": "market_map",
+        "text": "hyperconverged infrastructure vendor",
+        "sub_sector": "hci_vendor",
+        "layer_id": "L2",
+        "segment": "Storage OEMs"
+      },
+      {
+        "id": "M17",
+        "level": "market_map",
+        "text": "data center switch vendor official site",
+        "sub_sector": "switch_oem",
+        "layer_id": "L2",
+        "segment": "Networking OEMs"
+      },
+      {
+        "id": "M18",
+        "level": "market_map",
+        "text": "load balancer manufacturer data center",
+        "sub_sector": "load_balancer_oem",
+        "layer_id": "L2",
+        "segment": "Networking OEMs"
+      },
+      {
+        "id": "M19",
+        "level": "market_map",
+        "text": "UPS manufacturer data center official site",
+        "sub_sector": "ups_manufacturer",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M20",
+        "level": "market_map",
+        "text": "PDU manufacturer data center",
+        "sub_sector": "pdu_manufacturer",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M21",
+        "level": "market_map",
+        "text": "diesel generator manufacturer data center",
+        "sub_sector": "generator_manufacturer",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M22",
+        "level": "market_map",
+        "text": "CRAC unit manufacturer data center",
+        "sub_sector": "crac_manufacturer",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M23",
+        "level": "market_map",
+        "text": "data center chiller manufacturer",
+        "sub_sector": "chiller_manufacturer",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M24",
+        "level": "market_map",
+        "text": "liquid cooling system manufacturer data center",
+        "sub_sector": "liquid_cooling_system_manufacturer",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M25",
+        "level": "market_map",
+        "text": "server rack manufacturer official site",
+        "sub_sector": "rack_manufacturer",
+        "layer_id": "L3",
+        "segment": "Physical Infrastructure"
+      },
+      {
+        "id": "M26",
+        "level": "market_map",
+        "text": "hot aisle containment manufacturer",
+        "sub_sector": "containment_manufacturer",
+        "layer_id": "L3",
+        "segment": "Physical Infrastructure"
+      },
+      {
+        "id": "M27",
+        "level": "market_map",
+        "text": "DCIM software vendor official site",
+        "sub_sector": "dcim_vendor",
+        "layer_id": "L4",
+        "segment": "DCIM Software"
+      },
+      {
+        "id": "M28",
+        "level": "market_map",
+        "text": "data center power monitoring software",
+        "sub_sector": "power_monitoring_software",
+        "layer_id": "L4",
+        "segment": "DCIM Software"
+      },
+      {
+        "id": "M29",
+        "level": "market_map",
+        "text": "data center orchestration software vendor",
+        "sub_sector": "orchestration_vendor",
+        "layer_id": "L4",
+        "segment": "Orchestration and Automation"
+      },
+      {
+        "id": "M30",
+        "level": "market_map",
+        "text": "data center system integrator official site",
+        "sub_sector": "integrator",
+        "layer_id": "L5",
+        "segment": "System Integrators"
+      },
+      {
+        "id": "M31",
+        "level": "market_map",
+        "text": "data center design build firm",
+        "sub_sector": "design_build_firm",
+        "layer_id": "L5",
+        "segment": "System Integrators"
+      },
+      {
+        "id": "M32",
+        "level": "market_map",
+        "text": "data center managed services provider",
+        "sub_sector": "managed_service_provider",
+        "layer_id": "L5",
+        "segment": "Managed Services"
+      },
+      {
+        "id": "M33",
+        "level": "market_map",
+        "text": "colocation provider official site",
+        "sub_sector": "colocation_provider",
+        "layer_id": "L5",
+        "segment": "Managed Services"
+      },
+      {
+        "id": "M34",
+        "level": "market_map",
+        "text": "server CPU manufacturer Africa",
+        "sub_sector": "cpu_manufacturer_region",
+        "layer_id": "L1",
+        "segment": "Server Components"
+      },
+      {
+        "id": "M35",
+        "level": "market_map",
+        "text": "server manufacturer Middle East",
+        "sub_sector": "server_oem_region",
+        "layer_id": "L2",
+        "segment": "Server OEMs"
+      },
+      {
+        "id": "M36",
+        "level": "market_map",
+        "text": "UPS manufacturer Southeast Asia",
+        "sub_sector": "ups_manufacturer_region",
+        "layer_id": "L3",
+        "segment": "Power Systems"
+      },
+      {
+        "id": "M37",
+        "level": "market_map",
+        "text": "data center cooling manufacturer Latin America",
+        "sub_sector": "cooling_manufacturer_region",
+        "layer_id": "L3",
+        "segment": "Cooling Systems"
+      },
+      {
+        "id": "M38",
+        "level": "market_map",
+        "text": "data center integrator South Africa",
+        "sub_sector": "integrator_region",
+        "layer_id": "L5",
+        "segment": "System Integrators"
+      },
+      {
+        "id": "M39",
+        "level": "market_map",
+        "text": "colocation provider Indonesia",
+        "sub_sector": "colocation_region",
+        "layer_id": "L5",
+        "segment": "Managed Services"
+      }
+    ],
+    "market_map_source": "llm"
+  },
+  "scope_source": "llm",
+  "industry_vertical": "data center infrastructure",
+  "results_per_query": 28,
+  "api_status": {
+    "internet_dns": {
+      "status": "active",
+      "detail": ""
+    },
+    "duckduckgo": {
+      "status": "active",
+      "package": "ddgs(backend=brave,mojeek,duckduckgo,yahoo)",
+      "installed": true,
+      "backends": [
+        "brave",
+        "mojeek",
+        "duckduckgo",
+        "yahoo"
+      ],
+      "detail": "1 sample result(s)"
+    },
+    "searxng": {
+      "status": "active",
+      "url": "http://127.0.0.1:8080",
+      "detail": "reachable"
+    },
+    "llm": {
+      "status": "active",
+      "provider": "deepseek",
+      "detail": "compiler returned valid JSON (or partial scope) this run"
+    },
+    "wikidata": {
+      "status": "inactive",
+      "enabled": true,
+      "detail": "sample parent lookup: none"
+    },
+    "web_fetch": {
+      "status": "active",
+      "enabled": true,
+      "detail": "ddgs.extract OK \u2192 https://example.com"
+    },
+    "google_alerts": {
+      "status": "skipped",
+      "enabled": false,
+      "detail": "GOOGLE_ALERTS_ENABLED=false"
+    }
+  },
+  "funnel_prompts": [
+    {
+      "id": "L0",
+      "level": "L0",
+      "text": "data center systems companies official websites"
+    },
+    {
+      "id": "L1",
+      "level": "L1",
+      "text": "data center hardware manufacturers corporate site"
+    },
+    {
+      "id": "L2",
+      "level": "L2",
+      "text": "data center cooling and power system providers official site"
+    }
+  ],
+  "discovery_prompts": [
+    {
+      "id": "P1",
+      "level": "market_map",
+      "text": "server CPU manufacturer official site"
+    },
+    {
+      "id": "P2",
+      "level": "market_map",
+      "text": "GPU accelerator manufacturer data center"
+    },
+    {
+      "id": "P3",
+      "level": "market_map",
+      "text": "server memory module manufacturer"
+    },
+    {
+      "id": "P4",
+      "level": "market_map",
+      "text": "enterprise SSD manufacturer official site"
+    },
+    {
+      "id": "P5",
+      "level": "market_map",
+      "text": "data center switch manufacturer official site"
+    },
+    {
+      "id": "P6",
+      "level": "market_map",
+      "text": "optical transceiver manufacturer data center"
+    },
+    {
+      "id": "P7",
+      "level": "market_map",
+      "text": "network interface card manufacturer"
+    },
+    {
+      "id": "P8",
+      "level": "market_map",
+      "text": "high-speed cable assembly manufacturer data center"
+    },
+    {
+      "id": "P9",
+      "level": "market_map",
+      "text": "server power supply manufacturer"
+    },
+    {
+      "id": "P10",
+      "level": "market_map",
+      "text": "data center liquid cooling plate manufacturer"
+    },
+    {
+      "id": "P11",
+      "level": "market_map",
+      "text": "server cooling fan manufacturer"
+    },
+    {
+      "id": "P12",
+      "level": "market_map",
+      "text": "heat sink manufacturer data center"
+    }
+  ],
+  "discovery_prompt_count": 12,
+  "search_prompt_count": 10,
+  "search_smoke_test": {
+    "L0": {
+      "query": "data center systems companies official websites",
+      "level": "L0",
+      "result_count": 9,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "L1": {
+      "query": "data center hardware manufacturers corporate site",
+      "level": "L1",
+      "result_count": 9,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "L2": {
+      "query": "data center cooling and power system providers official site",
+      "level": "L2",
+      "result_count": 9,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P1": {
+      "query": "server CPU manufacturer official site",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Server (computing) - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Server_(computing)",
+          "snippet": "The server is part of the client\u2013server model; in this model, a server serves data for clients. The nature of communication between a \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Server (computing) - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Server_(computing)",
+          "snippet": "The server is part of the client\u2013server model; in this model, a server serves data for clients. The nature of communication between a \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P2": {
+      "query": "GPU accelerator manufacturer data center",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Graphics processing unit - Wikipedia",
+          "link": "https://en.m.wikipedia.org/wiki/Graphics_processing_unit",
+          "snippet": "The components of a GPU. A graphics processing unit (GPU) is a specialized electronic circuit designed for digital image processing \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Graphics processing unit - Wikipedia",
+          "link": "https://en.m.wikipedia.org/wiki/Graphics_processing_unit",
+          "snippet": "The components of a GPU. A graphics processing unit (GPU) is a specialized electronic circuit designed for digital image processing \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P3": {
+      "query": "server memory module manufacturer",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Server (computing) - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Server_(computing)",
+          "snippet": "The server is part of the client\u2013server model; in this model, a server serves data for clients. The nature of communication between a \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Server (computing) - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Server_(computing)",
+          "snippet": "The server is part of the client\u2013server model; in this model, a server serves data for clients. The nature of communication between a \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P4": {
+      "query": "enterprise SSD manufacturer official site",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Car Rental | Enterprise Rent-A-Car",
+          "link": "https://www.enterprise.com/en/car-rental.html?msockid=163570f104c46494167b6731056c65af",
+          "snippet": "With 65 years in business Enterprise Rent-A-Car makes renting a car seamless so you can get right on your way. Make a car rental \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Car Rental | Enterprise Rent-A-Car",
+          "link": "https://www.enterprise.com/en/car-rental.html?msockid=163570f104c46494167b6731056c65af",
+          "snippet": "With 65 years in business Enterprise Rent-A-Car makes renting a car seamless so you can get right on your way. Make a car rental \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P5": {
+      "query": "data center switch manufacturer official site",
+      "level": "market_map",
+      "result_count": 9,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Data - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data",
+          "snippet": "Data is analyzed using techniques such as calculation, reasoning, discussion, presentation, visualization, or other forms of post \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data.gov Home - Data.gov",
+          "link": "https://data.gov/",
+          "snippet": "1 day ago \u00b7 The Home of the U.S. Government's Open Data Here you will find data, tools, and resources to conduct research, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "What is data? - IBM",
+          "link": "https://www.ibm.com/think/topics/data",
+          "snippet": "Data is a collection of facts, numbers, words, observations or other useful information. Through data processing and data analysis, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data and its Types - GeeksforGeeks",
+          "link": "https://www.geeksforgeeks.org/data-analysis/what-is-data/",
+          "snippet": "Apr 23, 2026 \u00b7 In data science and computing, data is categorised into different types based on its structure and nature. \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data science - Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Data_science",
+          "snippet": "The field encompasses preparing data for analysis, formulating data science problems, analyzing data, and summarizing these \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "World Bank Open Data",
+          "link": "https://data.worldbank.org/",
+          "snippet": "The Atlas of Global Development 2026 presents interactive storytelling and data visualizations on key global trends related to people, \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Our World in Data",
+          "link": "https://ourworldindata.org/",
+          "snippet": "Based on this work, our team brought together the long-run data shown in the chart by combining several different sources, including \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Census Bureau Data and Maps",
+          "link": "https://www.census.gov/data.html",
+          "snippet": "Jun 3, 2026 \u00b7 Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with \u2026",
+          "backend": "searxng"
+        },
+        {
+          "title": "Data - Simple English Wikipedia, the free encyclopedia",
+          "link": "https://simple.wikipedia.org/wiki/Data",
+          "snippet": "Organizations collect data to make better decisions. Without data, it would be difficult for organizations to make appropriate decisions, \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P6": {
+      "query": "optical transceiver manufacturer data center",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Contact Lenses, Prescription Glasses & Sunglasses | Target Optical",
+          "link": "https://www.targetoptical.com/",
+          "snippet": "Spend $100 at Target Optical\u00ae and receive up to 50% off an additional complete pair (frame and lenses). ... Additional pair must be a \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Contact Lenses, Prescription Glasses & Sunglasses | Target Optical",
+          "link": "https://www.targetoptical.com/",
+          "snippet": "Spend $100 at Target Optical\u00ae and receive up to 50% off an additional complete pair (frame and lenses). ... Additional pair must be a \u2026",
+          "backend": "searxng"
+        }
+      ]
+    },
+    "P7": {
+      "query": "network interface card manufacturer",
+      "level": "market_map",
+      "result_count": 1,
+      "results_target": 28,
+      "backends": [
+        "searxng"
+      ],
+      "results": [
+        {
+          "title": "Google",
+          "link": "https://www.google.com/",
+          "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find \u2026",
+          "backend": "searxng"
+        }
+      ],
+      "sample": [
+        {
+          "title": "Google",
+          "link": "https://www.google.com/",
+          "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find \u2026",
+          "backend": "searxng"
+        }
+      ]
+    }
+  },
+  "export_column_spec": {
+    "company_list": [
+      "display_name",
+      "parent_group",
+      "primary_domain",
+      "company_type",
+      "tier",
+      "score",
+      "inclusion_reason",
+      "inclusion_sources",
+      "funnel_levels_seen",
+      "evidence_urls",
+      "company_description"
+    ],
+    "parent_group_list": [
+      "parent_name",
+      "brands_in_company_list",
+      "listing_mode"
+    ],
+    "suppressed_brands": [
+      "name",
+      "reason"
+    ],
+    "run_summary": [
+      "run_id",
+      "query",
+      "interpretation_summary",
+      "company_count",
+      "mock_mode",
+      "search_primary",
+      "funnel_levels"
+    ]
+  },
+  "warnings": [
+    "SKIP_DDGS=true \u2014 ddgs disabled; router fallbacks only (Bing HTML / SearXNG).",
+    "Website scrape: ddgs.extract() (SCRAPE_BACKEND=ddgs, fmt=text_markdown)"
+  ],
+  "searxng_active_url": "http://127.0.0.1:8080",
+  "duckduckgo_package": "ddgs(backend=brave,mojeek,duckduckgo,yahoo)"
+}

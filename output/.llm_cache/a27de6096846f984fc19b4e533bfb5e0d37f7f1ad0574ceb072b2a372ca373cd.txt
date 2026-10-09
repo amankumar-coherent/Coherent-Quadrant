@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "Evidence only mentions a single product, CeQur Simplicity, with no other devices in portfolio."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 8,
+      "grounding": "supported",
+      "why": "Clinical studies cited show increased TIR by 50%, A1C reduction of 1.7%, and comparable results to pens; safety features like two-button mechanism and water-resistance are highlighted."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Product is described as 'revolutionary' with unique features (injection-free, one-click dosing, no programming), but no explicit R&D pipeline or investment details."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No evidence provided on manufacturing capabilities or quality systems."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Mentions clinical studies and references, but no explicit FDA/CE clearance or regulatory certifications are stated."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Website mentions Medicare and VA/DoD, indicating US market presence, but no global reach or distribution details."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Clinical evidence and patient stories on website suggest adoption, but no quantitative adoption metrics or key opinion leader endorsements."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No financial data, revenue, or funding information provided."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of future products or expansion into other indications beyond mealtime insulin."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Mentions collaborations with healthcare professionals and VA/DoD, but no specific partnerships or business expansion details."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}

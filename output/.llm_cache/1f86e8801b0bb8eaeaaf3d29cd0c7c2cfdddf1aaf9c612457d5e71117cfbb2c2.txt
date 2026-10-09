@@ -1,0 +1,244 @@
+{
+  "answers": [
+    {
+      "id": "f0_q0",
+      "score": 5,
+      "answer": "Huma's platform integrates third-party wearables but does not publish its own sensor accuracy validation data.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["Regulated SaMD platform for RPM and disease management; integrates third-party wearables."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q1",
+      "score": 4,
+      "answer": "Huma does not report accuracy rates like MARD for its own sensors, as it relies on third-party devices.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["integrates third-party wearables."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f0_q2",
+      "score": 7,
+      "answer": "Huma's platform is FDA and EU regulated as SaMD, but certifications apply to the platform, not specific sensors.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["FDA/EU-regulated SaMD digital health Brand"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q0",
+      "score": 3,
+      "answer": "Huma does not manufacture its own wearable devices; it integrates third-party devices, so its own portfolio is limited.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["integrates third-party wearables."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f1_q1",
+      "score": 6,
+      "answer": "Huma's platform is disease-agnostic, supporting multiple therapeutic areas through integration with various devices.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["disease-agnostic RPM / virtual care"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f1_q2",
+      "score": 5,
+      "answer": "Huma's platform serves both consumer and clinical use cases, but it does not offer its own devices for either segment.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["RPM / virtual care"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q0",
+      "score": 5,
+      "answer": "Huma likely has peer-reviewed publications, but no specific evidence is provided in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q1",
+      "score": 5,
+      "answer": "Huma may have clinical trials, but the knowledge base does not mention any ongoing or completed trials.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f2_q2",
+      "score": 6,
+      "answer": "Huma's platform likely generates real-world evidence from patient use, but specific outcomes data is not provided.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["RPM / virtual care"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q0",
+      "score": 3,
+      "answer": "Huma does not manufacture devices, so battery life depends on third-party products and is not specified.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["integrates third-party wearables."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q1",
+      "score": 4,
+      "answer": "Huma's platform is designed for continuous monitoring, but device comfort and waterproofing depend on third-party hardware.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["RPM / virtual care"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f3_q2",
+      "score": 4,
+      "answer": "Huma integrates multiple third-party devices, offering various form factors indirectly, but does not control their design.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["integrates third-party wearables."],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q0",
+      "score": 6,
+      "answer": "Huma's platform likely integrates with EHR systems, but specific EHR partners are not mentioned in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["RPM / virtual care"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q1",
+      "score": 5,
+      "answer": "Huma may offer APIs for integration, but no explicit mention of open APIs or SDKs is found in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f4_q2",
+      "score": 6,
+      "answer": "Huma's regulated platform likely supports standard formats like FHIR, but this is not explicitly stated in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["Regulated SaMD platform"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f5_q0",
+      "score": 8,
+      "answer": "Huma has obtained FDA and EU regulatory approvals for its SaMD platform, indicating strong regulatory standing.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["FDA/EU-regulated SaMD digital health Brand"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q1",
+      "score": 7,
+      "answer": "Huma's approvals are for medical indications as a regulated SaMD platform, not just general wellness.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["FDA/EU-regulated SaMD digital health Brand"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f5_q2",
+      "score": 7,
+      "answer": "Huma has approvals in the US and EU, indicating multi-geography regulatory coverage.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["FDA/EU-regulated"],
+      "grounding": "supported"
+    },
+    {
+      "id": "f6_q0",
+      "score": 4,
+      "answer": "No user numbers or sales figures are provided for Huma's platform in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f6_q1",
+      "score": 5,
+      "answer": "Huma likely has partnerships with healthcare providers, but specific distribution networks are not detailed.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["RPM / virtual care"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f6_q2",
+      "score": 5,
+      "answer": "Huma may have case studies, but none are referenced in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f7_q0",
+      "score": 4,
+      "answer": "No information on CPT codes or reimbursement pathways is available for Huma in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q1",
+      "score": 4,
+      "answer": "No evidence of insurance coverage or Medicare/Medicaid for Huma's platform is found in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f7_q2",
+      "score": 5,
+      "answer": "Huma may offer subscription models, but no specific patient assistance programs are mentioned.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f8_q0",
+      "score": 4,
+      "answer": "No revenue growth data is available for Huma in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q1",
+      "score": 4,
+      "answer": "No financial metrics such as gross margins or profitability are reported for Huma.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "insufficient"
+    },
+    {
+      "id": "f8_q2",
+      "score": 5,
+      "answer": "Huma's platform likely uses subscription models, but no evidence of recurring revenue is provided.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q0",
+      "score": 6,
+      "answer": "Huma likely partners with healthcare systems, but specific partnerships are not listed in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": ["RPM / virtual care"],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q1",
+      "score": 5,
+      "answer": "No collaborations with tech giants or pharma companies are mentioned for Huma.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    },
+    {
+      "id": "f9_q2",
+      "score": 5,
+      "answer": "Huma's participation in standards bodies is not documented in the knowledge base.",
+      "evidence_urls": ["https://www.huma.com"],
+      "evidence_snippets": [],
+      "grounding": "model_knowledge"
+    }
+  ]
+}

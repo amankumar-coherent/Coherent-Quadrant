@@ -1,0 +1,68 @@
+{
+  "x_features": [
+    {
+      "feature": "Device Portfolio Breadth",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Evidence mentions a single device 'Medive' and a 'complex system' but no clear multi-device portfolio breadth."
+    },
+    {
+      "feature": "Clinical Performance & Safety",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Claims 'medical-grade accuracy' and 'hospital-grade care' but no clinical trial data or peer-reviewed evidence."
+    },
+    {
+      "feature": "Innovation & R&D Capability",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Ambiq for edge AI cardiac monitor, and founder with 15+ years experience; shows innovation."
+    },
+    {
+      "feature": "Manufacturing & Quality Systems",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Mention of 'prototyping stage' and 'series production' but no evidence of established manufacturing or quality certifications."
+    },
+    {
+      "feature": "Regulatory & Quality Compliance",
+      "score": 3,
+      "grounding": "insufficient",
+      "why": "No mention of FDA, CE, or other regulatory clearances in the evidence."
+    }
+  ],
+  "y_features": [
+    {
+      "feature": "Geographic & Channel Reach",
+      "score": 4,
+      "grounding": "partial",
+      "why": "Based in Romania, but no evidence of global market presence or distribution channels."
+    },
+    {
+      "feature": "Brand Trust & Clinical Adoption",
+      "score": 3,
+      "grounding": "partial",
+      "why": "Startup with limited adoption evidence; no hospital or clinician endorsements mentioned."
+    },
+    {
+      "feature": "Financial Performance",
+      "score": 2,
+      "grounding": "insufficient",
+      "why": "No revenue, funding, or financial data provided in the evidence."
+    },
+    {
+      "feature": "Pipeline & Indication Expansion",
+      "score": 5,
+      "grounding": "partial",
+      "why": "Focus on cardiovascular disease but no clear pipeline for other indications."
+    },
+    {
+      "feature": "Partnerships & Business Expansion",
+      "score": 6,
+      "grounding": "supported",
+      "why": "Partnership with Ambiq for Medive platform; also mentioned in startup ecosystems."
+    }
+  ],
+  "evidence_used": true,
+  "evidence_quality": "moderate"
+}
