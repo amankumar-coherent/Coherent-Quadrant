@@ -1,0 +1,137 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global GLP-1 Receptor Agonist Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 700,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": true,
+  "chatgpt_recalled": 35,
+  "openai_discovered": 291,
+  "harvested_raw": 1,
+  "chatgpt_extracted": 0,
+  "verified_mid": 210,
+  "rejected_mid": 116,
+  "chatgpt_filled": 163,
+  "rejected_final": 18,
+  "total_after": 145,
+  "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_glp_1_receptor_agonist_market_global\\global_glp_1_receptor_agonist_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "c1c08767",
+    "market": "Global GLP-1 Receptor Agonist Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-08-13T11:22:42.516083+00:00",
+    "ended_at": "2026-08-13T12:19:39.948888+00:00",
+    "calls": 131,
+    "prompt_tokens": 129651,
+    "completion_tokens": 103256,
+    "total_tokens": 232907,
+    "estimated_cost_usd": 0.081398,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 700,
+      "max_queries": 220,
+      "max_fill": 700,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": true,
+      "web_fill": true,
+      "resume": false,
+      "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_glp_1_receptor_agonist_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "final",
+      "discover_pages": 55,
+      "need": 665,
+      "recalled": 35,
+      "openai_discovered": 291,
+      "web_queries_planned": 220,
+      "web_query_i": 127,
+      "web_queries_total": 127,
+      "web_candidates": 1,
+      "companies": 145,
+      "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_glp_1_receptor_agonist_market_global\\global_glp_1_receptor_agonist_market_global_FINAL.xlsx",
+      "rejected_mid": 116,
+      "rejected_final": 18,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Healthcare",
+    "industry_category": "Pharmaceutical",
+    "axis_x": "Therapeutic & Manufacturing Capability",
+    "axis_y": "Commercial Reach & Pipeline Strategy",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the dual pillars of GLP-1 market success: robust therapeutic and manufacturing capabilities (X) and commercial execution and future growth potential (Y). They are specific to the pharmaceutical context, focusing on molecule portfolio, clinical differentiation, supply scale, regulatory track record, market access, brand trust, financials, pipeline, and partnerships.",
+    "parameter_definitions": {
+      "x": {
+        "Product / Molecule Portfolio": "Breadth of approved GLP-1 RA products (e.g., semaglutide, liraglutide, tirzepatide) and formulations (oral, injectable). Strength shown by number of marketed products and diverse delivery options.",
+        "Therapeutic Coverage & Differentiation": "Range of indications covered (T2D, obesity, cardiovascular risk) and unique mechanisms (dual/triple agonists). Strength shown by label expansions and clinical differentiation vs competitors.",
+        "Innovation & Clinical R&D": "Investment in next-generation GLP-1s, novel delivery systems, and combination therapies. Strength shown by pipeline assets in Phase II/III and published trial results.",
+        "Manufacturing & Supply Reliability": "Capacity for large-scale production of peptides, fill-finish capabilities, and supply chain resilience. Strength shown by manufacturing sites, capacity expansions, and ability to meet global demand.",
+        "Regulatory & Quality Compliance": "Track record of FDA/EMA approvals, post-marketing safety, and GMP compliance. Strength shown by approval history, inspection outcomes, and absence of major recalls."
+      },
+      "y": {
+        "Geographic Market Access": "Presence and reimbursement coverage in key markets (US, EU, Japan). Strength shown by approvals in multiple regions, pricing agreements, and formulary inclusion.",
+        "Brand / HCP Reputation": "Perception among physicians and patients, driven by efficacy, safety, and real-world evidence. Strength shown by prescription trends, guideline inclusion, and KOL endorsements.",
+        "Financial Performance": "Revenue growth, profitability, and market share in GLP-1 segment. Strength shown by quarterly sales, growth rates, and contribution to company revenue.",
+        "Pipeline & Indication Roadmap": "Future catalysts including new indications (e.g., NASH, CKD) and combination trials. Strength shown by Phase III programs and expected regulatory filings.",
+        "Partnerships & Business Expansion": "Strategic alliances, licensing deals, and M&A that expand capabilities or market reach. Strength shown by notable partnerships, acquisitions, and geographic expansion initiatives."
+      }
+    },
+    "x_features": [
+      "Product / Molecule Portfolio",
+      "Therapeutic Coverage & Differentiation",
+      "Innovation & Clinical R&D",
+      "Manufacturing & Supply Reliability",
+      "Regulatory & Quality Compliance"
+    ],
+    "y_features": [
+      "Geographic Market Access",
+      "Brand / HCP Reputation",
+      "Financial Performance",
+      "Pipeline & Indication Roadmap",
+      "Partnerships & Business Expansion"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 46.0,
+    "quadrant_mid_y": 47.0,
+    "scored": 145,
+    "crawl": {
+      "crawled": 145,
+      "ok": 90,
+      "fail": 55,
+      "skipped_no_domain": 0
+    }
+  },
+  "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_glp_1_receptor_agonist_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": false
+}

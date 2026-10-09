@@ -1,0 +1,133 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Semiconductor Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 700,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": true,
+  "chatgpt_recalled": 45,
+  "openai_discovered": 311,
+  "harvested_raw": 1,
+  "chatgpt_extracted": 0,
+  "verified_mid": 292,
+  "rejected_mid": 64,
+  "chatgpt_filled": 192,
+  "rejected_final": 9,
+  "total_after": 183,
+  "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_semiconductor_market_global\\global_semiconductor_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "2b9b9b77",
+    "market": "Global Semiconductor Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-08-13T08:00:05.034028+00:00",
+    "ended_at": "2026-08-13T08:31:52.989075+00:00",
+    "calls": 51,
+    "prompt_tokens": 48316,
+    "completion_tokens": 29639,
+    "total_tokens": 77955,
+    "estimated_cost_usd": 0.02503,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 700,
+      "max_queries": 220,
+      "max_fill": 700,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": true,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_semiconductor_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "final",
+      "web_queries_planned": 220,
+      "web_query_i": 127,
+      "web_queries_total": 127,
+      "web_candidates": 1,
+      "companies": 183,
+      "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_semiconductor_market_global\\global_semiconductor_market_global_FINAL.xlsx",
+      "rejected_mid": 64,
+      "rejected_final": 9,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "ICT, Automation, Semiconductor",
+    "industry_category": "Semiconductors",
+    "axis_x": "Process & Product Capability",
+    "axis_y": "Scale & Go-to-Market Strategy",
+    "x_features": [
+      "Process / Node & Technology Leadership",
+      "Product Portfolio Breadth (logic, memory, analog, power, OSAT)",
+      "Design IP & Architecture Strength",
+      "Manufacturing Capacity, Yield & Packaging",
+      "Quality, Reliability & Compliance"
+    ],
+    "y_features": [
+      "Geographic & End-Market Reach",
+      "Customer / Ecosystem Partnerships",
+      "Financial Strength & CapEx Capacity",
+      "Technology & Product Roadmap",
+      "Capacity Expansion & Business Growth"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 56.0,
+    "quadrant_mid_y": 54.0,
+    "scored": 183,
+    "crawl": {
+      "crawled": 183,
+      "ok": 116,
+      "fail": 67,
+      "skipped_no_domain": 0
+    },
+    "parameter_definitions": {
+      "x": {
+        "Process / Node & Technology Leadership": "Leadership in process technology nodes (e.g., 3nm, 5nm) and advanced packaging (e.g., chiplets, 3D stacking). Evidence includes public announcements of node adoption, foundry partnerships, and technology roadmaps.",
+        "Product Portfolio Breadth (logic, memory, analog, power, OSAT)": "Breadth of product categories covering logic, memory, analog, power, and OSAT services. Evidence includes product line diversity, market share across segments, and revenue mix.",
+        "Design IP & Architecture Strength": "Strength of proprietary design IP, architectures, and EDA tools. Evidence includes patent portfolio, licensing revenue, and adoption of proprietary cores or architectures.",
+        "Manufacturing Capacity, Yield & Packaging": "Manufacturing capacity, yield rates, and advanced packaging capabilities. Evidence includes fab capacity, utilization rates, yield improvements, and packaging technology offerings.",
+        "Quality, Reliability & Compliance": "Quality and reliability standards, certifications (e.g., ISO, AEC-Q100), and compliance with regulations. Evidence includes defect rates, customer returns, and certifications."
+      },
+      "y": {
+        "Geographic & End-Market Reach": "Geographic presence and penetration across key end-markets (e.g., automotive, consumer, industrial). Evidence includes revenue by region, customer base, and market share in target segments.",
+        "Customer / Ecosystem Partnerships": "Strength of partnerships with customers, suppliers, and ecosystem players (e.g., OEMs, OSATs, EDA vendors). Evidence includes long-term agreements, joint development programs, and ecosystem alliances.",
+        "Financial Strength & CapEx Capacity": "Financial health and ability to invest in R&D and capital expenditures. Evidence includes revenue growth, profitability, cash flow, and CapEx spending.",
+        "Technology & Product Roadmap": "Clarity and credibility of future technology and product roadmap. Evidence includes public roadmap disclosures, R&D investment, and planned product launches.",
+        "Capacity Expansion & Business Growth": "Plans and execution for capacity expansion and business growth. Evidence includes new fab announcements, capacity additions, and revenue growth trajectory."
+      }
+    },
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the core dimensions of semiconductor competitiveness: process technology, product breadth, manufacturing, and commercial scale, tailored to the global semiconductor market."
+  },
+  "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_semiconductor_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

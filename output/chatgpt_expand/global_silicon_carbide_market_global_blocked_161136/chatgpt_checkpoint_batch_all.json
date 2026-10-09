@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "query": "Global Silicon Carbide Market",
+  "country": "global",
+  "batch": "all",
+  "target": 300,
+  "status": "done",
+  "step": "7_write",
+  "substep": "done",
+  "created_at": "2026-09-11T10:37:19.816135+00:00",
+  "updated_at": "2026-09-11T10:40:05.594716+00:00",
+  "completed": {
+    "1_recall": true,
+    "2_discover": true,
+    "3_ddgs": true,
+    "4_verify": true,
+    "4b_merge": true,
+    "6_purity": true,
+    "6c_xy": true,
+    "6d_details": true
+  },
+  "progress": {
+    "round": 4,
+    "found": 10,
+    "verify_offset": 12,
+    "verify_chunk": 1
+  },
+  "data": {
+    "seeds_count": 0,
+    "market_analysis": {
+      "market_type": "B2B",
+      "market_type_reason": "The primary buyers of silicon carbide are businesses and institutions—semiconductor device manufacturers, automotive OEMs, industrial equipment makers, and energy infrastructure providers—who purchase SiC wafers, substrates, and power devices for incorporation into commercial products and systems, not individual consumers.",
+      "market_definition": "The global silicon carbide market encompasses the production and sale of silicon carbide materials, substrates, and power semiconductor devices used in high-power, high-temperature, and high-frequency applications.",
+      "market_participants": [
+        {
+          "type": "Raw Material Supplier",
+          "definition": "Providers of high-purity silicon and carbon precursors, powders, and consumables used in SiC crystal growth and processing.",
+          "why_relevant": "They supply the critical input materials that determine yield, purity, and cost for SiC substrate and device manufacturers."
+        },
+        {
+          "type": "Substrate Manufacturer",
+          "definition": "Companies that grow SiC boules and produce polished SiC wafers (substrates) in various polytypes and diameters.",
+          "why_relevant": "Substrates are the foundational building block for all SiC devices; their quality and availability directly impact device performance and market supply."
+        },
+        {
+          "type": "Epitaxy Service Provider",
+          "definition": "Firms that perform epitaxial growth on SiC substrates to create device-ready epiwafers, often as a standalone service or integrated with substrate production.",
+          "why_relevant": "Epitaxy is a critical step that defines the electrical characteristics of SiC power devices; many device makers rely on external epitaxy providers."
+        },
+        {
+          "type": "Device Manufacturer",
+          "definition": "Companies that design and fabricate SiC-based discrete devices (e.g., MOSFETs, Schottky diodes) and modules for power electronics.",
+          "why_relevant": "They are the primary suppliers of SiC components to end-system manufacturers and drive demand for substrates and epitaxy."
+        },
+        {
+          "type": "Module Integrator",
+          "definition": "Firms that assemble SiC dies into power modules with packaging, thermal management, and gate drivers for specific applications.",
+          "why_relevant": "Modules are often the form factor purchased by system manufacturers, especially in automotive and industrial sectors."
+        },
+        {
+          "type": "Equipment Provider",
+          "definition": "Suppliers of crystal growth furnaces, epitaxy reactors, wafering, polishing, and inspection equipment used in SiC manufacturing.",
+          "why_relevant": "Specialized equipment enables the scale-up and quality control required for cost-effective SiC production."
+        },
+        {
+          "type": "Distributor",
+          "definition": "Authorized distributors and catalog resellers that stock and sell SiC substrates, devices, and modules to a broad customer base.",
+          "why_relevant": "They provide logistics, inventory, and technical support, particularly for smaller customers and prototyping needs."
+        },
+        {
+          "type": "End System Manufacturer",
+          "definition": "Companies that integrate SiC components into final products such as electric vehicles, solar inverters, industrial motor drives, and power supplies.",
+          "why_relevant": "They are the ultimate buyers of SiC devices and modules and define the performance and reliability requirements for the market."
+        }
+      ],
+      "primary_participant": "Manufacturer",
+      "primary_reason": ""
+    },
+    "recalled": [
+      {
+        "name": "Wolfspeed, Inc.",
+        "website": "https://www.wolfspeed.com",
+        "domain": "www.wolfspeed.com",
+        "snippet": "It operates as a vertically integrated manufacturer of silicon carbide substrates and wide-bandgap power semiconductor components.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Durham, North Carolina, USA",
+        "Ownership": "Independent",
+        "Market Offering": "Silicon carbide materials, bare die, discrete power devices, and power modules.",
+        "Summary": "It operates as a vertically integrated manufacturer of silicon carbide substrates and wide-bandgap power semiconductor components."
+      },
+      {
+        "name": "STMicroelectronics N.V.",
+        "website": "https://www.st.com",
+        "domain": "www.st.com",
+        "snippet": "It mass-produces silicon carbide power semiconductor components and modules for electric vehicles and industrial applications.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Geneva, Switzerland",
+        "Ownership": "Independent",
+        "Market Offering": "STPOWER silicon carbide MOSFETs and Schottky diodes.",
+        "Summary": "It mass-produces silicon carbide power semiconductor components and modules for electric vehicles and industrial applications."
+      },
+      {
+        "name": "Infineon Technologies AG",
+        "website": "https://infineon.com",
+        "domain": "infineon.com",
+        "snippet": "It designs and manufactures silicon carbide wide-bandgap semiconductors and power electronics solutions.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Neubiberg, Germany",
+        "Ownership": "Independent",
+        "Market Offering": "CoolSiC Schottky diodes, MOSFETs, and power modules.",
+        "Summary": "It designs and manufactures silicon carbide wide-bandgap semiconductors and power electronics solutions."
+      },
+      {
+        "name": "Semiconductor Components Industries, LLC",
+        "website": "https://www.onsemi.com",
+        "domain": "www.onsemi.com",
+        "snippet": "It manufactures end-to-end silicon carbide power products from substrate crystals to fully packaged semiconductor modules.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Phoenix, Arizona, USA",
+        "Ownership": "Subsidiary of ON Semiconductor Corporation",
+        "Market Offering": "EliteSiC silicon carbide diodes, MOSFETs, and power integrated modules.",
+        "Summary": "It manufactures end-to-end silicon carbide power products from substrate crystals to fully packaged semiconductor modules."
+      },
+      {
+        "name": "ROHM Co., Ltd.",
+        "website": "https://rohm.com",
+        "domain": "rohm.com",
+        "snippet": "It operates as a major developer and integrated manufacturer of silicon carbide electronic components and wafers.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Kyoto, Japan",
+        "Ownership": "Independent",
+        "Market Offering": "Silicon carbide MOSFETs, Schottky barrier diodes, and power modules.",
+        "Summary": "It operates as a major developer and integrated manufacturer of silicon carbide electronic components and wafers."
+      },
+      {
+        "name": "Fuji Electric Co., Ltd.",
+        "website": "https://fujielectric.com",
+        "domain": "fujielectric.com",
+        "snippet": "It develops and manufactures high-efficiency silicon carbide power semiconductor devices for industrial power systems and EV traction inverters.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Tokyo, Japan",
+        "Ownership": "Independent",
+        "Market Offering": "Silicon carbide power semiconductor modules and chips.",
+        "Summary": "It develops and manufactures high-efficiency silicon carbide power semiconductor devices for industrial power systems and EV traction inverters."
+      },
+      {
+        "name": "Microchip Technology Inc.",
+        "website": "https://www.microchip.com",
+        "domain": "www.microchip.com",
+        "snippet": "It develops and manufactures wide-bandgap silicon carbide discrete and module solutions for advanced power systems.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Chandler, Arizona, USA",
+        "Ownership": "Independent",
+        "Market Offering": "mSiC MOSFETs, Schottky barrier diodes, bare die, and power modules.",
+        "Summary": "It develops and manufactures wide-bandgap silicon carbide discrete and module solutions for advanced power systems."
+      },
+      {
+        "name": "Mitsubishi Electric Corporation",
+        "website": "https://mitsubishielectric.com",
+        "domain": "mitsubishielectric.com",
+        "snippet": "It designs and manufactures silicon carbide power semiconductor devices for railway systems, home appliances, and industrial drives.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Tokyo, Japan",
+        "Ownership": "Independent",
+        "Market Offering": "Silicon carbide power modules and Schottky barrier diodes.",
+        "Summary": "It designs and manufactures silicon carbide power semiconductor devices for railway systems, home appliances, and industrial drives."
+      },
+      {
+        "name": "Robert Bosch GmbH",
+        "website": "https://bosch.com",
+        "domain": "bosch.com",
+        "snippet": "It manufactures silicon carbide semiconductor chips at its internal wafer fabrication facilities for automotive drivetrains.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Gerlingen, Germany",
+        "Ownership": "Independent",
+        "Market Offering": "Silicon carbide power MOSFETs and power electronics modules.",
+        "Summary": "It manufactures silicon carbide semiconductor chips at its internal wafer fabrication facilities for automotive drivetrains."
+      },
+      {
+        "name": "Fiven AS",
+        "website": "https://fiven.com",
+        "domain": "fiven.com",
+        "snippet": "It operates as a primary global producer and manufacturer of raw material silicon carbide powders for technical ceramics and metallurgical uses.",
+        "source_query": "discovery_rounds",
+        "discovery_source": "discovery_rounds",
+        "Headquarters": "Oslo, Norway",
+        "Ownership": "Independent",
+        "Market Offering": "Silicon carbide grains and powders.",
+        "Summary": "It operates as a primary global producer and manufacturer of raw material silicon carbide powders for technical ceramics and metallurgical uses."
+      }
+    ],
+    "discovered": [],
+    "raw": [],
+    "extracted": [],
+    "combined_count": 10,
+    "verified": [],
+    "rejected_mid": [
+      {
+        "name": "Wolfspeed, Inc.",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "STMicroelectronics N.V.",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "Infineon Technologies AG",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "Semiconductor Components Industries, LLC",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "ROHM Co., Ltd.",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "Fuji Electric Co., Ltd.",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "Microchip Technology Inc.",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "Mitsubishi Electric Corporation",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "Robert Bosch GmbH",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      },
+      {
+        "name": "Fiven AS",
+        "reason": "verify parse failed — dropped",
+        "confidence": "0"
+      }
+    ],
+    "merged": [],
+    "to_fill": [],
+    "filled_all": [],
+    "final_kept": [],
+    "rejected_final": [],
+    "purity_rows": [],
+    "xy_rows": [],
+    "xy_audit": {
+      "scored": 0
+    },
+    "detail_rows": []
+  },
+  "meta": {
+    "seeds_only": false,
+    "web_fill": true,
+    "openai_discover": true,
+    "ddgs_harvest": false,
+    "max_fill": 1000,
+    "use_linkedin_enrich": false,
+    "use_apollo": true,
+    "fill_backend": "search"
+  },
+  "history": [
+    {
+      "at": "2026-09-11T10:37:19.816158+00:00",
+      "note": "created",
+      "step": "0_start",
+      "substep": "init"
+    },
+    {
+      "at": "2026-09-11T10:37:20.046535+00:00",
+      "note": "pipeline start",
+      "step": "0_start",
+      "substep": "0a_init"
+    },
+    {
+      "at": "2026-09-11T10:37:20.050566+00:00",
+      "note": "seeds loaded",
+      "step": "0_start",
+      "substep": "0b_seeds"
+    },
+    {
+      "at": "2026-09-11T10:37:27.369260+00:00",
+      "note": "market_type=B2B",
+      "step": "0_start",
+      "substep": "0c_market"
+    },
+    {
+      "at": "2026-09-11T10:37:27.386473+00:00",
+      "note": "begin discovery rounds",
+      "step": "1_recall",
+      "substep": "1a_start"
+    },
+    {
+      "at": "2026-09-11T10:38:00.255843+00:00",
+      "note": "round 1: 10 companies",
+      "step": "1_recall",
+      "substep": "1a.1"
+    },
+    {
+      "at": "2026-09-11T10:38:26.219359+00:00",
+      "note": "round 2: 10 companies",
+      "step": "1_recall",
+      "substep": "1a.2"
+    },
+    {
+      "at": "2026-09-11T10:38:49.860023+00:00",
+      "note": "round 3: 10 companies",
+      "step": "1_recall",
+      "substep": "1a.3"
+    },
+    {
+      "at": "2026-09-11T10:39:27.181313+00:00",
+      "note": "round 4: 10 companies",
+      "step": "1_recall",
+      "substep": "1a.4"
+    },
+    {
+      "at": "2026-09-11T10:39:27.196377+00:00",
+      "note": "completed 1_recall",
+      "step": "1_recall",
+      "substep": "1_recall_done"
+    },
+    {
+      "at": "2026-09-11T10:39:27.207490+00:00",
+      "note": "completed 2_discover",
+      "step": "2_discover",
+      "substep": "2_discover_done"
+    },
+    {
+      "at": "2026-09-11T10:39:27.216151+00:00",
+      "note": "completed 3_ddgs",
+      "step": "3_ddgs",
+      "substep": "3_ddgs_done"
+    },
+    {
+      "at": "2026-09-11T10:39:27.225263+00:00",
+      "note": "4_verify/4a_start",
+      "step": "4_verify",
+      "substep": "4a_start"
+    },
+    {
+      "at": "2026-09-11T10:39:27.234720+00:00",
+      "note": "begin market verify",
+      "step": "4_verify",
+      "substep": "4a_start"
+    },
+    {
+      "at": "2026-09-11T10:39:27.240305+00:00",
+      "note": "begin verify chunk 1",
+      "step": "4_verify",
+      "substep": "4a.1"
+    },
+    {
+      "at": "2026-09-11T10:40:05.233552+00:00",
+      "note": "verify chunk 1 parse-fail drop",
+      "step": "4_verify",
+      "substep": "4a.1"
+    },
+    {
+      "at": "2026-09-11T10:40:05.261389+00:00",
+      "note": "completed 4_verify",
+      "step": "4_verify",
+      "substep": "4_verify_done"
+    },
+    {
+      "at": "2026-09-11T10:40:05.267228+00:00",
+      "note": "begin write mid rejects",
+      "step": "4_verify",
+      "substep": "4b_rejects"
+    },
+    {
+      "at": "2026-09-11T10:40:05.273144+00:00",
+      "note": "wrote mid rejects",
+      "step": "4_verify",
+      "substep": "4b_rejects"
+    },
+    {
+      "at": "2026-09-11T10:40:05.285349+00:00",
+      "note": "gate dropped 0",
+      "step": "4_verify",
+      "substep": "4c_gate"
+    },
+    {
+      "at": "2026-09-11T10:40:05.289437+00:00",
+      "note": "begin merge landscape rows",
+      "step": "4b_merge",
+      "substep": "4c_start"
+    },
+    {
+      "at": "2026-09-11T10:40:05.293534+00:00",
+      "note": "completed 4b_merge",
+      "step": "4b_merge",
+      "substep": "4b_merge_done"
+    },
+    {
+      "at": "2026-09-11T10:40:05.308050+00:00",
+      "note": "begin Google AI fill",
+      "step": "5_fill",
+      "substep": "5a_start"
+    },
+    {
+      "at": "2026-09-11T10:40:05.312053+00:00",
+      "note": "begin merge filled rows",
+      "step": "5_fill",
+      "substep": "5c_merge"
+    },
+    {
+      "at": "2026-09-11T10:40:05.316110+00:00",
+      "note": "merged filled_all",
+      "step": "5_fill",
+      "substep": "5c_merge"
+    },
+    {
+      "at": "2026-09-11T10:40:05.320116+00:00",
+      "note": "begin write final rejects",
+      "step": "6_final",
+      "substep": "6b_rejects"
+    },
+    {
+      "at": "2026-09-11T10:40:05.324993+00:00",
+      "note": "wrote final rejects",
+      "step": "6_final",
+      "substep": "6b_rejects"
+    },
+    {
+      "at": "2026-09-11T10:40:05.330031+00:00",
+      "note": "gate dropped 0",
+      "step": "6_final",
+      "substep": "6m_gate"
+    },
+    {
+      "at": "2026-09-11T10:40:05.334796+00:00",
+      "note": "begin channel purity",
+      "step": "6_purity",
+      "substep": "6p_start"
+    },
+    {
+      "at": "2026-09-11T10:40:05.343867+00:00",
+      "note": "completed 6_purity",
+      "step": "6_purity",
+      "substep": "6_purity_done"
+    },
+    {
+      "at": "2026-09-11T10:40:05.349042+00:00",
+      "note": "begin X/Y scoring",
+      "step": "6c_xy",
+      "substep": "6c_start"
+    },
+    {
+      "at": "2026-09-11T10:40:05.363366+00:00",
+      "note": "completed 6c_xy",
+      "step": "6c_xy",
+      "substep": "6c_xy_done"
+    },
+    {
+      "at": "2026-09-11T10:40:05.380848+00:00",
+      "note": "begin Company Details mapping",
+      "step": "6d_details",
+      "substep": "6d_start"
+    },
+    {
+      "at": "2026-09-11T10:40:05.387524+00:00",
+      "note": "City, Country Found in resolve",
+      "step": "6d_details",
+      "substep": "6d_found_in"
+    },
+    {
+      "at": "2026-09-11T10:40:05.393390+00:00",
+      "note": "found-in filled=0 blank=0",
+      "step": "6d_details",
+      "substep": "6d_found_in"
+    },
+    {
+      "at": "2026-09-11T10:40:05.400690+00:00",
+      "note": "map Brand/Company/X/Y columns",
+      "step": "6d_details",
+      "substep": "6d_map"
+    },
+    {
+      "at": "2026-09-11T10:40:05.406318+00:00",
+      "note": "mapped 0 rows",
+      "step": "6d_details",
+      "substep": "6d_map"
+    },
+    {
+      "at": "2026-09-11T10:40:05.413186+00:00",
+      "note": "begin HTML/CSV export",
+      "step": "6d_details",
+      "substep": "6d_html"
+    },
+    {
+      "at": "2026-09-11T10:40:05.519909+00:00",
+      "note": "wrote html/csv",
+      "step": "6d_details",
+      "substep": "6d_html"
+    },
+    {
+      "at": "2026-09-11T10:40:05.526016+00:00",
+      "note": "completed 6d_details",
+      "step": "6d_details",
+      "substep": "6d_details_done"
+    },
+    {
+      "at": "2026-09-11T10:40:05.543769+00:00",
+      "note": "begin write Excel",
+      "step": "7_write",
+      "substep": "7a_excel"
+    },
+    {
+      "at": "2026-09-11T10:40:05.574727+00:00",
+      "note": "wrote Excel",
+      "step": "7_write",
+      "substep": "7a_excel"
+    },
+    {
+      "at": "2026-09-11T10:40:05.581612+00:00",
+      "note": "begin write audit JSON",
+      "step": "7_write",
+      "substep": "7b_audit"
+    },
+    {
+      "at": "2026-09-11T10:40:05.588838+00:00",
+      "note": "wrote audit JSON",
+      "step": "7_write",
+      "substep": "7b_audit"
+    },
+    {
+      "at": "2026-09-11T10:40:05.594740+00:00",
+      "note": "pipeline complete",
+      "step": "7_write",
+      "substep": "done"
+    }
+  ]
+}

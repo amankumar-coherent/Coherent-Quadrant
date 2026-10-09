@@ -1,0 +1,1761 @@
+{
+  "industry_group": "ICT, Automation, Semiconductor",
+  "industry_category": "Semiconductors",
+  "axis_x": "Process & Product Capability",
+  "axis_y": "Scale & Go-to-Market Strategy",
+  "axis_definition_method": "llm",
+  "axis_definition_reason": "These parameters capture the core dimensions of semiconductor competitiveness: process technology, product breadth, manufacturing, and commercial scale, tailored to the global semiconductor market.",
+  "parameter_definitions": {
+    "x": {
+      "Process / Node & Technology Leadership": "Leadership in process technology nodes (e.g., 3nm, 5nm) and advanced packaging (e.g., chiplets, 3D stacking). Evidence includes public announcements of node adoption, foundry partnerships, and technology roadmaps.",
+      "Product Portfolio Breadth (logic, memory, analog, power, OSAT)": "Breadth of product categories covering logic, memory, analog, power, and OSAT services. Evidence includes product line diversity, market share across segments, and revenue mix.",
+      "Design IP & Architecture Strength": "Strength of proprietary design IP, architectures, and EDA tools. Evidence includes patent portfolio, licensing revenue, and adoption of proprietary cores or architectures.",
+      "Manufacturing Capacity, Yield & Packaging": "Manufacturing capacity, yield rates, and advanced packaging capabilities. Evidence includes fab capacity, utilization rates, yield improvements, and packaging technology offerings.",
+      "Quality, Reliability & Compliance": "Quality and reliability standards, certifications (e.g., ISO, AEC-Q100), and compliance with regulations. Evidence includes defect rates, customer returns, and certifications."
+    },
+    "y": {
+      "Geographic & End-Market Reach": "Geographic presence and penetration across key end-markets (e.g., automotive, consumer, industrial). Evidence includes revenue by region, customer base, and market share in target segments.",
+      "Customer / Ecosystem Partnerships": "Strength of partnerships with customers, suppliers, and ecosystem players (e.g., OEMs, OSATs, EDA vendors). Evidence includes long-term agreements, joint development programs, and ecosystem alliances.",
+      "Financial Strength & CapEx Capacity": "Financial health and ability to invest in R&D and capital expenditures. Evidence includes revenue growth, profitability, cash flow, and CapEx spending.",
+      "Technology & Product Roadmap": "Clarity and credibility of future technology and product roadmap. Evidence includes public roadmap disclosures, R&D investment, and planned product launches.",
+      "Capacity Expansion & Business Growth": "Plans and execution for capacity expansion and business growth. Evidence includes new fab announcements, capacity additions, and revenue growth trajectory."
+    }
+  },
+  "x_features": [
+    "Process / Node & Technology Leadership",
+    "Product Portfolio Breadth (logic, memory, analog, power, OSAT)",
+    "Design IP & Architecture Strength",
+    "Manufacturing Capacity, Yield & Packaging",
+    "Quality, Reliability & Compliance"
+  ],
+  "y_features": [
+    "Geographic & End-Market Reach",
+    "Customer / Ecosystem Partnerships",
+    "Financial Strength & CapEx Capacity",
+    "Technology & Product Roadmap",
+    "Capacity Expansion & Business Growth"
+  ],
+  "x_feature_weights": [
+    0.3,
+    0.2,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "y_feature_weights": [
+    0.25,
+    0.25,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "question_weights": [
+    0.4,
+    0.3,
+    0.3
+  ],
+  "overall_formula": "(X+Y)/2",
+  "quadrant_mid_x": 57.0,
+  "quadrant_mid_y": 63.0,
+  "scored": 211,
+  "crawl": {
+    "crawled": 35,
+    "ok": 35,
+    "fail": 0,
+    "skipped_no_domain": 0
+  },
+  "rows": [
+    {
+      "company": "Rohde & Schwarz",
+      "x": 46,
+      "y": 71,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Micron Technology",
+      "x": 81,
+      "y": 82,
+      "overall": 82,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Siltronic AG",
+      "x": 50,
+      "y": 76,
+      "overall": 63,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "GlobalFoundries",
+      "x": 65,
+      "y": 70,
+      "overall": 68,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Jenoptik AG",
+      "x": 65,
+      "y": 79,
+      "overall": 72,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Lam Research",
+      "x": 76,
+      "y": 71,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "PVA TePla AG",
+      "x": 53,
+      "y": 68,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Teledyne DALSA",
+      "x": 62,
+      "y": 59,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Tower Semiconductor",
+      "x": 63,
+      "y": 86,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Wolfspeed",
+      "x": 71,
+      "y": 67,
+      "overall": 69,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Cerebras Systems",
+      "x": 62,
+      "y": 76,
+      "overall": 69,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "SUSS MicroTec SE",
+      "x": 60,
+      "y": 75,
+      "overall": 68,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "ASE Technology Holding",
+      "x": 60,
+      "y": 84,
+      "overall": 72,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "BluGlass Limited",
+      "x": 61,
+      "y": 59,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Carsem",
+      "x": 67,
+      "y": 72,
+      "overall": 70,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Nexperia",
+      "x": 60,
+      "y": 59,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "SilTerra Malaysia",
+      "x": 51,
+      "y": 53,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Inari Amertron",
+      "x": 58,
+      "y": 58,
+      "overall": 58,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "TSMC",
+      "x": 94,
+      "y": 88,
+      "overall": 91,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "X-FAB Silicon Foundries",
+      "x": 75,
+      "y": 74,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Alchip Technologies",
+      "x": 72,
+      "y": 64,
+      "overall": 68,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "ASM International",
+      "x": 71,
+      "y": 76,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "ASML Holding",
+      "x": 75,
+      "y": 92,
+      "overall": 84,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "EnSilica",
+      "x": 57,
+      "y": 59,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Marvell Technology",
+      "x": 70,
+      "y": 75,
+      "overall": 72,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "MegaChips Corporation",
+      "x": 57,
+      "y": 54,
+      "overall": 56,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Plessey Semiconductors",
+      "x": 66,
+      "y": 58,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Semikron Danfoss",
+      "x": 61,
+      "y": 62,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Valens Semiconductor",
+      "x": 55,
+      "y": 65,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Aixtron SE",
+      "x": 62,
+      "y": 68,
+      "overall": 65,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Global Unichip Corporation (GUC)",
+      "x": 81,
+      "y": 80,
+      "overall": 80,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Arm Holdings",
+      "x": 57,
+      "y": 86,
+      "overall": 72,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Elmos Semiconductor",
+      "x": 55,
+      "y": 57,
+      "overall": 56,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "EV Group (EVG)",
+      "x": 68,
+      "y": 70,
+      "overall": 69,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "HT Micron",
+      "x": 55,
+      "y": 49,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "KLA Corporation",
+      "x": 79,
+      "y": 75,
+      "overall": 77,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Renesas Electronics",
+      "x": 60,
+      "y": 69,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "STMicroelectronics",
+      "x": 71,
+      "y": 76,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Tata Electronics",
+      "x": 58,
+      "y": 68,
+      "overall": 63,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "ams OSRAM",
+      "x": 60,
+      "y": 63,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Silex Systems Limited",
+      "x": 51,
+      "y": 59,
+      "overall": 55,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "CDIL (Continental Device India)",
+      "x": 54,
+      "y": 59,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "JCET Group",
+      "x": 70,
+      "y": 78,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Kioxia",
+      "x": 76,
+      "y": 73,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Nanya Technology",
+      "x": 56,
+      "y": 63,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Nordic Semiconductor",
+      "x": 48,
+      "y": 53,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Redlen Technologies",
+      "x": 50,
+      "y": 51,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "SambaNova Systems",
+      "x": 57,
+      "y": 74,
+      "overall": 66,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Sondrel",
+      "x": 44,
+      "y": 48,
+      "overall": 46,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Texas Instruments",
+      "x": 70,
+      "y": 80,
+      "overall": 75,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "NXP Semiconductors",
+      "x": 66,
+      "y": 73,
+      "overall": 70,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Alphawave IP",
+      "x": 49,
+      "y": 54,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Amkor Technology",
+      "x": 64,
+      "y": 80,
+      "overall": 72,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Aura Semiconductor",
+      "x": 48,
+      "y": 49,
+      "overall": 48,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Lattice Semiconductor",
+      "x": 58,
+      "y": 68,
+      "overall": 63,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Mitsubishi Electric",
+      "x": 45,
+      "y": 53,
+      "overall": 49,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Peraso Technologies",
+      "x": 40,
+      "y": 42,
+      "overall": 41,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Powerchip Semiconductor Manufacturing Corporation (PSMC)",
+      "x": 43,
+      "y": 42,
+      "overall": 42,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Qorvo",
+      "x": 54,
+      "y": 59,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Samsung Electronics",
+      "x": 74,
+      "y": 78,
+      "overall": 76,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "SkyWater Technology",
+      "x": 59,
+      "y": 60,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Advantest",
+      "x": 82,
+      "y": 79,
+      "overall": 80,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Analog Devices",
+      "x": 58,
+      "y": 72,
+      "overall": 65,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Changxin Memory Technologies",
+      "x": 50,
+      "y": 50,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Sahasra Semiconductors",
+      "x": 48,
+      "y": 49,
+      "overall": 48,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "SemiLEDs",
+      "x": 46,
+      "y": 42,
+      "overall": 44,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Applied Materials",
+      "x": 81,
+      "y": 82,
+      "overall": 82,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Toshiba Electronic Devices & Storage",
+      "x": 60,
+      "y": 61,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "GlobalWafers",
+      "x": 56,
+      "y": 63,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Mobileye",
+      "x": 51,
+      "y": 69,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Power Integrations",
+      "x": 75,
+      "y": 66,
+      "overall": 70,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Ampere Computing",
+      "x": 54,
+      "y": 64,
+      "overall": 59,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Disco Corporation",
+      "x": 59,
+      "y": 56,
+      "overall": 58,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Infineon Technologies",
+      "x": 70,
+      "y": 70,
+      "overall": 70,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Lasertec Corporation",
+      "x": 61,
+      "y": 61,
+      "overall": 61,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Teradyne",
+      "x": 56,
+      "y": 74,
+      "overall": 65,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "SMIC",
+      "x": 62,
+      "y": 67,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "AMD",
+      "x": 70,
+      "y": 84,
+      "overall": 77,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Bosch Sensortec",
+      "x": 50,
+      "y": 65,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Cambridge GaN Devices",
+      "x": 59,
+      "y": 65,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Graphcore",
+      "x": 46,
+      "y": 53,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Helix Semiconductors",
+      "x": 42,
+      "y": 49,
+      "overall": 46,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "LX Semicon",
+      "x": 49,
+      "y": 53,
+      "overall": 51,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "MediaTek",
+      "x": 59,
+      "y": 72,
+      "overall": 66,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Microchip Technology",
+      "x": 62,
+      "y": 61,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "NVIDIA",
+      "x": 65,
+      "y": 81,
+      "overall": 73,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Powertech Technology",
+      "x": 52,
+      "y": 47,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Qualcomm",
+      "x": 62,
+      "y": 73,
+      "overall": 68,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Silicon Labs",
+      "x": 55,
+      "y": 68,
+      "overall": 62,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "SiTime Corporation",
+      "x": 51,
+      "y": 53,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "SK Hynix",
+      "x": 70,
+      "y": 72,
+      "overall": 71,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Tokyo Electron",
+      "x": 74,
+      "y": 80,
+      "overall": 77,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Wiliot",
+      "x": 47,
+      "y": 67,
+      "overall": 57,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Cadence Design Systems",
+      "x": 82,
+      "y": 77,
+      "overall": 80,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "CR Microelectronics",
+      "x": 63,
+      "y": 63,
+      "overall": 63,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Magnachip",
+      "x": 52,
+      "y": 58,
+      "overall": 55,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Realtek",
+      "x": 48,
+      "y": 56,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Siemens EDA",
+      "x": 76,
+      "y": 74,
+      "overall": 75,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Solantro Semiconductor",
+      "x": 54,
+      "y": 61,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Winbond Electronics",
+      "x": 49,
+      "y": 55,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Broadcom",
+      "x": 66,
+      "y": 70,
+      "overall": 68,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "DB HiTek",
+      "x": 47,
+      "y": 47,
+      "overall": 47,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "IQE plc",
+      "x": 66,
+      "y": 70,
+      "overall": 68,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Mosaic Microsystems",
+      "x": 46,
+      "y": 43,
+      "overall": 44,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "onsemi",
+      "x": 67,
+      "y": 67,
+      "overall": 67,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Saankhya Labs",
+      "x": 44,
+      "y": 42,
+      "overall": 43,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "SureCore",
+      "x": 45,
+      "y": 41,
+      "overall": 43,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Synopsys",
+      "x": 69,
+      "y": 71,
+      "overall": 70,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "UMC",
+      "x": 53,
+      "y": 59,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Unisem",
+      "x": 51,
+      "y": 61,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "OmniVision Technologies",
+      "x": 61,
+      "y": 68,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Novatek Microelectronics",
+      "x": 49,
+      "y": 54,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Monolithic Power Systems",
+      "x": 50,
+      "y": 61,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Rambus",
+      "x": 67,
+      "y": 76,
+      "overall": 72,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Cirrus Logic",
+      "x": 52,
+      "y": 61,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Skyworks Solutions",
+      "x": 52,
+      "y": 63,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "MACOM Technology Solutions",
+      "x": 62,
+      "y": 63,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Coherent Corp.",
+      "x": 64,
+      "y": 76,
+      "overall": 70,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Onto Innovation",
+      "x": 61,
+      "y": 58,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Nova Ltd",
+      "x": 74,
+      "y": 69,
+      "overall": 72,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Camtek",
+      "x": 66,
+      "y": 80,
+      "overall": 73,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "FormFactor",
+      "x": 66,
+      "y": 73,
+      "overall": 70,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Kulicke and Soffa",
+      "x": 52,
+      "y": 60,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "BE Semiconductor Industries",
+      "x": 56,
+      "y": 65,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "SCREEN Holdings",
+      "x": 66,
+      "y": 64,
+      "overall": 65,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Hitachi High-Tech",
+      "x": 57,
+      "y": 61,
+      "overall": 59,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Nikon Corporation",
+      "x": 59,
+      "y": 68,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Veeco Instruments",
+      "x": 62,
+      "y": 71,
+      "overall": 66,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Axcelis Technologies",
+      "x": 61,
+      "y": 59,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "PDF Solutions",
+      "x": 62,
+      "y": 69,
+      "overall": 66,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Silvaco",
+      "x": 56,
+      "y": 66,
+      "overall": 61,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Ansys",
+      "x": 47,
+      "y": 59,
+      "overall": 53,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Keysight Technologies",
+      "x": 63,
+      "y": 71,
+      "overall": 67,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Fuji Electric",
+      "x": 56,
+      "y": 62,
+      "overall": 59,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Littelfuse",
+      "x": 54,
+      "y": 56,
+      "overall": 55,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Diodes Incorporated",
+      "x": 60,
+      "y": 66,
+      "overall": 63,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Allegro MicroSystems",
+      "x": 56,
+      "y": 65,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "MaxLinear",
+      "x": 57,
+      "y": 60,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Semtech",
+      "x": 52,
+      "y": 57,
+      "overall": 54,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Impinj",
+      "x": 54,
+      "y": 65,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Ambarella",
+      "x": 59,
+      "y": 65,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Synaptics",
+      "x": 59,
+      "y": 72,
+      "overall": 66,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Himax Technologies",
+      "x": 55,
+      "y": 63,
+      "overall": 59,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "GigaDevice",
+      "x": 58,
+      "y": 72,
+      "overall": 65,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Espressif Systems",
+      "x": 54,
+      "y": 64,
+      "overall": 59,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "UNISOC",
+      "x": 51,
+      "y": 53,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Tenstorrent",
+      "x": 56,
+      "y": 71,
+      "overall": 64,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Groq",
+      "x": 49,
+      "y": 64,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Hailo",
+      "x": 53,
+      "y": 66,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "SiFive",
+      "x": 59,
+      "y": 77,
+      "overall": 68,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Andes Technology",
+      "x": 49,
+      "y": 58,
+      "overall": 54,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Codasip",
+      "x": 57,
+      "y": 64,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Arteris",
+      "x": 57,
+      "y": 72,
+      "overall": 64,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "CEVA",
+      "x": 54,
+      "y": 63,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Imagination Technologies",
+      "x": 56,
+      "y": 76,
+      "overall": 66,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "VeriSilicon",
+      "x": 66,
+      "y": 57,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Faraday Technology",
+      "x": 53,
+      "y": 58,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "eMemory Technology",
+      "x": 68,
+      "y": 68,
+      "overall": 68,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Vanguard International Semiconductor",
+      "x": 54,
+      "y": 51,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Macronix International",
+      "x": 51,
+      "y": 56,
+      "overall": 54,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Phison Electronics",
+      "x": 75,
+      "y": 74,
+      "overall": 74,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Silicon Motion",
+      "x": 50,
+      "y": 58,
+      "overall": 54,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Yangtze Memory Technologies",
+      "x": 68,
+      "y": 55,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Tongfu Microelectronics",
+      "x": 57,
+      "y": 53,
+      "overall": 55,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "King Yuan Electronics",
+      "x": 64,
+      "y": 62,
+      "overall": 63,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "ChipMOS Technologies",
+      "x": 59,
+      "y": 59,
+      "overall": 59,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Chipbond Technology",
+      "x": 58,
+      "y": 48,
+      "overall": 53,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "UTAC Holdings",
+      "x": 60,
+      "y": 66,
+      "overall": 63,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Navitas Semiconductor",
+      "x": 50,
+      "y": 54,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Efficient Power Conversion",
+      "x": 67,
+      "y": 62,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Achronix Semiconductor",
+      "x": 53,
+      "y": 55,
+      "overall": 54,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "QuickLogic",
+      "x": 76,
+      "y": 70,
+      "overall": 73,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Efinix",
+      "x": 43,
+      "y": 48,
+      "overall": 46,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Gowin Semiconductor",
+      "x": 64,
+      "y": 64,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "ACM Research",
+      "x": 47,
+      "y": 52,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "NAURA Technology Group",
+      "x": 47,
+      "y": 53,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Soitec",
+      "x": 71,
+      "y": 75,
+      "overall": 73,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "SUMCO",
+      "x": 63,
+      "y": 66,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Shin-Etsu Chemical",
+      "x": 63,
+      "y": 79,
+      "overall": 71,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Entegris",
+      "x": 54,
+      "y": 58,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "MKS Instruments",
+      "x": 65,
+      "y": 68,
+      "overall": 66,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Advanced Energy Industries",
+      "x": 48,
+      "y": 63,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Sensirion",
+      "x": 56,
+      "y": 68,
+      "overall": 62,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Hamamatsu Photonics",
+      "x": 55,
+      "y": 58,
+      "overall": 56,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Oxford Instruments",
+      "x": 50,
+      "y": 64,
+      "overall": 57,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Ultra Clean Holdings",
+      "x": 47,
+      "y": 56,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Shinko Electric Industries",
+      "x": 61,
+      "y": 56,
+      "overall": 58,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Ibiden",
+      "x": 59,
+      "y": 62,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Unimicron Technology",
+      "x": 57,
+      "y": 60,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Axelera AI",
+      "x": 55,
+      "y": 61,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Mythic",
+      "x": 57,
+      "y": 74,
+      "overall": 66,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Goodix Technology",
+      "x": 47,
+      "y": 53,
+      "overall": 50,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "OmniVision Group",
+      "x": 46,
+      "y": 47,
+      "overall": 46,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Rockchip Electronics",
+      "x": 51,
+      "y": 65,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Intel Corporation",
+      "x": 82,
+      "y": 83,
+      "overall": 82,
+      "quadrant": "Leaders",
+      "crawled": true
+    },
+    {
+      "company": "Sony Semiconductor Solutions",
+      "x": 66,
+      "y": 65,
+      "overall": 66,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Rohm Semiconductor",
+      "x": 61,
+      "y": 55,
+      "overall": 58,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Melexis",
+      "x": 56,
+      "y": 64,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Vishay Intertechnology",
+      "x": 52,
+      "y": 54,
+      "overall": 53,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Socionext",
+      "x": 57,
+      "y": 59,
+      "overall": 58,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "Hua Hong Semiconductor",
+      "x": 54,
+      "y": 49,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Pragmatic Semiconductor",
+      "x": 51,
+      "y": 51,
+      "overall": 51,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "XMOS",
+      "x": 50,
+      "y": 55,
+      "overall": 52,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Alpha and Omega Semiconductor",
+      "x": 57,
+      "y": 62,
+      "overall": 60,
+      "quadrant": "Challengers",
+      "crawled": true
+    },
+    {
+      "company": "WIN Semiconductors",
+      "x": 62,
+      "y": 57,
+      "overall": 60,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Silergy",
+      "x": 62,
+      "y": 66,
+      "overall": 64,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "CEITEC S.A.",
+      "x": 42,
+      "y": 40,
+      "overall": 41,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Chipus Microelectronics",
+      "x": 45,
+      "y": 46,
+      "overall": 46,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Tokyo Ohka Kogyo (TOK)",
+      "x": 62,
+      "y": 63,
+      "overall": 62,
+      "quadrant": "Trailblazers",
+      "crawled": true
+    },
+    {
+      "company": "Sanan Optoelectronics",
+      "x": 45,
+      "y": 48,
+      "overall": 46,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    },
+    {
+      "company": "Nexchip",
+      "x": 48,
+      "y": 45,
+      "overall": 46,
+      "quadrant": "Emerging Players",
+      "crawled": true
+    }
+  ],
+  "score_midpoints": {
+    "x": 57.0,
+    "y": 63.0
+  }
+}

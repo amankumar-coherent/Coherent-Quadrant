@@ -1,0 +1,1405 @@
+{
+  "version": 1,
+  "query": "Global Silicon Carbide Market",
+  "country": "global",
+  "batch": "all",
+  "target": 300,
+  "status": "running",
+  "step": "2_discover",
+  "substep": "2g.10",
+  "created_at": "2026-09-11T08:13:33.722868+00:00",
+  "updated_at": "2026-09-11T09:50:05.055775+00:00",
+  "completed": {
+    "1_recall": true
+  },
+  "progress": {
+    "recall_page": 9,
+    "recall_empty": 0
+  },
+  "data": {
+    "seeds_count": 0,
+    "market_analysis": {
+      "market_type": "B2B",
+      "market_type_reason": "The market is B2B because Silicon Carbide materials and components are purchased exclusively by industrial manufacturers, semiconductor fabricators, and electronics companies for commercial applications.",
+      "market_definition": "The global market for producing and supplying silicon carbide (SiC) as a wide-bandgap semiconductor material and industrial abrasive used in power electronics and high-temperature environments.",
+      "market_participants": [
+        {
+          "type": "Manufacturer",
+          "definition": "Companies that synthesize silicon carbide crystals and process them into ingots, substrates, epitaxial wafers, or fabricated power devices.",
+          "why_relevant": "They control the core material supply chain and intellectual property required to yield semiconductor-grade silicon carbide."
+        },
+        {
+          "type": "Technology Provider",
+          "definition": "Entities supplying advanced crystal growth equipment, cutting tools, or metrology systems specialized for processing brittle SiC materials.",
+          "why_relevant": "They enable manufacturers to scale production capacity and improve wafer yields."
+        },
+        {
+          "type": "Distributor",
+          "definition": "Supply chain partners that manage logistics, inventory, and global sales channels to deliver SiC wafers and components to end-product assemblers.",
+          "why_relevant": "They act as the vital commercial link between global material producers and regional electronics fabricators."
+        }
+      ],
+      "primary_participant": "Manufacturer",
+      "primary_reason": "Manufacturer was chosen because the competitive core of this market relies entirely on companies that physically produce and sell silicon carbide substrates or components, whereas technology providers and distributors only serve as upstream enablers or downstream channels."
+    },
+    "recalled": [
+      {
+        "name": "Wolfspeed, Inc.",
+        "website": "https://wolfspeed.com",
+        "domain": "wolfspeed.com",
+        "snippet": "Pioneers wide-bandgap technology, manufacturing silicon carbide wafers, epitaxial materials, and power devices.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Infineon Technologies AG",
+        "website": "https://www.infineon.com",
+        "domain": "www.infineon.com",
+        "snippet": "Produces the CoolSiC series of silicon carbide trench MOSFETs, diodes, and power modules.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "STMicroelectronics N.V.",
+        "website": "https://www.st.com",
+        "domain": "www.st.com",
+        "snippet": "Manufactures a comprehensive portfolio of automotive-grade silicon carbide MOSFETs and diodes.",
+        "source_query": "Switzerland",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "onsemi",
+        "website": "https://onsemi.com",
+        "domain": "onsemi.com",
+        "snippet": "Operates an end-to-end vertically integrated silicon carbide supply chain from substrate growth to finished modules.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "ROHM Co., Ltd.",
+        "website": "https://www.rohm.com",
+        "domain": "www.rohm.com",
+        "snippet": "Designs and mass-produces silicon carbide bare wafers, discrete MOSFETs, and power modules under the EcoSiC brand.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Mitsubishi Electric Corporation",
+        "website": "https://mitsubishielectric.com",
+        "domain": "mitsubishielectric.com",
+        "snippet": "Manufactures high-efficiency silicon carbide power modules used in industrial automation, traction systems, and electric vehicles.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Fuji Electric Co., Ltd.",
+        "website": "https://fujielectric.com",
+        "domain": "fujielectric.com",
+        "snippet": "Develops and manufactures trench-gate silicon carbide power semiconductor devices and modules.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Toshiba Electronic Devices & Storage Corporation",
+        "website": "https://toshiba.semicon-storage.com",
+        "domain": "toshiba.semicon-storage.com",
+        "snippet": "Manufactures silicon carbide MOSFETs and Schottky barrier diodes for industrial and railway traction systems.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Microchip Technology Inc.",
+        "website": "https://www.microchip.com",
+        "domain": "www.microchip.com",
+        "snippet": "Produces an expanded portfolio of silicon carbide discrete components and integrated power modules.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "SK Siltron Co., Ltd.",
+        "website": "https://www.sksiltron.com",
+        "domain": "www.sksiltron.com",
+        "snippet": "Manufactures advanced silicon carbide wafers for the global power semiconductor industry.",
+        "source_query": "South Korea",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Coherent Corp.",
+        "website": "https://coherent.com",
+        "domain": "coherent.com",
+        "snippet": "Fabricates and supplies high-purity silicon carbide substrates and epitaxial wafers.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Robert Bosch GmbH",
+        "website": "https://bosch-semiconductors.com",
+        "domain": "bosch-semiconductors.com",
+        "snippet": "Manufactures 200 mm silicon carbide wafers and power chips targeted at electric vehicle drivetrains.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Littelfuse, Inc.",
+        "website": "https://littelfuse.com",
+        "domain": "littelfuse.com",
+        "snippet": "Supplies silicon carbide diodes, discrete MOSFETs, and power modules through its specialized semiconductor division.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Navitas Semiconductor Corp.",
+        "website": "https://navitassemi.com",
+        "domain": "navitassemi.com",
+        "snippet": "Designs and manufactures silicon carbide power devices following its acquisition of GeneSiC Semiconductor.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Qorvo, Inc.",
+        "website": "https://qorvo.com",
+        "domain": "qorvo.com",
+        "snippet": "Manufactures silicon carbide FETs and diodes utilizing unique cascode configurations under its specialized power business.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Semikron Danfoss",
+        "website": "https://semikron-danfoss.com",
+        "domain": "semikron-danfoss.com",
+        "snippet": "Assembles and manufactures power semiconductor modules leveraging silicon carbide device technology.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "X-FAB Silicon Foundries SE",
+        "website": "https://www.xfab.com",
+        "domain": "www.xfab.com",
+        "snippet": "Operates pure-play commercial foundries that fabricate silicon carbide power semiconductor devices for fabless clients.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Soitec",
+        "website": "https://soitec.com",
+        "domain": "soitec.com",
+        "snippet": "Designs and manufactures engineered SmartSiC substrates optimized for high-performance power electronics.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Resonac Holdings Corporation",
+        "website": "https://resonac.com",
+        "domain": "resonac.com",
+        "snippet": "Manufactures high-quality silicon carbide epitaxial wafers used in high-power semiconductor components.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "GlobalWafers Co., Ltd.",
+        "website": "https://sas-globalwafers.com",
+        "domain": "sas-globalwafers.com",
+        "snippet": "Produces advanced silicon carbide epitaxial wafers tailored for electric vehicles and industrial applications.",
+        "source_query": "Taiwan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "TankeBlue Semiconductor Co., Ltd.",
+        "website": "http://tankeblue.com",
+        "domain": "tankeblue.com",
+        "snippet": "Manufactures single-crystal silicon carbide ingots and wafers for power device applications.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "SICC Co., Ltd.",
+        "website": "http://sicc.cc",
+        "domain": "sicc.cc",
+        "snippet": "Specializes in the research, development, and mass production of silicon carbide substrates.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Sanan Optoelectronics Co., Ltd.",
+        "website": "https://sanan-e.com",
+        "domain": "sanan-e.com",
+        "snippet": "Manufactures silicon carbide substrates, epitaxial layers, and high-voltage power devices.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "EpiWorld International Co., Ltd.",
+        "website": "http://epiworld.com.cn",
+        "domain": "epiworld.com.cn",
+        "snippet": "Manufactures high-quality silicon carbide epitaxial wafers for structural power electronics.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "StarPower Semiconductor Ltd.",
+        "website": "http://starpowensemi.com",
+        "domain": "starpowensemi.com",
+        "snippet": "Designs and manufactures IGBT and silicon carbide power modules for renewable energy and industrial markets.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Zhuzhou CRRC Times Electric Co., Ltd.",
+        "website": "https://crrcgc.cc",
+        "domain": "crrcgc.cc",
+        "snippet": "Manufactures silicon carbide power components and modules for railway traction and automotive applications.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "BYD Semiconductor Co., Ltd.",
+        "website": "https://bydsemi.com",
+        "domain": "bydsemi.com",
+        "snippet": "Develops and mass-produces silicon carbide power modules specifically tailored for electric vehicle motor controllers.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Power Integrations, Inc.",
+        "website": "https://power.com",
+        "domain": "power.com",
+        "snippet": "Designs and manufactures highly integrated high-voltage power conversion components featuring silicon carbide switches.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Renesas Electronics Corporation",
+        "website": "https://renesas.com",
+        "domain": "renesas.com",
+        "snippet": "Supplies silicon carbide power devices integrated into smart power architectures and automotive subsystems.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Mersen S.A.",
+        "website": "https://mersen.com",
+        "domain": "mersen.com",
+        "snippet": "Manufactures high-performance silicon carbide materials and precision components for semiconductor furnaces.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Fiven AS",
+        "website": "https://fiven.com",
+        "domain": "fiven.com",
+        "snippet": "Produces premium silicon carbide grains and powders utilized in high-tech refractories and advanced technical ceramic components.",
+        "source_query": "Norway",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Saint-Gobain Performance Ceramics & Refractories",
+        "website": "https://saint-gobain.com",
+        "domain": "saint-gobain.com",
+        "snippet": "Manufactures advanced silicon carbide ceramic components for demanding industrial and thermal process industries.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "CoorsTek, Inc.",
+        "website": "coorstek.com",
+        "domain": "coorstek.com",
+        "snippet": "Manufactures high-purity engineered structural ceramics, including silicon carbide components for extreme environments.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "CeramTec GmbH",
+        "website": "ceramtec.com",
+        "domain": "ceramtec.com",
+        "snippet": "Develops and manufactures high-performance structural ceramic products including custom silicon carbide components.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Guangdong TySiC Semiconductor Co., Ltd.",
+        "website": "tysic.com",
+        "domain": "tysic.com",
+        "snippet": "Specializes in manufacturing commercial high-quality silicon carbide epitaxial wafers.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "BASiC Semiconductor Co., Ltd.",
+        "website": "https://basicsemi.com",
+        "domain": "basicsemi.com",
+        "snippet": "Manufactures Silicon Carbide (SiC) power semiconductor chips, discrete devices, and integrated power modules.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "InventChip Technology Co., Ltd.",
+        "website": "https://inventchip.com.cn",
+        "domain": "inventchip.com.cn",
+        "snippet": "Manufactures Silicon Carbide (SiC) power electronics including SiC MOSFETs, Schottky diodes, and gate drivers.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Hebei Synlight Crystal Co., Ltd.",
+        "website": "https://synlight.cn",
+        "domain": "synlight.cn",
+        "snippet": "Manufactures conductive and semi-insulating silicon carbide (SiC) single-crystal substrates.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Xiamen Powerway Advanced Material Co., Ltd.",
+        "website": "https://powerwaywafer.com",
+        "domain": "powerwaywafer.com",
+        "snippet": "Manufactures silicon carbide (SiC) bare single-crystal wafer substrates and epitaxial wafers.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "WeEn Semiconductors Co., Ltd.",
+        "website": "https://ween-semi.com",
+        "domain": "ween-semi.com",
+        "snippet": "Manufactures silicon carbide (SiC) power diodes, planar gate MOSFETs, and power modules.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "SemiQ Inc.",
+        "website": "https://semiq.com/",
+        "domain": "semiq.com",
+        "snippet": "Manufactures high-voltage silicon carbide (SiC) power semiconductors including discrete MOSFETs and Schottky diodes.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Alpha and Omega Semiconductor Limited",
+        "website": "https://www.aosmd.com/",
+        "domain": "www.aosmd.com",
+        "snippet": "Manufactures wide-bandgap silicon carbide (SiC) power devices and automotive-grade modules.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Ganwafer",
+        "website": "https://ganwafer.com",
+        "domain": "ganwafer.com",
+        "snippet": "Manufactures commercial and research-grade single crystal silicon carbide (SiC) substrate wafers.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Semicera Semiconductor Technology Co., Ltd.",
+        "website": "https://semi-cera.com",
+        "domain": "semi-cera.com",
+        "snippet": "Manufactures engineered silicon carbide (SiC) substrates and custom CVD SiC components for power electronics.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Laxmipriya Abrasives",
+        "website": "https://laxmipriyaabrasives.net",
+        "domain": "laxmipriyaabrasives.net",
+        "snippet": "Manufactures black silicon carbide grains and powders for industrial processing and finishing applications.",
+        "source_query": "India",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Mandeep Minerals",
+        "website": "https://mandeepminerals.com",
+        "domain": "mandeepminerals.com",
+        "snippet": "Manufactures green and black silicon carbide abrasive grains and powders.",
+        "source_query": "India",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Shindengen Electric Manufacturing Co., Ltd.",
+        "website": "https://www.shindengen.com/",
+        "domain": "www.shindengen.com",
+        "snippet": "Manufactures silicon carbide (SiC) power semiconductors, modules, and diodes for industrial high-voltage conversion.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "SiCSem Private Limited",
+        "website": "https://sicsem.com",
+        "domain": "sicsem.com",
+        "snippet": "Operates as an integrated device manufacturer specializing in silicon carbide (SiC) power electronic components.",
+        "source_query": "India",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "NXP Semiconductors N.V.",
+        "website": "https://nxp.com",
+        "domain": "nxp.com",
+        "snippet": "Develops and supplies power semiconductor products and solutions incorporating silicon carbide technology for automotive electrification.",
+        "source_query": "Netherlands",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Diodes Incorporated",
+        "website": "https://diodes.com",
+        "domain": "diodes.com",
+        "snippet": "Manufactures discrete silicon carbide rectifiers and products for high-efficiency power design.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "GeneSiC Semiconductor Inc.",
+        "website": "https://genesicsemi.com",
+        "domain": "genesicsemi.com",
+        "snippet": "Develops high-power silicon carbide (SiC) transistors, rectifiers, and modular components.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Hitachi Energy Ltd.",
+        "website": "https://hitachienergy.com",
+        "domain": "hitachienergy.com",
+        "snippet": "Manufactures high-power semiconductor modules utilizing silicon carbide technology for grid and rail transit traction applications.",
+        "source_query": "Switzerland",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Global Power Technologies Group Inc.",
+        "website": "https://globalpwr.com",
+        "domain": "globalpwr.com",
+        "snippet": "Produces silicon carbide power electronics products including discrete diodes and custom modules.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Entegris, Inc.",
+        "website": "https://entegris.com",
+        "domain": "entegris.com",
+        "snippet": "Supplies premium graphics and custom silicon carbide components used inside semiconductor processing systems.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "VisIC Technologies Ltd.",
+        "website": "https://visic-tech.com",
+        "domain": "visic-tech.com",
+        "snippet": "Develops advanced wide-bandgap modules and designs targeting high-efficiency electric vehicle drivetrains.",
+        "source_query": "Israel",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Washington Mills",
+        "website": "https://washingtonmills.com",
+        "domain": "washingtonmills.com",
+        "snippet": "Manufactures crude silicon carbide grains and powders used across various engineering abrasive and material applications.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Elkem ASA",
+        "website": "https://elkem.com",
+        "domain": "elkem.com",
+        "snippet": "Supplies raw materials and high-purity silicon formulations utilized to synthesize silicon carbide powders.",
+        "source_query": "Norway",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "ESD-SIC BV",
+        "website": "https://esdsic.nl",
+        "domain": "esdsic.nl",
+        "snippet": "Processes and produces high-grade industrial silicon carbide fractions for refractory and metallurgical applications.",
+        "source_query": "Netherlands",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Imerys",
+        "website": "https://imerys.com",
+        "domain": "imerys.com",
+        "snippet": "Produces processed industrial minerals, including specialized silicon carbide powders for abrasive applications.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Morgan Advanced Materials",
+        "website": "https://morganadvancedmaterials.com",
+        "domain": "morganadvancedmaterials.com",
+        "snippet": "Produces performance carbon and silicon carbide specialized materials for structural sealing and aerospace systems.",
+        "source_query": "United Kingdom",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Navarro SiC",
+        "website": "https://navarrosic.com",
+        "domain": "navarrosic.com",
+        "snippet": "Manufactures high-purity silicon carbide grains and materials tailored for technical ceramics and refractory linings.",
+        "source_query": "Spain",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "NGK INSULATORS, LTD.",
+        "website": "https://ngk-insulators.com",
+        "domain": "ngk-insulators.com",
+        "snippet": "Manufactures advanced technical ceramics, utilizing silicon carbide formulations for high-temperature and filtration environments.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Schunk Ingenieurkeramik GmbH",
+        "website": "https://schunk-carbontechnology.com",
+        "domain": "schunk-carbontechnology.com",
+        "snippet": "Manufactures mechanical wear and high-temperature furnace structural components from silicon carbide matrix materials.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Tateho Chemical Industries Co., Ltd.",
+        "website": "https://tateho.co.jp",
+        "domain": "tateho.co.jp",
+        "snippet": "Produces advanced chemical materials and ceramic materials, including technical formulations of silicon carbide whiskers.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Blasch Precision Ceramics, Inc.",
+        "website": "https://blaschceramics.com",
+        "domain": "blaschceramics.com",
+        "snippet": "Engineers and manufactures net-shape complex refractory systems utilizing silicon carbide for high-wear environments.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Christy Refractories",
+        "website": "https://christyrefractories.com",
+        "domain": "christyrefractories.com",
+        "snippet": "Manufactures high-temperature industrial thermal barrier materials and custom silicon carbide specialty shapes.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "SiCrystal GmbH",
+        "website": "https://sicrystal.de",
+        "domain": "sicrystal.de",
+        "snippet": "Manufactures monocrystalline silicon carbide semiconductor wafers utilized as base substrates for high-power devices.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Atecom Technology Co., Ltd.",
+        "website": "https://atecom.com.tw",
+        "domain": "atecom.com.tw",
+        "snippet": "Supplies and manufactures custom single-crystal wide-bandgap silicon carbide substrate wafers.",
+        "source_query": "Taiwan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Semiconductor Wafer Inc.",
+        "website": "https://swi.com.tw",
+        "domain": "swi.com.tw",
+        "snippet": "Provides specialty polishing and supply of silicon carbide materials and composite crystalline wafers.",
+        "source_query": "Taiwan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Hench Semiconductor Co., Ltd.",
+        "website": "",
+        "domain": "",
+        "snippet": "Manufactures custom epitaxy layers and structural silicon carbide substrates for wide-bandgap devices.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "ProChip Moissic Technologies Inc.",
+        "website": "",
+        "domain": "",
+        "snippet": "Manufactures crystalline growth configurations and wafer formats based on silicon carbide bases.",
+        "source_query": "Taiwan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "LPE SpA",
+        "website": "https://lpe-epi.com",
+        "domain": "lpe-epi.com",
+        "snippet": "Designs and builds epitaxy reactors used by global chipmakers to grow silicon carbide crystal layers.",
+        "source_query": "Italy",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Tangshan SunFar Silicon Industries Co., Ltd.",
+        "website": "",
+        "domain": "",
+        "snippet": "Manufactures chemical raw materials and ultra-high-purity precursors required for silicon carbide crystallization.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Shanghai SICCAS High Technology Corporation",
+        "website": "",
+        "domain": "",
+        "snippet": "Manufactures advanced synthetic crystalline products, specializing in performance silicon carbide structural variations.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Vishay Intertechnology, Inc.",
+        "website": "https://vishay.com",
+        "domain": "vishay.com",
+        "snippet": "Manufactures discrete silicon carbide power devices, including SiC Schottky diodes and MOSFETs, for automotive and industrial applications.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Fiven ASA",
+        "website": "https://fiven.com",
+        "domain": "fiven.com",
+        "snippet": "Produces silicon carbide grains and powders used in technical ceramics, metallurgy, abrasives, and refractory applications.",
+        "source_query": "Norway",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "CoolCAD Electronics, LLC",
+        "website": "https://coolcadelectronics.com",
+        "domain": "coolcadelectronics.com",
+        "snippet": "Fabricates custom silicon carbide semiconductor devices, including MOSFETs and diodes, optimized for high-temperature and extreme environments.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Silan Microelectronics Co., Ltd.",
+        "website": "https://silan.com.cn",
+        "domain": "silan.com.cn",
+        "snippet": "Operates semiconductor fabrication lines that manufacture silicon carbide power chips and discrete components for automotive and consumer markets.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "United Nova Technology Co., Ltd.",
+        "website": "https://untwfe.com",
+        "domain": "untwfe.com",
+        "snippet": "Provides foundry manufacturing services specializing in silicon carbide power semiconductor chips and modules.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Vanguard International Semiconductor Corporation",
+        "website": "https://vis.com.tw",
+        "domain": "vis.com.tw",
+        "snippet": "Provides specialty foundry manufacturing services, including the production of silicon carbide power components.",
+        "source_query": "Taiwan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Powerex Inc.",
+        "website": "https://pwrx.com",
+        "domain": "pwrx.com",
+        "snippet": "Manufactures discrete and modular power semiconductor solutions, integrating silicon carbide technology into high-power applications.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "TT Electronics plc",
+        "website": "https://ttelectronics.com",
+        "domain": "ttelectronics.com",
+        "snippet": "Manufactures electronic components and power modules, including custom silicon carbide assemblies for aerospace and industrial markets.",
+        "source_query": "United Kingdom",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Soitec S.A.",
+        "website": "https://soitec.com",
+        "domain": "soitec.com",
+        "snippet": "Manufactures advanced engineered substrates, including SmartSiC wafers designed to optimize energy efficiency in electric vehicles.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Tokai Carbon Co., Ltd.",
+        "website": "https://tokaicarbon.co.jp",
+        "domain": "tokaicarbon.co.jp",
+        "snippet": "Produces specialty graphite and silicon carbide-coated materials essential for the high-temperature semiconductor crystal-growth process.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Asuzac Fine Ceramics Co., Ltd.",
+        "website": "https://asuzac-ceramic.jp",
+        "domain": "asuzac-ceramic.jp",
+        "snippet": "Manufactures high-precision fine ceramics, utilizing silicon carbide materials for structural semiconductor handling equipment.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "AGSCO Corporation",
+        "website": "https://agsco.com",
+        "domain": "agsco.com",
+        "snippet": "Processes and manufactures industrial minerals and blasting abrasives, including various grades of raw silicon carbide grains.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "ESK-SiC GmbH",
+        "website": "https://esk-sic.com",
+        "domain": "esk-sic.com",
+        "snippet": "Manufactures crude silicon carbide grains and customized micro-powders for technical ceramics, refractories, and microelectronics.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "ESD-SiC b.v.",
+        "website": "https://esdsic.nl",
+        "domain": "esdsic.nl",
+        "snippet": "Operates as a large-scale manufacturer of high-purity crude silicon carbide crystals used in global industrial applications.",
+        "source_query": "Netherlands",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Saint-Gobain Ceramic Materials",
+        "website": "https://saint-gobain.com",
+        "domain": "saint-gobain.com",
+        "snippet": "Manufactures advanced silicon carbide powders, grains, and structural ceramic components for heavy industrial applications.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Carborundum Universal Ltd.",
+        "website": "https://cumi-murugappa.com",
+        "domain": "cumi-murugappa.com",
+        "snippet": "Manufactures silicon carbide crude grains, micro-powders, and refractory materials for abrasive and metallurgical applications.",
+        "source_query": "India",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Semicera Energy Technology Co., Ltd.",
+        "website": "https://www.semi-cera.com",
+        "domain": "www.semi-cera.com",
+        "snippet": "Manufactures high-purity recrystallized silicon carbide substrates and CVD SiC/TaC-coated graphite semiconductor consumables.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Semicorex Co., Ltd.",
+        "website": "https://www.semicorex.com",
+        "domain": "www.semicorex.com",
+        "snippet": "Manufactures 4H/6H N-type and P-type silicon carbide single crystal substrates, dummy wafers, and CVD coatings.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Valley Design",
+        "website": "https://valleydesign.com",
+        "domain": "valleydesign.com",
+        "snippet": "Processes and manufactures custom-dimension precision-lapped and polished silicon carbide dummy wafers and optical substrates.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Semikron Danfoss GmbH & Co. KG",
+        "website": "https://semikron-danfoss.com",
+        "domain": "semikron-danfoss.com",
+        "snippet": "Manufactures high-power packaging systems and power electronic modules integrating third-party silicon carbide die chips.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "TYSTC Semiconductor Co., Ltd.",
+        "website": "",
+        "domain": "",
+        "snippet": "Manufactures and commercializes high-purity single-crystal silicon carbide substrate wafers.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Ferrotec Holdings Corporation",
+        "website": "https://ferrotec.co.jp",
+        "domain": "ferrotec.co.jp",
+        "snippet": "Manufactures structural high-purity silicon carbide ceramic machinery parts and materials utilized in semiconductor manufacturing chambers.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Dow Silicon Carbide LLC",
+        "website": "",
+        "domain": "",
+        "snippet": "Manufactures specialized crystal-growth silicon carbide elements and custom substrate materials.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Kymera International",
+        "website": "kymerainternational.com",
+        "domain": "kymerainternational.com",
+        "snippet": "Processes and supplies specialized industrial abrasive materials, surface treatments, and silicon carbide formulations.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Shin-Etsu Chemical Co., Ltd.",
+        "website": "shinetsu.co.jp",
+        "domain": "shinetsu.co.jp",
+        "snippet": "Engages in the R&D and advanced manufacturing processing of compound wide-bandgap silicon carbide substrates.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Nexperia",
+        "website": "https://nexperia.com",
+        "domain": "nexperia.com",
+        "snippet": "Manufactures discrete silicon carbide diodes and MOSFETs designed for automotive, industrial, and consumer applications.",
+        "source_query": "Netherlands",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Siltronic AG",
+        "website": "https://siltronic.com",
+        "domain": "siltronic.com",
+        "snippet": "Manufactures specialized polished semiconductor materials and processes including polishing technologies for engineered high-voltage substrates.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Allegro MicroSystems, Inc.",
+        "website": "https://allegromicro.com",
+        "domain": "allegromicro.com",
+        "snippet": "Manufactures high-performance power devices, expanding its portfolio into silicon carbide modules and components for green energy systems.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Texas Instruments Incorporated",
+        "website": "https://ti.com",
+        "domain": "ti.com",
+        "snippet": "Manufactures analog and power management products, integrating advanced gate drivers tailored for managing silicon carbide power electronics.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "CRRC Times Electric Co., Ltd.",
+        "website": "https://csrzic.com",
+        "domain": "csrzic.com",
+        "snippet": "Manufactures high-power silicon carbide electronic modules used in electric locomotive traction systems and industrial applications.",
+        "source_query": "China",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Imerys S.A.",
+        "website": "https://imerys.com",
+        "domain": "imerys.com",
+        "snippet": "Manufactures high-performance mineral materials and grains including specialized silicon carbide for abrasive and refractory uses.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Kyocera Corporation",
+        "website": "https://kyocera.com",
+        "domain": "kyocera.com",
+        "snippet": "Manufactures advanced structural fine ceramics, offering structural components made of silicon carbide for industrial equipment.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Alpha & Omega Semiconductor Inc.",
+        "website": "aosmd.com",
+        "domain": "aosmd.com",
+        "snippet": "Manufactures broad discrete power solutions, including automotive-qualified silicon carbide MOSFET portfolios.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Solitron Devices, Inc.",
+        "website": "https://solitrondevices.com",
+        "domain": "solitrondevices.com",
+        "snippet": "Manufactures power electronics components, producing high-reliability silicon carbide power modules for aerospace and defense.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Superior Graphite",
+        "website": "superiorgraphite.com",
+        "domain": "superiorgraphite.com",
+        "snippet": "Manufactures high-purity carbon products and synthetic powders used in the synthesis of structural and semiconductor silicon carbide.",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Toshiba Corporation",
+        "website": "https://toshiba.co.jp",
+        "domain": "toshiba.co.jp",
+        "snippet": "Manufactures silicon carbide power components including low on-resistance SiC MOSFETs and Schottky barrier diodes.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Saint-Gobain",
+        "website": "https://saint-gobain.com",
+        "domain": "saint-gobain.com",
+        "snippet": "Produces silicon carbide grains, powders, and advanced ceramic materials for various industrial applications.",
+        "source_query": "France",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Sumitomo Electric Industries, Ltd.",
+        "website": "https://sumitomelectric.com",
+        "domain": "sumitomelectric.com",
+        "snippet": "Manufactures silicon carbide substrates and power electronic components.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "SGL Carbon",
+        "website": "https://sglcarbon.com",
+        "domain": "sglcarbon.com",
+        "snippet": "Manufactures high-quality graphite and silicon carbide-coated components for semiconductor processing.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Nippon Carbon Co., Ltd.",
+        "website": "https://carbon.co.jp",
+        "domain": "carbon.co.jp",
+        "snippet": "Manufactures continuous silicon carbide fibers and carbon products for high-temperature applications.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "UBE Corporation",
+        "website": "https://ube.co.jp",
+        "domain": "ube.co.jp",
+        "snippet": "Manufactures advanced materials including silicon carbide fibers under the Tyranno Fiber brand.",
+        "source_query": "Japan",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Vincotech GmbH",
+        "website": "https://vincotech.com",
+        "domain": "vincotech.com",
+        "snippet": "Manufactures power modules containing silicon carbide components for industrial and solar applications.",
+        "source_query": "Germany",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "CISSOID",
+        "website": "https://cissoid.com",
+        "domain": "cissoid.com",
+        "snippet": "Manufactures high-temperature gate drivers and silicon carbide power modules for electric vehicles and aerospace.",
+        "source_query": "Belgium",
+        "discovery_source": "chatgpt_recall"
+      },
+      {
+        "name": "Semiconductor Components Industries, LLC",
+        "website": "https://www.onsemi.com",
+        "domain": "www.onsemi.com",
+        "snippet": "Produces silicon carbide planar and trench MOSFETs, diodes, and power modules [1.2.5 (from context)].",
+        "source_query": "United States",
+        "discovery_source": "chatgpt_recall"
+      }
+    ],
+    "ga_discovered": [
+      {
+        "name": "...",
+        "website": "https://...",
+        "domain": "...",
+        "snippet": "...",
+        "source_query": "...",
+        "discovery_source": "google_ai_overview",
+        "relevance": "80"
+      }
+    ]
+  },
+  "meta": {
+    "seeds_only": false,
+    "web_fill": true,
+    "openai_discover": true,
+    "ddgs_harvest": false,
+    "max_fill": 1000,
+    "use_linkedin_enrich": false,
+    "use_apollo": true,
+    "fill_backend": "search"
+  },
+  "history": [
+    {
+      "at": "2026-09-11T08:13:33.722889+00:00",
+      "note": "created",
+      "step": "0_start",
+      "substep": "init"
+    },
+    {
+      "at": "2026-09-11T08:13:33.914731+00:00",
+      "note": "pipeline start",
+      "step": "0_start",
+      "substep": "0a_init"
+    },
+    {
+      "at": "2026-09-11T08:13:33.919215+00:00",
+      "note": "seeds loaded",
+      "step": "0_start",
+      "substep": "0b_seeds"
+    },
+    {
+      "at": "2026-09-11T08:13:41.762868+00:00",
+      "note": "market_type=B2B",
+      "step": "0_start",
+      "substep": "0c_market"
+    },
+    {
+      "at": "2026-09-11T08:13:41.769172+00:00",
+      "note": "begin ChatGPT recall",
+      "step": "1_recall",
+      "substep": "1a_start"
+    },
+    {
+      "at": "2026-09-11T08:13:41.776030+00:00",
+      "note": "begin recall page 1",
+      "step": "1_recall",
+      "substep": "1a.1"
+    },
+    {
+      "at": "2026-09-11T08:14:09.617155+00:00",
+      "note": "recall page 1",
+      "step": "1_recall",
+      "substep": "1a.1"
+    },
+    {
+      "at": "2026-09-11T08:14:09.621232+00:00",
+      "note": "begin recall page 2",
+      "step": "1_recall",
+      "substep": "1a.2"
+    },
+    {
+      "at": "2026-09-11T08:14:34.950713+00:00",
+      "note": "recall page 2",
+      "step": "1_recall",
+      "substep": "1a.2"
+    },
+    {
+      "at": "2026-09-11T08:14:34.956036+00:00",
+      "note": "begin recall page 3",
+      "step": "1_recall",
+      "substep": "1a.3"
+    },
+    {
+      "at": "2026-09-11T08:15:01.068753+00:00",
+      "note": "recall page 3",
+      "step": "1_recall",
+      "substep": "1a.3"
+    },
+    {
+      "at": "2026-09-11T08:15:01.076030+00:00",
+      "note": "completed 1_recall",
+      "step": "1_recall",
+      "substep": "1_recall_done"
+    },
+    {
+      "at": "2026-09-11T08:15:56.179340+00:00",
+      "note": "google AI list 1",
+      "step": "2_discover",
+      "substep": "2g.1"
+    },
+    {
+      "at": "2026-09-11T08:17:47.828002+00:00",
+      "note": "resumed",
+      "step": "2_discover",
+      "substep": "2g.1"
+    },
+    {
+      "at": "2026-09-11T08:17:48.120817+00:00",
+      "note": "pipeline start",
+      "step": "0_start",
+      "substep": "0a_init"
+    },
+    {
+      "at": "2026-09-11T08:17:48.126070+00:00",
+      "note": "seeds loaded",
+      "step": "0_start",
+      "substep": "0b_seeds"
+    },
+    {
+      "at": "2026-09-11T08:18:26.441942+00:00",
+      "note": "google AI list 1",
+      "step": "2_discover",
+      "substep": "2g.1"
+    },
+    {
+      "at": "2026-09-11T08:19:23.419436+00:00",
+      "note": "google AI list 2",
+      "step": "2_discover",
+      "substep": "2g.2"
+    },
+    {
+      "at": "2026-09-11T08:20:20.538071+00:00",
+      "note": "google AI list 3",
+      "step": "2_discover",
+      "substep": "2g.3"
+    },
+    {
+      "at": "2026-09-11T08:21:16.949639+00:00",
+      "note": "google AI list 4",
+      "step": "2_discover",
+      "substep": "2g.4"
+    },
+    {
+      "at": "2026-09-11T08:22:10.687796+00:00",
+      "note": "google AI list 5",
+      "step": "2_discover",
+      "substep": "2g.5"
+    },
+    {
+      "at": "2026-09-11T08:23:27.267175+00:00",
+      "note": "resumed",
+      "step": "2_discover",
+      "substep": "2g.5"
+    },
+    {
+      "at": "2026-09-11T08:23:27.568587+00:00",
+      "note": "pipeline start",
+      "step": "0_start",
+      "substep": "0a_init"
+    },
+    {
+      "at": "2026-09-11T08:23:27.572985+00:00",
+      "note": "seeds loaded",
+      "step": "0_start",
+      "substep": "0b_seeds"
+    },
+    {
+      "at": "2026-09-11T08:23:27.577309+00:00",
+      "note": "begin ChatGPT recall",
+      "step": "1_recall",
+      "substep": "1a_start"
+    },
+    {
+      "at": "2026-09-11T08:23:27.592066+00:00",
+      "note": "begin recall page 1",
+      "step": "1_recall",
+      "substep": "1a.1"
+    },
+    {
+      "at": "2026-09-11T08:23:45.510880+00:00",
+      "note": "recall page 1",
+      "step": "1_recall",
+      "substep": "1a.1"
+    },
+    {
+      "at": "2026-09-11T08:23:45.516673+00:00",
+      "note": "begin recall page 2",
+      "step": "1_recall",
+      "substep": "1a.2"
+    },
+    {
+      "at": "2026-09-11T08:24:24.327401+00:00",
+      "note": "recall page 2",
+      "step": "1_recall",
+      "substep": "1a.2"
+    },
+    {
+      "at": "2026-09-11T08:24:24.337925+00:00",
+      "note": "begin recall page 3",
+      "step": "1_recall",
+      "substep": "1a.3"
+    },
+    {
+      "at": "2026-09-11T08:24:59.714032+00:00",
+      "note": "recall page 3",
+      "step": "1_recall",
+      "substep": "1a.3"
+    },
+    {
+      "at": "2026-09-11T08:24:59.722408+00:00",
+      "note": "begin recall page 4",
+      "step": "1_recall",
+      "substep": "1a.4"
+    },
+    {
+      "at": "2026-09-11T08:25:31.295596+00:00",
+      "note": "recall page 4",
+      "step": "1_recall",
+      "substep": "1a.4"
+    },
+    {
+      "at": "2026-09-11T08:25:31.301101+00:00",
+      "note": "begin recall page 5",
+      "step": "1_recall",
+      "substep": "1a.5"
+    },
+    {
+      "at": "2026-09-11T08:26:10.514986+00:00",
+      "note": "recall page 5",
+      "step": "1_recall",
+      "substep": "1a.5"
+    },
+    {
+      "at": "2026-09-11T08:26:10.522401+00:00",
+      "note": "begin recall page 6",
+      "step": "1_recall",
+      "substep": "1a.6"
+    },
+    {
+      "at": "2026-09-11T08:26:44.909904+00:00",
+      "note": "recall page 6",
+      "step": "1_recall",
+      "substep": "1a.6"
+    },
+    {
+      "at": "2026-09-11T08:26:44.928394+00:00",
+      "note": "begin recall page 7",
+      "step": "1_recall",
+      "substep": "1a.7"
+    },
+    {
+      "at": "2026-09-11T08:27:23.715843+00:00",
+      "note": "recall page 7",
+      "step": "1_recall",
+      "substep": "1a.7"
+    },
+    {
+      "at": "2026-09-11T08:27:23.723373+00:00",
+      "note": "begin recall page 8",
+      "step": "1_recall",
+      "substep": "1a.8"
+    },
+    {
+      "at": "2026-09-11T08:28:02.867197+00:00",
+      "note": "recall page 8",
+      "step": "1_recall",
+      "substep": "1a.8"
+    },
+    {
+      "at": "2026-09-11T08:28:02.874125+00:00",
+      "note": "begin recall page 9",
+      "step": "1_recall",
+      "substep": "1a.9"
+    },
+    {
+      "at": "2026-09-11T08:28:50.590388+00:00",
+      "note": "recall page 9",
+      "step": "1_recall",
+      "substep": "1a.9"
+    },
+    {
+      "at": "2026-09-11T08:28:50.596024+00:00",
+      "note": "completed 1_recall",
+      "step": "1_recall",
+      "substep": "1_recall_done"
+    },
+    {
+      "at": "2026-09-11T08:29:44.114267+00:00",
+      "note": "google AI list 1",
+      "step": "2_discover",
+      "substep": "2g.1"
+    },
+    {
+      "at": "2026-09-11T08:30:39.270900+00:00",
+      "note": "google AI list 2",
+      "step": "2_discover",
+      "substep": "2g.2"
+    },
+    {
+      "at": "2026-09-11T08:31:27.949695+00:00",
+      "note": "google AI list 3",
+      "step": "2_discover",
+      "substep": "2g.3"
+    },
+    {
+      "at": "2026-09-11T08:32:21.949952+00:00",
+      "note": "google AI list 4",
+      "step": "2_discover",
+      "substep": "2g.4"
+    },
+    {
+      "at": "2026-09-11T08:33:18.618062+00:00",
+      "note": "google AI list 5",
+      "step": "2_discover",
+      "substep": "2g.5"
+    },
+    {
+      "at": "2026-09-11T08:34:12.827090+00:00",
+      "note": "google AI list 6",
+      "step": "2_discover",
+      "substep": "2g.6"
+    },
+    {
+      "at": "2026-09-11T08:35:12.065143+00:00",
+      "note": "google AI list 7",
+      "step": "2_discover",
+      "substep": "2g.7"
+    },
+    {
+      "at": "2026-09-11T08:36:08.167280+00:00",
+      "note": "google AI list 8",
+      "step": "2_discover",
+      "substep": "2g.8"
+    },
+    {
+      "at": "2026-09-11T09:40:47.871141+00:00",
+      "note": "resumed",
+      "step": "2_discover",
+      "substep": "2g.8"
+    },
+    {
+      "at": "2026-09-11T09:40:48.130739+00:00",
+      "note": "pipeline start",
+      "step": "0_start",
+      "substep": "0a_init"
+    },
+    {
+      "at": "2026-09-11T09:40:48.141785+00:00",
+      "note": "seeds loaded",
+      "step": "0_start",
+      "substep": "0b_seeds"
+    },
+    {
+      "at": "2026-09-11T09:41:27.223741+00:00",
+      "note": "google AI list 1",
+      "step": "2_discover",
+      "substep": "2g.1"
+    },
+    {
+      "at": "2026-09-11T09:42:24.540407+00:00",
+      "note": "google AI list 2",
+      "step": "2_discover",
+      "substep": "2g.2"
+    },
+    {
+      "at": "2026-09-11T09:43:25.138823+00:00",
+      "note": "google AI list 3",
+      "step": "2_discover",
+      "substep": "2g.3"
+    },
+    {
+      "at": "2026-09-11T09:44:20.129756+00:00",
+      "note": "google AI list 4",
+      "step": "2_discover",
+      "substep": "2g.4"
+    },
+    {
+      "at": "2026-09-11T09:45:11.218151+00:00",
+      "note": "google AI list 5",
+      "step": "2_discover",
+      "substep": "2g.5"
+    },
+    {
+      "at": "2026-09-11T09:46:14.254027+00:00",
+      "note": "google AI list 6",
+      "step": "2_discover",
+      "substep": "2g.6"
+    },
+    {
+      "at": "2026-09-11T09:47:14.735011+00:00",
+      "note": "google AI list 7",
+      "step": "2_discover",
+      "substep": "2g.7"
+    },
+    {
+      "at": "2026-09-11T09:48:10.187277+00:00",
+      "note": "google AI list 8",
+      "step": "2_discover",
+      "substep": "2g.8"
+    },
+    {
+      "at": "2026-09-11T09:49:05.203252+00:00",
+      "note": "google AI list 9",
+      "step": "2_discover",
+      "substep": "2g.9"
+    },
+    {
+      "at": "2026-09-11T09:50:05.055788+00:00",
+      "note": "google AI list 10",
+      "step": "2_discover",
+      "substep": "2g.10"
+    }
+  ]
+}

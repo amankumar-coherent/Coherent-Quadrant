@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Silicon Carbide Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 300,
+  "existing_before": 230,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 300,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 257,
+  "rejected_mid": 43,
+  "chatgpt_filled": 231,
+  "rejected_final": 0,
+  "total_after": 230,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "278e5fd8",
+    "market": "Global Silicon Carbide Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-16T19:59:12.382921+00:00",
+    "ended_at": "2026-09-17T00:14:52.167443+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 230,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\global_silicon_carbide_market_global_FINAL.xlsx",
+      "rejected_mid": 43,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Chemical and Materials",
+    "industry_category": "Advanced Materials",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters address the unique characteristics of the SiC market, where substrate quality, device reliability, and wafer size are critical product differentiators, while business strength hinges on customer wins, capacity expansion, and financial performance in a rapidly growing industry.",
+    "parameter_definitions": {
+      "x": {
+        "Substrate & Epitaxy Quality": "Measures the crystalline quality, uniformity, and low defect density of SiC substrates and epitaxial layers, critical for high-performance power devices. Evidence includes defect density metrics, wafer bow, and surface roughness data from customer qualifications.",
+        "Device Performance & Reliability": "Assesses the electrical characteristics (breakdown voltage, on-resistance, switching speed) and long-term reliability of SiC MOSFETs, diodes, and modules. Evidence includes datasheet parameters, qualification test results (e.g., HTGB, HTRB), and field failure rates.",
+        "Wafer Size & Defect Density": "Evaluates the ability to produce larger diameter wafers (150mm, 200mm) with low defect density, directly impacting die cost and throughput. Evidence includes wafer diameter offerings, defect density maps, and transition roadmaps to 200mm.",
+        "R&D and Patent Strength": "Captures investment in next-generation SiC technology (e.g., trench MOSFETs, superjunction) and intellectual property portfolio. Evidence includes R&D spending as % of revenue, patent counts, and technical publications.",
+        "Manufacturing Yield & Scalability": "Reflects production efficiency, yield rates, and ability to scale output to meet demand. Evidence includes yield percentages, capacity utilization, and announced fab expansions or conversions."
+      },
+      "y": {
+        "Market Share & Customer Base": "Measures the company's share of the global SiC market and the breadth/quality of its customer base, including automotive, industrial, and energy customers. Evidence includes market share estimates, design wins, and long-term supply agreements.",
+        "Revenue Growth & Profitability": "Assesses financial performance through revenue growth, gross margin, and profitability in the SiC business segment. Evidence includes segment financials, margin trends, and return on invested capital.",
+        "Capacity Expansion & Supply Chain": "Evaluates the ability to secure raw materials (e.g., high-purity silicon, graphite) and expand manufacturing capacity to meet demand. Evidence includes announced capacity expansions, vertical integration, and supply agreements.",
+        "Geographic & Application Diversification": "Captures the spread of sales across regions and applications (EVs, renewables, industrial) to reduce dependence on any single market. Evidence includes revenue breakdown by geography and application.",
+        "Strategic Partnerships & Alliances": "Reflects the strength of collaborations with key customers, suppliers, and technology partners to accelerate adoption and innovation. Evidence includes joint ventures, co-development agreements, and long-term contracts."
+      }
+    },
+    "x_features": [
+      "Substrate & Epitaxy Quality",
+      "Device Performance & Reliability",
+      "Wafer Size & Defect Density",
+      "R&D and Patent Strength",
+      "Manufacturing Yield & Scalability"
+    ],
+    "y_features": [
+      "Market Share & Customer Base",
+      "Revenue Growth & Profitability",
+      "Capacity Expansion & Supply Chain",
+      "Geographic & Application Diversification",
+      "Strategic Partnerships & Alliances"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 81.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 230,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 231,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 1,
+      "kept": 228,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The global silicon carbide market encompasses the production and sale of silicon carbide in various forms (e.g., raw materials, powders, substrates, and devices) used in semiconductors, power electronics, abrasives, and refractories.",
+      "keep_roles": [
+        "Manufacturer"
+      ],
+      "uniform_role": "Manufacturer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_silicon_carbide_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

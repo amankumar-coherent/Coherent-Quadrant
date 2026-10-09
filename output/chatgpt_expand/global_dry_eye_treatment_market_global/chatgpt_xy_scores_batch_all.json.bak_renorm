@@ -1,0 +1,6613 @@
+{
+  "industry_group": "Healthcare",
+  "industry_category": "Pharmaceutical",
+  "axis_x": "Product Strength",
+  "axis_y": "Business Strength",
+  "axis_definition_method": "llm",
+  "axis_definition_reason": "These parameters capture the unique dynamics of the dry eye treatment market, where product differentiation hinges on molecule diversity, therapeutic coverage, and clinical innovation, while business strength depends on global access, specialist reputation, and strategic partnerships. They align with the fixed axes of Product Strength and Business Strength while being specific to ophthalmic pharmaceuticals.",
+  "parameter_definitions": {
+    "x": {
+      "Product / Molecule Portfolio": "Breadth and depth of approved dry eye treatments, including prescription and OTC products across artificial tears, anti-inflammatories, immunomodulators, and secretagogues. Strength is shown by multiple approved products covering different severity levels and mechanisms.",
+      "Therapeutic Coverage & Differentiation": "Ability to address diverse dry eye subtypes (aqueous-deficient, evaporative, mixed) and patient segments with differentiated efficacy, safety, or convenience. Evidence includes clinical data showing superiority over existing therapies and unique mechanisms of action.",
+      "Innovation & Clinical R&D": "Investment in novel dry eye therapies such as new formulations, biologics, gene therapies, and devices, with a robust pipeline of Phase II/III candidates. Strength is indicated by high R&D spend, number of active trials, and recent approvals.",
+      "Manufacturing & Supply Reliability": "Capacity to produce sterile ophthalmic products at scale with consistent quality and minimal supply disruptions. Evidence includes FDA inspection records, recall history, and ability to meet global demand.",
+      "Regulatory & Quality Compliance": "Track record of obtaining and maintaining approvals from agencies like FDA, EMA, and PMDA for dry eye products. Strength is shown by clean regulatory histories, timely approvals, and compliance with cGMP standards."
+    },
+    "y": {
+      "Geographic Market Access": "Extent of product availability and reimbursement across major markets (US, EU, Japan, China) and emerging regions. Strength is evidenced by number of countries with approved products, payer coverage, and local partnerships.",
+      "Brand / HCP Reputation": "Recognition and trust among ophthalmologists, optometrists, and patients for dry eye treatments. Strong reputation is shown by market share, prescription volume, and positive sentiment in medical communities.",
+      "Financial Performance": "Revenue growth, profitability, and financial stability from dry eye product sales. Evidence includes segment revenue, gross margins, and consistent earnings from ophthalmic franchises.",
+      "Pipeline & Indication Roadmap": "Strategic plan for expanding dry eye indications, formulations, or delivery methods, with clear timelines and milestones. Strength is indicated by late-stage candidates and lifecycle management strategies.",
+      "Partnerships & Business Expansion": "Collaborations with eye care specialists, distributors, and technology firms to enhance market reach and innovation. Evidence includes licensing deals, co-development agreements, and acquisitions in dry eye space."
+    }
+  },
+  "x_features": [
+    "Product / Molecule Portfolio",
+    "Therapeutic Coverage & Differentiation",
+    "Innovation & Clinical R&D",
+    "Manufacturing & Supply Reliability",
+    "Regulatory & Quality Compliance"
+  ],
+  "y_features": [
+    "Geographic Market Access",
+    "Brand / HCP Reputation",
+    "Financial Performance",
+    "Pipeline & Indication Roadmap",
+    "Partnerships & Business Expansion"
+  ],
+  "x_feature_weights": [
+    0.3,
+    0.2,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "y_feature_weights": [
+    0.25,
+    0.25,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "question_weights": [
+    0.4,
+    0.3,
+    0.3
+  ],
+  "overall_formula": "(X + Y) / 2",
+  "quadrant_mid_x": 73.0,
+  "quadrant_mid_y": 65.0,
+  "scored": 181,
+  "crawl": {
+    "crawled": 0,
+    "ok": 0,
+    "fail": 0,
+    "skipped_no_domain": 0
+  },
+  "rows": [
+    {
+      "company": "AbbVie Inc.",
+      "x": 91,
+      "y": 95,
+      "overall": 93,
+      "x_original": 91.0,
+      "y_original": 95.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 91
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 95
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Abdi İbrahim İlaç San. ve Tic. A.Ş.",
+      "x": 73,
+      "y": 65,
+      "overall": 69,
+      "x_original": 52.0,
+      "y_original": 46.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 52
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 46
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Aché Laboratórios Farmacêuticos S.A.",
+      "x": 69,
+      "y": 65,
+      "overall": 67,
+      "x_original": 48.0,
+      "y_original": 45.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 48
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 45
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "ACS Pharma",
+      "x": 65,
+      "y": 82,
+      "overall": 74,
+      "x_original": 30.0,
+      "y_original": 38.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 30
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 38
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "ACS Pharma (Pty) Ltd",
+      "x": 65,
+      "y": 77,
+      "overall": 71,
+      "x_original": 32.0,
+      "y_original": 38.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 32
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 38
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Adcock Ingram",
+      "x": 69,
+      "y": 65,
+      "overall": 67,
+      "x_original": 55.0,
+      "y_original": 52.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 55
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 52
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Adcock Ingram Limited",
+      "x": 69,
+      "y": 65,
+      "overall": 67,
+      "x_original": 55.0,
+      "y_original": 52.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 55
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 52
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Aelo Pty Ltd",
+      "x": 65,
+      "y": 91,
+      "overall": 78,
+      "x_original": 25.0,
+      "y_original": 35.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 25
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 35
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "AFT Pharmaceuticals",
+      "x": 76,
+      "y": 76,
+      "overall": 76,
+      "x_original": 76.0,
+      "y_original": 76.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 76
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "AFT Pharmaceuticals Ltd",
+      "x": 76,
+      "y": 76,
+      "overall": 76,
+      "x_original": 76.0,
+      "y_original": 76.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 76
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "AFT Pharmaceuticals Ltd.",
+      "x": 76,
+      "y": 76,
+      "overall": 76,
+      "x_original": 76.0,
+      "y_original": 76.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 76
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "AGEPHA Pharma",
+      "x": 68,
+      "y": 65,
+      "overall": 66,
+      "x_original": 68.0,
+      "y_original": 64.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 68
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 64
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "AiPharma Healthcare Sdn Bhd",
+      "x": 65,
+      "y": 67,
+      "overall": 66,
+      "x_original": 35.0,
+      "y_original": 36.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 35
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 36
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "AiPharma Healthcare Sdn. Bhd.",
+      "x": 65,
+      "y": 67,
+      "overall": 66,
+      "x_original": 35.0,
+      "y_original": 36.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 35
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 36
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Ajanta Pharma Limited",
+      "x": 65,
+      "y": 66,
+      "overall": 66,
+      "x_original": 62.0,
+      "y_original": 66.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 62
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 66
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Aju Pharmaceutical Co., Ltd.",
+      "x": 73,
+      "y": 65,
+      "overall": 69,
+      "x_original": 54.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 54
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 48
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Alcon Inc.",
+      "x": 96,
+      "y": 97,
+      "overall": 96,
+      "x_original": 96.0,
+      "y_original": 97.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 96
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 97
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Alembic Pharmaceuticals Ltd.",
+      "x": 67,
+      "y": 65,
+      "overall": 66,
+      "x_original": 58.0,
+      "y_original": 56.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 58
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 56
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Allergan",
+      "x": 93,
+      "y": 95,
+      "overall": 94,
+      "x_original": 93.0,
+      "y_original": 95.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 93
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 95
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Allergan Sales, LLC",
+      "x": 93,
+      "y": 95,
+      "overall": 94,
+      "x_original": 93.0,
+      "y_original": 95.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 93
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 95
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Amman Pharmaceutical Industries",
+      "x": 73,
+      "y": 65,
+      "overall": 69,
+      "x_original": 56.0,
+      "y_original": 50.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 56
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 50
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Anóthen Wellness",
+      "x": 65,
+      "y": 74,
+      "overall": 70,
+      "x_original": 28.0,
+      "y_original": 32.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 28
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 32
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Apollo Hospitals Enterprise Ltd.",
+      "x": 70,
+      "y": 65,
+      "overall": 68,
+      "x_original": 45.0,
+      "y_original": 42.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 45
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 42
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Apotex Pty Ltd",
+      "x": 71,
+      "y": 65,
+      "overall": 68,
+      "x_original": 60.0,
+      "y_original": 55.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 60
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 55
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Arrotex Pharmaceuticals Pty Ltd",
+      "x": 65,
+      "y": 67,
+      "overall": 66,
+      "x_original": 58.0,
+      "y_original": 60.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 58
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 60
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Aspen Pharmacare Holdings Limited",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 65.0,
+      "y_original": 62.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 62
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Aspen Pharmacare Holdings Ltd",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 65.0,
+      "y_original": 62.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 62
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Aspen Remedies",
+      "x": 65,
+      "y": 74,
+      "overall": 70,
+      "x_original": 42.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 42
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 48
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Aurolab",
+      "x": 70,
+      "y": 65,
+      "overall": 68,
+      "x_original": 70.0,
+      "y_original": 61.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 70
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 61
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Avizor S.A.",
+      "x": 74,
+      "y": 71,
+      "overall": 72,
+      "x_original": 74.0,
+      "y_original": 71.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 74
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 71
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bausch & Lomb Inc.",
+      "x": 88,
+      "y": 88,
+      "overall": 88,
+      "x_original": 88.0,
+      "y_original": 88.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 88
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bausch & Lomb Incorporated",
+      "x": 88,
+      "y": 88,
+      "overall": 88,
+      "x_original": 88.0,
+      "y_original": 88.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 88
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bausch & Lomb Laboratories",
+      "x": 88,
+      "y": 85,
+      "overall": 86,
+      "x_original": 88.0,
+      "y_original": 85.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 85
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bausch & Lomb South Africa",
+      "x": 86,
+      "y": 78,
+      "overall": 82,
+      "x_original": 86.0,
+      "y_original": 78.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 86
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 78
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bioos",
+      "x": 81,
+      "y": 65,
+      "overall": 73,
+      "x_original": 40.0,
+      "y_original": 32.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 40
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 32
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Biopharma S.A.",
+      "x": 78,
+      "y": 65,
+      "overall": 72,
+      "x_original": 42.0,
+      "y_original": 35.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 42
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 35
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "BioRevive Pty Ltd",
+      "x": 69,
+      "y": 65,
+      "overall": 67,
+      "x_original": 55.0,
+      "y_original": 52.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 55
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 52
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Blackmores Ltd",
+      "x": 67,
+      "y": 65,
+      "overall": 66,
+      "x_original": 60.0,
+      "y_original": 58.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 60
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 58
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "BlephEx, LLC.",
+      "x": 72,
+      "y": 72,
+      "overall": 72,
+      "x_original": 72.0,
+      "y_original": 72.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 72
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 72
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Bruder Healthcare Company",
+      "x": 75,
+      "y": 70,
+      "overall": 72,
+      "x_original": 75.0,
+      "y_original": 70.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 75
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 70
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Brunel Laboratoria (Pty) Ltd",
+      "x": 72,
+      "y": 65,
+      "overall": 68,
+      "x_original": 40.0,
+      "y_original": 36.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 40
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 36
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Cipla Ltd.",
+      "x": 78,
+      "y": 68,
+      "overall": 73,
+      "x_original": 78.0,
+      "y_original": 68.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 78
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 68
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "CorneaCare, Inc.",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 65.0,
+      "y_original": 55.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 55
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Corneal Lens Corporation",
+      "x": 70,
+      "y": 65,
+      "overall": 68,
+      "x_original": 45.0,
+      "y_original": 42.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 45
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 42
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Cristália Produtos Químicos Farmacêuticos Ltda.",
+      "x": 74,
+      "y": 65,
+      "overall": 70,
+      "x_original": 55.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 55
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 48
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Delta Grand Pharma for Pharmaceutical Industries",
+      "x": 73,
+      "y": 65,
+      "overall": 69,
+      "x_original": 38.0,
+      "y_original": 34.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 38
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 34
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "DEVA Holding A.Ş.",
+      "x": 88,
+      "y": 65,
+      "overall": 76,
+      "x_original": 62.0,
+      "y_original": 46.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 62
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 46
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Disop S.A.",
+      "x": 86,
+      "y": 65,
+      "overall": 76,
+      "x_original": 58.0,
+      "y_original": 44.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 58
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 44
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Divisa Herbals Pvt. Ltd.",
+      "x": 76,
+      "y": 65,
+      "overall": 70,
+      "x_original": 35.0,
+      "y_original": 30.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 35
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 30
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Drugfield Pharmaceuticals Limited",
+      "x": 69,
+      "y": 65,
+      "overall": 67,
+      "x_original": 35.0,
+      "y_original": 33.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 35
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 33
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Duopharma Biotech Berhad",
+      "x": 72,
+      "y": 65,
+      "overall": 68,
+      "x_original": 50.0,
+      "y_original": 45.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 50
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 45
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "East Midlands Pharma Ltd",
+      "x": 78,
+      "y": 65,
+      "overall": 72,
+      "x_original": 48.0,
+      "y_original": 40.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 48
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 40
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Egyptian International Pharmaceutical Industries Co.",
+      "x": 100,
+      "y": 65,
+      "overall": 82,
+      "x_original": 60.0,
+      "y_original": 38.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 60
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 38
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Elin Eyes",
+      "x": 74,
+      "y": 65,
+      "overall": 70,
+      "x_original": 40.0,
+      "y_original": 35.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 40
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 35
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "EMS S.A.",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 65.0,
+      "y_original": 50.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 50
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Ensight Pharmaceuticals Inc.",
+      "x": 89,
+      "y": 65,
+      "overall": 77,
+      "x_original": 52.0,
+      "y_original": 38.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 52
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 38
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Entod Pharmaceuticals Limited",
+      "x": 76,
+      "y": 65,
+      "overall": 70,
+      "x_original": 76.0,
+      "y_original": 62.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 62
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Entod Pharmaceuticals Ltd",
+      "x": 76,
+      "y": 65,
+      "overall": 70,
+      "x_original": 76.0,
+      "y_original": 62.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 62
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Entod Pharmaceuticals Ltd.",
+      "x": 76,
+      "y": 65,
+      "overall": 70,
+      "x_original": 76.0,
+      "y_original": 62.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 62
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Espansione Group",
+      "x": 74,
+      "y": 74,
+      "overall": 74,
+      "x_original": 74.0,
+      "y_original": 74.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 74
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 74
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Eurofarma Laboratórios S.A.",
+      "x": 71,
+      "y": 65,
+      "overall": 68,
+      "x_original": 71.0,
+      "y_original": 65.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 71
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 65
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "EVA Pharma",
+      "x": 75,
+      "y": 65,
+      "overall": 70,
+      "x_original": 54.0,
+      "y_original": 47.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 54
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 47
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Eximore Ltd.",
+      "x": 68,
+      "y": 65,
+      "overall": 66,
+      "x_original": 50.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 50
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 48
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Eyecirque Private Limited",
+      "x": 100,
+      "y": 65,
+      "overall": 82,
+      "x_original": 61.0,
+      "y_original": 39.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 61
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 39
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Eyeganics LLC",
+      "x": 98,
+      "y": 65,
+      "overall": 82,
+      "x_original": 63.0,
+      "y_original": 42.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 63
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 42
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "FDC Limited",
+      "x": 76,
+      "y": 65,
+      "overall": 70,
+      "x_original": 76.0,
+      "y_original": 58.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 58
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Fischer Pharmaceuticals Ltd.",
+      "x": 67,
+      "y": 65,
+      "overall": 66,
+      "x_original": 67.0,
+      "y_original": 53.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 67
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 53
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Fithealth",
+      "x": 95,
+      "y": 65,
+      "overall": 80,
+      "x_original": 41.0,
+      "y_original": 28.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 41
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 28
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Gbio Farmacêutica",
+      "x": 88,
+      "y": 65,
+      "overall": 76,
+      "x_original": 46.0,
+      "y_original": 34.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 46
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 34
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Genomma Lab Internacional S.A.B. de C.V.",
+      "x": 65,
+      "y": 71,
+      "overall": 68,
+      "x_original": 53.0,
+      "y_original": 58.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 53
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 58
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Geolab Indústria Farmacêutica S/A",
+      "x": 94,
+      "y": 65,
+      "overall": 80,
+      "x_original": 59.0,
+      "y_original": 41.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 59
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 41
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Global Napi Pharmaceuticals",
+      "x": 75,
+      "y": 65,
+      "overall": 70,
+      "x_original": 51.0,
+      "y_original": 44.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 51
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 44
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "GMG Ophthalmics",
+      "x": 88,
+      "y": 65,
+      "overall": 76,
+      "x_original": 62.0,
+      "y_original": 46.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 62
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 46
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Gulf Pharmaceutical Industries",
+      "x": 66,
+      "y": 65,
+      "overall": 66,
+      "x_original": 66.0,
+      "y_original": 58.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 66
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 58
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Hanmi Pharmaceutical Co., Ltd.",
+      "x": 77,
+      "y": 72,
+      "overall": 74,
+      "x_original": 77.0,
+      "y_original": 72.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 77
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 72
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Harrow, Inc.",
+      "x": 89,
+      "y": 83,
+      "overall": 86,
+      "x_original": 89.0,
+      "y_original": 83.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 89
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 83
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Health House",
+      "x": 75,
+      "y": 65,
+      "overall": 70,
+      "x_original": 36.0,
+      "y_original": 31.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 36
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 31
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Health Right Australia Pty Ltd",
+      "x": 77,
+      "y": 65,
+      "overall": 71,
+      "x_original": 39.0,
+      "y_original": 33.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 39
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 33
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Horus Pharma",
+      "x": 79,
+      "y": 73,
+      "overall": 76,
+      "x_original": 79.0,
+      "y_original": 73.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 79
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 73
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Huons Co., Ltd.",
+      "x": 78,
+      "y": 66,
+      "overall": 72,
+      "x_original": 78.0,
+      "y_original": 66.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 78
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 66
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "I-MED Pharma Inc.",
+      "x": 86,
+      "y": 77,
+      "overall": 82,
+      "x_original": 86.0,
+      "y_original": 77.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 86
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 77
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Inter Pharma Public Company Limited",
+      "x": 77,
+      "y": 65,
+      "overall": 71,
+      "x_original": 52.0,
+      "y_original": 44.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 52
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 44
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Jadran-Galenski Laboratorij d.d.",
+      "x": 73,
+      "y": 65,
+      "overall": 69,
+      "x_original": 73.0,
+      "y_original": 63.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 73
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 63
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Jagat Pharma",
+      "x": 82,
+      "y": 65,
+      "overall": 74,
+      "x_original": 44.0,
+      "y_original": 35.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 44
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 35
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Jamjoom Pharmaceuticals Co.",
+      "x": 79,
+      "y": 74,
+      "overall": 76,
+      "x_original": 79.0,
+      "y_original": 74.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 79
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 74
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Jiangsu Hengrui Pharmaceuticals Co., Ltd.",
+      "x": 83,
+      "y": 83,
+      "overall": 83,
+      "x_original": 83.0,
+      "y_original": 83.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 83
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 83
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Johnson & Johnson Vision Care, Inc.",
+      "x": 89,
+      "y": 93,
+      "overall": 91,
+      "x_original": 89.0,
+      "y_original": 93.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 89
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 93
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Julphar Gulf Pharmaceutical Industries",
+      "x": 66,
+      "y": 65,
+      "overall": 66,
+      "x_original": 66.0,
+      "y_original": 58.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 66
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 58
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "JW Pharmaceutical",
+      "x": 71,
+      "y": 65,
+      "overall": 68,
+      "x_original": 71.0,
+      "y_original": 64.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 71
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 64
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "JW Pharmaceutical Corporation",
+      "x": 71,
+      "y": 65,
+      "overall": 68,
+      "x_original": 71.0,
+      "y_original": 64.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 71
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 64
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Kenvue Inc.",
+      "x": 78,
+      "y": 74,
+      "overall": 76,
+      "x_original": 78.0,
+      "y_original": 74.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 78
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 74
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Kwangdong Pharmaceutical Co., Ltd.",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 52.0,
+      "y_original": 52.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 52
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 52
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Laboratoires SAIPH",
+      "x": 65,
+      "y": 78,
+      "overall": 72,
+      "x_original": 25.0,
+      "y_original": 30.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 25
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 30
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Laboratoires Théa",
+      "x": 88,
+      "y": 85,
+      "overall": 86,
+      "x_original": 88.0,
+      "y_original": 85.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 85
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Laboratoires Théa SAS",
+      "x": 88,
+      "y": 85,
+      "overall": 86,
+      "x_original": 88.0,
+      "y_original": 85.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 85
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Laboratorio Edgardo Jorge Gezzi",
+      "x": 65,
+      "y": 81,
+      "overall": 73,
+      "x_original": 20.0,
+      "y_original": 25.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 20
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 25
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Laboratorio Gramon Millet S.A.",
+      "x": 72,
+      "y": 65,
+      "overall": 68,
+      "x_original": 40.0,
+      "y_original": 36.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 40
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 36
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Laboratorios Elea S.A.C.I.F. y A.",
+      "x": 70,
+      "y": 65,
+      "overall": 68,
+      "x_original": 58.0,
+      "y_original": 54.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 58
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 54
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Laboratorios Poen S.A.",
+      "x": 76,
+      "y": 70,
+      "overall": 73,
+      "x_original": 76.0,
+      "y_original": 70.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 70
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Laboratorios Poen S.A.U.",
+      "x": 76,
+      "y": 70,
+      "overall": 73,
+      "x_original": 76.0,
+      "y_original": 70.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 70
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Laboratorios Saval S.A.",
+      "x": 73,
+      "y": 65,
+      "overall": 69,
+      "x_original": 64.0,
+      "y_original": 57.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 64
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 57
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Laboratorios Sophia, S.A. de C.V.",
+      "x": 82,
+      "y": 76,
+      "overall": 79,
+      "x_original": 82.0,
+      "y_original": 76.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 82
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 76
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Laboratório Cristália",
+      "x": 65,
+      "y": 66,
+      "overall": 66,
+      "x_original": 54.0,
+      "y_original": 55.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 54
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 55
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Laboratório Cristália S.A.",
+      "x": 65,
+      "y": 66,
+      "overall": 66,
+      "x_original": 54.0,
+      "y_original": 55.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 54
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 55
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Latinofarma Indústria Farmacêutica Ltda.",
+      "x": 83,
+      "y": 65,
+      "overall": 74,
+      "x_original": 60.0,
+      "y_original": 47.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 60
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 47
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Leeford Healthcare Ltd.",
+      "x": 87,
+      "y": 65,
+      "overall": 76,
+      "x_original": 48.0,
+      "y_original": 36.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 48
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 36
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Legrand Pharma Indústria Farmacêutica Ltda.",
+      "x": 78,
+      "y": 65,
+      "overall": 72,
+      "x_original": 42.0,
+      "y_original": 35.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 42
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 35
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Les Laboratoires UNIMED",
+      "x": 66,
+      "y": 65,
+      "overall": 66,
+      "x_original": 45.0,
+      "y_original": 44.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 45
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 44
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Lifezen Healthcare Private Limited",
+      "x": 73,
+      "y": 65,
+      "overall": 69,
+      "x_original": 35.0,
+      "y_original": 31.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 35
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 31
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Lion Corporation",
+      "x": 68,
+      "y": 71,
+      "overall": 70,
+      "x_original": 68.0,
+      "y_original": 71.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 68
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 71
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Lion Korea Corporation",
+      "x": 78,
+      "y": 65,
+      "overall": 72,
+      "x_original": 55.0,
+      "y_original": 46.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 55
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 46
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Lunatus Marketing & Consulting FZCO",
+      "x": 83,
+      "y": 65,
+      "overall": 74,
+      "x_original": 50.0,
+      "y_original": 39.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 50
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 39
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Macleods Pharmaceuticals Ltd.",
+      "x": 77,
+      "y": 65,
+      "overall": 71,
+      "x_original": 52.0,
+      "y_original": 44.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 52
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 44
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Mankind Pharma Limited",
+      "x": 76,
+      "y": 65,
+      "overall": 70,
+      "x_original": 56.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 56
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 48
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Mankind Pharma Ltd.",
+      "x": 76,
+      "y": 65,
+      "overall": 70,
+      "x_original": 56.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 56
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 48
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Maxvue Vision Sdn. Bhd.",
+      "x": 65,
+      "y": 70,
+      "overall": 68,
+      "x_original": 40.0,
+      "y_original": 43.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 40
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 43
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "MD EyeCare Pty Ltd",
+      "x": 78,
+      "y": 65,
+      "overall": 72,
+      "x_original": 62.0,
+      "y_original": 52.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 62
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 52
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Medinox",
+      "x": 70,
+      "y": 65,
+      "overall": 68,
+      "x_original": 30.0,
+      "y_original": 28.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 30
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 28
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Medpharma",
+      "x": 81,
+      "y": 65,
+      "overall": 73,
+      "x_original": 35.0,
+      "y_original": 28.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 35
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 28
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Melcare Biomedical Pty Ltd",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 65.0,
+      "y_original": 52.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 52
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Micro Labs Limited",
+      "x": 75,
+      "y": 70,
+      "overall": 72,
+      "x_original": 75.0,
+      "y_original": 70.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 75
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 70
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Micro Labs Ltd.",
+      "x": 75,
+      "y": 70,
+      "overall": 72,
+      "x_original": 75.0,
+      "y_original": 70.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 75
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 70
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Naveh Pharma Ltd.",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 65.0,
+      "y_original": 50.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 50
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Neon Laboratories Ltd.",
+      "x": 68,
+      "y": 65,
+      "overall": 66,
+      "x_original": 60.0,
+      "y_original": 57.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 60
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 57
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Next Biosciences",
+      "x": 68,
+      "y": 65,
+      "overall": 66,
+      "x_original": 68.0,
+      "y_original": 52.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 68
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 52
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Oasis Medical Inc.",
+      "x": 82,
+      "y": 78,
+      "overall": 80,
+      "x_original": 82.0,
+      "y_original": 78.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 82
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 78
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "OcuSOFT, Inc.",
+      "x": 85,
+      "y": 80,
+      "overall": 82,
+      "x_original": 85.0,
+      "y_original": 80.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 85
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 80
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Optima Pharmazeutische GmbH",
+      "x": 74,
+      "y": 68,
+      "overall": 71,
+      "x_original": 74.0,
+      "y_original": 68.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 74
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 68
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Optus Pharmaceutical Co., Ltd.",
+      "x": 88,
+      "y": 65,
+      "overall": 76,
+      "x_original": 62.0,
+      "y_original": 46.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 62
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 46
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Orchidia Pharma",
+      "x": 65,
+      "y": 66,
+      "overall": 66,
+      "x_original": 65.0,
+      "y_original": 66.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 66
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Orchidia Pharmaceutical Industries",
+      "x": 65,
+      "y": 66,
+      "overall": 66,
+      "x_original": 65.0,
+      "y_original": 66.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 65
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 66
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Otsuka Pharmaceutical Co., Ltd.",
+      "x": 88,
+      "y": 88,
+      "overall": 88,
+      "x_original": 88.0,
+      "y_original": 88.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 88
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Oyster Point Pharma, Inc.",
+      "x": 92,
+      "y": 87,
+      "overall": 90,
+      "x_original": 92.0,
+      "y_original": 87.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 92
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 87
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Petrus Pharmaceuticals Pty Ltd",
+      "x": 74,
+      "y": 65,
+      "overall": 70,
+      "x_original": 55.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 55
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 48
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Pharco Corporation",
+      "x": 67,
+      "y": 65,
+      "overall": 66,
+      "x_original": 64.0,
+      "y_original": 62.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 64
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 62
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Pharco Pharmaceuticals",
+      "x": 67,
+      "y": 65,
+      "overall": 66,
+      "x_original": 64.0,
+      "y_original": 62.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 64
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 62
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "PharmaCare Laboratories Pty Ltd",
+      "x": 65,
+      "y": 72,
+      "overall": 68,
+      "x_original": 52.0,
+      "y_original": 58.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 52
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 58
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Prestige Consumer Healthcare Inc.",
+      "x": 78,
+      "y": 72,
+      "overall": 75,
+      "x_original": 78.0,
+      "y_original": 72.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 78
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 72
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "PT Cendo Pharmaceutical Industries",
+      "x": 80,
+      "y": 69,
+      "overall": 74,
+      "x_original": 80.0,
+      "y_original": 69.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 80
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 69
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "PT Combiphar",
+      "x": 70,
+      "y": 65,
+      "overall": 68,
+      "x_original": 70.0,
+      "y_original": 56.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 70
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 56
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "PT Dexa Medica",
+      "x": 65,
+      "y": 65,
+      "overall": 65,
+      "x_original": 63.0,
+      "y_original": 63.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 63
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 63
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "PT Kalbe Farma Tbk",
+      "x": 68,
+      "y": 69,
+      "overall": 68,
+      "x_original": 68.0,
+      "y_original": 69.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 68
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 69
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "PT Konimex",
+      "x": 71,
+      "y": 65,
+      "overall": 68,
+      "x_original": 58.0,
+      "y_original": 53.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 58
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 53
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "PT Sanbe Farma",
+      "x": 72,
+      "y": 65,
+      "overall": 68,
+      "x_original": 72.0,
+      "y_original": 61.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 72
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 61
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Rayner Pharmaceuticals Ltd",
+      "x": 76,
+      "y": 75,
+      "overall": 76,
+      "x_original": 76.0,
+      "y_original": 75.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 76
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 75
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Resono Ophthalmic S.r.l.",
+      "x": 80,
+      "y": 65,
+      "overall": 72,
+      "x_original": 80.0,
+      "y_original": 63.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 80
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 63
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Rohto Pharmaceutical Co., Ltd.",
+      "x": 88,
+      "y": 90,
+      "overall": 89,
+      "x_original": 88.0,
+      "y_original": 90.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 90
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Rxilient Biotech Pte. Ltd.",
+      "x": 68,
+      "y": 65,
+      "overall": 66,
+      "x_original": 60.0,
+      "y_original": 57.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 60
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 57
+        }
+      ],
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Samil Pharmaceutical Co., Ltd.",
+      "x": 78,
+      "y": 74,
+      "overall": 76,
+      "x_original": 78.0,
+      "y_original": 74.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 78
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 74
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Santen Pharmaceutical Co., Ltd.",
+      "x": 96,
+      "y": 94,
+      "overall": 95,
+      "x_original": 96.0,
+      "y_original": 94.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 96
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 94
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Savant Health Ltd",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Scope Ophthalmology Ltd",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Senju Pharmaceutical Co., Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Sentiss Pharma Pvt. Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Shenyang Xingqi Pharmaceutical Co., Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Similasan AG",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Square Pharmaceuticals PLC",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Sreedhareeyam Ayurvedic Medicines Pvt. Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "STADA Philippines",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Steris Healthcare Pvt. Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Stiltec Global Pty Ltd",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Inc.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "x": 84,
+      "y": 81,
+      "overall": 82,
+      "x_original": 84.0,
+      "y_original": 81.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 84
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 81
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Sunways India Private Limited",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Sunways India Pvt. Ltd.",
+      "x": 100,
+      "y": 65,
+      "overall": 82,
+      "x_original": 50.0,
+      "y_original": 24.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 50
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 24
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Taisho Pharmaceutical Co., Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Talent Pharma",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Tarsus Pharmaceuticals, Inc.",
+      "x": 80,
+      "y": 84,
+      "overall": 82,
+      "x_original": 80.0,
+      "y_original": 84.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 80
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 84
+        }
+      ],
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Tecnoquímicas S.A.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Tenth of Ramadan for Pharmaceutical Industries and Diagnostic Reagents (Rameda) S.A.E.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Tenth of Ramadan Pharmaceutical Industries and Diagnostic Reagents (Rameda)",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "The Body Doctor Ltd",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "TRB Chemedica International SA",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Ultramedica Co., Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Unimed Pharmaceuticals Inc.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Ursapharm Arzneimittel GmbH",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "VISUfarma B.V.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Wize Pharma, Inc.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "World Medicine İlaç San. ve Tic. A.Ş.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Xepa-Soul Pattinson (Malaysia) Sdn Bhd",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Zocular LLC",
+      "x": 100,
+      "y": 65,
+      "overall": 82,
+      "x_original": 64.0,
+      "y_original": 38.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "Product / Molecule Portfolio",
+            "Therapeutic Coverage & Differentiation",
+            "Innovation & Clinical R&D",
+            "Manufacturing & Supply Reliability",
+            "Regulatory & Quality Compliance"
+          ],
+          "score": 64
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Geographic Market Access",
+            "Brand / HCP Reputation",
+            "Financial Performance",
+            "Pipeline & Indication Roadmap",
+            "Partnerships & Business Expansion"
+          ],
+          "score": 38
+        }
+      ],
+      "quadrant": "Leaders"
+    }
+  ],
+  "relevance": {
+    "input": 182,
+    "geo_artifacts": 0,
+    "heuristic_drop": 0,
+    "llm_drop": 1,
+    "kept": 178,
+    "player_type": "B2C",
+    "market_type": "B2C",
+    "market_definition": "The global market for pharmaceutical and device-based treatments for dry eye disease, including prescription drugs, OTC artificial tears, and in-office procedures.",
+    "keep_roles": [
+      "Brand / Marketer"
+    ],
+    "uniform_role": "Brand / Marketer"
+  }
+}

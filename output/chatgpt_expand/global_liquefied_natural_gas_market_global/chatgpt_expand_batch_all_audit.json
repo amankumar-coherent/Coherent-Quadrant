@@ -1,0 +1,129 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Liquefied Natural Gas Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 700,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": true,
+  "chatgpt_recalled": 263,
+  "openai_discovered": 222,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 395,
+  "rejected_mid": 90,
+  "chatgpt_filled": 256,
+  "rejected_final": 20,
+  "total_after": 236,
+  "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_liquefied_natural_gas_market_global\\global_liquefied_natural_gas_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "686184e6",
+    "market": "Global Liquefied Natural Gas Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-08-13T10:34:27.838340+00:00",
+    "ended_at": "2026-08-13T11:11:42.269884+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 700,
+      "max_queries": 220,
+      "max_fill": 700,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": true,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_liquefied_natural_gas_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 236,
+      "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_liquefied_natural_gas_market_global\\global_liquefied_natural_gas_market_global_FINAL.xlsx",
+      "rejected_mid": 90,
+      "rejected_final": 20,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Others",
+    "industry_category": "Energy",
+    "axis_x": "LNG Asset & Operations Strength",
+    "axis_y": "Commercial & Portfolio Scale",
+    "x_features": [
+      "Liquefaction Capacity & Utilization",
+      "Feedstock Supply Security",
+      "Asset Reliability & Uptime",
+      "Safety & Regulatory Compliance",
+      "Carbon Intensity & Efficiency"
+    ],
+    "y_features": [
+      "LNG Sales & Contract Portfolio",
+      "Customer & Geographic Diversification",
+      "Financial Performance & Liquidity",
+      "Growth Project Pipeline",
+      "Strategic Partnerships & Market Position"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 53.0,
+    "quadrant_mid_y": 52.0,
+    "scored": 236,
+    "crawl": {
+      "crawled": 236,
+      "ok": 147,
+      "fail": 89,
+      "skipped_no_domain": 0
+    },
+    "parameter_definitions": {
+      "x": {
+        "Liquefaction Capacity & Utilization": "Total nameplate liquefaction capacity (mtpa) and actual utilization rates. High capacity and utilization indicate strong operational scale and efficiency.",
+        "Feedstock Supply Security": "Access to reliable natural gas feedstocks, including long-term supply agreements and upstream integration. Secure feedstock ensures stable operations and cost control.",
+        "Asset Reliability & Uptime": "Track record of plant availability, on-stream time, and maintenance performance. High uptime minimizes production losses and maximizes revenue.",
+        "Safety & Regulatory Compliance": "Safety performance (e.g., TRIR) and adherence to environmental and operational regulations. Strong compliance reduces operational risk and enhances reputation.",
+        "Carbon Intensity & Efficiency": "Greenhouse gas emissions per tonne of LNG produced and energy efficiency of liquefaction trains. Lower carbon intensity improves market access and meets decarbonization goals."
+      },
+      "y": {
+        "LNG Sales & Contract Portfolio": "Volume of LNG contracted under long-term and spot agreements, including contract duration and pricing terms. A robust portfolio ensures revenue stability and market presence.",
+        "Customer & Geographic Diversification": "Spread of customers across regions and markets. Diversification reduces dependence on any single buyer or region, mitigating demand risk.",
+        "Financial Performance & Liquidity": "Revenue, EBITDA, cash flow, and debt metrics. Strong financials enable investment in growth and resilience to market volatility.",
+        "Growth Project Pipeline": "Planned or under-construction liquefaction and regasification projects, including capacity additions and timelines. A robust pipeline indicates future growth potential.",
+        "Strategic Partnerships & Market Position": "Joint ventures, equity stakes, and long-term supply deals with major players. Strong partnerships enhance market access and competitive positioning."
+      }
+    },
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the core drivers of success in the global LNG market: operational excellence in liquefaction and supply security, combined with commercial strength in contracting, diversification, and financial resilience. They are specific to LNG's asset-heavy, long-term contract nature."
+  },
+  "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_liquefied_natural_gas_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

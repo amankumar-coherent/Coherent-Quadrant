@@ -1,0 +1,129 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Flexible Packaging Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 700,
+  "existing_before": 0,
+  "seeds_loaded": 78,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": true,
+  "chatgpt_recalled": 36,
+  "openai_discovered": 327,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 258,
+  "rejected_mid": 183,
+  "chatgpt_filled": 173,
+  "rejected_final": 16,
+  "total_after": 157,
+  "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_flexible_packaging_market_global\\global_flexible_packaging_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "fd27caac",
+    "market": "Global Flexible Packaging Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-08-12T19:32:52.402592+00:00",
+    "ended_at": "2026-08-12T22:31:00.711834+00:00",
+    "calls": 192,
+    "prompt_tokens": 123745,
+    "completion_tokens": 21636,
+    "total_tokens": 145381,
+    "estimated_cost_usd": 0.031543,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 700,
+      "max_queries": 220,
+      "max_fill": 700,
+      "seeds": 78,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": true,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_flexible_packaging_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "final",
+      "companies": 157,
+      "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_flexible_packaging_market_global\\global_flexible_packaging_market_global_FINAL.xlsx",
+      "rejected_mid": 183,
+      "rejected_final": 16,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Others",
+    "industry_category": "Packaging",
+    "axis_x": "Flexible Packaging Technology & Operations",
+    "axis_y": "Market Reach & Financial Strength",
+    "x_features": [
+      "Material & Structure Portfolio",
+      "Barrier & Protection Performance",
+      "Converting & Manufacturing Capability",
+      "Sustainability & Circular Design",
+      "Regulatory & Food-Contact Compliance"
+    ],
+    "y_features": [
+      "Geographic Market Coverage",
+      "Customer Base & Brand Reach",
+      "Financial Performance & Stability",
+      "Innovation & R&D Pipeline",
+      "Capacity Expansion & Investments"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 60.0,
+    "quadrant_mid_y": 61.0,
+    "scored": 157,
+    "crawl": {
+      "crawled": 157,
+      "ok": 95,
+      "fail": 62,
+      "skipped_no_domain": 0
+    },
+    "parameter_definitions": {
+      "x": {
+        "Material & Structure Portfolio": "Breadth of film types (PE, PP, PET, foil, etc.) and multilayer structures offered. Strength shown by diverse product lines for various applications like food, beverage, and industrial packaging.",
+        "Barrier & Protection Performance": "Ability to provide barriers against oxygen, moisture, light, and aroma to extend shelf life. Evidence includes proprietary barrier technologies, high-performance films, and certifications for sensitive products.",
+        "Converting & Manufacturing Capability": "In-house capabilities in extrusion, lamination, printing, and slitting. Strength indicated by advanced machinery, production efficiency, and quality control systems.",
+        "Sustainability & Circular Design": "Use of recyclable, biodegradable, or source-reduced materials, and design for recyclability. Evidence includes certifications like APR, use of post-consumer recycled content, and partnerships for circular economy.",
+        "Regulatory & Food-Contact Compliance": "Adherence to global food-contact regulations (FDA, EU, etc.) and safety standards. Strength shown by certifications, compliance documentation, and track record of safe products."
+      },
+      "y": {
+        "Geographic Market Coverage": "Presence in key regions (North America, Europe, Asia-Pacific) and ability to serve global customers. Evidence includes manufacturing sites, sales offices, and distribution networks.",
+        "Customer Base & Brand Reach": "Diversity and loyalty of customers, including major FMCG brands and converters. Strength indicated by long-term contracts, repeat business, and reputation in the market.",
+        "Financial Performance & Stability": "Revenue growth, profitability, and balance sheet strength. Evidence includes financial reports, credit ratings, and consistent investment in the business.",
+        "Innovation & R&D Pipeline": "Investment in R&D and pipeline of new products or technologies. Strength shown by patents, new product launches, and collaborations with research institutions.",
+        "Capacity Expansion & Investments": "Plans and actions to increase production capacity or acquire new capabilities. Evidence includes announced expansions, new plants, and capital expenditure trends."
+      }
+    },
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the core technical and commercial drivers in flexible packaging: material innovation, barrier performance, sustainability, regulatory compliance, and global market reach, which are critical for competitive positioning."
+  },
+  "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_flexible_packaging_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
