@@ -1,0 +1,324 @@
+{
+  "CImaGeo": {
+    "x": {
+      "parameters": {
+        "HPC Resourcing & Team Capacity": {
+          "score": 42,
+          "evidence": [
+            {
+              "claim": "According to the official CImaGeo Commercial Software Profile, the company utilizes Halliburton's SeisSpace ProMAX (and JavaSeis) platform, noting that its architecture is compatible with parallel processing and batch job submissions."
+            },
+            {
+              "claim": "According to the CImaGeo History Page, the company explicitly states it was created to meet the niche demand for processing \"small volumes and low processing costs\" that do not interest large companies, utilizing a small specialized staff consisting of one Doctorate-level geophysicist, Master's-level geophysicists, and a computer specialist."
+            }
+          ],
+          "assessed_on": "While we verified that CImaGeo utilizes parallel-compatible commercial software and employs a handful of specialized geophysicists, there is zero evidence regarding the exact scale of any high-performance computing infrastructure or cloud capacity required to execute FWI/RTM-class workloads, and they explicitly state they target small-volume processing rather than large datasets."
+        },
+        "Turnaround Time": {
+          "score": 45,
+          "evidence": [
+            {
+              "claim": "CImaGeo's mission statement emphasizes respecting established deadlines and lowering exploration risks."
+            },
+            {
+              "claim": "CImaGeo utilizes Halliburton's SeisSpace ProMAX and GPU-based optimization algorithms to accelerate the processing of large reflection datasets."
+            }
+          ],
+          "assessed_on": "While self-reported commitments to deadlines and productivity-enhancing GPU technologies are documented, no third-party verified evidence or quantitative turnaround times for benchmark offshore projects are provided, resulting in a weak evaluation score."
+        }
+      }
+    },
+    "y": {
+      "parameters": {
+        "Delivery Reliability": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "CImaGeo Official Mission Statement self-reports a company mission dedicated to offering clients quality processed data while \"respecting established deadlines, all at a price compatible with today's market.\""
+            },
+            {
+              "claim": "CImaGeo Team Portfolio details technical test processing workloads executed on offshore datasets for the Foz do Amazonas and Jequitinhonha basins in Brazil, alongside commercial project processing for onshore African basins (Republic of Sudan), used internally to showcase their operational tracking capacity."
+            }
+          ],
+          "assessed_on": "CImaGeo's rating rests on its stated mission to deliver quality processed data while respecting established deadlines, and its portfolio work across the Foz do Amazonas basin in Brazil. Based on primary research, the company has not disclosed third-party SLA compliance reports."
+        },
+        "Customer Feedback / Peer Standing": {
+          "score": 25,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company has not disclosed independent client satisfaction data or peer reviews for this vendor beyond their own marketing materials, as no third-party verified evidence exists in public industry repositories."
+        }
+      }
+    }
+  },
+  "EIFGeoSolutions": {
+    "x": {
+      "parameters": {
+        "Output Quality & Resolution Improvement": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "EIFGeoSolutions reprocessed Finder Energy's Ikan 3D dataset offshore Timor-Leste, highlighting new subsurface opportunities based on client technical feedback."
+            },
+            {
+              "claim": "EIFGeoSolutions collaborated in a technical study with Searcher Seismic, Finder Energy, and MOL on resolving near-surface complexities, presented at an EAGE workshop."
+            }
+          ],
+          "assessed_on": "Targeted client projects and peer-reviewed technical workshop papers validate EIFGeoSolutions' resolution improvements, though comprehensive independent third-party benchmarking across its broader marine portfolio remains limited."
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  },
+  "GeoEnergy Petroleum Services": {
+    "x": {
+      "parameters": {
+        "HPC Resourcing & Team Capacity": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "GeoEnergy highlights its use of advanced computational resources, parallel processing, and distributed computing to execute high-performance computing (HPC) workflows, along with on-demand cloud computing architecture (GeoEnergy Processing and Imaging Services)."
+            },
+            {
+              "claim": "The company handles large-scale project execution by employing dedicated data management geophysicists who utilize specialized software suites like Schlumberger's Vista (Marwan Sadek's Professional Record)."
+            }
+          ],
+          "assessed_on": "While GeoEnergy provides evidence of utilizing cloud-bursting and scalable computational architectures, specific hardware scale and exact team sizes for FWI/RTM workloads remain undisclosed, placing them in the mid-tier band."
+        },
+        "Turnaround Time": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "GeoEnergy's marketing literature on its Seismic Acquisition Quality Control portal self-reports that their technical acquisition workflows are designed to safeguard clients against project delays associated with turnaround time."
+            },
+            {
+              "claim": "GeoEnergy's service description on its Processing and Imaging page claims that they achieve rapid processing of large-scale complex datasets by deploying scalable algorithms and high-performance computing (HPC) environments featuring parallel processing and distributed cloud capabilities."
+            }
+          ],
+          "assessed_on": "While the company presents general self-reported text regarding high-performance computational resources and mitigation of delays, no third-party verified evidence or specific case studies detailing benchmark project sizes, delivery speeds, or milestones could be found to validate true operational timelines."
+        }
+      }
+    },
+    "y": {
+      "parameters": {
+        "Delivery Reliability": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "GeoEnergy Petroleum Services partnered with the Egyptian Ministry of Oil and Gas and Schlumberger in 2020 to handle the digital transformation, verification, and loading of up to three petabytes of E&P data into the Egypt Upstream Gateway (EUG) portal."
+            },
+            {
+              "claim": "A collaborative offshore exploration project in the East Nile Delta, Egypt, utilized the Extended Elastic Impedance (EEI) technique across a Chi angle scan range from 0° to 90° to map a Pliocene prospect."
+            }
+          ],
+          "assessed_on": "The available evidence confirms their execution of major national data repository and regional interpretation tasks, but lacks public metrics regarding specific milestone adherence or third-party SLA track records, placing it in a self-reported or partial verification band."
+        },
+        "Customer Feedback / Peer Standing": {
+          "score": 56,
+          "evidence": [
+            {
+              "claim": "A multi-client partnership involving the Egyptian Ministry of Petroleum and Mineral Resources and Schlumberger, which selected GeoEnergy Petroleum Services for the massive data ingestion and quality control framework of Egypt's Upstream Gateway (EUG) portal."
+            },
+            {
+              "claim": "Academic research collaboration involving structural seismic evaluation from a GeoEnergy specialist, using advanced Extended Elastic Impedance (EEI) techniques and Chi angle scans over a Pliocene prospect in the Offshore East Nile Delta basin."
+            }
+          ],
+          "assessed_on": "While the vendor provides proof of major national repository partnerships and general service offerings, independent, third-party client satisfaction scores or specific peer reviews evaluating advanced marine processing workflows remain entirely unproven and absent from public verification platforms."
+        }
+      }
+    }
+  },
+  "HGS (Hainan Geoscience Services)": {
+    "x": {
+      "parameters": {}
+    },
+    "y": {
+      "parameters": {
+        "Global Market Standing & Reputation": {
+          "score": 1,
+          "evidence": [
+            {
+              "claim": "Extensive web searches across primary global geophysics listings—including the 82nd EAGE Conference Exhibitor Directory and historical Geophysical Society of Houston Archives—yield zero records of an active commercial vendor or corporate entity named Hainan Geoscience Services (HGS) processing offshore client datasets."
+            },
+            {
+              "claim": "Publicly indexed geological surveys and regional academic citations for the South China Sea map the abbreviation \"HGS\" exclusively as a geographical abbreviation for the Huangguang Sag or as an optimization acronym (Hunger Games Search algorithm), rather than a verified service provider."
+            }
+          ],
+          "assessed_on": "We searched for the company's active years of operation, industry awards, and client base within the global marine processing sector but could find no third-party verification or commercial footprint confirming this vendor's existence, indicating it is an unproven or fictional industry entity."
+        }
+      }
+    }
+  },
+  "Ocean Floor Geophysics Inc.": {
+    "x": {
+      "parameters": {
+        "Output Quality & Resolution Improvement": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "According to the Ocean Floor Geophysics P-Cable 3D UHRS overview, OFG utilizes proprietary navigation and seismic acquisition systems with P-Cable technology to produce subsurface images of shallow geology, though specific quantitative resolution benchmarks or third-party case-study metrics are not publicly detailed."
+            },
+            {
+              "claim": "Industry reporting on OFG's acquisition of NCS SubSea notes that the integrated P-Cable technology delivers ultra-high-resolution 3D seismic data targeted at shallow hazards and structural characterization as highlighted by Marine Technology News, but lacks independent peer-reviewed processing metrics or verifiable hydrocarbon imaging case studies."
+            }
+          ],
+          "assessed_on": "We verified the company's stated focus and technological capability in ultra-high-resolution P-Cable 3D data acquisition and general subsurface imaging via official and industry sources. Based on primary research, the company has not disclosed quantifiable, peer-reviewed, or third-party validated deliverables demonstrating advanced seismic processing performance for hydrocarbon exploration, placing the evidence in the self-reported and descriptive category."
+        }
+      }
+    },
+    "y": {
+      "parameters": {
+        "Delivery Reliability": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Ocean Floor Geophysics (OFG) notes operational success in complex multi-client and tailored commercial surveys using the P-Cable system, acquiring over 3,600 sq km of commercial ultra-high resolution 3D data and 7,000 km of 2D wide-azimuth tie-lines in challenging regions such as the Barents Sea [1.2.2]."
+            },
+            {
+              "claim": "Following its acquisition of NCS SubSea [1.3.5], OFG utilizes PGS's in-house data processing capabilities to augment its own multiphysics workflows for site characterization and shallow geohazard applications [1.3.6]."
+            }
+          ],
+          "assessed_on": "The rating rests on Ocean Floor Geophysics's acquisition of over 3,600 sq km of 3D data and 7,000 km of 2D tie-lines in the Barents Sea. Based on primary research, the company has not disclosed milestone timelines."
+        },
+        "Customer Feedback / Peer Standing": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "A multi-client commercial data partnership with TGS where Ocean Floor Geophysics successfully deployed the P-Cable system to collect over 3,600 square kilometers of ultra-high-resolution 3D data and 7,000 kilometers of 2D wide-azimuth tie-lines across various regions, including the Barents Sea."
+            },
+            {
+              "claim": "A collaborative deployment with XOCEAN, where Ocean Floor Geophysics provided remote real-time processing from Vancouver for magnetic and pipeline tracking data collected by an unmanned survey vessel operating 24/7 in the Gulf of Mexico."
+            }
+          ],
+          "assessed_on": "Active project execution with strategic market partners involving multi-client seismic datasets and real-time remote processing was verified, but based on primary research, the company has not disclosed independent, third-party client satisfaction scores or formal peer reviews explicitly rating delivered processing quality, placing it in this score band."
+        }
+      }
+    }
+  },
+  "Rex Geo Solution": {
+    "x": {
+      "parameters": {
+        "Project Track Record": {
+          "score": 45,
+          "evidence": [
+            {
+              "claim": "A technical disclosure outlines that the company applies an adapted VSP methodology utilizing the 4C elastic decomposition algorithm to isolate wave modes for OBN data processing."
+            },
+            {
+              "claim": "A joint academic publication at the 83rd EAGE Annual Conference showcases a collaborative case study on 3D permeability estimation co-authored by a representative from Rex Geo Solution."
+            }
+          ],
+          "assessed_on": "While proprietary processing methodologies and academic contributions are documented, verifiable metrics on project counts and commercial scale in complex offshore environments remain absent, placing the evaluation in a lower tier."
+        },
+        "Turnaround Time": {
+          "score": 15,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "With no case study, named project or benchmark client metric on the company's website, and no third-party verified reports or delivery statistics on professional profiles like LinkedIn, Rex Geo Solution is rated at the lower end of the peer range on turnaround; based on primary research, the company has not disclosed its execution timelines."
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  },
+  "SeismicCity Inc.": {
+    "x": {
+      "parameters": {
+        "HPC Resourcing & Team Capacity": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "SeismicCity historically transitioned its depth imaging configurations from a 1,000-core CPU cluster to a hybrid CPU/GPU architecture deploying NVIDIA Tesla S1070 units optimized for RTM calculations (EDN)."
+            },
+            {
+              "claim": "The company collaborated with Devon Energy on the Tempest Project to generate a 3D anisotropic VTI PSDM RTM volume representing GOM subsalt geology (SeismicCity)."
+            }
+          ],
+          "assessed_on": "We verified that the firm utilizes hybrid CPU/GPU computing clusters to execute wave-based RTM workloads and possesses specialized team capability led by industry veterans, but third-party verification of their current exact cluster scale or current team headcount is limited, pointing to a self-reported capability."
+        },
+        "Turnaround Time": {
+          "score": 28,
+          "evidence": [
+            {
+              "claim": "SeismicCity Inc.'s marketing documentation details that their proprietary prestack depth migration (PSDM) algorithms are custom-built for multi-core massively parallel hybrid CPU/GPU computer clusters to accelerate large seismic data processing workloads (SeismicCity About)."
+            },
+            {
+              "claim": "In their joint collaborative project with Devon Energy known as the \"Tempest Project\" (a synthetic deepwater Gulf of Mexico benchmark dataset), SeismicCity generated the geological VTI models and synthetic shot volumes for third-party comparative processing (SeismicCity Tempest)."
+            }
+          ],
+          "assessed_on": "The rating rests on SeismicCity Inc.'s proprietary prestack depth migration algorithms built for multi-core massively parallel hybrid CPU/GPU clusters, and its joint Tempest Project with Devon Energy generating geological VTI models and synthetic shot volumes for comparative processing. Based on primary research, the company has not disclosed audited milestone timelines or benchmark delivery speeds."
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  },
+  "Terraseis": {
+    "x": {
+      "parameters": {
+        "HPC Resourcing & Team Capacity": {
+          "score": 35,
+          "evidence": [
+            {
+              "claim": "Public corporate profiling records indicate that Terraseis has an estimated headcount of around 84 total employees."
+            },
+            {
+              "claim": "Available industry software listings and technical indices register \"TerraSeis\" primarily as an exploration informatics, data viewing, and data management solution."
+            }
+          ],
+          "assessed_on": "The rating rests on Terraseis's estimated headcount of around 84 employees and its registration in industry software listings as an exploration informatics, data viewing, and data management provider. Based on primary research, the company has not disclosed the scale of any in-house HPC infrastructure or dedicated processing geophysicist team capacity."
+        },
+        "Turnaround Time": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Terraseis posted self-reported evidence detailing the execution of an accelerated seismic program with a fast turnaround on a tight schedule, which was validated via a client recommendation by a representative from Talaria who noted their professionalism and execution from audit to finalisation of deliverables."
+            },
+            {
+              "claim": "In a 2021 Yemen Block 9 3D nodal seismic project operated for Calvalley/Octavia Energy, Terraseis achieved an on-time data acquisition turnaround over a strict 45-day period, capturing over 195,000 vibration points to feed subsequent depth imaging workflows."
+            }
+          ],
+          "assessed_on": "We verified Terraseis' capability to meet tight project timelines and milestone constraints via self-reported case announcements and aligned third-party client validations; however, based on primary research, the company has not disclosed specific numeric delivery speed benchmarks and metrics for large-scale offshore marine processing (such as FWI or RTM turnaround figures) since the company operates primarily as an onshore/transition-zone acquisition and infield data management contractor."
+        }
+      }
+    },
+    "y": {
+      "parameters": {
+        "Global Market Standing & Reputation": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "In 2013, Russia's Lukoil awarded a major 3D seismic contract for the West Qurna Phase 2 oil field in Iraq to Terra Seis Trading Ltd. (Terraseis), demonstrating its recognition as an operational leader in highly challenging geographic and political environments."
+            },
+            {
+              "claim": "A contract dispute adjudicated by the Armed Services Board of Contract Appeals (ASBCA Nos. 58731, 58732) confirmed that Terraseis Trading Limited was actively contracted by the U.S. government for seismic data collection and processing services in Afghanistan."
+            }
+          ],
+          "assessed_on": "We verified Terraseis's long-term active operation spanning more than a decade and its standing in handling complex contracts for international exploration firms, but found that its primary market footprint and reputation focus heavily on onshore and transition-zone data acquisition rather than leading marine (offshore) processing services."
+        },
+        "Relevant Client Portfolio & References": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "Lukoil awarded a 3D seismic acquisition and exploration contract for the West Qurna Phase 2 oil field in Iraq to Terra Seis Trading Ltd (Terraseis), as reported by Iraq Business News."
+            },
+            {
+              "claim": "HKN Energy Ltd engaged the Terraseis Group to execute senior quality control (QC) geophysics for the \"Swara Tika\" 3D land seismic operation in the Sarsang block, Duhok Governorate, Iraq, as verified by individual geophysicist credentials."
+            }
+          ],
+          "assessed_on": "While verified contracts and operational references with international oil companies exist, these references apply strictly to onshore land data acquisition and field QC rather than dedicated marine (offshore) seismic data processing and advanced imaging workflows."
+        }
+      }
+    }
+  }
+}

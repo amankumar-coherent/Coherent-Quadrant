@@ -1,0 +1,129 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Wearable Medical Devices Market",
+  "country": "global",
+  "batch": "all",
+  "family": "smartwatch",
+  "target": 700,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": true,
+  "chatgpt_recalled": 32,
+  "openai_discovered": 357,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 339,
+  "rejected_mid": 50,
+  "chatgpt_filled": 230,
+  "rejected_final": 0,
+  "total_after": 230,
+  "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_medical_devices_market_global\\global_wearable_medical_devices_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "a7e9a81b",
+    "market": "Global Wearable Medical Devices Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-08-13T01:18:23.988039+00:00",
+    "ended_at": "2026-08-13T02:32:14.032032+00:00",
+    "calls": 255,
+    "prompt_tokens": 159829,
+    "completion_tokens": 22364,
+    "total_tokens": 182193,
+    "estimated_cost_usd": 0.037392,
+    "meta": {
+      "family": "smartwatch",
+      "batch": "all",
+      "target": 700,
+      "max_queries": 220,
+      "max_fill": 700,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": true,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_medical_devices_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "final",
+      "companies": 230,
+      "xlsx": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_medical_devices_market_global\\global_wearable_medical_devices_market_global_FINAL.xlsx",
+      "rejected_mid": 50,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Healthcare",
+    "industry_category": "Medical Devices",
+    "axis_x": "Device & Clinical Capability",
+    "axis_y": "Commercial & Market Strategy",
+    "x_features": [
+      "Wearable Sensor Accuracy",
+      "Device Portfolio Breadth",
+      "Clinical Validation & Evidence",
+      "Battery Life & Form Factor",
+      "Data Integration & Interoperability"
+    ],
+    "y_features": [
+      "Regulatory Approvals & Clearances",
+      "Market Penetration & Adoption",
+      "Reimbursement & Payer Coverage",
+      "Revenue Growth & Profitability",
+      "Strategic Partnerships & Ecosystem"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 60.0,
+    "quadrant_mid_y": 59.0,
+    "scored": 230,
+    "crawl": {
+      "crawled": 230,
+      "ok": 156,
+      "fail": 74,
+      "skipped_no_domain": 0
+    },
+    "parameter_definitions": {
+      "x": {
+        "Wearable Sensor Accuracy": "Precision of physiological measurements (e.g., heart rate, ECG, glucose) in real-world conditions; evidenced by clinical studies and independent validation.",
+        "Device Portfolio Breadth": "Range of wearable devices offered (e.g., fitness trackers, medical-grade monitors, patches) covering multiple indications; evidenced by product lineup and FDA clearances.",
+        "Clinical Validation & Evidence": "Strength of clinical evidence supporting device accuracy and health outcomes; evidenced by peer-reviewed publications and regulatory approvals.",
+        "Battery Life & Form Factor": "Battery longevity and wearability (size, weight, comfort) affecting user compliance; evidenced by product specs and user reviews.",
+        "Data Integration & Interoperability": "Ability to integrate with EHRs, APIs, and other health platforms; evidenced by partnerships with health systems and interoperability certifications."
+      },
+      "y": {
+        "Regulatory Approvals & Clearances": "Number and scope of FDA, CE, or other regulatory approvals for medical use; evidenced by official registrations and product labels.",
+        "Market Penetration & Adoption": "Extent of adoption by consumers and healthcare providers; evidenced by sales volumes, market share, and clinical deployment.",
+        "Reimbursement & Payer Coverage": "Level of insurance coverage and reimbursement codes for the device; evidenced by payer policies and inclusion in formularies.",
+        "Revenue Growth & Profitability": "Financial performance including revenue growth rates and margins; evidenced by financial reports and earnings calls.",
+        "Strategic Partnerships & Ecosystem": "Collaborations with pharma, tech, or healthcare organizations that expand market reach; evidenced by press releases and joint ventures."
+      }
+    },
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the dual nature of wearable medical devices: they must be clinically accurate and validated (X) while achieving commercial success through regulatory, reimbursement, and market adoption (Y)."
+  },
+  "checkpoint": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_medical_devices_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

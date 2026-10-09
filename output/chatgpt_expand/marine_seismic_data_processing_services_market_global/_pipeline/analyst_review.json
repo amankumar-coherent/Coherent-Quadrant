@@ -1,0 +1,338 @@
+{
+  "reviewed_on": "2026-09-29",
+  "exclude": [
+    {
+      "company": "GeoTrace Technologies",
+      "reason": "No longer an active, standalone operating company: filed for Chapter 7 bankruptcy in 2016 (its IP and legacy assets were acquired by Geokinetics).",
+      "source": "Analyst review of the published report; Chapter 7 filing, 2016."
+    },
+    {
+      "company": "Axxis Geo Solutions AS",
+      "reason": "Filed for court-protected reconstruction in February 2021 and restructured; renamed Carbon Transition ASA and moved into energy-transition investment. No longer an independent seismic company.",
+      "source": "Company annual report (reconstruction filing) and later company announcement (financial restructuring); fjorddefencegroup.no."
+    },
+    {
+      "company": "NCS SubSea Inc.",
+      "reason": "Acquired business: its technology now sits within the TGS group. Not an independent active company and not a current Ocean Floor Geophysics subsidiary.",
+      "source": "Analyst review of the published report."
+    },
+    {
+      "company": "Echo Geophysical Corporation",
+      "reason": "No longer an active standalone company: acquired by Seismic Exchange, Inc. in June 2013 and rebranded as Summit Geophysical, so the Echo Geophysical name no longer trades.",
+      "source": "Ownership review of the published report (Google AI Mode): Seismic Exchange, Inc. acquisition of Echo Geophysical, June 2013; rebrand to Summit Geophysical."
+    },
+    {
+      "company": "ASIAN Oilfield Services Ltd.",
+      "reason": "Duplicate of Asian Energy Services Limited: ASIAN Oilfield Services is the company's former name (rebranded after Oilmax Energy took a majority stake in 2016). The company stays listed once, under its current name.",
+      "source": "Ownership review of the published report (Google AI Mode): Oilmax Energy majority stake, 2016; rename to Asian Energy Services Ltd."
+    },
+    {
+      "company": "InteQuest Corp.",
+      "reason": "Not an active company: listed as a default issuer and cease-traded by the Alberta Securities Commission in 2006, then delisted from the TSX Venture Exchange in February 2008 after an amalgamation with its subsidiary; its website (inte-quest.com) no longer responds.",
+      "source": "Status review (Google AI Mode): Alberta Securities Commission default-issuer / cease-trade record, 2006; TSX Venture delisting, February 2008. Website check, 2026-09-29: inte-quest.com does not respond."
+    },
+    {
+      "company": "HGS (Hainan Geoscience Services)",
+      "reason": "No company of this name can be found in any published record, and the listed website belongs to an unrelated financial-software company, Hundsun Technologies Inc.",
+      "source": "Status review (Google AI Mode): Chinese ICP filing for hgschina.com registered to Hundsun Technologies Inc. Website check, 2026-09-29: www.hgschina.com redirects to h5.hundsun.com."
+    },
+    {
+      "company": "SeaGeo AS",
+      "reason": "No Norwegian company of this name appears in corporate registries or news, and the listed website (seageo.no) does not respond; the only similarly named firm is an unrelated Indian company.",
+      "source": "Status review (Google AI Mode): corporate registry and news search. Website check, 2026-09-29: seageo.no does not respond."
+    },
+    {
+      "company": "Seisbit (India)",
+      "reason": "Not a company: SEISBIT is a patented seismic-while-drilling technology developed by AGIP and OGS, not a corporate entity based in India; the listed website (seisbit.com) does not respond.",
+      "source": "Status review (Google AI Mode): academic publications on the SEISBIT seismic-while-drilling system (AGIP, OGS). Website check, 2026-09-29: seisbit.com does not respond."
+    },
+    {
+      "company": "Geopart",
+      "reason": "Not a seismic data processing company: the entity behind geopart.ru sells spare parts for passenger cars, and the domain is now listed for sale.",
+      "source": "Status review (Google AI Mode): Russian business directory listing for GeoPART (geopart.ru). Website check, 2026-09-29: geopart.ru redirects to a reg.ru domain-sale page."
+    },
+    {
+      "company": "Geofizika-TM",
+      "reason": "Cannot be shown to exist as an operating company: no registry record, company website content or published activity was found, its listed website (geofizika-tm.ru) does not respond, and the operating-status review returned defunct.",
+      "source": "Status review (Google AI Mode), two separate searches; operating-status check result: defunct. Website check, 2026-09-29: geofizika-tm.ru does not respond."
+    }
+  ],
+  "corrections": [
+    {
+      "company": "Schlumberger Technology Corporation",
+      "find": "In 2018, Lundin Petroleum directly awarded WesternGeco the complex data processing and imaging of a 70-km² ocean-bottom seismic (OBS) 4D reservoir monitoring survey over the Edvard Grieg Field in the Norwegian sector of the North Sea.",
+      "replace": "In 2018, Lundin Petroleum awarded WesternGeco the data processing and imaging of an ocean-bottom seismic (OBS) 4D reservoir monitoring survey over the Edvard Grieg Field in the Norwegian sector of the North Sea.",
+      "reason": "\"Directly awarded\" (rather than tendered) and the 70-km² survey area are not supported by public sources; the survey year, OBS 4D monitoring, field, client and WesternGeco's processing role are confirmed.",
+      "source": "Full-field 4D OBS surveys over Edvard Grieg in 2016, 2018, 2020 and 2022; WesternGeco and Lundin Norway joint 2020 case study on PP and PS time-lapse imaging of OBC data from Edvard Grieg."
+    },
+    {
+      "company": "Mint Seismic",
+      "find": "\"3D Wireless Seismic Survey Technology and its Application in Underground Structures\"",
+      "replace": "\"3D Wireless Seismic Survey Technology and its Application in Hong Kong\"",
+      "reason": "Paper title was misquoted.",
+      "source": "Published paper title: \"3D Wireless Seismic Survey Technology and its Application in Hong Kong\"."
+    },
+    {
+      "company": "DUG Technology Ltd",
+      "find": "In a comprehensive industry report by Fortune Business Insights, DUG Technology is explicitly identified as one of the Top Seismic Data Processing and Imaging Companies globally, positioned alongside major industry conglomerates such as SLB, CGG, and Halliburton.",
+      "replace": "In a comprehensive industry market report, DUG Technology is explicitly identified as one of the Top Seismic Data Processing and Imaging Companies globally, positioned alongside major industry conglomerates such as SLB, CGG, and Halliburton.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "Halliburton",
+      "find": "Fortune Business Insights ranks Halliburton as a top-tier player globally, yet notes its specialization lies predominantly within the \"Seismic Data Processing and Imaging Software\" space via its Landmark portfolio, rather than as a standalone offshore acquisition and services contractor.",
+      "replace": "An industry market report ranks Halliburton as a top-tier player globally, yet notes its specialization lies predominantly within the \"Seismic Data Processing and Imaging Software\" space via its Landmark portfolio, rather than as a standalone offshore acquisition and services contractor.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "Schlumberger Technology Corporation",
+      "find": "Independent market landscape reports from Mordor Intelligence note that massive players like SLB and Viridien leverage sheer scale to capture massive integrated contracts, driving significant cost-performance values that effectively squeeze out smaller boutique processing alternatives from high-end deepwater bidding.",
+      "replace": "Independent market landscape reports note that massive players like SLB and Viridien leverage sheer scale to capture massive integrated contracts, driving significant cost-performance values that effectively squeeze out smaller boutique processing alternatives from high-end deepwater bidding.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "GeoTek Korea",
+      "find": "With no case studies, contract pricing sheets, or peer-comparison data available for GeoTek Korea, and its omission from vendor evaluations such as those by Fortune Business Insights, the company is rated at the lower end of the peer range on price-to-value positioning. Its cost structures and turnaround metrics are not publicly reported and could not be verified through primary research.",
+      "replace": "With no case studies, contract pricing sheets, or peer-comparison data available for GeoTek Korea, and its omission from vendor evaluations such as industry market reports, the company is rated at the lower end of the peer range on price-to-value positioning. Its cost structures and turnaround metrics are not publicly reported and could not be verified through primary research.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "GeoTek Korea",
+      "find": "Global market share assessments and processing vendor evaluations by firms like Fortune Business Insights completely omit GeoTek Korea, providing no baseline to measure its cost-competitiveness against major peers.",
+      "replace": "Global market share assessments and processing vendor evaluations by industry market reports completely omit GeoTek Korea, providing no baseline to measure its cost-competitiveness against major peers.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "UTEC Survey",
+      "find": "Research and Markets listed UTEC Survey Incorporated as a major company operating specifically within the overall geophysical data collection market landscape.",
+      "replace": "An industry market report listed UTEC Survey Incorporated as a major company operating specifically within the overall geophysical data collection market landscape.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "Geophysics One",
+      "find": "Major global market sector analyses, such as the 2026 reports by Fortune Business Insights and IMARC Group, outline the primary service providers operating within the global seismic services landscape, completely omitting Geophysics One from their lists of recognized industry participants.",
+      "replace": "Major global market sector analyses, such as 2026 industry market reports, outline the primary service providers operating within the global seismic services landscape, completely omitting Geophysics One from their lists of recognized industry participants.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "Horizon Geosciences FZCO",
+      "find": "Peer market matrices, such as the Fortune Business Insights Global Cone Penetration Testing report (2026), list Horizon Geosciences as a prominent international player in the specialized data processing and testing service segment.",
+      "replace": "Peer market matrices, such as an industry market report on the Global Cone Penetration Testing market (2026), list Horizon Geosciences as a prominent international player in the specialized data processing and testing service segment.",
+      "reason": "Names a competing market-research publisher; the finding is kept with a neutral attribution.",
+      "source": "Owner instruction: competitor research firms are never cited."
+    },
+    {
+      "company": "PT Patra Nusa Data",
+      "find": "A published 3D seismic reflection study in the \"MF-3D\" field conducted by a company geophysicist shows the utilization of Pre-Stack Depth Migration (PSDM) along with Dix Transformation and Constrained Velocity Inversion for subsurface velocity modeling.",
+      "replace": "",
+      "reason": "No public source supports a published MF-3D field study by a company geophysicist using PSDM with Dix transformation and Constrained Velocity Inversion; unsupported finding removed.",
+      "source": "Analyst review 2026-09-28; web search found no such study."
+    },
+    {
+      "company": "PT Patra Nusa Data",
+      "find": "A passive seismic data processing framework for localising reservoir source depths in the South Sumatra Basin relied on a finite difference implementation of time-reverse modeling rather than modern wave-equation depth imaging or Full Waveform Inversion, as documented via ResearchGate.",
+      "replace": "",
+      "reason": "The cited South Sumatra passive-seismic time-reverse modeling paper is not linked to PT Patra Nusa Data; unsupported as company evidence.",
+      "source": "Paper on Semantic Scholar (Haris); no PND authorship or involvement stated."
+    },
+    {
+      "company": "PT Patra Nusa Data",
+      "find": ", as shown on RocketReach.",
+      "replace": ", as described on the company's website.",
+      "reason": "RocketReach is a contact-data aggregator; the facts (2D/3D seismic data processing, Inameta Plus data management) are stated on patranusa.com.",
+      "source": "https://www.patranusa.com/"
+    },
+    {
+      "company": "PT Patra Nusa Data",
+      "find": "The rating rests on the fact that no specific evidence of advanced depth imaging algorithms such as Full Waveform Inversion (FWI), Reverse Time Migration (RTM), or Least-Squares Migration could be verified for this company. The provider's publicly disclosed credentials focus heavily on seismic data management, regional prospective evaluations, and standard exploration workflows rather than leading-edge imaging specialities.",
+      "replace": "The rating reflects the company's published core competencies in general 2D/3D seismic data processing and data management through its Inameta Plus platform. Based on primary research, the company has not disclosed specific depth-imaging capability such as Full Waveform Inversion, Reverse Time Migration or Least-Squares Migration.",
+      "reason": "Basis first, gap in house style; the previous reasoning referred to the removed paper.",
+      "source": "Remaining evidence for this parameter."
+    },
+    {
+      "company": "Viridien",
+      "find": "In June 2026, Viridien entered into a multi-year OBN seismic partnership with Aker BP focused on advanced seismic acquisition, imaging, and processing to optimize subsurface models across the Norwegian Continental Shelf.",
+      "replace": "On 9 June 2026, Viridien and Aker BP announced a five-year strategic partnership covering multi-client OBN seismic acquisition, imaging and technology development on the Norwegian Continental Shelf.",
+      "reason": "Reviewer correction to 'Relevant Client Portfolio & References' (status/date/attribution per published-report audit).",
+      "source": "Analyst edit of the delivered Word report, 2026-10-01, following the Marine Seismic quadrant audit."
+    },
+    {
+      "company": "DUG Technology Ltd",
+      "find": "In February 2026, DUG signed a multi-client agreement with Searcher Seismic to reprocess more than 60 legacy 3D surveys covering up to 45,000 square kilometres offshore East Sarawak, Malaysia, using advanced FWI imaging and pre-stack processing.",
+      "replace": "On 13 February 2026, DUG and Searcher announced an agreement to reprocess more than 60 legacy 3D surveys covering up to 45,000 km² offshore East Sarawak; final deliverables are expected from early 2027.",
+      "reason": "Reviewer correction to 'Project Track Record' (status/date/attribution per published-report audit).",
+      "source": "Analyst edit of the delivered Word report, 2026-10-01, following the Marine Seismic quadrant audit."
+    },
+    {
+      "company": "DUG Technology Ltd",
+      "find": "In January 2026, DUG expanded its global supercomputing network by deploying 82 advanced NVIDIA H200 machines, adding 41 petaflops of compute capacity configured with 4 TB of system memory per machine to process compute-intensive workloads like Elastic MP-FWI.",
+      "replace": "In January 2026, DUG deployed 82 NVIDIA H200 systems, adding 41 PFLOPS; each machine has 8 H200 GPUs and 4 TB system memory.",
+      "reason": "Reviewer correction to 'HPC Resourcing & Team Capacity' (status/date/attribution per published-report audit).",
+      "source": "Analyst edit of the delivered Word report, 2026-10-01, following the Marine Seismic quadrant audit."
+    },
+    {
+      "company": "Schlumberger Technology Corporation",
+      "find": "In 2018, Schlumberger divested its hardware fleet (marine seismic acquisition vessels) to Shearwater GeoServices for USD 600 million while intentionally keeping its asset-light, advanced seismic data processing, imaging, and interpretation services intact.",
+      "replace": "In 2018, Shearwater acquired WesternGeco's marine seismic acquisition assets and operations for an enterprise value of USD 600 million; SLB retained seismic processing, imaging, multiclient and interpretation services.",
+      "reason": "Reviewer correction to 'Global Market Standing & Reputation' (status/date/attribution per published-report audit).",
+      "source": "Analyst edit of the delivered Word report, 2026-10-01, following the Marine Seismic quadrant audit."
+    },
+    {
+      "company": "TGS",
+      "find": "In June 2025, TGS completed the imaging phase of the Amendment 4 Multi-Client Ultra Long Offset Ocean Bottom Node (OBN) survey covering over 1,100 square kilometers in the complex subsalt geologies of the Mississippi Canyon, Ewing Banks, and Grand Isle South areas of the U.S. Gulf of Mexico.",
+      "replace": "In April 2025, TGS commenced the Amendment 4 Ultra Long Offset OBN project covering more than 1,100 km² in the U.S. Gulf; final deliverables were scheduled for Q2 2026.",
+      "reason": "Reviewer correction to 'Project Track Record' (status/date/attribution per published-report audit).",
+      "source": "Analyst edit of the delivered Word report, 2026-10-01, following the Marine Seismic quadrant audit."
+    },
+    {
+      "company": "Pan India Consultants Private Limited",
+      "find": "We could verify basic attribute and standard processing capabilities, but there is no evidence of specialized leadership, deployment, or unique development of FWI, RTM, Least-Squares Migration, or Velocity Model Building executed natively by the firm rather than its software principles or joint venture associates.",
+      "replace": "Pan India is an established Indian seismic/geophysical services and technology integrator with processing and interpretation experience company.",
+      "reason": "Reviewer correction to 'FWI & Depth-Imaging Technical Leadership' (status/date/attribution per published-report audit).",
+      "source": "Analyst edit of the delivered Word report, 2026-10-01, following the Marine Seismic quadrant audit."
+    }
+  ],
+  "hq": [
+    {
+      "company": "CImaGeo",
+      "headquarters": "Natal, Brazil",
+      "reason": "Report listed Rio de Janeiro; the company's own contact page gives Travessa Augusto Leite 10, Tirol, Natal - RN.",
+      "source": "cimageo.com.br contact page; cimageo.com.br/en/"
+    }
+  ],
+  "ownership": [
+    {
+      "company": "PT Patra Nusa Data",
+      "owner": "PT Elnusa Tbk",
+      "year": "1998",
+      "reason": "Owned by PT Elnusa Tbk since 1998 (majority stake).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: PT Elnusa Tbk acquisition of PT Patra Nusa Data, 1998."
+    },
+    {
+      "company": "ARGAS",
+      "owner": "TAQA",
+      "year": "2023",
+      "reason": "Owned by TAQA since 2023 (bought CGG's remaining 49% to become sole owner).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: TAQA acquisition of ARGAS, 2023."
+    },
+    {
+      "company": "Asian Energy Services Limited",
+      "owner": "Oilmax Energy",
+      "year": "2016",
+      "reason": "Owned by Oilmax Energy since 2016 (majority stake; formerly ASIAN Oilfield Services).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Oilmax Energy acquisition of Asian Energy Services Limited, 2016."
+    },
+    {
+      "company": "Caspian Services Group",
+      "owner": "EMPS Corporation",
+      "year": "2002",
+      "reason": "Owned by EMPS Corporation since 2002 (stock-for-stock exchange).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: EMPS Corporation acquisition of Caspian Services Group, 2002."
+    },
+    {
+      "company": "DMT GmbH & Co. KG",
+      "owner": "TÜV NORD AG",
+      "year": "2007",
+      "reason": "Owned by TÜV NORD AG since 2007.",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: TÜV NORD AG acquisition of DMT GmbH & Co. KG, 2007."
+    },
+    {
+      "company": "DMT Petrologic GmbH & Co. KG",
+      "owner": "DMT GmbH & Co. KG",
+      "year": "2011",
+      "reason": "Owned by DMT GmbH & Co. KG since 2011 (formerly Petrologic Geophysical Services).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: DMT GmbH & Co. KG acquisition of DMT Petrologic GmbH & Co. KG, 2011."
+    },
+    {
+      "company": "EPI Group",
+      "owner": "TÜV NORD Group",
+      "year": "2025",
+      "reason": "Owned by TÜV NORD Group since 2025 (completed October 2025).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: TÜV NORD Group acquisition of EPI Group, 2025."
+    },
+    {
+      "company": "Gardline Limited",
+      "owner": "Royal Boskalis",
+      "year": "2017",
+      "reason": "Owned by Royal Boskalis since 2017 (100% of shares, about GBP 40 million).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Royal Boskalis acquisition of Gardline Limited, 2017."
+    },
+    {
+      "company": "Horizon Geosciences FZCO",
+      "owner": "Royal Boskalis",
+      "year": "2019",
+      "reason": "Owned by Royal Boskalis since 2019 (62.5% stake, then the remaining 37.5%).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Royal Boskalis acquisition of Horizon Geosciences FZCO, 2019."
+    },
+    {
+      "company": "Ocean Floor Geophysics Inc.",
+      "owner": "OceanSight",
+      "year": "2026",
+      "reason": "Owned by OceanSight since 2026 (April 2026).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: OceanSight acquisition of Ocean Floor Geophysics Inc., 2026."
+    },
+    {
+      "company": "RPS Group",
+      "owner": "Tetra Tech",
+      "year": "2023",
+      "reason": "Owned by Tetra Tech since 2023 (completed January 2023).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Tetra Tech acquisition of RPS Group, 2023."
+    },
+    {
+      "company": "UTEC Survey",
+      "owner": "Acteon Group",
+      "year": "2014",
+      "reason": "Owned by Acteon Group since 2014.",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Acteon Group acquisition of UTEC Survey, 2014."
+    },
+    {
+      "company": "PT Elnusa Tbk",
+      "owner": "PT Pertamina Hulu Energi",
+      "year": "2021",
+      "reason": "Owned by PT Pertamina Hulu Energi since 2021 (majority owner since 2021).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: PT Pertamina Hulu Energi acquisition of PT Elnusa Tbk, 2021."
+    },
+    {
+      "company": "SEIMAX Technologies",
+      "owner": "Seismic Exchange, Inc.",
+      "year": "2015",
+      "reason": "Owned by Seismic Exchange, Inc. since 2015.",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Seismic Exchange, Inc. acquisition of SEIMAX Technologies, 2015."
+    },
+    {
+      "company": "Dalmorneftegeophysica",
+      "owner": "Rosgeologia",
+      "year": "2015",
+      "reason": "Owned by Rosgeologia since 2015 (integrated into the state-owned holding by presidential decree).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Rosgeologia ownership of Dalmorneftegeophysica, 2015."
+    },
+    {
+      "company": "JSC Sevmorneftegeofizika",
+      "owner": "Sovcomflot",
+      "year": "2012",
+      "reason": "Owned by Sovcomflot since 2012 (100% of the shares).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Sovcomflot ownership of JSC Sevmorneftegeofizika, 2012."
+    },
+    {
+      "company": "Krasnoyarskgeofizika",
+      "owner": "Rosneft",
+      "year": "2013",
+      "reason": "Owned by Rosneft since 2013 (became part of the Rosneft group of companies).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Rosneft ownership of Krasnoyarskgeofizika, 2013."
+    },
+    {
+      "company": "TNG Group",
+      "owner": "Tagras Holding",
+      "year": "2006",
+      "reason": "Owned by Tagras Holding since 2006 (formed from the reorganisation of Tatneftegeofizika; operates as Tagras Holding's geophysical division).",
+      "source": "Ownership review of the published report (Google AI Mode), 2026-09-29: Tagras Holding ownership of TNG Group, 2006."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+shard 10/11: 91 total gap slots, 8 assigned to this shard
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_51_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_51_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_51_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+  [ai-mode] verify — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_51_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #4)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_51_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+    attempt 1: AiModeCaptcha: rate limited by Google (1 CAPTCHAs this run)
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+  [1/8] Xalts Technologies Pte. Ltd. / Funding & Ownership (y): OK
+  [2/8] Premium Technology Inc. / Trade Finance Product Breadth (x): OK
+  [3/8] 360tf Trade Fintech Pte. Ltd. / Document Checking & Compliance Automation (x): OK
+  [4/8] Fiducia Data Services Limited / Digital Trade Network & Interoperability (x): OK
+Traceback (most recent call last):
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\scripts\fill_missing_assessed_on.py", line 153, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\aman.kumar\Downloads\Coherent-Quadrant\scripts\fill_missing_assessed_on.py", line 139, in main
+    part = json.loads(side.read_text(encoding="utf-8"))
+  File "C:\Users\aman.kumar\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\aman.kumar\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 16052 (char 16051)

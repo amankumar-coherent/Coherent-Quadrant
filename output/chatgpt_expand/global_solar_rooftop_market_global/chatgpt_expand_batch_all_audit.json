@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Solar Rooftop Market",
+  "country": "global",
+  "batch": "all",
+  "family": "renewable",
+  "target": 300,
+  "existing_before": 177,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 302,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 327,
+  "rejected_mid": 277,
+  "chatgpt_filled": 186,
+  "rejected_final": 0,
+  "total_after": 184,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\global_solar_rooftop_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "9998135a",
+    "market": "Global Solar Rooftop Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-17T09:50:50.462264+00:00",
+    "ended_at": "2026-09-17T17:07:25.901458+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "renewable",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 184,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\global_solar_rooftop_market_global_FINAL.xlsx",
+      "rejected_mid": 277,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Others",
+    "industry_category": "Energy",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the unique drivers of the global solar rooftop market: product strength focuses on efficiency, installation, durability, smart features, and supply chain, while business strength emphasizes geographic reach, customer metrics, financials, pipeline, and partnerships. They are concrete and assessable from public evidence such as product specs, financial reports, and market data.",
+    "parameter_definitions": {
+      "x": {
+        "Module Efficiency & Power Density": "The conversion efficiency and power output per square meter of solar modules, critical for maximizing rooftop energy generation in limited space. Evidence includes third-party efficiency ratings, temperature coefficients, and performance under low-light conditions.",
+        "System Design & Installation Quality": "The ease and speed of installing rooftop solar systems, including mounting structures, wiring, and inverter integration, which affects labor costs and system reliability. Strength shown by standardized kits, rapid installation times, and minimal roof penetration.",
+        "Product Durability & Warranty": "The longevity and degradation rate of solar panels and components under real-world conditions, backed by comprehensive warranties. Evidence includes 25-year performance warranties, PID resistance, and certifications for harsh weather.",
+        "Smart Monitoring & Grid Integration": "Advanced monitoring software and hardware that optimize energy production, enable remote diagnostics, and facilitate grid interaction. Strength indicated by real-time analytics, smart inverter capabilities, and compatibility with virtual power plants.",
+        "Supply Chain & Manufacturing Scale": "The ability to produce and deliver solar components at scale with cost efficiency and supply reliability. Evidence includes vertical integration, production capacity, and lead times for key components like panels and inverters."
+      },
+      "y": {
+        "Geographic Market Coverage": "The extent of sales and operations across different countries and regions, including local presence and adaptation to varying regulations. Strength shown by number of countries served, local offices, and revenue distribution.",
+        "Customer Acquisition & Retention": "The ability to attract and keep residential, commercial, and industrial customers through effective sales and service. Evidence includes customer growth rates, churn rates, and net promoter scores.",
+        "Financial Strength & Profitability": "The financial health and profitability of the company, including margins, cash flow, and balance sheet strength. Evidence includes gross margins, EBITDA, and return on invested capital.",
+        "Project Pipeline & Growth Rate": "The volume of contracted and prospective rooftop solar projects, indicating future revenue potential. Strength shown by backlog size, year-over-year growth, and market share expansion.",
+        "Channel Partnerships & Brand Equity": "The strength of relationships with distributors, installers, and financiers, plus brand recognition among consumers. Evidence includes partnership agreements, co-marketing, and brand surveys."
+      }
+    },
+    "x_features": [
+      "Module Efficiency & Power Density",
+      "System Design & Installation Quality",
+      "Product Durability & Warranty",
+      "Smart Monitoring & Grid Integration",
+      "Supply Chain & Manufacturing Scale"
+    ],
+    "y_features": [
+      "Geographic Market Coverage",
+      "Customer Acquisition & Retention",
+      "Financial Strength & Profitability",
+      "Project Pipeline & Growth Rate",
+      "Channel Partnerships & Brand Equity"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 81.0,
+    "quadrant_mid_y": 66.0,
+    "scored": 184,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 186,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 2,
+      "kept": 183,
+      "player_type": "B2C",
+      "market_type": "B2C",
+      "market_definition": "The global market for solar photovoltaic systems installed on rooftops of residential, commercial, and industrial buildings.",
+      "keep_roles": [
+        "Brand / Marketer"
+      ],
+      "uniform_role": "Brand / Marketer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_solar_rooftop_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Coherent Quadrant — Global Wearable Glucometer Market</title><style>
+:root { --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --navy:#002857; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 0 3rem 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--ink); background: #f8fafc;
+}
+.page { max-width: 1180px; margin: 0 auto; padding: 1.5rem 1.25rem; }
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0d9488 100%);
+  color: #f8fafc; border-radius: 14px; padding: 1.5rem 1.75rem; margin-bottom: 1.5rem;
+}
+.hero h1 { margin: 0 0 0.4rem 0; font-size: 1.65rem; letter-spacing: -0.02em; }
+.hero p { margin: 0; opacity: 0.9; line-height: 1.45; }
+.meta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0 1.25rem; }
+.pill {
+  background: #fff; border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.35rem 0.85rem; font-size: 0.85rem; font-weight: 600;
+}
+h2 { font-size: 1.2rem; margin: 1.75rem 0 0.85rem; }
+.cq-chart-frame { display: flex; align-items: stretch; gap: 0.5rem; }
+.cq-y-label {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; color: #334155;
+  text-align: center; padding: 0.5rem 0;
+}
+.cq-x-label {
+  text-align: center; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.06em; color: #334155; margin-top: 0.45rem;
+}
+.cq-plot {
+  position: relative; flex: 1; min-height: 560px; height: 600px;
+  background: repeating-linear-gradient(-45deg, #0b1f3a, #0b1f3a 8px, #0d2748 8px, #0d2748 16px);
+  border: 2px solid #93c5fd; border-radius: 4px; overflow: hidden;
+}
+.cq-cross-h, .cq-cross-v { position: absolute; background: rgba(255,255,255,0.35); z-index: 1; }
+.cq-cross-h { left: 0; right: 0; top: 50%; height: 1px; }
+.cq-cross-v { top: 0; bottom: 0; left: 50%; width: 1px; }
+.cq-quad-label {
+  position: absolute; z-index: 2; color: rgba(255,255,255,0.85);
+  font-size: 0.78rem; font-weight: 600;
+}
+.cq-tl { top: 10px; left: 12px; } .cq-tr { top: 10px; right: 12px; }
+.cq-bl { bottom: 10px; left: 12px; } .cq-br { bottom: 10px; right: 12px; }
+.cq-axis-y-max, .cq-axis-y-min, .cq-axis-x-min, .cq-axis-x-max {
+  position: absolute; color: rgba(255,255,255,0.55); font-size: 0.7rem; z-index: 2;
+}
+.cq-axis-y-max { top: 8px; left: 6px; } .cq-axis-y-min { bottom: 8px; left: 6px; }
+.cq-axis-x-min { bottom: 4px; left: 28px; } .cq-axis-x-max { bottom: 4px; right: 8px; }
+/* Marker is the only positioned center — labels must NOT shift the dot out of its cell */
+.cq-dot {
+  position: absolute; width: 12px; height: 12px;
+  transform: translate(-50%, -50%); z-index: 3;
+}
+.cq-dot-mark {
+  display: block; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--dot, #7EB6FF); border: 2px solid #fff;
+  box-sizing: border-box;
+}
+.cq-dot-label {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  color: #fff; font-size: 0.62rem; font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+  white-space: nowrap; max-width: 88px; overflow: hidden; text-overflow: ellipsis;
+  pointer-events: none;
+}
+.cq-dot.label-right .cq-dot-label { left: 14px; }
+.cq-dot.label-left .cq-dot-label { right: 14px; left: auto; }
+.cq-dot.label-below .cq-dot-label {
+  left: 50%; top: 14px; transform: translate(-50%, 0); max-width: 100px;
+}
+.cq-dot.label-above .cq-dot-label {
+  left: 50%; bottom: 14px; top: auto; transform: translate(-50%, 0); max-width: 100px;
+}
+/* Keep labels from visually spilling across the 50% crosshairs */
+.cq-dot.quad-leaders .cq-dot-label,
+.cq-dot.quad-trailblazers .cq-dot-label { max-width: min(110px, 28vw); }
+.cq-dot.quad-challengers .cq-dot-label,
+.cq-dot.quad-emerging .cq-dot-label { max-width: min(110px, 28vw); }
+.cq-explain-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem;
+}
+@media (max-width: 900px) {
+  .cq-explain-grid { grid-template-columns: 1fr; }
+  .cq-plot { min-height: 360px; height: 380px; }
+}
+.cq-explain-card {
+  border-radius: 10px; padding: 1rem 1.1rem; color: #fff; min-height: 130px;
+}
+.cq-explain-card h4 { margin: 0 0 0.35rem; letter-spacing: 0.04em; }
+.cq-explain-sub { font-size: 0.78rem; opacity: 0.9; margin-bottom: 0.55rem; font-weight: 600; }
+.cq-explain-card p { margin: 0; font-size: 0.88rem; line-height: 1.45; opacity: 0.95; }
+.panel {
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.1rem 1.25rem; margin-bottom: 1.25rem;
+}
+.table-scroll { overflow-x: auto; }
+table.cq {
+  width: 100%; border-collapse: collapse; font-size: 0.88rem;
+}
+table.cq thead th {
+  background: var(--navy); color: #fff; text-align: left;
+  padding: 0.65rem 0.75rem; font-size: 0.72rem; letter-spacing: 0.03em;
+}
+table.cq td {
+  padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--line); vertical-align: middle;
+}
+table.cq tr:nth-child(even) td { background: #f1f5f9; }
+.cq-tier {
+  display: inline-block; padding: 0.2rem 0.55rem; border-radius: 999px;
+  font-size: 0.72rem; font-weight: 700; color: #fff;
+}
+.cq-tier-1 { background: #002857; }
+.cq-tier-2 { background: #2563eb; }
+.cq-tier-3 { background: #93c5fd; color: #0f172a; }
+.cq-score {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2rem; height: 2rem; border-radius: 50%; font-weight: 700;
+  font-size: 0.8rem; color: #fff;
+}
+.cq-score-hi { background: #16a34a; }
+.cq-score-mid { background: #ca8a04; }
+.cq-score-lo { background: #dc2626; }
+.cq-rate-dots { display: inline-flex; gap: 3px; align-items: center; }
+.cq-rate-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.cq-dot-on { background: #2563eb; }
+.cq-dot-off { background: #cbd5e1; }
+.scorecard th { white-space: nowrap; font-size: 0.68rem; }
+.scorecard td { text-align: center; }
+.scorecard td:first-child { text-align: left; font-weight: 600; }
+.legend { font-size: 0.8rem; color: #475569; margin: 0 0 0.75rem; }
+.footer { color: var(--muted); font-size: 0.8rem; margin-top: 1.5rem; }
+.cq-method-step {
+  display: flex; gap: 0.85rem; margin-bottom: 1.1rem; align-items: flex-start;
+}
+.cq-method-num {
+  flex: none; width: 1.9rem; height: 1.9rem; border-radius: 50%;
+  background: var(--navy); color: #fff; font-weight: 700; font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.cq-method-body h4 { margin: 0 0 0.25rem; font-size: 0.95rem; color: #0f172a; }
+.cq-method-body p { margin: 0; font-size: 0.87rem; line-height: 1.5; color: #475569; }
+.cq-weight-block { background: #f8fafc; border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; }
+.cq-weight-block + .cq-weight-block { margin-top: 1rem; }
+.cq-weight-title { font-weight: 700; color: #0f172a; margin-bottom: 0.7rem; font-size: 0.95rem; }
+.cq-weight-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+.cq-weight-label { flex: 0 0 42%; font-size: 0.82rem; color: #334155; line-height: 1.3; }
+.cq-weight-track { flex: 1; height: 0.65rem; background: #e2e8f0; border-radius: 999px; overflow: hidden; }
+.cq-weight-fill { height: 100%; background: linear-gradient(90deg, #0d9488, #002857); border-radius: 999px; }
+.cq-weight-pct { flex: 0 0 3rem; text-align: right; font-size: 0.8rem; font-weight: 700; color: #0f172a; }
+.cq-formula {
+  font-family: "Consolas", "SFMono-Regular", monospace; background: #0f172a; color: #7EB6FF;
+  border-radius: 8px; padding: 0.85rem 1rem; font-size: 0.82rem; line-height: 1.7; overflow-x: auto;
+}
+.cq-norm-scale { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.6rem; }
+.cq-norm-track {
+  flex: 1; height: 1.4rem; border-radius: 999px; position: relative;
+  background: linear-gradient(90deg, #94a3b8 0%, #94a3b8 var(--floor-pct,65%), #0d9488 var(--floor-pct,65%), #002857 100%);
+}
+.cq-norm-tick {
+  position: absolute; top: -1.15rem; font-size: 0.68rem; color: #64748b; transform: translateX(-50%);
+}
+.cq-flow {
+  display: flex; align-items: stretch; gap: 0; flex-wrap: wrap; margin: 1.1rem 0 1.3rem;
+}
+.cq-flow-step {
+  flex: 1 1 150px; min-width: 150px; background: linear-gradient(160deg, #0f172a, #1e3a5f);
+  color: #f8fafc; border-radius: 12px; padding: 1rem 1rem 1.1rem; position: relative;
+}
+.cq-flow-badge {
+  width: 1.9rem; height: 1.9rem; border-radius: 50%; background: #0d9488;
+  display: flex; align-items: center; justify-content: center; font-weight: 700;
+  font-size: 0.85rem; margin-bottom: 0.6rem;
+}
+.cq-flow-title { font-weight: 700; font-size: 0.88rem; margin-bottom: 0.35rem; letter-spacing: 0.01em; }
+.cq-flow-text { font-size: 0.78rem; line-height: 1.45; opacity: 0.88; }
+.cq-flow-arrow {
+  flex: 0 0 2rem; display: flex; align-items: center; justify-content: center;
+  color: #94a3b8; font-size: 1.3rem; font-weight: 700;
+}
+@media (max-width: 900px) {
+  .cq-flow-arrow { flex-basis: 100%; transform: rotate(90deg); padding: 0.2rem 0; }
+}
+.cq-primary-note {
+  background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 10px;
+  padding: 0.9rem 1.1rem; font-size: 0.87rem; line-height: 1.55; color: #134e4a; margin-bottom: 1rem;
+}
+.cq-primary-note strong { color: #0f766e; }
+.cq-method-footnote { font-size: 0.82rem; line-height: 1.55; color: #64748b; margin: 0; }
+</style></head><body><div class="page"><div class="hero"><h1>Coherent Quadrant</h1><p>Global Wearable Glucometer Market · global · 0 manufacturers scored on Product Strength (X) and Business Strength (Y)</p></div><div class="meta"><span class="pill">Market: Global Wearable Glucometer Market</span><span class="pill">Geography: global</span><span class="pill">Manufacturers: 0</span><span class="pill"></span><span class="pill">X: Product Strength</span><span class="pill">Y: Business Strength</span></div>
+<div class="panel">
+  <h2>Quadrant Positioning <span style="font-weight:500;font-size:0.85rem;opacity:.75">
+  (0 on chart · 0 in table · ~equal per quadrant · country-diverse)</span></h2>
+  <div class="cq-chart-frame">
+    <div class="cq-y-label">BUSINESS STRENGTH ( Y AXIS ) →</div>
+    <div class="cq-plot">
+      <div class="cq-axis-y-max">100</div>
+      <div class="cq-axis-y-min">0</div>
+      <div class="cq-axis-x-min">0</div>
+      <div class="cq-axis-x-max">100</div>
+      <div class="cq-quad-label cq-tl">Challengers</div>
+      <div class="cq-quad-label cq-tr">Leaders</div>
+      <div class="cq-quad-label cq-bl">Emerging Players</div>
+      <div class="cq-quad-label cq-br">Trailblazers</div>
+      <div class="cq-cross-h"></div>
+      <div class="cq-cross-v"></div>
+      
+    </div>
+  </div>
+  <div class="cq-x-label">PRODUCT STRENGTH ( X AXIS ) →</div>
+  
+</div>
+<div class="panel"><h2>Understanding the Coherent Quadrant</h2><div class="cq-explain-grid"><div class="cq-explain-card" style="background:#002857"><h4>Leaders</h4><div class="cq-explain-sub">Strong Product Strength, Strong Business Strength</div><p>Established, scalable brands with strong capabilities, proven market adoption, and broad commercial reach.</p></div><div class="cq-explain-card" style="background:#1d4ed8"><h4>Challengers</h4><div class="cq-explain-sub">Strong Business Strength, Developing Product Strength</div><p>Brands with strong market reach and commercial presence, while continuing to expand their capabilities and product depth.</p></div><div class="cq-explain-card" style="background:#0f766e"><h4>Trailblazers</h4><div class="cq-explain-sub">Strong Product Strength, Focused Business Strength</div><p>Innovative brands with advanced capabilities and differentiated offerings, with opportunities to broaden their market reach.</p></div><div class="cq-explain-card" style="background:#3b82f6"><h4>Emerging Players</h4><div class="cq-explain-sub">Focused Product Strength, Focused Business Strength</div><p>Focused brands developing specialized capabilities and offerings around specific applications or customer needs.</p></div></div></div>
+<div class="panel">
+  <h2>Company Details <span style="font-weight:500;font-size:0.85rem;opacity:.75">
+  (0 rows)</span></h2>
+  <div class="table-scroll">
+    <table class="cq">
+      <thead>
+        <tr>
+          <th>BRAND</th><th>COMPANY</th><th>ROLE</th><th>QUADRANT</th>
+          <th>X (Product Strength)</th><th>Y (Business Strength)</th><th>OVERALL</th>
+          <th>FOUND IN</th>
+        </tr>
+      </thead>
+      <tbody><tr><td colspan="8">No brands</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Research Methodology</h2>
+  <p style="margin:0 0 1.25rem 0;color:#64748b;font-size:.92rem;line-height:1.5">
+    This quadrant was independently compiled using a structured, evidence-based research methodology
+    &mdash; not a survey or vendor self-submission. The flow below shows how secondary and primary
+    research combine into each company's final score.
+  </p>
+  <div class="cq-flow"><div class="cq-flow-step"><div class="cq-flow-badge">1</div><div class="cq-flow-title">Secondary Research</div><div class="cq-flow-text">Desk research and analyst market recall combined with live web search build the initial universe of candidate companies active in this market.</div></div><div class="cq-flow-arrow">&rarr;</div><div class="cq-flow-step"><div class="cq-flow-badge">2</div><div class="cq-flow-title">Screening &amp; Verification</div><div class="cq-flow-text">Each candidate checked against this market's inclusion criteria and correct commercial role; off-market, reseller, and media names removed.</div></div><div class="cq-flow-arrow">&rarr;</div><div class="cq-flow-step"><div class="cq-flow-badge">3</div><div class="cq-flow-title">Primary Research</div><div class="cq-flow-text">Each verified company's own website is reviewed directly for firsthand company information on product portfolio, scale, and positioning.</div></div><div class="cq-flow-arrow">&rarr;</div><div class="cq-flow-step"><div class="cq-flow-badge">4</div><div class="cq-flow-title">Data Triangulation</div><div class="cq-flow-text">Website evidence cross-checked against search-derived signals so no score rests on a single source.</div></div><div class="cq-flow-arrow">&rarr;</div><div class="cq-flow-step"><div class="cq-flow-badge">5</div><div class="cq-flow-title">Quantitative Scoring</div><div class="cq-flow-text">Structured 1&ndash;10 scoring across weighted features rolls up into the Product Strength (X) and Business Strength (Y) axis scores.</div></div><div class="cq-flow-arrow">&rarr;</div><div class="cq-flow-step"><div class="cq-flow-badge">6</div><div class="cq-flow-title">Normalization &amp; Validation</div><div class="cq-flow-text">Scores rescaled across this market's full population (65&ndash;100) and quadrant boundaries validated against the median distribution.</div></div></div>
+  <p class="cq-method-footnote">Scoring inputs: Product Strength (X) is weighted across 0 features (); Business Strength (Y) across 0 features (). Each feature is scored on 3 structured questions, rolled into an axis score, then normalized within Global Wearable Glucometer Market's own 0-company population to a 65&ndash;100 range &mdash; preserving relative ranking without any company reading as disproportionately weak in isolation.</p>
+</div>
+<p class="footer">Generated by Coherent Quadrant · open this file after a terminal run</p></div></body></html>

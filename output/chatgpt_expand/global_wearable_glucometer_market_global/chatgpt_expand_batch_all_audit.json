@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Wearable Glucometer Market",
+  "country": "global",
+  "batch": "all",
+  "family": "smartwatch",
+  "target": 300,
+  "existing_before": 172,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 340,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 510,
+  "rejected_mid": 130,
+  "chatgpt_filled": 200,
+  "rejected_final": 0,
+  "total_after": 195,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\global_wearable_glucometer_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "1c1bcf41",
+    "market": "Global Wearable Glucometer Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-17T00:17:19.426023+00:00",
+    "ended_at": "2026-09-17T04:29:56.434118+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "smartwatch",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 195,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\global_wearable_glucometer_market_global_FINAL.xlsx",
+      "rejected_mid": 130,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Healthcare",
+    "industry_category": "Medical Devices",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters address the unique requirements of wearable glucometers: sensor accuracy, wearability, regulatory hurdles, manufacturing scale, and data integration on the product side; and reimbursement, clinical adoption, distribution, financials, and pipeline on the business side. They are concrete and assessable from public evidence such as clinical studies, regulatory databases, and financial reports.",
+    "parameter_definitions": {
+      "x": {
+        "Sensor Accuracy & Reliability": "Measures the precision of continuous glucose readings versus gold-standard blood glucose, including MARD and stability over wear time. Evidence includes published clinical trials and regulatory submissions showing low error rates.",
+        "Wearability & User Experience": "Assesses comfort, discreetness, wear duration, and ease of use for daily activities. Strength shown by user-reported outcomes, adherence rates, and design awards or patient preference studies.",
+        "Regulatory Clearances & Compliance": "Covers FDA, CE, and other global approvals for wearable glucometers, including indications for diabetes management. Strength indicated by number of approvals, speed of clearance, and post-market safety records.",
+        "Manufacturing Scalability & Quality": "Evaluates production capacity, yield rates, and quality management systems (e.g., ISO 13485) to meet global demand. Evidence includes manufacturing certifications, capacity expansions, and supply chain resilience.",
+        "Data Integration & Connectivity": "Refers to interoperability with mobile apps, insulin pumps, and electronic health records via Bluetooth, NFC, or cloud. Strength shown by partnerships with digital health platforms and API availability."
+      },
+      "y": {
+        "Reimbursement & Payer Coverage": "Indicates the extent to which insurers and national health systems cover the device, reducing patient out-of-pocket costs. Evidence includes reimbursement codes, coverage decisions, and payer contracts.",
+        "Clinical Adoption & KOL Support": "Measures usage by endocrinologists, diabetes educators, and key opinion leaders in guidelines and publications. Strength shown by adoption rates, clinical guideline inclusion, and KOL endorsements.",
+        "Global Distribution & Partnerships": "Assesses the breadth of distribution networks and strategic alliances with pharmacies, distributors, and telehealth providers. Evidence includes geographic reach, partnership announcements, and channel agreements.",
+        "Financial Strength & Growth": "Evaluates revenue, profitability, and growth trajectory in the wearable glucometer segment. Strength indicated by sales figures, market share gains, and investment in R&D and expansion.",
+        "Product Pipeline & Indication Expansion": "Covers development of next-generation sensors, expanded indications (e.g., prediabetes, type 2), and integration with closed-loop systems. Evidence includes pipeline announcements, clinical trials, and regulatory filings."
+      }
+    },
+    "x_features": [
+      "Sensor Accuracy & Reliability",
+      "Wearability & User Experience",
+      "Regulatory Clearances & Compliance",
+      "Manufacturing Scalability & Quality",
+      "Data Integration & Connectivity"
+    ],
+    "y_features": [
+      "Reimbursement & Payer Coverage",
+      "Clinical Adoption & KOL Support",
+      "Global Distribution & Partnerships",
+      "Financial Strength & Growth",
+      "Product Pipeline & Indication Expansion"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 80.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 195,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 200,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 5,
+      "kept": 188,
+      "player_type": "B2C",
+      "market_type": "B2C",
+      "market_definition": "The global wearable glucometer market encompasses continuous glucose monitoring (CGM) devices and other wearable glucose-sensing technologies used for diabetes management.",
+      "keep_roles": [
+        "Brand / Marketer"
+      ],
+      "uniform_role": "Brand / Marketer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_wearable_glucometer_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
