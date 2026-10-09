@@ -1,0 +1,542 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Drone Software Industry Analysis
+  target : 120
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=120 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=3a1fca7d → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india\drone_software_industry_analysis_india_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=1_recall substep=1a_start status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Solution Provider
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers of drone software are commercial drone operators, enterprise businesses, and public agencies using drone technology for industrial workflows.
+  [chatgpt] Step 0c/6: roles present in market: Solution Provider, Technology Provider, Service Provider
+  [chatgpt] Step 0c/6: why this player type: Solution Provider was chosen because the defining offering of companies competing in this market is technology—specifically software platforms and applications—while other roles like service providers only assist with implementation rather than developing the core product.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 120, resuming with 105)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +4 (total 109)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-2: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 37s ago
+    → substep 1a.2: +0 (total 109)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 79s ago
+    → substep 1a.3: +2 (total 111)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 347s ago
+    → substep 1a.4: +1 (total 112)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 397s ago
+    → substep 1a.5: +3 (total 115)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 442s ago
+    → substep 1a.6: +3 (total 118)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 487s ago
+    → substep 1a.7: +7 (total 125)
+    → substep 1a done: 125 companies in 7 rounds (resumed with 105) (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 125)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (125 = 0 seeds + 125 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 125 candidates as Solution Provider in 11 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/11…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-1: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 514s ago
+    → substep 4a.1: running kept=12 rejected=0
+    → substep 4a.2: verify chunk 2/11…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 548s ago
+    → substep 4a.2: running kept=21 rejected=3
+    → substep 4a.3: verify chunk 3/11…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 583s ago
+    → substep 4a.3: running kept=33 rejected=3
+    → substep 4a.4: verify chunk 4/11…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-4: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 618s ago
+    → substep 4a.4: running kept=45 rejected=3
+    → substep 4a.5: verify chunk 5/11…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 649s ago
+    → substep 4a.5: running kept=55 rejected=5
+    → substep 4a.6: verify chunk 6/11…
+      · verify-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 678s ago
+    → substep 4a.6: running kept=67 rejected=5
+    → substep 4a.7: verify chunk 7/11…
+      · verify-7: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · verify-7: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 22s ago
+    → substep 4a.7: running kept=71 rejected=13
+    → substep 4a.8: verify chunk 8/11…
+      · verify-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-8: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 56s ago
+    → substep 4a.8: running kept=83 rejected=13
+    → substep 4a.9: verify chunk 9/11…
+      · verify-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-9: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 87s ago
+    → substep 4a.9: running kept=95 rejected=13
+    → substep 4a.10: verify chunk 10/11…
+      · verify-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-10: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 123s ago
+    → substep 4a.10: running kept=107 rejected=13
+    → substep 4a.11: verify chunk 11/11…
+      · verify-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-11: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 153s ago
+    → substep 4a.11: running kept=112 rejected=13
+    → substep 4a done: kept=112 rejected=13 (required=Solution Provider)
+    → substep 4b: write rejected list (13)
+    → substep 4c: market gate kept 112/112 (dropped 0)
+  [web_expand] merged +80; total unique=80 (target=240)
+  [chatgpt] fill ALL table rows this pass: 80 (merged=80, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 80 rows already carry their report columns
+    → substep 5c: merged filled rows into list (80 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 80 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] Drone Software Industry Analysis: in=80 geo_drop=0 heur_drop=0 llm_drop=0 kept=80 market_type=B2B uniform_role=Software Developer
+  [xy] market-fit filter (B2B): 80 -> 80 companies (roles=['Software Developer'])
+  [xy] industry=ICT, Automation, Semiconductor/Aerospace and Defense axis_def=llm | X=Product Strength ['Flight Control & Autonomy Software', 'Drone Data Analytics & AI', 'Software Integration & Compatibility', 'Cybersecurity & Data Protection', 'Regulatory Compliance & Certification'] | Y=Business Strength ['Customer Contracts & Partnerships', 'Revenue Growth & Funding', 'Market Share & Adoption', 'Geographic Footprint', 'Talent & Ecosystem']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 80 companies (1/query, 2 queries per batch)
+      · params [1-1]: 1/1 companies detailed
+      · params [2-2]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [3-3]: 1/1 companies detailed
+      · params [4-4]: 0/1 companies detailed
+      · params [5-5]: 1/1 companies detailed
+      · params [6-6]: 1/1 companies detailed
+      · params [7-7]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [8-8]: 1/1 companies detailed
+      · params [9-9]: 0/1 companies detailed
+      · params [10-10]: 1/1 companies detailed
+      · params [11-11]: 0/1 companies detailed
+      · params [12-12]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [13-13]: 0/1 companies detailed
+      · params [14-14]: 0/1 companies detailed
+      · params [15-15]: 1/1 companies detailed
+      · params [16-16]: 1/1 companies detailed
+      · params [17-17]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [18-18]: 1/1 companies detailed
+      · params [19-19]: 1/1 companies detailed
+      · params [20-20]: 0/1 companies detailed
+      · params [21-21]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [22-22]: 1/1 companies detailed
+      · params [23-23]: 0/1 companies detailed
+      · params [24-24]: 1/1 companies detailed
+      · params [25-25]: 0/1 companies detailed
+      · params [26-26]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [27-27]: 1/1 companies detailed
+      · params [28-28]: 0/1 companies detailed
+      · params [29-29]: 1/1 companies detailed
+      · params [30-30]: 1/1 companies detailed
+      · params [31-31]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [32-32]: 0/1 companies detailed
+      · params [33-33]: 0/1 companies detailed
+      · params [34-34]: 1/1 companies detailed
+      · params [35-35]: 1/1 companies detailed
+      · params [36-36]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [37-37]: 1/1 companies detailed
+      · params [38-38]: 0/1 companies detailed
+      · params [39-39]: 1/1 companies detailed
+      · params [40-40]: 1/1 companies detailed
+      · params [41-41]: 1/1 companies detailed
+      · params [42-42]: 0/1 companies detailed
+      · params [43-43]: 0/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+      · params [45-45]: 0/1 companies detailed
+      · params [46-46]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [47-47]: 1/1 companies detailed
+      · params [48-48]: 0/1 companies detailed
+      · params [49-49]: 1/1 companies detailed
+      · params [50-50]: 0/1 companies detailed
+      · params [51-51]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [52-52]: 0/1 companies detailed
+      · params [53-53]: 0/1 companies detailed
+      · params [54-54]: 1/1 companies detailed
+      · params [55-55]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [56-56]: 1/1 companies detailed
+      · params [57-57]: 1/1 companies detailed
+      · params [58-58]: 0/1 companies detailed
+      · params [59-59]: 1/1 companies detailed
+      · params [60-60]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [61-61]: 1/1 companies detailed
+      · params [62-62]: 0/1 companies detailed
+      · params [63-63]: 0/1 companies detailed
+      · params [64-64]: 1/1 companies detailed
+      · params [65-65]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [66-66]: 1/1 companies detailed
+      · params [67-67]: 1/1 companies detailed
+      · params [68-68]: 1/1 companies detailed
+      · params [69-69]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [70-70]: 1/1 companies detailed
+      · params [71-71]: 1/1 companies detailed
+      · params [72-72]: 1/1 companies detailed
+      · params [73-73]: 1/1 companies detailed
+      · params [74-74]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [75-75]: 1/1 companies detailed
+      · params [76-76]: 1/1 companies detailed
+      · params [77-77]: 0/1 companies detailed
+      · params [78-78]: 1/1 companies detailed
+      · params [79-79]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · params [80-80]: 1/1 companies detailed
+  [xy] parameter detail done: 71/80 companies
+    → [xy] score 1/80 Aakashe Innovations Private Limited
+    → [xy] score 2/80 Aarav Unmanned Systems Private Limited
+    → [xy] score 3/80 Aarav Unmanned Systems Pvt. Ltd.
+    → [xy] score 4/80 Aerial Kinetics Private Limited
+      · score Aerial Kinetics Private Limited: unparsed reply '70\nWould you like to examine a detailed breakdown of the individual parameter ratings or discuss how'
+      · score Aerial Kinetics Private Limited: unparsed reply '24\nWould you like to examine a detailed evaluation or a breakdown of each individual parameter for A'
+    → [xy] no score for Aerial Kinetics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 5/80 Aerowint Technologies Private Limited
+    → [xy] score 6/80 Aeroyantra Technologies Private Limited
+    → [xy] score 7/80 Ailwing Drones Private Limited
+    → [xy] score 8/80 Airosspace R&D Private Limited
+    → [xy] score 9/80 Airpix Analytics Private Limited
+      · score Airpix Analytics Private Limited: unparsed reply '60\nWould you like to adjust the individual ratings for any of the five parameters to see how it impa'
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · score Airpix Analytics Private Limited: unparsed reply '22\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+    → [xy] no score for Airpix Analytics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 10/80 Airpix Geoanalytics Private Limited
+    → [xy] score 11/80 Akin Analytics Private Limited
+      · score Akin Analytics Private Limited: unparsed reply '76.4\nSkip to previous prompt'
+      · score Akin Analytics Private Limited: unparsed reply '50\nSkip to previous prompt'
+    → [xy] no score for Akin Analytics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 12/80 ARKin Labs Private Limited
+    → [xy] score 13/80 Armanetics
+      · score Armanetics: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+      · score Armanetics: unparsed reply '28\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Armanetics (AI Mode unavailable) — left unscored for retry
+    → [xy] score 14/80 Asteria Aerospace Limited
+      · score Asteria Aerospace Limited: unparsed reply '85\nShow Code\nSkip to previous prompt'
+      · score Asteria Aerospace Limited: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for Asteria Aerospace Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 15/80 Astroc As Technology Private Limited
+    → [xy] score 16/80 Bharat Skytech
+    → [xy] score 17/80 BharatRohan Airborne Innovations Private Limited
+    → [xy] score 18/80 BhuMeet Digital Pvt. Ltd.
+    → [xy] score 19/80 Bluebanyan Technologies Pvt. Ltd.
+    → [xy] score 20/80 BotLab Dynamics Private Limited
+      · score BotLab Dynamics Private Limited: unparsed reply '72\nSkip to previous prompt'
+      · score BotLab Dynamics Private Limited: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for BotLab Dynamics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 21/80 Casca E-Connect
+    → [xy] score 22/80 CelesticLabs
+    → [xy] score 23/80 Detect Technologies Private Limited
+      · score Detect Technologies Private Limited: unparsed reply '73\nShow Code\nSkip to previous prompt'
+      · score Detect Technologies Private Limited: unparsed reply '69\nSkip to previous prompt'
+    → [xy] no score for Detect Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 24/80 Dhaksha Unmanned Systems Private Limited
+    → [xy] score 25/80 DigiTele Networks Private Limited
+      · score DigiTele Networks Private Limited: unparsed reply '80\nSkip to previous prompt'
+      · score DigiTele Networks Private Limited: unparsed reply '36\nSkip to previous prompt'
+    → [xy] no score for DigiTele Networks Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 26/80 Drona Aviation Private Limited
+    → [xy] score 27/80 Drona Aviation Pvt. Ltd.
+    → [xy] score 28/80 Dronamaps Private Limited
+      · score Dronamaps Private Limited: unparsed reply '79\nSkip to previous prompt'
+      · score Dronamaps Private Limited: unparsed reply '53\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Dronamaps Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 29/80 DroneAcharya Aerial Innovations Limited
+    → [xy] score 30/80 EndureAir Systems Pvt. Ltd.
+    → [xy] score 31/80 Enercomp Solutions Pvt. Ltd.
+    → [xy] score 32/80 Equinox's Drones Pvt Ltd
+      · score Equinox's Drones Pvt Ltd: unparsed reply '72\nSkip to previous prompt'
+      · score Equinox's Drones Pvt Ltd: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for Equinox's Drones Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 33/80 Flytbase Labs Private Limited
+      · score Flytbase Labs Private Limited: unparsed reply '91\nShow Code\nSkip to previous prompt'
+      · score Flytbase Labs Private Limited: unparsed reply '79\nSkip to previous prompt'
+    → [xy] no score for Flytbase Labs Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 34/80 FlytBase, Inc. (Navstik Autonomous Systems Pvt. Lt
+    → [xy] score 35/80 Fuselage Innovations Private Limited
+    → [xy] score 36/80 Garuda Aerospace Private Limited
+    → [xy] score 37/80 GarudaUAV Soft Solution Private Limited
+    → [xy] score 38/80 General Aeronautics Pvt. Ltd.
+      · score General Aeronautics Pvt. Ltd.: unparsed reply '80\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · score General Aeronautics Pvt. Ltd.: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for General Aeronautics Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 39/80 GeoInsighter Private Limited
+    → [xy] score 40/80 Grene Robotics Technologies Pvt. Ltd.
+    → [xy] score 41/80 ideaForge Technology Ltd.
+    → [xy] score 42/80 IG Technologies Private Limited
+      · score IG Technologies Private Limited: unparsed reply '60\nSkip to previous prompt'
+      · score IG Technologies Private Limited: unparsed reply '76\nSkip to previous prompt'
+    → [xy] no score for IG Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 43/80 Indo Wings Private Limited
+      · score Indo Wings Private Limited: unparsed reply '78\nSkip to previous prompt'
+      · score Indo Wings Private Limited: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for Indo Wings Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 44/80 Indrones Solutions Private Limited
+    → [xy] score 45/80 KD Aerospace Systems
+      · score KD Aerospace Systems: unparsed reply '67\nSkip to previous prompt'
+      · score KD Aerospace Systems: unparsed reply 'Searching \nSkip to previous prompt'
+    → [xy] no score for KD Aerospace Systems (AI Mode unavailable) — left unscored for retry
+    → [xy] score 46/80 Kesowa Infinite Ventures Private Limited
+    → [xy] score 47/80 Kesowa Infinite Ventures Pvt Ltd
+    → [xy] score 48/80 LidarTech Private Limited
+      · score LidarTech Private Limited: unparsed reply '76\nSkip to previous prompt'
+      · score LidarTech Private Limited: unparsed reply '34\nShow Code\nSkip to previous prompt'
+    → [xy] no score for LidarTech Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 49/80 Marut Dronetech Private Limited
+    → [xy] score 50/80 Marut Dronetech Pvt Ltd
+      · score Marut Dronetech Pvt Ltd: unparsed reply '84\nShow Code\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · score Marut Dronetech Pvt Ltd: unparsed reply '53\nSkip to previous prompt'
+    → [xy] no score for Marut Dronetech Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 51/80 NewSpace Research and Technologies Private Limited
+      · score NewSpace Research and Technologies Priva: unparsed reply '85\nSkip to previous prompt'
+      · score NewSpace Research and Technologies Priva: unparsed reply '75\nSkip to previous prompt'
+    → [xy] no score for NewSpace Research and Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 52/80 Nibrus Technologies Private Limited
+      · score Nibrus Technologies Private Limited: unparsed reply '80\nShow Code\nSkip to previous prompt'
+      · score Nibrus Technologies Private Limited: unparsed reply '36\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Nibrus Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 53/80 Omnipresent Robot Technologies Pvt. Ltd.
+      · score Omnipresent Robot Technologies Pvt. Ltd.: unparsed reply '78\nSkip to previous prompt'
+      · score Omnipresent Robot Technologies Pvt. Ltd.: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for Omnipresent Robot Technologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 54/80 Passenger Drone Research Labs Pvt. Ltd.
+    → [xy] score 55/80 Passenger Drone Research Private Limited
+    → [xy] score 56/80 Passenger Drone Research Pvt. Ltd.
+    → [xy] score 57/80 Passenger Drone Research Pvt. Ltd. (PDRL)
+    → [xy] score 58/80 Precision Drone and Robotics Lab Pvt. Ltd.
+      · score Precision Drone and Robotics Lab Pvt. Lt: unparsed reply '84\nSkip to previous prompt'
+      · score Precision Drone and Robotics Lab Pvt. Lt: unparsed reply '52\nSkip to previous prompt'
+    → [xy] no score for Precision Drone and Robotics Lab Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 59/80 Savtoa Software Technologies
+    → [xy] score 60/80 Skye Air Mobility Pvt Ltd
+    → [xy] score 61/80 Skylark Drones
+    → [xy] score 62/80 Skylark Drones Private Limited
+      · score Skylark Drones Private Limited: unparsed reply '54\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+      · score Skylark Drones Private Limited: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for Skylark Drones Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 63/80 Skylark Drones Pvt. Ltd.
+      · score Skylark Drones Pvt. Ltd.: unparsed reply '84\nSkip to previous prompt'
+      · score Skylark Drones Pvt. Ltd.: unparsed reply '54\nSkip to previous prompt'
+    → [xy] no score for Skylark Drones Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 64/80 Spaceborn
+    → [xy] score 65/80 Techeagle Innovations Private Limited
+    → [xy] score 66/80 Technit Space and Aero Works Pvt. Ltd.
+    → [xy] score 67/80 Throttle Aerospace Systems Private Limited
+    → [xy] score 68/80 Throttle Aerospace Systems Pvt. Ltd.
+    → [xy] score 69/80 Trinetra Wireless Private Limited
+    → [xy] score 70/80 TropoGo Technologies Private Limited
+    → [xy] score 71/80 Tsalla Aerospace Technologies Private Limited
+    → [xy] score 72/80 UrbanMatrix Technologies Private Limited
+    → [xy] score 73/80 UrbanMatrix Technologies Pvt Ltd
+    → [xy] score 74/80 Vayukah Drone Systems and Services Private Limited
+      · score Vayukah Drone Systems and Services Priva: unparsed reply '65\nSkip to previous prompt'
+      · score Vayukah Drone Systems and Services Priva: unparsed reply '12\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Vayukah Drone Systems and Services Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 75/80 Vayunotics Technologies Pvt. Ltd.
+    → [xy] score 76/80 Vecros Technologies Private Limited
+    → [xy] score 77/80 Vizbee Robotic Solutions Pvt. Ltd.
+      · score Vizbee Robotic Solutions Pvt. Ltd.: unparsed reply '25\nSkip to previous prompt'
+      · score Vizbee Robotic Solutions Pvt. Ltd.: unparsed reply '26\nSkip to previous prompt'
+    → [xy] no score for Vizbee Robotic Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 78/80 Vortex Autonomous Systems Private Limited
+    → [xy] score 79/80 VTOL Aviation India Pvt. Ltd.
+    → [xy] score 80/80 Zen Technologies Limited
+    → [xy] scored 80 rows (ICT, Automation, Semiconductor/Aerospace and Defense) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] blank 'Spaceborn' (wiki_no_hq:Spaceborne Imaging Radar)
+    → [found-in] city/country filled=0 kept=79 blank=1
+  [chatgpt] Company Details mapping skipped: TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+
+=== OpenAI cost (this run) ===
+  run_id : 3a1fca7d
+  market : Drone Software Industry Analysis
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (80 rows) → drone_software_industry_analysis_india_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 80 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india\drone_software_industry_analysis_india_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_software_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Drone Software Industry Analysis",
+  "country": "india",
+  "batch": "all",
+  "family": "general",
+  "target": 120,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 125,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 112,
+  "rejected_mid": 13,
+  "chatgpt_filled": 80,
+  "rejected_final": 0,
+  "total_after": 80,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_software_industry_analysis_india\\drone_software_industry_analysis_india_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "3a1fca7d",
+    "market": "Drone Software Industry Analysis",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-24T09:15:46.624921+00:00",
+    "ended_at": "2026-09-24T11:42:59.278873+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 120,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_software_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 80,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_software_industry_analysis_india\\drone_software_industry_analysis_india_FINAL.xlsx",
+      "rejected_mid": 13,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "ICT, Automation, Semiconductor",
+    "industry_category": "Aerospace and Defense",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters reflect the Indian drone software market's focus on autonomy, data analytics, and regulatory compliance (X), and commercial traction through government contracts, funding, and adoption (Y). They are concrete and answerable from public evidence like certifications, client lists, and funding announcements.",
+    "parameter_definitions": {
+      "x": {
+        "Flight Control & Autonomy Software": "Core software for autonomous navigation, obstacle avoidance, and flight stability in Indian conditions (e.g., varied terrain, no-GPS zones). Strength shown by successful field tests, patents, and adoption by Indian defense or agriculture sectors.",
+        "Drone Data Analytics & AI": "Software for processing drone-captured data into actionable insights (e.g., crop health, surveillance). Strength evidenced by AI model accuracy, real-time analytics, and integration with Indian GIS platforms like Bhuvan.",
+        "Software Integration & Compatibility": "Ability to integrate with diverse drone hardware, sensors, and Indian communication networks (e.g., 4G/5G, SATCOM). Strength shown by partnerships with Indian drone manufacturers and compliance with DGCA's Digital Sky platform.",
+        "Cybersecurity & Data Protection": "Security features to prevent hacking, data leaks, and ensure privacy, crucial for defense and critical infrastructure. Strength indicated by certifications (e.g., ISO 27001), encryption standards, and adherence to India's IT Act.",
+        "Regulatory Compliance & Certification": "Compliance with Indian drone regulations (DGCA rules, NPNT, UIN) and global standards. Strength shown by type certifications, approvals for BVLOS trials, and audits passed."
+      },
+      "y": {
+        "Customer Contracts & Partnerships": "Commercial agreements with Indian government agencies (e.g., Ministry of Defence, state police), private firms (e.g., Reliance, Adani), and international clients. Strength measured by contract value, number of clients, and repeat business.",
+        "Revenue Growth & Funding": "Financial performance including annual revenue, growth rate, and investment raised from Indian or global VCs. Strength shown by funding rounds, revenue milestones, and profitability.",
+        "Market Share & Adoption": "Share of the Indian drone software market and number of active users or deployments. Strength evidenced by installations, user base, and presence in key sectors like agriculture, defense, and logistics.",
+        "Geographic Footprint": "Presence across Indian states and international markets. Strength shown by number of offices, local partnerships, and sales in multiple regions.",
+        "Talent & Ecosystem": "Quality and size of engineering and sales teams, and engagement with Indian startup ecosystems (e.g., incubators, government schemes). Strength indicated by headcount, key hires, and collaborations with IITs or DRDO."
+      }
+    },
+    "x_features": [
+      "Flight Control & Autonomy Software",
+      "Drone Data Analytics & AI",
+      "Software Integration & Compatibility",
+      "Cybersecurity & Data Protection",
+      "Regulatory Compliance & Certification"
+    ],
+    "y_features": [
+      "Customer Contracts & Partnerships",
+      "Revenue Growth & Funding",
+      "Market Share & Adoption",
+      "Geographic Footprint",
+      "Talent & Ecosystem"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 83.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 80,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 80,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 80,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The drone software market encompasses software solutions for flight control, mission planning, data analytics, and fleet management used by professional and commercial drone operators.",
+      "keep_roles": [
+        "Software Developer"
+      ],
+      "uniform_role": "Software Developer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_software_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 80  (target 120)

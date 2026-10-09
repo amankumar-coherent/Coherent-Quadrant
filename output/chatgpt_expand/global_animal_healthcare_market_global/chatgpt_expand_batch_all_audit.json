@@ -1,0 +1,142 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Animal Healthcare Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 1000,
+  "existing_before": 216,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": true,
+  "chatgpt_recalled": 41,
+  "openai_discovered": 371,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 321,
+  "rejected_mid": 91,
+  "chatgpt_filled": 219,
+  "rejected_final": 3,
+  "total_after": 192,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_animal_healthcare_market_global\\global_animal_healthcare_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "bf260a45",
+    "market": "Global Animal Healthcare Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-08-27T13:58:36.821258+00:00",
+    "ended_at": "2026-08-27T13:58:44.933937+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 1000,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": true,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_animal_healthcare_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 216,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_animal_healthcare_market_global\\global_animal_healthcare_market_global_FINAL.xlsx",
+      "rejected_mid": 91,
+      "rejected_final": 3,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "Healthcare",
+    "industry_category": "Pharmaceutical",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strategy",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the dual nature of animal health: product innovation and manufacturing excellence (X) combined with commercial scale and strategic growth (Y), tailored to the specific needs of veterinary medicine and livestock production.",
+    "parameter_definitions": {
+      "x": {
+        "Vaccine & Biologic Portfolio": "Breadth and depth of vaccines and biologicals for major species (companion, livestock, poultry). Strength shown by number of licensed products, novel antigen platforms, and market share in core segments.",
+        "Parasiticide & Anti-Infective Coverage": "Range of products for parasites, bacteria, fungi, and viruses across species. Strength indicated by spectrum of activity, convenience of formulations, and resistance management strategies.",
+        "Diagnostics & Digital Health Integration": "Investment in diagnostic tools (e.g., point-of-care tests, imaging) and digital platforms (e.g., telemedicine, data analytics) that enhance disease detection and treatment monitoring. Strength evidenced by product launches, partnerships, and adoption rates.",
+        "Manufacturing Capacity & Supply Chain": "Ability to produce high-quality products at scale with reliable supply. Strength shown by number of facilities, capacity utilization, redundancy, and track record of supply continuity.",
+        "Regulatory Approvals & Compliance": "Portfolio of approvals from major agencies (FDA, EMA, etc.) and compliance with GMP and pharmacovigilance standards. Strength indicated by recent approvals, inspection history, and global registration footprint."
+      },
+      "y": {
+        "Global Market Penetration": "Presence and sales across key geographies (North America, Europe, Asia-Pacific, etc.). Strength shown by revenue distribution, market share in major countries, and entry into emerging markets.",
+        "Veterinarian & Producer Trust": "Reputation among veterinarians and livestock producers based on product efficacy, safety, and support services. Strength evidenced by brand loyalty, prescription rates, and industry surveys.",
+        "Revenue & Profitability": "Financial performance including total revenue, growth rate, and margins. Strength indicated by consistent revenue growth, profitability ratios, and investment in R&D.",
+        "Pipeline & Label Expansion": "Number and stage of products in development, as well as efforts to expand labels for existing products (new species, indications). Strength shown by pipeline size, phase advancement, and recent label extensions.",
+        "Strategic Alliances & M&A": "Partnerships, licensing deals, and acquisitions that enhance product portfolio, technology access, or market reach. Strength indicated by number and value of deals, and their strategic fit."
+      }
+    },
+    "x_features": [
+      "Vaccine & Biologic Portfolio",
+      "Parasiticide & Anti-Infective Coverage",
+      "Diagnostics & Digital Health Integration",
+      "Manufacturing Capacity & Supply Chain",
+      "Regulatory Approvals & Compliance"
+    ],
+    "y_features": [
+      "Global Market Penetration",
+      "Veterinarian & Producer Trust",
+      "Revenue & Profitability",
+      "Pipeline & Label Expansion",
+      "Strategic Alliances & M&A"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 65.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 216,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 216,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 216,
+      "player_type": "consumer",
+      "keep_roles": [
+        "Brand",
+        "Marketer"
+      ]
+    },
+    "normalization_method": "proportional_floor_65"
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_animal_healthcare_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

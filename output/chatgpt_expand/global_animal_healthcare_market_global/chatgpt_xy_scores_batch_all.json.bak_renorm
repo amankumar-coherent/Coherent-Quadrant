@@ -1,0 +1,2242 @@
+{
+  "industry_group": "Healthcare",
+  "industry_category": "Pharmaceutical",
+  "axis_x": "Product Strength",
+  "axis_y": "Business Strategy",
+  "axis_definition_method": "llm",
+  "axis_definition_reason": "These parameters capture the dual nature of animal health: product innovation and manufacturing excellence (X) combined with commercial scale and strategic growth (Y), tailored to the specific needs of veterinary medicine and livestock production.",
+  "parameter_definitions": {
+    "x": {
+      "Vaccine & Biologic Portfolio": "Breadth and depth of vaccines and biologicals for major species (companion, livestock, poultry). Strength shown by number of licensed products, novel antigen platforms, and market share in core segments.",
+      "Parasiticide & Anti-Infective Coverage": "Range of products for parasites, bacteria, fungi, and viruses across species. Strength indicated by spectrum of activity, convenience of formulations, and resistance management strategies.",
+      "Diagnostics & Digital Health Integration": "Investment in diagnostic tools (e.g., point-of-care tests, imaging) and digital platforms (e.g., telemedicine, data analytics) that enhance disease detection and treatment monitoring. Strength evidenced by product launches, partnerships, and adoption rates.",
+      "Manufacturing Capacity & Supply Chain": "Ability to produce high-quality products at scale with reliable supply. Strength shown by number of facilities, capacity utilization, redundancy, and track record of supply continuity.",
+      "Regulatory Approvals & Compliance": "Portfolio of approvals from major agencies (FDA, EMA, etc.) and compliance with GMP and pharmacovigilance standards. Strength indicated by recent approvals, inspection history, and global registration footprint."
+    },
+    "y": {
+      "Global Market Penetration": "Presence and sales across key geographies (North America, Europe, Asia-Pacific, etc.). Strength shown by revenue distribution, market share in major countries, and entry into emerging markets.",
+      "Veterinarian & Producer Trust": "Reputation among veterinarians and livestock producers based on product efficacy, safety, and support services. Strength evidenced by brand loyalty, prescription rates, and industry surveys.",
+      "Revenue & Profitability": "Financial performance including total revenue, growth rate, and margins. Strength indicated by consistent revenue growth, profitability ratios, and investment in R&D.",
+      "Pipeline & Label Expansion": "Number and stage of products in development, as well as efforts to expand labels for existing products (new species, indications). Strength shown by pipeline size, phase advancement, and recent label extensions.",
+      "Strategic Alliances & M&A": "Partnerships, licensing deals, and acquisitions that enhance product portfolio, technology access, or market reach. Strength indicated by number and value of deals, and their strategic fit."
+    }
+  },
+  "x_features": [
+    "Vaccine & Biologic Portfolio",
+    "Parasiticide & Anti-Infective Coverage",
+    "Diagnostics & Digital Health Integration",
+    "Manufacturing Capacity & Supply Chain",
+    "Regulatory Approvals & Compliance"
+  ],
+  "y_features": [
+    "Global Market Penetration",
+    "Veterinarian & Producer Trust",
+    "Revenue & Profitability",
+    "Pipeline & Label Expansion",
+    "Strategic Alliances & M&A"
+  ],
+  "x_feature_weights": [
+    0.3,
+    0.2,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "y_feature_weights": [
+    0.25,
+    0.25,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "question_weights": [
+    0.4,
+    0.3,
+    0.3
+  ],
+  "overall_formula": "(X + Y) / 2",
+  "quadrant_mid_x": 65.0,
+  "quadrant_mid_y": 65.0,
+  "scored": 216,
+  "crawl": {
+    "crawled": 0,
+    "ok": 0,
+    "fail": 0,
+    "skipped_no_domain": 0
+  },
+  "rows": [
+    {
+      "company": "Adisseo",
+      "x": 45,
+      "y": 54,
+      "overall": 50,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "African Animal Health",
+      "x": 42,
+      "y": 41,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Agener União Saúde Animal",
+      "x": 48,
+      "y": 52,
+      "overall": 50,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Agrihealth",
+      "x": 53,
+      "y": 49,
+      "overall": 51,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Agrofeed Middle East",
+      "x": 40,
+      "y": 44,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Agroindustrias Bimbo de Colombia S.A.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Agrolimen",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Agrovet Market Animal Health",
+      "x": 42,
+      "y": 43,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Albrecht GmbH",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Alltech",
+      "x": 48,
+      "y": 56,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Alphavet",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Ancare Scientific Ltd.",
+      "x": 41,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Animal Health Company (AHC)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Animalcare Group",
+      "x": 42,
+      "y": 51,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "AniMedica",
+      "x": 43,
+      "y": 50,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Apex Laboratories Pty Ltd",
+      "x": 41,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Arab Company for Drug Industries and Medical Appliances (ACDIMA)",
+      "x": 40,
+      "y": 46,
+      "overall": 43,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Arab Company for Livestock Development (ACOLID)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Aurobindo Pharma (Animal Health)",
+      "x": 43,
+      "y": 45,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Ayurvet Limited",
+      "x": 41,
+      "y": 43,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Bayer Animal Health",
+      "x": 63,
+      "y": 66,
+      "overall": 64,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bayer Animal Health Africa",
+      "x": 50,
+      "y": 52,
+      "overall": 51,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bayer Middle East (Animal Health Division)",
+      "x": 72,
+      "y": 75,
+      "overall": 74,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bela-pharm GmbH & Co. KG",
+      "x": 43,
+      "y": 44,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Bharat Biotech (Animal Health Division)",
+      "x": 49,
+      "y": 44,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Bharat Serums and Vaccines Limited",
+      "x": 48,
+      "y": 43,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Bimeda",
+      "x": 65,
+      "y": 62,
+      "overall": 64,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Biogénesis Bagó",
+      "x": 56,
+      "y": 55,
+      "overall": 56,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Biogénesis Bagó Brasil",
+      "x": 54,
+      "y": 58,
+      "overall": 56,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Biovet",
+      "x": 42,
+      "y": 42,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Biovet Private Limited",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Biovet São Paulo (Biovet S.A.)",
+      "x": 43,
+      "y": 42,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Boehringer Ingelheim Animal Health",
+      "x": 70,
+      "y": 75,
+      "overall": 72,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Boehringer Ingelheim Saúde Animal",
+      "x": 72,
+      "y": 70,
+      "overall": 71,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Bomac Laboratories Ltd",
+      "x": 41,
+      "y": 41,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Boryung Biopharma Co., Ltd.",
+      "x": 41,
+      "y": 41,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Boryung Medience (Animal Health)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Bravet Saúde Animal Ltda.",
+      "x": 47,
+      "y": 49,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Cargill Animal Nutrition",
+      "x": 44,
+      "y": 61,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Ceva Santé Animale",
+      "x": 76,
+      "y": 74,
+      "overall": 75,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Ceva Saúde Animal",
+      "x": 69,
+      "y": 67,
+      "overall": 68,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Chanelle Pharma",
+      "x": 43,
+      "y": 43,
+      "overall": 43,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Chengdu Techpool Bio-Pharmaceutical Co., Ltd.",
+      "x": 45,
+      "y": 42,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Chong Kun Dang Pharmaceutical Corp. (Animal Health)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Choong Ang Vaccine Laboratories",
+      "x": 50,
+      "y": 47,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Choong Ang Vaccine Laboratories Co., Ltd.",
+      "x": 54,
+      "y": 50,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Chuo Kagaku Co., Ltd.",
+      "x": 40,
+      "y": 42,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Cipla (Animal Health)",
+      "x": 42,
+      "y": 43,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Coopers Animal Health",
+      "x": 67,
+      "y": 63,
+      "overall": 65,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Covetrus Inc.",
+      "x": 48,
+      "y": 57,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "cp-pharma Handelsgesellschaft mbH",
+      "x": 50,
+      "y": 49,
+      "overall": 50,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Daehan New Pharm Co., Ltd.",
+      "x": 40,
+      "y": 41,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Daewoong Pharmaceutical (Animal Health Division)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Dainihon Jochugiku Co., Ltd.",
+      "x": 42,
+      "y": 40,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Dechra Pharmaceuticals",
+      "x": 44,
+      "y": 59,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Dechra Veterinary Products",
+      "x": 49,
+      "y": 60,
+      "overall": 54,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Dechra Veterinary Products Brasil",
+      "x": 45,
+      "y": 55,
+      "overall": 50,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Dechra Veterinary Products Deutschland GmbH",
+      "x": 52,
+      "y": 53,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Dechra Veterinary Products US",
+      "x": 40,
+      "y": 50,
+      "overall": 45,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Deltamune",
+      "x": 47,
+      "y": 49,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Dopharma Middle East",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "DS Pharma Animal Health Co., Ltd.",
+      "x": 42,
+      "y": 41,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "DSM Animal Nutrition & Health",
+      "x": 43,
+      "y": 52,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Eagle Veterinary Technology Co., Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Elanco Animal Health",
+      "x": 70,
+      "y": 67,
+      "overall": 68,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Elanco Saúde Animal",
+      "x": 73,
+      "y": 62,
+      "overall": 68,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Farmlands Co-operative Society Limited",
+      "x": 40,
+      "y": 47,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Fatro",
+      "x": 64,
+      "y": 62,
+      "overall": 63,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Fujita Pharmaceutical Co., Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "GlaxoSmithKline Pharmaceuticals (GSK) - Animal Health Division",
+      "x": 52,
+      "y": 52,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Green Cross Veterinary Products",
+      "x": 61,
+      "y": 53,
+      "overall": 57,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Hanvet",
+      "x": 54,
+      "y": 46,
+      "overall": 50,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Hanvet Co., Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Hertape Calier Saúde Animal",
+      "x": 44,
+      "y": 43,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Heska Corporation",
+      "x": 47,
+      "y": 48,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Hester Biosciences Limited",
+      "x": 60,
+      "y": 66,
+      "overall": 63,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "HIPRA",
+      "x": 63,
+      "y": 61,
+      "overall": 62,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Hokusan Co., Ltd.",
+      "x": 40,
+      "y": 42,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Huvepharma",
+      "x": 52,
+      "y": 56,
+      "overall": 54,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "IDEXX Laboratories",
+      "x": 55,
+      "y": 73,
+      "overall": 64,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "IDT Biologika GmbH",
+      "x": 47,
+      "y": 44,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Inataa Agroindustrial Ltda.",
+      "x": 40,
+      "y": 41,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Indian Herbs Specialties (IHS)",
+      "x": 42,
+      "y": 43,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Indian Immunologicals Ltd",
+      "x": 60,
+      "y": 67,
+      "overall": 64,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Insumos Veterinarios S.A.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Intas Pharmaceuticals (Animal Health Division)",
+      "x": 48,
+      "y": 49,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Interchemie Middle East",
+      "x": 40,
+      "y": 42,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Invesa",
+      "x": 40,
+      "y": 46,
+      "overall": 43,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Invetx Inc.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Jazeera Pharmaceutical Industries (JPI)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Jurox Pty Ltd",
+      "x": 43,
+      "y": 46,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Kaken Pharmaceutical Co., Ltd.",
+      "x": 48,
+      "y": 42,
+      "overall": 45,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Kaketsuken (The Chemo-Sero-Therapeutic Research Institute)",
+      "x": 49,
+      "y": 42,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Karnataka Antibiotics & Pharmaceuticals Ltd (KAPL)",
+      "x": 49,
+      "y": 45,
+      "overall": 47,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "KBN (Korea Bionics)",
+      "x": 44,
+      "y": 42,
+      "overall": 43,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "KBNP Inc.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Kemin Industries",
+      "x": 46,
+      "y": 53,
+      "overall": 50,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Kenvet Animal Health",
+      "x": 40,
+      "y": 41,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Kissei Pharmaceutical Co., Ltd. (Animal Health Division)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Komipharm International Co., Ltd.",
+      "x": 42,
+      "y": 42,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Kuwait Saudi Pharmaceutical Industries (KSPI)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Kyoritsu Seiyaku",
+      "x": 43,
+      "y": 43,
+      "overall": 43,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Kyoritsu Seiyaku Corporation",
+      "x": 42,
+      "y": 40,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Kyoto Biken Laboratories, Inc.",
+      "x": 53,
+      "y": 50,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Kyowa Hakko Kirin Co., Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Kyron Laboratories",
+      "x": 41,
+      "y": 41,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Laboratorio Brouwer S.A.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Laboratorio Calier",
+      "x": 54,
+      "y": 53,
+      "overall": 54,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Laboratorio Chile (Teva)",
+      "x": 40,
+      "y": 42,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Laboratorio Drag Pharma",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Laboratorio Provet",
+      "x": 43,
+      "y": 41,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Laboratório Vencofarma do Brasil Ltda.",
+      "x": 41,
+      "y": 42,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Lavet Pharmaceuticals",
+      "x": 40,
+      "y": 44,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Lupin (Animal Health)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Meiji Animal Health Co., Ltd.",
+      "x": 51,
+      "y": 52,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Meiji Seika Pharma",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Merck Animal Health",
+      "x": 74,
+      "y": 73,
+      "overall": 74,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Merck Animal Health (MSD Animal Health)",
+      "x": 75,
+      "y": 73,
+      "overall": 74,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Merck Animal Health Canada (MSD)",
+      "x": 72,
+      "y": 76,
+      "overall": 74,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "MSD Animal Health Australia (Merck)",
+      "x": 76,
+      "y": 76,
+      "overall": 76,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "MSD Animal Health GmbH",
+      "x": 80,
+      "y": 80,
+      "overall": 80,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "MSD Animal Health New Zealand",
+      "x": 70,
+      "y": 69,
+      "overall": 70,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "MSD Animal Health South Africa",
+      "x": 73,
+      "y": 74,
+      "overall": 74,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "MSD Saúde Animal",
+      "x": 76,
+      "y": 75,
+      "overall": 76,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "MWI Animal Health",
+      "x": 50,
+      "y": 61,
+      "overall": 56,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Neogen Corporation",
+      "x": 53,
+      "y": 49,
+      "overall": 51,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Nihon Nohyaku Co., Ltd.",
+      "x": 44,
+      "y": 48,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Nippon Zenyaku Kogyo Co., Ltd.",
+      "x": 53,
+      "y": 48,
+      "overall": 50,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Nisseiken Co., Ltd.",
+      "x": 43,
+      "y": 41,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Norbrook Laboratories",
+      "x": 52,
+      "y": 58,
+      "overall": 55,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Novartis Animal Health",
+      "x": 59,
+      "y": 56,
+      "overall": 58,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Novus International",
+      "x": 41,
+      "y": 57,
+      "overall": 49,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Nutramax Laboratories Veterinary Sciences",
+      "x": 41,
+      "y": 47,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Nutreco",
+      "x": 52,
+      "y": 62,
+      "overall": 57,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Onderstepoort Biological Products",
+      "x": 41,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Ourofino Saúde Animal",
+      "x": 49,
+      "y": 54,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Pasteurização e Biotecnologia Ltda. (Pasteur Bio)",
+      "x": 46,
+      "y": 51,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Pharmaq (Southeast Asia)",
+      "x": 79,
+      "y": 78,
+      "overall": 78,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Pharmavet",
+      "x": 41,
+      "y": 44,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Pharmaxim",
+      "x": 43,
+      "y": 44,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Phibro Animal Health",
+      "x": 45,
+      "y": 46,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Provet S.A.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Bintang Toedjoe",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Caprifarmindo Laboratories",
+      "x": 45,
+      "y": 42,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "PT Charoen Pokphand Indonesia",
+      "x": 44,
+      "y": 47,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "PT Graha Farma",
+      "x": 40,
+      "y": 41,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Indofarma",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Interbat",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Japfa Comfeed Indonesia",
+      "x": 43,
+      "y": 52,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "PT Kalbe Farma",
+      "x": 44,
+      "y": 43,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "PT Karya Husada",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Medion Ardhika Bhakti",
+      "x": 55,
+      "y": 55,
+      "overall": 55,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "PT New Hope Indonesia",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Romindo Primavetkom",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Sahabat Ternak Sejahtera",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Sanbe Farma",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Sido Muncul",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Sinar Mas Animal Health",
+      "x": 40,
+      "y": 44,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Sreeya Sewu Indonesia",
+      "x": 42,
+      "y": 41,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Surya Agung",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "PT Vaksindo Satwa Nusantara",
+      "x": 49,
+      "y": 44,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Rakuroku Co., Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Richter Pharma AG",
+      "x": 51,
+      "y": 52,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Selectavet Dr. Otto Fischer GmbH",
+      "x": 46,
+      "y": 45,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Sequent Scientific Limited",
+      "x": 41,
+      "y": 44,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Serumwerk Bernburg AG",
+      "x": 55,
+      "y": 51,
+      "overall": 53,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Shanghai Veterinary Research Institute (SHVRI)",
+      "x": 48,
+      "y": 46,
+      "overall": 47,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Sumitomo Chemical (Animal Health Division)",
+      "x": 47,
+      "y": 45,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Sun Pharmaceutical Industries (Animal Health)",
+      "x": 44,
+      "y": 48,
+      "overall": 46,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Syntex S.A.",
+      "x": 40,
+      "y": 41,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Tecsa Laboratórios S.A.",
+      "x": 40,
+      "y": 46,
+      "overall": 43,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Toa Pharmaceutical Co., Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Troy Laboratories Pty Ltd",
+      "x": 60,
+      "y": 63,
+      "overall": 62,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "União Química Farmacêutica Nacional S/A (Animal Health Division)",
+      "x": 41,
+      "y": 42,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vallée S.A.",
+      "x": 63,
+      "y": 60,
+      "overall": 62,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Vansil Saúde Animal Ltda.",
+      "x": 40,
+      "y": 42,
+      "overall": 41,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vaxxinova",
+      "x": 45,
+      "y": 43,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Vemedim Corporation",
+      "x": 42,
+      "y": 41,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Venkateshwara Hatcheries Group (Venky's)",
+      "x": 55,
+      "y": 52,
+      "overall": 54,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Venkateshwara Hatcheries Group (VH Group)",
+      "x": 50,
+      "y": 47,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Vet India Pharmaceuticals",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vetanco",
+      "x": 41,
+      "y": 47,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Vetbiochem India Pvt. Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vetcare (India) Pvt. Ltd.",
+      "x": 44,
+      "y": 43,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Vetcare Laboratories",
+      "x": 42,
+      "y": 42,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vetcare Pharmaceuticals Pvt Ltd",
+      "x": 42,
+      "y": 41,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "VetIndia (Veterinary Products India Ltd)",
+      "x": 46,
+      "y": 42,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Vetline Biologicals",
+      "x": 42,
+      "y": 42,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vetnil Indústria e Comércio de Produtos Veterinários Ltda.",
+      "x": 41,
+      "y": 44,
+      "overall": 42,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "VetOne",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vetoquinol",
+      "x": 60,
+      "y": 77,
+      "overall": 68,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Vetoquinol Deutschland GmbH",
+      "x": 55,
+      "y": 61,
+      "overall": 58,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Vetpharma Animal Health GmbH",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Vetpharma Co., Ltd.",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "VetPlus",
+      "x": 43,
+      "y": 52,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "Veyx Pharma",
+      "x": 44,
+      "y": 54,
+      "overall": 49,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Veyx-Pharma GmbH",
+      "x": 47,
+      "y": 57,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Virbac",
+      "x": 73,
+      "y": 75,
+      "overall": 74,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Virbac (Australia) Pty Ltd",
+      "x": 60,
+      "y": 56,
+      "overall": 58,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Virbac New Zealand",
+      "x": 60,
+      "y": 58,
+      "overall": 59,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Virbac Saúde Animal Brasil",
+      "x": 56,
+      "y": 61,
+      "overall": 58,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Virbac South Africa",
+      "x": 55,
+      "y": 56,
+      "overall": 56,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Virbac Tierarzneimittel GmbH",
+      "x": 57,
+      "y": 60,
+      "overall": 58,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Vétoquinol do Brasil",
+      "x": 48,
+      "y": 57,
+      "overall": 52,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Vétoquinol N.A. Inc.",
+      "x": 54,
+      "y": 59,
+      "overall": 56,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "WDT - Wirtschaftsgenossenschaft deutscher Tierärzte eG",
+      "x": 40,
+      "y": 41,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    },
+    {
+      "company": "Wockhardt (Animal Health Division)",
+      "x": 47,
+      "y": 49,
+      "overall": 48,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zinpro Corporation",
+      "x": 50,
+      "y": 60,
+      "overall": 55,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zoetis",
+      "x": 94,
+      "y": 93,
+      "overall": 94,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zoetis Australia Pty Ltd",
+      "x": 78,
+      "y": 80,
+      "overall": 79,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zoetis Brasil",
+      "x": 75,
+      "y": 79,
+      "overall": 77,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zoetis Deutschland GmbH",
+      "x": 75,
+      "y": 77,
+      "overall": 76,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zoetis New Zealand",
+      "x": 76,
+      "y": 78,
+      "overall": 77,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zoetis South Africa",
+      "x": 75,
+      "y": 78,
+      "overall": 76,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zydus Animal Health",
+      "x": 44,
+      "y": 45,
+      "overall": 44,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Zydus Wellness (Animal Health)",
+      "x": 40,
+      "y": 40,
+      "overall": 40,
+      "kb_chars": 0,
+      "crawled": false,
+      "resumed": true,
+      "quadrant": "Emerging Players"
+    }
+  ],
+  "relevance": {
+    "input": 216,
+    "geo_artifacts": 0,
+    "heuristic_drop": 0,
+    "llm_drop": 0,
+    "kept": 216,
+    "player_type": "consumer",
+    "keep_roles": [
+      "Brand",
+      "Marketer"
+    ]
+  },
+  "normalization_method": "proportional_floor_65"
+}

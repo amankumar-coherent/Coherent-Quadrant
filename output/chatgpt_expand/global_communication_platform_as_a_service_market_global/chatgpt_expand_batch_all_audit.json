@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Communication Platform as a Service Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 300,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 300,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 294,
+  "rejected_mid": 6,
+  "chatgpt_filled": 288,
+  "rejected_final": 0,
+  "total_after": 287,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_communication_platform_as_a_service_market_global\\global_communication_platform_as_a_service_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "25629b3a",
+    "market": "Global Communication Platform as a Service Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-13T01:59:12.880127+00:00",
+    "ended_at": "2026-09-13T03:52:29.196719+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 300,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": false,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_communication_platform_as_a_service_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 287,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_communication_platform_as_a_service_market_global\\global_communication_platform_as_a_service_market_global_FINAL.xlsx",
+      "rejected_mid": 6,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "ICT, Automation, Semiconductor",
+    "industry_category": "Information and Communication Technology",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the unique CPaaS market dynamics: X focuses on API product depth, quality, and developer-centric infrastructure, while Y emphasizes adoption, revenue growth, ecosystem, and profitability\u2014key differentiators in a platform-driven, developer-first market.",
+    "parameter_definitions": {
+      "x": {
+        "API Breadth & Channel Coverage": "Range of communication APIs offered (SMS, voice, video, email, chat, WhatsApp, etc.) and number of channels supported. Strength shown by comprehensive, well-documented API catalog covering all major CPaaS use cases.",
+        "Programmable Voice & Video Quality": "Reliability, latency, and global call quality for programmable voice and video services. Evidence includes uptime SLAs, codec support, and independent quality benchmarks.",
+        "Omnichannel Messaging & Routing": "Ability to intelligently route messages across SMS, RCS, OTT apps, and email with high deliverability and low latency. Strength indicated by global carrier connections, smart routing algorithms, and delivery rate metrics.",
+        "Developer Experience & Tooling": "Quality of SDKs, documentation, sandbox, debugging tools, and community support. Strong evidence includes extensive language SDKs, interactive docs, and active developer forums.",
+        "Global Network & Compliance Infrastructure": "Owned or partnered network infrastructure and regulatory compliance across countries. Strength shown by direct carrier relationships, local number availability, and certifications (e.g., GDPR, HIPAA)."
+      },
+      "y": {
+        "Developer & Enterprise Adoption": "Number of active developers and enterprise customers using the platform. Evidence includes disclosed customer counts, developer sign-ups, and case studies from large enterprises.",
+        "Revenue Scale & Growth": "Total CPaaS revenue and year-over-year growth rate. Strength indicated by consistent double-digit growth, high net revenue retention, and increasing average revenue per user.",
+        "Geographic & Vertical Expansion": "Presence in key regions and penetration into verticals like healthcare, finance, and retail. Evidence includes regional revenue splits, local partnerships, and vertical-specific solutions.",
+        "Partner & Ecosystem Strength": "Depth of relationships with ISVs, SIs, and technology partners. Strength shown by marketplace listings, co-selling agreements, and revenue influenced by partners.",
+        "Profitability & Unit Economics": "Gross margin, operating margin, and customer acquisition cost efficiency. Evidence includes improving margins, positive free cash flow, and low churn relative to acquisition spend."
+      }
+    },
+    "x_features": [
+      "API Breadth & Channel Coverage",
+      "Programmable Voice & Video Quality",
+      "Omnichannel Messaging & Routing",
+      "Developer Experience & Tooling",
+      "Global Network & Compliance Infrastructure"
+    ],
+    "y_features": [
+      "Developer & Enterprise Adoption",
+      "Revenue Scale & Growth",
+      "Geographic & Vertical Expansion",
+      "Partner & Ecosystem Strength",
+      "Profitability & Unit Economics"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 75.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 287,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 288,
+      "geo_artifacts": 0,
+      "heuristic_drop": 1,
+      "llm_drop": 0,
+      "kept": 287,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The market for cloud-based APIs and platforms that enable developers to embed real-time communication features such as messaging, voice, and video into applications.",
+      "keep_roles": [
+        "CPaaS Platform Provider"
+      ],
+      "uniform_role": "CPaaS Platform Provider"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\global_communication_platform_as_a_service_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": false
+}

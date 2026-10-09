@@ -1,0 +1,30 @@
+shard 0/1: 2 companies, 4 missing parameter slots to fill
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_49_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+    attempt 1: AiModeCaptcha: rate limited by Google (1 CAPTCHAs this run)
+    attempt 2: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 3: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 1: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 2: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 3: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+  [0/4] Airace Technologies Private Limited / Sensor Suite Breadth: MISS (4.3m elapsed)
+    attempt 1: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 2: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 3: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 1: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 2: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 3: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+  [0/4] Edith Defence Systems / R&D and Innovation Capability: MISS (8.0m elapsed)
+    attempt 1: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 2: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 3: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 1: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https:
+    attempt 2: AiModeUnavailable: navigation failed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://ww
+    attempt 3: AiModeUnavailable: navigation failed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://ww
+  [0/4] Edith Defence Systems / Regulatory Compliance & Certification: MISS (11.8m elapsed)
+  [1/4] Edith Defence Systems / Indian Customer Base & Contracts: OK (12.2m elapsed)
+
+done: filled 1/4 missing parameter slots
+sidecar: C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_sensors_industry_analysis_india\param_detail_prescored_fillgap0.json
+merge this into the checkpoint the same way other sidecars merge (param_detail_prescored*.json glob already picks it up)
