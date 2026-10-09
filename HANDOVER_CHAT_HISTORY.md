@@ -313,7 +313,18 @@ instruction from the owner after looking at the HTML:
   `update_json_locked` (a lock file). One damaged file was repaired by hand
   (first valid JSON document kept).
 
-**5. Working rules the owner repeated.**
+**5. GitHub (2026-10-09).** The owner asked to push the code AND `output/`
+(finished client reports, ~590 MB) to `amankumar-coherent/Coherent-Quadrant`.
+The repo was public, so the owner made it **private first**; keep it private.
+`.gitignore` now keeps out only secrets and browser cookies (`.env`,
+`data/ai_mode_*/` and archived profiles, the local login DB) plus `.venv` and
+caches (a virtualenv is hundreds of MB and GitHub rejects files over 100 MB).
+`output/`, `logs/` and `queries/` are tracked. The push goes in pieces of about
+110 MB (one commit per piece, `git push origin <sha>:main` in order) because
+one 600 MB push can time out. Claude's push command was blocked by the
+permission system, so the owner ran the pushes in their own terminal.
+
+**6. Working rules the owner repeated.**
 - Launch runs from PowerShell, not cmd. Research only through Google AI Mode,
   never web-search sub-agents.
 - Slots must not overlap between runs. Trade Finance used 41-55, fire's last
