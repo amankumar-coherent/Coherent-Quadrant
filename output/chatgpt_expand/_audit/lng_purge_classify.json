@@ -1,0 +1,614 @@
+{
+  "keep_n": 144,
+  "drop_n": 77,
+  "keep": [
+    "Petronas",
+    "Woodside Energy Group",
+    "ADNOC",
+    "GAIL (India) Limited",
+    "TC Energy",
+    "ConocoPhillips",
+    "Enbridge Inc.",
+    "Oil and Natural Gas Corporation (ONGC)",
+    "Bharat Petroleum Corporation Limited (BPCL)",
+    "Commonwealth LNG",
+    "ENN Energy Holdings Limited",
+    "Indian Oil Corporation Ltd.",
+    "NextDecade Corporation",
+    "Santos Ltd",
+    "ADNOC Gas",
+    "Equatorial Guinea LNG",
+    "South Hook LNG Terminal Company Ltd",
+    "Cheniere Energy",
+    "ExxonMobil",
+    "Gasum",
+    "Hindustan Petroleum Corporation Limited (HPCL)",
+    "PTT LNG Company Limited",
+    "Trinidad and Tobago LNG",
+    "AltaGas Ltd.",
+    "Mubadala Energy",
+    "New Fortress Energy",
+    "Saudi Aramco",
+    "TotalEnergies",
+    "Texas LNG",
+    "Venture Global LNG",
+    "Anadarko Petroleum Corporation",
+    "Brunei LNG",
+    "Equinor (UK) Limited",
+    "Equinor ASA",
+    "Golden Pass LNG",
+    "Gunvor Group",
+    "Trafigura Group",
+    "Vitol",
+    "Golar LNG",
+    "Kuwait Petroleum Corporation",
+    "MOL Group",
+    "Cedar LNG",
+    "EQT Corporation",
+    "Kinder Morgan",
+    "Sonatrach",
+    "Angola LNG",
+    "Enagas",
+    "Eni S.p.A.",
+    "Excelerate Energy",
+    "Fluxys",
+    "Gujarat State Petronet Limited (GSPL)",
+    "Peru LNG",
+    "PTT Public Company Limited",
+    "Repsol",
+    "Sempra Infrastructure Partners",
+    "Mitsubishi Corporation",
+    "Mitsui & Co.",
+    "BP plc",
+    "Chevron Corporation",
+    "E.ON SE",
+    "GS Energy",
+    "Kosmos Energy",
+    "PTTEP",
+    "GNL Quintero S.A.",
+    "POSCO International",
+    "Dragon LNG Ltd",
+    "Senex Energy",
+    "Woodfibre LNG",
+    "VNG AG",
+    "Freeport LNG",
+    "Glencore",
+    "Gás Natural Açu (GNA)",
+    "JERA Co., Inc.",
+    "Kunlun Energy",
+    "Mitsui O.S.K. Lines",
+    "Centrica",
+    "Engie",
+    "Galp",
+    "Naturgy Energy Group",
+    "AG&P Pratham",
+    "APA Corporation",
+    "Expand Energy Corporation",
+    "CNOOC",
+    "Compañía de Petróleos de Chile (COPEC)",
+    "Dolphin Energy",
+    "Gazprom",
+    "LNG Terminal Stade GmbH",
+    "Oman LNG",
+    "Origin Energy",
+    "Osaka Gas",
+    "Petrobras",
+    "PetroChina",
+    "Rosneft",
+    "Plaquemines LNG",
+    "PT Perusahaan Gas Negara (PGN)",
+    "PTT Global LNG (PTTGL)",
+    "Repsol Sinopec Brasil",
+    "Shell plc",
+    "Inpex Corporation",
+    "SK Innovation E&S (formerly SK E&S)",
+    "Tellurian Inc.",
+    "Novatek",
+    "Australia Pacific LNG",
+    "China National Petroleum Corporation (CNPC)",
+    "Chubu Electric Power Company",
+    "CPC Corporation, Taiwan",
+    "Gladstone LNG",
+    "Guangdong Dapeng LNG Company",
+    "Gulf LNG Energy",
+    "H-Energy",
+    "Hanseatic Energy Hub GmbH",
+    "Höegh Evi (formerly Höegh LNG)",
+    "Ichthys LNG",
+    "Kansai Electric Power Company",
+    "Klaipedos Nafta",
+    "Korea East-West Power Co., Ltd. (EWP)",
+    "Korea Gas Corporation (KOGAS)",
+    "Korea National Oil Corporation (KNOC)",
+    "Kuwait National Petroleum Company (KNPC)",
+    "Lake Charles LNG",
+    "LNG Wilhelmshaven GmbH",
+    "Magnolia LNG",
+    "Marubeni Corporation",
+    "Mercuria Energy Group",
+    "Papua New Guinea LNG (PNG LNG)",
+    "Pavilion Energy",
+    "Pertamina",
+    "Petrovietnam",
+    "PetroVietnam Gas",
+    "GAZ-SYSTEM (Polskie LNG / Świnoujście)",
+    "POSCO",
+    "QatarEnergy",
+    "QatarEnergy LNG",
+    "Rio Grande LNG",
+    "RWE",
+    "Sakhalin Energy",
+    "Sinopec",
+    "SK Gas Trading",
+    "Tokyo Electric Power Company (TEPCO)",
+    "Tokyo Gas Co., Ltd.",
+    "Uniper SE",
+    "Wintershall Dea AG",
+    "Yamal LNG",
+    "Yemen LNG"
+  ],
+  "drop": [
+    {
+      "company": "FortisBC",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Surrey and Kelowna, Canada"
+    },
+    {
+      "company": "BHP Group",
+      "role": "Brand",
+      "reason": "off_market:bhp group",
+      "hq": "Melbourne, Victoria, Australia"
+    },
+    {
+      "company": "Tourmaline Oil Corp.",
+      "role": "Brand",
+      "reason": "off_market:tourmaline oil",
+      "hq": "Alberta, Canada, Its"
+    },
+    {
+      "company": "Adani Total Gas Limited",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Ahmedabad, India"
+    },
+    {
+      "company": "Axpo",
+      "role": "Brand",
+      "reason": "off_market:axpo",
+      "hq": "Baden, Switzerland"
+    },
+    {
+      "company": "New Zealand Oil & Gas Ltd",
+      "role": "Brand",
+      "reason": "off_market:new zealand oil gas",
+      "hq": "Wellington, New Zealand"
+    },
+    {
+      "company": "Indian Oil-Adani Gas Private Limited (IOAGPL)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Gujarat, India, Its"
+    },
+    {
+      "company": "Pieridae Energy",
+      "role": "Brand",
+      "reason": "off_market:pieridae energy",
+      "hq": "Calgary, Alberta, Canada"
+    },
+    {
+      "company": "Antero Resources",
+      "role": "Brand",
+      "reason": "off_market:antero resources",
+      "hq": "Denver, Colorado, USA"
+    },
+    {
+      "company": "Canadian Natural Resources Limited",
+      "role": "Brand",
+      "reason": "off_market:canadian natural resources",
+      "hq": "Calgary, Canada"
+    },
+    {
+      "company": "Gujarat Gas Limited",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Ahmedabad, Gujarat, India"
+    },
+    {
+      "company": "Keppel Corporation",
+      "role": "Brand",
+      "reason": "off_market:keppel corporation",
+      "hq": "Singapore, Singapore"
+    },
+    {
+      "company": "Sasol",
+      "role": "Brand",
+      "reason": "off_market:sasol",
+      "hq": "South, Africa, Sasol"
+    },
+    {
+      "company": "Steelhead LNG",
+      "role": "Brand",
+      "reason": "off_market:steelhead lng",
+      "hq": "British, Columbia, Canada"
+    },
+    {
+      "company": "Bear Head LNG",
+      "role": "Brand",
+      "reason": "off_market:bear head lng",
+      "hq": "Australia, Bear, Head"
+    },
+    {
+      "company": "Torrent Gas",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Ahmedabad, India"
+    },
+    {
+      "company": "Beach Energy",
+      "role": "Brand",
+      "reason": "off_market:beach energy",
+      "hq": "Adelaide, South Australia, Australia"
+    },
+    {
+      "company": "Dominion Energy",
+      "role": "Brand",
+      "reason": "off_market:dominion energy",
+      "hq": "Richmond, Virginia, USA"
+    },
+    {
+      "company": "Enel",
+      "role": "Brand",
+      "reason": "off_market:enel",
+      "hq": "Rome, Italy"
+    },
+    {
+      "company": "Koch Industries",
+      "role": "Brand",
+      "reason": "off_market:koch industries",
+      "hq": "United, States, Koch"
+    },
+    {
+      "company": "National Grid plc",
+      "role": "Brand",
+      "reason": "off_market:national grid plc",
+      "hq": "London, United Kingdom"
+    },
+    {
+      "company": "Nippon Gas Co., Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": ""
+    },
+    {
+      "company": "Sembcorp Industries",
+      "role": "Brand",
+      "reason": "off_market:sembcorp industries",
+      "hq": "Singapore, Singapore"
+    },
+    {
+      "company": "Todd Energy",
+      "role": "Brand",
+      "reason": "off_market:todd energy",
+      "hq": "New Plymouth, New Zealand"
+    },
+    {
+      "company": "Toho Gas Co., Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Nagoya, Japan"
+    },
+    {
+      "company": "Iberdrola",
+      "role": "Brand",
+      "reason": "off_market:iberdrola",
+      "hq": "Bilbao, Spain"
+    },
+    {
+      "company": "Ecopetrol",
+      "role": "Brand",
+      "reason": "off_market:ecopetrol",
+      "hq": "Bogotá, Colombia"
+    },
+    {
+      "company": "Tree Energy Solutions (TES)",
+      "role": "Brand",
+      "reason": "off_market:tree energy solutions",
+      "hq": "Zaventem, Belgium"
+    },
+    {
+      "company": "VNG Handel & Vertrieb GmbH",
+      "role": "Brand",
+      "reason": "off_market:vng handel",
+      "hq": "Leipzig, Germany"
+    },
+    {
+      "company": "Bayerngas GmbH",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Munich, Germany, Its"
+    },
+    {
+      "company": "Shizuoka Gas Co., Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Shizuoka, Japan"
+    },
+    {
+      "company": "Contact Energy Ltd",
+      "role": "Brand",
+      "reason": "off_market:contact energy",
+      "hq": "Wellington, New Zealand"
+    },
+    {
+      "company": "EWE AG",
+      "role": "Brand",
+      "reason": "off_market:ewe ag",
+      "hq": "Oldenburg, Germany"
+    },
+    {
+      "company": "Noble Resources",
+      "role": "Brand",
+      "reason": "off_market:noble resources",
+      "hq": ""
+    },
+    {
+      "company": "Petroperú",
+      "role": "Brand",
+      "reason": "off_market:petroper",
+      "hq": "Lima, Peru"
+    },
+    {
+      "company": "Sabarmati Gas Limited",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Ahmedabad, Gujarat, India"
+    },
+    {
+      "company": "YPF",
+      "role": "Brand",
+      "reason": "off_market:ypf",
+      "hq": "Aires, Argentina, Its"
+    },
+    {
+      "company": "Bangladesh Oil, Gas and Mineral Corporation (Petrobangla)",
+      "role": "Brand",
+      "reason": "off_market:bangladesh oil gas",
+      "hq": "Dhaka, Bangladesh"
+    },
+    {
+      "company": "Companhia de Gás de São Paulo (Comgás)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "São Paulo, Brazil"
+    },
+    {
+      "company": "Cooper Energy",
+      "role": "Brand",
+      "reason": "off_market:cooper energy",
+      "hq": "Adelaide, South Australia, Australia"
+    },
+    {
+      "company": "EDF (Électricité de France)",
+      "role": "Brand",
+      "reason": "off_market:edf",
+      "hq": "Paris, France"
+    },
+    {
+      "company": "GS Caltex",
+      "role": "Brand",
+      "reason": "off_market:gs caltex",
+      "hq": "South, Korea, Its"
+    },
+    {
+      "company": "Cosmo Energy Holdings",
+      "role": "Brand",
+      "reason": "off_market:cosmo energy",
+      "hq": "Tokyo, Japan, Its"
+    },
+    {
+      "company": "Endesa",
+      "role": "Brand",
+      "reason": "off_market:endesa",
+      "hq": "Madrid, Spain"
+    },
+    {
+      "company": "Korea Midland Power Co., Ltd. (KOMIPO)",
+      "role": "Brand",
+      "reason": "off_market:korea midland power",
+      "hq": "Boryeong-si, Chungcheongnam-do"
+    },
+    {
+      "company": "ANCAP",
+      "role": "Brand",
+      "reason": "off_market:ancap",
+      "hq": "Montevideo, Uruguay"
+    },
+    {
+      "company": "Beijing Gas Group",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Beijing, China"
+    },
+    {
+      "company": "China Gas Holdings Limited",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Kong, China, Its"
+    },
+    {
+      "company": "Companhia de Gás da Bahia (Bahiagás)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Salvador, Brazil"
+    },
+    {
+      "company": "Companhia de Gás de Minas Gerais (Gasmig)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Belo Horizonte, Brazil"
+    },
+    {
+      "company": "Companhia de Gás de Santa Catarina (SCGás)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Florianópolis, Brazil"
+    },
+    {
+      "company": "Companhia de Gás do Ceará (Cegás)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Fortaleza, Brazil"
+    },
+    {
+      "company": "Companhia de Gás do Paraná (Compagas)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Curitiba, Brazil"
+    },
+    {
+      "company": "Companhia de Gás do Rio de Janeiro (CEG)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Rio de Janeiro, Brazil"
+    },
+    {
+      "company": "EnBW Energie Baden-Württemberg AG",
+      "role": "Brand",
+      "reason": "off_market:enbw",
+      "hq": "Karlsruhe, Germany"
+    },
+    {
+      "company": "Hiroshima Gas Co., Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Hiroshima City, Japan"
+    },
+    {
+      "company": "Hokkaido Electric Power Company",
+      "role": "Brand",
+      "reason": "off_market:hokkaido electric",
+      "hq": "Sapporo, Japan"
+    },
+    {
+      "company": "Hokkaido Gas Co., Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Sapporo, Japan"
+    },
+    {
+      "company": "Idemitsu Kosan",
+      "role": "Brand",
+      "reason": "off_market:idemitsu kosan",
+      "hq": "Tokyo, Japan"
+    },
+    {
+      "company": "Indraprastha Gas Limited (IGL)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "New Delhi, India"
+    },
+    {
+      "company": "JX Nippon Oil & Gas Exploration",
+      "role": "Brand",
+      "reason": "off_market:jx nippon oil",
+      "hq": "Tokyo, Japan"
+    },
+    {
+      "company": "Keiyo Gas Co., Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Japan, Keiyo, Gas"
+    },
+    {
+      "company": "Korea Southern Power Co., Ltd. (KOSPO)",
+      "role": "Brand",
+      "reason": "off_market:korea southern power",
+      "hq": "Busan, South Korea"
+    },
+    {
+      "company": "Korea Western Power Co., Ltd. (WP)",
+      "role": "Brand",
+      "reason": "off_market:korea western power",
+      "hq": "Taean-gun, South Korea"
+    },
+    {
+      "company": "Kyushu Electric Power Company",
+      "role": "Brand",
+      "reason": "off_market:kyushu electric",
+      "hq": "Fukuoka City, Japan"
+    },
+    {
+      "company": "Mahanagar Gas Limited (MGL)",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Mumbai, India"
+    },
+    {
+      "company": "Perenco",
+      "role": "Brand",
+      "reason": "off_market:perenco",
+      "hq": "Paris, France; London, United Kingdom"
+    },
+    {
+      "company": "Philippine National Oil Company (PNOC)",
+      "role": "Brand",
+      "reason": "off_market:philippine national oil",
+      "hq": "Taguig, Philippines"
+    },
+    {
+      "company": "Saibu Gas Co., Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "City, Japan, Its"
+    },
+    {
+      "company": "Shenzhen Gas Corporation Ltd.",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Shenzhen, Guangdong, China"
+    },
+    {
+      "company": "SSE plc",
+      "role": "Brand",
+      "reason": "off_market:sse plc",
+      "hq": "Perth, Scotland, United Kingdom"
+    },
+    {
+      "company": "Swan Energy Limited",
+      "role": "Brand",
+      "reason": "off_market:swan energy",
+      "hq": "Mumbai, India, Its"
+    },
+    {
+      "company": "Taiwan Power Company (Taipower)",
+      "role": "Brand",
+      "reason": "off_market:taiwan power",
+      "hq": "Taipei, Taiwan"
+    },
+    {
+      "company": "Tohoku Electric Power Company",
+      "role": "Brand",
+      "reason": "off_market:tohoku electric",
+      "hq": "Sendai, Japan"
+    },
+    {
+      "company": "Towngas",
+      "role": "Brand",
+      "reason": "city_gas_distributor",
+      "hq": "Hong, Kong, China"
+    },
+    {
+      "company": "Pakistan LNG Limited (PLL)",
+      "role": "Brand",
+      "reason": "pakistan",
+      "hq": "Islamabad, Pakistan, Its"
+    },
+    {
+      "company": "Petronet LNG Limited",
+      "role": "Brand",
+      "reason": "off_market:lng limited",
+      "hq": "Delhi, India, Its"
+    }
+  ]
+}

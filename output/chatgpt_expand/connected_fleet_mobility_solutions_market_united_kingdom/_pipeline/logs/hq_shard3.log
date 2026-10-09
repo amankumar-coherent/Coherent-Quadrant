@@ -1,0 +1,15 @@
+[facts 12:05:37] hq: 24 companies to check
+      · hq-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · hq-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+      · hq-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · hq-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+      · hq-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · hq-3: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+are+a+market+research+analyst+checking+where+companies+are+headquartered.+Use+the+company%27s+own+website%2C+registry+filings+and+press+releases.%0AMarket%3A+Connected+Fleet+Mobility+Solutions+Market%0ACountry+of+this+report%3A+united+kingdom%0AFor+EACH+company%3A+hq+%3D+city+and+country+of+the+company%27s+OWN+head+office+%28where+the+operating+company+is+run+from+--+not+its+parent+group%27s%2C+not+a+branch%29%3B+in_country+%3D+true+if+that+head+office+is+in+united+kingdom%2C+false+if+the+company+is+run+from+another+country+and+only+has+a+branch%2C+sales+office+or+subsidiary+address+in+united+kingdom%2C+unknown+if+unsure.+A+company+headquartered+in+united+kingdom+but+owned+by+a+foreign+group+is+in_country+%3D+true.+evidence+%3D+one+short+factual+sentence+with+the+source.+Never+guess.%0AReturn+one+result+for+EVERY+company.+Compact+JSON+only%3A+%7B%22results%22%3A%5B%7B%22name%22%3A%22...%22%2C%22hq%22%3A%22...%22%2C%22in_country%22%3A%22true%7Cfalse%7Cunknown%22%2C%22evidence%22%3A%22...%22%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0ACompanies%3A%0A%5B%7B%22name%22%3A+%22Trackit247+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Ftrackit247.com%22%7D%2C+%7B%22name%22%3A+%22UBORO+SOLUTIONS+LP%22%2C+%22website%22%3A+%22https%3A%2F%2Fuboro.io%22%7D%2C+%7B%22name%22%3A+%22VehoGroup+Ltd%22%2C+%22website%22%3A+%22https%3A%2F%2Fwww.vehocheck.com%2F%22%7D%2C+%7B%22name%22%3A+%22Zenobe+Energy+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fzenobe.com%22%7D%5D&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · hq-3: calling Google AI Mode (udm=50) attempt 2/4…
+      · hq-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+[facts 12:08:40] hq: 24 answers saved -> facts_hq_shard3.json

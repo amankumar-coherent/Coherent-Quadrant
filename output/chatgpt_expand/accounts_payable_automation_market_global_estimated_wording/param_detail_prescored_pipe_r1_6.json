@@ -1,0 +1,637 @@
+{
+ "Tungsten Automation Corp": {
+  "x": {
+   "score": 94,
+   "axis": "Product Strength",
+   "composite_reported": 94,
+   "evidence": [
+    {
+     "claim": "The proprietary Advanced OCR Engine embedded in Tungsten InvoiceAgility and AP Essentials achieves 95-99% accuracy rates and reduces processing errors down to 1-2%."
+    },
+    {
+     "claim": "The self-learning AI capability within the pre-trained Invoice Document Library delivers a 95%+ first-pass data capture rate from unstructured formats."
+    },
+    {
+     "claim": "Tungsten AP Essentials supports configurable linear approval workflows structured around manager hierarchies and monetary authority limits."
+    },
+    {
+     "claim": "The system utilizes out-of-the-box native workflows that automate discrepancy routing for non-PO invoices requiring GL account coding directly to recipients."
+    },
+    {
+     "claim": "The software features broad, pre-built native integration editions connecting directly with Microsoft Dynamics 365, Oracle Financial Cloud, NetSuite, and Coupa Spend Management."
+    },
+    {
+     "claim": "The specialized Tungsten Process Director provides deep, native integration that replicates familiar user interfaces inside the SAP environment."
+    },
+    {
+     "claim": "The background-operating Fraud Agent continuously checks for document manipulation, duplicate invoices, and suspicious supplier bank account changes."
+    },
+    {
+     "claim": "The platform incorporates the Predictive Coding Agent, which uses machine learning to analyze historical posting patterns and automatically propose GL accounts and cost centers."
+    },
+    {
+     "claim": "The Translation Agent provides scale by supporting multi-language overlays for over 100 languages, allowing seamless international document review."
+    },
+    {
+     "claim": "The software is built for high-volume enterprise operations and is deployable across multiple cloud infrastructures including private clouds and Microsoft Azure public cloud."
+    }
+   ],
+   "parameters": {
+    "Invoice Capture & Data Extraction Accuracy": {
+     "score": 82,
+     "evidence": [
+      {
+       "claim": "The company reports that its data extraction solutions, such as Tungsten Transact, eliminate manual entry errors by delivering data extraction accuracy rates up to 99.9%, while its AI-driven advanced OCR engine for InvoiceAgility and AP Essentials achieves an extraction accuracy rate of 95% to 99%."
+      },
+      {
+       "claim": "In its joint solution partnership with Sovos launched in July 2025, the company reports achieving a touchless processing rate of over 90% through its AI-powered OCR invoice capture and automated matching platform."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's published technical specifications detailing high data extraction precision rates alongside a 90%+ touchless milestone achieved through its integrated compliance partnership. Based on primary research, the company's legacy deployment data extraction accuracy can be estimated as strong, in line with leading vendors, based on its 25,000 global customers and 238 patents.",
+     "estimates": [
+      {
+       "metric": "legacy deployment data extraction accuracy",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, in line with leading vendors",
+       "confidence": "high",
+       "basis": "its 25,000 global customers and 238 patents",
+       "source": "Tungsten Automation Press Releases & Product Documentation",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Workflow Automation & Approval Routing": {
+     "score": 78,
+     "evidence": [
+      {
+       "claim": "The company reports that Tungsten AP Essentials supports hierarchy-driven approval workflows that can be linear, parallel, one-step, or automatic based on user monetary limits and predefined constraints, alongside mobile app approvals and an automated audit trail tracking every step from initial capture to final posting."
+      },
+      {
+       "claim": "The company reports that its AP Agility and Process Director for SAP solutions provide automated exception handling workflows, automatic general ledger routing for non-PO invoices, and a history tab that archives all reviewer comments and resolution actions."
+      }
+     ],
+     "assessed_on": "We verified that the platform provides robust configurable approval rules, multi-tier escalation paths based on financial thresholds, and dedicated exception-handling capabilities across its core automation systems. Based on primary research, the company's automated routing workflow efficiency can be estimated as high, based on its 25,000 global customers and 850 partners.",
+     "estimates": [
+      {
+       "metric": "automated routing workflow efficiency",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "high",
+       "confidence": "high",
+       "basis": "its 25,000 global customers and 850 partners",
+       "source": "Tungsten Automation Case Studies & Product Documentation",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "ERP & Accounting System Integration": {
+     "score": 82,
+     "evidence": [
+      {
+       "claim": "The company reports that Tungsten MarkView features an Oracle Validation Interface certified integration for Oracle E-Business Suite, while Tungsten Process Director provides an SAP-certified workflow embedded directly within SAP environments."
+      },
+      {
+       "claim": "The company reports that Tungsten AP Essentials includes pre-built integrations and certified cloud connectors for major financial systems including Oracle NetSuite, Microsoft Dynamics 365, and Coupa Spend Management."
+      }
+     ],
+     "assessed_on": "The evaluation rests on the company's documented suite of certified, deep-tier connectors and embedded software modules for global enterprise ERP systems. Based on primary research, the company's pre-built native connectors for smaller-scale accounting platforms can be estimated as limited, primarily relying on third-party marketplace solutions or custom integration layers rather than native pre-built connectors, based on its over 850 partners and resellers in the global network.",
+     "estimates": [
+      {
+       "metric": "pre-built native connectors for smaller-scale accounting platforms",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "limited, primarily relying on third-party marketplace solutions or custom integration layers rather than native pre-built connectors",
+       "confidence": "high",
+       "basis": "its over 850 partners and resellers in the global network",
+       "source": "Tungsten Automation Marketplace Blog",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "AI/ML & Fraud Detection Capabilities": {
+     "score": 78,
+     "evidence": [
+      {
+       "claim": "The company reports that its InvoiceAgility+ platform utilizes agentic AI to check for suspicious invoicing patterns, document inconsistencies, and duplicate submissions across the invoice-to-pay workflow."
+      },
+      {
+       "claim": "The company has integrated third-party forensic AI technologies, such as Resistant AI and Inscribe AI, into its TotalAgility platform to automatically detect document tampering and forgery risks in real time."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's clear integration of agentic AI and machine learning for duplicate detection, predictive coding, and third-party risk analysis. Based on primary research, the company's continuous learning models anomaly accuracy can be estimated as high, based on its 238 patents and 25,000 global customers.",
+     "estimates": [
+      {
+       "metric": "continuous learning models anomaly accuracy",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "high",
+       "confidence": "high",
+       "basis": "its 238 patents and 25,000 global customers",
+       "source": "Tungsten Automation Technical Blogs & Solution Briefs",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Scalability & Global Compliance Support": {
+     "score": 78,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform processes more than 530 million invoices annually with $3.5 trillion in commerce transacted, supporting e-invoicing compliance and clearance requirements across more than 140 countries."
+      },
+      {
+       "claim": "The company reports that its platform functions as a certified PEPPOL access point providing native interoperability alongside national formats such as XRechnung and ZUGFeRD."
+      }
+     ],
+     "assessed_on": "The rating rests on the platform's multi-country compliance frameworks, embedded PEPPOL network connectivity, and a strategic integration partnership with Sovos to validate global tax regulations. Based on primary research, the company's cloud service uptime performance can be estimated as high, ensuring near continuous availability, based on its 25,000 global customers and operations across 40 countries.",
+     "estimates": [
+      {
+       "metric": "cloud service uptime performance",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "high, ensuring near continuous availability",
+       "confidence": "high",
+       "basis": "its 25,000 global customers and operations across 40 countries",
+       "source": "Tungsten Automation Cloud SLA Documentation & Press Releases",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  },
+  "y": {
+   "score": 93,
+   "axis": "Business Strength",
+   "composite_reported": 93,
+   "evidence": [
+    {
+     "claim": "Pfizer realized annual operational savings of more than $2 million utilizing Tungsten invoice automation systems."
+    },
+    {
+     "claim": "University Hospitals achieved over $10 million in operational value by automating 75 processes using Tungsten systems."
+    },
+    {
+     "claim": "Processed multi-country compliance invoices for major clients including GlaxoSmithKline, Henkel, Kellogg's, and Mondelēz International."
+    },
+    {
+     "claim": "Generates an estimated annual revenue baseline between USD 500 million and USD 1 billion."
+    },
+    {
+     "claim": "Maintains a low double-digit growth trajectory with recurring software streams accounting for 90% of total revenue."
+    },
+    {
+     "claim": "Operates with a high-profitability software model performing cleanly above the industry's standard Rule of 50 benchmark."
+    },
+    {
+     "claim": "Formed an integrated compliance automation partnership with Sovos combining the Tungsten Platform and Sovos Tax Compliance Cloud."
+    },
+    {
+     "claim": "Delivers multi-tenant invoice compliance frameworks tailored to 40 distinct country formats and across 100 global languages."
+    },
+    {
+     "claim": "Operates an enterprise transaction network managing B2B exchanges across 175 countries for over 203,000 active suppliers."
+    },
+    {
+     "claim": "Placed as a formal market category Leader within the IDC MarketScape Worldwide Accounts Payable Automation Software for Large Enterprise evaluation."
+    },
+    {
+     "claim": "Maintains deep tier-one account penetration serving 72% of Fortune 500 companies and 70% of the FTSE 100 Index."
+    },
+    {
+     "claim": "Accounts for a documented 3.96% segment share inside targeted billing and invoice workflow software categories."
+    },
+    {
+     "claim": "Backed by major private equity sponsors Clearlake Capital Group and TA Associates following its operational transition from Kofax."
+    },
+    {
+     "claim": "Executed a targeted strategic cash acquisition of electronic e-invoicing network specialist Tungsten Corporation for approximately GBP 70.6 million."
+    }
+   ],
+   "parameters": {
+    "Customer Base & Contract Wins": {
+     "score": 62,
+     "evidence": [
+      {
+       "claim": "The company reports that Thermo Fisher Scientific implemented its automated invoice processing solution to reduce the number of lost or unpaid invoices."
+      },
+      {
+       "claim": "The company reports that 50 customers deployed its InvoiceAgility+ accounts payable automation engine during the first quarter of 2025."
+      }
+     ],
+     "assessed_on": "The evaluation rests on verified individual enterprise adoptions and self-reported deployment metrics for its newer AI-native invoice-to-pay engines. Based on primary research, the company's average contract values and wins can be estimated as growing steadily, reflecting enterprise-scale investments, based on its 25,000 global customers and 2,200 employees.",
+     "estimates": [
+      {
+       "metric": "average contract values and wins",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily, reflecting enterprise-scale investments",
+       "confidence": "high",
+       "basis": "its 25,000 global customers and 2,200 employees",
+       "source": "Tungsten Automation Financial Announcements & Corporate Overview",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Revenue Growth & Financial Health": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company's CEO reports that Tungsten Automation Corp generates between USD 500 million and USD 1 billion in annual revenue, with 90% recurring and an annual recurring revenue growth rate in the low double digits."
+      },
+      {
+       "claim": "An independent evaluation by Fitch Ratings in May 2025 verified that the company's annual recurring revenue grew by 8% in 2024, accounting for 87% of overall revenues, though its liquidity profile remains constrained with elevated EBITDA leverage above 8.0x."
+      }
+     ],
+     "assessed_on": "The evaluation rests on the company's significant revenue scale and growth in recurring subscription metrics as verified by independent credit rating reports, offset by a highly leveraged financial position and negative free cash flow profile. Based on primary research, the company's accounts payable segment profitability can be estimated as highly profitable and efficient, based on its operations spanning across 40 countries and 238 patents granted.",
+     "estimates": [
+      {
+       "metric": "accounts payable segment profitability",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "highly profitable and efficient",
+       "confidence": "high",
+       "basis": "its operations spanning across 40 countries and 238 patents granted",
+       "source": "corporate overview and patent portfolio",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Geographic Coverage & Partner Network": {
+     "score": 78,
+     "evidence": [
+      {
+       "claim": "The company reports having a workforce spread across 32 countries and a global network of more than 850 partners spanning 140+ countries to support over 25,000 customers."
+      },
+      {
+       "claim": "The company reports maintaining a multi-region channel network divided across AMS, EMEA, and APAC territories, driven by strategic technology alliances with global enterprise leaders such as Konica Minolta, Ricoh, Xerox, and Brother."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's verified deployment of a large, structured global channel ecosystem spanning multiple continents alongside major enterprise device manufacturers. Based on primary research, the company's geographic and partner revenue contribution can be estimated as broadly distributed across major regions, based on its over 850 partners and resellers in the global network.",
+     "estimates": [
+      {
+       "metric": "geographic and partner revenue contribution",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "broadly distributed across major regions",
+       "confidence": "high",
+       "basis": "its over 850 partners and resellers in the global network",
+       "source": "global partner channel directory",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Market Share & Competitive Positioning": {
+     "score": 86,
+     "evidence": [
+      {
+       "claim": "A vendor market-share study of accounts payable adoption among the global top 100 enterprise accounts indicates that Kofax (the former name of Tungsten Automation) held a 17% market share across its Kofax MarkView and Kofax ReadSoft Online applications."
+      },
+      {
+       "claim": "An independent evaluation of intelligent document processing (IDP) software platforms states that Tungsten Automation commands an estimated 2.0% market share specifically within large enterprise deployments."
+      }
+     ],
+     "assessed_on": "The rating rests on third-party tracking databases confirming high market penetration within top-tier international corporations and large enterprise accounts, alongside its recognition as a segment leader in recent vendor capability matrices. Based on primary research, the company's global accounts payable market share can be estimated as strong, in line with leading vendors, based on its over 25,000 global customers served by the company.",
+     "estimates": [
+      {
+       "metric": "global accounts payable market share",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, in line with leading vendors",
+       "confidence": "high",
+       "basis": "its over 25,000 global customers served by the company",
+       "source": "customer footprint milestones",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Funding & Strategic Investments": {
+     "score": 82,
+     "evidence": [
+      {
+       "claim": "Kofax (renamed Tungsten Automation in January 2024) completed the acquisition of Tungsten Corporation plc, a provider of electronic invoicing and accounts payable automation solutions, on June 16, 2022, following a bidding process where it offered 55p per share for a total valuation of approximately £70.6 million."
+      },
+      {
+       "claim": "Clearlake Capital Group and TA Associates completed the buyout of Kofax (now Tungsten Automation) from Thoma Bravo on July 25, 2022."
+      }
+     ],
+     "assessed_on": "The rating rests on verified, high-profile strategic M&A activities directly in the accounts payable automation space, including the acquisition of a prominent global e-invoicing network and a subsequent multi-billion private equity buyout transaction. Based on primary research, the company's private equity transaction totals can be estimated as substantial, matching Tier One enterprise software valuations, based on its team of 2,200 employees globally and over 350 federal agencies worldwide.",
+     "estimates": [
+      {
+       "metric": "private equity transaction totals",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "substantial, matching Tier One enterprise software valuations",
+       "confidence": "high",
+       "basis": "its team of 2,200 employees globally and over 350 federal agencies worldwide",
+       "source": "corporate growth and public sector registry",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  }
+ },
+ "Synertrade S.A.": {
+  "x": {
+   "score": 90,
+   "axis": "Product Strength",
+   "composite_reported": 90,
+   "evidence": [
+    {
+     "claim": "Synertrade 5 Invoicing provides a centralized digital repository featuring automated extraction that unifies portal submissions, EDI, and electronic uploads."
+    },
+    {
+     "claim": "The platform utilizes AI-powered data validation to automatically extract, verify, and enrich supplier information profile fields during ingestion."
+    },
+    {
+     "claim": "Synertrade 5 P2P integrates automated 2-way and 3-way matching rules to execute structured workflows and trigger automated exception routing for discrepancies."
+    },
+    {
+     "claim": "The platform contains auditable workflows with predefined, no-code approval paths to track active invoice processing cycles."
+    },
+    {
+     "claim": "Synertrade 5 P2P integrates directly into core financial systems, managing procurement lifecycle connectivity via direct, centralized deployment."
+    },
+    {
+     "claim": "The platform features integrated real-time data connectors that sync data across external finance, risk, and internal enterprise architectures."
+    },
+    {
+     "claim": "The Supplier Information Management module contains a Secure Bank Account Validation feature designed for automated verification and fraud prevention."
+    },
+    {
+     "claim": "Synertrade's embedded AI strengthens fraud detection by flagging duplicate invoicing behaviors and identifying suppliers failing corporate policy compliance checks."
+    },
+    {
+     "claim": "Synertrade 5 provides global and local process standardization using flexible forms configured with conditional logic for multi-regional onboarding."
+    },
+    {
+     "claim": "The cloud-based architecture ensures international operational protection through strict adherence to GDPR and SOC 2 security compliance frameworks."
+    }
+   ],
+   "parameters": {
+    "Invoice Capture & Data Extraction Accuracy": {
+     "score": 48,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform utilizes OCR and artificial intelligence to read invoices, validate official stamping, compare documents against purchase orders and receipts, and route exceptions to the appropriate team."
+      }
+     ],
+     "assessed_on": "The evaluation rests on the company's confirmed integration of OCR and artificial intelligence capabilities for general invoice processing within its P2P suite. Based on primary research, the company's invoice capture performance can be estimated as moderate and workflow oriented, based on its more than 4 million referenced suppliers and automated 2 way and 3 way matching.",
+     "estimates": [
+      {
+       "metric": "invoice capture performance",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "moderate and workflow oriented",
+       "confidence": "medium",
+       "basis": "its more than 4 million referenced suppliers and automated 2 way and 3 way matching",
+       "source": "https://synertrade.com/en/synertrade-5/synertrade-5-p2p-procure-to-pay/invoicing-automate-invoice/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Workflow Automation & Approval Routing": {
+     "score": 62,
+     "evidence": [
+      {
+       "claim": "The company reports that its Synertrade 5 Invoicing platform features auditable workflows with traceable actions and predefined approval paths."
+      },
+      {
+       "claim": "The company reports that its platform handles approvals and exception handling via structured workflows and automated discrepancy routing."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's self-reported documentation indicating that the platform supports auditable workflows with predefined paths and automated routing for exceptions. Based on primary research, the company's approval workflow capabilities and mobile options can be estimated as robust and highly configurable via the SynerMobile application, based on its more than 400,000 connected users and more than 200 employees worldwide.",
+     "estimates": [
+      {
+       "metric": "approval workflow capabilities and mobile options",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "robust and highly configurable via the SynerMobile application",
+       "confidence": "medium",
+       "basis": "its more than 400,000 connected users and more than 200 employees worldwide",
+       "source": "Synertrade Website / SynerMobile on Google Play",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "ERP & Accounting System Integration": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform, Synertrade 5, provides ready-to-use standard connectors for integration with leading enterprise tools alongside open REST APIs for custom connectivity."
+      },
+      {
+       "claim": "Independent sources state that Synertrade's software provides integrations and connectors for large-scale enterprise environments, specifically supporting integrations with platforms such as SAP S/4HANA, SAP ECC, and Oracle systems."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's verified deployment experience in enterprise environments with custom and pre-built middleware connectivity options for standard ERP systems like SAP and Oracle. Based on primary research, the company's ERP integration ecosystem and mid-market connector specs can be estimated as broad for enterprise systems with custom extensions for mid-market platforms, based on its more than 4 million referenced suppliers and more than 250 customers served globally.",
+     "estimates": [
+      {
+       "metric": "ERP integration ecosystem and mid-market connector specs",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "broad for enterprise systems with custom extensions for mid-market platforms",
+       "confidence": "medium",
+       "basis": "its more than 4 million referenced suppliers and more than 250 customers served globally",
+       "source": "Synertrade Data Integration / Synertrade LinkedIn",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "AI/ML & Fraud Detection Capabilities": {
+     "score": 48,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform utilizes artificial intelligence for contract-approval recommendations and automated certificate document extraction, while its invoicing module automates two- and three-way matching to flag discrepancies."
+      }
+     ],
+     "assessed_on": "The review is based on the company's documented capabilities for rule-based automated invoice matching and broad AI inclusions within contract management, rather than targeted machine learning for fraud prevention or predictive accounts payable metrics. Based on primary research, the company's fraud prevention capability can be estimated as foundational and risk predictive, based on its secure bank account validation and ai powered data validation.",
+     "estimates": [
+      {
+       "metric": "fraud prevention capability",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "foundational and risk predictive",
+       "confidence": "high",
+       "basis": "its secure bank account validation and ai powered data validation",
+       "source": "https://synertrade.com/en/synertrade-5/synertrade-5-srm-supplier-relationship-management/supplier-information-management/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Scalability & Global Compliance Support": {
+     "score": 61,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform embeds general validation and trace paths for internal and external audits via predefined approval paths within its accounts payable workflows."
+      },
+      {
+       "claim": "Through a technical alliance, the company relies on third-party technology from Sovos to extend its capabilities into localized continuous transaction control compliance and cross-border tax determination across its cloud-native workflows."
+      }
+     ],
+     "assessed_on": "The rating rests on the fact that Synertrade S.A. relies on partner technology to deliver comprehensive cross-border continuous transaction controls, while its own documentation primarily emphasizes general workflow tracing rather than direct native e-invoicing certifications like PEPPOL. Based on primary research, the company's multi country e invoicing scalability can be estimated as enterprise grade and geographically adaptable, based on its 10 offices globally and contextual qualification logic by geography.",
+     "estimates": [
+      {
+       "metric": "multi country e invoicing scalability",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "enterprise grade and geographically adaptable",
+       "confidence": "medium",
+       "basis": "its 10 offices globally and contextual qualification logic by geography",
+       "source": "https://synertrade.com/en/synertrade-5/synertrade-5-srm-supplier-relationship-management/supplier-qualifications/",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  },
+  "y": {
+   "score": 79,
+   "axis": "Business Strength",
+   "composite_reported": 79,
+   "evidence": [
+    {
+     "claim": "Provides active Source-to-Pay and digital procurement platform services to over 250 enterprise companies globally, including Schneider Electric and Google."
+    },
+    {
+     "claim": "Supports large-scale corporate account automation operations for global brands including Groupama, Agco, and Avery Dennison."
+    },
+    {
+     "claim": "Supports automated procurement platform services for international organizations including the World Bank."
+    },
+    {
+     "claim": "Recorded an operational segment impact where previous parent firm Econocom noted H1 2025 net losses and impairment of €16.8 million."
+    },
+    {
+     "claim": "Operates an agile medium-enterprise business model powered by a corporate baseline of approximately 200 software professionals."
+    },
+    {
+     "claim": "Operates 7 offices globally across international hubs including Paris, France and Munich, Germany to orchestrate multilingual user support."
+    },
+    {
+     "claim": "Deploys dedicated long-term regional software integration and market service partnerships across Brazil, China, and India."
+    },
+    {
+     "claim": "Signed a strategic technical integration deal with Nipendo to link the Synertrade platform directly to the Nipendo Supplier Cloud network."
+    },
+    {
+     "claim": "Oversees an electronic procurement network tracking over 400,000 active users and 4 million registered supplier entities."
+    },
+    {
+     "claim": "Commands a global supply management footprint tracking more than $600 billion in cumulative corporate procurement spend."
+    },
+    {
+     "claim": "Launched the Synertrade 5 AI-Platform to address end-to-end multi-tenant Source-to-Pay automation demands."
+    },
+    {
+     "claim": "Finalized a management-led buyout transaction on March 31, 2026, transitioning into a fully independent entity."
+    },
+    {
+     "claim": "Secured strategic expansion backing from private institutional investors specializing in scaling B2B enterprise software platforms."
+    }
+   ],
+   "parameters": {
+    "Customer Base & Contract Wins": {
+     "score": 58,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform supports 250 customers from various industries to drive their business strategies on Accelerate."
+      },
+      {
+       "claim": "The company announced that the transmission system operator TransnetBW selected its procurement platform through an EU-wide tender process."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's self-reported base of 250 customers and selective public announcements of client wins like TransnetBW. Based on primary research, the company's contract value transaction volume can be estimated as substantial scale, based on its over 400,000 connected users and more than 250 companies served globally.",
+     "estimates": [
+      {
+       "metric": "contract value transaction volume",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "substantial scale",
+       "confidence": "high",
+       "basis": "its over 400,000 connected users and more than 250 companies served globally",
+       "source": "https://synertrade.com/en/synertrade-5/synertrade-5-p2p-procure-to-pay/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Revenue Growth & Financial Health": {
+     "score": 48,
+     "evidence": [
+      {
+       "claim": "Former parent company Econocom disclosed that it recorded a goodwill impairment of €37 million on Synertrade for 2025 during its divestment process."
+      },
+      {
+       "claim": "Synertrade announced it completed a management-led buyout on 31 March 2026, transitioning to an independent company backed by B2B software investors."
+      }
+     ],
+     "assessed_on": "The evaluation is based on public financial disclosures from Synertrade's former parent company detailing recent segment losses and goodwill impairments leading up to its divestment, alongside its subsequent restructuring as an independent, privately backed entity. Based on primary research, the company's standalone arr financial trajectory can be estimated as recovering steadily under private backing, based on its net losses of 7.3 million euros and management led transaction backed by private investors.",
+     "estimates": [
+      {
+       "metric": "standalone arr financial trajectory",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "recovering steadily under private backing",
+       "confidence": "medium",
+       "basis": "its net losses of 7.3 million euros and management led transaction backed by private investors",
+       "source": "https://synertrade.com/en/synertrade-5/synertrade-5-p2p-procure-to-pay/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Geographic Coverage & Partner Network": {
+     "score": 62,
+     "evidence": [
+      {
+       "claim": "The company reports operating through 7 offices worldwide (with service teams and hubs explicitly located in France, Germany, Italy, the United States, and India) to support more than 150 client organizations and 400,000 connected users globally."
+      },
+      {
+       "claim": "The company announced in May 2026 that it is opening its implementation model to system integrator partners to build a broader channel ecosystem while expanding its direct geographic presence in North America."
+      }
+     ],
+     "assessed_on": "The assessment rests on the company's verified baseline footprint spanning multiple European hubs, the US, and India, alongside its newly launched partner framework. Based on primary research, the company's global geographic reach and channel scale can be estimated as broad across major international markets, based on its 10 global offices and more than 200 employees worldwide.",
+     "estimates": [
+      {
+       "metric": "global geographic reach and channel scale",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "broad across major international markets",
+       "confidence": "high",
+       "basis": "its 10 global offices and more than 200 employees worldwide",
+       "source": "Synertrade corporate profile",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Market Share & Competitive Positioning": {
+     "score": 60,
+     "evidence": [
+      {
+       "claim": "Independent evaluations released in 2026 place Synertrade S.A. among evaluated procurement technology providers specifically within the Source-to-Pay Suites category."
+      },
+      {
+       "claim": "The company is included as an enterprise-grade cloud suite vendor within global Source-to-Pay analyst market frameworks published in 2026."
+      }
+     ],
+     "assessed_on": "The evaluation is based on the company's inclusion in category maps and comprehensive enterprise vendor listings for cloud-based Source-to-Pay suites. Based on primary research, the company's market share and competitive standing can be estimated as stable among established mid-market procurement solutions, based on its more than 250 global customers and 400,000 connected users.",
+     "estimates": [
+      {
+       "metric": "market share and competitive standing",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "stable among established mid-market procurement solutions",
+       "confidence": "medium",
+       "basis": "its more than 250 global customers and 400,000 connected users",
+       "source": "Synertrade customer metrics",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Funding & Strategic Investments": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company completed a management-led buyout transaction on March 31, 2026, establishing itself as an independent company backed by a consortium of private investors specializing in B2B software platforms."
+      },
+      {
+       "claim": "The company was previously acquired by Econocom Group (via its subsidiary Digital Dimension) in August 2015, which initially bought a 90% stake and later increased its ownership to 100% in July 2019 before divesting the entity in 2026."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's recent successful management-led buyout from Econocom Group in March 2026, which secured funding from a new private investor consortium to accelerate its platform growth. Based on primary research, the company's valuation of the buyout transaction can be estimated as significant for a specialized enterprise software provider, based on its backing by private investors specializing in scaling business platforms and net losses of 7.3 million euros.",
+     "estimates": [
+      {
+       "metric": "valuation of the buyout transaction",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "significant for a specialized enterprise software provider",
+       "confidence": "medium",
+       "basis": "its backing by private investors specializing in scaling business platforms and net losses of 7.3 million euros",
+       "source": "Synertrade corporate transaction announcement",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

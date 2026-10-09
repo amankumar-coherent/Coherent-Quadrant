@@ -1,0 +1,162 @@
+{
+  "n": 196,
+  "missing_xy": [],
+  "mid_x": 37.5,
+  "mid_y": 38.0,
+  "axis_x": "Solution Capability (= Therapeutic & Manufacturing Capability / X)",
+  "axis_y": "Business Strategy (= Commercial Reach & Pipeline Strategy / Y)",
+  "definitions": {
+    "Leaders": "High X + High Y — mature/scalable, balanced product + GTM",
+    "Challengers": "Lower X + High Y — broad reach/partnerships, deepening product",
+    "Trailblazers": "High X + Lower Y — advanced capability, limited scale/GTM",
+    "Emerging Players": "Lower X + Lower Y — newer/niche, limited presence"
+  },
+  "rule": "absolute median: High = score >= cohort median",
+  "current_counts": {
+    "Leaders": 87,
+    "Challengers": 23,
+    "Trailblazers": 11,
+    "Emerging Players": 75
+  },
+  "expected_counts": {
+    "Leaders": 87,
+    "Challengers": 23,
+    "Trailblazers": 11,
+    "Emerging Players": 75
+  },
+  "mismatches": [],
+  "mismatch_count": 0,
+  "sheet_mismatch_count": 0,
+  "sheet_mismatches": [],
+  "definition_logic_violations": [],
+  "examples": {
+    "Leaders": [
+      {
+        "brand": "Novo Nordisk",
+        "x": 100.0,
+        "y": 100.0,
+        "current": "Leaders"
+      },
+      {
+        "brand": "Eli Lilly and Company",
+        "x": 98.0,
+        "y": 100.0,
+        "current": "Leaders"
+      },
+      {
+        "brand": "Hansoh Pharmaceutical Group",
+        "x": 73.0,
+        "y": 78.0,
+        "current": "Leaders"
+      },
+      {
+        "brand": "Boehringer Ingelheim",
+        "x": 74.0,
+        "y": 74.0,
+        "current": "Leaders"
+      },
+      {
+        "brand": "Innovent Biologics",
+        "x": 73.0,
+        "y": 75.0,
+        "current": "Leaders"
+      }
+    ],
+    "Challengers": [
+      {
+        "brand": "Mitsubishi Tanabe Pharma",
+        "x": 36.0,
+        "y": 51.0,
+        "current": "Challengers"
+      },
+      {
+        "brand": "Emcure Pharmaceuticals",
+        "x": 32.0,
+        "y": 49.0,
+        "current": "Challengers"
+      },
+      {
+        "brand": "Regeneron Pharmaceuticals",
+        "x": 37.0,
+        "y": 44.0,
+        "current": "Challengers"
+      },
+      {
+        "brand": "Roemmers",
+        "x": 36.0,
+        "y": 45.0,
+        "current": "Challengers"
+      },
+      {
+        "brand": "Yuhan Corporation",
+        "x": 37.0,
+        "y": 44.0,
+        "current": "Challengers"
+      }
+    ],
+    "Trailblazers": [
+      {
+        "brand": "MetaVia",
+        "x": 44.0,
+        "y": 36.0,
+        "current": "Trailblazers"
+      },
+      {
+        "brand": "Vivani Medical",
+        "x": 42.0,
+        "y": 36.0,
+        "current": "Trailblazers"
+      },
+      {
+        "brand": "Gmax Biopharm",
+        "x": 39.0,
+        "y": 37.0,
+        "current": "Trailblazers"
+      },
+      {
+        "brand": "Hua Medicine",
+        "x": 40.0,
+        "y": 36.0,
+        "current": "Trailblazers"
+      },
+      {
+        "brand": "Gannex Pharma",
+        "x": 40.0,
+        "y": 34.0,
+        "current": "Trailblazers"
+      }
+    ],
+    "Emerging Players": [
+      {
+        "brand": "Glenmark Pharmaceuticals",
+        "x": 36.0,
+        "y": 37.0,
+        "current": "Emerging Players"
+      },
+      {
+        "brand": "Novartis",
+        "x": 35.0,
+        "y": 37.0,
+        "current": "Emerging Players"
+      },
+      {
+        "brand": "Bukwang Pharmaceutical",
+        "x": 35.0,
+        "y": 36.0,
+        "current": "Emerging Players"
+      },
+      {
+        "brand": "Terns Pharmaceuticals",
+        "x": 37.0,
+        "y": 34.0,
+        "current": "Emerging Players"
+      },
+      {
+        "brand": "Biolab Sanus",
+        "x": 34.0,
+        "y": 36.0,
+        "current": "Emerging Players"
+      }
+    ]
+  }
+}

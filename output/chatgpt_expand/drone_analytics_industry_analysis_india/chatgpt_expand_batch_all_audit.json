@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Drone Analytics Industry Analysis",
+  "country": "india",
+  "batch": "all",
+  "family": "general",
+  "target": 120,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 141,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 113,
+  "rejected_mid": 28,
+  "chatgpt_filled": 102,
+  "rejected_final": 0,
+  "total_after": 102,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\drone_analytics_industry_analysis_india_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "52925d9f",
+    "market": "Drone Analytics Industry Analysis",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-24T09:14:03.716513+00:00",
+    "ended_at": "2026-09-24T12:49:10.363236+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 120,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 102,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\drone_analytics_industry_analysis_india_FINAL.xlsx",
+      "rejected_mid": 28,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "ICT, Automation, Semiconductor",
+    "industry_category": "Aerospace and Defense",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the unique aspects of the Indian drone analytics market, focusing on product capabilities like sensor integration and AI analytics, and business metrics such as contracts, funding, and regulatory compliance specific to India's evolving drone ecosystem.",
+    "parameter_definitions": {
+      "x": {
+        "Drone Platform & Sensor Integration": "Ability to integrate drones with sensors (LiDAR, multispectral, thermal) and analytics platforms for applications like agriculture, infrastructure, and defense. Evidence includes product specs, payload capacity, and seamless data fusion.",
+        "Analytics Software & AI Capability": "Sophisticated software for processing drone data into actionable insights using AI/ML for object detection, mapping, and predictive analytics. Strength shown by accuracy, automation level, and user-friendly dashboards.",
+        "Payload & Endurance Performance": "Drone flight time, range, payload capacity, and reliability under Indian conditions. Evidence includes technical specifications, endurance tests, and operational versatility.",
+        "Regulatory Compliance & Certification": "Compliance with Indian drone regulations (DGCA), type certification, and safety standards. Strength indicated by certifications, no-fly zone compliance, and BVLOS approvals.",
+        "R&D and Indigenous Innovation": "Investment in local R&D, patents, and development of indigenous drone technology. Evidence includes patent filings, DRDO collaborations, and Make in India initiatives."
+      },
+      "y": {
+        "Customer Contracts & Deployments": "Named customers (government, private) and contract values for drone analytics services. Evidence includes tenders won, MoUs, and active deployments in sectors like agriculture, mining, and defense.",
+        "Revenue Growth & Funding": "Annual revenue, growth rate, and funding raised from investors. Evidence includes financial statements, funding rounds, and investor names.",
+        "Geographic & Channel Reach": "Presence across Indian states and distribution partnerships. Evidence includes number of offices, resellers, and service coverage in rural and urban areas.",
+        "Partnerships & Ecosystem": "Strategic alliances with tech firms, research institutions, and integrators. Evidence includes named partners, joint ventures, and consortium memberships.",
+        "Market Share & Installed Base": "Share of the Indian drone analytics market and number of active units/systems deployed. Evidence includes market reports, client lists, and fleet size."
+      }
+    },
+    "x_features": [
+      "Drone Platform & Sensor Integration",
+      "Analytics Software & AI Capability",
+      "Payload & Endurance Performance",
+      "Regulatory Compliance & Certification",
+      "R&D and Indigenous Innovation"
+    ],
+    "y_features": [
+      "Customer Contracts & Deployments",
+      "Revenue Growth & Funding",
+      "Geographic & Channel Reach",
+      "Partnerships & Ecosystem",
+      "Market Share & Installed Base"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 85.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 102,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 102,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 102,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "Drone analytics refers to software and services that process aerial data captured by drones to extract actionable insights for industries such as agriculture, construction, energy, and public safety.",
+      "keep_roles": [
+        "Drone Analytics Software Provider"
+      ],
+      "uniform_role": "Drone Analytics Software Provider"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

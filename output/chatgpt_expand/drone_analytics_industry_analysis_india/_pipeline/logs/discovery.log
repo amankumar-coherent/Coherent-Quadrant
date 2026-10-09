@@ -1,0 +1,697 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Drone Analytics Industry Analysis
+  target : 120
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=120 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=52925d9f → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_analytics_industry_analysis_india\drone_analytics_industry_analysis_india_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=1_recall substep=1a.42 status=running file=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_analytics_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Solution Provider
+  [chatgpt] Step 0c/6: why B2B: The primary buyers in this market are commercial enterprises, agricultural operators, construction firms, infrastructure owners, and government entities requiring actionable insights from drone data.
+  [chatgpt] Step 0c/6: roles present in market: Solution Provider, Service Provider
+  [chatgpt] Step 0c/6: why this player type: I chose Solution Provider because the defining offering of the drone analytics market is digital technology, data processing software, and cloud platforms rather than physical aircraft or manual services.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 120, resuming with 141)
+    → substep 1a done: 141 companies in 0 rounds (resumed with 141) (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 141)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (141 = 0 seeds + 141 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 141 candidates as Solution Provider in 12 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/12…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_45_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.1: running kept=12 rejected=0
+    → substep 4a.2: verify chunk 2/12…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.2: running kept=12 rejected=12
+    → substep 4a.3: verify chunk 3/12…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.3: running kept=24 rejected=12
+    → substep 4a.4: verify chunk 4/12…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-4: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.4: running kept=36 rejected=12
+    → substep 4a.5: verify chunk 5/12…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 24s ago
+    → substep 4a.5: running kept=48 rejected=12
+    → substep 4a.6: verify chunk 6/12…
+      · verify-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 92s ago
+    → substep 4a.6: running kept=59 rejected=13
+    → substep 4a.7: verify chunk 7/12…
+      · verify-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-7: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+are+a+strict+market-landscape+verifier.+Decide+KEEP+or+DROP+for+each+company.%0AMarket%3A+Drone+Analytics+Industry+Analysis%0ARequired+type%3A+Solution+Provider%0AKEEP%3A+companies+whose+PRIMARY+business+in+this+market+makes+them+one+of%3A+Solution+Provider.%0AJudge+by+the+company%27s+PRIMARY+business+%E2%80%94+what+it+IS%2C+not+something+it+also+does.%0ADROP%3A+consultancies%2C+market-research+firms%2C+news%2Fmedia+outlets+and+industry+associations+%28reporting+on+or+advising+a+market+is+not+operating+in+it%29%2C+pure+holding+companies%2C+governments%2C+country%2Fcity%2Fgeo+labels%2C+and+any+company+that+does+not+genuinely+operate+in+this+market.%0AA+parent+that+does+not+itself+sell+in+THIS+market+is+a+DROP+%E2%80%94+the+operating+subsidiary+is+the+company+that+belongs+here.%0ACONTRACT+MANUFACTURERS%2C+OEM%2FODM+makers+and+white-label+producers+are+a+DROP%3A+they+build+to+another+company%27s+specification+and+own+no+brand+here%2C+so+they+are+never+the+company+behind+a+brand.%0AIf+you+are+not+sure+the+company+genuinely+operates+in+this+market%2C+DROP.%0AIn+the+JSON+role+field+return+exactly+one+of%3A+Solution+Provider.%0A%0AHQ+RULE%3A+this+landscape+covers+india+only.+KEEP+a+company+only+if+its+OWN+global+headquarters+is+in+india.+A+local+office%2C+plant%2C+subsidiary+or+distributor+of+a+foreign+company+is+a+DROP.+Set+hq_in_country%3Dtrue+only+when+the+headquarters+is+in+india%3B+if+unsure%2C+false.%0AFor+EACH+company+you+MUST+return+one+result.+Never+skip+a+name.+fits_criteria%3Dtrue+only+if+they+match+the+required+type+for+this+market.+When+unsure%2C+fits_criteria%3Dfalse+and+in_market%3Dfalse.+Return+compact+JSON+only%3A+%7B%22results%22%3A%5B%7B%22name%22%3A%22...%22%2C%22in_market%22%3Atrue%7Cfalse%2C%22builds_or_owns%22%3Atrue%7Cfalse%2C%22role%22%3A%22Solution+Provider%7CBrand%7CMarketer%7CReseller%7CRetailer%7CDistributor%7CMedia%7COther%22%2C%22fits_criteria%22%3Atrue%7Cfalse%2C%22confidence%22%3A0-100%2C%22reason%22%3A%22...%22%2C%22hq_in_country%22%3Atrue%7Cfalse%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0AMarket%3A+Drone+Analytics+Industry+Analysis%0ARequired+type%3A+Solution+Provider%0AVerify+these+companies+%28KEEP+only+Solution+Provider%29%3A%0A%5B%7B%22name%22%3A+%22DroneYards+Aerial+Solutions+Pvt.+Ltd.%22%2C+%22website%22%3A+null%2C+%22snippet%22%3A+%22Develops+software+solutions+focused+on+data+integration%2C+operational+monitoring%2C+and+volumetric+analytics+for+industrial+drone+surveys.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Airotor+Technologies+LLP%22%2C+%22website%22%3A+%22https%3A%2F%2Fairotor.in%22%2C+%22snippet%22%3A+%22Provides+autonomous+clean+energy+drone+inspection+solutions+equipped+with+integrated+AI+drone+data+analytics+software.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22UrbanMatrix+Technologies+Pvt.+Ltd.%22%2C+%22website%22%3A+%22https%3A%2F%2Furbanmatrix.co.in%22%2C+%22snippet%22%3A+%22Develops+Matrix+OS+and+a+companion+cloud-based+drone+data+analytics+platform+to+control+cellular-enabled+drone+systems+and+derive+functional+worksite+insights.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22BharatRohan+Airborne+Innovations+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fbharatrohan.in%22%2C+%22snippet%22%3A+%22Provides+a+drone-based+decision+support+system+using+hyperspectral+imagery+analytics+to+monitor+crops%2C+diagnose+pest+outbreaks%2C+and+optimize+harvests.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22EndureAir+Systems+Pvt.+Ltd.%22%2C+%22website%22%3A+%22https%3A%2F%2Fwww.endureair.com%22%2C+%22snippet%22%3A+%22Develops+the+Niyantrak+ground+control+system+integrated+with+real-time+flight+planning+and+data+processing+to+manage+remote+worksite+operations.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Kesowa+Infinite+Ventures+Private+Limited%22%2C+%22website%22%3A+%22kesowa.in%22%2C+%22snippet%22%3A+%22It+develops+Arya%2C+a+flagship+drone+data+analytics+platform+that+transforms+drone+imagery+into+business+insights.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Vortex+Autonomous+Systems+Private+Limited%22%2C+%22website%22%3A+%22vortexsystem.org%22%2C+%22snippet%22%3A+%22It+builds+an+integrated+autonomy+stack+and+cloud+ecosystem+for+autonomous+drone+navigation%2C+monitoring%2C+and+cloud+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Skye+Air+Mobility+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fskyeair.tech%22%2C+%22snippet%22%3A+%22It+provides+the+Skye+UTM+software+platform%2C+featuring+AI-driven+route+optimization%2C+risk+assessment%2C+and+airspace+tracking+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Marut+Dronetech+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fmarutdrones.com%22%2C+%22snippet%22%3A+%22It+utilizes+a+proprietary+drone+and+IoT+software+engine+to+ingest+and+analyze+multi-gigabyte+spatial+imagery+datasets.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22TechEagle+Innovations+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Ftecheagle.in%22%2C+%22snippet%22%3A+%22It+creates+the+EagleOS+intelligence+suite+for+end-to-end+BVLOS+flight+planning%2C+fleet+operations+management%2C+and+tracking+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22IG+Technologies+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Figdrones.com%22%2C+%22snippet%22%3A+%22It+develops+an+on-demand+cloud-based+GIS+and+AI+software+platform+for+managing%2C+processing%2C+and+analyzing+drone+inspection+data.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Skylark+Labs+India+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fskylarklabs.ai%22%2C+%22snippet%22%3A+%22Develops+a+proprietary+edge-AI+drone+software+platform+that+performs+real-time+imagery+processing+and+infrastructure+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%5D&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · verify-7: calling Google AI Mode (udm=50) attempt 2/4…
+      · verify-7: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+are+a+strict+market-landscape+verifier.+Decide+KEEP+or+DROP+for+each+company.%0AMarket%3A+Drone+Analytics+Industry+Analysis%0ARequired+type%3A+Solution+Provider%0AKEEP%3A+companies+whose+PRIMARY+business+in+this+market+makes+them+one+of%3A+Solution+Provider.%0AJudge+by+the+company%27s+PRIMARY+business+%E2%80%94+what+it+IS%2C+not+something+it+also+does.%0ADROP%3A+consultancies%2C+market-research+firms%2C+news%2Fmedia+outlets+and+industry+associations+%28reporting+on+or+advising+a+market+is+not+operating+in+it%29%2C+pure+holding+companies%2C+governments%2C+country%2Fcity%2Fgeo+labels%2C+and+any+company+that+does+not+genuinely+operate+in+this+market.%0AA+parent+that+does+not+itself+sell+in+THIS+market+is+a+DROP+%E2%80%94+the+operating+subsidiary+is+the+company+that+belongs+here.%0ACONTRACT+MANUFACTURERS%2C+OEM%2FODM+makers+and+white-label+producers+are+a+DROP%3A+they+build+to+another+company%27s+specification+and+own+no+brand+here%2C+so+they+are+never+the+company+behind+a+brand.%0AIf+you+are+not+sure+the+company+genuinely+operates+in+this+market%2C+DROP.%0AIn+the+JSON+role+field+return+exactly+one+of%3A+Solution+Provider.%0A%0AHQ+RULE%3A+this+landscape+covers+india+only.+KEEP+a+company+only+if+its+OWN+global+headquarters+is+in+india.+A+local+office%2C+plant%2C+subsidiary+or+distributor+of+a+foreign+company+is+a+DROP.+Set+hq_in_country%3Dtrue+only+when+the+headquarters+is+in+india%3B+if+unsure%2C+false.%0AFor+EACH+company+you+MUST+return+one+result.+Never+skip+a+name.+fits_criteria%3Dtrue+only+if+they+match+the+required+type+for+this+market.+When+unsure%2C+fits_criteria%3Dfalse+and+in_market%3Dfalse.+Return+compact+JSON+only%3A+%7B%22results%22%3A%5B%7B%22name%22%3A%22...%22%2C%22in_market%22%3Atrue%7Cfalse%2C%22builds_or_owns%22%3Atrue%7Cfalse%2C%22role%22%3A%22Solution+Provider%7CBrand%7CMarketer%7CReseller%7CRetailer%7CDistributor%7CMedia%7COther%22%2C%22fits_criteria%22%3Atrue%7Cfalse%2C%22confidence%22%3A0-100%2C%22reason%22%3A%22...%22%2C%22hq_in_country%22%3Atrue%7Cfalse%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0AMarket%3A+Drone+Analytics+Industry+Analysis%0ARequired+type%3A+Solution+Provider%0AVerify+these+companies+%28KEEP+only+Solution+Provider%29%3A%0A%5B%7B%22name%22%3A+%22DroneYards+Aerial+Solutions+Pvt.+Ltd.%22%2C+%22website%22%3A+null%2C+%22snippet%22%3A+%22Develops+software+solutions+focused+on+data+integration%2C+operational+monitoring%2C+and+volumetric+analytics+for+industrial+drone+surveys.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Airotor+Technologies+LLP%22%2C+%22website%22%3A+%22https%3A%2F%2Fairotor.in%22%2C+%22snippet%22%3A+%22Provides+autonomous+clean+energy+drone+inspection+solutions+equipped+with+integrated+AI+drone+data+analytics+software.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22UrbanMatrix+Technologies+Pvt.+Ltd.%22%2C+%22website%22%3A+%22https%3A%2F%2Furbanmatrix.co.in%22%2C+%22snippet%22%3A+%22Develops+Matrix+OS+and+a+companion+cloud-based+drone+data+analytics+platform+to+control+cellular-enabled+drone+systems+and+derive+functional+worksite+insights.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22BharatRohan+Airborne+Innovations+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fbharatrohan.in%22%2C+%22snippet%22%3A+%22Provides+a+drone-based+decision+support+system+using+hyperspectral+imagery+analytics+to+monitor+crops%2C+diagnose+pest+outbreaks%2C+and+optimize+harvests.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22EndureAir+Systems+Pvt.+Ltd.%22%2C+%22website%22%3A+%22https%3A%2F%2Fwww.endureair.com%22%2C+%22snippet%22%3A+%22Develops+the+Niyantrak+ground+control+system+integrated+with+real-time+flight+planning+and+data+processing+to+manage+remote+worksite+operations.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Kesowa+Infinite+Ventures+Private+Limited%22%2C+%22website%22%3A+%22kesowa.in%22%2C+%22snippet%22%3A+%22It+develops+Arya%2C+a+flagship+drone+data+analytics+platform+that+transforms+drone+imagery+into+business+insights.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Vortex+Autonomous+Systems+Private+Limited%22%2C+%22website%22%3A+%22vortexsystem.org%22%2C+%22snippet%22%3A+%22It+builds+an+integrated+autonomy+stack+and+cloud+ecosystem+for+autonomous+drone+navigation%2C+monitoring%2C+and+cloud+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Skye+Air+Mobility+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fskyeair.tech%22%2C+%22snippet%22%3A+%22It+provides+the+Skye+UTM+software+platform%2C+featuring+AI-driven+route+optimization%2C+risk+assessment%2C+and+airspace+tracking+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Marut+Dronetech+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fmarutdrones.com%22%2C+%22snippet%22%3A+%22It+utilizes+a+proprietary+drone+and+IoT+software+engine+to+ingest+and+analyze+multi-gigabyte+spatial+imagery+datasets.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22TechEagle+Innovations+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Ftecheagle.in%22%2C+%22snippet%22%3A+%22It+creates+the+EagleOS+intelligence+suite+for+end-to-end+BVLOS+flight+planning%2C+fleet+operations+management%2C+and+tracking+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22IG+Technologies+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Figdrones.com%22%2C+%22snippet%22%3A+%22It+develops+an+on-demand+cloud-based+GIS+and+AI+software+platform+for+managing%2C+processing%2C+and+analyzing+drone+inspection+data.%22%2C+%22claimed_role%22%3A+%22%22%7D%2C+%7B%22name%22%3A+%22Skylark+Labs+India+Private+Limited%22%2C+%22website%22%3A+%22https%3A%2F%2Fskylarklabs.ai%22%2C+%22snippet%22%3A+%22Develops+a+proprietary+edge-AI+drone+software+platform+that+performs+real-time+imagery+processing+and+infrastructure+analytics.%22%2C+%22claimed_role%22%3A+%22%22%7D%5D&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · verify-7: calling Google AI Mode (udm=50) attempt 3/4…
+      · verify-7: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 390s ago
+    → substep 4a.7: running kept=71 rejected=13
+    → substep 4a.8: verify chunk 8/12…
+      · verify-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-8: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 430s ago
+    → substep 4a.8: running kept=76 rejected=20
+    → substep 4a.9: verify chunk 9/12…
+      · verify-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-9: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 463s ago
+    → substep 4a.9: running kept=86 rejected=22
+    → substep 4a.10: verify chunk 10/12…
+      · verify-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-10: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 499s ago
+    → substep 4a.10: running kept=98 rejected=22
+    → substep 4a.11: verify chunk 11/12…
+      · verify-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-11: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 532s ago
+    → substep 4a.11: running kept=107 rejected=25
+    → substep 4a.12: verify chunk 12/12…
+      · verify-12: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-12: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 567s ago
+    → substep 4a.12: running kept=113 rejected=28
+    → substep 4a done: kept=113 rejected=28 (required=Solution Provider)
+    → substep 4b: write rejected list (28)
+    → substep 4c: market gate kept 113/113 (dropped 0)
+  [web_expand] merged +102; total unique=102 (target=240)
+  [chatgpt] fill ALL table rows this pass: 102 (merged=102, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 102 rows already carry their report columns
+    → substep 5c: merged filled rows into list (102 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 102 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] Drone Analytics Industry Analysis: in=102 geo_drop=0 heur_drop=0 llm_drop=0 kept=102 market_type=B2B uniform_role=Drone Analytics Software Provider
+  [xy] market-fit filter (B2B): 102 -> 102 companies (roles=['Drone Analytics Software Provider'])
+  [xy] industry=ICT, Automation, Semiconductor/Aerospace and Defense axis_def=llm | X=Product Strength ['Drone Platform & Sensor Integration', 'Analytics Software & AI Capability', 'Payload & Endurance Performance', 'Regulatory Compliance & Certification', 'R&D and Indigenous Innovation'] | Y=Business Strength ['Customer Contracts & Deployments', 'Revenue Growth & Funding', 'Geographic & Channel Reach', 'Partnerships & Ecosystem', 'Market Share & Installed Base']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 102 companies (1/query, 2 queries per batch)
+      · params [1-1]: 0/1 companies detailed
+      · params [2-2]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · params [3-3]: 0/1 companies detailed
+      · params [4-4]: 0/1 companies detailed
+      · params [5-5]: 0/1 companies detailed
+      · params [6-6]: 0/1 companies detailed
+      · params [7-7]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · params [8-8]: 0/1 companies detailed
+      · params [9-9]: 0/1 companies detailed
+      · params [10-10]: 1/1 companies detailed
+      · params [11-11]: 0/1 companies detailed
+      · params [12-12]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · params [13-13]: 0/1 companies detailed
+      · params [14-14]: 0/1 companies detailed
+      · params [15-15]: 0/1 companies detailed
+      · params [16-16]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [17-17]: 0/1 companies detailed
+      · params [18-18]: 0/1 companies detailed
+      · params [19-19]: 0/1 companies detailed
+      · params [20-20]: 0/1 companies detailed
+      · params [21-21]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [22-22]: 0/1 companies detailed
+      · params [23-23]: 0/1 companies detailed
+      · params [24-24]: 0/1 companies detailed
+      · params [25-25]: 0/1 companies detailed
+      · params [26-26]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [27-27]: 1/1 companies detailed
+      · params [28-28]: 0/1 companies detailed
+      · params [29-29]: 0/1 companies detailed
+      · params [30-30]: 0/1 companies detailed
+      · params [31-31]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [32-32]: 0/1 companies detailed
+      · params [33-33]: 1/1 companies detailed
+      · params [34-34]: 1/1 companies detailed
+      · params [35-35]: 0/1 companies detailed
+      · params [36-36]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [37-37]: 0/1 companies detailed
+      · params [38-38]: 0/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_45_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+      · params [39-39]: 0/1 companies detailed
+      · params [40-40]: 1/1 companies detailed
+      · params [41-41]: 1/1 companies detailed
+      · params [42-42]: 0/1 companies detailed
+      · params [43-43]: 0/1 companies detailed
+      · params [44-44]: 1/1 companies detailed
+      · params [45-45]: 0/1 companies detailed
+      · params [46-46]: 1/1 companies detailed
+      · params [47-47]: 0/1 companies detailed
+      · params [48-48]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [49-49]: 1/1 companies detailed
+      · params [50-50]: 1/1 companies detailed
+      · params [51-51]: 1/1 companies detailed
+      · params [52-52]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [53-53]: 0/1 companies detailed
+      · params [54-54]: 1/1 companies detailed
+      · params [55-55]: 1/1 companies detailed
+      · params [56-56]: 1/1 companies detailed
+      · params [57-57]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [58-58]: 0/1 companies detailed
+      · params [59-59]: 0/1 companies detailed
+      · params [60-60]: 0/1 companies detailed
+      · params [61-61]: 0/1 companies detailed
+      · params [62-62]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [63-63]: 0/1 companies detailed
+      · params [64-64]: 1/1 companies detailed
+      · params [65-65]: 0/1 companies detailed
+      · params [66-66]: 1/1 companies detailed
+      · params [67-67]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [68-68]: 0/1 companies detailed
+      · params [69-69]: 1/1 companies detailed
+      · params [70-70]: 1/1 companies detailed
+      · params [71-71]: 1/1 companies detailed
+      · params [72-72]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [73-73]: 0/1 companies detailed
+      · params [74-74]: 0/1 companies detailed
+      · params [75-75]: 0/1 companies detailed
+      · params [76-76]: 1/1 companies detailed
+      · params [77-77]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [78-78]: 1/1 companies detailed
+      · params [79-79]: 0/1 companies detailed
+      · params [80-80]: 1/1 companies detailed
+      · params [81-81]: 0/1 companies detailed
+      · params [82-82]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [83-83]: 1/1 companies detailed
+      · params [84-84]: 1/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_45_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · params [85-85]: 1/1 companies detailed
+      · params [86-86]: 1/1 companies detailed
+      · params [87-87]: 0/1 companies detailed
+      · params [88-88]: 1/1 companies detailed
+      · params [89-89]: 0/1 companies detailed
+      · params [90-90]: 0/1 companies detailed
+      · params [91-91]: 1/1 companies detailed
+      · params [92-92]: 0/1 companies detailed
+      · params [93-93]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · params [94-94]: 1/1 companies detailed
+      · params [95-95]: 1/1 companies detailed
+      · params [96-96]: 1/1 companies detailed
+      · params [97-97]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · params [98-98]: 1/1 companies detailed
+      · params [99-99]: 0/1 companies detailed
+      · params [100-100]: 0/1 companies detailed
+      · params [101-101]: 1/1 companies detailed
+      · params [102-102]: 0/1 companies detailed
+  [xy] parameter detail done: 74/102 companies
+    → [xy] score 1/102 Aakashe Innovations Private Limited
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · score Aakashe Innovations Private Limited: unparsed reply '72\nSkip to previous prompt'
+      · score Aakashe Innovations Private Limited: unparsed reply '15\nSkip to previous prompt'
+    → [xy] no score for Aakashe Innovations Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 2/102 Aarav Unmanned Systems Private Limited
+      · score Aarav Unmanned Systems Private Limited: unparsed reply '86\nShow Code\nSkip to previous prompt'
+      · score Aarav Unmanned Systems Private Limited: unparsed reply '78\nSkip to previous prompt'
+    → [xy] no score for Aarav Unmanned Systems Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 3/102 Aereo (formerly Aarav Unmanned Systems Pvt. Ltd.)
+      · score Aereo (formerly Aarav Unmanned Systems P: unparsed reply '88\nSkip to previous prompt'
+      · score Aereo (formerly Aarav Unmanned Systems P: unparsed reply '75\nSkip to previous prompt'
+    → [xy] no score for Aereo (formerly Aarav Unmanned Systems Pvt. Ltd.) (AI Mode unavailable) — left unscored for retry
+    → [xy] score 4/102 Aeroarc Pvt. Ltd.
+      · score Aeroarc Pvt. Ltd.: unparsed reply '74\nSkip to previous prompt'
+      · score Aeroarc Pvt. Ltd.: unparsed reply '34\nSkip to previous prompt'
+    → [xy] no score for Aeroarc Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 5/102 Aeroscan Technology
+      · score Aeroscan Technology: unparsed reply '65\nSkip to previous prompt'
+      · score Aeroscan Technology: unparsed reply '34\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Aeroscan Technology (AI Mode unavailable) — left unscored for retry
+    → [xy] score 6/102 Aerosys Aviation India Pvt. Ltd.
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+      · score Aerosys Aviation India Pvt. Ltd.: unparsed reply '76\nSkip to previous prompt'
+  [ai-mode] quota — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_45_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (24 this run) — solve it in the browser window
+      · score Aerosys Aviation India Pvt. Ltd.: unparsed reply '30\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+    → [xy] no score for Aerosys Aviation India Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 7/102 Aerovania
+      · score Aerovania: unparsed reply '72\nSkip to previous prompt'
+      · score Aerovania: unparsed reply '59\nSkip to previous prompt'
+    → [xy] no score for Aerovania (AI Mode unavailable) — left unscored for retry
+    → [xy] score 8/102 Aeroyantra Private Limited
+      · score Aeroyantra Private Limited: unparsed reply '75\nSkip to previous prompt'
+      · score Aeroyantra Private Limited: unparsed reply '15\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Aeroyantra Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 9/102 AiRotor Labs
+      · score AiRotor Labs: unparsed reply '80\nSkip to previous prompt'
+      · score AiRotor Labs: unparsed reply '32\nShow Code\nSkip to previous prompt'
+    → [xy] no score for AiRotor Labs (AI Mode unavailable) — left unscored for retry
+    → [xy] score 10/102 AiRotor Labs Private Limited
+    → [xy] score 11/102 Airotor Technologies LLP
+      · score Airotor Technologies LLP: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=Pro
+      · score Airotor Technologies LLP: AiModeUnavailable: navigation failed: Page.goto: net::ERR_NETWORK_CHANGED at https://www.google.com/search?q=Provide+a+single%2C+consolidat
+    → [xy] no score for Airotor Technologies LLP (AI Mode unavailable) — left unscored for retry
+    → [xy] score 12/102 Airpix Analytics Private Limited
+      · score Airpix Analytics Private Limited: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.google.com/search?q=Provide+a+single%2C+cons
+      · score Airpix Analytics Private Limited: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.google.com/search?q=Provide+a+single%2C+cons
+    → [xy] no score for Airpix Analytics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 13/102 Akin Analytics Private Limited
+      · score Akin Analytics Private Limited: unparsed reply '78\nSkip to previous prompt'
+      · score Akin Analytics Private Limited: unparsed reply '25\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Akin Analytics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 14/102 Anvation Drones and Research Technologies Pvt Ltd
+      · score Anvation Drones and Research Technologie: unparsed reply '30\nIf you want to adjust the industry benchmarks or provide specific performance metrics for Anvatio'
+      · score Anvation Drones and Research Technologie: unparsed reply 'To determine the consolidated Business Strength score for Anvation Drones and Research Technologies '
+    → [xy] no score for Anvation Drones and Research Technologies Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 15/102 Arkin Labs Private Limited
+      · score Arkin Labs Private Limited: unparsed reply '80\nSkip to previous prompt'
+      · score Arkin Labs Private Limited: unparsed reply '28\nSkip to previous prompt'
+    → [xy] no score for Arkin Labs Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 16/102 Assert AI
+      · score Assert AI: unparsed reply '79\nSkip to previous prompt'
+      · score Assert AI: unparsed reply '44\nSkip to previous prompt'
+    → [xy] no score for Assert AI (AI Mode unavailable) — left unscored for retry
+    → [xy] score 17/102 Asteria Aerospace Limited
+      · score Asteria Aerospace Limited: unparsed reply '84\nShow Code\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (25 this run) — solve it in the browser window
+      · score Asteria Aerospace Limited: unparsed reply '70\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Asteria Aerospace Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 18/102 Aviocian Technologies Pvt. Ltd.
+      · score Aviocian Technologies Pvt. Ltd.: unparsed reply '73\nIf you would like to see how this score changes based on different parameter weightings or want a'
+      · score Aviocian Technologies Pvt. Ltd.: unparsed reply '24\nSkip to previous prompt'
+    → [xy] no score for Aviocian Technologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 19/102 BharatRohan Airborne Innovations Limited
+      · score BharatRohan Airborne Innovations Limited: unparsed reply '85\nShow Code\nSkip to previous prompt'
+      · score BharatRohan Airborne Innovations Limited: unparsed reply '60\nSkip to previous prompt'
+    → [xy] no score for BharatRohan Airborne Innovations Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 20/102 BharatRohan Airborne Innovations Private Limited
+      · score BharatRohan Airborne Innovations Private: unparsed reply '81\nSkip to previous prompt'
+      · score BharatRohan Airborne Innovations Private: unparsed reply '52\nShow Code\nSkip to previous prompt'
+    → [xy] no score for BharatRohan Airborne Innovations Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 21/102 Birdscale Technologies
+    → [xy] score 22/102 BotLab Dynamics Pvt. Ltd.
+      · score BotLab Dynamics Pvt. Ltd.: unparsed reply '84\nIf you would like to adjust the weighting of these parameters or want a detailed breakdown of the'
+      · score BotLab Dynamics Pvt. Ltd.: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for BotLab Dynamics Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 23/102 De Drone World Solutions Private Limited
+  [ai-mode] CAPTCHA (26 this run) — solve it in the browser window
+      · score De Drone World Solutions Private Limited: unparsed reply '70\nSkip to previous prompt'
+      · score De Drone World Solutions Private Limited: unparsed reply '12\nSkip to previous prompt'
+    → [xy] no score for De Drone World Solutions Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 24/102 Detect Technologies Private Limited
+      · score Detect Technologies Private Limited: unparsed reply '86\nSkip to previous prompt'
+      · score Detect Technologies Private Limited: unparsed reply '68\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Detect Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 25/102 Dhaksha Unmanned Systems Private Limited
+      · score Dhaksha Unmanned Systems Private Limited: unparsed reply '86\nShow Code\nSkip to previous prompt'
+      · score Dhaksha Unmanned Systems Private Limited: unparsed reply '77\nIf you would like to adjust the individual parameter ratings or see a detailed breakdown of how C'
+    → [xy] no score for Dhaksha Unmanned Systems Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 26/102 Drona Aviation Pvt Ltd
+      · score Drona Aviation Pvt Ltd: unparsed reply '48\nShow Code\nSkip to previous prompt'
+      · score Drona Aviation Pvt Ltd: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for Drona Aviation Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 27/102 Dronamaps Private Limited
+    → [xy] score 28/102 Drone Bee Technologies Private Limited
+      · score Drone Bee Technologies Private Limited: unparsed reply '40\nShow Code\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (27 this run) — solve it in the browser window
+      · score Drone Bee Technologies Private Limited: unparsed reply '12\nSkip to previous prompt'
+    → [xy] no score for Drone Bee Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 29/102 DroneAcharya Aerial Innovations Limited
+      · score DroneAcharya Aerial Innovations Limited: unparsed reply '82\nShow Code\nSkip to previous prompt'
+      · score DroneAcharya Aerial Innovations Limited: unparsed reply '55\nSkip to previous prompt'
+    → [xy] no score for DroneAcharya Aerial Innovations Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 30/102 Dronelab
+      · score Dronelab: unparsed reply '46\nSkip to previous prompt'
+      · score Dronelab: unparsed reply '48\nSkip to previous prompt'
+    → [xy] no score for Dronelab (AI Mode unavailable) — left unscored for retry
+    → [xy] score 31/102 DroneYards Aerial Solutions Pvt. Ltd.
+      · score DroneYards Aerial Solutions Pvt. Ltd.: unparsed reply 'The company DroneYards Aerial Solutions Pvt. Ltd. cannot be identified within the specified paramete'
+      · score DroneYards Aerial Solutions Pvt. Ltd.: unparsed reply '21\nSkip to previous prompt'
+    → [xy] no score for DroneYards Aerial Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 32/102 Dronimagination Private Limited
+      · score Dronimagination Private Limited: unparsed reply '70\nSkip to previous prompt'
+      · score Dronimagination Private Limited: unparsed reply '39\nSkip to previous prompt'
+    → [xy] no score for Dronimagination Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 33/102 Dronitech Private Limited
+    → [xy] score 34/102 Dronova Technology India Pvt. Ltd.
+    → [xy] score 35/102 DTOWN ROBOTICS PRIVATE LIMITED
+      · score DTOWN ROBOTICS PRIVATE LIMITED: unparsed reply '68\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (28 this run) — solve it in the browser window
+      · score DTOWN ROBOTICS PRIVATE LIMITED: unparsed reply '30\nSkip to previous prompt'
+    → [xy] no score for DTOWN ROBOTICS PRIVATE LIMITED (AI Mode unavailable) — left unscored for retry
+    → [xy] score 36/102 EndureAir Systems Pvt. Ltd.
+      · score EndureAir Systems Pvt. Ltd.: unparsed reply '86\nSkip to previous prompt'
+      · score EndureAir Systems Pvt. Ltd.: unparsed reply '56\nSkip to previous prompt'
+    → [xy] no score for EndureAir Systems Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 37/102 Enercomp Solutions Private Limited
+      · score Enercomp Solutions Private Limited: unparsed reply '76\nSkip to previous prompt'
+      · score Enercomp Solutions Private Limited: unparsed reply '42\nSkip to previous prompt'
+    → [xy] no score for Enercomp Solutions Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 38/102 Enercomp Solutions Pvt. Ltd.
+      · score Enercomp Solutions Pvt. Ltd.: unparsed reply '81\nSkip to previous prompt'
+      · score Enercomp Solutions Pvt. Ltd.: unparsed reply '34\nSkip to previous prompt'
+    → [xy] no score for Enercomp Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 39/102 Equinox's Drones Private Limited
+      · score Equinox's Drones Private Limited: unparsed reply '58\nIf you would like, I can provide the detailed breakdown of the individual ratings assigned to eac'
+      · score Equinox's Drones Private Limited: unparsed reply '33\nSkip to previous prompt'
+    → [xy] no score for Equinox's Drones Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 40/102 Equinox's Drones Pvt Ltd
+    → [xy] score 41/102 FarmwiseAI Private Limited
+    → [xy] score 42/102 Fuselage Innovations Private Limited
+      · score Fuselage Innovations Private Limited: unparsed reply '85\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (29 this run) — solve it in the browser window
+      · score Fuselage Innovations Private Limited: unparsed reply "43\nIf you would like a detailed breakdown of each parameter's individual score or want to compare Fu"
+    → [xy] no score for Fuselage Innovations Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 43/102 FWCloud (14W) Technologies Private Limited
+      · score FWCloud (14W) Technologies Private Limit: unparsed reply '58\nSkip to previous prompt'
+      · score FWCloud (14W) Technologies Private Limit: unparsed reply '58\nIf you would like to adjust the weightings or focus on a specific parameter like Market Share or '
+    → [xy] no score for FWCloud (14W) Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 44/102 Garuda Aerospace Private Limited
+    → [xy] score 45/102 GarudaUAV Aerial Solutions Private Limited
+      · score GarudaUAV Aerial Solutions Private Limit: unparsed reply '80\nSkip to previous prompt'
+      · score GarudaUAV Aerial Solutions Private Limit: unparsed reply '46\nSkip to previous prompt'
+    → [xy] no score for GarudaUAV Aerial Solutions Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 46/102 General Aeronautics Pvt Ltd
+    → [xy] score 47/102 GeoShot Technologies
+      · score GeoShot Technologies: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+      · score GeoShot Technologies: unparsed reply '18\nShow Code\nSkip to previous prompt'
+    → [xy] no score for GeoShot Technologies (AI Mode unavailable) — left unscored for retry
+    → [xy] score 48/102 Goodland Surveys Pvt Ltd
+    → [xy] score 49/102 Hoverit
+    → [xy] score 50/102 Huviair Technologies Private Limited
+    → [xy] score 51/102 ideaForge Technology Limited
+    → [xy] score 52/102 IG Defence
+    → [xy] score 53/102 IG Technologies Private Limited
+      · score IG Technologies Private Limited: unparsed reply '82\nSkip to previous prompt'
+    → [xy] no score for IG Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 54/102 Indrones Solutions Private Limited
+    → [xy] score 55/102 IoTechWorld Avigation Pvt Ltd
+    → [xy] score 56/102 Johnnette Technologies Pvt. Ltd.
+    → [xy] score 57/102 Kesowa Infinite Ventures Private Limited
+    → [xy] score 58/102 Kesowa Technology Private Limited
+      · score Kesowa Technology Private Limited: unparsed reply '65\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (30 this run) — solve it in the browser window
+      · score Kesowa Technology Private Limited: unparsed reply '58\nSkip to previous prompt'
+    → [xy] no score for Kesowa Technology Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 59/102 Kesowa Technology Pvt. Ltd.
+      · score Kesowa Technology Pvt. Ltd.: unparsed reply '74\nSkip to previous prompt'
+      · score Kesowa Technology Pvt. Ltd.: unparsed reply '45\nSkip to previous prompt'
+    → [xy] no score for Kesowa Technology Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 60/102 Lesoko Technologies Private Limited
+      · score Lesoko Technologies Private Limited: unparsed reply '82\nSkip to previous prompt'
+      · score Lesoko Technologies Private Limited: unparsed reply '54\nSkip to previous prompt'
+    → [xy] no score for Lesoko Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 61/102 Marut Dronetech Private Limited
+      · score Marut Dronetech Private Limited: unparsed reply '85\nSkip to previous prompt'
+      · score Marut Dronetech Private Limited: unparsed reply '65\nSkip to previous prompt'
+    → [xy] no score for Marut Dronetech Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 62/102 Matrix Geo Solutions Limited
+    → [xy] score 63/102 MotionMatics
+      · score MotionMatics: unparsed reply '83\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (31 this run) — solve it in the browser window
+      · score MotionMatics: unparsed reply '20\nSkip to previous prompt'
+    → [xy] no score for MotionMatics (AI Mode unavailable) — left unscored for retry
+    → [xy] score 64/102 Nibrus Technologies Private Limited
+    → [xy] score 65/102 Omnipresent Robot Tech Pvt. Ltd.
+      · score Omnipresent Robot Tech Pvt. Ltd.: unparsed reply '49\nSkip to previous prompt'
+      · score Omnipresent Robot Tech Pvt. Ltd.: unparsed reply '49\nSkip to previous prompt'
+    → [xy] no score for Omnipresent Robot Tech Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 66/102 Omnipresent Robot Technologies Private Limited
+    → [xy] score 67/102 Paninian India Pvt. Ltd.
+    → [xy] score 68/102 Passenger Drone Research Private Limited
+      · score Passenger Drone Research Private Limited: unparsed reply '83\nSkip to previous prompt'
+      · score Passenger Drone Research Private Limited: unparsed reply '69\nIf you would like to examine alternative rating weights or break down the individual parameter sc'
+    → [xy] no score for Passenger Drone Research Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 69/102 Passenger Drone Research Pvt. Ltd.
+    → [xy] score 70/102 PDRL (Passenger Drone Research Private Limited)
+    → [xy] score 71/102 Pixroot Technologies Pvt. Ltd.
+    → [xy] score 72/102 Predulive Innovations Private Limited
+      · score Predulive Innovations Private Limited: unparsed reply '50\nSkip to previous prompt'
+      · score Predulive Innovations Private Limited: unparsed reply '27\nSkip to previous prompt'
+    → [xy] no score for Predulive Innovations Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 73/102 Prime UAV Private Limited
+      · score Prime UAV Private Limited: unparsed reply '73\nSkip to previous prompt'
+      · score Prime UAV Private Limited: unparsed reply '34\nSkip to previous prompt'
+    → [xy] no score for Prime UAV Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 74/102 Quidich Innovation Labs
+      · score Quidich Innovation Labs: unparsed reply '74\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (32 this run) — solve it in the browser window
+      · score Quidich Innovation Labs: unparsed reply '66\nSkip to previous prompt'
+    → [xy] no score for Quidich Innovation Labs (AI Mode unavailable) — left unscored for retry
+    → [xy] score 75/102 Quidich Innovation Labs Private Limited
+      · score Quidich Innovation Labs Private Limited: unparsed reply '74\nSkip to previous prompt'
+      · score Quidich Innovation Labs Private Limited: unparsed reply '75\nSkip to previous prompt'
+    → [xy] no score for Quidich Innovation Labs Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 76/102 Raphe mPhibr Pvt Ltd
+    → [xy] score 77/102 RC Hobbytech Solutions Pvt. Ltd.
+    → [xy] score 78/102 Rchobbytech Solutions Private Limited
+    → [xy] score 79/102 RevDrones Technologies Pvt. Ltd.
+      · score RevDrones Technologies Pvt. Ltd.: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+      · score RevDrones Technologies Pvt. Ltd.: unparsed reply '30\nSkip to previous prompt'
+    → [xy] no score for RevDrones Technologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 80/102 Schnell Drone Technologies Limited
+    → [xy] score 81/102 SenseImage Technologies
+      · score SenseImage Technologies: unparsed reply '82\nSkip to previous prompt'
+      · score SenseImage Technologies: unparsed reply '35\nSkip to previous prompt'
+    → [xy] no score for SenseImage Technologies (AI Mode unavailable) — left unscored for retry
+    → [xy] score 82/102 Skye Air Mobility Private Limited
+    → [xy] score 83/102 Skye Bridge Systems Private Limited
+    → [xy] score 84/102 Skylark Drones Private Limited
+    → [xy] score 85/102 Skylark Labs India Private Limited
+    → [xy] score 86/102 SKYX Aerospace Pvt Ltd
+    → [xy] score 87/102 Sri Eshwar Drone Tech Pvt Ltd
+      · score Sri Eshwar Drone Tech Pvt Ltd: unparsed reply '67\nSkip to previous prompt'
+  [ai-mode] quota — archiving profile and starting clean (reset #4)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_45_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (33 this run) — solve it in the browser window
+      · score Sri Eshwar Drone Tech Pvt Ltd: unparsed reply '10\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+    → [xy] no score for Sri Eshwar Drone Tech Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 88/102 TechEagle Innovations Private Limited
+    → [xy] score 89/102 Technit Space and Aero Works Private Limited
+      · score Technit Space and Aero Works Private Lim: unparsed reply '70\nSkip to previous prompt'
+      · score Technit Space and Aero Works Private Lim: unparsed reply '33\nSkip to previous prompt'
+    → [xy] no score for Technit Space and Aero Works Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 90/102 TerrAqua UAV Solutions Private Limited
+      · score TerrAqua UAV Solutions Private Limited: unparsed reply '73\nSkip to previous prompt'
+      · score TerrAqua UAV Solutions Private Limited: unparsed reply '29\nSkip to previous prompt'
+    → [xy] no score for TerrAqua UAV Solutions Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 91/102 Throttle Aerospace Systems Pvt Ltd
+    → [xy] score 92/102 Trentar
+      · score Trentar: unparsed reply '78\nSkip to previous prompt'
+      · score Trentar: unparsed reply '70\nSkip to previous prompt'
+    → [xy] no score for Trentar (AI Mode unavailable) — left unscored for retry
+    → [xy] score 93/102 UrbanMatrix Technologies Private Limited
+    → [xy] score 94/102 UrbanMatrix Technologies Pvt. Ltd.
+    → [xy] score 95/102 Vaayu Geo Technologies Pvt. Ltd.
+    → [xy] score 96/102 Vizzbee Robotics Solution
+    → [xy] score 97/102 Vortex Autonomous Systems Private Limited
+    → [xy] score 98/102 Vortex Autonomous Systems Pvt. Ltd.
+    → [xy] score 99/102 Vymanik Aerospace Pvt Ltd
+      · score Vymanik Aerospace Pvt Ltd: unparsed reply '64\nSkip to previous prompt'
+      · score Vymanik Aerospace Pvt Ltd: unparsed reply '14\nSkip to previous prompt'
+    → [xy] no score for Vymanik Aerospace Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 100/102 Wedosky Private Limited
+      · score Wedosky Private Limited: unparsed reply '50\nShow Code\nSkip to previous prompt'
+      · score Wedosky Private Limited: unparsed reply '26\nSkip to previous prompt'
+    → [xy] no score for Wedosky Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 101/102 Yellobrick Digital Solutions Private Limited
+    → [xy] score 102/102 Zen Technologies Limited
+      · score Zen Technologies Limited: unparsed reply '87\nShow Code\nSkip to previous prompt'
+      · score Zen Technologies Limited: unparsed reply '79\nShow Code\nAI responses may include mistakes. For financial advice, consult a professional. Learn '
+    → [xy] no score for Zen Technologies Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] scored 102 rows (ICT, Automation, Semiconductor/Aerospace and Defense) overall=(X+Y)/2
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)…
+    → [found-in] city/country filled=0 kept=102 blank=0
+  [chatgpt] Company Details mapping skipped: TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+
+=== OpenAI cost (this run) ===
+  run_id : 52925d9f
+  market : Drone Analytics Industry Analysis
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+    → substep 7: write Excel (102 rows) → drone_analytics_industry_analysis_india_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) → 102 rows → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_analytics_industry_analysis_india\drone_analytics_industry_analysis_india_FINAL.xlsx
+  [chatgpt] checkpoint marked done → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_analytics_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Drone Analytics Industry Analysis",
+  "country": "india",
+  "batch": "all",
+  "family": "general",
+  "target": 120,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 141,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 113,
+  "rejected_mid": 28,
+  "chatgpt_filled": 102,
+  "rejected_final": 0,
+  "total_after": 102,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\drone_analytics_industry_analysis_india_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "52925d9f",
+    "market": "Drone Analytics Industry Analysis",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-24T09:14:03.716513+00:00",
+    "ended_at": "2026-09-24T12:49:10.363236+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 120,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 102,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\drone_analytics_industry_analysis_india_FINAL.xlsx",
+      "rejected_mid": 28,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "ICT, Automation, Semiconductor",
+    "industry_category": "Aerospace and Defense",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters capture the unique aspects of the Indian drone analytics market, focusing on product capabilities like sensor integration and AI analytics, and business metrics such as contracts, funding, and regulatory compliance specific to India's evolving drone ecosystem.",
+    "parameter_definitions": {
+      "x": {
+        "Drone Platform & Sensor Integration": "Ability to integrate drones with sensors (LiDAR, multispectral, thermal) and analytics platforms for applications like agriculture, infrastructure, and defense. Evidence includes product specs, payload capacity, and seamless data fusion.",
+        "Analytics Software & AI Capability": "Sophisticated software for processing drone data into actionable insights using AI/ML for object detection, mapping, and predictive analytics. Strength shown by accuracy, automation level, and user-friendly dashboards.",
+        "Payload & Endurance Performance": "Drone flight time, range, payload capacity, and reliability under Indian conditions. Evidence includes technical specifications, endurance tests, and operational versatility.",
+        "Regulatory Compliance & Certification": "Compliance with Indian drone regulations (DGCA), type certification, and safety standards. Strength indicated by certifications, no-fly zone compliance, and BVLOS approvals.",
+        "R&D and Indigenous Innovation": "Investment in local R&D, patents, and development of indigenous drone technology. Evidence includes patent filings, DRDO collaborations, and Make in India initiatives."
+      },
+      "y": {
+        "Customer Contracts & Deployments": "Named customers (government, private) and contract values for drone analytics services. Evidence includes tenders won, MoUs, and active deployments in sectors like agriculture, mining, and defense.",
+        "Revenue Growth & Funding": "Annual revenue, growth rate, and funding raised from investors. Evidence includes financial statements, funding rounds, and investor names.",
+        "Geographic & Channel Reach": "Presence across Indian states and distribution partnerships. Evidence includes number of offices, resellers, and service coverage in rural and urban areas.",
+        "Partnerships & Ecosystem": "Strategic alliances with tech firms, research institutions, and integrators. Evidence includes named partners, joint ventures, and consortium memberships.",
+        "Market Share & Installed Base": "Share of the Indian drone analytics market and number of active units/systems deployed. Evidence includes market reports, client lists, and fleet size."
+      }
+    },
+    "x_features": [
+      "Drone Platform & Sensor Integration",
+      "Analytics Software & AI Capability",
+      "Payload & Endurance Performance",
+      "Regulatory Compliance & Certification",
+      "R&D and Indigenous Innovation"
+    ],
+    "y_features": [
+      "Customer Contracts & Deployments",
+      "Revenue Growth & Funding",
+      "Geographic & Channel Reach",
+      "Partnerships & Ecosystem",
+      "Market Share & Installed Base"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 85.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 102,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 102,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 102,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "Drone analytics refers to software and services that process aerial data captured by drones to extract actionable insights for industries such as agriculture, construction, energy, and public safety.",
+      "keep_roles": [
+        "Drone Analytics Software Provider"
+      ],
+      "uniform_role": "Drone Analytics Software Provider"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_analytics_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}
+
+  rows: 102  (target 120)

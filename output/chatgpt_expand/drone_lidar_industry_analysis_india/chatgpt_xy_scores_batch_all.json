@@ -1,0 +1,966 @@
+{
+  "industry_group": "ICT, Automation, Semiconductor",
+  "industry_category": "Aerospace and Defense",
+  "axis_x": "Product Strength",
+  "axis_y": "Business Strength",
+  "axis_definition_method": "llm",
+  "axis_definition_reason": "These parameters focus on LiDAR-specific product capabilities and business factors critical for the Indian drone market, including regulatory compliance and government contracts, ensuring relevance to the unique demands of drone LiDAR in India.",
+  "parameter_definitions": {
+    "x": {
+      "LiDAR Sensor Integration & Calibration": "Ability to integrate LiDAR sensors with drone platforms and calibrate for accurate geospatial data. Evidence includes sensor specs, calibration processes, and compatibility with multiple drone models.",
+      "Drone Platform Endurance & Payload Capacity": "Flight time and payload capacity of drones equipped with LiDAR for surveying and mapping. Strength shown by long endurance, high payload, and stability in Indian climatic conditions.",
+      "Point Cloud Accuracy & Density": "Precision and resolution of LiDAR-generated point clouds for terrain and infrastructure mapping. Evidence includes accuracy metrics (e.g., cm-level), density (points per sqm), and validation against ground truth.",
+      "Real-Time Data Processing & Software": "Capability to process LiDAR data in real-time or near-real-time and provide actionable insights via software. Strength indicated by processing speed, user-friendly interfaces, and integration with GIS platforms.",
+      "Regulatory Compliance & Certification": "Compliance with Indian aviation regulations (e.g., DGCA) and LiDAR safety standards. Evidence includes certifications, type approvals, and adherence to local drone operation rules."
+    },
+    "y": {
+      "Domestic Market Penetration & Customer Base": "Extent of adoption by Indian customers across sectors like agriculture, mining, infrastructure, and defense. Strength shown by number of clients, repeat orders, and market share in India.",
+      "Revenue Growth & Profitability": "Financial performance in the Indian drone LiDAR market, including revenue growth, margins, and profitability. Evidence from financial statements, funding, and investor reports.",
+      "Strategic Partnerships & Distribution Network": "Collaborations with Indian distributors, technology partners, and integrators to expand reach. Strength indicated by partnerships with major Indian firms and wide distribution channels.",
+      "Government & Defense Contract Wins": "Success in securing contracts from Indian government agencies and defense organizations. Evidence includes awarded tenders, pilot projects, and empanelment with defense programs.",
+      "After-Sales Support & Service Network": "Availability of maintenance, training, and support services across India. Strength shown by service centers, response times, and customer satisfaction metrics."
+    }
+  },
+  "x_features": [
+    "LiDAR Sensor Integration & Calibration",
+    "Drone Platform Endurance & Payload Capacity",
+    "Point Cloud Accuracy & Density",
+    "Real-Time Data Processing & Software",
+    "Regulatory Compliance & Certification"
+  ],
+  "y_features": [
+    "Domestic Market Penetration & Customer Base",
+    "Revenue Growth & Profitability",
+    "Strategic Partnerships & Distribution Network",
+    "Government & Defense Contract Wins",
+    "After-Sales Support & Service Network"
+  ],
+  "x_feature_weights": [
+    0.3,
+    0.2,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "y_feature_weights": [
+    0.25,
+    0.25,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "question_weights": [
+    0.4,
+    0.3,
+    0.3
+  ],
+  "overall_formula": "(X + Y) / 2",
+  "quadrant_mid_x": 85.0,
+  "quadrant_mid_y": 79.0,
+  "scored": 11,
+  "crawl": {
+    "crawled": 0,
+    "ok": 0,
+    "fail": 0,
+    "skipped_no_domain": 0
+  },
+  "rows": [
+    {
+      "company": "Aereo",
+      "x": 88,
+      "y": 82,
+      "overall": 85,
+      "x_original": 88.0,
+      "y_original": 82.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "LiDAR Sensor Integration & Calibration",
+            "Drone Platform Endurance & Payload Capacity",
+            "Point Cloud Accuracy & Density",
+            "Real-Time Data Processing & Software",
+            "Regulatory Compliance & Certification"
+          ],
+          "score": 88
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Domestic Market Penetration & Customer Base",
+            "Revenue Growth & Profitability",
+            "Strategic Partnerships & Distribution Network",
+            "Government & Defense Contract Wins",
+            "After-Sales Support & Service Network"
+          ],
+          "score": 82
+        }
+      ],
+      "score_detail": {
+        "x": {
+          "score": 88,
+          "axis": "Product Strength",
+          "composite_reported": 88,
+          "evidence": [
+            {
+              "claim": "Aereo offers vertically integrated solutions featuring built-in Post-Processed Kinematic (PPK) geotagging and passive damping systems for autonomous terrain-following optical and LiDAR payloads, with modular setups compatible with third-party systems like the Qube 240 LiDAR."
+            },
+            {
+              "claim": "The company's ruggedized platforms, including the Aereo Insight PPK and Zephyr Hybrid systems, support payload versatility in winds up to 10 m/s, while high-end surveying models like the ZFR platform deliver an autonomous endurance of over 60 minutes and an operational weight under 15 kg."
+            },
+            {
+              "claim": "Utilizing integrated hardware and PPK engines to eliminate the need for Ground Control Points, Aereo achieves absolute survey accuracies of 2 cm horizontally and 3.5 cm vertically as documented by Techsagar."
+            },
+            {
+              "claim": "Aereo Cloud, the company's proprietary AI-powered operational intelligence platform, processes dense UAV datasets via automated pipelines to generate 3D digital elevation models and GIS insights, supplemented by the Aereo Go mobile suite."
+            },
+            {
+              "claim": "Aereo features an integrated DronePass compliance module and operates under Directorate General of Civil Aviation guidelines, having deployed type-certified drones to map over 45,000 villages under the government SVAMITVA scheme."
+            }
+          ],
+          "parameters": {
+            "LiDAR Sensor Integration & Calibration": {
+              "score": 84,
+              "evidence": [
+                {
+                  "claim": "Aereo offers vertically integrated solutions featuring built-in Post-Processed Kinematic (PPK) geotagging and passive damping systems for autonomous terrain-following optical and LiDAR payloads, with modular setups compatible with third-party systems like the Qube 240 LiDAR."
+                }
+              ]
+            },
+            "Drone Platform Endurance & Payload Capacity": {
+              "score": 86,
+              "evidence": [
+                {
+                  "claim": "The company's ruggedized platforms, including the Aereo Insight PPK and Zephyr Hybrid systems, support payload versatility in winds up to 10 m/s, while high-end surveying models like the ZFR platform deliver an autonomous endurance of over 60 minutes and an operational weight under 15 kg."
+                }
+              ]
+            },
+            "Point Cloud Accuracy & Density": {
+              "score": 88,
+              "evidence": [
+                {
+                  "claim": "Utilizing integrated hardware and PPK engines to eliminate the need for Ground Control Points, Aereo achieves absolute survey accuracies of 2 cm horizontally and 3.5 cm vertically as documented by Techsagar."
+                }
+              ]
+            },
+            "Real-Time Data Processing & Software": {
+              "score": 89,
+              "evidence": [
+                {
+                  "claim": "Aereo Cloud, the company's proprietary AI-powered operational intelligence platform, processes dense UAV datasets via automated pipelines to generate 3D digital elevation models and GIS insights, supplemented by the Aereo Go mobile suite."
+                }
+              ]
+            },
+            "Regulatory Compliance & Certification": {
+              "score": 92,
+              "evidence": [
+                {
+                  "claim": "Aereo features an integrated DronePass compliance module and operates under Directorate General of Civil Aviation guidelines, having deployed type-certified drones to map over 45,000 villages under the government SVAMITVA scheme."
+                }
+              ]
+            }
+          }
+        },
+        "y": {
+          "score": 82,
+          "axis": "Business Strength",
+          "composite_reported": 82,
+          "evidence": [
+            {
+              "claim": "Aereo (formerly Aarav Unmanned Systems) has mapped over 45,000 villages under the Government of India's SVAMITVA scheme and serves over 50 leading global organizations including Tata Steel and Hindalco."
+            },
+            {
+              "claim": "According to financial records, Aereo reported a revenue of ₹59.7 Cr in FY24, reflecting a 13.6% growth from ₹52.6 Cr in FY23, with an estimated EBITDA of ₹5.7 Cr."
+            },
+            {
+              "claim": "Aereo operates an integrated Drone-as-a-Service (DaaS) model and maintains core technical partnerships with GIS and surveying leaders such as Esri and Trimble."
+            },
+            {
+              "claim": "Aereo won a $1 million digital contract from Coal India Limited (CIL) to deploy its survey-grade PPK drones across 7 major open-cast mines. It is also a beneficiary under the Ministry of Civil Aviation's Drone PLI scheme."
+            },
+            {
+              "claim": "The company provides a vertically integrated ecosystem combining proprietary hardware with the AI-powered Aereo Cloud platform for data analytics and validation, alongside active knowledge transfer programs that train and guide on-site enterprise survey teams."
+            }
+          ],
+          "parameters": {
+            "Domestic Market Penetration & Customer Base": {
+              "score": 88,
+              "evidence": [
+                {
+                  "claim": "Aereo (formerly Aarav Unmanned Systems) has mapped over 45,000 villages under the Government of India's SVAMITVA scheme and serves over 50 leading global organizations including Tata Steel and Hindalco."
+                }
+              ]
+            },
+            "Revenue Growth & Profitability": {
+              "score": 74,
+              "evidence": [
+                {
+                  "claim": "According to financial records, Aereo reported a revenue of ₹59.7 Cr in FY24, reflecting a 13.6% growth from ₹52.6 Cr in FY23, with an estimated EBITDA of ₹5.7 Cr."
+                }
+              ]
+            },
+            "Strategic Partnerships & Distribution Network": {
+              "score": 82,
+              "evidence": [
+                {
+                  "claim": "Aereo operates an integrated Drone-as-a-Service (DaaS) model and maintains core technical partnerships with GIS and surveying leaders such as Esri and Trimble."
+                }
+              ]
+            },
+            "Government & Defense Contract Wins": {
+              "score": 85,
+              "evidence": [
+                {
+                  "claim": "Aereo won a $1 million digital contract from Coal India Limited (CIL) to deploy its survey-grade PPK drones across 7 major open-cast mines. It is also a beneficiary under the Ministry of Civil Aviation's Drone PLI scheme."
+                }
+              ]
+            },
+            "After-Sales Support & Service Network": {
+              "score": 80,
+              "evidence": [
+                {
+                  "claim": "The company provides a vertically integrated ecosystem combining proprietary hardware with the AI-powered Aereo Cloud platform for data analytics and validation, alongside active knowledge transfer programs that train and guide on-site enterprise survey teams."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Asteria Aerospace Limited",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0
+    },
+    {
+      "company": "Dhaksha Unmanned Systems Private Limited",
+      "x": 82,
+      "y": 80,
+      "overall": 81,
+      "x_original": 82.0,
+      "y_original": 80.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "LiDAR Sensor Integration & Calibration",
+            "Drone Platform Endurance & Payload Capacity",
+            "Point Cloud Accuracy & Density",
+            "Real-Time Data Processing & Software",
+            "Regulatory Compliance & Certification"
+          ],
+          "score": 82
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Domestic Market Penetration & Customer Base",
+            "Revenue Growth & Profitability",
+            "Strategic Partnerships & Distribution Network",
+            "Government & Defense Contract Wins",
+            "After-Sales Support & Service Network"
+          ],
+          "score": 80
+        }
+      ],
+      "score_detail": {
+        "x": {
+          "score": 82,
+          "axis": "Product Strength",
+          "composite_reported": 82,
+          "evidence": [
+            {
+              "claim": "Dhaksha Drones provides advanced multi-copter platforms like the DH-Q4 configured with swappable payloads, explicitly integrating multi-sensor layouts including high-resolution mapping cameras, GPS, and Inertial Navigation Systems (INS) to capture data necessary for terrain-mapping LiDAR workflows."
+            },
+            {
+              "claim": "The enterprise-grade SURVIGATOR DH-Q4 rotorcraft supports a 40-minute endurance with a maximum takeoff weight of 4.5 kg, while heavier-duty platforms like the DH-Logigator support specialized heavy payloads ranging between 15 kg and 20 kg with a 40-minute flight time."
+            },
+            {
+              "claim": "While specific laser-return frequency specs are kept confidential, Dhaksha Drones' Survey and Mapping division utilizes advanced aerial collection to output high-density deliverables including UAV Image Triangulation, Point Cloud Generation, and Digital Terrain Model (DTM) contour extraction."
+            },
+            {
+              "claim": "Dhaksha scales its engineering and operational capabilities using Dassault Systèmes' 3DEXPERIENCE platform for product design, and designs its aerial systems to remain fully compatible with third-party GIS environments and specialized command and control software."
+            },
+            {
+              "claim": "The company holds multiple official approvals from the Directorate General of Civil Aviation (DGCA) in India, including Type Certificate No. T0323000000E issued for the DH-Q4 unmanned aircraft system on March 3, 2023."
+            }
+          ],
+          "parameters": {
+            "LiDAR Sensor Integration & Calibration": {
+              "score": 78,
+              "evidence": [
+                {
+                  "claim": "Dhaksha Drones provides advanced multi-copter platforms like the DH-Q4 configured with swappable payloads, explicitly integrating multi-sensor layouts including high-resolution mapping cameras, GPS, and Inertial Navigation Systems (INS) to capture data necessary for terrain-mapping LiDAR workflows."
+                }
+              ]
+            },
+            "Drone Platform Endurance & Payload Capacity": {
+              "score": 82,
+              "evidence": [
+                {
+                  "claim": "The enterprise-grade SURVIGATOR DH-Q4 rotorcraft supports a 40-minute endurance with a maximum takeoff weight of 4.5 kg, while heavier-duty platforms like the DH-Logigator support specialized heavy payloads ranging between 15 kg and 20 kg with a 40-minute flight time."
+                }
+              ]
+            },
+            "Point Cloud Accuracy & Density": {
+              "score": 76,
+              "evidence": [
+                {
+                  "claim": "While specific laser-return frequency specs are kept confidential, Dhaksha Drones' Survey and Mapping division utilizes advanced aerial collection to output high-density deliverables including UAV Image Triangulation, Point Cloud Generation, and Digital Terrain Model (DTM) contour extraction."
+                }
+              ]
+            },
+            "Real-Time Data Processing & Software": {
+              "score": 80,
+              "evidence": [
+                {
+                  "claim": "Dhaksha scales its engineering and operational capabilities using Dassault Systèmes' 3DEXPERIENCE platform for product design, and designs its aerial systems to remain fully compatible with third-party GIS environments and specialized command and control software."
+                }
+              ]
+            },
+            "Regulatory Compliance & Certification": {
+              "score": 93,
+              "evidence": [
+                {
+                  "claim": "The company holds multiple official approvals from the Directorate General of Civil Aviation (DGCA) in India, including Type Certificate No. T0323000000E issued for the DH-Q4 unmanned aircraft system on March 3, 2023."
+                }
+              ]
+            }
+          }
+        },
+        "y": {
+          "score": 80,
+          "axis": "Business Strength",
+          "composite_reported": 80,
+          "evidence": [
+            {
+              "claim": "Ken Research ranks Dhaksha Unmanned Systems as one of the major players operating in the rapidly growing Indian drone market (projected to reach USD 4,000 million by 2032). While its primary penetration is currently anchored in agriculture and defense, its technology platform supports multi-copter configurations optimized for aerial mapping, surveying, and remote sensing."
+            },
+            {
+              "claim": "According to Tracxn and Dealroom financial intelligence, Dhaksha reported a turnover of ₹46.40 crore to ₹46.6 crore for the fiscal year ending March 31, 2024, exhibiting an expanded order book valued at ₹265 crore following its backing by Coromandel International."
+            },
+            {
+              "claim": "Dhaksha maintains a 10-year exclusive technology partnership with Anna University (Chennai) lasting until 2028, and is a subsidiary of Coromandel International Limited (Murugappa Group), which acquired a majority 58.01% stake to scale its distribution, R&D, and manufacturing capacities."
+            },
+            {
+              "claim": "Dhaksha secured a notable ₹165 crore contract pipeline including 400 agri-spraying drones from the cooperative IFFCO and 200 logistics drones for the Indian Army. However, the defense contract experienced public scrutiny and administrative holds over supply chain sourcing origins (allegations of Chinese component use), preventing a perfect score in this segment."
+            },
+            {
+              "claim": "Dhaksha runs an integrated, end-to-end framework offering after-market operational support services and is paired directly with the CASR-RPTO, a DGCA-approved Remote Pilot Training Organisation that has trained over 950 pilots to ensure operational success and customer compliance."
+            }
+          ],
+          "parameters": {
+            "Domestic Market Penetration & Customer Base": {
+              "score": 78,
+              "evidence": [
+                {
+                  "claim": "Ken Research ranks Dhaksha Unmanned Systems as one of the major players operating in the rapidly growing Indian drone market (projected to reach USD 4,000 million by 2032). While its primary penetration is currently anchored in agriculture and defense, its technology platform supports multi-copter configurations optimized for aerial mapping, surveying, and remote sensing."
+                }
+              ]
+            },
+            "Revenue Growth & Profitability": {
+              "score": 82,
+              "evidence": [
+                {
+                  "claim": "According to Tracxn and Dealroom financial intelligence, Dhaksha reported a turnover of ₹46.40 crore to ₹46.6 crore for the fiscal year ending March 31, 2024, exhibiting an expanded order book valued at ₹265 crore following its backing by Coromandel International."
+                }
+              ]
+            },
+            "Strategic Partnerships & Distribution Network": {
+              "score": 88,
+              "evidence": [
+                {
+                  "claim": "Dhaksha maintains a 10-year exclusive technology partnership with Anna University (Chennai) lasting until 2028, and is a subsidiary of Coromandel International Limited (Murugappa Group), which acquired a majority 58.01% stake to scale its distribution, R&D, and manufacturing capacities."
+                }
+              ]
+            },
+            "Government & Defense Contract Wins": {
+              "score": 74,
+              "evidence": [
+                {
+                  "claim": "Dhaksha secured a notable ₹165 crore contract pipeline including 400 agri-spraying drones from the cooperative IFFCO and 200 logistics drones for the Indian Army. However, the defense contract experienced public scrutiny and administrative holds over supply chain sourcing origins (allegations of Chinese component use), preventing a perfect score in this segment."
+                }
+              ]
+            },
+            "After-Sales Support & Service Network": {
+              "score": 80,
+              "evidence": [
+                {
+                  "claim": "Dhaksha runs an integrated, end-to-end framework offering after-market operational support services and is paired directly with the CASR-RPTO, a DGCA-approved Remote Pilot Training Organisation that has trained over 950 pilots to ensure operational success and customer compliance."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "EndureAir Systems Pvt. Ltd.",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0
+    },
+    {
+      "company": "Garuda Aerospace Limited",
+      "x": 84,
+      "y": 86,
+      "overall": 85,
+      "x_original": 84.0,
+      "y_original": 86.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "LiDAR Sensor Integration & Calibration",
+            "Drone Platform Endurance & Payload Capacity",
+            "Point Cloud Accuracy & Density",
+            "Real-Time Data Processing & Software",
+            "Regulatory Compliance & Certification"
+          ],
+          "score": 84
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Domestic Market Penetration & Customer Base",
+            "Revenue Growth & Profitability",
+            "Strategic Partnerships & Distribution Network",
+            "Government & Defense Contract Wins",
+            "After-Sales Support & Service Network"
+          ],
+          "score": 86
+        }
+      ],
+      "score_detail": {
+        "x": {
+          "score": 84,
+          "axis": "Product Strength",
+          "composite_reported": 84,
+          "evidence": [
+            {
+              "claim": "The company integrates built-in LiDAR sensing alongside day/night imaging and omni-directional obstacle detection on its G400 (GA-IN-400) platform, with quality checks conducted under AS9100 aerospace standards at its Chennai carbon-fibre frame manufacturing and assembly facility."
+            },
+            {
+              "claim": "The G400 platform is built as an industrial and defence aerial monitoring platform featuring a high-strength carbon fibre frame manufactured in Chennai, designed for day/night surveillance with tested endurance to carry a multi-sensor payload including heavy LiDAR and optical optics."
+            },
+            {
+              "claim": "According to Garuda Aerospace’s data standards, their modern mapping and surveying drone ecosystems are designed to achieve a horizontal accuracy of 1–3 cm with RTK GPS systems, replacing terrestrial laser scanners for high-density village and engineering mapping."
+            },
+            {
+              "claim": "Garuda Aerospace flashes its proprietary custom firmware and AI algorithms directly onto the drone's flight controllers at its assembly facility to deliver real-time aerial feeds and advanced telemetry data directly to command centers."
+            },
+            {
+              "claim": "Garuda Aerospace complies with the AS9100 aerospace quality certification for testing and QA, manages remote pilot training under active regulatory frameworks, maintains a 25%+ market share of drones flying in Indian airspace, and designs its tracking to meet DGCA approvals for BVLOS operations."
+            }
+          ],
+          "parameters": {
+            "LiDAR Sensor Integration & Calibration": {
+              "score": 82,
+              "evidence": [
+                {
+                  "claim": "The company integrates built-in LiDAR sensing alongside day/night imaging and omni-directional obstacle detection on its G400 (GA-IN-400) platform, with quality checks conducted under AS9100 aerospace standards at its Chennai carbon-fibre frame manufacturing and assembly facility."
+                }
+              ]
+            },
+            "Drone Platform Endurance & Payload Capacity": {
+              "score": 85,
+              "evidence": [
+                {
+                  "claim": "The G400 platform is built as an industrial and defence aerial monitoring platform featuring a high-strength carbon fibre frame manufactured in Chennai, designed for day/night surveillance with tested endurance to carry a multi-sensor payload including heavy LiDAR and optical optics."
+                }
+              ]
+            },
+            "Point Cloud Accuracy & Density": {
+              "score": 80,
+              "evidence": [
+                {
+                  "claim": "According to Garuda Aerospace’s data standards, their modern mapping and surveying drone ecosystems are designed to achieve a horizontal accuracy of 1–3 cm with RTK GPS systems, replacing terrestrial laser scanners for high-density village and engineering mapping."
+                }
+              ]
+            },
+            "Real-Time Data Processing & Software": {
+              "score": 83,
+              "evidence": [
+                {
+                  "claim": "Garuda Aerospace flashes its proprietary custom firmware and AI algorithms directly onto the drone's flight controllers at its assembly facility to deliver real-time aerial feeds and advanced telemetry data directly to command centers."
+                }
+              ]
+            },
+            "Regulatory Compliance & Certification": {
+              "score": 89,
+              "evidence": [
+                {
+                  "claim": "Garuda Aerospace complies with the AS9100 aerospace quality certification for testing and QA, manages remote pilot training under active regulatory frameworks, maintains a 25%+ market share of drones flying in Indian airspace, and designs its tracking to meet DGCA approvals for BVLOS operations."
+                }
+              ]
+            }
+          }
+        },
+        "y": {
+          "score": 86,
+          "axis": "Business Strength",
+          "composite_reported": 86,
+          "evidence": [
+            {
+              "claim": "According to recent NASSCOM reports published on Facebook, Garuda Aerospace has a highly established domestic market penetration, commanding a 25%+ share of all drones flying in Indian airspace. They currently serve over 450+ clients and have deployed 4,000+ drones across agriculture, infrastructure, and surveying, which includes contributing to projects like mapping 7,000 villages in Uttar Pradesh."
+            },
+            {
+              "claim": "Per audited Ind AS financial statements detailed by Stockify, Garuda Aerospace recorded a strong revenue increase of 67% YoY to ₹205.96 crore in FY26 from ₹123.46 crore in FY25, and a 41% increase in net profit (PAT) to ₹25.92 crore. However, the company faces operational friction: its EBITDA margin compressed from 23.4% to 18.9% due to an ₹11.13 crore impairment charge on bad receivables, and it maintains a massive trade receivable balance of ₹234.4 crore (higher than its annual revenue) creating a negative operating cash burn of ₹41.55 crore."
+            },
+            {
+              "claim": "As reported on LinkedIn, Garuda Aerospace formed a critical national enterprise distribution agreement with Redington Limited to scale deployments across enterprise, institutional, and defense markets. They have also fortified their high-end technology and manufacturing ecosystem through an international tactical UAS partnership with Airbus, defense co-developments with Micron Instruments, and regional distribution agreements with Australia-based Timed Automation Solutions (TAS)."
+            },
+            {
+              "claim": "Press releases via The Economic Times highlight that the company has secured a stream of high-value AI-powered drone-based survey and monitoring tenders from multiple state authorities, including the Gujarat Mineral Development Corporation Limited (GMDC), the Central Mine Planning & Design Institute (CMPDI), Tamil Nadu's Department of Geology and Mining (DGM), and the Greater Chennai Corporation (GCC). Its mapping platforms are actively integrated into major government initiatives like India's national SVAMITVA Scheme for rural land registration."
+            },
+            {
+              "claim": "According to Garuda Aerospace’s Official Platform, the company runs an active Maintenance & Support vertical providing tiered Annual Maintenance Contract (AMC) packages—ranging from Basic wire checks/ESC calibrations up to Premium and Elite hardware repairs. They back this up with a 24/7 technical team and an asset-light service model leveraging a network of DGCA-approved remote pilot training centers to build local support capacity, though a large volume of their physical service delivery is outsourced."
+            }
+          ],
+          "parameters": {
+            "Domestic Market Penetration & Customer Base": {
+              "score": 88,
+              "evidence": [
+                {
+                  "claim": "According to recent NASSCOM reports published on Facebook, Garuda Aerospace has a highly established domestic market penetration, commanding a 25%+ share of all drones flying in Indian airspace. They currently serve over 450+ clients and have deployed 4,000+ drones across agriculture, infrastructure, and surveying, which includes contributing to projects like mapping 7,000 villages in Uttar Pradesh."
+                }
+              ]
+            },
+            "Revenue Growth & Profitability": {
+              "score": 78,
+              "evidence": [
+                {
+                  "claim": "Per audited Ind AS financial statements detailed by Stockify, Garuda Aerospace recorded a strong revenue increase of 67% YoY to ₹205.96 crore in FY26 from ₹123.46 crore in FY25, and a 41% increase in net profit (PAT) to ₹25.92 crore. However, the company faces operational friction: its EBITDA margin compressed from 23.4% to 18.9% due to an ₹11.13 crore impairment charge on bad receivables, and it maintains a massive trade receivable balance of ₹234.4 crore (higher than its annual revenue) creating a negative operating cash burn of ₹41.55 crore."
+                }
+              ]
+            },
+            "Strategic Partnerships & Distribution Network": {
+              "score": 92,
+              "evidence": [
+                {
+                  "claim": "As reported on LinkedIn, Garuda Aerospace formed a critical national enterprise distribution agreement with Redington Limited to scale deployments across enterprise, institutional, and defense markets. They have also fortified their high-end technology and manufacturing ecosystem through an international tactical UAS partnership with Airbus, defense co-developments with Micron Instruments, and regional distribution agreements with Australia-based Timed Automation Solutions (TAS)."
+                }
+              ]
+            },
+            "Government & Defense Contract Wins": {
+              "score": 89,
+              "evidence": [
+                {
+                  "claim": "Press releases via The Economic Times highlight that the company has secured a stream of high-value AI-powered drone-based survey and monitoring tenders from multiple state authorities, including the Gujarat Mineral Development Corporation Limited (GMDC), the Central Mine Planning & Design Institute (CMPDI), Tamil Nadu's Department of Geology and Mining (DGM), and the Greater Chennai Corporation (GCC). Its mapping platforms are actively integrated into major government initiatives like India's national SVAMITVA Scheme for rural land registration."
+                }
+              ]
+            },
+            "After-Sales Support & Service Network": {
+              "score": 82,
+              "evidence": [
+                {
+                  "claim": "According to Garuda Aerospace’s Official Platform, the company runs an active Maintenance & Support vertical providing tiered Annual Maintenance Contract (AMC) packages—ranging from Basic wire checks/ESC calibrations up to Premium and Elite hardware repairs. They back this up with a 24/7 technical team and an asset-light service model leveraging a network of DGCA-approved remote pilot training centers to build local support capacity, though a large volume of their physical service delivery is outsourced."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "quadrant": "Challengers"
+    },
+    {
+      "company": "ideaForge Technology Limited",
+      "x": 85,
+      "y": 79,
+      "overall": 82,
+      "x_original": 85.0,
+      "y_original": 79.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "LiDAR Sensor Integration & Calibration",
+            "Drone Platform Endurance & Payload Capacity",
+            "Point Cloud Accuracy & Density",
+            "Real-Time Data Processing & Software",
+            "Regulatory Compliance & Certification"
+          ],
+          "score": 85
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Domestic Market Penetration & Customer Base",
+            "Revenue Growth & Profitability",
+            "Strategic Partnerships & Distribution Network",
+            "Government & Defense Contract Wins",
+            "After-Sales Support & Service Network"
+          ],
+          "score": 79
+        }
+      ],
+      "score_detail": {
+        "x": {
+          "score": 85,
+          "axis": "Product Strength",
+          "composite_reported": 85,
+          "evidence": [
+            {
+              "claim": "ideaForge has formally integrated Inertial Labs LiDAR technology into its unmanned aerial vehicles, utilizing laser-pulse emitting scanners combined with a compact, lightweight calibration layout to construct granular 3D terrain maps for enterprise customers."
+            },
+            {
+              "claim": "The company's workhorse platforms offer robust flight thresholds, including the ideaForge Q6 with 50 to 60 minutes of endurance, the NETRA 5 with dual payload bays supporting up to a 2 kg carrying capacity, and the long-range electric Zolt platform capable of over 3 hours of flight time with an 8 to 10 kg payload."
+            },
+            {
+              "claim": "Driven by integrated Inertial Labs LiDAR payloads alongside a 20 MP photogrammetry capability, ideaForge's configuration enables a wide field of view and high-resolution spatial scanning to generate highly precise geo-referenced raster maps and high-density elevation models."
+            },
+            {
+              "claim": "Processing is powered by ideaForge’s proprietary software environment, which includes BlueFire Touch for mission planning, BlueFire Live! for remote payload tracking, and Flyght Cloud analytics for transforming live aerial feeds into decision-ready geospatial insights."
+            },
+            {
+              "claim": "The company maintains top-tier compliance metrics within its primary market, securing official Directorate General of Civil Aviation (DGCA) Type Certification under India’s Drone Rules 2021 for its flagship platforms, including the SWITCH UAV and the Q6 V2 GEO."
+            }
+          ],
+          "parameters": {
+            "LiDAR Sensor Integration & Calibration": {
+              "score": 82,
+              "evidence": [
+                {
+                  "claim": "ideaForge has formally integrated Inertial Labs LiDAR technology into its unmanned aerial vehicles, utilizing laser-pulse emitting scanners combined with a compact, lightweight calibration layout to construct granular 3D terrain maps for enterprise customers."
+                }
+              ]
+            },
+            "Drone Platform Endurance & Payload Capacity": {
+              "score": 88,
+              "evidence": [
+                {
+                  "claim": "The company's workhorse platforms offer robust flight thresholds, including the ideaForge Q6 with 50 to 60 minutes of endurance, the NETRA 5 with dual payload bays supporting up to a 2 kg carrying capacity, and the long-range electric Zolt platform capable of over 3 hours of flight time with an 8 to 10 kg payload."
+                }
+              ]
+            },
+            "Point Cloud Accuracy & Density": {
+              "score": 80,
+              "evidence": [
+                {
+                  "claim": "Driven by integrated Inertial Labs LiDAR payloads alongside a 20 MP photogrammetry capability, ideaForge's configuration enables a wide field of view and high-resolution spatial scanning to generate highly precise geo-referenced raster maps and high-density elevation models."
+                }
+              ]
+            },
+            "Real-Time Data Processing & Software": {
+              "score": 85,
+              "evidence": [
+                {
+                  "claim": "Processing is powered by ideaForge’s proprietary software environment, which includes BlueFire Touch for mission planning, BlueFire Live! for remote payload tracking, and Flyght Cloud analytics for transforming live aerial feeds into decision-ready geospatial insights."
+                }
+              ]
+            },
+            "Regulatory Compliance & Certification": {
+              "score": 92,
+              "evidence": [
+                {
+                  "claim": "The company maintains top-tier compliance metrics within its primary market, securing official Directorate General of Civil Aviation (DGCA) Type Certification under India’s Drone Rules 2021 for its flagship platforms, including the SWITCH UAV and the Q6 V2 GEO."
+                }
+              ]
+            }
+          }
+        },
+        "y": {
+          "score": 79,
+          "axis": "Business Strength",
+          "composite_reported": 79,
+          "evidence": [
+            {
+              "claim": "ideaForge holds a dominant market presence in the Indian unmanned aircraft systems (UAS) sector, deploying UAVs for civil and defense applications including SVAMITVA village mapping."
+            },
+            {
+              "claim": "The company experienced financial fluctuations tied to R&D expenditures alongside quarterly order inflow developments."
+            },
+            {
+              "claim": "ideaForge expanded operations through global technical integrations and enterprise payload collaborations for geospatial and LiDAR services."
+            },
+            {
+              "claim": "Defense procurement remains a primary revenue driver, reinforced by substantial annual order inflows from government and defense agencies."
+            },
+            {
+              "claim": "The company provides dedicated operational support and maintenance models via specialized deployment frameworks and remote analytics suites."
+            }
+          ],
+          "parameters": {
+            "Domestic Market Penetration & Customer Base": {
+              "score": 85,
+              "evidence": [
+                {
+                  "claim": "ideaForge holds a dominant market presence in the Indian unmanned aircraft systems (UAS) sector, deploying UAVs for civil and defense applications including SVAMITVA village mapping."
+                }
+              ]
+            },
+            "Revenue Growth & Profitability": {
+              "score": 65,
+              "evidence": [
+                {
+                  "claim": "The company experienced financial fluctuations tied to R&D expenditures alongside quarterly order inflow developments."
+                }
+              ]
+            },
+            "Strategic Partnerships & Distribution Network": {
+              "score": 75,
+              "evidence": [
+                {
+                  "claim": "ideaForge expanded operations through global technical integrations and enterprise payload collaborations for geospatial and LiDAR services."
+                }
+              ]
+            },
+            "Government & Defense Contract Wins": {
+              "score": 90,
+              "evidence": [
+                {
+                  "claim": "Defense procurement remains a primary revenue driver, reinforced by substantial annual order inflows from government and defense agencies."
+                }
+              ]
+            },
+            "After-Sales Support & Service Network": {
+              "score": 80,
+              "evidence": [
+                {
+                  "claim": "The company provides dedicated operational support and maintenance models via specialized deployment frameworks and remote analytics suites."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "quadrant": "Leaders"
+    },
+    {
+      "company": "Indo Wings Private Limited",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0
+    },
+    {
+      "company": "Latrics India",
+      "scorer": "ai_mode",
+      "scored": false,
+      "reason": "ai_mode_unavailable",
+      "kb_chars": 0
+    },
+    {
+      "company": "Marut Dronetech Private Limited",
+      "x": 85,
+      "y": 65,
+      "overall": 75,
+      "x_original": 85.0,
+      "y_original": 48.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "LiDAR Sensor Integration & Calibration",
+            "Drone Platform Endurance & Payload Capacity",
+            "Point Cloud Accuracy & Density",
+            "Real-Time Data Processing & Software",
+            "Regulatory Compliance & Certification"
+          ],
+          "score": 85
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Domestic Market Penetration & Customer Base",
+            "Revenue Growth & Profitability",
+            "Strategic Partnerships & Distribution Network",
+            "Government & Defense Contract Wins",
+            "After-Sales Support & Service Network"
+          ],
+          "score": 48
+        }
+      ],
+      "score_detail": {
+        "x": {
+          "score": null,
+          "axis": "Product Strength",
+          "composite_reported": null,
+          "evidence": [],
+          "parameters": {}
+        },
+        "y": {
+          "score": null,
+          "axis": "Business Strength",
+          "composite_reported": null,
+          "evidence": [],
+          "parameters": {}
+        }
+      },
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Nibrus Technologies Private Limited",
+      "x": 85,
+      "y": 65,
+      "overall": 75,
+      "x_original": 85.0,
+      "y_original": 46.0,
+      "normalization_applied": true,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "LiDAR Sensor Integration & Calibration",
+            "Drone Platform Endurance & Payload Capacity",
+            "Point Cloud Accuracy & Density",
+            "Real-Time Data Processing & Software",
+            "Regulatory Compliance & Certification"
+          ],
+          "score": 85
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Domestic Market Penetration & Customer Base",
+            "Revenue Growth & Profitability",
+            "Strategic Partnerships & Distribution Network",
+            "Government & Defense Contract Wins",
+            "After-Sales Support & Service Network"
+          ],
+          "score": 46
+        }
+      ],
+      "score_detail": {
+        "x": {
+          "score": null,
+          "axis": "Product Strength",
+          "composite_reported": null,
+          "evidence": [],
+          "parameters": {}
+        },
+        "y": {
+          "score": null,
+          "axis": "Business Strength",
+          "composite_reported": null,
+          "evidence": [],
+          "parameters": {}
+        }
+      },
+      "quadrant": "Trailblazers"
+    },
+    {
+      "company": "Throttle Aerospace Systems Pvt. Ltd.",
+      "x": 74,
+      "y": 69,
+      "overall": 72,
+      "x_original": 74.0,
+      "y_original": 69.0,
+      "normalization_applied": false,
+      "normalization_method": "row_proportional_floor_65",
+      "scorer": "ai_mode",
+      "scored": true,
+      "kb_chars": 0,
+      "crawled": false,
+      "x_features": [
+        {
+          "axis": "Product Strength",
+          "parameters": [
+            "LiDAR Sensor Integration & Calibration",
+            "Drone Platform Endurance & Payload Capacity",
+            "Point Cloud Accuracy & Density",
+            "Real-Time Data Processing & Software",
+            "Regulatory Compliance & Certification"
+          ],
+          "score": 74
+        }
+      ],
+      "y_features": [
+        {
+          "axis": "Business Strength",
+          "parameters": [
+            "Domestic Market Penetration & Customer Base",
+            "Revenue Growth & Profitability",
+            "Strategic Partnerships & Distribution Network",
+            "Government & Defense Contract Wins",
+            "After-Sales Support & Service Network"
+          ],
+          "score": 69
+        }
+      ],
+      "score_detail": {
+        "x": {
+          "score": null,
+          "axis": "Product Strength",
+          "composite_reported": null,
+          "evidence": [],
+          "parameters": {}
+        },
+        "y": {
+          "score": null,
+          "axis": "Business Strength",
+          "composite_reported": null,
+          "evidence": [],
+          "parameters": {}
+        }
+      },
+      "quadrant": "Emerging Players"
+    }
+  ],
+  "relevance": {
+    "input": 11,
+    "geo_artifacts": 0,
+    "heuristic_drop": 0,
+    "llm_drop": 0,
+    "kept": 11,
+    "player_type": "B2B",
+    "market_type": "B2B",
+    "market_definition": "The drone LiDAR market encompasses hardware, software, and services for capturing precise 3D geospatial data using LiDAR sensors mounted on unmanned aerial vehicles for mapping and surveying applications.",
+    "keep_roles": [
+      "Drone Platform Manufacturer"
+    ],
+    "uniform_role": "Drone Platform Manufacturer"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Drone Imaging Industry Analysis",
+  "country": "india",
+  "batch": "all",
+  "family": "general",
+  "target": 120,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 120,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 112,
+  "rejected_mid": 8,
+  "chatgpt_filled": 107,
+  "rejected_final": 0,
+  "total_after": 107,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_imaging_industry_analysis_india\\drone_imaging_industry_analysis_india_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "6773f4b9",
+    "market": "Drone Imaging Industry Analysis",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-24T09:14:23.738623+00:00",
+    "ended_at": "2026-09-24T12:48:42.991308+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 120,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_imaging_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 107,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_imaging_industry_analysis_india\\drone_imaging_industry_analysis_india_FINAL.xlsx",
+      "rejected_mid": 8,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "ICT, Automation, Semiconductor",
+    "industry_category": "Aerospace and Defense",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters reflect India's drone imaging market, emphasizing payload performance, regulatory compliance, and government-driven manufacturing and contracts. They balance product technology with commercial scale specific to Indian policies and defense needs.",
+    "parameter_definitions": {
+      "x": {
+        "Sensor & Imaging Payload Performance": "Resolution, low-light sensitivity, thermal/IR capability, and stabilization of onboard cameras and sensors. Evidence: payload specs (e.g., 4K/8K, thermal), gimbal accuracy, and third-party performance benchmarks.",
+        "Drone Platform Endurance & Range": "Flight time, operational range, and payload capacity of the drone platform itself. Evidence: published endurance (minutes), range (km), and max takeoff weight from datasheets or field tests.",
+        "AI/ML Onboard Processing Capability": "Ability to run real-time object detection, tracking, and autonomous navigation on the drone. Evidence: onboard compute (e.g., NVIDIA Jetson), supported algorithms, and latency figures.",
+        "Payload Integration & Modularity": "Ease of swapping cameras, LiDAR, or multispectral sensors and integrating with third-party systems. Evidence: standardized interfaces, plug-and-play payload options, and SDK availability.",
+        "Regulatory Compliance & Certification": "Compliance with Indian DGCA rules, type certification, and security clearances for defense use. Evidence: DGCA certifications, NPNT compliance, and military-grade testing."
+      },
+      "y": {
+        "Domestic Manufacturing Scale (PLI/Drone Didi)": "Production capacity and participation in Indian government schemes like PLI for drones and Drone Didi. Evidence: annual production units, PLI approval, and local assembly lines.",
+        "Government & Defense Contract Wins": "Awarded tenders from Indian armed forces, paramilitary, and state governments. Evidence: contract values, customer names (e.g., Indian Army), and order books.",
+        "Revenue Growth & Funding": "Annual revenue, growth rate, and investment raised from VCs or strategic partners. Evidence: reported financials, funding rounds, and valuation.",
+        "Customer Base & Partnerships": "Diversity of clients (agriculture, mining, security) and tie-ups with tech providers or distributors. Evidence: named customers, MoUs, and channel partners.",
+        "Export & Global Market Access": "Sales outside India and compliance with foreign regulations. Evidence: export orders, international certifications, and overseas distributors."
+      }
+    },
+    "x_features": [
+      "Sensor & Imaging Payload Performance",
+      "Drone Platform Endurance & Range",
+      "AI/ML Onboard Processing Capability",
+      "Payload Integration & Modularity",
+      "Regulatory Compliance & Certification"
+    ],
+    "y_features": [
+      "Domestic Manufacturing Scale (PLI/Drone Didi)",
+      "Government & Defense Contract Wins",
+      "Revenue Growth & Funding",
+      "Customer Base & Partnerships",
+      "Export & Global Market Access"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 81.0,
+    "quadrant_mid_y": 65.0,
+    "scored": 107,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 107,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 107,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The drone imaging market encompasses hardware, software, and services for capturing, processing, and analyzing aerial imagery using unmanned aerial vehicles.",
+      "keep_roles": [
+        "Drone Service Provider"
+      ],
+      "uniform_role": "Drone Service Provider"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_imaging_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

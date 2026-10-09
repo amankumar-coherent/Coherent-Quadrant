@@ -1,0 +1,77 @@
+{
+  "total": 195,
+  "annotated": 12,
+  "renamed": [
+    {
+      "from": "Laboratorio Chile (Teva)",
+      "to": "Laboratorio Chile"
+    }
+  ],
+  "ownership_fixed": [],
+  "company_changed_n": 6,
+  "dupes_removed": [],
+  "annotated_rows": [
+    {
+      "brand": "Mylan Pharmaceuticals ULC",
+      "company": "(merged into Viatris, 2020)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Ratiopharm GmbH",
+      "company": "(acquired by Teva Pharmaceutical Industries, 2010)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Carmot Therapeutics",
+      "company": "(acquired by Roche, 2024)",
+      "role": "Brand"
+    },
+    {
+      "brand": "YaoPharma",
+      "company": "(subsidiary of Fosun Pharma)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Chugai Pharmaceutical",
+      "company": "(owned by Roche Holding Ltd)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Hexal AG",
+      "company": "(subsidiary of Sandoz)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Laboratorio Chile",
+      "company": "(subsidiary of Teva Pharmaceutical Industries)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Hangzhou Jiuyuan Gene Engineering",
+      "company": "(subsidiary of Huadong Medicine)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Metsera",
+      "company": "(acquired by Pfizer, 2025)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Neuraly",
+      "company": "(subsidiary of D&D Pharmatech)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Reata Pharmaceuticals",
+      "company": "(acquired by AbbVie, 2023)",
+      "role": "Brand"
+    },
+    {
+      "brand": "Versanis Bio",
+      "company": "(acquired by Eli Lilly and Company, 2023)",
+      "role": "Brand"
+    }
+  ],
+  "html": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_glp_1_receptor_agonist_market_global\\global_glp_1_receptor_agonist_market_global_report.html",
+  "rule": "Brand=plain name; Company=Brand if independent else (acquired by|subsidiary of|merged into|owned by Parent)"
+}

@@ -1,0 +1,798 @@
+{
+  "Tipalti Inc.": {
+    "x": {
+      "score": 94,
+      "axis": "Product Strength",
+      "composite_reported": 94,
+      "evidence": [
+        {
+          "claim": "Tipalti AI OCR achieves an automated data extraction accuracy rate of 98%–99% when combining character recognition with machine learning, according to Tipalti OCR Processing Guide."
+        },
+        {
+          "claim": "The Tipalti Invoice Capture Agent processes multi-channel incoming invoice data, including emailed PDFs, by reading and extracting matching text fields at both header and line-item levels, as documented in Tipalti Manufacturing Processing."
+        },
+        {
+          "claim": "The platform incorporates a dedicated dynamic Bill Approvers Agent to navigate structural approval bottlenecks and automatically handle exception routing based on predefined operational thresholds, according to Tipalti AI Agents Feature."
+        },
+        {
+          "claim": "Invoices that match the internal tolerance ranges established during 3-way matching are processed via paperless touchless mechanisms to automatically assign general ledger codes and routes, as detailed in Tipalti Online Payments."
+        },
+        {
+          "claim": "The platform achieves native out-of-the-box system integration with cloud and on-premises enterprise platforms such as SAP Business One, Oracle NetSuite, and QuickBooks within an implementation timeline of 2 weeks, according to Dokka AP Matrix Comparison."
+        },
+        {
+          "claim": "Real-time sub-ledger synchronization enables immediate data flow back to the host ERP to initiate instant batch reconciliation routines, as verified in Tipalti NetSuite Integration."
+        },
+        {
+          "claim": "The system utilizes a specialized, proactive risk-screening module called Tipalti Detect® to flag duplicate bills and conduct network-wide entity reviews, as reported in Tipalti AI Agents Feature."
+        },
+        {
+          "claim": "Tipalti applies a rule engine consisting of over 26,000 distinct global payment rule combinations to screen out transaction execution errors and payment abnormalities, as sourced from Tipalti AP Software Guide."
+        },
+        {
+          "claim": "The core cross-border transaction execution framework handles programmatic mass currency distributions and localized vendor payments spanning 196 distinct countries, as detailed in Dokka AP Matrix Comparison."
+        },
+        {
+          "claim": "The system features an integrated, self-service onboarding tool called the Supplier Hub to collect, screen, and validate requisite international tax forms before authorizing initial payment release, as documented in Tipalti Online Payments."
+        }
+      ],
+      "parameters": {
+        "Invoice Capture & Data Extraction Accuracy": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports that its AI-powered OCR technology achieved a 98% to 99% character-level data extraction accuracy rate."
+            },
+            {
+              "claim": "The company reports that its cloud OCR enables touchless invoice processing, reducing invoice processing times by up to 80%."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's published capability to combine AI-driven OCR with a human-validated managed service to handle character-level data extraction exceptions. Based on primary research, the company has not disclosed independently verified, third-party audited field-level extraction accuracy or touchless straight-through processing rates."
+        },
+        "Workflow Automation & Approval Routing": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that its AP automation platform supports customizable approval workflows with rules defined by invoice amount, vendor type, department, or custom tolerance ranges for two-way and three-way purchase order matching."
+            },
+            {
+              "claim": "The company reports that authorized approvers can review, approve, reject, comment on, or dispute invoices directly from any mobile or desktop email client without logging into a separate portal, and the system automatically maintains a complete electronic audit trail."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's verified capability to provide rule-based multi-level invoice routing, email and mobile-integrated approvals, and automated audit logs across global entities. Based on primary research, the company has not disclosed independent third-party performance benchmarks or stress-testing metrics validating its exception-handling workflows at peak enterprise transaction volumes."
+        },
+        "ERP & Accounting System Integration": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "The company reports pre-built, API-based connectors that provide automated, near real-time synchronization of general ledger and subsidiary accounts payable data for major systems including Oracle NetSuite, Sage Intacct, Microsoft Dynamics 365, QuickBooks Online, Xero, and Acumatica."
+            },
+            {
+              "claim": "The company reports third-party certified integration statuses, including Oracle NetSuite Verified (Built for NetSuite status), Sage Tech Partner Plus, Microsoft AppSource Certified for Dynamics 365 Business Central, and an SAP-certified integration for SAP Business One."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's extensive roster of officially certified native connectors and pre-built API integrations that support bi-directional, real-time data sync across prominent mid-market and enterprise ERP platforms. Based on primary research, the company has not disclosed specific native API performance thresholds or data sync capabilities for non-standard or highly customized legacy enterprise systems."
+        },
+        "AI/ML & Fraud Detection Capabilities": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that its integrated payables intelligence engine, Tipalti AI, combines OCR with machine learning to extract complex table data across variable layouts, perform intelligent GL coding, and automatically perform 2-way and 3-way purchase order matching using a contextual PO Matching Agent."
+            },
+            {
+              "claim": "The company reports that its dedicated fraud detection feature, Tipalti Detect, utilizes machine learning predictive modeling, behavioral analytics, and network analysis across more than 26,000 global rules to identify unusual patterns, catch near-duplicate invoices with edited formatting, and flag suspicious payees or transactions in real time."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified application of specialized machine learning models and dedicated AI agents configured for invoice parsing, automated GL coding, and cross-network pattern analysis to intercept altered duplicate invoices and fraudulent payees. Based on primary research, the company has not disclosed audited statistical baseline performance metrics, such as exact model extraction or fraud-intercept accuracy percentages."
+        },
+        "Scalability & Global Compliance Support": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that its platform scales to manage global subsidiaries from a single platform, supporting mass payouts across 200+ countries and territories in 120 currencies with more than 26,000 built-in payment validation rules to reduce execution errors."
+            },
+            {
+              "claim": "The company reports that its automated global tax compliance module natively collects and validates regional tax forms (including W-9, W-8 series, VAT, and GST), and in November 2024, it announced the expanded availability of electronic invoicing via the Peppol network for Germany, Sweden, Norway, and Denmark to address EU regulatory mandates."
+            }
+          ],
+          "assessed_on": "The rating rests on the platform's demonstrated, configurable multi-currency infrastructure and multi-national compliance rule engine spanning over 200 countries alongside established Peppol e-invoicing network connectivity. Based on primary research, the company has not disclosed specific system uptime SLA percentages or transactional volume scalability benchmarks."
+        }
+      }
+    },
+    "y": {
+      "score": 82,
+      "axis": "Business Strength",
+      "composite_reported": 82,
+      "evidence": [
+        {
+          "claim": "Serves over 5,000 global mid-market enterprises including Calm, Udemy, AG1, and AppLovin (Source: Tipalti Press Release via Yahoo Finance)."
+        },
+        {
+          "claim": "Expanded its core customer volume by 30% year-over-year while sustaining a 98% to 99% customer retention rate (Source: Tipalti Press Release)."
+        },
+        {
+          "claim": "Exceeded $200 million in Annual Recurring Revenue (ARR) driven by mid-market transaction scaling (Source: Payments Dive)."
+        },
+        {
+          "claim": "Reached a $75 billion annualized payment transaction volume, growing more than 30% year-over-year (Source: Tipalti Press Release)."
+        },
+        {
+          "claim": "Obtained an Electronic Money Institution license from De Nederlandsche Bank to support compliance across Europe (Source: Built In)."
+        },
+        {
+          "claim": "Scaled its global Alliance Program to over 650 active partners spanning the US, UK, and EMEA (Source: Tipalti Blog)."
+        },
+        {
+          "claim": "Employs approximately 1,139 personnel globally with operations centralized across 9 localized corporate hubs (Source: Revelio Labs / Tipalti Profile)."
+        },
+        {
+          "claim": "Positioned as an end-to-end multi-subsidiary accounts payable automation suite handling cross-border payments in 120 currencies (Source: Newswire)."
+        },
+        {
+          "claim": "Secured $200 million in growth debt financing from Hercules Capital in late 2025 to develop agentic AI capabilities (Source: Payments Dive)."
+        },
+        {
+          "claim": "Achieved an enterprise private valuation of $8.3 billion across 8 funding rounds totaling $749 million (Source: GetLatka)."
+        }
+      ],
+      "parameters": {
+        "Customer Base & Contract Wins": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports serving over 6,500 global customers, including mid-market and enterprise logos such as GoodRx, e.l.f. Cosmetics, Cloudinary, GoDaddy, Vimeo, and Twitter."
+            },
+            {
+              "claim": "Commercial details from third-party vendor platforms indicate that Tipalti's mid-market and enterprise contract values typically range between $50,000 and $500,000 in Annual Recurring Revenue (ARR)."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company’s extensive public disclosure of its customer count milestones, strong 98% to 99% retention rates, and prominent named mid-market and enterprise clients. Based on primary research, the company has not disclosed precise, standardized average contract values or individualized commercial contract sizes across its customer base."
+        },
+        "Revenue Growth & Financial Health": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "Tipalti reports that its annual recurring revenue surpassed $200 million alongside a 30% year-over-year growth in its customer base as of September 2025."
+            },
+            {
+              "claim": "The company reports securing $200 million in growth debt financing from Hercules Capital, Inc. in September 2025, which followed a $150 million growth financing round from JPMorgan Chase Bank and Hercules Capital, Inc. in May 2023."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's announced multi-million dollar growth financing achievements and its self-reported milestone of exceeding $200 million in annual recurring revenue. Based on primary research, the company has not disclosed precise net income figures, audited revenue growth rates, or net profit margins."
+        },
+        "Geographic Coverage & Partner Network": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports that its platform supports payment automation across more than 200 countries and territories in 120 currencies, managed through nine global offices including Foster City, London, Amsterdam, Tel Aviv, and Medellín."
+            },
+            {
+              "claim": "The company reports that its global Alliances Program includes over 570 partners worldwide, featuring certified integrations with major ERP ecosystems and strategic financial network partnerships with Citi, Wells Fargo, J.P. Morgan, and Visa."
+            }
+          ],
+          "assessed_on": "Our evaluation rests on the company's extensive self-reported cross-border capabilities and established financial institution relationships. Based on primary research, the company has not disclosed the precise breakdown of its active reseller network or channel-driven revenue metrics."
+        },
+        "Market Share & Competitive Positioning": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "The company reports its customer base grew to over 5,000 global companies managing billions in payments and millions of transactions."
+            },
+            {
+              "claim": "An independent vendor assessment designated Tipalti Inc. as a Leader in worldwide accounts payable automation software for the midmarket segment in November 2024."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's confirmed position as an assessed midmarket leader in independent multi-vendor evaluations and its documented growth to a base of 5,000 customers. Based on primary research, the company has not disclosed its exact overall percentage market share or specific competitive win rates."
+        },
+        "Funding & Strategic Investments": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "The company reports raising $200 million in debt growth financing in September 2025 from Hercules Capital, Inc. to support investment in its artificial intelligence platform and global growth."
+            },
+            {
+              "claim": "The company reports reaching a valuation of $8.3 billion following a $270 million Series F equity funding round completed in December 2021, which was led by G Squared."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's extensive and verified track record of securing major equity rounds and substantial debt facilities from tier-one financial institutions to fund product engineering. Based on primary research, the company has not disclosed its exact distribution of capital allocation across specific product lines."
+        }
+      }
+    }
+  },
+  "Coupa Software": {
+    "x": {
+      "score": 97,
+      "axis": "Product Strength",
+      "composite_reported": 97,
+      "evidence": [
+        {
+          "claim": "Coupa integrates Rossum's transactional large language model (T-LLM) to perform template-free document intelligence and ingestion across mixed digital invoice file formats without requiring predefined parsing layouts, according to Coupa AP Product Page."
+        },
+        {
+          "claim": "The integrated system extracts granular data rows including line-level items and cross-references them across structural supplier procurement history, as documented in Coupa Invoicing Module Specifications."
+        },
+        {
+          "claim": "The platform utilizes a rule-driven architecture that automatically routes questionable or out-of-tolerance invoices through secondary review queues, as detailed in Hyperbots Coupa Fraud Glossary."
+        },
+        {
+          "claim": "Coupa provides mobile approval features and automated 2-way, 3-way, and 4-way matching validations to facilitate touchless straight-through document clearing, as verified in Coupa Invoicing Module Specifications."
+        },
+        {
+          "claim": "Coupa applies a configurable system architecture using an open API layout that establishes bidirectional synchronization to map and push validated invoice data into host corporate finance platforms, as outlined in Coupa Developer Integration Docs."
+        },
+        {
+          "claim": "Standardized system interfaces allow external enterprise networks and third-party accounting applications to programmatically post transactions and pull continuous status updates from the central platform, as sourced from Coupa Integration Playbooks."
+        },
+        {
+          "claim": "The system deploys a specialized transaction-screening engine named SpendGuard™ that provides simple drag-and-drop customization to alert teams of suspicious vendor adjustments, as verified in Coupa Corporate Finance Blog."
+        },
+        {
+          "claim": "Coupa AI analyzes global patterns utilizing an anonymized data network reflecting over $10 trillion in aggregate business spend activity to flag anomalies before processing transactions, as documented in Coupa Finance Event Hub."
+        },
+        {
+          "claim": "Coupa delivers localized out-of-the-box e-invoicing compliance capabilities covering shifting indirect tax policies and clearance mandates across more than 50 countries, as verified in Coupa Global E-Invoicing Guide."
+        },
+        {
+          "claim": "The Compliance as a Service (CaaS) subsystem partners with PricewaterhouseCoopers (PwC) to continuously evaluate international VAT/GST calculations inside live environments, as reported in Coupa Global E-Invoicing Guide."
+        }
+      ],
+      "parameters": {
+        "Invoice Capture & Data Extraction Accuracy": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "The company reports that its Coupa Invoicing platform integrates with Rossum's transactional large language model (T-LLM) and AI-powered OCR to instantly ingest multi-page invoices in any format or language without manual template building."
+            },
+            {
+              "claim": "The company reports that its customer John Lewis achieved a 91% touchless invoice processing rate using its automated workflows."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's clear native capabilities and strategic partnership with Rossum to deliver template-free, AI-driven data extraction across multi-format supplier invoices. Based on primary research, the company has not disclosed its exact standalone first-pass data extraction accuracy rates."
+        },
+        "Workflow Automation & Approval Routing": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports that its automated approval workflows evaluate attributes such as invoice amount, department, category, entity, supplier, and accounting dimensions to route transactions."
+            },
+            {
+              "claim": "The company reports that the platform supports exception handling to re-route mismatches, mobile workflow approvals, and a comprehensive audit trail that logs configuration changes, reassignments, and chronological authorization events."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's documented suite of conditional routing rules, exception management, and multi-channel approval options across its spend management ecosystem. Based on primary research, the company has not disclosed independent, third-party verified performance data validating these processing turnaround metrics across its entire customer base."
+        },
+        "ERP & Accounting System Integration": {
+          "score": 89,
+          "evidence": [
+            {
+              "claim": "The company reports pre-built out-of-the-box integration playbooks and native connectors for major enterprise platforms, including the Coupa NetSuite Purchase to Order (P2O) Bundle built on SuiteScript that supports near real-time master data synchronization for suppliers and account segments."
+            },
+            {
+              "claim": "Certified technical adapter integrations exist with major enterprise systems, such as the Coupa Adapter for SAP Integration Suite which natively supports OAuth 2.0 authentication and standard CRUD workflows with SAP S/4HANA, as well as the Coupa Sourcing Adapter developed for Oracle Integration 3 supporting bidirectional rest-based synchronization of invoices, payables, and suppliers."
+            }
+          ],
+          "assessed_on": "The rating rests on Coupa Software’s extensive portfolio of native adapters, pre-built ERP connector bundles, and verified technical alignment with tier-one platforms like SAP, Oracle, and NetSuite. Based on primary research, the company has not disclosed the precise percentage of custom deployment configurations versus out-of-the-box connector installations across its mid-market customer tier."
+        },
+        "AI/ML & Fraud Detection Capabilities": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "The company reports its AI-powered SpendGuard continuously monitors invoices, expenses, and payments to detect duplicate invoices, split requisitions, and suspicious activity in real time using 25+ alerts across six key categories."
+            },
+            {
+              "claim": "The company reports its platform utilizes \"community intelligence\" trained on $6 trillion to $8 trillion in global transactional spend data to provide AI-driven fraud detection, anomaly detection, and automated invoice data extraction."
+            }
+          ],
+          "assessed_on": "The rating rests on Coupa Software's deep integration of native AI/ML capabilities for transaction-level anomaly and fraud detection (SpendGuard), alongside its May 2026 acquisition of Rossum to embed template-free document processing AI with native duplicate prevention. Based on primary research, the company has not disclosed audited statistical model accuracy rates or exact continuous learning performance metrics."
+        },
+        "Scalability & Global Compliance Support": {
+          "score": 84,
+          "evidence": [
+            {
+              "claim": "Coupa Software reports that its built-in Compliance-as-a-Service (CaaS) offers native out-of-the-box e-invoicing and regulatory tax compliance support across more than 50 countries, with seamless integration into the Peppol network and government portals."
+            },
+            {
+              "claim": "Coupa Software partners with PricewaterhouseCoopers (PwC) to independently review its international VAT/GST compliance rules, including walk-throughs of the solution in its live environment."
+            }
+          ],
+          "assessed_on": "The assessment rests on the platform's third-party verified, out-of-the-box international tax compliance capabilities and native integration into global networks like Peppol across dozens of countries. Based on primary research, the company has not disclosed audited platform uptime SLAs or concrete maximum transaction volume scalability benchmarks for its core accounts payable workflows."
+        }
+      }
+    },
+    "y": {
+      "score": 94,
+      "axis": "Business Strength",
+      "composite_reported": 94,
+      "evidence": [
+        {
+          "claim": "Added nearly 300 new enterprise customer logos in recent quarters including Southern Water, e.l.f. Cosmetics, and Hormel Foods (Source: Coupa Newsroom)."
+        },
+        {
+          "claim": "Supports a massive business spend network connecting over 10 million buyers and suppliers globally (Source: Coupa Company Profile)."
+        },
+        {
+          "claim": "Achieved its highest record financial performance in Q4 with $545 billion in spend flowing through the platform in one quarter (Source: Yahoo Finance)."
+        },
+        {
+          "claim": "Amassed a proprietary community transaction dataset tracking over $9.5 trillion to $10.5 trillion in cumulative lifetime spend (Source: Coupa LinkedIn)."
+        },
+        {
+          "claim": "Extended Asia-Pacific market presence by appointing François Vazille as Head of APAC & Japan Sales alongside introducing regional virtual cards (Source: Coupa Newsroom)."
+        },
+        {
+          "claim": "Formed integrated strategy-to-pay networks via the tactical acquisitions of AI category management firm Cirtuo and document intelligence firm Rossum (Source: Coupa Newsroom)."
+        },
+        {
+          "claim": "Ranked as a category Leader in the 2026 IDC MagicScape for AI-Enabled Accounts Payable Automation Software for Large Enterprises (Source: Coupa Blog)."
+        },
+        {
+          "claim": "Appointed as a consecutive-year Leader in the Gartner Magic Quadrant for Source-to-Pay Suites and Accounts Payable Applications (Source: Coupa Newsroom)."
+        },
+        {
+          "claim": "Deployed over 50 specialized Navi AI agents across 506 large enterprise customer environments to drive spend automation (Source: Coupa Company Profile)."
+        },
+        {
+          "claim": "Generated over $300 billion to $340 billion in cumulative lifetime cost savings for its global user base (Source: Coupa Company Profile)."
+        }
+      ],
+      "parameters": {
+        "Customer Base & Contract Wins": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports having over 3,200 global customers on its spend management platform, which encompasses accounts payable automation, procurement, and treasury workflows."
+            },
+            {
+              "claim": "The company announced adding more than 45 new customer logos in Q1 FY27, including Kyocera Document Solutions Inc., United Auto Workers, Rohm Co., Ltd, ThermoSafe Technologies Inc., and Innovaccer, while over 240 organizations renewed or expanded contracts."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company’s confirmed overall customer count exceeding 3,200 alongside documented quarterly new enterprise contract wins. Based on primary research, the company has not disclosed the specific breakout number of customers utilizing the accounts payable module exclusively or the precise financial values for individual contract wins."
+        },
+        "Revenue Growth & Financial Health": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports achieving its highest revenue quarter in history during Q4 of fiscal 2026, supported by an expanding community dataset containing $9.5 trillion in total transaction data on the Coupa Software Platform."
+            },
+            {
+              "claim": "Independent analysis of the company's financial trajectory verified that it generated $1.21 billion in annual revenue for 2025."
+            }
+          ],
+          "assessed_on": "The evaluation rests on verified metrics proving the company's scale and its successful transition into GAAP profitability. Based on primary research, the company has not disclosed its exact annual recurring revenue (ARR) or specific year-over-year growth rates for fiscal year 2026."
+        },
+        "Geographic Coverage & Partner Network": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "The company reports a comprehensive global partner ecosystem through its Coupa Partner Xchange, which tracks over 150 consulting, implementation, advisory, payment, and reseller partners spanning North America, EMEA, APAC, and LATAM regions."
+            },
+            {
+              "claim": "The company reports office locations worldwide to support its global footprint, including key regional hubs in North America (Foster City HQ, Ann Arbor, Boston, Chicago), Europe (Dublin, London, Paris, Karlsruhe, Grad Zagreb, Prague), Asia (Bengaluru, Hyderabad, Singapore, Tokyo), South America (Bogotá, São Paulo), and the Middle East (Dubai)."
+            }
+          ],
+          "assessed_on": "The rating rests on the company’s extensive, verified global channel presence encompassing major consulting entities across five geographic regions and physical hubs across North America, Europe, Latin America, the Middle East, and Asia-Pacific. Based on primary research, the company has not disclosed the exact count of countries served natively by its direct office subsidiaries versus channel partners."
+        },
+        "Market Share & Competitive Positioning": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "The company reports its community-powered AI platform spans over $10 trillion in verified transactional spend data across a network of more than 10 million buyers and suppliers."
+            },
+            {
+              "claim": "Independent industry data reveals that Coupa Software was adopted as the primary invoice or accounts payable automation application by top-tier global enterprise accounts, including United Parcel Service in 2021, Concentrix in 2019, and Ahold Delhaize in 2016."
+            }
+          ],
+          "assessed_on": "The evaluation rests on verified large-enterprise contract placements across major global corporations and the company's multi-trillion dollar transaction network scale. Based on primary research, the company has not disclosed specific competitive win rates or its precise percentage share of the total accounts payable automation market."
+        },
+        "Funding & Strategic Investments": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "Thoma Bravo completed its all-cash acquisition of Coupa Software on February 28, 2023, in a transaction valued at approximately $8.0 billion, which included a minority investment from a subsidiary of the Abu Dhabi Investment Authority."
+            },
+            {
+              "claim": "Coupa Software completed its acquisition of Rossum on May 12, 2026, to integrate artificial intelligence and intelligent document processing capabilities across its accounts payable and spend management workflows."
+            }
+          ],
+          "assessed_on": "We verified that the company possesses top-tier strategic financial backing following its multi-billion dollar private equity buyout and has executed subsequent strategic technology acquisitions to expand its automated invoice processing capabilities. Based on primary research, the company has not disclosed the precise allocation of investment capital dedicated exclusively to standalone accounts payable software features versus its comprehensive spend management suite."
+        }
+      }
+    }
+  },
+  "Zaggle Prepaid Ocean Services Limited": {
+    "x": {
+      "score": 88,
+      "axis": "Product Strength",
+      "composite_reported": 88,
+      "evidence": [
+        {
+          "claim": "Advanced optical character recognition (OCR) and AI-based algorithms capture header and line-level details from supplier invoices."
+        },
+        {
+          "claim": "Automates 100% of supplier invoices received via supplier portals or designated email accounts."
+        },
+        {
+          "claim": "Predefined automated workflows allow approvers to review and clear invoices from mobile or web devices using WhatsApp or the Zoyer app."
+        },
+        {
+          "claim": "Automated three-way reconciliation matching invoices against original purchase orders and goods received notes (GRN)."
+        },
+        {
+          "claim": "Open APIs facilitate seamless data synchronization with existing enterprise resource planning (ERP) systems, general ledgers, and HRMS."
+        },
+        {
+          "claim": "Updates external ERP tracking systems automatically upon payment execution and links settlements directly to remittance advice."
+        },
+        {
+          "claim": "Built-in automated duplicate payment alerts notify internal finance teams when identical transaction profiles are initiated."
+        },
+        {
+          "claim": "Fraud detection capabilities are embedded within the core business spend management platform to enforce financial controls."
+        },
+        {
+          "claim": "Cloud-native infrastructure hosted on Amazon Web Services (AWS) guarantees architectural scalability for large-scale enterprise deployments."
+        },
+        {
+          "claim": "Compliance management tools support local invoicing regulations and allow configuration of active payment reminders for MSME suppliers."
+        }
+      ],
+      "parameters": {
+        "Invoice Capture & Data Extraction Accuracy": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "The company reports that its Zoyer platform incorporates advanced OCR technology to capture and validate invoice data automatically, resulting in a reduction of manual entry by over 70%."
+            },
+            {
+              "claim": "The company reports in its April 2026 AI Strategy presentation that it has deployed AI agents utilizing OCR and LLM mapping to extract and map data from receipts and invoices into custom fields, alongside LLM-based classification of documents and invoice line items."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's documented integration of OCR and LLM technologies to automate data extraction and lower manual entry workloads within its Zoyer platform. Based on primary research, the company has not disclosed specific, verified invoice extraction accuracy rates, touchless processing metrics, or granular format handling capabilities."
+        },
+        "Workflow Automation & Approval Routing": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports that its Zaggle Zoyer platform features a configurable workflow engine for Delegation of Authority (DOA), allowing business users to define single- or multi-step approval tiers based on spending limits, categories, and purchase values, with reviewer notifications sent via email and WhatsApp."
+            },
+            {
+              "claim": "The company reports that its procure-to-pay workflow engine automatically routes invoice and purchase order compliance gaps or price and quantity exceptions to the designated team or supplier for review, while providing automated audit trails and syncing data with ERP systems including SAP, Tally, and Oracle."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's detailed self-reported capabilities for conditional routing logic, multi-tiered manual or automatic approval configurations, exception-handling protocols, and system audit logs. Based on primary research, the company has not disclosed independent third-party performance validations or enterprise-level case studies detailing the comprehensive depth of its automated exceptions routing in global multi-currency deployments."
+        },
+        "ERP & Accounting System Integration": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports that its procure-to-pay workflow engine and Zaggle Integration Gateway (ZIG) support seamless ERP synchronization with major systems including SAP, Oracle, and Tally."
+            },
+            {
+              "claim": "A case study from technology partner Prismberry details that they developed the Zaggle Integration Gateway (ZIG) as an API middleware layer to automate real-time synchronization of employee, expense, and transaction data between Zaggle applications and external enterprise accounting systems."
+            }
+          ],
+          "assessed_on": "Our evaluation rests on the company's deployed Zaggle Integration Gateway middleware that provides API-driven data exchange with systems like SAP and Oracle. Based on primary research, the company has not disclosed certified native status or dedicated app marketplace pre-built listings for these major ERP platforms."
+        },
+        "AI/ML & Fraud Detection Capabilities": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports in its AI Strategy presentation dated April 2026 that its flagship accounts payable platform, Zaggle Zoyer, deploys AI agents for optical character recognition (OCR) and large language model (LLM) mapping of receipts/invoices, document classification, line-item categorization, and automated invoice fetching via email APIs."
+            },
+            {
+              "claim": "The company reports in its April 2026 AI Strategy disclosure that its cognitive compliance and risk mitigation capabilities use autonomous AI agents to perform real-time internal audits that identify duplicate invoices, fraud anomalies, and tax/GST mismatches at the point of ingestion."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's publicly disclosed corporate roadmap detailing specific OCR, LLM, and autonomous internal audit AI agents built into its flagship accounts payable automation platform, Zoyer. Based on primary research, the company has not disclosed objective, third-party verified model accuracy rates or quantitative fraud prevention performance metrics."
+        },
+        "Scalability & Global Compliance Support": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "The company reports that its platform serves over 3,900 to 4,000 corporate customers and manages approximately 3.9 million to 4 million active users, showcasing broad adoption and architectural scalability."
+            },
+            {
+              "claim": "The company reports that its Zoyer platform incorporates artificial intelligence agents for cognitive compliance, identifying duplications, fraud, and Goods and Services Tax (GST) mismatches at the point of ingestion to prevent tax-related leakage."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's verified volume scale within the Indian domestic market and its localized capability to automate invoice matching against Indian GST data. Based on primary research, the company has not disclosed explicit platform uptime SLAs, transaction volume throughput benchmarks, or compliance support for global tax and electronic invoicing networks such as VAT or PEPPOL."
+        }
+      }
+    },
+    "y": {
+      "score": 88,
+      "axis": "Business Strength",
+      "composite_reported": 88,
+      "evidence": [
+        {
+          "claim": "Entered into a five-year contract with Punjab National Bank (PNB) to drive customer acquisition and launch a co-branded retail credit card."
+        },
+        {
+          "claim": "Secured a five-year strategic agreement with APAC Financial Services Private Ltd to provide its enterprise software platforms, Zoyer and Zaggle Save."
+        },
+        {
+          "claim": "Won a ₹9.84 crore three-year contract from the General Insurance Corporation of India (GIC) for employee expense management services."
+        },
+        {
+          "claim": "Achieved full-year FY26 revenue of INR 19,076.5 million, representing a 46.3% year-on-year growth rate."
+        },
+        {
+          "claim": "Reported full-year FY26 Profit After Tax (PAT) growth of 51.8% year-on-year, reaching INR 1,387.5 million."
+        },
+        {
+          "claim": "Maintained an average sales growth rate of 49.59% and average profit growth of 79.68% over the past three years."
+        },
+        {
+          "claim": "Formed a seven-year domestic growth agreement with Visa to launch and promote co-branded domestic prepaid cards on the Visa network."
+        },
+        {
+          "claim": "Signed a five-year international referral agreement with Mastercard Asia/Pacific Pte Ltd to offer credit cards and spend-linked incentive solutions."
+        },
+        {
+          "claim": "Established Zaggle Payments IFSC Ltd in GIFT City to scale up specialized financial operations and international tech services."
+        },
+        {
+          "claim": "Documented an active scale of over 50 million prepaid cards issued and more than 3.9 million total platform users as of March 31, 2026."
+        },
+        {
+          "claim": "Serves diverse commercial market segments including banking, finance, healthcare, technology, manufacturing, infrastructure, and FMCG industries."
+        },
+        {
+          "claim": "Executed a corporate financial investment of up to ₹7.96 crore to acquire a 19.9% equity stake in cross-border payments company Unobanc Private Limited."
+        },
+        {
+          "claim": "Completed strategic corporate acquisitions of Greenedge Enterprises and Rivpe Technology to expand its fintech and spend management capabilities."
+        }
+      ],
+      "parameters": {
+        "Customer Base & Contract Wins": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports that its flagship accounts payable and vendor payment automation solution, Zaggle Zoyer, crossed Rs. 2,000 Crores in spends during Q3 FY2024, and accounted for approximately 30% of its program fee revenues by Q4 FY24 earnings call insights."
+            },
+            {
+              "claim": "The company reports securing strategic enterprise accounts for its platforms, including a five-year agreement with APAC Financial Services signed on June 29, 2026, alongside client wins such as DTDC Express on a five-year contract, and corporate logos like Hindustan Pencils and ApolloHealth."
+            }
+          ],
+          "assessed_on": "We verified that the company has established verifiable adoption for its accounts payable solution through explicit spend milestones and named multi-year enterprise contracts. Based on primary research, the company has not disclosed the precise count of standalone clients using its accounts payable software versus its broader spend management suite, nor has it provided its exact average contract value for these deployments."
+        },
+        "Revenue Growth & Financial Health": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports a consolidated revenue from operations of ₹19,076.5 million for the financial year ended March 31, 2026, representing a year-over-year growth rate of 46.3% compared to ₹13,037.6 million in the prior fiscal year."
+            },
+            {
+              "claim": "The company reports a consolidated profit after tax of ₹1,387.5 million for the financial year ended March 31, 2026, which is a 51.8% year-over-year increase compared to ₹914.1 million in the previous financial year."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's publicly disclosed corporate financial statements reflecting strong, audited revenue growth and expanding net profitability as a listed enterprise. Based on primary research, the company has not disclosed breakout revenue or annual recurring revenue specific to its standalone accounts payable automation lifecycle solutions."
+        },
+        "Geographic Coverage & Partner Network": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "The company reports maintaining 7 corporate offices, 19 banking partners, and 3 card network partners (Visa, Mastercard, and RuPay) with operations focused primarily on the Indian domestic market."
+            },
+            {
+              "claim": "The company reports expanding its cross-border footprint through a strategic partnership executed with US-based Mesh Payments in May 2025 and planned global expansion via wholly owned subsidiaries in Abu Dhabi and GIFT City."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's established presence and deep network of bank and card alliances within India, which contrast with its early-stage cross-border expansion efforts that are heavily reliant on external fintech partnerships rather than dedicated global offices or resellers for accounts payable automation. Based on primary research, the company has not disclosed the exact number of countries served, standalone international office counts, or the channel reseller network size dedicated to its Zoyer accounts payable platform."
+        },
+        "Market Share & Competitive Positioning": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "The company reports that its accounts payable platform, Zaggle Zoyer, contributes approximately 45% to 50% of the company's gross revenue as of September 2026."
+            },
+            {
+              "claim": "In its Q1 FY25 earnings conference call, company leadership acknowledged that software fees within the Zaggle Zoyer product line remain low to promote market proliferation and that specific estimates of its market share are not formally established."
+            }
+          ],
+          "assessed_on": "The rating rests on the platform's material revenue contribution internally, but no definitive third-party market share percentages, analyst rankings, or competitive win rates are available for the overall accounts payable automation landscape. Based on primary research, the company has not disclosed its formal market share relative to competitors or structured competitive win rates in the accounts payable automation market."
+        },
+        "Funding & Strategic Investments": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Zaggle Prepaid Ocean Services Limited announced the acquisition of a 100% equity stake in Dice Enterprises Private Limited, an enterprise spend management platform offering accounts payable, procurement, and travel tools, for ₹123 crore in June 2025."
+            },
+            {
+              "claim": "Zaggle Prepaid Ocean Services Limited raised ₹595 crore via a Qualified Institutional Placement (QIP) in December 2024 to fund inorganic growth and product-accretive strategic acquisitions across the fintech and Software-as-a-Service (SaaS) sectors."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's clear capability to raise capital and execute targeted strategic acquisitions to reinforce its specialized spend management stack, specifically via the full acquisition of Dice Enterprises to bolster its proprietary accounts payable automation workflows. Based on primary research, the company has not disclosed any standalone, third-party venture capital funding rounds specifically carved out or restricted exclusively to its accounts payable division outside of corporate-level public equity capital deployments."
+        }
+      }
+    }
+  },
+  "Pipefy, Inc.": {
+    "x": {
+      "score": 92,
+      "axis": "Product Strength",
+      "composite_reported": 92,
+      "evidence": [
+        {
+          "claim": "Pipefy Intelligent Document Processing (IDP) combines OCR and AI to automatically extract invoice data and populate target fields."
+        },
+        {
+          "claim": "An initial AI screening agent automatically checks documents for legibility, errors, and validity upon intake."
+        },
+        {
+          "claim": "Performs automated two-way and three-way matching against purchase requests, POs, and goods receipts, highlighting mismatches in divergence tables."
+        },
+        {
+          "claim": "No-code approval automation allows custom routing rules defined by transaction amount, cost center, supplier, or expense type."
+        },
+        {
+          "claim": "Native and API-based integrations automatically synchronize tax data, approvals, and receipts with systems like SAP, Oracle, and TOTVS."
+        },
+        {
+          "claim": "Integrates directly with financial accounting software and core procurement stacks to orchestrate error-proof data handoffs."
+        },
+        {
+          "claim": "The specialized Duplicate Detection Agent cross-checks invoice numbers, supplier details, and total amounts to flag duplicates before processing."
+        },
+        {
+          "claim": "Autonomous AI agents validate requests against company reimbursement policies and generate automated reasons for rejection upon policy breaches."
+        },
+        {
+          "claim": "Automated validation checks of Tax IDs, amounts, and tax fields maintain a complete history of decisions for external and internal audit logs."
+        },
+        {
+          "claim": "Highly agile no-code deployment framework allows tailored enterprise workflows and functional AI agents to go live in up to 20 days."
+        }
+      ],
+      "parameters": {
+        "Invoice Capture & Data Extraction Accuracy": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "Pipefy Intelligent Document Processing (IDP) combines OCR and AI to automatically extract invoice data and populate target fields."
+            },
+            {
+              "claim": "An initial AI screening agent automatically checks documents for legibility, errors, and validity upon intake."
+            }
+          ]
+        },
+        "Workflow Automation & Approval Routing": {
+          "score": 94,
+          "evidence": [
+            {
+              "claim": "Performs automated two-way and three-way matching against purchase requests, POs, and goods receipts, highlighting mismatches in divergence tables."
+            }
+          ]
+        },
+        "ERP & Accounting System Integration": {
+          "score": 91,
+          "evidence": [
+            {
+              "claim": "Native and API-based integrations automatically synchronize tax data, approvals, and receipts with systems like SAP, Oracle, and TOTVS."
+            },
+            {
+              "claim": "Integrates directly with financial accounting software and core procurement stacks to orchestrate error-proof data handoffs."
+            }
+          ]
+        },
+        "AI/ML & Fraud Detection Capabilities": {
+          "score": 93,
+          "evidence": [
+            {
+              "claim": "The specialized Duplicate Detection Agent cross-checks invoice numbers, supplier details, and total amounts to flag duplicates before processing."
+            },
+            {
+              "claim": "Autonomous AI agents validate requests against company reimbursement policies and generate automated reasons for rejection upon policy breaches."
+            }
+          ]
+        },
+        "Scalability & Global Compliance Support": {
+          "score": 90,
+          "evidence": [
+            {
+              "claim": "Automated validation checks of Tax IDs, amounts, and tax fields maintain a complete history of decisions for external and internal audit logs."
+            },
+            {
+              "claim": "Highly agile no-code deployment framework allows tailored enterprise workflows and functional AI agents to go live in up to 20 days."
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 84,
+      "axis": "Business Strength",
+      "composite_reported": 84,
+      "evidence": [
+        {
+          "claim": "Serves a global corporate customer base of over 60,000 corporate clients across 150+ countries, including enterprise names like Visa, GE, Volvo, AB InBev, and Telefonica."
+        },
+        {
+          "claim": "Retained major international brand clients for automated workflow management including Lacoste, Magalu, Rivian, and Nubank."
+        },
+        {
+          "claim": "Generated an estimated Annual Recurring Revenue (ARR) of $65.9 million in 2024, up from $44.8 million in 2023."
+        },
+        {
+          "claim": "Documented a historical milestone of doubling its annual recurring revenue and its total employee headcount over a one-year operating window."
+        },
+        {
+          "claim": "Operates cross-regionally from an administrative headquarters in San Francisco, California, to operational hubs in Curitiba, Brazil, serving 150+ countries."
+        },
+        {
+          "claim": "Formed a product integration partnership with Google to deploy automated accounts payable workflow orchestration directly inside Gemini Enterprise chat interfaces."
+        },
+        {
+          "claim": "Positioned as a prominent low-code/no-code business orchestration platform, employing between 501 and 1,000 corporate employees globally."
+        },
+        {
+          "claim": "Demonstrated a quantified economic footprint where a standard composite enterprise customer achieves a 260% ROI and a Net Present Value of $1.86 million over 3 years."
+        },
+        {
+          "claim": "Raised a total of $149 million in venture backing over 7 funding rounds, including a $75 million Series C financing round."
+        },
+        {
+          "claim": "Secured institutional backing led by SoftBank Latin America Fund with a $50 million lead contribution, alongside Insight Partners, OpenView, and Trinity Ventures."
+        }
+      ],
+      "parameters": {
+        "Customer Base & Contract Wins": {
+          "score": 85,
+          "evidence": [
+            {
+              "claim": "Serves a global corporate customer base of over 60,000 corporate clients across 150+ countries, including enterprise names like Visa, GE, Volvo, AB InBev, and Telefonica."
+            },
+            {
+              "claim": "Retained major international brand clients for automated workflow management including Lacoste, Magalu, Rivian, and Nubank."
+            }
+          ]
+        },
+        "Revenue Growth & Financial Health": {
+          "score": 80,
+          "evidence": [
+            {
+              "claim": "Generated an estimated Annual Recurring Revenue (ARR) of $65.9 million in 2024, up from $44.8 million in 2023."
+            },
+            {
+              "claim": "Documented a historical milestone of doubling its annual recurring revenue and its total employee headcount over a one-year operating window."
+            }
+          ]
+        },
+        "Geographic Coverage & Partner Network": {
+          "score": 84,
+          "evidence": [
+            {
+              "claim": "Operates cross-regionally from an administrative headquarters in San Francisco, California, to operational hubs in Curitiba, Brazil, serving 150+ countries."
+            },
+            {
+              "claim": "Formed a product integration partnership with Google to deploy automated accounts payable workflow orchestration directly inside Gemini Enterprise chat interfaces."
+            }
+          ]
+        },
+        "Market Share & Competitive Positioning": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Positioned as a prominent low-code/no-code business orchestration platform, employing between 501 and 1,000 corporate employees globally."
+            },
+            {
+              "claim": "Demonstrated a quantified economic footprint where a standard composite enterprise customer achieves a 260% ROI and a Net Present Value of $1.86 million over 3 years."
+            }
+          ]
+        },
+        "Funding & Strategic Investments": {
+          "score": 87,
+          "evidence": [
+            {
+              "claim": "Raised a total of $149 million in venture backing over 7 funding rounds, including a $75 million Series C financing round."
+            },
+            {
+              "claim": "Secured institutional backing led by SoftBank Latin America Fund with a $50 million lead contribution, alongside Insight Partners, OpenView, and Trinity Ventures."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

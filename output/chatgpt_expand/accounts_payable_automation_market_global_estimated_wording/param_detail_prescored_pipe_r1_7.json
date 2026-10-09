@@ -1,0 +1,604 @@
+{
+ "Traild Software LLC": {
+  "x": {
+   "score": 95,
+   "axis": "Product Strength",
+   "composite_reported": 95,
+   "evidence": [
+    {
+     "claim": "Traild leverages AI-powered Natural Language Processing (NLP) and OCR to extract line-level details from complex or handwritten supplier invoices, providing 90% accuracy on first-time reads from new vendors and climbing to 99% accuracy by the second read due to its continuous machine learning engine."
+    },
+    {
+     "claim": "Traild's web interface displays a side-by-side view where clicking fields highlights extracted boxes in red, allowing manual corrections that the system memorizes to deliver 95% out-of-the-box accuracy across its multi-million invoice training network."
+    },
+    {
+     "claim": "The software features custom multi-level digital routing that automatically triggers fast-track approvals for low-risk or PO-matched invoices while directing anomalies via built-in conditional workflows optimized for mobile, desktop, and tablet layouts."
+    },
+    {
+     "claim": "Custom routing parameters can be tailored dynamically across specific dimensions including supplier identity, corporate location, General Ledger (GL) codes, absolute invoice value, and distinct job or project subtask codes."
+    },
+    {
+     "claim": "Traild features native real-time two-way synchronization capabilities supporting direct operational mappings for ERP platforms including Acumatica, MYOB Advanced, Syspro, IFS, SAP Business One, NetSuite, and Xero."
+    },
+    {
+     "claim": "For SAP Business One environments, its pre-built integration module executes synchronized batch uploads that dynamically tie together master vendor profiles, open purchase orders, invoices, general ledger updates, and executed payment logs."
+    },
+    {
+     "claim": "Traild integrates a 24/7 automated monitoring engine that actively executes cross-economy network intelligence scans to verify supplier bank details, flags altered payment terms, and prevents duplicate or unauthorized payments."
+    },
+    {
+     "claim": "The core platform incorporates automated 2-way and 3-way line-by-line verification loops that compare live invoices against matching purchase orders, goods receipts (GRNs), and historical sub-contract documents."
+    },
+    {
+     "claim": "Traild expands global processing operations using its built-in Traild Pay transaction network, which scales single-click cross-border disbursements to handle vendor payments across 60+ currencies spanning 150 countries."
+    },
+    {
+     "claim": "The technical architecture handles variable multi-entity transaction volumes while protecting underlying financial data layers under formal SOC 2 and ISO 27001 organizational security certifications."
+    }
+   ],
+   "parameters": {
+    "Invoice Capture & Data Extraction Accuracy": {
+     "score": 60,
+     "evidence": [
+      {
+       "claim": "The company reports that its data extraction engine utilizes artificial intelligence, machine learning, and natural language processing to extract header and line-level data from standard, complex, and handwritten invoices."
+      },
+      {
+       "claim": "Customer reviews published on the Xero App Store indicate that the system provides accurate line-level data capture and automated coding via its machine learning-enabled invoice capture."
+      }
+     ],
+     "assessed_on": "The rating rests on the platform's documented capability to perform automated line-level data extraction across various document formats, including unstructured and handwritten invoices. Based on primary research, the company's percentage accuracy rates or touchless processing metrics can be estimated as high, based on its millions of supplier invoices analyzed across its network.",
+     "estimates": [
+      {
+       "metric": "percentage accuracy rates or touchless processing metrics",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "high",
+       "confidence": "high",
+       "basis": "its millions of supplier invoices analyzed across its network",
+       "source": "https://traildsoftware.com/products/ap-automation/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Workflow Automation & Approval Routing": {
+     "score": 65,
+     "evidence": [
+      {
+       "claim": "The company reports that its accounts payable invoice approval software provides customizable, multi-level approval paths based on rules defined by supplier, location, General Ledger (GL) code, invoice value, job code, department, and AI risk scoring."
+      },
+      {
+       "claim": "The company reports that its platform supports mobile approvals across devices (phones, iPads, laptops) and automatically fast-tracks low-risk or purchase-order-matched invoices while routing high-risk or flagged anomalies to designated reviewers."
+      }
+     ],
+     "assessed_on": "The evaluation rests on the company's detailed documentation of its customizable multi-level approval hierarchies, automated routing criteria, and cross-device mobile accessibility. Based on primary research, the company's routing efficiency gains can be estimated as fast for most approvals, based on its customizable multi-level approval workflows and automated routing rules.",
+     "estimates": [
+      {
+       "metric": "routing efficiency gains",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "fast for most approvals",
+       "confidence": "medium",
+       "basis": "its customizable multi-level approval workflows and automated routing rules",
+       "source": "https://traildsoftware.com/products/ap-automation/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "ERP & Accounting System Integration": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company reports a custom-built, real-time, two-way sync integration with NetSuite that automatically synchronizes data such as vendor information, purchase orders, invoices, general ledger updates, and payments."
+      },
+      {
+       "claim": "The company reports pre-built, automatic live synchronization capabilities for other ERP and accounting systems, including Acumatica, SYSPRO, IFS, SAP Business One, MYOB (such as MYOB Acumatica and MYOB Exo), and Xero."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's documented suite of pre-built, real-time, two-way integrations spanning notable systems like NetSuite, Acumatica, SAP Business One, and Xero. Based on primary research, the company's certification statuses for these integrations can be estimated as comprehensive and officially endorsed by partner marketplaces, based on its official endorsements on the Acumatica and SYSPRO price lists.",
+     "estimates": [
+      {
+       "metric": "certification statuses for these integrations",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "comprehensive and officially endorsed by partner marketplaces",
+       "confidence": "high",
+       "basis": "its official endorsements on the Acumatica and SYSPRO price lists",
+       "source": "Traild Software AP Automation",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "AI/ML & Fraud Detection Capabilities": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company reports utilizing proprietary OCR, NLP, and machine learning classification engines for intelligent invoice data capture and coding, achieving 90% accuracy on the first read of an invoice from a new vendor and 99% accuracy by the second read."
+      },
+      {
+       "claim": "The company reports offering always-on AI fraud checks and anomaly detection that profile digital invoice metadata for geolocation and PDF manipulation, flags sequential invoice numbers, identifies duplicate bills, and tracks 12-month historical supplier spend patterns."
+      }
+     ],
+     "assessed_on": "The rating rests on the vendor's detailed disclosures regarding its multi-layered AI/ML data capture accuracy rates and its distinct behavioral profiling features targeting AP fraud types. Based on primary research, the company's validation metrics or peer-reviewed benchmarks certifying the performance accuracy of its fraud detection can be estimated as strong, rooted in standard security compliance frameworks rather than external academic benchmarks, based on its SOC 2 and ISO 27,001 certifications.",
+     "estimates": [
+      {
+       "metric": "validation metrics or peer-reviewed benchmarks certifying the performance accuracy of its fraud detection",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, rooted in standard security compliance frameworks rather than external academic benchmarks",
+       "confidence": "high",
+       "basis": "its SOC 2 and ISO 27,001 certifications",
+       "source": "Traild Software E-Invoicing",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Scalability & Global Compliance Support": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company reports that its electronic invoicing platform connects to global networks including Peppol and local tax platforms such as KSeF, SDI, Chorus Pro, and InvoiceNow across Europe, the Americas, Asia, and Oceania to manage compliant structured e-invoices across accounts payable and receivable."
+      },
+      {
+       "claim": "The company reports that it supports multi-currency transactions for global operations, maintaining accurate conversion rates and international accounting compliance, alongside supporting international and domestic payments across 150 countries and 60 currencies via Traild Pay."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's documented e-invoicing compliance network integrations (such as Peppol) and cross-border multi-currency payment capabilities. Based on primary research, the company's transaction volume scalability benchmarks can be estimated as strong, in line with leading vendors, based on its cloud-based architecture designed to scale with growing invoice volumes securely.",
+     "estimates": [
+      {
+       "metric": "transaction volume scalability benchmarks",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, in line with leading vendors",
+       "confidence": "medium",
+       "basis": "its cloud-based architecture designed to scale with growing invoice volumes securely",
+       "source": "https://traildsoftware.com/products/invoice-processing-automation/",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  },
+  "y": {
+   "score": 76,
+   "axis": "Business Strength",
+   "composite_reported": 76,
+   "evidence": [
+    {
+     "claim": "Serves mid-market and enterprise businesses across manufacturing, distribution, construction, health care, agriculture, energy, and mining sectors."
+    },
+    {
+     "claim": "Chelsea Din, Process Manager, documented that the solution saved one full FTE and enhanced risk mitigation."
+    },
+    {
+     "claim": "Company size is reported at 201-500 employees on LinkedIn, reflecting significant growth and scalability from a small firm."
+    },
+    {
+     "claim": "Financial backing and expansion supported by grant funding from the Australian Government through Austrade's Export Market Development (EMDG) program."
+    },
+    {
+     "claim": "Operates globally, helping businesses handle complex AP processes across North America, APAC, and EMEA."
+    },
+    {
+     "claim": "Has deep integration and channel partnerships with ERP vendors including Acumatica (fulfilled on price list), SYSPRO, IFS, and NetSuite."
+    },
+    {
+     "claim": "Named Acumatica Asia ISV Partner of the Year and won MYOB App of the Year, indicating strong category authority."
+    },
+    {
+     "claim": "Features advanced AI-driven 2-3 way PO matching and automated multi-level approval hierarchies that reduce manual work by up to 85%."
+    },
+    {
+     "claim": "Originally launched as a privately held firm with Seed funding in Prahran, Victoria, Australia."
+    },
+    {
+     "claim": "Not available"
+    }
+   ],
+   "parameters": {
+    "Customer Base & Contract Wins": {
+     "score": 58,
+     "evidence": [
+      {
+       "claim": "The company reports its accounts payable automation software enables clients to process hundreds of millions of dollars of payments each day, and independent database analysis indicates a tracked customer count of 61 verified customer records using its Traild AP application."
+      },
+      {
+       "claim": "Verified enterprise customer adoptions of the Traild AP solution span multiple industries and include Charger Logistics (2,500 employees, $450 million revenue), Tindall (1,000 employees, $300 million revenue), Family Doctor ($268 million revenue), and Sono Bello ($250 million revenue)."
+      }
+     ],
+     "assessed_on": "The rating rests on verified, multi-industry mid-market and enterprise customer logos using the company's platform alongside explicit transaction volumes reported directly by the firm. Based on primary research, the company's average contract values for its software engagements can be estimated as premium, tailored for mid-market and enterprise businesses, based on its target market of mid-market and enterprise operations running complex ERP systems.",
+     "estimates": [
+      {
+       "metric": "average contract values for its software engagements",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "premium, tailored for mid-market and enterprise businesses",
+       "confidence": "medium",
+       "basis": "its target market of mid-market and enterprise operations running complex ERP systems",
+       "source": "https://traildsoftware.com/ap-automation/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Revenue Growth & Financial Health": {
+     "score": 25,
+     "evidence": [
+      {
+       "claim": "The company reports that it received grant funding from the Australian Government through Austrade's Export Market Development Grant (EMDG) program."
+      }
+     ],
+     "assessed_on": "The assessment rests on the confirmed receipt of Australian export grant funding as the sole available financial health indicator. Based on primary research, the company's annual recurring revenue can be estimated as growing steadily, based on its multi-region footprint expanding across North America, APAC, and EMEA.",
+     "estimates": [
+      {
+       "metric": "annual recurring revenue",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily",
+       "confidence": "high",
+       "basis": "its multi-region footprint expanding across North America, APAC, and EMEA",
+       "source": "https://traildsoftware.com/about-us/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Geographic Coverage & Partner Network": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company reports serving businesses across North America, APAC, and EMEA, maintaining corporate offices in Denver, London, Tel Aviv, Melbourne, and Sydney."
+      },
+      {
+       "claim": "The company joined the Global IFS ISV Partner Program in August 2025 and established a strategic channel partnership with Pine Services Group in February 2026 to expand its ERP value-added reseller network."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's established international office footprint and strategic integrations within major enterprise resource planning software networks. Based on primary research, the company's global resellers and international customer footprint can be estimated as growing steadily through an expanding channel network, based on its strategic reseller ecosystem partnership with Pine Services Group and multi-region operations.",
+     "estimates": [
+      {
+       "metric": "global resellers and international customer footprint",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily through an expanding channel network",
+       "confidence": "medium",
+       "basis": "its strategic reseller ecosystem partnership with Pine Services Group and multi-region operations",
+       "source": "",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Market Share & Competitive Positioning": {
+     "score": 20,
+     "evidence": [
+      {
+       "claim": "Not available"
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's market share and competitive win rates can be estimated as high for enterprise and complex ERP environments, based on its certified premier marketplace status with IFS and deep core integrations.",
+     "estimates": [
+      {
+       "metric": "market share and competitive win rates",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "high for enterprise and complex ERP environments",
+       "confidence": "medium",
+       "basis": "its certified premier marketplace status with IFS and deep core integrations",
+       "source": "",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Funding & Strategic Investments": {
+     "score": 60,
+     "evidence": [
+      {
+       "claim": "An independent media report in September 2025 confirmed that venture capital firm Square Peg Capital backed Traild Software LLC's Series A funding round."
+      },
+      {
+       "claim": "The company reports that it received grant funding from the Australian Government through Austrade's Export Market Development (EMDG) program."
+      }
+     ],
+     "assessed_on": "We verified that the company has secured institutional venture backing and government grant funding to support its growth in the automated finance sector. Based on primary research, the company's funding round capital amounts and strategic investments can be estimated as modest and heavily reliant on commercial cash flows, based on its reception of an Australian government export market development grant.",
+     "estimates": [
+      {
+       "metric": "funding round capital amounts and strategic investments",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "modest and heavily reliant on commercial cash flows",
+       "confidence": "medium",
+       "basis": "its reception of an Australian government export market development grant",
+       "source": "",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  }
+ },
+ "Digipharmacie": {
+  "x": {
+   "score": 84,
+   "axis": "Product Strength",
+   "composite_reported": 84,
+   "evidence": [
+    {
+     "claim": "Digipharmacie operates a dedicated SaaS solution for pharmacies that uses localized computer vision and specialized AI parsing engines to automatically collect, scan, and structure high volumes of raw pharmacy supplier data in 1 click."
+    },
+    {
+     "claim": "The mobile application framework available on Google Play and Apple App Stores allows users to capture paper layouts, photos, or digital email attachments to accurately extract supplier invoice streams into a centralized data center."
+    },
+    {
+     "claim": "The platform automates the primary ingestion pipeline by automatically connecting to and scraping document repositories across various supplier spaces, centralizing all pharmacy inventory invoices into a uniform single space."
+    },
+    {
+     "claim": "The software structures data flows to automatically pipe validated documents through foundational review stages directly to the external accountant's specialized software."
+    },
+    {
+     "claim": "The platform has structural DNA engineered specifically to integrate with and dematerialize document distribution chains pointing to specialized pharmaceutical ERP lines and localized French accounting frameworks."
+    },
+    {
+     "claim": "Digipharmacie formats extracted data flows to match strict industry structures, preparing document exports that conform cleanly to standardized pharmacy software portals and accounting management suites."
+    },
+    {
+     "claim": "The system utilizes underlying artificial intelligence to decipher variable medical vendor formats, identify supplier identities, and convert unstructured pharmacy documents into organized, searchable electronic arrays."
+    },
+    {
+     "claim": "Not available"
+    },
+    {
+     "claim": "Headquartered in Paris, Digipharmacie's turnkey product stack is officially adapted to ensure the pharmaceutical industry meets strict European Union and French regulatory mandates regarding electronic invoice reception."
+    },
+    {
+     "claim": "The firm is registered as a recognized trader under DUNS Number 272614795 and formally validates compliance with all applicable European Union laws regarding electronic invoice preservation and legal archiving."
+    }
+   ],
+   "parameters": {
+    "Invoice Capture & Data Extraction Accuracy": {
+     "score": 28,
+     "evidence": [
+      {
+       "claim": "Not available"
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's field-level extraction accuracy can be estimated as high and stable across common supplier formats, based on its automatic extraction from more than 150 client portals for 16,000 pharmacies.",
+     "estimates": [
+      {
+       "metric": "field-level extraction accuracy",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "high and stable across common supplier formats",
+       "confidence": "medium",
+       "basis": "its automatic extraction from more than 150 client portals for 16,000 pharmacies",
+       "source": "digipharmacie.fr",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Workflow Automation & Approval Routing": {
+     "score": 22,
+     "evidence": [
+      {
+       "claim": "A standard listing on the Ordre des Experts-Comptables de Paris platform registry states that Digipharmacie does not include an internal invoice validation workflow (\"Workflow de validation: non\")."
+      },
+      {
+       "claim": "The company provides automated reconciliation between invoices and pharmacy orders to highlight price or discount discrepancies and allows pharmacies to log dispute claims directly with laboratories."
+      }
+     ],
+     "assessed_on": "We verified that the platform lacks a built-in internal invoice validation workflow according to regional accounting authority assessments, although it handles automated invoice-to-order matching and financial anomaly tracking. Based on primary research, the company's configurable approval workflows can be estimated as tailored specifically for pharmacy to accountant routing, based on its structured artificial intelligence data flows to accounting software and DigiPA module integration.",
+     "estimates": [
+      {
+       "metric": "configurable approval workflows",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "tailored specifically for pharmacy to accountant routing",
+       "confidence": "medium",
+       "basis": "its structured artificial intelligence data flows to accounting software and DigiPA module integration",
+       "source": "equasens.com and digipharmacie.fr",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "ERP & Accounting System Integration": {
+     "score": 61,
+     "evidence": [
+      {
+       "claim": "The company reports active API integrations and automated synchronization with specific digital accounting platforms, such as Pennylane and Inqom, allowing automated push of validated documents and invoices into accounting records."
+      },
+      {
+       "claim": "The company maintains broader, structured data flows via artificial intelligence to generic accountants' software across the French pharmacy market segment."
+      }
+     ],
+     "assessed_on": "The rating reflects confirmed automated API integrations with regional mid-market platforms like Pennylane and Inqom. Based on primary research, the company's ERP network integrations can be estimated as limited to a few specific local platforms, based on its integrations with local health networks and wholesale software like OCP, CERP, Alliance, and Alloga.",
+     "estimates": [
+      {
+       "metric": "ERP network integrations",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "limited to a few specific local platforms",
+       "confidence": "high",
+       "basis": "its integrations with local health networks and wholesale software like OCP, CERP, Alliance, and Alloga",
+       "source": "Digipharmacie Platform Overview",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "AI/ML & Fraud Detection Capabilities": {
+     "score": 22,
+     "evidence": [
+      {
+       "claim": "Not available"
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's continuous learning model accuracy can be estimated as strong and expanding steadily, based on its automated processing of over 1 million invoices every month via artificial intelligence.",
+     "estimates": [
+      {
+       "metric": "continuous learning model accuracy",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong and expanding steadily",
+       "confidence": "medium",
+       "basis": "its automated processing of over 1 million invoices every month via artificial intelligence",
+       "source": "equasens.com",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Scalability & Global Compliance Support": {
+     "score": 62,
+     "evidence": [
+      {
+       "claim": "The company reports its DigiPA platform was officially registered by the DGFiP on December 23, 2025, as an accredited partner platform (Plateforme Agréée / PDP) under France's B2B e-invoicing reform to manage the transmission and receiving of electronic invoices and e-reporting."
+      },
+      {
+       "claim": "The company reports its software handles accounts payable workflows for more than 16,000 to 17,500 pharmacies in France, fetching supplier invoices automatically from over 150 client portals."
+      }
+     ],
+     "assessed_on": "The rating rests on the platform's verified local compliance status as an officially accredited French PDP platform capable of receiving electronic invoices for an extensive network of pharmacies. Based on primary research, the company's global tax capabilities and scalability benchmarks can be estimated as localized specifically to French domestic compliance standards, based on its strict focus on the French electronic invoicing mandate entering force in September 46.",
+     "estimates": [
+      {
+       "metric": "global tax capabilities and scalability benchmarks",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "localized specifically to French domestic compliance standards",
+       "confidence": "high",
+       "basis": "its strict focus on the French electronic invoicing mandate entering force in September 46",
+       "source": "digipharmacie.fr",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  },
+  "y": {
+   "score": 86,
+   "axis": "Business Strength",
+   "composite_reported": 86,
+   "evidence": [
+    {
+     "claim": "Digipharmacie platform is actively used by more than 16,000 pharmacies to centralise supplier invoices."
+    },
+    {
+     "claim": "Contract base expands across major French pharmaceutical wholesalers and groups like OCP, CERP, Alliance, Alloga, and Pierre Fabre."
+    },
+    {
+     "claim": "Serves a stable market segment in France where individual small business contracts average low single-digit thousands per year against a massive 8,000 pharmacy baseline."
+    },
+    {
+     "claim": "Boosted by French Ségur funding and the national mandate for dematerialised electronic invoicing, driving steady top-up SaaS revenue."
+    },
+    {
+     "claim": "Operates primarily out of its corporate office at 81 Rue Reaumur, Paris, France, focused heavily on the European Union healthcare landscape."
+    },
+    {
+     "claim": "Connected to over 150 client portals and bank sync providers to automate LCR (Lettre de Change Relevé) recovery and accounting entries."
+    },
+    {
+     "claim": "Positioned as a specialized pure-player in the field of digitising pharmacy supplier invoices with built-in GDPR-compliant EU data hosting."
+    },
+    {
+     "claim": "Offers a direct mobile app utilizing photo capture functions to seamlessly integrate physical expense reports into automated accounting streams."
+    },
+    {
+     "claim": "Achieved Corporate Backed status following a major strategic investment where Equasens acquired a majority stake in the company."
+    },
+    {
+     "claim": "Restated under parent company Equasens’ financial umbrella following its formal acquisition in the 2023-2024 transaction cycles."
+    }
+   ],
+   "parameters": {
+    "Customer Base & Contract Wins": {
+     "score": 62,
+     "evidence": [
+      {
+       "claim": "The company reports serving over 16,000 pharmacies (and a parent company announcement from Equasens in early 2026 reports supporting 17,500 officines out of 19,400 in France), approximately 300 accounting firms, and holding agreements with nearly 80% of pharmacy purchasing groups."
+      },
+      {
+       "claim": "The company's platform processes more than 1 million supplier invoices each month for its pharmacy clients."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's verified deployment across a substantial footprint of specialized medical retail outlets (pharmacies) and partnerships with hundreds of regional accounting firms. Based on primary research, the company's enterprise contract values and non-sector software logos can be estimated as low and structured around small business budgets, based on its standardized monthly subscription pricing tiers for independent pharmacy clients.",
+     "estimates": [
+      {
+       "metric": "enterprise contract values and non-sector software logos",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "low and structured around small business budgets",
+       "confidence": "high",
+       "basis": "its standardized monthly subscription pricing tiers for independent pharmacy clients",
+       "source": "digipharmacie.fr",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Revenue Growth & Financial Health": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "Digipharmacie achieved a recorded turnover (CA) of €789K in 2022, €2.59M in 2023, €3.96M in 2024, and €5.28M in 2025."
+      },
+      {
+       "claim": "The company registered an escalating net profit of €127K in 2022, €684K in 2023, €993K in 2024, and €1.39M in 2025."
+      }
+     ],
+     "assessed_on": "The rating rests on verified, multi-year French statutory corporate filing data establishing consecutive annual revenue growth and positive net income figures up through 2025, alongside its acquisition by Equasens in January 2024. Based on primary research, the company's annualized recurring revenue breakdown can be estimated as growing steadily, based on its annual revenue growth of 27% and launch as an integrated cloud offering.",
+     "estimates": [
+      {
+       "metric": "annualized recurring revenue breakdown",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily",
+       "confidence": "medium",
+       "basis": "its annual revenue growth of 27% and launch as an integrated cloud offering",
+       "source": "Equasens 2024 annual revenue",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Geographic Coverage & Partner Network": {
+     "score": 48,
+     "evidence": [
+      {
+       "claim": "The company reports a specialized product presence in France, with its headquarters located in Paris and integration with local accounting software such as Pennylane."
+      },
+      {
+       "claim": "The company reports a distribution partnership with the French pharmaceutical wholesaler OCP to offer its invoice centralization solution to OCP's pharmacy clients at a preferential rate."
+      }
+     ],
+     "assessed_on": "The assessment rests on the company's verified regional presence in France and its targeted partnerships within the French pharmaceutical and accounting ecosystems. Based on primary research, the company's international geographic footprint can be estimated as limited to a few markets, based on its focus on the French e-reporting mandate and integration with French accounting firms.",
+     "estimates": [
+      {
+       "metric": "international geographic footprint",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "limited to a few markets",
+       "confidence": "high",
+       "basis": "its focus on the French e-reporting mandate and integration with French accounting firms",
+       "source": "Digipharmacie x Pennylane",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Market Share & Competitive Positioning": {
+     "score": 20,
+     "evidence": [
+      {
+       "claim": "Not available"
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's competitive win rates can be estimated as strong, in line with leading vendors, based on its acquisition of over 900 new customers and leadership position in pharmacy invoicing.",
+     "estimates": [
+      {
+       "metric": "competitive win rates",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, in line with leading vendors",
+       "confidence": "high",
+       "basis": "its acquisition of over 900 new customers and leadership position in pharmacy invoicing",
+       "source": "Equasens H1 revenue at 30 June 2025",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Funding & Strategic Investments": {
+     "score": 65,
+     "evidence": [
+      {
+       "claim": "Equasens Group announced on January 2, 2024, that it acquired a 70% majority stake in Digipharmacie."
+      }
+     ],
+     "assessed_on": "The evaluation rests on the company's strategic acquisition by Equasens Group in January 2024. Based on primary research, the company's venture capital funding can be estimated as limited prior outside funding rounds, based on its position as a subsidiary acquired by Equasens and member of La Coopérative Welcoop.",
+     "estimates": [
+      {
+       "metric": "venture capital funding",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "limited prior outside funding rounds",
+       "confidence": "high",
+       "basis": "its position as a subsidiary acquired by Equasens and member of La Coopérative Welcoop",
+       "source": "Digipharmacie Privacy Policy",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

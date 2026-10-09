@@ -1,0 +1,143 @@
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Drone LiDAR Industry Analysis",
+  "country": "India",
+  "batch": "all",
+  "family": "general",
+  "target": 12,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 14,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 11,
+  "rejected_mid": 3,
+  "chatgpt_filled": 11,
+  "rejected_final": 0,
+  "total_after": 11,
+  "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_lidar_industry_analysis_india\\drone_lidar_industry_analysis_india_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "33aad049",
+    "market": "Drone LiDAR Industry Analysis",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-09-21T05:06:21.749298+00:00",
+    "ended_at": "2026-09-21T05:35:52.819406+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 12,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": true,
+      "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_lidar_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 11,
+      "xlsx": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_lidar_industry_analysis_india\\drone_lidar_industry_analysis_india_FINAL.xlsx",
+      "rejected_mid": 3,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {
+    "industry_group": "ICT, Automation, Semiconductor",
+    "industry_category": "Aerospace and Defense",
+    "axis_x": "Product Strength",
+    "axis_y": "Business Strength",
+    "axis_definition_method": "llm",
+    "axis_definition_reason": "These parameters focus on LiDAR-specific product capabilities and business factors critical for the Indian drone market, including regulatory compliance and government contracts, ensuring relevance to the unique demands of drone LiDAR in India.",
+    "parameter_definitions": {
+      "x": {
+        "LiDAR Sensor Integration & Calibration": "Ability to integrate LiDAR sensors with drone platforms and calibrate for accurate geospatial data. Evidence includes sensor specs, calibration processes, and compatibility with multiple drone models.",
+        "Drone Platform Endurance & Payload Capacity": "Flight time and payload capacity of drones equipped with LiDAR for surveying and mapping. Strength shown by long endurance, high payload, and stability in Indian climatic conditions.",
+        "Point Cloud Accuracy & Density": "Precision and resolution of LiDAR-generated point clouds for terrain and infrastructure mapping. Evidence includes accuracy metrics (e.g., cm-level), density (points per sqm), and validation against ground truth.",
+        "Real-Time Data Processing & Software": "Capability to process LiDAR data in real-time or near-real-time and provide actionable insights via software. Strength indicated by processing speed, user-friendly interfaces, and integration with GIS platforms.",
+        "Regulatory Compliance & Certification": "Compliance with Indian aviation regulations (e.g., DGCA) and LiDAR safety standards. Evidence includes certifications, type approvals, and adherence to local drone operation rules."
+      },
+      "y": {
+        "Domestic Market Penetration & Customer Base": "Extent of adoption by Indian customers across sectors like agriculture, mining, infrastructure, and defense. Strength shown by number of clients, repeat orders, and market share in India.",
+        "Revenue Growth & Profitability": "Financial performance in the Indian drone LiDAR market, including revenue growth, margins, and profitability. Evidence from financial statements, funding, and investor reports.",
+        "Strategic Partnerships & Distribution Network": "Collaborations with Indian distributors, technology partners, and integrators to expand reach. Strength indicated by partnerships with major Indian firms and wide distribution channels.",
+        "Government & Defense Contract Wins": "Success in securing contracts from Indian government agencies and defense organizations. Evidence includes awarded tenders, pilot projects, and empanelment with defense programs.",
+        "After-Sales Support & Service Network": "Availability of maintenance, training, and support services across India. Strength shown by service centers, response times, and customer satisfaction metrics."
+      }
+    },
+    "x_features": [
+      "LiDAR Sensor Integration & Calibration",
+      "Drone Platform Endurance & Payload Capacity",
+      "Point Cloud Accuracy & Density",
+      "Real-Time Data Processing & Software",
+      "Regulatory Compliance & Certification"
+    ],
+    "y_features": [
+      "Domestic Market Penetration & Customer Base",
+      "Revenue Growth & Profitability",
+      "Strategic Partnerships & Distribution Network",
+      "Government & Defense Contract Wins",
+      "After-Sales Support & Service Network"
+    ],
+    "x_feature_weights": [
+      0.3,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "y_feature_weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "question_weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "overall_formula": "(X + Y) / 2",
+    "quadrant_mid_x": 85.0,
+    "quadrant_mid_y": 79.0,
+    "scored": 11,
+    "crawl": {
+      "crawled": 0,
+      "ok": 0,
+      "fail": 0,
+      "skipped_no_domain": 0
+    },
+    "relevance": {
+      "input": 11,
+      "geo_artifacts": 0,
+      "heuristic_drop": 0,
+      "llm_drop": 0,
+      "kept": 11,
+      "player_type": "B2B",
+      "market_type": "B2B",
+      "market_definition": "The drone LiDAR market encompasses hardware, software, and services for capturing precise 3D geospatial data using LiDAR sensors mounted on unmanned aerial vehicles for mapping and surveying applications.",
+      "keep_roles": [
+        "Drone Platform Manufacturer"
+      ],
+      "uniform_role": "Drone Platform Manufacturer"
+    }
+  },
+  "checkpoint": "C:\\Users\\aman.kumar\\Downloads\\Coherent-Quadrant\\output\\chatgpt_expand\\drone_lidar_industry_analysis_india\\chatgpt_checkpoint_batch_all.json",
+  "resumed": true
+}

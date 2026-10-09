@@ -1,0 +1,80 @@
+{
+  "total": 208,
+  "brand": 188,
+  "marketer": 20,
+  "changed": [
+    {
+      "company": "Mitsubishi Corporation",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "mitsubishi corporation: sogo shosha LNG marketing/trading"
+    },
+    {
+      "company": "Mitsui & Co.",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "mitsui co: sogo shosha LNG marketing/trading"
+    },
+    {
+      "company": "PTT Global LNG (PTTGL)",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "ptt global lng: PTT LNG marketing subsidiary"
+    },
+    {
+      "company": "Marubeni Corporation",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "marubeni: sogo shosha LNG marketing/trading"
+    },
+    {
+      "company": "Pavilion Energy",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "pavilion energy: LNG trading portfolio (acquired by Shell Apr 2025)"
+    },
+    {
+      "company": "SK Gas Trading",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "sk gas trading: SK Group LNG/gas trading arm"
+    },
+    {
+      "company": "Itochu Corporation",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "itochu: sogo shosha LNG marketing/trading"
+    },
+    {
+      "company": "Sojitz Corporation",
+      "from": "Brand",
+      "to": "Marketer",
+      "reason": "sojitz: sogo shosha LNG marketing/trading"
+    }
+  ],
+  "marketer_stems_used": [
+    "bb energy",
+    "castleton commodities",
+    "freepoint commodities",
+    "glencore",
+    "gunvor",
+    "hartree partners",
+    "itochu",
+    "lng japan",
+    "marubeni",
+    "mercuria",
+    "mitsubishi corporation",
+    "mitsui & co",
+    "mitsui co",
+    "pavilion energy",
+    "ptt global lng",
+    "qatarenergy trading",
+    "sk gas trading",
+    "sojitz",
+    "sumitomo corporation",
+    "trafigura",
+    "vitol"
+  ],
+  "rule": "Brand = LNG producer/terminal/FSRU/IOC-NOC-utility operator; Marketer = verified commodity trader, LNG trading arm, or sogo shosha LNG marketer only",
+  "html": "D:\\Coherent-Quadrant\\output\\chatgpt_expand\\global_liquefied_natural_gas_market_global\\global_liquefied_natural_gas_market_global_report.html"
+}

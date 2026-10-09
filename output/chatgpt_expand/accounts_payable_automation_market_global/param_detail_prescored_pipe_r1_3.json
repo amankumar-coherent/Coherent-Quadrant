@@ -1,0 +1,396 @@
+{
+  "Sansan, Inc.": {
+    "x": {
+      "score": 91,
+      "axis": "Product Strength",
+      "composite_reported": 91,
+      "evidence": [
+        {
+          "claim": "Proprietary AI/OCR digitization achieves 99.9% accuracy when conditions specified by Sansan are met, as detailed in Sansan's Investor Relations Business Information."
+        },
+        {
+          "claim": "The Bill One platform processes multi-format inputs including paper invoices, mail, and PDF attachments via proxy receipt, as reported by Sansan Global."
+        },
+        {
+          "claim": "The system digitizes invoices by the end of the next business day, transitioning documents straight into custom approval and month-end closing streams, per Sansan Global."
+        },
+        {
+          "claim": "Built-in automated workflow controls send automated reminders and tracking alerts for overdue internal payment validations, according to Sansan Global."
+        },
+        {
+          "claim": "Bill One features native integration tools enabling direct data transfer through dedicated API endpoints and CSV imports, as confirmed by Sansan Global."
+        },
+        {
+          "claim": "Provides a unified environment linking core platform applications, such as the Contract One settings module via a dedicated Sansan integration key, documented in the Sansan Help Center."
+        },
+        {
+          "claim": "Deploys proprietary multi-language AI engines optimized to dynamically read and interpret character blocks across English, Japanese, and Thai documents, as reported by Sansan Global."
+        },
+        {
+          "claim": "Employs Bill One Accounts Receivable virtual bank accounts assigned per invoicing party to isolate payments and accurately reconcile name mismatches, per Sansan's Investor Relations."
+        },
+        {
+          "claim": "Expanded operational infrastructure includes Bill One Expense, which connects to the corporate Bill One Business Card to track global corporate spend, outlined by Sansan's Investor Relations."
+        },
+        {
+          "claim": "Secure cloud data safeguards utilize two-factor authentication, single sign-on (SSO), and inbound IP address restrictions, per Sansan Global."
+        }
+      ],
+      "parameters": {
+        "Invoice Capture & Data Extraction Accuracy": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports that its Bill One cloud-based invoice management platform digitizes paper and PDF invoices using a proprietary AI and OCR combination operating at a 99.9% accuracy rate."
+            },
+            {
+              "claim": "Sansan, Inc. leverages a human-in-the-loop validation layer consisting of human operators at its scan centres across Singapore, Thailand, and Japan to complement its OCR technology and secure its accuracy standard."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified deployment of a combined proprietary OCR and human verification system that yields a self-reported 99.9% field extraction accuracy rate across multiple languages. Based on primary research, the company has not disclosed its independent touchless processing (straight-through processing) rates without human intervention."
+        },
+        "Workflow Automation & Approval Routing": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports that its accounting solution, Bill One, digitizes invoice data and imports it into a controlled cloud workflow, allowing sequential processes—including invoice verification, approval routing, and journal entry creation—to be completed in the cloud."
+            },
+            {
+              "claim": "The company reports that its Bill One solution automates operational workflows upstream by capturing accurate primary data to eliminate manual circulation and support multi-level approval paths."
+            }
+          ],
+          "assessed_on": "The rating rests on Sansan, Inc.’s confirmed deployment of cloud-based internal approval workflows and verification paths within its Bill One invoice management product. Based on primary research, the company has not disclosed technical specifications regarding conditional routing depth, automated exception handling granularities, or structural integration with external procurement platforms."
+        },
+        "ERP & Accounting System Integration": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "The company reports that its cloud invoice management service, Bill One, supports system integrations through standard CSV file exports and OpenAPI methods to connect with general financial tools."
+            },
+            {
+              "claim": "Bill One has maintained a native functional integration with the cloud accounting system Kanjobugyo Cloud by OBC since November 2020, facilitating automated synchronization of invoice figures."
+            }
+          ],
+          "assessed_on": "The rating rests on the platform's support for OpenAPI and its specific native API connector built for the domestic Japanese accounting software Kanjobugyo Cloud. Based on primary research, the company has not disclosed certified native integrations or pre-built connectors for major global ERP and accounting platforms such as SAP, Oracle, NetSuite, or QuickBooks."
+        },
+        "AI/ML & Fraud Detection Capabilities": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "The company reports it will gradually begin offering new functions for its accounting AX service \"Bill One\" starting around spring 2026, including an expansion of its \"AI Auto-Verification\" feature along with new \"AI Auto-Invoicing\" and \"Auto-Approval\" tools to automate data matching against order details."
+            },
+            {
+              "claim": "The company reports the integration of an AI-based \"arrival management function\" into Bill One in November 2025, which utilizes a patent-pending technology to predict current-month invoice arrival dates based on past records to reduce missed invoicing."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's deployment of predictive arrival models and expanded AI verification/matching features for its Bill One invoice management system. Based on primary research, the company has not disclosed quantitative model accuracy rates for standalone AI anomaly/duplicate detection or native fraud prevention mechanisms."
+        },
+        "Scalability & Global Compliance Support": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "The company reports that its cloud-based invoice management solution, Bill One, ensures compliance with the Japanese Invoice System and the Electronic Bookkeeping Act, and handles automated validation for qualified invoice requirements."
+            },
+            {
+              "claim": "Sansan, Inc. partner case studies verify that its Bill One architecture utilizes application performance monitoring to manage latency and ensure proactive troubleshooting during high-volume peak periods driven by rapid customer scaling."
+            }
+          ],
+          "assessed_on": "The evaluation rests on confirmed compliance features built specifically for Japanese tax reforms and infrastructure tracking to support transaction processing. Based on primary research, the company has not disclosed specific multi-country compliance frameworks (such as global VAT/GST or PEPPOL coverage) outside of Japan, nor has it published clear uptime SLA percentages or numerical transaction scalability benchmarks."
+        }
+      }
+    },
+    "y": {
+      "score": 87,
+      "axis": "Business Strength",
+      "composite_reported": 87,
+      "evidence": [
+        {
+          "claim": "Bill One achieved record net customer additions in FY2025 as reported in the Sansan FY2025 financial results briefing."
+        },
+        {
+          "claim": "The number of Sansan product subscriptions increased by 10.3% year-over-year to 11,069 subscriptions."
+        },
+        {
+          "claim": "Bill One's Annual Recurring Revenue (ARR) reached ¥14.8 billion (approximately $91.2 million), representing a 34.9% increase in Monthly Recurring Revenue (MRR)."
+        },
+        {
+          "claim": "Net sales for the combined Sansan/Bill One business segment increased by 26.4% year-over-year to reach ¥10,935 million."
+        },
+        {
+          "claim": "Headquartered in Tokyo, Japan, Sansan operates its localized accounts payable platform, Bill One, to align explicitly with Japan's Invoicing System and Electronic Bookkeeping Act compliance requirements."
+        },
+        {
+          "claim": "Sansan introduced the Sansan MCP server integration to connect its corporate database capabilities with regional generative AI applications for natural language actions."
+        },
+        {
+          "claim": "Bill One captured a leading 49.0% market share in the online invoice receiving solution market in Japan based on net sales metrics."
+        },
+        {
+          "claim": "The flagship corporate business card database system under the Sansan brand holds an 85.8% dominant market share within its specific B2B segment in Japan."
+        },
+        {
+          "claim": "Sansan is a publicly traded entity on the Tokyo Stock Exchange (Ticker: 4443.T) and achieved sufficient cash flow to execute its first dividend issuance and share buybacks for the fiscal year."
+        },
+        {
+          "claim": "The company issued tax-qualified stock options (Stock Acquisition Rights) with stock price performance conditions to its internal corporate employees."
+        }
+      ],
+      "parameters": {
+        "Customer Base & Contract Wins": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "The company reports that its cloud-based invoice management service for accounts payable, Bill One, achieved annual recurring revenue (ARR) of ¥14.8 billion in its full-year FY2026 financial results, representing a 34.9% increase year-over-year."
+            },
+            {
+              "claim": "The company announced that Dunlop Tire Thailand implemented Bill One in April 2026 to digitize its accounts payable operations, centrally managing approximately 200 vendor invoices each month."
+            }
+          ],
+          "assessed_on": "We verified that Sansan, Inc. demonstrates partial capability in the accounts payable automation market based on disclosed financial momentum and mid-market customer use cases for its Bill One product line. Based on primary research, the company has not disclosed its total paying enterprise customer count, average contract value, or specific contract values for individual client wins."
+        },
+        "Revenue Growth & Financial Health": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that its accounting AI transformation (AX) cloud invoice solution, Bill One, generated ¥13.679 billion in net sales for the fiscal year ended May 2025, marking a 39.7% year-over-year growth rate."
+            },
+            {
+              "claim": "The company reports that its Bill One business segment reached an annual recurring revenue (ARR) scale of ¥13.9 billion as of Q1 of the fiscal year ending May 2026."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's publicly disclosed corporate financial statements detailing segment net sales, rapid year-over-year expansion, and precise annual recurring revenue milestones for its accounts payable automation solution. Based on primary research, the company has not disclosed the standalone net profitability margins specifically isolated for the Bill One product line outside of aggregate segment adjusted operating profits."
+        },
+        "Geographic Coverage & Partner Network": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports operating global operations through subsidiaries in Singapore (Sansan Global Pte. Ltd.), Thailand (Sansan Global (Thailand) Co., Ltd.), and a development base in the Philippines (Sansan Global Development Center, Inc.), alongside its main headquarters in Japan."
+            },
+            {
+              "claim": "The company reports that its core AI and OCR technology uses invoice scanning hubs in Singapore, Thailand, and Japan, with Bill One currently supporting processing functionality for workflows in English, Thai, and Japanese."
+            }
+          ],
+          "assessed_on": "The evaluation rests on Sansan, Inc.’s established physical subsidiaries in Southeast Asia and localized language/digitization support for its Bill One invoice management system across three specific regional contexts. Based on primary research, the company has not disclosed the precise size or scope of its partner, reseller, or channel distributor networks within the broader accounts payable market."
+        },
+        "Market Share & Competitive Positioning": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "The company reports that its cloud invoice and accounting AI transformation solution, Bill One, grew to an Annual Recurring Revenue (ARR) scale of 13.9 billion yen as of the first quarter of the fiscal year ending May 2026."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's disclosed internal high-growth data for its Bill One invoice automation product, as independent third-party market share percentages and competitive win rates are absent in public reports. Based on primary research, the company has not disclosed its explicit percentage share of the global accounts payable automation market or verified analyst segment rankings."
+        },
+        "Funding & Strategic Investments": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports its corporate history of funding rounds prior to going public, which includes raising approximately 500 million yen in April 2013 and approximately 1.4 billion yen in May 2014 through third-party allocations of new shares."
+            },
+            {
+              "claim": "The company announced US$38 million in Series D funding in August 2017 from investors including the Future Creation Fund, DCM Ventures, and Salesforce.com Ventures to support regional expansion."
+            }
+          ],
+          "assessed_on": "We verified that the company has established verifiable pre-IPO financing and historical venture backing before transitioning to a publicly-traded entity. Based on primary research, the company has not disclosed any dedicated funding rounds or specific acquisitions targeted exclusively at expanding its standalone Bill One accounts payable automation software division."
+        }
+      }
+    }
+  },
+  "Candis GmbH": {
+    "x": {
+      "score": 92,
+      "axis": "Product Strength",
+      "composite_reported": 92,
+      "evidence": [
+        {
+          "claim": "Candis AI yields an extraction accuracy where up to 91% of core field data points are accurately captured, according to Candis AI Feature Releases."
+        },
+        {
+          "claim": "Third-party client benchmarks, such as field tests conducted by Kyon Energy Solutions GmbH, measured a competitive recognition rate of 84%, as reported on Candis Customer Voices."
+        },
+        {
+          "claim": "Incorporates Slack and Microsoft Teams notification systems to deliver link-enabled alert workflows directly to approvers, according to Candis AI Feature Releases."
+        },
+        {
+          "claim": "Employs automated workflow routing for items under €20,000 alongside custom amount threshold parameters, illustrated by the Candis Product Tour."
+        },
+        {
+          "claim": "Employs standard interfaces and an external connector system providing native sync for DATEV, SAP Business One, and Microsoft Dynamics 365 Business Central, as seen on Candis ERP Management."
+        },
+        {
+          "claim": "Features the Candis Invoice Data API and Candis Core Data API for bidirectional master data syncing and analytical business intelligence exporting, documented by Candis Developer Docs."
+        },
+        {
+          "claim": "Integrates an automated verification routine that identifies duplicate records, invalid IBAN details, and master ledger mismatches, per the Candis Product Guide."
+        },
+        {
+          "claim": "Utilizes a localized learning agent named \"Cal\" that models workflow patterns directly from past approval historical datasets, outlined in Candis Help Center Articles."
+        },
+        {
+          "claim": "Validates all invoices against regulatory mandates including Section 14 of the German VAT Act (UStG) and Section 33 of the German VAT Implementation Ordinance (UStDV), as verified by Candis AI Feature Releases."
+        },
+        {
+          "claim": "Guarantees a 10-year audit-proof retention vault structured around GoBD archiving standards, hosted on servers situated in Frankfurt, Germany, per Candis Platform Advantages."
+        }
+      ],
+      "parameters": {
+        "Invoice Capture & Data Extraction Accuracy": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports that Candis AI extracts data up to 11% more accurately than traditional, rule-based optical character recognition (OCR) platforms."
+            },
+            {
+              "claim": "The company reports that its software automatically captures multi-format incoming invoices (including paper, PDF, and e-invoices such as XRechnung and ZUGFeRD) and generates AI-powered coding suggestions for preliminary account assignments."
+            }
+          ],
+          "assessed_on": "The rating rests on the vendor's self-reported capability that its native AI data capture outperforms legacy rule-based OCR systems by 11% while natively processing regional electronic invoice formats. Based on primary research, the company has not disclosed specific baseline field-level data extraction accuracy percentages or touchless straight-through processing rates."
+        },
+        "Workflow Automation & Approval Routing": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports that its digital invoice management software supports multi-level approval workflows with individual amount-based, cost centre, and supplier-based thresholds and routing rules, alongside out-of-office delegation rules and real-time push notifications via a mobile application."
+            },
+            {
+              "claim": "The company reports that its platform includes a GoBD-compliant document history that automatically records all assignments, approval requests, and execution steps within an audit trail."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's clear and verifiable functional documentation detailing flexible amount, supplier, and cost-centre conditional routing rules alongside mobile approvals and an audit trail. Based on primary research, the company has not disclosed third-party verification of its workflow maturity or comprehensive out-of-the-box integration evidence with upstream procurement systems."
+        },
+        "ERP & Accounting System Integration": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports direct integrations and native connectors built for regional and global ERP/accounting systems including SAP Business One (version 10.0 or higher), Microsoft Dynamics 365 Business Central, Sage 100, and Oracle NetSuite."
+            },
+            {
+              "claim": "The company reports a licensed, technically tested interface partnership with DATEV, supporting services such as the DATEV Buchungsdatenservice, Rechnungsdatenservice 1.0, and Belegbilderservice for real-time bidirectional synchronization of master data, posting suggestions, and documents."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's verified and extensive suite of pre-built native integrations for key European and global mid-market platforms, particularly its deep, officially licensed DATEV partner status. Based on primary research, the company has not disclosed third-party verification or certified integrations for North American-focused entry-level applications like QuickBooks."
+        },
+        "AI/ML & Fraud Detection Capabilities": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports that its proprietary machine learning algorithms natively parse document formats and extract invoice data up to 11% more accurately than standard rule-based OCR tools."
+            },
+            {
+              "claim": "The company reports that its software continuously trains on continuous human feedback to improve pre-accounting suggestion patterns during a 30-day initial learning phase, deploying new model versions only after they achieve an internal test accuracy of at least 90%."
+            }
+          ],
+          "assessed_on": "The rating is supported by confirmed evidence of self-reported machine learning models that execute automated document capture, structural pre-coding suggestions, compliance checks, and basic duplicate identification. Based on primary research, the company has not disclosed audited third-party evaluation reports of its extraction models, explicit benchmark metrics on broad predictive analytics, or advanced cross-entity multi-vector anomaly detection modules for deep fraud prevention."
+        },
+        "Scalability & Global Compliance Support": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports that its platform processes e-invoices in XRechnung and ZUGFeRD formats, incorporating automatic document compliance verification under Section 14 of the German VAT Act (UStG) and GoBD-certified 10-year archiving."
+            },
+            {
+              "claim": "The company reports in its European Help Center that it supports receiving foreign B2B e-invoices (such as for France, Poland, and Belgium) by connecting individually to national e-invoicing networks through an integrated partner platform."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's confirmed self-reported capability to process local German e-invoicing standards, adhere to regional VAT compliance laws, and ingest foreign B2B e-invoices via an integrated partner network. Based on primary research, the company has not disclosed system uptime service level agreements (SLAs) or performance benchmarks detailing transaction volume scalability."
+        }
+      }
+    },
+    "y": {
+      "score": 72,
+      "axis": "Business Strength",
+      "composite_reported": 72,
+      "evidence": [
+        {
+          "claim": "Candis officially serves over 10,000 businesses across the SME and startup market segments."
+        },
+        {
+          "claim": "The automated invoice tracking platform recorded 20 billion processed invoices from its customer base, representing a ninefold increase over a two-year timeline."
+        },
+        {
+          "claim": "Candis generated an estimated $12.4 million in annual revenue as of the 2024 tracking cycle."
+        },
+        {
+          "claim": "The corporate EBITDA for the fiscal tracking year 2023 was documented at negative EUR 8,513,655."
+        },
+        {
+          "claim": "Headquartered in Berlin, Germany, the company maintains GoBD-certified accounting and invoice validation workflows deployed on ISO-certified local servers."
+        },
+        {
+          "claim": "Candis offers direct API and interface data export synchronization with regional ERP and accounting systems including DATEV, SAP Business One, Microsoft Business Central, and Sage 100."
+        },
+        {
+          "claim": "Candis operates as a mid-market European automated paytech solution facing 2,858 active industry competitors, including 198 funded market alternatives."
+        },
+        {
+          "claim": "The core machine learning pattern recognition engine delivers automation for up to 80 percent of classic manual bookkeeping and accounts payable workflows."
+        },
+        {
+          "claim": "Candis raised a $16 million (€15.9 million) Series C funding round led by Viola FinTech alongside Lightspeed Venture Partners and Viola Ventures."
+        },
+        {
+          "claim": "The capital injection brought the total cumulative institutional funding raised by Candis to $30 million across its private investment rounds."
+        }
+      ],
+      "parameters": {
+        "Customer Base & Contract Wins": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "The company reports that more than 10,000 mid-sized companies and small-to-medium enterprises rely on its automated invoice management software."
+            },
+            {
+              "claim": "The company reports a 94% contract renewal rate across its customer base."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's self-reported milestone of serving over 10,000 companies. Based on primary research, the company has not disclosed average contract values, specific enterprise logos, or individual deal announcements."
+        },
+        "Revenue Growth & Financial Health": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "The company announced that it raised a $16 million Series C funding round in September 2022, bringing its total funding to approximately $30 million."
+            },
+            {
+              "claim": "The company reports that the second quarter of 2026 was the strongest quarter in its history, experiencing climbing revenue and shrinking churn."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's confirmed venture funding rounds and self-reported positive revenue acceleration through mid-2026. Based on primary research, the company has not disclosed its precise annual recurring revenue figures or profitability metrics."
+        },
+        "Geographic Coverage & Partner Network": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "The company reports a localized partner directory composed primarily of Germany-based tax consultancies, ERP system integrators, and digitization consulting firms, including firms like Mazars GmbH & Co. KG and ECOVIS Deutschland."
+            },
+            {
+              "claim": "The company reports direct product integrations with regional and international accounting platforms and ERP ecosystems, specifically maintaining interfaces for DATEV, Sage 100, SAP Business One, and Microsoft Business Central."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's verified partner network and software integrations heavily concentrated within Germany and the broader DACH region. Based on primary research, the company has not disclosed the total number of countries served globally or the aggregate size of its reseller and channel network."
+        },
+        "Market Share & Competitive Positioning": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "The company reports serving thousands of customers and has raised approximately $31.2 million in total funding to support its AI-driven accounts payable software for small and medium-sized enterprises."
+            }
+          ],
+          "assessed_on": "The evaluation rests on verified records showing that the company maintains an active presence in the European SME mid-market, particularly within Germany, alongside competitors like Spendesk and Moss. Based on primary research, the company has not disclosed its precise share of the global accounts payable automation market or competitive win-loss rates."
+        },
+        "Funding & Strategic Investments": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Candis GmbH raised $16 million in a Series C funding round announced in September 2022, which was led by Viola FinTech with participation from Lightspeed Venture Partners and Viola Ventures."
+            },
+            {
+              "claim": "The company raised €12 million ($14 million) in a Series B funding round announced in July 2020, led by Viola Ventures and Rabo Frontier Ventures."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's verified venture capital funding rounds that back its machine learning engine and invoice management product expansion. Based on primary research, the company has not disclosed any subsequent funding rounds or strategic acquisitions since 2022."
+        }
+      }
+    }
+  }
+}

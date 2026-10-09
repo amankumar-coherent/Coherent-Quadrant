@@ -1,0 +1,588 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Drone AI Industry Analysis
+  target : 120
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=120 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=5e78d9ec → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_ai_industry_analysis_india\drone_ai_industry_analysis_india_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] checkpoint → C:\Users\aman.kumar\Downloads\Coherent-Quadrant\output\chatgpt_expand\drone_ai_industry_analysis_india\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      · 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · 0c-market-analysis: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Solution Provider
+  [chatgpt] Step 0c/6: why B2B: The market is B2B because Drone AI technologies, computer vision software, and autonomous flight stacks are primarily purchased by commercial enterprises, defense agencies, and industrial operators to automate aerial data analysis and flight operations.
+  [chatgpt] Step 0c/6: roles present in market: Solution Provider, Technology Provider
+  [chatgpt] Step 0c/6: why this player type: Solution Provider was chosen because the Drone AI market is fundamentally defined by software platforms, machine learning models, and integrated tech systems that process aerial intelligence, making software vendors the primary competitive players over pure hardware manufacturers.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Solution Provider (batch 10, target 120)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +10 (total 10)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +10 (total 20)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +10 (total 30)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-4: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 35s ago
+    → substep 1a.4: +10 (total 40)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 79s ago
+    → substep 1a.5: +0 (total 40)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+identify+the+BRANDS+sold+in+a+market+and+the+COMPANY+behind+each+brand.+No+invented+names%2C+no+media%2C+associations%2C+research+firms+or+geo+labels.+Return+compact+JSON+only%3A+%7B%22companies%22%3A%5B%7B%22brand%22%3A%22...%22%2C%22company%22%3A%22...%22%2C%22website%22%3A%22https%3A%2F%2F...%22%2C%22headquarters%22%3A%22City%2C+Country%22%2C%22ownership%22%3A%22...%22%2C%22ownership_confidence%22%3A%22high%7Cmedium%7Clow%22%2C%22verdict%22%3A%22...%22%2C%22why_related%22%3A%22...%22%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0AMarket%3A+%22Drone+AI+Industry+Analysis%22%0A%0AGive+me+10+BRANDS+sold+in+this+market+whose+company+is+HEADQUARTERED+IN+india%2C+each+with+the+company+behind+it.%0A%0AThe+company%27s+own+global+headquarters+must+be+in+india+%E2%80%94+a+local+sales+office%2C+plant%2C+subsidiary+or+distributor+of+a+foreign+company+does+NOT+qualify.+Include+national+and+regional+companies%2C+not+only+the+largest+few.+If+there+genuinely+are+no+more+such+companies%2C+return+%7B%22companies%22%3A%5B%5D%7D+%E2%80%94+do+NOT+substitute+a+company+from+another+country+and+do+NOT+invent+one.%0A%0AWHO+QUALIFIES%3A%0AA+qualifying+company%27s+PRIMARY+business+must+make+it+a+Solution+Provider+in+this+market.+That+is+what+it+IS%2C+not+something+it+also+does.%0A%0ASTRICTLY+EXCLUDE%2C+even+if+related+to+this+market%3A%0A-+Consultancies%2C+market-research+firms%2C+news+outlets+and+industry+associations+%E2%80%94+reporting+on+or+advising+a+market+is+not+operating+in+it.%0A-+Distributors+and+resellers+%E2%80%94+they+carry+other+companies%27+product.%0A-+CONTRACT+MANUFACTURERS%2C+OEM%2FODM+makers%2C+white-label+and+private-label+producers+%E2%80%94+they+build+to+another+company%27s+specification+and+own+no+brand+of+their+own+here.+If+a+company%27s+business+is+making+products+that+are+sold+under+SOMEONE+ELSE%27S+brand%2C+EXCLUDE+it+and+name+the+brand+owner+instead.%0A-+Equipment+and+materials+suppliers+%E2%80%94+they+sell+TO+this+market%2C+not+IN+it.%0A-+A+parent+that+does+not+itself+sell+in+THIS+market+%28name+the+operating+subsidiary+instead%29.%0AIf+unsure%2C+EXCLUDE.%0A%0ADo+NOT+repeat+any+of+these+%28including+subsidiaries%2C+aliases+or+former+names%29%3A%0A-+Droame%0A-+Sky+Intel+Drones%0A-+StelX+Dynamics%0A-+AquaAirX%0A-+Skeyebots%0A-+UrbanMatrix%0A-+Enercomp%0A-+BharatRohan%0A-+Assert+AI%0A-+Enord%0A-+DayBest%0A-+Fligen+Systems%0A-+DroniTech%0A-+Drogo+Aerospace%0A-+Raphe+mPhibr%0A-+Aero360%0A-+NewSpace+Research+and+Technologies%0A-+AlgoFET%0A-+Geokno%0A-+Flying+Wedge+Defence+%26+Aerospace%0A-+Dronelab%0A-+EndureAir%0A-+Omnipresent+Robot+Technologies%0A-+Surveyaan%0A-+Ai+Aerial+Dynamics%0A-+Indrones%0A-+Airpix%0A-+GarudaUAV%0A-+Zen+Technologies%0A-+Aereo%0A-+Indrajaal%0A-+Skye+Air%0A-+TechEagle%0A-+Asteria+Aerospace%0A-+Marut+Drones%0A-+Garuda+Aerospace%0A-+Dhaksha+Drones%0A-+Skylark+Drones%0A-+FlytBase%0A-+ideaForge%0A%0AFIELD+RULES%3A%0A-+brand%3A+the+product+%2F+consumer-facing+BRAND+name+as+buyers+know+it+%28e.g.+%22Milton%22%29.+A+brand+is+NOT+a+distributor+and+NOT+a+product+category.+If+the+company+genuinely+sells+only+under+its+own+corporate+name%2C+repeat+that+name+here+rather+than+inventing+a+brand.%0A-+company%3A+the+legal+entity+that+OWNS%2C+manufactures+under%2C+or+is+responsible+for+that+brand+%28e.g.+%22Hamilton+Housewares+Pvt.+Ltd.%22%29.+NEVER+a+distributor%2C+reseller+or+channel+partner+%E2%80%94+those+carry+the+brand%2C+they+do+not+own+it.+If+a+contract+manufacturer+merely+makes+the+product%2C+the+brand+OWNER+still+goes+here.%0A-+website%3A+the+real+official+company+domain.+NEVER+a+LinkedIn%2C+Bloomberg%2C+Crunchbase+or+Wikipedia+page.%0A-+headquarters%3A+%22City%2C+Country%22+%E2%80%94+exactly+one+global+HQ%2C+with+the+state+for+US+companies+%28e.g.+%22Thousand+Oaks%2C+California%2C+USA%22%29.+NEVER+write+%22Global%22%2C+%22Worldwide%22%2C+a+bare+region%2C+or+a+count+like+%2250%2B+countries%22.%0A-+ownership%3A+%22Independent%22%2C+or+%22Acquired+by+%3CParent%3E%22+%2F+%22Subsidiary+of+%3CParent%3E%22+using+the+real+parent+name.+State+an+acquisition+ONLY+if+you+can+support+it+from+the+official+company%2Fbrand+site%2C+an+acquisition+announcement%2C+an+investor-relations+page%2C+a+regulatory+filing+or+a+reputable+business+source.+NEVER+infer+one+from+similar+names.+If+you+cannot+verify+it%2C+write+%22Independent%22.%0A-+ownership_confidence%3A+high+%3D+an+official+company%2Fbrand+source+confirms+it%3B+medium+%3D+multiple+reputable+sources+agree%3B+low+%3D+only+weak+or+indirect+evidence.+Be+honest+%E2%80%94+a+low+is+useful%2C+a+wrong+high+is+not.%0A-+verdict%3A+%22in_market%22+only+if+it+genuinely+operates+in+this+market%3B+otherwise+%22unrelated%22+or+%22unknown%22.+NEVER+guess+this+field.+Include+the+company+ONLY+if+verdict+is+%22in_market%22.%0A-+why_related%3A+one+sentence+naming+what+it+actually+makes%2C+supplies+or+does+in+THIS+market.%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+A+wrong+value+is+much+worse+than+an+empty+one.&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 2/4…
+      · discover-round-6: AI Mode error: AiModeUnavailable: navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/search?q=You+identify+the+BRANDS+sold+in+a+market+and+the+COMPANY+behind+each+brand.+No+invented+names%2C+no+media%2C+associations%2C+research+firms+or+geo+labels.+Return+compact+JSON+only%3A+%7B%22companies%22%3A%5B%7B%22brand%22%3A%22...%22%2C%22company%22%3A%22...%22%2C%22website%22%3A%22https%3A%2F%2F...%22%2C%22headquarters%22%3A%22City%2C+Country%22%2C%22ownership%22%3A%22...%22%2C%22ownership_confidence%22%3A%22high%7Cmedium%7Clow%22%2C%22verdict%22%3A%22...%22%2C%22why_related%22%3A%22...%22%7D%5D%7D%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+NEVER+construct+an+email+from+a+domain.+NEVER+build+a+LinkedIn+URL+from+a+person%27s+name.+NEVER+invent+a+phone+number.+A+wrong+value+is+much+worse+than+an+empty+one.%0A%0AMarket%3A+%22Drone+AI+Industry+Analysis%22%0A%0AGive+me+10+BRANDS+sold+in+this+market+whose+company+is+HEADQUARTERED+IN+india%2C+each+with+the+company+behind+it.%0A%0AThe+company%27s+own+global+headquarters+must+be+in+india+%E2%80%94+a+local+sales+office%2C+plant%2C+subsidiary+or+distributor+of+a+foreign+company+does+NOT+qualify.+Include+national+and+regional+companies%2C+not+only+the+largest+few.+If+there+genuinely+are+no+more+such+companies%2C+return+%7B%22companies%22%3A%5B%5D%7D+%E2%80%94+do+NOT+substitute+a+company+from+another+country+and+do+NOT+invent+one.%0A%0AWHO+QUALIFIES%3A%0AA+qualifying+company%27s+PRIMARY+business+must+make+it+a+Solution+Provider+in+this+market.+That+is+what+it+IS%2C+not+something+it+also+does.%0A%0ASTRICTLY+EXCLUDE%2C+even+if+related+to+this+market%3A%0A-+Consultancies%2C+market-research+firms%2C+news+outlets+and+industry+associations+%E2%80%94+reporting+on+or+advising+a+market+is+not+operating+in+it.%0A-+Distributors+and+resellers+%E2%80%94+they+carry+other+companies%27+product.%0A-+CONTRACT+MANUFACTURERS%2C+OEM%2FODM+makers%2C+white-label+and+private-label+producers+%E2%80%94+they+build+to+another+company%27s+specification+and+own+no+brand+of+their+own+here.+If+a+company%27s+business+is+making+products+that+are+sold+under+SOMEONE+ELSE%27S+brand%2C+EXCLUDE+it+and+name+the+brand+owner+instead.%0A-+Equipment+and+materials+suppliers+%E2%80%94+they+sell+TO+this+market%2C+not+IN+it.%0A-+A+parent+that+does+not+itself+sell+in+THIS+market+%28name+the+operating+subsidiary+instead%29.%0AIf+unsure%2C+EXCLUDE.%0A%0ADo+NOT+repeat+any+of+these+%28including+subsidiaries%2C+aliases+or+former+names%29%3A%0A-+Droame%0A-+Sky+Intel+Drones%0A-+StelX+Dynamics%0A-+AquaAirX%0A-+Skeyebots%0A-+UrbanMatrix%0A-+Enercomp%0A-+BharatRohan%0A-+Assert+AI%0A-+Enord%0A-+DayBest%0A-+Fligen+Systems%0A-+DroniTech%0A-+Drogo+Aerospace%0A-+Raphe+mPhibr%0A-+Aero360%0A-+NewSpace+Research+and+Technologies%0A-+AlgoFET%0A-+Geokno%0A-+Flying+Wedge+Defence+%26+Aerospace%0A-+Dronelab%0A-+EndureAir%0A-+Omnipresent+Robot+Technologies%0A-+Surveyaan%0A-+Ai+Aerial+Dynamics%0A-+Indrones%0A-+Airpix%0A-+GarudaUAV%0A-+Zen+Technologies%0A-+Aereo%0A-+Indrajaal%0A-+Skye+Air%0A-+TechEagle%0A-+Asteria+Aerospace%0A-+Marut+Drones%0A-+Garuda+Aerospace%0A-+Dhaksha+Drones%0A-+Skylark+Drones%0A-+FlytBase%0A-+ideaForge%0A%0AFIELD+RULES%3A%0A-+brand%3A+the+product+%2F+consumer-facing+BRAND+name+as+buyers+know+it+%28e.g.+%22Milton%22%29.+A+brand+is+NOT+a+distributor+and+NOT+a+product+category.+If+the+company+genuinely+sells+only+under+its+own+corporate+name%2C+repeat+that+name+here+rather+than+inventing+a+brand.%0A-+company%3A+the+legal+entity+that+OWNS%2C+manufactures+under%2C+or+is+responsible+for+that+brand+%28e.g.+%22Hamilton+Housewares+Pvt.+Ltd.%22%29.+NEVER+a+distributor%2C+reseller+or+channel+partner+%E2%80%94+those+carry+the+brand%2C+they+do+not+own+it.+If+a+contract+manufacturer+merely+makes+the+product%2C+the+brand+OWNER+still+goes+here.%0A-+website%3A+the+real+official+company+domain.+NEVER+a+LinkedIn%2C+Bloomberg%2C+Crunchbase+or+Wikipedia+page.%0A-+headquarters%3A+%22City%2C+Country%22+%E2%80%94+exactly+one+global+HQ%2C+with+the+state+for+US+companies+%28e.g.+%22Thousand+Oaks%2C+California%2C+USA%22%29.+NEVER+write+%22Global%22%2C+%22Worldwide%22%2C+a+bare+region%2C+or+a+count+like+%2250%2B+countries%22.%0A-+ownership%3A+%22Independent%22%2C+or+%22Acquired+by+%3CParent%3E%22+%2F+%22Subsidiary+of+%3CParent%3E%22+using+the+real+parent+name.+State+an+acquisition+ONLY+if+you+can+support+it+from+the+official+company%2Fbrand+site%2C+an+acquisition+announcement%2C+an+investor-relations+page%2C+a+regulatory+filing+or+a+reputable+business+source.+NEVER+infer+one+from+similar+names.+If+you+cannot+verify+it%2C+write+%22Independent%22.%0A-+ownership_confidence%3A+high+%3D+an+official+company%2Fbrand+source+confirms+it%3B+medium+%3D+multiple+reputable+sources+agree%3B+low+%3D+only+weak+or+indirect+evidence.+Be+honest+%E2%80%94+a+low+is+useful%2C+a+wrong+high+is+not.%0A-+verdict%3A+%22in_market%22+only+if+it+genuinely+operates+in+this+market%3B+otherwise+%22unrelated%22+or+%22unknown%22.+NEVER+guess+this+field.+Include+the+company+ONLY+if+verdict+is+%22in_market%22.%0A-+why_related%3A+one+sentence+naming+what+it+actually+makes%2C+supplies+or+does+in+THIS+market.%0A%0AAn+empty+string+is+CORRECT+and+preferred+whenever+you+do+not+genuinely+know+a+value.+A+wrong+value+is+much+worse+than+an+empty+one.&udm=50&hl=en", waiting until "domcontentloaded"
+
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 3/4…
+      · discover-round-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 394s ago
+    → substep 1a.6: +10 (total 50)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-7: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 446s ago
+    → substep 1a.7: +7 (total 57)
+      · discover-round-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-8: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 486s ago
+    → substep 1a.8: +3 (total 60)
+      · discover-round-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-9: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 526s ago
+    → substep 1a.9: +5 (total 65)
+      · discover-round-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-10: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 568s ago
+    → substep 1a.10: +4 (total 69)
+      · discover-round-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-11: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 606s ago
+    → substep 1a.11: +3 (total 72)
+      · discover-round-12: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-12: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 647s ago
+    → substep 1a.12: +7 (total 79)
+      · discover-round-13: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-13: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 689s ago
+    → substep 1a.13: +3 (total 82)
+      · discover-round-14: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · discover-round-14: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 26s ago
+    → substep 1a.14: +3 (total 85)
+      · discover-round-15: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-15: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 61s ago
+    → substep 1a.15: +2 (total 87)
+      · discover-round-16: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-16: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 104s ago
+    → substep 1a.16: +4 (total 91)
+      · discover-round-17: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-17: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 146s ago
+    → substep 1a.17: +5 (total 96)
+      · discover-round-18: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-18: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 191s ago
+    → substep 1a.18: +6 (total 102)
+      · discover-round-19: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-19: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 226s ago
+    → substep 1a.19: +0 (total 102)
+      · discover-round-20: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-20: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 263s ago
+    → substep 1a.20: +2 (total 104)
+      · discover-round-21: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · discover-round-21: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 23s ago
+    → substep 1a.21: +2 (total 106)
+      · discover-round-22: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-22: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 70s ago
+    → substep 1a.22: +1 (total 107)
+      · discover-round-23: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-23: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 107s ago
+    → substep 1a.23: +3 (total 110)
+      · discover-round-24: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-24: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 147s ago
+    → substep 1a.24: +1 (total 111)
+      · discover-round-25: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-25: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 185s ago
+    → substep 1a.25: +0 (total 111)
+      · discover-round-26: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-26: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 221s ago
+    → substep 1a.26: +5 (total 116)
+      · discover-round-27: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-27: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 266s ago
+    → substep 1a.27: +3 (total 119)
+      · discover-round-28: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-28: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 305s ago
+    → substep 1a.28: +2 (total 121)
+    → substep 1a done: 121 companies in 28 rounds (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ≥ target: 121)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (121 = 0 seeds + 121 recalled + 0 openai-web + 0 ddgs)…
+    → substep 4a: verify 121 candidates as Solution Provider in 11 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1/11…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-1: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 341s ago
+    → substep 4a.1: running kept=11 rejected=1
+    → substep 4a.2: verify chunk 2/11…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 373s ago
+    → substep 4a.2: running kept=23 rejected=1
+    → substep 4a.3: verify chunk 3/11…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · verify-3: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 19s ago
+    → substep 4a.3: running kept=35 rejected=1
+    → substep 4a.4: verify chunk 4/11…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-4: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 50s ago
+    → substep 4a.4: running kept=47 rejected=1
+    → substep 4a.5: verify chunk 5/11…
+      · verify-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-5: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 82s ago
+    → substep 4a.5: running kept=59 rejected=1
+    → substep 4a.6: verify chunk 6/11…
+      · verify-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-6: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 113s ago
+    → substep 4a.6: running kept=71 rejected=1
+    → substep 4a.7: verify chunk 7/11…
+      · verify-7: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-7: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 148s ago
+    → substep 4a.7: running kept=82 rejected=2
+    → substep 4a.8: verify chunk 8/11…
+      · verify-8: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-8: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 183s ago
+    → substep 4a.8: running kept=94 rejected=2
+    → substep 4a.9: verify chunk 9/11…
+      · verify-9: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-9: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 222s ago
+    → substep 4a.9: running kept=106 rejected=2
+    → substep 4a.10: verify chunk 10/11…
+      · verify-10: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-10: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 251s ago
+    → substep 4a.10: running kept=117 rejected=3
+    → substep 4a.11: verify chunk 11/11…
+      · verify-11: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-11: AI Mode JSON parse OK — 4 CAPTCHAs this run, last 280s ago
+    → substep 4a.11: running kept=118 rejected=3
+    → substep 4a done: kept=118 rejected=3 (required=Solution Provider)
+    → substep 4b: write rejected list (3)
+    → substep 4c: market gate kept 118/118 (dropped 0)
+  [web_expand] merged +105; total unique=105 (target=240)
+  [chatgpt] fill ALL table rows this pass: 105 (merged=105, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) — 105 rows already carry their report columns
+    → substep 5c: merged filled rows into list (105 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) — keeping 105 rows verified in Step 4
+    → substep 6p: channel purity off
+  [chatgpt] Step 6c: Coherent Quadrant X / Y / overall scores…
+  [relevance] Drone AI Industry Analysis: in=105 geo_drop=0 heur_drop=0 llm_drop=0 kept=105 market_type=B2B uniform_role=Drone AI Software Provider
+  [xy] market-fit filter (B2B): 105 -> 105 companies (roles=['Drone AI Software Provider'])
+  [xy] industry=ICT, Automation, Semiconductor/Aerospace and Defense axis_def=llm | X=Product Strength ['Drone Platform Autonomy & AI Capability', 'Payload & Sensor Integration Breadth', 'Endurance & Operational Range', 'Manufacturing & Supply Chain Localization', 'Compliance with Indian Drone Regulations'] | Y=Business Strength ['Indian Government & Defense Contracts', 'Revenue Growth & Funding in India', 'Installed Base & Customer Deployments', 'Strategic Partnerships & Channel Network', 'Market Share in Indian Drone Market']
+  [xy] weights X=[0.3, 0.2, 0.2, 0.15, 0.15] Y=[0.25, 0.25, 0.2, 0.15, 0.15] questions/feature=3 [0.4, 0.3, 0.3] | overall=(X+Y)/2
+  [xy] crawl SKIPPED — AI Mode scores from the company name
+  [xy] parameter detail for 105 companies (1/query, 2 queries per batch)
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · params [1-1]: 0/1 companies detailed
+      · params [2-2]: 1/1 companies detailed
+      · params [3-3]: 0/1 companies detailed
+      · params [4-4]: 0/1 companies detailed
+      · params [5-5]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+      · params [6-6]: 1/1 companies detailed
+      · params [7-7]: 1/1 companies detailed
+      · params [8-8]: 0/1 companies detailed
+      · params [9-9]: 0/1 companies detailed
+      · params [10-10]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+      · params [11-11]: 1/1 companies detailed
+      · params [12-12]: 0/1 companies detailed
+      · params [13-13]: 0/1 companies detailed
+      · params [14-14]: 0/1 companies detailed
+      · params [15-15]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (8 this run) — solve it in the browser window
+      · params [16-16]: 0/1 companies detailed
+      · params [17-17]: 0/1 companies detailed
+      · params [18-18]: 0/1 companies detailed
+      · params [19-19]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (9 this run) — solve it in the browser window
+      · params [20-20]: 0/1 companies detailed
+      · params [21-21]: 1/1 companies detailed
+      · params [22-22]: 0/1 companies detailed
+      · params [23-23]: 0/1 companies detailed
+      · params [24-24]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (10 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (11 this run) — solve it in the browser window
+      · params [25-25]: 0/1 companies detailed
+      · params [26-26]: 0/1 companies detailed
+      · params [27-27]: 0/1 companies detailed
+      · params [28-28]: 0/1 companies detailed
+      · params [29-29]: 0/1 companies detailed
+      · params [30-30]: 0/1 companies detailed
+      · params [31-31]: 1/1 companies detailed
+      · params [32-32]: 0/1 companies detailed
+      · params [33-33]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (12 this run) — solve it in the browser window
+      · params [34-34]: 0/1 companies detailed
+      · params [35-35]: 0/1 companies detailed
+      · params [36-36]: 0/1 companies detailed
+      · params [37-37]: 0/1 companies detailed
+      · params [38-38]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (13 this run) — solve it in the browser window
+      · params [39-39]: 0/1 companies detailed
+      · params [40-40]: 0/1 companies detailed
+      · params [41-41]: 0/1 companies detailed
+      · params [42-42]: 1/1 companies detailed
+      · params [43-43]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (14 this run) — solve it in the browser window
+      · params [44-44]: 0/1 companies detailed
+      · params [45-45]: 1/1 companies detailed
+      · params [46-46]: 1/1 companies detailed
+      · params [47-47]: 1/1 companies detailed
+      · params [48-48]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (15 this run) — solve it in the browser window
+      · params [49-49]: 0/1 companies detailed
+      · params [50-50]: 0/1 companies detailed
+      · params [51-51]: 1/1 companies detailed
+      · params [52-52]: 0/1 companies detailed
+      · params [53-53]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (16 this run) — solve it in the browser window
+      · params [54-54]: 1/1 companies detailed
+      · params [55-55]: 1/1 companies detailed
+      · params [56-56]: 0/1 companies detailed
+      · params [57-57]: 0/1 companies detailed
+      · params [58-58]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (17 this run) — solve it in the browser window
+      · params [59-59]: 0/1 companies detailed
+      · params [60-60]: 0/1 companies detailed
+      · params [61-61]: 0/1 companies detailed
+      · params [62-62]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (18 this run) — solve it in the browser window
+      · params [63-63]: 1/1 companies detailed
+      · params [64-64]: 0/1 companies detailed
+      · params [65-65]: 0/1 companies detailed
+      · params [66-66]: 0/1 companies detailed
+      · params [67-67]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (19 this run) — solve it in the browser window
+      · params [68-68]: 1/1 companies detailed
+      · params [69-69]: 0/1 companies detailed
+  [ai-mode] quota — archiving profile and starting clean (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (20 this run) — solve it in the browser window
+      · params [70-70]: 0/1 companies detailed
+      · params [71-71]: 0/1 companies detailed
+      · params [72-72]: 0/1 companies detailed
+      · params [73-73]: 1/1 companies detailed
+      · params [74-74]: 0/1 companies detailed
+      · params [75-75]: 0/1 companies detailed
+      · params [76-76]: 0/1 companies detailed
+      · params [77-77]: 0/1 companies detailed
+      · params [78-78]: 0/1 companies detailed
+      · params [79-79]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (21 this run) — solve it in the browser window
+      · params [80-80]: 0/1 companies detailed
+      · params [81-81]: 1/1 companies detailed
+      · params [82-82]: 1/1 companies detailed
+      · params [83-83]: 1/1 companies detailed
+      · params [84-84]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (22 this run) — solve it in the browser window
+      · params [85-85]: 0/1 companies detailed
+      · params [86-86]: 1/1 companies detailed
+      · params [87-87]: 0/1 companies detailed
+      · params [88-88]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (23 this run) — solve it in the browser window
+      · params [89-89]: 1/1 companies detailed
+      · params [90-90]: 1/1 companies detailed
+      · params [91-91]: 0/1 companies detailed
+      · params [92-92]: 0/1 companies detailed
+      · params [93-93]: 0/1 companies detailed
+  [ai-mode] CAPTCHA (24 this run) — solve it in the browser window
+      · params [94-94]: 0/1 companies detailed
+      · params [95-95]: 1/1 companies detailed
+      · params [96-96]: 0/1 companies detailed
+      · params [97-97]: 0/1 companies detailed
+      · params [98-98]: 1/1 companies detailed
+  [ai-mode] CAPTCHA (25 this run) — solve it in the browser window
+      · params [99-99]: 0/1 companies detailed
+      · params [100-100]: 0/1 companies detailed
+      · params [101-101] Product Strength: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.google.com/sea
+      · params [101-101] Business Strength: AiModeUnavailable: navigation failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.google.com/sea
+      · params [101-101]: 0/1 companies detailed
+      · params [102-102]: 1/1 companies detailed
+      · params [103-103]: 0/1 companies detailed
+      · params [104-104]: 0/1 companies detailed
+      · params [105-105]: 0/1 companies detailed
+  [xy] parameter detail done: 55/105 companies
+    → [xy] score 1/105 1Martian Way Corporation
+      · score 1Martian Way Corporation: unparsed reply '73\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score 1Martian Way Corporation: unparsed reply '12\nSkip to previous prompt'
+    → [xy] no score for 1Martian Way Corporation (AI Mode unavailable) — left unscored for retry
+    → [xy] score 2/105 Aarav Unmanned Systems Pvt. Ltd.
+    → [xy] score 3/105 AerialIQ Private Limited
+      · score AerialIQ Private Limited: unparsed reply '87\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (26 this run) — solve it in the browser window
+      · score AerialIQ Private Limited: unparsed reply '64\nSkip to previous prompt'
+    → [xy] no score for AerialIQ Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 4/105 Aerion Aerospace Pvt Ltd
+      · score Aerion Aerospace Pvt Ltd: unparsed reply '75\nWould you like a detailed breakdown of the individual scores for each of the five parameters eval'
+      · score Aerion Aerospace Pvt Ltd: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for Aerion Aerospace Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 5/105 Aerovania Private Limited
+    → [xy] score 6/105 Aeroyantra Private Limited
+    → [xy] score 7/105 Ai Aerial Dynamics Private Limited
+    → [xy] score 8/105 Airbound Aerospace Private Limited
+      · score Airbound Aerospace Private Limited: unparsed reply '78\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Airbound Aerospace Private Limited: unparsed reply '63\nSkip to previous prompt'
+    → [xy] no score for Airbound Aerospace Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 9/105 AiRotor Labs Private Limited
+      · score AiRotor Labs Private Limited: unparsed reply '30\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score AiRotor Labs Private Limited: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for AiRotor Labs Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 10/105 AiRotor Technologies
+      · score AiRotor Technologies: unparsed reply '83\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score AiRotor Technologies: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for AiRotor Technologies (AI Mode unavailable) — left unscored for retry
+    → [xy] score 11/105 Airpix
+    → [xy] score 12/105 Airwood
+      · score Airwood: unparsed reply '20\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (27 this run) — solve it in the browser window
+      · score Airwood: unparsed reply '1\nSkip to previous prompt'
+    → [xy] no score for Airwood (AI Mode unavailable) — left unscored for retry
+    → [xy] score 13/105 Akin Analytics Solutions Private Limited
+      · score Akin Analytics Solutions Private Limited: unparsed reply '76\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Akin Analytics Solutions Private Limited: unparsed reply '52\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Akin Analytics Solutions Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 14/105 AkinAnalytics Private Limited
+      · score AkinAnalytics Private Limited: unparsed reply '84\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score AkinAnalytics Private Limited: unparsed reply '25\nSkip to previous prompt'
+    → [xy] no score for AkinAnalytics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 15/105 AlgoBotix Private Limited
+      · score AlgoBotix Private Limited: unparsed reply '75\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score AlgoBotix Private Limited: unparsed reply "Something went wrong and an AI response wasn't generated.\n\nSkip to previous prompt"
+    → [xy] no score for AlgoBotix Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 16/105 Algofet Private Limited
+      · score Algofet Private Limited: unparsed reply '80\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Algofet Private Limited: unparsed reply '38\nSkip to previous prompt'
+    → [xy] no score for Algofet Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 17/105 Amber Wings Private Limited
+      · score Amber Wings Private Limited: unparsed reply '88\nWould you like a detailed breakdown of the individual scores for each of the five product strengt'
+  [ai-mode] CAPTCHA (28 this run) — solve it in the browser window
+  [ai-mode] quota — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (29 this run) — solve it in the browser window
+      · score Amber Wings Private Limited: unparsed reply '52\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+    → [xy] no score for Amber Wings Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 18/105 AquaAirX Autonomous Systems Private Limited
+      · score AquaAirX Autonomous Systems Private Limi: unparsed reply '80\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score AquaAirX Autonomous Systems Private Limi: unparsed reply '49\nIf you would like, I can:\nProvide a detailed breakdown of the ratings chosen for each of the 5 pa'
+    → [xy] no score for AquaAirX Autonomous Systems Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 19/105 ARKin Labs Private Limited
+      · score ARKin Labs Private Limited: unparsed reply '22\nSkip to previous prompt'
+    → [xy] no score for ARKin Labs Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 20/105 Armory Shield Private Limited
+      · score Armory Shield Private Limited: unparsed reply '85\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Armory Shield Private Limited: unparsed reply '67\nSkip to previous prompt'
+    → [xy] no score for Armory Shield Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 21/105 Assert AI Private Limited
+    → [xy] score 22/105 Asteria Aerospace Limited
+      · score Asteria Aerospace Limited: unparsed reply '87\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Asteria Aerospace Limited: unparsed reply '84\nSkip to previous prompt'
+    → [xy] no score for Asteria Aerospace Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 23/105 ASTRA Drones and Robotics Solutions Pvt. Ltd.
+      · score ASTRA Drones and Robotics Solutions Pvt.: unparsed reply '83\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score ASTRA Drones and Robotics Solutions Pvt.: unparsed reply '16\nSkip to previous prompt'
+    → [xy] no score for ASTRA Drones and Robotics Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 24/105 Astrova Aerospace Limited
+      · score Astrova Aerospace Limited: unparsed reply '77\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Astrova Aerospace Limited: unparsed reply '10\nSkip to previous prompt'
+    → [xy] no score for Astrova Aerospace Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 25/105 AstroX Aerospace Private Limited
+      · score AstroX Aerospace Private Limited: unparsed reply '81\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+    → [xy] no score for AstroX Aerospace Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 26/105 Autosky Aerospace Private Limited
+      · score Autosky Aerospace Private Limited: unparsed reply '65\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Autosky Aerospace Private Limited: unparsed reply '6\nSkip to previous prompt'
+    → [xy] no score for Autosky Aerospace Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 27/105 Axldrone Private Limited
+      · score Axldrone Private Limited: unparsed reply '86.6\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Axldrone Private Limited: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for Axldrone Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 28/105 Ayaan Autonomous Systems Pvt Ltd
+      · score Ayaan Autonomous Systems Pvt Ltd: unparsed reply '89\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+  [ai-mode] CAPTCHA (30 this run) — solve it in the browser window
+      · score Ayaan Autonomous Systems Pvt Ltd: unparsed reply '41\nSkip to previous prompt'
+    → [xy] no score for Ayaan Autonomous Systems Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 29/105 BharatRohan Airborne Innovations Limited
+      · score BharatRohan Airborne Innovations Limited: unparsed reply '84\nAI responses may include mistakes. For financial advice, consult a professional. Learn more\nSkip '
+      · score BharatRohan Airborne Innovations Limited: unparsed reply '50\nAI responses may include mistakes. For financial advice, consult a professional. Learn more\nSkip '
+    → [xy] no score for BharatRohan Airborne Innovations Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 30/105 Blurgs Aerospace Private Limited
+      · score Blurgs Aerospace Private Limited: unparsed reply '71\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Blurgs Aerospace Private Limited: unparsed reply '71\nSkip to previous prompt'
+    → [xy] no score for Blurgs Aerospace Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 31/105 BonV Technology Private Limited
+    → [xy] score 32/105 Daybest Research Private Limited
+      · score Daybest Research Private Limited: unparsed reply '75\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Daybest Research Private Limited: unparsed reply '12\nSkip to previous prompt'
+    → [xy] no score for Daybest Research Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 33/105 Dhaksha Unmanned Systems Private Limited
+      · score Dhaksha Unmanned Systems Private Limited: unparsed reply '87\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Dhaksha Unmanned Systems Private Limited: unparsed reply '67\nIf you would like a detailed breakdown of each individual parameter score or wish to adjust the w'
+    → [xy] no score for Dhaksha Unmanned Systems Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 34/105 Droame LLP
+  [ai-mode] CAPTCHA (31 this run) — solve it in the browser window
+      · score Droame LLP: unparsed reply '74\nIf you would like a detailed breakdown of the ratings for each of the five individual parameters,'
+      · score Droame LLP: unparsed reply '33\nSkip to previous prompt'
+    → [xy] no score for Droame LLP (AI Mode unavailable) — left unscored for retry
+    → [xy] score 35/105 Drogo Aerospace Private Limited
+      · score Drogo Aerospace Private Limited: unparsed reply '87\nIf you would like a detailed breakdown of the individual scores for each parameter or want to adj'
+      · score Drogo Aerospace Private Limited: unparsed reply '60\nSkip to previous prompt'
+    → [xy] no score for Drogo Aerospace Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 36/105 DronaMaps Private Limited
+      · score DronaMaps Private Limited: unparsed reply '54\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score DronaMaps Private Limited: unparsed reply '38\nSkip to previous prompt'
+    → [xy] no score for DronaMaps Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 37/105 DroneAcharya Aerial Innovations Limited
+      · score DroneAcharya Aerial Innovations Limited: unparsed reply '71\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score DroneAcharya Aerial Innovations Limited: unparsed reply '76\nShow Code\nSkip to previous prompt'
+    → [xy] no score for DroneAcharya Aerial Innovations Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 38/105 Dronelab Innovation Private Limited
+    → [xy] score 39/105 Dronix Technologies Private Limited
+      · score Dronix Technologies Private Limited: unparsed reply '72\nIf you would like, I can provide a detailed breakdown of how each parameter was evaluated or comp'
+      · score Dronix Technologies Private Limited: unparsed reply '25\nIf you would like to adjust the individual weights or see a detailed breakdown of the ratings for'
+    → [xy] no score for Dronix Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 40/105 Drovation Software Solutions Pvt. Ltd.
+  [ai-mode] CAPTCHA (32 this run) — solve it in the browser window
+      · score Drovation Software Solutions Pvt. Ltd.: unparsed reply '59\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Drovation Software Solutions Pvt. Ltd.: unparsed reply '12\nSkip to previous prompt'
+    → [xy] no score for Drovation Software Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 41/105 Duxbase Systems
+      · score Duxbase Systems: unparsed reply '77\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Duxbase Systems: unparsed reply '1\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Duxbase Systems (AI Mode unavailable) — left unscored for retry
+    → [xy] score 42/105 Emvirt Solutions Private Limited
+    → [xy] score 43/105 EndureAir Systems Private Limited
+      · score EndureAir Systems Private Limited: unparsed reply '85\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score EndureAir Systems Private Limited: unparsed reply '68\nShow Code\nSkip to previous prompt'
+    → [xy] no score for EndureAir Systems Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 44/105 EndureAir Systems Pvt. Ltd.
+      · score EndureAir Systems Pvt. Ltd.: unparsed reply '86\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score EndureAir Systems Pvt. Ltd.: unparsed reply '71\nSkip to previous prompt'
+    → [xy] no score for EndureAir Systems Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 45/105 Enercomp Solutions Private Limited
+    → [xy] score 46/105 Enord Private Limited
+    → [xy] score 47/105 Equinox Drones Private Limited
+    → [xy] score 48/105 Falco Robotics Private Limited
+      · score Falco Robotics Private Limited: unparsed reply '76\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Falco Robotics Private Limited: unparsed reply '15\nSkip to previous prompt'
+    → [xy] no score for Falco Robotics Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 49/105 Fligen Systems PVT LTD
+  [ai-mode] CAPTCHA (33 this run) — solve it in the browser window
+      · score Fligen Systems PVT LTD: unparsed reply '82\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Fligen Systems PVT LTD: unparsed reply '33\nSkip to previous prompt'
+    → [xy] no score for Fligen Systems PVT LTD (AI Mode unavailable) — left unscored for retry
+    → [xy] score 50/105 Flying Wedge Defence & Aerospace
+      · score Flying Wedge Defence & Aerospace: unparsed reply '86\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Flying Wedge Defence & Aerospace: unparsed reply '44\nSkip to previous prompt'
+    → [xy] no score for Flying Wedge Defence & Aerospace (AI Mode unavailable) — left unscored for retry
+    → [xy] score 51/105 Flying Wedge Defence and Aerospace Private Limited
+    → [xy] score 52/105 Flying Wedge Defense and Airspace Pvt. Ltd.
+      · score Flying Wedge Defense and Airspace Pvt. L: unparsed reply '87\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Flying Wedge Defense and Airspace Pvt. L: unparsed reply '42\nSkip to previous prompt'
+    → [xy] no score for Flying Wedge Defense and Airspace Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 53/105 Flynetics Systems Private Limited
+      · score Flynetics Systems Private Limited: unparsed reply '80\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Flynetics Systems Private Limited: unparsed reply 'UNKNOWN\nSkip to previous prompt'
+    → [xy] no score for Flynetics Systems Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 54/105 Garuda Aerospace Private Limited
+    → [xy] score 55/105 Garuda UAV Smart Solutions Private Limited
+    → [xy] score 56/105 Geoinsighter Solutions Private Limited
+      · score Geoinsighter Solutions Private Limited: unparsed reply '22\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Geoinsighter Solutions Private Limited: unparsed reply '1\nSkip to previous prompt'
+    → [xy] no score for Geoinsighter Solutions Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 57/105 Geokno India Private Limited
+  [ai-mode] CAPTCHA (34 this run) — solve it in the browser window
+      · score Geokno India Private Limited: unparsed reply '71\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Geokno India Private Limited: unparsed reply '54\nSkip to previous prompt'
+    → [xy] no score for Geokno India Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 58/105 GISKernel
+    → [xy] score 59/105 Grene Robotics (India) Private Limited
+      · score Grene Robotics (India) Private Limited: unparsed reply '86\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Grene Robotics (India) Private Limited: unparsed reply '43\nSkip to previous prompt'
+    → [xy] no score for Grene Robotics (India) Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 60/105 Hubblefly Technologies Pvt. Ltd.
+      · score Hubblefly Technologies Pvt. Ltd.: unparsed reply '76\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Hubblefly Technologies Pvt. Ltd.: unparsed reply '38\nSkip to previous prompt'
+    → [xy] no score for Hubblefly Technologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 61/105 ideaForge Technology Limited
+      · score ideaForge Technology Limited: unparsed reply '85\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score ideaForge Technology Limited: unparsed reply '89\nShow Code\nSkip to previous prompt'
+    → [xy] no score for ideaForge Technology Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 62/105 IG Technologies Private Limited
+    → [xy] score 63/105 Indowings Private Limited
+    → [xy] score 64/105 Indrones Solutions Private Limited
+      · score Indrones Solutions Private Limited: unparsed reply '81\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Indrones Solutions Private Limited: unparsed reply '55\nSkip to previous prompt'
+    → [xy] no score for Indrones Solutions Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 65/105 InsideFPV Ventures Private Limited
+  [ai-mode] CAPTCHA (35 this run) — solve it in the browser window
+      · score InsideFPV Ventures Private Limited: unparsed reply '75\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score InsideFPV Ventures Private Limited: unparsed reply '58\nSkip to previous prompt'
+    → [xy] no score for InsideFPV Ventures Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 66/105 KiteMaps AMS Pvt Ltd
+      · score KiteMaps AMS Pvt Ltd: unparsed reply '78\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score KiteMaps AMS Pvt Ltd: unparsed reply "36\nIf you would like a detailed breakdown of each parameter's rating for KiteMaps AMS Pvt Ltd (Redwi"
+    → [xy] no score for KiteMaps AMS Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 67/105 Lesoko Technologies Private Limited
+      · score Lesoko Technologies Private Limited: unparsed reply '66\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Lesoko Technologies Private Limited: unparsed reply '42\nSkip to previous prompt'
+    → [xy] no score for Lesoko Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 68/105 Marut Dronetech Private Limited
+    → [xy] score 69/105 NewSpace Research and Technologies Pvt. Ltd.
+      · score NewSpace Research and Technologies Pvt. : unparsed reply '90\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score NewSpace Research and Technologies Pvt. : unparsed reply '84\nSkip to previous prompt'
+    → [xy] no score for NewSpace Research and Technologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 70/105 Nibrus Technologies Private Limited
+  [ai-mode] CAPTCHA (36 this run) — solve it in the browser window
+      · score Nibrus Technologies Private Limited: unparsed reply '75\nIf you would like a detailed breakdown of how each individual parameter was scored for Nibrus Tec'
+      · score Nibrus Technologies Private Limited: unparsed reply '41\nSkip to previous prompt'
+    → [xy] no score for Nibrus Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 71/105 Nichetech Computer Solutions Pvt. Ltd.
+      · score Nichetech Computer Solutions Pvt. Ltd.: unparsed reply '1\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Nichetech Computer Solutions Pvt. Ltd.: unparsed reply '1\nSkip to previous prompt'
+    → [xy] no score for Nichetech Computer Solutions Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 72/105 Omnipresent Robot Technologies Private Limited
+      · score Omnipresent Robot Technologies Private L: unparsed reply '84\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Omnipresent Robot Technologies Private L: unparsed reply '49\nSkip to previous prompt'
+    → [xy] no score for Omnipresent Robot Technologies Private Limited (AI Mode unavailable) — left unscored for retry
+    → [xy] score 73/105 Paninian India Private Limited
+    → [xy] score 74/105 Paninian India Pvt Ltd
+      · score Paninian India Pvt Ltd: unparsed reply '81\nShow Code\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Paninian India Pvt Ltd: unparsed reply '8\nSkip to previous prompt'
+    → [xy] no score for Paninian India Pvt Ltd (AI Mode unavailable) — left unscored for retry
+    → [xy] score 75/105 Pathi Labs LLP
+      · score Pathi Labs LLP: unparsed reply '43\nIf you would like to adjust the weightings or provide specific data points for each parameter to '
+      · score Pathi Labs LLP: unparsed reply '8\nSkip to previous prompt'
+    → [xy] no score for Pathi Labs LLP (AI Mode unavailable) — left unscored for retry
+    → [xy] score 76/105 Pixroot Technologies Pvt. Ltd.
+  [ai-mode] CAPTCHA (37 this run) — solve it in the browser window
+      · score Pixroot Technologies Pvt. Ltd.: unparsed reply '70\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+      · score Pixroot Technologies Pvt. Ltd.: unparsed reply '9\nShow Code\nSkip to previous prompt'
+    → [xy] no score for Pixroot Technologies Pvt. Ltd. (AI Mode unavailable) — left unscored for retry
+    → [xy] score 77/105 Preimage Technologies Private Limited
+      · score Preimage Technologies Private Limited: unparsed reply '1\nAI can make mistakes, so double-check responses\nSkip to previous prompt'
+  [ai-mode] quota — archiving profile and starting clean (reset #4)

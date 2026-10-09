@@ -1,0 +1,43 @@
+[status 13:51:02] 10 companies, 10 to check
+      · status-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Downloads\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · status-1: rate limited (rate limited by Google (1 CAPTCHAs this run)) — cooling off 5 min before retrying
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36565:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:71910:59)
+    at DispatcherConnection.sendEvent (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:25861:14)
+    at _PageDispatcher._dispatchEvent (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:25785:25)
+    at _PageDispatcher._onFrameAttached (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:55863:14)
+    at _Page.<anonymous> (C:\Users\aman.kumar\Downloads\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:55549:75)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4047,
+  syscall: 'write',
+  code: 'EPIPE'
+}
+
+Node.js v24.18.1

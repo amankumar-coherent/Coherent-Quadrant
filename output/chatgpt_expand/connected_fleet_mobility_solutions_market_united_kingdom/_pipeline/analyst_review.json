@@ -1,0 +1,1151 @@
+{
+  "exclude": [
+    {
+      "company": "Trackunit Telematics Ltd",
+      "reason": "The UK entity behind the Satrak brand is dissolved and not operating; Trackunit (Denmark) was acquired by Goldman Sachs Alternatives in 2025, so it is not a UK-headquartered active provider.",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: status check (Companies House status reported dissolved)."
+    },
+    {
+      "company": "Transpoco Limited",
+      "reason": "Not headquartered in the United Kingdom: Transpoco's global headquarters is in Dublin, Ireland; the UK address is a regional office (UK-only rule: a foreign company's local office does not qualify).",
+      "source": "HQ check of the published report (Google AI Mode), 2026-10-02: Transpoco website lists Global HQ in Dublin with a regional UK office in Suffolk."
+    },
+    {
+      "company": "Asset Monitoring Solutions Ltd",
+      "reason": "Not an operating company: Asset Monitoring Solutions Ltd was dissolved on 23 February 2013 (Companies House); the brand sits within RAM Tracking.",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: status check (Companies House: dissolved 23 February 2013)."
+    }
+  ],
+  "corrections": [
+    {
+      "company": "Fleeta Limited",
+      "find": "The company reports that its FLEETA platform operates directly via BlackVue dashcam hardware, featuring a 3-axis acceleration sensor, built-in GPS/GLONASS, and optional external LTE modules to transmit cloud footage without traditional multi-year complex hardware agreements.",
+      "replace": "",
+      "reason": "Describes BlackVue's FLEETA platform (Pittasoft), a different company from Fleeta Limited of Ipswich (Fleetalyse).",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: BlackVue FLEETA official documentation (blackvue.com, fleeta.io)"
+    },
+    {
+      "company": "Fleeta Limited",
+      "find": "Fleeta Limited operates commercial fleet platforms including Fleetalyse (live GPS trackers and fleet technology) and OperatorCompliance.co.uk (operator licence compliance software), offering services such as a provider membership plan priced at £10 per month plus VAT.",
+      "replace": "Fleeta Limited operates commercial fleet platforms including Fleetalyse (live GPS trackers and fleet technology) and OperatorCompliance.co.uk (operator licence compliance software), offering services such as a Starter subscription plan priced at £90 billed yearly.",
+      "reason": "Fact-check correction: - provider - membership + Starter + subscription + £90 + billed + yearly. - £10 - per - month - plus - VAT.",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://operatorcompliance.co.uk"
+    },
+    {
+      "company": "Microlise Group PLC",
+      "find": "The company reports a 58% UK market share among large (500+) heavy goods vehicle (HGV) fleets, including 88% of UK grocery retailers, alongside an adjusted group revenue increase from £81.0m to £84.0m (a 3.7% YoY increase) for the 12 months ended 31 December 2025 as disclosed in its Investors Report (https://www.microlise.com/investors/).",
+      "replace": "The company reports a 58% UK market share among large (500+) heavy goods vehicle (HGV) fleets, including 88% of UK grocery retailers, alongside an adjusted group revenue increase to £84.0m (a 3.7% YoY increase) for the 12 months ended 31 December 2025 as disclosed in its Investors Report (https://www.microlise.com/investors/).",
+      "reason": "Fact-check correction: - from - £81.0m",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Microlise Investors Page (https://www.microlise.com/investors/) and London Stock Exchange filings. The historical 58% market share and 88% grocery retail stats date back to their 2021 IPO Admission document rather than originating fresh within the FY25 metrics context, but more crucially, the baseline group revenue increased *to* £84.0m (from £81.0m is not explicitly in the summary data, though the 3.7% YoY growth matches)."
+    },
+    {
+      "company": "Ashwoods Lightfoot Limited",
+      "find": "Lightfoot provides a RESTful developer API (supporting OAuth2 and JSON structures via data.lightfoot.co.uk) that allows customers to pull real-time telematics, driver, and vehicle metadata into third-party scheduling, routing, fuel, and back-office enterprise systems, according to the official Lightfoot Driver API Documentation.",
+      "replace": "Lightfoot provides a RESTful developer API (supporting Basic Auth and JSON structures via devapi.lightfoot.co.uk) that allows customers to pull real-time telematics, driver, and vehicle metadata into third-party scheduling, routing, fuel, and back-office enterprise systems, according to the official Lightfoot Driver API Documentation.",
+      "reason": "Fact-check correction: + Basic - OAuth2 + Auth - data.lightfoot.co.uk) + devapi.lightfoot.co.uk)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Lightfoot Driver API Documentation (https://driverdocs.lightfoot.co.uk/)"
+    },
+    {
+      "company": "Ashwoods Lightfoot Limited",
+      "find": "A public sector implementation by Gateshead Council deployed the company's in-vehicle driver behaviour technology program within 10 municipal vehicles to monitor characteristics and deliver dashboard alerts.",
+      "replace": "A public sector implementation by Gateshead Council deployed the company's in-vehicle driver behaviour technology program within 16 municipal vehicles to monitor characteristics and deliver dashboard alerts.",
+      "reason": "Fact-check correction: - 10 + 16",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Transport Engineer Magazine (https://www.transportengineer.org.uk/content/features/cutting-the-cost)"
+    },
+    {
+      "company": "BigChange Limited",
+      "find": "A public case study published by BigChange details that global mining, energy, and logistics company Hargreaves Services Plc awarded a mobile technology contract to the company to supply its three-in-one JobWatch system across a 500-strong fleet of specialist aggregates vehicles.",
+      "replace": "A public case study published by BigChange details that global mining, energy, and logistics company Hargreaves Services Plc awarded a mobile technology contract to the company to supply its three-in-one JobWatch system across a 500-strong fleet of specialist logistics vehicles.",
+      "reason": "Fact-check correction: - aggregates + logistics",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: BigChange Press Release via Hub-4 & Agg-Net"
+    },
+    {
+      "company": "Radius Limited",
+      "find": "In UK Companies House statutory filings for the specific telematics subsidiary, Radius Telematics Limited (Company No. 09970051), net assets increased by 159.1% to £14.88 million for the financial period ending 31 March 2025.",
+      "replace": "In UK Companies House statutory filings for the specific telematics subsidiary, Radius Telematics Limited (Company No. 09970051), total assets increased by 159.1% to £14.88 million for the financial period ending 31 March 2025.",
+      "reason": "Fact-check correction: - net + total",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: endole.co.uk"
+    },
+    {
+      "company": "Corvia Limited",
+      "find": "The Liverpool City Region Combined Authority selected Ticketer in September 2026 to deliver automatic vehicle location (AVL), real-time information, and ticketing technology services using its TK300 devices, as announced by Euro Bus Expo.",
+      "replace": "The Liverpool City Region Combined Authority selected Ticketer in May 2026 to deliver automatic vehicle location (AVL), real-time information, and ticketing technology services using its TK300 devices, as announced by Euro Bus Expo.",
+      "reason": "Fact-check correction: - September + May",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://eurobusxpo.com"
+    },
+    {
+      "company": "Corvia Limited",
+      "find": "The company rolled out its Ticketer TK300 hardware and software platform for the Highland Council to manage real-time ticketing and fleet information metrics following a trial period, as published in September 2026.",
+      "replace": "The company rolled out its Ticketer TK300 hardware and software platform for the Highland Council to manage real-time ticketing and fleet information metrics following a trial period, as published in August 2026.",
+      "reason": "Fact-check correction: - September + August",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://highland.gov.uk"
+    },
+    {
+      "company": "Corvia Limited",
+      "find": "West Midlands Other IT Hardware Contracts reports that Corvia Limited (trading as Ticketer) was awarded a public contract for the provision of Fixed ITSO Electronic Ticketing Machines (ETMs) and support hardware.",
+      "replace": "West Midlands Combined Authority reports that Corvia Limited (trading as Ticketer) was awarded a public contract for the provision of Fixed ITSO Electronic Ticketing Machines (ETMs) and support hardware.",
+      "reason": "Fact-check correction: + Combined + Authority - Other - IT - Hardware - Contracts",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: https://bidstats.uk/tenders/?q=sam+framework"
+    },
+    {
+      "company": "Trackershop LTD",
+      "find": "The company reports that its MoreFleet vehicle tracking system scales to accommodate business fleets ranging in size from 1 to 10,000 vehicles.",
+      "replace": "The company reports that its MoreFleet vehicle tracking system scales to accommodate business fleets ranging in size from 1 to 1,000 vehicles.",
+      "reason": "Fact-check correction: - 10,000 + 1,000",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Trackershop UK Official Website / MoreFleet"
+    },
+    {
+      "company": "Trackershop LTD",
+      "find": "A data evaluation indicates a localized corporate scale, with a total headcount of 12 employees and customer support availability limited to 08:00–20:00 Monday to Friday and 10:00–14:00 on weekends, rather than 24/7 service.",
+      "replace": "A data evaluation indicates a localized corporate scale, with a total headcount of 12 employees and customer support availability limited to 08:00–18:00 Monday to Friday and 10:00–14:00 on weekends, rather than 24/7 service.",
+      "reason": "Fact-check correction: - 08:00–20:00 + 08:00–18:00",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Trackershop UK Official Website Contact Us Page (Phone Line Opening Times)"
+    },
+    {
+      "company": "Satmo Vehicle Tracking",
+      "find": "The company reports a headcount of approximately 2 to 10 employees (with third-party databases specifying approximately 4 employees), and provides customer support during standard business hours of Monday to Friday, 9 AM to 5 PM.",
+      "replace": "The company reports a headcount of approximately 2 to 10 employees (with third-party databases specifying approximately 4 employees), and provides customer support during standard business hours of Monday to Friday, 8:30 AM to 5 PM (closing at 4 PM on Fridays).",
+      "reason": "Fact-check correction: - 9 + 8:30 - PM. + PM + (closing + at + 4 + PM + on + Fridays).",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Yell Listing for Satmo Vehicle Tracking (https://www.yell.com/biz/satmo-vehicle-tracking-bradford-10892508/) and LinkedIn Company Profile (https://uk.linkedin.com/company/satmo-vehicle-tracking)"
+    },
+    {
+      "company": "Contel Ltd",
+      "find": "Contel Ltd was formally listed as an awarded or qualified provider on the KCS Procurement Services Framework for \"Vehicle Telematics and Associated Services\" in a notice published up to June 2026, positioning the company to supply UK local authorities and public sector bodies.",
+      "replace": "",
+      "reason": "Unconfirmed detail removed: entire statement (KCS framework listing)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The listing on the KCS Procurement Services Framework for 'Vehicle Telematics and Associated Services' up to June 2026 cannot be verified in available procurement records."
+    },
+    {
+      "company": "Contel Ltd",
+      "find": "Financial filings registered with the UK Government's Companies House repository indicate that Contel Ltd's total assets grew by 44% to £2.26 million and its cash in bank rose by 30.1% to £962.33K for the 12-month period ending 31 July 2025.",
+      "replace": "Financial filings registered with the UK Government's Companies House repository indicate that Contel Ltd's total assets grew to £2.26 million and its cash in bank rose for the 12-month period ending 31 July 2025.",
+      "reason": "Unconfirmed detail removed: 44% and 30.1% growth rates and cash figure",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The precise growth rates (44% and 30.1%) and the specific cash figure (£962.33K) for the year ending 31 July 2025 cannot be confirmed without the full filing text."
+    },
+    {
+      "company": "Elec Trac NI",
+      "find": "Independent business tracking data verified that Electrac NI operates as a small-scale regional provider with a headcount of approximately 3 employees.",
+      "replace": "Independent business tracking data verified that Electrac NI operates as a small-scale regional provider with a headcount of 2-10 employees.",
+      "reason": "Unconfirmed detail removed: exact headcount of 3 (replaced with the 2-10 range from the note)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The precise employee count of exactly 3 is unverified; public tracking profiles list a broader range of 2-10 employees."
+    },
+    {
+      "company": "Fleeta Limited",
+      "find": "Customer reviews from May 2026 verify that Fleeta Limited’s Fleetalyse platform actively integrates and deploys Teltonika FMC003 and FMC920 hardware devices alongside its Brilliant Tracker software for live tracking and remote tachograph data downloads.",
+      "replace": "Fleeta Limited’s Fleetalyse platform actively integrates and deploys Teltonika FMC003 and FMC920 hardware devices for live tracking and remote tachograph data downloads.",
+      "reason": "Unconfirmed detail removed: May 2026 customer reviews attribution and Brilliant Tracker software",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: customer reviews from May 2026 and \"Brilliant Tracker software\" details could not be verified"
+    },
+    {
+      "company": "Fleeta Limited",
+      "find": "The company reports that its developer platform isolation model is designed to satisfy the ISO/IEC 27001 access control (A.9) requirements by enforcing tenant boundaries in a fail-closed shared authentication layer, as documented by the Fleeta Developers Portal.",
+      "replace": "",
+      "reason": "Unconfirmed detail removed: entire statement",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The entire statement regarding the developer platform isolation model, ISO/IEC 27001 requirements, tenant boundaries, and fail-closed authentication layer is unconfirmed."
+    },
+    {
+      "company": "Fleeta Limited",
+      "find": "The company reports that traffic is encrypted in transit using mandatory TLS (HTTPS), API keys are stored only as SHA-256 hashes, and OAuth access tokens are sealed with AES-256-GCM encryption, according to the official Fleeta Developers Privacy Policy.",
+      "replace": "The company reports that traffic is encrypted in transit using mandatory TLS (HTTPS), according to the official Fleeta Developers Privacy Policy.",
+      "reason": "Unconfirmed detail removed: SHA-256 key hashing and AES-256-GCM token encryption",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Specific details about SHA-256 API key hashing and AES-256-GCM token encryption are unconfirmed."
+    },
+    {
+      "company": "Microlise Group PLC",
+      "find": "In another application, Roberts Bakery deployed the Microlise Driver Performance Management (DPM) app alongside Journey Management for its fleet of over 160 drivers, utilizing a smartphone app for driver self-monitoring and real-time planned-versus-actual route comparisons to feed back into its Paragon Routing and Scheduling software.",
+      "replace": "In another application, Roberts Bakery deployed the Microlise Driver Performance Management (DPM) app alongside Journey Management for its fleet of over 160 drivers, utilizing a smartphone app for driver self-monitoring and real-time planned-versus-actual route comparisons.",
+      "reason": "Unconfirmed detail removed: Paragon Routing and Scheduling integration",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The integration and feedback loop with Paragon Routing and Scheduling software is unverified."
+    },
+    {
+      "company": "Microlise Group PLC",
+      "find": "The company reports that it maintains third-party verified ISO 9001, ISO 20000, and ISO 27001 certifications alongside a Cyber Essentials badge, encrypting client telematics and personally identifiable information (PII) using AES256 at rest and HTTPS/SFTP in transit within UK data centres.",
+      "replace": "The company reports that it maintains third-party verified ISO 9001, ISO 20000, and ISO 27001 certifications alongside a Cyber Essentials badge.",
+      "reason": "Unconfirmed detail removed: AES256/HTTPS/SFTP encryption and UK data centre details",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The details regarding the encryption of client telematics and PII data using AES256 at rest and HTTPS/SFTP in transit within UK data centres could not be confirmed in the published sources."
+    },
+    {
+      "company": "Microlise Group PLC",
+      "find": "A long-term leasing partnership with Ryder, which reached a milestone of 5,000 vehicle connections using pre-installed Microlise telematics systems on rental and lease fleets, as reported by Microlise in May 2019.",
+      "replace": "A long-term leasing partnership with Ryder, which reached a milestone of 5,000 vehicle connections using pre-installed Microlise telematics systems on rental and lease fleets, as reported by Microlise.",
+      "reason": "Unconfirmed detail removed: date May 2019",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The exact publication date of 'May 2019' for the 5,000 milestone announcement remains unconfirmed in public release metadata, although the partnership itself and the milestone numbers are valid."
+    },
+    {
+      "company": "Microlise Group PLC",
+      "find": "The company reports in its 2024 annual report that it has four total offices in the UK located in Nottingham, Hull, Altrincham, and Coventry, alongside a global team of over 800 dedicated professionals.",
+      "replace": "The company reports in its 2024 annual report that it has a global team of over 800 dedicated professionals.",
+      "reason": "Unconfirmed detail removed: four UK office locations",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The exact combination of four UK offices in Nottingham, Hull, Altrincham, and Coventry remains unconfirmed in the verified text, though the global headcount of over 800 and the Nottingham HQ are suppo"
+    },
+    {
+      "company": "Prolius Ltd",
+      "find": "The company reports that its software architecture integrates with third-party telematics platforms, such as an official software integration partnership with Teletrac Navman to ingest live vehicle data, driver behavior metrics, and route optimization metrics into a unified dashboard.",
+      "replace": "The company reports that its software architecture integrates with third-party telematics platforms, such as Teletrac Navman, to ingest live vehicle data, driver behavior metrics, and route optimization metrics into a unified dashboard.",
+      "reason": "Unconfirmed detail removed: 'official software integration partnership' wording",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: official software integration partnership"
+    },
+    {
+      "company": "Prolius Ltd",
+      "find": "The company reports that its platform operates to ISO 27001 standards, ensures GDPR compliance for each operator, and utilizes a secure Amazon Web Services (AWS) cloud computing environment with SSL technology for file transmission.",
+      "replace": "The company reports that its platform operates to ISO 27001 standards, ensures GDPR compliance for each operator, and utilizes a secure Amazon Web Services (AWS) cloud computing environment.",
+      "reason": "Unconfirmed detail removed: SSL technology for file transmission",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: with SSL technology for file transmission"
+    },
+    {
+      "company": "Prolius Ltd",
+      "find": "The company reports executing a digital transformation project for energy infrastructure provider Exolum, deploying its centralised fleet management platform to deliver end-to-end visibility and workshop integration for a business with a turnover of £500m+.",
+      "replace": "The company reports executing a digital transformation project for energy infrastructure provider Exolum, deploying its centralised fleet management platform to deliver end-to-end visibility and improved data insights for a business with a turnover of £500m+.",
+      "reason": "Unconfirmed detail removed: workshop integration (replaced with 'improved data insights' per note)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The inclusion of 'workshop integration' specifically for the Exolum deployment is unconfirmed; the official case profile lists 'improved data insights' alongside end-to-end visibility."
+    },
+    {
+      "company": "Prolius Ltd",
+      "find": "Prolius Ltd acts as a privately held software development entity with an estimated operational team size of 11 to 50 employees as listed on its official corporate registries.",
+      "replace": "Prolius Ltd acts as a privately held software development entity as listed on its official corporate registries.",
+      "reason": "Unconfirmed detail removed: 11 to 50 employee team size",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: estimated operational team size of 11 to 50 employees"
+    },
+    {
+      "company": "AC Security Solutions Ltd",
+      "find": "A completed project announced in 2024 where AC Security Solutions partnered with Maple Fleet Services to deliver a \"Complete Remote Protection\" solution integrating Maple's FreightLock IQ with the AdvancedFleet Telematics platform for secure remote door locking via their software portal.",
+      "replace": "A completed project where AC Security Solutions partnered with Maple Fleet Services to deliver a \"Complete Remote Protection\" solution integrating Maple's FreightLock IQ with the AdvancedFleet Telematics platform for secure remote door locking.",
+      "reason": "Unconfirmed detail removed: year 2024 and 'software portal'",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The year 2024 and 'software portal' are not explicitly stated in published materials for this project."
+    },
+    {
+      "company": "AC Security Solutions Ltd",
+      "find": "The company reports obtaining AES256 encryption approval for its systems according to its corporate history.",
+      "replace": "",
+      "reason": "Unconfirmed detail removed: entire statement (AES256 encryption approval)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: obtaining AES256 encryption approval for its systems according to its corporate history"
+    },
+    {
+      "company": "AC Security Solutions Ltd",
+      "find": "The company reports having helped thousands of clients improve fleet safety and make roads safer over its 20-year history of supplying bespoke mobile CCTV and security systems.",
+      "replace": "The company reports a 20-year history of supplying bespoke mobile CCTV and security systems.",
+      "reason": "Unconfirmed detail removed: 'helped thousands of clients' and safety outcome",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The detail 'helped thousands of clients' is not confirmed in the published company text, which only states they have over 20 years of experience supplying bespoke solutions."
+    },
+    {
+      "company": "Ashwoods Lightfoot Limited",
+      "find": "A dedicated partnership with global insurer Allianz, launched in 2015 and updated through May 2025, gives fleet policyholders exclusive discounts on the company's driver coaching and rewards technology as part of a proactive risk management approach.",
+      "replace": "A dedicated partnership with global insurer Allianz, launched in 2015, gives fleet policyholders exclusive discounts on the company's driver coaching and rewards technology as part of a proactive risk management approach.",
+      "reason": "Unconfirmed detail removed: update date May 2025",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The update date of 'May 2025' is unconfirmed in published records regarding the alliance."
+    },
+    {
+      "company": "Volteras Technologies Ltd",
+      "find": "The company reports that its platform architecture uses OAuth 2.0 client-credentials security and manages its Tesla integration consent flow to fully support Multi-Factor Authentication (MFA) via Tesla.",
+      "replace": "The company reports that it manages its Tesla integration consent flow to fully support Multi-Factor Authentication (MFA) via Tesla.",
+      "reason": "Unconfirmed detail removed: OAuth 2.0 client-credentials platform architecture",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The detail regarding the use of 'OAuth 2.0 client-credentials security' for the general platform architecture is not mentioned in the source (the source specifies OAuth 2.0 is managed by Tesla for the"
+    },
+    {
+      "company": "Volteras Technologies Ltd",
+      "find": "Volteras provides the Volteras Connect API, streaming real-time telemetry from over 35 global automakers across 340+ vehicle models to support scaling from one to 10,000 vehicles.",
+      "replace": "Volteras provides the Volteras Connect API, streaming real-time telemetry from over 35 global automakers across 340+ vehicle models.",
+      "reason": "Unconfirmed detail removed: scaling from one to 10,000 vehicles",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The specific detail regarding supporting scaling 'from one to 10,000 vehicles' is not confirmed by the published material."
+    },
+    {
+      "company": "Volteras Technologies Ltd",
+      "find": "In December 2025, vehicle leasing company Liquid Fleet completed onboarding onto the Volteras system to aggregate real-time odometer and location data via an online portal.",
+      "replace": "Vehicle leasing company Liquid Fleet aims to implement the Volteras system to aggregate real-time odometer and location data via an online portal.",
+      "reason": "Unconfirmed detail removed: 'completed onboarding' and December 2025 (replaced with 'aims to implement' per note)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The source states that Liquid Fleet 'aims to implement' or has partnered to onboard the platform, but there is no verification that they completely 'completed onboarding' onto the system in December 2"
+    },
+    {
+      "company": "BigChange Limited",
+      "find": "A client case study involving D-tox demonstrated the deployment of BigChange's 5-in-1 system incorporating mobile apps on rugged tablets live-connected to back-office software alongside hard-wired or plug-and-go vehicle tracking connected via OBD-II ports.",
+      "replace": "A client case study involving D-tox demonstrated the deployment of BigChange's 5-in-1 system incorporating mobile apps on rugged tablets live-connected to back-office software.",
+      "reason": "Unconfirmed detail removed: hard-wired/plug-and-go OBD-II tracking",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: hard-wired or plug-and-go vehicle tracking connected via OBD-II ports"
+    },
+    {
+      "company": "BigChange Limited",
+      "find": "The company reports that its Route Optimiser feature dynamically integrates with the Google Maps API to evaluate traffic and road network status in real time, and its customers achieve an average of 11% less drive time and 10% lower fuel consumption.",
+      "replace": "The company reports that its Route Optimiser feature dynamically integrates with the Google Maps API to evaluate traffic and road network status in real time.",
+      "reason": "Unconfirmed detail removed: 11% drive time and 10% fuel figures",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: average of 11% less drive time and 10% lower fuel consumption"
+    },
+    {
+      "company": "BigChange Limited",
+      "find": "The company reports that its AssetWatch trailer tracking solution utilizes rugged, waterproof tracking hardware (minimum IP66 rating) equipped with an autonomous internal rechargeable battery, motion-based wake-up functionality, and daily location updates, according to the BigChange Help Guide.",
+      "replace": "The company reports that its AssetWatch trailer tracking solution utilizes rugged, waterproof tracking hardware (minimum IP66 rating), according to the BigChange Help Guide.",
+      "reason": "Unconfirmed detail removed: battery, motion wake-up and daily update details",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: autonomous internal rechargeable battery, motion-based wake-up functionality, and daily location updates"
+    },
+    {
+      "company": "BigChange Limited",
+      "find": "The company reports that its operational tracking infrastructure supports 50,000 active tracking devices deployed across more than 1,700 customers, recording over 625 million miles driven through its systems in 2022, as disclosed via official BigChange training resources.",
+      "replace": "The company reports that its operational tracking infrastructure supports 50,000 field-service workers and back-office personnel across more than 1,700 customers, as disclosed via official BigChange training resources.",
+      "reason": "Unconfirmed detail removed: 'active tracking devices' (replaced per note) and 625 million miles in 2022",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The metrics '50,000 active tracking devices' (official sources specify 50,000 field-service workers and back-office personnel instead) and '625 million miles driven through its systems in 2022' are un"
+    },
+    {
+      "company": "UK Telematics",
+      "find": "Radius Payment Solutions Limited (the parent corporation) filed consolidated financial reports with Companies House confirming that UK Telematics Limited is operated as a subsidiary within its global telematics division, which reported an overall gross profit increase of nearly 60% to £28.3 million across more than 20 countries.",
+      "replace": "Radius Payment Solutions Limited (the parent corporation) filed consolidated financial reports with Companies House confirming that UK Telematics Limited is operated as a subsidiary within its global telematics division.",
+      "reason": "Unconfirmed detail removed: gross profit increase, figure and country count",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The overall gross profit increase of nearly 60% to £28.3 million across more than 20 countries is unconfirmed."
+    },
+    {
+      "company": "UK Telematics",
+      "find": "Public procurement data from D3 Tenders states that UK Telematics Limited was awarded a commercial vehicle contract (S1106) for a Fleet Tracking System signed on 2 October 2025.",
+      "replace": "Public procurement data states that UK Telematics Limited was awarded a commercial vehicle contract for a Fleet Tracking System signed on 2 October 2025.",
+      "reason": "Unconfirmed detail removed: D3 Tenders platform and contract reference S1106",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The specific platform 'D3 Tenders' and the contract reference number 'S1106' are unconfirmed."
+    },
+    {
+      "company": "Radius Limited",
+      "find": "In an investor insight by Inflexion, managing director Ben Thompson stated in 2024 that the diversified group behind Radius Limited generates over £4 billion in total revenues across its divisions, which includes Radius Telematics.",
+      "replace": "In an investor insight by Inflexion, managing director Ben Thompson stated in 2024 that the diversified group behind Radius Limited includes Radius Telematics among its divisions.",
+      "reason": "Unconfirmed detail removed: over 4 billion total revenues figure",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: £4 billion total revenues"
+    },
+    {
+      "company": "Corvia Limited",
+      "find": "Transport for Greater Manchester completed a rollout of Ticketer electronic ticket machines (ETMs) and the Ticketer Smart Gateway in 2023, providing cellular-enabled connectivity to stream real-time operational statistics and vehicle locations as reported by Webbing Solutions.",
+      "replace": "Transport for Greater Manchester completed a rollout of Ticketer electronic ticket machines (ETMs) and the Ticketer Smart Gateway in 2023, providing cellular-enabled connectivity to stream real-time operational statistics and vehicle locations.",
+      "reason": "Unconfirmed detail removed: Webbing Solutions attribution",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Webbing Solutions"
+    },
+    {
+      "company": "Fleet Service GB Ltd",
+      "find": "A strategic partnership announced in May 2025 integrates Fleet Service GB's core management software with Lightfoot's telematics tools, which utilize 4G LTE connectivity to transmit instant in-cab coaching and vehicle data.",
+      "replace": "A strategic partnership announced in May 2025 integrates Fleet Service GB's core management software with Lightfoot's telematics tools, which transmit instant in-cab coaching and vehicle data.",
+      "reason": "Unconfirmed detail removed: 4G LTE connectivity",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: 4G LTE connectivity"
+    },
+    {
+      "company": "Fleet Service GB Ltd",
+      "find": "A contract renewal following a 2025 retender with the Canal & River Trust achieved a total savings of £250,000, a 20% reduction in year-on-year spend, and a 12% reduction in fuel usage using the platform's tracking and management tools, according to the Fleet Service GB Canal and River Trust Case Study.",
+      "replace": "A contract renewal following a 2025 retender with the Canal & River Trust achieved a total savings of £250,000 and a 12% reduction in fuel usage using the platform's tracking and management tools, according to the Fleet Service GB Canal and River Trust Case Study.",
+      "reason": "Unconfirmed detail removed: 20% reduction in year-on-year spend",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: 20% reduction in year-on-year spend"
+    },
+    {
+      "company": "Fleet Service GB Ltd",
+      "find": "An external model estimated the company's annual revenue at £14.9 million in May 2026 based on filings.",
+      "replace": "",
+      "reason": "Unconfirmed detail removed: entire statement (14.9 million revenue estimate)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The exact estimated annual revenue of £14.9 million in May 2026 is unconfirmed in published filings or sources."
+    },
+    {
+      "company": "Satmo Vehicle Tracking",
+      "find": "The company operates as an unfunded vehicle tracking provider with an estimated small team footprint of approximately 4 employees.",
+      "replace": "The company operates as a vehicle tracking provider with an estimated small team footprint of approximately 4 employees.",
+      "reason": "Unconfirmed detail removed: 'unfunded'",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The detail that the company is 'unfunded' is unconfirmed by published corporate records or available sources."
+    },
+    {
+      "company": "Protrack Solutions Limited",
+      "find": "The Protrack Solutions Limited standard Terms and Conditions detail mutual confidentiality protocols restricting vehicle data access to authorized employees, agents, and subcontractors, while explicitly reserving the right to disclose customer system data to UK regulatory authorities such as the Police.",
+      "replace": "",
+      "reason": "Unconfirmed detail removed: essentially entire statement (confidentiality and Police disclosure)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: Mutual confidentiality protocols and the explicit reservation of rights to disclose customer system data to the Police are not mentioned in the standard Terms and Conditions document."
+    },
+    {
+      "company": "Protrack Solutions Limited",
+      "find": "The company's mobile tracking application, Auto App Pro, maintains interoperability with external navigation systems through an updated HERE Maps API integration, according to the official Apple App Store listing.",
+      "replace": "",
+      "reason": "Unconfirmed detail removed: entire statement (App Store listing and HERE Maps integration)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02: The presence of Auto App Pro on the official Apple App Store listing and its updated HERE Maps API integration are unconfirmed details."
+    },
+    {
+      "company": "Cubo Solutions Limited",
+      "find": "The company, trading as Motia following its merger with Fuel Card Services, features direct API integration into customer Transport Management Systems (TMS) and third-party software including Qargo, Aquarius IT, Transporeon, and Project44.",
+      "replace": "The company, trading as Motia following its merger with Fuel Card Services, features direct API integration into customer Transport Management Systems (TMS) and third-party software including Qargo and Aquarius IT.",
+      "reason": "Unconfirmed detail removed: Transporeon and Project44 integrations",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "Pocket Box Ltd",
+      "find": "The company reports that its cloud-based platform is designed with a modular architecture that scales from small fleets of 5 vehicles to enterprise operations of 500 or more vehicles, currently serving over 200 small and medium-sized enterprise clients across the United Kingdom and Ireland.",
+      "replace": "The company reports that its cloud-based platform is designed with a modular architecture, currently serving over 200 small and medium-sized enterprise clients across the United Kingdom and Ireland.",
+      "reason": "Unconfirmed detail removed: scaling from 5 to 500+ vehicles",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "Pocket Box Ltd",
+      "find": "The company reports that its system integrates with various third-party technologies, featuring an automated fuel card transaction import module, a DVLA license check API, and direct tracking and camera integrations through partnerships with Inseego and Lytx.",
+      "replace": "The company reports that its system integrates with various third-party technologies, featuring direct tracking and camera integrations through partnerships with Inseego and Lytx.",
+      "reason": "Unconfirmed detail removed: fuel card import module and DVLA licence check API",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "Pocket Box Ltd",
+      "find": "According to a company announcement reported by Fleet News, Pocket Box Ltd officially launched its SME-focused commercial fleet management and compliance software solution in October 2022, scaling its active client operations to serve over 200 businesses across the United Kingdom and Ireland.",
+      "replace": "According to a company announcement reported by Fleet News, Pocket Box Ltd officially launched its SME-focused commercial fleet management and compliance software solution in October 2022.",
+      "reason": "Unconfirmed detail removed: scaling to over 200 businesses",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "Pocket Box Ltd",
+      "find": "The company reports that over 200 small and medium-sized businesses use its cloud-based platform daily to manage company vehicles across the UK and Ireland, according to the official Pocket Box YouTube Channel.",
+      "replace": "The company reports that over 200 small and medium-sized businesses use its cloud-based platform daily to manage company vehicles across the UK and Ireland, according to the official Pocket Box website.",
+      "reason": "Fact-check correction: source is the company website, not its YouTube channel",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "GPSBob LTD",
+      "find": "GPSBob LTD operates out of a single physical location situated at Unit 4D, The Gateway, Silkwood Park, Ossett, Wakefield, West Yorkshire, WF5 9TJ, UK, as confirmed by its official company Terms & Conditions – GPSBob (https://gpsbob.com/pages/terms-conditions).",
+      "replace": "GPSBob LTD operates out of a physical location at Unit 4D Fryers Way, Ossett, West Yorkshire, WF5 9TJ, as confirmed by its official company Terms & Conditions – GPSBob (https://gpsbob.com/pages/terms-conditions).",
+      "reason": "Fact-check correction: address is Unit 4D Fryers Way; 'single' location not stated",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "GPSBob LTD",
+      "find": "The company reports providing 24/7 theft tracking support specifically for its Thatcham-approved Mongoose S5 and S7 fleet tracker units, which coordinate live positioning with the police, alongside its general UK-based customer helpline, according to the GPSBob Mongoose Process (https://gpsbob.com/pages/mongoose-process) documentation.",
+      "replace": "The company reports providing 24/7 theft tracking support for its Thatcham-approved Mongoose S5 and S7 vehicle tracking systems, which coordinate live positioning with the police, according to the GPSBob Mongoose Process (https://gpsbob.com/pages/mongoose-process) documentation.",
+      "reason": "Unconfirmed detail removed: 'fleet tracker units' wording and general helpline",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "Connected Vehicle Solutions Ltd",
+      "find": "The company reports working primarily with business partners, stating in its official documentation that it coordinates with insurance companies, telematics service providers, lease companies, and resellers to distribute its hardware and cloud platform.",
+      "replace": "The company reports working primarily with business partners.",
+      "reason": "Unconfirmed detail removed: the list of partner types (insurers, telematics providers, lease companies, resellers)",
+      "source": "Fact-check of the published report (Google AI Mode), 2026-10-02"
+    },
+    {
+      "company": "GTrak Ltd",
+      "find": "a Driver ID key fob system for monitoring behavior such as acceleration and braking",
+      "replace": "a Driver ID key fob system for driver behaviour analysis",
+      "reason": "Unconfirmed detail removed: site lists driver behaviour analysis generally",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "GTrak Ltd",
+      "find": "1080p dual forward/cab-facing cameras, anti-tamper technology, and integrated Driver ID key fobs",
+      "replace": "1080p forward and cab-facing cameras and anti-tamper technology, alongside Driver ID key fobs",
+      "reason": "Site states 1080p forward and cab-facing camera; key fobs are separate",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "GTrak Ltd",
+      "find": "an in-house customer support team",
+      "replace": "an ongoing support team",
+      "reason": "Source says ongoing support team, not in-house",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Automatrics Limited",
+      "find": "which requires professional installation by an approved auto technician",
+      "replace": "which requires a simple two-wire installation",
+      "reason": "Product page describes a simple two-wire installation",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Automatrics Limited",
+      "find": "Automatrics Limited reports that its tracking services are trusted by thousands of customers, and the company has been selected to conduct",
+      "replace": "Automatrics Limited reports that it has been selected to conduct",
+      "reason": "Unconfirmed 'thousands of customers' removed",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Automatrics Limited",
+      "find": "In an independent case study, an Automatrics",
+      "replace": "In a case study published by the company, an Automatrics",
+      "reason": "Case study is company-published, not independent",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Automatrics Limited",
+      "find": "The company reports a hardware partnership with a leading European manufacturer to supply its plug-and-play tracking solutions and utilizes premium SIM cards",
+      "replace": "The company reports that its plug-and-play tracking solutions use premium SIM cards",
+      "reason": "Unconfirmed European hardware partnership removed",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Automatrics Limited",
+      "find": "to deploy regional signal receivers for its radio frequency (RF) finding agents",
+      "replace": "to support recovery with its radio frequency (RF) finding agents",
+      "reason": "Receivers are supplied to police units, not deployed by the company",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Journease Software Limited",
+      "find": "and continuous 24/7 cloud system access",
+      "replace": "and cloud-based access from anywhere",
+      "reason": "Site states cloud-based access from anywhere",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Journease Software Limited",
+      "find": "An independent customer review published on Capterra indicates that an oil company based in Aberdeen implemented the software as a customized solution to store, locate, and dispatch over 30,000 components across facilities in the North Sea and West Africa.",
+      "replace": "",
+      "reason": "Capterra review details could not be confirmed",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Journease Software Limited",
+      "find": "A customer case study published on Capterra confirms that an Aberdeen-based oil company operating in the North Sea and West Africa utilises the Journease system to manage stock and track delivery routing for its vehicle fleet.",
+      "replace": "",
+      "reason": "Same unconfirmed Capterra case study",
+      "source": "AI Mode fact-check, chart entrant audit (logs/factcheck4)"
+    },
+    {
+      "company": "Cubo Solutions Limited",
+      "find": "provides an integrated vehicle tracking system verified to be compatible with over 200 distinct GPS tracking models",
+      "replace": "provides an integrated vehicle tracking system that the company reports is compatible with over 200 GPS tracking models",
+      "reason": "Company claim, not independently verified",
+      "source": "Marine audit workbook issue types applied to UK report, 2026-10-02"
+    },
+    {
+      "company": "Cubo Solutions Limited",
+      "find": ", establishing its verified presence within the UK telecommunications regulatory framework",
+      "replace": "",
+      "reason": "Overstated 'verified' wording",
+      "source": "Marine audit workbook issue types applied to UK report, 2026-10-02"
+    },
+    {
+      "company": "UK Telematics",
+      "find": "In a public council report from the Merthyr Tydfil County Borough Council, it was verified that UK Telematics operates in full compliance with the General Data Protection Regulation (GDPR) requirements for its vehicle tracking devices.",
+      "replace": "A Merthyr Tydfil County Borough Council report states that UK Telematics' vehicle tracking devices meet General Data Protection Regulation (GDPR) requirements.",
+      "reason": "Report states compliance; 'verified ... full compliance' overstated",
+      "source": "Marine audit workbook issue types applied to UK report, 2026-10-02"
+    },
+    {
+      "company": "BigChange Limited",
+      "find": "Public corporate registers and organizational tracking records verify that BigChange Limited maintains its sole active UK registered office in Leeds, managing an operational headcount of between 200 and 224 employees as of its most recent reported tracking cycles.",
+      "replace": "Companies House records show BigChange Limited's registered office in Leeds.",
+      "reason": "Headcount range came from an unnamed tracking source; unconfirmed detail removed",
+      "source": "Marine audit workbook issue types applied to UK report, 2026-10-02"
+    },
+    {
+      "company": "AC Security Solutions Ltd",
+      "find": "A completed project where AC Security Solutions partnered with Maple Fleet Services to deliver",
+      "replace": "A joint solution in which AC Security Solutions partnered with Maple Fleet Services to deliver",
+      "reason": "Status rule: source does not call it a completed project",
+      "source": "Marine audit workbook issue types applied to UK report, 2026-10-02"
+    },
+    {
+      "company": "Fleet Software Solutions Ltd",
+      "find": "The company reports that its tracking platform supports compliance with UK GDPR and Information Commissioner's Office worker monitoring guidelines by incorporating privacy toggles for out-of-hours vehicle use, as outlined in its 2026 fleet tracking guide.",
+      "replace": "",
+      "reason": "Unconfirmed: GDPR/ICO guideline details and 2026 guide",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Fleet Software Solutions Ltd",
+      "find": "featuring 10-second live updates, anti-tamper",
+      "replace": "featuring anti-tamper",
+      "reason": "Unconfirmed 10-second update detail",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Fleet Software Solutions Ltd",
+      "find": " across regional hubs",
+      "replace": "",
+      "reason": "Unconfirmed 'regional hubs'",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Fleet Software Solutions Ltd",
+      "find": "utilized its dedicated engineering network to execute the physical installation",
+      "replace": "carried out the physical installation",
+      "reason": "Unconfirmed 'dedicated engineering network'",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "FleetGS",
+      "find": "The company markets a specific hardware offering, the FleetGS FMT100 GPS vehicle tracker, which includes an integrated SIM card to support live tracking across its fleet deployments.",
+      "replace": "",
+      "reason": "No source for a FleetGS FMT100 tracker",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "FleetGS",
+      "find": "announced the release of its mobile application on the Apple App Store in October 2025 to enable",
+      "replace": "offers a mobile application on the Apple App Store to enable",
+      "reason": "Release month unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "FleetGS",
+      "find": "Commercial sales channels show direct integration capabilities with specific hardware models, such as the FleetGS FMT100 GPS vehicle tracker and the Teltonika FMC920 4G LTE GPS tracker pre-configured for the UK FleetGS platform.",
+      "replace": "Commercial sales channels show direct integration capabilities with Teltonika hardware models such as the FMC880, FMC920 and FMC150, pre-configured for the UK FleetGS platform.",
+      "reason": "Platform supports generic Teltonika models, not a FleetGS FMT100",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "FleetGS",
+      "find": "and commercial lease brokers",
+      "replace": "commercial vehicle dealers and lease brokers",
+      "reason": "Programme lists commercial vehicle dealers and lease brokers",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "FleetGS",
+      "find": "between 5 and 500 vehicles",
+      "replace": "between 5 and 50 vehicles",
+      "reason": "Site states 5 to 50 vehicles",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Trakm8 Limited",
+      "find": "Trakm8 Limited achieved formal ISO 27001 accreditation and upgraded its IT platform security to implement GDPR management processes and enhanced encrypted telematics products, as reported in a company publication detailing regulatory driver data adjustments.",
+      "replace": "Trakm8 Limited holds ISO 27001 accreditation for its information security management.",
+      "reason": "GDPR-process and publication details unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Trakm8 Limited",
+      "find": "includes low-level vehicle routing algorithms, energy APIs, and specific integration endpoints for ERP and Electronic Proof of Delivery (ePOD) workflows",
+      "replace": "supports Electronic Proof of Delivery (ePOD) workflows",
+      "reason": "Routing/energy API/ERP endpoint details unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Trakm8 Limited",
+      "find": "Selco Builders Warehouse renewed its 10-year fleet telematics contract with the company to deploy the Trakm8 Insight Business Platform across its company car operations.",
+      "replace": "Selco Builders Warehouse renewed its fleet telematics contract with the company for four years, extending a 10-year partnership, to deploy the Trakm8 Insight Business Platform across its company car operations.",
+      "reason": "Four-year renewal within a 10-year partnership",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Trakm8 Limited",
+      "find": "In its final financial results for the year ended 31 March 2024, the company reported total revenue of £15.9 million, noting that its fleet software revenues were heavily impacted and down by £1.5 million due to the timing of renewals with UK retailers.",
+      "replace": "In its final financial results for the year ended 31 March 2024, the company reported total revenue of £16.09 million.",
+      "reason": "Revenue was £16.09m; the £1.5m fleet-software drop is unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Trakm8 Limited",
+      "find": "according to its June 2026 annual report announcement",
+      "replace": "according to its July 2026 AGM announcement",
+      "reason": "Source is the July 2026 AGM announcement",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Mobil Information Systems UK Ltd",
+      "find": "TRL PPR987 idle rates and European Commission guidelines",
+      "replace": "TRL PPR987 idle rates",
+      "reason": "European Commission guidelines not in source",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Mobil Information Systems UK Ltd",
+      "find": "up to 12 channels",
+      "replace": "up to 8 channels",
+      "reason": "Supports up to 8 channels",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Mobil Information Systems UK Ltd",
+      "find": "Open corporate data platforms like Endole report that Mobil Information Systems UK Ltd qualifies as a small company with a turnover under £1 million and a balance sheet under £500,000.",
+      "replace": "",
+      "reason": "Modelled size band from a company-data site",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": " and 292 billion data points annually",
+      "replace": "",
+      "reason": "292bn figure belongs to an older device count",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": "The company reports that its VT3000-AI hardware solution utilizes a built-in 4G network connection to transmit real-time telemetry and video analytics, supporting instant cloud uploads of advanced driver assist system (ADAS) and driver status monitoring (DSM) alerts.",
+      "replace": "The company reports that its VT3000-AI hardware works with separate 4G connectivity and driver status monitoring (DSM) modules to transmit real-time telemetry and upload advanced driver assist system (ADAS) and DSM alerts to the cloud.",
+      "reason": "4G and DSM are separate modules, not built in",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": "An anonymized regional logistics company utilized VisionTrack's vehicle data and software coaching to monitor patterns of harsh braking, achieving a 35% reduction in these events within six months to improve road safety and lower maintenance costs, according to a case study on the Geotab Marketplace.",
+      "replace": "A case study on the Geotab Marketplace reports that a logistics company using VisionTrack's vehicle data and driver coaching achieved a 35% reduction in harsh braking events.",
+      "reason": "Company description and six-month timeframe unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": ", ruggedized anti-vibration MDVRs,",
+      "replace": ",",
+      "reason": "Unconfirmed MDVR detail",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": "A September 2026 fleet deployment project with Loomis UK confirms the implementation of VisionTrack's video telematics and Autonomise.ai platform across a 500+ vehicle fleet, utilizing a cloud architecture on Microsoft Azure that adheres to GDPR, Cyber Essentials Plus, and ISO 27001 standards.",
+      "replace": "A September 2026 fleet deployment project with Loomis UK confirms the implementation of VisionTrack's video telematics across a 500+ vehicle fleet.",
+      "reason": "Platform, Azure and certification details unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": "According to filing data from the UK Companies House register, VisionTrack Limited achieved a latest reported annual turnover of £18.4 million, establishing a financial net worth of £5.9 million and cash at bank of £2.1 million.",
+      "replace": "",
+      "reason": "Turnover, net worth and cash figures unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": "verified by its computer vision tool",
+      "replace": "verified by its AI post-analysis tool, NARA",
+      "reason": "Tool is NARA",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "find": ", alongside a distinct morning window on Saturdays from 9:00am to 1:00pm",
+      "replace": "",
+      "reason": "No Saturday hours",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "KONEXIT FLEET LTD",
+      "find": "Optimus Group reported an in-progress council project deploying over 30 connected cameras and trackers supplied by the company, as cited in customer feedback on the official Konexit Fleet website.",
+      "replace": "",
+      "reason": "Council project details unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "KONEXIT FLEET LTD",
+      "find": "Financial profiles tracking corporate registers show that KONEXIT FLEET LTD is categorized as a micro-entity with an annual turnover under £1M and fewer than 10 employees.",
+      "replace": "",
+      "reason": "Modelled size band, unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "KONEXIT FLEET LTD",
+      "find": "The company reports partnering with major insurance providers to offer insurance discounts, as announced during its sponsorship of the Mach Run 2026 event.",
+      "replace": "",
+      "reason": "Insurance partnership unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "KONEXIT FLEET LTD",
+      "find": "with over 15 years of remote data solutions experience",
+      "replace": "with over 30 years of combined experience",
+      "reason": "Site states 30+ years combined experience",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Fleetclear",
+      "find": ", utilizing 4G connectivity to support live video streaming and remote data downloads",
+      "replace": "",
+      "reason": "4G streaming detail unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Fleetclear",
+      "find": " to house 720p/1080p HD cameras integrated with artificial intelligence for forward blind-spot alerts and near-side collision notifications",
+      "replace": "",
+      "reason": "Camera/AI details unconfirmed",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Fleetclear",
+      "find": "with a 1-year extension option",
+      "replace": "with an option to extend for up to two twelve-month periods",
+      "reason": "Two 12-month extension options",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "TT-Matics",
+      "find": "Dun & Bradstreet reported a sales revenue figure of $0.27 million for TT-MATICS LTD in Great Dunmow, England.",
+      "replace": "",
+      "reason": "Modelled revenue estimate from a company-data site",
+      "source": "AI Mode fact-check of chart entrants after strict scope refill (logs/factcheck5), 2026-10-02"
+    },
+    {
+      "company": "Microlise Group PLC",
+      "find": "The company reports that it maintains third-party verified ISO 9001, ISO 20000, and ISO 27001 certifications",
+      "replace": "The company reports that it holds ISO 9001, ISO 20000, and ISO 27001 certifications",
+      "reason": "'verified' reserved for independent sources; company-reported certifications",
+      "source": "Marine audit workbook rule applied to UK report, 2026-10-02"
+    },
+    {
+      "company": "Quartix Limited",
+      "find": "(1Hz event monitoring)",
+      "replace": "(10Hz event monitoring)",
+      "reason": "100ms sampling is 10Hz",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Quartix Limited",
+      "find": ", with UK operations generating £18.0 million out of £35.7 million in total group revenue,",
+      "replace": ",",
+      "reason": "UK revenue split unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Quartix Limited",
+      "find": "The company reports in its H1 2026 interim results presentation that the UK remains its largest absolute operational region, maintaining approximately £20 million in annualized recurring revenue, with its connected dashcam solution serving as a significant contributor to UK growth throughout 2025.",
+      "replace": "",
+      "reason": "UK ARR and dashcam contribution unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Airmax Remote Limited",
+      "find": "(first attained in 2019)",
+      "replace": "(first attained in 2013)",
+      "reason": "ISO 27001 first attained in 2013",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Airmax Remote Limited",
+      "find": "a driver license data integration partnership",
+      "replace": "a driver behaviour data integration partnership",
+      "reason": "Licence Check integration shares driver behaviour data",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Airmax Remote Limited",
+      "find": "Financial statements submitted to Companies House for the period ending 31 March 2025 confirm that the company maintains a healthy capital balance, with net worth growing to £1,899,932 from £1,583,582 in 2024 and total current assets standing at £2,146,302.",
+      "replace": "",
+      "reason": "Net worth and asset figures unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Airmax Remote Limited",
+      "find": " starting in April 2026",
+      "replace": "",
+      "reason": "Start date unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Ctrack UK Limited",
+      "find": "to stream real-time fleet analytics",
+      "replace": "to share real-time tracking data with its workforce management solution",
+      "reason": "Announcement: real-time tracking data",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Ctrack UK Limited",
+      "find": "to monitor driver behaviour, vehicle utilisation, and fuel efficiency metrics",
+      "replace": "to monitor vehicle operations, unauthorised use, job allocation and fuel consumption",
+      "reason": "Source lists these uses",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Ctrack UK Limited",
+      "find": "published on February 3, 2026",
+      "replace": "published on March 25, 2026",
+      "reason": "Notice published 25 March 2026",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Ctrack UK Limited",
+      "find": "more than 50 countries",
+      "replace": "more than 60 countries",
+      "reason": "60+ countries",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Ctrack UK Limited",
+      "find": "The company reports providing 24/7 customer ticketing availability via a dedicated Customer Self-Service Portal integrated with its internal CRM system, alongside a local support team that explicitly uses no offshore call centres.",
+      "replace": "The company reports providing a Customer Self-Service Portal integrated with its internal CRM system.",
+      "reason": "24/7 availability and 'no offshore call centres' unconfirmed for Ctrack UK",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "VUE Group",
+      "find": " to feed real-time convoy tracking data directly to the VUEhub operations portal",
+      "replace": "",
+      "reason": "VUEhub detail unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "VUE Group",
+      "find": "VUE Group implemented customized cybersecurity measures and GDPR compliance protocols to protect live convoy tracking and incident footage for FTX Logistics Ltd during its telematics solution deployment for the UK Ministry of Defence transporter fleet, an operation announced in November 2025.",
+      "replace": "",
+      "reason": "Cybersecurity/GDPR project claim unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Redtail Telematics Limited",
+      "find": "The company reports that its VAM-HDR quick-fit tracking device supports LTE Cat-M and NB-IoT cellular standards, alongside a standard 1 Hz GPS refresh rate and internal antennas.",
+      "replace": "The company reports that its VAM-HDR quick-fit tracking device supports LTE Cat-M cellular connectivity with a standard 1 Hz GPS refresh rate.",
+      "reason": "NB-IoT and internal antenna details unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Redtail Telematics Limited",
+      "find": "Redtail Telematics maintains an operational software integration with Route4Me to pair its telematics systems with route optimization, trip KPI dashboards, and driver behavior monitoring, as detailed in the Route4Me integration directory.",
+      "replace": "",
+      "reason": "No Route4Me integration",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Redtail Telematics Limited",
+      "find": "The company reports its VAM onboard hardware device family, featuring the VAM-HUB pro-install flagship recorder, VAM-OBD plug-and-play unit, VAM-HDR quick-fit tracker, and IP67-rated solar-augmented VAM-Rugged, as detailed on the Redtail Telematics official product documentation.",
+      "replace": "The company reports its VAM onboard hardware family, including the VAM-HUB, VAM-OBD, VAM-HDR and the IP67-rated solar-augmented VAM-Rugged.",
+      "reason": "Device role descriptions unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Redtail Telematics Limited",
+      "find": "Redtail Telematics Limited provides ready-made telematics gateways and third-party integrations with route optimization and fleet logistics platforms, such as its active technical integration with Route4Me to automatically synchronize, import, and map operational vehicle and tracking data.",
+      "replace": "",
+      "reason": "Route4Me integration unverified",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Redtail Telematics Limited",
+      "find": "61.11%",
+      "replace": "61%",
+      "reason": "Index reports 61%",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Redtail Telematics Limited",
+      "find": " with a recorded headcount of fewer than 50 employees",
+      "replace": "",
+      "reason": "Headcount unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Navstar",
+      "find": "as stated in the Navstar Tracking Privacy Policy",
+      "replace": "as stated on the Our Products page of the Navstar Tracking website",
+      "reason": "Source is the Our Products page",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Navstar",
+      "find": "Telco NE Ltd, the operator of Navstar Vehicle Tracking, maintains a strategic telecommunications network partnership with O2 to distribute its connected fleet telemetry and mobile data tariffs.",
+      "replace": "",
+      "reason": "O2 partnership unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    },
+    {
+      "company": "Navstar",
+      "find": "The company reports offering its basic GO GPS vehicle tracking self-fit systems starting from £60 ex.VAT and £6.50 per month on its official product website.",
+      "replace": "The company reports offering basic GO GPS self-fit vehicle tracking systems on its official product website.",
+      "reason": "Price unconfirmed",
+      "source": "AI Mode fact-check of chart entrants (logs/factcheck6), 2026-10-02"
+    }
+  ],
+  "hq": [],
+  "ownership": [
+    {
+      "company": "Cubo Solutions Limited",
+      "owner": "Fuel Card Services, part of DCC plc",
+      "year": "2024",
+      "reason": "Owner and year in the automatic answer conflict with the fact-check",
+      "source": "AI Mode fact-check (logs/factcheck2): acquired by Fuel Card Services (part of DCC plc) July 2024; trades as Motia since 2025"
+    },
+    {
+      "company": "VisionTrack Limited",
+      "owner": "Markerstudy Group",
+      "year": "",
+      "reason": "Operates as part of Markerstudy Group",
+      "source": "AI Mode fact-check (logs/factcheck5): Companies House and press releases"
+    },
+    {
+      "company": "Ctrack UK Limited",
+      "owner": "Convergence Partners",
+      "year": "2024",
+      "reason": "Ctrack acquired by Convergence Partners",
+      "source": "AI Mode fact-check (logs/factcheck6)"
+    },
+    {
+      "company": "VUE Group",
+      "owner": "Radius",
+      "year": "2021",
+      "reason": "VUE Group part of Radius since 2021",
+      "source": "AI Mode fact-check (logs/factcheck6)"
+    }
+  ],
+  "keep": [
+    {
+      "company": "Quartix Limited",
+      "reason": "UK-headquartered: Quartix Technologies plc is London-listed and run from Newtown (Wales) and Cambridge; the head-office answer described its US subsidiary, Quartix Inc.",
+      "source": "Analyst review of the automatic head-office check, 2026-10-02 (Quartix Technologies plc investor information)."
+    }
+  ],
+  "display": [
+    {
+      "company": "Cubo Solutions Limited",
+      "current_name": "Motia",
+      "source": "AI Mode fact-check (logs/factcheck2): acquired by Fuel Card Services (part of DCC plc) July 2024; trades as Motia since 2025"
+    }
+  ],
+  "scope": [
+    {
+      "company": "Automatrics Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Stolen vehicle recovery systems. Automatrics Limited focuses primarily on vehicle security and stolen vehicle recovery services (such as their MTrack covert tracking solutions). While they do offer standard fleet tracking modules and",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "Journease Software Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Courier and transport management software. The company's primary product is a courier and transport management software solution handling job booking, dispatch, invoicing, and proof of delivery; GPS vehicle tracking is included as a module or ",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "Volteras Technologies Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: OEM connected vehicle data API platform. Volteras is a unified API and data infrastructure platform that aggregates direct, hardware-free, OEM-grade telemetry and connected vehicle data from automotive manufacturers rather than providing a s",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "BigChange Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Job management software for field service businesses. BigChange is primarily an operating and job management platform for field service businesses that includes vehicle tracking and fleet management as a built-in module or add-on alongside scheduling, CR",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "Radius Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Fuel cards and fleet payment solutions. Radius Limited started as a fuel card provider and its primary business ecosystem centers on fuel cards, vehicle leasing, telecoms, and EV charging, making its telematics solution an adjacent add-on f",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "Corvia Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Bus smart ticketing and electronic ticket machine systems. Ticketer's primary offering is cloud-based electronic ticket machines (ETMs) and smart ticketing software tailored specifically for the bus and coach industry. While their platform captures live telem",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "Cubo Solutions Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Fuel cards and fleet management solutions. Motia (formerly MyCubo / Cubo Solutions) is heavily focused on fuel card services alongside its telematics offering, acting as a combined provider of fuel, telematics, and business connectivity soluti",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "VANIR FLEET SERVICES LTD",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet leasing, vehicle hire, and fleet management services. VANIR FLEET SERVICES LTD offers vehicle telematics and GPS tracking as a module/add-on alongside its commercial vehicle hire, vehicle leasing, and fleet procurement services, making it an adjacent pro",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "AC Security Solutions Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Vehicle CCTV and safety systems. The company's primary focus for over 20 years is designing, supplying, and installing mobile CCTV and security/safety systems, with vehicle tracking and telematics offered as an add-on or module withi",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "Fleet Service GB Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Managed fleet services and fleet management software. Fleet Service GB is primarily a fleet management and fleet outsourcing services company offering driver, maintenance, accident, and fleet management services. Vehicle tracking and telematics administr",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02; analyst decision: all 10 off the chart"
+    },
+    {
+      "company": "Motormax Limited",
+      "scope": "adjacent",
+      "reason": "Main product: vehicle safety electronics and vehicle CCTV installation. The company specializes in vehicle safety electronics, cameras, obstacle detection, and vehicle CCTV installation, acting as a Geotab reseller and integrating its hardware into telematics cloud platfo",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Dynamon Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet optimization and EV transition simulation software. Dynamon provides advanced data analytics and simulation software (such as its flagship ZERO package) designed for commercial fleet decarbonisation and optimization. Its tools integrate with and analyz",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Reygar Ltd",
+      "scope": "out",
+      "reason": "Main product: maritime and industrial telemetry platforms. The company focus is on advanced telemetry for vessel (maritime) and industrial environments (BareFLEET and ASTSPARC), rather than road vehicle telematics and connected fleet mobility solutions for tr",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "TT-Matics",
+      "scope": "adjacent",
+      "reason": "Main product: resale of the Quartix vehicle tracking platform as a Quartix sales partner, not its own platform.",
+      "source": "AI Mode fact-check (logs/deep2/check_3.txt), 2026-10-02: 'sales partner of Quartix ... resells the Quartix platform' = correct"
+    },
+    {
+      "company": "Lanterne Ltd.",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet operations automation software. Lanterne does not provide its own vehicle telematics or GPS tracking platform. Instead, it is an automation layer that connects to existing telematics providers, booking platforms, and task systems to",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Jaama Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet and asset management software. Jaama's primary product is Key2, a comprehensive asset, fleet, workshop, and compliance management back-office software ecosystem. While it integrates heavily with third-party telematics providers and",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "TruTac Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Tachograph analysis and fleet compliance software. TruTac's core focus and primary product line revolve around digital/analogue tachograph analysis and fleet compliance management (e.g., TruAnalysis, TruControl, TruChecks). While it offers real-time G",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "PIN IoT Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Digital skip and vehicle tracking software for the waste and recycling industry. The company's primary focus is container and skip tracking specifically tailored for waste management operations, with vehicle tracking acting as an integrated module within this specialized asset tra",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Chevin Fleet Solutions",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet management information system (FMIS). Chevin Fleet Solutions' primary product is FleetWave, a fleet management software platform that acts as a centralized data aggregator by integrating with third-party telematics, GPS tracking, fuel car",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Road Tech Computer Systems Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Transport Management System (TMS) and Tachograph Analysis software. Road Tech's main products are the Roadrunner Transport Management System and Tachomaster tachograph compliance software. Vehicle tracking and telematics (via its DOT Tracking module) are offered as an",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Fleetcheck Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet administration and compliance software. FleetCheck is a fleet administration and legal compliance platform focused on asset documentation, vehicle maintenance, and driver safety audits. It does not provide its own core vehicle telematics or",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "AES Fleet Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Reseller and integrator of third-party telematics and fleet software. AES Fleet is a specialist reseller and integrator rather than a primary connected-fleet platform developer. They provide fleet management and telematics by deploying industry-leading third-party syste",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "THE VEHICLE GROUP LIMITED",
+      "scope": "adjacent",
+      "reason": "Main product: vehicle safety and security hardware. The Vehicle Group (TVG) is primarily a UK manufacturer and installer of vehicle safety and security systems (such as vehicle CCTV, collision avoidance sensors, locks, and EV power management hardware)",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "GoMetro UK Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Telematics data aggregation and fleet electrification platform. GoMetro's primary product is GoMetro Bridge, which functions as an Integration-Platform-as-a-Service (iPaaS) and telemetry aggregator that unifies data feeds from multiple third-party telematics provi",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Transport Data Interchange Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Tachograph analysis and fleet compliance software. The company's primary focus and main product suite (including its flagship brand disc-check) revolve around digital tachograph analysis, driver compliance, DVSA Earned Recognition, and vehicle walk-ar",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "r2c Online Limited",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet maintenance and workshop compliance management software. The company's primary focus is digital workshop management and vehicle compliance software (such as DVSA Earned Recognition and digital jobsheets). While it offers vehicle walkaround checks and connec",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "AssetGo Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet and driver compliance management software. AssetGo is primarily a digital compliance and workshop management platform focusing on daily walkaround checks, tachograph analysis, defect reporting, and maintenance scheduling rather than operating ",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "Freeway Fleet Systems Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: Fleet maintenance and asset management software. Freeway Fleet Systems focuses primarily on fleet maintenance, workshop management, and asset compliance software, which integrates with third-party vehicle tracking and telematics systems rather than ",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "HTC Solutions LTD",
+      "scope": "adjacent",
+      "reason": "Main product: Transport Management Software (TMS). The company's primary focus is Transport Management Software (TMS) for general and bulk haulage, while vehicle tracking, telematics, and hardware solutions are offered as integrated add-ons or modules",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    },
+    {
+      "company": "The Algorithm People Ltd",
+      "scope": "adjacent",
+      "reason": "Main product: AI-driven route optimization and fleet scheduling software. The company's primary product is an AI-powered route optimization, scheduling, and fleet decarbonization platform (Optimize). It integrates with external telematics and GPS data rather than offering a",
+      "source": "Strict main-product scope check (Google AI Mode, one company per query), 2026-10-02"
+    }
+  ]
+}

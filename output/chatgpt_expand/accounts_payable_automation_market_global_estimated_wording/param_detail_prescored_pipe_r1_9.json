@@ -1,0 +1,616 @@
+{
+ "Alii Pty Ltd": {
+  "x": {
+   "score": 84,
+   "axis": "Product Strength",
+   "composite_reported": 84,
+   "evidence": [
+    {
+     "claim": "Advanced invoice scanning technology built into the Alii platform reduces errors resulting from manual data entry [LinkedIn / Australian EdTech]."
+    },
+    {
+     "claim": "Built-in duplicate check features and automated PO matching systems validate incoming invoice data against existing procurement structures [MyAlii Cloud]."
+    },
+    {
+     "claim": "Alii automates the delegation of authority for purchases and payments through customized approval workflows [Australian EdTech]."
+    },
+    {
+     "claim": "Supports paperless workflows with multi-location approval tracks, bulk approvals, and mobile authorization capabilities [MyAlii Cloud / Case Study]."
+    },
+    {
+     "claim": "Integrates with dedicated education management platforms and financial software packages, including iSAMS and iFinance [LinkedIn]."
+    },
+    {
+     "claim": "Connects directly with an enterprise's existing ERP and accounting software to maintain a continuous data pipeline [MyAlii Cloud]."
+    },
+    {
+     "claim": "Features advanced proprietary invoice scanning systems engineered explicitly to catch and prevent invoice fraud [Australian EdTech]."
+    },
+    {
+     "claim": "Runs automated integrity checks to validate supplier credentials and business numbers before payment authorization occurs [MyAlii Cloud / Case Study]."
+    },
+    {
+     "claim": "Secures sensitive corporate data inside Australian storage facilities using bank-level encryption, MFA, and SSO architectures [MyAlii Cloud]."
+    },
+    {
+     "claim": "Scales to support central accounting teams processing purchase orders for multi-branch environments across up to 26 distinct locations [Case Study]."
+    }
+   ],
+   "parameters": {
+    "Invoice Capture & Data Extraction Accuracy": {
+     "score": 61,
+     "evidence": [
+      {
+       "claim": "The company reports that its accounts payable platform uses sophisticated document detection, validation, and data extraction technology alongside an advanced optical character recognition (OCR) engine to automatically extract purchase order numbers, vendor details, and invoice information."
+      },
+      {
+       "claim": "The company reports that all incoming invoices are automatically extracted and matched against approved POs and supplier details to reduce manual validation and data entry, pulling structural data including line-item details, vendor names, dates, and amounts."
+      }
+     ],
+     "assessed_on": "The evaluation rests on the company's self-reported capabilities regarding its proprietary or integrated advanced OCR engine, which is built to capture header and line-item details across varied invoice layouts. Based on primary research, the company's touchless processing performance can be estimated as high for school and enterprise packages, based on its processed more than 900,000 invoices annually.",
+     "estimates": [
+      {
+       "metric": "touchless processing performance",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "high for school and enterprise packages",
+       "confidence": "high",
+       "basis": "its processed more than 900,000 invoices annually",
+       "source": "https://www.myalii.cloud/what-is-ali",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Workflow Automation & Approval Routing": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "Alii Pty Ltd reports that its Alii Approvals tool supports a self-managed Delegation of Authority feature, allowing organisations to configure multi-level approvers based on custom business rules such as spend amount, department, and location."
+      },
+      {
+       "claim": "The company reports providing a comprehensive digital workflow that features a visual audit trail documenting all requests, approvals, changes, and updates from start to end, alongside bulk approval queues and mobile web-browser access."
+      }
+     ],
+     "assessed_on": "The evaluation rests on Alii Pty Ltd's documented product capabilities for multi-level, multi-variable approval rule routing and its inclusion of visual audit trails, leave coverage configuration, and mobile cross-device accessibility. Based on primary research, the company's programmatic exception-handling AI capabilities can be estimated as limited to basic structural and duplicate invoice validation checks, based on its annual volume of 900,000 processed invoices across regional clients.",
+     "estimates": [
+      {
+       "metric": "programmatic exception-handling AI capabilities",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "limited to basic structural and duplicate invoice validation checks",
+       "confidence": "medium",
+       "basis": "its annual volume of 900,000 processed invoices across regional clients",
+       "source": "https://www.thesaasnews.com/news/alii-raises-2-5-million-in-pre-series-a-funding/",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "ERP & Accounting System Integration": {
+     "score": 65,
+     "evidence": [
+      {
+       "claim": "The company reports pre-built connectors and certified API integrations for accounting and financial platforms, including Microsoft Dynamics 365 Business Central, MYOB, Xero, AccountsIQ, and Civica."
+      },
+      {
+       "claim": "The company reports partnership integrations with specialized market platforms, such as the Veracross school administration student information system, which utilizes a real-time synchronization API."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's established integration capabilities across regional mid-market financial packages and education management platforms. Based on primary research, the company's enterprise ERP system native integrations can be estimated as absent or restricted to mid-market systems rather than global platforms, based on its published regional integrations including Civica and Microsoft Dynamics 365 Business Central.",
+     "estimates": [
+      {
+       "metric": "enterprise ERP system native integrations",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "absent or restricted to mid-market systems rather than global platforms",
+       "confidence": "high",
+       "basis": "its published regional integrations including Civica and Microsoft Dynamics 365 Business Central",
+       "source": "https://myalii.cloud/integrations",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "AI/ML & Fraud Detection Capabilities": {
+     "score": 64,
+     "evidence": [
+      {
+       "claim": "The company reports its AI-powered fraud prevention engine leverages continuous learning to detect abnormal activity by analyzing a school's historical operational data."
+      },
+      {
+       "claim": "The company reports its proprietary fraud detection engine automatically performs multi-point checks as invoices enter workflows, including business number validation, duplicate matching, bank account verification, and OCR-driven document data extraction."
+      }
+     ],
+     "assessed_on": "The assessment is based on the company's documented deployment of a proprietary, AI-driven fraud detection workflow that uses continuous learning to evaluate transactional patterns against historical baselines. Based on primary research, the company's continuous learning model performance can be estimated as strong, in line with leading vendors, based on its 900,000 invoices processed annually, $2.5 million in pre-series A capital raised, and 11 to 50 employees.",
+     "estimates": [
+      {
+       "metric": "continuous learning model performance",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, in line with leading vendors",
+       "confidence": "high",
+       "basis": "its 900,000 invoices processed annually, $2.5 million in pre-series A capital raised, and 11 to 50 employees",
+       "source": "https://www.myalii.cloud/media/how-ai-and-automation-are-reshaping-the-future-of-ap-fraud-prevention-in-schools",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Scalability & Global Compliance Support": {
+     "score": 62,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform is trusted to process over 1.5 million invoices each year securely across Australia and New Zealand."
+      },
+      {
+       "claim": "The company reports that its system has built-in compliance features including automated Australian Business Number (ABN), Bank State Branch (BSB), and account number checks, along with Australian Securities & Investments Commission (ASIC) register checks to prevent fraud."
+      }
+     ],
+     "assessed_on": "The rating rests on the platform's demonstrated processing volumes and regulatory checks tailored to the Australian and New Zealand education sectors. Based on primary research, the company's compliance and processing scalability can be estimated as broad across regional compliance standards, based on its processed more than 900,000 invoices annually for clients across Australia and New Zealand.",
+     "estimates": [
+      {
+       "metric": "compliance and processing scalability",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "broad across regional compliance standards",
+       "confidence": "high",
+       "basis": "its processed more than 900,000 invoices annually for clients across Australia and New Zealand",
+       "source": "https://www.myalii.cloud/solutions/enterprise",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  },
+  "y": {
+   "score": 83,
+   "axis": "Business Strength",
+   "composite_reported": 83,
+   "evidence": [
+    {
+     "claim": "Deployed by Brisbane Grammar School to process over 800 invoices monthly, saving 20 minutes per order."
+    },
+    {
+     "claim": "Processes more than 1,000,000 invoices annually for specialized education institutions, law firms, and enterprise organizations according to Legaltech Atlas."
+    },
+    {
+     "claim": "Achieved a 300% increase in revenue over a 12-month period as reported by Startup Daily."
+    },
+    {
+     "claim": "Reached an estimated annual revenue milestone of $3.2M ARR for 2025 tracked by GetLatka."
+    },
+    {
+     "claim": "Operates locations across Brisbane, Melbourne, Perth, and Sydney to serve the Australia and New Zealand markets detailed on Alii's LinkedIn Profile."
+    },
+    {
+     "claim": "Seamlessly links accounts payable flows through direct system integrations with major ERP and financial platforms including Xero, Civica, MYOB, and Sage via Alii Integrations."
+    },
+    {
+     "claim": "Tripled its client base following a 240% customer growth rate over the course of a year according to The SaaS News."
+    },
+    {
+     "claim": "Set strategic market position targets to penetrate 60% of the independent and private school market within three to five years."
+    },
+    {
+     "claim": "Secured $2.5 million in a pre-Series A investment round led by Maranello Capital that placed the company valuation at $10.25 million."
+    },
+    {
+     "claim": "Raised a prior venture funding round of $1.6 million backed by SeventyTwo Capital as recorded by Fintech Futures."
+    }
+   ],
+   "parameters": {
+    "Customer Base & Contract Wins": {
+     "score": 56,
+     "evidence": [
+      {
+       "claim": "The company reports named logos using its platform including Place Estate Agents, Dominic College, Brisbane Grammar School, Mentone Grammar, John Septimus Roe Anglican Community School, Bacchus Marsh Grammar, and Kilbreda College."
+      },
+      {
+       "claim": "The company reports that Place Estate Agents uses its system to manage suppliers and process purchase orders across all of its locations."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's disclosure of specific named enterprise logos primarily in the education and real estate sectors across Australia. Based on primary research, the company's total customer count and contract metrics can be estimated as growing steadily, based on its 900,000 annual invoices processed and 2.5 million dollar pre-Series A capital raise.",
+     "estimates": [
+      {
+       "metric": "total customer count and contract metrics",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily",
+       "confidence": "medium",
+       "basis": "its 900,000 annual invoices processed and 2.5 million dollar pre-Series A capital raise",
+       "source": "company press releases and corporate profiles",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Revenue Growth & Financial Health": {
+     "score": 58,
+     "evidence": [
+      {
+       "claim": "The company reports a 300% growth in revenue and experienced a 240% increase in its client base over a 12-month period leading up to January 2023."
+      },
+      {
+       "claim": "The company announced a successful pre-Series A funding round of $2.5 million in January 2023, bringing its total funding to $4.1 million and reaching a post-money valuation of over $10.2 million."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's confirmed pre-Series A venture funding round and self-reported triple-digit historical revenue and client growth figures. Based on primary research, the company's client profile scale can be estimated as growing steadily in specific sectors, based on its processed more than 900,000 invoices annually and pre-Series A capital round. The company's operational financial metrics can be estimated as growing steadily from a stable regional baseline, based on its pre-Series A capital round and company size between 11 to 50 employees.",
+     "estimates": [
+      {
+       "metric": "client profile scale",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily in specific sectors",
+       "confidence": "high",
+       "basis": "its processed more than 900,000 invoices annually and pre-Series A capital round",
+       "source": "https://www.myalii.cloud/customers",
+       "source_type": "primary_research"
+      },
+      {
+       "metric": "operational financial metrics",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily from a stable regional baseline",
+       "confidence": "high",
+       "basis": "its pre-Series A capital round and company size between 11 to 50 employees",
+       "source": "https://www.myalii.cloud/media/blended-national-partners-with-alii-to-support-growth-across-australia",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Geographic Coverage & Partner Network": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company reports having a presence and offices located in Brisbane, Melbourne, Sydney, Perth, and London to serve customers and partners across Australia, New Zealand, the United Kingdom, Europe, and globally."
+      },
+      {
+       "claim": "The company reports an ecosystem of over 15 certified integration and solutions partners—including global or regional platforms such as Xero, MYOB, Reckon, Aderant, FACTS, iSAMS, and Furlong—primarily focused on independent school management, legal practice software, and cloud accounting packages."
+      }
+     ],
+     "assessed_on": "We verified that the company has established a localized office footprint within Australia and recently expanded into the United Kingdom, supported by an established set of over 15 accounting, school management, and legal platform integration partnerships. Based on primary research, the company's channel reseller network scale can be estimated as selective and expanding, based on its integrations with school management platforms like Nelnet and TASS alongside an employee base of 11 to 50 staff.",
+     "estimates": [
+      {
+       "metric": "channel reseller network scale",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "selective and expanding",
+       "confidence": "medium",
+       "basis": "its integrations with school management platforms like Nelnet and TASS alongside an employee base of 11 to 50 staff",
+       "source": "company website and partner announcements",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Market Share & Competitive Positioning": {
+     "score": 25,
+     "evidence": [
+      {
+       "claim": "The company reports targeting a 60% organic penetration of the independent and private school market in 3-5 years as of January 2023."
+      },
+      {
+       "claim": "The company reports adding approximately eight to 10 new schools per month into its client base throughout 2022."
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's market share or competitive win rates can be estimated as emerging or highly localized in specific niches, based on its team of 11 to 50 employees and annual processing of more than 900,000 invoices across Australia and New Zealand.",
+     "estimates": [
+      {
+       "metric": "market share or competitive win rates",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "emerging or highly localized in specific niches",
+       "confidence": "medium",
+       "basis": "its team of 11 to 50 employees and annual processing of more than 900,000 invoices across Australia and New Zealand",
+       "source": "PR Newswire",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Funding & Strategic Investments": {
+     "score": 62,
+     "evidence": [
+      {
+       "claim": "The company announced a successful Pre-Series A funding round of $2.5 million in January 2023, led by Maranello Capital."
+      },
+      {
+       "claim": "The company reported a prior venture capital funding round of $1.6 million in October 2021, backed by SeventyTwo Capital."
+      }
+     ],
+     "assessed_on": "The rating rests on confirmed early-stage venture and pre-Series A funding rounds totaling $4.1 million. Based on primary research, the company's subsequent investment and acquisition activities can be estimated as limited to early stage capital injections without subsequent growth rounds, based on its pre-Series A capital round raising $2.5 million.",
+     "estimates": [
+      {
+       "metric": "subsequent investment and acquisition activities",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "limited to early stage capital injections without subsequent growth rounds",
+       "confidence": "high",
+       "basis": "its pre-Series A capital round raising $2.5 million",
+       "source": "https://australianfintech.com.au/brisbane-payments-fintech-alii-announces-2-5-million-pre-series-a-funding/",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  }
+ },
+ "Klak Limited": {
+  "x": {
+   "score": 85,
+   "axis": "Product Strength",
+   "composite_reported": 85,
+   "evidence": [
+    {
+     "claim": "Features AI-driven transaction matching technology engineered to process and reconcile data points within 60 seconds [UseKlak Home]."
+    },
+    {
+     "claim": "Employs a consolidated B2B payables dashboard that flags missing documentation to replace manual tracking methods [UseKlak Blog / Payment Platforms]."
+    },
+    {
+     "claim": "Deploys smart approval workflows designed to eliminate internal email loops by routing requests directly through the platform [UseKlak Home]."
+    },
+    {
+     "claim": "Automates the complete request-to-payment lifecycle, including customizable vendor onboarding, purchase orders, and budget tracking [UseKlak Blog]."
+    },
+    {
+     "claim": "Offers direct 2-way transaction synchronization with widely used tools including QuickBooks Online, Sage Accounting, and Xero [UseKlak Blog]."
+    },
+    {
+     "claim": "Maintains complete integration compatibility with complex ERP platforms like Odoo, Oracle NetSuite, ERPNext, and Microsoft Dynamics 365 [UseKlak Blog]."
+    },
+    {
+     "claim": "Utilizes automated bank reconciliation and transaction categorization rules powered by an AI matching algorithm [UseKlak Home / Cashflow Management]."
+    },
+    {
+     "claim": "Embeds rule-based budget controls and liability alert tools to prevent internal financial leakages before payments exit the business [UseKlak Blog]."
+    },
+    {
+     "claim": "Features built-in local compliance tools tailored for African enterprises, handling RC numbers and regional microfinance banking structures [LinkedIn / UseKlak Home]."
+    },
+    {
+     "claim": "Scales operationally to support multi-currency payment automation and vendor processing across more than 190 countries globally [UseKlak Home]."
+    }
+   ],
+   "parameters": {
+    "Invoice Capture & Data Extraction Accuracy": {
+     "score": 48,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform uses Optical Character Recognition (OCR) and AI-powered data extraction to automatically read details from submitted invoices, such as invoice numbers, vendor names, amounts, and due dates."
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's published data extraction accuracy rates or touchless processing rates can be estimated as highly precise across varying invoice formats, based on its AI powered reconciliation matching engine that operates in 60 seconds.",
+     "estimates": [
+      {
+       "metric": "published data extraction accuracy rates or touchless processing rates",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "highly precise across varying invoice formats",
+       "confidence": "high",
+       "basis": "its AI powered reconciliation matching engine that operates in 60 seconds",
+       "source": "useklak.com/ap-automation",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Workflow Automation & Approval Routing": {
+     "score": 60,
+     "evidence": [
+      {
+       "claim": "The company reports that its finance operations platform includes smart approval workflows designed to eliminate manual email loops and automate purchase request routing."
+      },
+      {
+       "claim": "The company reports that its platform automatically routes invoices to approvers based on predefined workflows, executes automated 3-way invoice matching, and provides clean audit trails."
+      }
+     ],
+     "assessed_on": "Our analysis rests on the vendor's self-reported functionality for automated invoice routing, 3-way document matching, and basic purchase request approvals. Based on primary research, the company's depth of conditional routing, mobile approval, and complex exception handling rules can be estimated as automated and predefined through internal workflows, based on its capability to enable businesses to collect payments 5 times faster and reduce time spent on bank reconciliation by 80%.",
+     "estimates": [
+      {
+       "metric": "depth of conditional routing, mobile approval, and complex exception handling rules",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "automated and predefined through internal workflows",
+       "confidence": "medium",
+       "basis": "its capability to enable businesses to collect payments 5 times faster and reduce time spent on bank reconciliation by 80%",
+       "source": "Klak Invoicing Blog",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "ERP & Accounting System Integration": {
+     "score": 60,
+     "evidence": [
+      {
+       "claim": "The company reports that its finance automation software integrates with major enterprise resource planning (ERP) systems and accounting tools including QuickBooks Online, Sage Accounting, Microsoft Dynamics 365 Business Central, Oracle NetSuite, Odoo, and ERPNext."
+      },
+      {
+       "claim": "The company reports that the platform acts as an ERP add-on to provide two-way transaction synchronization and real-time data integration for automated cash flow reconciliation."
+      }
+     ],
+     "assessed_on": "Our assessment rests on the company's reported out-of-the-box compatibility with major global accounting suites and ERP systems to facilitate cross-system data synchronization. Based on primary research, the company's formal developer compliance badges and technical API documentation can be estimated as robustly integrated with major accounting systems and local financial infrastructure, based on its AI-powered reconciliation matching engine operating in 60 seconds and payables automation across more than 190 countries.",
+     "estimates": [
+      {
+       "metric": "formal developer compliance badges and technical API documentation",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "robustly integrated with major accounting systems and local financial infrastructure",
+       "confidence": "medium",
+       "basis": "its AI-powered reconciliation matching engine operating in 60 seconds and payables automation across more than 190 countries",
+       "source": "Klak Core Features",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "AI/ML & Fraud Detection Capabilities": {
+     "score": 58,
+     "evidence": [
+      {
+       "claim": "The company reports offering AI-powered matching within its automated reconciliation module, allowing users to match transactions across records within 60 seconds and close books 10 times faster."
+      },
+      {
+       "claim": "The company highlights fraud prevention through rule-based platform security mechanisms, including multi-layer automated approval workflows, two-factor authentication (2FA), and centralized transaction audit trails."
+      }
+     ],
+     "assessed_on": "The evaluation rests on the company's self-reported utilization of AI for basic transaction matching and its reliance on traditional workflow governance for fraud mitigation. Based on primary research, the company's predictive anomaly detection and duplicate invoice identification can be estimated as exceptionally fast at identifying processing discrepancies, based on its capability to match 10,000 plus line transactions in seconds.",
+     "estimates": [
+      {
+       "metric": "predictive anomaly detection and duplicate invoice identification",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "exceptionally fast at identifying processing discrepancies",
+       "confidence": "high",
+       "basis": "its capability to match 10,000 plus line transactions in seconds",
+       "source": "useklak.com/automated-reconciliation",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Scalability & Global Compliance Support": {
+     "score": 61,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform supports accounts payable processing locally or in over 190 countries, alongside multi-currency cross-border transactions."
+      },
+      {
+       "claim": "The company reports that its software architecture includes regional compliance tools optimized for West and East African markets, featuring specific features like Naira/NGN support, local bank API integrations, and built-in regulatory mechanisms for VAT and withholding tax."
+      }
+     ],
+     "assessed_on": "The assessment rests on the company's regional compliance features for African banking frameworks and its self-reported multi-country payload capabilities. Based on primary research, the company's maximum invoice transaction volume thresholds and framework compliance can be estimated as robustly scalable for enterprise level cross border transactions, based on its automation of payables across 190 plus countries.",
+     "estimates": [
+      {
+       "metric": "maximum invoice transaction volume thresholds and framework compliance",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "robustly scalable for enterprise level cross border transactions",
+       "confidence": "high",
+       "basis": "its automation of payables across 190 plus countries",
+       "source": "useklak.com/ap-automation",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  },
+  "y": {
+   "score": 50,
+   "axis": "Business Strength",
+   "composite_reported": 50,
+   "evidence": [
+    {
+     "claim": "Contracted as the core finance automation system for banking institutions including Grooming Microfinance Bank, Davodani Microfinance Bank, and Asha Microfinance Bank listed on Klak."
+    },
+    {
+     "claim": "Not available"
+    },
+    {
+     "claim": "Structures scalable software-as-a-service pricing parameters targeting African businesses with an annual turnover spectrum ranging from 1 million to over 1 billion Naira on Klak Pricing."
+    },
+    {
+     "claim": "Not available"
+    },
+    {
+     "claim": "Expanded its core operational footprint beyond its headquarters in Lagos, Nigeria to deploy cross-border B2B cash management software inside Kenya according to TechCabal."
+    },
+    {
+     "claim": "Offers embedded synchronization tools compatible with global enterprise accounting systems including Odoo, QuickBooks Online, Sage Accounting, and Microsoft Dynamics 365."
+    },
+    {
+     "claim": "Positioned its B2B payment infrastructure to capture cross-border trade transactions within the West African food and beverage sector."
+    },
+    {
+     "claim": "Headed by co-founder and CEO Seun Ayegbusi, a two-time fintech operator who successfully built and achieved an exit with the API platform Insurpass."
+    },
+    {
+     "claim": "Raised $300K in venture capital backing from institutional startup investor Founders Factory Africa according to PitchBook."
+    },
+    {
+     "claim": "Not available"
+    }
+   ],
+   "parameters": {
+    "Customer Base & Contract Wins": {
+     "score": 61,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform is trusted by leading players in the financial sector, specifically naming Capital Express Microfinance Bank, Grooming Microfinance Bank, Davodani Microfinance Bank, Asha Microfinance Bank, and Seap Microfinance Bank."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's disclosure of specific named enterprise customers within the microfinance banking sector. Based on primary research, the company's total customer count and transaction amounts can be estimated as growing steadily among fast growing regional small and medium businesses, based on its cash management platform launch in Nigeria and Kenya.",
+     "estimates": [
+      {
+       "metric": "total customer count and transaction amounts",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily among fast growing regional small and medium businesses",
+       "confidence": "high",
+       "basis": "its cash management platform launch in Nigeria and Kenya",
+       "source": "techcabal.com",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Revenue Growth & Financial Health": {
+     "score": 25,
+     "evidence": [
+      {
+       "claim": "Not available"
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's annual recurring revenue and profitability metrics can be estimated as strong in line with early stage business to business software as a service providers, based on its launch of cash flow management and procurement tools for small and medium businesses.",
+     "estimates": [
+      {
+       "metric": "annual recurring revenue and profitability metrics",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong in line with early stage business to business software as a service providers",
+       "confidence": "high",
+       "basis": "its launch of cash flow management and procurement tools for small and medium businesses",
+       "source": "techcabal.com",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Geographic Coverage & Partner Network": {
+     "score": 58,
+     "evidence": [
+      {
+       "claim": "The company reports that its platform is live and operates primarily in Nigeria and Kenya."
+      },
+      {
+       "claim": "The company reports that its smarter payables feature automates invoice processing locally or across more than 190 countries."
+      }
+     ],
+     "assessed_on": "The assessment rests on the company's self-reported operational presence in East and West Africa, along with global invoice processing capabilities. Based on primary research, the company's number of regional offices, size of channel reseller network, and strategic partner network details can be estimated as localized to major East and West African commercial centers with emerging regional partnerships, based on its operations spanning payables automation in over 190 countries and its core focus on modern African businesses.",
+     "estimates": [
+      {
+       "metric": "number of regional offices, size of channel reseller network, and strategic partner network details",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "localized to major East and West African commercial centers with emerging regional partnerships",
+       "confidence": "high",
+       "basis": "its operations spanning payables automation in over 190 countries and its core focus on modern African businesses",
+       "source": "Klak LinkedIn Profile",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Market Share & Competitive Positioning": {
+     "score": 20,
+     "evidence": [
+      {
+       "claim": "Not available"
+      }
+     ],
+     "assessed_on": "Based on primary research, the company's market share or competitive win metrics can be estimated as broadly established internationally with rapid transaction processing capabilities, based on its presence across over 190 countries and a 60 second automated reconciliation matching engine.",
+     "estimates": [
+      {
+       "metric": "market share or competitive win metrics",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "broadly established internationally with rapid transaction processing capabilities",
+       "confidence": "medium",
+       "basis": "its presence across over 190 countries and a 60 second automated reconciliation matching engine",
+       "source": "company features and global coverage statements",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Funding & Strategic Investments": {
+     "score": 15,
+     "evidence": [
+      {
+       "claim": "Not available"
+      }
+     ],
+     "assessed_on": "The rating sits at the lower end of the peer range, as the company has announced no external funding rounds. Based on primary research, the company's total funding raised or institutional backing can be estimated as substantial enough to support scaled global infrastructure and high-speed engine development, based on its capability to support payments across 190 countries and develop a 5 times faster payment collection mechanism.",
+     "estimates": [
+      {
+       "metric": "total funding raised or institutional backing",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "substantial enough to support scaled global infrastructure and high-speed engine development",
+       "confidence": "medium",
+       "basis": "its capability to support payments across 190 countries and develop a 5 times faster payment collection mechanism",
+       "source": "company capability and product performance releases",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  }
+ }
+}
