@@ -325,7 +325,22 @@ def _lower_head(s: str) -> str:
 MAP: dict[str, str] = {}
 
 
+_ESTIMATE_SENT = re.compile(r"\bcan be estimated (?:as|at approximately) ")
+
+
 def to_primary(text: str) -> str:
+    """House wording for gaps. A sentence that is an analyst estimate (step 7c:
+    "... can be estimated as high, based on ...") is left exactly as written:
+    its words ("no evidence of limits", "not publicly ...") would otherwise be
+    read as a gap and rewritten into "has not disclosed ..." on a re-run."""
+    t = str(text or "")
+    if not _ESTIMATE_SENT.search(t):
+        return _to_primary(t)
+    parts = re.split(r"(?<=[.!?])\s+", t.strip())
+    return " ".join(p if _ESTIMATE_SENT.search(p) else _to_primary(p) for p in parts if p)
+
+
+def _to_primary(text: str) -> str:
     t = str(text or "")
     if not t.strip():
         return t

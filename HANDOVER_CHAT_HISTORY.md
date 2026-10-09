@@ -104,7 +104,7 @@ keep them.
 These rules were also saved as Claude memories on the old machine. Memories do
 **not** travel with the repo, which is why they are written out here.
 
-## 3. Timeline of the work (until 2026-10-07)
+## 3. Timeline of the work (until 2026-10-09)
 
 ### 3.1 UK Connected Fleet Mobility Solutions Market (United Kingdom)
 - Fact-checked the chart companies, and ran deep searches to replace "Not
@@ -238,7 +238,102 @@ Built because the owner asked for it to be part of the pipeline, not optional.
 See `PIPELINE_CHATGPT_EXPAND.md` §6. Tested on AP: VERIFY 18/18. Unit tests are
 in `tests/test_factcheck.py`.
 
+### 3.6 Later work, 2026-10-08 and 2026-10-09 (what the owner asked, in order)
+
+**1. Client corrections on the AP report, then a general rule: "acquired by a
+company that is also in the list = removed".**
+- The client said: Redmap is a Basware company and Basware is already a Leader,
+  so Redmap should not be a Challenger; OpusCapita is represented by GEP;
+  Heeros, Accountor Software and Finago count as one company (Finago).
+- The owner then asked for the rule in the pipeline: **a company whose owner is
+  itself in the same list is left out** (`company_facts.listed_parent`, exact
+  name match without legal suffixes or the company's own brand; investment
+  firms not in the list do not count; partial names never match; `keep` in the
+  analyst review overrides). On AP it also removed Rossum (Coupa), Oxalys
+  (cisbox), PROXESS (EASY Software), Alias Digital (TeamSystem), dvo
+  (Scopevisio) and Paymerang (Corpay).
+- A chart refill now keeps every approved chart company and fills only the
+  empty slots (`keep_all=True`). Before, a refill dropped 4 approved companies.
+- `norm_name` handles dotted legal forms (S.p.A., S.r.l.).
+- **AP final: 239 companies, chart 20 (5/5/5/5), VERIFY all PASS.**
+
+**2. Estimates instead of "has not disclosed" (step 7c).** The owner did not
+want the reports to say "Based on primary research, the company has not
+disclosed X" and stop there. It went through four versions, each a direct
+instruction from the owner after looking at the HTML:
+1. Estimate numbers (ranges) after the gap, with a basis and a confidence.
+2. Estimate **everything**, market share and win rates included, not only
+   size figures; and an estimate in words for gaps that are not numbers.
+3. "Write the estimate in words, not a number" ("high", "growing").
+4. "**Remove the has-not-disclosed line**": the estimate replaces the gap
+   sentence ("Based on primary research, the company's X can be estimated as
+   exceptional and industry leading, based on its ...").
+- Only the "Assessed on" text of the 20 chart companies changes, and only where
+  it had the gap sentence. Scores, supporting points, names, chart: unchanged
+  (checked: the rebuilt JSON is identical apart from that wording).
+- **The owner wants the previous files kept.** When they asked for the
+  new wording on AP, the old report was left untouched in
+  `output/chatgpt_expand/accounts_payable_automation_market_global/` and the new
+  one built in `..._estimated_wording/`. Do the same whenever wording changes
+  on a finished market: never overwrite the delivered files. (Method: move the
+  folders, copy the original `param_detail_prescored*.json` back before each
+  rebuild, run the market's launcher, then swap the folder names back.)
+- Things that went wrong and are now fixed in the pipeline: a strict JSON
+  answer per gap made AI Mode say "insufficient" without searching (now plain
+  language plus summary lines); the tone step turned estimates back into
+  gaps on a re-run (now skipped); a "private" word filter rejected valid
+  answers; spelled-out numbers ("three million nine hundred thousand") came
+  out as "3 million 900,000".
+- Result on AP: all 200 chart parameters have a worded estimate, none has a
+  number in the estimate, VERIFY 19/19.
+- Full description: `PIPELINE_CHATGPT_EXPAND.md` Step 7c and `CLAUDE.md` row 7c.
+
+**3. Fire and drone markets (all India).**
+- All 25 fire and 25 drone markets are finished and copied, as HTML, Excel and
+  JSON, into `Desktop\Final Fire Quadrant` and `Desktop\Final Drone Quadrant`
+  (75 files each). The last market, Smoke Control Systems, ended at 110
+  companies with the chart refilled to 20.
+- These ten fire markets were checked with the **checks-only update**
+  (`--update-report auto --refill-chart`): status, acquired-by and wording on
+  the owner's own India company lists, no new discovery, no re-scoring. That
+  mode stops before step 7c, so the fire/drone reports have no estimates yet.
+
+**4. Trade Finance (global, technology and network providers).**
+- 144 companies verified after the status check. Scope, ownership, identity
+  and quick scores are done. At the last stop it was in step 5 (deep evidence):
+  **155 of 200 parameters written**, 9 companies still to do (Linklogis, C2FO,
+  Fiducia Data Services, Monkey Servicos, VoloFin, 360tf, Premium Technology,
+  TRAYDSTREAM, Xalts). After that: composite, estimates, report, fact-check,
+  PDF and Word.
+- Launcher `logs/run_trade_finance.ps1` (slots set to `41-55`, 15 browsers).
+  Resume with it; every step is saved.
+- **Bug found with 15 browsers and fixed:** all browsers of the gap-fill step
+  wrote the same evidence files with the same temp name. They lost each
+  other's fixes, one file was damaged and five browsers crashed. Now
+  `update_json_locked` (a lock file). One damaged file was repaired by hand
+  (first valid JSON document kept).
+
+**5. Working rules the owner repeated.**
+- Launch runs from PowerShell, not cmd. Research only through Google AI Mode,
+  never web-search sub-agents.
+- Slots must not overlap between runs. Trade Finance used 41-55, fire's last
+  market used 51-55 while Trade Finance was on 41-45 and 48-50, AP used 46-47.
+- "Stop all the process and save all" means: stop, keep everything saved,
+  and wait for the word "resume".
+- The owner decides the wording. When a report looks wrong, they send a
+  screenshot of the HTML and say what it should read like; change the generic
+  pipeline, not one market's output.
+
 ## 4. Open items / ideas (not done)
+- Trade Finance: resume it (see 3.6 item 4).
+- Fire and drone reports: no step-7c estimates yet (they were checks-only
+  updates). Run step 7c on them only if the owner asks.
+- A few worded estimates are loose ("venture funding ... non-existent"). The
+  review list is `_pipeline/estimates/estimates.md`; remove one with a
+  `corrections` entry in `analyst_review.json`.
+- Gartner, Forrester and IDC are not in `config/research_publishers.txt`, so
+  VERIFY would not stop a report naming them. Add them there if the owner
+  says so.
 - AP: the big ERP vendors (Oracle, Microsoft, Workday, Sage Intacct, NetSuite)
   are missing because the owner stopped discovery. To add them later, run a
   top-up (`scripts/parallel_topup.py`) and then the pipeline with `--reselect`.
@@ -247,8 +342,8 @@ in `tests/test_factcheck.py`.
   titles (pharma / cyber). They are only used by the old web-scraping
   discovery, which is off when AI Mode is on.
 - Comments and docstrings still mention old markets as examples (no effect).
-- Nothing from this session is committed to git yet. Commit only when the
-  owner asks.
+- Commit and push only when the owner asks. Never commit `.env`, and never
+  commit the Google AI Mode browser profiles (they hold login cookies).
 
 ## 5. Lessons and gotchas for Claude
 

@@ -69,8 +69,11 @@ def main() -> int:
         if not name or name.lower() in seen:
             continue
         if not hq or hq.strip().lower() == "country" or hq.strip().endswith(", Country"):
+            # Kept with no HQ (not dropped): the company is real data from
+            # the report; scripts/fill_missing_hq.py asks AI Mode for its
+            # "City, Country", and the checks then treat it like the rest.
             skipped.append(name)
-            continue
+            hq = ""
         seen.add(name.lower())
         verified.append({
             "name": name,
@@ -106,7 +109,7 @@ def main() -> int:
     ckpt_path.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
 
     print(f"seeded {len(verified)} companies from {len(brands)} report rows "
-          f"({len(skipped)} skipped for bad/placeholder HQ data) -> {ckpt_path}")
+          f"({len(skipped)} kept with no HQ -- placeholder in the report; fill with fill_missing_hq.py) -> {ckpt_path}")
     if skipped:
         print(f"  skipped: {skipped}")
     if market_analysis:

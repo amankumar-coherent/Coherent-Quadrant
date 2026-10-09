@@ -193,7 +193,8 @@ finding, and then once; no citation leftovers (footnote markers like "[1.21]",
 raw links in brackets); no employee-review site
 (`config/employee_review_sites.txt`) and no modelled-estimate site
 (`config/estimate_sites.txt`: RocketReach, ZoomInfo, Endole, D&B, GlobalDatabase, Crunchbase, …) cited; such bullets are also removed before step 5, so a parameter left empty is re-asked in the same run · every company
-has an HQ · every X/Y ≥ 65 · chart fact-check complete for every chart company.
+has an HQ · every X/Y ≥ 65 · estimated figures labelled "estimated … approximately", with basis
+and confidence · chart fact-check complete for every chart company.
 
 Evidence prompts also carry EVIDENCE RULES (`ai_mode_scorer.EVIDENCE_RULES`):
 project status and date exactly as the source states; company-stated claims
@@ -244,6 +245,24 @@ made, so a company moved off the chart does not come back. Review-file
   and split discovery): steps 2 and 4 derive the axes and score once.
 - `scripts/parallel_topup.py --verify-only` verifies what stopped browsers
   already found (each company on one browser) and merges it.
+- **Owned by a listed company = removed** (step 3c, `company_facts.listed_parent`):
+  a company whose owner is itself in the same list (exact name without legal
+  suffixes, or that company's brand) is left out -- the parent represents the
+  group (Redmap -> Basware, OpusCapita -> GEP, Rossum -> Coupa). Owners from the
+  ownership answers, the analyst review and the fact-check; investment firms or
+  groups not in the list do not count; partial names never match ("Visma" is
+  not "Visma Aquila Oy"). `keep` in the analyst review overrides it.
+- A chart refill keeps **every surviving chart company** and fills only the
+  vacated slots (`refill_top_by_quadrant(keep_all=True)`): the composite step
+  re-splits the chart 5 per quadrant by rank, so trimming a "full" quadrant
+  would drop companies a reviewer already approved.
+- **A file that several browsers write is updated under a lock**
+  (`quadrant_pipeline.update_json_locked`: lock file, temp name per process, retry when Windows reports the
+  file busy). The gap-fill step (`fill_missing_assessed_on.py`) writes every browser's fix into the same
+  evidence files; unlocked, 11 browsers lost each other's fixes, left a damaged JSON ("Extra data") and
+  crashed with PermissionError. Any new step where shards write one shared file must use it.
+- `norm_name` joins dotted legal forms ("S.p.A.", "S.r.l.", "B.V.") before
+  stripping suffixes, so "Acme S.r.l." and "Acme Srl" are one company.
 
 ## 5. Pipeline stages and where the code lives
 
@@ -263,6 +282,7 @@ Orchestrator: `scripts/run_quadrant_pipeline.py` (+ helpers in
 | 5 | **Deep evidence** for the Top 20 only: per-parameter score + evidence + "why" reasoning, gap-fill rounds | `prescore_verified.py`, `fill_missing_parameters.py`, `fill_missing_assessed_on.py` |
 | 6 | **Composite**: X/Y/Overall, cohort band 65–100, 5 per quadrant | `scripts/seed_from_full_evidence.py` |
 | 7 | **Tone**: research-team voice ("We verified …", never "I"), no hedges; every gap written in the house sentence "Based on primary research, the company has not disclosed <what>." (never "not publicly reported / disclosed", "could not be found", "Desk research could not confirm"); citation leftovers removed | `scripts/rewrite_assessed_on_tone.py` → `scripts/primary_research_wording.to_primary` |
+| 7c | **Gap estimates** (AI Mode): every "Based on primary research, the company has not disclosed X" sentence in a chart company's "Assessed on" text is REPLACED by the analyst's estimate, written in words (owner's decisions 2026-10-08/09): "Based on primary research, the company's data extraction accuracy rates can be estimated as exceptional and industry leading, based on its 10 trillion dollar community dataset." The estimate itself is never a number or range ("high", "growing steadily", "broad across the major ERP platforms"); figures appear only in the "based on" part; a second estimate for the same gap follows without the lead-in; with no estimate the gap sentence stays; a figure the company itself reports is still quoted. Per company, split over every `--slots` browser: (1) the company's own published facts (JSON, asked once), (2) a worked estimate for up to 5 gaps in plain language ending with one summary line per gap (`estimates.parse_worded`) -- a strict JSON verdict per gap made AI Mode answer "insufficient" without researching, so the rules live in `judge_worded`, not the prompt; 'unknown / unverified / unavailable / proprietary' answers are rejected and asked again (max 2 asks). Always: no figure in the estimate ("B2B", "S/4HANA" are fine), a basis is required, no research firm or data site (`config/research_publishers.txt`, `estimate_sites.txt`, `directory_sites.txt`) in basis or source, numbers AI Mode spells out in the basis are turned back into figures (`words_to_figures`), for a gap about third-party proof the underlying performance is estimated. `QUADRANT_NUMERIC_ESTIMATES=1` brings back the numeric ranges ("... can be estimated at approximately 3-6%, derived from ...", the owner's first version; default off). Only the "Assessed on" text changes -- supporting points, scores, names and the chart do not. Metadata per parameter: `estimates: [{metric, value_type, estimated_value, confidence, basis, source_type}]`. Answers `_pipeline/estimates/answers.json` (resumable), review list `estimates.md`; an analyst `corrections` entry can fix or remove one (7c runs before 7b). The tone step never rewrites an estimate sentence (`primary_research_wording.to_primary` skips them), so a re-run or fact-check pass cannot turn one back into a gap | `scripts/estimate_gaps.py`, `pipeline/estimates.py` |
 | 7b | **Analyst review**: `_pipeline/analyst_review.json` `corrections` (exact find/replace in one company's evidence), `hq` (confirmed headquarters) and `ownership` (merged with the automatic owners) applied; `_pipeline/wording_review.json` rewrites; then the supporting-point tidy: absence-only bullets become "Not available", dropped beside a real finding, never repeated | `company_status.apply_corrections`, `apply_hq_corrections`, `apply_ownership_corrections`, `company_facts.tidy_evidence` |
 | 8 | **Report**: HTML/JSON/CSV. `<slug>_report.html` is the interactive design (quadrant.json embedded, rendered in the browser; template `quadrant/templates/quadrant_viewer.html`); the static page is kept as `<slug>_report_classic.html` for VERIFY and maintenance scripts | `scripts/build_report_from_composite.py` → `quadrant/html_report.py`, then `quadrant/viewer.py` |
 | 8a | **Chart fact-check** (every run, before 8b): status / owner / HQ / scope + every specific supporting point of each chart company in AI Mode; safe decisions applied as `_pipeline/factcheck_review.json`, then a re-run from saved work when they change (see "Chart fact-check") | `scripts/factcheck_chart.py`, `pipeline/factcheck.py` |
@@ -376,6 +396,7 @@ their `output/` folders were shared.
 | Browser crashed / closed | **Automatic:** browser reopened on the same profile, query retried |
 | Unusual-traffic `/sorry/` block | Google rate block (not solvable). Raise `GOOGLE_AI_MODE_QUERY_DELAY`, use fewer `--slots`/workers, wait. 5+ CAPTCHAs in a run also trigger a profile reset |
 | `data/` growing large | every reset archives the old profile folder (renamed, not deleted). Old `data/ai_mode_batch_*_quota_*`, `*_captchas_*`, `*_noanswer_*`, `*_reset_*` folders can be deleted when no run is active |
+| `JSONDecodeError: Extra data` / `PermissionError ... being used by another process` on a `param_detail_prescored*.json` | Two browsers wrote the same evidence file without the lock (fixed: `update_json_locked`). Stop the run, keep the first valid JSON document of the damaged file (`json.JSONDecoder().raw_decode`), re-run: the gap-fill round re-asks anything lost |
 | "Opening in existing browser session" | orphaned Chromium holds the profile; the code kills orphans, else close Chromium |
 | Step 0c RuntimeError | AI Mode failed on market analysis (by design, no fallback). Re-run; it is checkpointed |
 | `axes_spec.json has N X / M Y parameters` | delete `_pipeline/axes_spec.json` to regenerate with 5+5 |

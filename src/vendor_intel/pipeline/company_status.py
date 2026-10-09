@@ -520,7 +520,7 @@ def apply_display_corrections(ckpt_path: Path, fixes: Iterable[dict[str, str]]) 
 
 def refill_top_by_quadrant(
     keep: list[str], xy: dict[str, tuple[float, float]], top_n: int = 20,
-    eligible: Callable[[str], bool] | None = None,
+    eligible: Callable[[str], bool] | None = None, keep_all: bool = False,
 ) -> list[str]:
     """The chart after 3b changed the pool: surviving companies stay, and each
     quadrant short of its share (top_n/4) takes the best remaining company of
@@ -535,6 +535,12 @@ def refill_top_by_quadrant(
     ``eligible`` limits who may hold a chart slot (adjacent-segment companies
     may not); the median split still uses every scored company, as the
     composite step does.
+
+    ``keep_all``: every surviving company stays and only the vacated slots are
+    filled. Used when the composite step re-splits the chart 5 per quadrant by
+    rank anyway -- trimming a "full" quadrant there would throw out companies
+    a reviewer had already approved (a median shift once dropped 4 of them
+    when one chart company was excluded).
     """
     ok = eligible or (lambda n: True)
     names = sorted(xy)
@@ -548,10 +554,11 @@ def refill_top_by_quadrant(
     mid_y = ys[mid] if len(ys) % 2 else (ys[mid - 1] + ys[mid]) / 2
     picked = [n for n in keep if n in xy and ok(n)]
     share = top_n // 4
-    for quad in ("Leaders", "Challengers", "Trailblazers", "Emerging Players"):
-        members = sorted((n for n in picked if quadrant_of(*xy[n], mid_x, mid_y) == quad),
-                         key=lambda n: (-overall[n], n))
-        picked = [n for n in picked if n not in set(members[share:])]
+    if not keep_all:
+        for quad in ("Leaders", "Challengers", "Trailblazers", "Emerging Players"):
+            members = sorted((n for n in picked if quadrant_of(*xy[n], mid_x, mid_y) == quad),
+                             key=lambda n: (-overall[n], n))
+            picked = [n for n in picked if n not in set(members[share:])]
     for quad in ("Leaders", "Challengers", "Trailblazers", "Emerging Players"):
         have = sum(1 for n in picked if quadrant_of(*xy[n], mid_x, mid_y) == quad)
         for n in by_overall:

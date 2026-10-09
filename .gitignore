@@ -1,71 +1,28 @@
-.venv/
-__pycache__/
-*.pyc
+# Only secrets and browser cookies are kept out of git. Everything else, including
+# output/, is pushed (owner's choice, 2026-10-09). Keep the repository PRIVATE:
+# output/ holds finished client reports.
+
+# --- Secrets: never commit ---
 .env
 .streamlit/secrets.toml
-output/
-output/_searxng*.html
-output/phase2/phase2_hits_*.json
-data/chrome-profile/
-.pytest_cache/
-*.egg-info/
-# code-review-graph (local code intelligence)
-.venv-crg/
-.code-review-graph/
-codegraph.html
-
-# generated deliverables / local artifacts
-output/
-validation_report.txt
-
-# generated deliverables / local artifacts
-output/
-validation_report.txt
-
-# private curated seed lists
-queries/seeds/
-
-# LLM response cache (cost-saving; safe to delete to force fresh calls)
-output/.llm_cache/
-
-# Cross-run discovery store (cumulative union of discovered companies per market)
-output/.discovery_store/
-
-# Wikidata structured-discovery cache (fallback when the live endpoint rate-limits)
-output/.wikidata_cache/
-
-# Local CMI frontend checkout (not part of vendor-intel / quadrant agent publish)
-cmi-platform-ai-master/
-
-# AI Overview collector runtime cache (answers are re-fetchable)
-data/ai_overview_cache/
-
-# Local auth database (Streamlit login; created by scripts/init_auth_db.py)
+# local login database (Streamlit auth)
 data/auth_local.db
 data/*.db
 
-# Chrome profiles used to run the AI Overview collector (hundreds of MB, and
-# they hold browser session state)
+# --- Browser cookies and Google login sessions: never commit ---
+# Every Google AI Mode browser profile (data/ai_mode_batch_<slot>_chromium, ..._extensions,
+# ai_mode_chrome_profile*) and every archived/reset profile holds real cookies.
+data/ai_mode_*/
+data/_archived_profiles_*/
+data/chrome-profile/
 data/chrome-aio*/
 data/chrome_profile*/
-# Holds real Google cookies and session tokens — never commit.
-data/ai_mode_chrome_profile/
-data/ai_mode_chrome_profile_chromium/
-data/ai_mode_chrome_profile_extensions/
 
-# --- Google AI Mode browser profiles (GBs; hold Google login cookies) ---
-data/ai_mode_*/
-data/ai_overview_cache/
-# --- run logs, scratch files, billing exports, one-off outputs ---
-logs/
-scratch*.json
-scratch*.txt
-scratchpad*.json
-cost-*.csv
-amount-*.csv
-/*.xlsx
-/verified_*.csv
-scripts/handover_after_wave1.py
-
-# Archived AI Mode browser profiles (hold Google login cookies) -- never commit
-data/_archived_profiles_*/
+# --- Not source: reinstalled by setup.bat, regenerated on import, or tool caches ---
+# (.venv is hundreds of MB of installed libraries; GitHub rejects files over 100 MB)
+.venv/
+.venv-crg/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/

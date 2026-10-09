@@ -51,6 +51,9 @@ def main() -> int:
     ap.add_argument("--verify-only", action="store_true",
                     help="no discovery: verify the companies an earlier (stopped) run's browsers already "
                          "found, each company on one browser only, then merge")
+    ap.add_argument("--merge-only", action="store_true",
+                    help="launch nothing: merge what the browser copies of a stopped run already verified "
+                         "(their work would be lost when the next run recreates the copies)")
     args = ap.parse_args()
 
     from vendor_intel.pipeline.quadrant_pipeline import dedupe_companies
@@ -62,16 +65,21 @@ def main() -> int:
     before = len(dedupe_companies(state["data"].get("verified") or [])[0])
     log(f"start: {before} verified companies; {args.browsers} browsers, target {args.keep}"
         + (" -- country by country" if args.countries else ""))
-    if before >= args.keep:
+    if before >= args.keep and not args.merge_only:
         log("already at target -- nothing to do")
         return 0
+    if args.merge_only:
+        dirs = sorted((ROOT / "output").glob(f"chatgpt_expand_top*/{real_dir.name}"))
+        return merge(real, dirs, before, dedupe_companies)
 
     shards: list[list[dict]] = [[] for _ in range(args.browsers)]
     if args.verify_only:
         from vendor_intel.pipeline.chatgpt_expand import _dedupe_key
         known = {_dedupe_key(key(r)) for k in ("verified", "rejected_mid") for r in state["data"].get(k) or []}
         pending: dict[str, dict] = {}
-        for ck in sorted((ROOT / "output").glob(f"chatgpt_expand_top*/{real_dir.name}/{real.name}")):
+        # The market's own checkpoint too: a one-browser discovery stopped
+        # between finding and verifying leaves its candidates there.
+        for ck in [real, *sorted((ROOT / "output").glob(f"chatgpt_expand_top*/{real_dir.name}/{real.name}"))]:
             try:
                 found = json.loads(ck.read_text(encoding="utf-8")).get("data") or {}
             except Exception as err:  # noqa: BLE001
@@ -125,11 +133,16 @@ def main() -> int:
             p.terminate()
         fh.close()
 
+    return merge(real, [d for _, _, d in procs], before, dedupe_companies)
+
+
+def merge(real: Path, dirs: list[Path], before: int, dedupe_companies) -> int:
+    """Fold every browser copy's verified / rejected companies into the market."""
     state = json.loads(real.read_text(encoding="utf-8"))
     verified = list(state["data"].get("verified") or [])
     rejected = list(state["data"].get("rejected_mid") or [])
     seen = {key(r) for r in verified}
-    for i, (_, _, d) in enumerate(procs, 1):
+    for i, d in enumerate(dirs, 1):
         try:
             data = json.loads((d / real.name).read_text(encoding="utf-8")).get("data") or {}
         except Exception as err:  # noqa: BLE001 -- one bad copy must not lose the others

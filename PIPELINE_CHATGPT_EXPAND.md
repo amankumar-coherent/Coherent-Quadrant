@@ -26,11 +26,12 @@ market name + country (+ optional _pipeline/market_brief.json)
  5  Deep evidence (AI Mode)  per parameter score + evidence + reasoning, Top 20 only, gap-fill rounds
  6  Composite                X/Y = parameter means, cohort band 65–100
  7  Tone                     house wording, research-team voice, gaps → "Based on primary research…"
+ 7c Gap estimates (AI Mode) every "has not disclosed X" sentence is REPLACED by an estimate in words, with a basis
  7b Reviews applied          analyst_review > factcheck_review > auto_review; wording; tidy
  8  Report                   HTML (interactive + classic), JSON, CSV
  8a Chart fact-check (AI Mode) status/owner/HQ/scope + every specific claim → safe decisions → re-run if changed
  8b PDF + Word
- 9  VERIFY                   18 checks, all must PASS
+ 9  VERIFY                   19 checks, all must PASS
 ```
 
 Every step saves its result. Re-running the same command resumes and skips
@@ -183,6 +184,22 @@ Saved to `dedupe_groups.json`.
   - Excluded: absorbed companies, duplicate old names, non-existent
     companies and `out`.
   - Adjacent companies are kept in the long tail, off the chart.
+- **Owned by a company that is also in the list = removed** (owner's rule,
+  `company_facts.listed_parent`). The parent represents the group, so the
+  subsidiary is dropped instead of listed beside it (Redmap → Basware,
+  OpusCapita → GEP, Rossum → Coupa, Oxalys → cisbox, PROXESS → EASY Software,
+  Alias Digital → TeamSystem, dvo → Scopevisio, Paymerang → Corpay).
+  - The owner must match a listed company **exactly** (name without legal
+    suffixes such as Oy, GmbH, S.p.A., or that company's own brand). Partial
+    names never match: "Visma" is not "Visma Aquila Oy".
+  - Owners come from the ownership answers, the analyst review and the
+    fact-check. Investment firms that are not in the list (Thoma Bravo,
+    Accel-KKR) do not trigger it.
+  - `keep` in `analyst_review.json` overrides it for one company.
+  - A chart refill after such a removal keeps every surviving chart company
+    and fills only the vacated slots (`refill_top_by_quadrant(keep_all=True)`).
+  - `norm_name` joins dotted legal forms ("S.p.A.", "S.r.l.", "B.V.") so
+    "TeamSystem S.p.A." and "TeamSystem" are one company.
 - Owner labels come from `owner_entry`. It requires a real purchase:
   "acquired", "acquisition", "take-private", "buyout" or "majority stake". It
   rejects the case where the company was the buyer, and a reverse merger
@@ -231,6 +248,58 @@ X/Y = mean of the 5 parameter scores, rescaled into the cohort band 65–100,
   the company's rating rests on" becomes "The rating rests on".
 - It fails loudly on an unreadable sidecar, and the pipeline stops.
 
+### Step 7c: Gap estimates (`scripts/estimate_gaps.py`, `pipeline/estimates.py`, AI Mode)
+Runs after the tone step and before 7b, so an analyst correction can still fix
+or remove an estimate. It only touches the "Assessed on" text of the 20 chart
+companies, and only where that text has the gap sentence "Based on primary
+research, the company has not disclosed X." Supporting points, scores, names
+and the chart are unchanged.
+
+**What the report says (owner's decisions, 2026-10-08/09):**
+- The gap sentence is **replaced** by the analyst's estimate, in words:
+  "Based on primary research, the company's data extraction accuracy rates can
+  be estimated as exceptional and industry leading, based on its 10 trillion
+  dollar community generated transactional dataset and acquisition of Rossum."
+- The estimate itself is never a number or range ("high", "growing steadily",
+  "broad across the major ERP platforms"). Figures appear only in the "based
+  on" part. A second estimate for the same gap follows without the lead-in.
+- With no estimate at all, the original gap sentence stays.
+- A figure the company itself reports is still quoted as reported.
+- `QUADRANT_NUMERIC_ESTIMATES=1` brings back numeric ranges ("…can be
+  estimated at approximately 3–6%, derived from …"). They were the owner's
+  first request, then replaced by words. Default is words only.
+
+**How it asks (per company, split over every `--slots` browser):**
+1. The company's own published facts (JSON, asked once, saved).
+2. A worked estimate for up to 5 gaps in plain language, ending with one
+   summary line per gap (`estimates.parse_worded`). A strict JSON verdict per
+   gap made AI Mode answer "insufficient" without researching, so the rules
+   live in `judge_worded`, not in the prompt.
+3. A rejected or empty answer ("unknown", "unverified", "unavailable",
+   "proprietary") is asked again (`MAX_ASKS` = 2).
+
+**Rules that always hold (`estimates.judge_worded`):**
+- no figure in the estimate (a digit inside "B2B" or "S/4HANA" is fine);
+- a basis is required and may name no research firm or data site (the same
+  config lists as VERIFY: research publishers, estimate sites such as
+  ZoomInfo or RocketReach, directories);
+- numbers AI Mode spells out in the basis ("three million nine hundred
+  thousand") are turned back into figures (`words_to_figures`);
+- for a gap about third-party proof (audits, certification), the underlying
+  capability is estimated, not whether it is verified.
+
+Files: `_pipeline/estimates/answers.json` (resumable), `estimates.md` (the
+review list, one line per estimate with its basis). Each parameter gets
+`estimates: [{metric, value_type, estimated_value, confidence, basis,
+source_type}]` (additive; scores are unchanged). VERIFY checks every
+estimate sentence is labelled and has a basis.
+
+**The tone step never rewrites an estimate sentence**
+(`primary_research_wording.to_primary` skips "can be estimated as / at
+approximately" sentences). Before this, an estimate containing "no evidence of
+limits" was turned back into "has not disclosed limits" on any re-run or
+fact-check pass.
+
 ### Step 7b: Reviews applied (`company_status.load_review` + `apply_*`)
 - HQ, display name, ownership and corrections are applied.
 - `wording_review.json` rewrites are applied.
@@ -274,6 +343,8 @@ X/Y = mean of the 5 parameter scores, rescaled into the cohort band 65–100,
 16. every company has an HQ
 17. every X/Y ≥ 65
 18. **chart fact-check complete** for every chart company
+19. estimate sentences are labelled "can be estimated as / at approximately"
+    and carry a basis (and no number in a worded estimate)
 
 When a line fails, fix the cause in generic code (or the market's review
 file) and re-run.
@@ -435,6 +506,16 @@ so it does not top up again on one browser.
   contract-manufacturer filter.
 - Discovery does not score; scoring happens once (step 4).
 - Evidence sidecars are written atomically.
+- **A file that several browsers write is updated under a lock**
+  (`quadrant_pipeline.update_json_locked`: a lock file, a temp name per
+  process, a retry when Windows says the file is busy). The gap-fill step
+  (`fill_missing_assessed_on.py`) writes every browser's fix into the same
+  evidence files. Without the lock, 11 browsers lost each other's fixes, left
+  a damaged JSON ("Extra data") and crashed with PermissionError. Any new step
+  where shards write one shared file must use it.
+- A chart company that is removed is replaced from the long tail without
+  dropping the approved ones (`keep_all=True`).
+- The tone step leaves analyst-estimate sentences alone.
 - Verification never falls back to the API for length (batches shrink).
 - Comments and docstrings may mention past markets as examples. They have no
   effect.
@@ -445,7 +526,9 @@ set PYTHONPATH=src
 .venv\Scripts\python.exe -m pytest -q -p no:cacheprovider
 ```
 The baseline is **24 known failures** (listed in CLAUDE.md §6). Fact-check
-rules: `tests/test_factcheck.py`. Axes rules: `tests/test_axis_fixed.py`.
+rules: `tests/test_factcheck.py`. Estimate rules: `tests/test_estimates.py`.
+Shared-file locking: `tests/test_shared_json_update.py`. Axes rules:
+`tests/test_axis_fixed.py`.
 Verify scope: `tests/test_verify_scope.py`.
 A cached re-run of a finished market (VERIFY all PASS) is the end-to-end
 regression check.

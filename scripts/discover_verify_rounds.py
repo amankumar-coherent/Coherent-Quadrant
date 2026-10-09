@@ -83,6 +83,7 @@ def main() -> int:
     # Same company type as the first batch: restore Step 0c's B2B/B2C read.
     market_analysis = dict(data.get("market_analysis") or {})
     if market_analysis.get("market_type"):
+        ce.apply_brief_player_type(market_analysis)   # the market brief's player type, if any
         ce.publish_discovery_market(market_analysis)
     family = market_family(args.market)
 

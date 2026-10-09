@@ -27,6 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT / "src") not in sys.path:
     sys.path.insert(0, str(ROOT / "src"))
+from vendor_intel.pipeline.quadrant_pipeline import update_json_locked  # noqa: E402
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -135,12 +136,13 @@ def main() -> int:
             # Write the fix into EVERY sidecar that had this same gap, so
             # no copy is left stale for the completeness audit to still
             # flag.
+            # Every browser writes into these same files: a locked
+            # read-modify-write, so two shards never lose each other's fix.
             for side in sidecars_of[(name, axis_key, pname)]:
-                part = json.loads(side.read_text(encoding="utf-8"))
-                part[name][axis_key]["parameters"][pname] = entry
-                tmp = side.with_suffix(".json.tmp")
-                tmp.write_text(json.dumps(part, ensure_ascii=False), encoding="utf-8")
-                os.replace(tmp, side)
+                def _put(part, _n=name, _a=axis_key, _p=pname, _e=entry):
+                    part[_n][_a]["parameters"][_p] = _e
+
+                update_json_locked(side, _put)
             status = "OK"
             done += 1
         print(f"  [{done}/{total}] {name} / {pname} ({axis_key}): {status}", flush=True)

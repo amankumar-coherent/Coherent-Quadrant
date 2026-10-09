@@ -232,6 +232,11 @@ def owner_entry(name: str, rec: dict) -> dict | None:
         return None
     if norm_name(owner) == norm_name(name):
         return None
+    # "acquired a 31% stake": a minority investment, not an owner ("the
+    # remaining 49%" completes a purchase, so it does count).
+    shares = [float(s) for s in re.findall(r"(\d{1,2}(?:\.\d+)?)\s*%", note)]
+    if shares and max(shares) < 50 and not re.search(r"\b(?:majority|remaining|wholly|full|entire)\b", note, re.I):
+        return None
     # "Emburse was acquired by Certify ... the combined company rebranded under
     # the Emburse name": the buyer took this company's name and no longer
     # exists apart from it, so there is no separate owner to show.
@@ -325,8 +330,47 @@ def auto_review(pipe_dir: Path, pool: Iterable[str],
         if str(rec.get("brand_status") or "").strip().lower() == "legacy" and current \
                 and cn and nn and cn not in nn and nn not in cn:
             display.append({"company": name, "current_name": current, "source": SOURCE})
+    # A company owned by another company of this same list is not a separate
+    # competitor: the parent represents the group (Redmap, bought by Basware,
+    # beside Basware; OpusCapita, bought by GEP, beside GEP). Owners come from
+    # these answers, the analyst review and the chart fact-check.
+    all_owners = list(owners)
+    for f in ("analyst_review.json", "factcheck_review.json"):
+        all_owners += [r for r in (_read(pipe_dir / f, {}) or {}).get("ownership") or []
+                       if str(r.get("owner") or "").strip()]
+    for entry in all_owners:
+        name = str(entry.get("company") or "")
+        parent = listed_parent(str(entry.get("owner") or ""), name, pool, pipe_dir.parent)
+        if parent and name in pool and name not in exclude:
+            drop(name, f"Owned by {parent}, which is also in this list; the parent represents the group.")
+    owners = [o for o in owners if o["company"] not in exclude]
     return {"exclude": list(exclude.values()), "ownership": owners,
             "adjacent": adjacent, "display": display}
+
+
+def listed_parent(owner: str, company: str, pool: Iterable[str], out_dir: Path) -> str | None:
+    """The company of ``pool`` that ``owner`` names, if any -- never ``company``
+    itself. Exact matches only, on the name without legal suffixes or on the
+    company's own brand ("Basware" = "Basware Oy"; "GEP" = "GEP Worldwide",
+    brand GEP). No partial names: "Visma" is not "Visma Aquila Oy" (one Visma
+    unit), and "Aptean" is not "Aptean Austria GmbH"."""
+    on = norm_name(owner)
+    if not on or len(on) < 3:
+        return None
+    brands = {}
+    for qf in Path(out_dir).glob("*_quadrant.json"):
+        for b in (_read(qf, {}) or {}).get("brands") or []:
+            key = norm_name(str(b.get("company_key") or b.get("company") or ""))
+            if key and b.get("brand"):
+                brands.setdefault(key, set()).add(norm_name(str(b["brand"])))
+    me = norm_name(company)
+    for n in pool:
+        nn = norm_name(n)
+        if not nn or nn == me:
+            continue
+        if on == nn or on in brands.get(nn, set()):
+            return n
+    return None
 
 
 def write_auto_review(pipe_dir: Path, review: dict[str, list[dict]]) -> Path:

@@ -156,6 +156,31 @@ def player_label(query: str, family: str = "") -> str:
 _DISCOVERY_MARKET: dict[str, Any] = {"market_type": "", "categories": []}
 
 
+def apply_brief_player_type(market_analysis: dict[str, Any]) -> bool:
+    """Apply the analyst's market brief on top of Step 0c's answer.
+
+    A market name can describe several player types (a "Trade Finance" market
+    has banks, insurers, software vendors and networks); when the client
+    decides which one the landscape compares, the brief says so and the
+    orchestrator passes it as MARKET_PLAYER_TYPE (one of the four player
+    types) and MARKET_TYPE (B2B / B2C). Data from the market's own brief,
+    never a market-name rule. Returns True when the analysis changed.
+    """
+    changed = False
+    want_type = str(os.getenv("MARKET_TYPE") or "").strip()
+    if want_type and market_analysis.get("market_type") != _canonical_market_type(want_type):
+        market_analysis["market_type"] = _canonical_market_type(want_type)
+        changed = True
+    want = str(os.getenv("MARKET_PLAYER_TYPE") or "").strip()
+    if want:
+        role = canonical_player_type(want, market_type=market_analysis.get("market_type") or "")
+        if market_analysis.get("primary_participant") != role:
+            market_analysis["primary_participant"] = role
+            market_analysis["primary_reason"] = "Set by the market brief (_pipeline/market_brief.json)."
+            changed = True
+    return changed
+
+
 def publish_discovery_market(market_analysis: dict[str, Any]) -> list[str]:
     """Publish a Step 0c result (B2B/B2C + participant roles) to the discovery
     prompt builders and return the role list, primary role first.
@@ -174,6 +199,12 @@ def publish_discovery_market(market_analysis: dict[str, Any]) -> list[str]:
         provider_categories = [primary] + [
             c for c in provider_categories if c.lower() != primary.lower()
         ]
+        # A brief that fixes the player type fixes the ONLY accepted role:
+        # verify accepts every published category, and Step 0c's other
+        # participants (e.g. banks in a trade-finance technology landscape)
+        # must not pass as this landscape's players.
+        if str(os.getenv("MARKET_PLAYER_TYPE") or "").strip():
+            provider_categories = [primary]
     set_discovery_market(market_analysis.get("market_type") or "", provider_categories)
     return provider_categories
 
@@ -3793,6 +3824,11 @@ async def run_chatgpt_expand(
                 f"  [chatgpt] Step 0c: SKIP (checkpoint) — "
                 f"market_type={market_analysis.get('market_type')}"
             )
+        if apply_brief_player_type(market_analysis):
+            ckpt.bump("0_start", "0c_market", market_analysis=market_analysis,
+                      note="player type / market type set by the market brief")
+            _log(f"  [chatgpt] Step 0c: market brief sets {market_analysis.get('market_type')} / "
+                 f"{market_analysis.get('primary_participant')}")
         provider_categories = publish_discovery_market(market_analysis)
         _log(
             f"  [chatgpt] Step 0c/6: market type = "

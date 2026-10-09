@@ -8,7 +8,9 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import re
+import time
 from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
@@ -42,7 +44,55 @@ def write_json_atomic(path: Path, obj: Any, *, indent: int | None = None) -> Non
     path = Path(path)
     tmp = path.with_name(f"{path.name}.{os.getpid()}.tmp")
     tmp.write_text(json.dumps(obj, indent=indent, ensure_ascii=False), encoding="utf-8")
-    os.replace(tmp, path)
+    # Windows: a reader (another shard, an antivirus scan) holding the target
+    # for a moment makes os.replace raise PermissionError -- retry, do not die.
+    for attempt in range(8):
+        try:
+            os.replace(tmp, path)
+            return
+        except PermissionError:
+            if attempt == 7:
+                raise
+            time.sleep(0.25 * (attempt + 1))
+
+
+def update_json_locked(path: Path, mutate, *, indent: int | None = None, timeout: float = 180.0,
+                       stale_after: float = 90.0) -> None:
+    """Read-modify-write of a JSON file several browsers share.
+
+    Every shard of the gap-fill step writes its fix into the SAME evidence
+    files. Unlocked, two shards read the same version and the later write
+    drops the earlier fix; with a shared temp name they also overwrote each
+    other's temp file (a damaged "Extra data" JSON, or PermissionError on
+    rename) -- seen live with 11 browsers. The lock is a file created
+    exclusively next to the target; one whose holder died is taken over
+    after `stale_after` seconds. `mutate(data)` edits the parsed JSON in place.
+    """
+    path = Path(path)
+    lock = path.with_name(path.name + ".lock")
+    deadline = time.monotonic() + timeout
+    while True:
+        try:
+            os.close(os.open(str(lock), os.O_CREAT | os.O_EXCL | os.O_WRONLY))
+            break
+        except (FileExistsError, PermissionError):
+            # Windows reports "permission denied" (not "exists") while the
+            # holder is deleting the lock: busy either way, try again.
+            try:
+                if time.time() - lock.stat().st_mtime > stale_after:
+                    lock.unlink(missing_ok=True)
+                    continue
+            except OSError:
+                pass
+            if time.monotonic() > deadline:
+                raise TimeoutError(f"could not lock {path.name} within {timeout:.0f}s")
+            time.sleep(0.1 + random.random() * 0.3)
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        mutate(data)
+        write_json_atomic(path, data, indent=indent)
+    finally:
+        lock.unlink(missing_ok=True)
 
 
 def row_name(r: dict) -> str:
@@ -77,7 +127,11 @@ def domain_of(url: str) -> str:
 
 
 def norm_name(name: str) -> str:
-    words = re.sub(r"[^a-z0-9 ]+", " ", str(name or "").lower()).split()
+    # Dotted legal forms ("S.p.A.", "S.r.l.", "S.A.", "B.V.") become one word
+    # first, so they match the suffix list like "SpA" / "Srl" / "SA" / "BV".
+    text = re.sub(r"\b(?:[A-Za-z]\.){1,3}[A-Za-z]\.?(?=\s|$|,)",
+                  lambda m: m.group(0).replace(".", ""), str(name or ""))
+    words = re.sub(r"[^a-z0-9 ]+", " ", text.lower()).split()
     core = [w for w in words if w not in _NAME_SUFFIXES]
     return " ".join(core or words)
 

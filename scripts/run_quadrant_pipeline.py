@@ -32,6 +32,8 @@ through, with nothing specific to either market:
                     65-100 floor; 5 per quadrant when the evidence pool IS
                     the Top N.
   8. Tone           rewrite_assessed_on_tone.py (desk-research wording, "we");
+                    figure gaps -> disclosed figure or defensible estimate
+                    (estimate_gaps.py + pipeline/estimates.py, step 7c);
                     analyst review + automatic review (ownership labels,
                     exclusions); supporting points tidied ("Not available").
   9. Report         build_report_from_composite.py (HTML + JSON + CSV), the
@@ -318,6 +320,12 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
     hedges = _HEDGE_RE.findall(html)
     checks.append(("No hedge wording / first person in report", not hedges, hedges[:5]))
 
+    from vendor_intel.pipeline.estimates import verify_report as verify_estimates
+
+    unlabelled = verify_estimates(brands)
+    checks.append(("Estimated figures labelled 'estimated ... approximately', with basis and confidence",
+                   not unlabelled, unlabelled[:5]))
+
     a = html.find("Other Noticeable Player")
     tail_html = html[a: html.find("</table>", a)] if a >= 0 else ""
     # The Strength cell (last column) must carry no number -- neither as
@@ -423,6 +431,13 @@ def main() -> int:
     ap.add_argument("--no-pdf", action="store_true", help="do not print the PDF report (step 8b)")
     ap.add_argument("--no-docx", action="store_true", help="do not write the Word report (step 8b)")
     ap.add_argument("--dry-run", action="store_true", help="print the plan, open no browser")
+    ap.add_argument("--update-report", default="",
+                    help="checks only, no re-scoring: run the status / ownership / identity checks on the "
+                         "company list, then rewrite this existing *_quadrant.json report with them "
+                         "(removals, owner labels, house wording). 'auto' = _pipeline/base_report.json")
+    ap.add_argument("--refill-chart", action="store_true",
+                    help="with --update-report: refill chart slots left by removed companies from the "
+                         "report's own long tail (5 per quadrant), gathering evidence for just those")
     args = ap.parse_args()
     if not args.discover_target:
         # With --keep, the first batch aims at the target itself; the
@@ -446,6 +461,12 @@ def main() -> int:
     if brief.get("scope"):
         os.environ["MARKET_SCOPE"] = " ".join(str(brief["scope"]).split())
         log(f"   market brief: scope set from _pipeline/market_brief.json")
+    # The brief can also fix WHICH player type the landscape compares (a
+    # market name can cover several); discovery, verify and the axes use it.
+    for key, env_name in (("player_type", "MARKET_PLAYER_TYPE"), ("market_type", "MARKET_TYPE")):
+        if str(brief.get(key) or "").strip():
+            os.environ[env_name] = str(brief[key]).strip()
+            log(f"   market brief: {key} = {brief[key]}")
 
     # Discovery must not score: steps 2 and 4 below derive the axes and score
     # every verified company, so discovery's own X/Y pass (its step 6c) only
@@ -495,6 +516,12 @@ def main() -> int:
     if brief and not args.dry_run:
         ma = dict(data.get("market_analysis") or {})
         want = {k: brief[k] for k in ("market_definition", "core_scope", "adjacent_segments") if brief.get(k)}
+        from vendor_intel.pipeline.chatgpt_expand import canonical_player_type
+
+        if brief.get("player_type"):
+            want["primary_participant"] = canonical_player_type(str(brief["player_type"]))
+        if brief.get("market_type"):
+            want["market_type"] = str(brief["market_type"]).strip()
         if any(ma.get(k) != v for k, v in want.items()):
             ma.update(want)
             data["market_analysis"] = ma
@@ -625,7 +652,9 @@ def main() -> int:
     # neighbouring segment) stays in Other Noticeable Players, never on the chart.
     scope_ans = merged_facts("scope", cf.SCOPE_FILE)
     need = [n for n in pool if n not in scope_ans]
-    if need and not args.skip_facts:
+    # --update-report keeps the existing report's market coverage: only the
+    # status / ownership / identity checks run, no scope or HQ re-judgement.
+    if need and not args.skip_facts and not args.update_report:
         runner.shards("scope", "check_company_facts.py", need, ["--mode", "scope"])
         scope_ans = merged_facts("scope", cf.SCOPE_FILE)
     # Single-country run: where is each company's own head office?
@@ -635,7 +664,7 @@ def main() -> int:
     if one_country:
         hq_ans = merged_facts("hq", cf.HQ_FILE)
         need = [n for n in pool if n not in hq_ans]
-        if need and not args.skip_facts:
+        if need and not args.skip_facts and not args.update_report:
             runner.shards("hq", "check_company_facts.py", need, ["--mode", "hq"])
             hq_ans = merged_facts("hq", cf.HQ_FILE)
     auto = cf.auto_review(pipe_dir, pool, status_now, country=one_country)
@@ -654,6 +683,53 @@ def main() -> int:
     log(f"3c. ownership {len(own)} / identity {len(ident)} / scope {len(scope_ans)} answers: "
         f"{len(more)} more left out {more[:6]}, {len(auto['ownership'])} owner labels, "
         f"{len(adjacent)} adjacent-segment (not on the chart) {adjacent[:6]} -> _pipeline/auto_review.json")
+
+    # --update-report: the checks are done -- rewrite the existing report with
+    # them (removals, owner labels, house wording) and stop; no re-scoring.
+    if args.update_report:
+        base = Path(args.update_report) if args.update_report != "auto" else pipe_dir / "base_report.json"
+        if not base.exists():
+            log(f"--update-report: base report not found: {base}")
+            return 2
+        from vendor_intel.pipeline.report_update import update_report
+
+        st = update_report(base, out_dir, pipe_dir, list(gone), out_dir.name)
+        log(f"8. report updated from {base.name}: {st['companies_before']} -> {st['companies_after']} companies "
+            f"({len(st['removed'])} removed: {st['removed'][:8]}), {len(st['labelled'])} owner labels, "
+            f"chart {st['chart_after']} -> {st['html']}")
+        html_path = Path(st["html"])
+        if args.refill_chart:
+            # Bring the chart back to 5 per quadrant from the report's OWN long
+            # tail (no new search): evidence is gathered for just those
+            # companies, on the report's own 10 parameters.
+            from vendor_intel.pipeline import report_update as ru
+            from vendor_intel.quadrant.viewer import write_viewer
+
+            qpath = out_dir / f"{out_dir.name}_quadrant.json"
+            payload = read_json(qpath, {})
+            plan = ru.refill_plan(payload)
+            names = [n for ns in plan.values() for n in ns]
+            if names:
+                log(f"8. chart refill from the report's long tail: {plan}")
+                spec_file = write_json(pipe_dir / "refill_axes.json", ru.axes_spec(payload))
+                only = write_json(pipe_dir / "refill_names.json", names)
+                runner.run([PY, str(ROOT / "scripts" / "prescore_verified.py"), "--market", args.market,
+                            "--country", args.country, "--slot", str(runner.slots[0]),
+                            "--only-file", str(only), "--fixed-axes", str(spec_file),
+                            "--sidecar-name", "refill"], "refill.log")
+                evidence = read_json(out_dir / "param_detail_prescored_refill.json", {}) or {}
+                added = ru.apply_refills(payload, plan, evidence)
+                write_json(qpath, payload)
+                write_viewer(payload, html_path)
+                log(f"8. chart refilled with {len(added)}: {added}; chart now "
+                    f"{sum(1 for b in payload['brands'] if b.get('on_chart'))}")
+        if not args.no_pdf:
+            runner.run([PY, str(ROOT / "scripts" / "export_report_pdf.py"), "--html", str(html_path)], "pdf.log")
+        if not args.no_docx:
+            runner.run([PY, str(ROOT / "scripts" / "export_report_docx.py"), "--html", str(html_path)], "docx.log")
+        write_json(pipe_dir / "report_update_done", {"base": str(base)})
+        log("8b. PDF / Word written; checks-only update finished")
+        return 0
 
     def chart_ok(n: str) -> bool:
         return norm_name(n) not in off_chart
@@ -726,7 +802,9 @@ def main() -> int:
         xy = {n: v for n in pool
               if (v := axis_xy(n, evidence, overall, xp, yp)) is not None}
         before = list(ev_pool)
-        ev_pool = refill_top_by_quadrant(ev_pool, xy, args.top_n, eligible=chart_ok)
+        # The evidence pool IS the chart here (size <= top_n): composite re-splits it
+        # 5 per quadrant by rank, so every surviving company stays.
+        ev_pool = refill_top_by_quadrant(ev_pool, xy, args.top_n, eligible=chart_ok, keep_all=True)
         log(f"   Top {args.top_n} refilled after 3b: added "
             f"{[n for n in ev_pool if n not in before]}")
         if not args.chart_top:
@@ -837,7 +915,8 @@ def main() -> int:
         by = normalize_cohort_to_band([xy[n][1] for n in names])
         xy = {n: (int(round(a)), int(round(b))) for n, a, b in zip(names, bx, by)}
         before = list(chart_top)
-        chart_top = refill_top_by_quadrant(chart_top, xy, args.top_n, eligible=chart_ok)
+        chart_top = refill_top_by_quadrant(chart_top, xy, args.top_n, eligible=chart_ok,
+                                           keep_all=len(done_ev) <= args.top_n)
         if set(chart_top) != set(before):
             write_json(chart_path, chart_top)
             log(f"6. chart rebalanced after 3b: added {[n for n in chart_top if n not in before]}, "
@@ -866,6 +945,38 @@ def main() -> int:
         # VERIFY would only catch as hedge wording much later.
         log("FAIL: tone rewrite failed (see _pipeline/tone.log)")
         return 1
+
+    # 7c. Figure gaps -> disclosed figure or defensible estimate --------------
+    # A gap that names a number ("has not disclosed its employee count") is
+    # asked in AI Mode: the company's own figure if it reports one, else a
+    # range from quantitative first-party indicators, else the gap stays.
+    # vendor_intel.pipeline.estimates judges every answer (sources, basis,
+    # precision, confidence) before any figure reaches the report. Before
+    # 7b, so an analyst correction can still fix or remove an estimate.
+    from vendor_intel.pipeline import estimates as est
+
+    if not args.dry_run:
+        ev_names = list(done_ev)
+        answers = est.load_answers(pipe_dir)
+        todo = (len(est.pending(est.gap_tasks(load_evidence(out_dir), ev_names), answers))
+                if est.numeric_estimates_enabled() else 0)
+        todo += (0
+                + len(est.unestimated(out_dir, ev_names, answers))
+                + len(est.worded_needed(out_dir, ev_names, answers)))
+        if todo:
+            slots = parse_slots(args.slots)
+            log(f"7c. gaps: {todo} to ask in AI Mode on {len(slots)} browser(s) "
+                "(figures first, then an estimate in words for every gap still without one)")
+            runner.run([PY, str(ROOT / "scripts" / "estimate_gaps.py"), "--market", args.market,
+                        "--country", args.country, "--browsers", str(len(slots)),
+                        "--slot-start", str(slots[0]),
+                        "--names-file", str(write_json(pipe_dir / "estimate_names.json", ev_names))],
+                       "estimates.log")
+        n_est = est.apply_estimates(out_dir, ev_names)
+        log(f"7c. gaps: {n_est['disclosed']} disclosed figure(s), {n_est['estimated']} figure estimate(s), "
+            f"{n_est['estimated_qualitative']} estimate(s) in words, "
+            f"{n_est['not_available']} insufficient-basis statement(s) "
+            "(review list: _pipeline/estimates/estimates.md)")
 
     # 7b. Analyst review corrections (_pipeline/analyst_review.json) ---------
     from vendor_intel.pipeline.company_status import (
