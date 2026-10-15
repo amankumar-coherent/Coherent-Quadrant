@@ -1,0 +1,34 @@
+[rounds 04:48:43] round 1: 46/59 verified (keep rate 95%) -> discovering 25 more
+    → substep 1a: discovery rounds for Manufacturer (batch 10, target 65, resuming with 40)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_57_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +10 (total 50)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +9 (total 59)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +4 (total 63)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.4: +9 (total 72)
+    → substep 1a done: 72 companies in 4 rounds (resumed with 40) (target_reached)
+[rounds 04:51:11] round 1: verifying 31 new companies
+    → substep 4a: verify 31 candidates as Manufacturer in 3 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1 (12 companies, 0/31 done)…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.1: running kept=7 rejected=0
+    → substep 4a.2: verify chunk 2 (12 companies, 12/31 done)…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.2: running kept=18 rejected=1
+    → substep 4a.3: verify chunk 3 (7 companies, 24/31 done)…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.3: running kept=20 rejected=2
+    → substep 4a done: kept=20 rejected=2 (required=Manufacturer)
+[rounds 04:53:00] round 1: +20 verified, 2 rejected
+[rounds 04:53:00] stopped after 1 rounds at 60/59 verified

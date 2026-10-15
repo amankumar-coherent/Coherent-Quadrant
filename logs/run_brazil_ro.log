@@ -1,0 +1,352 @@
+﻿=== 2026-10-13 01:52:01 start: Reverse Osmosis Market (brazil)
+[run] first discovery (one browser)
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Reverse Osmosis Market
+  target : 40
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper ΓåÆ DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=40 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=ad85bf0e ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\reverse_osmosis_market_brazil_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] checkpoint ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      ┬╖ 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      ┬╖ 0c-market-analysis: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c: market brief sets B2B / Manufacturer
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: The market is hybrid because reverse osmosis systems and components are sold both directly to individual households for residential water purification and wholesale or custom-engineered to commercial, industrial, and municipal facilities.
+  [chatgpt] Step 0c/6: why this player type: Manufacturer was chosen because the defining offerings of core competitors in the reverse osmosis landscape are physical products, including filtration systems, membrane elements, pressure vessels, and specialized pumps, which buyers directly evaluate and compare against each other.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companiesΓÇª
+    ΓåÆ substep 1a: discovery rounds for Manufacturer (batch 10, target 40)
+      ┬╖ discover-round-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.1: +6 (total 6)
+      ┬╖ discover-round-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.2: +10 (total 16)
+      ┬╖ discover-round-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.3: +8 (total 24)
+      ┬╖ discover-round-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.4: +3 (total 27)
+      ┬╖ discover-round-5: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-5: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.5: +10 (total 37)
+      ┬╖ discover-round-6: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-6: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.6: +10 (total 47)
+    ΓåÆ substep 1a done: 47 companies in 6 rounds (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ΓëÑ target: 47)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (47 = 0 seeds + 47 recalled + 0 openai-web + 0 ddgs)ΓÇª
+    ΓåÆ substep 4a: verify 47 candidates as Manufacturer in 4 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    ΓåÆ substep 4a.1: verify chunk 1 (10 companies, 0/47 done)ΓÇª
+      ┬╖ verify-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.1: running kept=10 rejected=0
+    ΓåÆ substep 4a.2: verify chunk 2 (11 companies, 10/47 done)ΓÇª
+      ┬╖ verify-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.2: running kept=20 rejected=1
+    ΓåÆ substep 4a.3: verify chunk 3 (11 companies, 21/47 done)ΓÇª
+      ┬╖ verify-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.3: running kept=31 rejected=1
+    ΓåÆ substep 4a.4: verify chunk 4 (12 companies, 32/47 done)ΓÇª
+      ┬╖ verify-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+  [ai-mode] WARNING prompt truncated 6579 -> 6578 chars to stay under the 7800-char URL limit
+      ┬╖ verify-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.4: running kept=42 rejected=2
+    ΓåÆ substep 4a.5: verify chunk 5 (3 companies, 44/47 done)ΓÇª
+      ┬╖ verify-5: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-5: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.5: running kept=45 rejected=2
+    ΓåÆ substep 4a done: kept=45 rejected=2 (required=Manufacturer)
+    ΓåÆ substep 4b: write rejected list (2)
+    ΓåÆ substep 4c: market gate kept 45/45 (dropped 0)
+  [web_expand] merged +45; total unique=45 (target=80)
+  [chatgpt] fill ALL table rows this pass: 45 (merged=45, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) ΓÇö 45 rows already carry their report columns
+    ΓåÆ substep 5c: merged filled rows into list (45 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) ΓÇö keeping 45 rows verified in Step 4
+    ΓåÆ substep 6p: channel purity off
+  [chatgpt] Step 6c: SKIP ΓÇö scoring is done by the quadrant pipeline
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)ΓÇª
+    ΓåÆ [found-in] city/country filled=0 kept=40 blank=0
+  [chatgpt] Company Details mapping skipped: TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+
+=== OpenAI cost (this run) ===
+  run_id : ad85bf0e
+  market : Reverse Osmosis Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+    ΓåÆ substep 7: write Excel (40 rows) ΓåÆ reverse_osmosis_market_brazil_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) ΓåÆ 40 rows ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\reverse_osmosis_market_brazil_FINAL.xlsx
+  [chatgpt] checkpoint marked done ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Reverse Osmosis Market",
+  "country": "brazil",
+  "batch": "all",
+  "family": "general",
+  "target": 40,
+  "existing_before": 0,
+  "seeds_loaded": 0,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 47,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 45,
+  "rejected_mid": 2,
+  "chatgpt_filled": 45,
+  "rejected_final": 0,
+  "total_after": 40,
+  "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\reverse_osmosis_market_brazil\\reverse_osmosis_market_brazil_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "ad85bf0e",
+    "market": "Reverse Osmosis Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-10-13T08:52:08.197790+00:00",
+    "ended_at": "2026-10-13T08:58:10.296394+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 40,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 0,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": false,
+      "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\reverse_osmosis_market_brazil\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 40,
+      "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\reverse_osmosis_market_brazil\\reverse_osmosis_market_brazil_FINAL.xlsx",
+      "rejected_mid": 2,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {},
+  "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\reverse_osmosis_market_brazil\\chatgpt_checkpoint_batch_all.json",
+  "resumed": false
+}
+
+  rows: 40  (target 40)
+[run] first discovery: 44 verified
+[topup 01:58:11] start: 44 verified companies; 10 browsers, target 267
+[topup 01:58:11] verify only: 0 unchecked companies over 10 browsers
+[run] after verifying found candidates: 44 verified
+[run] country pass 1: 44 verified
+[topup 01:58:12] start: 44 verified companies; 10 browsers, target 57 -- country by country
+[topup 01:58:12] browser 1: start on slot 41
+[topup 01:58:16] browser 2: start on slot 42
+[topup 01:58:20] browser 3: start on slot 43
+[topup 01:58:24] browser 4: start on slot 44
+[topup 01:58:28] browser 5: start on slot 45
+[topup 01:58:32] browser 6: start on slot 46
+[topup 01:58:36] browser 7: start on slot 47
+[topup 01:58:40] browser 8: start on slot 48
+[topup 01:58:44] browser 9: start on slot 49
+[topup 01:58:48] browser 10: start on slot 50
+[topup 02:12:53] browser 1: 15 new verified
+[topup 02:12:53] browser 2: 19 new verified
+[topup 02:12:53] browser 3: 21 new verified
+[topup 02:12:53] browser 4: 16 new verified
+[topup 02:12:53] browser 5: 17 new verified
+[topup 02:12:53] browser 6: 19 new verified
+[topup 02:12:53] browser 7: 11 new verified
+[topup 02:12:53] browser 8: 20 new verified
+[topup 02:12:53] browser 9: 14 new verified
+[topup 02:12:53] browser 10: 12 new verified
+[topup 02:12:53] merged: 44 -> 120 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+[run] country pass 1: +76 -> 120 verified
+[run] country pass 2: 120 verified
+[topup 02:12:55] start: 120 verified companies; 10 browsers, target 133 -- country by country
+[topup 02:12:55] browser 1: start on slot 41
+[topup 02:12:59] browser 2: start on slot 42
+[topup 02:13:03] browser 3: start on slot 43
+[topup 02:13:07] browser 4: start on slot 44
+[topup 02:13:11] browser 5: start on slot 45
+[topup 02:13:15] browser 6: start on slot 46
+[topup 02:13:19] browser 7: start on slot 47
+[topup 02:13:24] browser 8: start on slot 48
+[topup 02:13:28] browser 9: start on slot 49
+[topup 02:13:32] browser 10: start on slot 50
+[topup 02:23:36] browser 1: 18 new verified
+[topup 02:23:37] browser 2: 13 new verified
+[topup 02:23:37] browser 3: 12 new verified
+[topup 02:23:37] browser 4: 5 new verified
+[topup 02:23:37] browser 5: 6 new verified
+[topup 02:23:37] browser 6: 14 new verified
+[topup 02:23:37] browser 7: 7 new verified
+[topup 02:23:37] browser 8: 8 new verified
+[topup 02:23:37] browser 9: 8 new verified
+[topup 02:23:37] browser 10: 9 new verified
+[topup 02:23:37] merged: 120 -> 147 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+[run] country pass 2: +27 -> 147 verified
+[run] country pass 3: 147 verified
+[topup 02:23:39] start: 147 verified companies; 10 browsers, target 160 -- country by country
+[topup 02:23:39] browser 1: start on slot 41
+[topup 02:23:43] browser 2: start on slot 42
+[topup 02:23:47] browser 3: start on slot 43
+[topup 02:23:51] browser 4: start on slot 44
+[topup 02:23:55] browser 5: start on slot 45
+[topup 02:23:59] browser 6: start on slot 46
+[topup 02:24:03] browser 7: start on slot 47
+[topup 02:24:07] browser 8: start on slot 48
+[topup 02:24:11] browser 9: start on slot 49
+[topup 02:24:15] browser 10: start on slot 50
+[topup 02:35:49] browser 1: 4 new verified
+[topup 02:35:49] browser 2: 11 new verified
+[topup 02:35:49] browser 3: 10 new verified
+[topup 02:35:49] browser 4: 7 new verified
+[topup 02:35:49] browser 5: 7 new verified
+[topup 02:35:49] browser 6: 5 new verified
+[topup 02:35:49] browser 7: 6 new verified
+[topup 02:35:49] browser 8: 2 new verified
+[topup 02:35:49] browser 9: 9 new verified
+[topup 02:35:49] browser 10: 9 new verified
+[topup 02:35:49] merged: 147 -> 163 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+[run] country pass 3: +16 -> 163 verified
+[run] country pass 4: 163 verified
+[topup 02:35:51] start: 163 verified companies; 10 browsers, target 176 -- country by country
+[topup 02:35:51] browser 1: start on slot 41
+[topup 02:35:55] browser 2: start on slot 42
+[topup 02:35:59] browser 3: start on slot 43
+[topup 02:36:03] browser 4: start on slot 44
+[topup 02:36:07] browser 5: start on slot 45
+[topup 02:36:11] browser 6: start on slot 46
+[topup 02:36:15] browser 7: start on slot 47
+[topup 02:36:19] browser 8: start on slot 48
+[topup 02:36:23] browser 9: start on slot 49
+[topup 02:36:28] browser 10: start on slot 50
+[topup 02:46:32] browser 1: 7 new verified
+[topup 02:46:32] browser 2: 3 new verified
+[topup 02:46:32] browser 3: 3 new verified
+[topup 02:46:32] browser 4: 6 new verified
+[topup 02:46:32] browser 5: 5 new verified
+[topup 02:46:32] browser 6: 11 new verified
+[topup 02:46:32] browser 7: 4 new verified
+[topup 02:46:32] browser 8: 6 new verified
+[topup 02:46:32] browser 9: 7 new verified
+[topup 02:46:32] browser 10: 6 new verified
+[topup 02:46:32] merged: 163 -> 180 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+[run] country pass 4: +17 -> 180 verified
+[run] country pass 5: 180 verified
+[topup 02:46:34] start: 180 verified companies; 10 browsers, target 193 -- country by country
+[topup 02:46:34] browser 1: start on slot 41
+[topup 02:46:38] browser 2: start on slot 42
+[topup 02:46:42] browser 3: start on slot 43
+[topup 02:46:46] browser 4: start on slot 44
+[topup 02:46:50] browser 5: start on slot 45
+[topup 02:46:54] browser 6: start on slot 46
+[topup 02:46:58] browser 7: start on slot 47
+[topup 02:47:02] browser 8: start on slot 48
+[topup 02:47:06] browser 9: start on slot 49
+[topup 02:47:10] browser 10: start on slot 50
+[topup 02:57:15] browser 1: 1 new verified
+[topup 02:57:15] browser 2: 6 new verified
+[topup 02:57:15] browser 3: 8 new verified
+[topup 02:57:15] browser 4: 8 new verified
+[topup 02:57:15] browser 5: 7 new verified
+[topup 02:57:15] browser 6: 4 new verified
+[topup 02:57:15] browser 7: 4 new verified
+[topup 02:57:15] browser 8: 6 new verified
+[topup 02:57:15] browser 9: 5 new verified
+[topup 02:57:15] browser 10: 3 new verified
+[topup 02:57:15] merged: 180 -> 193 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+[run] country pass 5: +13 -> 193 verified
+[run] country pass 6: 193 verified
+[topup 02:57:17] start: 193 verified companies; 10 browsers, target 206 -- country by country
+[topup 02:57:17] browser 1: start on slot 41
+[topup 02:57:21] browser 2: start on slot 42
+[topup 02:57:25] browser 3: start on slot 43
+[topup 02:57:29] browser 4: start on slot 44
+[topup 02:57:33] browser 5: start on slot 45
+[topup 02:57:38] browser 6: start on slot 46
+[topup 02:57:42] browser 7: start on slot 47
+[topup 02:57:46] browser 8: start on slot 48
+[topup 02:57:51] browser 9: start on slot 49
+[topup 02:57:55] browser 10: start on slot 50
+=== 2026-10-13 03:06:54 start: Reverse Osmosis Market (brazil)
+[topup 03:06:56] start: 193 verified companies; 10 browsers, target 267
+[topup 03:06:58] verify only: 61 unchecked companies over 10 browsers
+[topup 03:06:58] browser 1: start on slot 41
+[topup 03:07:02] browser 2: start on slot 42
+[topup 03:07:06] browser 3: start on slot 43
+[topup 03:07:11] browser 4: start on slot 44
+[topup 03:07:16] browser 5: start on slot 45
+[topup 03:07:21] browser 6: start on slot 46
+[topup 03:07:25] browser 7: start on slot 47
+[topup 03:07:30] browser 8: start on slot 48
+[topup 03:07:35] browser 9: start on slot 49
+[topup 03:07:39] browser 10: start on slot 50
+[topup 03:11:14] browser 1: 5 new verified
+[topup 03:11:14] browser 2: 6 new verified
+[topup 03:11:14] browser 3: 6 new verified
+[topup 03:11:14] browser 4: 4 new verified
+[topup 03:11:14] browser 5: 5 new verified
+[topup 03:11:14] browser 6: 5 new verified
+[topup 03:11:14] browser 7: 6 new verified
+[topup 03:11:14] browser 8: 4 new verified
+[topup 03:11:14] browser 9: 4 new verified
+[topup 03:11:14] browser 10: 5 new verified
+[topup 03:11:14] merged: 193 -> 198 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\reverse_osmosis_market_brazil\chatgpt_checkpoint_batch_all.json
+[run] after verifying found candidates: 198 verified
+[run] discovery finished with 198 companies; starting the pipeline
+=== 2026-10-13 04:25:30 start: Reverse Osmosis Market (brazil)
+[run] discovery finished with 198 companies; starting the pipeline
+=== 2026-10-13 04:42:39 start: Reverse Osmosis Market (brazil)
+[run] discovery finished with 198 companies; starting the pipeline
+[run] pipeline exit 1
+=== 2026-10-13 05:13:57 end: Reverse Osmosis Market (brazil) exit=1
+=== 2026-10-13 05:14:20 start: Reverse Osmosis Market (brazil)
+[run] discovery finished with 188 companies; starting the pipeline
+=== 2026-10-13 05:15:26 start: Reverse Osmosis Market (brazil)
+[run] discovery finished with 188 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-13 05:21:10 end: Reverse Osmosis Market (brazil) exit=0
+=== 2026-10-13 05:28:25 start: Reverse Osmosis Market (brazil)
+[run] discovery finished with 188 companies; starting the pipeline
+[run] pipeline exit 1
+=== 2026-10-13 05:29:24 end: Reverse Osmosis Market (brazil) exit=1
+=== 2026-10-13 05:30:01 start: Reverse Osmosis Market (brazil)
+[run] discovery finished with 188 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-13 05:30:54 end: Reverse Osmosis Market (brazil) exit=0
+=== 2026-10-13 05:54:34 start: Reverse Osmosis Market (brazil)
+[run] discovery finished with 188 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-13 05:55:11 end: Reverse Osmosis Market (brazil) exit=0

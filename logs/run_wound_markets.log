@@ -1,0 +1,950 @@
+﻿=== 2026-10-12 02:40:55 start: Global Negative Pressure Wound Therapy (NPWT) Devices Market
+[run] first discovery (one browser)
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Negative Pressure Wound Therapy (NPWT) Devices Market
+  target : 40
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper ΓåÆ DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=40 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=1a5b6dbf ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\global_negative_pressure_wound_therapy_npwt_devices_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=18
+  [chatgpt] checkpoint ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      ┬╖ 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      ┬╖ 0c-market-analysis: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: The primary buyers in this market are institutional healthcare facilities, including hospitals, specialized wound care clinics, and long-term care organizations, rather than individual consumers.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer is the chosen participant type because the market is fundamentally centered around distinct medical devices and physical hardware systems produced under specific brand names, making proprietary product makers the core competitive entities.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companiesΓÇª
+    ΓåÆ substep 1a: discovery rounds for Manufacturer (batch 10, target 40)
+      ┬╖ discover-round-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.1: +10 (total 10)
+      ┬╖ discover-round-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.2: +10 (total 20)
+      ┬╖ discover-round-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.3: +10 (total 30)
+      ┬╖ discover-round-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.4: +10 (total 40)
+    ΓåÆ substep 1a done: 40 companies in 4 rounds (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ΓëÑ target: 58)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (58 = 18 seeds + 40 recalled + 0 openai-web + 0 ddgs)ΓÇª
+    ΓåÆ substep 4a: verify 58 candidates as Manufacturer in 5 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    ΓåÆ substep 4a.1: verify chunk 1 (12 companies, 0/58 done)ΓÇª
+      ┬╖ verify-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.1: running kept=10 rejected=2
+    ΓåÆ substep 4a.2: verify chunk 2 (12 companies, 12/58 done)ΓÇª
+      ┬╖ verify-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.2: running kept=20 rejected=4
+    ΓåÆ substep 4a.3: verify chunk 3 (12 companies, 24/58 done)ΓÇª
+      ┬╖ verify-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.3: running kept=32 rejected=4
+    ΓåÆ substep 4a.4: verify chunk 4 (12 companies, 36/58 done)ΓÇª
+      ┬╖ verify-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.4: running kept=43 rejected=5
+    ΓåÆ substep 4a.5: verify chunk 5 (10 companies, 48/58 done)ΓÇª
+      ┬╖ verify-5: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-5: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.5: running kept=53 rejected=5
+    ΓåÆ substep 4a done: kept=53 rejected=5 (required=Manufacturer)
+    ΓåÆ substep 4b: write rejected list (5)
+    ΓåÆ substep 4c: market gate kept 53/53 (dropped 0)
+  [web_expand] merged +45; total unique=45 (target=80)
+  [chatgpt] fill ALL table rows this pass: 45 (merged=45, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) ΓÇö 45 rows already carry their report columns
+    ΓåÆ substep 5c: merged filled rows into list (45 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) ΓÇö keeping 45 rows verified in Step 4
+    ΓåÆ substep 6p: channel purity off
+  [chatgpt] Step 6c: SKIP ΓÇö scoring is done by the quadrant pipeline
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)ΓÇª
+    ΓåÆ [found-in] blank '3M' (skip)
+    ΓåÆ [found-in] blank '4L Health Co., Ltd' (wiki_miss)
+    ΓåÆ [found-in] blank 'Atmos' (wiki_no_hq:Atmos)
+    ΓåÆ [found-in] blank 'ATMOS MedizinTechnik GmbH & Co. KG' (wiki_miss)
+    ΓåÆ [found-in] blank 'Carilex Medical' (wiki_miss)
+    ΓåÆ [found-in] city/country filled=0 kept=35 blank=5
+  [chatgpt] Company Details mapping skipped: TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+
+=== OpenAI cost (this run) ===
+  run_id : 1a5b6dbf
+  market : Global Negative Pressure Wound Therapy (NPWT) Devices Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+    ΓåÆ substep 7: write Excel (40 rows) ΓåÆ global_negative_pressure_wound_therapy_npwt_devices_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) ΓåÆ 40 rows ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\global_negative_pressure_wound_therapy_npwt_devices_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Negative Pressure Wound Therapy (NPWT) Devices Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 40,
+  "existing_before": 0,
+  "seeds_loaded": 18,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 40,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 53,
+  "rejected_mid": 5,
+  "chatgpt_filled": 45,
+  "rejected_final": 0,
+  "total_after": 40,
+  "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_negative_pressure_wound_therapy_npwt_devices_market_global\\global_negative_pressure_wound_therapy_npwt_devices_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "1a5b6dbf",
+    "market": "Global Negative Pressure Wound Therapy (NPWT) Devices Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-10-12T09:40:59.778882+00:00",
+    "ended_at": "2026-10-12T09:46:04.016530+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 40,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 18,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": false,
+      "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_negative_pressure_wound_therapy_npwt_devices_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 40,
+      "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_negative_pressure_wound_therapy_npwt_devices_market_global\\global_negative_pressure_wound_therapy_npwt_devices_market_global_FINAL.xlsx",
+      "rejected_mid": 5,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {},
+  "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_negative_pressure_wound_therapy_npwt_devices_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": false
+}
+
+  rows: 40  (target 40)
+[run] first discovery: 40 verified
+[topup 02:46:04] start: 40 verified companies; 20 browsers, target 200
+[topup 02:46:05] verify only: 0 unchecked companies over 20 browsers
+[run] after verifying found candidates: 40 verified
+[run] country pass 1: 40 verified
+[topup 02:46:05] start: 40 verified companies; 20 browsers, target 53 -- country by country
+[topup 02:46:05] browser 1: start on slot 41
+[topup 02:46:09] browser 2: start on slot 42
+[topup 02:46:13] browser 3: start on slot 43
+[topup 02:46:17] browser 4: start on slot 44
+[topup 02:46:21] browser 5: start on slot 45
+[topup 02:46:26] browser 6: start on slot 46
+[topup 02:46:30] browser 7: start on slot 47
+[topup 02:46:34] browser 8: start on slot 48
+[topup 02:46:38] browser 9: start on slot 49
+[topup 02:46:42] browser 10: start on slot 50
+[topup 02:46:46] browser 11: start on slot 51
+[topup 02:46:50] browser 12: start on slot 52
+[topup 02:46:54] browser 13: start on slot 53
+[topup 02:46:58] browser 14: start on slot 54
+[topup 02:47:03] browser 15: start on slot 55
+[topup 02:47:07] browser 16: start on slot 56
+[topup 02:47:12] browser 17: start on slot 57
+[topup 02:47:16] browser 18: start on slot 58
+[topup 02:47:23] browser 19: start on slot 59
+[topup 02:47:27] browser 20: start on slot 60
+[topup 03:27:35] browser 1: 0 new verified
+[topup 03:27:35] browser 2: 0 new verified
+[topup 03:27:35] browser 3: 26 new verified
+[topup 03:27:35] browser 4: 0 new verified
+[topup 03:27:35] browser 5: 17 new verified
+[topup 03:27:35] browser 6: 0 new verified
+[topup 03:27:35] browser 7: 0 new verified
+[topup 03:27:36] browser 8: 0 new verified
+[topup 03:27:36] browser 9: 7 new verified
+[topup 03:27:36] browser 10: 7 new verified
+[topup 03:27:36] browser 11: 8 new verified
+[topup 03:27:36] browser 12: 9 new verified
+[topup 03:27:36] browser 13: 0 new verified
+[topup 03:27:36] browser 14: 9 new verified
+[topup 03:27:36] browser 15: 0 new verified
+[topup 03:27:36] browser 16: 5 new verified
+[topup 03:27:36] browser 17: 13 new verified
+[topup 03:27:36] browser 18: 4 new verified
+[topup 03:27:36] browser 19: 16 new verified
+[topup 03:27:36] browser 20: 0 new verified
+[topup 03:27:36] merged: 40 -> 121 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\chatgpt_checkpoint_batch_all.json
+[run] country pass 1: +81 -> 121 verified
+[run] country pass 2: 121 verified
+[topup 03:27:37] start: 121 verified companies; 20 browsers, target 134 -- country by country
+[topup 03:27:38] browser 1: start on slot 41
+[topup 03:27:42] browser 2: start on slot 42
+[topup 03:27:46] browser 3: start on slot 43
+[topup 03:27:50] browser 4: start on slot 44
+[topup 03:27:54] browser 5: start on slot 45
+[topup 03:27:58] browser 6: start on slot 46
+[topup 03:28:02] browser 7: start on slot 47
+[topup 03:28:06] browser 8: start on slot 48
+[topup 03:28:10] browser 9: start on slot 49
+[topup 03:28:14] browser 10: start on slot 50
+[topup 03:28:18] browser 11: start on slot 51
+[topup 03:28:22] browser 12: start on slot 52
+[topup 03:28:26] browser 13: start on slot 53
+[topup 03:28:30] browser 14: start on slot 54
+[topup 03:28:35] browser 15: start on slot 55
+[topup 03:28:39] browser 16: start on slot 56
+[topup 03:28:44] browser 17: start on slot 57
+[topup 03:28:49] browser 18: start on slot 58
+[topup 03:28:53] browser 19: start on slot 59
+[topup 03:28:58] browser 20: start on slot 60
+=== 2026-10-12 03:54:48 start: Global Negative Pressure Wound Therapy (NPWT) Devices Market
+[topup 03:54:50] start: 121 verified companies; 20 browsers, target 200
+[topup 03:54:50] verify only: 87 unchecked companies over 20 browsers
+[topup 03:54:50] browser 1: start on slot 41
+[topup 03:54:54] browser 2: start on slot 42
+[topup 03:54:58] browser 3: start on slot 43
+[topup 03:55:02] browser 4: start on slot 44
+[topup 03:55:06] browser 5: start on slot 45
+[topup 03:55:10] browser 6: start on slot 46
+[topup 03:55:14] browser 7: start on slot 47
+[topup 03:55:18] browser 8: start on slot 48
+[topup 03:55:22] browser 9: start on slot 49
+[topup 03:55:26] browser 10: start on slot 50
+[topup 03:55:30] browser 11: start on slot 51
+[topup 03:55:34] browser 12: start on slot 52
+[topup 03:55:38] browser 13: start on slot 53
+[topup 03:55:43] browser 14: start on slot 54
+[topup 03:55:47] browser 15: start on slot 55
+[topup 03:55:51] browser 16: start on slot 56
+[topup 03:55:55] browser 17: start on slot 57
+[topup 03:55:59] browser 18: start on slot 58
+[topup 03:56:05] browser 19: start on slot 59
+[topup 03:56:09] browser 20: start on slot 60
+[topup 03:56:43] browser 1: 2 new verified
+[topup 03:56:43] browser 2: 3 new verified
+[topup 03:56:43] browser 3: 4 new verified
+[topup 03:56:43] browser 4: 5 new verified
+[topup 03:56:43] browser 5: 4 new verified
+[topup 03:56:43] browser 6: 5 new verified
+[topup 03:56:43] browser 7: 3 new verified
+[topup 03:56:43] browser 8: 3 new verified
+[topup 03:56:43] browser 9: 4 new verified
+[topup 03:56:43] browser 10: 3 new verified
+[topup 03:56:43] browser 11: 4 new verified
+[topup 03:56:43] browser 12: 3 new verified
+[topup 03:56:43] browser 13: 1 new verified
+[topup 03:56:43] browser 14: 4 new verified
+[topup 03:56:43] browser 15: 3 new verified
+[topup 03:56:43] browser 16: 3 new verified
+[topup 03:56:43] browser 17: 4 new verified
+[topup 03:56:43] browser 18: 3 new verified
+[topup 03:56:43] browser 19: 3 new verified
+[topup 03:56:43] browser 20: 3 new verified
+[topup 03:56:43] merged: 121 -> 159 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\chatgpt_checkpoint_batch_all.json
+[run] after verifying found candidates: 159 verified
+[run] discovery finished with 159 companies; starting the pipeline
+[run] pipeline exit 1
+=== 2026-10-12 04:43:04 end: Global Negative Pressure Wound Therapy (NPWT) Devices Market exit=1
+=== 2026-10-12 04:43:04 start: Global Advanced Wound Care Market
+[run] first discovery (one browser)
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Advanced Wound Care Market
+  target : 40
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper ΓåÆ DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=40 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=4426c89a ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_advanced_wound_care_market_global\global_advanced_wound_care_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=20
+  [chatgpt] checkpoint ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_advanced_wound_care_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      ┬╖ 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      ┬╖ 0c-market-analysis: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because the primary buyers are hospitals, clinics, wound care centres, and healthcare providers purchasing medical-grade dressings and devices for clinical use.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Technology Provider, Distributor
+  [chatgpt] Step 0c/6: why this player type: Manufacturer is the primary participant because the competitive landscape is defined by companies making and branding physical medical devices, advanced dressings, and biomaterials, whereas distributors act as sales channels and technology providers offer complementary software.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companiesΓÇª
+    ΓåÆ substep 1a: discovery rounds for Manufacturer (batch 10, target 40)
+      ┬╖ discover-round-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.1: +10 (total 10)
+      ┬╖ discover-round-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.2: +10 (total 20)
+      ┬╖ discover-round-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.3: +10 (total 30)
+      ┬╖ discover-round-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.4: +10 (total 40)
+    ΓåÆ substep 1a done: 40 companies in 4 rounds (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ΓëÑ target: 60)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (60 = 20 seeds + 40 recalled + 0 openai-web + 0 ddgs)ΓÇª
+    ΓåÆ substep 4a: verify 60 candidates as Manufacturer in 5 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    ΓåÆ substep 4a.1: verify chunk 1 (12 companies, 0/60 done)ΓÇª
+      ┬╖ verify-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.1: running kept=12 rejected=0
+    ΓåÆ substep 4a.2: verify chunk 2 (12 companies, 12/60 done)ΓÇª
+      ┬╖ verify-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.2: running kept=24 rejected=0
+    ΓåÆ substep 4a.3: verify chunk 3 (12 companies, 24/60 done)ΓÇª
+      ┬╖ verify-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.3: running kept=33 rejected=3
+    ΓåÆ substep 4a.4: verify chunk 4 (12 companies, 36/60 done)ΓÇª
+      ┬╖ verify-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.4: running kept=45 rejected=3
+    ΓåÆ substep 4a.5: verify chunk 5 (12 companies, 48/60 done)ΓÇª
+      ┬╖ verify-5: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-5: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.5: running kept=57 rejected=3
+    ΓåÆ substep 4a done: kept=57 rejected=3 (required=Manufacturer)
+    ΓåÆ substep 4b: write rejected list (3)
+    ΓåÆ substep 4c: market gate kept 57/57 (dropped 0)
+  [web_expand] merged +51; total unique=51 (target=80)
+  [chatgpt] fill ALL table rows this pass: 51 (merged=51, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) ΓÇö 51 rows already carry their report columns
+    ΓåÆ substep 5c: merged filled rows into list (51 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) ΓÇö keeping 51 rows verified in Step 4
+    ΓåÆ substep 6p: channel purity off
+  [chatgpt] Step 6c: SKIP ΓÇö scoring is done by the quadrant pipeline
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)ΓÇª
+    ΓåÆ [found-in] blank '3M / Solventum' (wiki_miss)
+    ΓåÆ [found-in] blank 'Advanced Biotech Products (P) Ltd' (wiki_miss)
+    ΓåÆ [found-in] blank 'Airox Technologies Limited' (wiki_miss)
+    ΓåÆ [found-in] blank 'ANZIAM BIO PRIVATE LIMITED' (wiki_miss)
+    ΓåÆ [found-in] blank 'AQMEN MEDTECH' (wiki_miss)
+    ΓåÆ [found-in] blank 'Axio Biosolutions Pvt Ltd.' (wiki_miss)
+    ΓåÆ [found-in] blank 'Cardinal Health' (wiki_miss)
+    ΓåÆ [found-in] city/country filled=1 kept=32 blank=7
+  [chatgpt] Company Details mapping skipped: TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+
+=== OpenAI cost (this run) ===
+  run_id : 4426c89a
+  market : Global Advanced Wound Care Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+    ΓåÆ substep 7: write Excel (40 rows) ΓåÆ global_advanced_wound_care_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) ΓåÆ 40 rows ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_advanced_wound_care_market_global\global_advanced_wound_care_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_advanced_wound_care_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Advanced Wound Care Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 40,
+  "existing_before": 0,
+  "seeds_loaded": 20,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 40,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 57,
+  "rejected_mid": 3,
+  "chatgpt_filled": 51,
+  "rejected_final": 0,
+  "total_after": 40,
+  "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_advanced_wound_care_market_global\\global_advanced_wound_care_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "4426c89a",
+    "market": "Global Advanced Wound Care Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-10-12T11:43:09.781359+00:00",
+    "ended_at": "2026-10-12T11:47:26.945695+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 40,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 20,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": false,
+      "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_advanced_wound_care_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 40,
+      "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_advanced_wound_care_market_global\\global_advanced_wound_care_market_global_FINAL.xlsx",
+      "rejected_mid": 3,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {},
+  "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_advanced_wound_care_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": false
+}
+
+  rows: 40  (target 40)
+[run] first discovery: 46 verified
+[topup 04:47:27] start: 46 verified companies; 20 browsers, target 200
+[topup 04:47:28] verify only: 0 unchecked companies over 20 browsers
+[run] after verifying found candidates: 46 verified
+[run] country pass 1: 46 verified
+[topup 04:47:28] start: 46 verified companies; 20 browsers, target 59 -- country by country
+[topup 04:47:28] browser 1: start on slot 41
+[topup 04:47:32] browser 2: start on slot 42
+[topup 04:47:36] browser 3: start on slot 43
+[topup 04:47:40] browser 4: start on slot 44
+[topup 04:47:44] browser 5: start on slot 45
+[topup 04:47:48] browser 6: start on slot 46
+[topup 04:47:52] browser 7: start on slot 47
+[topup 04:47:56] browser 8: start on slot 48
+[topup 04:48:00] browser 9: start on slot 49
+[topup 04:48:04] browser 10: start on slot 50
+[topup 04:48:08] browser 11: start on slot 51
+[topup 04:48:13] browser 12: start on slot 52
+[topup 04:48:17] browser 13: start on slot 53
+[topup 04:48:21] browser 14: start on slot 54
+[topup 04:48:25] browser 15: start on slot 55
+[topup 04:48:29] browser 16: start on slot 56
+[topup 04:48:33] browser 17: start on slot 57
+[topup 04:48:37] browser 18: start on slot 58
+[topup 04:48:41] browser 19: start on slot 59
+[topup 04:48:45] browser 20: start on slot 60
+[topup 04:58:49] browser 1: 29 new verified
+[topup 04:58:49] browser 2: 16 new verified
+[topup 04:58:49] browser 3: 12 new verified
+[topup 04:58:49] browser 4: 10 new verified
+[topup 04:58:49] browser 5: 10 new verified
+[topup 04:58:49] browser 6: 12 new verified
+[topup 04:58:49] browser 7: 25 new verified
+[topup 04:58:49] browser 8: 22 new verified
+[topup 04:58:49] browser 9: 7 new verified
+[topup 04:58:49] browser 10: 8 new verified
+[topup 04:58:49] browser 11: 14 new verified
+[topup 04:58:49] browser 12: 16 new verified
+[topup 04:58:49] browser 13: 14 new verified
+[topup 04:58:49] browser 14: 13 new verified
+[topup 04:58:49] browser 15: 15 new verified
+[topup 04:58:49] browser 16: 17 new verified
+[topup 04:58:49] browser 17: 20 new verified
+[topup 04:58:49] browser 18: 17 new verified
+[topup 04:58:49] browser 19: 23 new verified
+[topup 04:58:49] browser 20: 25 new verified
+[topup 04:58:49] merged: 46 -> 256 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_advanced_wound_care_market_global\chatgpt_checkpoint_batch_all.json
+[run] country pass 1: +210 -> 256 verified
+[run] discovery finished with 256 companies; starting the pipeline
+=== 2026-10-12 05:29:03 start: Global Negative Pressure Wound Therapy (NPWT) Devices Market
+[run] discovery finished with 159 companies; starting the pipeline
+[run] pipeline exit 1
+=== 2026-10-12 05:50:57 end: Global Negative Pressure Wound Therapy (NPWT) Devices Market exit=1
+=== 2026-10-12 05:50:57 start: Global Advanced Wound Care Market
+[run] discovery finished with 256 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-12 06:13:33 end: Global Advanced Wound Care Market exit=0
+=== 2026-10-12 06:13:33 start: Global Medical Films Market
+[run] first discovery (one browser)
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Medical Films Market
+  target : 40
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper ΓåÆ DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=40 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=30a5478a ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\global_medical_films_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=15
+  [chatgpt] checkpoint ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      ┬╖ 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      ┬╖ 0c-market-analysis: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: The primary buyers are medical device manufacturers, pharmaceutical companies, hospitals, and healthcare packaging converters who purchase these technical materials for packaging and clinical applications.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer, Converter
+  [chatgpt] Step 0c/6: why this player type: Manufacturer is the chosen role because the competitive landscape is defined by companies producing and commercializing their own physical, medical-grade film materials rather than providing software or pure services.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companiesΓÇª
+    ΓåÆ substep 1a: discovery rounds for Manufacturer (batch 10, target 40)
+      ┬╖ discover-round-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.1: +10 (total 10)
+      ┬╖ discover-round-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.2: +10 (total 20)
+      ┬╖ discover-round-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.3: +10 (total 30)
+      ┬╖ discover-round-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.4: +10 (total 40)
+    ΓåÆ substep 1a done: 40 companies in 4 rounds (target_reached)
+  [chatgpt] Step 2/6: skip OpenAI discover (seeds+recall already ΓëÑ target: 55)
+  [chatgpt] Step 3/6: skip ddgs harvest (use --ddgs-harvest to enable; OpenAI discover is primary)
+  [chatgpt] Step 4/6: ChatGPT verify market-related (55 = 15 seeds + 40 recalled + 0 openai-web + 0 ddgs)ΓÇª
+    ΓåÆ substep 4a: verify 55 candidates as Manufacturer in 5 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    ΓåÆ substep 4a.1: verify chunk 1 (12 companies, 0/55 done)ΓÇª
+      ┬╖ verify-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.1: running kept=11 rejected=1
+    ΓåÆ substep 4a.2: verify chunk 2 (12 companies, 12/55 done)ΓÇª
+      ┬╖ verify-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.2: running kept=14 rejected=10
+    ΓåÆ substep 4a.3: verify chunk 3 (12 companies, 24/55 done)ΓÇª
+      ┬╖ verify-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.3: running kept=26 rejected=10
+    ΓåÆ substep 4a.4: verify chunk 4 (12 companies, 36/55 done)ΓÇª
+      ┬╖ verify-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.4: running kept=31 rejected=17
+    ΓåÆ substep 4a.5: verify chunk 5 (7 companies, 48/55 done)ΓÇª
+      ┬╖ verify-5: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ verify-5: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 4a.5: running kept=33 rejected=22
+    ΓåÆ substep 4a done: kept=33 rejected=22 (required=Manufacturer)
+    ΓåÆ substep 4b: write rejected list (22)
+    ΓåÆ substep 4c: market gate kept 33/33 (dropped 0)
+  [web_expand] merged +32; total unique=32 (target=80)
+  [chatgpt] fill ALL table rows this pass: 32 (merged=32, cap=1000)
+  [chatgpt] Step 5/6: SKIP (column fill off) ΓÇö 32 rows already carry their report columns
+    ΓåÆ substep 5c: merged filled rows into list (32 total)
+  [chatgpt] Step 6/6: SKIP (final verify off) ΓÇö keeping 32 rows verified in Step 4
+    ΓåÆ substep 6p: channel purity off
+  [chatgpt] Step 6c: SKIP ΓÇö scoring is done by the quadrant pipeline
+  [chatgpt] Step 6d: Company Details columns (Brand | Company | Quadrant | X | Y | Overall | Found in)ΓÇª
+    ΓåÆ [found-in] blank 'COIM Group' (wiki_no_hq:COL Group)
+    ΓåÆ [found-in] blank 'HEXPOL TPE' (wiki_miss)
+    ΓåÆ [found-in] blank 'ICP DAS CO., LTD.' (wiki_no_hq:Indas (community development block))
+    ΓåÆ [found-in] blank 'KRAIBURG TPE' (wiki_miss)
+    ΓåÆ [found-in] blank 'Kuraray Co., Ltd.' (wiki_miss)
+    ΓåÆ [found-in] blank 'Teknor Apex Company' (wiki_miss)
+    ΓåÆ [found-in] blank 'The Lubrizol Corporation' (wiki_miss)
+    ΓåÆ [found-in] blank 'Wanhua Chemical Group Co., Ltd.' (wiki_miss)
+    ΓåÆ [found-in] city/country filled=5 kept=19 blank=8
+  [chatgpt] Company Details mapping skipped: TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+
+=== OpenAI cost (this run) ===
+  run_id : 30a5478a
+  market : Global Medical Films Market
+  model  : deepseek-v4-flash
+  calls  : 0
+  tokens : in=0 out=0 total=0
+  est $  : $0.0000
+  log    : C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+    ΓåÆ substep 7: write Excel (32 rows) ΓåÆ global_medical_films_market_global_FINAL.xlsx
+  [chatgpt] DONE (OpenAI SDK only) ΓåÆ 32 rows ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\global_medical_films_market_global_FINAL.xlsx
+  [chatgpt] checkpoint marked done ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\chatgpt_checkpoint_batch_all.json
+{
+  "backend": "chatgpt",
+  "uses_run_query": false,
+  "model": "deepseek-v4-flash",
+  "query": "Global Medical Films Market",
+  "country": "global",
+  "batch": "all",
+  "family": "general",
+  "target": 40,
+  "existing_before": 0,
+  "seeds_loaded": 15,
+  "seeds_only": false,
+  "web_fill": true,
+  "fill_backend": "search",
+  "openai_discover": true,
+  "ddgs_harvest": false,
+  "chatgpt_recalled": 40,
+  "openai_discovered": 0,
+  "harvested_raw": 0,
+  "chatgpt_extracted": 0,
+  "verified_mid": 33,
+  "rejected_mid": 22,
+  "chatgpt_filled": 32,
+  "rejected_final": 0,
+  "total_after": 32,
+  "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_medical_films_market_global\\global_medical_films_market_global_FINAL.xlsx",
+  "mode": "openai_sdk_full_find_verify_fill",
+  "openai_cost": {
+    "run_id": "30a5478a",
+    "market": "Global Medical Films Market",
+    "model": "deepseek-v4-flash",
+    "started_at": "2026-10-12T13:13:38.319834+00:00",
+    "ended_at": "2026-10-12T13:18:29.003697+00:00",
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "meta": {
+      "family": "general",
+      "batch": "all",
+      "target": 40,
+      "max_queries": 300,
+      "max_fill": 1000,
+      "seeds": 15,
+      "seeds_only": false,
+      "openai_discover": true,
+      "ddgs_harvest": false,
+      "web_fill": true,
+      "resume": false,
+      "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_medical_films_market_global\\chatgpt_checkpoint_batch_all.json",
+      "phase": "started",
+      "companies": 32,
+      "xlsx": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_medical_films_market_global\\global_medical_films_market_global_FINAL.xlsx",
+      "rejected_mid": 22,
+      "rejected_final": 0,
+      "status": "ok"
+    }
+  },
+  "xy_scoring": {},
+  "checkpoint": "C:\\Users\\aman.kumar\\Coherent-Quadrant\\output\\chatgpt_expand\\global_medical_films_market_global\\chatgpt_checkpoint_batch_all.json",
+  "resumed": false
+}
+
+  rows: 32  (target 40)
+[run] first discovery: 32 verified
+[topup 06:18:30] start: 32 verified companies; 20 browsers, target 200
+[topup 06:18:30] verify only: 0 unchecked companies over 20 browsers
+[run] after verifying found candidates: 32 verified
+[run] country pass 1: 32 verified
+[topup 06:18:31] start: 32 verified companies; 20 browsers, target 45 -- country by country
+[topup 06:18:31] browser 1: start on slot 41
+[topup 06:18:35] browser 2: start on slot 42
+[topup 06:18:39] browser 3: start on slot 43
+[topup 06:18:43] browser 4: start on slot 44
+[topup 06:18:47] browser 5: start on slot 45
+[topup 06:18:51] browser 6: start on slot 46
+[topup 06:18:55] browser 7: start on slot 47
+[topup 06:18:59] browser 8: start on slot 48
+[topup 06:19:03] browser 9: start on slot 49
+[topup 06:19:07] browser 10: start on slot 50
+[topup 06:19:11] browser 11: start on slot 51
+[topup 06:19:15] browser 12: start on slot 52
+[topup 06:19:19] browser 13: start on slot 53
+[topup 06:19:23] browser 14: start on slot 54
+[topup 06:19:27] browser 15: start on slot 55
+[topup 06:19:31] browser 16: start on slot 56
+[topup 06:19:35] browser 17: start on slot 57
+[topup 06:19:39] browser 18: start on slot 58
+[topup 06:19:43] browser 19: start on slot 59
+[topup 06:19:47] browser 20: start on slot 60
+[topup 06:38:52] browser 1: 2 new verified
+[topup 06:38:52] browser 2: 11 new verified
+[topup 06:38:52] browser 3: 4 new verified
+[topup 06:38:52] browser 4: 5 new verified
+[topup 06:38:52] browser 5: 2 new verified
+[topup 06:38:52] browser 6: 13 new verified
+[topup 06:38:52] browser 7: 0 new verified
+[topup 06:38:52] browser 8: 0 new verified
+[topup 06:38:52] browser 9: 12 new verified
+[topup 06:38:52] browser 10: 6 new verified
+[topup 06:38:52] browser 11: 8 new verified
+[topup 06:38:52] browser 12: 15 new verified
+[topup 06:38:52] browser 13: 4 new verified
+[topup 06:38:52] browser 14: 1 new verified
+[topup 06:38:52] browser 15: 1 new verified
+[topup 06:38:52] browser 16: 2 new verified
+[topup 06:38:52] browser 17: 3 new verified
+[topup 06:38:52] browser 18: 9 new verified
+[topup 06:38:52] browser 19: 7 new verified
+[topup 06:38:52] browser 20: 15 new verified
+[topup 06:38:52] merged: 32 -> 134 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\chatgpt_checkpoint_batch_all.json
+[run] country pass 1: +102 -> 134 verified
+[run] country pass 2: 134 verified
+[topup 06:38:52] start: 134 verified companies; 20 browsers, target 147 -- country by country
+[topup 06:38:52] browser 1: start on slot 41
+[topup 06:38:56] browser 2: start on slot 42
+[topup 06:39:00] browser 3: start on slot 43
+[topup 06:39:04] browser 4: start on slot 44
+[topup 06:39:08] browser 5: start on slot 45
+[topup 06:39:12] browser 6: start on slot 46
+[topup 06:39:16] browser 7: start on slot 47
+[topup 06:39:21] browser 8: start on slot 48
+[topup 06:39:25] browser 9: start on slot 49
+[topup 06:39:29] browser 10: start on slot 50
+[topup 06:39:33] browser 11: start on slot 51
+[topup 06:39:37] browser 12: start on slot 52
+[topup 06:39:41] browser 13: start on slot 53
+[topup 06:39:45] browser 14: start on slot 54
+[topup 06:39:49] browser 15: start on slot 55
+[topup 06:39:53] browser 16: start on slot 56
+[topup 06:39:57] browser 17: start on slot 57
+[topup 06:40:01] browser 18: start on slot 58
+[topup 06:40:05] browser 19: start on slot 59
+[topup 06:40:09] browser 20: start on slot 60
+=== 2026-10-12 06:48:14 start: Global Medical Films Market --discovery-only
+[topup 06:48:16] start: 134 verified companies; 20 browsers, target 200
+[topup 06:48:17] verify only: 358 unchecked companies over 20 browsers
+[topup 06:48:17] browser 1: start on slot 41
+[topup 06:48:21] browser 2: start on slot 42
+[topup 06:48:25] browser 3: start on slot 43
+[topup 06:48:29] browser 4: start on slot 44
+[topup 06:48:33] browser 5: start on slot 45
+[topup 06:48:37] browser 6: start on slot 46
+[topup 06:48:41] browser 7: start on slot 47
+[topup 06:48:45] browser 8: start on slot 48
+[topup 06:48:49] browser 9: start on slot 49
+[topup 06:48:53] browser 10: start on slot 50
+[topup 06:48:57] browser 11: start on slot 51
+[topup 06:49:02] browser 12: start on slot 52
+[topup 06:49:06] browser 13: start on slot 53
+[topup 06:49:10] browser 14: start on slot 54
+[topup 06:49:15] browser 15: start on slot 55
+[topup 06:49:19] browser 16: start on slot 56
+[topup 06:49:23] browser 17: start on slot 57
+[topup 06:49:28] browser 18: start on slot 58
+[topup 06:49:32] browser 19: start on slot 59
+[topup 06:49:36] browser 20: start on slot 60
+[topup 07:00:40] browser 1: 5 new verified
+[topup 07:00:40] browser 2: 1 new verified
+[topup 07:00:40] browser 3: 0 new verified
+[topup 07:00:40] browser 4: 2 new verified
+[topup 07:00:40] browser 5: 4 new verified
+[topup 07:00:40] browser 6: 3 new verified
+[topup 07:00:40] browser 7: 8 new verified
+[topup 07:00:40] browser 8: 0 new verified
+[topup 07:00:40] browser 9: 2 new verified
+[topup 07:00:40] browser 10: 3 new verified
+[topup 07:00:40] browser 11: 3 new verified
+[topup 07:00:40] browser 12: 4 new verified
+[topup 07:00:40] browser 13: 1 new verified
+[topup 07:00:40] browser 14: 2 new verified
+[topup 07:00:40] browser 15: 4 new verified
+[topup 07:00:40] browser 16: 0 new verified
+[topup 07:00:40] browser 17: 6 new verified
+[topup 07:00:40] browser 18: 8 new verified
+[topup 07:00:40] browser 19: 7 new verified
+[topup 07:00:40] browser 20: 4 new verified
+[topup 07:00:40] merged: 134 -> 195 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\chatgpt_checkpoint_batch_all.json
+[run] after verifying found candidates: 195 verified
+[run] discovery finished with 195 companies; --discovery-only: pipeline not started
+=== 2026-10-12 07:00:41 end: Global Medical Films Market --discovery-only exit=0
+=== 2026-10-12 07:00:41 start: Global Negative Pressure Wound Therapy (NPWT) Devices Market 
+[run] discovery finished with 159 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-12 07:01:30 end: Global Negative Pressure Wound Therapy (NPWT) Devices Market  exit=0
+=== 2026-10-12 07:01:30 start: Global Advanced Wound Care Market 
+[run] discovery finished with 256 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-12 07:07:05 end: Global Advanced Wound Care Market  exit=0
+=== 2026-10-12 07:07:05 start: Global Medical Films Market 
+[run] discovery finished with 195 companies; starting the pipeline
+=== 2026-10-12 07:32:38 start: Global Medical Films Market
+[run] discovery finished with 195 companies; starting the pipeline
+=== 2026-10-12 07:36:25 start: Global Medical Films Market
+[topup 07:36:27] start: 47 verified companies; 20 browsers, target 200
+[topup 07:36:27] verify only: 54 unchecked companies over 20 browsers
+[topup 07:36:27] browser 1: start on slot 41
+[topup 07:36:31] browser 2: start on slot 42
+[topup 07:36:35] browser 3: start on slot 43
+[topup 07:36:39] browser 4: start on slot 44
+[topup 07:36:43] browser 5: start on slot 45
+[topup 07:36:47] browser 6: start on slot 46
+[topup 07:36:51] browser 7: start on slot 47
+[topup 07:36:55] browser 8: start on slot 48
+[topup 07:37:00] browser 9: start on slot 49
+[topup 07:37:04] browser 10: start on slot 50
+[topup 07:37:08] browser 11: start on slot 51
+[topup 07:37:12] browser 12: start on slot 52
+[topup 07:37:16] browser 13: start on slot 53
+[topup 07:37:20] browser 14: start on slot 54
+[topup 07:37:24] browser 15: start on slot 55
+[topup 07:37:28] browser 16: start on slot 56
+[topup 07:37:32] browser 17: start on slot 57
+[topup 07:37:36] browser 18: start on slot 58
+[topup 07:37:40] browser 19: start on slot 59
+[topup 07:37:45] browser 20: start on slot 60
+[topup 07:40:19] browser 1: 0 new verified
+[topup 07:40:19] browser 2: 0 new verified
+[topup 07:40:19] browser 3: 0 new verified
+[topup 07:40:19] browser 4: 0 new verified
+[topup 07:40:19] browser 5: 0 new verified
+[topup 07:40:19] browser 6: 0 new verified
+[topup 07:40:19] browser 7: 0 new verified
+[topup 07:40:19] browser 8: 0 new verified
+[topup 07:40:19] browser 9: 0 new verified
+[topup 07:40:19] browser 10: 0 new verified
+[topup 07:40:19] browser 11: 0 new verified
+[topup 07:40:19] browser 12: 0 new verified
+[topup 07:40:19] browser 13: 0 new verified
+[topup 07:40:19] browser 14: 0 new verified
+[topup 07:40:19] browser 15: 0 new verified
+[topup 07:40:19] browser 16: 0 new verified
+[topup 07:40:19] browser 17: 0 new verified
+[topup 07:40:19] browser 18: 0 new verified
+[topup 07:40:19] browser 19: 0 new verified
+[topup 07:40:19] browser 20: 0 new verified
+[topup 07:40:19] merged: 47 -> 47 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\chatgpt_checkpoint_batch_all.json
+[run] after verifying found candidates: 47 verified
+[run] country pass 1: 47 verified
+[topup 07:40:20] start: 47 verified companies; 20 browsers, target 60 -- country by country
+[topup 07:40:20] browser 1: start on slot 41
+[topup 07:40:24] browser 2: start on slot 42
+[topup 07:40:28] browser 3: start on slot 43
+[topup 07:40:33] browser 4: start on slot 44
+[topup 07:40:37] browser 5: start on slot 45
+[topup 07:40:41] browser 6: start on slot 46
+[topup 07:40:45] browser 7: start on slot 47
+[topup 07:40:49] browser 8: start on slot 48
+[topup 07:40:53] browser 9: start on slot 49
+[topup 07:40:57] browser 10: start on slot 50
+[topup 07:41:01] browser 11: start on slot 51
+[topup 07:41:05] browser 12: start on slot 52
+[topup 07:41:09] browser 13: start on slot 53
+[topup 07:41:13] browser 14: start on slot 54
+[topup 07:41:17] browser 15: start on slot 55
+=== 2026-10-12 09:35:54 start: Global Medical Films Market
+[run] country pass 1: 47 verified
+[topup 09:35:56] start: 47 verified companies; 20 browsers, target 60 -- country by country
+[topup 09:35:56] browser 1: start on slot 41
+[topup 09:36:00] browser 2: start on slot 42
+[topup 09:36:04] browser 3: start on slot 43
+[topup 09:36:08] browser 4: start on slot 44
+[topup 09:36:12] browser 5: start on slot 45
+[topup 09:36:16] browser 6: start on slot 46
+[topup 09:36:20] browser 7: start on slot 47
+[topup 09:36:24] browser 8: start on slot 48
+[topup 09:36:28] browser 9: start on slot 49
+[topup 09:36:32] browser 10: start on slot 50
+[topup 09:36:36] browser 11: start on slot 51
+[topup 09:36:40] browser 12: start on slot 52
+[topup 09:36:44] browser 13: start on slot 53
+[topup 09:36:48] browser 14: start on slot 54
+[topup 09:36:53] browser 15: start on slot 55
+[topup 09:36:57] browser 16: start on slot 56
+[topup 09:37:02] browser 17: start on slot 57
+[topup 09:37:07] browser 18: start on slot 58
+[topup 09:37:12] browser 19: start on slot 59
+[topup 09:37:16] browser 20: start on slot 60
+=== 2026-10-12 09:52:48 start: polymer search (helper)
+[topup 09:52:49] start: 47 verified companies; 20 browsers, target 200
+[topup 09:52:50] verify only: 0 unchecked companies over 20 browsers
+[run] after verifying found candidates: 47 verified
+[run] country pass 1: 47 verified
+[topup 09:52:51] start: 47 verified companies; 20 browsers, target 60 -- country by country
+[topup 09:52:51] browser 1: start on slot 41
+[topup 09:52:55] browser 2: start on slot 42
+[topup 09:52:59] browser 3: start on slot 43
+[topup 09:53:03] browser 4: start on slot 44
+[topup 09:53:07] browser 5: start on slot 45
+[topup 09:53:11] browser 6: start on slot 46
+[topup 09:53:15] browser 7: start on slot 47
+[topup 09:53:19] browser 8: start on slot 48
+[topup 09:53:23] browser 9: start on slot 49
+[topup 09:53:27] browser 10: start on slot 50
+[topup 09:53:31] browser 11: start on slot 51
+[topup 09:53:35] browser 12: start on slot 52
+[topup 09:53:39] browser 13: start on slot 53
+[topup 09:53:43] browser 14: start on slot 54
+[topup 09:53:47] browser 15: start on slot 55
+[topup 09:53:51] browser 16: start on slot 56
+[topup 09:53:55] browser 17: start on slot 57
+[topup 09:54:00] browser 18: start on slot 58
+[topup 09:54:04] browser 19: start on slot 59
+[topup 09:54:10] browser 20: start on slot 60
+[topup 10:34:23] browser 1: 0 new verified
+[topup 10:34:23] browser 2: 61 new verified
+[topup 10:34:23] browser 3: 46 new verified
+[topup 10:34:23] browser 4: 0 new verified
+[topup 10:34:24] browser 5: 0 new verified
+[topup 10:34:24] browser 6: 0 new verified
+[topup 10:34:24] browser 7: 0 new verified
+[topup 10:34:24] browser 8: 0 new verified
+[topup 10:34:24] browser 9: 0 new verified
+[topup 10:34:24] browser 10: 0 new verified
+[topup 10:34:24] browser 11: 0 new verified
+[topup 10:34:24] browser 12: 62 new verified
+[topup 10:34:24] browser 13: 0 new verified
+[topup 10:34:24] browser 14: 0 new verified
+[topup 10:34:24] browser 15: 0 new verified
+[topup 10:34:24] browser 16: 0 new verified
+[topup 10:34:24] browser 17: 65 new verified
+[topup 10:34:24] browser 18: 39 new verified
+[topup 10:34:24] browser 19: 38 new verified
+[topup 10:34:25] browser 20: 60 new verified
+[topup 10:34:25] merged: 47 -> 315 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_grade_polymer_materials_market_global\chatgpt_checkpoint_batch_all.json
+[run] country pass 1: +268 -> 315 verified
+[run] discovery finished with 315 companies; --discovery-only: pipeline not started
+[merge] +371 verified from the polymer search -> 315 Medical Films companies
+=== 2026-10-12 10:34:31 start: Global Medical Films Market (pipeline)
+[run] discovery finished with 315 companies; starting the pipeline
+=== 2026-10-12 12:08:51 start: Global Medical Films Market
+[run] discovery finished with 315 companies; starting the pipeline
+=== 2026-10-12 12:18:06 start: Global Medical Films Market
+[run] discovery finished with 315 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-12 13:00:42 end: Global Medical Films Market exit=0
+=== 2026-10-12 13:03:09 start: Global Medical Films Market
+[run] discovery finished with 315 companies; starting the pipeline
+=== 2026-10-12 13:10:32 start: Global Medical Films Market
+[run] discovery finished with 315 companies; starting the pipeline
+[run] pipeline exit 0
+=== 2026-10-12 13:16:55 end: Global Medical Films Market exit=0

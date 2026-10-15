@@ -1,0 +1,193 @@
+[pipeline 22:06:22] market: PEM & AEM Electrolyzers for Green Hydrogen Projects Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india
+[pipeline 22:06:22]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 22:06:22]    market brief: player_type = Manufacturer
+[pipeline 22:06:22]    market brief: market_type = B2B
+[pipeline 22:06:22] 1b. 47 verified companies after dedupe, need 200 -> discover -> verify rounds
+[pipeline 22:06:25] 1b. now 47 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 22:06:25] 1. verified rows: 64
+[pipeline 22:06:31] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\axes_spec.json
+[pipeline 22:06:31] 3. 64 names -> 47 companies after dedupe (12 groups merged)
+[pipeline 22:06:31] 3b. operating-status check for 47 companies across 5 browser(s)
+[pipeline 22:08:26] ownership: 47 companies across 10 browser(s)
+[pipeline 22:08:47] ownership: 10/10 shard(s) still running
+[pipeline 22:09:48] ownership: 6/10 shard(s) still running
+[pipeline 22:10:48] ownership: 3/10 shard(s) still running
+[pipeline 22:11:48] ownership: 3/10 shard(s) still running
+[pipeline 22:12:48] ownership: 3/10 shard(s) still running
+[pipeline 22:13:48] ownership: 2/10 shard(s) still running
+[pipeline 22:14:03] scope: 47 companies across 10 browser(s)
+[pipeline 22:14:23] scope: 9/10 shard(s) still running
+[pipeline 22:15:04] hq: 47 companies across 10 browser(s)
+[pipeline 22:15:24] hq: 9/10 shard(s) still running
+[pipeline 22:16:24] hq: 4/10 shard(s) still running
+[pipeline 22:17:24] hq: 2/10 shard(s) still running
+[pipeline 22:17:34] 3c. ownership 47 / identity 0 / scope 47 answers: 14 more left out ['Aryo Green Tech Private Limited', 'Eastern Electrolyser Limited', 'Eliteck Hydrogen Resources Private Limited', 'Eliteck Industries Pvt. Ltd.', 'Humble Hydrogen Pvt. LTD', 'Jakson Green Infinity Private Limited'], 0 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 22:17:34] 3d. HQ missing for 1 companies: 1 found in AI Mode ['Sentient Engines Pvt Ltd -> Nashik, India']
+[pipeline 22:17:34] 4. quick X/Y scorecard scoring needed for 33 companies (1 Product + 1 Business query each)
+[pipeline 22:17:34] overall: 33 companies across 10 browser(s)
+[pipeline 22:17:56] overall: 10/10 shard(s) still running
+[pipeline 22:18:58] overall: 10/10 shard(s) still running
+[pipeline 22:19:59] overall: 7/10 shard(s) still running
+[pipeline 22:20:59] overall: 1/10 shard(s) still running
+[pipeline 22:21:34]    Top 20 chosen 5 per quadrant from 33 quick-scored companies
+[pipeline 22:21:34]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\evidence_pool.json
+[pipeline 22:21:34] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 22:21:34] 5. evidence round 1: 20 companies with gaps
+[pipeline 22:21:34] evidence_r1: 20 companies across 10 browser(s)
+[pipeline 22:21:56] evidence_r1: 10/10 shard(s) still running
+[pipeline 22:22:56] evidence_r1: 4/10 shard(s) still running
+[pipeline 22:23:16] reasoning_r1: 20 companies across 10 browser(s)
+[pipeline 22:23:38] reasoning_r1: 10/10 shard(s) still running
+[pipeline 22:24:38] reasoning_r1: 10/10 shard(s) still running
+[pipeline 22:25:39] reasoning_r1: 10/10 shard(s) still running
+[pipeline 22:26:39] reasoning_r1: 10/10 shard(s) still running
+[pipeline 22:27:39] reasoning_r1: 10/10 shard(s) still running
+[pipeline 22:28:40] reasoning_r1: 10/10 shard(s) still running
+[pipeline 22:29:41] reasoning_r1: 10/10 shard(s) still running
+[pipeline 22:30:41] reasoning_r1: 2/10 shard(s) still running
+[pipeline 22:31:41] reasoning_r1: 1/10 shard(s) still running
+[pipeline 22:32:26] 5. evidence round 2: 20 companies with gaps
+[pipeline 22:32:26] reasoning_r2: 20 companies across 10 browser(s)
+[pipeline 22:32:47] reasoning_r2: 10/10 shard(s) still running
+[pipeline 22:33:48] reasoning_r2: 10/10 shard(s) still running
+[pipeline 22:34:48] reasoning_r2: 3/10 shard(s) still running
+[pipeline 22:35:48] reasoning_r2: 1/10 shard(s) still running
+[pipeline 22:36:33] 5. evidence round 3: 12 companies with gaps
+[pipeline 22:36:33] reasoning_r3: 12 companies across 10 browser(s)
+[pipeline 22:36:56] reasoning_r3: 10/10 shard(s) still running
+[pipeline 22:37:21]    WARNING: 3 companies still incomplete after 3 rounds, left out of the evidence set: ['Ohmium Operations Private Limited', 'Advait Greenergy Pvt. Ltd.', 'Gastek Engineering Pvt. Ltd.']
+[pipeline 22:37:21]    WARNING: only 33 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 22:37:21]    --keep 200: 17 chart/evidence + 16 long tail kept, 0 lower-scored dropped
+[pipeline 22:37:21]    17 companies with full evidence, 16 in the long tail
+[pipeline 22:37:21] 6. composite scores (5 per quadrant)
+[pipeline 22:37:22] 7. rewriting hedge wording / first person in evidence
+[pipeline 22:37:24] 7c. gaps: 170 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 22:41:12] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 145 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 22:41:13] 7b. supporting points: 44 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 22:41:13] 8. building HTML / JSON / CSV report
+[pipeline 22:41:15] 8. report page: interactive design (pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report.html); static copy pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report_classic.html
+[pipeline 22:41:15] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 22:45:11] 8a. fact-check: 17 of 17 chart companies checked; decided 0 exclude, 2 scope, 0 ownership, 0 hq, 8 corrections (analyst review wins where both touch the same text)
+[pipeline 22:45:11] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 22:45:12] market: PEM & AEM Electrolyzers for Green Hydrogen Projects Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india
+[pipeline 22:45:12]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 22:45:12]    market brief: player_type = Manufacturer
+[pipeline 22:45:12]    market brief: market_type = B2B
+[pipeline 22:45:12] 1b. 47 verified companies after dedupe, need 200 -> discover -> verify rounds
+[pipeline 22:45:14] 1b. now 47 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 22:45:14] 1. verified rows: 64
+[pipeline 22:45:14] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\axes_spec.json
+[pipeline 22:45:15] 3. 64 names -> 47 companies after dedupe (12 groups merged)
+[pipeline 22:45:15] 3b. 2 companies left out (not active or excluded by review): ['Avaada Electrolysers Private Limited', 'Hild Electric Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 22:45:15] hq: 1 companies across 1 browser(s)
+[pipeline 22:45:17] hq: 1/1 shard(s) still running
+[pipeline 22:45:27] 3c. ownership 47 / identity 0 / scope 47 answers: 14 more left out ['Aryo Green Tech Private Limited', 'Eastern Electrolyser Limited', 'Eliteck Hydrogen Resources Private Limited', 'Eliteck Industries Pvt. Ltd.', 'Humble Hydrogen Pvt. LTD', 'Jakson Green Infinity Private Limited'], 0 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 22:45:27] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 22:45:27]    Top 20 refilled after 3b: added ['Hydrogen Innovation Private Limited', 'Shakti Photon Solutions']
+[pipeline 22:45:27]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\evidence_pool.json
+[pipeline 22:45:27] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 22:45:27] 5. evidence round 1: 5 companies with gaps
+[pipeline 22:45:27] evidence_r1: 2 companies across 2 browser(s)
+[pipeline 22:45:31] evidence_r1: 2/2 shard(s) still running
+[pipeline 22:46:31] evidence_r1: 2/2 shard(s) still running
+[pipeline 22:47:31] evidence_r1: 2/2 shard(s) still running
+[pipeline 22:48:31] evidence_r1: 1/2 shard(s) still running
+[pipeline 22:49:11] reasoning_r1: 3 companies across 3 browser(s)
+[pipeline 22:49:17] reasoning_r1: 3/3 shard(s) still running
+[pipeline 22:49:32]    WARNING: only 31 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 22:49:32]    --keep 200: 20 chart/evidence + 11 long tail kept, 0 lower-scored dropped
+[pipeline 22:49:32]    20 companies with full evidence, 11 in the long tail
+[pipeline 22:49:32] 6. composite scores (5 per quadrant)
+[pipeline 22:49:33] 7. rewriting hedge wording / first person in evidence
+[pipeline 22:49:34] 7c. gaps: 78 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 22:51:24] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 67 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 22:51:25] 7b. supporting points: 11 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 22:51:25] 7b. analyst corrections: 8 text(s) changed from 8 correction(s)
+[pipeline 22:51:25] 8. building HTML / JSON / CSV report
+[pipeline 22:51:26] 8. report page: interactive design (pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report.html); static copy pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report_classic.html
+[pipeline 22:51:26] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 22:53:39] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 19 corrections (analyst review wins where both touch the same text)
+[pipeline 22:53:39] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 22:53:40] market: PEM & AEM Electrolyzers for Green Hydrogen Projects Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india
+[pipeline 22:53:40]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 22:53:40]    market brief: player_type = Manufacturer
+[pipeline 22:53:40]    market brief: market_type = B2B
+[pipeline 22:53:40] 1b. 47 verified companies after dedupe, need 200 -> discover -> verify rounds
+[pipeline 22:53:43] 1b. now 47 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 22:53:43] 1. verified rows: 64
+[pipeline 22:53:43] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\axes_spec.json
+[pipeline 22:53:44] 3. 64 names -> 47 companies after dedupe (12 groups merged)
+[pipeline 22:53:44] 3b. 3 companies left out (not active or excluded by review): ['Advait Greenergy Pvt. Ltd.', 'Avaada Electrolysers Private Limited', 'Hild Electric Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 22:53:44] 3c. ownership 47 / identity 0 / scope 47 answers: 14 more left out ['Aryo Green Tech Private Limited', 'Eastern Electrolyser Limited', 'Eliteck Hydrogen Resources Private Limited', 'Eliteck Industries Pvt. Ltd.', 'Humble Hydrogen Pvt. LTD', 'Jakson Green Infinity Private Limited'], 0 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 22:53:44] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 22:53:44]    Top 20 refilled after 3b: added ['Bharat Heavy Electricals Limited']
+[pipeline 22:53:44]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\evidence_pool.json
+[pipeline 22:53:44] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 22:53:44] 5. evidence round 1: 1 companies with gaps
+[pipeline 22:53:44] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 22:53:46] evidence_r1: 1/1 shard(s) still running
+[pipeline 22:54:46] evidence_r1: 1/1 shard(s) still running
+[pipeline 22:55:46] evidence_r1: 1/1 shard(s) still running
+[pipeline 22:56:36]    WARNING: only 30 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 22:56:36]    --keep 200: 20 chart/evidence + 10 long tail kept, 0 lower-scored dropped
+[pipeline 22:56:36]    20 companies with full evidence, 10 in the long tail
+[pipeline 22:56:36] 6. composite scores (5 per quadrant)
+[pipeline 22:56:37] 7. rewriting hedge wording / first person in evidence
+[pipeline 22:56:38] 7c. gaps: 15 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 22:57:26] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 14 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 22:57:26] 7b. analyst corrections: 11 text(s) changed from 19 correction(s)
+[pipeline 22:57:26] 8. building HTML / JSON / CSV report
+[pipeline 22:57:27] 8. report page: interactive design (pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report.html); static copy pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report_classic.html
+[pipeline 22:57:27] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 22:58:36] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 20 corrections (analyst review wins where both touch the same text)
+[pipeline 22:58:36] 8a. fact-check decisions changed -> re-running from saved work (pass 4)
+[pipeline 22:58:37] market: PEM & AEM Electrolyzers for Green Hydrogen Projects Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india
+[pipeline 22:58:37]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 22:58:37]    market brief: player_type = Manufacturer
+[pipeline 22:58:37]    market brief: market_type = B2B
+[pipeline 22:58:37] 1b. 47 verified companies after dedupe, need 200 -> discover -> verify rounds
+[pipeline 22:58:38] 1b. now 47 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 22:58:38] 1. verified rows: 64
+[pipeline 22:58:38] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\axes_spec.json
+[pipeline 22:58:38] 3. 64 names -> 47 companies after dedupe (12 groups merged)
+[pipeline 22:58:38] 3b. 3 companies left out (not active or excluded by review): ['Advait Greenergy Pvt. Ltd.', 'Avaada Electrolysers Private Limited', 'Hild Electric Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 22:58:38] 3c. ownership 47 / identity 0 / scope 47 answers: 14 more left out ['Aryo Green Tech Private Limited', 'Eastern Electrolyser Limited', 'Eliteck Hydrogen Resources Private Limited', 'Eliteck Industries Pvt. Ltd.', 'Humble Hydrogen Pvt. LTD', 'Jakson Green Infinity Private Limited'], 0 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 22:58:38] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 22:58:38]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\_pipeline\evidence_pool.json
+[pipeline 22:58:38] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 22:58:38]    WARNING: only 30 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 22:58:38]    --keep 200: 20 chart/evidence + 10 long tail kept, 0 lower-scored dropped
+[pipeline 22:58:38]    20 companies with full evidence, 10 in the long tail
+[pipeline 22:58:38] 6. composite scores (5 per quadrant)
+[pipeline 22:58:39] 7. rewriting hedge wording / first person in evidence
+[pipeline 22:58:40] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 22:58:40] 7b. analyst corrections: 1 text(s) changed from 20 correction(s)
+[pipeline 22:58:40] 8. building HTML / JSON / CSV report
+[pipeline 22:58:41] 8. report page: interactive design (pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report.html); static copy pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report_classic.html
+[pipeline 22:58:41] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 20 corrections (analyst review wins where both touch the same text)
+[pipeline 22:58:50] 8b. PDF report: pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report.pdf
+[pipeline 22:59:09] 8b. Word report: pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report.docx
+[pipeline 22:59:09] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 30 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 22:59:09] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india\pem_aem_electrolyzers_for_green_hydrogen_projects_market_india_report.html
+exit=0

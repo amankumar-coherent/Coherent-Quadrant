@@ -1,0 +1,1285 @@
+[pipeline 07:07:06] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 07:07:06]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 07:07:06]    market brief: player_type = Manufacturer
+[pipeline 07:07:06]    market brief: market_type = B2B
+[pipeline 07:07:06] 1. verified rows: 220
+[pipeline 07:07:07]    market brief: market_definition, core_scope, adjacent_segments, primary_participant, market_type applied to the market analysis
+[pipeline 07:07:13] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 07:07:13] 3. 202 names -> 195 companies after dedupe (7 groups merged)
+[pipeline 07:07:13] 3b. operating-status check for 195 companies across 20 browser(s)
+[pipeline 07:09:08] 3b. 8 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Argotec, LLC', 'Bloomer Plastics, Inc.', 'Flextrus AB', 'Great Wall Plastic Industries Berhad', "O'Sullivan Films, Inc.", 'Stellar Films Group', 'Terphane Ltda.'] -> _pipeline/excluded_companies.json
+[pipeline 07:09:08] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 07:09:08] ownership: 187 companies across 20 browser(s)
+[pipeline 07:09:49] ownership: 20/20 shard(s) still running
+[pipeline 07:10:49] ownership: 19/20 shard(s) still running
+[pipeline 07:11:49] ownership: 16/20 shard(s) still running
+[pipeline 07:12:49] ownership: 13/20 shard(s) still running
+[pipeline 07:13:49] ownership: 12/20 shard(s) still running
+[pipeline 07:14:49] ownership: 10/20 shard(s) still running
+[pipeline 07:15:49] ownership: 7/20 shard(s) still running
+[pipeline 07:16:49] ownership: 3/20 shard(s) still running
+[pipeline 07:17:49] ownership: 1/20 shard(s) still running
+[pipeline 07:18:19] identity: 3 companies across 3 browser(s)
+[pipeline 07:18:25] identity: 3/3 shard(s) still running
+[pipeline 07:18:35] scope: 187 companies across 20 browser(s)
+[pipeline 07:19:16] scope: 16/20 shard(s) still running
+[pipeline 07:20:16] scope: 13/20 shard(s) still running
+[pipeline 07:21:16] scope: 11/20 shard(s) still running
+[pipeline 07:22:16] scope: 9/20 shard(s) still running
+[pipeline 07:23:16] scope: 6/20 shard(s) still running
+[pipeline 07:24:16] scope: 3/20 shard(s) still running
+[pipeline 07:25:16] scope: 1/20 shard(s) still running
+[pipeline 07:25:41] 3c. ownership 159 / identity 3 / scope 187 answers: 6 more left out ['Fujimori Kogyo Co., Ltd.', 'SABIC Innovative Plastics', 'SWM International', 'Seacera Polyfilms Sdn Bhd', 'Sterifast', 'Surya Vinyl Pvt. Ltd.'], 17 owner labels, 151 adjacent-segment (not on the chart) ['3M Company', 'ACG Films & Foils', 'AVI Global Plast Pvt. Ltd.', 'Aicello Corporation', 'Alfapac AB', 'Alfatherm S.p.A.'] -> _pipeline/auto_review.json
+[pipeline 07:25:41] hq: 13 companies across 13 browser(s)
+[pipeline 07:26:07] hq: 8/13 shard(s) still running
+[pipeline 07:26:47] 3d. HQ missing for 13 companies: 13 found in AI Mode ['Arkema -> Puteaux, France', 'Avient Corporation -> Avon Lake, United States', 'BASF SE -> Ludwigshafen, Germany', 'COIM Group -> Offanengo, Italy', 'HEXPOL TPE -> Malmö, Sweden', 'Huntsman Corporation -> The Woodlands, United States']
+[pipeline 07:26:47] 4. quick X/Y scorecard scoring needed for 181 companies (1 Product + 1 Business query each)
+[pipeline 07:26:47] overall: 181 companies across 20 browser(s)
+[pipeline 07:27:27] overall: 20/20 shard(s) still running
+[pipeline 07:28:28] overall: 20/20 shard(s) still running
+[pipeline 07:29:28] overall: 20/20 shard(s) still running
+[pipeline 07:30:29] overall: 20/20 shard(s) still running
+[pipeline 07:31:29] overall: 20/20 shard(s) still running
+[pipeline 07:32:39] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 07:32:39]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 07:32:39]    market brief: player_type = Manufacturer
+[pipeline 07:32:39]    market brief: market_type = B2B
+[pipeline 07:32:39] 1. verified rows: 220
+[pipeline 07:32:40] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 07:32:40] 3. 202 names -> 195 companies after dedupe (7 groups merged)
+[pipeline 07:32:40] 3b. operating-status check for 1 companies across 1 browser(s)
+[pipeline 07:33:12] 3b. 159 companies left out (not active or excluded by review): ['3M Company', 'ACG Films & Foils', 'AVI Global Plast Pvt. Ltd.', 'Aicello Corporation', 'Alfapac AB', 'Alfatherm S.p.A.', 'Aluflexpack AG', 'American Polyfilm, Inc.'] -> _pipeline/excluded_companies.json
+[pipeline 07:33:12] ownership: 4 companies across 4 browser(s)
+[pipeline 07:33:20] ownership: 4/4 shard(s) still running
+[pipeline 07:33:30] 3c. ownership 163 / identity 3 / scope 187 answers: 5 more left out ['SABIC Innovative Plastics', 'SWM International', 'Seacera Polyfilms Sdn Bhd', 'Sterifast', 'Surya Vinyl Pvt. Ltd.'], 3 owner labels, 1 adjacent-segment (not on the chart) ['Fujimori Kogyo Co., Ltd.'] -> _pipeline/auto_review.json
+[pipeline 07:33:30] 4. quick X/Y scorecard scoring needed for 13 companies (1 Product + 1 Business query each)
+[pipeline 07:33:30] overall: 13 companies across 13 browser(s)
+[pipeline 07:33:56] overall: 13/13 shard(s) still running
+[pipeline 10:34:34] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 10:34:34]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 10:34:34]    market brief: player_type = Manufacturer
+[pipeline 10:34:34]    market brief: market_type = B2B
+[pipeline 10:34:34] 1. verified rows: 424
+[pipeline 10:34:37] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 10:34:37] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 10:34:37] 3b. operating-status check for 271 companies across 20 browser(s)
+[pipeline 10:43:50] 3b. 12 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bloomer Plastics, Inc.', 'Flextrus AB', 'Great Wall Plastic Industries Berhad', 'Kolon ENP Inc.', "O'Sullivan Films, Inc."] -> _pipeline/excluded_companies.json
+[pipeline 10:43:50] 3b. 4 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 10:43:50] ownership: 267 companies across 20 browser(s)
+[pipeline 10:44:35] ownership: 20/20 shard(s) still running
+[pipeline 10:45:36] ownership: 20/20 shard(s) still running
+[pipeline 10:46:55] ownership: 20/20 shard(s) still running
+[pipeline 10:47:55] ownership: 19/20 shard(s) still running
+[pipeline 10:48:55] ownership: 18/20 shard(s) still running
+[pipeline 10:49:55] ownership: 18/20 shard(s) still running
+[pipeline 10:50:55] ownership: 18/20 shard(s) still running
+[pipeline 10:51:55] ownership: 18/20 shard(s) still running
+[pipeline 10:52:55] ownership: 17/20 shard(s) still running
+[pipeline 10:53:55] ownership: 15/20 shard(s) still running
+[pipeline 10:54:56] ownership: 14/20 shard(s) still running
+[pipeline 10:55:56] ownership: 11/20 shard(s) still running
+[pipeline 10:56:56] ownership: 9/20 shard(s) still running
+[pipeline 10:57:56] ownership: 9/20 shard(s) still running
+[pipeline 10:58:56] ownership: 8/20 shard(s) still running
+[pipeline 10:59:56] ownership: 6/20 shard(s) still running
+[pipeline 11:00:56] ownership: 2/20 shard(s) still running
+[pipeline 11:01:46] identity: 9 companies across 9 browser(s)
+[pipeline 11:02:04] identity: 6/9 shard(s) still running
+[pipeline 11:02:54] scope: 267 companies across 20 browser(s)
+[pipeline 11:03:37] scope: 20/20 shard(s) still running
+[pipeline 11:04:37] scope: 20/20 shard(s) still running
+[pipeline 11:05:37] scope: 19/20 shard(s) still running
+[pipeline 11:06:37] scope: 18/20 shard(s) still running
+[pipeline 11:07:37] scope: 15/20 shard(s) still running
+[pipeline 11:08:38] scope: 13/20 shard(s) still running
+[pipeline 11:09:38] scope: 13/20 shard(s) still running
+[pipeline 11:10:38] scope: 12/20 shard(s) still running
+[pipeline 11:11:38] scope: 12/20 shard(s) still running
+[pipeline 11:12:38] scope: 9/20 shard(s) still running
+[pipeline 11:13:38] scope: 7/20 shard(s) still running
+[pipeline 11:14:38] scope: 5/20 shard(s) still running
+[pipeline 11:15:38] scope: 2/20 shard(s) still running
+[pipeline 11:15:59] 3c. ownership 349 / identity 12 / scope 404 answers: 191 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Alpek, S.A.B. de C.V.', 'Anjani Polymers Technologies', 'Apex Material Industrial Vietnam Company Limited'], 10 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:16:00] 4. quick X/Y scorecard scoring needed for 82 companies (1 Product + 1 Business query each)
+[pipeline 11:16:00] overall: 82 companies across 20 browser(s)
+[pipeline 11:16:49] overall: 20/20 shard(s) still running
+[pipeline 11:17:50] overall: 20/20 shard(s) still running
+[pipeline 11:18:50] overall: 20/20 shard(s) still running
+[pipeline 11:19:50] overall: 20/20 shard(s) still running
+[pipeline 11:20:50] overall: 18/20 shard(s) still running
+[pipeline 11:21:50] overall: 3/20 shard(s) still running
+[pipeline 11:22:50] overall: 3/20 shard(s) still running
+[pipeline 11:23:50] overall: 2/20 shard(s) still running
+[pipeline 11:24:50] overall: 1/20 shard(s) still running
+[pipeline 11:25:50] overall: 1/20 shard(s) still running
+[pipeline 11:26:50] overall: 1/20 shard(s) still running
+[pipeline 11:27:50] overall: 1/20 shard(s) still running
+[pipeline 11:28:50] overall: 1/20 shard(s) still running
+[pipeline 11:29:50] overall: 1/20 shard(s) still running
+[pipeline 11:30:50] overall: 1/20 shard(s) still running
+[pipeline 11:31:50] overall: 1/20 shard(s) still running
+[pipeline 11:32:50] overall: 1/20 shard(s) still running
+[pipeline 11:33:50] overall: 1/20 shard(s) still running
+[pipeline 11:34:50] overall: 1/20 shard(s) still running
+[pipeline 11:35:50] overall: 1/20 shard(s) still running
+[pipeline 11:36:50] overall: shard(s) [17] exited with an error -- see C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\logs
+[pipeline 11:36:50] 4a. owner groups: 1; left out (the weaker of each group) ['GEON Performance Solutions']
+[pipeline 11:36:50]    Top 20 chosen 5 per quadrant from 107 quick-scored companies
+[pipeline 11:36:50]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 11:36:50] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:36:50] 5. evidence round 1: 20 companies with gaps
+[pipeline 11:36:50] evidence_r1: 20 companies across 20 browser(s)
+[pipeline 11:37:31] evidence_r1: 20/20 shard(s) still running
+[pipeline 11:38:31] evidence_r1: 20/20 shard(s) still running
+[pipeline 11:39:32] evidence_r1: 20/20 shard(s) still running
+[pipeline 11:40:32] evidence_r1: 6/20 shard(s) still running
+[pipeline 11:41:07]    4 long-tail companies have no quick-score (a Step 4 query failed) -- retrying before filling --keep 150
+[pipeline 11:41:07] overall_retry: 4 companies across 4 browser(s)
+[pipeline 11:41:15] overall_retry: 4/4 shard(s) still running
+[pipeline 11:41:45]    WARNING: only 111 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 11:41:45]    --keep 150: 20 chart/evidence + 91 long tail kept, 0 lower-scored dropped
+[pipeline 11:41:45]    20 companies with full evidence, 91 in the long tail
+[pipeline 11:41:45] 6. composite scores (5 per quadrant)
+[pipeline 11:41:46] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:41:48] 7c. gaps: 200 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 11:45:26] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 186 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 11:45:26] 7b. supporting points: 13 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 11:45:26] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary)
+[pipeline 11:45:26] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A.
+[pipeline 11:45:26] 7b. owner of Foster Corporation: GEON Performance Solutions
+[pipeline 11:45:26] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners
+[pipeline 11:45:26] 7b. owner of LCY Chemical Corp.: KKR
+[pipeline 11:45:26] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation
+[pipeline 11:45:26] 7b. owner of Röhm GmbH: Advent International
+[pipeline 11:45:26] 7b. owner of SCHEU-DENTAL GmbH: Armira
+[pipeline 11:45:26] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd.
+[pipeline 11:45:26] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc.
+[pipeline 11:45:26] 8. building HTML / JSON / CSV report
+[pipeline 11:45:28] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 11:45:28] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 11:49:23] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 7 scope, 0 ownership, 1 hq, 24 corrections (analyst review wins where both touch the same text)
+[pipeline 11:49:23] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 11:49:24] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 11:49:24]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:49:24]    market brief: player_type = Manufacturer
+[pipeline 11:49:24]    market brief: market_type = B2B
+[pipeline 11:49:24] 1. verified rows: 424
+[pipeline 11:49:25] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 11:49:25] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 11:49:25] 3b. operating-status check for 1 companies across 1 browser(s)
+[pipeline 11:49:43] 3b. 15 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'Flextrus AB', 'Great Wall Plastic Industries Berhad'] -> _pipeline/excluded_companies.json
+[pipeline 11:49:43] ownership: 80 companies across 20 browser(s)
+[pipeline 11:50:31] ownership: 19/20 shard(s) still running
+[pipeline 11:51:31] ownership: 16/20 shard(s) still running
+[pipeline 11:52:31] ownership: 15/20 shard(s) still running
+[pipeline 11:53:32] ownership: 15/20 shard(s) still running
+[pipeline 11:54:32] ownership: 15/20 shard(s) still running
+[pipeline 11:55:32] ownership: 14/20 shard(s) still running
+[pipeline 11:56:33] ownership: 14/20 shard(s) still running
+[pipeline 11:57:33] ownership: 13/20 shard(s) still running
+[pipeline 11:58:33] ownership: 10/20 shard(s) still running
+[pipeline 11:59:33] ownership: 8/20 shard(s) still running
+[pipeline 12:00:33] ownership: 6/20 shard(s) still running
+[pipeline 12:01:33] ownership: 3/20 shard(s) still running
+[pipeline 12:02:33] identity: 1 companies across 1 browser(s)
+[pipeline 12:02:35] identity: 1/1 shard(s) still running
+[pipeline 12:03:01] scope: 47 companies across 20 browser(s)
+[pipeline 12:03:47] scope: 17/20 shard(s) still running
+[pipeline 12:04:48] scope: 13/20 shard(s) still running
+[pipeline 12:05:48] scope: 7/20 shard(s) still running
+[pipeline 12:06:48] scope: 2/20 shard(s) still running
+[pipeline 12:07:43] 3c. ownership 425 / identity 13 / scope 451 answers: 235 more left out ['3DMaterials Co., Ltd.', 'ACTEGA GmbH', 'AKRO-PLASTIC GmbH', 'AM Masterbatch Pvt. Ltd.', 'Alloy Polymers India Pvt. Ltd.', 'Alpek, S.A.B. de C.V.'], 6 owner labels, 3 adjacent-segment (not on the chart) ['Huntsman Corporation', 'Mitsubishi Chemical Corporation', 'SEKISUI CHEMICAL CO., LTD.'] -> _pipeline/auto_review.json
+[pipeline 12:07:43] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:07:43] 4a. owner groups: 1; left out (the weaker of each group) ['GEON Performance Solutions']
+[pipeline 12:07:43]    adjacent-segment companies taken off the chart: ['Mitsubishi Chemical Corporation', 'Huntsman Corporation', 'SEKISUI CHEMICAL CO., LTD.']
+[pipeline 12:07:43]    Top 20 refilled after 3b: added ['MELITEK A/S', 'Teknor Apex Company', 'TOPAS Advanced Polymers GmbH', 'Avient Corporation', 'Phon Tech Industrial Company', 'Japan Miractran Co., Ltd.', 'Zeon Corporation', 'Alfavinil S.A.', 'DIC Corporation']
+[pipeline 12:07:43]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:07:43] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:07:43] 5. evidence round 1: 9 companies with gaps
+[pipeline 12:07:43] evidence_r1: 9 companies across 9 browser(s)
+[pipeline 12:08:02] evidence_r1: 9/9 shard(s) still running
+[pipeline 12:08:52] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:08:52]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:08:52]    market brief: player_type = Manufacturer
+[pipeline 12:08:52]    market brief: market_type = B2B
+[pipeline 12:08:53] 1. verified rows: 424
+[pipeline 12:08:54] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:08:54] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 12:08:54] 3b. 15 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'Flextrus AB', 'Great Wall Plastic Industries Berhad'] -> _pipeline/excluded_companies.json
+[pipeline 12:08:54] ownership: 4 companies across 4 browser(s)
+[pipeline 12:09:02] ownership: 4/4 shard(s) still running
+[pipeline 12:10:02] ownership: 1/4 shard(s) still running
+[pipeline 12:10:17] 3c. ownership 429 / identity 13 / scope 451 answers: 235 more left out ['3DMaterials Co., Ltd.', 'ACTEGA GmbH', 'AKRO-PLASTIC GmbH', 'AM Masterbatch Pvt. Ltd.', 'Alloy Polymers India Pvt. Ltd.', 'Alpek, S.A.B. de C.V.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 12:10:17] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:10:17] 4a. owner groups: 1; left out (the weaker of each group) ['GEON Performance Solutions']
+[pipeline 12:10:17]    Top 20 chosen 5 per quadrant from 64 quick-scored companies
+[pipeline 12:10:17]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:10:17] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:10:17] 5. evidence round 1: 13 companies with gaps
+[pipeline 12:10:17] evidence_r1: 13 companies across 13 browser(s)
+[pipeline 12:10:45] evidence_r1: 13/13 shard(s) still running
+[pipeline 12:11:47] evidence_r1: 13/13 shard(s) still running
+[pipeline 12:12:47] evidence_r1: 13/13 shard(s) still running
+[pipeline 12:13:47] evidence_r1: 7/13 shard(s) still running
+[pipeline 12:14:47]    WARNING: only 64 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:14:47]    --keep 150: 20 chart/evidence + 44 long tail kept, 0 lower-scored dropped
+[pipeline 12:14:47]    20 companies with full evidence, 44 in the long tail
+[pipeline 12:14:47] 6. composite scores (5 per quadrant)
+[pipeline 12:14:48] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:14:50] 7c. gaps: 138 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:18:08] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:18:08]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:18:08]    market brief: player_type = Manufacturer
+[pipeline 12:18:08]    market brief: market_type = B2B
+[pipeline 12:18:08] 1. verified rows: 424
+[pipeline 12:18:09] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:18:09] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 12:18:09] 3b. 15 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'Flextrus AB', 'Great Wall Plastic Industries Berhad'] -> _pipeline/excluded_companies.json
+[pipeline 12:18:09] scope: 222 companies across 20 browser(s)
+[pipeline 12:18:51] scope: 20/20 shard(s) still running
+[pipeline 12:19:51] scope: 20/20 shard(s) still running
+[pipeline 12:20:52] scope: 20/20 shard(s) still running
+[pipeline 12:21:52] scope: 16/20 shard(s) still running
+[pipeline 12:22:52] scope: 15/20 shard(s) still running
+[pipeline 12:23:53] scope: 13/20 shard(s) still running
+[pipeline 12:24:54] scope: 13/20 shard(s) still running
+[pipeline 12:25:54] scope: 11/20 shard(s) still running
+[pipeline 12:26:54] scope: 10/20 shard(s) still running
+[pipeline 12:27:54] scope: 3/20 shard(s) still running
+[pipeline 12:28:54] scope: 2/20 shard(s) still running
+[pipeline 12:29:15] 3c. ownership 429 / identity 13 / scope 281 answers: 91 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 12:29:15] hq: 1 companies across 1 browser(s)
+[pipeline 12:29:17] hq: 1/1 shard(s) still running
+[pipeline 12:29:32] 3d. HQ missing for 1 companies: 1 found in AI Mode ['Leyo Polymer -> Suzhou City, China']
+[pipeline 12:29:32] 4. quick X/Y scorecard scoring needed for 113 companies (1 Product + 1 Business query each)
+[pipeline 12:29:32] overall: 113 companies across 20 browser(s)
+[pipeline 12:30:17] overall: 20/20 shard(s) still running
+[pipeline 12:31:19] overall: 20/20 shard(s) still running
+[pipeline 12:32:20] overall: 20/20 shard(s) still running
+[pipeline 12:33:21] overall: 20/20 shard(s) still running
+[pipeline 12:34:22] overall: 20/20 shard(s) still running
+[pipeline 12:35:22] overall: 20/20 shard(s) still running
+[pipeline 12:36:23] overall: 9/20 shard(s) still running
+[pipeline 12:37:23] overall: 4/20 shard(s) still running
+[pipeline 12:38:13] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 12:38:13]    Top 20 chosen 5 per quadrant from 207 quick-scored companies
+[pipeline 12:38:13]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:38:13] 5. 1 supporting point(s) on invalid sources removed before gap-fill
+[pipeline 12:38:13] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:38:13] 5. evidence round 1: 14 companies with gaps
+[pipeline 12:38:13] evidence_r1: 14 companies across 14 browser(s)
+[pipeline 12:38:42] evidence_r1: 14/14 shard(s) still running
+[pipeline 12:39:43] evidence_r1: 14/14 shard(s) still running
+[pipeline 12:40:45] evidence_r1: 14/14 shard(s) still running
+[pipeline 12:41:47] evidence_r1: 14/14 shard(s) still running
+[pipeline 12:42:37]    --keep 150: 20 chart/evidence + 130 long tail kept, 57 lower-scored dropped
+[pipeline 12:42:37]    20 companies with full evidence, 130 in the long tail
+[pipeline 12:42:37] 6. composite scores (5 per quadrant)
+[pipeline 12:42:39] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:42:41] 7c. gaps: 143 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:45:38] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 122 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:45:39] 7b. supporting points: 19 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:45:39] 7b. HQ for Alphagary: Boston, United States
+[pipeline 12:45:39] 7b. owner of Alphagary: Orbia
+[pipeline 12:45:39] 7b. owner of Americhem, Inc.: Pritzker Private Capital
+[pipeline 12:45:39] 7b. owner of Ascend Performance Materials LLC: SK Capital Partners
+[pipeline 12:45:39] 7b. owner of Aurora Material Solutions, LLC: Nautic Partners
+[pipeline 12:45:39] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary) (already set)
+[pipeline 12:45:39] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A. (already set)
+[pipeline 12:45:39] 7b. owner of Foster Corporation: GEON Performance Solutions (already set)
+[pipeline 12:45:39] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners (already set)
+[pipeline 12:45:39] 7b. owner of Kraton Corporation: DL Chemical
+[pipeline 12:45:39] 7b. owner of LCY Chemical Corp.: KKR (already set)
+[pipeline 12:45:39] 7b. owner of Mitsubishi Chemical Advanced Materials GmbH: Mitsubishi Plastics
+[pipeline 12:45:39] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation (already set)
+[pipeline 12:45:39] 7b. owner of Plaskolite, Inc.: PPC Partners
+[pipeline 12:45:39] 7b. owner of Star Plastics, Inc.: Akoya Capital Partners
+[pipeline 12:45:39] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd. (already set)
+[pipeline 12:45:39] 7b. owner of Techmer PM: Gryphon Investors
+[pipeline 12:45:39] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc. (already set)
+[pipeline 12:45:39] 7b. owner of Zhermack GmbH: Dentsply Sirona
+[pipeline 12:45:39] 7b. analyst corrections: 24 text(s) changed from 24 correction(s)
+[pipeline 12:45:39] 8. building HTML / JSON / CSV report
+[pipeline 12:45:41] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:45:41] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:49:02] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 10 scope, 0 ownership, 1 hq, 39 corrections (analyst review wins where both touch the same text)
+[pipeline 12:49:02] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 12:49:03] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:49:03]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:49:03]    market brief: player_type = Manufacturer
+[pipeline 12:49:03]    market brief: market_type = B2B
+[pipeline 12:49:03] 1. verified rows: 424
+[pipeline 12:49:03] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:49:04] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 12:49:04] 3b. 17 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'Flextrus AB', 'Great Wall Plastic Industries Berhad'] -> _pipeline/excluded_companies.json
+[pipeline 12:49:04] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:49:04] scope: 19 companies across 19 browser(s)
+[pipeline 12:49:44] scope: 17/19 shard(s) still running
+[pipeline 12:50:44] scope: 10/19 shard(s) still running
+[pipeline 12:51:45] scope: 9/19 shard(s) still running
+[pipeline 12:52:45] scope: 2/19 shard(s) still running
+[pipeline 12:53:40] 3c. ownership 429 / identity 13 / scope 300 answers: 102 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 1 adjacent-segment (not on the chart) ['Toyobo MC Corporation'] -> _pipeline/auto_review.json
+[pipeline 12:53:40] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:53:40] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 12:53:40]    adjacent-segment companies taken off the chart: ['Toyobo MC Corporation']
+[pipeline 12:53:40]    Top 20 refilled after 3b: added ['Poly-Med, Inc.', 'OTECH Corporation', 'Shandong Dawn Polymer Co., Ltd.']
+[pipeline 12:53:40]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:53:41] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:53:41] 5. evidence round 1: 1 companies with gaps
+[pipeline 12:53:41] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 12:53:43] evidence_r1: 1/1 shard(s) still running
+[pipeline 12:54:43] evidence_r1: 1/1 shard(s) still running
+[pipeline 12:55:43] evidence_r1: 1/1 shard(s) still running
+[pipeline 12:56:38]    --keep 150: 20 chart/evidence + 130 long tail kept, 44 lower-scored dropped
+[pipeline 12:56:38]    20 companies with full evidence, 130 in the long tail
+[pipeline 12:56:38] 6. composite scores (5 per quadrant)
+[pipeline 12:56:39] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:56:40] 7c. gaps: 36 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:58:13] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 37 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:58:14] 7b. supporting points: 3 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:58:14] 7b. HQ for Alphagary: Boston, United States (already set)
+[pipeline 12:58:14] 7b. owner of Alphagary: Orbia (already set)
+[pipeline 12:58:14] 7b. owner of Americhem, Inc.: Pritzker Private Capital (already set)
+[pipeline 12:58:14] 7b. owner of Ascend Performance Materials LLC: SK Capital Partners (already set)
+[pipeline 12:58:14] 7b. owner of Aurora Material Solutions, LLC: Nautic Partners (already set)
+[pipeline 12:58:14] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary) (already set)
+[pipeline 12:58:14] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A. (already set)
+[pipeline 12:58:14] 7b. owner of Foster Corporation: GEON Performance Solutions (already set)
+[pipeline 12:58:14] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners (already set)
+[pipeline 12:58:14] 7b. owner of Kraton Corporation: DL Chemical (already set)
+[pipeline 12:58:14] 7b. owner of LCY Chemical Corp.: KKR (already set)
+[pipeline 12:58:14] 7b. owner of Mitsubishi Chemical Advanced Materials GmbH: Mitsubishi Plastics (already set)
+[pipeline 12:58:14] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation (already set)
+[pipeline 12:58:14] 7b. owner of Plaskolite, Inc.: PPC Partners (already set)
+[pipeline 12:58:14] 7b. owner of Star Plastics, Inc.: Akoya Capital Partners (already set)
+[pipeline 12:58:14] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd. (already set)
+[pipeline 12:58:14] 7b. owner of Techmer PM: Gryphon Investors (already set)
+[pipeline 12:58:14] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc. (already set)
+[pipeline 12:58:14] 7b. owner of Zhermack GmbH: Dentsply Sirona (already set)
+[pipeline 12:58:14] 7b. analyst corrections: 15 text(s) changed from 39 correction(s)
+[pipeline 12:58:14] 8. building HTML / JSON / CSV report
+[pipeline 12:58:15] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:58:15] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:59:52] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 10 scope, 0 ownership, 1 hq, 41 corrections (analyst review wins where both touch the same text)
+[pipeline 12:59:52] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 12:59:53] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:59:53]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:59:53]    market brief: player_type = Manufacturer
+[pipeline 12:59:53]    market brief: market_type = B2B
+[pipeline 12:59:53] 1. verified rows: 424
+[pipeline 12:59:54] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:59:54] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 12:59:54] 3b. 17 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'Flextrus AB', 'Great Wall Plastic Industries Berhad'] -> _pipeline/excluded_companies.json
+[pipeline 12:59:54] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:59:54] 3c. ownership 429 / identity 13 / scope 300 answers: 102 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 1 adjacent-segment (not on the chart) ['Toyobo MC Corporation'] -> _pipeline/auto_review.json
+[pipeline 12:59:54] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:59:54] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 12:59:54]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:59:55] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:59:55]    --keep 150: 20 chart/evidence + 130 long tail kept, 44 lower-scored dropped
+[pipeline 12:59:55]    20 companies with full evidence, 130 in the long tail
+[pipeline 12:59:55] 6. composite scores (5 per quadrant)
+[pipeline 12:59:55] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:59:57] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:59:57] 7b. HQ for Alphagary: Boston, United States (already set)
+[pipeline 12:59:57] 7b. owner of Alphagary: Orbia (already set)
+[pipeline 12:59:57] 7b. owner of Americhem, Inc.: Pritzker Private Capital (already set)
+[pipeline 12:59:57] 7b. owner of Ascend Performance Materials LLC: SK Capital Partners (already set)
+[pipeline 12:59:57] 7b. owner of Aurora Material Solutions, LLC: Nautic Partners (already set)
+[pipeline 12:59:57] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary) (already set)
+[pipeline 12:59:57] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A. (already set)
+[pipeline 12:59:57] 7b. owner of Foster Corporation: GEON Performance Solutions (already set)
+[pipeline 12:59:57] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners (already set)
+[pipeline 12:59:57] 7b. owner of Kraton Corporation: DL Chemical (already set)
+[pipeline 12:59:57] 7b. owner of LCY Chemical Corp.: KKR (already set)
+[pipeline 12:59:57] 7b. owner of Mitsubishi Chemical Advanced Materials GmbH: Mitsubishi Plastics (already set)
+[pipeline 12:59:57] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation (already set)
+[pipeline 12:59:57] 7b. owner of Plaskolite, Inc.: PPC Partners (already set)
+[pipeline 12:59:57] 7b. owner of Star Plastics, Inc.: Akoya Capital Partners (already set)
+[pipeline 12:59:57] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd. (already set)
+[pipeline 12:59:57] 7b. owner of Techmer PM: Gryphon Investors (already set)
+[pipeline 12:59:57] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc. (already set)
+[pipeline 12:59:57] 7b. owner of Zhermack GmbH: Dentsply Sirona (already set)
+[pipeline 12:59:57] 7b. analyst corrections: 2 text(s) changed from 41 correction(s)
+[pipeline 12:59:57] 8. building HTML / JSON / CSV report
+[pipeline 12:59:58] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:59:58] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 10 scope, 0 ownership, 1 hq, 41 corrections (analyst review wins where both touch the same text)
+[pipeline 13:00:11] 8b. PDF report: global_medical_films_market_global_report.pdf
+[pipeline 13:00:40] 8b. Word report: global_medical_films_market_global_report.docx
+[pipeline 13:00:40] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 150 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 13:00:40] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\global_medical_films_market_global_report.html
+exit=0
+[pipeline 13:03:11] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 13:03:11]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 13:03:11]    market brief: player_type = Manufacturer
+[pipeline 13:03:11]    market brief: market_type = B2B
+[pipeline 13:03:11] 1. verified rows: 424
+[pipeline 13:03:11] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 13:03:11] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 13:03:11] 3b. 20 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'ExxonMobil Chemical Company', 'Flextrus AB'] -> _pipeline/excluded_companies.json
+[pipeline 13:03:11] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 13:03:11] 3c. ownership 429 / identity 13 / scope 300 answers: 102 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 1 adjacent-segment (not on the chart) ['Toyobo MC Corporation'] -> _pipeline/auto_review.json
+[pipeline 13:03:11] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 13:03:11] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 13:03:11]    Top 20 refilled after 3b: added ['SILON s.r.o.', 'Aurora Material Solutions, LLC', 'CK Medience']
+[pipeline 13:03:11]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 13:03:12] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 13:03:12] 5. evidence round 1: 2 companies with gaps
+[pipeline 13:03:12] evidence_r1: 2 companies across 2 browser(s)
+[pipeline 13:03:16] evidence_r1: 2/2 shard(s) still running
+[pipeline 13:04:16] evidence_r1: 2/2 shard(s) still running
+[pipeline 13:05:16] evidence_r1: 2/2 shard(s) still running
+[pipeline 13:06:11]    --keep 150: 20 chart/evidence + 130 long tail kept, 41 lower-scored dropped
+[pipeline 13:06:11]    20 companies with full evidence, 130 in the long tail
+[pipeline 13:06:11] 6. composite scores (5 per quadrant)
+[pipeline 13:06:12] 7. rewriting hedge wording / first person in evidence
+[pipeline 13:06:13] 7c. gaps: 20 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 13:06:59] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 19 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 13:06:59] 7b. HQ for Alphagary: Boston, United States (already set)
+[pipeline 13:06:59] 7b. owner of Alphagary: Orbia (already set)
+[pipeline 13:06:59] 7b. owner of Americhem, Inc.: Pritzker Private Capital (already set)
+[pipeline 13:06:59] 7b. owner of Ascend Performance Materials LLC: SK Capital Partners (already set)
+[pipeline 13:06:59] 7b. owner of Aurora Material Solutions, LLC: Nautic Partners (already set)
+[pipeline 13:06:59] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary) (already set)
+[pipeline 13:06:59] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A. (already set)
+[pipeline 13:06:59] 7b. owner of Foster Corporation: GEON Performance Solutions (already set)
+[pipeline 13:06:59] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners (already set)
+[pipeline 13:06:59] 7b. owner of Kraton Corporation: DL Chemical (already set)
+[pipeline 13:06:59] 7b. owner of LCY Chemical Corp.: KKR (already set)
+[pipeline 13:06:59] 7b. owner of Mitsubishi Chemical Advanced Materials GmbH: Mitsubishi Plastics (already set)
+[pipeline 13:06:59] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation (already set)
+[pipeline 13:06:59] 7b. owner of Plaskolite, Inc.: PPC Partners (already set)
+[pipeline 13:06:59] 7b. owner of Star Plastics, Inc.: Akoya Capital Partners (already set)
+[pipeline 13:06:59] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd. (already set)
+[pipeline 13:06:59] 7b. owner of Techmer PM: Gryphon Investors (already set)
+[pipeline 13:06:59] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc. (already set)
+[pipeline 13:06:59] 7b. owner of Zhermack GmbH: Dentsply Sirona (already set)
+[pipeline 13:07:00] 7b. analyst corrections: 0 text(s) changed from 41 correction(s)
+[pipeline 13:07:00] 8. building HTML / JSON / CSV report
+[pipeline 13:07:00] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 13:07:00] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 13:07:38] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 12 scope, 0 ownership, 2 hq, 41 corrections (analyst review wins where both touch the same text)
+[pipeline 13:07:38] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 13:07:38] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 13:07:38]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 13:07:38]    market brief: player_type = Manufacturer
+[pipeline 13:07:38]    market brief: market_type = B2B
+[pipeline 13:07:38] 1. verified rows: 424
+[pipeline 13:07:39] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 13:07:39] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 13:07:39] 3b. 20 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'ExxonMobil Chemical Company', 'Flextrus AB'] -> _pipeline/excluded_companies.json
+[pipeline 13:07:39] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 13:07:39] 3c. ownership 429 / identity 13 / scope 300 answers: 102 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 3 adjacent-segment (not on the chart) ['Aurora Material Solutions, LLC', 'SILON s.r.o.', 'Toyobo MC Corporation'] -> _pipeline/auto_review.json
+[pipeline 13:07:39] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 13:07:39] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 13:07:39]    adjacent-segment companies taken off the chart: ['SILON s.r.o.', 'Aurora Material Solutions, LLC']
+[pipeline 13:07:39]    Top 20 refilled after 3b: added ['Kaneka Corporation', 'Phon Tech Industrial Company']
+[pipeline 13:07:39]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 13:07:39] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 13:07:39] 5. evidence round 1: 1 companies with gaps
+[pipeline 13:07:39] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 13:07:41] evidence_r1: 1/1 shard(s) still running
+[pipeline 13:08:41] evidence_r1: 1/1 shard(s) still running
+[pipeline 13:09:41] evidence_r1: 1/1 shard(s) still running
+[pipeline 13:10:34] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 13:10:34]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 13:10:34]    market brief: player_type = Manufacturer
+[pipeline 13:10:34]    market brief: market_type = B2B
+[pipeline 13:10:34] 1. verified rows: 424
+[pipeline 13:10:34] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 13:10:34] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 13:10:35] 3b. 20 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'ExxonMobil Chemical Company', 'Flextrus AB'] -> _pipeline/excluded_companies.json
+[pipeline 13:10:35] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 13:10:35] 3c. ownership 429 / identity 13 / scope 300 answers: 102 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 3 adjacent-segment (not on the chart) ['Aurora Material Solutions, LLC', 'SILON s.r.o.', 'Toyobo MC Corporation'] -> _pipeline/auto_review.json
+[pipeline 13:10:35] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 13:10:35] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 13:10:35]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 13:10:35] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 13:10:35] 5. evidence round 1: 1 companies with gaps
+[pipeline 13:10:35] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 13:10:37] evidence_r1: 1/1 shard(s) still running
+[pipeline 13:11:37] evidence_r1: 1/1 shard(s) still running
+[pipeline 13:12:37] evidence_r1: 1/1 shard(s) still running
+[pipeline 13:13:37] evidence_r1: 1/1 shard(s) still running
+[pipeline 13:13:47]    --keep 150: 20 chart/evidence + 130 long tail kept, 41 lower-scored dropped
+[pipeline 13:13:47]    20 companies with full evidence, 130 in the long tail
+[pipeline 13:13:47] 6. composite scores (5 per quadrant)
+[pipeline 13:13:48] 7. rewriting hedge wording / first person in evidence
+[pipeline 13:13:49] 7c. gaps: 10 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 13:14:16] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 20 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 13:14:16] 7b. supporting points: 1 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 13:14:16] 7b. HQ for Alphagary: Boston, United States (already set)
+[pipeline 13:14:16] 7b. HQ for SILON s.r.o.: Prague, Czech Republic
+[pipeline 13:14:16] 7b. owner of Alphagary: Orbia (already set)
+[pipeline 13:14:16] 7b. owner of Americhem, Inc.: Pritzker Private Capital (already set)
+[pipeline 13:14:16] 7b. owner of Ascend Performance Materials LLC: SK Capital Partners (already set)
+[pipeline 13:14:16] 7b. owner of Aurora Material Solutions, LLC: Nautic Partners (already set)
+[pipeline 13:14:16] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary) (already set)
+[pipeline 13:14:16] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A. (already set)
+[pipeline 13:14:16] 7b. owner of Foster Corporation: GEON Performance Solutions (already set)
+[pipeline 13:14:16] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners (already set)
+[pipeline 13:14:16] 7b. owner of Kraton Corporation: DL Chemical (already set)
+[pipeline 13:14:16] 7b. owner of LCY Chemical Corp.: KKR (already set)
+[pipeline 13:14:16] 7b. owner of Mitsubishi Chemical Advanced Materials GmbH: Mitsubishi Plastics (already set)
+[pipeline 13:14:16] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation (already set)
+[pipeline 13:14:16] 7b. owner of Plaskolite, Inc.: PPC Partners (already set)
+[pipeline 13:14:16] 7b. owner of Star Plastics, Inc.: Akoya Capital Partners (already set)
+[pipeline 13:14:16] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd. (already set)
+[pipeline 13:14:16] 7b. owner of Techmer PM: Gryphon Investors (already set)
+[pipeline 13:14:16] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc. (already set)
+[pipeline 13:14:16] 7b. owner of Zhermack GmbH: Dentsply Sirona (already set)
+[pipeline 13:14:16] 7b. analyst corrections: 0 text(s) changed from 41 correction(s)
+[pipeline 13:14:16] 8. building HTML / JSON / CSV report
+[pipeline 13:14:17] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 13:14:17] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 13:15:19] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 13 scope, 0 ownership, 2 hq, 41 corrections (analyst review wins where both touch the same text)
+[pipeline 13:15:19] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 13:15:20] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 13:15:20]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 13:15:20]    market brief: player_type = Manufacturer
+[pipeline 13:15:20]    market brief: market_type = B2B
+[pipeline 13:15:20] 1. verified rows: 424
+[pipeline 13:15:20] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 13:15:20] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 13:15:20] 3b. 21 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'ExxonMobil Chemical Company', 'Flextrus AB'] -> _pipeline/excluded_companies.json
+[pipeline 13:15:20] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 13:15:20] 3c. ownership 429 / identity 13 / scope 300 answers: 102 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 3 adjacent-segment (not on the chart) ['Aurora Material Solutions, LLC', 'SILON s.r.o.', 'Toyobo MC Corporation'] -> _pipeline/auto_review.json
+[pipeline 13:15:20] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 13:15:21] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 13:15:21]    Top 20 refilled after 3b: added ['Alfavinil S.A.']
+[pipeline 13:15:21]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 13:15:21] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 13:15:21]    --keep 150: 20 chart/evidence + 130 long tail kept, 40 lower-scored dropped
+[pipeline 13:15:21]    20 companies with full evidence, 130 in the long tail
+[pipeline 13:15:21] 6. composite scores (5 per quadrant)
+[pipeline 13:15:21] 7. rewriting hedge wording / first person in evidence
+[pipeline 13:15:22] 7c. gaps: 5 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 13:15:33] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 10 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 13:15:33] 7b. HQ for Alphagary: Boston, United States (already set)
+[pipeline 13:15:33] 7b. HQ for SILON s.r.o.: Prague, Czech Republic (already set)
+[pipeline 13:15:33] 7b. owner of Alphagary: Orbia (already set)
+[pipeline 13:15:33] 7b. owner of Americhem, Inc.: Pritzker Private Capital (already set)
+[pipeline 13:15:33] 7b. owner of Ascend Performance Materials LLC: SK Capital Partners (already set)
+[pipeline 13:15:33] 7b. owner of Aurora Material Solutions, LLC: Nautic Partners (already set)
+[pipeline 13:15:33] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary) (already set)
+[pipeline 13:15:33] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A. (already set)
+[pipeline 13:15:33] 7b. owner of Foster Corporation: GEON Performance Solutions (already set)
+[pipeline 13:15:33] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners (already set)
+[pipeline 13:15:33] 7b. owner of Kraton Corporation: DL Chemical (already set)
+[pipeline 13:15:33] 7b. owner of LCY Chemical Corp.: KKR (already set)
+[pipeline 13:15:33] 7b. owner of Mitsubishi Chemical Advanced Materials GmbH: Mitsubishi Plastics (already set)
+[pipeline 13:15:33] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation (already set)
+[pipeline 13:15:33] 7b. owner of Plaskolite, Inc.: PPC Partners (already set)
+[pipeline 13:15:33] 7b. owner of Star Plastics, Inc.: Akoya Capital Partners (already set)
+[pipeline 13:15:33] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd. (already set)
+[pipeline 13:15:33] 7b. owner of Techmer PM: Gryphon Investors (already set)
+[pipeline 13:15:33] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc. (already set)
+[pipeline 13:15:33] 7b. owner of Zhermack GmbH: Dentsply Sirona (already set)
+[pipeline 13:15:34] 7b. analyst corrections: 0 text(s) changed from 41 correction(s)
+[pipeline 13:15:34] 8. building HTML / JSON / CSV report
+[pipeline 13:15:34] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 13:15:34] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 13:16:17] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 13 scope, 0 ownership, 2 hq, 41 corrections (analyst review wins where both touch the same text)
+[pipeline 13:16:17] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 13:16:18] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 13:16:18]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 13:16:18]    market brief: player_type = Manufacturer
+[pipeline 13:16:18]    market brief: market_type = B2B
+[pipeline 13:16:18] 1. verified rows: 424
+[pipeline 13:16:18] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 13:16:18] 3. 337 names -> 315 companies after dedupe (21 groups merged)
+[pipeline 13:16:19] 3b. 21 companies left out (not active or excluded by review): ['Aluflexpack AG', 'Anhui Kinpolym New Materials Co., Ltd.', 'Argotec, LLC', 'Bio-Gate AG', 'Bloomer Plastics, Inc.', 'Daikin Industries, Ltd.', 'ExxonMobil Chemical Company', 'Flextrus AB'] -> _pipeline/excluded_companies.json
+[pipeline 13:16:19] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 13:16:19] 3c. ownership 429 / identity 13 / scope 300 answers: 102 more left out ['3DMaterials Co., Ltd.', 'AKRO-PLASTIC GmbH', 'Alloy Polymers India Pvt. Ltd.', 'Apex Material Industrial Vietnam Company Limited', 'Arihant Polymers', 'Asep Industries Sdn. Bhd.'], 18 owner labels, 3 adjacent-segment (not on the chart) ['Aurora Material Solutions, LLC', 'SILON s.r.o.', 'Toyobo MC Corporation'] -> _pipeline/auto_review.json
+[pipeline 13:16:19] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 13:16:19] 4a. owner groups: 2; left out (the weaker of each group) ['GEON Performance Solutions', 'DL Chemical']
+[pipeline 13:16:19]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 13:16:19] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 13:16:19]    --keep 150: 20 chart/evidence + 130 long tail kept, 40 lower-scored dropped
+[pipeline 13:16:19]    20 companies with full evidence, 130 in the long tail
+[pipeline 13:16:19] 6. composite scores (5 per quadrant)
+[pipeline 13:16:20] 7. rewriting hedge wording / first person in evidence
+[pipeline 13:16:21] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 13:16:21] 7b. HQ for Alphagary: Boston, United States (already set)
+[pipeline 13:16:21] 7b. HQ for SILON s.r.o.: Prague, Czech Republic (already set)
+[pipeline 13:16:21] 7b. owner of Alphagary: Orbia (already set)
+[pipeline 13:16:21] 7b. owner of Americhem, Inc.: Pritzker Private Capital (already set)
+[pipeline 13:16:21] 7b. owner of Ascend Performance Materials LLC: SK Capital Partners (already set)
+[pipeline 13:16:21] 7b. owner of Aurora Material Solutions, LLC: Nautic Partners (already set)
+[pipeline 13:16:21] 7b. owner of Covestro AG: XRG (ADNOC investment subsidiary) (already set)
+[pipeline 13:16:21] 7b. owner of Epaflex Polyurethanes S.r.l.: Elachem S.p.A. (already set)
+[pipeline 13:16:21] 7b. owner of Foster Corporation: GEON Performance Solutions (already set)
+[pipeline 13:16:21] 7b. owner of GL CHEMTEC INTERNATIONAL LTD.: Edgewater Capital Partners (already set)
+[pipeline 13:16:21] 7b. owner of Kraton Corporation: DL Chemical (already set)
+[pipeline 13:16:21] 7b. owner of LCY Chemical Corp.: KKR (already set)
+[pipeline 13:16:21] 7b. owner of Mitsubishi Chemical Advanced Materials GmbH: Mitsubishi Plastics (already set)
+[pipeline 13:16:21] 7b. owner of Momentive Performance Materials Inc.: KCC Corporation (already set)
+[pipeline 13:16:21] 7b. owner of Plaskolite, Inc.: PPC Partners (already set)
+[pipeline 13:16:21] 7b. owner of Star Plastics, Inc.: Akoya Capital Partners (already set)
+[pipeline 13:16:21] 7b. owner of TOPAS Advanced Polymers GmbH: Polyplastics Co., Ltd. (already set)
+[pipeline 13:16:21] 7b. owner of Techmer PM: Gryphon Investors (already set)
+[pipeline 13:16:21] 7b. owner of The Lubrizol Corporation: Berkshire Hathaway Inc. (already set)
+[pipeline 13:16:21] 7b. owner of Zhermack GmbH: Dentsply Sirona (already set)
+[pipeline 13:16:21] 7b. analyst corrections: 0 text(s) changed from 41 correction(s)
+[pipeline 13:16:21] 8. building HTML / JSON / CSV report
+[pipeline 13:16:22] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 13:16:22] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 13 scope, 0 ownership, 2 hq, 41 corrections (analyst review wins where both touch the same text)
+[pipeline 13:16:32] 8b. PDF report: global_medical_films_market_global_report.pdf
+[pipeline 13:16:54] 8b. Word report: global_medical_films_market_global_report.docx
+[pipeline 13:16:54] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 150 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 13:16:54] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\global_medical_films_market_global_report.html
+exit=0
+[pipeline 11:01:30] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 11:01:30]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:01:30]    market brief: player_type = Manufacturer
+[pipeline 11:01:30]    market brief: market_type = B2B
+[pipeline 11:01:30] 1. verified rows: 303
+[pipeline 11:01:40] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 11:01:40] 3. 303 names -> 299 companies after dedupe (4 groups merged)
+[pipeline 11:01:40] 3b. operating-status check for 299 companies across 20 browser(s)
+[pipeline 11:11:52] 3b. 13 companies left out (not active or excluded by review): ['Berry Global Inc.', 'Camvac Limited', 'Optimum Plastics, Inc.', 'Plantic Technologies Ltd.', 'Polyprint Packaging Ltd', 'Polyzen, Inc.', 'Rang Dong Holding Joint Stock Company', 'Scapa Tapes North America LLC'] -> _pipeline/excluded_companies.json
+[pipeline 11:11:52] 3b. 6 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 11:11:52] ownership: 286 companies across 20 browser(s)
+[pipeline 11:12:33] ownership: 20/20 shard(s) still running
+[pipeline 11:13:34] ownership: 17/20 shard(s) still running
+[pipeline 11:14:34] ownership: 15/20 shard(s) still running
+[pipeline 11:15:34] ownership: 15/20 shard(s) still running
+[pipeline 11:16:34] ownership: 15/20 shard(s) still running
+[pipeline 11:17:34] ownership: 15/20 shard(s) still running
+[pipeline 11:18:34] ownership: 11/20 shard(s) still running
+[pipeline 11:19:34] ownership: 9/20 shard(s) still running
+[pipeline 11:20:35] ownership: 8/20 shard(s) still running
+[pipeline 11:21:35] ownership: 5/20 shard(s) still running
+[pipeline 11:22:35] ownership: 2/20 shard(s) still running
+[pipeline 11:23:35] ownership: 1/20 shard(s) still running
+[pipeline 11:24:35] ownership: 1/20 shard(s) still running
+[pipeline 11:24:40] identity: 6 companies across 6 browser(s)
+[pipeline 11:24:52] identity: 6/6 shard(s) still running
+[pipeline 11:25:32] scope: 286 companies across 20 browser(s)
+[pipeline 11:26:15] scope: 20/20 shard(s) still running
+[pipeline 11:27:15] scope: 18/20 shard(s) still running
+[pipeline 11:28:16] scope: 17/20 shard(s) still running
+[pipeline 11:29:18] scope: 17/20 shard(s) still running
+[pipeline 11:30:19] scope: 14/20 shard(s) still running
+[pipeline 11:31:21] scope: 13/20 shard(s) still running
+[pipeline 11:32:21] scope: 12/20 shard(s) still running
+[pipeline 11:33:22] scope: 9/20 shard(s) still running
+[pipeline 11:34:22] scope: 6/20 shard(s) still running
+[pipeline 11:35:22] scope: 2/20 shard(s) still running
+[pipeline 11:36:22] scope: 1/20 shard(s) still running
+[pipeline 11:36:27] 3c. ownership 265 / identity 6 / scope 275 answers: 91 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Argotec, LLC', 'B-Pack S.p.A.', 'Barbier Group'], 27 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:36:27] hq: 123 companies across 20 browser(s)
+[pipeline 11:37:09] hq: 12/20 shard(s) still running
+[pipeline 11:38:05] 3d. HQ missing for 123 companies: 120 found in AI Mode ['ABX Packaging, Inc. -> Charlotte, United States', 'ALMA Packaging AG -> La Sonnaz, Switzerland', 'Achilles Corporation -> Tokyo, Japan', 'Adhex Technologies -> Chenôve, France', 'Aicello Corporation -> Toyohashi, Japan', 'Al-Abd Group -> New Cairo, Egypt']
+[pipeline 11:38:05] 4. quick X/Y scorecard scoring needed for 195 companies (1 Product + 1 Business query each)
+[pipeline 11:38:05] overall: 195 companies across 20 browser(s)
+[pipeline 11:38:49] overall: 20/20 shard(s) still running
+[pipeline 11:39:52] overall: 20/20 shard(s) still running
+[pipeline 11:40:54] overall: 20/20 shard(s) still running
+[pipeline 11:41:55] overall: 20/20 shard(s) still running
+[pipeline 11:42:55] overall: 20/20 shard(s) still running
+[pipeline 11:43:56] overall: 20/20 shard(s) still running
+[pipeline 11:44:57] overall: 20/20 shard(s) still running
+[pipeline 11:45:58] overall: 20/20 shard(s) still running
+[pipeline 11:46:58] overall: 20/20 shard(s) still running
+[pipeline 11:47:31] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 11:47:31]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:47:31]    market brief: player_type = Manufacturer
+[pipeline 11:47:31]    market brief: market_type = B2B
+[pipeline 11:47:31] 1b. 299 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 11:47:33] 1b. now 299 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 11:47:33] 1. verified rows: 303
+[pipeline 11:47:33] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 11:47:33] 3. 303 names -> 299 companies after dedupe (4 groups merged)
+[pipeline 11:47:33] 3b. operating-status check for 6 companies across 1 browser(s)
+[pipeline 11:48:36] 3b. 13 companies left out (not active or excluded by review): ['Berry Global Inc.', 'Camvac Limited', 'Optimum Plastics, Inc.', 'Plantic Technologies Ltd.', 'Polyprint Packaging Ltd', 'Polyzen, Inc.', 'Rang Dong Holding Joint Stock Company', 'Scapa Tapes North America LLC'] -> _pipeline/excluded_companies.json
+[pipeline 11:48:36] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 11:48:36] ownership: 21 companies across 20 browser(s)
+[pipeline 11:49:18] ownership: 17/20 shard(s) still running
+[pipeline 11:50:18] ownership: 7/20 shard(s) still running
+[pipeline 11:51:18] ownership: 3/20 shard(s) still running
+[pipeline 11:52:18] scope: 11 companies across 11 browser(s)
+[pipeline 11:52:41] scope: 8/11 shard(s) still running
+[pipeline 11:53:06] 3c. ownership 286 / identity 6 / scope 286 answers: 95 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Aman Poly Plast Pvt. Ltd.', 'Argotec, LLC', 'B-Pack S.p.A.'], 29 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:53:06] 3d. HQ missing for 3 companies: 0 found in AI Mode []
+[pipeline 11:53:06] 4. quick X/Y scorecard scoring needed for 48 companies (1 Product + 1 Business query each)
+[pipeline 11:53:06] overall: 48 companies across 20 browser(s)
+[pipeline 11:53:52] overall: 20/20 shard(s) still running
+[pipeline 11:54:53] overall: 20/20 shard(s) still running
+[pipeline 11:55:53] overall: 8/20 shard(s) still running
+[pipeline 11:56:53] overall: 2/20 shard(s) still running
+[pipeline 11:57:18] 4a. owner groups: 2; left out (the weaker of each group) ['Caprihans India Limited', 'Gualapack S.p.A.']
+[pipeline 11:57:18]    Top 20 chosen 5 per quadrant from 189 quick-scored companies
+[pipeline 11:57:18]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 11:57:18] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:57:18] 5. evidence round 1: 20 companies with gaps
+[pipeline 11:57:18] evidence_r1: 20 companies across 20 browser(s)
+[pipeline 11:58:01] evidence_r1: 20/20 shard(s) still running
+[pipeline 11:59:04] evidence_r1: 20/20 shard(s) still running
+[pipeline 12:00:05] evidence_r1: 20/20 shard(s) still running
+[pipeline 12:01:05] evidence_r1: 20/20 shard(s) still running
+[pipeline 12:02:05] evidence_r1: 20/20 shard(s) still running
+[pipeline 12:03:05] evidence_r1: 8/20 shard(s) still running
+[pipeline 12:04:05] evidence_r1: 5/20 shard(s) still running
+[pipeline 12:05:05] evidence_r1: 3/20 shard(s) still running
+[pipeline 12:06:00]    WARNING: only 189 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:06:00]    --keep 1000: 20 chart/evidence + 169 long tail kept, 0 lower-scored dropped
+[pipeline 12:06:00]    20 companies with full evidence, 169 in the long tail
+[pipeline 12:06:00] 6. composite scores (5 per quadrant)
+[pipeline 12:06:03] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:06:05] 7c. gaps: 201 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:10:00] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 193 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:10:01] 7b. supporting points: 28 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:10:01] 7b. owner of ABX Innovative Packaging Solutions, LLC: Graham Partners
+[pipeline 12:10:01] 7b. owner of ABX Packaging, Inc.: Outlook Group
+[pipeline 12:10:01] 7b. owner of ALMA Packaging AG: Family Trust Beteiligungsholding
+[pipeline 12:10:01] 7b. owner of Alfatherm S.p.A.: OpenGate Capital
+[pipeline 12:10:01] 7b. owner of Atedia Films: EiM Capital
+[pipeline 12:10:01] 7b. owner of Caprihans India Limited: Bilcare Limited
+[pipeline 12:10:01] 7b. owner of Carolex SAS: Pacur, LLC
+[pipeline 12:10:01] 7b. owner of Charter Next Generation, Inc.: KKR & Co. Inc. and Leonard Green & Partners
+[pipeline 12:10:01] 7b. owner of Covestro Deutschland AG: XRG P.J.S.C.
+[pipeline 12:10:01] 7b. owner of Danapak Flexibles A/S: Schur Flexibles Group
+[pipeline 12:10:01] 7b. owner of Dunmore Corporation: Steel Partners Holdings L.P.
+[pipeline 12:10:01] 7b. owner of Excel Scientific, Inc.: Vance Street Capital LLC
+[pipeline 12:10:01] 7b. owner of Fait Plast S.p.A.: Pennel & Flipo
+[pipeline 12:10:01] 7b. owner of Fuzhou Green Sail Packaging Material Co., Ltd.: Sterimed Holding
+[pipeline 12:10:01] 7b. owner of J-Film Corporation: Marunouchi Capital Inc.
+[pipeline 12:10:01] 7b. owner of Jiangsu Best New Medical Material Co., Ltd.: SSY Group Limited
+[pipeline 12:10:01] 7b. owner of Morgan Adhesives Company, LLC: Lintec Corporation
+[pipeline 12:10:01] 7b. owner of Nelipak Corporation: Kohlberg & Company
+[pipeline 12:10:01] 7b. owner of Oliver Healthcare Packaging Company: Monomoy Capital Partners
+[pipeline 12:10:01] 7b. owner of Permali Gloucester Limited: Diamorph Group Holdings Ltd
+[pipeline 12:10:01] 7b. owner of Planned Packaging Films Limited: The Wasdell Group
+[pipeline 12:10:01] 7b. owner of ProAmpac LLC: Pritzker Private Capital
+[pipeline 12:10:01] 7b. owner of Protechnic: Bemis Associates Inc.
+[pipeline 12:10:01] 7b. owner of Safta S.p.A.: Gualapack SpA
+[pipeline 12:10:01] 7b. owner of Sealed Air Corporation: Clayton, Dubilier & Rice
+[pipeline 12:10:01] 7b. owner of Sterimed Group: IK Partners
+[pipeline 12:10:01] 7b. owner of Tekni-Plex, Inc.: Genstar Capital
+[pipeline 12:10:01] 7b. owner of Vitopel Argentina S.A.: Pritec Trade
+[pipeline 12:10:01] 7b. owner of Vitopel S.A.: Oben Group
+[pipeline 12:10:01] 8. building HTML / JSON / CSV report
+[pipeline 12:10:03] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:10:03] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:13:45] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 6 scope, 1 ownership, 0 hq, 13 corrections (analyst review wins where both touch the same text)
+[pipeline 12:13:45] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 12:13:46] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:13:46]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:13:46]    market brief: player_type = Manufacturer
+[pipeline 12:13:46]    market brief: market_type = B2B
+[pipeline 12:13:46] 1b. 299 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 12:13:48] 1b. now 299 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 12:13:48] 1. verified rows: 303
+[pipeline 12:13:48] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:13:48] 3. 303 names -> 299 companies after dedupe (4 groups merged)
+[pipeline 12:13:48] 3b. 15 companies left out (not active or excluded by review): ['3M Company', 'Berry Global Inc.', 'Camvac Limited', 'Optimum Plastics, Inc.', 'Plantic Technologies Ltd.', 'Polyprint Packaging Ltd', 'Polyzen, Inc.', 'Rang Dong Holding Joint Stock Company'] -> _pipeline/excluded_companies.json
+[pipeline 12:13:48] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:13:49] 3c. ownership 286 / identity 6 / scope 286 answers: 95 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Aman Poly Plast Pvt. Ltd.', 'Argotec, LLC', 'B-Pack S.p.A.'], 29 owner labels, 4 adjacent-segment (not on the chart) ['Aicello Corporation', 'DermaMed Coatings Company, LLC', 'Parnaplast Indústria de Plásticos Ltda.', 'Plastik S.p.A.'] -> _pipeline/auto_review.json
+[pipeline 12:13:49] 3d. HQ missing for 3 companies: 0 found in AI Mode []
+[pipeline 12:13:49] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:13:49] 4a. owner groups: 2; left out (the weaker of each group) ['Caprihans India Limited', 'Gualapack S.p.A.']
+[pipeline 12:13:49]    adjacent-segment companies taken off the chart: ['Plastik S.p.A.', 'DermaMed Coatings Company, LLC', 'Aicello Corporation', 'Parnaplast Indústria de Plásticos Ltda.']
+[pipeline 12:13:49]    Top 20 refilled after 3b: added ['Fengchen Group Co., Ltd.', 'John C. Brow Limited', 'Safta S.p.A.', 'Verbano Film S.r.l.', 'Cepalgo Embalagens Flexíveis Ltda.', 'Gascogne Flexible SASU']
+[pipeline 12:13:49]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:13:49] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:13:49] 5. evidence round 1: 6 companies with gaps
+[pipeline 12:13:49] evidence_r1: 6 companies across 6 browser(s)
+[pipeline 12:14:01] evidence_r1: 6/6 shard(s) still running
+[pipeline 12:15:01] evidence_r1: 6/6 shard(s) still running
+[pipeline 12:16:01] evidence_r1: 6/6 shard(s) still running
+[pipeline 12:16:56]    WARNING: only 187 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:16:56]    --keep 1000: 20 chart/evidence + 167 long tail kept, 0 lower-scored dropped
+[pipeline 12:16:56]    20 companies with full evidence, 167 in the long tail
+[pipeline 12:16:56] 6. composite scores (5 per quadrant)
+[pipeline 12:16:58] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:16:59] 7c. gaps: 68 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:18:51] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 58 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:18:51] 7b. supporting points: 2 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:18:51] 7b. owner of ABX Innovative Packaging Solutions, LLC: Graham Partners (already set)
+[pipeline 12:18:51] 7b. owner of ABX Packaging, Inc.: Outlook Group (already set)
+[pipeline 12:18:51] 7b. owner of ALMA Packaging AG: Family Trust Beteiligungsholding (already set)
+[pipeline 12:18:51] 7b. owner of Alfatherm S.p.A.: OpenGate Capital (already set)
+[pipeline 12:18:51] 7b. owner of Atedia Films: EiM Capital (already set)
+[pipeline 12:18:51] 7b. owner of Caprihans India Limited: Bilcare Limited (already set)
+[pipeline 12:18:51] 7b. owner of Carolex SAS: Pacur, LLC (already set)
+[pipeline 12:18:51] 7b. owner of Charter Next Generation, Inc.: KKR & Co. Inc. and Leonard Green & Partners (already set)
+[pipeline 12:18:51] 7b. owner of Covestro Deutschland AG: XRG P.J.S.C. (already set)
+[pipeline 12:18:51] 7b. owner of Danapak Flexibles A/S: Schur Flexibles Group (already set)
+[pipeline 12:18:51] 7b. owner of Dunmore Corporation: Steel Partners Holdings L.P. (already set)
+[pipeline 12:18:51] 7b. owner of Excel Scientific, Inc.: Vance Street Capital LLC (already set)
+[pipeline 12:18:51] 7b. owner of Fait Plast S.p.A.: Pennel & Flipo (already set)
+[pipeline 12:18:51] 7b. owner of Fuzhou Green Sail Packaging Material Co., Ltd.: Sterimed Holding (already set)
+[pipeline 12:18:51] 7b. owner of J-Film Corporation: Marunouchi Capital Inc. (already set)
+[pipeline 12:18:51] 7b. owner of Jiangsu Best New Medical Material Co., Ltd.: SSY Group Limited (already set)
+[pipeline 12:18:51] 7b. owner of Morgan Adhesives Company, LLC: Lintec Corporation (already set)
+[pipeline 12:18:51] 7b. owner of Nelipak Corporation: Kohlberg & Company (already set)
+[pipeline 12:18:51] 7b. owner of Oliver Healthcare Packaging Company: Monomoy Capital Partners (already set)
+[pipeline 12:18:51] 7b. owner of Permali Gloucester Limited: Diamorph Group Holdings Ltd (already set)
+[pipeline 12:18:51] 7b. owner of Planned Packaging Films Limited: The Wasdell Group (already set)
+[pipeline 12:18:51] 7b. owner of ProAmpac LLC: Pritzker Private Capital (already set)
+[pipeline 12:18:51] 7b. owner of Protechnic: Bemis Associates Inc. (already set)
+[pipeline 12:18:51] 7b. owner of Safta S.p.A.: Gualapack SpA (already set)
+[pipeline 12:18:51] 7b. owner of Sealed Air Corporation: Clayton, Dubilier & Rice (already set)
+[pipeline 12:18:51] 7b. owner of Sterimed Group: IK Partners (already set)
+[pipeline 12:18:51] 7b. owner of Tekni-Plex, Inc.: Genstar Capital (already set)
+[pipeline 12:18:51] 7b. owner of Vitopel Argentina S.A.: Pritec Trade (already set)
+[pipeline 12:18:51] 7b. owner of Vitopel S.A.: Oben Group (already set)
+[pipeline 12:18:51] 7b. owner of DermaMed Coatings Company, LLC: H.B. Fuller Company
+[pipeline 12:18:51] 7b. analyst corrections: 13 text(s) changed from 13 correction(s)
+[pipeline 12:18:51] 8. building HTML / JSON / CSV report
+[pipeline 12:18:53] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:18:53] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:20:31] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 9 scope, 1 ownership, 0 hq, 17 corrections (analyst review wins where both touch the same text)
+[pipeline 12:20:31] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 12:20:32] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:20:32]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:20:32]    market brief: player_type = Manufacturer
+[pipeline 12:20:32]    market brief: market_type = B2B
+[pipeline 12:20:32] 1b. 299 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 12:20:33] 1b. now 299 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 12:20:33] 1. verified rows: 303
+[pipeline 12:20:34] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:20:34] 3. 303 names -> 299 companies after dedupe (4 groups merged)
+[pipeline 12:20:34] 3b. 22 companies left out (not active or excluded by review): ['3M Company', 'Aicello Corporation', 'Berry Global Inc.', 'Camvac Limited', 'DermaMed Coatings Company, LLC', 'Fengchen Group Co., Ltd.', 'John C. Brow Limited', 'Optimum Plastics, Inc.'] -> _pipeline/excluded_companies.json
+[pipeline 12:20:34] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:20:34] 3c. ownership 286 / identity 6 / scope 286 answers: 95 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Aman Poly Plast Pvt. Ltd.', 'Argotec, LLC', 'B-Pack S.p.A.'], 28 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 12:20:34] 3d. HQ missing for 3 companies: 0 found in AI Mode []
+[pipeline 12:20:34] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:20:34] 4a. owner groups: 1; left out (the weaker of each group) ['Caprihans India Limited']
+[pipeline 12:20:34]    Top 20 refilled after 3b: added ['Dunmore Corporation', 'Ergis S.A.', 'Hangzhou Zhongcheng Material Technology Co., Ltd.']
+[pipeline 12:20:34]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:20:34] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:20:34] 5. evidence round 1: 3 companies with gaps
+[pipeline 12:20:34] evidence_r1: 3 companies across 3 browser(s)
+[pipeline 12:20:40] evidence_r1: 3/3 shard(s) still running
+[pipeline 12:21:40] evidence_r1: 3/3 shard(s) still running
+[pipeline 12:22:40] evidence_r1: 3/3 shard(s) still running
+[pipeline 12:23:40] evidence_r1: 1/3 shard(s) still running
+[pipeline 12:23:45]    WARNING: only 181 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:23:45]    --keep 1000: 20 chart/evidence + 161 long tail kept, 0 lower-scored dropped
+[pipeline 12:23:45]    20 companies with full evidence, 161 in the long tail
+[pipeline 12:23:45] 6. composite scores (5 per quadrant)
+[pipeline 12:23:46] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:23:47] 7c. gaps: 36 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:24:57] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 35 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:24:57] 7b. supporting points: 3 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:24:57] 7b. owner of ABX Innovative Packaging Solutions, LLC: Graham Partners (already set)
+[pipeline 12:24:57] 7b. owner of ABX Packaging, Inc.: Outlook Group (already set)
+[pipeline 12:24:57] 7b. owner of ALMA Packaging AG: Family Trust Beteiligungsholding (already set)
+[pipeline 12:24:57] 7b. owner of Alfatherm S.p.A.: OpenGate Capital (already set)
+[pipeline 12:24:57] 7b. owner of Atedia Films: EiM Capital (already set)
+[pipeline 12:24:57] 7b. owner of Caprihans India Limited: Bilcare Limited (already set)
+[pipeline 12:24:57] 7b. owner of Carolex SAS: Pacur, LLC (already set)
+[pipeline 12:24:57] 7b. owner of Charter Next Generation, Inc.: KKR & Co. Inc. and Leonard Green & Partners (already set)
+[pipeline 12:24:57] 7b. owner of Covestro Deutschland AG: XRG P.J.S.C. (already set)
+[pipeline 12:24:57] 7b. owner of Danapak Flexibles A/S: Schur Flexibles Group (already set)
+[pipeline 12:24:57] 7b. owner of Dunmore Corporation: Steel Partners Holdings L.P. (already set)
+[pipeline 12:24:57] 7b. owner of Excel Scientific, Inc.: Vance Street Capital LLC (already set)
+[pipeline 12:24:57] 7b. owner of Fait Plast S.p.A.: Pennel & Flipo (already set)
+[pipeline 12:24:57] 7b. owner of Fuzhou Green Sail Packaging Material Co., Ltd.: Sterimed Holding (already set)
+[pipeline 12:24:57] 7b. owner of J-Film Corporation: Marunouchi Capital Inc. (already set)
+[pipeline 12:24:57] 7b. owner of Jiangsu Best New Medical Material Co., Ltd.: SSY Group Limited (already set)
+[pipeline 12:24:57] 7b. owner of Morgan Adhesives Company, LLC: Lintec Corporation (already set)
+[pipeline 12:24:57] 7b. owner of Nelipak Corporation: Kohlberg & Company (already set)
+[pipeline 12:24:57] 7b. owner of Oliver Healthcare Packaging Company: Monomoy Capital Partners (already set)
+[pipeline 12:24:57] 7b. owner of Permali Gloucester Limited: Diamorph Group Holdings Ltd (already set)
+[pipeline 12:24:57] 7b. owner of Planned Packaging Films Limited: The Wasdell Group (already set)
+[pipeline 12:24:57] 7b. owner of ProAmpac LLC: Pritzker Private Capital (already set)
+[pipeline 12:24:57] 7b. owner of Protechnic: Bemis Associates Inc. (already set)
+[pipeline 12:24:57] 7b. owner of Sealed Air Corporation: Clayton, Dubilier & Rice (already set)
+[pipeline 12:24:57] 7b. owner of Sterimed Group: IK Partners (already set)
+[pipeline 12:24:57] 7b. owner of Tekni-Plex, Inc.: Genstar Capital (already set)
+[pipeline 12:24:57] 7b. owner of Vitopel Argentina S.A.: Pritec Trade (already set)
+[pipeline 12:24:57] 7b. owner of Vitopel S.A.: Oben Group (already set)
+[pipeline 12:24:57] 7b. owner of DermaMed Coatings Company, LLC: H.B. Fuller Company (already set)
+[pipeline 12:24:57] 7b. analyst corrections: 4 text(s) changed from 17 correction(s)
+[pipeline 12:24:57] 8. building HTML / JSON / CSV report
+[pipeline 12:24:58] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:24:58] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:25:51] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 9 scope, 1 ownership, 0 hq, 18 corrections (analyst review wins where both touch the same text)
+[pipeline 12:26:01] 8b. PDF report: global_medical_films_market_global_report.pdf
+[pipeline 12:26:23] 8b. Word report: global_medical_films_market_global_report.docx
+[pipeline 12:26:24] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 181 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [FAIL] Every company has an HQ  -> 3 missing: ['Tako Clean Products (S) Pte Ltd', 'Adhesives Research, Inc.', 'Videplast Indústria e Comércio de Plásticos Ltda.']
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 12:26:24] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\global_medical_films_market_global_report.html
+exit=1
+[pipeline 12:26:35] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:26:35]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:26:35]    market brief: player_type = Manufacturer
+[pipeline 12:26:35]    market brief: market_type = B2B
+[pipeline 12:26:35] 1b. 299 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 12:26:36] 1b. now 299 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 12:26:36] 1. verified rows: 303
+[pipeline 12:26:36] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:26:36] 3. 303 names -> 299 companies after dedupe (4 groups merged)
+[pipeline 12:26:36] 3b. 22 companies left out (not active or excluded by review): ['3M Company', 'Aicello Corporation', 'Berry Global Inc.', 'Camvac Limited', 'DermaMed Coatings Company, LLC', 'Fengchen Group Co., Ltd.', 'John C. Brow Limited', 'Optimum Plastics, Inc.'] -> _pipeline/excluded_companies.json
+[pipeline 12:26:36] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:26:37] 3c. ownership 286 / identity 6 / scope 286 answers: 95 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Aman Poly Plast Pvt. Ltd.', 'Argotec, LLC', 'B-Pack S.p.A.'], 28 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 12:26:37] 3d. HQ missing for 3 companies: 0 found in AI Mode []
+[pipeline 12:26:37] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:26:37] 4a. owner groups: 1; left out (the weaker of each group) ['Caprihans India Limited']
+[pipeline 12:26:37]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:26:37] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:26:37]    WARNING: only 181 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:26:37]    --keep 1000: 20 chart/evidence + 161 long tail kept, 0 lower-scored dropped
+[pipeline 12:26:37]    20 companies with full evidence, 161 in the long tail
+[pipeline 12:26:37] 6. composite scores (5 per quadrant)
+[pipeline 12:26:38] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:26:39] 7c. gaps: 1 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:26:49] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 1 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:26:50] 7b. owner of ABX Innovative Packaging Solutions, LLC: Graham Partners (already set)
+[pipeline 12:26:50] 7b. owner of ABX Packaging, Inc.: Outlook Group (already set)
+[pipeline 12:26:50] 7b. owner of ALMA Packaging AG: Family Trust Beteiligungsholding (already set)
+[pipeline 12:26:50] 7b. owner of Alfatherm S.p.A.: OpenGate Capital (already set)
+[pipeline 12:26:50] 7b. owner of Atedia Films: EiM Capital (already set)
+[pipeline 12:26:50] 7b. owner of Caprihans India Limited: Bilcare Limited (already set)
+[pipeline 12:26:50] 7b. owner of Carolex SAS: Pacur, LLC (already set)
+[pipeline 12:26:50] 7b. owner of Charter Next Generation, Inc.: KKR & Co. Inc. and Leonard Green & Partners (already set)
+[pipeline 12:26:50] 7b. owner of Covestro Deutschland AG: XRG P.J.S.C. (already set)
+[pipeline 12:26:50] 7b. owner of Danapak Flexibles A/S: Schur Flexibles Group (already set)
+[pipeline 12:26:50] 7b. owner of Dunmore Corporation: Steel Partners Holdings L.P. (already set)
+[pipeline 12:26:50] 7b. owner of Excel Scientific, Inc.: Vance Street Capital LLC (already set)
+[pipeline 12:26:50] 7b. owner of Fait Plast S.p.A.: Pennel & Flipo (already set)
+[pipeline 12:26:50] 7b. owner of Fuzhou Green Sail Packaging Material Co., Ltd.: Sterimed Holding (already set)
+[pipeline 12:26:50] 7b. owner of J-Film Corporation: Marunouchi Capital Inc. (already set)
+[pipeline 12:26:50] 7b. owner of Jiangsu Best New Medical Material Co., Ltd.: SSY Group Limited (already set)
+[pipeline 12:26:50] 7b. owner of Morgan Adhesives Company, LLC: Lintec Corporation (already set)
+[pipeline 12:26:50] 7b. owner of Nelipak Corporation: Kohlberg & Company (already set)
+[pipeline 12:26:50] 7b. owner of Oliver Healthcare Packaging Company: Monomoy Capital Partners (already set)
+[pipeline 12:26:50] 7b. owner of Permali Gloucester Limited: Diamorph Group Holdings Ltd (already set)
+[pipeline 12:26:50] 7b. owner of Planned Packaging Films Limited: The Wasdell Group (already set)
+[pipeline 12:26:50] 7b. owner of ProAmpac LLC: Pritzker Private Capital (already set)
+[pipeline 12:26:50] 7b. owner of Protechnic: Bemis Associates Inc. (already set)
+[pipeline 12:26:50] 7b. owner of Sealed Air Corporation: Clayton, Dubilier & Rice (already set)
+[pipeline 12:26:50] 7b. owner of Sterimed Group: IK Partners (already set)
+[pipeline 12:26:50] 7b. owner of Tekni-Plex, Inc.: Genstar Capital (already set)
+[pipeline 12:26:50] 7b. owner of Vitopel Argentina S.A.: Pritec Trade (already set)
+[pipeline 12:26:50] 7b. owner of Vitopel S.A.: Oben Group (already set)
+[pipeline 12:26:50] 7b. owner of DermaMed Coatings Company, LLC: H.B. Fuller Company (already set)
+[pipeline 12:26:50] 7b. analyst corrections: 1 text(s) changed from 18 correction(s)
+[pipeline 12:26:50] 8. building HTML / JSON / CSV report
+[pipeline 12:26:50] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:26:50] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 9 scope, 1 ownership, 0 hq, 18 corrections (analyst review wins where both touch the same text)
+[pipeline 12:27:00] 8b. PDF report: global_medical_films_market_global_report.pdf
+[pipeline 12:27:23] 8b. Word report: global_medical_films_market_global_report.docx
+[pipeline 12:27:24] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 181 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [FAIL] Every company has an HQ  -> 3 missing: ['Tako Clean Products (S) Pte Ltd', 'Adhesives Research, Inc.', 'Videplast Indústria e Comércio de Plásticos Ltda.']
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 12:27:24] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\global_medical_films_market_global_report.html
+exit=1
+[pipeline 12:29:20] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:29:20]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:29:20]    market brief: player_type = Manufacturer
+[pipeline 12:29:20]    market brief: market_type = B2B
+[pipeline 12:29:20] 1b. 300 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 12:29:21] 1b. now 300 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 12:29:21] 1. verified rows: 304
+[pipeline 12:29:22] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:29:22] 3. 304 names -> 300 companies after dedupe (4 groups merged)
+[pipeline 12:29:22] 3b. operating-status check for 1 companies across 1 browser(s)
+[pipeline 12:29:39] 3b. 18 companies left out (not active or excluded by review): ['3M Company', 'Berry Global Inc.', 'Camvac Limited', 'John C. Brow Limited', 'Optimum Plastics, Inc.', 'Plantic Technologies Ltd.', 'Plastik S.p.A.', 'Polyprint Packaging Ltd'] -> _pipeline/excluded_companies.json
+[pipeline 12:29:39] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:29:39] ownership: 1 companies across 1 browser(s)
+[pipeline 12:29:41] ownership: 1/1 shard(s) still running
+[pipeline 12:29:51] scope: 1 companies across 1 browser(s)
+[pipeline 12:29:53] scope: 1/1 shard(s) still running
+[pipeline 12:30:03] 3c. ownership 287 / identity 6 / scope 287 answers: 95 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Aman Poly Plast Pvt. Ltd.', 'Argotec, LLC', 'B-Pack S.p.A.'], 28 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 12:30:03] 3d. HQ missing for 3 companies: 0 found in AI Mode []
+[pipeline 12:30:03] 4. quick X/Y scorecard scoring needed for 1 companies (1 Product + 1 Business query each)
+[pipeline 12:30:03] overall: 1 companies across 1 browser(s)
+[pipeline 12:30:05] overall: 1/1 shard(s) still running
+[pipeline 12:30:30] 4a. owner groups: 1; left out (the weaker of each group) ['Caprihans India Limited']
+[pipeline 12:30:30]    Top 20 chosen 5 per quadrant from 186 quick-scored companies
+[pipeline 12:30:30]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:30:30] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:30:30] 5. evidence round 1: 14 companies with gaps
+[pipeline 12:30:30] evidence_r1: 14 companies across 14 browser(s)
+[pipeline 12:30:59] evidence_r1: 14/14 shard(s) still running
+[pipeline 12:31:59] evidence_r1: 14/14 shard(s) still running
+[pipeline 12:32:59] evidence_r1: 14/14 shard(s) still running
+[pipeline 12:33:59]    WARNING: only 186 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:33:59]    --keep 1000: 20 chart/evidence + 166 long tail kept, 0 lower-scored dropped
+[pipeline 12:33:59]    20 companies with full evidence, 166 in the long tail
+[pipeline 12:33:59] 6. composite scores (5 per quadrant)
+[pipeline 12:34:00] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:34:02] 7c. gaps: 141 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:36:52] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 136 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:36:52] 7b. supporting points: 2 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:36:52] 7b. HQ for Tako Clean Products (S) Pte Ltd: Singapore, Singapore
+[pipeline 12:36:52] 7b. HQ for Adhesives Research, Inc.: Glen Rock, United States
+[pipeline 12:36:52] 7b. HQ for Videplast Indústria e Comércio de Plásticos Ltda.: Videira, Brazil
+[pipeline 12:36:52] 7b. owner of ABX Innovative Packaging Solutions, LLC: Graham Partners (already set)
+[pipeline 12:36:52] 7b. owner of ABX Packaging, Inc.: Outlook Group (already set)
+[pipeline 12:36:52] 7b. owner of ALMA Packaging AG: Family Trust Beteiligungsholding (already set)
+[pipeline 12:36:52] 7b. owner of Alfatherm S.p.A.: OpenGate Capital (already set)
+[pipeline 12:36:52] 7b. owner of Atedia Films: EiM Capital (already set)
+[pipeline 12:36:52] 7b. owner of Caprihans India Limited: Bilcare Limited (already set)
+[pipeline 12:36:52] 7b. owner of Carolex SAS: Pacur, LLC (already set)
+[pipeline 12:36:52] 7b. owner of Charter Next Generation, Inc.: KKR & Co. Inc. and Leonard Green & Partners (already set)
+[pipeline 12:36:52] 7b. owner of Covestro Deutschland AG: XRG P.J.S.C. (already set)
+[pipeline 12:36:52] 7b. owner of Danapak Flexibles A/S: Schur Flexibles Group (already set)
+[pipeline 12:36:52] 7b. owner of Dunmore Corporation: Steel Partners Holdings L.P. (already set)
+[pipeline 12:36:52] 7b. owner of Excel Scientific, Inc.: Vance Street Capital LLC (already set)
+[pipeline 12:36:52] 7b. owner of Fait Plast S.p.A.: Pennel & Flipo (already set)
+[pipeline 12:36:52] 7b. owner of Fuzhou Green Sail Packaging Material Co., Ltd.: Sterimed Holding (already set)
+[pipeline 12:36:52] 7b. owner of J-Film Corporation: Marunouchi Capital Inc. (already set)
+[pipeline 12:36:52] 7b. owner of Jiangsu Best New Medical Material Co., Ltd.: SSY Group Limited (already set)
+[pipeline 12:36:52] 7b. owner of Morgan Adhesives Company, LLC: Lintec Corporation (already set)
+[pipeline 12:36:52] 7b. owner of Nelipak Corporation: Kohlberg & Company (already set)
+[pipeline 12:36:52] 7b. owner of Oliver Healthcare Packaging Company: Monomoy Capital Partners (already set)
+[pipeline 12:36:52] 7b. owner of Permali Gloucester Limited: Diamorph Group Holdings Ltd (already set)
+[pipeline 12:36:52] 7b. owner of Planned Packaging Films Limited: The Wasdell Group (already set)
+[pipeline 12:36:52] 7b. owner of ProAmpac LLC: Pritzker Private Capital (already set)
+[pipeline 12:36:52] 7b. owner of Protechnic: Bemis Associates Inc. (already set)
+[pipeline 12:36:52] 7b. owner of Sealed Air Corporation: Clayton, Dubilier & Rice (already set)
+[pipeline 12:36:52] 7b. owner of Sterimed Group: IK Partners (already set)
+[pipeline 12:36:52] 7b. owner of Tekni-Plex, Inc.: Genstar Capital (already set)
+[pipeline 12:36:52] 7b. owner of Vitopel Argentina S.A.: Pritec Trade (already set)
+[pipeline 12:36:52] 7b. owner of Vitopel S.A.: Oben Group (already set)
+[pipeline 12:36:52] 7b. analyst corrections: 0 text(s) changed from 13 correction(s)
+[pipeline 12:36:52] 8. building HTML / JSON / CSV report
+[pipeline 12:36:55] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:36:55] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:42:08] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 10 scope, 0 ownership, 0 hq, 29 corrections (analyst review wins where both touch the same text)
+[pipeline 12:42:08] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 12:42:09] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:42:09]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:42:09]    market brief: player_type = Manufacturer
+[pipeline 12:42:09]    market brief: market_type = B2B
+[pipeline 12:42:09] 1b. 300 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 12:42:10] 1b. now 300 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 12:42:10] 1. verified rows: 304
+[pipeline 12:42:11] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:42:11] 3. 304 names -> 300 companies after dedupe (4 groups merged)
+[pipeline 12:42:11] 3b. 23 companies left out (not active or excluded by review): ['3M Company', 'Aicello Corporation', 'Berry Global Inc.', 'Camvac Limited', 'Chen Yo Plastic Co., Ltd.', 'EXXELES TECHNOLOGY LIMITED', 'Fengchen Group Co., Ltd.', 'John C. Brow Limited'] -> _pipeline/excluded_companies.json
+[pipeline 12:42:11] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:42:12] 3c. ownership 287 / identity 6 / scope 287 answers: 95 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Aman Poly Plast Pvt. Ltd.', 'Argotec, LLC', 'B-Pack S.p.A.'], 27 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 12:42:12] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:42:12] 4a. owner groups: 1; left out (the weaker of each group) ['Caprihans India Limited']
+[pipeline 12:42:12]    Top 20 refilled after 3b: added ['Adhesives Research, Inc.', 'Gascogne Flexible SASU', 'Carolex SAS', 'Polyplex Corporation Ltd.', 'ABX Packaging, Inc.']
+[pipeline 12:42:12]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:42:12] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:42:12] 5. evidence round 1: 3 companies with gaps
+[pipeline 12:42:12] evidence_r1: 3 companies across 3 browser(s)
+[pipeline 12:42:18] evidence_r1: 3/3 shard(s) still running
+[pipeline 12:43:18] evidence_r1: 3/3 shard(s) still running
+[pipeline 12:44:18] evidence_r1: 3/3 shard(s) still running
+[pipeline 12:45:18] evidence_r1: 1/3 shard(s) still running
+[pipeline 12:45:33]    WARNING: only 181 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:45:33]    --keep 1000: 20 chart/evidence + 161 long tail kept, 0 lower-scored dropped
+[pipeline 12:45:33]    20 companies with full evidence, 161 in the long tail
+[pipeline 12:45:33] 6. composite scores (5 per quadrant)
+[pipeline 12:45:34] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:45:36] 7c. gaps: 35 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:47:01] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 34 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:47:01] 7b. supporting points: 7 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:47:01] 7b. HQ for Tako Clean Products (S) Pte Ltd: Singapore, Singapore (already set)
+[pipeline 12:47:01] 7b. HQ for Adhesives Research, Inc.: Glen Rock, United States (already set)
+[pipeline 12:47:01] 7b. HQ for Videplast Indústria e Comércio de Plásticos Ltda.: Videira, Brazil (already set)
+[pipeline 12:47:01] 7b. owner of ABX Innovative Packaging Solutions, LLC: Graham Partners (already set)
+[pipeline 12:47:01] 7b. owner of ABX Packaging, Inc.: Outlook Group (already set)
+[pipeline 12:47:01] 7b. owner of ALMA Packaging AG: Family Trust Beteiligungsholding (already set)
+[pipeline 12:47:01] 7b. owner of Alfatherm S.p.A.: OpenGate Capital (already set)
+[pipeline 12:47:01] 7b. owner of Atedia Films: EiM Capital (already set)
+[pipeline 12:47:01] 7b. owner of Caprihans India Limited: Bilcare Limited (already set)
+[pipeline 12:47:01] 7b. owner of Carolex SAS: Pacur, LLC (already set)
+[pipeline 12:47:01] 7b. owner of Charter Next Generation, Inc.: KKR & Co. Inc. and Leonard Green & Partners (already set)
+[pipeline 12:47:01] 7b. owner of Covestro Deutschland AG: XRG P.J.S.C. (already set)
+[pipeline 12:47:01] 7b. owner of Danapak Flexibles A/S: Schur Flexibles Group (already set)
+[pipeline 12:47:01] 7b. owner of Dunmore Corporation: Steel Partners Holdings L.P. (already set)
+[pipeline 12:47:01] 7b. owner of Excel Scientific, Inc.: Vance Street Capital LLC (already set)
+[pipeline 12:47:01] 7b. owner of Fait Plast S.p.A.: Pennel & Flipo (already set)
+[pipeline 12:47:01] 7b. owner of Fuzhou Green Sail Packaging Material Co., Ltd.: Sterimed Holding (already set)
+[pipeline 12:47:01] 7b. owner of J-Film Corporation: Marunouchi Capital Inc. (already set)
+[pipeline 12:47:01] 7b. owner of Jiangsu Best New Medical Material Co., Ltd.: SSY Group Limited (already set)
+[pipeline 12:47:01] 7b. owner of Nelipak Corporation: Kohlberg & Company (already set)
+[pipeline 12:47:01] 7b. owner of Oliver Healthcare Packaging Company: Monomoy Capital Partners (already set)
+[pipeline 12:47:01] 7b. owner of Permali Gloucester Limited: Diamorph Group Holdings Ltd (already set)
+[pipeline 12:47:01] 7b. owner of Planned Packaging Films Limited: The Wasdell Group (already set)
+[pipeline 12:47:01] 7b. owner of ProAmpac LLC: Pritzker Private Capital (already set)
+[pipeline 12:47:01] 7b. owner of Protechnic: Bemis Associates Inc. (already set)
+[pipeline 12:47:01] 7b. owner of Sealed Air Corporation: Clayton, Dubilier & Rice (already set)
+[pipeline 12:47:01] 7b. owner of Sterimed Group: IK Partners (already set)
+[pipeline 12:47:01] 7b. owner of Tekni-Plex, Inc.: Genstar Capital (already set)
+[pipeline 12:47:01] 7b. owner of Vitopel Argentina S.A.: Pritec Trade (already set)
+[pipeline 12:47:01] 7b. owner of Vitopel S.A.: Oben Group (already set)
+[pipeline 12:47:02] 7b. analyst corrections: 16 text(s) changed from 29 correction(s)
+[pipeline 12:47:02] 8. building HTML / JSON / CSV report
+[pipeline 12:47:03] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:47:03] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:48:36] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 11 scope, 0 ownership, 0 hq, 34 corrections (analyst review wins where both touch the same text)
+[pipeline 12:48:36] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 12:48:37] market: Global Medical Films Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global
+[pipeline 12:48:37]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 12:48:37]    market brief: player_type = Manufacturer
+[pipeline 12:48:37]    market brief: market_type = B2B
+[pipeline 12:48:37] 1b. 300 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 12:48:39] 1b. now 300 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 12:48:39] 1. verified rows: 304
+[pipeline 12:48:39] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\axes_spec.json
+[pipeline 12:48:39] 3. 304 names -> 300 companies after dedupe (4 groups merged)
+[pipeline 12:48:40] 3b. 24 companies left out (not active or excluded by review): ['3M Company', 'Aicello Corporation', 'Berry Global Inc.', 'Camvac Limited', 'Chen Yo Plastic Co., Ltd.', 'EXXELES TECHNOLOGY LIMITED', 'Fengchen Group Co., Ltd.', 'John C. Brow Limited'] -> _pipeline/excluded_companies.json
+[pipeline 12:48:40] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 12:48:40] 3c. ownership 287 / identity 6 / scope 287 answers: 95 more left out ['ACG Pharmapack Private Limited', 'AVI Global Plast Pvt. Ltd.', 'Allflex Packaging Limited', 'Aman Poly Plast Pvt. Ltd.', 'Argotec, LLC', 'B-Pack S.p.A.'], 27 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 12:48:40] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 12:48:40] 4a. owner groups: 1; left out (the weaker of each group) ['Caprihans India Limited']
+[pipeline 12:48:40]    Top 20 refilled after 3b: added ['Fait Plast S.p.A.']
+[pipeline 12:48:40]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\_pipeline\evidence_pool.json
+[pipeline 12:48:40] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 12:48:40] 5. evidence round 1: 1 companies with gaps
+[pipeline 12:48:40] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 12:48:42] evidence_r1: 1/1 shard(s) still running
+[pipeline 12:49:42] evidence_r1: 1/1 shard(s) still running
+[pipeline 12:50:42] evidence_r1: 1/1 shard(s) still running
+[pipeline 12:51:42] evidence_r1: 1/1 shard(s) still running
+[pipeline 12:51:52]    WARNING: only 180 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 12:51:52]    --keep 1000: 20 chart/evidence + 160 long tail kept, 0 lower-scored dropped
+[pipeline 12:51:52]    20 companies with full evidence, 160 in the long tail
+[pipeline 12:51:52] 6. composite scores (5 per quadrant)
+[pipeline 12:51:54] 7. rewriting hedge wording / first person in evidence
+[pipeline 12:51:56] 7c. gaps: 10 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 12:52:26] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 9 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 12:52:26] 7b. supporting points: 4 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 12:52:26] 7b. HQ for Tako Clean Products (S) Pte Ltd: Singapore, Singapore (already set)
+[pipeline 12:52:26] 7b. HQ for Adhesives Research, Inc.: Glen Rock, United States (already set)
+[pipeline 12:52:26] 7b. HQ for Videplast Indústria e Comércio de Plásticos Ltda.: Videira, Brazil (already set)
+[pipeline 12:52:26] 7b. owner of ABX Innovative Packaging Solutions, LLC: Graham Partners (already set)
+[pipeline 12:52:26] 7b. owner of ABX Packaging, Inc.: Outlook Group (already set)
+[pipeline 12:52:26] 7b. owner of ALMA Packaging AG: Family Trust Beteiligungsholding (already set)
+[pipeline 12:52:26] 7b. owner of Alfatherm S.p.A.: OpenGate Capital (already set)
+[pipeline 12:52:26] 7b. owner of Atedia Films: EiM Capital (already set)
+[pipeline 12:52:26] 7b. owner of Caprihans India Limited: Bilcare Limited (already set)
+[pipeline 12:52:26] 7b. owner of Carolex SAS: Pacur, LLC (already set)
+[pipeline 12:52:26] 7b. owner of Charter Next Generation, Inc.: KKR & Co. Inc. and Leonard Green & Partners (already set)
+[pipeline 12:52:26] 7b. owner of Covestro Deutschland AG: XRG P.J.S.C. (already set)
+[pipeline 12:52:26] 7b. owner of Danapak Flexibles A/S: Schur Flexibles Group (already set)
+[pipeline 12:52:26] 7b. owner of Dunmore Corporation: Steel Partners Holdings L.P. (already set)
+[pipeline 12:52:26] 7b. owner of Excel Scientific, Inc.: Vance Street Capital LLC (already set)
+[pipeline 12:52:26] 7b. owner of Fait Plast S.p.A.: Pennel & Flipo (already set)
+[pipeline 12:52:26] 7b. owner of Fuzhou Green Sail Packaging Material Co., Ltd.: Sterimed Holding (already set)
+[pipeline 12:52:26] 7b. owner of J-Film Corporation: Marunouchi Capital Inc. (already set)
+[pipeline 12:52:26] 7b. owner of Jiangsu Best New Medical Material Co., Ltd.: SSY Group Limited (already set)
+[pipeline 12:52:26] 7b. owner of Nelipak Corporation: Kohlberg & Company (already set)
+[pipeline 12:52:26] 7b. owner of Oliver Healthcare Packaging Company: Monomoy Capital Partners (already set)
+[pipeline 12:52:26] 7b. owner of Permali Gloucester Limited: Diamorph Group Holdings Ltd (already set)
+[pipeline 12:52:26] 7b. owner of Planned Packaging Films Limited: The Wasdell Group (already set)
+[pipeline 12:52:26] 7b. owner of ProAmpac LLC: Pritzker Private Capital (already set)
+[pipeline 12:52:26] 7b. owner of Protechnic: Bemis Associates Inc. (already set)
+[pipeline 12:52:26] 7b. owner of Sealed Air Corporation: Clayton, Dubilier & Rice (already set)
+[pipeline 12:52:26] 7b. owner of Sterimed Group: IK Partners (already set)
+[pipeline 12:52:26] 7b. owner of Tekni-Plex, Inc.: Genstar Capital (already set)
+[pipeline 12:52:26] 7b. owner of Vitopel Argentina S.A.: Pritec Trade (already set)
+[pipeline 12:52:26] 7b. owner of Vitopel S.A.: Oben Group (already set)
+[pipeline 12:52:27] 7b. analyst corrections: 5 text(s) changed from 34 correction(s)
+[pipeline 12:52:27] 8. building HTML / JSON / CSV report
+[pipeline 12:52:29] 8. report page: interactive design (global_medical_films_market_global_report.html); static copy global_medical_films_market_global_report_classic.html
+[pipeline 12:52:29] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 12:53:23] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 11 scope, 0 ownership, 0 hq, 37 corrections (analyst review wins where both touch the same text)
+[pipeline 12:53:35] 8b. PDF report: global_medical_films_market_global_report.pdf
+[pipeline 12:54:04] 8b. Word report: global_medical_films_market_global_report.docx
+[pipeline 12:54:05] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 180 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 12:54:05] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_medical_films_market_global\global_medical_films_market_global_report.html
+exit=0

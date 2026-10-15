@@ -1,0 +1,44 @@
+[rounds 09:36:43] round 1: 47/60 verified (keep rate 6%) -> discovering 78 more
+    → substep 1a: discovery rounds for Manufacturer (batch 10, target 118, resuming with 40)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 2/4…
+      · discover-round-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 3/4…
+      · discover-round-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 4/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-1: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+    → substep 1a.1: +0 (total 40)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · discover-round-2: rate limited (rate limited by Google (2 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 2/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · discover-round-2: rate limited (rate limited by Google (3 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 3/4…
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+      · discover-round-2: rate limited (rate limited by Google (4 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_50_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 4/4…
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · discover-round-2: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+    → substep 1a.2: +0 (total 40)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 2/4…
+      · discover-round-3: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 3/4…
+      · discover-round-3: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 98s ago
+    → substep 1a.3: +2 (total 42)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…

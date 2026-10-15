@@ -1,0 +1,14 @@
+[rounds 15:12:32] verify only: 10 unchecked companies
+    → substep 4a: verify 10 candidates as Manufacturer in 1 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1 (10 companies, 0/10 done)…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · verify-1: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 55s ago
+    → substep 4a.1: running kept=0 rejected=10
+    → substep 4a done: kept=0 rejected=10 (required=Manufacturer)
+[rounds 15:14:17] verify only: +0 verified, 10 rejected

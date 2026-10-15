@@ -1,0 +1,19 @@
+[rounds 03:20:22] verify only: 10 unchecked companies
+    → substep 4a: verify 10 candidates as Manufacturer in 1 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1 (10 companies, 0/10 done)…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_48_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-1: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_48_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-1: calling Google AI Mode (udm=50) attempt 2/5…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · verify-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · verify-1: calling Google AI Mode (udm=50) attempt 3/5…
+      · verify-1: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 66s ago
+    → substep 4a.1: running kept=0 rejected=10
+    → substep 4a done: kept=0 rejected=10 (required=Manufacturer)
+[rounds 03:22:47] verify only: +0 verified, 10 rejected

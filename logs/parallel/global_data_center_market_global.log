@@ -1,0 +1,385 @@
+[pipeline 04:36:12] market: Global Data Center Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global
+[pipeline 04:36:12]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 04:36:12]    market brief: player_type = Solution Provider
+[pipeline 04:36:12]    market brief: market_type = B2B
+[pipeline 04:36:12] 1. verified rows: 223
+[pipeline 04:36:19] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\axes_spec.json
+[pipeline 04:36:19] 3. 222 names -> 201 companies after dedupe (18 groups merged)
+[pipeline 04:36:19] 3b. operating-status check for 201 companies across 20 browser(s)
+[pipeline 04:37:46] 3b. 5 companies left out (not active or excluded by review): ['CoolIT Systems Inc.', 'Device42, Inc.', 'Great Lakes Data Racks & Cabinets', 'Optimum Path Systems, Inc.', 'Tripp Lite'] -> _pipeline/excluded_companies.json
+[pipeline 04:37:46] 3b. 6 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 04:37:46] ownership: 196 companies across 20 browser(s)
+[pipeline 04:38:30] ownership: 19/20 shard(s) still running
+[pipeline 04:39:30] ownership: 16/20 shard(s) still running
+[pipeline 04:40:31] ownership: 12/20 shard(s) still running
+[pipeline 04:41:32] ownership: 11/20 shard(s) still running
+[pipeline 04:42:32] ownership: 8/20 shard(s) still running
+[pipeline 04:43:32] ownership: 5/20 shard(s) still running
+[pipeline 04:44:32] ownership: 5/20 shard(s) still running
+[pipeline 04:45:32] ownership: 4/20 shard(s) still running
+[pipeline 04:46:32] ownership: 3/20 shard(s) still running
+[pipeline 04:47:32] ownership: 2/20 shard(s) still running
+[pipeline 04:48:32] ownership: 1/20 shard(s) still running
+[pipeline 04:49:32] ownership: 1/20 shard(s) still running
+[pipeline 04:49:47] identity: 10 companies across 10 browser(s)
+[pipeline 04:50:08] identity: 6/10 shard(s) still running
+[pipeline 04:51:08] identity: 2/10 shard(s) still running
+[pipeline 04:52:03] scope: 196 companies across 20 browser(s)
+[pipeline 04:52:46] scope: 18/20 shard(s) still running
+[pipeline 04:53:46] scope: 15/20 shard(s) still running
+[pipeline 04:54:47] scope: 13/20 shard(s) still running
+[pipeline 04:55:47] scope: 9/20 shard(s) still running
+[pipeline 04:56:47] scope: 8/20 shard(s) still running
+[pipeline 04:57:47] scope: 6/20 shard(s) still running
+[pipeline 04:58:47] scope: 3/20 shard(s) still running
+[pipeline 04:59:47] scope: 1/20 shard(s) still running
+[pipeline 04:59:57] 3c. ownership 196 / identity 10 / scope 195 answers: 20 more left out ['Advanced Micro Devices, Inc.', 'Broadcom Inc.', 'Centiel SA', 'Clemar Engenharia S.A.', 'Cotel S.A.S.', 'Cygnet Infotech Pvt. Ltd.'], 37 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 04:59:58] hq: 40 companies across 20 browser(s)
+[pipeline 05:00:38] hq: 5/20 shard(s) still running
+[pipeline 05:00:48] 3d. HQ missing for 40 companies: 39 found in AI Mode ['ABB Ltd -> Zurich, Switzerland', 'Amphenol Corporation -> Wallingford, United States', 'Arista Networks, Inc. -> Santa Clara, United States', 'Carrier Global Corporation -> Palm Beach Gardens, United States', 'Caterpillar Inc. -> Irving, United States', 'Ciena Corporation -> Fulton, United States']
+[pipeline 05:00:48] 4. quick X/Y scorecard scoring needed for 176 companies (1 Product + 1 Business query each)
+[pipeline 05:00:48] overall: 176 companies across 20 browser(s)
+[pipeline 05:01:32] overall: 20/20 shard(s) still running
+[pipeline 05:02:35] overall: 20/20 shard(s) still running
+[pipeline 05:03:36] overall: 20/20 shard(s) still running
+[pipeline 05:04:38] overall: 20/20 shard(s) still running
+[pipeline 05:05:42] overall: 20/20 shard(s) still running
+[pipeline 05:06:43] overall: 20/20 shard(s) still running
+[pipeline 05:07:44] overall: 20/20 shard(s) still running
+[pipeline 05:08:44] overall: 20/20 shard(s) still running
+[pipeline 05:09:44] overall: 20/20 shard(s) still running
+[pipeline 05:10:45] overall: 20/20 shard(s) still running
+[pipeline 05:11:45] overall: 20/20 shard(s) still running
+[pipeline 05:12:46] overall: 20/20 shard(s) still running
+[pipeline 05:13:46] overall: 11/20 shard(s) still running
+[pipeline 05:14:46] overall: 8/20 shard(s) still running
+[pipeline 05:15:46] overall: 3/20 shard(s) still running
+[pipeline 05:16:31] 4a. owner groups: 4; left out (the weaker of each group) ['Great Lakes Case & Cabinet Co., Inc.', 'LiquidStack Inc.', 'Minkels B.V.', 'Netrack India Pvt. Ltd.', 'Raritan Americas, Inc.', 'Server Technology, Inc.', 'Starline Holdings, LLC', 'ZPE Systems, Inc.', 'Nlyte Software Limited']
+[pipeline 05:16:31]    Top 20 chosen 5 per quadrant from 167 quick-scored companies
+[pipeline 05:16:31]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\evidence_pool.json
+[pipeline 05:16:31] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 05:16:31] 5. evidence round 1: 20 companies with gaps
+[pipeline 05:16:31] evidence_r1: 20 companies across 20 browser(s)
+[pipeline 05:17:15] evidence_r1: 20/20 shard(s) still running
+[pipeline 05:18:18] evidence_r1: 20/20 shard(s) still running
+[pipeline 05:19:21] evidence_r1: 20/20 shard(s) still running
+[pipeline 05:20:23] evidence_r1: 20/20 shard(s) still running
+[pipeline 05:21:23] evidence_r1: 19/20 shard(s) still running
+[pipeline 05:22:24] evidence_r1: 18/20 shard(s) still running
+[pipeline 05:23:26] evidence_r1: 10/20 shard(s) still running
+[pipeline 05:24:26] evidence_r1: 5/20 shard(s) still running
+[pipeline 05:25:26] evidence_r1: 1/20 shard(s) still running
+[pipeline 05:26:01] fillgap_r1: 12 companies across 12 browser(s)
+[pipeline 05:26:26] fillgap_r1: 11/12 shard(s) still running
+[pipeline 05:27:16] 5. evidence round 2: 4 companies with gaps
+[pipeline 05:27:16] fillgap_r2: 4 companies across 4 browser(s)
+[pipeline 05:27:24] fillgap_r2: 4/4 shard(s) still running
+[pipeline 05:27:54]    WARNING: only 167 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:27:54]    --keep 200: 20 chart/evidence + 147 long tail kept, 0 lower-scored dropped
+[pipeline 05:27:54]    20 companies with full evidence, 147 in the long tail
+[pipeline 05:27:54] 6. composite scores (5 per quadrant)
+[pipeline 05:27:55] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:27:56] 7c. gaps: 200 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 05:31:47] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 192 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:31:47] 7b. supporting points: 10 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 05:31:47] 7b. current name for Furukawa Electric LatAm S.A.: Lightera (listed brand is legacy)
+[pipeline 05:31:47] 7b. owner of Asetek A/S: CQXA Holdings Pte. Ltd.
+[pipeline 05:31:47] 7b. owner of BTECH Inc: Great River Capital Partners
+[pipeline 05:31:47] 7b. owner of Boreas Teknoloji A.Ş.: Açık Holding
+[pipeline 05:31:47] 7b. owner of Borri S.p.A.: Legrand Group
+[pipeline 05:31:47] 7b. owner of C&D Technologies, Inc.: Stryten Energy LLC
+[pipeline 05:31:47] 7b. owner of Chilldyne, Inc.: Daikin Applied
+[pipeline 05:31:47] 7b. owner of Cormant, Inc.: BGIS
+[pipeline 05:31:47] 7b. owner of Cybermax Server Solutions Pte Ltd: Data Clean Asia
+[pipeline 05:31:47] 7b. owner of Enlogic Systems LLC: CIS Global
+[pipeline 05:31:47] 7b. owner of Great Lakes Case & Cabinet Co., Inc.: Vertiv Holdings Co.
+[pipeline 05:31:47] 7b. owner of Himoinsa S.L.: Yanmar Co., Ltd.
+[pipeline 05:31:47] 7b. owner of IMS Engineered Products, Inc.: IMS Companies, LLC
+[pipeline 05:31:47] 7b. owner of JetCool Technologies Inc.: Flex
+[pipeline 05:31:47] 7b. owner of LayerZero Power Systems, Inc.: Advent International
+[pipeline 05:31:47] 7b. owner of LiquidStack Inc.: Trane Technologies
+[pipeline 05:31:47] 7b. owner of Minkels B.V.: Legrand
+[pipeline 05:31:47] 7b. owner of Motivair Corporation: Schneider Electric
+[pipeline 05:31:47] 7b. owner of Netrack India Pvt. Ltd.: Legrand SA
+[pipeline 05:31:47] 7b. owner of Nlyte Software Limited: Carrier Global Corporation
+[pipeline 05:31:47] 7b. owner of Nortek Air Solutions, LLC: Madison Industries
+[pipeline 05:31:47] 7b. owner of Opengear, Inc.: Digi International Inc.
+[pipeline 05:31:47] 7b. owner of OptiCool Technologies LLC: Calvary Robotics
+[pipeline 05:31:47] 7b. owner of PCX Corporation: Hubbell Incorporated
+[pipeline 05:31:47] 7b. owner of Piller Group GmbH: Langley Holdings plc
+[pipeline 05:31:47] 7b. owner of Polargy LLC: GEF Capital Partners
+[pipeline 05:31:47] 7b. owner of RackSolutions: Spin Master
+[pipeline 05:31:47] 7b. owner of Raritan Americas, Inc.: Legrand
+[pipeline 05:31:47] 7b. owner of Server Technology, Inc.: Legrand
+[pipeline 05:31:47] 7b. owner of Starline Holdings, LLC: Legrand
+[pipeline 05:31:47] 7b. owner of Subzero Design, Inc.: Senneca Holdings
+[pipeline 05:31:47] 7b. owner of Subzero Engineering: Senneca Holdings
+[pipeline 05:31:47] 7b. owner of Tate Access Floors, Inc.: Kingspan Group PLC
+[pipeline 05:31:47] 7b. owner of USystems Limited: Legrand Group
+[pipeline 05:31:47] 7b. owner of Upsite Technologies, Inc.: Aquila, Inc.
+[pipeline 05:31:47] 7b. owner of Vycon, Inc.: Calnetix Technologies
+[pipeline 05:31:47] 7b. owner of ZPE Systems, Inc.: Legrand
+[pipeline 05:31:47] 7b. owner of ZincFive, Inc.: Spark I Acquisition Corporation
+[pipeline 05:31:47] 8. building HTML / JSON / CSV report
+[pipeline 05:31:48] 8. report page: interactive design (global_data_center_market_global_report.html); static copy global_data_center_market_global_report_classic.html
+[pipeline 05:31:48] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 05:36:31] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 30 corrections (analyst review wins where both touch the same text)
+[pipeline 05:36:31] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 05:36:32] market: Global Data Center Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global
+[pipeline 05:36:32]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:36:32]    market brief: player_type = Solution Provider
+[pipeline 05:36:32]    market brief: market_type = B2B
+[pipeline 05:36:32] 1. verified rows: 223
+[pipeline 05:36:32] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\axes_spec.json
+[pipeline 05:36:32] 3. 222 names -> 201 companies after dedupe (18 groups merged)
+[pipeline 05:36:32] 3b. operating-status check for 1 companies across 1 browser(s)
+[pipeline 05:36:49] 3b. 7 companies left out (not active or excluded by review): ['CoolIT Systems Inc.', 'Device42, Inc.', 'Great Lakes Data Racks & Cabinets', 'Loxomed SAS', 'Maya Heat Transfer Technologies Ltd.', 'Optimum Path Systems, Inc.', 'Tripp Lite'] -> _pipeline/excluded_companies.json
+[pipeline 05:36:49] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 05:36:49] scope: 1 companies across 1 browser(s)
+[pipeline 05:36:51] scope: 1/1 shard(s) still running
+[pipeline 05:37:01] 3c. ownership 196 / identity 10 / scope 196 answers: 19 more left out ['Advanced Micro Devices, Inc.', 'Broadcom Inc.', 'Centiel SA', 'Clemar Engenharia S.A.', 'Cotel S.A.S.', 'Cygnet Infotech Pvt. Ltd.'], 37 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:37:02] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 05:37:02] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:37:02] 4a. owner groups: 4; left out (the weaker of each group) ['Great Lakes Case & Cabinet Co., Inc.', 'LiquidStack Inc.', 'Minkels B.V.', 'Netrack India Pvt. Ltd.', 'Raritan Americas, Inc.', 'Server Technology, Inc.', 'Starline Holdings, LLC', 'ZPE Systems, Inc.', 'Nlyte Software Limited']
+[pipeline 05:37:02]    Top 20 refilled after 3b: added ['EAE Elektrik A.Ş.']
+[pipeline 05:37:02]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\evidence_pool.json
+[pipeline 05:37:02] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 05:37:02] 5. evidence round 1: 1 companies with gaps
+[pipeline 05:37:02] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 05:37:04] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:38:04] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:39:04] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:40:04] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:40:34] fillgap_r1: 1 companies across 1 browser(s)
+[pipeline 05:40:36] fillgap_r1: 1/1 shard(s) still running
+[pipeline 05:41:01]    WARNING: only 166 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:41:01]    --keep 200: 20 chart/evidence + 146 long tail kept, 0 lower-scored dropped
+[pipeline 05:41:01]    20 companies with full evidence, 146 in the long tail
+[pipeline 05:41:01] 6. composite scores (5 per quadrant)
+[pipeline 05:41:02] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:41:02] 7c. gaps: 18 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 05:42:24] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 17 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:42:25] 7b. supporting points: 5 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 05:42:25] 7b. current name for Furukawa Electric LatAm S.A.: Lightera (listed brand is legacy) (already set)
+[pipeline 05:42:25] 7b. owner of Asetek A/S: CQXA Holdings Pte. Ltd. (already set)
+[pipeline 05:42:25] 7b. owner of BTECH Inc: Great River Capital Partners (already set)
+[pipeline 05:42:25] 7b. owner of Boreas Teknoloji A.Ş.: Açık Holding (already set)
+[pipeline 05:42:25] 7b. owner of Borri S.p.A.: Legrand Group (already set)
+[pipeline 05:42:25] 7b. owner of C&D Technologies, Inc.: Stryten Energy LLC (already set)
+[pipeline 05:42:25] 7b. owner of Chilldyne, Inc.: Daikin Applied (already set)
+[pipeline 05:42:25] 7b. owner of Cormant, Inc.: BGIS (already set)
+[pipeline 05:42:25] 7b. owner of Cybermax Server Solutions Pte Ltd: Data Clean Asia (already set)
+[pipeline 05:42:25] 7b. owner of Enlogic Systems LLC: CIS Global (already set)
+[pipeline 05:42:25] 7b. owner of Great Lakes Case & Cabinet Co., Inc.: Vertiv Holdings Co. (already set)
+[pipeline 05:42:25] 7b. owner of Himoinsa S.L.: Yanmar Co., Ltd. (already set)
+[pipeline 05:42:25] 7b. owner of IMS Engineered Products, Inc.: IMS Companies, LLC (already set)
+[pipeline 05:42:25] 7b. owner of JetCool Technologies Inc.: Flex (already set)
+[pipeline 05:42:25] 7b. owner of LayerZero Power Systems, Inc.: Advent International (already set)
+[pipeline 05:42:25] 7b. owner of LiquidStack Inc.: Trane Technologies (already set)
+[pipeline 05:42:25] 7b. owner of Minkels B.V.: Legrand (already set)
+[pipeline 05:42:25] 7b. owner of Motivair Corporation: Schneider Electric (already set)
+[pipeline 05:42:25] 7b. owner of Netrack India Pvt. Ltd.: Legrand SA (already set)
+[pipeline 05:42:25] 7b. owner of Nlyte Software Limited: Carrier Global Corporation (already set)
+[pipeline 05:42:25] 7b. owner of Nortek Air Solutions, LLC: Madison Industries (already set)
+[pipeline 05:42:25] 7b. owner of Opengear, Inc.: Digi International Inc. (already set)
+[pipeline 05:42:25] 7b. owner of OptiCool Technologies LLC: Calvary Robotics (already set)
+[pipeline 05:42:25] 7b. owner of PCX Corporation: Hubbell Incorporated (already set)
+[pipeline 05:42:25] 7b. owner of Piller Group GmbH: Langley Holdings plc (already set)
+[pipeline 05:42:25] 7b. owner of Polargy LLC: GEF Capital Partners (already set)
+[pipeline 05:42:25] 7b. owner of RackSolutions: Spin Master (already set)
+[pipeline 05:42:25] 7b. owner of Raritan Americas, Inc.: Legrand (already set)
+[pipeline 05:42:25] 7b. owner of Server Technology, Inc.: Legrand (already set)
+[pipeline 05:42:25] 7b. owner of Starline Holdings, LLC: Legrand (already set)
+[pipeline 05:42:25] 7b. owner of Subzero Design, Inc.: Senneca Holdings (already set)
+[pipeline 05:42:25] 7b. owner of Subzero Engineering: Senneca Holdings (already set)
+[pipeline 05:42:25] 7b. owner of Tate Access Floors, Inc.: Kingspan Group PLC (already set)
+[pipeline 05:42:25] 7b. owner of USystems Limited: Legrand Group (already set)
+[pipeline 05:42:25] 7b. owner of Upsite Technologies, Inc.: Aquila, Inc. (already set)
+[pipeline 05:42:25] 7b. owner of Vycon, Inc.: Calnetix Technologies (already set)
+[pipeline 05:42:25] 7b. owner of ZPE Systems, Inc.: Legrand (already set)
+[pipeline 05:42:25] 7b. owner of ZincFive, Inc.: Spark I Acquisition Corporation (already set)
+[pipeline 05:42:25] 7b. analyst corrections: 30 text(s) changed from 30 correction(s)
+[pipeline 05:42:25] 8. building HTML / JSON / CSV report
+[pipeline 05:42:26] 8. report page: interactive design (global_data_center_market_global_report.html); static copy global_data_center_market_global_report_classic.html
+[pipeline 05:42:26] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 05:43:21] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 31 corrections (analyst review wins where both touch the same text)
+[pipeline 05:43:21] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 05:43:21] market: Global Data Center Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global
+[pipeline 05:43:21]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:43:21]    market brief: player_type = Solution Provider
+[pipeline 05:43:21]    market brief: market_type = B2B
+[pipeline 05:43:21] 1. verified rows: 223
+[pipeline 05:43:22] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\axes_spec.json
+[pipeline 05:43:22] 3. 222 names -> 201 companies after dedupe (18 groups merged)
+[pipeline 05:43:22] 3b. 7 companies left out (not active or excluded by review): ['CoolIT Systems Inc.', 'Device42, Inc.', 'Great Lakes Data Racks & Cabinets', 'Loxomed SAS', 'Maya Heat Transfer Technologies Ltd.', 'Optimum Path Systems, Inc.', 'Tripp Lite'] -> _pipeline/excluded_companies.json
+[pipeline 05:43:22] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 05:43:22] 3c. ownership 196 / identity 10 / scope 196 answers: 19 more left out ['Advanced Micro Devices, Inc.', 'Broadcom Inc.', 'Centiel SA', 'Clemar Engenharia S.A.', 'Cotel S.A.S.', 'Cygnet Infotech Pvt. Ltd.'], 37 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:43:22] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 05:43:22] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:43:22] 4a. owner groups: 4; left out (the weaker of each group) ['Great Lakes Case & Cabinet Co., Inc.', 'LiquidStack Inc.', 'Minkels B.V.', 'Netrack India Pvt. Ltd.', 'Raritan Americas, Inc.', 'Server Technology, Inc.', 'Starline Holdings, LLC', 'ZPE Systems, Inc.', 'Nlyte Software Limited']
+[pipeline 05:43:22]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\evidence_pool.json
+[pipeline 05:43:22] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 05:43:22]    WARNING: only 166 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:43:22]    --keep 200: 20 chart/evidence + 146 long tail kept, 0 lower-scored dropped
+[pipeline 05:43:22]    20 companies with full evidence, 146 in the long tail
+[pipeline 05:43:22] 6. composite scores (5 per quadrant)
+[pipeline 05:43:23] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:43:24] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:43:24] 7b. supporting points: 1 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 05:43:24] 7b. current name for Furukawa Electric LatAm S.A.: Lightera (listed brand is legacy) (already set)
+[pipeline 05:43:24] 7b. owner of Asetek A/S: CQXA Holdings Pte. Ltd. (already set)
+[pipeline 05:43:24] 7b. owner of BTECH Inc: Great River Capital Partners (already set)
+[pipeline 05:43:24] 7b. owner of Boreas Teknoloji A.Ş.: Açık Holding (already set)
+[pipeline 05:43:24] 7b. owner of Borri S.p.A.: Legrand Group (already set)
+[pipeline 05:43:24] 7b. owner of C&D Technologies, Inc.: Stryten Energy LLC (already set)
+[pipeline 05:43:24] 7b. owner of Chilldyne, Inc.: Daikin Applied (already set)
+[pipeline 05:43:24] 7b. owner of Cormant, Inc.: BGIS (already set)
+[pipeline 05:43:24] 7b. owner of Cybermax Server Solutions Pte Ltd: Data Clean Asia (already set)
+[pipeline 05:43:24] 7b. owner of Enlogic Systems LLC: CIS Global (already set)
+[pipeline 05:43:24] 7b. owner of Great Lakes Case & Cabinet Co., Inc.: Vertiv Holdings Co. (already set)
+[pipeline 05:43:24] 7b. owner of Himoinsa S.L.: Yanmar Co., Ltd. (already set)
+[pipeline 05:43:24] 7b. owner of IMS Engineered Products, Inc.: IMS Companies, LLC (already set)
+[pipeline 05:43:24] 7b. owner of JetCool Technologies Inc.: Flex (already set)
+[pipeline 05:43:24] 7b. owner of LayerZero Power Systems, Inc.: Advent International (already set)
+[pipeline 05:43:24] 7b. owner of LiquidStack Inc.: Trane Technologies (already set)
+[pipeline 05:43:24] 7b. owner of Minkels B.V.: Legrand (already set)
+[pipeline 05:43:24] 7b. owner of Motivair Corporation: Schneider Electric (already set)
+[pipeline 05:43:24] 7b. owner of Netrack India Pvt. Ltd.: Legrand SA (already set)
+[pipeline 05:43:24] 7b. owner of Nlyte Software Limited: Carrier Global Corporation (already set)
+[pipeline 05:43:24] 7b. owner of Nortek Air Solutions, LLC: Madison Industries (already set)
+[pipeline 05:43:24] 7b. owner of Opengear, Inc.: Digi International Inc. (already set)
+[pipeline 05:43:24] 7b. owner of OptiCool Technologies LLC: Calvary Robotics (already set)
+[pipeline 05:43:24] 7b. owner of PCX Corporation: Hubbell Incorporated (already set)
+[pipeline 05:43:24] 7b. owner of Piller Group GmbH: Langley Holdings plc (already set)
+[pipeline 05:43:24] 7b. owner of Polargy LLC: GEF Capital Partners (already set)
+[pipeline 05:43:24] 7b. owner of RackSolutions: Spin Master (already set)
+[pipeline 05:43:24] 7b. owner of Raritan Americas, Inc.: Legrand (already set)
+[pipeline 05:43:24] 7b. owner of Server Technology, Inc.: Legrand (already set)
+[pipeline 05:43:24] 7b. owner of Starline Holdings, LLC: Legrand (already set)
+[pipeline 05:43:24] 7b. owner of Subzero Design, Inc.: Senneca Holdings (already set)
+[pipeline 05:43:24] 7b. owner of Subzero Engineering: Senneca Holdings (already set)
+[pipeline 05:43:24] 7b. owner of Tate Access Floors, Inc.: Kingspan Group PLC (already set)
+[pipeline 05:43:24] 7b. owner of USystems Limited: Legrand Group (already set)
+[pipeline 05:43:24] 7b. owner of Upsite Technologies, Inc.: Aquila, Inc. (already set)
+[pipeline 05:43:24] 7b. owner of Vycon, Inc.: Calnetix Technologies (already set)
+[pipeline 05:43:24] 7b. owner of ZPE Systems, Inc.: Legrand (already set)
+[pipeline 05:43:24] 7b. owner of ZincFive, Inc.: Spark I Acquisition Corporation (already set)
+[pipeline 05:43:24] 7b. analyst corrections: 2 text(s) changed from 31 correction(s)
+[pipeline 05:43:24] 8. building HTML / JSON / CSV report
+[pipeline 05:43:25] 8. report page: interactive design (global_data_center_market_global_report.html); static copy global_data_center_market_global_report_classic.html
+[pipeline 05:43:25] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 31 corrections (analyst review wins where both touch the same text)
+[pipeline 05:43:35] 8b. PDF report: global_data_center_market_global_report.pdf
+[pipeline 05:43:59] 8b. Word report: global_data_center_market_global_report.docx
+[pipeline 05:43:59] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 166 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [FAIL] No third-party source named (marketplaces, directories, social, press)  -> ['Alibaba', 'Facebook']
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [FAIL] Every company has an HQ  -> 1 missing: ['Seagate Technology Holdings plc']
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 05:43:59] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\global_data_center_market_global_report.html
+exit=1
+[pipeline 05:46:29] market: Global Data Center Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global
+[pipeline 05:46:29]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:46:29]    market brief: player_type = Solution Provider
+[pipeline 05:46:29]    market brief: market_type = B2B
+[pipeline 05:46:29] 1. verified rows: 223
+[pipeline 05:46:29] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\axes_spec.json
+[pipeline 05:46:29] 3. 222 names -> 201 companies after dedupe (18 groups merged)
+[pipeline 05:46:29] 3b. 7 companies left out (not active or excluded by review): ['CoolIT Systems Inc.', 'Device42, Inc.', 'Great Lakes Data Racks & Cabinets', 'Loxomed SAS', 'Maya Heat Transfer Technologies Ltd.', 'Optimum Path Systems, Inc.', 'Tripp Lite'] -> _pipeline/excluded_companies.json
+[pipeline 05:46:29] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 05:46:29] 3c. ownership 196 / identity 10 / scope 196 answers: 19 more left out ['Advanced Micro Devices, Inc.', 'Broadcom Inc.', 'Centiel SA', 'Clemar Engenharia S.A.', 'Cotel S.A.S.', 'Cygnet Infotech Pvt. Ltd.'], 37 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:46:30] 3d. HQ missing for 1 companies: 1 found in AI Mode ['Seagate Technology Holdings plc -> Singapore, Singapore']
+[pipeline 05:46:30] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:46:30] 4a. owner groups: 4; left out (the weaker of each group) ['Great Lakes Case & Cabinet Co., Inc.', 'LiquidStack Inc.', 'Minkels B.V.', 'Netrack India Pvt. Ltd.', 'Raritan Americas, Inc.', 'Server Technology, Inc.', 'Starline Holdings, LLC', 'ZPE Systems, Inc.', 'Nlyte Software Limited']
+[pipeline 05:46:30]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\_pipeline\evidence_pool.json
+[pipeline 05:46:30] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 05:46:30]    WARNING: only 166 verified companies after dedupe, fewer than --keep 200. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:46:30]    --keep 200: 20 chart/evidence + 146 long tail kept, 0 lower-scored dropped
+[pipeline 05:46:30]    20 companies with full evidence, 146 in the long tail
+[pipeline 05:46:30] 6. composite scores (5 per quadrant)
+[pipeline 05:46:30] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:46:31] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:46:32] 7b. current name for Furukawa Electric LatAm S.A.: Lightera (listed brand is legacy) (already set)
+[pipeline 05:46:32] 7b. owner of Asetek A/S: CQXA Holdings Pte. Ltd. (already set)
+[pipeline 05:46:32] 7b. owner of BTECH Inc: Great River Capital Partners (already set)
+[pipeline 05:46:32] 7b. owner of Boreas Teknoloji A.Ş.: Açık Holding (already set)
+[pipeline 05:46:32] 7b. owner of Borri S.p.A.: Legrand Group (already set)
+[pipeline 05:46:32] 7b. owner of C&D Technologies, Inc.: Stryten Energy LLC (already set)
+[pipeline 05:46:32] 7b. owner of Chilldyne, Inc.: Daikin Applied (already set)
+[pipeline 05:46:32] 7b. owner of Cormant, Inc.: BGIS (already set)
+[pipeline 05:46:32] 7b. owner of Cybermax Server Solutions Pte Ltd: Data Clean Asia (already set)
+[pipeline 05:46:32] 7b. owner of Enlogic Systems LLC: CIS Global (already set)
+[pipeline 05:46:32] 7b. owner of Great Lakes Case & Cabinet Co., Inc.: Vertiv Holdings Co. (already set)
+[pipeline 05:46:32] 7b. owner of Himoinsa S.L.: Yanmar Co., Ltd. (already set)
+[pipeline 05:46:32] 7b. owner of IMS Engineered Products, Inc.: IMS Companies, LLC (already set)
+[pipeline 05:46:32] 7b. owner of JetCool Technologies Inc.: Flex (already set)
+[pipeline 05:46:32] 7b. owner of LayerZero Power Systems, Inc.: Advent International (already set)
+[pipeline 05:46:32] 7b. owner of LiquidStack Inc.: Trane Technologies (already set)
+[pipeline 05:46:32] 7b. owner of Minkels B.V.: Legrand (already set)
+[pipeline 05:46:32] 7b. owner of Motivair Corporation: Schneider Electric (already set)
+[pipeline 05:46:32] 7b. owner of Netrack India Pvt. Ltd.: Legrand SA (already set)
+[pipeline 05:46:32] 7b. owner of Nlyte Software Limited: Carrier Global Corporation (already set)
+[pipeline 05:46:32] 7b. owner of Nortek Air Solutions, LLC: Madison Industries (already set)
+[pipeline 05:46:32] 7b. owner of Opengear, Inc.: Digi International Inc. (already set)
+[pipeline 05:46:32] 7b. owner of OptiCool Technologies LLC: Calvary Robotics (already set)
+[pipeline 05:46:32] 7b. owner of PCX Corporation: Hubbell Incorporated (already set)
+[pipeline 05:46:32] 7b. owner of Piller Group GmbH: Langley Holdings plc (already set)
+[pipeline 05:46:32] 7b. owner of Polargy LLC: GEF Capital Partners (already set)
+[pipeline 05:46:32] 7b. owner of RackSolutions: Spin Master (already set)
+[pipeline 05:46:32] 7b. owner of Raritan Americas, Inc.: Legrand (already set)
+[pipeline 05:46:32] 7b. owner of Server Technology, Inc.: Legrand (already set)
+[pipeline 05:46:32] 7b. owner of Starline Holdings, LLC: Legrand (already set)
+[pipeline 05:46:32] 7b. owner of Subzero Design, Inc.: Senneca Holdings (already set)
+[pipeline 05:46:32] 7b. owner of Subzero Engineering: Senneca Holdings (already set)
+[pipeline 05:46:32] 7b. owner of Tate Access Floors, Inc.: Kingspan Group PLC (already set)
+[pipeline 05:46:32] 7b. owner of USystems Limited: Legrand Group (already set)
+[pipeline 05:46:32] 7b. owner of Upsite Technologies, Inc.: Aquila, Inc. (already set)
+[pipeline 05:46:32] 7b. owner of Vycon, Inc.: Calnetix Technologies (already set)
+[pipeline 05:46:32] 7b. owner of ZPE Systems, Inc.: Legrand (already set)
+[pipeline 05:46:32] 7b. owner of ZincFive, Inc.: Spark I Acquisition Corporation (already set)
+[pipeline 05:46:32] 7b. analyst corrections: 0 text(s) changed from 31 correction(s)
+[pipeline 05:46:32] 8. building HTML / JSON / CSV report
+[pipeline 05:46:33] 8. report page: interactive design (global_data_center_market_global_report.html); static copy global_data_center_market_global_report_classic.html
+[pipeline 05:46:33] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 31 corrections (analyst review wins where both touch the same text)
+[pipeline 05:46:42] 8b. PDF report: global_data_center_market_global_report.pdf
+[pipeline 05:47:08] 8b. Word report: global_data_center_market_global_report.docx
+[pipeline 05:47:09] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 166 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 05:47:09] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_data_center_market_global\global_data_center_market_global_report.html
+exit=0

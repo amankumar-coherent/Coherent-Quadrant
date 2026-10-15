@@ -1,0 +1,401 @@
+[pipeline 03:56:44] market: Global Negative Pressure Wound Therapy (NPWT) Devices Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global
+[pipeline 03:56:44]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 03:56:44]    market brief: player_type = Manufacturer
+[pipeline 03:56:44]    market brief: market_type = B2B
+[pipeline 03:56:44] 1. verified rows: 241
+[pipeline 03:56:45]    market brief: market_definition, core_scope, adjacent_segments, primary_participant, market_type applied to the market analysis
+[pipeline 03:56:45] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\axes_spec.json
+[pipeline 03:56:45] 3. 225 names -> 159 companies after dedupe (36 groups merged)
+[pipeline 03:56:45] 3b. operating-status check for 159 companies across 16 browser(s)
+[pipeline 03:58:18] 3b. 5 companies left out (not active or excluded by review): ['Applied Tissue Technologies, LLC', 'Avan Biotech', 'BSN medical GmbH', 'Guangdong Hongzhi Biotechnology Co., Ltd.', 'Guangzhou Yafho Bio-Technology Co., Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 03:58:18] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 03:58:18] ownership: 154 companies across 20 browser(s)
+[pipeline 03:59:00] ownership: 19/20 shard(s) still running
+[pipeline 04:00:00] ownership: 14/20 shard(s) still running
+[pipeline 04:01:00] ownership: 13/20 shard(s) still running
+[pipeline 04:02:01] ownership: 11/20 shard(s) still running
+[pipeline 04:03:01] ownership: 9/20 shard(s) still running
+[pipeline 04:04:01] ownership: 7/20 shard(s) still running
+[pipeline 04:05:01] ownership: 3/20 shard(s) still running
+[pipeline 04:06:01] ownership: 1/20 shard(s) still running
+[pipeline 04:07:01] ownership: 1/20 shard(s) still running
+[pipeline 04:07:36] identity: 3 companies across 3 browser(s)
+[pipeline 04:07:42] identity: 3/3 shard(s) still running
+[pipeline 04:08:12] scope: 154 companies across 20 browser(s)
+[pipeline 04:08:54] scope: 15/20 shard(s) still running
+[pipeline 04:09:44] 3c. ownership 154 / identity 3 / scope 154 answers: 5 more left out ['3M', 'Atmos', 'Direct Healthcare Group', 'Guangzhou Paili Biotechnology Co., Ltd.', 'Medela AG'], 9 owner labels, 91 adjacent-segment (not on the chart) ['AOTI Ltd.', 'ASSKEA GmbH', 'ATMOS MedizinTechnik GmbH & Co. KG', 'AYU Lifescience', 'Advin Health Care', 'Alleva Medical Ltd.'] -> _pipeline/auto_review.json
+[pipeline 04:09:44] hq: 4 companies across 4 browser(s)
+[pipeline 04:09:52] hq: 4/4 shard(s) still running
+[pipeline 04:10:02] 3d. HQ missing for 4 companies: 3 found in AI Mode ['ATMOS MedizinTechnik GmbH & Co. KG -> Lenzkirch, Germany', 'Carilex Medical -> Taoyuan City, Taiwan', 'Invacare Corporation -> Elyria, United States']
+[pipeline 04:10:02] 4. quick X/Y scorecard scoring needed for 149 companies (1 Product + 1 Business query each)
+[pipeline 04:10:02] overall: 149 companies across 20 browser(s)
+[pipeline 04:10:44] overall: 20/20 shard(s) still running
+[pipeline 04:11:45] overall: 20/20 shard(s) still running
+[pipeline 04:12:45] overall: 20/20 shard(s) still running
+[pipeline 04:13:48] overall: 20/20 shard(s) still running
+[pipeline 04:14:51] overall: 20/20 shard(s) still running
+[pipeline 04:15:53] overall: 20/20 shard(s) still running
+[pipeline 04:16:55] overall: 20/20 shard(s) still running
+[pipeline 04:18:03] overall: 11/20 shard(s) still running
+[pipeline 04:19:03] overall: 2/20 shard(s) still running
+[pipeline 04:19:38] 4a. owner groups: 1; left out (the weaker of each group) ['Cenefom Corp.']
+[pipeline 04:19:38]    Top 20 chosen 5 per quadrant from 58 quick-scored companies
+[pipeline 04:19:38]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\evidence_pool.json
+[pipeline 04:19:38] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 04:19:38] 5. evidence round 1: 20 companies with gaps
+[pipeline 04:19:38] evidence_r1: 20 companies across 20 browser(s)
+[pipeline 04:20:21] evidence_r1: 20/20 shard(s) still running
+[pipeline 04:21:23] evidence_r1: 20/20 shard(s) still running
+[pipeline 04:22:28] evidence_r1: 20/20 shard(s) still running
+[pipeline 04:23:31] evidence_r1: 20/20 shard(s) still running
+[pipeline 04:24:32] evidence_r1: 8/20 shard(s) still running
+[pipeline 04:25:32] evidence_r1: 2/20 shard(s) still running
+[pipeline 04:26:32] evidence_r1: 1/20 shard(s) still running
+[pipeline 04:27:32] evidence_r1: 1/20 shard(s) still running
+[pipeline 04:27:37] fillgap_r1: 1 companies across 1 browser(s)
+[pipeline 04:27:39] fillgap_r1: 1/1 shard(s) still running
+[pipeline 04:27:49]    WARNING: only 148 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 04:27:49]    --keep 150: 20 chart/evidence + 128 long tail kept, 0 lower-scored dropped
+[pipeline 04:27:49]    20 companies with full evidence, 128 in the long tail
+[pipeline 04:27:49] 6. composite scores (5 per quadrant)
+[pipeline 04:27:50] 7. rewriting hedge wording / first person in evidence
+[pipeline 04:27:50] 7c. gaps: 200 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 04:31:31] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 188 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 04:31:31] 7b. supporting points: 50 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 04:31:31] 7b. owner of Biomedica Italia S.r.l.: AddLife AB
+[pipeline 04:31:31] 7b. owner of Carilex Medical: Shuttle Inc.
+[pipeline 04:31:31] 7b. owner of Cenefom Corp.: BenQ Materials Corp.
+[pipeline 04:31:31] 7b. owner of Cork Medical LLC: Rehab Medical
+[pipeline 04:31:31] 7b. owner of Eurosets S.r.l.: GVM Care & Research
+[pipeline 04:31:31] 7b. owner of Moeller Medical GmbH: Centrotec Sustainable AG
+[pipeline 04:31:31] 7b. owner of PRIMED Halberstadt Medizintechnik GmbH: Inflexion
+[pipeline 04:31:31] 7b. owner of Pensar Medical LLC: Lion Street Medical, LLC
+[pipeline 04:31:31] 7b. owner of Zhejiang Longterm Medical Technology Co., Ltd.: Winner Medical
+[pipeline 04:31:31] 8. building HTML / JSON / CSV report
+[pipeline 04:31:32] 8. report page: interactive design (global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html); static copy global_negative_pressure_wound_therapy_npwt_devices_market_global_report_classic.html
+[pipeline 04:31:32] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 04:35:49] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 15 corrections (analyst review wins where both touch the same text)
+[pipeline 04:35:49] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 04:35:50] market: Global Negative Pressure Wound Therapy (NPWT) Devices Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global
+[pipeline 04:35:50]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 04:35:50]    market brief: player_type = Manufacturer
+[pipeline 04:35:50]    market brief: market_type = B2B
+[pipeline 04:35:50] 1. verified rows: 241
+[pipeline 04:35:50] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\axes_spec.json
+[pipeline 04:35:50] 3. 225 names -> 159 companies after dedupe (36 groups merged)
+[pipeline 04:35:50] 3b. operating-status check for 1 companies across 1 browser(s)
+[pipeline 04:36:07] 3b. 6 companies left out (not active or excluded by review): ['Applied Tissue Technologies, LLC', 'Avan Biotech', 'BSN medical GmbH', 'Guangdong Hongzhi Biotechnology Co., Ltd.', 'Guangzhou Yafho Bio-Technology Co., Ltd.', 'Prospera Technologies LLC'] -> _pipeline/excluded_companies.json
+[pipeline 04:36:07] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 04:36:07] 3c. ownership 154 / identity 3 / scope 154 answers: 5 more left out ['3M', 'Atmos', 'Direct Healthcare Group', 'Guangzhou Paili Biotechnology Co., Ltd.', 'Medela AG'], 9 owner labels, 91 adjacent-segment (not on the chart) ['AOTI Ltd.', 'ASSKEA GmbH', 'ATMOS MedizinTechnik GmbH & Co. KG', 'AYU Lifescience', 'Advin Health Care', 'Alleva Medical Ltd.'] -> _pipeline/auto_review.json
+[pipeline 04:36:07] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 04:36:07] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 04:36:07] 4a. owner groups: 1; left out (the weaker of each group) ['Cenefom Corp.']
+[pipeline 04:36:07]    Top 20 refilled after 3b: added ['Medaxis AG']
+[pipeline 04:36:07]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\evidence_pool.json
+[pipeline 04:36:07] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 04:36:07] 5. evidence round 1: 1 companies with gaps
+[pipeline 04:36:07] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 04:36:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 04:37:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 04:38:09] evidence_r1: 1/1 shard(s) still running
+[pipeline 04:39:04]    WARNING: only 147 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 04:39:04]    --keep 150: 20 chart/evidence + 127 long tail kept, 0 lower-scored dropped
+[pipeline 04:39:04]    20 companies with full evidence, 127 in the long tail
+[pipeline 04:39:04] 6. composite scores (5 per quadrant)
+[pipeline 04:39:05] 7. rewriting hedge wording / first person in evidence
+[pipeline 04:39:06] 7c. gaps: 22 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 04:41:17] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 22 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 04:41:17] 7b. supporting points: 4 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 04:41:17] 7b. owner of Biomedica Italia S.r.l.: AddLife AB (already set)
+[pipeline 04:41:17] 7b. owner of Carilex Medical: Shuttle Inc. (already set)
+[pipeline 04:41:17] 7b. owner of Cenefom Corp.: BenQ Materials Corp. (already set)
+[pipeline 04:41:17] 7b. owner of Cork Medical LLC: Rehab Medical (already set)
+[pipeline 04:41:17] 7b. owner of Eurosets S.r.l.: GVM Care & Research (already set)
+[pipeline 04:41:17] 7b. owner of Moeller Medical GmbH: Centrotec Sustainable AG (already set)
+[pipeline 04:41:17] 7b. owner of PRIMED Halberstadt Medizintechnik GmbH: Inflexion (already set)
+[pipeline 04:41:17] 7b. owner of Pensar Medical LLC: Lion Street Medical, LLC (already set)
+[pipeline 04:41:17] 7b. owner of Zhejiang Longterm Medical Technology Co., Ltd.: Winner Medical (already set)
+[pipeline 04:41:17] 7b. analyst corrections: 15 text(s) changed from 15 correction(s)
+[pipeline 04:41:17] 8. building HTML / JSON / CSV report
+[pipeline 04:41:18] 8. report page: interactive design (global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html); static copy global_negative_pressure_wound_therapy_npwt_devices_market_global_report_classic.html
+[pipeline 04:41:18] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 04:42:38] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 21 corrections (analyst review wins where both touch the same text)
+[pipeline 04:42:38] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 04:42:38] market: Global Negative Pressure Wound Therapy (NPWT) Devices Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global
+[pipeline 04:42:38]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 04:42:38]    market brief: player_type = Manufacturer
+[pipeline 04:42:38]    market brief: market_type = B2B
+[pipeline 04:42:38] 1. verified rows: 241
+[pipeline 04:42:39] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\axes_spec.json
+[pipeline 04:42:39] 3. 225 names -> 159 companies after dedupe (36 groups merged)
+[pipeline 04:42:39] 3b. 6 companies left out (not active or excluded by review): ['Applied Tissue Technologies, LLC', 'Avan Biotech', 'BSN medical GmbH', 'Guangdong Hongzhi Biotechnology Co., Ltd.', 'Guangzhou Yafho Bio-Technology Co., Ltd.', 'Prospera Technologies LLC'] -> _pipeline/excluded_companies.json
+[pipeline 04:42:39] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 04:42:39] 3c. ownership 154 / identity 3 / scope 154 answers: 5 more left out ['3M', 'Atmos', 'Direct Healthcare Group', 'Guangzhou Paili Biotechnology Co., Ltd.', 'Medela AG'], 9 owner labels, 91 adjacent-segment (not on the chart) ['AOTI Ltd.', 'ASSKEA GmbH', 'ATMOS MedizinTechnik GmbH & Co. KG', 'AYU Lifescience', 'Advin Health Care', 'Alleva Medical Ltd.'] -> _pipeline/auto_review.json
+[pipeline 04:42:39] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 04:42:39] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 04:42:39] 4a. owner groups: 1; left out (the weaker of each group) ['Cenefom Corp.']
+[pipeline 04:42:39]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\evidence_pool.json
+[pipeline 04:42:39] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 04:42:39]    WARNING: only 147 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 04:42:39]    --keep 150: 20 chart/evidence + 127 long tail kept, 0 lower-scored dropped
+[pipeline 04:42:39]    20 companies with full evidence, 127 in the long tail
+[pipeline 04:42:39] 6. composite scores (5 per quadrant)
+[pipeline 04:42:39] 7. rewriting hedge wording / first person in evidence
+[pipeline 04:42:40] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 04:42:40] 7b. owner of Biomedica Italia S.r.l.: AddLife AB (already set)
+[pipeline 04:42:40] 7b. owner of Carilex Medical: Shuttle Inc. (already set)
+[pipeline 04:42:40] 7b. owner of Cenefom Corp.: BenQ Materials Corp. (already set)
+[pipeline 04:42:40] 7b. owner of Cork Medical LLC: Rehab Medical (already set)
+[pipeline 04:42:40] 7b. owner of Eurosets S.r.l.: GVM Care & Research (already set)
+[pipeline 04:42:40] 7b. owner of Moeller Medical GmbH: Centrotec Sustainable AG (already set)
+[pipeline 04:42:40] 7b. owner of PRIMED Halberstadt Medizintechnik GmbH: Inflexion (already set)
+[pipeline 04:42:40] 7b. owner of Pensar Medical LLC: Lion Street Medical, LLC (already set)
+[pipeline 04:42:40] 7b. owner of Zhejiang Longterm Medical Technology Co., Ltd.: Winner Medical (already set)
+[pipeline 04:42:40] 7b. analyst corrections: 6 text(s) changed from 21 correction(s)
+[pipeline 04:42:40] 8. building HTML / JSON / CSV report
+[pipeline 04:42:41] 8. report page: interactive design (global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html); static copy global_negative_pressure_wound_therapy_npwt_devices_market_global_report_classic.html
+[pipeline 04:42:41] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 21 corrections (analyst review wins where both touch the same text)
+[pipeline 04:42:51] 8b. PDF report: global_negative_pressure_wound_therapy_npwt_devices_market_global_report.pdf
+[pipeline 04:43:03] 8b. Word report: global_negative_pressure_wound_therapy_npwt_devices_market_global_report.docx
+[pipeline 04:43:03] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 147 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [FAIL] Every company has an HQ  -> 1 missing: ['Lohmann & Rauscher']
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 04:43:03] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html
+exit=1
+[pipeline 05:29:05] market: Global Negative Pressure Wound Therapy (NPWT) Devices Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global
+[pipeline 05:29:05]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:29:05]    market brief: player_type = Manufacturer
+[pipeline 05:29:05]    market brief: market_type = B2B
+[pipeline 05:29:05] 1. verified rows: 241
+[pipeline 05:29:05]    market brief: market_definition, core_scope, adjacent_segments, primary_participant, market_type applied to the market analysis
+[pipeline 05:29:05] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\axes_spec.json
+[pipeline 05:29:05] 3. 225 names -> 159 companies after dedupe (36 groups merged)
+[pipeline 05:29:05] 3b. 6 companies left out (not active or excluded by review): ['Applied Tissue Technologies, LLC', 'Avan Biotech', 'BSN medical GmbH', 'Guangdong Hongzhi Biotechnology Co., Ltd.', 'Guangzhou Yafho Bio-Technology Co., Ltd.', 'Lohmann & Rauscher GmbH & Co. KG'] -> _pipeline/excluded_companies.json
+[pipeline 05:29:05] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 05:29:05] scope: 153 companies across 20 browser(s)
+[pipeline 05:29:46] scope: 18/20 shard(s) still running
+[pipeline 05:30:47] scope: 10/20 shard(s) still running
+[pipeline 05:31:47] scope: 6/20 shard(s) still running
+[pipeline 05:32:47] scope: 2/20 shard(s) still running
+[pipeline 05:33:47] scope: 1/20 shard(s) still running
+[pipeline 05:34:12] 3c. ownership 154 / identity 3 / scope 151 answers: 11 more left out ['3M', 'Atlas Ortho', 'Atmos', 'Direct Healthcare Group', 'GMS Medikal, Eğitim ve İnşaat A.Ş.', 'Guangzhou Dingyikang Technology Co., Ltd.'], 9 owner labels, 70 adjacent-segment (not on the chart) ['AOTI Ltd.', 'Advin Health Care', 'Alpha Teknoloji', 'Amedus San. Tic. Ltd. Şti.', 'Anhui Weemed Medical Co., Ltd.', 'BenQ Materials Corporation'] -> _pipeline/auto_review.json
+[pipeline 05:34:12] 3d. HQ missing for 1 companies: 1 found in AI Mode ['Lohmann & Rauscher -> Rengsdorf, Germany']
+[pipeline 05:34:12] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:34:12] 4a. owner groups: 1; left out (the weaker of each group) ['Cenefom Corp.']
+[pipeline 05:34:12]    Top 20 chosen 5 per quadrant from 72 quick-scored companies
+[pipeline 05:34:12]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\evidence_pool.json
+[pipeline 05:34:12] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 05:34:12] 5. evidence round 1: 13 companies with gaps
+[pipeline 05:34:12] evidence_r1: 13 companies across 13 browser(s)
+[pipeline 05:34:38] evidence_r1: 13/13 shard(s) still running
+[pipeline 05:35:39] evidence_r1: 13/13 shard(s) still running
+[pipeline 05:36:39] evidence_r1: 13/13 shard(s) still running
+[pipeline 05:37:39] evidence_r1: 6/13 shard(s) still running
+[pipeline 05:38:39] evidence_r1: 1/13 shard(s) still running
+[pipeline 05:39:19]    WARNING: only 141 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:39:19]    --keep 150: 20 chart/evidence + 121 long tail kept, 0 lower-scored dropped
+[pipeline 05:39:19]    20 companies with full evidence, 121 in the long tail
+[pipeline 05:39:19] 6. composite scores (5 per quadrant)
+[pipeline 05:39:20] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:39:21] 7c. gaps: 130 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 05:41:54] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 119 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:41:54] 7b. supporting points: 4 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 05:41:54] 7b. owner of Biomedica Italia S.r.l.: AddLife AB (already set)
+[pipeline 05:41:54] 7b. owner of Carilex Medical: Shuttle Inc. (already set)
+[pipeline 05:41:54] 7b. owner of Cenefom Corp.: BenQ Materials Corp. (already set)
+[pipeline 05:41:54] 7b. owner of Cork Medical LLC: Rehab Medical (already set)
+[pipeline 05:41:54] 7b. owner of Eurosets S.r.l.: GVM Care & Research (already set)
+[pipeline 05:41:54] 7b. owner of Moeller Medical GmbH: Centrotec Sustainable AG (already set)
+[pipeline 05:41:54] 7b. owner of PRIMED Halberstadt Medizintechnik GmbH: Inflexion (already set)
+[pipeline 05:41:54] 7b. owner of Pensar Medical LLC: Lion Street Medical, LLC (already set)
+[pipeline 05:41:54] 7b. owner of Zhejiang Longterm Medical Technology Co., Ltd.: Winner Medical (already set)
+[pipeline 05:41:54] 7b. analyst corrections: 0 text(s) changed from 21 correction(s)
+[pipeline 05:41:54] 8. building HTML / JSON / CSV report
+[pipeline 05:41:55] 8. report page: interactive design (global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html); static copy global_negative_pressure_wound_therapy_npwt_devices_market_global_report_classic.html
+[pipeline 05:41:55] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 05:44:38] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 31 corrections (analyst review wins where both touch the same text)
+[pipeline 05:44:38] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 05:44:38] market: Global Negative Pressure Wound Therapy (NPWT) Devices Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global
+[pipeline 05:44:38]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:44:38]    market brief: player_type = Manufacturer
+[pipeline 05:44:38]    market brief: market_type = B2B
+[pipeline 05:44:38] 1. verified rows: 241
+[pipeline 05:44:38] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\axes_spec.json
+[pipeline 05:44:38] 3. 225 names -> 159 companies after dedupe (36 groups merged)
+[pipeline 05:44:39] 3b. 7 companies left out (not active or excluded by review): ['Applied Tissue Technologies, LLC', 'Atmos', 'Avan Biotech', 'BSN medical GmbH', 'Guangdong Hongzhi Biotechnology Co., Ltd.', 'Guangzhou Yafho Bio-Technology Co., Ltd.', 'Lohmann & Rauscher GmbH & Co. KG'] -> _pipeline/excluded_companies.json
+[pipeline 05:44:39] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 05:44:39] scope: 2 companies across 2 browser(s)
+[pipeline 05:44:43] scope: 2/2 shard(s) still running
+[pipeline 05:44:58] 3c. ownership 154 / identity 3 / scope 153 answers: 10 more left out ['3M', 'Atlas Ortho', 'Direct Healthcare Group', 'GMS Medikal, Eğitim ve İnşaat A.Ş.', 'Guangzhou Dingyikang Technology Co., Ltd.', 'Guangzhou Paili Biotechnology Co., Ltd.'], 9 owner labels, 72 adjacent-segment (not on the chart) ['AOTI Ltd.', 'Advin Health Care', 'Alpha Teknoloji', 'Amedus San. Tic. Ltd. Şti.', 'Anhui Weemed Medical Co., Ltd.', 'BenQ Materials Corporation'] -> _pipeline/auto_review.json
+[pipeline 05:44:58] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:44:58] 4a. owner groups: 1; left out (the weaker of each group) ['Cenefom Corp.']
+[pipeline 05:44:58]    adjacent-segment companies taken off the chart: ['Seigmed Health Corporation']
+[pipeline 05:44:58]    Top 20 refilled after 3b: added ['Ayo Tech Corporation']
+[pipeline 05:44:58]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\evidence_pool.json
+[pipeline 05:44:58] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 05:44:58] 5. evidence round 1: 1 companies with gaps
+[pipeline 05:44:58] evidence_r1: 1 companies across 1 browser(s)
+[pipeline 05:45:00] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:46:00] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:47:00] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:48:00] evidence_r1: 1/1 shard(s) still running
+[pipeline 05:48:10]    WARNING: only 141 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:48:10]    --keep 150: 20 chart/evidence + 121 long tail kept, 0 lower-scored dropped
+[pipeline 05:48:10]    20 companies with full evidence, 121 in the long tail
+[pipeline 05:48:10] 6. composite scores (5 per quadrant)
+[pipeline 05:48:10] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:48:11] 7c. gaps: 21 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 05:49:32] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 18 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:49:32] 7b. supporting points: 3 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 05:49:32] 7b. owner of Biomedica Italia S.r.l.: AddLife AB (already set)
+[pipeline 05:49:32] 7b. owner of Carilex Medical: Shuttle Inc. (already set)
+[pipeline 05:49:32] 7b. owner of Cenefom Corp.: BenQ Materials Corp. (already set)
+[pipeline 05:49:32] 7b. owner of Cork Medical LLC: Rehab Medical (already set)
+[pipeline 05:49:32] 7b. owner of Eurosets S.r.l.: GVM Care & Research (already set)
+[pipeline 05:49:32] 7b. owner of Moeller Medical GmbH: Centrotec Sustainable AG (already set)
+[pipeline 05:49:32] 7b. owner of PRIMED Halberstadt Medizintechnik GmbH: Inflexion (already set)
+[pipeline 05:49:32] 7b. owner of Pensar Medical LLC: Lion Street Medical, LLC (already set)
+[pipeline 05:49:32] 7b. owner of Zhejiang Longterm Medical Technology Co., Ltd.: Winner Medical (already set)
+[pipeline 05:49:33] 7b. analyst corrections: 10 text(s) changed from 31 correction(s)
+[pipeline 05:49:33] 8. building HTML / JSON / CSV report
+[pipeline 05:49:33] 8. report page: interactive design (global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html); static copy global_negative_pressure_wound_therapy_npwt_devices_market_global_report_classic.html
+[pipeline 05:49:33] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 05:50:20] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 31 corrections (analyst review wins where both touch the same text)
+[pipeline 05:50:20] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 05:50:21] market: Global Negative Pressure Wound Therapy (NPWT) Devices Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global
+[pipeline 05:50:21]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:50:21]    market brief: player_type = Manufacturer
+[pipeline 05:50:21]    market brief: market_type = B2B
+[pipeline 05:50:21] 1. verified rows: 241
+[pipeline 05:50:21] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\axes_spec.json
+[pipeline 05:50:21] 3. 225 names -> 159 companies after dedupe (36 groups merged)
+[pipeline 05:50:21] 3b. 7 companies left out (not active or excluded by review): ['Applied Tissue Technologies, LLC', 'Atmos', 'Avan Biotech', 'BSN medical GmbH', 'Guangdong Hongzhi Biotechnology Co., Ltd.', 'Guangzhou Yafho Bio-Technology Co., Ltd.', 'Lohmann & Rauscher GmbH & Co. KG'] -> _pipeline/excluded_companies.json
+[pipeline 05:50:21] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 05:50:21] 3c. ownership 154 / identity 3 / scope 153 answers: 10 more left out ['3M', 'Atlas Ortho', 'Direct Healthcare Group', 'GMS Medikal, Eğitim ve İnşaat A.Ş.', 'Guangzhou Dingyikang Technology Co., Ltd.', 'Guangzhou Paili Biotechnology Co., Ltd.'], 9 owner labels, 72 adjacent-segment (not on the chart) ['AOTI Ltd.', 'Advin Health Care', 'Alpha Teknoloji', 'Amedus San. Tic. Ltd. Şti.', 'Anhui Weemed Medical Co., Ltd.', 'BenQ Materials Corporation'] -> _pipeline/auto_review.json
+[pipeline 05:50:21] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:50:21] 4a. owner groups: 1; left out (the weaker of each group) ['Cenefom Corp.']
+[pipeline 05:50:21]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\evidence_pool.json
+[pipeline 05:50:21] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 05:50:21]    WARNING: only 141 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:50:21]    --keep 150: 20 chart/evidence + 121 long tail kept, 0 lower-scored dropped
+[pipeline 05:50:21]    20 companies with full evidence, 121 in the long tail
+[pipeline 05:50:21] 6. composite scores (5 per quadrant)
+[pipeline 05:50:22] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:50:23] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:50:23] 7b. owner of Biomedica Italia S.r.l.: AddLife AB (already set)
+[pipeline 05:50:23] 7b. owner of Carilex Medical: Shuttle Inc. (already set)
+[pipeline 05:50:23] 7b. owner of Cenefom Corp.: BenQ Materials Corp. (already set)
+[pipeline 05:50:23] 7b. owner of Cork Medical LLC: Rehab Medical (already set)
+[pipeline 05:50:23] 7b. owner of Eurosets S.r.l.: GVM Care & Research (already set)
+[pipeline 05:50:23] 7b. owner of Moeller Medical GmbH: Centrotec Sustainable AG (already set)
+[pipeline 05:50:23] 7b. owner of PRIMED Halberstadt Medizintechnik GmbH: Inflexion (already set)
+[pipeline 05:50:23] 7b. owner of Pensar Medical LLC: Lion Street Medical, LLC (already set)
+[pipeline 05:50:23] 7b. owner of Zhejiang Longterm Medical Technology Co., Ltd.: Winner Medical (already set)
+[pipeline 05:50:23] 7b. analyst corrections: 0 text(s) changed from 31 correction(s)
+[pipeline 05:50:23] 8. building HTML / JSON / CSV report
+[pipeline 05:50:24] 8. report page: interactive design (global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html); static copy global_negative_pressure_wound_therapy_npwt_devices_market_global_report_classic.html
+[pipeline 05:50:24] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 31 corrections (analyst review wins where both touch the same text)
+[pipeline 05:50:34] 8b. PDF report: global_negative_pressure_wound_therapy_npwt_devices_market_global_report.pdf
+[pipeline 05:50:56] 8b. Word report: global_negative_pressure_wound_therapy_npwt_devices_market_global_report.docx
+[pipeline 05:50:56] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 141 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [FAIL] X/Y = mean of their parameter scores  -> ['Fanavar Pouya Sepahan Company']
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 05:50:56] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html
+exit=1
+[pipeline 07:00:43] market: Global Negative Pressure Wound Therapy (NPWT) Devices Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global
+[pipeline 07:00:43]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 07:00:43]    market brief: player_type = Manufacturer
+[pipeline 07:00:43]    market brief: market_type = B2B
+[pipeline 07:00:43] 1. verified rows: 241
+[pipeline 07:00:44] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\axes_spec.json
+[pipeline 07:00:44] 3. 225 names -> 159 companies after dedupe (36 groups merged)
+[pipeline 07:00:44] 3b. 7 companies left out (not active or excluded by review): ['Applied Tissue Technologies, LLC', 'Atmos', 'Avan Biotech', 'BSN medical GmbH', 'Guangdong Hongzhi Biotechnology Co., Ltd.', 'Guangzhou Yafho Bio-Technology Co., Ltd.', 'Lohmann & Rauscher GmbH & Co. KG'] -> _pipeline/excluded_companies.json
+[pipeline 07:00:44] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 07:00:44] 3c. ownership 154 / identity 3 / scope 153 answers: 10 more left out ['3M', 'Atlas Ortho', 'Direct Healthcare Group', 'GMS Medikal, Eğitim ve İnşaat A.Ş.', 'Guangzhou Dingyikang Technology Co., Ltd.', 'Guangzhou Paili Biotechnology Co., Ltd.'], 9 owner labels, 72 adjacent-segment (not on the chart) ['AOTI Ltd.', 'Advin Health Care', 'Alpha Teknoloji', 'Amedus San. Tic. Ltd. Şti.', 'Anhui Weemed Medical Co., Ltd.', 'BenQ Materials Corporation'] -> _pipeline/auto_review.json
+[pipeline 07:00:44] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 07:00:44] 4a. owner groups: 1; left out (the weaker of each group) ['Cenefom Corp.']
+[pipeline 07:00:44]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\_pipeline\evidence_pool.json
+[pipeline 07:00:44] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 07:00:44]    WARNING: only 141 verified companies after dedupe, fewer than --keep 150. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 07:00:44]    --keep 150: 20 chart/evidence + 121 long tail kept, 0 lower-scored dropped
+[pipeline 07:00:44]    20 companies with full evidence, 121 in the long tail
+[pipeline 07:00:44] 6. composite scores (5 per quadrant)
+[pipeline 07:00:45] 7. rewriting hedge wording / first person in evidence
+[pipeline 07:00:47] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 07:00:48] 7b. owner of Biomedica Italia S.r.l.: AddLife AB (already set)
+[pipeline 07:00:48] 7b. owner of Carilex Medical: Shuttle Inc. (already set)
+[pipeline 07:00:48] 7b. owner of Cenefom Corp.: BenQ Materials Corp. (already set)
+[pipeline 07:00:48] 7b. owner of Cork Medical LLC: Rehab Medical (already set)
+[pipeline 07:00:48] 7b. owner of Eurosets S.r.l.: GVM Care & Research (already set)
+[pipeline 07:00:48] 7b. owner of Moeller Medical GmbH: Centrotec Sustainable AG (already set)
+[pipeline 07:00:48] 7b. owner of PRIMED Halberstadt Medizintechnik GmbH: Inflexion (already set)
+[pipeline 07:00:48] 7b. owner of Pensar Medical LLC: Lion Street Medical, LLC (already set)
+[pipeline 07:00:48] 7b. owner of Zhejiang Longterm Medical Technology Co., Ltd.: Winner Medical (already set)
+[pipeline 07:00:48] 7b. analyst corrections: 0 text(s) changed from 31 correction(s)
+[pipeline 07:00:48] 8. building HTML / JSON / CSV report
+[pipeline 07:00:49] 8. report page: interactive design (global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html); static copy global_negative_pressure_wound_therapy_npwt_devices_market_global_report_classic.html
+[pipeline 07:00:50] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 1 scope, 0 ownership, 0 hq, 31 corrections (analyst review wins where both touch the same text)
+[pipeline 07:01:06] 8b. PDF report: global_negative_pressure_wound_therapy_npwt_devices_market_global_report.pdf
+[pipeline 07:01:29] 8b. Word report: global_negative_pressure_wound_therapy_npwt_devices_market_global_report.docx
+[pipeline 07:01:30] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 141 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 07:01:30] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_negative_pressure_wound_therapy_npwt_devices_market_global\global_negative_pressure_wound_therapy_npwt_devices_market_global_report.html
+exit=0

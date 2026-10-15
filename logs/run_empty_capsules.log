@@ -1,0 +1,209 @@
+﻿[run] first discovery (one browser)
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Global Empty Capsules Market
+  target : 60
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper ΓåÆ DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=60 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=b6fd523a ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_empty_capsules_market_global\global_empty_capsules_market_global_FINAL.xlsx
+  [chatgpt] curated seeds loaded=21
+  [chatgpt] checkpoint ΓåÆ C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_empty_capsules_market_global\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+      ┬╖ 0c-market-analysis: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      ┬╖ 0c-market-analysis: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+  [chatgpt] Step 0c/6: market type = B2B | player type = Manufacturer
+  [chatgpt] Step 0c/6: why B2B: This market is B2B because empty capsules are purchased exclusively by pharmaceutical companies, nutraceutical brands, and contract manufacturers to be filled with their own medical or dietary formulations.
+  [chatgpt] Step 0c/6: roles present in market: Manufacturer
+  [chatgpt] Step 0c/6: why this player type: Manufacturer is the correct player type because the market is defined by a physical component that companies produce under their own names, and buyers compare these direct producers based on material science, quality standards, and manufacturing scale.
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companiesΓÇª
+    ΓåÆ substep 1a: discovery rounds for Manufacturer (batch 10, target 60)
+      ┬╖ discover-round-1: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-1: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.1: +10 (total 10)
+      ┬╖ discover-round-2: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-2: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.2: +10 (total 20)
+      ┬╖ discover-round-3: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-3: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.3: +10 (total 30)
+      ┬╖ discover-round-4: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+      ┬╖ discover-round-4: AI Mode JSON parse OK ΓÇö no sign of blocking (0 CAPTCHAs this run)
+    ΓåÆ substep 1a.4: +10 (total 40)
+      ┬╖ discover-round-5: calling Google AI Mode (udm=50) attempt 1/4ΓÇª
+[topup 21:48:55] start: 0 verified companies; 15 browsers, target 200
+[topup 21:48:55] verify only: 45 unchecked companies over 15 browsers
+[topup 21:48:55] browser 1: start on slot 41
+[topup 21:48:59] browser 2: start on slot 42
+[topup 21:49:03] browser 3: start on slot 43
+[topup 21:49:07] browser 4: start on slot 44
+[topup 21:49:11] browser 5: start on slot 45
+[topup 21:49:15] browser 6: start on slot 46
+[topup 21:49:19] browser 7: start on slot 47
+[topup 21:49:23] browser 8: start on slot 48
+[topup 21:49:27] browser 9: start on slot 49
+[topup 21:49:32] browser 10: start on slot 50
+[topup 21:49:36] browser 11: start on slot 51
+[topup 21:49:40] browser 12: start on slot 52
+[topup 21:49:44] browser 13: start on slot 53
+[topup 21:49:48] browser 14: start on slot 54
+[topup 21:49:52] browser 15: start on slot 55
+[topup 21:52:26] browser 1: 1 new verified
+[topup 21:52:26] browser 2: 3 new verified
+[topup 21:52:26] browser 3: 3 new verified
+[topup 21:52:26] browser 4: 3 new verified
+[topup 21:52:26] browser 5: 2 new verified
+[topup 21:52:26] browser 6: 3 new verified
+[topup 21:52:26] browser 7: 2 new verified
+[topup 21:52:26] browser 8: 3 new verified
+[topup 21:52:26] browser 9: 1 new verified
+[topup 21:52:26] browser 10: 2 new verified
+[topup 21:52:26] browser 11: 2 new verified
+[topup 21:52:26] browser 12: 2 new verified
+[topup 21:52:26] browser 13: 2 new verified
+[topup 21:52:26] browser 14: 2 new verified
+[topup 21:52:26] browser 15: 3 new verified
+[topup 21:52:26] merged: 0 -> 34 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_empty_capsules_market_global\chatgpt_checkpoint_batch_all.json
+[run] after verifying found candidates: 34 verified
+[topup 21:52:26] start: 34 verified companies; 15 browsers, target 200 -- country by country
+[topup 21:52:26] browser 1: start on slot 41
+[topup 21:52:30] browser 2: start on slot 42
+[topup 21:52:34] browser 3: start on slot 43
+[topup 21:52:38] browser 4: start on slot 44
+[topup 21:52:42] browser 5: start on slot 45
+[topup 21:52:46] browser 6: start on slot 46
+[topup 21:52:50] browser 7: start on slot 47
+[topup 21:52:55] browser 8: start on slot 48
+[topup 21:52:59] browser 9: start on slot 49
+[topup 21:53:03] browser 10: start on slot 50
+[topup 21:53:07] browser 11: start on slot 51
+[topup 21:53:11] browser 12: start on slot 52
+[topup 21:53:15] browser 13: start on slot 53
+[topup 21:53:19] browser 14: start on slot 54
+[topup 21:53:24] browser 15: start on slot 55
+[topup 22:14:15] start: 34 verified companies; 15 browsers, target 200
+[topup 22:14:16] verify only: 174 unchecked companies over 15 browsers
+[topup 22:14:16] browser 1: start on slot 41
+[topup 22:14:20] browser 2: start on slot 42
+[topup 22:14:24] browser 3: start on slot 43
+[topup 22:14:28] browser 4: start on slot 44
+[topup 22:14:32] browser 5: start on slot 45
+[topup 22:14:37] browser 6: start on slot 46
+[topup 22:14:41] browser 7: start on slot 47
+[topup 22:14:45] browser 8: start on slot 48
+[topup 22:14:49] browser 9: start on slot 49
+[topup 22:14:53] browser 10: start on slot 50
+[topup 22:14:57] browser 11: start on slot 51
+[topup 22:15:01] browser 12: start on slot 52
+[topup 22:15:05] browser 13: start on slot 53
+[topup 22:15:09] browser 14: start on slot 54
+[topup 22:15:13] browser 15: start on slot 55
+[topup 22:27:17] browser 1: 11 new verified
+[topup 22:27:17] browser 2: 10 new verified
+[topup 22:27:17] browser 3: 8 new verified
+[topup 22:27:17] browser 4: 9 new verified
+[topup 22:27:17] browser 5: 7 new verified
+[topup 22:27:17] browser 6: 10 new verified
+[topup 22:27:17] browser 7: 10 new verified
+[topup 22:27:17] browser 8: 8 new verified
+[topup 22:27:17] browser 9: 10 new verified
+[topup 22:27:17] browser 10: 9 new verified
+[topup 22:27:17] browser 11: 10 new verified
+[topup 22:27:17] browser 12: 9 new verified
+[topup 22:27:17] browser 13: 8 new verified
+[topup 22:27:17] browser 14: 9 new verified
+[topup 22:27:17] browser 15: 8 new verified
+[topup 22:27:17] merged: 34 -> 154 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_empty_capsules_market_global\chatgpt_checkpoint_batch_all.json
+[run] after verifying found candidates: 154 verified
+[run] country pass 1: 154 verified
+[topup 22:27:18] start: 154 verified companies; 15 browsers, target 167 -- country by country
+[topup 22:27:18] browser 1: start on slot 41
+[topup 22:27:22] browser 2: start on slot 42
+[topup 22:27:26] browser 3: start on slot 43
+[topup 22:27:30] browser 4: start on slot 44
+[topup 22:27:34] browser 5: start on slot 45
+[topup 22:27:38] browser 6: start on slot 46
+[topup 22:27:42] browser 7: start on slot 47
+[topup 22:27:46] browser 8: start on slot 48
+[topup 22:27:50] browser 9: start on slot 49
+[topup 22:27:54] browser 10: start on slot 50
+[topup 22:27:58] browser 11: start on slot 51
+[topup 22:28:02] browser 12: start on slot 52
+[topup 22:28:06] browser 13: start on slot 53
+[topup 22:28:10] browser 14: start on slot 54
+[topup 22:28:14] browser 15: start on slot 55
+[topup 22:34:51] start: 156 verified companies; 15 browsers, target 200
+[topup 22:34:51] verify only: 16 unchecked companies over 15 browsers
+[topup 22:34:51] browser 1: start on slot 41
+[topup 22:34:55] browser 2: start on slot 42
+[topup 22:34:59] browser 3: start on slot 43
+[topup 22:35:03] browser 4: start on slot 44
+[topup 22:35:07] browser 5: start on slot 45
+[topup 22:35:11] browser 6: start on slot 46
+[topup 22:35:16] browser 7: start on slot 47
+[topup 22:35:20] browser 8: start on slot 48
+[topup 22:35:24] browser 9: start on slot 49
+[topup 22:35:28] browser 10: start on slot 50
+[topup 22:35:32] browser 11: start on slot 51
+[topup 22:35:36] browser 12: start on slot 52
+[topup 22:35:40] browser 13: start on slot 53
+[topup 22:35:44] browser 14: start on slot 54
+[topup 22:35:48] browser 15: start on slot 55
+[topup 22:37:22] browser 1: 2 new verified
+[topup 22:37:22] browser 2: 0 new verified
+[topup 22:37:22] browser 3: 0 new verified
+[topup 22:37:22] browser 4: 1 new verified
+[topup 22:37:22] browser 5: 1 new verified
+[topup 22:37:22] browser 6: 0 new verified
+[topup 22:37:22] browser 7: 1 new verified
+[topup 22:37:22] browser 8: 1 new verified
+[topup 22:37:22] browser 9: 1 new verified
+[topup 22:37:22] browser 10: 0 new verified
+[topup 22:37:22] browser 11: 1 new verified
+[topup 22:37:22] browser 12: 0 new verified
+[topup 22:37:22] browser 13: 1 new verified
+[topup 22:37:22] browser 14: 1 new verified
+[topup 22:37:22] browser 15: 0 new verified
+[topup 22:37:22] merged: 156 -> 162 verified companies after dedupe -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_empty_capsules_market_global\chatgpt_checkpoint_batch_all.json
+[run] after verifying found candidates: 162 verified
+[run] discovery finished with 162 companies; starting the pipeline
+[run] discovery finished with 162 companies; starting the pipeline
+[run] discovery finished with 162 companies; starting the pipeline
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 1
+exit=1
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 1
+exit=1
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 1
+exit=1
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 0
+exit=0
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 0
+exit=0
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 0
+exit=0
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 0
+exit=0
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 1
+exit=1
+[run] discovery finished with 162 companies; starting the pipeline
+[run] pipeline exit 0
+exit=0

@@ -219,3 +219,191 @@
 [pipeline 14:40:35] reasoning_r1: 9/9 shard(s) still running
 [pipeline 14:41:35] reasoning_r1: 9/9 shard(s) still running
 [pipeline 14:42:35] reasoning_r1: 9/9 shard(s) still running
+[pipeline 06:13:36] market: Global Trade Finance Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global
+[pipeline 06:13:36]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:13:36]    market brief: player_type = Solution Provider
+[pipeline 06:13:36]    market brief: market_type = B2B
+[pipeline 06:13:36] 1b. 149 verified companies after dedupe, need 250 -> discover -> verify rounds
+[pipeline 06:13:37] 1b. now 149 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:13:37] 1. verified rows: 168
+[pipeline 06:13:37] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\_pipeline\axes_spec.json
+[pipeline 06:13:37] 3. 168 names -> 149 companies after dedupe (13 groups merged)
+[pipeline 06:13:37] 3b. 6 companies left out (not active or excluded by review): ['AfriConnect Tech Solutions', 'Cashforce Tecnologia Ltda.', 'Chinsay AB', 'Hong Kong Trade Finance Platform Company Limited', 'NEBIX LLC', 'Quartilho Tecnologia Ltda.'] -> _pipeline/excluded_companies.json
+[pipeline 06:13:37] 3b. 5 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 06:13:38] 3c. ownership 144 / identity 15 / scope 144 answers: 7 more left out ['Demica Finance Limited', 'ESDOCS EMEA LIMITED', 'FrontEdge Technology Limited', 'Glade Financial Technologies Limited', 'IBEA', 'Liquify Ltd.'], 14 owner labels, 47 adjacent-segment (not on the chart) ['Accesstage S/A', 'Action Fintech SAS', 'African Trade Platform', 'Antecipa Plataforma de Intermediacoes de Recebiveis & Credito S.a.', 'Antecipa S/A', 'Aurionpro Solutions Limited'] -> _pipeline/auto_review.json
+[pipeline 06:13:38] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:13:38]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\_pipeline\evidence_pool.json
+[pipeline 06:13:38] 5. evidence round 1: 8 companies with gaps
+[pipeline 06:13:38] reasoning_r1: 8 companies across 8 browser(s)
+[pipeline 06:13:54] reasoning_r1: 8/8 shard(s) still running
+[pipeline 06:14:54] reasoning_r1: 8/8 shard(s) still running
+[pipeline 06:15:54] reasoning_r1: 4/8 shard(s) still running
+[pipeline 06:16:54] 5. evidence round 2: 5 companies with gaps
+[pipeline 06:16:54] reasoning_r2: 5 companies across 5 browser(s)
+[pipeline 06:17:04] reasoning_r2: 5/5 shard(s) still running
+[pipeline 06:18:04] reasoning_r2: 1/5 shard(s) still running
+[pipeline 06:19:04] 5. evidence round 3: 2 companies with gaps
+[pipeline 06:19:04] reasoning_r3: 2 companies across 2 browser(s)
+[pipeline 06:19:08] reasoning_r3: 2/2 shard(s) still running
+[pipeline 06:20:08] reasoning_r3: 1/2 shard(s) still running
+[pipeline 06:21:08]    WARNING: only 136 verified companies after dedupe, fewer than --keep 250. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:21:08]    --keep 250: 20 chart/evidence + 116 long tail kept, 0 lower-scored dropped
+[pipeline 06:21:08]    20 companies with full evidence, 116 in the long tail
+[pipeline 06:21:08] 6. composite scores (5 per quadrant)
+[pipeline 06:21:08] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:21:09] 7c. gaps: 199 to ask in AI Mode on 15 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 06:24:21] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 185 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:24:21] 7b. supporting points: 17 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 06:24:21] 7b. current name for OmniLatam SpA: Klym (listed brand is legacy)
+[pipeline 06:24:21] 7b. current name for UAE Trade Connect LLC: haifin (listed brand is legacy)
+[pipeline 06:24:21] 7b. owner of Antecipa S/A: CERC Central de Recebíveis
+[pipeline 06:24:21] 7b. owner of Bolero International Limited: WiseTech Global
+[pipeline 06:24:21] 7b. owner of Comarch SA: Chamonix Investments Poland sp. z o.o. (controlled by CVC Capital Partners Fund IX)
+[pipeline 06:24:21] 7b. owner of Conpend: Cape Investment Partners
+[pipeline 06:24:21] 7b. owner of Contour Network: XDC Ventures
+[pipeline 06:24:21] 7b. owner of GUUD (Singapore) Pte. Ltd.: EXEO Global Pte Ltd
+[pipeline 06:24:21] 7b. owner of Kyriba Corp.: Bridgepoint
+[pipeline 06:24:21] 7b. owner of Lendscape Limited: Bowmark Capital
+[pipeline 06:24:21] 7b. owner of Nobo Finance Limited: Bharti Global
+[pipeline 06:24:21] 7b. owner of Silverlake Axis Ltd.: E2I Ltd.
+[pipeline 06:24:21] 7b. owner of Taulia LLC: SAP SE
+[pipeline 06:24:21] 7b. owner of Trademaster Serviços e Participações S.A.: banco BV
+[pipeline 06:24:21] 7b. owner of Tradeteq Ltd: Silver Birch Finance
+[pipeline 06:24:21] 7b. owner of Yaydoo, S.A. de C.V.: Paystand
+[pipeline 06:24:21] 8. building HTML / JSON / CSV report
+[pipeline 06:24:22] 8. report page: interactive design (global_trade_finance_market_global_report.html); static copy global_trade_finance_market_global_report_classic.html
+[pipeline 06:24:22] 8a. chart fact-check (attempt 1) on 15 browser(s)
+[pipeline 06:33:49] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 1 hq, 16 corrections (analyst review wins where both touch the same text)
+[pipeline 06:33:49] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 06:33:50] market: Global Trade Finance Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global
+[pipeline 06:33:50]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:33:50]    market brief: player_type = Solution Provider
+[pipeline 06:33:50]    market brief: market_type = B2B
+[pipeline 06:33:50] 1b. 149 verified companies after dedupe, need 250 -> discover -> verify rounds
+[pipeline 06:33:51] 1b. now 149 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:33:51] 1. verified rows: 168
+[pipeline 06:33:52] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\_pipeline\axes_spec.json
+[pipeline 06:33:52] 3. 168 names -> 149 companies after dedupe (13 groups merged)
+[pipeline 06:33:52] 3b. 6 companies left out (not active or excluded by review): ['AfriConnect Tech Solutions', 'Cashforce Tecnologia Ltda.', 'Chinsay AB', 'Hong Kong Trade Finance Platform Company Limited', 'NEBIX LLC', 'Quartilho Tecnologia Ltda.'] -> _pipeline/excluded_companies.json
+[pipeline 06:33:52] 3b. 5 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 06:33:52] 3c. ownership 144 / identity 15 / scope 144 answers: 7 more left out ['Demica Finance Limited', 'ESDOCS EMEA LIMITED', 'FrontEdge Technology Limited', 'Glade Financial Technologies Limited', 'IBEA', 'Liquify Ltd.'], 14 owner labels, 47 adjacent-segment (not on the chart) ['Accesstage S/A', 'Action Fintech SAS', 'African Trade Platform', 'Antecipa Plataforma de Intermediacoes de Recebiveis & Credito S.a.', 'Antecipa S/A', 'Aurionpro Solutions Limited'] -> _pipeline/auto_review.json
+[pipeline 06:33:52] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:33:52]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\_pipeline\evidence_pool.json
+[pipeline 06:33:52]    WARNING: only 136 verified companies after dedupe, fewer than --keep 250. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:33:52]    --keep 250: 20 chart/evidence + 116 long tail kept, 0 lower-scored dropped
+[pipeline 06:33:52]    20 companies with full evidence, 116 in the long tail
+[pipeline 06:33:52] 6. composite scores (5 per quadrant)
+[pipeline 06:33:53] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:33:54] 7c. gaps: 15 to ask in AI Mode on 15 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 06:35:34] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 12 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:35:34] 7b. HQ for China Systems Corporation: New Taipei City, Taiwan
+[pipeline 06:35:34] 7b. current name for OmniLatam SpA: Klym (listed brand is legacy) (already set)
+[pipeline 06:35:34] 7b. current name for UAE Trade Connect LLC: haifin (listed brand is legacy) (already set)
+[pipeline 06:35:34] 7b. owner of Antecipa S/A: CERC Central de Recebíveis (already set)
+[pipeline 06:35:34] 7b. owner of Bolero International Limited: WiseTech Global (already set)
+[pipeline 06:35:34] 7b. owner of Comarch SA: Chamonix Investments Poland sp. z o.o. (controlled by CVC Capital Partners Fund IX) (already set)
+[pipeline 06:35:34] 7b. owner of Conpend: Cape Investment Partners (already set)
+[pipeline 06:35:34] 7b. owner of Contour Network: XDC Ventures (already set)
+[pipeline 06:35:34] 7b. owner of GUUD (Singapore) Pte. Ltd.: EXEO Global Pte Ltd (already set)
+[pipeline 06:35:34] 7b. owner of Kyriba Corp.: Bridgepoint (already set)
+[pipeline 06:35:34] 7b. owner of Lendscape Limited: Bowmark Capital (already set)
+[pipeline 06:35:34] 7b. owner of Nobo Finance Limited: Bharti Global (already set)
+[pipeline 06:35:34] 7b. owner of Silverlake Axis Ltd.: E2I Ltd. (already set)
+[pipeline 06:35:34] 7b. owner of Taulia LLC: SAP SE (already set)
+[pipeline 06:35:34] 7b. owner of Trademaster Serviços e Participações S.A.: banco BV (already set)
+[pipeline 06:35:34] 7b. owner of Tradeteq Ltd: Silver Birch Finance (already set)
+[pipeline 06:35:34] 7b. owner of Yaydoo, S.A. de C.V.: Paystand (already set)
+[pipeline 06:35:34] 7b. analyst corrections: 16 text(s) changed from 16 correction(s)
+[pipeline 06:35:34] 8. building HTML / JSON / CSV report
+[pipeline 06:35:35] 8. report page: interactive design (global_trade_finance_market_global_report.html); static copy global_trade_finance_market_global_report_classic.html
+[pipeline 06:35:35] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 1 hq, 16 corrections (analyst review wins where both touch the same text)
+[pipeline 06:35:46] 8b. PDF report: global_trade_finance_market_global_report.pdf
+[pipeline 06:36:11] 8b. Word report: global_trade_finance_market_global_report.docx
+[pipeline 06:36:11] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [FAIL] No inactive / acquired / excluded company listed  -> ['Liquify Digital Ltd']
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 136 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:36:11] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\global_trade_finance_market_global_report.html
+exit=1
+[pipeline 06:40:55] market: Global Trade Finance Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global
+[pipeline 06:40:55]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:40:55]    market brief: player_type = Solution Provider
+[pipeline 06:40:55]    market brief: market_type = B2B
+[pipeline 06:40:55] 1b. 149 verified companies after dedupe, need 250 -> discover -> verify rounds
+[pipeline 06:40:56] 1b. now 149 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:40:56] 1. verified rows: 168
+[pipeline 06:40:56] 2. axes: X=Technology Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\_pipeline\axes_spec.json
+[pipeline 06:40:56] 3. 168 names -> 149 companies after dedupe (13 groups merged)
+[pipeline 06:40:56] 3b. 6 companies left out (not active or excluded by review): ['AfriConnect Tech Solutions', 'Cashforce Tecnologia Ltda.', 'Chinsay AB', 'Hong Kong Trade Finance Platform Company Limited', 'NEBIX LLC', 'Quartilho Tecnologia Ltda.'] -> _pipeline/excluded_companies.json
+[pipeline 06:40:56] 3b. 5 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 06:40:56] 3c. ownership 144 / identity 15 / scope 144 answers: 7 more left out ['Demica Finance Limited', 'ESDOCS EMEA LIMITED', 'FrontEdge Technology Limited', 'Glade Financial Technologies Limited', 'IBEA', 'Liquify Ltd.'], 14 owner labels, 47 adjacent-segment (not on the chart) ['Accesstage S/A', 'Action Fintech SAS', 'African Trade Platform', 'Antecipa Plataforma de Intermediacoes de Recebiveis & Credito S.a.', 'Antecipa S/A', 'Aurionpro Solutions Limited'] -> _pipeline/auto_review.json
+[pipeline 06:40:56] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:40:56]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\_pipeline\evidence_pool.json
+[pipeline 06:40:56]    WARNING: only 136 verified companies after dedupe, fewer than --keep 250. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:40:56]    --keep 250: 20 chart/evidence + 116 long tail kept, 0 lower-scored dropped
+[pipeline 06:40:56]    20 companies with full evidence, 116 in the long tail
+[pipeline 06:40:56] 6. composite scores (5 per quadrant)
+[pipeline 06:40:57] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:40:58] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:40:58] 7b. HQ for China Systems Corporation: New Taipei City, Taiwan (already set)
+[pipeline 06:40:58] 7b. current name for OmniLatam SpA: Klym (listed brand is legacy) (already set)
+[pipeline 06:40:58] 7b. current name for UAE Trade Connect LLC: haifin (listed brand is legacy) (already set)
+[pipeline 06:40:58] 7b. owner of Antecipa S/A: CERC Central de Recebíveis (already set)
+[pipeline 06:40:58] 7b. owner of Bolero International Limited: WiseTech Global (already set)
+[pipeline 06:40:58] 7b. owner of Comarch SA: Chamonix Investments Poland sp. z o.o. (controlled by CVC Capital Partners Fund IX) (already set)
+[pipeline 06:40:58] 7b. owner of Conpend: Cape Investment Partners (already set)
+[pipeline 06:40:58] 7b. owner of Contour Network: XDC Ventures (already set)
+[pipeline 06:40:58] 7b. owner of GUUD (Singapore) Pte. Ltd.: EXEO Global Pte Ltd (already set)
+[pipeline 06:40:58] 7b. owner of Kyriba Corp.: Bridgepoint (already set)
+[pipeline 06:40:58] 7b. owner of Lendscape Limited: Bowmark Capital (already set)
+[pipeline 06:40:58] 7b. owner of Nobo Finance Limited: Bharti Global (already set)
+[pipeline 06:40:58] 7b. owner of Silverlake Axis Ltd.: E2I Ltd. (already set)
+[pipeline 06:40:58] 7b. owner of Taulia LLC: SAP SE (already set)
+[pipeline 06:40:58] 7b. owner of Trademaster Serviços e Participações S.A.: banco BV (already set)
+[pipeline 06:40:58] 7b. owner of Tradeteq Ltd: Silver Birch Finance (already set)
+[pipeline 06:40:58] 7b. owner of Yaydoo, S.A. de C.V.: Paystand (already set)
+[pipeline 06:40:58] 7b. analyst corrections: 0 text(s) changed from 16 correction(s)
+[pipeline 06:40:58] 8. building HTML / JSON / CSV report
+[pipeline 06:40:59] 8. report page: interactive design (global_trade_finance_market_global_report.html); static copy global_trade_finance_market_global_report_classic.html
+[pipeline 06:40:59] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 1 hq, 16 corrections (analyst review wins where both touch the same text)
+[pipeline 06:41:09] 8b. PDF report: global_trade_finance_market_global_report.pdf
+[pipeline 06:41:28] 8b. Word report: global_trade_finance_market_global_report.docx
+[pipeline 06:41:29] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Technology Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 136 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:41:29] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_trade_finance_market_global\global_trade_finance_market_global_report.html
+exit=0

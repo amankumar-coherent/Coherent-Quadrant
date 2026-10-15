@@ -1,0 +1,130 @@
+[rounds 10:49:23] verify only: 57 unchecked companies
+    → substep 4a: verify 57 candidates as Manufacturer in 5 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1 (12 companies, 0/57 done)…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.1: running kept=5 rejected=7
+    → substep 4a.2: verify chunk 2 (12 companies, 12/57 done)…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.2: running kept=6 rejected=18
+    → substep 4a.3: verify chunk 3 (12 companies, 24/57 done)…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 4a.3: running kept=13 rejected=23
+    → substep 4a.4: verify chunk 4 (12 companies, 36/57 done)…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+  [ai-mode] verify — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #4)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-4: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #5)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-4: calling Google AI Mode (udm=50) attempt 2/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #6)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #7)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #8)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-4: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #9)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-4: calling Google AI Mode (udm=50) attempt 3/4…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · verify-4: rate limited (rate limited by Google (2 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #10)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-4: calling Google AI Mode (udm=50) attempt 4/4…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #11)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #12)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (7 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #13)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · verify-4: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+Traceback (most recent call last):
+  File "C:\Users\aman.kumar\Coherent-Quadrant\scripts\discover_verify_rounds.py", line 160, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\aman.kumar\Coherent-Quadrant\scripts\discover_verify_rounds.py", line 104, in main
+    kept, rej = ce.gpt_verify_market(
+                ~~~~~~~~~~~~~~~~~~~~^
+        client, model, query=args.market, family=family, companies=new,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        country=args.country,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aman.kumar\Coherent-Quadrant\src\vendor_intel\pipeline\chatgpt_expand.py", line 2859, in gpt_verify_market
+    data = _chat_json(
+        client,
+    ...<9 lines>...
+        require_key="results",
+    )
+  File "C:\Users\aman.kumar\Coherent-Quadrant\src\vendor_intel\pipeline\chatgpt_expand.py", line 1420, in _chat_json
+    return _ai_mode_json(system, user, label=label, require_key=require_key)
+  File "C:\Users\aman.kumar\Coherent-Quadrant\src\vendor_intel\pipeline\chatgpt_expand.py", line 1394, in _ai_mode_json
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: verify-4: Google AI Mode failed after 4 attempts (no API fallback is configured): rate limited by Google (1 CAPTCHAs this run)
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:574:12)
+    at _write (node:internal/streams/writable:503:10)
+    at Writable.write (node:internal/streams/writable:512:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36765:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:72575:59)
+    at DispatcherConnection.sendCreate (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26384:14)
+    at new Dispatcher (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26274:27)
+    at new _FrameDispatcher (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:57031:9)
+    at _FrameDispatcher.from (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:57064:27)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processImmediate (node:internal/timers:541:9) {
+  errno: -4047,
+  syscall: 'write',
+  code: 'EPIPE'
+}
+
+Node.js v24.21.0

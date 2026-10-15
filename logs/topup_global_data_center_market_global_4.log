@@ -1,0 +1,18 @@
+[rounds 04:31:52] verify only: 21 unchecked companies
+    → substep 4a: verify 21 candidates as Solution Provider in 2 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1 (12 companies, 0/21 done)…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_44_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · verify-1: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 53s ago
+    → substep 4a.1: running kept=3 rejected=9
+    → substep 4a.2: verify chunk 2 (9 companies, 12/21 done)…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-2: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 85s ago
+    → substep 4a.2: running kept=4 rejected=17
+    → substep 4a done: kept=4 rejected=17 (required=Solution Provider)
+[rounds 04:33:29] verify only: +4 verified, 17 rejected
