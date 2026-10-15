@@ -1,0 +1,70 @@
+=== Coherent-Quadrant DeepSeek expand (not quadrant crawl) ===
+  query  : Telecom Tower Inspection & Maintenance Market
+  target : 120
+  model  : deepseek-v4-flash
+  base   : https://api.deepseek.com/v1
+  scraper: http://127.0.0.1:15561
+  players: Solution Provider (tech=Solution Provider, other=Brand/Marketer)
+  graph  : top 20 from table | table target ~1000 after filter
+  fill   : Google AI scraper → DeepSeek residual for leftover gaps
+  [chatgpt] player mode: Solution Provider (tech=Solution Provider, other=Brand/Marketer) | target=120 so up to ~1000 remain after filter
+  [chatgpt] DeepSeek: LinkedIn OpenAI-web_search enrich off (use Apollo / search stack instead)
+  [chatgpt] FULL DeepSeek SDK pipeline (no run_query.py) | model=deepseek-v4-flash | base=https://api.deepseek.com/v1
+  [chatgpt] cost run_id=3a379095 → C:\Users\aman.kumar\Coherent-Quadrant\output\cost_dashboard
+  [chatgpt] existing=0 final=C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\telecom_tower_inspection_maintenance_market_india\telecom_tower_inspection_maintenance_market_india_FINAL.xlsx
+  [chatgpt] curated seeds loaded=0
+  [chatgpt] RESUME checkpoint: step=0_start substep=0c_market status=running file=C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\telecom_tower_inspection_maintenance_market_india\chatgpt_checkpoint_batch_all.json
+  [chatgpt] discover mode: DeepSeek chat discover
+  [chatgpt] fill mode: search stack first (DDGS + SearXNG + Google AI scraper), then DeepSeek residual for leftover gaps
+  [chatgpt] enrich: Step 5a = Google AI + DDGS + SearXNG + Exa + Wikipedia + Owler; Step 5b = OpenAI SDK residual for remaining NPD/gaps | Apollo=off
+  [chatgpt] Step 0c: SKIP (checkpoint) — market_type=B2B
+  [chatgpt] Step 0c/6: market type = B2B | player type = Service Provider
+  [chatgpt] Step 0c/6: why B2B: B2B: the buyers are businesses, utilities and public agencies (Telecom operators, tower companies, infrastructure funds, EPC and maintenance contractors, public-safety network operators).
+  [chatgpt] Step 0c/6: roles present in market: Service Provider
+  [chatgpt] Step 0c/6: why this player type: Set by the market brief (_pipeline/market_brief.json).
+  [chatgpt] Step 0c/6: every company in this landscape is the same player type (never Contract Manufacturer)
+  [chatgpt] Step 1/6: ChatGPT recall known companies…
+    → substep 1a: discovery rounds for Service Provider (batch 10, target 120, resuming with 27)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_46_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +2 (total 29)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +10 (total 39)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +10 (total 49)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-4: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.4: +3 (total 52)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.5: +10 (total 62)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.6: +10 (total 72)
+      · discover-round-7: calling Google AI Mode (udm=50) attempt 1/4…
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:574:12)
+    at _write (node:internal/streams/writable:503:10)
+    at Writable.write (node:internal/streams/writable:512:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36766:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:72575:59)
+    at DispatcherConnection.dispatch (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26555:14)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4047,
+  syscall: 'write',
+  code: 'EPIPE'
+}
+
+Node.js v24.21.0

@@ -1,0 +1,275 @@
+{
+  "Cyber Power Systems, Inc.": {
+    "x": {
+      "score": 62,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The company reports that its online high-density double-conversion 3-phase UPS system models, such as the OL10KERTHD, include an exclusive ECO mode that elevates power efficiency up to 98.4% when utility grid power is completely stable."
+        },
+        {
+          "claim": "The company reports that its data center PDU series delivers ultra-low idle power consumption of approximately 4.5 watts along with ±1% measurement accuracy to support precise Power Usage Effectiveness tracking."
+        },
+        {
+          "claim": "The company reports that its Carbon Series Rack Enclosures, such as the CR42U11001 model, provide standard EIA-310 19-inch compatibility, perforated front and rear doors for maximized airflow ventilation, and a stationary load weight capacity of 1,365 kg (3,000 lbs)."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "The company reports the release of its vendor-neutral CyberPower DCIM module integrated into PowerPanel Enterprise software, which supports real-time monitoring of SNMP and Modbus-TCP devices including UPS systems, PDUs, PLCs, branch circuits, and environmental sensors via customized floor maps."
+        },
+        {
+          "claim": "The company reports that its PowerPanel Business software has achieved VMware Ready status and provides automated graceful shutdown capabilities for virtual infrastructure deployments including VMware ESXi, Citrix XenServer, and Microsoft Hyper-V."
+        },
+        {
+          "claim": "CyberPower's data center management platform, PowerPanel Enterprise, features a built-in dynamic dashboard that tracks real-time carbon footprint (CO2 footprint) and provides Power Usage Effectiveness (PUE) monitoring to evaluate and optimize overall data center energy efficiency, as reported by Cyber Power Systems, Inc.."
+        },
+        {
+          "claim": "CyberPower was awarded the \"Asia Data Center Green Energy Efficiency Award\" at the 6th Asia Data Center Technology Expo 2018 in recognition of its patented GreenPower UPS energy-saving technology, which utilizes a bypass circuit design to reduce energy consumption."
+        }
+      ],
+      "parameters": {
+        "Power & Cooling Efficiency": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports that its online high-density double-conversion 3-phase UPS system models, such as the OL10KERTHD, include an exclusive ECO mode that elevates power efficiency up to 98.4% when utility grid power is completely stable."
+            },
+            {
+              "claim": "The company reports that its data center PDU series delivers ultra-low idle power consumption of approximately 4.5 watts along with ±1% measurement accuracy to support precise Power Usage Effectiveness tracking."
+            }
+          ],
+          "assessed_on": "The evaluation is based on self-reported technical specifications for the company's data center UPS and PDU models, alongside internal claims that 99% of its UPS products meet or exceed general ENERGY STAR standards. Based on primary research, the company's facility deployment data can be estimated as inferred through hardware metric accuracy, based on its plus or minus one percent measurement accuracy design.",
+          "estimates": [
+            {
+              "metric": "facility deployment data",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "inferred through hardware metric accuracy",
+              "confidence": "high",
+              "basis": "its plus or minus one percent measurement accuracy design",
+              "source": "CyberPower Video Presentation",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "The company reports that its Carbon Series Rack Enclosures, such as the CR42U11001 model, provide standard EIA-310 19-inch compatibility, perforated front and rear doors for maximized airflow ventilation, and a stationary load weight capacity of 1,365 kg."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's self-reported technical specifications for its core Carbon Series enclosure lineup, which covers standard physical features such as perforated doors for airflow and keyed-alike security locks but lacks explicit high-density cooling integrations or high-kW thermal ratings. Based on primary research, the company's high-density compute thermal dissipation can be estimated as focused on baseline atmospheric tolerances, based on its maximum operational temperature threshold of up to 60 degrees Celsius.",
+          "estimates": [
+            {
+              "metric": "high-density compute thermal dissipation",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "focused on baseline atmospheric tolerances",
+              "confidence": "high",
+              "basis": "its maximum operational temperature threshold of up to 60 degrees Celsius",
+              "source": "CyberPower IT Data Center Solutions",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports the release of its vendor-neutral CyberPower DCIM module integrated into PowerPanel Enterprise software, which supports real-time monitoring of SNMP and Modbus-TCP devices including UPS systems, PDUs, PLCs, branch circuits, and environmental sensors via customized floor maps."
+            },
+            {
+              "claim": "The company reports that its PowerPanel Business software has achieved VMware Ready status and provides automated graceful shutdown capabilities for virtual infrastructure deployments including VMware ESXi, Citrix XenServer, and Microsoft Hyper-V."
+            },
+            {
+              "claim": "The company announced the release of its CyberPower DCIM software on July 21, 2021, providing a single integrated data center management platform equipped with vendor-neutral SNMP and Modbus management tools, visualized floor maps, and PUE monitoring, according to CyberPower News."
+            },
+            {
+              "claim": "The company reports that its PowerPanel Enterprise software for Windows and Virtual Machines enables centralized power monitoring in data centers using customizable floor maps, and features an optional CyberPower DCIM module to monitor third-party SNMP and Modbus-TCP devices, as detailed by CyberPower Product Catalog."
+            },
+            {
+              "claim": "The company announced the launch of PowerPanel Cloud Pro and PowerPanel Gateway software on October 13, 2025, allowing remote cloud-based monitoring and management for an unlimited number of UPS systems and PDUs across multiple networks, according to CyberPower Newsroom."
+            },
+            {
+              "claim": "The company developed the CyberPower DCIM Mobile application, updated on April 9, 2026, which provides real-time mobile dashboard tracking, event notifications, and a visualized map view for managing data centers, as listed on the Google Play Store."
+            },
+            {
+              "claim": "The company reports that its PowerPanel Business Software has achieved VMware Ready status and maintains compatibility with VMware ESXi, Citrix XenServer, and Microsoft Hyper-V to manage graceful system shutdowns, as documented by CyberPower IT Data Center Solutions."
+            }
+          ],
+          "assessed_on": "The rating is supported by confirmed capabilities in vendor-neutral power infrastructure monitoring, virtualized infrastructure integration, and basic DCIM visualization modules within the PowerPanel Enterprise suite. Based on primary research, the company's data center digital twin performance can be estimated as driven by foundational telemetry logs, based on its powerpanel enterprise centralized management platform.",
+          "estimates": [
+            {
+              "metric": "data center digital twin performance",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "driven by foundational telemetry logs",
+              "confidence": "high",
+              "basis": "its powerpanel enterprise centralized management platform",
+              "source": "CyberPower PDU Data Management Blog",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "CyberPower's data center management platform, PowerPanel Enterprise, features a built-in dynamic dashboard that tracks real-time carbon footprint (CO2 footprint) and provides Power Usage Effectiveness (PUE) monitoring to evaluate and optimize overall data center energy efficiency, Inc."
+            },
+            {
+              "claim": "CyberPower was awarded the \"Asia Data Center Green Energy Efficiency Award\" at the 6th Asia Data Center Technology Expo 2018 in recognition of its patented GreenPower UPS energy-saving technology, which utilizes a bypass circuit design to reduce energy consumption."
+            }
+          ],
+          "assessed_on": "The rating rests on the verified implementation of real-time PUE and CO2 footprint monitoring within the company's enterprise software platform, alongside an industry award for its patented bypass energy-saving hardware architecture. Based on primary research, the company's automated infrastructure machine learning can be estimated as restricted to threshold alert triggers, based on its scheduled shutdowns and proactive event notification software.",
+          "estimates": [
+            {
+              "metric": "automated infrastructure machine learning",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "restricted to threshold alert triggers",
+              "confidence": "high",
+              "basis": "its scheduled shutdowns and proactive event notification software",
+              "source": "CyberPower PowerPanel Business for Linux Specs",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 68,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Cyber Power Systems, Inc. reported that its data center power management segment grew to account for 37% of its total consolidated revenue of NT$6.27 billion during the first half of 2026, compared to 33% in the same period of the prior year, according to the Cyber Power Systems H1 2026 Earnings Call presentation."
+        },
+        {
+          "claim": "The company reported an annual consolidated operating revenue of NT$12.492 billion for the full fiscal year of 2024, as documented in its official CyberPower Sustainability Highlights."
+        },
+        {
+          "claim": "CyberPower deployed its Modular UPS (3-Phase) Series as the backup power solution to revamp the headquarters data center of the Godrej Group at Godrej One in India, according to a company case announcement."
+        },
+        {
+          "claim": "CyberPower deployed its 3-phase online double-conversion UPS systems and battery packs to protect HP's IT equipment and network operations at a facility in Taipei, Taiwan, according to a company case study."
+        },
+        {
+          "claim": "CyberPower announced the debut of its Channel Partner Portal in 2023, designed to provide value-added resellers, system integrators, and managed service providers with resources to market its data center UPS systems and power distribution units (PDUs)."
+        },
+        {
+          "claim": "Cyber Power Systems has established direct distribution agreements with major global IT distributors, including Ingram Micro and TD SYNNEX (historically Tech Data), to scale the delivery of its power protection portfolio across the technology channel."
+        },
+        {
+          "claim": "The company reports in its CyberPower ESG Report 2023 that it consistently invested approximately 5% of its annual revenue into research and development during 2021 and 2022, with R&D expenses reaching NT$365,663,000 (5.29% of its total revenue) in 2023."
+        },
+        {
+          "claim": "Cyber Power Systems, Inc. demonstrated stable financial health in its FY2026 H1 financial reports, disclosing a consolidated revenue of NT$6.27 billion, a gross margin of 59%, and a net profit after tax of NT$1.08 billion."
+        }
+      ],
+      "parameters": {
+        "Global Revenue & Market Share": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Cyber Power Systems, Inc. reported that its data center power management segment grew to account for 37% of its total consolidated revenue of NT$6.27 billion during the first half of 2026, compared to 33% in the same period of the prior year, according to the Cyber Power Systems H1 2026 Earnings Call presentation."
+            },
+            {
+              "claim": "The company reported an annual consolidated operating revenue of NT$12.492 billion for the full fiscal year of 2024, as documented in its official CyberPower Sustainability Highlights."
+            },
+            {
+              "claim": "The company reports that its growth in the third quarter of 2026 is expected to be driven by seasonal demand for uninterruptible power supply (UPS) systems and data center power management products, particularly in the United States market, according to an earnings conference statement by chairman Michael Ho."
+            },
+            {
+              "claim": "The company reports that its consolidated sales for the first half of 2026 reached NT$6.27 billion, with a net profit of NT$1.05 billion."
+            },
+            {
+              "claim": "The company reports that its consolidated sales for the full year of 2024 totaled NT$12,493,894,000, representing a 6.36% year-over-year growth compared to 2023."
+            },
+            {
+              "claim": "The company reports that its consolidated sales for the full year of 2025 totaled NT$11,876,477,000."
+            }
+          ],
+          "assessed_on": "We verified the company's self-reported total operational revenue and the proportional breakdown of its data center power management product segment. Based on primary research, the company's global data center market share can be estimated as growing steadily across regional markets, based on its operational presence in over 50 countries and expanding distribution networks.",
+          "estimates": [
+            {
+              "metric": "global data center market share",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily across regional markets",
+              "confidence": "medium",
+              "basis": "its operational presence in over 50 countries and expanding distribution networks",
+              "source": "CyberPower Corporate Press Releases",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "CyberPower deployed its Modular UPS (3-Phase) Series as the backup power solution to revamp the headquarters data center of the Godrej Group at Godrej One in India, according to a company case announcement."
+            }
+          ],
+          "assessed_on": "The rating rests on documented case studies of active 3-phase UPS infrastructure deployments within enterprise data centers. Based on primary research, the company's data center deployment volumes can be estimated as high within distributed enterprise and retail infrastructure sectors, based on its power protection deployments across thousands of retail terminals and hundreds of government locations.",
+          "estimates": [
+            {
+              "metric": "data center deployment volumes",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high within distributed enterprise and retail infrastructure sectors",
+              "confidence": "high",
+              "basis": "its power protection deployments across thousands of retail terminals and hundreds of government locations",
+              "source": "CyberPower Partner Case Studies",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "CyberPower announced the debut of its Channel Partner Portal in 2023, designed to provide value-added resellers, system integrators, and managed service providers with resources to market its data center UPS systems and power distribution units."
+            },
+            {
+              "claim": "Cyber Power Systems has established direct distribution agreements with major global IT distributors, including Ingram Micro and TD SYNNEX (historically Tech Data), to scale the delivery of its power protection portfolio across the technology channel."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's well-established distribution network with prominent tier-one global IT distributors and its formal Channel Partner Alliance program tailored to infrastructure providers. Based on primary research, the company's strategic hyperscale and software partnerships can be estimated as centered heavily on global channel distributors and IT resellers, based on its distribution partnership with Ingram Micro and strategic channel framework.",
+          "estimates": [
+            {
+              "metric": "strategic hyperscale and software partnerships",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "centered heavily on global channel distributors and IT resellers",
+              "confidence": "high",
+              "basis": "its distribution partnership with Ingram Micro and strategic channel framework",
+              "source": "CyberPower Corporate News and Partner Announcements",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports in its CyberPower ESG Report 2023 that it consistently invested approximately 5% of its annual revenue into research and development during 2021 and 2022, with R&D expenses reaching NT$365,663,000 (5.29% of its total revenue) in 2023."
+            },
+            {
+              "claim": "Cyber Power Systems, Inc. demonstrated stable financial health in its FY2026 H1 financial reports, disclosing a consolidated revenue of NT$6.27 billion, a gross margin of 59%, and a net profit after tax of NT$1.08 billion."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's healthy, audited financial statements demonstrating consistent annual profitability and dedicated allocations of over 5% of its revenue to R&D. Based on primary research, the company's segmented data center research and development allocations can be estimated as closely integrated with its broader energy efficiency and green technology initiatives, based on its development of patented GreenPower UPS technology and PowerPanel management software.",
+          "estimates": [
+            {
+              "metric": "segmented data center research and development allocations",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "closely integrated with its broader energy efficiency and green technology initiatives",
+              "confidence": "medium",
+              "basis": "its development of patented GreenPower UPS technology and PowerPanel management software",
+              "source": "CyberPower Product News and Technical Profiles",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

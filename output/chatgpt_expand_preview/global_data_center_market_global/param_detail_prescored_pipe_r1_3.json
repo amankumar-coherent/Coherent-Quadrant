@@ -1,0 +1,329 @@
+{
+  "Amphenol Corporation": {
+    "x": {
+      "score": 66,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The company reports that its nrgILS DC power panel platform, introduced in March 2026, optimizes data center energy management by integrating real-time current and voltage monitoring, load shedding of non-critical infrastructure, and sequenced recovery automation."
+        },
+        {
+          "claim": "The company reports that its specialized liquid cooling portfolio provides high-density thermal management via OCP-compliant quick disconnect ecosystems (including the UQD, UQDB, and BMQC series) alongside custom multi-channel manifolds to support balanced fluid distribution and dry-break performance."
+        },
+        {
+          "claim": "Amphenol Network Solutions announced the launch of its PIVOT Fiber Distribution Panel, a modular 1RU panel supporting 192 LC connections or 96 MPO ports that provides a 33% density improvement over traditional panels and up to 25% rack space savings, according to Amphenol Network Solutions."
+        },
+        {
+          "claim": "Amphenol Broadband Solutions offers the HyperX system, which supports up to 3,456 LC terminations on a 19-inch seismic Zone 4 rack architecture to reduce floor space in high-density environments, as reported by Amphenol Broadband Solutions."
+        },
+        {
+          "claim": "In January 2026, Amphenol Corporation completed the acquisition of CommScope's CCS business, integrating the iTRACS Enterprise DCIM platform which centralizes routine operational tasks, provides asset management capabilities, and supports mobile 3D model referencing on the data center floor, according to company announcements."
+        },
+        {
+          "claim": "Through its acquired CommScope business, the company provides the imVision system manager software, an Automated Infrastructure Management (AIM) platform that supports real-time physical layer monitoring, device discovery, and cabling documentation across more than 27 million intelligent ports globally, according to CommScope product documentation."
+        },
+        {
+          "claim": "Amphenol delivers its Linear Pluggable Optics (LPO) transceiver portfolio, which completely eliminates the DSP layer to achieve a 50% reduction in power consumption and optimize latency for scalable AI clusters and high-performance data centers, as reported on its official technology site in September 2025."
+        },
+        {
+          "claim": "Amphenol Active Electrical Cables (AECs) integrate real-time predictive telemetry and analytics—monitoring key electrical signals like SNR, BER, FEC activity, and thermal drift—to detect early signs of component degradation before they impact GPU-scale AI workloads, as demonstrated in an operational showcase published by Amphenol Communications Solutions."
+        }
+      ],
+      "parameters": {
+        "Power & Cooling Efficiency": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports that its nrgILS DC power panel platform, introduced in January 2026, optimizes data center energy management by integrating real-time current and voltage monitoring, load shedding of non-critical infrastructure, and sequenced recovery automation."
+            },
+            {
+              "claim": "The company reports that its specialized liquid cooling portfolio provides high-density thermal management via OCP-compliant quick disconnect ecosystems (including the UQD, UQDB, and BMQC series) alongside custom multi-channel manifolds to support balanced fluid distribution and dry-break performance."
+            },
+            {
+              "claim": "The company reports providing advanced interconnect solutions and liquid cooling products for AI data centers to manage thermal control and lower energy usage."
+            },
+            {
+              "claim": "The company reports offering stainless quick disconnects and leak-tight liquid cooling systems designed to optimize thermal management and energy efficiency from servers to cooling distribution units."
+            },
+            {
+              "claim": "The company reports that its solutions support both air-based HVAC systems and leak-resistant liquid cooling technologies to maintain stable conditions while minimizing power consumption."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's production of component-level interconnects, intelligent DC power distribution panels, and quick-disconnect couplings engineered to facilitate high-density power delivery and liquid cooling loops. Based on primary research, the company's facility-wide PUE impact metrics can be estimated as high, driven by thermal resistance reductions, based on its liquid cooling quick disconnects aligned with Open Compute Project standards.",
+          "estimates": [
+            {
+              "metric": "facility-wide PUE impact metrics",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high, driven by thermal resistance reductions",
+              "confidence": "high",
+              "basis": "its liquid cooling quick disconnects aligned with Open Compute Project standards",
+              "source": "Liquid Cooling Systems Guide",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 55,
+          "evidence": [
+            {
+              "claim": "Amphenol Network Solutions announced the launch of its PIVOT Fiber Distribution Panel, a modular 1RU panel supporting 192 LC connections or 96 MPO ports that provides a 33% density improvement over traditional panels and up to 25% rack space savings, according to Amphenol Network Solutions."
+            },
+            {
+              "claim": "Amphenol Broadband Solutions offers the HyperX system, which supports up to 3,456 LC terminations on a 19-inch seismic Zone 4 rack architecture to reduce floor space in high-density environments."
+            },
+            {
+              "claim": "The company reports that its HyperEdge Modular Data Center (MDC), offered through its division Amphenol Broadband Solutions, is a factory-integrated, welded steel modular data center enclosure with pre-configured power, cooling, and cable management that reduces weight to approximately 13,000 lbs for a 10′×20′ unit compared to traditional concrete shelters."
+            },
+            {
+              "claim": "The company reports that its HyperEdge MDC features a thermal system utilizing CTMS technology that scales from 4,000 to 35,000 watts of cooling capacity per unit as load grows."
+            },
+            {
+              "claim": "The company reports that its Summit Rack, part of the Amphenol Network Solutions portfolio, is an overhead rack system that mounts directly above active equipment to ladder racks or wire baskets in 3RU and 5RU configurations, supporting 19-inch spacing for patch plates and dense chassis layouts."
+            },
+            {
+              "claim": "The company reports that its standard HyperEdge MDC footprints run from 6′×6′ up to 24′×36′ to house compute racks, battery banks, transport equipment, and pre-configured AC power in edge and hyperscale facilities."
+            },
+            {
+              "claim": "The company reports that its Layered Fiber Demarcation Box (LFD) is an indoor wall-mount enclosure designed to support high-density connectivity and fiber splicing."
+            },
+            {
+              "claim": "The company reports that its Network Bay features a two-post, narrow-rail steel design configured in sizes up to a 23-inch width, 7-foot height, and 44RU capacity to support standard rack-mounted data center and telecom equipment."
+            },
+            {
+              "claim": "The company reports that its High Density Multimedia Chassis (HDMC) is a 2RU high-capacity flexible chassis designed for diverse network applications."
+            }
+          ],
+          "assessed_on": "We verified that the company provides high-density fiber distribution panels and modular connectivity frames that optimize available space within standard data center racks. Based on primary research, the company's IT enclosure power and cooling capacities can be estimated as robust, optimized for ultra-high-density megawatt configurations, based on its delivery of power contacts and liquid cooling connectors for racks exceeding 100 kilowatts.",
+          "estimates": [
+            {
+              "metric": "IT enclosure power and cooling capacities",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "robust, optimized for ultra-high-density megawatt configurations",
+              "confidence": "high",
+              "basis": "its delivery of power contacts and liquid cooling connectors for racks exceeding 100 kilowatts",
+              "source": "Reliable AI Data Center Liquid Cooling Connectors",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "In January 2026, Amphenol Corporation completed the acquisition of CommScope's CCS business, integrating the iTRACS Enterprise DCIM platform which centralizes routine operational tasks, provides asset management capabilities, and supports mobile 3D model referencing on the data center floor, according to company announcements."
+            },
+            {
+              "claim": "Through its acquired CommScope business, the company provides the imVision system manager software, an Automated Infrastructure Management (AIM) platform that supports real-time physical layer monitoring, device discovery, and cabling documentation across more than 27 million intelligent ports globally, according to CommScope product documentation."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's recent expansion into software through the acquisition of CommScope's CCS business, which introduces established asset tracking and infrastructure management tools to its portfolio. Based on primary research, the company's ai-driven optimization case studies can be estimated as evolving, integrated via advanced hardware tracking, based on its sensor arrays purpose-mapped across coolant distribution units and power distribution systems.",
+          "estimates": [
+            {
+              "metric": "ai-driven optimization case studies",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "evolving, integrated via advanced hardware tracking",
+              "confidence": "medium",
+              "basis": "its sensor arrays purpose-mapped across coolant distribution units and power distribution systems",
+              "source": "Data Center Sensing Portfolio",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "Amphenol delivers its Linear Pluggable Optics (LPO) transceiver portfolio, which completely eliminates the DSP layer to achieve a 50% reduction in power consumption and optimize latency for scalable AI clusters and high-performance data centers, as reported on its official technology site in September 2025."
+            },
+            {
+              "claim": "Amphenol Active Electrical Cables (AECs) integrate real-time predictive telemetry and analytics—monitoring key electrical signals like SNR, BER, FEC activity, and thermal drift—to detect early signs of component degradation before they impact GPU-scale AI workloads, as demonstrated in an operational showcase published by Amphenol Communications Solutions."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's clear deployment of hardware interconnect architectures engineered specifically to reduce power consumption in AI infrastructure and embed predictive telemetry metrics within hardware cables. Based on primary research, the company's autonomous energy tracking platforms can be estimated as component-embedded, reliant on intelligent edge telemetry, based on its specialized advanced sensors and CO2 modules enabling real-time micro-environmental diagnostics.",
+          "estimates": [
+            {
+              "metric": "autonomous energy tracking platforms",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "component-embedded, reliant on intelligent edge telemetry",
+              "confidence": "medium",
+              "basis": "its specialized advanced sensors and CO2 modules enabling real-time micro-environmental diagnostics",
+              "source": "Data Center Sensing Portfolio",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 74,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Amphenol joined a new multi-source agreement announced in May 2026 to standardize expanded beam optical (EBO) connectivity specifications targeting next-generation AI and hyperscale data center infrastructure alongside Meta, AMD, Cisco, 3M, and Arista Networks, as reported by Simply Wall St."
+        },
+        {
+          "claim": "Amphenol collaborated with NVIDIA and Cisco to build the hardware ecosystem for the Ultra-Dense Small Form Factor Pluggable (USFP) optical module designed for 400Gb/s-per-lane signals for large-scale AI factory networking, announced at the OCP Global Summit in October 2026 and published by Futurum Group."
+        },
+        {
+          "claim": "Amphenol Corporation offers dedicated data center product case studies, highlighting its WaveTrax cable management solution that delivers 50% faster installation and 60% faster retrofits, alongside its FiberVault hyperscale fiber management frame built for AI infrastructure, as reported by Amphenol Network Solutions."
+        },
+        {
+          "claim": "Amphenol Corporation's Mini Cool Edge IO GH01 Series platform for PCIe Gen 6 connectors has been actively adopted by multiple global enterprise data center solution providers for integration within their next-generation server equipment, as reported by Amphenol Communications Solutions."
+        },
+        {
+          "claim": "Amphenol FCi Bangalore partnered with SENKO Advanced Components, Inc. as an ecosystem partner to integrate SENKO's SN® and VSFF connectivity into its high-density patch panels for AI, cloud, and hyperscale data center infrastructure, according to an announcement by Amphenol FCi Bangalore."
+        },
+        {
+          "claim": "Amphenol joined the Expanded Beam Optical (EBO) Multi-Source Agreement (MSA) standard alongside industry participants including Molex, TE Connectivity, and Cisco to establish interoperable optical interconnect architectures tailored for scaling AI data center clusters, as reported by Simply Wall St."
+        },
+        {
+          "claim": "The company reported full year 2025 net sales of $23.1 billion, representing a 52% increase from 2024, alongside an adjusted operating margin of 26.2% and a net income of $5.4 billion, demonstrating robust overall financial health to sustain innovation as outlined in its 2025 Annual Report."
+        },
+        {
+          "claim": "The company reported record-breaking first quarter 2026 net sales of $7.62 billion—a 58% growth year-over-year—and expanded its technology portfolio in fiber-optic data center connectivity through a $10.5 billion acquisition of CommScope's Connectivity and Cable Solutions (CCS) business completed in January 2026, as verified in Amphenol Reports Record First Quarter 2026 Results."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Amphenol joined a new multi-source agreement announced in May 2026 to standardize expanded beam optical (EBO) connectivity specifications targeting next-generation AI and hyperscale data center infrastructure alongside Meta, AMD, Cisco, 3M, and Arista Networks."
+            },
+            {
+              "claim": "Amphenol collaborated with NVIDIA and Cisco to build the hardware ecosystem for the Ultra-Dense Small Form Factor Pluggable (USFP) optical module designed for 400Gb/s-per-lane signals for large-scale AI factory networking, announced at the OCP Global Summit in October 2026 and published by Futurum Group."
+            },
+            {
+              "claim": "Amphenol Corporation, through its subsidiary Amphenol East Asia, delivers critical connectivity solutions to cloud and technology customers including Amazon and Microsoft, according to a QAD case study."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed participation in prominent multi-vendor design alliances and joint hardware ecosystem development alongside Tier-1 hyperscale operators and silicon vendors to establish next-generation AI and cloud networking standards. Based on primary research, the company's named customer contract values for direct deployments with major cloud service providers can be estimated as substantial and scaling rapidly, based on its record-high backlogs and more than 80% year-over-year growth in data communications segment sales.",
+          "estimates": [
+            {
+              "metric": "named customer contract values for direct deployments with major cloud service providers",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial and scaling rapidly",
+              "confidence": "high",
+              "basis": "its record-high backlogs and more than 80% year-over-year growth in data communications segment sales",
+              "source": "Amphenol Corporation Official Page",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "Amphenol Corporation offers dedicated data center product case studies, highlighting its WaveTrax cable management solution that delivers 50% faster installation and 60% faster retrofits, alongside its FiberVault hyperscale fiber management frame built for AI infrastructure."
+            },
+            {
+              "claim": "Amphenol Corporation's Mini Cool Edge IO GH01 Series platform for PCIe Gen 6 connectors has been actively adopted by multiple global enterprise data center solution providers for integration within their next-generation server equipment."
+            }
+          ],
+          "assessed_on": "We verified that the company's market presence is anchored by widespread adoption of its high-speed interconnect solutions and specialized fiber frameworks across enterprise and AI workloads. Based on primary research, the company's cumulative worldwide unit shipment volumes or customer retention rates can be estimated as consistently elevated across long-term deployments, based on its thousands of unique product configurations and long history of programmatic client design wins.",
+          "estimates": [
+            {
+              "metric": "cumulative worldwide unit shipment volumes or customer retention rates",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "consistently elevated across long-term deployments",
+              "confidence": "high",
+              "basis": "its thousands of unique product configurations and long history of programmatic client design wins",
+              "source": "Amphenol Corporation Official Page",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Amphenol FCi Bangalore partnered with SENKO Advanced Components, Inc. as an ecosystem partner to integrate SENKO's SN® and VSFF connectivity into its high-density patch panels for AI, cloud, and hyperscale data center infrastructure, according to an announcement by Amphenol FCi Bangalore."
+            },
+            {
+              "claim": "Amphenol joined the Expanded Beam Optical (EBO) Multi-Source Agreement (MSA) standard alongside industry participants including Molex, TE Connectivity, and Cisco to establish interoperable optical interconnect architectures tailored for scaling AI data center clusters."
+            },
+            {
+              "claim": "The company maintains a dedicated channel partner program through Amphenol Network Solutions that targets telecom and data center distributors, offering benefits such as project registration protection, tailored pricing plans, and specialized product training."
+            },
+            {
+              "claim": "Amphenol is an ecosystem partner in the NVIDIA MGX open modular reference architecture, collaborating on high-speed copper and optical connectivity solutions for AI factories and data center infrastructure."
+            },
+            {
+              "claim": "Through its subsidiary Amphenol FCI Bangalore, the company partnered with SENKO Advanced Components, Inc. to provide high-density SN connector solutions optimized for AI, cloud, and hyperscale data center network expansion in India (Amphenol FCi Bangalore partners with SENKO for high density connectivity in India)."
+            },
+            {
+              "claim": "Through its division Amphenol Communications Solutions (ACS), the company distributes electrical and fiber-optic data center infrastructure components globally via authorized channel distributors including Arrow Electronics, Avnet, DigiKey, Future Electronics, Heilind Asia Pacific, Mouser Electronics, PEI-Genesis, and TTI."
+            },
+            {
+              "claim": "Through its subsidiary Amphenol Sine Systems, the company utilizes Heilind Electronics as a trusted distribution partner to maintain inventory and supply connectivity products for data center infrastructure."
+            },
+            {
+              "claim": "Through its division Amphenol Communications Solutions, the company utilizes Amar Radio Corporation as an authorized distributor in India to deliver data center interconnect systems, high-speed data cables, and optical transceivers (Amphenol Communications Solutions Authorised Distributor). Skip to previous prompt"
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed multi-vendor standardization agreements and joint technology ecosystem partnerships targeting high-density AI data center connectivity, supported by a global channel network of authorized IT and electronics distributors like Arrow Electronics, Avnet, and TTI Inc. Based on primary research, the company's percentage of data center revenue generated through channels versus direct agreements can be estimated as predominantly concentrated in direct original equipment manufacturer engagements, based on its specialized focus on building engineered solutions directly with large-scale hyperscale infrastructure operators.",
+          "estimates": [
+            {
+              "metric": "percentage of data center revenue generated through channels versus direct agreements",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "predominantly concentrated in direct original equipment manufacturer engagements",
+              "confidence": "high",
+              "basis": "its specialized focus on building engineered solutions directly with large-scale hyperscale infrastructure operators",
+              "source": "Amphenol Corporation Official Page",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reported full year 2025 net sales of $23.1 billion, representing a 52% increase from 2024, alongside an adjusted operating margin of 26.2% and a net income of $5.4 billion, demonstrating robust overall financial health to sustain innovation as outlined in its 2025 Annual Report."
+            },
+            {
+              "claim": "The company reported record-breaking first quarter 2026 net sales of $7.62 billion—a 58% growth year-over-year—and expanded its technology portfolio in fiber-optic data center connectivity through a $10.5 billion acquisition of CommScope's Connectivity and Cable Solutions (CCS) business completed in January 2026, as verified in Amphenol Reports Record First Quarter 2026 Results."
+            },
+            {
+              "claim": "In 2024, Amphenol Corporation's research and development expenses increased by $110.8 million, representing approximately 3.0% of net sales compared to 2.7% of net sales in 2023 (Source: Amphenol Corporation Form 10-K for the fiscal year ended December 31, 2024)."
+            },
+            {
+              "claim": "For the first quarter of 2025, Amphenol Corporation's research and development expenses represented approximately 2.9% of net sales, compared to 3.0% of net sales for the first quarter of 2024 (Source: Amphenol Corporation Form 10-Q for the quarterly period ended March 31, 2025)."
+            },
+            {
+              "claim": "The company reports that its research and development strategy is decentralized and customer-led, utilizing operating units close to customer applications to drive innovations such as high-speed interconnect and power-distribution solutions."
+            },
+            {
+              "claim": "An independent credit rating action affirmed the company's 'A-' long-term issuer credit and senior unsecured debt ratings, along with 'A-2' short-term and commercial paper ratings, driven by operating performance and market share gains in the IT datacom market from AI infrastructure demand."
+            },
+            {
+              "claim": "In 2025, Amphenol Corporation announced an agreement to acquire CommScope's Connectivity and Cable Solutions (CCS) business, including its Data Center Connectivity Solutions unit, for $10.5 billion in cash to expand its fiber optic interconnect capabilities for IT datacom and cloud data centers (Source: Amphenol Corporation Investor Relations / SEC Form 10-K for the fiscal year ended December 31, 2025)."
+            },
+            {
+              "claim": "In 2025, Amphenol Corporation launched its UQD and UQDB liquid cooling connector series designed to handle thermal management infrastructure requirements within high-growth AI data centers."
+            },
+            {
+              "claim": "In May 2026, Amphenol Corporation joined a multi-source agreement alongside industry technology partners to develop open, interoperable expanded beam optical connector specifications targeting AI data center infrastructure."
+            },
+            {
+              "claim": "The company reports that its AI-related IT datacom sector grew 63% organically year-over-year, coming to represent 43% of total sales by mid-2026."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's exceptional top-line revenue growth, highly stable operating profit margins exceeding 26%, and high-profile strategic acquisitions within the fiber-optic data center network infrastructure segment. Based on primary research, the company's stand-alone annual research and development spending specifically allocated to data centers can be estimated as substantial, distributed, and directly responsive to technical client demands, based on its customer-led engineering structure decentralized across operating business segments rather than a siloed corporate organization.",
+          "estimates": [
+            {
+              "metric": "stand-alone annual research and development spending specifically allocated to data centers",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial, distributed, and directly responsive to technical client demands",
+              "confidence": "high",
+              "basis": "its customer-led engineering structure decentralized across operating business segments rather than a siloed corporate organization",
+              "source": "Amphenol Corporation Official Page",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

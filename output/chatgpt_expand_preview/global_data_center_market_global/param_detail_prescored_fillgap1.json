@@ -1,0 +1,69 @@
+{
+  "Asperitas BV": {
+    "x": {
+      "parameters": {
+        "DCIM & Management Software": {
+          "score": 55,
+          "evidence": [
+            {
+              "claim": "The company reports that its immersion cooling solutions feature a smart sensor-based monitoring and management control system that is Redfish capable for full integration in Open Compute Project (OCP) standard environments and third-party DCIM platforms."
+            },
+            {
+              "claim": "A product partnership announced in February 2024 between STULZ Modular and Asperitas features a compact, modular end-to-end data center for IT loads up to 200 kW that relies on STULZ Modular's infrastructure management (DCIM) and remote monitoring integrated with Asperitas' cooling systems."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's integrated sensor-level monitoring arrays and Redfish API capabilities that allow its hardware to connect with external data center management suites. Based on primary research, the company's standalone DCIM software suite capabilities can be estimated as limited to integrated monitoring control systems, based on its integrated sensor-based intelligence layer and control dashboards providing coherent thermal visualizations.",
+          "estimates": [
+            {
+              "metric": "standalone DCIM software suite capabilities",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to integrated monitoring control systems",
+              "confidence": "medium",
+              "basis": "its integrated sensor-based intelligence layer and control dashboards providing coherent thermal visualizations",
+              "source": "How Control Systems Enable Modern Liquid Cooling",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  },
+  "OptiCool Technologies LLC": {
+    "x": {
+      "parameters": {}
+    },
+    "y": {
+      "parameters": {
+        "R&D Investment & Financial Strength": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "OptiCool Technologies is an affiliate or operating subsidiary of Calvary Automation, which co-founded the company in July 2012."
+            },
+            {
+              "claim": "The company has historically secured private investment capital exceeding $4 million to support early-stage growth and development of its data center cooling solutions."
+            },
+            {
+              "claim": "The company reports its fourth-generation Delta4T™ two-phase liquid cooling platform was developed using Calvary Robotics engineering and AI modeling, and its systems are built at its 450,000 square foot headquarters and manufacturing facility in Webster, New York."
+            }
+          ],
+          "assessed_on": "We verified that the company operates as an affiliate or subsidiary of Calvary Automation and has historically secured private investment capital. Based on primary research, the company's research and development spending, profit margins, and credit ratings can be estimated as strong, in line with leading vendors, based on its sustained investment in research and development and fourth-generation 2-phase liquid cooling platform leveraging Calvary Robotics engineering.",
+          "estimates": [
+            {
+              "metric": "research and development spending, profit margins, and credit ratings",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "medium",
+              "basis": "its sustained investment in research and development and fourth-generation 2-phase liquid cooling platform leveraging Calvary Robotics engineering",
+              "source": "OptiCool Technologies (Official Website / Press Releases)",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

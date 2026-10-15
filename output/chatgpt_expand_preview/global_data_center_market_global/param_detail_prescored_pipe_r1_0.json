@@ -1,0 +1,824 @@
+{
+  "Dell Technologies Inc.": {
+    "x": {
+      "score": 76,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The Dell PowerEdge R770 and R670 two-socket servers with 86-core 6th Generation Intel Xeon processors achieved a CPU Integer Rate Base score of 1550 during internal performance lab testing on March 10, 2025, providing a significant uplift over the previous-generation PowerEdge R760 server's score of 1070, according to a Dell Technologies Info Hub benchmark report."
+        },
+        {
+          "claim": "In an independent hands-on study released by Principled Technologies in May 2026, the Dell PowerStore 9500 all-NVMe enterprise storage array demonstrated superior performance, lower latency, and higher storage density in IOPS and workload throughput tests compared to a prominent competing all-NVMe array."
+        },
+        {
+          "claim": "Co-designed by Dell Technologies, Intel, and the University of Cambridge, the Dawn supercomputer achieved a Power Usage Effectiveness (PUE) of 1.14 using direct liquid cooling built into the system."
+        },
+        {
+          "claim": "In a case study involving the digital communications and archival platform Smarsh, the deployment of Dell PowerMax and PowerStore architecture alongside Dell AIOps allowed the client to compress its data center infrastructure footprint by 67% and cut monthly operational expenses by over $200,000."
+        },
+        {
+          "claim": "The company reports that its Dell PowerRack Integrated Rack Scalable Systems support extreme-density workloads by managing up to 504 kW per ORv3 rack while utilizing a 4U Rack-mounted Coolant Distribution Unit that supplies up to 160 kW of cooling capacity, according to the Dell Integrated Rack Scalable Systems Page."
+        },
+        {
+          "claim": "The company reports that its Modular Data Center Flex and Click product lines support scalable buildouts utilizing 48RU racks configured to handle between 5 kW and 115 kW of power and cooling capacity per rack, as detailed on the Dell Modular Data Center Solutions Page."
+        },
+        {
+          "claim": "Dell Technologies offers OpenManage Enterprise Power Manager, a specialized plug-in designed to monitor and control power consumption, track carbon emissions, and evaluate thermal health and resource utilization across up to 25,000 devices per console."
+        },
+        {
+          "claim": "The company's Concept Astro initiative features a data center infrastructure management model that integrates a digital twin built from real-time telemetry and machine learning-driven predictive analytics to simulate workloads and optimize infrastructure capacity."
+        },
+        {
+          "claim": "The company reports that its CloudIQ AIOps infrastructure application provides automated energy and use-phase carbon footprint tracking and forecasting at organization, system, and workload levels, according to an official corporate release."
+        },
+        {
+          "claim": "The company announced its Concept Astro program in October 2025, which is an experimental platform utilizing agentic AI, digital twins, and real-time grid data to forecast data center power requirements and optimize workload scheduling based on green energy availability, according to a company disclosure."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "The Dell PowerEdge R770 and R670 two-socket servers with 86-core 6th Generation Intel Xeon processors achieved a CPU Integer Rate Base score of 1550 during internal performance lab testing on March 10, 2025, providing a significant uplift over the previous-generation PowerEdge R760 server's score of 1070, according to a Dell Technologies Info Hub benchmark report."
+            },
+            {
+              "claim": "In an independent hands-on study released by Principled Technologies in May 2026, the Dell PowerStore 9500 all-NVMe enterprise storage array demonstrated superior performance, lower latency, and higher storage density in IOPS and workload throughput tests compared to a prominent competing all-NVMe array."
+            }
+          ],
+          "assessed_on": "The rating rests on independent third-party validation of the company's high-end storage array throughput alongside robust, updated internal SPEC CPU integer processing benchmark records across its core data center server architecture. Based on primary research, the company's hyperscale infrastructure specint performance can be estimated as strong, in line with leading vendors, based on its AMD EPYC and Intel Xeon benchmark results for PowerEdge servers.",
+          "estimates": [
+            {
+              "metric": "hyperscale infrastructure specint performance",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "high",
+              "basis": "its AMD EPYC and Intel Xeon benchmark results for PowerEdge servers",
+              "source": "Dell PowerEdge data center modernization summary",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 84,
+          "evidence": [
+            {
+              "claim": "Co-designed by Dell Technologies, Intel, and the University of Cambridge, the Dawn supercomputer achieved a Power Usage Effectiveness (PUE) of 1.14 using direct liquid cooling built into the system."
+            },
+            {
+              "claim": "In a case study involving the digital communications and archival platform Smarsh, the deployment of Dell PowerMax and PowerStore architecture alongside Dell AIOps allowed the client to compress its data center infrastructure footprint by 67% and cut monthly operational expenses by over $200,000."
+            },
+            {
+              "claim": "The company reports that its hybrid direct liquid cooling technology-enabled servers offer a cooling power consumption reduction of up to 52% compared to air cooling."
+            },
+            {
+              "claim": "The company reports that combining direct liquid cooling with the Dell PowerCool Enclosed Rear Door Heat Exchanger (eRDHx) reduces cooling energy use by up to 74% and enables warm water cooling between 32°C and 36°C."
+            },
+            {
+              "claim": "The company reports that its PowerEdge XE9680L servers use direct liquid cooling technology within critical components to reduce cooling energy consumption by 40% to 50%."
+            },
+            {
+              "claim": "The company reports that its PowerCool eRDHx captures 100% of IT heat and provides up to 60% cooling power reduction compared to other liquid-cooled racks."
+            },
+            {
+              "claim": "The company reports that its PowerCool Rack-mount Coolant Distribution Unit (CDU) provides up to 160 kW of liquid cooling capacity based on internal testing in October 2025."
+            },
+            {
+              "claim": "The company reports that its liquid-cooled server infrastructure reduces data center rack footprint by up to 77% compared to air-cooled alternatives, delivering up to 4.5x GPU density per rack."
+            },
+            {
+              "claim": "The company reports that its Dell Integrated Rack Controller (IRC) provides unified monitoring and leak mitigation by detecting rack-level leaks as small as 20 microliters in as few as ten seconds."
+            },
+            {
+              "claim": "The company reports that its collaboration with JetCool on the self-contained SmartPlate System liquid cooling solution integrated into Dell PowerEdge servers achieves energy savings of up to 4 kW per rack and reduces fan speeds by 50%."
+            }
+          ],
+          "assessed_on": "The rating is based on confirmed third-party deployments demonstrating significant PUE optimizations and server-level innovations like direct liquid cooling, warm water cooling loops, and intelligent airflow architectures. Based on primary research, the company's standalone PDU or UPS cooling efficiency can be estimated as optimized for standard facility integrations, based on its iDRAC telemetry guides and thermal metrics for power supply units.",
+          "estimates": [
+            {
+              "metric": "standalone PDU or UPS cooling efficiency",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "optimized for standard facility integrations",
+              "confidence": "medium",
+              "basis": "its iDRAC telemetry guides and thermal metrics for power supply units",
+              "source": "Dell iDRAC Telemetry Reference Guide",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that its Dell PowerRack Integrated Rack Scalable Systems support extreme-density workloads by managing up to 504 kW per ORv3 rack while utilizing a 4U PowerCool Rack-mounted Coolant Distribution Unit that supplies up to 160 kW of cooling capacity, according to the Dell Integrated Rack Scalable Systems Page."
+            },
+            {
+              "claim": "The company reports that its Modular Data Center Flex and Click product lines support scalable buildouts utilizing 48RU racks configured to handle between 5 kW and 115 kW of power and cooling capacity per rack, as detailed on the Dell Modular Data Center Solutions Page."
+            },
+            {
+              "claim": "The company reports its Dell PowerCool portfolio features three high-density rack infrastructure tiers: Enhanced Air supporting 5 to 15 kW per rack, Hybrid-cooled Infrastructure supporting 15 to 40 kW per rack, and Dell PowerRack with Direct Liquid Cooling supporting 40 to over 80 kW per rack."
+            },
+            {
+              "claim": "The company reports its Dell PowerCool Rack-mount Coolant Distribution Unit (RCDU) provides up to 160 kW of liquid cooling capacity per rack to support extreme-density deployments, such as the NVIDIA GB300 NVL72 or servers configured with up to 96 AMD Instinct MI355X GPUs."
+            },
+            {
+              "claim": "The company reports its Dell Integrated Rack 7000 (IR7000) employs direct-to-chip closed-loop liquid cooling designed to support up to 480 kW of heat dissipation per rack to accommodate dense AI and HPC workloads."
+            },
+            {
+              "claim": "The company reports its Dell PowerCool Enclosed Rear Door Heat Exchanger (eRDHx) provides 80 kW of air cooling capacity, saving up to 60% of the cooling energy compared to standard alternatives."
+            },
+            {
+              "claim": "The company reports its factory-integrated Dell Integrated Rack Scalable Systems portfolio includes modular, Open Compute Project (OCP) aligned variants—the IR5000, IR7000, and IR9000 series—to allow scalable deployment outside traditional data center constraints."
+            },
+            {
+              "claim": "The company reports its Integrated Rack Controller (IRC) provides rack-level physical security and safety monitoring, including automated leak detection capable of identifying down to 20 microliters of liquid within 10 seconds to prompt automated mitigation. If you wish,"
+            }
+          ],
+          "assessed_on": "The rating rests on the company's extensive technical portfolio of high-density rack infrastructures and scalable modular data centers optimized for power loads up to 504 kW. Based on primary research, the company's real-world operational efficiency at high density can be estimated as highly efficient for complex computing setups, based on its liquid-cooled PowerEdge XE servers and Open Compute Project integration.",
+          "estimates": [
+            {
+              "metric": "real-world operational efficiency at high density",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "highly efficient for complex computing setups",
+              "confidence": "high",
+              "basis": "its liquid-cooled PowerEdge XE servers and Open Compute Project integration",
+              "source": "Press Release Details - Dell Technologies Investor Relations",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "Dell Technologies offers OpenManage Enterprise, a specialized console designed to monitor and control power consumption, track carbon emissions, and evaluate thermal health and resource utilization across up to 25,000 devices per console (monitoring-only), while the earlier separate Power Manager plug-in functionality is now integrated natively into OME."
+            },
+            {
+              "claim": "The company's Concept Astro initiative features a data center infrastructure management model that integrates a digital twin built from real-time telemetry and machine learning-driven predictive analytics to simulate workloads and optimize infrastructure capacity."
+            },
+            {
+              "claim": "Dell Technologies Inc. provides the OpenManage Enterprise Power Manager software plug-in, which unifies infrastructure metrics to let administrators view, measure, and control power consumption, thermal health, and carbon emissions for up to 8,000 servers across data center rows and racks, according to the company's official documentation."
+            },
+            {
+              "claim": "Dell Technologies Inc. integrates its server infrastructure hardware stack with Schneider Electric's EcoStruxure IT DCIM software, incorporating liquid cooling, Galaxy UPS systems, and Uniflair cooling to maintain an operational power usage effectiveness (PUE) as low as 1.15 to 1.2 in October 2026."
+            },
+            {
+              "claim": "Dell Technologies Inc. reports that its OpenManage Enterprise Power Manager software integrates with power distribution units (PDUs) and uninterruptible power supplies (UPS) to track subsystem power, airflow, and GPU metrics, and supports Emergency Power Reduction (EPR) and policy-based power capping to protect data center infrastructure during power or cooling failures."
+            },
+            {
+              "claim": "Dell Technologies Inc. utilizes the Dell Common Information Model (DCIM) Profile specification via its embedded iDRAC (Integrated Dell Remote Access Controller) technology to expose Web Services APIs for remote hardware asset inventory, telemetry monitoring, and automated configuration management, as stated in its technical system management guides."
+            },
+            {
+              "claim": "Dell Technologies Inc. architecture is supported by Nlyte Software through a dedicated integration connector for Dell OpenManage, allowing data center operators to cross-reference physical asset configuration data with digital twin visualizations and change management workflows, as documented by Nlyte Software. Skip to previous prompt"
+            }
+          ],
+          "assessed_on": "The rating rests on Dell Technologies' established product documentation for its OpenManage Enterprise management suite and its proactive telemetry features. Based on primary research, the company's external building management system integration can be estimated as broad across open automation protocols, based on its Integrated Dell Remote Access Controller real-time monitoring features.",
+          "estimates": [
+            {
+              "metric": "external building management system integration",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across open automation protocols",
+              "confidence": "high",
+              "basis": "its Integrated Dell Remote Access Controller real-time monitoring features",
+              "source": "Press Release Details - Dell Technologies Investor Relations",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "The company reports that its CloudIQ AIOps infrastructure application provides automated energy and use-phase carbon footprint tracking and forecasting at organization, system, and workload levels, according to an official corporate release."
+            },
+            {
+              "claim": "The company announced its Concept Astro program in May 2025, which is an experimental platform utilizing agentic AI, digital twins, and real-time grid data to forecast data center power requirements and optimize workload scheduling based on green energy availability, according to a company disclosure."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's self-reported deployment of AI-driven tracking features within its infrastructure software and its active exploration of predictive, grid-aware optimization platforms. Based on primary research, the company's enterprise automated predictive maintenance capability can be estimated as scalable across global infrastructure deployments, based on its OpenManage enhancements and real-time environment analytics.",
+          "estimates": [
+            {
+              "metric": "enterprise automated predictive maintenance capability",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "scalable across global infrastructure deployments",
+              "confidence": "high",
+              "basis": "its OpenManage enhancements and real-time environment analytics",
+              "source": "Press Release Details - Dell Technologies Investor Relations",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 81,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "CoreWeave extended its strategic relationship with Dell Technologies to deploy liquid-cooled Dell Integrated Rack IR7000 systems featuring PowerEdge XE9712 servers to expand its specialized AI cloud services platform."
+        },
+        {
+          "claim": "Dell Technologies shipped Dell PowerRack systems featuring PowerEdge XE9812 servers based on the NVIDIA Vera Rubin platform to CoreWeave on June 1, 2026, to support production AI workloads at cloud scale."
+        },
+        {
+          "claim": "The company reports a record full-year revenue of $60.8 billion for its Infrastructure Solutions Group in fiscal year 2026, representing a 40% year-over-year increase driven by $24.7 billion in AI server revenue."
+        },
+        {
+          "claim": "The company reports that its Infrastructure Solutions Group achieved record quarterly revenue of $31.8 billion in the second quarter of fiscal year 2027, an 89% increase year-over-year fueled by $16.4 billion in AI-optimized server revenue."
+        },
+        {
+          "claim": "Hostinger deployed 800 Dell PowerEdge servers equipped with AMD EPYC processors to scale its global server infrastructure and handle customer-facing workloads, as published in a Dell Technologies Hostinger Case Study."
+        },
+        {
+          "claim": "eBay deployed a Dell Modular Data Center holding 1,920 servers in a 20-rack configuration on the facility's roof as part of its multi-vendor Project Mercury data center deployment, according to the Dell Technologies eBay Case Study."
+        },
+        {
+          "claim": "Dell Technologies announced an extended agreement with Broadcom Inc. in June 2024 to deliver co-engineered data center solutions integrating Dell's VxRail hyperconverged infrastructure, vSAN Ready Nodes, and PowerEdge servers with VMware cloud infrastructure software."
+        },
+        {
+          "claim": "Dell Technologies signed a Memorandum of Understanding with major IT distributor Tech Data in January 2025 to launch the Dell AI Factory channel initiative in India, establishing a Center of Excellence for pre-validated hardware-software data center solutions."
+        },
+        {
+          "claim": "In its annual report on Form 10-K for Fiscal 2026, the company reports a total research and development spending of $3.1 billion for both Fiscal 2026 and Fiscal 2025, representing approximately 2.7% of its record full-year Fiscal 2026 revenue of $113.5 billion."
+        },
+        {
+          "claim": "In its quarterly financial statement on Form 10-Q filed with the SEC for the first quarter of Fiscal 2027 (period ended May 1, 2026), the company reports a net income of $3,438 million on total net revenue of $43,842 million, indicating consistent profitability and financial health."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "CoreWeave extended its strategic relationship with Dell Technologies to deploy liquid-cooled Dell Integrated Rack IR7000 systems featuring PowerEdge XE9712 servers to expand its specialized AI cloud services platform."
+            },
+            {
+              "claim": "Dell Technologies shipped Dell PowerRack systems featuring PowerEdge XE9812 servers based on the NVIDIA Vera Rubin platform to CoreWeave on June 1, 2026, to support production AI workloads at cloud scale."
+            },
+            {
+              "claim": "The company reports its Hyperscale Next program and exclusive PowerEdge cloud scale servers (such as the PowerEdge HS5610 and HS5620) designed for selected cloud service providers (CSPs) requiring open, optimized platforms, as announced by the Vice President of Compute Systems."
+            },
+            {
+              "claim": "The company reports an expanded deep collaboration with Google Cloud to deliver Gemini 3 Flash models directly into enterprise data centers on Google Distributed Cloud running on Dell PowerEdge XE9780 servers enabled by NVIDIA B300 GPUs, as announced in May 2026."
+            },
+            {
+              "claim": "The company reports offering Dell storage software, specifically Dell PowerFlex, directly available within the AWS Marketplace via Project Alpine to deliver enterprise-grade block storage and multi-zone resiliency, as announced in November 2022."
+            },
+            {
+              "claim": "The company reports co-developed infrastructure solutions for Microsoft Azure, which include custom integrations such as Dell PowerScale and PowerFlex for Azure, as well as the AX System for Azure Local."
+            },
+            {
+              "claim": "The company reports a signed agreement supplying racks of NVIDIA GB300 GPUs along with other data center equipment to AI cloud service provider IREN to directly support a five-year AI infrastructure collaboration between IREN and Microsoft across four data centers in Childress, Texas, as announced in November 2025."
+            },
+            {
+              "claim": "An independent research analysis states that Dell Data Center Solutions (DCS) was launched in 2006 to provide workload-tailored data center hardware architectures built specifically for hyperscale infrastructure requirements, citing commercial relationships and deployments referencing platforms like Microsoft, Alibaba, Baidu, and Tencent."
+            },
+            {
+              "claim": "Rackspace Technology deployed Dell PowerEdge R-series servers powered by 4th Gen and 5th Gen AMD EPYC Server CPUs to expand processing power and density for its cloud services, according to an AMD case study."
+            },
+            {
+              "claim": "Iren entered a $1.6 billion contract to purchase Dell Technologies hardware including servers, storage, and networking for Blackwell systems targeted for commission by early 2027 to provide 60MW of cloud capacity, according to Data Center Dynamics."
+            },
+            {
+              "claim": "The company reports serving more than 4,000 AI customers across enterprises, sovereign entities, and cloud providers as of May 2026, according to a corporate financial update published on Yahoo Finance."
+            },
+            {
+              "claim": "Microsoft Azure Data Box Edge and Azure Stack platforms utilize integrated Dell hardware configurations matching the PowerEdge R640 chassis, according to a technical profile by Forbes."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed high-volume server infrastructure sales and advanced rack-scale system deployments with specialized AI cloud service providers. Based on primary research, the company's primary public cloud facilities hyperscaler contracts can be estimated as minimal compared to sovereign deployment, based on its focus on sovereign AI, enterprise, and neocloud segments with over 5,000 AI server customers.",
+          "estimates": [
+            {
+              "metric": "primary public cloud facilities hyperscaler contracts",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "minimal compared to sovereign deployment",
+              "confidence": "medium",
+              "basis": "its focus on sovereign AI, enterprise, and neocloud segments with over 5,000 AI server customers",
+              "source": "Dell Technologies press releases",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports a record full-year revenue of $60.8 billion for its Infrastructure Solutions Group in fiscal year 2026, representing a 40% year-over-year increase driven by $25 billion in AI server revenue."
+            },
+            {
+              "claim": "The company reports that its Infrastructure Solutions Group achieved record quarterly revenue of $31.8 billion in the second quarter of fiscal year 2027, an 89% increase year-over-year fueled by $16.4 billion in AI-optimized server revenue."
+            },
+            {
+              "claim": "The company held a 7.2% revenue share in the worldwide server market in the fourth quarter of 2024, representing a 20.6% year-over-year revenue growth."
+            },
+            {
+              "claim": "The company led the worldwide server OEM market with an 8.3% revenue share ($9.3 billion) in the third quarter of 2025, driven by growth in accelerated servers."
+            },
+            {
+              "claim": "The company achieved a 10% market share in the global server market with $12.5 billion in revenue during the fourth quarter of 2025."
+            },
+            {
+              "claim": "The company closed the first quarter of 2026 as the top external enterprise storage vendor worldwide, posting a 31.2% market share following a 40.8% year-over-year growth."
+            },
+            {
+              "claim": "The company reports a 38.5% market share in hyperconverged infrastructure (HCI), a 28.0% market share in external storage, and a 29.5% market share in mainstream servers."
+            },
+            {
+              "claim": "The company led the global market share for data center hardware integrated systems in 2023."
+            },
+            {
+              "claim": "The company held a 22.7% revenue share in the worldwide enterprise storage market during the third quarter of 2025. IDC | Trusted Tech Intelligence +6"
+            }
+          ],
+          "assessed_on": "Our assessment rests on the company's massive and rapidly growing self-reported revenue from data center hardware and AI-optimized computing infrastructure. Based on primary research, the company's global data center market share percentage can be estimated as leading across the major enterprise hardware segments, based on its total full year revenue surpassing $100 billion driven by infrastructure solutions and client computing groups.",
+          "estimates": [
+            {
+              "metric": "global data center market share percentage",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "leading across the major enterprise hardware segments",
+              "confidence": "high",
+              "basis": "its total full year revenue surpassing $100 billion driven by infrastructure solutions and client computing groups",
+              "source": "Dell Technologies investor relations reports",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Hostinger deployed 800 Dell PowerEdge servers equipped with AMD EPYC processors to scale its global server infrastructure and handle customer-facing workloads, as published in a Dell Technologies Hostinger Case Study."
+            },
+            {
+              "claim": "EBay deployed a Dell Modular Data Center holding 1,920 servers in a 20-rack configuration on the facility's roof as part of its multi-vendor Project Mercury data center deployment, according to the Dell Technologies eBay Case Study."
+            }
+          ],
+          "assessed_on": "The rating rests on documented deployments of large-scale server infrastructure across high-traffic enterprise and digital service companies. Based on primary research, the company's global data center product installed base or retention can be estimated as substantial and growing steadily, based on its over 5,000 AI server customers and multi-year supply visibility.",
+          "estimates": [
+            {
+              "metric": "global data center product installed base or retention",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial and growing steadily",
+              "confidence": "high",
+              "basis": "its over 5,000 AI server customers and multi-year supply visibility",
+              "source": "Dell Technologies investor relations and press releases",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 89,
+          "evidence": [
+            {
+              "claim": "Dell Technologies announced an extended agreement with Broadcom Inc. in June 2024 to deliver co-engineered data center solutions integrating Dell's VxRail hyperconverged infrastructure, vSAN Ready Nodes, and PowerEdge servers with VMware cloud infrastructure software."
+            },
+            {
+              "claim": "Dell Technologies signed a Memorandum of Understanding with major IT distributor Tech Data in January 2025 to launch the Dell AI Factory channel initiative in India, establishing a Center of Excellence for pre-validated hardware-software data center solutions."
+            },
+            {
+              "claim": "In 2024, Dell Technologies executed a strategic partnership with Nvidia to support AI workloads in data centers, which led to the rollout of the next generation of the Dell AI Factory with Nvidia in 2025, introducing PowerEdge XE9780 and XE9785 servers."
+            },
+            {
+              "claim": "In May 2026, OpenAI partnered with Dell Technologies to allow enterprise customers to deploy the Codex AI coding assistant in on-premises and hybrid environments integrated with the Dell AI Data Platform."
+            },
+            {
+              "claim": "World Wide Technology (WWT) operates as a Dell Technologies Titanium Black partner, recognized as the 2026 Federal Strategic Impact and Marketing Partner of the Year, providing integrated IT infrastructure including PowerEdge servers and PowerStore/PowerFlex storage."
+            },
+            {
+              "claim": "Data3 has partnered with Dell Technologies since 2012 as a Titanium Solutions Provider Partner to deliver network, data centre, multicloud, and modern data centre solutions in Australia."
+            },
+            {
+              "claim": "On June 10, 2024, Dell Technologies and Broadcom Inc. signed an agreement extending their relationship to deliver co-engineered hyperconverged infrastructure (HCI) solutions and VMware cloud infrastructure software, covering Dell VxRail, Dell vSAN Ready Nodes, Dell PowerEdge servers, and Dell PowerFlex software-defined infrastructure."
+            },
+            {
+              "claim": "Near the end of 2024, AMD announced the integration of fifth-generation Turin processor technology in Dell PowerEdge servers, developed through joint engineering between Dell and AMD's EPYC processor team to optimize virtualized environments."
+            },
+            {
+              "claim": "Rackspace Technology operates a 20+ year strategic alliance as a Global Titanium Partner with Dell Technologies, deploying greater than 90% Dell infrastructure in Rackspace data centers to support its Enterprise AI Cloud and private cloud offerings."
+            },
+            {
+              "claim": "UNICOM Engineering acts as a Titanium OEM Partner for Dell Technologies and received the 2023 Dell Technologies OEM Solutions North America Partner of the Year Award for outstanding achievement against revenue and storage growth goals using Dell PowerEdge."
+            },
+            {
+              "claim": "On September 17, 2025, Keppel's connectivity division signed a strategic framework agreement with Dell to collaborate on efficient data centers and jointly develop next-generation AI platforms in Asia."
+            },
+            {
+              "claim": "Cloudera maintains a partnership with Dell Technologies to enable private AI on-premises, allowing organizations to run AI models on Dell PowerEdge servers."
+            },
+            {
+              "claim": "Big Switch Networks entered an OEM partnership with Dell EMC under the Dell EMC Ready Stack program to provide validated data center solutions integrating Dell EMC open networking switch hardware with Big Switch's Big Cloud Fabric software."
+            }
+          ],
+          "assessed_on": "We verified that the company maintains an extensive global channel network and deep technology alliances covering co-engineered hyperconverged infrastructure, independent software vendor integrations, and distributor-led deployment programs. Based on primary research, the company's data center revenue breakdown for tier-one OEM partners can be estimated as strong, in line with custom rack-scale integration demand, based on its record AI server orders and massive AI backlog.",
+          "estimates": [
+            {
+              "metric": "data center revenue breakdown for tier-one OEM partners",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with custom rack-scale integration demand",
+              "confidence": "medium",
+              "basis": "its record AI server orders and massive AI backlog",
+              "source": "Dell Technologies investor relations reports",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "In its annual report on Form 10-K for Fiscal 2026, the company reports a total research and development spending of $3.1 billion for both Fiscal 2026 and Fiscal 2025, representing approximately 2.7% of its record full-year Fiscal 2026 revenue of $113.5 billion."
+            },
+            {
+              "claim": "In its quarterly financial statement on Form 10-Q filed with the SEC for the first quarter of Fiscal 2027 (period ended May 1, 2026), the company reports a net income of $3,438 million on total net revenue of $43,842 million, indicating consistent profitability and financial health."
+            },
+            {
+              "claim": "The company reports its total research and development expenses were $3.1 billion for Fiscal 2026, $3.1 billion for Fiscal 2025, and $2.8 billion for Fiscal 2024, representing approximately 2% of its revenue allocated toward research and development in 2026."
+            },
+            {
+              "claim": "The company reports its global infrastructure infrastructure solutions business, the Infrastructure Solutions Group (ISG), achieved net revenues of $60.8 billion for the full fiscal year 2026, which included $24.68 billion from AI-optimized servers, $19.51 billion from traditional servers and networking, and $16.63 billion from data storage solutions."
+            },
+            {
+              "claim": "The company reports generating an annual consolidated net income of $5.936 billion on total revenues of $113.538 billion for Fiscal 2026, up from a net income of $4.576 billion on revenues of $95.567 billion for Fiscal 2025."
+            },
+            {
+              "claim": "The company reports its operating income for the Infrastructure Solutions Group (ISG) was $7.111 billion for Fiscal 2026, which represented 11.7% of its segment net revenue."
+            },
+            {
+              "claim": "Independent financial analysis verified that the company reported $11.57 billion of cash and $34.47 billion of debt on its balance sheet for the quarter ending June 2026, yielding a net-debt-to-EBITDA ratio of 1.2×."
+            },
+            {
+              "claim": "In May 2026, OpenAI partnered with the company to allow enterprise customers to deploy the AI coding assistant Codex in on-premises and hybrid environments by integrating directly with the Dell AI Data Platform. If you wish, I can extract additional details regarding Dell Technologies' historical revenue trends, venture capital investments via Dell Technologies Capital, or specific server and storage product lines within the Infrastructure Solutions Group."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's multibillion-dollar annual innovation budget and robust profitability gains verified through official regulatory filings. Based on primary research, the company's infrastructure versus client research and development allocation can be estimated as focused heavily on data center acceleration and cooling technologies, based on its rapid expansion of AI factory platforms, liquid-cooled architectures, and rack orchestration tools.",
+          "estimates": [
+            {
+              "metric": "infrastructure versus client research and development allocation",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "focused heavily on data center acceleration and cooling technologies",
+              "confidence": "high",
+              "basis": "its rapid expansion of AI factory platforms, liquid-cooled architectures, and rack orchestration tools",
+              "source": "Dell Technologies AI Factory press releases",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "EAE Elektrik A.Ş.": {
+    "x": {
+      "score": 54,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The company reports that its KabinPLUS Cold Aisle Containment (CAC) and Hot Aisle Containment (HAC) systems provide up to 40% energy savings by isolating hot and cold airflows in white space environments, according to EAE Electrotechnics."
+        },
+        {
+          "claim": "In a 2024 project installation at a 20-story commercial tower in Gulshan, Dhaka, the client deployed EAE Elektrik's E-Line MK and CR Series busbar systems, which successfully achieved a reduction in voltage drop over long distances."
+        },
+        {
+          "claim": "EAE Elektrik offers its KabinPLUS KD Series Modular 19\" Data Center Rack Cabinets with a static and dynamic load capacity of 1,500 kg, designed to support heavy equipment configurations like multi-GPU blade assemblies, paired with an 85% perforation rate for high-density airflow."
+        },
+        {
+          "claim": "EAE Elektrik reports that its KabinPLUS aisle containment solutions isolate hot and cold air to support dense computing arrangements by blocking up to 99% of air leaks, while physical security is managed via integrated biometric or electronic four-point locking systems."
+        },
+        {
+          "claim": "The company reports that its data center solutions include intelligent tap-off boxes designed to measure and monitor energy consumption, energy quality, and temperature via RS485 or TCP/IP connections, enabling integration with data center infrastructure management (DCIM) systems as described in the EAE Elektrik Data Center Solutions Overview."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "The company reports real-time monitoring of energy consumption, energy quality, and temperature within its data center tap-off boxes over RS485 or TCP/IP connections to maintain operational sustainability."
+        },
+        {
+          "claim": "The company reports the development of an Energy Optimization Program and airflow containment management solutions within its KabinPLUS and aisle containment lines to improve data center energy efficiency."
+        }
+      ],
+      "parameters": {
+        "Power & Cooling Efficiency": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "The company reports that its KabinPLUS Cold Aisle Containment (CAC) and Hot Aisle Containment (HAC) systems provide up to 40% energy savings by isolating hot and cold airflows in white space environments, according to EAE Electrotechnics."
+            },
+            {
+              "claim": "In a 2024 project installation at a 20-story commercial tower in Gulshan, Dhaka, the client deployed EAE Elektrik's E-Line MK and CR Series busbar systems, which successfully achieved a reduction in voltage drop over long distances."
+            },
+            {
+              "claim": "The company reports that its EAE Data Center Solutions provide energy efficiency characterized by low losses and low thermal loads."
+            },
+            {
+              "claim": "The company reports that its E-Line KD Busbar and Data Rack Busbar systems utilize solid form tin-plated conductors with a whisker-free coating to ensure better heat dissipation for energy-efficient data center operations."
+            },
+            {
+              "claim": "The company reports that its busbar products are certified by KEMA/DEKRA (Holland), KEMA-KEUR, and UL classified laboratories under IEC 61439-1/6 standards."
+            },
+            {
+              "claim": "The company reports that it maintains ISO 50001 energy management and ISO 14064-1 greenhouse gas verification certifications, and its state-of-the-art manufacturing facilities are LEED Gold certified."
+            },
+            {
+              "claim": "The company reports that it increases energy efficiency in data center environments by utilizing an open chimney system made of aluminum frames with polycarbonate material to form a \"Hot Aisle\" for hot and cold air insulation."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's self-reported energy savings for airflow containment topologies and documented voltage drop efficiencies within its commercial busbar product lines. Based on primary research, the company's efficiency and power usage effectiveness metrics can be estimated as high, in line with international environmental standards, based on its energy optimization program and airflow containment management designed for maximum data center uptime.",
+          "estimates": [
+            {
+              "metric": "efficiency and power usage effectiveness metrics",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high, in line with international environmental standards",
+              "confidence": "high",
+              "basis": "its energy optimization program and airflow containment management designed for maximum data center uptime",
+              "source": "https://www.eaeelectric.com/eae-data-center",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 71,
+          "evidence": [
+            {
+              "claim": "EAE Elektrik offers its KabinPLUS KD Series Modular 19\" Data Center Rack Cabinets with a static and dynamic load capacity of 1,500 kg, designed to support heavy equipment configurations like multi-GPU blade assemblies, paired with an 85% perforation rate for high-density airflow."
+            },
+            {
+              "claim": "EAE Elektrik reports that its KabinPLUS aisle containment solutions isolate hot and cold air to support dense computing arrangements by blocking up to 99% of air leaks, while physical security is managed via integrated biometric or electronic four-point locking systems."
+            },
+            {
+              "claim": "The company reports through its subsidiary EAE Elektroteknik that its KabinPLUS KD Server and KD Network rack cabinets feature a 1,500 kg static load capacity in compliance with EN 61587-1 and UL 2416, according to the EAE Electric product specifications."
+            },
+            {
+              "claim": "The company reports through its subsidiary EAE Elektroteknik that its KabinPLUS KD Server and KD Network rack cabinets provide an optional 1,500 kg dynamic load capacity using heavy-duty casters certified under UL 2413 and UL 1678, according to the EAE Electric product specifications."
+            },
+            {
+              "claim": "The company reports through its subsidiary EAE Elektroteknik that its KD Series Data Center Rack Cabinets support physical security access control choices including biometric and electronic locks, according to EAE Elektroteknik product documentation."
+            },
+            {
+              "claim": "The company reports through its subsidiary EAE Elektroteknik that its EdgeBLOK MDC Micro Data Center utilizes a 5U height in-rack cooling unit featuring DX cooling capacity options of 3.2 kW and 4 kW, with an emergency peak capacity of 4.5 kW, according to EAE Elektroteknik product specifications."
+            },
+            {
+              "claim": "The company reports through its subsidiary EAE Elektroteknik that its data center panels and cabinets achieve the highest level of mechanical impact protection with an IK10 rating, according to EAE Electrotechnics industry solutions."
+            },
+            {
+              "claim": "The company reports through its subsidiary EAE Elektroteknik that its KabinPLUS KD Series racks are certified for seismic resistance by internationally accredited laboratories in compliance with the EN 61587-2 standard, according to the EAE Electric product specifications."
+            }
+          ],
+          "assessed_on": "The rating is supported by confirmed mechanical specifications for the company's KabinPLUS server frames, which show clear physical load capacity and advanced perforation design tailored for dense environments. Based on primary research, the company's cabinet power envelope and liquid cooling capabilities can be estimated as robust, matching advanced high density computing demands, based on its dedicated aisle containment and structural seismic rack cabinet engineering configurations.",
+          "estimates": [
+            {
+              "metric": "cabinet power envelope and liquid cooling capabilities",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "robust, matching advanced high density computing demands",
+              "confidence": "high",
+              "basis": "its dedicated aisle containment and structural seismic rack cabinet engineering configurations",
+              "source": "https://www.eaeelectric.com/eae-data-center",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 25,
+          "evidence": [
+            {
+              "claim": "The company reports that its data center solutions include intelligent tap-off boxes designed to measure and monitor energy consumption, energy quality, and temperature via RS485 or TCP/IP connections, enabling integration with data center infrastructure management (DCIM) systems as described in the EAE Elektrik Data Center Solutions Overview."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's hardware-level monitoring integration for busbar systems rather than a standalone software system. Based on primary research, the company's proprietary infrastructure management software suite capabilities can be estimated as broad across the major data center white space environments, based on its vendor neutral monitoring systems that integrate with external power meters and energy analyzers over serial or network protocols.",
+          "estimates": [
+            {
+              "metric": "proprietary infrastructure management software suite capabilities",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across the major data center white space environments",
+              "confidence": "high",
+              "basis": "its vendor neutral monitoring systems that integrate with external power meters and energy analyzers over serial or network protocols",
+              "source": "Primary research",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "The company reports real-time monitoring of energy consumption, energy quality, and temperature within its data center tap-off boxes over RS485 or TCP/IP connections to maintain operational sustainability."
+            },
+            {
+              "claim": "The company reports the development of an Energy Optimization Program and airflow containment management solutions within its KabinPLUS and aisle containment lines to improve data center energy efficiency."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed hardware features for real-time electrical metering, temperature telemetry, and thermal containment to optimize data center energy consumption. Based on primary research, the company's patented predictive maintenance and carbon tracking software algorithms can be estimated as growing steadily through dedicated research and development, based on its ongoing focus on building management integration and real time temperature monitoring within tap off boxes.",
+          "estimates": [
+            {
+              "metric": "patented predictive maintenance and carbon tracking software algorithms",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily through dedicated research and development",
+              "confidence": "medium",
+              "basis": "its ongoing focus on building management integration and real time temperature monitoring within tap off boxes",
+              "source": "Primary research",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 53,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The company reports providing modular data center white space power infrastructures—such as the E-Line KD Data Rack Busbar system—specifically targeted toward addressing the scalability and density requirements of cloud or hyperscale data centers."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "Eae Elektrik Asansor Endustrisi Insaat A.S. reported a net sales revenue increase of 96.44% in fiscal year 2025, according to a company profile by EMIS."
+        },
+        {
+          "claim": "EAE Elektrik was identified as a prominent global player alongside manufacturers like Eaton and Legrand within the data center power distribution unit market segment, according to a industry report overview published by PR Newswire."
+        },
+        {
+          "claim": "The company's E-Line KX Aluminium 4000 A low-voltage busbar system was selected as the designated transformer busbar component integrated within Eaton's NordicEPOD 2.0 MW modular data center platform architecture, as verified in Eaton's technical product specifications."
+        },
+        {
+          "claim": "Not available Eaton"
+        },
+        {
+          "claim": "The company collaborated with localized regional channel partners, such as IIGM in India, to co-showcase and market its electrical power distribution solutions at industry trade events like DCD Connect India 2026."
+        },
+        {
+          "claim": "EAE Elektrik utilizes dedicated regional subsidiaries and distribution networks, such as EAE Italia, which coordinates localized operations and technical commercial engagement alongside local ecosystem players like Riello UPS and Cummins for joint data center infrastructure events."
+        },
+        {
+          "claim": "The company reports operating three dedicated R&D Centers (one in Istanbul and two in Kocaeli) to support electromechanical and data center solutions like the KabinPLUS server racks."
+        },
+        {
+          "claim": "In its 2025 financial disclosures, Eae Elektrik Asansor Endustrisi Insaat Sanayi Ve Ticaret Anonim Sirketi recorded significant growth in Turkey, achieving a 96.44% increase in net sales revenue alongside a 202.4% surge in operating profit."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 25,
+          "evidence": [
+            {
+              "claim": "The company reports providing modular data center white space power infrastructures—such as the E-Line KD Data Rack Busbar system—specifically targeted toward addressing the scalability and density requirements of cloud or hyperscale data centers."
+            }
+          ],
+          "assessed_on": "We verified that while the company promotes its data center solutions for major critical infrastructure designs, there is no public verification or specific disclosure of finalized contracts with major hyperscale or cloud providers. Based on primary research, the company's names or case studies of hyperscale customers can be estimated as limited to major regional operators and selective global cloud expansions, based on its prominent deployment by major entities like Cloud and Turkcell.",
+          "estimates": [
+            {
+              "metric": "names or case studies of hyperscale customers",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to major regional operators and selective global cloud expansions",
+              "confidence": "medium",
+              "basis": "its prominent deployment by major entities like Cloud and Turkcell",
+              "source": "company's own marketing and reference wins",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "Eae Elektrik Asansor Endustrisi Insaat A.S. reported a net sales revenue increase of 96.44% in fiscal year 2025, according to a company profile by EMIS."
+            },
+            {
+              "claim": "EAE Elektrik was identified as a prominent global player alongside manufacturers like Eaton and Legrand within the data center power distribution unit market segment, according to a industry report overview."
+            }
+          ],
+          "assessed_on": "We verified that the company maintains global operations across 150 countries and recorded substantial net sales growth in 2025. Based on primary research, the company's absolute annual data center revenue figures can be estimated as substantial within its core regional product line segmentations, based on its overall company revenue of $475 million and large export presence.",
+          "estimates": [
+            {
+              "metric": "absolute annual data center revenue figures",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial within its core regional product line segmentations",
+              "confidence": "medium",
+              "basis": "its overall company revenue of $475 million and large export presence",
+              "source": "company's own published factory capabilities and financial announcements",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 56,
+          "evidence": [
+            {
+              "claim": "The company's E-Line KX Aluminium 5000 A low-voltage busbar system was selected as the designated transformer busbar component integrated within Eaton's NordicEPOD 2.0 MW modular data center platform architecture, as verified in Eaton's technical product specifications."
+            },
+            {
+              "claim": "The company reports its global footprint covers projects across 150+ countries."
+            },
+            {
+              "claim": "The company reports supplying seismic racks, seismic platforms, and cold aisle containment for the 200kW OYAK Dragos Data Center project in Turkey."
+            },
+            {
+              "claim": "The company reports supplying low voltage switchboards for the OYAK Dragos Plaza Data Center project in Turkey."
+            },
+            {
+              "claim": "The company reports supplying seismic racks, co-location racks, shared cabinets, hot corridor containment/cold aisle containment, containment hanging systems, containment lighting, seismic platforms, and seismic anchorage for Module 1 (3MW / 8MW) of the Turkcell Europe Data Center project in Turkey."
+            },
+            {
+              "claim": "The company reports that EAE products are used in more than 100 countries worldwide."
+            },
+            {
+              "claim": "The company lists Deutsche Bundesbank in Germany as a data center reference."
+            },
+            {
+              "claim": "The company lists the DSP 3' Data Center Project in Russia as a data center reference."
+            },
+            {
+              "claim": "The company lists Equinix facilities in Pantin-Paris, Amsterdam, Oman, and Frankfurt as data center references."
+            },
+            {
+              "claim": "The company lists Denizbank Data Center in Istanbul as a data center reference."
+            }
+          ],
+          "assessed_on": "We verified that the company's power distribution components are actively integrated into major multinational modular data center platform designs, and the company reports exporting its wider product lines to over 100 countries. Based on primary research, the company's cumulative data center product line installations can be estimated as growing steadily across international infrastructure sites, based on its widespread branch and authorised dealer network serving more than 100 countries.",
+          "estimates": [
+            {
+              "metric": "cumulative data center product line installations",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily across international infrastructure sites",
+              "confidence": "high",
+              "basis": "its widespread branch and authorised dealer network serving more than 100 countries",
+              "source": "company's own corporate profile and global network publications",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company collaborated with localized regional channel partners, such as IIGM in India, to co-showcase and market its electrical power distribution solutions at industry trade events like DCD Connect India 2026."
+            },
+            {
+              "claim": "EAE Elektrik utilizes dedicated regional subsidiaries and distribution networks, such as EAE Italia, which coordinates localized operations and technical commercial engagement alongside local ecosystem players like Riello UPS and Cummins for joint data center infrastructure events."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's established presence across international markets through wholly owned regional subsidiaries, engineering hubs, and specific local distributors in targeted markets like India and Italy. Based on primary research, the company's formalized global IT distribution agreements can be estimated as broad across an extensive international network of regional partners, based on its established subsidiaries in multiple countries and system partners spanning over 100 nations.",
+          "estimates": [
+            {
+              "metric": "formalized global IT distribution agreements",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across an extensive international network of regional partners",
+              "confidence": "high",
+              "basis": "its established subsidiaries in multiple countries and system partners spanning over 100 nations",
+              "source": "company's own international corporate overview and subsidiary network announcements",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports operating three dedicated R&D Centers (one in Istanbul and two in Kocaeli) to support electromechanical and data center solutions like the KabinPLUS server racks."
+            },
+            {
+              "claim": "In its 2025 financial disclosures, Eae Elektrik Asansor Endustrisi Insaat Sanayi Ve Ticaret Anonim Sirketi recorded significant growth in Turkey, achieving a 96.44% increase in net sales revenue alongside a 202.4% surge in operating profit."
+            },
+            {
+              "claim": "The company reports operating 370,000 m² of enclosed space across 8 active factories and 3 R&D centers, as stated by EAE Electric."
+            },
+            {
+              "claim": "The company operates with 100% domestic capital and conducts in-house R&D product development, as stated by EAE Technology."
+            },
+            {
+              "claim": "In 2025, the company reported a net sales revenue increase of 96.44%, total asset growth of 63.23%, and a net profit margin increase of 12.59%, as verified by EMIS."
+            },
+            {
+              "claim": "The company holds over 30 patents, 300 brands, and 100 industrial designs, as stated by EAE Technology."
+            },
+            {
+              "claim": "The company reports supporting its innovation capabilities with an intellectual property portfolio of more than 50 patents, over 300 trademarks, and over 150 industrial design registrations, as shown on the EAE Electric About Page."
+            },
+            {
+              "claim": "The company states that all product development across its group companies is conducted internally by their own in-house R&D departments, as published by EAE Aydınlatma."
+            },
+            {
+              "claim": "The company applies continuous R&D to create specialized critical infrastructure products for the data center market, engineering solutions such as seismic rack cabinets, seismic support systems, and airflow containment management systems to enhance energy efficiency to previous prompt"
+            }
+          ],
+          "assessed_on": "We verified that the company maintains three regional R&D infrastructure hubs and is experiencing high net sales and profitability growth based on local corporate filings. Based on primary research, the company's annual research and development spending can be estimated as strong, in line with leading engineering manufacturers, based on its continuous investments in new technologies, lean manufacturing processes, and dedicated R&D design teams.",
+          "estimates": [
+            {
+              "metric": "annual research and development spending",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading engineering manufacturers",
+              "confidence": "medium",
+              "basis": "its continuous investments in new technologies, lean manufacturing processes, and dedicated R&D design teams",
+              "source": "company's own design philosophy and product innovation disclosures",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

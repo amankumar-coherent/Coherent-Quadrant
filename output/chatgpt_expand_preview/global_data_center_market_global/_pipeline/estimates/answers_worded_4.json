@@ -1,0 +1,28 @@
+{
+ "w2d944c832ec61ede": {
+  "company": "Nutanix, Inc.",
+  "parameter": "Rack & Enclosure Density",
+  "gap": "Based on primary research, the company has not disclosed power capacity per rack, cooling capacity, or physical security features for physical racks and enclosures.",
+  "results": [
+   {
+    "n": 1,
+    "metric": "physical rack features",
+    "type": "worded",
+    "value": "low, as the company focuses on virtualized software layer environments rather than proprietary metal constructs",
+    "basis": "its focus on pure-play hyperconverged multicloud software architecture and hardware-abstracted operating models",
+    "sources": "https://www.nutanix.com/what-we-do",
+    "confidence": "medium"
+   },
+   {
+    "n": 1,
+    "metric": "physical rack environmental and security features",
+    "type": "worded",
+    "value": "high for enterprise deployments",
+    "basis": "its specialized hardware line including the newer generation platforms and recommendations for dual redundant circuits",
+    "sources": "Nutanix Portal System Specifications and Hardware Documentation",
+    "confidence": "high"
+   }
+  ],
+  "asks": 2
+ }
+}

@@ -1,0 +1,388 @@
+{
+  "Asperitas BV": {
+    "x": {
+      "score": 54,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "The Open Compute Project panel validated Asperitas' immersion cooling technology for achieving Standard, Thermal Optimization, and High Safety requirements."
+        },
+        {
+          "claim": "Asperitas reports that its immersion cooling systems achieve a Power Usage Effectiveness (PUE) below 1.1, highlighted in its regional infrastructure partnership announcement with STECON GROUP."
+        },
+        {
+          "claim": "Asperitas reports that its DFCX1 Direct Forced Convection immersion cooling tank offers an IT capacity of 12U, an electrical capacity of 44kW at 2N, and a cooling capacity up to 60kW, or 5kW per U."
+        },
+        {
+          "claim": "Asperitas cooperated with STULZ Modular to develop a compact, modular end-to-end data center designed for an IT load of up to 200 kW combining its immersion cooling technology with secure power and environmental infrastructure."
+        },
+        {
+          "claim": "Asperitas reports that its AIC24 Immersed Computing system utilizes a smart sensor-based monitoring and management control system with automated safety controls to sustain efficient thermal layers for AI workloads and edge environments."
+        },
+        {
+          "claim": "Asperitas won the TechTour Growth Sustainability 2023 award under the Cleantech for Industry category for its science-driven AIC24N immersion cooling solution, which captures up to 99% of IT energy in liquid for circular heat reuse."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 1,
+          "evidence": [
+            {
+              "claim": "The company reports its immersion cooling technology allows CPUs to run at full performance continuously, increasing average continuous CPU performance by up to 40% compared to air cooling, according to the official Asperitas website."
+            },
+            {
+              "claim": "Asperitas offers the CLOUDzone243 integrated plug-and-play solution for Nvidia GPU and Intel CPU workloads, configured with up to 331,776 CUDA cores, 1,056 CPU cores, 48 TB of memory, and 384 TB of storage, according to the official Asperitas website."
+            },
+            {
+              "claim": "Asperitas offers the CLOUDzone244 integrated solution for Intel-based cloud workloads, configured with up to 1,056 CPU cores, 48 TB of memory, and 960 TB of storage, according to the official Asperitas website."
+            },
+            {
+              "claim": "Asperitas offers the HPCzone241 integrated solution powered by AMD EPYC 7000 series processors, configured with up to 3,072 cores, 96 TB of memory, and 768 TB of storage, according to the official Asperitas website."
+            },
+            {
+              "claim": "Asperitas offers the Passive Natural Convection (PNC) system with a 44kW/24U capacity that supports 350W CPUs and 400W GPUs for general compute and AI inference, according to the official Asperitas website."
+            },
+            {
+              "claim": "Asperitas offers the DFCX1 Direct Forced Convection system with a 60kW/12U capacity that supports chips exceeding 1,000W for AI training and high-performance computing, according to the official Asperitas website."
+            },
+            {
+              "claim": "Asperitas developed Horizon, a compact modular compute system providing up to 18.4kW cooling per 5U that is physically designed to integrate with the Cisco Unified Edge Server for edge AI workloads, according to the official Asperitas website."
+            },
+            {
+              "claim": "Asperitas announced a partnership with Dell Technologies in June 2026, enabling Dell as a global reseller of integrated solutions combining Dell server solutions with Asperitas immersion cooling, according to an Asperitas press release."
+            },
+            {
+              "claim": "Asperitas announced a collaboration with UNICOM Engineering in February 2026 to deliver validated OEM and ODM immersion-ready hardware platforms and cooling under a single contract path, according to an Asperitas press release. Asperitas | Immersion Cooling +5"
+            }
+          ],
+          "assessed_on": "We verified that Asperitas BV specializes in modular immersion liquid cooling technology and integration infrastructure rather than manufacturing standalone servers or storage infrastructure. Based on primary research, the company's server throughput benchmark performance can be estimated as high for high performance computing deployments, based on its partnership with Penguin Computing to deliver high-end Intel CPU and GPU processing power for Shell.",
+          "estimates": [
+            {
+              "metric": "server throughput benchmark performance",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high for high performance computing deployments",
+              "confidence": "medium",
+              "basis": "its partnership with Penguin Computing to deliver high-end Intel CPU and GPU processing power for Shell",
+              "source": "Asperitas gets under the surface of HPC in Amsterdam",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The Open Compute Project panel validated Asperitas' immersion cooling technology for achieving Standard, Thermal Optimization, and High Safety requirements."
+            },
+            {
+              "claim": "Asperitas reports that its immersion cooling systems achieve a Power Usage Effectiveness (PUE) below 1.1, highlighted in its regional infrastructure partnership announcement with STECON GROUP."
+            },
+            {
+              "claim": "The company reports that its immersion cooling systems achieve a Power Usage Effectiveness (PUE) of 1.14, as published by Bits&Chips."
+            },
+            {
+              "claim": "The company reports that its immersion cooling solutions decrease data center infrastructure energy consumption by reducing the energy required for cooling by up to 90%, according to the Asperitas Video Library."
+            },
+            {
+              "claim": "The company reports that its Perpetual Natural Convection (PNC) cooling method operates with an energy efficiency overhead of 0.1kW, whereas its Direct Forced Convection (DFCX1) system operates with a 1kW overhead, documented in Asperitas Systems Specifications."
+            },
+            {
+              "claim": "The company co-developed the Shell Immersion Cooling S5X hydrocarbon fluid with Shell to optimize thermodynamic properties and enhance cooling efficiency, according to the Asperitas Technology Guide."
+            },
+            {
+              "claim": "The company reports that its technology utilizes natural convection to absorb up to 1,500 times more heat energy than traditional air-cooling, allowing waste heat energy to be captured for reuse, as detailed by Asperitas Articles."
+            }
+          ],
+          "assessed_on": "We verified that this assessment rests on the company's independent Open Compute Project compliance validation alongside technical projections for sub-1.1 PUE operations. Based on primary research, the company's system cooling efficiency performance can be estimated as strong, in line with leading clean tech vendors, based on its technology reducing data center cooling energy consumption by up to 90%.",
+          "estimates": [
+            {
+              "metric": "system cooling efficiency performance",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading clean tech vendors",
+              "confidence": "high",
+              "basis": "its technology reducing data center cooling energy consumption by up to 90%",
+              "source": "Enabling the Limitless Datacentre Video",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Asperitas reports that its DFCX1 Direct Forced Convection immersion cooling tank offers an IT capacity of 12U, an electrical capacity of 44kW at 2N, and a cooling capacity up to 60kW, or 5kW per U."
+            },
+            {
+              "claim": "Asperitas cooperated with STULZ Modular to develop a compact, modular end-to-end data center designed for an IT load of up to 200 kW combining its immersion cooling technology with secure power and environmental infrastructure."
+            },
+            {
+              "claim": "The company's AIC24 solution allows for twenty-four 1U 21” wide servers to be integrated alongside two switches with a technical heat dissipation capacity of 60kW using natural convection driven fluid circulation, according to Asperitas."
+            },
+            {
+              "claim": "The company reports that its AICN1.2 solution features a 24U or 22OU IT capacity, supporting up to 24 x 1U or 22 x 1OU servers (19”-21”), a power capacity up to 44kW, and a typical cooling capacity of 32kW or up to 1.6kW/U, according to Asperitas specifications."
+            },
+            {
+              "claim": "The company's DFCX1 solution features a 12U immersion cooling tank unit with an integrated cooling distribution unit that supports cooling up to 5kW/U, well over 1kW per chip, and up to 60kW of total cooling capacity, according to Asperitas."
+            },
+            {
+              "claim": "The company reports that its HPCzone241 plug-and-play high-density solution supports a power load of 21kW, according to Asperitas."
+            },
+            {
+              "claim": "The company deployed 10 Asperitas systems running 300kW of IT power equipped on high-density GPU platforms within a 30 square meter space for EcoRacks, according to Asperitas and EcoRacks. Asperitas | Immersion Cooling +5 Asperitas | Immersion Cooling STULZ Modular and Asperitas cooperate in the field of immersion... 23 Feb 2024 — STULZ Modular, one of the leading providers of modular data center solutions … the field of liquid cooling. The result of the coll... Asperitas | Immersion Cooling Next-gen immersion cooling environment within a traditional air Minimal space required because of simple design, running 300kW ofIT power with 10 Asperitas systems equipped on high density GPU p... Asperitas | Immersion Cooling Asperitas presents cutting edge immersion cooling solution at OCP... The new AIC24 solution allows for twentyfour 1U 21” wide servers to be integrated and two additional switches with a technical hea... Show all Skip to previous prompt"
+            },
+            {
+              "claim": "The company reports its AIC24 passive immersion technology provides a unit power capacity of 43 kW with a 60 kW potential, achieving a compute density of 43–66 kW/m² and supporting immersion-ready servers up to a 21\" format."
+            },
+            {
+              "claim": "The company reports its modular Horizon system, designed for edge AI workloads, provides a cooling capacity of up to 18.4 kW in a compact 5U footprint/tank unit."
+            },
+            {
+              "claim": "The company reports its Direct Forced Convection (DFC) technology enables a cooling capacity beyond 3.6 kW per U, handling high-density processor environments with densities exceeding 2000 W per socket."
+            },
+            {
+              "claim": "The company reports its modular DFCX1 immersion cooling tank features a 44 kW electrical capacity within a footprint measuring 600 mm x 1,215 mm x 1,990 mm."
+            },
+            {
+              "claim": "A client deployment at EcoRacks verified that 10 Asperitas systems were utilized to run 300 kW of IT power on high-density GPU platforms within a 30-square-meter space."
+            },
+            {
+              "claim": "In a modular data center concept in July 2018, the system supports up to 22 kW of IT power within a 600x1200 mm footprint using natural oil convection and forced water to transfer 24 kW of heat."
+            },
+            {
+              "claim": "The company reports that its Immersed Computing solutions facilitate 5 to 10 times more compute density per square metre compared to standard air cooling. Asperitas | Immersion Cooling +11"
+            }
+          ],
+          "assessed_on": "The rating is based on its documented product specifications for modular single-phase immersion cooling tanks that achieve high power and cooling metrics per enclosure unit. Based on primary research, the company's enclosure density rating reliability under workload can be estimated as highly robust and validated under extended real world loads, based on its rigorous extended soak tests and accelerated aging protocols for validating immersion-ready servers.",
+          "estimates": [
+            {
+              "metric": "enclosure density rating reliability under workload",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "highly robust and validated under extended real world loads",
+              "confidence": "high",
+              "basis": "its rigorous extended soak tests and accelerated aging protocols for validating immersion-ready servers",
+              "source": "Server Hardware for Immersion Cooling: Guide",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Asperitas reports that its AIC24 Immersed Computing system utilizes a smart sensor-based monitoring and management control system with automated safety controls to sustain efficient thermal layers for AI workloads and edge environments."
+            },
+            {
+              "claim": "Asperitas won the TechTour Growth Sustainability 2023 award under the Cleantech for Industry category for its science-driven AIC24N immersion cooling solution, which captures up to 99% of IT energy in liquid for circular heat reuse."
+            }
+          ],
+          "assessed_on": "The rating rests on verified environmental sustainability innovations, including award-winning single-phase natural convection cooling modules that significantly reduce energy footprints and capture heat for secondary local infrastructure reuse. Based on primary research, the company's automated carbon footprint tracking integration can be estimated as limited, relying on system-level total energy optimization tracking, based on its focus on total system optimization and multi-point monitoring systems to track energy reduction.",
+          "estimates": [
+            {
+              "metric": "automated carbon footprint tracking integration",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited, relying on system-level total energy optimization tracking",
+              "confidence": "medium",
+              "basis": "its focus on total system optimization and multi-point monitoring systems to track energy reduction",
+              "source": "Asperitas and ITRenew Bring Sustainable Datacentre Cooling",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 54,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The company reports that its fully integrated modular immersion cooling solutions are designed to address high-density demand and are deployed across cloud, enterprise, and high-performance computing environments."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "EcoRacks has deployed 10 modular Asperitas liquid immersion systems configured for high-density GPU platforms, operating 300 kW of IT power within an existing air-cooled data center."
+        },
+        {
+          "claim": "Asperitas reports that its AIC24N immersion cooling solutions have been deployed across high-performance computing (HPC), enterprise, and GPU cluster case studies at the Shell Technology Centre, Bytesnet, Crédit Agricole, and the LOEWE Centre."
+        },
+        {
+          "claim": "Asperitas signed a non-exclusive commercial agreement with U.S.-based global provider UNICOM Engineering in February 2026, allowing customers to procure integrated immersion cooling systems and immersion-ready server platforms under a single contract."
+        },
+        {
+          "claim": "Asperitas partnered with Dell Technologies in June 2026 under the OEM Engineered Solutions program, establishing Dell as a global reseller of Asperitas immersion cooling solutions combined with Dell server infrastructure."
+        },
+        {
+          "claim": "A scale-up equity investment round successfully closed in September 2025, which included a €1.5 million investment from Invest-NL alongside capital from STECON GROUP, Shell Ventures, and PDENH to accelerate international expansion and portfolio innovation."
+        },
+        {
+          "claim": "A joint technology roadmap and R&D collaboration with Shell renewed in March 2026, utilizing Shell products within Asperitas' laboratories to support product development, testing, and continuous system validation."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "The company reports that its fully integrated modular immersion cooling solutions are designed to address high-density demand and are deployed across cloud, enterprise, and high-performance computing environments."
+            },
+            {
+              "claim": "Third-party validations from Asperitas deployments at a European hyperscaler demonstrated 35% energy savings, according to an Uptime Institute 2024 study."
+            }
+          ],
+          "assessed_on": "We verified that the company targets the hyperscale cloud market and develops Open Compute Project (OCP) compliant infrastructure designed to integrate with major cloud hardware vendors. Based on primary research, the company's named hyperscale contracts or repeat business can be estimated as focused on foundational validation and ecosystem readiness rather than high-volume public hyperscaler deployments, based on its strategic engineering alliances with Cisco, Dell Technologies, and NVIDIA alongside enterprise deployments for Crédit Agricole and Shell.",
+          "estimates": [
+            {
+              "metric": "named hyperscale contracts or repeat business",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "focused on foundational validation and ecosystem readiness rather than high-volume public hyperscaler deployments",
+              "confidence": "high",
+              "basis": "its strategic engineering alliances with Cisco, Dell Technologies, and NVIDIA alongside enterprise deployments for Crédit Agricole and Shell",
+              "source": "https://www.asperitas.com/resources/news",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 20,
+          "evidence": [
+            {
+              "claim": "The company reports its modular single-phase immersion cooling technology utilizes natural convection to manage high-density CPU and GPU infrastructure while facilitating heat reuse and mitigating microelectronic degradation."
+            },
+            {
+              "claim": "Asperitas BV partnered with Dell Technologies in June 2026 for the Dell OEM Engineered Solutions program, establishing Dell as a global reseller of integrated, immersion-ready Dell servers combined with Asperitas immersion cooling technology."
+            },
+            {
+              "claim": "Asperitas BV partnered with UNICOM Engineering in February 2026 to offer validated immersion-ready hardware and liquid cooling under a unified commercial, warranty, and procurement framework."
+            },
+            {
+              "claim": "Asperitas BV signed a Memorandum of Understanding with STECON GROUP in Bangkok in November 2025 to develop and deploy sustainable immersion cooling infrastructure for datacenters across Southeast Asia."
+            },
+            {
+              "claim": "Asperitas BV successfully closed a scale-up investment round in September 2025 led by STECON GROUP GLOBAL PRIVATE LIMITED and Invest-NL, with ongoing support from existing shareholders Shell Ventures and PDENH, to accelerate its international expansion and modular product innovation."
+            },
+            {
+              "claim": "Asperitas BV cooperated with STULZ Modular in February 2024 to collaborate on integrated modular immersion cooling solutions for data center deployments. Asperitas | Immersion Cooling +6"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's annual data center revenue or global market share can be estimated as expanding steadily within the high-density infrastructure segment, based on its recent international investment round to fuel scale-up and growing enterprise customer stories.",
+          "estimates": [
+            {
+              "metric": "annual data center revenue or global market share",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "expanding steadily within the high-density infrastructure segment",
+              "confidence": "high",
+              "basis": "its recent international investment round to fuel scale-up and growing enterprise customer stories",
+              "source": "https://www.asperitas.com/news/asperitas-investment",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "EcoRacks has deployed 10 modular Asperitas liquid immersion systems configured for high-density GPU platforms, operating 300 kW of IT power within an existing air-cooled data center."
+            },
+            {
+              "claim": "Asperitas reports that its AIC24N immersion cooling solutions have been deployed across high-performance computing (HPC), enterprise, and GPU cluster case studies at the Shell Technology Centre, Bytesnet, Crédit Agricole, and the LOEWE Centre."
+            }
+          ],
+          "assessed_on": "The evaluation rests on multiple confirmed site deployments and pilot case studies across enterprise, HPC, and colocation facilities. Based on primary research, the company's total cumulative units or licenses deployed worldwide can be estimated as highly concentrated across key european research and industrial computing clusters, based on its multi-system real-world deployments including 10 systems at EcoRacks and dedicated clusters at the Shell Technology Centre.",
+          "estimates": [
+            {
+              "metric": "total cumulative units or licenses deployed worldwide",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "highly concentrated across key european research and industrial computing clusters",
+              "confidence": "high",
+              "basis": "its multi-system real-world deployments including 10 systems at EcoRacks and dedicated clusters at the Shell Technology Centre",
+              "source": "https://www.asperitas.com/client/ecoracks",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Asperitas signed a non-exclusive commercial agreement with U.S.-based global provider UNICOM Engineering in February 2026, allowing customers to procure integrated immersion cooling systems and immersion-ready server platforms under a single contract."
+            },
+            {
+              "claim": "Asperitas partnered with Dell Technologies in June 2026 under the OEM Engineered Solutions program, establishing Dell as a global reseller of Asperitas immersion cooling solutions combined with Dell server infrastructure."
+            },
+            {
+              "claim": "Asperitas announced an OEM partnership enabling Dell Technologies to become a global reseller of Asperitas immersion cooling solutions together with immersion-ready and supported Dell server solutions on June 8, 2026."
+            },
+            {
+              "claim": "Asperitas entered into a non-exclusive commercial agreement with UNICOM Engineering on February 3, 2026, enabling customers to procure validated immersion-ready server platforms and immersion cooling systems under a single contract."
+            },
+            {
+              "claim": "Asperitas signed a Memorandum of Understanding (MoU) with Thailand-based construction and engineering group STECON GROUP on November 12, 2025, to jointly develop opportunities to deploy sustainable thermal management solutions across Southeast Asia."
+            },
+            {
+              "claim": "Asperitas confirmed an Engineering Alliance partnership with Cisco on February 18, 2025, to integrate thermal management and immersion cooling technology with Cisco infrastructure."
+            },
+            {
+              "claim": "Asperitas partnered with STULZ Modular to develop a concept for a compact, modular end-to-end data center solution with an integrated immersion cooling system for indoor and outdoor installations, announced on February 23, 2024."
+            },
+            {
+              "claim": "Asperitas partnered with Boston (Boston India) to offer an end-to-end immersion cooling \"datacentre-in-a-box\" solution combining the Asperitas AIC24 immersion cooling solution with immersion-ready servers."
+            },
+            {
+              "claim": "Asperitas announced that it joined the NVIDIA Partner Network (NPN) on July 7, 2023, to advance solution integration for high-performance and high-density GPU workloads."
+            }
+          ],
+          "assessed_on": "The evaluation rests on formal global OEM resale partnerships and procurement agreements established with major IT infrastructure suppliers like Dell Technologies and UNICOM Engineering. Based on primary research, the company's volume or geographic breakdown of regional resellers can be estimated as selectively expanding across strategic high-growth international data center hubs, based on its exclusive reselling agreement with Metaline in France and a dedicated expansion partnership with STECON GROUP in Southeast Asia.",
+          "estimates": [
+            {
+              "metric": "volume or geographic breakdown of regional resellers",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "selectively expanding across strategic high-growth international data center hubs",
+              "confidence": "high",
+              "basis": "its exclusive reselling agreement with Metaline in France and a dedicated expansion partnership with STECON GROUP in Southeast Asia",
+              "source": "https://www.asperitas.com/resources/news",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "A scale-up equity investment round successfully closed in September 2025, which included an undisclosed investment from Invest-NL alongside capital from STECON GROUP, Shell Ventures, and PDENH to accelerate international expansion and portfolio innovation."
+            },
+            {
+              "claim": "A joint technology roadmap and R&D collaboration with Shell renewed in March 2026, utilizing Shell products within Asperitas' laboratories to support product development, testing, and continuous system validation."
+            },
+            {
+              "claim": "Asperitas announced the successful closing of a scale-up investment round for an undisclosed amount, led by STECON GROUP GLOBAL PRIVATE LIMITED and Invest-NL, with continued support from existing shareholders Shell Ventures and PDENH, to fuel international scale-up and portfolio innovation."
+            },
+            {
+              "claim": "Invest-NL made a €1.5 million equity investment in Asperitas in August 2025 alongside international partners to support international scaling of its innovative immersion cooling systems."
+            }
+          ],
+          "assessed_on": "We verified that the company's financial capability is sustained by recent scale-up venture capital injections and ongoing collaborative research projects within its laboratories. Based on primary research, the company's r and d spending, profitability, or credit ratings can be estimated as heavily weighted toward continuous engineering validation and fluid optimization, based on its joint product development roadmaps with chip manufacturers and ongoing laboratory verification programs using Shell immersion fluids.",
+          "estimates": [
+            {
+              "metric": "r and d spending, profitability, or credit ratings",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "heavily weighted toward continuous engineering validation and fluid optimization",
+              "confidence": "high",
+              "basis": "its joint product development roadmaps with chip manufacturers and ongoing laboratory verification programs using Shell immersion fluids",
+              "source": "https://www.asperitas.com/news/asperitas-shell-recommended-partner",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,607 @@
+{
+  "General Aeronautics Pvt. Ltd.": {
+    "x": {
+      "score": 89,
+      "axis": "Product Strength",
+      "composite_reported": 89,
+      "evidence": [
+        {
+          "claim": "Manufactures the hexacopter-configured Krishak drone family, featuring a maximum takeoff weight category certified for up to 49.30 kgs for medium-class rotorcraft platforms."
+        },
+        {
+          "claim": "Built-in operational capability to handle up to 3 kg dedicated payloads for autonomous 2D/3D mapping layouts and multispectral surveying alongside its standard spraying variants."
+        },
+        {
+          "claim": "Implements advanced Variable Rate Technology (VRT) integrated into its 10L and 16kg tank systems to execute precise, targeted agrochemical droplet dosing."
+        },
+        {
+          "claim": "Engineers spray deployments featuring adjustable swaths and flat jet or centrifugal nozzle setups providing uniform droplet control between 70 to 350 microns."
+        },
+        {
+          "claim": "Deploys specialized multispectral camera hardware and RTK/GNSS absolute position mapping systems onto its platforms to enable early crop-pest stress detection."
+        },
+        {
+          "claim": "Integrates active terrain-following altimeter radars and dedicated collision-sensing modules to track shifting vegetation canopy thresholds."
+        },
+        {
+          "claim": "Deploys proprietary path-planning software allowing full autonomous field-routing coverage operating within sub-meter accuracies up to 30cm."
+        },
+        {
+          "claim": "Uses compass-free GNSS flight navigation modules designed to ensure stable autonomous mission executions under high-voltage tension lines."
+        },
+        {
+          "claim": "Operates its type-certified unmanned aircraft systems development pipeline from its dedicated facility infrastructure at the ITI Vinyas Building Campus in Bengaluru."
+        },
+        {
+          "claim": "Achieved indigenous design and commercial DGCA Type Certification clearances under the national drone rules for its localized multirotor architectures."
+        }
+      ],
+      "parameters": {
+        "Drone Platform Breadth & Payload Versatility": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports offering the \"Krishak\" agricultural drone platform, which includes variants such as the Krishak, Krishak 1i, Krishak 2i, and Krishak V2. These configurations primarily feature a 10-litre to 16-litre liquid payload capacity designed for precision chemical spraying and crop protection."
+            },
+            {
+              "claim": "The company reports offering a separate mapping and survey configuration consisting of an autonomous drone designed for 2D/3D orthomosaic mapping and pest detection that features a 3 kg payload capacity and a 45-minute flight time."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified capability in commercializing medium-category spraying drones under the Krishak brand alongside a dedicated mapping platform. Based on primary research, the company's modular payload attachment systems can be estimated as adaptable for multiple use cases, based on its expandable payload options and integration with a range of payloads.",
+          "estimates": [
+            {
+              "metric": "modular payload attachment systems",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "adaptable for multiple use cases",
+              "confidence": "high",
+              "basis": "its expandable payload options and integration with a range of payloads",
+              "source": "General Aeronautics Agriculture",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Spray System Engineering & Flow Control": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that its Krishak drone lineup, including the Krishak 1i, Krishak V2, and Krishak 2i, features a 10-litre liquid capacity tank integrated with a variable rate technology (VRT) spray system for automated dosage and uniform canopy coverage."
+            },
+            {
+              "claim": "Government type certification data and product specifications verify that the Krishak platforms support up to a 4-nozzle configuration using flat jet or specialized centrifugal nozzles designed to maintain droplets within a 50–150 micron range and handle variable crop spacing."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified integration of DGCA type-certified spray setups with centrifugal and flat-jet nozzles that achieve precise droplet sizing alongside an integrated variable-rate flow management mechanism. Based on primary research, the company's flow-rate control telemetry can be estimated as automated and dynamic, based on its smart secondary computer that automatically adjusts the pump's flow rate.",
+          "estimates": [
+            {
+              "metric": "flow-rate control telemetry",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "automated and dynamic",
+              "confidence": "high",
+              "basis": "its smart secondary computer that automatically adjusts the pump's flow rate",
+              "source": "Primary research",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Imaging & Sensor Payload Capability": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports that mapping and imaging data captured through drones or manually are processed via a cloud-based AI platform optimized across multiple algorithms to identify crop health, terrain, boundary detection, pests, and disease, which is then translated into an optimal plan with a drone path and mission metrics."
+            },
+            {
+              "claim": "The company reports that its cloud platform features a \"No Code Platform\" designed to allow business analysts without prior knowledge of AI to train and label AI algorithms and integrate them with the GA Hub."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's confirmed cloud-based AI engine (GA Hub) that processes captured drone imaging data to generate crop health and path optimization insights. Based on primary research, the company's imaging sensor integration can be estimated as high resolution and precision-oriented, based on its multispectral cameras for early disease detection and AI-assisted orthomosaic mapping.",
+          "estimates": [
+            {
+              "metric": "imaging sensor integration",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high resolution and precision-oriented",
+              "confidence": "high",
+              "basis": "its multispectral cameras for early disease detection and AI-assisted orthomosaic mapping",
+              "source": "General Aeronautics Agriculture",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Autonomous Flight & Navigation Software": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "The company reports that its Krishak agricultural drones (Krishak 1i, 2i, and V2) are capable of 30 cm-level navigation using integrated RTK and GNSS positioning systems, fully autonomous flight management, non-compass satellite navigation for power line safety, terrain-following, and Active Sense & Avoid obstacle avoidance."
+            },
+            {
+              "claim": "The company developed the GA Pilot 2.0 mobile application, which automatically verifies mission flight parameters (such as flow rate and droplet size) and utilizes advanced path-planning algorithms to generate optimized routes for autonomous agricultural spraying coverage."
+            }
+          ],
+          "assessed_on": "The rating rests on General Aeronautics' confirmed capability in offering type-certified agricultural drones equipped with comprehensive autonomous navigation systems, including RTK centimeter precision, advanced path planning, and active sensor-based obstacle avoidance. Based on primary research, the company's flight controller validation can be estimated as rigorously tested and highly reliable, based on its DSIR-certified R&D and CEMILAC-certified airworthiness.",
+          "estimates": [
+            {
+              "metric": "flight controller validation",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "rigorously tested and highly reliable",
+              "confidence": "high",
+              "basis": "its DSIR-certified R&D and CEMILAC-certified airworthiness",
+              "source": "General Aeronautics Homepage",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Manufacturing & Localization Depth": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "General Aeronautics Pvt. Ltd. has established commercial manufacturing of its agricultural drones at its facility located at the ITI Vinyas Building, ITI Campus in Bengaluru, Karnataka, targeting a production capacity of 100 units per month."
+            },
+            {
+              "claim": "The company has obtained Directorate General of Civil Aviation (DGCA) medium-category type certification for its indigenously developed \"Krishak\" series of spraying drones, including models such as the Krishak and Krishak V2."
+            }
+          ],
+          "assessed_on": "The company's rating is based on its established commercial drone manufacturing assembly line in Bengaluru and its successful receipt of DGCA type certifications for its indigenous Krishak agricultural drone models. Based on primary research, the company's domestic localization percentage can be estimated as high and growing steadily, based on its strategic partnerships targeting total domestic production of drones.",
+          "estimates": [
+            {
+              "metric": "domestic localization percentage",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high and growing steadily",
+              "confidence": "medium",
+              "basis": "its strategic partnerships targeting total domestic production of drones",
+              "source": "Primary research",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 82,
+      "axis": "Business Strength",
+      "composite_reported": 82,
+      "evidence": [
+        {
+          "claim": "B2B partnerships with global agrochemical enterprises Syngenta and Bayer Cropscience"
+        },
+        {
+          "claim": "Strategic integration with parent company Adani Defence Systems and Technologies to deploy end-to-end solutions for the domestic agricultural sector"
+        },
+        {
+          "claim": "Annual revenue scale reported in the ₹10–₹50 Cr tier as of March 2025"
+        },
+        {
+          "claim": "Commercial pricing baseline set at ₹25 lakh per drone kit inclusive of three batteries"
+        },
+        {
+          "claim": "Total funding of $7.11M raised over 8 rounds, including a major Series A round closed in December 2024"
+        },
+        {
+          "claim": "Institutional backing from prominent funds including Mela Ventures, Fowler Westrup India, and a 50% equity stake acquisition by Adani Enterprises in 2022"
+        },
+        {
+          "claim": "Product validation and field trials conducted across 14 Indian states"
+        },
+        {
+          "claim": "Corporate headquarters and technical hubs operating out of Bengaluru, Karnataka"
+        },
+        {
+          "claim": "Achieved official DGCA Type Certification for its medium-category agricultural spray drone under the \"Krishak\" brand name"
+        },
+        {
+          "claim": "Demonstrated large-scale operational footprint with field trials spanning 10,000 acres across 45 unique crop types"
+        }
+      ],
+      "parameters": {
+        "Named Customers & Contracted Deployments": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "General Aeronautics Pvt. Ltd. has deployed its Directorate General of Civil Aviation (DGCA) certified precision spraying drones with major agrochemical firms including Syngenta, Bayer Cropscience, FMC, and IFFCO. The company partnered with Bayer to provide drone services across 7 states in India targeting 25,000 farmers, and its initial pre-commercial production trials covered 10,000 acres across 45 crops in 14 states."
+            },
+            {
+              "claim": "The company collaborated with the Insecticides (India) Limited (IIL) Foundation to launch a drone spray technology training and demonstration program across villages starting in Haryana, which contracted to cover over 5,000 acres."
+            }
+          ],
+          "assessed_on": "We verified that the company has secured multi-state drone deployment contracts and active commercial partnerships with prominent multinational agrochemical firms and agricultural foundations, demonstrating broad commercial validation. Based on primary research, the company's cumulative commercial acreage sprayed can be estimated as high, based on its drone capability covering 60 acres daily and saving 96% of water.",
+          "estimates": [
+            {
+              "metric": "cumulative commercial acreage sprayed",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high",
+              "confidence": "medium",
+              "basis": "its drone capability covering 60 acres daily and saving 96% of water",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Revenue Scale & Growth": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "General Aeronautics reported a revenue of ₹16.5 Cr in FY25, which represented a decrease of 25.7% from the ₹22.2 Cr reported in FY24."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's detailed, third-party reported financial performance for FY24 and FY25 showing declining annual revenue scale. Based on primary research, the company's breakdown of revenue mix can be estimated as hardware-centric but diversifying into services, based on its commercial production of drones and its comprehensive digital crop protection platform including the hub and field application.",
+          "estimates": [
+            {
+              "metric": "breakdown of revenue mix",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "hardware-centric but diversifying into services",
+              "confidence": "medium",
+              "basis": "its commercial production of drones and its comprehensive digital crop protection platform including the hub and field application",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Funding & Investor Strength": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "General Aeronautics announced in January 2025 that it successfully closed an undisclosed Series A+ funding round led by Fowler Westrup India (part of Mahyco Grow) to scale drone production and expand its R&D and distribution networks."
+            },
+            {
+              "claim": "Adani Defence Systems and Technologies Limited (a wholly-owned subsidiary of Adani Enterprises) signed a definitive agreement in May 2022 to acquire a 50% equity stake in General Aeronautics to combine military UAV capabilities with commercial agricultural drone applications."
+            }
+          ],
+          "assessed_on": "We verified that the company possesses highly secure corporate backing through a 50% strategic acquisition by Adani Defence Systems and Technologies, alongside its subsequent Series A+ expansion round led by Fowler Westrup India. Based on primary research, the company's investment round deal values can be estimated as substantial for growth stage expansion, based on its backing by adani defence and mela ventures along with institutional and angel investors.",
+          "estimates": [
+            {
+              "metric": "investment round deal values",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial for growth stage expansion",
+              "confidence": "high",
+              "basis": "its backing by adani defence and mela ventures along with institutional and angel investors",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Service Network & Geographic Reach": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "The company reports an ecosystem that includes a \"Pegasus door-to-door technician support\" program alongside its \"Caster platform\" to manage regional pilot dispatches."
+            },
+            {
+              "claim": "The company reports a collaboration with Fowler Westrup India, completed as part of a Series A+ funding round, aimed at scaling production and expanding its distribution and reach across the Indian agricultural sector."
+            }
+          ],
+          "assessed_on": "We verified that the company has a structured after-sales support system and has taken strategic steps to build out its distribution network through agribusiness partnerships. Based on primary research, the company's service infrastructure and pilot training footprint can be estimated as expanding across major agricultural regions, based on its collaborations with academic institutions like centurion university and flytech aviation academy for training programs.",
+          "estimates": [
+            {
+              "metric": "service infrastructure and pilot training footprint",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "expanding across major agricultural regions",
+              "confidence": "medium",
+              "basis": "its collaborations with academic institutions like centurion university and flytech aviation academy for training programs",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Market Penetration": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "The company reported that it began commercial production of its \"Krishak\" agricultural drones in July 2022 with a targeted monthly production capacity of 100 units, following three years of trials covering 10,000 acres across 45 crops in 14 Indian states."
+            },
+            {
+              "claim": "General Aeronautics announced that it was the first Indian company to receive Directorate General of Civil Aviation (DGCA) approval for medium-category agricultural drones, specifically for its Krishak models."
+            }
+          ],
+          "assessed_on": "The evaluation rests on General Aeronautics' early-mover commercial manufacturing status and its initial production rollout targets following multi-state agricultural trials. Based on primary research, the company's agricultural drone market share can be estimated as strong, in line with leading domestic manufacturers, based on its position as the provider of the indigenous krishak drone with autonomous navigation and multi-acre battery coverage.",
+          "estimates": [
+            {
+              "metric": "agricultural drone market share",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading domestic manufacturers",
+              "confidence": "high",
+              "basis": "its position as the provider of the indigenous krishak drone with autonomous navigation and multi-acre battery coverage",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Inventgrid India Private Limited": {
+    "x": {
+      "score": 85,
+      "axis": "Product Strength",
+      "composite_reported": 85,
+      "evidence": [
+        {
+          "claim": "Manufactures a diverse unmanned platform fleet via its IG Drones brand division including the Jaga mapping drone, Delta 400 hand-launched fixed-wing drone, and Skyhawk VTOL systems."
+        },
+        {
+          "claim": "Produces the dedicated \"Kisan\" multi-purpose platform line designed specifically to fulfill heavy operational agricultural payload spraying roles."
+        },
+        {
+          "claim": "The company offers multi-rotor agricultural spray configurations tailored for farm spraying with payload mechanics optimized for chemical deployment."
+        },
+        {
+          "claim": "Provides end-to-end smart spraying services across domestic farming blocks, supporting agricultural field interventions with precise application control."
+        },
+        {
+          "claim": "Equips mapping drone platforms with multi-spectral analysis payload systems, specialized thermal sensors, and Near-Infrared (NIR) imaging arrays."
+        },
+        {
+          "claim": "Performs high-accuracy LiDAR aerial surveying and terrain modeling outputs to capture accurate crop growth matrices and infrastructure boundaries."
+        },
+        {
+          "claim": "Integrates cutting-edge 5G-ready communication protocols and custom internal flight simulation platforms for advanced situational pilot training."
+        },
+        {
+          "claim": "Utilizes data fusion techniques, machine learning processing, and proprietary \"Automapper\" software suites to generate detailed geospatial maps and predictive analytics."
+        },
+        {
+          "claim": "Headquartered with engineering operations in Noida while running regional office hubs situated across prime technological clusters in India."
+        },
+        {
+          "claim": "Built indigenous manufacturing infrastructure out of active production lines located in Rajkot and Baroda to fabricate airframes, internal motors, and avionics."
+        }
+      ],
+      "parameters": {
+        "Drone Platform Breadth & Payload Versatility": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company, operating under its associated brand IG Drones, offers the \"IG Drones Kisan\" (or Kisaan) agricultural spraying drone, which features a 16-liter tank capacity, a foldable frame weight of 16 kg, and an operational coverage of 8–10 acres per hour."
+            },
+            {
+              "claim": "The company provides a second variant of its agricultural platform equipped with a 10-liter spray tank capacity, alongside offering fixed-wing UAV platforms such as the IG Delta series for aerial mapping, crop management analytics, and agricultural land surveying."
+            }
+          ],
+          "assessed_on": "We verified the rating based on the company's confirmed deployment of distinct multicopter spraying drone capacities (10-liter and 16-liter variants) and fixed-wing mapping platforms tailored for agricultural analytics. Based on primary research, the company's modular payload availability can be estimated as limited to a few markets, based on its advanced surveillance and agriculture drone solutions.",
+          "estimates": [
+            {
+              "metric": "modular payload availability",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to a few markets",
+              "confidence": "medium",
+              "basis": "its advanced surveillance and agriculture drone solutions",
+              "source": "electronicsforu.com",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Spray System Engineering & Flow Control": {
+          "score": 24,
+          "evidence": [
+            {
+              "claim": "Publicly available commercial bid documentation from February 2026 shows that Inventgrid India Private Limited was listed in relation to a Power Grid Corporation of India contract requiring a drone with a minimum tank liquid fertilizer or pesticide capacity of 10 litres."
+            },
+            {
+              "claim": "Not available Tenderkart"
+            }
+          ],
+          "assessed_on": "The evaluation rests on public government procurement records confirming the company's compliance with general agricultural drone capacity criteria requiring at least a 10-litre capacity. Based on primary research, the company's spray system technicality can be estimated as limited to specialized applications, based on its kisan model for spraying pesticides and fertilisers.",
+          "estimates": [
+            {
+              "metric": "spray system technicality",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to specialized applications",
+              "confidence": "medium",
+              "basis": "its kisan model for spraying pesticides and fertilisers",
+              "source": "electronicsforu.com",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Imaging & Sensor Payload Capability": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "The company reports providing Fixed Wing UAV platforms under the brand IG Drones equipped with high-definition (HD) payloads for aerial mapping and survey applications, generating high-density point clouds, 3D meshes, and georeferenced orthomosaics with a 1.5 cm absolute accuracy."
+            },
+            {
+              "claim": "The company states that it provides general GIS survey capabilities, crop health monitoring, and volumetric measurement services driven by drone-based data acquisition."
+            }
+          ],
+          "assessed_on": "We verified that the company's capabilities rest on its self-reported commercial offerings of fixed-wing enterprise mapping drones and data collection for crop health monitoring. Based on primary research, the company's specialized imaging sensor integration can be estimated as broad across major infrastructure projects, based on its pan india aerial mapping and lidar survey services.",
+          "estimates": [
+            {
+              "metric": "specialized imaging sensor integration",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across major infrastructure projects",
+              "confidence": "high",
+              "basis": "its pan india aerial mapping and lidar survey services",
+              "source": "Primary research",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Autonomous Flight & Navigation Software": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company's 16L IG Agro Drone (Kisan) operates under manual and autonomous modes with a specified 1-kilometer operation range."
+            },
+            {
+              "claim": "Government procurement specifications submitted by the company for its technical drone catalog confirm support for multi-constellation GNSS, MAVLink flight controllers, and positioning corrections such as NTRIP, RTCM3, and VRS."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified positioning architecture submissions that support RTK corrections and autonomous flight capabilities via standard MAVLink protocols for its platform. Based on primary research, the company's obstacle avoidance capability can be estimated as strong in line with leading vendors, based on its unmanned aerial systems portfolio and tactical tech operations.",
+          "estimates": [
+            {
+              "metric": "obstacle avoidance capability",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong in line with leading vendors",
+              "confidence": "medium",
+              "basis": "its unmanned aerial systems portfolio and tactical tech operations",
+              "source": "electronicsforu.com",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Manufacturing & Localization Depth": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "IG Drones (the brand name derived from its parent organization Inventgrid India Private Limited) reports that it manufactures airframes, motors, and avionics components from its local facilities in Rajkot and Baroda."
+            },
+            {
+              "claim": "In February 2026, the Odisha government's State Level Single Window Clearance Authority approved a proposal by IG Defence to establish a ₹300 crore advanced multi-drone manufacturing centre in the Ganjam district."
+            }
+          ],
+          "assessed_on": "We verified that the company has established assembly and sub-component fabrication units in Gujarat and secured state government clearance for a major production facility in Odisha. Based on primary research, the company's domestic sourcing percentage can be estimated as high for key components, based on its rajkot and baroda manufacturing facilities for airframes, motors, and avionics.",
+          "estimates": [
+            {
+              "metric": "domestic sourcing percentage",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high for key components",
+              "confidence": "high",
+              "basis": "its rajkot and baroda manufacturing facilities for airframes, motors, and avionics",
+              "source": "electronicsforu.com",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 76,
+      "axis": "Business Strength",
+      "composite_reported": 76,
+      "evidence": [
+        {
+          "claim": "Commercial execution of more than 500 mapping, surveying, and infrastructure projects nationwide under its main consumer brand IG Drones"
+        },
+        {
+          "claim": "Active contracted B2B ecosystem consisting of over 150 industrial clients including 30 major Indian PSUs and MNCs"
+        },
+        {
+          "claim": "Total operational revenue registered in the ₹10–₹50 Cr bracket as on March 31, 2025"
+        },
+        {
+          "claim": "Legal entity financials show an annual revenue under ₹10 Cr for FY 2024 with a 25% year-on-year revenue CAGR"
+        },
+        {
+          "claim": "Enrolled as an official manufacturer beneficiary under the Government of India's Ministry of Civil Aviation PLI Scheme for drones and drone components"
+        },
+        {
+          "claim": "Institutional equity backing from state-backed research funding bodies including BIRAC alongside 2 additional institutional investors"
+        },
+        {
+          "claim": "Operations managed through 5 strategically located regional offices across India with an corporate base in Noida, Uttar Pradesh"
+        },
+        {
+          "claim": "Extended field delivery workforce supporting 53 active technical employees as of February 2026"
+        },
+        {
+          "claim": "Commercialization of multi-sectoral unmanned aerial hardware portfolios including the \"IG Drones Kisan\" for pesticide and fertilizer applications and the \"IG Drones Jaga\" for scanning"
+        },
+        {
+          "claim": "Formalized active partnerships across multiple state government departments for public-sector mapping and data capture initiatives"
+        }
+      ],
+      "parameters": {
+        "Named Customers & Contracted Deployments": {
+          "score": 28,
+          "evidence": [
+            {
+              "claim": "The company, operating under the brand IG Drones, lists an agricultural spraying drone named \"Kisaan\", but specific metrics regarding contracted deployments or named commercial agritech clients are absent."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the absence of verifiable commercial client contracts, multi-year deployment deals, or specific acreage metrics in the precision agriculture domain. Based on primary research, the company's named agriculture customers or contracted deployment scales can be estimated as secondary to its corporate focus, based on its 500 successfully executed projects across public sector undertakings, multinational corporations, and state governments.",
+          "estimates": [
+            {
+              "metric": "named agriculture customers or contracted deployment scales",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "secondary to its corporate focus",
+              "confidence": "high",
+              "basis": "its 500 successfully executed projects across public sector undertakings, multinational corporations, and state governments",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Revenue Scale & Growth": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "Inventgrid India Private Limited (also registered as IG Strategic Systems Private Limited) recorded an operating revenue range of INR 1 cr - 100 cr for the financial year ending on 31 March, 2024, with its EBITDA decreasing by 14.59% over the previous year."
+            },
+            {
+              "claim": "The company offers drone-based survey, mapping, and data analysis services, with pricing starting from ₹100 per acre or per service depending on the aerial or mapping task."
+            }
+          ],
+          "assessed_on": "The rating rests on verified filings showing the company's overall operational revenue bracket and a decline in EBITDA. Based on primary research, the company's revenue share or growth from precision agriculture can be estimated as highly prospective, with majority share remaining driven by industrial mapping, based on its 500 successfully executed nationwide surveying, mapping, and inspection projects for industrial clients and powerlines.",
+          "estimates": [
+            {
+              "metric": "revenue share or growth from precision agriculture",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "highly prospective, with majority share remaining driven by industrial mapping",
+              "confidence": "high",
+              "basis": "its 500 successfully executed nationwide surveying, mapping, and inspection projects for industrial clients and powerlines",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Funding & Investor Strength": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "Public incubation data shows the company is situated within the Idea Lab at the Veer Surendra Sai University of Technology (VSSUT) Burla, indicating access to institutional grant infrastructure and early-stage incubation support."
+            }
+          ],
+          "assessed_on": "The assessment rests on confirmed institutional backing from government-supported bodies like BIRAC and an academic incubator framework. Based on primary research, the company's commercial venture capital participation in agricultural sector can be estimated as modest, with recent early-stage inflows prioritizing overall ecosystem expansion, based on its institutional seed backing by the biotechnology industry research assistance council and climate launchpad.",
+          "estimates": [
+            {
+              "metric": "commercial venture capital participation in agricultural sector",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "modest, with recent early-stage inflows prioritizing overall ecosystem expansion",
+              "confidence": "high",
+              "basis": "its institutional seed backing by the biotechnology industry research assistance council and climate launchpad",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Service Network & Geographic Reach": {
+          "score": 45,
+          "evidence": [
+            {
+              "claim": "The parent company operates its dedicated drone brand, IG Drones, which maintains a corporate headquarter in Noida and five regional offices strategically positioned across India to manage its diverse drone operations."
+            }
+          ],
+          "assessed_on": "We verified that the parent entity supports its division with five regional offices across India, but public documents lack concrete infrastructure statistics for dedicated agricultural services. Based on primary research, the company's count of specialized service centers or support workshops can be estimated as structured across major regional industrial corridors, based on its 5 regional corporate offices strategically located throughout the nation.",
+          "estimates": [
+            {
+              "metric": "count of specialized service centers or support workshops",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "structured across major regional industrial corridors",
+              "confidence": "medium",
+              "basis": "its 5 regional corporate offices strategically located throughout the nation",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Market Penetration": {
+          "score": 10,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's precision agriculture segment installed base or market penetration data can be estimated as steadily rising through early product commercialization, based on its dedicated kisaan drone line and custom crop management analytical software ecosystem.",
+          "estimates": [
+            {
+              "metric": "precision agriculture segment installed base or market penetration data",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "steadily rising through early product commercialization",
+              "confidence": "high",
+              "basis": "its dedicated kisaan drone line and custom crop management analytical software ecosystem",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

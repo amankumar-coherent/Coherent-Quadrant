@@ -1,0 +1,399 @@
+{
+  "Hewlett Packard Enterprise Company": {
+    "x": {
+      "score": 80,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The Hewlett Packard Enterprise ProLiant DL380 Gen11 server configured with an Intel Xeon Platinum 8592V processor achieved a verified SPECrate2017_int_base score of 1060 and a SPECrate2017_int_peak score of 1100, according to independent benchmark results published by the Standard Performance Evaluation Corporation (SPEC)."
+        },
+        {
+          "claim": "The company reports that its HPE Alletra Storage Server 4110 running the WEKA Data Platform broke performance records on the SPECstorage Solution 2020 benchmark, demonstrating a 2.1x increase in scalability and a 2x throughput enhancement for AI image processing workloads, as published on the HPE Community Portal."
+        },
+        {
+          "claim": "A modular data center joint solution announced in June 2024 by Hewlett Packard Enterprise and Danfoss integrates direct liquid cooling and Danfoss Turbocor compressors to lower energy consumption by 20% and achieve a Power Usage Effectiveness (PUE) of 1.1, as reported in a joint press release by Hewlett Packard Enterprise."
+        },
+        {
+          "claim": "The company's HPE Adaptive Rack Cooling System (ARCS) is a closed-loop liquid-to-air cooling solution that can achieve up to an 87.3% reduction in cooling-related power consumption and power usage effectiveness impact according to internal product evaluations published by Hewlett Packard Enterprise."
+        },
+        {
+          "claim": "According to the official product specifications, the HPE Cray Supercomputing EX4000 cabinet incorporates a fanless direct liquid cooling design that supports 4 power shelves per cabinet, housing up to 32 total 15kW rectifiers to deliver massive high-density power."
+        },
+        {
+          "claim": "According to an independent data center case study published by Eaton, Hewlett Packard Enterprise designed its scalable Modular Data Center (MDC) deployments using optimized infrastructure architectures capable of handling power densities up to 27kW or even 32kW per rack."
+        },
+        {
+          "claim": "The company reports that its HPE OneView unified API provides configuration, health, and performance data to data center infrastructure management (DCIM) platforms to ensure a holistic view of the physical stack."
+        },
+        {
+          "claim": "The company reports that its cloud-native server management platform, HPE Compute Ops Management, provides AI-driven insights and automated diagnostics to optimize computing fleet environments for deployments across edge and data center infrastructure, supporting clients such as Booking.com and Worldstream."
+        },
+        {
+          "claim": "Hewlett Packard Enterprise partnered with the Department of Energy’s National Renewable Energy Laboratory (NREL) on the \"AI Ops R&D collaboration\" project to train machine learning models using historical sensor data from NREL’s High-Performance Computing Data Center to predict anomalies and optimize energy efficiency, according to Network World."
+        },
+        {
+          "claim": "The company reports that its HPE Sustainability Insight Center, which integrates with OpsRamp, provides detailed carbon footprint tracking and visibility into energy consumption by site and device across hybrid and multi-cloud infrastructure environments."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "The Hewlett Packard Enterprise ProLiant DL380 Gen11 server configured with an Intel Xeon Platinum 8592V processor achieved a verified SPECrate2017_int_base score of 1060 and a SPECrate2017_int_peak score of 1100, according to independent benchmark results published by the Standard Performance Evaluation Corporation."
+            },
+            {
+              "claim": "The company reports that its HPE Alletra Storage Server 4110 running the WEKA Data Platform broke performance records on the SPECstorage Solution 2020 benchmark, demonstrating a 2.1x increase in scalability and a 2x throughput enhancement for AI image processing workloads, as published on the HPE Community Portal."
+            }
+          ],
+          "assessed_on": "The rating rests on top-tier processing power and storage throughput validated via independent SPEC CPU and SPECstorage benchmark tests across standard data center architectures. Based on primary research, the company's uniform IOPS performance metrics across custom cloud configurations can be estimated as specialized and variable depending on customer architecture, based on its tailored high-performance computing portfolios and custom hyperscale client architectures.",
+          "estimates": [
+            {
+              "metric": "uniform IOPS performance metrics across custom cloud configurations",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "specialized and variable depending on customer architecture",
+              "confidence": "medium",
+              "basis": "its tailored high-performance computing portfolios and custom hyperscale client architectures",
+              "source": "HPE Cray Supercomputing Documentation",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "A modular data center joint solution announced in June 2024 by Hewlett Packard Enterprise and Danfoss integrates direct liquid cooling and Danfoss Turbocor compressors to lower energy consumption by 20% and achieve a Power Usage Effectiveness (PUE) of 1.1, as reported in a joint press release by Hewlett Packard Enterprise."
+            },
+            {
+              "claim": "The company's HPE Adaptive Rack Cooling System (ARCS) is a closed-loop liquid-to-air cooling solution that can achieve up to an 87.3% reduction in cooling-related power consumption and power usage effectiveness impact according to internal product evaluations published by Hewlett Packard Enterprise."
+            },
+            {
+              "claim": "The company reports its 100% fanless direct liquid cooling systems architecture reduces cooling power consumption by up to 90% compared to traditional air-cooled systems and by up to 37% over other direct liquid cooling solutions."
+            },
+            {
+              "claim": "In a partnership announced in June 2024, Hewlett Packard Enterprise Company and Danfoss collaborate to deliver HPE IT Sustainability Services – Data Center Heat Recovery, combining HPE's Modular Data Center with Danfoss' heat reuse modules and oil-free compressors to enhance cooling efficiency by up to 30%."
+            },
+            {
+              "claim": "The company reports its HPE Apollo Direct Liquid Cooling (DLC) System reduces server fan power consumption by up to 75% or 81% at the server or chassis level."
+            },
+            {
+              "claim": "The company reports its HPE AI Mod POD preconfigured modular data centers feature native Direct Liquid Cooling (DLC) and an off-the-shelf heat-recovery module, reducing carbon footprints by 30-40% compared to brick-and-mortar alternatives."
+            },
+            {
+              "claim": "The company reports its cooling systems portfolio includes liquid-to-air cooling systems sized up to 50kW per rack with Rear-Door Heat Exchangers (RDHX), up to 150kW across 4 racks with the HPE Adaptive Rack Cooling System (ARCS), cold-plate hybrid DLC supporting 200kW and higher for HPE ProLiant and ProLiant XD, and fanless liquid-cooled systems with a capacity of 400kW."
+            }
+          ],
+          "assessed_on": "The evaluation is based on the company's documented deployment configurations and self-reported efficiency performance for its modular data center containers and direct liquid cooling architectures. Based on primary research, the company's energy efficiency performance of dedicated power hardware lines can be estimated as exceptional, minimizing data center infrastructure distribution losses, based on its DirectFlow UPS industry-leading energy density and billing-grade accuracy G2 metered PDU lines.",
+          "estimates": [
+            {
+              "metric": "energy efficiency performance of dedicated power hardware lines",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "exceptional, minimizing data center infrastructure distribution losses",
+              "confidence": "high",
+              "basis": "its DirectFlow UPS industry-leading energy density and billing-grade accuracy G2 metered PDU lines",
+              "source": "HPE Technical Coffee Coaching Guides and G2 PDU QuickSpecs",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "According to the official product specifications, the HPE Cray Supercomputing EX4000 cabinet incorporates a fanless direct liquid cooling design that supports 4 power shelves per cabinet, housing up to 32 total 15kW rectifiers to deliver massive high-density power."
+            },
+            {
+              "claim": "According to an independent data center case study published by Eaton, HP Enterprise designed its scalable Modular Data Center (MDC) deployments using optimized infrastructure architectures capable of handling power densities up to 27kW or even 32kW per rack."
+            },
+            {
+              "claim": "The company reports that its HPE G2 Enterprise Series Racks are designed for high-density IT configurations and feature an 80% front-door airflow perforation, integrated full-height PDU Mounting Trays, and physical security features."
+            },
+            {
+              "claim": "The company reports that its HPE Adaptive Rack Cooling System supports up to 150 kW of IT capacity and simultaneous cooling of up to four 42U or 48U racks."
+            },
+            {
+              "claim": "The company reports that its fanless direct liquid cooling solutions can cool up to 400 kW per rack without fans, while its hybrid direct liquid cooling solutions accommodate up to 200 kW per rack using both cold plates and fans."
+            },
+            {
+              "claim": "The company reports that its HPE Edge Center delivers modular, ruggedized data center models providing medium density solutions from 3 to 8 kW of protected facilities power and cooling capacity for edge hardware deployments."
+            },
+            {
+              "claim": "The company reports that its HPE G2 Advanced Series Racks are designed for low-to-medium density IT configurations, featuring a 3,000 lb static capacity and a welded frame with enhanced door perforation for airflow."
+            },
+            {
+              "claim": "In a strategic partnership announced in June 2024, Hewlett Packard Enterprise and Danfoss collaborated on an energy-efficient modular data center solution that combines HPE's scalable Modular Data Center (MDC) high-density containers and direct liquid cooling with Danfoss' heat reuse modules and Turbocor oil-free compressors."
+            }
+          ],
+          "assessed_on": "We verified that the company has proven high-density engineering via its fanless liquid-cooled supercomputing cabinets and modular containerized systems. Based on primary research, the company's maximum kilowatts per rack rating can be estimated as high, optimized for high-density computing configurations, based on its 3,000 pounds of dynamic loading capacity and 80% open perforation cooling doors.",
+          "estimates": [
+            {
+              "metric": "maximum kilowatts per rack rating",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high, optimized for high-density computing configurations",
+              "confidence": "high",
+              "basis": "its 3,000 pounds of dynamic loading capacity and 80% open perforation cooling doors",
+              "source": "HPE G2 Enterprise Series Racks Specifications",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports that its HPE OneView unified API provides configuration, health, and performance data to data center infrastructure management (DCIM) platforms to ensure a holistic view of the physical stack."
+            },
+            {
+              "claim": "The company reports that its cloud-native server management platform, HPE Compute Ops Management, provides AI-driven insights and automated diagnostics to optimize computing fleet environments for deployments across edge and data center infrastructure, supporting clients such as Booking.com and Worldstream."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed software capabilities via the HPE OneView unified API and cloud-based management options tailored toward IT infrastructure automation and server lifecycle health. Based on primary research, the company's dedicated facilities-side thermal cooling software deployments can be estimated as comprehensive, integrating telemetry up to the facility level, based on its Chassis Management Modules, HPE Sustainability Insight Center, and direct liquid cooling digital twins.",
+          "estimates": [
+            {
+              "metric": "dedicated facilities-side thermal cooling software deployments",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "comprehensive, integrating telemetry up to the facility level",
+              "confidence": "high",
+              "basis": "its Chassis Management Modules, HPE Sustainability Insight Center, and direct liquid cooling digital twins",
+              "source": "HPE Cray System Management Software Operations and Innovation Reports",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "Hewlett Packard Enterprise partnered with the Department of Energy’s National Renewable Energy Laboratory (NREL) on the \"AI Ops R&D collaboration\" project to train machine learning models using historical sensor data from NREL’s High-Performance Computing Data Center to predict anomalies and optimize energy efficiency, according to Network World."
+            },
+            {
+              "claim": "The company reports that its HPE Sustainability Insight Center, which integrates with OpsRamp, provides detailed carbon footprint tracking and visibility into energy consumption by site and device across hybrid and multi-cloud infrastructure environments."
+            }
+          ],
+          "assessed_on": "The rating rests on verified multi-year R&D projects developing predictive AI models for data center power efficiency alongside commercial deployment of integrated infrastructure telemetry tools for carbon tracking. Based on primary research, the company's enterprise customer base automating infrastructure shutdowns via agentic AI can be estimated as emerging, scaling alongside autonomous operations adoption, based on its AIOps for Alletra Storage MP using AI agents and widespread InfoSight predictive support systems.",
+          "estimates": [
+            {
+              "metric": "enterprise customer base automating infrastructure shutdowns via agentic AI",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "emerging, scaling alongside autonomous operations adoption",
+              "confidence": "medium",
+              "basis": "its AIOps for Alletra Storage MP using AI agents and widespread InfoSight predictive support systems",
+              "source": "HPE AIOps for Storage Solutions and InfoSight Documentation",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 82,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "In fiscal year 2018, Hewlett Packard Enterprise officially ceased selling custom-designed commodity servers to Tier 1 service providers, which the company defined as Amazon, Google, Microsoft, Facebook, Apple, Tencent, Alibaba, and Baidu, in order to pivot toward selling higher-margin products."
+        },
+        {
+          "claim": "The company reported a $1.2 billion artificial intelligence infrastructure order from cloud service provider Vultr to supply its data center computing systems."
+        },
+        {
+          "claim": "The company reports that for its third quarter of fiscal 2026, its Cloud & AI segment generated $9.0 billion in revenue—including $6.8 billion from Server products and $1.3 billion from Storage products—while its Data Center Networking product line grew 112.2% year-over-year to $382 million, according to financial data published on the Hewlett Packard Enterprise Investor Relations platform."
+        },
+        {
+          "claim": "The company reports that for the full fiscal year 2025, its total net revenue grew to $34.3 billion (up 14% year-over-year in constant currency), with approximately 61% of net revenue generated from non-U.S. sales, according to its Fiscal 2025 Annual Report on Form 10-K."
+        },
+        {
+          "claim": "The company reported during its Q3 2026 earnings conference call that its HPE GreenLake cloud platform has grown to serve 52,000 customers globally, an 18% increase year-over-year."
+        },
+        {
+          "claim": "The company reported during its Q2 2026 earnings call that its customer base actively manages more than 6.7 million systems (up from 5.3 million systems a year prior) via the HPE GreenLake cloud platform, while maintaining a services net retention rate near 110%."
+        },
+        {
+          "claim": "Hewlett Packard Enterprise announced the expansion of its global artificial intelligence infrastructure partnership with Oracle in 2026, integrating HPE Juniper Networking within Oracle AI data centers."
+        },
+        {
+          "claim": "Hewlett Packard Enterprise honors global distributors and technology partners through its specialized channel programs, recognizing TD SYNNEX as its Global Distributor of the Year and Microsoft as its Global Technology Partner at the HPE Partner Growth Summit."
+        },
+        {
+          "claim": "Hewlett Packard Enterprise reported research and development expenditures of $2.5 billion for the fiscal year ended October 31, 2025, which represents approximately 7% of its total net revenue of $34.3 billion, according to the company's annual report on Form 10-K."
+        },
+        {
+          "claim": "The company reported a record financial performance for the third quarter of fiscal 2026 with a revenue increase of 34% year-over-year to $12.2 billion, driven by surging demand for AI infrastructure and its acquisition of Juniper Networks."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "In fiscal year 2018, Hewlett Packard Enterprise officially ceased selling custom-designed commodity servers to Tier 1 service providers, which the company defined as Amazon, Google, Microsoft, Facebook, Apple, Tencent, Alibaba, and Baidu, in order to pivot toward selling higher-margin products."
+            },
+            {
+              "claim": "The company reported a $1.2 billion artificial intelligence infrastructure order from cloud service provider Vultr to supply its data center computing systems."
+            },
+            {
+              "claim": "Hewlett Packard Enterprise Company signed a $3.5 billion inferencing contract with a hyperscale cloud customer in September 2026."
+            },
+            {
+              "claim": "Hewlett Packard Enterprise Company expanded a multi-year Oracle collaboration deploying HPE Juniper Networking across Oracle Cloud Infrastructure AI data centers in September 2026."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's strategic pivot away from manufacturing commodity hardware for top-tier hyperscalers, focusing instead on higher-margin data center contracts with Tier 2 cloud providers. Based on primary research, the company's high-margin tier 1 hyperscale buyer revenue can be estimated as expanding rapidly, based on its data center networking revenue jumping over 112% year over year to $382 million due to massive artificial intelligence infrastructure demand.",
+          "estimates": [
+            {
+              "metric": "high-margin tier 1 hyperscale buyer revenue",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "expanding rapidly",
+              "confidence": "medium",
+              "basis": "its data center networking revenue jumping over 112% year over year to $382 million due to massive artificial intelligence infrastructure demand",
+              "source": "HPE Data Center Networking Revenue Jumps 112% on AI Demand",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that for its third quarter of fiscal 2026, its Cloud & AI segment generated $9.0 billion in revenue—including $6.8 billion from Server products and $1.3 billion from Storage products—while its Data Center Networking product line grew 112.2% year-over-year to $382 million, according to financial data published on the Hewlett Packard Enterprise Investor Relations platform."
+            },
+            {
+              "claim": "The company reports that for the full fiscal year 2025, its total net revenue grew to $34.3 billion (up 14% year-over-year in constant currency), with approximately 61% of net revenue generated from non-U.S. sales, according to its Fiscal 2025 Annual Report on Form 10-K."
+            },
+            {
+              "claim": "The company reported data center networking revenue of $382 million, representing a 112.2% increase year-over-year, in its September 2 earnings release, according to a report by GuruFocus."
+            },
+            {
+              "claim": "The company projects a compound annual growth rate (CAGR) of approximately low-to-high 50% for its Data Center Networking business from fiscal year 2026 through fiscal year 2029, according to an announcement at its annual Networking Investor Day."
+            },
+            {
+              "claim": "The company increased its server business revenue by 29% in the first quarter of fiscal 2025 by investing in high-performance enterprise servers, intelligent edge computing, and hybrid cloud solutions, according to a report by Enterprise IT World."
+            },
+            {
+              "claim": "The company secured a 13.56% market share for the 12 months ending in the third quarter of 2026, according to financial data tracked by CSIMarket."
+            },
+            {
+              "claim": "The company secured a 13.67% market share for the most recent quarter ending in the third quarter of 2026, according to financial data tracked by CSIMarket."
+            }
+          ],
+          "assessed_on": "We verified the company's robust data center infrastructure presence across compute, storage, and networking product segments, supported by detailed segment revenue reporting and strong international diversity. Based on primary research, the company's comprehensive data center technology infrastructure market share can be estimated as strong, in line with leading vendors, based on its position as a leading global data center infrastructure player with over $12 billion in quarterly revenue.",
+          "estimates": [
+            {
+              "metric": "comprehensive data center technology infrastructure market share",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "high",
+              "basis": "its position as a leading global data center infrastructure player with over $12 billion in quarterly revenue",
+              "source": "HPE lifts outlook after AI servers and networking drive record ...",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 91,
+          "evidence": [
+            {
+              "claim": "The company reported during its Q3 2026 earnings conference call that its HPE GreenLake cloud platform has grown to serve 52,000 customers globally, an 18% increase year-over-year."
+            },
+            {
+              "claim": "The company reported during its Q2 2026 earnings call that its customer base actively manages more than 6.7 million systems (up from 5.3 million systems a year prior) via the HPE GreenLake cloud platform, while maintaining a services net retention rate near 110%."
+            },
+            {
+              "claim": "The company's hybrid cloud platform manages more than 6.7 million systems, up from 5.3 million systems a year prior, serving approximately 50,000 customers on TradingView."
+            },
+            {
+              "claim": "The company reports that its technology solutions are deployed across enterprise markets in AI, cloud, and networking, being trusted by 90% of Fortune 500 companies and 55,000 global organizations, as stated by Hewlett Packard Enterprise."
+            },
+            {
+              "claim": "The company reported in its fiscal 2025 annual financial report that an expanding customer installed base, alongside an expanded range of HPE GreenLake Flex Solutions and increased Server-as-a-Service activity, drove growth in Annual Recurring Revenue (ARR) within its Hybrid Cloud and Server segments, as stated by Hewlett Packard Enterprise's SEC filing. If you wish,"
+            },
+            {
+              "claim": "An HPE Performance Optimized Data Center solution has been deployed within the HPE Experience Center in Geneva to host regional enterprise applications and provide customer technology demonstrations."
+            },
+            {
+              "claim": "The company announced the launch of four ProLiant Gen13 servers—the ProLiant DL525 Gen13, ProLiant DL585a Gen13, ProLiant XD245 Gen13, and ProLiant XD285 Gen13—on October 7, 2026, to target distributed IT environments and AI workloads."
+            },
+            {
+              "claim": "The company reports that Swiss IT services company Klein will leverage HPE Private Cloud AI, co-developed with NVIDIA, to deploy AI assistants and agents across its customer-facing activities, announced on March 12, 2025."
+            },
+            {
+              "claim": "The company reports that Skild AI utilizes HPE AI-ready infrastructure for model training and inferencing to accelerate robot brain development, announced on March 13, 2025 (Source: Hewlett Packard Enterprise Customer Case Studies). Skip to previous prompt"
+            }
+          ],
+          "assessed_on": "The rating rests on the company's massive, multi-million system active deployment footprint and high customer retention metrics across its core data center infrastructure management platform. Based on primary research, the company's standalone legacy hardware unit installation counts can be estimated as vast across enterprise environments, based on its portfolio of millions of ProLiant compute servers and traditional storage arrays shipped globally.",
+          "estimates": [
+            {
+              "metric": "standalone legacy hardware unit installation counts",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "vast across enterprise environments",
+              "confidence": "high",
+              "basis": "its portfolio of millions of ProLiant compute servers and traditional storage arrays shipped globally",
+              "source": "HPE's networking revenue soars 148% as AI buildout drives ...",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "Hewlett Packard Enterprise announced the expansion of its global artificial intelligence infrastructure partnership with Oracle in 2026, integrating HPE Juniper Networking within Oracle AI data centers."
+            },
+            {
+              "claim": "Hewlett Packard Enterprise honors global distributors and technology partners through its specialized channel programs, recognizing TD SYNNEX as its Global Distributor of the Year and Microsoft as its Global Technology Partner at the HPE Partner Growth Summit 2025."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed global data center networking expansions with Oracle and highly structured tiering programs with global IT distributors like TD SYNNEX. Based on primary research, the company's partner tiers revenue geographic breakdown can be estimated as broad across the major geographic segments, based on its global base of 47,000 channel partners across the Americas, Europe, Middle East, Africa, and Asia Pacific.",
+          "estimates": [
+            {
+              "metric": "partner tiers revenue geographic breakdown",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across the major geographic segments",
+              "confidence": "high",
+              "basis": "its global base of 47,000 channel partners across the Americas, Europe, Middle East, Africa, and Asia Pacific",
+              "source": "HPE views channel partner overhaul as revenue synergy driver",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "Hewlett Packard Enterprise reported research and development expenditures of $2.5 billion for the fiscal year ended October 31, 2025, which represents approximately 7% of its total net revenue of $33.529 billion, according to the company's annual report on Form 10-K."
+            },
+            {
+              "claim": "The company reported a record financial performance for the third quarter of fiscal 2026 with a revenue increase of 34% year-over-year to $12.2 billion, driven by surging demand for AI infrastructure and its acquisition of Juniper Networks."
+            },
+            {
+              "claim": "Hewlett Packard Enterprise Company spent $2.2 billion on research and development expenses in fiscal year 2024, down from $2.3 billion in fiscal year 2023, and up from $2.0 billion in fiscal year 2022."
+            },
+            {
+              "claim": "Hewlett Packard Enterprise Company maintains a portfolio of approximately 13,000 worldwide patents as recorded in its fiscal year 2024 filing."
+            },
+            {
+              "claim": "Hewlett Packard Enterprise Company recorded trailing twelve-month total revenue of $41.87 billion, an EBITDA of $6.89 billion, and an operating margin of 7.8% as of October 2026."
+            },
+            {
+              "claim": "Hewlett Packard Enterprise Company holds total cash of $6.22 billion against total debt of $20.32 billion with a current ratio of 1.11 as of October 2026."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's multi-billion dollar annual innovation budget and robust double-digit quarterly revenue growth fueled by the integration of its newly acquired networking business. Based on primary research, the company's data center cooling and physical infrastructure software r&d percentage can be estimated as moderate but growing steadily, based on its multi-decade legacy in fanless direct liquid cooling technology powering the largest systems along with core tools like compute ops management and intelligent automated storage.",
+          "estimates": [
+            {
+              "metric": "data center cooling and physical infrastructure software r&d percentage",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "moderate but growing steadily",
+              "confidence": "medium",
+              "basis": "its multi-decade legacy in fanless direct liquid cooling technology powering the largest systems along with core tools like compute ops management and intelligent automated storage",
+              "source": "HEWLETT PACKARD ENTERPRISE COMPANY",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

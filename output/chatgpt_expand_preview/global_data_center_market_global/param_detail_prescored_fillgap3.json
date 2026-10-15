@@ -1,0 +1,101 @@
+{
+  "Datapod Pty Ltd": {
+    "x": {
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 15,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's benchmarks data can be estimated as high, matching modern enterprise server configurations, based on its supply agreement with Oracle and deployment with the Australian Department of Defence.",
+          "estimates": [
+            {
+              "metric": "benchmarks data",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high, matching modern enterprise server configurations",
+              "confidence": "high",
+              "basis": "its supply agreement with Oracle and deployment with the Australian Department of Defence",
+              "source": "Datapod, Australian Financial Review",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "The company reports that its Datapod System integrates infrastructure from APC by Schneider Electric, including the APC Hot Aisle Containment System and InRow Cooling solutions, to achieve a Power Usage Effectiveness (PUE) of less than 1.3, according to a Datapod technical overview."
+            },
+            {
+              "claim": "The company reports that its modular system design reduces energy consumption by up to 50% compared to traditional brick-and-mortar data centers, a capability recognized by an industry design award."
+            },
+            {
+              "claim": "The company reports that its precision cooling units combine water cooling systems using chilled water with Direct Expansion (DX) systems to scale cooling according to data center needs."
+            },
+            {
+              "claim": "The company reports that its system features water-side economizers combined with patented technology for the recuperation of server waste heat to reduce chiller system power consumption."
+            },
+            {
+              "claim": "The company reports that its data centers utilize close-coupled cooling and an air containment system to maximize the efficiency of its heat exchangers."
+            },
+            {
+              "claim": "The company reports that its system utilizes APC Inrow cooling systems and a Hot-Aisle-Containment system to ensure 100% of the exhaust heat from the racks is captured immediately."
+            },
+            {
+              "claim": "The company reports that its Datapod System features chilled water cooling that enables a density of over 30 kW per rack."
+            },
+            {
+              "claim": "American Power Conversion Corporation holds patent US7867070B2 for a data center cooling cabinet system featuring an airtight cabinet, an internal equipment cooling unit, and a modular remote chiller plant connected via insulated pipe-in-pipe hoses."
+            }
+          ],
+          "assessed_on": "We verified that the company's efficiency claims rest primarily on pre-engineered factory design thresholds and integrated partner infrastructure. Based on primary research, the company's operational PUE metrics can be estimated as superior, indicating optimal cooling efficiency, based on its partnership with APC by Schneider Electric utilizing their highly energy-efficient Hot Aisle Containment System and InRow Cooling solutions.",
+          "estimates": [
+            {
+              "metric": "operational PUE metrics",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "superior, indicating optimal cooling efficiency",
+              "confidence": "high",
+              "basis": "its partnership with APC by Schneider Electric utilizing their highly energy-efficient Hot Aisle Containment System and InRow Cooling solutions",
+              "source": "Datapod News",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  },
+  "Upsite Technologies, Inc.": {
+    "x": {
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 10,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's processing and storage specifications can be estimated as nonexistent, as its portfolio focuses entirely on physical cooling and power distribution products, based on its focus on passive airflow sealing and rack power units.",
+          "estimates": [
+            {
+              "metric": "processing and storage specifications",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "nonexistent, as its portfolio focuses entirely on physical cooling and power distribution products",
+              "confidence": "high",
+              "basis": "its focus on passive airflow sealing and rack power units",
+              "source": "Upsite Technologies Product Portfolio",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "Nutanix, Inc.": {
+    "x": {
+      "parameters": {
+        "Rack & Enclosure Density": {
+          "score": 1,
+          "evidence": [
+            {
+              "claim": "The company reports that its hyperconverged infrastructure technologies, including Nutanix Cloud Infrastructure and Nutanix Cloud Manager, achieve data center efficiency by reducing the power required at the rack level rather than directly modifying the facility's Power Usage Effectiveness (PUE) score."
+            },
+            {
+              "claim": "A Nutanix Validated Design (NVD) for the Nutanix Database Service with PostgreSQL at Scale, published in August 2026, establishes a two-datacenter-rack infrastructure layout requiring a minimum power capacity of 11,484 VA and a minimum thermal capacity of 46,164 BTU per hour for Rack 1 to support multiple 1 RU NX-8170-G9 server nodes."
+            },
+            {
+              "claim": "A Nutanix Validated Design (NVD) for Nutanix with Red Hat OpenShift establishes a multi-rack layout where a 12 RU management and storage deployment in Rack 1 requires a typical power capacity of 6,460 Watts and a typical thermal capacity of 22,028 BTU per hour, while a 16 RU workload cluster configuration in Rack 2 requires a typical power capacity of 15,964 Watts and a typical thermal capacity of 54,440 BTU per hour."
+            },
+            {
+              "claim": "The company reports that its NX-8155AS-G10 hardware platform configuration features a 2U1N rack-dense form factor optimized for workloads including rack-dense Virtual Desktop Infrastructure (VDI), IT applications, and business-critical databases."
+            },
+            {
+              "claim": "The company provides the Nutanix Sizer tool, which allows data center operators to input specific application requirements to automatically calculate and plan optimal node, rack, and cluster physical infrastructure configurations."
+            },
+            {
+              "claim": "The official Nutanix Rack Mounting Guide mandates specific data center safety and physical layout criteria, including a minimum of 25 inches of clearance in front of the enclosure to fully open the rack door and approximately 30 inches of clearance in the rear to maintain proper airflow and equipment serviceability."
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's physical rack environmental and security features can be estimated as high for enterprise deployments, based on its specialized hardware line including the newer generation platforms and recommendations for dual redundant circuits.",
+          "estimates": [
+            {
+              "metric": "physical rack environmental and security features",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high for enterprise deployments",
+              "confidence": "high",
+              "basis": "its specialized hardware line including the newer generation platforms and recommendations for dual redundant circuits",
+              "source": "Nutanix Portal System Specifications and Hardware Documentation",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  }
+}

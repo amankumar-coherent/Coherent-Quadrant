@@ -1,0 +1,140 @@
+{
+  "Amphenol Corporation": {
+    "x": {
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 1,
+          "evidence": [
+            {
+              "claim": "The company reports that its RADSOK Power-to-Board connectors, engineered with ultrasonic welded wire terminations and high-flex silicone wire, are designed for GPU servers in high-performance computing environments to deliver compact, high-current, and thermally efficient power distribution."
+            },
+            {
+              "claim": "The company reports that it delivers end-to-end copper, optical, and power interconnects designed to support scaling GPU clusters from racks to pods to full AI factories in AI data centers."
+            },
+            {
+              "claim": "The company reports providing fiber connectivity, intelligent power, enclosures, cable assemblies, and transceivers for hyperscale and multi-tenant data center infrastructure through its collaborative divisions, including Amphenol Custom Cable, Amphenol Fiber Optic Products, and Charles Industries."
+            },
+            {
+              "claim": "The company reports that its division, Amphenol Fiber Optic Products, delivers indoor connectivity solutions designed to meet the high bandwidth, high density, and reliability of enterprise and hyperscale data centers."
+            },
+            {
+              "claim": "An independent test by Prowess Consulting verified that a Dell PowerEdge R760 server configured with two Amphenol SlimSAS x8 (SFF-8654 Series) connectors achieved more than a 10x improvement in storage performance and an approximate 5x increase in storage throughput when utilizing a PERC 12 controller compared to a PERC 11 controller, as sourced from Dell Technologies InfoHub."
+            },
+            {
+              "claim": "The company reports that its SAS/PCIe 6.0 (U.2/SFF8639) connectors support data rates of 64Gb/s PAM4 on PCIe lanes and 24Gb/s on SAS lanes to maximize storage and server transmission speeds, as sourced from Amphenol Communications Solutions."
+            },
+            {
+              "claim": "The company reports that its ExtremePort Swift Connectors deliver data center server storage main board performance at PCIe Gen 5 NRZ speeds of 32GT/s, UPI2.0 speeds of 24GT/s, and SAS4.0 speeds of 24Gb/s per lane, as sourced from the Amphenol CS Video Gallery."
+            },
+            {
+              "claim": "The company reports that its EDSFF E1/E3 two-piece cable solution supports enterprise storage data rates of up to PCIe 5.0 at 32Gb/s, as sourced from Amphenol Communications Solutions."
+            },
+            {
+              "claim": "The company reports that its SAS/PCIe 5.0 (U.2 & U.3) connectors support next-generation server throughput demands with speeds of 32Gb/s on PCIe lanes and 24Gb/s on SAS lanes, as sourced from Amphenol Storage Solutions."
+            },
+            {
+              "claim": "The company reports that its Mini Cool Edge 0.60 mm connectors support data rates up to 112G PAM4 and PCIe Gen 6 to enable advanced performance in next-generation server and storage applications, as sourced from Amphenol Storage Solutions."
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's server or storage system benchmarks can be estimated as strong, in line with industry-standard interconnect capabilities, based on its support for PCIe Gen 6 and Gen 7 speeds and high signal integrity card edge interfaces.",
+          "estimates": [
+            {
+              "metric": "server or storage system benchmarks",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with industry-standard interconnect capabilities",
+              "confidence": "high",
+              "basis": "its support for PCIe Gen 6 and Gen 7 speeds and high signal integrity card edge interfaces",
+              "source": "Storage and Server IO Portfolio",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "parameters": {
+        "Global Revenue & Market Share": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "S&P Global reported that Amphenol Corporation generated $23.1 billion in total revenues in 2025, with its largest end market being IT datacom representing 36% of sales."
+            },
+            {
+              "claim": "In a Q2 2026 investor letter, Aoris International Fund stated that data center infrastructure has grown to represent one-third of Amphenol Corporation's revenue, with the company's data center revenue expanding by 81% in the March 2026 quarter compared to the prior year."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's confirmed total annual revenues of $23.1 billion for 2025 and granular details regarding its IT datacom segment expansion driven by AI infrastructure deployments. Based on primary research, the company's global market share percentage within data center infrastructure market can be estimated as substantial and expanding, based on its $23 billion in total revenue and position as primary connector supplier to prominent artificial intelligence system developers.",
+          "estimates": [
+            {
+              "metric": "global market share percentage within data center infrastructure market",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial and expanding",
+              "confidence": "high",
+              "basis": "its $23 billion in total revenue and position as primary connector supplier to prominent artificial intelligence system developers",
+              "source": "Amphenol Corporation Official Page",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "EnerSys": {
+    "x": {
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 5,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's server performance benchmarks can be estimated as limited to zero capability, as the portfolio focuses exclusively on physical power and infrastructure rather than computing hardware, based on its data center focus on industrial stored energy solutions, high-rate discharge battery systems, and thin plate pure lead technologies.",
+          "estimates": [
+            {
+              "metric": "server performance benchmarks",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to zero capability, as the portfolio focuses exclusively on physical power and infrastructure rather than computing hardware",
+              "confidence": "high",
+              "basis": "its data center focus on industrial stored energy solutions, high-rate discharge battery systems, and thin plate pure lead technologies",
+              "source": "Data Center Power Solutions",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  },
+  "EAE Elektrik A.Ş.": {
+    "x": {
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 1,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's compute or storage performance metrics can be estimated as high, in line with leading enterprise infrastructure hardware vendors, based on its focus on high short circuit and fire resistance alongside data communication network support.",
+          "estimates": [
+            {
+              "metric": "compute or storage performance metrics",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high, in line with leading enterprise infrastructure hardware vendors",
+              "confidence": "medium",
+              "basis": "its focus on high short circuit and fire resistance alongside data communication network support",
+              "source": "https://www.eaeelektroteknik.com/en/solutions/industries/data-centers",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "parameters": {}
+    }
+  }
+}
