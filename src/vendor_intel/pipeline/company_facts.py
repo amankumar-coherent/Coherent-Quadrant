@@ -113,9 +113,33 @@ def identity_prompt(market: str, scope: str) -> str:
     )
 
 
-def scope_prompt(market: str, definition: str, core: str = "", adjacent: Iterable[str] = ()) -> str:
-    """Core player, adjacent-segment player, or not in the market at all."""
+def scope_prompt(market: str, definition: str, core: str = "", adjacent: Iterable[str] = (),
+                 own_product_line: bool = False) -> str:
+    """Core player, adjacent-segment player, or not in the market at all.
+
+    ``own_product_line`` (market brief ``"scope_test": "own_product_line"``):
+    a company that makes and sells the market's product itself is core even
+    when it is one line of a larger business. The default main-product test
+    put diversified makers (BASF, Huntsman, Smith & Nephew) in adjacent, which
+    a brief's wording alone did not override (owner 2026-10-12)."""
     adj = "; ".join(a for a in adjacent if a)
+    if own_product_line:
+        return (
+            "You are a market research analyst building a landscape of the companies that MAKE "
+            "this market's product. For EACH company decide whether it makes and sells it itself.\n"
+            f"Market: {market}\n" + (f"Market definition: {definition}\n" if definition else "")
+            + (f"Core players: {core}\n" if core else "")
+            + (f"Adjacent segments (not core): {adj}\n" if adj else "")
+            + "scope = core (the company itself makes this market's product and sells it under "
+            "its own name -- also when it is only one product line, grade family or division of a "
+            "larger, diversified business) | adjacent (it does not make the product itself: it "
+            "buys and processes, converts or uses it, distributes or resells it, contract-makes "
+            "it for others, or makes only a neighbouring product or a non-qualifying grade) | out "
+            "(not related to this market). Judge from what the company sells today. "
+            "reason = one short factual sentence naming the product line that decides it.\n"
+            "Return one result for EVERY company. Compact JSON only: "
+            '{"results":[{"name":"...","scope":"core|adjacent|out","reason":"..."}]}'
+        )
     return (
         "You are a market research analyst building a like-for-like landscape. For EACH "
         "company decide whether its MAIN business is this market itself.\n"
@@ -232,6 +256,14 @@ def owner_entry(name: str, rec: dict) -> dict | None:
         return None
     if norm_name(owner) == norm_name(name):
         return None
+    # Bought (back) by its own CEO, founder, management or family: an
+    # independent, founder-led company, not a subsidiary -- "Fluid Brasil
+    # (subsidiary of <its former CEO's name>)" was the result (2026-10-13).
+    if re.search(r"\b(?:by|to)\s+(?:its\s+|the\s+|a\s+|their\s+)?(?:former\s+|own\s+|then\s+|current\s+)?"
+                 r"(?:ceo|chief executive|founders?|co-?founders?|chairman|managing director|"
+                 r"management(?:\s+team)?|founding family|family|owners?|partners?)\b", note, re.I) \
+            or re.search(r"\b(?:management|founder|owner)[- ]buy[- ]?(?:out|back)|\bMBO\b", note, re.I):
+        return None
     # "acquired a 31% stake": a minority investment, not an owner ("the
     # remaining 49%" completes a purchase, so it does count).
     shares = [float(s) for s in re.findall(r"(\d{1,2}(?:\.\d+)?)\s*%", note)]
@@ -267,6 +299,8 @@ def auto_review(pipe_dir: Path, pool: Iterable[str],
     owners: list[dict] = []
     adjacent: list[dict] = []
     display: list[dict] = []
+    brief = _read(pipe_dir / "market_brief.json", {}) or {}
+    adjacent_excluded = str(brief.get("adjacent_policy") or "").strip().lower() == "exclude"
 
     def drop(name: str, reason: str) -> None:
         exclude.setdefault(name, {"company": name, "reason": reason, "source": SOURCE})
@@ -318,6 +352,14 @@ def auto_review(pipe_dir: Path, pool: Iterable[str],
             drop(name, f"Not in this market: {sc.get('reason') or ''}".strip())
             continue
         if kind == "adjacent":
+            # A market brief can keep adjacent segments out of the report
+            # entirely ("adjacent_policy": "exclude"), e.g. when the client's
+            # report covers one player type only (owner 2026-10-12: Medical
+            # Films = polymer suppliers, not the film makers that buy them).
+            if adjacent_excluded:
+                drop(name, f"Not this report's player type (market brief: adjacent segments left "
+                           f"out): {sc.get('reason') or ''}".strip())
+                continue
             adjacent.append({"company": name, "reason": str(sc.get("reason") or "").strip(),
                              "source": SOURCE})
         entry = owner_entry(name, rec)
@@ -331,21 +373,99 @@ def auto_review(pipe_dir: Path, pool: Iterable[str],
                 and cn and nn and cn not in nn and nn not in cn:
             display.append({"company": name, "current_name": current, "source": SOURCE})
     # A company owned by another company of this same list is not a separate
-    # competitor: the parent represents the group (Redmap, bought by Basware,
-    # beside Basware; OpusCapita, bought by GEP, beside GEP). Owners come from
-    # these answers, the analyst review and the chart fact-check.
+    # competitor: one company per group is listed (Redmap, bought by Basware,
+    # beside Basware; AvidXchange, co-owned by Corpay, beside Corpay). Only the
+    # pairs are recorded here; which one stays needs the scores, so
+    # resolve_listed_groups() decides after step 4. Owners come from these
+    # answers, the analyst review and the chart fact-check.
     all_owners = list(owners)
     for f in ("analyst_review.json", "factcheck_review.json"):
         all_owners += [r for r in (_read(pipe_dir / f, {}) or {}).get("ownership") or []
                        if str(r.get("owner") or "").strip()]
+    pairs: list[dict] = []
     for entry in all_owners:
         name = str(entry.get("company") or "")
         parent = listed_parent(str(entry.get("owner") or ""), name, pool, pipe_dir.parent)
-        if parent and name in pool and name not in exclude:
-            drop(name, f"Owned by {parent}, which is also in this list; the parent represents the group.")
+        if parent and name in pool and name not in exclude and parent not in exclude \
+                and not any(p["company"] == name and p["parent"] == parent for p in pairs):
+            pairs.append({"company": name, "parent": parent})
     owners = [o for o in owners if o["company"] not in exclude]
     return {"exclude": list(exclude.values()), "ownership": owners,
-            "adjacent": adjacent, "display": display}
+            "adjacent": adjacent, "display": display, "listed_owner": pairs}
+
+
+GROUP_DECISIONS_FILE = "listed_owner_decisions.json"
+
+
+def listed_groups(pairs: Iterable[dict]) -> list[list[str]]:
+    """Owner/owned pairs joined into groups (a parent with two listed units is
+    one group of three). Each group is sorted, so its key is stable."""
+    parent_of: dict[str, str] = {}
+
+    def root(n: str) -> str:
+        while parent_of.get(n, n) != n:
+            n = parent_of[n]
+        return n
+
+    for p in pairs:
+        a, b = str(p.get("company") or ""), str(p.get("parent") or "")
+        if a and b:
+            parent_of.setdefault(a, a)
+            parent_of.setdefault(b, b)
+            parent_of[root(a)] = root(b)
+    groups: dict[str, list[str]] = {}
+    for n in parent_of:
+        groups.setdefault(root(n), []).append(n)
+    return [sorted(g) for g in groups.values() if len(g) > 1]
+
+
+def resolve_listed_groups(pipe_dir: Path, pairs: Iterable[dict], score, keep: Iterable[str] = (),
+                          on_chart: Iterable[str] = ()) -> list[dict]:
+    """One company per owner group: the stronger stays, the others are left
+    out (owner's rule: Redmap, a Challenger, goes beside the Leader Basware;
+    the Leader AvidXchange stays beside its co-owner Corpay, which is not on
+    the chart). Stronger = on the current chart first, then the higher
+    ``score(name)`` (number or None); a tie, or no score, keeps the parent. A
+    decision is saved and reused while the group is unchanged, so a later
+    re-score cannot swap a company the report already shows. ``keep``
+    (analyst review, normalised names) is never left out. Returns exclude entries."""
+    pairs = list(pairs)
+    parents = {str(p.get("parent") or "") for p in pairs}
+    keep, on_chart = set(keep), set(on_chart)
+    path = Path(pipe_dir) / GROUP_DECISIONS_FILE
+    saved = _read(path, {}) or {}
+    decisions: dict[str, str] = {}
+    out: list[dict] = []
+    for group in listed_groups(pairs):
+        key = " | ".join(group)
+        winner = saved.get(key)
+        if winner not in group:
+            def rank(n: str) -> tuple:
+                s = score(n)
+                return (n in on_chart, s is not None, s if s is not None else 0, n in parents)
+            winner = max(group, key=rank)
+        decisions[key] = winner
+        for n in group:
+            if n != winner and norm_name(n) not in keep:
+                out.append({"company": n, "reason": f"Same group as {winner}, which is also in this list "
+                            f"and ranks higher; one company per group is listed.", "source": SOURCE})
+    path.parent.mkdir(parents=True, exist_ok=True)
+    write_json_atomic(path, decisions)
+    return out
+
+
+_CO_OWNER_SPLIT = re.compile(r"\s*(?:,|;|/|&|\band\b)\s*", re.I)
+
+
+def owner_names(owner: str) -> list[str]:
+    """``owner`` as written, then each co-owner of a joint deal on its own:
+    "TPG and Corpay" -> ["TPG and Corpay", "TPG", "Corpay"]. The whole string
+    comes first so a single name with "&" ("Johnson & Johnson") still matches."""
+    owner = str(owner or "").strip()
+    if not owner:
+        return []
+    parts = [p for p in _CO_OWNER_SPLIT.split(owner) if p.strip()]
+    return [owner] + [p.strip() for p in parts if p.strip() != owner]
 
 
 def listed_parent(owner: str, company: str, pool: Iterable[str], out_dir: Path) -> str | None:
@@ -353,9 +473,11 @@ def listed_parent(owner: str, company: str, pool: Iterable[str], out_dir: Path) 
     itself. Exact matches only, on the name without legal suffixes or on the
     company's own brand ("Basware" = "Basware Oy"; "GEP" = "GEP Worldwide",
     brand GEP). No partial names: "Visma" is not "Visma Aquila Oy" (one Visma
-    unit), and "Aptean" is not "Aptean Austria GmbH"."""
-    on = norm_name(owner)
-    if not on or len(on) < 3:
+    unit), and "Aptean" is not "Aptean Austria GmbH". In a joint deal any
+    listed co-owner counts (owner's rule): AvidXchange, taken private by
+    "TPG and Corpay", is represented by Corpay when Corpay is in the list."""
+    keys = [k for k in (norm_name(o) for o in owner_names(owner)) if k and len(k) >= 3]
+    if not keys:
         return None
     brands = {}
     for qf in Path(out_dir).glob("*_quadrant.json"):
@@ -364,12 +486,14 @@ def listed_parent(owner: str, company: str, pool: Iterable[str], out_dir: Path) 
             if key and b.get("brand"):
                 brands.setdefault(key, set()).add(norm_name(str(b["brand"])))
     me = norm_name(company)
-    for n in pool:
-        nn = norm_name(n)
-        if not nn or nn == me:
-            continue
-        if on == nn or on in brands.get(nn, set()):
-            return n
+    pool = list(pool)
+    for on in keys:
+        for n in pool:
+            nn = norm_name(n)
+            if not nn or nn == me:
+                continue
+            if on == nn or on in brands.get(nn, set()):
+                return n
     return None
 
 
@@ -446,8 +570,23 @@ _FOOTNOTE = re.compile(r"\s*\[\s*\d{1,3}(?:\.\d{1,3})?(?:\s*[,;]\s*\d{1,3}(?:\.\
 _RAW_LINK = re.compile(r"\s*[\[(]\s*(?:https?://|www\.)[^\s\])]*\s*[\])]")
 
 
+# AI Mode's sign-off glued to the last finding: "... in October 2026. If you
+# want to look into other parameters, I can ..." (seen live, 2026-10-15).
+_CHATTER = re.compile(
+    r"\s*\b(?:If you(?:'d| would)? (?:want|like)|Would you like|Do you want|Let me know|Shall I|"
+    r"I can (?:also )?(?:help|look|provide|dig|search|check|break)|Want me to)\b.*$", re.I | re.S)
+
+
+# A source tag closing a finding: "... near zero (NVIDIA).", "(Eaton)", "(1-ACT)",
+# "(Digital Today)" -- AI Mode's citation label, often a third-party outlet.
+# Only a capitalised / numbered tag at the very end; a lower-case aside
+# ("(per rack)") is part of the finding and stays.
+_SOURCE_TAG_END = re.compile(r"\s*\((?=[A-Z0-9])[^()]{1,80}\)\s*(?=\.?\s*$)")
+
+
 def clean_artifacts(text: str) -> str:
-    t = _MD_LINK.sub(_md_link, str(text or "")).strip()
+    t = _CHATTER.sub("", _MD_LINK.sub(_md_link, str(text or ""))).strip()
+    t = _SOURCE_TAG_END.sub("", t)
     t = _RAW_LINK.sub("", _FOOTNOTE.sub("", t))
     t = re.sub(r"\s+([.,;:])", r"\1", t)
     # "Not available Webfleet +1": a source chip stuck to the absence marker.
@@ -541,6 +680,121 @@ def tidy_claim(text: str) -> str:
     return t
 
 
+_THIRD_PARTY: re.Pattern | None = None
+# Words that follow a platform's name in a source reference
+# ("Made-in-China Supplier Profile", "Scribd user specification logs").
+_SRC_TAIL = (r"(?:\s+(?:user|supplier|company|corporate|business|product|official|online|trade|"
+             r"asset|technical|operations|profile|profiles|page|portal|listing|listings|storefront|"
+             r"registry|directory|showroom|catalog|catalogue|specifications?|logs?|documents?|"
+             r"database|data|update|post))*")
+_ATTR_VERB = (r"(?:detailed|documented|disclosed|listed|outlined|stated|reported|shown|noted|"
+              r"indicated|recorded|described|confirmed|published|featured|presented)")
+
+
+def third_party_re() -> re.Pattern:
+    """Third-party websites, platforms and outlets the report must not name
+    (config/third_party_sources.txt: marketplaces, directories, document and
+    social sites, data / investor databases, trade press, rating agencies)."""
+    global _THIRD_PARTY
+    if _THIRD_PARTY is None:
+        root = Path(__file__).resolve().parents[3]
+        try:
+            lines = [ln.strip() for ln in (root / "config" / "third_party_sources.txt")
+                     .read_text(encoding="utf-8").splitlines()
+                     if ln.strip() and not ln.lstrip().startswith("#")]
+        except OSError:
+            lines = []
+        _THIRD_PARTY = (re.compile("|".join(f"(?:{ln})" for ln in lines), re.I)
+                        if lines else re.compile(r"(?!x)x"))
+    return _THIRD_PARTY
+
+
+def names_third_party(text: str) -> bool:
+    return bool(third_party_re().search(str(text or "")))
+
+
+# ", as reported by ET Telecom in October 2026" / "as reported by stockstotrade.com":
+# a news outlet credited for the finding. The outlet list can never be complete,
+# so the credit itself goes and the date stays ("... in October 2026"). The
+# company's own reporting ("as reported by the company / in its filing") is kept.
+_PRESS_CREDIT = re.compile(
+    r",?\s*(?:as\s+)?(?:reported|covered|cited|noted)\s+by\s+(?!the company\b|its\b|the firm\b)"
+    r"(?:the\s+)?(?:[A-Z][\w&'.-]*(?:\s+(?:[A-Z][\w&'.-]*|of|and|&))*|[\w-]+(?:\.[\w-]+)*\.(?:com|net|org|io|co|in|news))"
+    r"(\s+(?:in|on)\s+(?:[A-Z][a-z]+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d)?")
+
+
+def _drop_press_credit(s: str) -> str:
+    out = _PRESS_CREDIT.sub(lambda m: m.group(1) or "", s)
+    # "... by The Economic Times." -- the outlet's last token can carry the full stop.
+    if out != s and s.rstrip().endswith(".") and not out.rstrip().endswith((".", "!", "?")):
+        out = out.rstrip() + "."
+    return out
+
+
+def neutral_sources(text: str) -> str:
+    """Remove third-party names from a sentence and keep the finding (owner's
+    rule 2026-10-12: no third-party name in a report). A claim credited to a
+    platform reads "according to primary research" (the house style already
+    used for IndiaMART); a company document hosted on one keeps "its profile"
+    without the host; third-party links and bare domains are dropped."""
+    s = _drop_press_credit(str(text or ""))
+    tp = third_party_re()
+    if not tp.search(s):
+        return s
+    name = rf"(?:(?:the|its|an?)\s+)?(?:{tp.pattern}){_SRC_TAIL}"
+    # Links and bare domains of a third-party site (a quoted title after a link too).
+    s = re.sub(r'\s*\(?https?://\S+\)?(?:\s+"[^"]*")?',
+               lambda m: "" if tp.search(m.group(0)) else m.group(0), s)
+    s = re.sub(r"\b[\w-]+(?:\.[\w-]+)*\.(?:com|net|org|ro|cn|in|co)\b",
+               lambda m: "" if tp.search(m.group(0)) else m.group(0), s)
+    # "Preqin reports that ...", "Fierce Pharma reported in October 2025 that ..."
+    s = re.sub(rf"(^|(?<=[.!?]\s)){name}\s+(?:reports?|reported|lists?|listed|shows?|showed|"
+               rf"states?|stated|indicates?|indicated|notes?|noted)(\s+(?:in|on)\s+[^,]{{1,30}}?)?"
+               r"\s+that\s+",
+               lambda m: "According to primary research, " + (m.group(2).strip() + ", " if m.group(2) else ""),
+               s, flags=re.I)
+    # The company's own document hosted on a platform: keep "its ...", drop the host.
+    s = re.sub(rf"((?:its|the company's)\b(?:\s+[\w'-]+){{0,6}}?)\s+"
+               rf"(?:documented by|retrieved from|hosted on|on|via|by|from|at|through)\s+{name}",
+               r"\1", s, flags=re.I)
+    # A platform named beside the real source: "by Informat.ro and Qualicaps statements"
+    # (the domain step above may already have left "by and Qualicaps").
+    s = re.sub(rf"(?<=\s){name}\s+and\s+(?=[A-Z])", "", s, flags=re.I)
+    s = re.sub(r"\b(by|from|on|via|in)\s+and\s+(?=[A-Z])", r"\1 ", s)
+    # A platform as the agent of a verb: "a review by CRISIL indicated" -> "a review indicated".
+    s = re.sub(rf"\s+by\s+{name}(?=\s+[a-z])", "", s, flags=re.I)
+    # A document passed through a platform: "retrieved from Scribd", "via Issuu".
+    s = re.sub(rf"\s+(?:documented by|retrieved from|hosted on|uploaded to|published via|via)\s+{name}",
+               "", s, flags=re.I)
+    # "..., according to Made-in-China." / "as detailed on IndiaMART." / "listed on IndiaMART"
+    s = re.sub(rf",?\s*(?:according to|as {_ATTR_VERB}(?:\s+(?:on|by|in|via|at|through))?)\s+{name}",
+               ", according to primary research", s, flags=re.I)
+    s = re.sub(rf"\s+{_ATTR_VERB}\s+(?:on|by|in|at)\s+{name}", "", s, flags=re.I)
+    # Anything left: drop the bare name, then any preposition it leaves dangling.
+    s = tp.sub("", s)
+    s = re.sub(r"(?:^|\s+)(?:on|by|via|in|at|from|through|of)\s*(?=[.,;:)]|$)", "", s)
+    s = re.sub(r"according to\s*(?=[.,;]|$)", "according to primary research", s)
+    # "an official corporate announcement, according to primary research" -> one attribution
+    s = re.sub(r"(according to [^.;]{3,80}?), according to primary research", r"\1", s)
+    # A sentence that already opens with the attribution does not repeat it at the end
+    # ("Ltd. closed" is not a sentence break: a break is ". " + capital).
+    s = re.sub(r"(According to primary research, (?:[^.]|\.(?!\s+[A-Z]))*?), according to primary research",
+               r"\1", s)
+    s = re.sub(r"\s{2,}", " ", s)
+    s = re.sub(r"\s+([.,;:)])", r"\1", s)
+    s = re.sub(r"\(\s+", "(", s)
+    s = re.sub(r",\s*,", ",", s)
+    s = re.sub(r"\.{2,}", ".", s)
+    s = re.sub(r"^[\s,;:]+", "", s)
+    return s.strip()
+
+
+def neutral_source_label(label: str) -> str:
+    """A source label / citation field that names a third party becomes
+    "Primary research" (the label itself is the third-party name)."""
+    return "Primary research" if names_third_party(label) else str(label or "")
+
+
 def invalid_source(text: str) -> bool:
     """A bullet resting on a source that is never evidence: an employee-review
     site, a competing research publisher, or a modelled-estimate data site."""
@@ -591,8 +845,18 @@ def tidy_evidence(out_dir: Path) -> int:
                 for v in ((rec.get(axis) or {}).get("parameters") or {}).values():
                     if not isinstance(v, dict) or not isinstance(v.get("evidence"), list):
                         continue
+                    # No third-party name anywhere in the report: estimate
+                    # sources and bases too (they ship in the JSON).
+                    for est in v.get("estimates") or []:
+                        if not isinstance(est, dict):
+                            continue
+                        for key, fix in (("source", neutral_source_label), ("basis", neutral_sources)):
+                            if isinstance(est.get(key), str) and fix(est[key]) != est[key]:
+                                est[key] = fix(est[key])
+                                changed += 1
+                                dirty = True
                     if isinstance(v.get("assessed_on"), str):
-                        why = clean_artifacts(v["assessed_on"])
+                        why = neutral_sources(clean_artifacts(v["assessed_on"]))
                         if why != v["assessed_on"].strip():
                             v["assessed_on"] = why
                             changed += 1
@@ -607,18 +871,59 @@ def tidy_evidence(out_dir: Path) -> int:
                         ev = v["evidence"] = keep or [{"claim": NOT_AVAILABLE}]
                     for e in ev:
                         if isinstance(e, dict) and isinstance(e.get("claim"), str):
-                            new = tidy_claim(e["claim"])
+                            new = neutral_sources(tidy_claim(e["claim"]))
                             if new != e["claim"]:
                                 e["claim"] = new
                                 changed += 1
                                 dirty = True
-                    kept = collapse_not_available(ev)
+                    kept = drop_restated(collapse_not_available(ev))
                     if len(kept) != len(ev):
                         v["evidence"] = kept
                         dirty = True
         if dirty:
             write_json_atomic(side, part, indent=2)
     return changed
+
+
+_WORD = re.compile(r"[a-z0-9$%.]+")
+_FILLER = {"the", "company", "reports", "reported", "its", "a", "an", "of", "to", "and", "in", "for", "with",
+           "as", "by", "on", "that", "it", "has", "was", "is", "from", "at"}
+
+
+def drop_restated(ev: list) -> list:
+    """Drop a supporting point that restates an earlier one in other words
+    (open-ended evidence asks bring the same deal back: "a $1.2 billion AI
+    infrastructure order from Vultr" and "a $1.2 billion AI server rack deal
+    with cloud firm Vultr"). Same figures and most of the same words = same
+    finding; the earlier, original wording stays."""
+    def sig(text: str) -> tuple[set, set]:
+        words = {w.strip(".") for w in _WORD.findall(text.lower()) if w.strip(".") not in _FILLER}
+        # Figures, not dates: "October 2026" added to a restatement is not a new fact.
+        nums = {w for w in words if any(ch.isdigit() for ch in w) and not re.fullmatch(r"(?:19|20)\d\d", w)}
+        return nums, words
+
+    def restates(a: tuple[set, set], b: tuple[set, set]) -> bool:
+        (n1, w1), (n2, w2) = a, b
+        if n1 or n2:   # the same figures, and a good share of the same words
+            small, big = (n1, n2) if len(n1) <= len(n2) else (n2, n1)
+            shared = (w1 & w2) - n1 - n2   # words beyond the figures themselves
+            return (bool(small) and small <= big and len(shared) >= 2
+                    and (len(shared) >= 3 or len(w1 & w2) >= 0.3 * min(len(w1), len(w2))))
+        return len(w1 & w2) >= 0.7 * min(len(w1), len(w2))
+
+    kept, seen = [], []
+    for e in ev:
+        c = e.get("claim") if isinstance(e, dict) else e
+        if not isinstance(c, str) or not c.strip() or c.strip() == NOT_AVAILABLE:
+            kept.append(e)
+            continue
+        nums, words = sig(c)
+        same = any(restates((nums, words), s) for s in seen)
+        if same:
+            continue
+        seen.append((nums, words))
+        kept.append(e)
+    return kept
 
 
 def collapse_not_available(ev: list) -> list:

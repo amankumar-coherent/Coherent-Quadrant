@@ -29,6 +29,10 @@
   .panel{background:var(--slate50);border:1px solid var(--slate200);border-radius:10px;padding:16px}
   .panel .lbl{font-weight:700;color:var(--slate900);margin-bottom:4px}
   .panel .val{font-size:.92rem;color:var(--slate700)}
+  .rp-title{font-weight:700;font-size:1.05rem;color:#1F6FB2;margin-bottom:8px}
+  .rp-list{margin:0;padding-left:20px;color:var(--slate900)}
+  .rp-list li{margin:3px 0}
+  .grid2.rp{margin-bottom:18px}
   .muted{color:var(--slate500);font-size:.84rem;margin-top:8px}
   ol,ul{margin:0;padding-left:20px}
   ol li{margin-bottom:6px;color:var(--slate700)}
@@ -340,6 +344,9 @@ function parseReport(rec){
     methodology: parseMethodology(pick(rec,'methodology','research_methodology','method')),
     methodologyNote: asString(pick(rec,'methodology_note','scoring_note','footnote') || asRecord(rec.research_methodology).scoring_note),
     methodologyIntro: asString(pick(rec,'methodology_intro') || asRecord(rec.research_methodology).intro),
+    researchPanel: {
+      organisations: asStringList(asRecord(rec.research_panel).organisations, ['name','title']),
+      designations: asStringList(asRecord(rec.research_panel).designations, ['name','title']) },
     quadrantDefinitions: (Array.isArray(pick(rec,'quadrant_definitions','quadrantDefinitions'))
       ? pick(rec,'quadrant_definitions','quadrantDefinitions') : []).map(function(d){ var r = asRecord(d); return {
         quadrant: asString(pick(r,'quadrant')), title: asString(pick(r,'title')),
@@ -486,6 +493,21 @@ function definitionsHTML(){
     '<p class="lead">What each parameter measures and the evidence that shows strength.</p><div class="grid2">' +
     block('X — ' + report.xAxis.name, xN) + block('Y — ' + report.yAxis.name, yN) + '</div></section>'; }
 
+// Above the chart: who the research reached -- organisation types (always
+// including manufacturers) and the designations interviewed, per market.
+function researchPanelHTML(){
+  var p = report.researchPanel || {};
+  var orgs = p.organisations || [], roles = p.designations || [];
+  if (!orgs.length || !roles.length) return '';
+  function block(title, items){
+    return '<div class="panel"><div class="rp-title">' + esc(title) + '</div><ul class="rp-list">' +
+      items.map(function(i){ return '<li>' + esc(i) + '</li>'; }).join('') + '</ul></div>'; }
+  // Inside the chart's own section (not a section of its own): the printed
+  // report starts every section on a new page, and the panel belongs on the
+  // chart's page.
+  return '<div class="grid2 rp">' +
+    block('Organisations We Surveyed', orgs) + block('Designations We Spoke To', roles) + '</div>'; }
+
 function chartHTML(){
   var dots = charted.map(function(c){
     var pos = plotPosition(c);
@@ -507,6 +529,7 @@ function chartHTML(){
 
   return '<section class="card"><h2>Quadrant Positioning <span class="sub">(' + charted.length +
     ' on chart &middot; ' + report.companyCount + ' in total)</span></h2>' +
+    researchPanelHTML() +
     '<div class="chartrow"><div class="yaxis"><span>' + esc(report.yAxis.name) +
     ' ( Y AXIS ) &middot; EMERGING &rarr; BEST-IN-CLASS &rarr;</span></div>' +
     '<div class="plot"><div class="hline"></div><div class="vline"></div>' +

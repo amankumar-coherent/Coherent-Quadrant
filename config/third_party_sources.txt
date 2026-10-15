@@ -1,0 +1,69 @@
+# Third-party websites, platforms and outlets that the report must never NAME
+# (owner's rule 2026-10-12: "don't mention third-party names"). A finding that
+# rests on one stays, written in the house style "according to primary
+# research"; its links and source labels are removed. One regex per line,
+# case-insensitive; wrap a phrase that is also a plain English term in (?-i:...)
+# so only the capitalised name matches. Competing research publishers are in
+# research_publishers.txt (their bullets are removed), data-estimate sites in
+# estimate_sites.txt, review aggregators in directory_sites.txt.
+# B2B marketplaces, supplier directories and trade portals
+indiamart
+trade ?india
+made[- ]in[- ]china
+# The marketplace only: "Alibaba" / "Alibaba Cloud" named as a company (a customer, a peer) is not a source.
+alibaba\.com|(?:on|via|from) alibaba\b|alibaba (?:marketplace|listing|store|supplier|page|profile)
+aliexpress
+global ?sources
+tradewheel
+\bec21\b
+exporthub
+go4worldbusiness
+kompass
+thomasnet
+europages
+# CPHI the trade show is a real event ("at CPHI China"); only its online directory is a source
+\bcphi[ -]?online\b
+knowde
+ingredients ?network
+pharmaoffer
+pharmacompass
+jctrans
+egypt-business
+yellow ?pages
+justdial
+cnprimesource
+ul ?prospector
+specialchem
+# Document sharing and social networks
+scribd
+issuu
+slideshare
+yumpu
+docplayer
+linkedin
+# The social site only: Facebook / Meta named as a company (a hyperscale customer) is not a source.
+facebook\.com|(?:on|via|its|their|official) facebook\b|facebook (?:page|post|profile|account|group)
+instagram
+youtube
+# Company-data, registry and investor databases
+preqin
+informat\.ro
+zauba
+opencorporates
+bizprofile
+# Trade press, newswires and rating agencies
+fierce ?pharma
+(?-i:Pharmaceutical Technology)
+antaranews|antara news
+ked ?global
+pharmabiz
+in-?pharmatechnologist
+(?-i:European Pharmaceutical Review)
+(?-i:Contract Pharma)
+outsourcing-?pharma
+pr ?newswire
+business ?wire
+globe ?newswire
+(?-i:CARE Ratings)
+\bcrisil\b
+\bicra\b

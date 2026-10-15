@@ -171,6 +171,11 @@ def _house_style(text: str) -> str:
 
 def _country(hq: str) -> str:
     c = str(hq or "").split(",")[-1].strip().lower().rstrip(".")
+    # AI Mode sometimes copies the template word back ("Jundiaí, Country"); a
+    # placeholder is no country at all, so it can never "differ" and replace a
+    # real HQ (four Brazil RO companies showed "City, Country").
+    if c in {"country", "unknown", "n/a", "na", "none", "not disclosed", ""}:
+        return ""
     return _COUNTRY_ALIASES.get(c, c)
 
 

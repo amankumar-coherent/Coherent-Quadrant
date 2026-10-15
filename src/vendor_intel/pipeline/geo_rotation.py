@@ -148,6 +148,25 @@ STATES_BY_COUNTRY: dict[str, tuple[str, ...]] = {
         "South West England (Exeter, Plymouth, Bournemouth and Poole)",
         "Bedfordshire, Berkshire and the M1/M4 corridors (Luton, Bedford and Bracknell)",
     ),
+    # Brazilian states with their main business cities, largest industrial bases first.
+    "brazil": (
+        "São Paulo state (São Paulo city, Campinas, São José dos Campos, Sorocaba and Ribeirão Preto)",
+        "Rio de Janeiro state (Rio de Janeiro, Niterói, Duque de Caxias and Macaé)",
+        "Minas Gerais (Belo Horizonte, Contagem, Uberlândia and Juiz de Fora)",
+        "Paraná (Curitiba, Londrina, Maringá and Ponta Grossa)",
+        "Santa Catarina (Joinville, Florianópolis, Blumenau and Jaraguá do Sul)",
+        "Rio Grande do Sul (Porto Alegre, Caxias do Sul, Novo Hamburgo and Canoas)",
+        "Bahia (Salvador, Camaçari and Feira de Santana)",
+        "Pernambuco (Recife, Jaboatão and Suape)",
+        "Ceará (Fortaleza and Maracanaú)",
+        "Goiás and Distrito Federal (Goiânia, Anápolis and Brasília)",
+        "Espírito Santo (Vitória, Serra and Vila Velha)",
+        "Amazonas and Pará (Manaus, Belém and Barcarena)",
+        "Mato Grosso and Mato Grosso do Sul (Cuiabá, Campo Grande and Rondonópolis)",
+        "Rio Grande do Norte, Paraíba and Alagoas (Natal, João Pessoa, Campina Grande and Maceió)",
+        "Maranhão, Piauí and Sergipe (São Luís, Teresina and Aracaju)",
+        "Tocantins, Rondônia, Acre, Roraima and Amapá (Palmas, Porto Velho, Rio Branco, Boa Vista and Macapá)",
+    ),
 }
 # Other names for the same country.
 for _alias in ("uk", "u.k.", "great britain", "britain"):
@@ -164,6 +183,13 @@ def states_for(country: str) -> list[str]:
     # turned "thailand" into "ailand".
     key = " ".join(str(country or "").split()).strip().lower().removeprefix("the ").strip()
     areas = list(STATES_BY_COUNTRY.get(key, ()))
+    import os
+    import re
+
+    if (os.environ.get("DISCOVER_STATE_NAMES_ONLY") or "").strip().lower() in ("1", "true", "yes"):
+        # State by state, not city by city (owner 2026-10-14): drop the city hints
+        # ("Maharashtra (Mumbai and Pune)" -> "Maharashtra").
+        areas = [re.sub(r"\s*\([^)]*\)", "", a).strip() for a in areas]
     return area_shard(areas)
 
 

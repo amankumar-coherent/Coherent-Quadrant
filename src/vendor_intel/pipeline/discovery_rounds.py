@@ -115,6 +115,32 @@ _BLOCKED_MARKERS = (
 )
 
 
+def _round_scope(limit: int = 1400) -> str:
+    """MARKET_SCOPE for the discovery prompt, cut at a sentence end within
+    `limit` characters (the whole prompt must fit AI Mode's ~8 KB URL)."""
+    scope = " ".join((os.getenv("MARKET_SCOPE") or "").split())
+    if len(scope) <= limit:
+        return scope
+    cut = scope[:limit]
+    end = max(cut.rfind(". "), cut.rfind("; "))
+    return (cut[: end + 1] if end > limit // 2 else cut).rstrip() + " ..."
+
+
+def _focus_areas() -> list[str]:
+    """DISCOVER_FOCUS_AREAS="India;United States;Southeast Asia": the market brief's
+    focus countries / areas. In global-focus mode they are asked first once the broad
+    question runs dry, before the world regions (owner 2026-10-14: "search global,
+    and focus only on the countries the market names")."""
+    raw = os.getenv("DISCOVER_FOCUS_AREAS") or ""
+    return [a.strip() for a in raw.replace(",", ";").split(";") if a.strip()]
+
+
+def _skip_country_tier() -> bool:
+    """DISCOVER_SKIP_COUNTRY_TIER=1: global-focus mode -- no sweep of every country;
+    broad question, focus areas, then the world regions (re-swept)."""
+    return (os.getenv("DISCOVER_SKIP_COUNTRY_TIER") or "").strip().lower() in ("1", "true", "yes")
+
+
 def _is_blocked(err: BaseException) -> bool:
     """True when the backend refused to answer rather than finding nothing."""
     name = type(err).__name__.lower()
@@ -335,12 +361,12 @@ def build_round_prompt(
             )
             if is_service_market else
             (
-                "- brand: the product / consumer-facing BRAND name as buyers know it "
-                '(e.g. "Milton"). A brand is NOT a distributor and NOT a product '
+                "- brand: the product / consumer-facing BRAND name as buyers know it. "
+                "A brand is NOT a distributor and NOT a product "
                 "category. If the company genuinely sells only under its own corporate "
                 "name, repeat that name here rather than inventing a brand.\n"
                 "- company: the legal entity that OWNS, manufactures under, or is "
-                'responsible for that brand (e.g. "Hamilton Housewares Pvt. Ltd."). '
+                "responsible for that brand (its full legal name). "
                 "NEVER a distributor, reseller or channel partner — those carry the "
                 "brand, they do not own it. If a contract manufacturer merely makes "
                 "the product, the brand OWNER still goes here.\n"
@@ -708,6 +734,15 @@ def discover_in_rounds(
         if not max_rounds:
             limit = max(limit, len(country_queue) * (EMPTY_ROUNDS_PER_COUNTRY + 2) + 4)
 
+    # DISCOVER_START_TIER=state: a single-country run goes straight to its
+    # state-by-state sweep (each parallel browser on its own states, via
+    # GEO_AREA_SHARD in states_for) instead of the country-wide ask first.
+    if (single_country and state_queue
+            and (os.getenv("DISCOVER_START_TIER") or "").strip().lower() == "state"):
+        escalating = True
+        region_queue, state_queue = list(state_queue), []
+        focus_region = region_queue.pop(0) if region_queue else ""
+
     while len(found) < target and rounds < limit:
         rounds += 1
         system, user = build_round_prompt(
@@ -733,6 +768,12 @@ def discover_in_rounds(
             focus_region=focus_region,
             # Keeps every round inside the country a run is scoped to.
             country=country if single_country else "",
+            # The run's scope (market brief, MARKET_SCOPE) was never passed here,
+            # so discovery saw only the market title: "Global Data Center Market"
+            # brought back colocation / cloud operators that the scope excludes
+            # and verify then dropped (owner 2026-10-15: 179 of 180). Capped so
+            # the prompt stays inside AI Mode's URL limit.
+            scope=_round_scope(),
         )
         try:
             data = ask_json(system, user, f"discover-round-{rounds}")
@@ -807,6 +848,8 @@ def discover_in_rounds(
                     # model names the two obvious South African firms and
                     # stops. Asking "...headquartered in Nigeria" is a
                     # different question that reaches national players.
+                    if _skip_country_tier():
+                        countries_done = True
                     if len(found) < target and not country_queue and not countries_done:
                         countries_done = True
                         country_queue = all_countries_by_coverage(found)
@@ -837,7 +880,11 @@ def discover_in_rounds(
                 region_queue = list(state_queue)
                 state_queue = []
             else:
-                region_queue = [r for r in under_covered(found, limit=len(REGIONS))]
+                # GEO_AREA_SHARD gives each parallel browser its own regions,
+                # so ten browsers do not all ask about the same region.
+                region_queue = area_shard([r for r in under_covered(found, limit=len(REGIONS))])
+                focus = [a for a in _focus_areas() if a not in region_queue]
+                region_queue = focus + region_queue
             focus_region = region_queue.pop(0) if region_queue else ""
             region_empty = 0
             empty_streak = 0

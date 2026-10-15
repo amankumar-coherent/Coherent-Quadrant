@@ -154,6 +154,17 @@ def load_review(pipe_dir: Path, *, include_auto: bool = True) -> dict[str, list[
     exclude += list(review.get("exclude") or [])
     adjacent = [r for r in auto.get("adjacent") or [] if norm_name(r.get("company") or "") not in scope]
     adjacent += [r for r in review.get("scope") or [] if str(r.get("scope") or "").lower() == "adjacent"]
+    # Market brief "adjacent_policy": "exclude" (one-player-type reports): an
+    # adjacent decision from ANY layer -- the 3c scope check, the chart
+    # fact-check or the analyst -- removes the company from the whole report,
+    # not just from the chart (the fact-check's used to leave it in the long tail).
+    brief = _read(Path(pipe_dir) / "market_brief.json", {}) or {}
+    if str(brief.get("adjacent_policy") or "").strip().lower() == "exclude":
+        exclude += [{"company": r["company"],
+                     "reason": f"Not this report's player type (adjacent): {r.get('reason') or ''}".strip(),
+                     "source": r.get("source") or "scope review"}
+                    for r in adjacent if norm_name(r.get("company") or "") not in keep]
+        adjacent = []
     ownership = [r for r in auto.get("ownership") or []
                  if norm_name(r.get("company") or "") not in manual_own] + list(review.get("ownership") or [])
     display = [r for r in auto.get("display") or []
@@ -299,6 +310,12 @@ def apply_corrections(out_dir: Path, corrections: Iterable[dict[str, str]],
         # Sidecars key a company by whichever name scored it ("Coupa Software",
         # "Coupa Software Inc.", brand "Coupa"); a reviewer may use any of them.
         row["_names"] = same.get(norm_name(row["company"]), {norm_name(row["company"])})
+        # A correction written against the REPORT text carries its house wording
+        # ("..., as per our findings"); the evidence files keep the pipeline's
+        # own phrasing, so look for that form when the report form is absent.
+        from vendor_intel.pipeline.house_wording import to_legacy
+
+        row["_legacy_find"] = to_legacy(row["find"])
     for side in sorted(Path(out_dir).glob("param_detail_prescored*.json")):
         part = _read(side, None)
         if not isinstance(part, dict):
@@ -320,8 +337,9 @@ def apply_corrections(out_dir: Path, corrections: Iterable[dict[str, str]],
                             # the replacement itself; it still counts as applied.
                             rep = row.get("replace") or ""
                             done = bool(rep) and (rep in t or bool(normalize) and normalize(rep) in t)
-                            if row["find"] in t and not (done and row["find"] in row["replace"]):
-                                obj[key] = t.replace(row["find"], row.get("replace", ""))
+                            find = row["find"] if row["find"] in t else row["_legacy_find"]
+                            if find in t and not (done and row["find"] in row["replace"]):
+                                obj[key] = t.replace(find, row.get("replace", ""))
                                 row["changed"] += 1
                                 dirty = True
                             elif done:

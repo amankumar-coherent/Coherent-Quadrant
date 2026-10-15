@@ -11,6 +11,7 @@ import os
 import random
 import re
 import time
+import unicodedata
 from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
@@ -31,6 +32,9 @@ _NAME_SUFFIXES = {
     "corp", "corporation", "company", "gmbh", "ag", "sa", "sas", "srl", "spa",
     "bv", "nv", "ab", "as", "asa", "oy", "pte", "pty", "pvt", "private",
     "kk", "kft", "sp", "zoo", "the",
+    # Brazilian / Latin American legal forms: "Despurifil Ltda", "X Eireli" and
+    # "X S/A" were kept apart from "Despurifil" and charted twice.
+    "ltda", "eireli", "epp",
 }
 
 
@@ -131,6 +135,10 @@ def norm_name(name: str) -> str:
     # first, so they match the suffix list like "SpA" / "Srl" / "SA" / "BV".
     text = re.sub(r"\b(?:[A-Za-z]\.){1,3}[A-Za-z]\.?(?=\s|$|,)",
                   lambda m: m.group(0).replace(".", ""), str(name or ""))
+    # Accents folded, not dropped: "Indústria" and "Industria" are one word
+    # ("ind stria" never matched its unaccented spelling).
+    text = "".join(c for c in unicodedata.normalize("NFKD", text) if not unicodedata.combining(c))
+    text = re.sub(r"\bS\s*/\s*A\b", "SA", text, flags=re.I)  # "S/A" = "SA"
     words = re.sub(r"[^a-z0-9 ]+", " ", text.lower()).split()
     core = [w for w in words if w not in _NAME_SUFFIXES]
     return " ".join(core or words)
@@ -243,6 +251,35 @@ def evidence_gaps(
         if missing or no_reason:
             gaps[n] = {"missing": missing, "no_reasoning": no_reason}
     return gaps
+
+
+PART_ASKED_FILE = "part_fill_asked.json"
+
+
+def part_gaps(
+    evidence: dict, names: Iterable[str], x_params: list[str], y_params: list[str],
+    asked: Iterable[str] = (),
+) -> dict[str, list[list[str]]]:
+    """{name: [[axis, parameter, part], ...]} -- parts of a multi-part parameter
+    ("Revenue & Growth" -> growth) that no supporting point covers yet and that
+    were not asked about already (each part is asked once per market: a part
+    with nothing documented stays as it is). Owner 2026-10-15."""
+    from vendor_intel.quadrant.ai_mode_scorer import uncovered_parts
+
+    done = set(asked)
+    out: dict[str, list[list[str]]] = {}
+    for n in names:
+        rec = evidence.get(n) or {"x": {}, "y": {}}
+        for axis, params in (("x", x_params), ("y", y_params)):
+            for p in params:
+                v = rec[axis].get(p)
+                if not v:
+                    continue
+                claims = [str(e.get("claim") or "") for e in v.get("evidence") or [] if isinstance(e, dict)]
+                for part in uncovered_parts(p, claims):
+                    if f"{n}|{p}|{part}" not in done:
+                        out.setdefault(n, []).append([axis, p, part])
+    return out
 
 
 def is_complete(evidence: dict, name: str, x_params: list[str], y_params: list[str]) -> bool:

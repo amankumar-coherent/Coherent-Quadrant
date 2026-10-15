@@ -907,11 +907,20 @@ def verify_report(brands: list[dict]) -> list[str]:
             for p, v in (((b.get("score_detail") or {}).get(axis) or {}).get("parameters") or {}).items():
                 text = str(v.get("assessed_on") or "")
                 for e in v.get("estimates") or []:
+                    # The report carries the house wording ("... is approximately",
+                    # "... is <estimate>, based on ..."; house_wording.py); the old
+                    # "can be estimated" form is still accepted.
+                    m, val = e.get("metric"), e.get("estimated_value")
                     if e.get("value_type") == "estimated" and not (
                             e.get("basis") and e.get("confidence") in LEVELS
-                            and f"{e.get('metric')} can be estimated at approximately "
-                            f"{e.get('estimated_value')}" in text):
-                        bad.append(f"{b.get('company')} / {p}: {e.get('metric')}")
+                            and (f"{m} can be estimated at approximately {val}" in text
+                                 or f"{m} is approximately {val}" in text)):
+                        bad.append(f"{b.get('company')} / {p}: {m}")
+                    if e.get("value_type") == "estimated_qualitative":
+                        s = next((s for s in sentences(text) if f"{m} is {val}" in s
+                                  or f"{m} can be estimated as {val}" in s), "")
+                        if s and (", based on " not in s or _FIGURE.search(str(val or ""))):
+                            bad.append(f"{b.get('company')} / {p}: worded estimate without basis or with a number")
                 for s in sentences(text):
                     if " can be estimated at " in s and not ("approximately" in s and "derived from" in s):
                         bad.append(f"{b.get('company')} / {p}: unlabelled estimate")

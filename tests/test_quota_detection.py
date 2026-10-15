@@ -142,10 +142,13 @@ def test_a_locked_profile_is_cleared_and_retried():
 def test_only_a_lock_error_is_retried():
     """Any other launch failure must still surface, not be silently retried."""
     src = inspect.getsource(gam.AiModeSession._ensure_browser)
-    # The guard reads: if it is NOT a lock error, re-raise.
-    assert 'if "existing browser session" not in str(err).lower():' in src
-    guard = src.split('not in str(err).lower():', 1)[1][:80]
+    # The guard reads: if it is NOT a lock (or closed-at-start-up) error, re-raise.
+    assert 'if "existing browser session" not in msg and "has been closed" not in msg:' in src
+    guard = src.split('"has been closed" not in msg:', 1)[1][:80]
     assert "raise" in guard
+    # A failed launch stops Playwright, or every later query fails with
+    # "Sync API inside the asyncio loop".
+    assert "self._pw.stop()" in src
 
 
 def test_the_orphan_kill_is_scoped_to_our_profile():

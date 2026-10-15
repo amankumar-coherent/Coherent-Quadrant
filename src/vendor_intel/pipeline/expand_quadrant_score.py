@@ -1422,8 +1422,13 @@ def export_expand_quadrant_outputs(
 
     from vendor_intel.quadrant.html_report import write_quadrant_html_report
 
+    from vendor_intel.pipeline import house_wording
+
     out_p = Path(out_dir)
     out_p.mkdir(parents=True, exist_ok=True)
+    # Client-facing wording ("As per our findings, ... is ...") is applied here,
+    # once, to everything the report writes; the pipeline keeps its own phrases.
+    detail_rows = house_wording.apply(detail_rows)
     slug = out_p.name
     csv_path = out_p / f"{slug}_companies.csv"
     html_path = out_p / f"{slug}_report.html"
@@ -1437,9 +1442,38 @@ def export_expand_quadrant_outputs(
                         else r.get(h, "")
                         for h in DETAIL_COLUMNS])
 
-    payload = build_expand_quadrant_payload(
+    payload = house_wording.apply(build_expand_quadrant_payload(
         detail_rows, query, country=country, audit=audit, chart_n=chart_n
-    )
+    ))
+    # The market brief's long definition drives discovery and the checks (every
+    # product segment, every exclusion); the report shows the brief's short,
+    # client-facing "report_definition" when there is one (owner 2026-10-15), and
+    # never an internal file note ("Set by the market brief (_pipeline/...)").
+    def _read(name: str) -> dict:
+        try:
+            return json.loads((out_p / "_pipeline" / name).read_text(encoding="utf-8")) or {}
+        except (OSError, ValueError):
+            return {}
+
+    brief, panel = _read("market_brief.json"), _read("research_panel.json")
+    rel = (payload.get("criteria") or {}).get("relevance")
+    if isinstance(rel, dict):
+        # A brief's own text wins; else step 2c's (AI Mode, per market).
+        short = str(brief.get("report_definition") or panel.get("report_definition") or "").strip()
+        if short:
+            rel["market_definition"] = " ".join(short.split())
+        reason = str(rel.get("player_type_reason") or "")
+        better = str(brief.get("player_type_reason") or panel.get("player_type_reason") or "").strip()
+        if better and (not reason or re.search(r"_pipeline|market[ _]brief|\.json", reason, re.I)
+                       or brief.get("player_type_reason")):
+            rel["player_type_reason"] = " ".join(better.split())
+        elif re.search(r"_pipeline|market[ _]brief|\.json", reason, re.I):
+            rel["player_type_reason"] = ""   # never an internal file note in a report
+    # "Organisations We Surveyed" / "Designations We Spoke To", shown above the
+    # chart (step 2c writes it per market from AI Mode).
+    if panel.get("organisations") and panel.get("designations"):
+        payload["research_panel"] = {"organisations": panel["organisations"],
+                                     "designations": panel["designations"]}
     # The JSON carries the same methodology text the report displays.
     from vendor_intel.quadrant.html_report import methodology_content
     from vendor_intel.quadrant.quadrant_language import (

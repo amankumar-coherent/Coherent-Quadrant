@@ -1659,6 +1659,8 @@ def render_quadrant_html(payload: dict[str, Any]) -> str:
         # before the scorecard that is built from them.
         + _market_classification_panel(payload)
         + _parameters_panel(payload, x_name, y_name)
+        # Who the research reached, directly above the chart (owner 2026-10-15).
+        + _research_panel(payload)
         # The Company Parameter Scorecard is gone. Its expandable score discs
         # now live in the Top 20 table, so the breakdown is where a reader is
         # already looking. Per-parameter scores for every company remain in
@@ -1685,6 +1687,26 @@ def render_quadrant_html(payload: dict[str, Any]) -> str:
         f"<title>Coherent Quadrant — {_esc(market)}</title>"
         f"<style>{_CSS}</style></head><body><div class=\"page\">{body}</div></body></html>"
     )
+
+
+def _research_panel(payload: dict[str, Any]) -> str:
+    """'Organisations We Surveyed' / 'Designations We Spoke To' (step 2c,
+    per market; manufacturers are always among the organisations)."""
+    panel = payload.get("research_panel") or {}
+    orgs = [str(o) for o in panel.get("organisations") or [] if str(o).strip()]
+    roles = [str(r) for r in panel.get("designations") or [] if str(r).strip()]
+    if not orgs or not roles:
+        return ""
+
+    def block(title: str, items: list[str]) -> str:
+        return (f'<div style="flex:1;min-width:260px">'
+                f'<h3 style="color:#1F6FB2;margin:0 0 8px;font-size:1.1rem">{_esc(title)}</h3>'
+                '<ul style="margin:0;padding-left:20px">'
+                + "".join(f"<li>{_esc(i)}</li>" for i in items) + "</ul></div>")
+
+    return ('<div class="panel research-panel"><div style="display:flex;gap:28px;flex-wrap:wrap">'
+            + block("Organisations We Surveyed", orgs) + block("Designations We Spoke To", roles)
+            + "</div></div>")
 
 
 def write_quadrant_html_report(

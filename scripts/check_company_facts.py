@@ -139,8 +139,12 @@ def main() -> int:
             save()
     elif args.mode == "scope":
         analysis = data.get("market_analysis") or {}
+        brief = json.loads((pipe / "market_brief.json").read_text(encoding="utf-8")) \
+            if (pipe / "market_brief.json").exists() else {}
         system = cf.scope_prompt(args.market, scope, str(analysis.get("core_scope") or ""),
-                                 analysis.get("adjacent_segments") or [])
+                                 analysis.get("adjacent_segments") or [],
+                                 own_product_line=str(brief.get("scope_test") or "").strip().lower()
+                                 == "own_product_line")
         todo = [n for n in names if n not in done and n not in merged]
         log(f"scope: {len(todo)} companies to check")
         for i in range(0, len(todo), BATCH):

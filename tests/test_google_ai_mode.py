@@ -390,15 +390,16 @@ def test_no_api_fallback_when_ai_mode_enabled(monkeypatch):
         ce._chat_json(None, "deepseek-v4-flash", "sys", "user", require_key="companies")
 
 
-def test_captcha_cools_off_then_succeeds(monkeypatch):
-    """A transient block must not kill the run — waiting is the correct
-    response to a rate limit, so it retries after a cool-off."""
+def test_captcha_resets_browser_then_succeeds(monkeypatch):
+    """A transient block must not kill the run, and a stuck browser is reset
+    -- fresh profile, cookies, browser -- with no cool-off (owner 2026-10-11)."""
     from vendor_intel.pipeline import chatgpt_expand as ce
 
     monkeypatch.setenv("GOOGLE_AI_MODE_ENABLED", "true")
-    slept = []
+    slept, resets = [], []
     monkeypatch.setattr(ce.time, "sleep", lambda s: slept.append(s))
 
+    monkeypatch.setattr(gam, "reset_live_browser", lambda reason: resets.append({"reason": reason}) or True)
     calls = {"n": 0}
 
     def _flaky(prompt, **kw):
@@ -410,7 +411,8 @@ def test_captcha_cools_off_then_succeeds(monkeypatch):
     monkeypatch.setattr(gam, "ask", _flaky)
     out = ce._chat_json(None, "deepseek-v4-flash", "sys", "user", require_key="companies")
     assert out["companies"][0]["name"] == "Zoetis"
-    assert slept and slept[0] >= 300, "a rate limit needs a long cool-off"
+    assert resets == [{"reason": "ratelimit"}], "a block resets profile, cookies and browser"
+    assert not slept, f"no cool-off after a block, slept {slept}"
 
 
 def test_refusal_retries_immediately_without_cooling_off(monkeypatch):
@@ -658,7 +660,7 @@ def test_reset_session_clears_cookies_and_relaunches(monkeypatch):
 
     s.reset_session()
 
-    assert calls == ["clear_cookies", "close", "sleep60", "relaunch"]
+    assert calls == ["clear_cookies", "close", "relaunch"]  # no cool-off (owner 2026-10-11)
     # The streak survives a cookie reset on purpose: if no-answer pages keep
     # coming, reaching _SOFT_FAILURES_BEFORE_PROFILE_RESET escalates to a full
     # profile reset. Only a good answer or reset_profile() clears it.
@@ -699,14 +701,16 @@ def test_session_tracks_quota_hits_separately_from_captchas():
     assert s.captcha_count == 0
 
 
-def test_quota_gets_a_longer_cooloff_than_a_captcha(monkeypatch):
-    """A few minutes just burns another attempt against the same wall."""
+def test_quota_resets_profile_without_cooloff(monkeypatch):
+    """An AI-response quota also gets a fresh profile and no wait (owner
+    2026-10-11: no cool-off, only reset browser and cookies)."""
     from vendor_intel.pipeline import chatgpt_expand as ce
 
     monkeypatch.setenv("GOOGLE_AI_MODE_ENABLED", "true")
-    slept = []
+    slept, resets = [], []
     monkeypatch.setattr(ce.time, "sleep", lambda s: slept.append(s))
 
+    monkeypatch.setattr(gam, "reset_live_browser", lambda reason: resets.append({"reason": reason}) or True)
     calls = {"n": 0}
 
     def _quota_then_ok(prompt, **kw):
@@ -718,7 +722,8 @@ def test_quota_gets_a_longer_cooloff_than_a_captcha(monkeypatch):
     monkeypatch.setattr(gam, "ask", _quota_then_ok)
     out = ce._chat_json(None, "deepseek-v4-flash", "sys", "user", require_key="companies")
     assert out["companies"][0]["name"] == "Wolfspeed"
-    assert slept and slept[0] >= 900, f"quota needs >=15 min, slept {slept}"
+    assert resets == [{"reason": "quota"}]
+    assert not slept, f"no cool-off after a quota page, slept {slept}"
 
 
 def test_reset_threshold_is_reachable_within_the_retry_budget():
@@ -798,3 +803,37 @@ def test_parse_json_answer_ignores_filled_template_echoed_from_prompt():
     real = prompt + '\n{"results":[{"verdict":"correct","note":"site states it"}]}'
     got = gam.parse_json_answer(real, require_key="results", prompt=prompt)
     assert got["results"][0]["verdict"] == "correct"
+
+
+def test_block_without_a_live_browser_never_resets_a_real_profile(monkeypatch):
+    """No browser opened by this process (a faked block): the reset touches
+    nothing on disk and reports False."""
+    monkeypatch.setattr(gam, "_SESSION", None)
+    assert gam.reset_live_browser("ratelimit") is False
+
+    class _Idle:
+        _ctx = None
+
+        def reset_profile(self, **kw):
+            raise AssertionError("must not reset a session without a browser")
+
+    monkeypatch.setattr(gam, "_SESSION", _Idle())
+    assert gam.reset_live_browser("ratelimit") is False
+
+
+def test_reset_runs_on_the_browser_thread(monkeypatch):
+    """patchright objects belong to the ai-mode-browser thread; a reset from
+    another thread broke every later query ("Cannot switch to a different thread")."""
+    import threading
+
+    seen = []
+
+    class _Live:
+        _ctx = object()
+
+        def reset_profile(self, **kw):
+            seen.append(threading.current_thread().name)
+
+    monkeypatch.setattr(gam, "_SESSION", _Live())
+    assert gam.reset_live_browser("ratelimit") is True
+    assert seen and seen[0].startswith("ai-mode-browser")

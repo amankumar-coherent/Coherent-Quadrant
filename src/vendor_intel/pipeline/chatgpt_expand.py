@@ -1339,10 +1339,17 @@ def _ai_mode_json(
 
     last_err: Exception | None = None
     prompt_user = user
-    for attempt in range(1, retries + 1):
+    # A block (CAPTCHA / quota / rate limit) is answered by a fresh browser, and
+    # with ten browsers on one IP the first fresh one is often blocked too; the
+    # batch is lost if the call then raises, so blocks get a larger budget
+    # (owner 2026-10-13: five browsers died on "rate limited after 4 attempts").
+    block_budget = max(retries, int(os.getenv("AI_MODE_BLOCK_RETRIES", "8")))
+    attempt, blocks = 0, 0
+    while attempt < retries + blocks and attempt < block_budget + retries:
+        attempt += 1
         _log(
             f"      · {label}: calling Google AI Mode (udm=50) "
-            f"attempt {attempt}/{retries}…"
+            f"attempt {attempt}/{retries + blocks}…"
         )
         try:
             data = gam.chat_json(system, prompt_user, require_key=require_key)
@@ -1352,19 +1359,28 @@ def _ai_mode_json(
             return data
         except gam.AiModeCaptcha as err:
             last_err = err
-            # Rate limited by IP: only waiting helps. An AI-response QUOTA
-            # ("reached the request limit") needs far longer than a CAPTCHA
-            # cool-off — Google is metering answers per IP, so a few minutes
-            # just burns another attempt against the same wall.
+            # A stuck browser is reset, never left to cool off (owner
+            # 2026-10-11: "don't put cool off, only reset browser and
+            # cookies"): the flagged profile is archived and a fresh one --
+            # new cookies, new browser -- retries at once. Sleeping 5-10 min
+            # on the same flagged profile held a whole step for one browser.
             is_quota = "request limit" in str(err).lower()
-            cool_off = (900.0 if is_quota else 300.0) * attempt
             _log(
                 f"      · {label}: "
                 + ("AI-response quota reached" if is_quota else "rate limited")
-                + f" ({err}) — cooling off {cool_off / 60:.0f} min before retrying"
+                + f" ({err}) — resetting profile, cookies and browser, retrying now"
             )
-            if attempt < retries:
-                time.sleep(cool_off)
+            # Only a browser this process opened is reset, on its own thread
+            # (gam.reset_live_browser): with no live browser (a test faking
+            # the block) a reset would archive a real profile on disk.
+            blocks = min(blocks + 1, block_budget)
+            if attempt < retries + blocks:
+                try:
+                    gam.reset_live_browser("quota" if is_quota else "ratelimit")
+                except Exception as reset_err:  # noqa: BLE001
+                    # A failed reset must not end the step; the next attempt
+                    # opens whatever browser it can.
+                    _log(f"      · {label}: profile reset failed ({reset_err})")
         except gam.AiModeRefusal as err:
             last_err = err
             # Waiting is useless; reword and go again immediately.
@@ -1384,7 +1400,7 @@ def _ai_mode_json(
             last_err = err
             _log(f"      · {label}: AI Mode error: {type(err).__name__}: {err}")
     raise RuntimeError(
-        f"{label}: Google AI Mode failed after {retries} attempts "
+        f"{label}: Google AI Mode failed after {attempt} attempts "
         f"(no API fallback is configured): {last_err}"
     )
 
@@ -2813,6 +2829,12 @@ def gpt_verify_market(
         + "For EACH company you MUST return one result. Never skip a name. "
         "fits_criteria=true only if they match the required type for this market. "
         "When unsure, fits_criteria=false and in_market=false. "
+        # Never defined before: in a services market AI Mode read it as "owns the
+        # assets it services" and set it false for every telecom-tower inspection
+        # firm (owner 2026-10-14: 147 of 147 real service firms dropped).
+        "builds_or_owns=true when the company itself makes, owns or markets the product, or -- for "
+        "a Service Provider -- itself delivers the service under its own name (it need not own the "
+        "assets it inspects, maintains or operates on); false for a reseller, agent or directory. "
         f"Return compact JSON only: {json_shape}"
     )
 
@@ -3071,8 +3093,8 @@ async def gpt_fill_rows(
         "web results. If not found, use exactly \"Not publicly disclosed\". NEVER invent "
         "a year, city, or brand list. For Founded: use the business founding year "
         "(when the company/trade began), NOT a later incorporation, IPO, rebrand, or "
-        "subsidiary registration year. Never copy another brand's year "
-        "(e.g. do not give Rexel WESCO's 1922).\n"
+        "subsidiary registration year. Never copy another company's or a "
+        "parent's founding year.\n"
         "2) Continent / Geography = markets served, prefer REGION(Country[, Country…]) "
         "e.g. APAC(India, Singapore); EU(Germany). "
         "Operational Presence = physical footprint countries (HQ/offices/plants) as "
@@ -3081,9 +3103,8 @@ async def gpt_fill_rows(
         "(from their site or reliable listing). Do NOT paste generic market brand lists.\n"
         "3b) Market Offering = what THIS company actually offers in THIS market, "
         "matched to its role. If it manufactures, name its own product line or "
-        "product brand in this market (e.g. \"Apoquel\", \"Rimadyl\"). If it "
-        "provides a service, name that service (e.g. \"Veterinary diagnostics "
-        "laboratory services\"). If it distributes, name what it distributes. "
+        "product brand in this market. If it provides a service, name that "
+        "service. If it distributes, name what it distributes. "
         "Name the specific offering, NOT the company name again, and NOT a "
         "competitor's brand. Leave it EMPTY if the company sells only under its "
         "own name with no separate product brand — an empty value is CORRECT "

@@ -139,6 +139,7 @@ It should print `extensions loaded: ['Free AI ReCaptcha Solver by Raptor ...']`.
 | `--max-discover-rounds` | top-up rounds cap (default 10) |
 | `--top-n` | chart size (default 20) |
 | `--slots 41-50` | browser profiles for parallel scoring (fewer on slow machines) |
+| `--evidence-slots 41-60` | step 5 (deep evidence) only: its own browser range, e.g. 20 browsers = one chart company each; other steps keep `--slots` (default: same as `--slots`) |
 | `--skip-facts` | skip step 3c's AI Mode queries (saved ownership / identity answers still apply) |
 | `--no-pdf` | do not print the PDF (step 8b) |
 | `--no-docx` | do not write the Word copy (step 8b) |
@@ -181,7 +182,9 @@ many markets hit "unusual traffic", use fewer workers or a higher
 
 The run ends with a **VERIFY** block; every line must be `[PASS]`:
 5 params on X and Y · Capability axis titles (X by player type) · no
-inactive / acquired / review-excluded company listed · no market-research
+inactive / acquired / review-excluded company listed (a brand that reads like a
+different checked company does not count: "Liquify Digital Ltd" is not the
+excluded "Liquify Ltd.") · no company whose owner or co-owner is also listed · no market-research
 publisher named (competitors; list in `config/research_publishers.txt`, the
 evidence prompts forbid citing them) · Top companies have
 score+evidence+reasoning for all 10 parameters · report keeps N (with `--keep`) ·
@@ -194,7 +197,11 @@ raw links in brackets); no employee-review site
 (`config/employee_review_sites.txt`) and no modelled-estimate site
 (`config/estimate_sites.txt`: RocketReach, ZoomInfo, Endole, D&B, GlobalDatabase, Crunchbase, …) cited; such bullets are also removed before step 5, so a parameter left empty is re-asked in the same run · every company
 has an HQ · every X/Y ≥ 65 · estimated figures labelled "estimated … approximately", with basis
-and confidence · chart fact-check complete for every chart company.
+and confidence · chart fact-check complete for every chart company · research panel above
+the chart (organisation types incl. manufacturers, designations) · market definition shown
+is short (<= 100 words) with no internal file note · report wording is
+"As per our findings", estimates read "... is ..." (no "Based on primary research" /
+"can be estimated" left).
 
 Evidence prompts also carry EVIDENCE RULES (`ai_mode_scorer.EVIDENCE_RULES`):
 project status and date exactly as the source states; company-stated claims
@@ -225,7 +232,7 @@ estimate / review / research-publisher site (`config/directory_sites.txt` and
 the other lists), the edit is small (≥ 0.75 similar) and no other check of the
 company backs the old figure; a claim that belongs to another company → removed.
 When decisions change, the pipeline re-runs itself from saved work (refill,
-evidence for new entrants, 8a for them; max 3 passes). A decision stays once
+evidence for new entrants, 8a for them; max 8 passes, `QUADRANT_FACTCHECK_MAX_PASSES`). A decision stays once
 made, so a company moved off the chart does not come back. Review-file
 `company` may be the legal name, any deduped variant or the brand
 (`company_status.company_aliases`). Stand-alone: `scripts\factcheck_chart.py
@@ -245,13 +252,25 @@ made, so a company moved off the chart does not come back. Review-file
   and split discovery): steps 2 and 4 derive the axes and score once.
 - `scripts/parallel_topup.py --verify-only` verifies what stopped browsers
   already found (each company on one browser) and merges it.
-- **Owned by a listed company = removed** (step 3c, `company_facts.listed_parent`):
-  a company whose owner is itself in the same list (exact name without legal
-  suffixes, or that company's brand) is left out -- the parent represents the
-  group (Redmap -> Basware, OpusCapita -> GEP, Rossum -> Coupa). Owners from the
-  ownership answers, the analyst review and the fact-check; investment firms or
-  groups not in the list do not count; partial names never match ("Visma" is
-  not "Visma Aquila Oy"). `keep` in the analyst review overrides it.
+- **One company per owner group, the stronger stays** (owner's decisions
+  2026-10-09). Step 3c finds pairs where a company's owner is itself in the
+  same list (`company_facts.listed_parent`: exact name without legal suffixes,
+  or that company's brand) and records them (`auto_review.json` `listed_owner`);
+  step 4a, once scores exist, keeps the **stronger** member of each group and
+  leaves out the rest (`resolve_listed_groups`). Stronger = on the saved chart
+  first, then the higher score (full evidence where both have it, else quick);
+  tie or no score keeps the parent. So Redmap (Challenger) goes beside the
+  Leader Basware, and the Leader AvidXchange stays beside its co-owner Corpay
+  (long tail), which goes. The decision is saved
+  (`_pipeline/listed_owner_decisions.json`) and reused while the group is
+  unchanged. In a joint deal any listed co-owner counts
+  (`company_facts.owner_names` splits "TPG and Corpay" on and / & / , / ; / "/";
+  the whole name is tried first). Owners from the ownership answers, the
+  analyst review and the fact-check; investment firms or groups not in the list
+  do not count; partial names never match ("Visma" is not "Visma Aquila Oy").
+  `keep` in the analyst review overrides it. `--update-report` decides on the
+  existing report's chart and Overall. VERIFY checks the final report too ("No
+  company whose owner is also listed", read from its "(acquired by / subsidiary of …)" labels).
 - A chart refill keeps **every surviving chart company** and fills only the
   vacated slots (`refill_top_by_quadrant(keep_all=True)`): the composite step
   re-splits the chart 5 per quadrant by rank, so trimming a "full" quadrant
@@ -274,17 +293,19 @@ Orchestrator: `scripts/run_quadrant_pipeline.py` (+ helpers in
 | 1 | **Discovery** (only if the market has no verified companies): Step 0c market analysis → discovery rounds → verify → fill | `scripts/run_chatgpt_expand.py` → `pipeline/chatgpt_expand.py` |
 | 1b | **Top-up** (`--keep`): discover a batch, verify only new companies, repeat | `scripts/discover_verify_rounds.py` |
 | 2 | **Axes spec**: 5+5 market-specific parameters + definitions (LLM), fixed axis names → `_pipeline/axes_spec.json` | `quadrant/axis_define.py` (`define_market_axes`, `explain_market_parameters`) |
+| 2c | **Report framing** (AI Mode, once per market, from the market definition) → `_pipeline/research_panel.json`: "Organisations We Surveyed" (5 organisation types, **manufacturers always one of them**) and "Designations We Spoke To" (5 job titles), shown directly above the chart; `report_definition` (the short 2-sentence market definition the report's Market Classification shows -- the long definition stays for discovery and the checks); `player_type_reason` (the line under "Provider Categories", in that player type's own language). Missing pieces are asked for on the next run; a market brief's own `report_definition` / `player_type_reason` override them; an internal file note never reaches the report | `scripts/research_panel.py` |
 | 3 | **Dedupe**: one row per real company (same registrable domain or same name minus legal suffixes; union-find) | `quadrant_pipeline.dedupe_companies` |
 | 3b | **Operating status**: AI Mode asks, 10 companies per query, split across every `--slots` browser (one answer file per browser, merged into `operating_status.json`), whether each company still operates today (active / acquired / defunct / renamed) → `_pipeline/operating_status.json`; every non-active company and every `exclude` in `_pipeline/analyst_review.json` is left out (`_pipeline/excluded_companies.json`). A pinned Top 20 that loses a company keeps the rest and refills that quadrant (`company_status.refill_top_by_quadrant`). No answer = kept (a failed query is not evidence of closure) | `scripts/check_operating_status.py`, `pipeline/company_status.py` |
 | 3c | **Ownership + identity + scope** (AI Mode): 10 companies per query "acquired? by whom? trading under its own name? current name / legacy brand?" (`_pipeline/ownership.json`; unclear answers re-asked one by one), one-company identity checks for doubtful answers (`_pipeline/identity_check.json`), and a scope check, 10 per query: **core / adjacent / out** against the market definition and Step 0c's `core_scope` / `adjacent_segments` (`_pipeline/scope_check.json`). The product test: core only when the market's product IS the company's main product; offered as a module or add-on inside a different main product (another software category, a services / leasing / card / security business, a resold data feed, a reseller of another vendor's platform) = adjacent. Decisions go to `_pipeline/auto_review.json`: bought-and-absorbed companies, old names of rebranded companies listed twice, companies that do not exist and `out` companies are left out; **adjacent-segment companies stay in Other Noticeable Players but never go on the chart** (like-for-like quadrant; their slots refill from core companies). A company bought but still trading gets **"Name (acquired by Owner)"** for a deal under 3 years old, else **"Name (subsidiary of Owner)"**; a retired/divested brand is shown under its current name ("SLB (WesternGeco legacy)"). The analyst review always wins | `scripts/check_company_facts.py`, `pipeline/company_facts.py` |
 | 4 | **Quick X/Y scores** for every verified company: 2 AI Mode queries each, a Product Capability scorecard (all 5 X parameters, one line each) and a Business Capability scorecard (all 5 Y). X/Y = parameter means, Overall = (X+Y)/2. A parameter the answer skips is re-asked alone. Feeds long-tail bubbles | `scripts/score_overall_only.py` (sharded per slot); `ai_mode_scorer.build_axis_scorecard_query` / `parse_axis_scorecard` |
 | 4b | **Top 20 selection**: best 5 by Overall from EACH quadrant, split at the pool's median X and Y; a short quadrant's slots go to the best remaining. **Small market:** when fewer core companies than chart slots exist, every core company is charted and the strongest adjacent companies (by quick score) fill the rest (`_pipeline/chart_fill_adjacent.json`; VERIFY accepts exactly these) | `quadrant_pipeline.select_top_by_quadrant` |
-| 5 | **Deep evidence** for the Top 20 only: per-parameter score + evidence + "why" reasoning, gap-fill rounds | `prescore_verified.py`, `fill_missing_parameters.py`, `fill_missing_assessed_on.py` |
+| 5 | **Deep evidence** for the Top 20 only: per-parameter score + evidence + "why" reasoning, gap-fill rounds. Supporting points are **open-ended** (no 2-3 cap) and a parameter that joins several measures ("Revenue & Growth", "Certifications, Compliance and Quality Systems") gets one asked-for finding **per part** (`ai_mode_scorer.parameter_parts` / `evidence_lines`) | `prescore_verified.py`, `fill_missing_parameters.py`, `fill_missing_assessed_on.py` |
+| 5b | **Part gap-fill**: a part of a multi-part parameter that no supporting point covers (revenue facts, nothing on growth) is asked about alone and its findings are added to that parameter (score and "why" unchanged); each part asked once per market (`_pipeline/part_fill_asked.json`) | `scripts/fill_missing_parts.py`, `quadrant_pipeline.part_gaps` |
 | 6 | **Composite**: X/Y/Overall, cohort band 65–100, 5 per quadrant | `scripts/seed_from_full_evidence.py` |
 | 7 | **Tone**: research-team voice ("We verified …", never "I"), no hedges; every gap written in the house sentence "Based on primary research, the company has not disclosed <what>." (never "not publicly reported / disclosed", "could not be found", "Desk research could not confirm"); citation leftovers removed | `scripts/rewrite_assessed_on_tone.py` → `scripts/primary_research_wording.to_primary` |
 | 7c | **Gap estimates** (AI Mode): every "Based on primary research, the company has not disclosed X" sentence in a chart company's "Assessed on" text is REPLACED by the analyst's estimate, written in words (owner's decisions 2026-10-08/09): "Based on primary research, the company's data extraction accuracy rates can be estimated as exceptional and industry leading, based on its 10 trillion dollar community dataset." The estimate itself is never a number or range ("high", "growing steadily", "broad across the major ERP platforms"); figures appear only in the "based on" part; a second estimate for the same gap follows without the lead-in; with no estimate the gap sentence stays; a figure the company itself reports is still quoted. Per company, split over every `--slots` browser: (1) the company's own published facts (JSON, asked once), (2) a worked estimate for up to 5 gaps in plain language ending with one summary line per gap (`estimates.parse_worded`) -- a strict JSON verdict per gap made AI Mode answer "insufficient" without researching, so the rules live in `judge_worded`, not the prompt; 'unknown / unverified / unavailable / proprietary' answers are rejected and asked again (max 2 asks). Always: no figure in the estimate ("B2B", "S/4HANA" are fine), a basis is required, no research firm or data site (`config/research_publishers.txt`, `estimate_sites.txt`, `directory_sites.txt`) in basis or source, numbers AI Mode spells out in the basis are turned back into figures (`words_to_figures`), for a gap about third-party proof the underlying performance is estimated. `QUADRANT_NUMERIC_ESTIMATES=1` brings back the numeric ranges ("... can be estimated at approximately 3-6%, derived from ...", the owner's first version; default off). Only the "Assessed on" text changes -- supporting points, scores, names and the chart do not. Metadata per parameter: `estimates: [{metric, value_type, estimated_value, confidence, basis, source_type}]`. Answers `_pipeline/estimates/answers.json` (resumable), review list `estimates.md`; an analyst `corrections` entry can fix or remove one (7c runs before 7b). The tone step never rewrites an estimate sentence (`primary_research_wording.to_primary` skips them), so a re-run or fact-check pass cannot turn one back into a gap | `scripts/estimate_gaps.py`, `pipeline/estimates.py` |
 | 7b | **Analyst review**: `_pipeline/analyst_review.json` `corrections` (exact find/replace in one company's evidence), `hq` (confirmed headquarters) and `ownership` (merged with the automatic owners) applied; `_pipeline/wording_review.json` rewrites; then the supporting-point tidy: absence-only bullets become "Not available", dropped beside a real finding, never repeated | `company_status.apply_corrections`, `apply_hq_corrections`, `apply_ownership_corrections`, `company_facts.tidy_evidence` |
-| 8 | **Report**: HTML/JSON/CSV. `<slug>_report.html` is the interactive design (quadrant.json embedded, rendered in the browser; template `quadrant/templates/quadrant_viewer.html`); the static page is kept as `<slug>_report_classic.html` for VERIFY and maintenance scripts | `scripts/build_report_from_composite.py` → `quadrant/html_report.py`, then `quadrant/viewer.py` |
+| 8 | **Report**: HTML/JSON/CSV. **House wording** (owner 2026-10-15) is applied here, once, to everything the report writes: "Based on primary research, the company's X can be estimated as Y, based on Z" → "As per our findings, the company's X is Y, based on Z"; "Based on primary research, the company has not disclosed X" → "As per our findings, ..."; "... can be estimated at approximately" → "... is approximately"; "according to primary research" → "as per our findings". The pipeline's own steps keep the old phrases (tone, estimates and fact-check match on them), so never change those phrases upstream; `house_wording.to_legacy` maps a report sentence back for a correction (`apply_corrections`). `<slug>_report.html` is the interactive design (quadrant.json embedded, rendered in the browser; template `quadrant/templates/quadrant_viewer.html`); the static page is kept as `<slug>_report_classic.html` for VERIFY and maintenance scripts | `scripts/build_report_from_composite.py` → `quadrant/html_report.py`, then `quadrant/viewer.py` |
 | 8a | **Chart fact-check** (every run, before 8b): status / owner / HQ / scope + every specific supporting point of each chart company in AI Mode; safe decisions applied as `_pipeline/factcheck_review.json`, then a re-run from saved work when they change (see "Chart fact-check") | `scripts/factcheck_chart.py`, `pipeline/factcheck.py` |
 | 8b | **PDF**: cover with key figures, contents with page numbers, each section on a new page, one company per page in Parameter Detail → `<slug>_report.pdf`; then the **Word copy** `<slug>_report.docx`, its text read from the same printed page (so it matches the PDF), chart as an image, contents refreshed by Word when installed | `scripts/export_report_pdf.py`, `scripts/export_report_docx.py` |
 | 9 | **Verify** | `verify()` in the orchestrator |
@@ -335,6 +356,10 @@ no new queries unless the chart changes):
  "scope": [{"company": "...", "scope": "core|adjacent|out", "reason": "..."}],
  "display": [{"company": "...", "current_name": "...", "source": "..."}]}
 ```
+A market brief (`_pipeline/market_brief.json`) may set `"adjacent_policy": "exclude"`: then a
+company the scope check calls adjacent is left out of the report entirely instead of going to
+Other Noticeable Players -- for a client report that covers ONE player type only (Medical
+Films = medical-grade polymer suppliers, not the film makers that buy them).
 `scope` overrides the automatic scope check; `display` shows a company under
 the name it trades as today (`"current_name": ""` clears it).
 `keep` undoes an automatic exclusion from step 3c; an `ownership` entry

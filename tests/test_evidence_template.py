@@ -72,7 +72,8 @@ def test_the_query_dictates_a_per_parameter_layout():
     q = S.build_parameter_score_query("Acme", "Product Strength", X, market="M")
     assert "Answer in EXACTLY this format" in q
     assert "one numbered section per parameter" in q
-    assert "Evidence: <first specific finding" in q
+    # X[0] joins two measures, so the worked example asks for each by name.
+    assert "Evidence: <a specific finding on" in q
     assert "Score: NN / 100" in q
     assert f"1. {X[0]}" in q, "shows the first section by name"
 
@@ -83,8 +84,23 @@ def test_the_query_asks_for_more_than_one_finding_per_parameter():
     reader sees one assertion instead of the argument behind a score."""
     q = S.build_parameter_score_query("Acme", "Product Strength", X, market="M")
     assert q.count("Evidence:") >= 3, "template must show repeated Evidence lines"
-    assert "a SECOND, different finding" in q
-    assert "a THIRD finding, if one genuinely exists" in q
+    # Open-ended: no cap on findings (owner 2026-10-15) ...
+    assert "as many as genuinely exist (no limit)" in q
+    # ... and one finding per part a parameter name joins ("Revenue & Growth").
+    for part in S.parameter_parts(X[0]):
+        assert f"a specific finding on {part.upper()}" in q
+    single = S.build_parameter_score_query("Acme", "Product Strength", ["Yield"], market="M")
+    assert "a SECOND, different finding" in single
+
+
+def test_parameter_parts_and_coverage():
+    """'Revenue & Growth' answered with two revenue facts left growth bare: each
+    part is asked for, and a part no supporting point covers is found."""
+    assert S.parameter_parts("Revenue & Growth") == ["Revenue", "Growth"]
+    assert S.parameter_parts("Technology Innovation") == ["Technology Innovation"]
+    assert S.uncovered_parts("Revenue & Growth", ["Revenue of USD 2.1 billion in FY2025."]) == ["Growth"]
+    assert S.uncovered_parts("Revenue & Growth", ["Revenue of USD 2.1 billion", "Orders are growing 14%"]) == []
+    assert S.uncovered_parts("Technology Innovation", []) == []
 
 
 def test_the_query_forbids_a_zero_for_a_different_segment():

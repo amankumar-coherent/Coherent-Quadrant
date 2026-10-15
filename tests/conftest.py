@@ -12,3 +12,6 @@ def _no_real_browser(monkeypatch):
     # Extension tests use temp profiles; keep the repo's bundled extensions/
     # out of them unless a test opts back in.
     monkeypatch.setenv("GOOGLE_AI_MODE_BUNDLED_EXTENSIONS", "false")
+    # A machine's .env may point at its own extension folder; tests must not
+    # depend on it.
+    monkeypatch.delenv("GOOGLE_AI_MODE_EXTENSIONS", raising=False)

@@ -68,8 +68,8 @@ def test_quota_resets_profile_and_retries_until_it_answers(make_session):
     s = make_session([QUOTA, QUOTA, GOOD])
     assert s.ask("q") == GOOD
     assert [c[:2] for c in s.calls] == [("reset_profile", "quota")] * 2
-    # escalating wait on the fresh profile: 120 s, then 240 s
-    assert [c[2] for c in s.calls] == [120.0, 240.0]
+    # no cool-off on the fresh profile (owner 2026-10-11: only reset)
+    assert [c[2] for c in s.calls] == [0.0, 0.0]
 
 
 def test_quota_gives_up_after_the_reset_budget(make_session, monkeypatch):

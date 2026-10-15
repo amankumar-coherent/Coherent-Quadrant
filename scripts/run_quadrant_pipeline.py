@@ -71,9 +71,11 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from vendor_intel.pipeline.quadrant_pipeline import (  # noqa: E402
+    PART_ASKED_FILE,
     axis_xy,
     dedupe_companies,
     evidence_gaps,
+    part_gaps,
     load_evidence,
     load_overall_only,
     norm_name,
@@ -163,12 +165,18 @@ class Runner:
                 env={**os.environ, "PYTHONIOENCODING": "utf-8"}), fh))
             time.sleep(2)
         try:
+            # Check every 5 s, log once a minute: a step whose shards finish in
+            # seconds no longer waits out a full minute (small re-runs were
+            # spending most of their time here).
+            last_log = 0.0
             while True:
                 alive = sum(1 for p, _ in procs if p.poll() is None)
                 if not alive:
                     break
-                log(f"{step}: {alive}/{n} shard(s) still running")
-                time.sleep(60)
+                if time.monotonic() - last_log >= 60:
+                    log(f"{step}: {alive}/{n} shard(s) still running")
+                    last_log = time.monotonic()
+                time.sleep(5)
         except KeyboardInterrupt:
             for p, _ in procs:
                 p.terminate()
@@ -266,7 +274,7 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
     chart = [b for b in brands if b.get("on_chart")]
     checks: list[tuple[str, bool, str]] = []
 
-    from vendor_intel.pipeline.company_status import inactive_companies, is_inactive
+    from vendor_intel.pipeline.company_status import inactive_companies, is_inactive, load_status
     from vendor_intel.quadrant.axis_define import PARAMS_PER_AXIS
     from vendor_intel.quadrant.quadrant_language import AXIS_Y_TITLE, x_axis_title
 
@@ -278,11 +286,50 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
     checks.append((f"Axes are {x_title} (X) / {AXIS_Y_TITLE} (Y)",
                    x_title in html and AXIS_Y_TITLE in html, ""))
     inactive = inactive_companies(out_dir / "_pipeline")
+    # Names of the companies checked in step 3b. A brand that reads like ANOTHER
+    # checked company is that company's name, not this one's: "Liquify Digital
+    # Ltd" (brand Liquify) is not the excluded "Liquify Ltd.".
+    pool_names = {norm_name(n) for n in load_status(out_dir / "_pipeline")}
+
+    def alias_hit(b: dict, field: str) -> bool:
+        # The brand or the display name (a renamed company shown under its
+        # current name, analyst review "display") can equal ANOTHER checked
+        # company's name -- e.g. a duplicate row of the new name that was
+        # excluded. That is the other row's exclusion, not this company's.
+        an = norm_name(str(b.get(field) or ""))
+        if an in pool_names and an != norm_name(str(b.get("company_key") or "")):
+            return False
+        return is_inactive(str(b.get(field) or ""), inactive)
+
     listed = [b.get("company") for b in brands
-              if is_inactive(str(b.get("company") or ""), inactive)
-              or is_inactive(str(b.get("company_key") or ""), inactive)
-              or is_inactive(str(b.get("brand") or ""), inactive)]
+              if is_inactive(str(b.get("company_key") or ""), inactive)
+              or alias_hit(b, "company") or alias_hit(b, "brand")]
     checks.append(("No inactive / acquired / excluded company listed", not listed, listed[:5]))
+
+    # A company whose owner (or a co-owner) is itself in the report is not a
+    # separate competitor: the parent represents the group (step 3c,
+    # company_facts.listed_parent). Read from the report's own owner labels.
+    from vendor_intel.pipeline.company_facts import owner_names
+    from vendor_intel.pipeline.company_status import load_review
+
+    kept = {norm_name(r.get("company") or "") for r in load_review(out_dir / "_pipeline")["keep"]}
+    listed_names: dict[str, str] = {}
+    for b in brands:
+        for k in (b.get("company_key"), b.get("brand")):
+            if norm_name(str(k or "")):
+                listed_names.setdefault(norm_name(str(k)), str(b.get("company_key") or b.get("company")))
+    owned_by_listed = []
+    for b in brands:
+        m = re.search(r"\((?:acquired by|subsidiary of) (.+)\)\s*$", str(b.get("company") or ""))
+        me = str(b.get("company_key") or b.get("company") or "")
+        if not m or norm_name(me) in kept or norm_name(str(b.get("brand") or "")) in kept:
+            continue
+        for o in owner_names(m.group(1)):
+            parent = listed_names.get(norm_name(o))
+            if parent and norm_name(parent) != norm_name(me):
+                owned_by_listed.append(f"{me} (owner {parent})")
+                break
+    checks.append(("No company whose owner is also listed", not owned_by_listed, owned_by_listed[:5]))
 
     incomplete = []
     for b in chart:
@@ -306,8 +353,12 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
                    f"{len(chart)} on chart"))
     checks.append(("Quadrant split even (5/5/5/5)", even or not want_even, dict(split)))
 
+    # A chart rule (owner's rule 6). A long-tail company is placed by its quick
+    # scorecard; one that left the chart (re-scope, review) may still carry the
+    # deep-evidence parameters it got as a chart company, which do not set its
+    # long-tail strength.
     mismatch = []
-    for b in brands:
+    for b in chart:
         sd = b.get("score_detail") or {}
         xs = [v.get("score") for v in ((sd.get("x") or {}).get("parameters") or {}).values()]
         ys = [v.get("score") for v in ((sd.get("y") or {}).get("parameters") or {}).values()]
@@ -348,6 +399,24 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
         checks.append(("Interactive report: data embedded, long-tail bubbles without tooltip",
                        'id="quadrant-data"' in viewer_html and "__QUADRANT_DATA__" not in viewer_html
                        and 'class="dots" title=' not in viewer_html, ""))
+    # Research panel above the chart (step 2c): organisation types and
+    # designations, manufacturers always among the organisations.
+    panel = payload.get("research_panel") or {}
+    orgs = panel.get("organisations") or []
+    checks.append(("Research panel above the chart (organisations incl. manufacturers, designations)",
+                   bool(orgs) and bool(panel.get("designations"))
+                   and any(re.search(r"manufactur", str(o), re.I) for o in orgs), orgs[:5]))
+    # Market framing (step 2c / brief): a short definition, no internal file note.
+    rel = (payload.get("criteria") or {}).get("relevance") or {}
+    defn_words = len(str(rel.get("market_definition") or "").split())
+    internal = re.search(r"_pipeline|market[ _]brief|\.json", str(rel.get("player_type_reason") or ""), re.I)
+    checks.append(("Market definition short (<= 100 words) and no internal note in the report",
+                   0 < defn_words <= 100 and not internal, f"{defn_words} words"))
+    # House wording (house_wording.py): no pipeline phrasing left in the report.
+    old_wording = re.findall(r"[^.]{0,40}(?:[Bb]ased on primary research|can be estimated (?:as|at))[^.]{0,40}",
+                             json.dumps(payload, ensure_ascii=False))
+    checks.append(("Report wording: 'As per our findings', estimates read '... is ...'",
+                   not old_wording, old_wording[:3]))
     dots = [r.count("cq-sdot-on") for r in rows]
     checks.append(("Other Noticeable Player sorted by Strength",
                    all(a >= b for a, b in zip(dots, dots[1:])), dots[:10]))
@@ -359,6 +428,17 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
     cited = sorted({m.group(0) for m in pub_re.finditer(html)}
                    | {m.group(0) for m in pub_re.finditer(json.dumps(brands, ensure_ascii=False))})
     checks.append(("No market-research publisher (competitor) named", not cited, cited[:5]))
+    # Owner's rule 2026-10-12: no third-party website / platform / outlet named in
+    # the evidence (config/third_party_sources.txt; company_facts.neutral_sources
+    # rewrites them at 7b). Scored text only: a company's own name or website
+    # field is not a citation.
+    from vendor_intel.pipeline.company_facts import third_party_re
+
+    tp_re = third_party_re()
+    named = sorted({m.group(0) for b in brands
+                    for m in tp_re.finditer(json.dumps(b.get("score_detail") or {}, ensure_ascii=False))})
+    checks.append(("No third-party source named (marketplaces, directories, social, press)",
+                   not named, named[:5]))
 
     from vendor_intel.pipeline.company_facts import gap_bullets
 
@@ -376,7 +456,11 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
     checks.append(("Supporting points: absence reads 'Not available', only when nothing else is found",
                    not gaps, f"{len(gaps)}: {gaps[:3]}"))
 
-    no_hq = [b.get("company") for b in brands if not str(b.get("hq_location") or "").strip()]
+    # A placeholder country ("Jundiaí, Country") is no HQ: rule 6 wants "City, Country".
+    _placeholder = re.compile(r",\s*(?:country|unknown|n/?a|none)\s*\.?\s*$", re.I)
+    no_hq = [b.get("company") for b in brands
+             if not str(b.get("hq_location") or "").strip()
+             or _placeholder.search(str(b.get("hq_location") or ""))]
     checks.append(("Every company has an HQ", not no_hq, f"{len(no_hq)} missing: {no_hq[:5]}"))
 
     low = [b.get("company") for b in brands
@@ -404,6 +488,9 @@ def main() -> int:
     ap.add_argument("--market", required=True)
     ap.add_argument("--country", default="global")
     ap.add_argument("--slots", default="41-50", help="browser profile slots, e.g. 41-50")
+    ap.add_argument("--evidence-slots", default="",
+                    help="browser slots for step 5 (deep evidence) only, e.g. 41-60 = one chart "
+                         "company per browser; default: --slots")
     ap.add_argument("--top-n", type=int, default=20, help="companies on the chart")
     ap.add_argument("--evidence-pool", type=int, default=0,
                     help="how many companies get full per-parameter evidence "
@@ -542,6 +629,22 @@ def main() -> int:
     os.environ["QUADRANT_X_TITLE"] = x_title
     log(f"2. axes: X={x_title} ({len(spec['x'])} params) "
         f"Y={AXIS_Y_TITLE} ({len(spec['y'])} params) -> {spec_path}")
+
+    # 2c. Research panel shown above the chart: organisation types surveyed
+    # (manufacturers always among them) and designations interviewed, written by
+    # AI Mode from the market definition. A failure does not stop the run; VERIFY
+    # reports the missing panel.
+    _panel = read_json(pipe_dir / "research_panel.json", {}) or {}
+    if not args.dry_run and not all(_panel.get(k) for k in (
+            "organisations", "designations", "report_definition", "player_type_reason")):
+        slot = runner.slots[0]
+        runner.run([PY, str(ROOT / "scripts" / "research_panel.py"), "--market", args.market,
+                    "--country", args.country], "research_panel.log",
+                   env={"GOOGLE_AI_MODE_PROFILE_DIR": str(ROOT / "data" / f"ai_mode_batch_{slot:02d}"),
+                        "GOOGLE_AI_MODE_BROWSER": "chromium", "GOOGLE_AI_MODE_ENABLED": "true"})
+        panel = read_json(pipe_dir / "research_panel.json", {}) or {}
+        log(f"2c. research panel: {len(panel.get('organisations') or [])} organisation types, "
+            f"{len(panel.get('designations') or [])} designations -> _pipeline/research_panel.json")
 
     # 3. Dedupe --------------------------------------------------------------
     evidence = load_evidence(out_dir)
@@ -684,6 +787,93 @@ def main() -> int:
         f"{len(more)} more left out {more[:6]}, {len(auto['ownership'])} owner labels, "
         f"{len(adjacent)} adjacent-segment (not on the chart) {adjacent[:6]} -> _pipeline/auto_review.json")
 
+    # 3d. Every company has an HQ (owner's rule 6). Verification usually gives
+    # it; a company it left without one is asked in AI Mode (any run, global
+    # included -- the 3c HQ check above runs only for single-country runs).
+    # Only "City, Country" answers are written; the analyst review (7b) wins.
+    def has_hq(n: str) -> bool:
+        # "Jundiaí, Country" (AI Mode copying the template word) counts as missing.
+        members = {norm_name(m) for m in groups.get(n, [n])}
+        return any((hq := str(r.get("Headquarters") or r.get("headquarters") or "").strip())
+                   and not re.search(r",\s*(?:country|unknown|n/?a|none)\s*\.?\s*$", hq, re.I)
+                   for r in verified if norm_name(row_name(r)) in members)
+
+    # A placeholder on one row while another row of the same company has a real
+    # HQ: has_hq() is satisfied by the good row, but the report can print the
+    # placeholder one ("IG Drones -- Delhi, Country" beside "IG Drones (India)
+    # Private Limited -- New Delhi, India"). Copy the real HQ onto the group.
+    _ph = re.compile(r",\s*(?:country|unknown|n/?a|none)\s*\.?\s*$", re.I)
+    group_fix = []
+    for n in pool:
+        members = {norm_name(m) for m in groups.get(n, [n])}
+        rows = [r for r in verified if norm_name(row_name(r)) in members]
+        good = next((h for r in rows if (h := str(r.get("Headquarters") or r.get("headquarters") or "").strip())
+                     and "," in h and not _ph.search(h)), "")
+        if good:
+            for r in rows:
+                if _ph.search(str(r.get("Headquarters") or r.get("headquarters") or "").strip()):
+                    group_fix.append({"company": row_name(r), "headquarters": good})
+                    for k in ("Headquarters", "headquarters"):
+                        if k in r:
+                            r[k] = good
+    if group_fix and not args.dry_run:
+        from vendor_intel.pipeline.company_status import apply_hq_corrections as _set_hq_group
+
+        _set_hq_group(ckpt_path, group_fix)
+        log(f"3d. HQ placeholder replaced from the same company's other row: "
+            f"{[f['company'] + ' -> ' + f['headquarters'] for f in group_fix][:6]}")
+
+    no_hq = [n for n in pool if not has_hq(n)]
+    if no_hq and not args.skip_facts:
+        hq_ans = merged_facts("hq", cf.HQ_FILE)
+        need = [n for n in no_hq if n not in hq_ans]
+        runner.shards("hq", "check_company_facts.py", need, ["--mode", "hq"])
+        hq_ans = merged_facts("hq", cf.HQ_FILE)
+        def city_country(raw: str) -> str:
+            # "Rengsdorf (Germany) and Vienna (Austria)" -> "Rengsdorf, Germany": the
+            # first "City (Country)" when AI Mode does not answer "City, Country".
+            raw = raw.strip()
+            # A city-state is its own city: "Singapore" -> "Singapore, Singapore"
+            # (AI Mode answered "Singapore" for Seagate and the HQ was dropped).
+            if raw.lower().rstrip(".") in ("singapore", "hong kong", "monaco", "luxembourg", "macau",
+                                           "macao", "vatican city", "gibraltar"):
+                return f"{raw.rstrip('.')}, {raw.rstrip('.')}"
+            m = re.match(r"^\s*([^(),;]+?)\s*\(([^()]+)\)", raw)
+            if "," not in raw.split(" and ")[0] and m:
+                return f"{m.group(1).strip()}, {m.group(2).strip()}"
+            return raw
+
+        fixes = [{"company": n, "headquarters": hq} for n in no_hq
+                 if "," in (hq := city_country(str((hq_ans.get(n) or {}).get("hq") or "")))
+                 and "unknown" not in hq.lower()]
+        if fixes and not args.dry_run:
+            from vendor_intel.pipeline.company_status import apply_hq_corrections as _set_hq
+
+            _set_hq(ckpt_path, fixes)
+        log(f"3d. HQ missing for {len(no_hq)} companies: {len(fixes)} found in AI Mode "
+            f"{[f['company'] + ' -> ' + f['headquarters'] for f in fixes][:6]}")
+
+    def resolve_owner_groups(score, on_chart=()) -> list[str]:
+        """Leave out the weaker members of each owner group (3c pairs) and
+        record them in auto_review.json like any other 3c exclusion."""
+        nonlocal gone
+        pairs = [p for p in auto.get("listed_owner") or [] if p["company"] in pool and p["parent"] in pool]
+        if not pairs:
+            return []
+        from vendor_intel.pipeline.company_status import load_review
+
+        kept = {norm_name(r.get("company") or "") for r in load_review(pipe_dir)["keep"]}
+        drops = cf.resolve_listed_groups(pipe_dir, pairs, score, kept, on_chart or ())
+        out = [d["company"] for d in drops]
+        if out and not args.dry_run:
+            auto["exclude"] = [e for e in auto["exclude"] if e["company"] not in out] + drops
+            cf.write_auto_review(pipe_dir, auto)
+            gone = list(gone) + out
+            why.update({d["company"]: [d["reason"]] for d in drops})
+            write_json(pipe_dir / "excluded_companies.json", {n: why[n][0] for n in gone})
+        log(f"4a. owner groups: {len(cf.listed_groups(pairs))}; left out (the weaker of each group) {out}")
+        return out
+
     # --update-report: the checks are done -- rewrite the existing report with
     # them (removals, owner labels, house wording) and stop; no re-scoring.
     if args.update_report:
@@ -691,6 +881,14 @@ def main() -> int:
         if not base.exists():
             log(f"--update-report: base report not found: {base}")
             return 2
+        # No re-scoring here: owner groups are decided on the report's own Overall.
+        base_brands = (read_json(base, {}) or {}).get("brands") or []
+        base_overall = {norm_name(str(b.get("company_key") or b.get("company") or "")): b.get("overall")
+                        for b in base_brands}
+        base_chart = {norm_name(str(b.get("company_key") or b.get("company") or ""))
+                      for b in base_brands if b.get("on_chart")}
+        resolve_owner_groups(lambda n: base_overall.get(norm_name(n)),
+                             on_chart=[n for n in pool if norm_name(n) in base_chart])
         from vendor_intel.pipeline.report_update import update_report
 
         st = update_report(base, out_dir, pipe_dir, list(gone), out_dir.name)
@@ -755,6 +953,16 @@ def main() -> int:
         f"(1 Product + 1 Business query each)")
     runner.shards("overall", "score_overall_only.py", need, ["--fixed-axes", str(spec_path)])
     overall = load_overall_only(out_dir)
+
+    # 4a. One company per owner group (pairs found in 3c): the stronger stays --
+    # a company on the saved chart first (the report already shows it there),
+    # then the higher score (full evidence where both have it, else quick).
+    group_out = resolve_owner_groups(lambda n: rank_score(n, evidence, overall, xp, yp),
+                                     on_chart=ev_pool if size <= args.top_n else ())
+    if group_out:
+        pool = [n for n in pool if n not in group_out]
+        if ev_pool is not None:
+            ev_pool = [n for n in ev_pool if n not in group_out]
     # A small market can have fewer core companies than chart slots (the
     # main-product test moves add-on vendors to adjacent). The chart still
     # shows top_n: every core company, then the strongest adjacent ones fill
@@ -824,6 +1032,12 @@ def main() -> int:
         n_bad = cf.drop_invalid_sources(out_dir)
         if n_bad:
             log(f"5. {n_bad} supporting point(s) on invalid sources removed before gap-fill")
+    # --evidence-slots: step 5 can use its own, larger browser range (one
+    # chart company per browser), while the other steps keep --slots.
+    base_slots = runner.slots
+    if args.evidence_slots:
+        runner.slots = parse_slots(args.evidence_slots)
+        log(f"5. deep evidence on {len(runner.slots)} browser(s) (--evidence-slots {args.evidence_slots})")
     for rnd in range(1, args.max_rounds + 1):
         evidence = load_evidence(out_dir)
         gaps = evidence_gaps(evidence, ev_pool, xp, yp)
@@ -847,6 +1061,21 @@ def main() -> int:
                       ["--fixed-axes", str(spec_path)])
         if args.dry_run:
             break
+    # 5b. Parts of a parameter with no supporting point ("Revenue & Growth" with
+    # revenue facts only): ask about that part alone and add what is found.
+    # Each part is asked once per market (part_fill_asked.json).
+    evidence = load_evidence(out_dir)
+    asked = (read_json(pipe_dir / PART_ASKED_FILE, {}) or {}).get("asked") or []
+    todo_parts = part_gaps(evidence, ev_pool, xp, yp, asked)
+    if todo_parts:
+        log(f"5b. parameter parts without a supporting point: "
+            f"{sum(len(v) for v in todo_parts.values())} in {len(todo_parts)} companies")
+        write_json(pipe_dir / "part_fill_todo.json", todo_parts)
+        if not (pipe_dir / PART_ASKED_FILE).exists():
+            write_json(pipe_dir / PART_ASKED_FILE, {"asked": []})
+        runner.shards("partfill", "fill_missing_parts.py", list(todo_parts),
+                      ["--fixed-axes", str(spec_path)])
+    runner.slots = base_slots
     evidence = load_evidence(out_dir)
     left = evidence_gaps(evidence, ev_pool, xp, yp)
     done_ev = [n for n in ev_pool if n not in left]
@@ -1069,7 +1298,11 @@ def main() -> int:
             + " (analyst review wins where both touch the same text)"
             + (f"; NOT complete: {left}" if left else ""))
         fc_pass = int(os.environ.get("QUADRANT_FACTCHECK_PASS") or "1")
-        if changed and fc_pass < 3:
+        # 3 passes were too few for a market whose core is thin: each refill brings
+        # a company the scope check calls core and the fact-check calls adjacent,
+        # and the run stopped with the last decision unapplied (VERIFY: adjacent on
+        # the chart). Every pass checks only the new entrants, so more are cheap.
+        if changed and fc_pass < int(os.environ.get("QUADRANT_FACTCHECK_MAX_PASSES") or "8"):
             # Apply through the normal steps: 3b/3c drop or move companies
             # (the chart refills from core companies, whose evidence step 5
             # gathers), 7b writes corrections / owners / HQ, 8 rebuilds, and

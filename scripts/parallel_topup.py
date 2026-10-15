@@ -126,8 +126,19 @@ def main() -> int:
         time.sleep(4)
 
     deadline = time.time() + args.timeout_minutes * 60
+    # One slow browser (a CAPTCHA loop, unusable AI Mode replies) must not leave the
+    # others idle: once 80% have finished, the rest get STRAGGLER_GRACE_MIN minutes,
+    # then are stopped; merge() keeps whatever they already saved.
+    grace_min = float(os.getenv("STRAGGLER_GRACE_MIN", "5"))
+    grace_at: float | None = None
     while time.time() < deadline and any(p.poll() is None for p, _, _ in procs):
         time.sleep(30)
+        done = sum(p.poll() is not None for p, _, _ in procs)
+        if grace_at is None and len(procs) >= 5 and done >= 0.8 * len(procs):
+            grace_at = time.time() + grace_min * 60
+        if grace_at is not None and time.time() >= grace_at:
+            log(f"{len(procs) - done} slow browser(s) stopped after {grace_min:g} min grace; their saved finds are merged")
+            break
     for p, fh, _ in procs:
         if p.poll() is None:
             p.terminate()

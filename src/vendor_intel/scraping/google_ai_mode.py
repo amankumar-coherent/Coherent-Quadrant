@@ -120,11 +120,12 @@ def _quota_cool_off(reset_number: int) -> float:
     query: base x N (120 s, 240 s, 360 s by default). A quota is partly tied
     to the soured profile (a fresh one often answers at once) and partly to
     the IP, which only time clears -- so each further reset waits longer.
-    GOOGLE_AI_MODE_QUOTA_COOLOFF sets the base."""
+    GOOGLE_AI_MODE_QUOTA_COOLOFF sets the base; default 0 (owner 2026-10-11:
+    no cool-off, only reset the profile, browser and cookies)."""
     try:
-        base = float(_env("GOOGLE_AI_MODE_QUOTA_COOLOFF", "120") or 120)
+        base = float(_env("GOOGLE_AI_MODE_QUOTA_COOLOFF", "0") or 0)
     except ValueError:
-        base = 120.0
+        base = 0.0
     return max(0.0, base) * max(1, reset_number)
 
 _READY_MARKER = "ai mode response is ready"
@@ -557,22 +558,37 @@ class AiModeSession:
         if self.channel:
             launch["channel"] = self.channel
         try:
-            self._ctx = self._pw.chromium.launch_persistent_context(**launch)
-        except Exception as err:  # noqa: BLE001
-            # "Opening in existing browser session" = a browser from a killed
-            # run still holds the profile lock. Retrying without clearing it
-            # fails every time, so the market ends at 0 companies. Clear the
-            # lock and launch once more.
-            if "existing browser session" not in str(err).lower():
-                raise
-            print(
-                "  [ai-mode] profile is locked by a previous browser — "
-                "clearing it and retrying",
-                flush=True,
-            )
-            _kill_orphan_browsers(profile)
-            self._ctx = self._pw.chromium.launch_persistent_context(**launch)
+            try:
+                self._ctx = self._pw.chromium.launch_persistent_context(**launch)
+            except Exception as err:  # noqa: BLE001
+                # "Opening in existing browser session" = a browser from a killed
+                # run still holds the profile lock; "Target ... has been closed" =
+                # the new browser died at start-up (same cause, or a damaged
+                # profile). Retrying without clearing it fails every time, so
+                # the market ends at 0 companies. Clear the lock and launch once more.
+                msg = str(err).lower()
+                if "existing browser session" not in msg and "has been closed" not in msg:
+                    raise
+                print(
+                    "  [ai-mode] browser could not start on this profile "
+                    "(locked or closed at start-up) — clearing it and retrying",
+                    flush=True,
+                )
+                _kill_orphan_browsers(profile)
+                self._ctx = self._pw.chromium.launch_persistent_context(**launch)
+        except BaseException:
+            # A failed launch must not leave Playwright running: the next
+            # sync_playwright().start() then fails with "Sync API inside the
+            # asyncio loop" on every later query (owner 2026-10-14: a whole
+            # market scored 0 of 117 companies in two hours this way).
+            try:
+                self._pw.stop()
+            except Exception:  # noqa: BLE001
+                pass
+            self._pw = self._ctx = self._page = None
+            raise
         self._page = self._ctx.pages[0] if self._ctx.pages else self._ctx.new_page()
+        self._close_extra_tabs()
         print(
             f"  [ai-mode] browser ready ({self.channel or 'chromium'}, "
             f"headless={headless}, profile={profile})",
@@ -580,6 +596,18 @@ class AiModeSession:
         )
         if self.extensions:
             self.verify_extensions()
+
+    def _close_extra_tabs(self) -> None:
+        """One tab per browser. A relaunched profile can restore its old tabs, and an
+        extension can open its own; those stay open, keep loading Google pages and
+        draw extra CAPTCHAs (owner 2026-10-14: "in one browser many tabs open")."""
+        for page in list(getattr(self._ctx, "pages", None) or []):
+            if page is self._page:
+                continue
+            try:
+                page.close()
+            except Exception:  # noqa: BLE001
+                pass
 
     # -- extension verification (ground truth, not a worker count) --
 
@@ -741,6 +769,7 @@ class AiModeSession:
                 self._pace()
                 try:
                     self._ensure_browser()
+                    self._close_extra_tabs()
                     self._page.goto(url, wait_until="domcontentloaded", timeout=30_000)
                 except Exception as err:  # noqa: BLE001
                     msg = str(err).lower()
@@ -769,7 +798,7 @@ class AiModeSession:
                     if verify_left >= 1:
                         self.reset_session(reason="Google 'Verifying your request' page")
                     else:
-                        self.reset_profile(reason="verify", cool_off=60.0)
+                        self.reset_profile(reason="verify")
                     attempts_left += 1
                     continue
 
@@ -867,7 +896,7 @@ class AiModeSession:
                     if noanswer_left >= 1:
                         self.reset_session(reason="'content wasn't generated' page")
                     else:
-                        self.reset_profile(reason="noanswer", cool_off=60.0)
+                        self.reset_profile(reason="noanswer")
                     attempts_left += 1
                     continue
                 # Guard the refusal check with a length limit so a long real
@@ -886,7 +915,7 @@ class AiModeSession:
                         and resets_left > 0
                     ):
                         resets_left -= 1
-                        self.reset_profile(reason="noanswer", cool_off=60.0)
+                        self.reset_profile(reason="noanswer")
                         attempts_left += 1
                         url = build_url(prompt)
                         continue
@@ -909,7 +938,7 @@ class AiModeSession:
                     return text
             raise AiModeUnavailable("empty answer from AI Mode")
 
-    def reset_profile(self, *, reason: str = "quota", cool_off: float = 120.0) -> None:
+    def reset_profile(self, *, reason: str = "quota", cool_off: float = 0.0) -> None:
         """Hard reset: archive the whole profile directory, not just cookies.
 
         `reset_session` keeps the on-disk profile, which is right for a merely
@@ -984,9 +1013,8 @@ class AiModeSession:
         # keep coming after this relaunch, the streak reaching
         # _SOFT_FAILURES_BEFORE_PROFILE_RESET is what escalates to a full
         # profile reset. A good answer or reset_profile() clears it.
-        # A soured session usually comes with rate limiting, so give the IP a
-        # breather before the fresh browser starts querying.
-        time.sleep(60)
+        # No cool-off (owner 2026-10-11): a stuck browser is reset -- cookies
+        # cleared, browser relaunched -- and goes straight back to work.
         self._ensure_browser()
 
     def reopen_browser(self, *, reason: str = "browser closed") -> None:
@@ -1069,6 +1097,20 @@ def close_session() -> None:
         if _WORKER is not None:
             _WORKER.shutdown(wait=False)
             _WORKER = None
+
+
+def reset_live_browser(reason: str) -> bool:
+    """Fresh profile, cookies and browser for the browser THIS process opened,
+    run on the browser's own thread (patchright objects are bound to it: a
+    reset from another thread left every later query failing with "Cannot
+    switch to a different thread"). No live browser -> nothing is touched, so
+    a caller faking a block never archives a real profile. True if reset."""
+    with _SESSION_LOCK:
+        sess = _SESSION
+    if sess is None or sess._ctx is None:
+        return False
+    _in_worker(lambda: sess.reset_profile(reason=reason))
+    return True
 
 
 def ask(prompt: str, **kw: Any) -> str:
@@ -1249,6 +1291,16 @@ def _cli(argv: list[str]) -> int:
         print(usage)
         return 2
     cmd, rest = argv[0], argv[1:]
+
+    # The pipeline scripts load .env themselves; run stand-alone, this CLI must
+    # too, or `doctor` reports defaults instead of what a real run will use
+    # (e.g. GOOGLE_AI_MODE_EXTENSIONS). Variables already set keep priority.
+    try:
+        from dotenv import load_dotenv  # noqa: PLC0415
+
+        load_dotenv(bundled_extensions_root().parent / ".env")
+    except ImportError:
+        pass
 
     if cmd == "install":
         if not rest:

@@ -66,7 +66,9 @@ EVIDENCE_RULES = (
     "feedback; how long a client's project ran is not the company's own delivery or turnaround time. Third-party company-data "
     "or market-intelligence sites (RocketReach, ZoomInfo, Tracxn, Crunchbase, "
     "GlobalDatabase, CB Insights) are not evidence. No footnote numbers or raw URLs in the text. Use the company's "
-    "current name."
+    "current name. Use only evidence about the company's own business in THIS market: work of a subsidiary, "
+    "affiliate or acquired company counts only when it is this market's product, and then name it ('through "
+    "its subsidiary X'); a subsidiary's or division's business in a different product line is not evidence."
 )
 
 
@@ -185,6 +187,112 @@ _EVIDENCE_HINT: dict[str, str] = {
 }
 
 
+# -- parameter parts (owner 2026-10-15) -----------------------------------------
+# A parameter name often joins two or three measures ("Revenue & Growth",
+# "Certifications, Compliance and Quality Systems"). Asked for "a first and a
+# second finding", AI Mode answered the first measure twice and the second not
+# at all (revenue figures, no growth). So every part is asked for by name, the
+# number of findings is open, and the gap-fill re-asks a part with no finding.
+_PART_SPLIT = re.compile(r"\s*(?:&|/|\+|,|;|\band\b)\s*", re.I)
+_PART_STOP = {"the", "of", "for", "in", "on", "to", "with", "its", "a", "an", "by", "level", "levels"}
+
+
+def parameter_parts(param: str) -> list[str]:
+    """The measures a parameter name joins ('Revenue & Growth' -> ['Revenue',
+    'Growth']); a single measure returns [param]."""
+    base = re.sub(r"\s*\(.*?\)", "", str(param or "")).strip()
+    # "R&D", "M&A", "O&M" are one word, not two measures ("R&D Investment &
+    # Financial Strength" was split into "D Investment").
+    base = re.sub(r"\b([A-Za-z])\s*&\s*([A-Za-z])\b", r"\1and\2", base)
+    parts = [re.sub(r"\b([A-Za-z])and([A-Za-z])\b", r"\1&\2", p.strip(" -"))
+             for p in _PART_SPLIT.split(base) if len(p.strip(" -")) > 2]
+    return parts if len(parts) > 1 else [str(param or "").strip()]
+
+
+def _part_stem(part: str) -> str:
+    """Stem of the part's most specific word ('Growth' -> 'grow',
+    'Certifications' -> 'certifi'), for finding it in a supporting point."""
+    words = [w for w in re.findall(r"[a-z]+", part.lower()) if w not in _PART_STOP and len(w) > 2]
+    if not words:
+        return ""
+    w = max(words, key=len)
+    return w[: max(4, -(-len(w) // 2))]
+
+
+def part_covered(part: str, claims: list[str]) -> bool:
+    """True when some supporting point speaks to this part of the parameter."""
+    stem = _part_stem(part)
+    return not stem or any(stem in str(c).lower() for c in claims if str(c).strip()
+                           and not str(c).strip().lower().startswith("not available"))
+
+
+def uncovered_parts(param: str, claims: list[str]) -> list[str]:
+    """Parts of a multi-part parameter that no supporting point covers."""
+    parts = parameter_parts(param)
+    return [p for p in parts if not part_covered(p, claims)] if len(parts) > 1 else []
+
+
+def evidence_lines(param: str, *, sample: str = "named product, facility, standard or figure") -> str:
+    """The Evidence lines of the answer template for one parameter: one per
+    part the parameter names, then open-ended further findings (no limit)."""
+    parts = parameter_parts(param)
+    if len(parts) > 1:
+        lines = [f"Evidence: <a specific finding on {p.upper()} — {sample} — and its source; "
+                 "if none exists write exactly 'Not available'>" for p in parts]
+    else:
+        lines = [f"Evidence: <first specific finding — {sample} — and its source>",
+                 "Evidence: <a SECOND, different finding for this same parameter; if none exists write "
+                 "exactly 'Not available'>"]
+    lines.append("Evidence: <EVERY further documented finding for this parameter, one per line, as many as "
+                 "genuinely exist (no limit) -- cover every part of the parameter name and every criterion "
+                 "in what it measures>")
+    return "\n".join(lines) + "\n"
+
+
+EVIDENCE_COVERAGE = (
+    "COVERAGE: give each parameter its own Evidence lines for EVERY part its name joins (for 'Revenue & "
+    "Growth' at least one finding on revenue AND one on growth) and for every criterion in what it "
+    "measures. There is no limit on Evidence lines: list every genuine, different, documented finding.")
+
+
+def build_part_query(
+    company: str,
+    param: str,
+    part: str,
+    definition: str = "",
+    *,
+    market: str = "",
+    context: str = "",
+    headquarters: str = "",
+) -> str:
+    """Findings on ONE part of a parameter that the report has none for
+    (gap-fill; no score -- the parameter's score already exists)."""
+    where = f" in the {market}" if str(market).strip() else ""
+    bits = [b for b in (f"headquartered in {headquarters.strip()}" if str(headquarters).strip() else "",
+                        str(context).strip()) if b]
+    about = f"\nAbout this company: {'; '.join(bits)}" if bits else ""
+    what = f"\nWhat the parameter measures: {definition.strip()}" if str(definition).strip() else ""
+    return (
+        f"Find documented facts about the company {company}{where} on {part.upper()}, one part of the "
+        f"parameter '{param}'.{about}{what}\n\n"
+        "Answer ONLY with Evidence lines, one finding per line, as many as genuinely exist (no limit):\n"
+        f"Evidence: <a specific finding on {part} — named figure, product, contract, facility, certification "
+        "or date — and its source>\n"
+        "Evidence: <another, different finding>\n"
+        "If nothing is documented, answer exactly 'Evidence: Not available'.\n"
+        "NEVER cite or name market-research or analyst publishers as evidence or as a source.\n"
+        f"{EVIDENCE_RULES}\n"
+        "Use only real sources. Do not invent a source or a figure."
+    )
+
+
+def parse_part_evidence(answer: str, prompt: str = "") -> list[dict[str, str]]:
+    """The findings of a build_part_query answer ('Not available' dropped)."""
+    body = answer_body(answer, prompt) if prompt else str(answer or "")
+    return [e for e in _section_evidence(body)
+            if not str(e.get("claim") or "").strip().lower().startswith("not available")]
+
+
 def evidence_hint(axis_label: str) -> str:
     """The axis-specific definition of what counts as evidence."""
     return _EVIDENCE_HINT.get(axis_label, "")
@@ -246,10 +354,8 @@ def build_defined_small_group_query(
     )
     sections = "\n\n".join(
         f"{i}. {p}\n"
-        "Evidence: <first specific finding — named project, client, "
-        "facility, algorithm, figure or case study — and its source>\n"
-        "Evidence: <a SECOND, different finding; if none exists write exactly "
-        "'Not available'>\n"
+        + evidence_lines(p, sample="named project, client, facility, algorithm, figure or case study")
+        +
         # The "why" line has to justify the number: what the rating rests on
         # first, then the gap. A line listing only what could not be found
         # leaves a reader asking how the company earned its score.
@@ -284,7 +390,7 @@ def build_defined_small_group_query(
         # news or technical source, never on another research firm.
         "NEVER cite or name market-research or analyst publishers (market-size "
         "or market-share report firms) as evidence or as a source.\n"
-        f"{EVIDENCE_RULES}\n\n"
+        f"{EVIDENCE_RULES}\n{EVIDENCE_COVERAGE}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 "
         "present but partial or self-reported evidence. 40-54 weak or "
@@ -334,9 +440,9 @@ def build_forced_score_query(
         f"{scope}{about}\n\n"
         f"{param}\n   WHAT THIS MEASURES: {definition}\n\n"
         "Search for real evidence, then answer in EXACTLY this format:\n\n"
-        "Evidence: <best specific finding you can locate, or exactly 'Not "
-        "available' if genuinely none exists (never 'not found in public records')>\n"
-        "Evidence: <a second finding if one exists, else omit this line>\n"
+        + evidence_lines(param, sample="the best specific finding you can locate (never 'not found in "
+                                       "public records')")
+        +
         # The "why" line has to justify the number: what the rating rests on
         # first, then the gap. A line listing only what could not be found
         # leaves a reader asking how the company earned its score.
@@ -354,7 +460,7 @@ def build_forced_score_query(
         # news or technical source, never on another research firm.
         "NEVER cite or name market-research or analyst publishers (market-size "
         "or market-share report firms) as evidence or as a source.\n"
-        f"{EVIDENCE_RULES}\n\n"
+        f"{EVIDENCE_RULES}\n{EVIDENCE_COVERAGE}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 "
         "present but partial or self-reported evidence. 40-54 weak or "
@@ -435,11 +541,8 @@ def build_defined_parameter_score_query(
         "parameter above, giving EVERY parameter its own score, in the "
         "SAME order as the checklist:\n\n"
         f"1. {first}\n"
-        "Evidence: <first specific finding — named project, client, "
-        "facility, algorithm, figure or case study — and its source>\n"
-        "Evidence: <a SECOND, different finding for this same parameter; if "
-        "none exists write exactly 'Not available'>\n"
-        "Evidence: <a THIRD finding, if one genuinely exists>\n"
+        + evidence_lines(first, sample="named project, client, facility, algorithm, figure or case study")
+        +
         # The "why" line has to justify the number: what the rating rests on
         # first, then the gap. A line listing only what could not be found
         # leaves a reader asking how the company earned its score.
@@ -460,7 +563,7 @@ def build_defined_parameter_score_query(
         # news or technical source, never on another research firm.
         "NEVER cite or name market-research or analyst publishers (market-size "
         "or market-share report firms) as evidence or as a source.\n"
-        f"{EVIDENCE_RULES}\n\n"
+        f"{EVIDENCE_RULES}\n{EVIDENCE_COVERAGE}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 "
         "present but partial or self-reported evidence. 40-54 weak or "
@@ -524,22 +627,17 @@ def build_parameter_score_query(
         "Answer in EXACTLY this format, one numbered section per parameter, "
         "using the parameter names above:\n\n"
         f"1. {first}\n"
-        # TWO OR THREE findings, not one. A single Evidence line is a
-        # single sentence, and the report renders each finding as its own
-        # bullet -- with one line there is nothing to break apart, and a
-        # client reviewing a score sees one assertion instead of the
-        # argument behind it.
-        "Evidence: <first specific finding — named product, facility, "
-        "standard or figure — and its source>\n"
-        "Evidence: <a SECOND, different finding for this same parameter; if "
-        "none exists write exactly 'Not available'>\n"
-        "Evidence: <a THIRD finding, if one genuinely exists>\n"
-        "Score: NN / 100\n\n"
+        # Several findings, not one, and one per part of the parameter name
+        # (evidence_lines): a single Evidence line is a single assertion, and
+        # "Revenue & Growth" answered with two revenue facts left growth bare.
+        + evidence_lines(first)
+        + "Score: NN / 100\n\n"
         "(then 2., 3., and so on for every parameter)\n\n"
         f"Composite {axis_label} Score: NN / 100\n\n"
         # Judge the company at what it does. Scoring an abrasives maker on
         # semiconductor wafer parameters produced a flat 0/100, which is a
         # category error rather than an assessment.
+        f"{EVIDENCE_COVERAGE}\n"
         f"{evidence_hint(axis_label)}\n"
         "Score each parameter relative to this market as a whole. If the "
         "company serves a different segment of this market than the "
@@ -672,16 +770,11 @@ def build_batch_parameter_query(
         "company, keeping its letter and name as the heading:\n\n"
         f"A. {a_name}\n"
         f"1. {first}\n"
-        "Evidence: <first specific finding — named product, facility, "
-        "standard or figure — and its source>\n"
-        "Evidence: <a SECOND, different finding for this same parameter; if "
-        "none exists write exactly 'Not available'>\n"
-        "Evidence: <a THIRD finding, if one genuinely exists>\n"
-        "Score: NN / 100\n"
+        + evidence_lines(first)
+        + "Score: NN / 100\n"
         f"2. {second}\n"
-        "Evidence: <first finding for this parameter and its source>\n"
-        "Evidence: <a second, different finding>\n"
-        "Score: NN / 100\n"
+        + evidence_lines(second)
+        + "Score: NN / 100\n"
         "(then the remaining parameters, in order)\n"
         f"Composite {axis_label} Score: NN / 100\n\n"
         f"B. {b_name}\n"
@@ -700,6 +793,7 @@ def build_batch_parameter_query(
         "Do not write an opening summary. Do not merge companies. Do not "
         "answer with a markdown table. Do not summarise several "
         "parameters into one line. Do not skip a company.\n"
+        f"{EVIDENCE_COVERAGE}\n"
         f"{evidence_hint(axis_label)}\n"
         "Score each parameter relative to this market as a whole. If a "
         "company serves a different segment of this market than the "
@@ -1083,7 +1177,7 @@ def build_axis_scorecard_query(
         # news or technical source, never on another research firm.
         "NEVER cite or name market-research or analyst publishers (market-size "
         "or market-share report firms) as evidence or as a source.\n"
-        f"{EVIDENCE_RULES}\n\n"
+        f"{EVIDENCE_RULES}\n{EVIDENCE_COVERAGE}\n\n"
         "SCORING SCALE: 85-100 market-leading, third-party verified. "
         "70-84 clear verifiable capability, not leading-edge. 55-69 present "
         "but partial or self-reported evidence. 40-54 weak or unproven on "

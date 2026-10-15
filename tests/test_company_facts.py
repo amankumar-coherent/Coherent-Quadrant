@@ -282,3 +282,90 @@ def test_area_shard_splits_countries(monkeypatch):
     assert a and b and not set(a) & set(b)
     monkeypatch.delenv("GEO_AREA_SHARD")
     assert area_shard(countries) == countries
+
+
+def test_owner_names_splits_joint_owners():
+    assert cf.owner_names("TPG and Corpay") == ["TPG and Corpay", "TPG", "Corpay"]
+    assert cf.owner_names("Clearlake Capital & TA Associates")[1:] == ["Clearlake Capital", "TA Associates"]
+    assert cf.owner_names("Basware") == ["Basware"]
+    assert cf.owner_names("") == []
+
+
+def test_listed_parent_matches_any_listed_co_owner(tmp_path):
+    pool = ["AvidXchange, Inc.", "Corpay, Inc.", "Basware Oy", "Redmap Networks Pty Ltd"]
+    assert cf.listed_parent("TPG and Corpay", "AvidXchange, Inc.", pool, tmp_path) == "Corpay, Inc."
+    assert cf.listed_parent("Basware", "Redmap Networks Pty Ltd", pool, tmp_path) == "Basware Oy"
+    # Investment firms not in the list never count; a single name with "&" stays whole.
+    assert cf.listed_parent("Clearlake Capital & TA Associates", "Basware Oy", pool, tmp_path) is None
+    assert cf.listed_parent("Johnson & Johnson", "X", ["Johnson & Johnson", "X"], tmp_path) == "Johnson & Johnson"
+    # Never the company itself.
+    assert cf.listed_parent("Corpay", "Corpay, Inc.", pool, tmp_path) is None
+
+
+def test_listed_groups_joins_parent_with_all_its_units():
+    pairs = [{"company": "Redmap", "parent": "Basware"}, {"company": "AP Matching", "parent": "Basware"},
+             {"company": "AvidXchange", "parent": "Corpay"}]
+    assert sorted(cf.listed_groups(pairs)) == [["AP Matching", "Basware", "Redmap"], ["AvidXchange", "Corpay"]]
+
+
+def test_resolve_listed_groups_keeps_the_stronger(tmp_path):
+    scores = {"Redmap": 70, "Basware": 85, "AvidXchange": 88, "Corpay": 74}
+    pairs = [{"company": "Redmap", "parent": "Basware"}, {"company": "AvidXchange", "parent": "Corpay"}]
+    out = cf.resolve_listed_groups(tmp_path, pairs, scores.get)
+    assert sorted(d["company"] for d in out) == ["Corpay", "Redmap"]
+    # The decision is saved: a later re-score does not swap the companies.
+    scores.update({"Corpay": 95})
+    assert sorted(d["company"] for d in cf.resolve_listed_groups(tmp_path, pairs, scores.get)) == ["Corpay", "Redmap"]
+
+
+def test_resolve_listed_groups_tie_or_no_score_keeps_parent_and_honours_keep(tmp_path):
+    pairs = [{"company": "Unit", "parent": "Parent"}]
+    assert [d["company"] for d in cf.resolve_listed_groups(tmp_path / "a", pairs, lambda n: 80)] == ["Unit"]
+    assert [d["company"] for d in cf.resolve_listed_groups(tmp_path / "b", pairs, lambda n: None)] == ["Unit"]
+    assert cf.resolve_listed_groups(tmp_path / "c", pairs, lambda n: 80, keep={"unit"}) == []
+
+
+def test_resolve_listed_groups_chart_company_beats_higher_quick_score(tmp_path):
+    # The Leader on the chart stays even when its co-owner's quick score is higher.
+    pairs = [{"company": "AvidXchange", "parent": "Corpay"}]
+    scores = {"AvidXchange": 74, "Corpay": 80}
+    out = cf.resolve_listed_groups(tmp_path, pairs, scores.get, on_chart=["AvidXchange"])
+    assert [d["company"] for d in out] == ["Corpay"]
+
+
+def test_neutral_sources_removes_third_party_names_and_keeps_the_finding():
+    f = cf.neutral_sources
+    assert f("The company reports 8 lines, according to its corporate profile on Made-in-China.") == \
+        "The company reports 8 lines, according to its corporate profile."
+    assert f("It offers enteric HPMC capsules, as detailed on IndiaMART.") == \
+        "It offers enteric HPMC capsules, according to primary research."
+    assert f("Fierce Pharma reported in October 2025 that the company announced a plant.") == \
+        "According to primary research, in October 2025, the company announced a plant."
+    assert f("The company profile document retrieved from Scribd states that it exports.") == \
+        "The company profile document states that it exports."
+    assert f("A review by CRISIL indicated growth.") == "A review indicated growth."
+    # A real event and a company name are not sources.
+    assert f("A partnership formed at CPHI China in Shanghai.") == "A partnership formed at CPHI China in Shanghai."
+    assert f("Supplied by Acme Co., Ltd. to clients.") == "Supplied by Acme Co., Ltd. to clients."
+    assert cf.neutral_source_label("Made-in-China Supplier Profile") == "Primary research"
+    assert cf.neutral_source_label("Company website") == "Company website"
+
+
+def test_norm_name_folds_accents_and_latin_legal_forms():
+    from vendor_intel.pipeline.quadrant_pipeline import dedupe_companies, norm_name
+    assert norm_name("Despurifil Ltda") == norm_name("Despurifil") == "despurifil"
+    assert norm_name("Indústria X Eireli") == norm_name("Industria X") == "industria x"
+    assert norm_name("Ecosan S/A") == "ecosan"
+    rows = [{"name": "Despurifil Ltda", "website": "https://despurifil.com.br"},
+            {"name": "Despurifil"},
+            {"name": "Despurifil Indústria e Comércio Ltda", "website": "despurifil.com.br"}]
+    assert len(dedupe_companies(rows)[0]) == 1
+
+
+def test_buyback_by_own_ceo_is_not_an_owner_label():
+    rec = {"acquired": True, "acquirer": "Luis Guilherme Pozzani da Rocha", "year": "2019", "today": "subsidiary",
+           "note": "Fluid Brasil was fully acquired by its former CEO, Luis Guilherme Pozzani da Rocha, in 2019."}
+    assert cf.owner_entry("Fluid Brasil Ltda.", rec) is None
+    real = {"acquired": True, "acquirer": "Mann+Hummel", "year": "2012", "today": "subsidiary",
+            "note": "Acquired by Mann+Hummel in 2012."}
+    assert cf.owner_entry("Fluid Brasil Ltda.", real)["owner"] == "Mann+Hummel"

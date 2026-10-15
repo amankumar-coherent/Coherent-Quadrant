@@ -84,6 +84,23 @@ def worker(args) -> int:
 
     out_dir = Path(default_output_dir(args.market, args.country))
     by = {b["company"]: b for b in chart_rows(out_dir)}
+    # The market brief's scope test applies here too: with "own_product_line" a
+    # company that makes the market's product itself is core even when it is one
+    # line of a larger business. The default main-product wording removed real
+    # medical-film makers (sterilization-packaging film, coated medical films).
+    brief_file = out_dir / "_pipeline" / "market_brief.json"
+    brief = json.loads(brief_file.read_text(encoding="utf-8")) if brief_file.exists() else {}
+    status_sys = STATUS_SYS
+    if str(brief.get("scope_test") or "").strip().lower() == "own_product_line":
+        status_sys = STATUS_SYS.replace(
+            "(core only when the market's product is a main product the company sells; adjacent when it is "
+            "a minor feature of a different main product; out when it does not sell it at all or is a service "
+            "firm)",
+            "(core when the company itself makes and sells the market's product under its own name, also when "
+            "it is one product line of a larger business; adjacent when it does not make it itself -- it buys, "
+            "converts for others, distributes or resells it -- or makes only a neighbouring product; out when it "
+            "does not sell it at all or is a service firm)")
+        assert status_sys != STATUS_SYS, "STATUS_SYS wording changed: update the own_product_line variant"
     skip = applied_replacements(out_dir / "_pipeline")
     definition, core, adjacent = market_scope(out_dir)
     names = json.loads(Path(args.companies).read_text(encoding="utf-8"))
@@ -109,7 +126,7 @@ def worker(args) -> int:
         b = by.get(name) or {}
         rec = done.setdefault(name, {})
         if not rec.get("status"):
-            got = ask(STATUS_SYS,
+            got = ask(status_sys,
                       f"Market: {args.market}. Definition: {definition[:600]}\nCore players: {core[:500]}\n"
                       f"Adjacent segments: {adjacent[:300]}\n\nCompany: {name} (brand {b.get('brand')}), "
                       f"listed HQ {b.get('hq_location')}. Is it operating today, who owns it, where is its "
