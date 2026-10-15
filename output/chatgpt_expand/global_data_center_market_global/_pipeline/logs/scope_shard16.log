@@ -1,0 +1,30 @@
+[facts 04:52:58] scope: 9 companies to check
+      · scope-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_57_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_57_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_57_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (4 this run) — solve it in the browser window
+  [ai-mode] verify — archiving profile and starting clean (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_57_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (6 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #4)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_57_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · scope-1: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #5)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_57_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · scope-1: calling Google AI Mode (udm=50) attempt 2/5…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · scope-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · scope-1: calling Google AI Mode (udm=50) attempt 3/5…
+      · scope-1: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 174s ago
+[facts 04:58:48] scope: 9 answers saved -> facts_scope_shard16.json

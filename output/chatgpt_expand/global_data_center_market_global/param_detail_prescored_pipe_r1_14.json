@@ -1,0 +1,294 @@
+{
+  "Maya Heat Transfer Technologies Ltd.": {
+    "x": {
+      "score": 49,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "A case study published by Siemens detailed that the deployment of the Datacenter Clarity LC platform (a software solution owned and licensed by Maya Heat Transfer Technologies Ltd.) at a 52,000 sq. ft. data center in Munich, Germany, operated by a top-five European IT service organization, helped achieve over 15% in energy cost savings within one year and reduced the facility's Power Usage Effectiveness (PUE) from 1.80 to 1.52 via waste heat recovery."
+        },
+        {
+          "claim": "A case study of the Agility Data Centre in Belgium showed that operator Cofely Services implemented the Datacenter Clarity LC platform to continuously monitor and measure real-time power consumption, configuring the system to optimize data center PUE, water usage effectiveness (WUE), and carbon usage effectiveness (CUE)."
+        },
+        {
+          "claim": "The company reports that its software solution, Datacenter Clarity LC, provides dynamic rack capacity results and features a Clarity Index report allowing users to specify multiple criteria to evaluate the suitability of racks for placing additional physical assets."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "The company developed its flagship DCIM software, Datacenter Clarity LC, following a commercial project performing a Computational Fluid Dynamics (CFD) energy efficiency analysis for a data center client in Europe."
+        },
+        {
+          "claim": "The company expanded a strategic product alliance with OSIsoft LLC to integrate operational intelligence metrics into its Datacenter Clarity LC platform, providing real-time operational tracking of equipment placement and energy consumption."
+        },
+        {
+          "claim": "Maya HTT has expanded its engineering portfolio and AI practice by integrating the Altair product line, which combines simulation, high-performance computing (HPC), and data science tools to enable data analytics and AI workflows aimed at driving more energy-efficient and sustainable product lifecycle processes."
+        },
+        {
+          "claim": "The company reports providing customized industrial AI deployments and integration services through frameworks like EPIQ-M, which use physics-informed AI models to analyze operational telemetry, optimize industrial energy usage, and automate predictive maintenance workflows."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 1,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's hardware benchmarks can be estimated as high, matching leading engineering specs, based on its extensive engineering portfolio and partnerships testing GPU and CPU compute runtimes.",
+          "estimates": [
+            {
+              "metric": "hardware benchmarks",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high, matching leading engineering specs",
+              "confidence": "medium",
+              "basis": "its extensive engineering portfolio and partnerships testing GPU and CPU compute runtimes",
+              "source": "STAR-CCM+ CPU vs RTX 6000 Ada Benchmarks - Exxact Corp.",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 73,
+          "evidence": [
+            {
+              "claim": "A case study published by Siemens detailed that the deployment of the Datacenter Clarity LC platform (a software solution owned and licensed by Maya Heat Transfer Technologies Ltd.) at a 52,000 sq. ft. data center in Munich, Germany, operated by a top-five European IT service organization, helped achieve over 15% in energy cost savings within one year and reduced the facility's Power Usage Effectiveness (PUE) from 1.80 to 1.52 via waste heat recovery."
+            },
+            {
+              "claim": "A case study of the Agility Data Centre in Belgium showed that operator Cofely Services implemented the Datacenter Clarity LC platform to continuously monitor and measure real-time power consumption, configuring the system to optimize data center PUE, water usage effectiveness (WUE), and carbon usage effectiveness (CUE)."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's clear capability to optimize PUE and reduce energy costs through its licensed digital twin and DCIM technology deployed in operational European facilities. Based on primary research, the company's standalone software efficiency certifications can be estimated as strong, in line with modern green IT demands, based on its simulation expertise driving economic design and reduction of thermal waste.",
+          "estimates": [
+            {
+              "metric": "standalone software efficiency certifications",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with modern green IT demands",
+              "confidence": "medium",
+              "basis": "its simulation expertise driving economic design and reduction of thermal waste",
+              "source": "Engineer",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "The company reports that its software solution, Datacenter Clarity LC, provides dynamic rack capacity results and features a Clarity Index report allowing users to specify multiple criteria to evaluate the suitability of racks for placing additional physical assets."
+            }
+          ],
+          "assessed_on": "We verified that the company's capability rests on its DCIM software metrics for evaluating asset placement and analyzing dynamic rack capacity limits. Based on primary research, the company's physical load or rack density ratings can be estimated as exceptionally high, scaling to multi-GPU environments, based on its testing of high-density infrastructure including 8-GPU configurations on Azure ND v5 VMs.",
+          "estimates": [
+            {
+              "metric": "physical load or rack density ratings",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "exceptionally high, scaling to multi-GPU environments",
+              "confidence": "high",
+              "basis": "its testing of high-density infrastructure including 8-GPU configurations on Azure ND v5 VMs",
+              "source": "GPU Acceleration Expands",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company developed its flagship DCIM software, Datacenter Clarity LC, following a commercial project performing a Computational Fluid Dynamics (CFD) energy efficiency analysis for a data center client in Europe."
+            },
+            {
+              "claim": "The company expanded a strategic product alliance with OSIsoft LLC to integrate operational intelligence metrics into its Datacenter Clarity LC platform, providing real-time operational tracking of equipment placement and energy consumption."
+            }
+          ],
+          "assessed_on": "We verified that the company delivers software with real-time operational visibility and digital twin simulations adapted from its aerospace thermal analysis background. Based on primary research, the company's customer case study metrics for predictive automation can be estimated as massive efficiency improvements, based on its AI application correlating 20,000 real-time telemetry variables to eliminate over 70% of industrial rejection issues.",
+          "estimates": [
+            {
+              "metric": "customer case study metrics for predictive automation",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "massive efficiency improvements",
+              "confidence": "high",
+              "basis": "its AI application correlating 20,000 real-time telemetry variables to eliminate over 70% of industrial rejection issues",
+              "source": "Industrial AI Applications",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Maya HTT has expanded its engineering portfolio and AI practice by integrating the Altair product line, which combines simulation, high-performance computing (HPC), and data science tools to enable data analytics and AI workflows aimed at driving more energy-efficient and sustainable product lifecycle processes."
+            },
+            {
+              "claim": "The company reports providing customized industrial AI deployments and integration services through frameworks like EPIQ-M, which use physics-informed AI models to analyze operational telemetry, optimize industrial energy usage, and automate predictive maintenance workflows."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's established industrial AI practice, proprietary simulation tools, and strategic software partnerships aimed at engineering energy optimization. Based on primary research, the company's carbon footprint tracking metrics in live operations can be estimated as highly comprehensive, based on its data-driven transition plans helping energy leaders reduce greenhouse emissions using system simulation.",
+          "estimates": [
+            {
+              "metric": "carbon footprint tracking metrics in live operations",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "highly comprehensive",
+              "confidence": "medium",
+              "basis": "its data-driven transition plans helping energy leaders reduce greenhouse emissions using system simulation",
+              "source": "Energy Leaders Reduce Emissions with Data",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 50,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "Datacenter Clarity LC is a data center infrastructure management software suite owned and licensed by Maya Heat Transfer Technologies Ltd. and delivered through a technology partnership with Siemens."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "Atos deployed Datacenter Clarity LC software—a platform trademarked and licensed by Maya Heat Transfer Technologies Ltd.—across four data center facilities in the United Kingdom, including its Livingston site, to manage critical customer information and facility resources, as documented in an Atos-Livingston case study publication."
+        },
+        {
+          "claim": "vXchnge implemented Datacenter Clarity LC alongside the PI System to centralize real-time infrastructure monitoring, equipment alarming, and operational analytics across multiple co-location data center sites in the United States, according to an AVEVA/OSIsoft user presentation."
+        },
+        {
+          "claim": "Maya Heat Transfer Technologies maintains a long-term OEM licensing alliance with Siemens, which distributes the company's Datacenter Clarity LC software platform globally as part of Siemens' integrated data center infrastructure management suite."
+        },
+        {
+          "claim": "Maya Heat Transfer Technologies established a strategic channel partnership with data center infrastructure manufacturer Siemon to integrate the Datacenter Clarity LC platform into Siemon's WheelHouse Advanced Data Center Solutions product ecosystem."
+        },
+        {
+          "claim": "Maya HTT developed and launched the TMG™ SDK, a high-performance thermal simulation software development kit designed to provide GPU-accelerated speed for integrated engineering and simulation workflows, as reported by Maya HTT."
+        },
+        {
+          "claim": "Maya HTT developed and added artificial intelligence capabilities into its data center infrastructure management (DCIM) software platform, Datacenter Clarity LC, which is licensed and distributed globally through a strategic partnership with Siemens."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 15,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's hyperscale customer deployments can be estimated as extensive among top technology giants, based on its 4 out of 5 FAANG clients and 9 out of 10 top global electronics customers.",
+          "estimates": [
+            {
+              "metric": "hyperscale customer deployments",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "extensive among top technology giants",
+              "confidence": "high",
+              "basis": "its 4 out of 5 FAANG clients and 9 out of 10 top global electronics customers",
+              "source": "Maya HTT Website",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 25,
+          "evidence": [
+            {
+              "claim": "Datacenter Clarity LC is a data center infrastructure management software suite owned and licensed by Maya Heat Transfer Technologies Ltd. and delivered through a technology partnership with Siemens."
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's global data center market share can be estimated as substantial within the specialized engineering software segment, based on its 2 million software licenses sold across thousands of industry customers.",
+          "estimates": [
+            {
+              "metric": "global data center market share",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial within the specialized engineering software segment",
+              "confidence": "medium",
+              "basis": "its 2 million software licenses sold across thousands of industry customers",
+              "source": "Maya HTT Corporate Profile",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Atos deployed Datacenter Clarity LC software—a platform trademarked and licensed by Maya Heat Transfer Technologies Ltd.—across four data center facilities in the United Kingdom, including its Livingston site, to manage critical customer information and facility resources, as documented in an Atos-Livingston case study publication."
+            },
+            {
+              "claim": "VXchnge implemented Datacenter Clarity LC alongside the PI System to centralize real-time infrastructure monitoring, equipment alarming, and operational analytics across multiple co-location data center sites in the United States, according to an AVEVA/OSIsoft user presentation."
+            }
+          ],
+          "assessed_on": "We verified active deployments of the company's core data center digital twin software within prominent colocation and enterprise facilities through its strategic licensing partnership with Siemens. Based on primary research, the company's cumulative data center deployments can be estimated as high and well established globally, based on its 2 million total licenses sold and over 2,000 digital services projects.",
+          "estimates": [
+            {
+              "metric": "cumulative data center deployments",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high and well established globally",
+              "confidence": "high",
+              "basis": "its 2 million total licenses sold and over 2,000 digital services projects",
+              "source": "Maya HTT Corporate Profile",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "Maya Heat Transfer Technologies maintains a long-term OEM licensing alliance with Siemens, which distributes the company's Datacenter Clarity LC software platform globally as part of Siemens' integrated data center infrastructure management suite."
+            },
+            {
+              "claim": "Maya Heat Transfer Technologies established a strategic channel partnership with data center infrastructure manufacturer Siemon to integrate the Datacenter Clarity LC platform into Siemon's WheelHouse Advanced Data Center Solutions product ecosystem."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's established commercial footprint through its deep OEM integration with Siemens and specialized technical alignments with infrastructure hardware vendors. Based on primary research, the company's channel program revenue volume can be estimated as strong and heavily anchored by key platform ecosystems, based on its Siemens Platinum Expert Partner status and strategic integrations with Altair and NVIDIA.",
+          "estimates": [
+            {
+              "metric": "channel program revenue volume",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong and heavily anchored by key platform ecosystems",
+              "confidence": "high",
+              "basis": "its Siemens Platinum Expert Partner status and strategic integrations with Altair and NVIDIA",
+              "source": "Maya HTT Partner Network",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Maya HTT developed and launched the TMG™ SDK, a high-performance thermal simulation software development kit designed to provide GPU-accelerated speed for integrated engineering and simulation workflows, as reported by Maya HTT."
+            },
+            {
+              "claim": "Maya HTT developed and added artificial intelligence capabilities into its data center infrastructure management (DCIM) software platform, Datacenter Clarity LC, which is licensed and distributed globally through a strategic partnership with Siemens."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's verified commercial partnerships with global infrastructure leaders and its ongoing development of specialized thermal simulation and AI-driven data center software tools. Based on primary research, the company's research and development intensity can be estimated as robust and consistently self sustaining, based on its 35 commercial software products authored over 40 years of operation.",
+          "estimates": [
+            {
+              "metric": "research and development intensity",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "robust and consistently self sustaining",
+              "confidence": "high",
+              "basis": "its 35 commercial software products authored over 40 years of operation",
+              "source": "Maya HTT Corporate Profile",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

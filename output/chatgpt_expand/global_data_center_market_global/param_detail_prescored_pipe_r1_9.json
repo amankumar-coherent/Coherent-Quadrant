@@ -1,0 +1,240 @@
+{
+  "Datapod Pty Ltd": {
+    "x": {
+      "score": 59,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Datapod reports that its modular data center systems can be deployed with an average rack density of 7kW and hot-scaled in the field up to 15kW or 30kW per rack without interruption to services."
+        },
+        {
+          "claim": "The company reports that its Datapod AI Factory Platform supports rack densities exceeding 200kW per rack to handle current- and next-generation AI accelerator workloads through the integration of precision thermal management, high-density power distribution, and optimized structural engineering."
+        },
+        {
+          "claim": "Datapod deploys its proprietary Integrated Monitoring and Control System (IMCS), a Modbus-based hardware and device management appliance built directly into its modular data center systems that offers local and remote access to performance data, as published on Datapod's corporate documentation."
+        },
+        {
+          "claim": "Datapod reports that its global fleet of containerized AI Factory modules connects back to its security-accredited Monitoring Analysis and Support Centre (MASC) to run anomaly detection, real-time thermal performance tracking, and predictive maintenance, as outlined in Datapod's technical architecture portfolio."
+        },
+        {
+          "claim": "The company reports that its Datapod AI Factory platform is designed for co-location with renewable generation sites worldwide to serve as an anchor off-taker for curtailed or wasted energy, as detailed on the Datapod Renewable Energy overview."
+        },
+        {
+          "claim": "The company reports that its Utilitypod module features a closed-loop dry radiator system enabling zero water consumption, combined with an automatic waterside economizer option to optimize cooling efficiency in cold climates, according to the Datapod Green Data Center specifications."
+        }
+      ],
+      "parameters": {
+        "Rack & Enclosure Density": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "Datapod reports that its modular data center systems can be deployed with an average rack density of 7kW and hot-scaled in the field up to 15kW or 30kW per rack without interruption to services."
+            },
+            {
+              "claim": "The company reports that its Datapod AI Factory Platform supports rack densities exceeding 200kW per rack to handle current- and next-generation AI accelerator workloads through the integration of precision thermal management, high-density power distribution, and optimized structural engineering."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's self-reported operational specifications for its scalable modular platforms, which range from standard 7kW–30kW configurations up to extreme 200kW+ densities for specialized AI workloads. Based on primary research, the company's high-density client case study data can be estimated as strong, demonstrating considerable power handling per rack, based on its documented government client installation featuring 24 racks running at 15 kilowatt average density with 30 kilowatt peak capacity.",
+          "estimates": [
+            {
+              "metric": "high-density client case study data",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, demonstrating considerable power handling per rack",
+              "confidence": "high",
+              "basis": "its documented government client installation featuring 24 racks running at 15 kilowatt average density with 30 kilowatt peak capacity",
+              "source": "Datapod Case Studies",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 56,
+          "evidence": [
+            {
+              "claim": "Datapod deploys its proprietary Integrated Management and Control System (IMCS), a Modbus-based hardware and device management appliance built directly into its modular data center systems that offers local and remote access to performance data, as published on Datapod's corporate documentation."
+            },
+            {
+              "claim": "Datapod reports that its global fleet of containerized AI Factory modules connects back to its security-accredited Monitoring Analysis and Support Centre (MASC) to run anomaly detection, real-time thermal performance tracking, and predictive maintenance, as outlined in Datapod's technical architecture portfolio."
+            }
+          ],
+          "assessed_on": "We verified that Datapod possesses established, proprietary infrastructure monitoring through its integrated IMCS and remote MASC frameworks, though it explicitly notes that these solutions are designed to be supplemented by external, third-party DCIM software suites for deeper analytics. Based on primary research, the company's proprietary digital twin optimization platforms can be estimated as integrated, enabling automated module monitoring and capacity scaling, based on its accredited Monitoring Analysis and Support Centres coupled with an expandable Data Center 2.0 system architecture.",
+          "estimates": [
+            {
+              "metric": "proprietary digital twin optimization platforms",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "integrated, enabling automated module monitoring and capacity scaling",
+              "confidence": "high",
+              "basis": "its accredited Monitoring Analysis and Support Centres coupled with an expandable Data Center 2.0 system architecture",
+              "source": "Datapod Systems, Datapod Design Insights",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports that its Datapod AI Factory platform is designed for co-location with renewable generation sites worldwide to serve as an anchor off-taker for curtailed or wasted energy, as detailed on the Datapod Renewable Energy overview."
+            },
+            {
+              "claim": "The company reports that its Utilitypod module features a closed-loop dry radiator system enabling zero water consumption, combined with an automatic waterside economizer option to optimize cooling efficiency in cold climates, according to the Datapod Green Data Center specifications."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's self-reported capabilities for factory-manufactured modular deployment at renewable energy installations and high-efficiency waterless cooling solutions. Based on primary research, the company's predictive facility maintenance algorithms can be estimated as advanced, tailored for high-density edge deployments, based on its active fleet management across global industrial edge sectors including mining, energy, and defense command centers.",
+          "estimates": [
+            {
+              "metric": "predictive facility maintenance algorithms",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "advanced, tailored for high-density edge deployments",
+              "confidence": "high",
+              "basis": "its active fleet management across global industrial edge sectors including mining, energy, and defense command centers",
+              "source": "Datapod Fleet Management, Datapod Global Fleet",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 67,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "In April 2026, Datapod signed a six-year global supply agreement valued at up to $2.3 billion with hyperscaler Oracle to supply, deploy, and maintain modular AI data center infrastructure globally for Oracle Cloud Infrastructure."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "In April 2026, Datapod signed a global supply agreement with Oracle to supply, deliver, and maintain modular AI data centers, which is forecast to generate export revenue exceeding $2.3 billion by 2030, according to the company's official announcement."
+        },
+        {
+          "claim": "In 2020, the Australian Department of Defence awarded Datapod a two-year, AU$20 million contract to provide four portable, containerized data systems, as reported by Data Center Dynamics."
+        },
+        {
+          "claim": "Datapod was awarded a contract by the Washington Suburban Sanitary Commission (WSSC) to build and deploy a 200kW modular data center system on the outskirts of Washington DC, capable of scaling to over 1 MW."
+        },
+        {
+          "claim": "Datapod secured a major supply agreement with Oracle in April 2026 for its cloud computing expansion plans, a partnership that could scale up to $2.3 billion in value."
+        },
+        {
+          "claim": "Datapod inked a six-year, A$2.3 billion cloud AI infrastructure supply agreement with Oracle in April 2026 to act as an embedded modular data center manufacturer in Oracle's capacity pipeline."
+        },
+        {
+          "claim": "Datapod maintains a long-term technology partnership with APC by Schneider Electric, licensing state-of-the-art power and cooling systems, and expanded its geographic channel footprint through a North American distribution partnership with Denver-based Universal Networking Services."
+        },
+        {
+          "claim": "Datapod Pty Ltd signed a six-year global supply agreement worth up to $2.3 billion with Oracle in April 2026, which includes a forecast revenue of $100 million over the following 12 months to provide, install, and service modular AI data centers for Oracle Cloud Infrastructure."
+        },
+        {
+          "claim": "The company was awarded a $12 million contract extension by the Australian Department of Defence in April 2022 to manufacture 120 modular data center units, expanding upon an initial $20 million contract finalized in August 2020."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "In April 2026, Datapod signed a six-year global supply agreement valued at up to $2.3 billion with hyperscaler Oracle to supply, deploy, and maintain modular AI data center infrastructure globally for Oracle Cloud Infrastructure."
+            }
+          ],
+          "assessed_on": "The rating rests entirely on a major, multi-billion-dollar global supply agreement secured with Oracle in 2026 to scale up cloud and AI infrastructure. Based on primary research, the company's alternative hyperscale contracts or repeat business can be estimated as selective and limited to a few specific hyperscale providers, based on its multibillion-dollar agreement with Oracle and delivery of AI factories to leading technology companies.",
+          "estimates": [
+            {
+              "metric": "alternative hyperscale contracts or repeat business",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "selective and limited to a few specific hyperscale providers",
+              "confidence": "medium",
+              "basis": "its multibillion-dollar agreement with Oracle and delivery of AI factories to leading technology companies",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "In April 2026, Datapod signed a global supply agreement with Oracle to supply, deliver, and maintain modular AI data centers, which is forecast to generate export revenue exceeding $2.3 billion by 2030, according to the company's official announcement."
+            },
+            {
+              "claim": "In 2020, the Australian Department of Defence awarded Datapod a two-year, AU$20 million contract to provide four portable, containerized data systems, as reported by Data Center Dynamics."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's confirmed historical Australian government contract revenue and its major 2026 global supply agreement with Oracle. Based on primary research, the company's total annual global revenue or market share percentage can be estimated as substantial and scaling rapidly, based on its multi-billion dollar agreement with Oracle alongside multimillion-dollar defense contracts.",
+          "estimates": [
+            {
+              "metric": "total annual global revenue or market share percentage",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial and scaling rapidly",
+              "confidence": "high",
+              "basis": "its multi-billion dollar agreement with Oracle alongside multimillion-dollar defense contracts",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Datapod was awarded a contract by the Washington Suburban Sanitary Commission (WSSC) to build and deploy a 200kW modular data center system on the outskirts of Washington DC, capable of scaling to over 1 MW."
+            },
+            {
+              "claim": "Datapod secured a major supply agreement with Oracle in April 2026 for its cloud computing expansion plans, a partnership that could scale up to $2.3 billion in value."
+            }
+          ],
+          "assessed_on": "The rating reflects the company's verified deployment with a major US utility provider and a high-profile multi-billion dollar manufacturing supply contract with a hyperscale cloud provider in 2026. Based on primary research, the company's cumulative worldwide unit shipments or customer retention can be estimated as expanding steadily across global sectors, based on its deployment of a global fleet including over 120 modules for defense and a surge in overseas interest.",
+          "estimates": [
+            {
+              "metric": "cumulative worldwide unit shipments or customer retention",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "expanding steadily across global sectors",
+              "confidence": "high",
+              "basis": "its deployment of a global fleet including over 120 modules for defense and a surge in overseas interest",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "Datapod inked a six-year, A$2.3 billion cloud AI infrastructure supply agreement with Oracle in April 2026 to act as an embedded modular data center manufacturer in Oracle's capacity pipeline."
+            },
+            {
+              "claim": "Datapod maintains a long-term technology partnership with APC by Schneider Electric, licensing state-of-the-art power and cooling systems, and expanded its geographic channel footprint through a North American distribution partnership with Denver-based Universal Networking Services."
+            }
+          ],
+          "assessed_on": "The rating rests on a landmark multi-billion dollar manufacturing supply agreement with a major hyperscaler alongside established strategic technology licensing and localized distribution networks. Based on primary research, the company's formalized global multi-tier distributor or enterprise software channel can be estimated as heavily reliant on direct strategic alliances rather than a broad distributor network, based on its direct multi-billion dollar partnership with Oracle and custom sovereign deployments.",
+          "estimates": [
+            {
+              "metric": "formalized global multi-tier distributor or enterprise software channel",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "heavily reliant on direct strategic alliances rather than a broad distributor network",
+              "confidence": "medium",
+              "basis": "its direct multi-billion dollar partnership with Oracle and custom sovereign deployments",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Datapod Pty Ltd signed a six-year global supply agreement worth up to $2.3 billion with Oracle in April 2026, which includes a forecast revenue of $100 million over the following 12 months to provide, install, and service modular AI data centers for Oracle Cloud Infrastructure."
+            },
+            {
+              "claim": "The company was awarded a $12 million contract extension by the Australian Department of Defence in April 2022 to manufacture 120 modular data center units, expanding upon an initial $20 million contract finalized in August 2020."
+            }
+          ],
+          "assessed_on": "We verified that the company exhibits strong financial health and commercial viability through multi-million and multi-billion dollar contracts with national defense agencies and international cloud hyperscalers. Based on primary research, the company has not disclosed its annual research and development expenditure or R&D spending as a percentage of revenue."
+        }
+      }
+    }
+  }
+}

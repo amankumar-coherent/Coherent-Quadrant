@@ -1,0 +1,312 @@
+{
+  "NVIDIA Corporation": {
+    "x": {
+      "score": 82,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "In the peer-reviewed MLPerf Training v6.0 benchmarks released by MLCommons on June 16, 2026, the NVIDIA Blackwell platform swept all seven workloads, achieving the fastest time-to-train at a record scale of 8,192 GPUs."
+        },
+        {
+          "claim": "Amazon Web Services expanded its deployment roadmap on August 26, 2026, with an agreement to introduce an additional 2 million NVIDIA Blackwell Ultra, Rubin, and Rubin Ultra GPUs across its global cloud data center infrastructure during 2027 and 2028."
+        },
+        {
+          "claim": "A joint analysis conducted by specialists from NVIDIA and Vertiv evaluated a midsize Tier 2 data center in Baltimore, Maryland, to measure the impact of progressive direct-to-chip liquid cooling integration from 0% to 74.9% across four studies, demonstrating that reaching a 74.9% liquid load reduced facility power by 18.1%, total data center power by 10.2%, and decreased the Power Usage Effectiveness (PUE) from 1.38 to 1.34."
+        },
+        {
+          "claim": "NVIDIA co-developed liquid cooling reference designs and blueprints with Schneider Electric, such as the RD113 architecture supporting up to 227 kW per rack, which integrate high-density liquid cooling, Galaxy uninterruptible power supplies (UPS), and Uniflair cooling systems to maintain an operational PUE as low as 1.15 to 1.2."
+        },
+        {
+          "claim": "The NVIDIA GB300 NVL72 rack-scale reference architecture supports an integrated high-density system combining 72 Blackwell Ultra GPUs and 36 Grace CPUs, drawing up to 142 kW of power per rack and requiring mandatory direct-to-chip liquid cooling."
+        },
+        {
+          "claim": "The company reports that its previous generation NVIDIA GB200 NVL72 liquid-cooled rack-scale system integrates 36 Grace CPUs and 72 Blackwell GPUs in a single unit specified at approximately 120 kW of sustained full-load power draw."
+        },
+        {
+          "claim": "Switch is building its EVO AI Factories and LDC EVO operating system using the NVIDIA Omniverse DSX Blueprint for real-time telemetry ingestion, continuously updated digital twins, and automated optimization of power, cooling, and workloads."
+        },
+        {
+          "claim": "The company reports that its NVIDIA Data Center GPU Manager (DCGM) suite provides active health monitoring, comprehensive diagnostics, system alerts, and governance policies (including power and clock management) for infrastructure teams to simplify GPU cluster administration and automate recovery actions."
+        },
+        {
+          "claim": "NVIDIA released data center energy-optimized power profiles for the Blackwell B200 hardware architecture and NVIDIA Mission Control orchestration software, achieving up to 15% energy savings while operating within strict facility power constraints."
+        },
+        {
+          "claim": "NVIDIA introduced its DSX MaxLPS software as part of the DSX AI factory reference design to dynamically reallocate power between GPUs and racks in real time, enabling data center operators to run up to 40% more GPUs within the same power budget."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 98,
+          "evidence": [
+            {
+              "claim": "In the peer-reviewed MLPerf Training v6.0 benchmarks released by MLCommons on June 16, 2026, the NVIDIA Blackwell platform swept all seven workloads, achieving the fastest time-to-train at a record scale of 8,192 GPUs."
+            },
+            {
+              "claim": "Amazon Web Services expanded its deployment roadmap on August 26, 2026, with an agreement to introduce an additional 2 million NVIDIA Blackwell Ultra, Rubin, and Rubin Ultra GPUs across its global cloud data center infrastructure during 2027 and 2028."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified market leadership and clean sweeps across rigorous, industry-standard AI processing benchmarks, alongside massive, multi-million-node platform commitments from leading global cloud hyperscalers. Based on primary research, the company's standalone specint or IOPS figures for unified computing nodes can be estimated as exceptional, in line with custom Arm core expectations, based on its 72 Rubin GPUs, 36 Vera CPUs, and NVLink 6 architecture.",
+          "estimates": [
+            {
+              "metric": "standalone specint or IOPS figures for unified computing nodes",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "exceptional, in line with custom Arm core expectations",
+              "confidence": "medium",
+              "basis": "its 72 Rubin GPUs, 36 Vera CPUs, and NVLink 6 architecture",
+              "source": "NVIDIA News",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "A joint analysis conducted by specialists from NVIDIA and Vertiv evaluated a midsize Tier 2 data center in Baltimore, Maryland, to measure the impact of progressive direct-to-chip liquid cooling integration from 0% to 74.9% across four studies, demonstrating that reaching a 74.9% liquid load reduced facility power by 18.1%, total data center power by 10.2%, and decreased the Power Usage Effectiveness (PUE) from 1.38 to 1.34."
+            },
+            {
+              "claim": "NVIDIA co-developed liquid cooling reference designs and blueprints with Schneider Electric, such as the RD113 architecture supporting up to 227 kW per rack, which integrate high-density liquid cooling, Galaxy uninterruptible power supplies (UPS), and Uniflair cooling systems to maintain an operational PUE as low as 1.15 to 1.2."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's collaborative engineering of high-density rack-scale reference architectures and joint facility-impact studies that validate data center PUE improvements through integrated liquid cooling and power distribution frameworks. Based on primary research, the company's efficiency certifications for facility-level components can be estimated as strong, driven by certified third-party cooling solutions, based on its preferred partner certifications and DSX ready liquid cooling ecosystem.",
+          "estimates": [
+            {
+              "metric": "efficiency certifications for facility-level components",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, driven by certified third-party cooling solutions",
+              "confidence": "high",
+              "basis": "its preferred partner certifications and DSX ready liquid cooling ecosystem",
+              "source": "NVIDIA Technical Blog",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The NVIDIA GB300 NVL72 rack-scale reference architecture supports an integrated high-density system combining 72 Blackwell Ultra GPUs and 36 Grace CPUs, drawing up to 142 kW of power per rack and requiring mandatory direct-to-chip liquid cooling."
+            },
+            {
+              "claim": "The company reports that its previous generation NVIDIA GB200 NVL72 liquid-cooled rack-scale system integrates 36 Grace CPUs and 72 Blackwell GPUs in a single unit specified at approximately 120 kW of sustained full-load power draw."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified high-density rack reference architectures that establish industry-leading power density parameters between 120 kW and 142 kW per single cabinet footprint. Based on primary research, the company's next-generation vera rubin rack-level specifications can be estimated as ultra-high density with advanced liquid requirements, based on its modular MGX architecture and open-source OCP design contributions.",
+          "estimates": [
+            {
+              "metric": "next-generation vera rubin rack-level specifications",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "ultra-high density with advanced liquid requirements",
+              "confidence": "high",
+              "basis": "its modular MGX architecture and open-source OCP design contributions",
+              "source": "NVIDIA News",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "Switch is building its EVO AI Factories and LDC EVO operating system using the NVIDIA Omniverse DSX Blueprint for real-time telemetry ingestion, continuously updated digital twins, and automated optimization of power, cooling, and workloads."
+            },
+            {
+              "claim": "The company reports that its NVIDIA Data Center GPU Manager (DCGM) suite provides active health monitoring, comprehensive diagnostics, system alerts, and governance policies (including power and clock management) for infrastructure teams to simplify GPU cluster administration and automate recovery actions."
+            }
+          ],
+          "assessed_on": "We verified that the company delivers highly advanced data center management and optimization capabilities through its Omniverse DSX Blueprint for AI Factory digital twins and its Data Center GPU Manager suite for cluster monitoring. Based on primary research, the company's traditional stand-alone corporate facility DCIM software products can be estimated as integrated entirely within its accelerated software ecosystem, based on its 4 open-source DSX operating system components and automation tools.",
+          "estimates": [
+            {
+              "metric": "traditional stand-alone corporate facility DCIM software products",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "integrated entirely within its accelerated software ecosystem",
+              "confidence": "high",
+              "basis": "its 4 open-source DSX operating system components and automation tools",
+              "source": "NVIDIA Technical Blog",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 89,
+          "evidence": [
+            {
+              "claim": "NVIDIA released data center energy-optimized power profiles for the Blackwell B200 hardware architecture and NVIDIA Mission Control orchestration software, achieving up to 15% energy savings while operating within strict facility power constraints."
+            },
+            {
+              "claim": "NVIDIA introduced its DSX MaxLPS software as part of the DSX platform to dynamically reallocate power between GPUs and racks in real time, enabling data center operators to run up to 40% more GPUs within the same power budget."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified deployment of workload-aware power orchestration software, real-time power reallocation profiles, and high-temperature closed-loop liquid cooling architectures designed specifically for dense AI factories. Based on primary research, the company's field data on total facility operational carbon emissions reduction can be estimated as highly efficient compared to legacy infrastructure setups, based on its agentic AI factory blueprints and multi-company open data center specifications.",
+          "estimates": [
+            {
+              "metric": "field data on total facility operational carbon emissions reduction",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "highly efficient compared to legacy infrastructure setups",
+              "confidence": "medium",
+              "basis": "its agentic AI factory blueprints and multi-company open data center specifications",
+              "source": "NVIDIA News",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 96,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "NVIDIA announced that its Vera Rubin platform has entered full production with AI data center infrastructure racks running at cloud partners including Google Cloud, Microsoft Azure, and Oracle Cloud Infrastructure, as reported in the company's fiscal second-quarter 2027 financial results."
+        },
+        {
+          "claim": "In its fiscal second-quarter 2027 earnings call, NVIDIA reported that its Data Center segment achieved a record $89 billion in revenue (representing 92.7% of total sales), with hyperscaler customer revenue specifically accounting for $49 billion of that total."
+        },
+        {
+          "claim": "The company reports record annual revenue of $215.9 billion for fiscal year 2026, which ended January 25, 2026, driven primarily by a surge in data center segment sales which reached $193.7 billion."
+        },
+        {
+          "claim": "In calendar Q1 2026, the company generated $2.1 billion in data center Ethernet switch revenue, capturing a leading 21.5% market share in the global data center switching market segment."
+        },
+        {
+          "claim": "The company reported shipping 3.76 million data center GPUs globally in 2023 alone, securing approximately 98% of the data center GPU market share according to an operational analysis cited by Tom's Hardware."
+        },
+        {
+          "claim": "Amazon Web Services (AWS) announced an expanded infrastructure agreement in August 2026 to deploy an additional 2 million NVIDIA Blackwell Ultra, Rubin, and Rubin Ultra GPUs across its global infrastructure in 2027 and 2028, following a previous deployment plan of over 1 million GPUs starting in 2026."
+        },
+        {
+          "claim": "The development of joint turnkey data center portfolios, including the Dell AI Factory with NVIDIA and the HPE AI Factory with NVIDIA, which integrate NVIDIA accelerated compute, Spectrum-X Ethernet networking, and software suites directly into server architectures from Dell Technologies, Hewlett Packard Enterprise, and Lenovo."
+        },
+        {
+          "claim": "Global channel distribution and logistics agreements with tier-one IT distributors, including Arrow Electronics, which acts as a major North American distributor supporting value-added resellers and systems integrators, and TD SYNNEX, which provides authorized distribution for data center infrastructure."
+        },
+        {
+          "claim": "NVIDIA reported record financial results for fiscal year 2026 with total annual revenue reaching $215.9 billion, a 65% increase year-over-year, alongside an annual research and development spending of $18.497 billion, representing approximately 8.5% of its total revenue, according to the company's official financial press release."
+        },
+        {
+          "claim": "S&P Global Ratings upgraded NVIDIA's long-term issuer credit rating and outstanding debt ratings to \"AA\" from \"AA-\" in June 2026, citing robust free operating cash flow generation and sustained competitive advantage within the data center market ecosystem."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 98,
+          "evidence": [
+            {
+              "claim": "NVIDIA announced that its Vera Rubin platform has entered full production with AI data center infrastructure racks running at cloud partners including Google Cloud, Microsoft Azure, and Oracle Cloud Infrastructure, as reported in the company's fiscal second-quarter 2027 financial results."
+            },
+            {
+              "claim": "In its fiscal second-quarter 2027 earnings call, NVIDIA reported that its Data Center segment achieved a record $89 billion in revenue (representing 92.5% of total sales), with hyperscaler customer revenue specifically accounting for $49 billion of that total."
+            }
+          ],
+          "assessed_on": "The rating rests on a multi-billion dollar verified revenue stream from global cloud service providers and active field deployments of its latest Vera Rubin rack architectures with major hyperscale operators. Based on primary research, the company's hyperscaler GPU volume allocation can be estimated as heavily concentrated, based on its major cloud service provider revenue growth and strategic supply partnerships.",
+          "estimates": [
+            {
+              "metric": "hyperscaler GPU volume allocation",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "heavily concentrated",
+              "confidence": "medium",
+              "basis": "its major cloud service provider revenue growth and strategic supply partnerships",
+              "source": "NVIDIA quarterly financial releases",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "The company reports record annual revenue of $215.9 billion for fiscal year 2026, which ended January 25, 2026, driven primarily by a surge in data center segment sales which reached $193.7 billion."
+            },
+            {
+              "claim": "In calendar Q1 2026, the company generated $2.1 billion in data center Ethernet switch revenue, capturing a leading 21.5% market share in the global data center switching market segment."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified global leadership in the data center market, demonstrated by multi-billion dollar segment revenues and a documented top-ranking market share in data center Ethernet networking. Based on primary research, the company's ancillary infrastructure revenue distribution can be estimated as virtually non-existent, based on its architectural focus on compute engines, networking hardware, and full-stack AI platforms.",
+          "estimates": [
+            {
+              "metric": "ancillary infrastructure revenue distribution",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "virtually non-existent",
+              "confidence": "high",
+              "basis": "its architectural focus on compute engines, networking hardware, and full-stack AI platforms",
+              "source": "NVIDIA product portfolio and data center brochures",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 96,
+          "evidence": [
+            {
+              "claim": "The company reported shipping 3.76 million data center GPUs globally in 2023 alone, securing approximately 98% of the data center GPU market share according to an operational analysis cited by Tom's Hardware."
+            },
+            {
+              "claim": "Amazon Web Services (AWS) announced an expanded infrastructure agreement in August 2026 to deploy an additional 2 million NVIDIA Blackwell Ultra, Rubin, and Rubin Ultra GPUs across its global infrastructure in 2027 and 2028, following a previous deployment plan of over 1 million GPUs starting in 2026."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified massive-scale hardware deployments across leading global hyperscale clouds and a dominant global footprint of millions of shipped data center processors. Based on primary research, the company's commercial enterprise software license retention can be estimated as strong and sticky, based on its expanding base of enterprise software customers and NVIDIA AI Enterprise adoption.",
+          "estimates": [
+            {
+              "metric": "commercial enterprise software license retention",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong and sticky",
+              "confidence": "medium",
+              "basis": "its expanding base of enterprise software customers and NVIDIA AI Enterprise adoption",
+              "source": "NVIDIA enterprise customer case studies and software earnings commentaries",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 96,
+          "evidence": [
+            {
+              "claim": "The development of joint turnkey data center portfolios, including the Dell AI Factory with NVIDIA and the HPE AI Factory with NVIDIA, which integrate NVIDIA accelerated compute, Spectrum-X Ethernet networking, and software suites directly into server architectures from Dell Technologies, Hewlett Packard Enterprise, and Lenovo."
+            },
+            {
+              "claim": "Global channel distribution and logistics agreements with tier-one IT distributors, including Arrow Electronics, which acts as a major North American distributor supporting value-added resellers and systems integrators, and TD SYNNEX, which provides authorized distribution for data center infrastructure."
+            }
+          ],
+          "assessed_on": "We verified that the company maintains an extensive global channel network spanning top-tier server OEMs and multinational IT distributors to scale its full-stack data center computing, networking, and software solutions. Based on primary research, the company's indirect channel versus direct sales breakdown can be estimated as significantly channel-driven, based on its global partner network expansion and massive direct shipments to cloud service providers.",
+          "estimates": [
+            {
+              "metric": "indirect channel versus direct sales breakdown",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "significantly channel-driven",
+              "confidence": "medium",
+              "basis": "its global partner network expansion and massive direct shipments to cloud service providers",
+              "source": "NVIDIA partner network updates and financial analyst call transcripts",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 98,
+          "evidence": [
+            {
+              "claim": "NVIDIA reported record financial results for fiscal year 2026 with total annual revenue reaching $215.9 billion, a 65% increase year-over-year, alongside an annual research and development spending of $18.497 billion, representing approximately 8.5% of its total revenue, according to the company's official financial press release."
+            },
+            {
+              "claim": "S&P Global Ratings upgraded NVIDIA's long-term issuer credit rating and outstanding debt ratings to \"AA\" from \"AA-\" in June 2026, citing robust free operating cash flow generation and sustained competitive advantage within the data center market ecosystem."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's exceptional, multi-billion-dollar R&D expenditure and consecutive upgrades to its creditworthiness alongside surging profitability in its core data center segment. Based on primary research, the company's software versus hardware R&D expenditure separation can be estimated as predominantly hardware focused, based on its continuous release of next-generation GPU architectures alongside parallel software stack updates.",
+          "estimates": [
+            {
+              "metric": "software versus hardware R&D expenditure separation",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "predominantly hardware focused",
+              "confidence": "medium",
+              "basis": "its continuous release of next-generation GPU architectures alongside parallel software stack updates",
+              "source": "NVIDIA annual reports and technology roadmap presentations",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+ "Arista Networks, Inc.": {
+  "x": {
+   "score": 61,
+   "axis": "Product Strength",
+   "composite_reported": null,
+   "evidence": [
+    {
+     "claim": "A collaborative validation test completed by AMD, Supermicro, and Arista Networks utilized four Supermicro 8U GPU servers powered by dual AMD EPYC CPUs and AMD Instinct MI350X GPUs to evaluate collective communication algorithms like AllReduce and AllGather on a routed Ethernet spine-leaf fabric running the Arista AI Agent, as documented by Performance Intensive Computing."
+    },
+    {
+     "claim": "Not available"
+    },
+    {
+     "claim": "Arista Networks announced the development of a 100% liquid-cooled data center server rack and switch design based on the open ORv3W standard that supports approximately 120 kW of power and can run up to 32 AI fabric switches, as detailed by Network World."
+    },
+    {
+     "claim": "The company launched a multi-source agreement (MSA) for XPO (eXtra-dense Pluggable Optics), an integrated liquid-cooled optics module designed for high-density AI data center workloads that contains an integrated cold plate capable of cooling up to 400W of power per module, according to Arista Networks' official press release."
+    },
+    {
+     "claim": "In March 2026, Arista Networks announced the formation of a multi-source agreement for XPO, a liquid-cooled pluggable optics module designed for AI fabrics that delivers an unprecedented front-panel density of 204.8 Tbps per Open Compute Project (OCP) rack unit and integrates a cold plate capable of cooling up to 400W per module."
+    },
+    {
+     "claim": "In September 2025, the company announced it is developing a customized Open Rack V3 (ORv3W)-based data center server rack optimized to support approximately 120 kW of power capacity per rack, running up to 32 AI fabric switches equipped with tight liquid fittings for high-density cooling configurations, as reported by Network World."
+    },
+    {
+     "claim": "The company reports that its flagship network management software, Arista CloudVision, operates on a Network Data Lake (NetDL) architecture using state-streaming telemetry via its NetDB repository to replace legacy device polling and provide real-time network visibility."
+    },
+    {
+     "claim": "The company reports that Arista CloudVision features AI-driven network insights via the Autonomous Virtual Assist (AVA) engine for machine learning intelligence, providing proactive alerting and predictive analytics on hardware components."
+    },
+    {
+     "claim": "Arista Networks introduces its Autonomous Virtual Assist (AVA) AI engine within the Arista CloudVision suite to analyze streaming telemetry from data center switches, correlating network events like Explicit Congestion Notification (ECN) marks to predict failures, pinpoint root causes, and optimize AI workload completion times, as reported by Intelligent Visibility."
+    },
+    {
+     "claim": "The company reports in its 2026 open Ethernet rack-scale portfolio announcement that it engineered liquid-cooled data center racks built for extreme compute density alongside partners including Broadcom, AMD, Meta, and Microsoft to minimize power consumption and reduce overall data center footprint, as stated by Arista Networks."
+    }
+   ],
+   "parameters": {
+    "Compute & Storage Performance": {
+     "score": 25,
+     "evidence": [
+      {
+       "claim": "A collaborative validation test completed by AMD, Supermicro, and Arista Networks utilized four Supermicro 8U GPU servers powered by dual AMD EPYC CPUs and AMD Instinct MI350X GPUs to evaluate collective communication algorithms like AllReduce and AllGather on a routed Ethernet spine-leaf fabric running the Arista AI Agent, as documented by Performance Intensive Computing."
+      }
+     ],
+     "assessed_on": "We verified that the company's verified testing in this category is limited to network fabric configurations validating partner compute infrastructure (such as Supermicro and AMD) rather than its own proprietary server or storage compute performance. Based on primary research, the company's benchmark results can be estimated as nonexistent due to focusing strictly on network switching products rather than servers or storage, based on its focus on extensible operating systems and high-speed data center switching infrastructure.",
+     "estimates": [
+      {
+       "metric": "benchmark results",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "nonexistent due to focusing strictly on network switching products rather than servers or storage",
+       "confidence": "high",
+       "basis": "its focus on extensible operating systems and high-speed data center switching infrastructure",
+       "source": "Klover.ai",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Power & Cooling Efficiency": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "Arista Networks announced the development of a 100% liquid-cooled data center server rack and switch design based on the open ORv3W standard that supports approximately 120 kW of power and can run up to 32 AI fabric switches, as detailed by Network World."
+      },
+      {
+       "claim": "The company launched a multi-source agreement (MSA) for XPO (eXtra-dense Pluggable Optics), an integrated liquid-cooled optics module designed for high-density AI data center workloads that contains an integrated cold plate capable of cooling up to 400W of power per module, according to Arista Networks' official press release."
+      }
+     ],
+     "assessed_on": "The assessment rests on the company's confirmed innovations in structural cooling systems, such as its integrated cold plate technology for optical modules and its open ORv3W rack designs for high-density AI infrastructures. Based on primary research, the company's efficiency and PUE metrics can be estimated as strong, in line with leading vendors, based on its database-driven EOS architecture designed for optimized, efficient cloud networks.",
+     "estimates": [
+      {
+       "metric": "efficiency and PUE metrics",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, in line with leading vendors",
+       "confidence": "medium",
+       "basis": "its database-driven EOS architecture designed for optimized, efficient cloud networks",
+       "source": "https://blogs.arista.com/blog/aristas-cloud-network-solutions-validated-by-market-share-gains",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Rack & Enclosure Density": {
+     "score": 65,
+     "evidence": [
+      {
+       "claim": "In March 2026, Arista Networks announced the formation of a multi-source agreement for XPO, a liquid-cooled pluggable optics module designed for AI fabrics that delivers an unprecedented front-panel density of 204.8 Tbps per Open Compute Project (OCP) rack unit and integrates a cold plate capable of cooling up to 400W per module."
+      },
+      {
+       "claim": "In September 2025, the company announced it is developing a customized Open Rack V3 (ORv3W)-based data center server rack optimized to support approximately 120 kW of power capacity per rack, running up to 32 AI fabric switches equipped with tight liquid fittings for high-density cooling configurations, as reported by Network World."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's active engineering of ultra-high-density liquid-cooled architectures and OCP-aligned structural designs tailored specifically to maintain cooling and power delivery for dense AI fabrics. Based on primary research, the company's standalone rack shipments can be estimated as highly integrated with core systems, based on its comprehensive IP/Ethernet AI networking solutions built tightly around core switching and fabric hardware.",
+     "estimates": [
+      {
+       "metric": "standalone rack shipments",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "highly integrated with core systems",
+       "confidence": "high",
+       "basis": "its comprehensive IP/Ethernet AI networking solutions built tightly around core switching and fabric hardware",
+       "source": "https://www.vastdata.com/press-releases/vast-data-arista-networks-simplify-ai-data-center-infrastructure",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "DCIM & Management Software": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "The company reports that its flagship network management software, Arista CloudVision, operates on a Network Data Lake (NetDL) architecture using state-streaming telemetry via its NetDB repository to replace legacy device polling and provide real-time network visibility."
+      },
+      {
+       "claim": "The company reports that Arista CloudVision features AI-driven network insights via the Autonomous Virtual Assist (AVA) engine for machine learning intelligence, providing proactive alerting and predictive analytics on hardware components."
+      }
+     ],
+     "assessed_on": "The rating rests on confirmed software capabilities for automated data center network provisioning, real-time streaming telemetry, and AI-driven network state analytics. Based on primary research, the company's BMS and digital twin integration can be estimated as broad across standard software stacks, based on its extensive open APIs and extensible operating system that allow seamless integration across cloud stacks.",
+     "estimates": [
+      {
+       "metric": "BMS and digital twin integration",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "broad across standard software stacks",
+       "confidence": "high",
+       "basis": "its extensive open APIs and extensible operating system that allow seamless integration across cloud stacks",
+       "source": "Primary research",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "AI & Sustainability Innovation": {
+     "score": 78,
+     "evidence": [
+      {
+       "claim": "Arista Networks introduces its Autonomous Virtual Assist (AVA) AI engine within the Arista CloudVision suite to analyze streaming telemetry from data center switches, correlating network events like Explicit Congestion Notification (ECN) marks to predict failures, pinpoint root causes, and optimize AI workload completion times, as reported by Intelligent Visibility."
+      },
+      {
+       "claim": "The company reports in its 2026 open Ethernet rack-scale portfolio announcement that it engineered liquid-cooled data center racks built for extreme compute density alongside partners including Broadcom, AMD, Meta, and Microsoft to minimize power consumption and reduce overall data center footprint, as stated by Arista Networks."
+      }
+     ],
+     "assessed_on": "The rating rests on verified product capabilities involving AI-driven predictive telemetry via the AVA engine and structural hardware advancements in liquid-cooled, low-power rack architectures developed alongside primary hyperscale cloud partners. Based on primary research, the company's embedded carbon tracking software can be estimated as growing steadily, based on its software-defined cloud networking infrastructure focusing on modern multi-agent monitoring and orchestration platforms.",
+     "estimates": [
+      {
+       "metric": "embedded carbon tracking software",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "growing steadily",
+       "confidence": "medium",
+       "basis": "its software-defined cloud networking infrastructure focusing on modern multi-agent monitoring and orchestration platforms",
+       "source": "https://www.arista.com/en/company/company-overview",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  },
+  "y": {
+   "score": 86,
+   "axis": "Business Strength",
+   "composite_reported": null,
+   "evidence": [
+    {
+     "claim": "Microsoft and Meta Platforms are major repeat buyers of Arista Networks data center switching products, representing 26% and 16% respectively of the company's total $9.01 billion revenue for fiscal year 2025, according to financial data reported by Moat Explorer."
+    },
+    {
+     "claim": "Arista Networks announced in October 2026 that it engineered its new open Ethernet rack-scale portfolio for high-density AI infrastructure in partnership with leading tech companies including Meta and Microsoft, as documented in an official company press release."
+    },
+    {
+     "claim": "Arista Networks reported a full-year revenue of $9.006 billion for the fiscal year ended December 31, 2025, which represents a 28.6% increase compared to fiscal year 2024, as announced in the company's Q4 and full-year financial statement."
+    },
+    {
+     "claim": "The company reported that its quarterly revenue crossed the $3 billion mark for the first time in the second quarter of 2026, reaching $3.036 billion (a 37.7% increase year-over-year), and management subsequently raised its full-year 2026 revenue guidance to $12.6 billion."
+    },
+    {
+     "claim": "Arista Networks reported that it exited 2025 having shipped a cumulative total of over 150 million cloud networking ports globally across its high-performance switching and routing portfolios."
+    },
+    {
+     "claim": "The company officially announced that its customer footprint surpassed the milestone of 10,000 customers worldwide by 2024, deploying its flagship Extensible Operating System (EOS) platforms across enterprise, hyperscale, and cloud provider data centers."
+    },
+    {
+     "claim": "Fortinet, Inc. announced the launch of its Secure AI Data Center solution, built in close collaboration with technology partner Arista Networks, to deliver a validated, scalable, zero-trust architecture for AI data center infrastructure."
+    },
+    {
+     "claim": "Arista Networks maintains a structured tier-based global channel program known as the Channels NOW! Partner Program, which categorizes its distributors and resellers into Authorized, Elite, and ElitePlus partnership levels."
+    },
+    {
+     "claim": "The company reported an annual research and development spending of $1.24 billion for fiscal year 2025, which grew at a 19.4% compound annual rate from $209.4 million in fiscal year 2015, according to its official SEC filings published by EarningsStory."
+    },
+    {
+     "claim": "The company reported a full-year fiscal 2025 revenue of $9.006 billion, up 28.6% year-over-year, alongside a GAAP net income of $3.511 billion and an operating cash flow of $1.262 billion in its fourth-quarter earnings release published on BusinessWire."
+    }
+   ],
+   "parameters": {
+    "Hyperscale & Cloud Customers": {
+     "score": 96,
+     "evidence": [
+      {
+       "claim": "Microsoft and Meta Platforms are major repeat buyers of Arista Networks data center switching products, representing 26% and 16% respectively of the company's total $9.01 billion revenue for fiscal year 2025, according to financial data reported by Moat Explorer."
+      },
+      {
+       "claim": "Arista Networks announced in October 2026 that it engineered its new open Ethernet rack-scale portfolio for high-density AI infrastructure in partnership with leading tech companies including Meta and Microsoft, as documented in an official company press release."
+      }
+     ],
+     "assessed_on": "The rating rests on confirmed, recurring multi-billion dollar contracts and technical co-development partnerships with top-tier cloud titans Meta and Microsoft, who together account for over 40% of annual revenue. Based on primary research, the company's amazon and google shipment deployment values can be estimated as substantial, growing behind primary cloud titans, based on its over $9 billion in annual revenue and primary customer concentration in Meta and Microsoft.",
+     "estimates": [
+      {
+       "metric": "amazon and google shipment deployment values",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "substantial, growing behind primary cloud titans",
+       "confidence": "high",
+       "basis": "its over $9 billion in annual revenue and primary customer concentration in Meta and Microsoft",
+       "source": "Arista Networks Fourth Quarter and Year End 2025 Financial Results",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Global Revenue & Market Share": {
+     "score": 68,
+     "evidence": [
+      {
+       "claim": "Arista Networks reported a full-year revenue of $9.006 billion for the fiscal year ended December 31, 2025, which represents a 28.6% increase compared to fiscal year 2024, as announced in the company's Q4 and full-year financial statement."
+      },
+      {
+       "claim": "The company reported that its quarterly revenue crossed the $3 billion mark for the first time in the second quarter of 2026, reaching $3.036 billion (a 37.7% increase year-over-year), and management subsequently raised its full-year 2026 revenue guidance to $12.6 billion."
+      }
+     ],
+     "assessed_on": "The assessment rests on the company's verified financial disclosures confirming record revenue growth driven by AI data center and cloud networking upgrades. Based on primary research, the company's data center hardware global market share can be estimated as significant and expanding among high-speed networks, based on its milestone of over 150 million cumulative ports shipped.",
+     "estimates": [
+      {
+       "metric": "data center hardware global market share",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "significant and expanding among high-speed networks",
+       "confidence": "high",
+       "basis": "its milestone of over 150 million cumulative ports shipped",
+       "source": "Arista Networks Fourth Quarter and Year End 2025 Financial Results",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Installed Base & Deployments": {
+     "score": 92,
+     "evidence": [
+      {
+       "claim": "Arista Networks reported that it exited 2025 having shipped a cumulative total of over 150 million cloud networking ports globally across its high-performance switching and routing portfolios."
+      },
+      {
+       "claim": "The company officially announced that its customer footprint surpassed the milestone of 10,000 customers worldwide by 2024, deploying its flagship Extensible Operating System (EOS) platforms across enterprise, hyperscale, and cloud provider data centers."
+      }
+     ],
+     "assessed_on": "The rating rests on its massive global footprint of over 150 million cumulative shipped ports and an active customer base exceeding 10,000 installations across major cloud titans and enterprise data centers. Based on primary research, the company's standalone software license contractual retention and breakdown can be estimated as strong, driven by platform-wide subscription and cloud management adoption, based on its product revenue reaching over one billion eight hundred million dollars alongside CloudVision software deployment.",
+     "estimates": [
+      {
+       "metric": "standalone software license contractual retention and breakdown",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "strong, driven by platform-wide subscription and cloud management adoption",
+       "confidence": "medium",
+       "basis": "its product revenue reaching over one billion eight hundred million dollars alongside CloudVision software deployment",
+       "source": "Arista Networks Second Quarter 2025 Financial Results",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "Strategic Partnerships & Channels": {
+     "score": 88,
+     "evidence": [
+      {
+       "claim": "Fortinet, Inc. announced the launch of its Secure AI Data Center solution, built in close collaboration with technology partner Arista Networks, to deliver a validated, scalable, zero-trust architecture for AI data center infrastructure."
+      },
+      {
+       "claim": "Arista Networks maintains a structured tier-based global channel program known as the Channels NOW! Partner Program, which categorizes its distributors and resellers into Authorized, Elite, and ElitePlus partnership levels."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's established, multi-tiered channel partner ecosystem and verified joint technical solutions targeting specialized AI data center infrastructure. Based on primary research, the company's engineer headcount and geographic distribution can be estimated as widespread, scaled across tiered partner compliance levels, based on its partner tier requirements ranging from 2 to 12 certified staff members across Authorized, Elite, and ElitePlus tiers.",
+     "estimates": [
+      {
+       "metric": "engineer headcount and geographic distribution",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "widespread, scaled across tiered partner compliance levels",
+       "confidence": "medium",
+       "basis": "its partner tier requirements ranging from 2 to 12 certified staff members across Authorized, Elite, and ElitePlus tiers",
+       "source": "Arista Networks Channel Partner Program Requirements and Benefits",
+       "source_type": "primary_research"
+      }
+     ]
+    },
+    "R&D Investment & Financial Strength": {
+     "score": 88,
+     "evidence": [
+      {
+       "claim": "The company reported an annual research and development spending of $1.24 billion for fiscal year 2025, which grew at a 19.4% compound annual rate from $209.4 million in fiscal year 2015, according to its official SEC filings published by EarningsStory."
+      },
+      {
+       "claim": "The company reported a full-year fiscal 2025 revenue of $9.006 billion, up 28.6% year-over-year, alongside a GAAP net income of $3.511 billion and an operating cash flow of $1.262 billion in its fourth-quarter earnings release published."
+      }
+     ],
+     "assessed_on": "The rating rests on the company's strong annual R&D expansion to $1.24 billion and exceptional profitability margins exceeding $3.5 billion in net income for fiscal year 2025. Based on primary research, the company's credit rating and funding guarantees can be estimated as excellent asset coverage with no long-term debt reliance, based on its total assets of over $16 billion against total liabilities of under $6 billion as an independent company.",
+     "estimates": [
+      {
+       "metric": "credit rating and funding guarantees",
+       "value_type": "estimated_qualitative",
+       "estimated_value": "excellent asset coverage with no long-term debt reliance",
+       "confidence": "high",
+       "basis": "its total assets of over $16 billion against total liabilities of under $6 billion as an independent company",
+       "source": "Arista Networks Second Quarter 2025 Financial Results",
+       "source_type": "primary_research"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

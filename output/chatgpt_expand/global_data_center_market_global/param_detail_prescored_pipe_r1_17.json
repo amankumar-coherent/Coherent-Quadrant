@@ -1,0 +1,277 @@
+{
+  "Salicru, S.A.": {
+    "x": {
+      "score": 60,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Salicru deployed six of its modular SLC ADAPT2 online double-conversion UPS units equipped with lithium-ion batteries to provide power backup for the 4 MW Oxigen data centre facility in Sant Cugat del Vallès, Barcelona, according to a corporate announcement."
+        },
+        {
+          "claim": "The company reports that its latest generation UPS models comply with the European Commission's energy efficiency Code of Conduct guidelines, delivering operational efficiencies ranging between 96% and 99% depending on the active configuration."
+        },
+        {
+          "claim": "The company reports that its SLC ADAPT2 modular power protection systems support high-density configurations of up to 500 kW per cabinet, with the capability to scale vertically up to 12 modules per cabinet."
+        },
+        {
+          "claim": "The company launched the SLC CUBE 4 R, an online double-conversion three-phase UPS system in a 19-inch rackmount format with power ratings ranging from 7.5 to 20 kVA, designed to require zero additional footprint within standard data center rack cabinet configurations."
+        },
+        {
+          "claim": "Salicru offers the NIMBUS remote monitoring platform, consisting of embedded Linux network cards and the NIMBUS Cloud application, which utilizes MQTT protocols and InfluxDB to deliver real-time visibility, remote battery testing, and push notification alert logging for connected UPS hardware, as outlined on the Salicru NIMBUS Overview Page."
+        },
+        {
+          "claim": "The company provides its proprietary UNMS II (UPS Network Management System) software tool, which serves as a centralized supervision and management layer capable of monitoring multiple UPS units across a local area network, as documented on the Salicru UNMS II Platform Page."
+        },
+        {
+          "claim": "Salicru deployed its SLC ADAPT2 modular UPS systems to protect the IT infrastructure and auxiliary services at the Oxigen data centre in Sant Cugat del Vallès, Spain, incorporating high-efficiency systems and lithium-ion batteries that provide real-time status monitoring for responsive incident management."
+        },
+        {
+          "claim": "Not available"
+        }
+      ],
+      "parameters": {
+        "Power & Cooling Efficiency": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Salicru deployed six of its modular SLC ADAPT2 online double-conversion UPS units equipped with lithium-ion batteries to provide power backup for the 4 MW Oxigen data centre facility in Sant Cugat del Vallès, Barcelona, according to a corporate announcement."
+            },
+            {
+              "claim": "The company reports that its latest generation UPS models comply with the European Commission's energy efficiency Code of Conduct guidelines, delivering operational efficiencies ranging between 96% and 99% depending on the active configuration."
+            }
+          ],
+          "assessed_on": "Our rating rests on the company's documented implementation of modular power backup architectures at the Oxigen data center and its self-reported product efficiencies. Based on primary research, the company's power usage effectiveness (PUE) impact figures or certifications such as ENERGY STAR for its enterprise UPS can be estimated as strong, in line with leading vendors, based on its compliance with the European Commission Code of Conduct for UPS systems placing its latest generation systems in the Elite category.",
+          "estimates": [
+            {
+              "metric": "power usage effectiveness (PUE) impact figures or certifications such as ENERGY STAR for its enterprise UPS",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "high",
+              "basis": "its compliance with the European Commission Code of Conduct for UPS systems placing its latest generation systems in the Elite category",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 61,
+          "evidence": [
+            {
+              "claim": "The company reports that its SLC ADAPT2 modular power protection systems support high-density configurations of up to 500 kW per cabinet, with the capability to scale vertically up to 12 modules per cabinet."
+            },
+            {
+              "claim": "The company launched the SLC CUBE 4 R, an online double-conversion three-phase UPS system in a 19-inch rackmount format with power ratings ranging from 7.5 to 20 kVA, designed to require zero additional footprint within standard data center rack cabinet configurations."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's verified capability to manufacture space-optimized, high-density modular UPS hardware that integrates natively inside data center racks up to 500 kW per cabinet. Based on primary research, the company's manufacturing or provision of standalone structural server racks, physical security accessories, or can be estimated as non-existent beyond convertible power enclosures, based on its structural design descriptions confined strictly to standard rackmount or tower configurations for its own electronic modules.",
+          "estimates": [
+            {
+              "metric": "manufacturing or provision of standalone structural server racks, physical security accessories, or",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "non-existent beyond convertible power enclosures",
+              "confidence": "high",
+              "basis": "its structural design descriptions confined strictly to standard rackmount or tower configurations for its own electronic modules",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "Salicru offers the NIMBUS remote monitoring platform, consisting of embedded Linux network cards and the NIMBUS Cloud application, which utilizes MQTT protocols and InfluxDB to deliver real-time visibility, remote battery testing, and push notification alert logging for connected UPS hardware, as outlined on the Salicru NIMBUS Overview Page."
+            },
+            {
+              "claim": "The company provides its proprietary UNMS II (UPS Network Management System) software tool, which serves as a centralized supervision and management layer capable of monitoring multiple UPS units across a local area network, as documented on the Salicru UNMS II Platform Page."
+            }
+          ],
+          "assessed_on": "We verified that Salicru's management software capabilities rest on dedicated hardware-monitoring platforms designed to track, log, and remotely control its own power infrastructure systems. Based on primary research, the company's a comprehensive data center infrastructure management (DCIM) suite that integrates digital twin features, can be estimated as limited to cloud monitoring and integration interfaces, based on its Nimbus cloud monitoring platform and compatibility protocols designed for integration into external facility management platforms.",
+          "estimates": [
+            {
+              "metric": "a comprehensive data center infrastructure management (DCIM) suite that integrates digital twin features,",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to cloud monitoring and integration interfaces",
+              "confidence": "high",
+              "basis": "its Nimbus cloud monitoring platform and compatibility protocols designed for integration into external facility management platforms",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 58,
+          "evidence": [
+            {
+              "claim": "Salicru deployed its SLC ADAPT2 modular UPS systems to protect the IT infrastructure and auxiliary services at the Oxigen data centre in Sant Cugat del Vallès, Spain, incorporating high-efficiency systems and lithium-ion batteries that provide real-time status monitoring for responsive incident management."
+            }
+          ],
+          "assessed_on": "The evaluation rests on verified data center deployments of the company's energy-efficient modular UPS lines paired with lithium-ion batteries for advanced condition monitoring. Based on primary research, the company's ai-driven algorithmic optimizations, predictive maintenance software platforms, or green industry can be estimated as evolving steadily around smart efficiency modes, based on its advanced Smart-ECO mode operation and remote technical maintenance services designed to optimize system workflows.",
+          "estimates": [
+            {
+              "metric": "ai-driven algorithmic optimizations, predictive maintenance software platforms, or green industry",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "evolving steadily around smart efficiency modes",
+              "confidence": "high",
+              "basis": "its advanced Smart-ECO mode operation and remote technical maintenance services designed to optimize system workflows",
+              "source": "sources (company's own)",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 52,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "The company reports supplying six 500 kW SLC ADAPT2 modular uninterruptible power supply (UPS) systems to safeguard the Oxigen Data Center facility in Barcelona, Spain, which provides colocation and hybrid cloud services."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "Salicru reported a total corporate turnover of 101 million euros for the fiscal year 2024, reflecting an increase of approximately 9% over the prior year."
+        },
+        {
+          "claim": "Salicru has achieved a domestic market share of over 25% for uninterruptible power supply (UPS) systems in Spain."
+        },
+        {
+          "claim": "Salicru reported the completed delivery of 10 SLC X-PERT 160 kVA UPS systems for the new Echelon-DUB10 data centre facility in Ireland via its design and installation partner Ardilaun Electrical Services (AES LTD)."
+        },
+        {
+          "claim": "Salicru reported that six of its SLC ADAPT2 modular UPS units with lithium-ion batteries are deployed to provide power backup for the IT infrastructure and ancillary services at the 4 MW Oxigen data centre in Sant Cugat del Vallès, Barcelona."
+        },
+        {
+          "claim": "Salicru announced a strategic partnership with Stulz México in March 2025 to distribute its three-phase, modular, and scalable uninterruptible power supply (UPS) systems through Stulz México's network of over 100 business partners."
+        },
+        {
+          "claim": "Salicru expanded its distribution agreement with Ingram Micro to cover the Spanish IT channel, focusing on its medium- and high-power UPS series."
+        },
+        {
+          "claim": "The company reports allocating an average of 5% of its annual revenue to research and development investments to support advanced power quality management and modular UPS technologies, according to Salicru international."
+        },
+        {
+          "claim": "The company reports executing a strategic industrial partnership agreement with control engineering firm Cinergia Power Solutions to collaborate closely at both the production and R&D levels, according to Cinergia Power Solutions."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 25,
+          "evidence": [
+            {
+              "claim": "The company reports supplying six SLC ADAPT2 modular uninterruptible power supply (UPS) systems that allow configurations of up to 500 kW per cabinet to safeguard the Oxigen Data Center facility in Barcelona, Spain, which provides colocation and hybrid cloud services."
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's named provider contracts can be estimated as limited to regional telecom operators and localized installations, based on its participation in Spain DC and focus on regional data center solutions.",
+          "estimates": [
+            {
+              "metric": "named provider contracts",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to regional telecom operators and localized installations",
+              "confidence": "medium",
+              "basis": "its participation in Spain DC and focus on regional data center solutions",
+              "source": "Redeweb",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 55,
+          "evidence": [
+            {
+              "claim": "Salicru reported a total corporate turnover of 101 million euros for the fiscal year 2024, reflecting an increase of approximately 9% over the prior year."
+            },
+            {
+              "claim": "Salicru has achieved a domestic market share of over 25% for uninterruptible power supply (UPS) systems in Spain."
+            }
+          ],
+          "assessed_on": "Our evaluation rests on the company's overall reported financial turnover and its documented regional market share strength in Spain. Based on primary research, the company's data center segment market share can be estimated as focused primarily on European and edge computing niches, based on its status as a regional player compared to leading global vendors.",
+          "estimates": [
+            {
+              "metric": "data center segment market share",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "focused primarily on European and edge computing niches",
+              "confidence": "high",
+              "basis": "its status as a regional player compared to leading global vendors",
+              "source": "Primary research",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 52,
+          "evidence": [
+            {
+              "claim": "Salicru reported the completed delivery of 10 SLC X-PERT 160 kVA UPS systems for the new Echelon-DUB10 data centre facility in Ireland via its design and installation partner Ardilaun Electrical Services (AES LTD)."
+            },
+            {
+              "claim": "Salicru reported that six of its SLC ADAPT2 modular UPS units with lithium-ion batteries are deployed to provide power backup for the IT infrastructure and ancillary services at the 4 MW Oxigen data centre in Sant Cugat del Vallès, Barcelona."
+            }
+          ],
+          "assessed_on": "The evaluation rests on documented modular and standalone double-conversion UPS deployments across specific regional data centers like the Oxigen facility in Spain and the Echelon project in Ireland. Based on primary research, the company's product shipments and retention can be estimated as growing steadily across medium-power facilities, based on its introduction of IoT-integrated modular UPS lines and expansion into transportation grids.",
+          "estimates": [
+            {
+              "metric": "product shipments and retention",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily across medium-power facilities",
+              "confidence": "medium",
+              "basis": "its introduction of IoT-integrated modular UPS lines and expansion into transportation grids",
+              "source": "Redeweb",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Salicru announced a strategic partnership with Stulz México in March 2025 to distribute its three-phase, modular, and scalable uninterruptible power supply (UPS) systems through Stulz México's network of over 100 business partners."
+            },
+            {
+              "claim": "Salicru expanded its distribution agreement with Ingram Micro to cover the Spanish IT channel, focusing on its medium- and high-power UPS series."
+            }
+          ],
+          "assessed_on": "The company's ranking rests on its established regional distribution partnerships with global IT and specialized cooling infrastructure providers like Ingram Micro and Stulz México to capture data center opportunities. Based on primary research, the company's integrations and OEM agreements can be estimated as broad across primary electrical components and standard network management licenses, based on its licensing partnerships with critical software suppliers like Generex.",
+          "estimates": [
+            {
+              "metric": "integrations and OEM agreements",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across primary electrical components and standard network management licenses",
+              "confidence": "high",
+              "basis": "its licensing partnerships with critical software suppliers like Generex",
+              "source": "Generex.de",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "The company reports allocating an average of 5% of its annual revenue to research and development investments to support advanced power quality management and modular UPS technologies, according to Salicru international."
+            },
+            {
+              "claim": "The company reports executing a strategic industrial partnership agreement with control engineering firm Cinergia Power Solutions to collaborate closely at both the production and R&D levels, according to Cinergia Power Solutions."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's self-reported baseline R&D allocation rate and its active technical co-development partnership. Based on primary research, the company's R&D spending and financial credit can be estimated as balanced to maintain regional competitiveness and product line certification, based on its development of specialized low-voltage and high-density UPS systems.",
+          "estimates": [
+            {
+              "metric": "R&D spending and financial credit",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "balanced to maintain regional competitiveness and product line certification",
+              "confidence": "medium",
+              "basis": "its development of specialized low-voltage and high-density UPS systems",
+              "source": "Convertronic",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

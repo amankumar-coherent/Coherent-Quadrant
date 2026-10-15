@@ -1,0 +1,83 @@
+{
+  "exclude": [
+    {
+      "company": "Bright Pharma Caps Inc.",
+      "reason": "Distributor: US affiliate of Bright Caps GmbH; sells capsules made by JC Biotech Co. Ltd. (Shanxi, China), owns no capsule plant.",
+      "source": "Analyst re-check in Google AI Mode, one company per query, 2026-10-11 (_pipeline/seed_recheck.json)"
+    },
+    {
+      "company": "Shanxi Gelgoog Pharmaceutical Capsule Co., Ltd.",
+      "reason": "Status check returned defunct (no event given); removed on the owner's instruction 2026-10-11.",
+      "source": "Owner decision on _pipeline/status_needs_review.json"
+    },
+    {
+      "company": "Dinesh Remedies Limited",
+      "reason": "Status check: renamed Gelikaps Lifesciences Limited; removed on the owner's instruction 2026-10-11.",
+      "source": "Owner decision on _pipeline/status_needs_review.json"
+    },
+    {
+      "company": "ACG",
+      "reason": "Duplicate: the ACG group; its empty-capsule business is listed (and charted) as ACG Associated Capsules Pvt. Ltd.",
+      "source": "Owner decision 2026-10-11 (ACG should be in the report once, as the capsule company)"
+    },
+    {
+      "company": "MagnaKasr Pharma Solutions",
+      "reason": "Cannot be shown to exist: no website, registry filing, business listing or press release; its only trace is a market-research ranking (ReportPrime). HQ unknown (Turkey per that listing, no city).",
+      "source": "AI Mode HQ check 2026-10-12 (_pipeline/facts_hq_shard*.json and a follow-up query)"
+    },
+    {
+      "company": "Health Capsules Pakistan (Pvt.) Limited",
+      "reason": "Pakistan-based company removed on the owner's instruction 2026-10-12.",
+      "source": "Owner decision"
+    },
+    {
+      "company": "Gelcaps Pakistan Limited",
+      "reason": "Pakistan-based company removed on the owner's instruction 2026-10-12.",
+      "source": "Owner decision"
+    },
+    {
+      "company": "Multicaps Pvt. Ltd.",
+      "reason": "Pakistan-based company removed on the owner's instruction 2026-10-12.",
+      "source": "Owner decision"
+    },
+    {
+      "company": "Livewell Capsules Pvt. Ltd.",
+      "reason": "Pakistan-based company removed on the owner's instruction 2026-10-12.",
+      "source": "Owner decision"
+    },
+    {
+      "company": "Pharm Nova",
+      "reason": "Pakistan-based company removed on the owner's instruction 2026-10-12.",
+      "source": "Owner decision"
+    },
+    {
+      "company": "Lefancaps",
+      "reason": "Duplicate: Lefancaps is the brand of Jiangsu Lefan Capsule Co., Ltd., which is listed.",
+      "source": "AI Mode check 2026-10-12 (_pipeline/seed_recheck.json 'Lefan group'): one parent-subsidiary group; Jiangsu Lefan Capsule Co., Ltd. is the parent and factory owner (Zhenjiang, China)"
+    },
+    {
+      "company": "Lefan Capsule International Inc.",
+      "reason": "Duplicate: wholly-owned US sales subsidiary of Jiangsu Lefan Capsule Co., Ltd., which is listed; no factory of its own.",
+      "source": "AI Mode check 2026-10-12 (_pipeline/seed_recheck.json 'Lefan group'): one parent-subsidiary group; Jiangsu Lefan Capsule Co., Ltd. is the parent and factory owner (Zhenjiang, China)"
+    },
+    {
+      "company": "Lyfe Group",
+      "reason": "Duplicate: CapsCanada renamed itself Lyfe Group (7 May 2026); the company is listed once, as CapsCanada shown under its current name Lyfe Group.",
+      "source": "AI Mode re-check 2026-10-12 (_pipeline/seed_recheck.json 'CapsCanada')"
+    }
+  ],
+  "keep": [
+    {
+      "company": "CapsCanada",
+      "reason": "Renamed, still operating; owner asked to include it.",
+      "source": "AI Mode re-check 2026-10-12 (_pipeline/seed_recheck.json): active empty-capsule manufacturer (K-CAPS, G-CAPS; plants in Windsor, Ontario and South America), rebranded as Lyfe Group on 7 May 2026, privately held, no change of ownership"
+    }
+  ],
+  "display": [
+    {
+      "company": "CapsCanada",
+      "current_name": "Lyfe Group",
+      "source": "AI Mode re-check 2026-10-12 (_pipeline/seed_recheck.json): active empty-capsule manufacturer (K-CAPS, G-CAPS; plants in Windsor, Ontario and South America), rebranded as Lyfe Group on 7 May 2026, privately held, no change of ownership"
+    }
+  ]
+}

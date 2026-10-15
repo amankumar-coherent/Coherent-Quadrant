@@ -1,0 +1,280 @@
+{
+  "Nutanix, Inc.": {
+    "x": {
+      "score": 61,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Nutanix Unified Storage demonstrated linear performance scalability for machine learning workloads, including the ResNet50 and 3D-UNet models, during the industry-standard MLPerf Storage v1.0 Benchmark."
+        },
+        {
+          "claim": "Technical benchmark results published in November 2025 demonstrated that a single virtual machine running on Nutanix hyperconverged infrastructure achieved 2 million IOPS using the Fio testing tool."
+        },
+        {
+          "claim": "The Nutanix NXS2U1NL12G910 rack-mount enterprise server achieved official EPA ENERGY STAR certification on January 17, 2024, with a recorded SERT Active State Efficiency Score of 33.50, according to the EPA ENERGY STAR Product Finder."
+        },
+        {
+          "claim": "The Nutanix NXS2U4NS24G900 enterprise server obtained EPA ENERGY STAR certification with a SERT Active State Efficiency Score of 34.50 and became available on the market on May 31, 2023, as detailed by the EPA ENERGY STAR Product Finder."
+        },
+        {
+          "claim": "Eaton achieved Nutanix Ready validation to certify interoperability between Nutanix architecture and Eaton's Brightlayer Data Centers software suite, which delivers the data center infrastructure management (DCIM) capabilities for the joint environment, according to an Eaton Eaton Power Advantage Blog publication."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "The company reports that its Nutanix Cloud Manager Intelligent Operations platform utilizes the X-FIT ensemble machine learning model engine to deliver AIOps capabilities, including real-time anomaly detection, automated VM right-sizing, and predictive capacity runway forecasting to prevent resource overprovisioning."
+        },
+        {
+          "claim": "At its .NEXT Conference on May 21, 2024, Nutanix announced new real-time power monitoring capabilities within the Nutanix Cloud Platform, introducing a Power Consumption Dashboard that visualizes energy utilization metrics based on physical hardware configurations to support enterprise carbon footprint tracking."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Nutanix Unified Storage demonstrated linear performance scalability for machine learning workloads, including the ResNet50 and 3D-UNet models, during the industry-standard MLPerf Storage v1.0 Benchmark."
+            },
+            {
+              "claim": "Technical benchmark results published in November 2025 demonstrated that a single virtual machine running on Nutanix hyperconverged infrastructure achieved 2 million IOPS using the Fio testing tool."
+            }
+          ],
+          "assessed_on": "We verified that Nutanix provides strong, scalable data throughput and high IOPS capabilities for demanding enterprise and artificial intelligence workloads. Based on primary research, the company's platform compute benchmarks can be estimated as independent, matching top-tier architecture specifications across third-party environments, based on its software-only optimization across diverse hardware architectures like Cisco, Dell, and Supermicro.",
+          "estimates": [
+            {
+              "metric": "platform compute benchmarks",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "independent, matching top-tier architecture specifications across third-party environments",
+              "confidence": "medium",
+              "basis": "its software-only optimization across diverse hardware architectures like Cisco, Dell, and Supermicro",
+              "source": "https://www.nutanix.com/solutions/ai",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 42,
+          "evidence": [
+            {
+              "claim": "The Nutanix NXS2U1NL12G910 rack-mount enterprise server achieved official EPA ENERGY STAR certification on January 17, 2024, with a recorded SERT Active State Efficiency Score of 33.50, according to the EPA ENERGY STAR Product Finder."
+            },
+            {
+              "claim": "The Nutanix NXS2U4NS24G900 enterprise server obtained EPA ENERGY STAR certification with a SERT Active State Efficiency Score of 34.50 and became available on the market on May 31, 2023, as detailed by the EPA ENERGY STAR Product Finder."
+            }
+          ],
+          "assessed_on": "The evaluation rests on third-party ENERGY STAR certificates validating the energy efficiency of the company's hyperconverged server hardware nodes. Based on primary research, the company's standalone power efficiency can be estimated as dependent entirely on ecosystem partners for underlying facility equipment metrics, based on its reliance on validating third-party original equipment manufacturer server nodes and hardware partner factories.",
+          "estimates": [
+            {
+              "metric": "standalone power efficiency",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "dependent entirely on ecosystem partners for underlying facility equipment metrics",
+              "confidence": "medium",
+              "basis": "its reliance on validating third-party original equipment manufacturer server nodes and hardware partner factories",
+              "source": "https://www.nutanix.com/solutions/ai",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 45,
+          "evidence": [
+            {
+              "claim": "Eaton achieved Nutanix Ready validation to certify interoperability between Nutanix architecture and Eaton's Brightlayer Data Centers software suite, which delivers the data center infrastructure management (DCIM) capabilities for the joint environment, according to an Eaton Eaton Power Advantage Blog publication."
+            }
+          ],
+          "assessed_on": "We verified that the company relies on third-party technology alliance partnerships for facility-level tracking and power management rather than offering a native DCIM solution. Based on primary research, the company's infrastructure management software can be estimated as strong for hyperconverged environments but limited to software-defined storage, network, and virtual cluster topologies, based on its Prism and Nutanix Cloud Manager platforms providing one-click operational insights and capacity optimization.",
+          "estimates": [
+            {
+              "metric": "infrastructure management software",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong for hyperconverged environments but limited to software-defined storage, network, and virtual cluster topologies",
+              "confidence": "high",
+              "basis": "its Prism and Nutanix Cloud Manager platforms providing one-click operational insights and capacity optimization",
+              "source": "https://www.nutanix.com/products/core",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 76,
+          "evidence": [
+            {
+              "claim": "The company reports that its Nutanix Cloud Manager Intelligent Operations platform utilizes the X-FIT ensemble machine learning model engine to deliver AIOps capabilities, including real-time anomaly detection, automated VM right-sizing, and predictive capacity runway forecasting to prevent resource overprovisioning."
+            },
+            {
+              "claim": "At its.NEXT Conference on May 21, 2024, Nutanix announced new real-time power monitoring capabilities within the Nutanix Cloud Platform, introducing a Power Consumption Dashboard that visualizes energy utilization metrics based on physical hardware configurations to support enterprise carbon footprint tracking."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's established integration of predictive machine learning models for infrastructure right-sizing and its hardware-integrated power consumption tracking dashboards. Based on primary research, the company's facility AI controls can be estimated as restricted to virtualized application workloads and smart resource placement, based on its focus on GPU consumption tuning and AI-driven data tiering rather than facility building management mechanics.",
+          "estimates": [
+            {
+              "metric": "facility AI controls",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "restricted to virtualized application workloads and smart resource placement",
+              "confidence": "high",
+              "basis": "its focus on GPU consumption tuning and AI-driven data tiering rather than facility building management mechanics",
+              "source": "https://www.nutanix.com/solutions/ai",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 75,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Expedient, a private cloud service provider, deployed the Nutanix hyperconverged infrastructure platform and Nutanix Disaster Recovery as a Service (DRaaS) to power its core enterprise cloud offerings, according to a case study published by Nutanix."
+        },
+        {
+          "claim": "Metacom, a managed and cloud service provider, deployed the Nutanix Enterprise Cloud suite to replace its legacy infrastructure and achieve scalable network operations across its client sites, as announced by Nutanix in May 2023."
+        },
+        {
+          "claim": "Nutanix reported a total annual revenue of $2.85 billion for fiscal year 2026, representing a 12% increase year-over-year, according to the official Nutanix Investor Relations Fourth Quarter and Fiscal 2026 Financial Results Press Release."
+        },
+        {
+          "claim": "Nutanix achieved an annual recurring revenue (ARR) of $2.55 billion for fiscal year 2026, showing 16% year-over-year growth, and added over 3,000 new customers to reach a cumulative total of 32,360, as stated in its Q4 Fiscal 2026 Earnings Summary."
+        },
+        {
+          "claim": "Nutanix reports that its hybrid multicloud platform is trusted by more than 29,000 customers worldwide as of July 31, 2025, according to the Nutanix Impact Report FY25."
+        },
+        {
+          "claim": "European online retailer Smartbox Group deployed the Nutanix Cloud Platform and AHV hypervisor to consolidate its data center infrastructure, reducing its equipment footprint from 12 racks to a single rack, as documented in a Nutanix case study."
+        },
+        {
+          "claim": "Nutanix Inc. forged a global strategic partnership with Cisco Systems Inc. on August 28, 2023, integrating Cisco's SaaS-managed compute and networking infrastructure (including UCS and Intersight) with the Nutanix Cloud Platform, creating an integrated solution sold globally by Cisco."
+        },
+        {
+          "claim": "Nutanix maintains a distribution alliance with TD SYNNEX (formerly Tech Data), which acts as an authorized distributor providing specialized multi-vendor solutions assurance, deployment services, and training, including acting as a sole UK value-added distributor for Nutanix software running on the HPE DX platform."
+        },
+        {
+          "claim": "The company reported a research and development expenditure of $790.892 million for fiscal year 2026, which constitutes approximately 27.7% of its total annual revenue of $2.85 billion, according to its official fiscal 2026 fourth quarter and full year financial results press release."
+        },
+        {
+          "claim": "The company reported a GAAP operating income of $274.0 million and a free cash flow of $840.7 million for fiscal year 2026, showing an increase from its fiscal year 2025 GAAP operating income of $172.5 million and free cash flow of $750.2 million, according to its official fiscal 2026 fourth quarter and full year financial results press release."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "Expedient, a private cloud service provider, deployed the Nutanix hyperconverged infrastructure platform and Nutanix Disaster Recovery as a Service (DRaaS) to power its core enterprise cloud offerings, according to a case study published by Nutanix."
+            },
+            {
+              "claim": "Metacom, a managed and cloud service provider, deployed the Nutanix Enterprise Cloud suite to replace its legacy infrastructure and achieve scalable network operations across its client sites, as announced by Nutanix in May 2023."
+            }
+          ],
+          "assessed_on": "We verified that the company's customer base in this category consists of tier-two managed cloud service providers and regional operators rather than global hyperscale tech giants. Based on primary research, the company's named public cloud hyperscaler internal contracts can be estimated as limited to collaborative hybrid cloud deployments, based on its partnerships enabling Nutanix Cloud Clusters on Amazon Web Services and Microsoft Azure.",
+          "estimates": [
+            {
+              "metric": "named public cloud hyperscaler internal contracts",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to collaborative hybrid cloud deployments",
+              "confidence": "high",
+              "basis": "its partnerships enabling Nutanix Cloud Clusters on Amazon Web Services and Microsoft Azure",
+              "source": "Nutanix Cloud Clusters Product documentation and press releases",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "Nutanix reported a total annual revenue of $2.85 billion for fiscal year 2026, representing a 12% increase year-over-year, according to the official Nutanix Investor Relations Fourth Quarter and Fiscal 2026 Financial Results Press Release."
+            },
+            {
+              "claim": "Nutanix achieved an annual recurring revenue (ARR) of $2.55 billion for fiscal year 2026, showing 16% year-over-year growth, and added over 3,000 new customers to reach a cumulative total of 32,360, as stated in its Q4 Fiscal 2026 Earnings Summary."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's sustained annual revenue expansion and growing recurring software contract base through its fiscal year 2026 financial reporting. Based on primary research, the company's total data center market share percentages can be estimated as growing steadily from its niche core segment, based on its focus on hyperconverged infrastructure and server virtualization platforms where it is named a leader.",
+          "estimates": [
+            {
+              "metric": "total data center market share percentages",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily from its niche core segment",
+              "confidence": "high",
+              "basis": "its focus on hyperconverged infrastructure and server virtualization platforms where it is named a leader",
+              "source": "Nutanix Investor Day presentations and quarterly earnings announcements",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "Nutanix reports that its hybrid multicloud platform is trusted by more than 29,000 customers worldwide as of July 31, 2025, according to the Nutanix Impact Report FY25."
+            },
+            {
+              "claim": "European online retailer Smartbox Group deployed the Nutanix Cloud Platform and AHV hypervisor to consolidate its data center infrastructure, reducing its equipment footprint from 12 racks to a single rack, as documented in a Nutanix case study."
+            }
+          ],
+          "assessed_on": "We verified Nutanix's extensive deployment scale through its large global customer base and documented enterprise data center migrations. Based on primary research, the company's deployed software licenses or hardware appliance units can be estimated as substantial and growing across global enterprises, based on its 32,360 cumulative total worldwide customers.",
+          "estimates": [
+            {
+              "metric": "deployed software licenses or hardware appliance units",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "substantial and growing across global enterprises",
+              "confidence": "high",
+              "basis": "its 32,360 cumulative total worldwide customers",
+              "source": "Nutanix Q4 Fiscal 2026 Earnings Summary",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 89,
+          "evidence": [
+            {
+              "claim": "Nutanix Inc. forged a global strategic partnership with Cisco Systems Inc. on August 28, 2023, integrating Cisco's SaaS-managed compute and networking infrastructure (including UCS and Intersight) with the Nutanix Cloud Platform, creating an integrated solution sold globally by Cisco."
+            },
+            {
+              "claim": "Nutanix maintains a distribution alliance with TD SYNNEX (formerly Tech Data), which acts as an authorized distributor providing specialized multi-vendor solutions assurance, deployment services, and training, including acting as a sole UK value-added distributor for Nutanix software running on the HPE DX platform."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed global strategic OEM integrations with tier-one hardware suppliers and deep tier-one distribution relationships across major geographies. Based on primary research, the company's geographic partner tier count breakdowns can be estimated as broad across major global regions, based on its Elevate Partner Program network covering international markets including APAC, Americas, and EMEA.",
+          "estimates": [
+            {
+              "metric": "geographic partner tier count breakdowns",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across major global regions",
+              "confidence": "high",
+              "basis": "its Elevate Partner Program network covering international markets including APAC, Americas, and EMEA",
+              "source": "Nutanix Elevate Partner Portal and Find a Partner Directory",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "The company reported a research and development expenditure of $790.892 million for fiscal year 2026, which constitutes approximately 27.7% of its total annual revenue of $2.85 billion, according to its official fiscal 2026 fourth quarter and full year financial results press release."
+            },
+            {
+              "claim": "The company reported a GAAP operating income of $274.0 million and a free cash flow of $840.7 million for fiscal year 2026, showing an increase from its fiscal year 2025 GAAP operating income of $172.5 million and free cash flow of $750.2 million, according to its official fiscal 2026 fourth quarter and full year financial results press release."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's high research and development spending exceeding 27% of its total revenue, alongside rising profitability and cash flows to sustain infrastructure innovation. Based on primary research, the company's corporate credit rating can be estimated as stable investment grade capability, based on its over two billion four hundred million dollars in annual recurring revenue and positive free cash flows.",
+          "estimates": [
+            {
+              "metric": "corporate credit rating",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "stable investment grade capability",
+              "confidence": "high",
+              "basis": "its over two billion four hundred million dollars in annual recurring revenue and positive free cash flows",
+              "source": "Nutanix Q4 Fiscal 2026 Financial Results press release",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

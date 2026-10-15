@@ -1,0 +1,309 @@
+{
+  "Dell Inc.": {
+    "x": {
+      "score": 78,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "A SPEC CPU2017 benchmark evaluation published in June 2025 showed that a Dell PowerEdge R7725 server configured with dual 48-core AMD EPYC 9475F processors achieved a verified SPECrate2017_int_base score of 1,390 and a SPECrate2017_int_peak score of 1,420, as reported by the Standard Performance Evaluation Corporation."
+        },
+        {
+          "claim": "An independent comparative testing project conducted by Principled Technologies in May 2026 demonstrated that the Dell PowerStore 9500 storage array delivered superior IOPS, storage density, and latency performance compared to a rival all-NVMe enterprise array, according to the Principled Technologies study on CIO Influence."
+        },
+        {
+          "claim": "The company reports that its PowerEdge XE9680L servers deploy direct liquid cooling technology within critical components to reduce cooling energy consumption by 40% to 50% and improve Power Usage Effectiveness (PUE), as highlighted in an interview with the Vice President of the Infrastructure Solutions Group at Dell Technologies."
+        },
+        {
+          "claim": "The company reports that combining direct liquid cooling with its PowerCool eRDHx enables warm water cooling (32°C to 36°C) and reduces reliance on chilled water infrastructure, resulting in up to a one-third reduction in annual energy costs for large-scale AI data center deployments."
+        },
+        {
+          "claim": "The company reports that its Dell IR7000 integrated 21-inch Open Rack v3 (ORv3) architecture supports high-density AI deployment configurations that handle up to 504 kW per rack with a multi-generational PowerCool direct liquid cooling (DLC) busbar."
+        },
+        {
+          "claim": "The company reports that its Dell PowerCool Enclosed Rear Door Heat Exchanger (eRDHx) enables enhanced data center air cooling capacity of up to 80 kW per rack for dense AI and high-performance computing configurations."
+        },
+        {
+          "claim": "Dell provides its specialized systems management console, Dell OpenManage Enterprise (OME), which actively scales to natively manage up to 8,000 devices and monitor up to 25,000 data center devices—including PowerEdge servers, power shelves, and coolant distribution units (CDUs)—while streaming real-time telemetry via Kafka and cloud-based AIOps, as detailed in its October 2026 product specifications."
+        },
+        {
+          "claim": "To enable comprehensive data center infrastructure management (DCIM) visualization, a joint technical integration allows Sunbird's dcTrack DCIM platform to use a programmatic software connector to ingest configuration data directly from Dell OpenManage Enterprise, unifying the server/IT layer and facility physical layers."
+        },
+        {
+          "claim": "Dell Technologies collaborated with the Scripps Institution of Oceanography on a pilot program using the Dell AI Factory with NVIDIA to process coral reef imagery, achieving a 20% reduction in costs and 32% lower carbon emissions by utilizing agentic AI to schedule processing during optimum energy windows."
+        },
+        {
+          "claim": "The company reports that its CloudIQ AIOps application provides real-time energy use-phase carbon footprint tracking, forecasting, and workload-level optimization across Dell storage, server, and networking infrastructure to help organizations monitor metrics and automate efficiencies."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "A SPEC CPU2017 benchmark evaluation published in June 2025 showed that a Dell PowerEdge R7725 server configured with dual 48-core AMD EPYC 9475F processors achieved a verified SPECrate2017_int_base score of 1,390 and a SPECrate2017_int_peak score of 1,420, as reported by the Standard Performance Evaluation Corporation."
+            },
+            {
+              "claim": "An independent comparative testing project conducted by Principled Technologies in May 2026 demonstrated that the Dell PowerStore 9500 storage array delivered superior IOPS, storage density, and latency performance compared to a rival all-NVMe enterprise array, according to the Principled Technologies report."
+            }
+          ],
+          "assessed_on": "The rating rests on Dell's top-tier, third-party verified compute benchmarks and documented block/file storage throughput advantages under transactional database workloads. Based on primary research, the company's hyperscale deployment performance benchmarks can be estimated as high, based on its PowerEdge server benchmarking protocols and Hyperscale Next performance tuning framework.",
+          "estimates": [
+            {
+              "metric": "hyperscale deployment performance benchmarks",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high",
+              "confidence": "medium",
+              "basis": "its PowerEdge server benchmarking protocols and Hyperscale Next performance tuning framework",
+              "source": "Dell Technologies Info Hub",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "The company reports that its PowerEdge XE9680L servers deploy direct liquid cooling technology within critical components to reduce cooling energy consumption by 40% to 50% and improve Power Usage Effectiveness (PUE), as highlighted in an interview with the Vice President of the Infrastructure Solutions Group at Dell Technologies."
+            },
+            {
+              "claim": "The company reports that combining direct liquid cooling with its PowerCool eRDHx enables warm water cooling (32°C to 36°C) and reduces reliance on chilled water infrastructure, resulting in up to a one-third reduction in annual energy costs for large-scale AI data center deployments."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified integration of ENERGY STAR certified configurations across its standard enterprise PowerEdge server lines and its extensive documentation of advanced direct liquid cooling metrics for high-density AI environments. Based on primary research, the company's complete facility infrastructure PUE impact can be estimated as low, based on its energy-efficient data center modeling and modular data center direct-to-chip liquid cooling estimates.",
+          "estimates": [
+            {
+              "metric": "complete facility infrastructure PUE impact",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "low",
+              "confidence": "medium",
+              "basis": "its energy-efficient data center modeling and modular data center direct-to-chip liquid cooling estimates",
+              "source": "Dell Energy-Efficient Data Center",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 69,
+          "evidence": [
+            {
+              "claim": "The company reports that its Dell IR7000 integrated 21-inch Open Rack v3 (ORv3) architecture supports high-density AI deployment configurations that handle up to 504 kW per rack with a multi-generational PowerCool direct liquid cooling (DLC) busbar."
+            },
+            {
+              "claim": "The company reports that its Dell PowerCool Enclosed Rear Door Heat Exchanger (eRDHx) enables enhanced data center air cooling capacity of up to 80 kW per rack for dense AI and high-performance computing configurations."
+            }
+          ],
+          "assessed_on": "The rating rests on Dell Inc.'s native Open Rack v3 (ORv3) infrastructure designs supporting up to 504 kW per rack with direct liquid cooling, as well as enclosed rear-door heat exchangers supporting 80 kW under air-assisted deployment models. Based on primary research, the company's continuous production workload rack testing data can be estimated as high, based on its PowerEdge XE9785L hardware diagnostics and seventeenth-generation server validation metrics.",
+          "estimates": [
+            {
+              "metric": "continuous production workload rack testing data",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high",
+              "confidence": "medium",
+              "basis": "its PowerEdge XE9785L hardware diagnostics and seventeenth-generation server validation metrics",
+              "source": "Dell AI-Powered Multi-Agent Infrastructure Monitoring",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Dell provides its specialized systems management console, Dell OpenManage Enterprise (OME), which actively scales to natively manage up to 8,000 devices and monitor up to 25,000 data center devices—including PowerEdge servers, power shelves, and coolant distribution units (CDUs)—while streaming real-time telemetry via Kafka and cloud-based AIOps, as detailed in its October 2026 product specifications."
+            },
+            {
+              "claim": "To enable comprehensive data center infrastructure management (DCIM) visualization, a joint technical integration allows Sunbird's dcTrack DCIM platform to use a programmatic software connector to ingest configuration data directly from Dell OpenManage Enterprise, unifying the server/IT layer and facility physical layers."
+            }
+          ],
+          "assessed_on": "We verified that the company's solution capabilities center on automated server, power, and thermal management via its OpenManage portfolio, supplemented by direct integrations with third-party DCIM providers. Based on primary research, the company's native BMS integration software features can be estimated as strong, in line with leading vendors, based on its Dell Automation Platform generative UI and Dell APEX AIOps cloud-based infrastructure observability.",
+          "estimates": [
+            {
+              "metric": "native BMS integration software features",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "high",
+              "basis": "its Dell Automation Platform generative UI and Dell APEX AIOps cloud-based infrastructure observability",
+              "source": "Dell Automation Platform",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Dell Technologies collaborated with the Scripps Institution of Oceanography on a pilot program using the Dell Concept Astro initiative to process coral reef imagery, achieving a 20% reduction in energy costs and 32% lower carbon emissions by utilizing AI to schedule processing during optimum energy windows."
+            },
+            {
+              "claim": "The company reports that its CloudIQ AIOps application provides real-time energy use-phase carbon footprint tracking, forecasting, and workload-level optimization across Dell storage, server, and networking infrastructure to help organizations monitor metrics and automate efficiencies."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed real-world pilot deployments utilizing agentic AI for grid-aware scheduling alongside active AI-driven infrastructure management platforms that track carbon footprints in real-time. Based on primary research, the company's enterprise client carbon tracking dataset audits can be estimated as limited to a few markets, based on its Dell APEX AIOps dashboard sustainability metrics and ProSupport telemetry integrations.",
+          "estimates": [
+            {
+              "metric": "enterprise client carbon tracking dataset audits",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to a few markets",
+              "confidence": "medium",
+              "basis": "its Dell APEX AIOps dashboard sustainability metrics and ProSupport telemetry integrations",
+              "source": "Dell APEX AIOps for Intelligent IT Infrastructure Insights",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 81,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "IREN (Iris Energy) entered into a $1.6 billion purchase agreement with Dell Technologies for air-cooled Blackwell server systems to support its five-year managed services AI cloud contract, as announced by the client in May 2026."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "The company reports record full-year fiscal 2026 revenue of $113.5 billion, driven by closing more than $64 billion in AI-optimized server orders and shipping more than $25 billion in AI server solutions throughout the fiscal year."
+        },
+        {
+          "claim": "The company reports that its Infrastructure Solutions Group delivered a record $16.8 billion in revenue during the second quarter of fiscal 2026, which included $12.9 billion from its servers and networking business and $3.9 billion from storage solutions."
+        },
+        {
+          "claim": "The company reported in mid-2026 that its active server installed base includes approximately 1.2 million traditional compute assets running on 14th-generation or older PowerEdge server models."
+        },
+        {
+          "claim": "Hostinger completed the deployment of 800 Dell PowerEdge servers equipped with AMD EPYC processors to scale its global web hosting and server infrastructure."
+        },
+        {
+          "claim": "Dell Technologies teamed up with Nvidia and Indian cloud provider NxtGen in January 2026 to build India's largest dedicated sovereign AI data center facility, deploying fully integrated liquid-cooled Dell IR5000 racks, PowerEdge XE9685L servers, and over 4,000 Nvidia Blackwell GPUs."
+        },
+        {
+          "claim": "Dell partnered with Advanced Micro Devices (AMD) to deliver deep joint engineering for data center workloads, integrating fifth-generation AMD Turin EPYC processor technology with 12-channel DDR5 memory into the Dell PowerEdge server portfolio."
+        },
+        {
+          "claim": "Dell Technologies reported total research and development (R&D) expenses of $3.1 billion for both Fiscal 2026 (ended January 30, 2026) and Fiscal 2025, which amounted to approximately 2.8% of its total revenue for Fiscal 2026, according to its Form 10-K filed with the U.S. Securities and Exchange Commission."
+        },
+        {
+          "claim": "Dell Technologies achieved a total full-year net revenue of $113.5 billion and operating income of $8.1 billion for Fiscal 2026, representing a 31% year-over-year growth in operating income from $6.2 billion in Fiscal 2025, according to the company's full-year earnings announcement."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "IREN (Iris Energy) entered into a $1.6 billion purchase agreement with Dell Technologies for air-cooled Blackwell server systems to support its five-year managed services AI cloud contract, as announced by the client in May 2026."
+            }
+          ],
+          "assessed_on": "Our assessment rests on Dell's multi-billion dollar server supply contract with specialized AI cloud provider IREN, while noting the company lacks public high-volume hardware contracts with the absolute largest hyperscalers who typically build custom hardware. Based on primary research, the company's tier-1 hyperscaler hardware contracts can be estimated as restricted to strategic on-premises platform integration, based on its collaborative enterprise architectures with Google Gemini, Meta Llama models, and multi-cloud environments.",
+          "estimates": [
+            {
+              "metric": "tier-1 hyperscaler hardware contracts",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "restricted to strategic on-premises platform integration",
+              "confidence": "high",
+              "basis": "its collaborative enterprise architectures with Google Gemini, Meta Llama models, and multi-cloud environments",
+              "source": "Dell Press Releases",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "The company reports record full-year fiscal 2026 revenue of $113.5 billion, driven by closing more than $64 billion in AI-optimized server orders and shipping more than $25 billion in AI server solutions throughout the fiscal year."
+            },
+            {
+              "claim": "The company reports that its Infrastructure Solutions Group delivered a record $16.8 billion in revenue during the second quarter of fiscal 2026, which included $12.9 billion from its servers and networking business and $3.9 billion from storage solutions."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified global leadership in the data center hardware space, maintaining the top market share spot among server OEMs and a dominant 31.2% market share position in external enterprise storage. Based on primary research, the company's standalone data center software revenue can be estimated as bundled extensively within core infrastructure hardware, based on its combined Infrastructure Solutions Group reporting that groups servers, storage, and software together.",
+          "estimates": [
+            {
+              "metric": "standalone data center software revenue",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "bundled extensively within core infrastructure hardware",
+              "confidence": "high",
+              "basis": "its combined Infrastructure Solutions Group reporting that groups servers, storage, and software together",
+              "source": "Dell Financial Reports",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 84,
+          "evidence": [
+            {
+              "claim": "The company reported in mid-2026 that its active server installed base includes approximately 1.2 million traditional compute assets running on 14th-generation or older PowerEdge server models."
+            },
+            {
+              "claim": "Hostinger completed the deployment of 800 Dell PowerEdge R6615 servers equipped with AMD EPYC processors to scale its global web hosting and server infrastructure."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's large documented x86 server installed base and verified large-scale enterprise infrastructure rollouts. Based on primary research, the company's cumulative global infrastructure units deployed can be estimated as expansive across global enterprise footprints, based on its position as the global storage market leader in external RAID, all-flash arrays, and structured backup targets.",
+          "estimates": [
+            {
+              "metric": "cumulative global infrastructure units deployed",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "expansive across global enterprise footprints",
+              "confidence": "high",
+              "basis": "its position as the global storage market leader in external RAID, all-flash arrays, and structured backup targets",
+              "source": "Dell Customer & Product Portals",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 92,
+          "evidence": [
+            {
+              "claim": "Dell Technologies teamed up with Nvidia and Indian cloud provider NxtGen in January 2026 to build India's largest dedicated sovereign AI factory, deploying fully integrated liquid-cooled Dell IR5000 racks, PowerEdge XE9685L servers, and over 4,000 Nvidia Blackwell GPUs."
+            },
+            {
+              "claim": "Dell partnered with Advanced Micro Devices (AMD) to deliver deep joint engineering for data center workloads, integrating fifth-generation AMD Turin EPYC processor technology with 12-channel DDR5 memory into the Dell PowerEdge server portfolio."
+            }
+          ],
+          "assessed_on": "The rating is founded on the company’s extensive, high-profile co-engineering alliances with tier-one silicon providers like Nvidia and AMD to deploy integrated full-stack hardware solutions globally. Based on primary research, the company's data center distribution channel breakdown can be estimated as diverse across multi-tier global sales partners, based on its hybrid go-to-market structure spanning tens of thousands of channel partners and extensive internal corporate sales teams.",
+          "estimates": [
+            {
+              "metric": "data center distribution channel breakdown",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "diverse across multi-tier global sales partners",
+              "confidence": "medium",
+              "basis": "its hybrid go-to-market structure spanning tens of thousands of channel partners and extensive internal corporate sales teams",
+              "source": "Dell Strategy Overviews",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Dell Technologies reported total research and development (R&D) expenses of $3.1 billion for both Fiscal 2026 (ended January 30, 2026) and Fiscal 2025, which amounted to approximately 2.8% of its total revenue for Fiscal 2026, according to its Form 10-K filed with the U.S. Securities and Exchange Commission."
+            },
+            {
+              "claim": "Dell Technologies achieved a total full-year net revenue of $113.5 billion and operating income of $8.1 billion for Fiscal 2026, representing a 31% year-over-year growth in operating income from $6.2 billion in Fiscal 2025, according to the company's full-year earnings announcement."
+            }
+          ],
+          "assessed_on": "The rating rests on Dell Technologies' multi-billion-dollar R&D spending and exceptional top-line and operating income growth driven by data center AI demand. Based on primary research, the company's cooling infrastructure R&D spend allocation can be estimated as embedded deeply into main hardware engineering budgets, based on its integrated thermal management and liquid cooling engineering for PowerEdge server lines and high-density AI Factories.",
+          "estimates": [
+            {
+              "metric": "cooling infrastructure R&D spend allocation",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "embedded deeply into main hardware engineering budgets",
+              "confidence": "high",
+              "basis": "its integrated thermal management and liquid cooling engineering for PowerEdge server lines and high-density AI Factories",
+              "source": "Dell Technical Briefs",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

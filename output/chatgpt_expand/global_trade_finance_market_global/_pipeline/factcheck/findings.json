@@ -1,0 +1,2374 @@
+{
+ "komgo": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Komgo SA",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Geneva, Switzerland",
+   "main_product": "Digital network and SaaS solutions for trade finance operations",
+   "scope": "core",
+   "scope_reason": "The company builds and operates Global Trade Konnect (GTK) and Konsole, which are multi-bank platforms and digital networks designed for managing and automating trade finance instruments like letters of credit and guarantees.",
+   "evidence": "According to Komgo's official product updates and profiles, the company provides multi-bank SaaS applications and a secure digital network explicitly built for managing trade finance workflows and connecting corporates with financial institutions."
+  },
+  "listed_hq": "Geneva, Switzerland",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "Independent verification shows that Crédit Agricole CIB utilizes Komgo's multibank integration layer to route and execute structured digital workflows for documentary credits, standby letters of credit, bank guarantees, and collections.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://ca-cib.en"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its Global Trade Konnect application, launched in April 2025, utilizes integrated artificial intelligence to compare transaction data, extract info from draft invoices, and automate document checking.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gtreview.com/news/digital-trade/komgo-launches-global-trade-konnect-in-major-system-upgrade/"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "A partnership established by the company with Complidata in 2025 adds AI-assisted document checking capabilities focused directly on trade document accuracy.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "partnership with Complidata in 2025",
+    "source": "https://www.komgo.io/"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its platform integrates directly with the SWIFT network using its proprietary Swift key via Swift's NOSU solution, and it supports the commercialized ICC-Swift API standards for bank guarantees.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.komgo.io/newsroom/komgo-and-swift-strengthen-collaboration-to-elevate-trade-finance-connectivity"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "Komgo collaborated with FIATA to implement the electronic forwarder's bill of lading (eFBL) data standard using its blockchain-based Trakk solution to allow the secure tracking and authentication of digital shipping documents.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gtreview.com/news/digital-trade/fiata-partners-with-komgo-on-electronic-forwarders-bill-of-lading/"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "Komgo reports that its infrastructure utilizes a secure cloud-native SaaS deployment model delivering decentralized digital connectivity via the Konsole multi-bank network. The architecture is underpinned by an enterprise Ethereum distributed ledger technology framework (built on Quorum) featuring a proprietary document transfer mechanism called Kite that supports secure peer-to-peer data validation and privacy by design.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Consensys case study (https://consensys.io/blockchain-use-cases/finance/komgo) and Komgo documentation outlining Quorum and Kite framework."
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports offering extensive open API integration capability (including compliance with ICC-SWIFT API standards) to connect seamlessly with banks' back-office core systems, corporate ERP, and TMS solutions, processing nearly one billion dollars in financial transactions across its network daily.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Komgo FAQ (https://www.komgo.io/faq) confirming $1 billion in daily transaction value and industry standard alignment with ICC-Swift API specifications."
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports the rollout of Global Trade Konnect (GTK) in April 2025, which serves as its consolidated SaaS application merging multi-bank trade finance workflows with embedded artificial intelligence tools including an LC Creation Agent, Digital Reporting Assistant, and Smart Clause Checker.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Komgo Newsroom announcements from April 2025 regarding the flagship launch of Global Trade Konnect (GTK) along with its feature documentation outlining embedded generative AI assistants (https://www.komgo.io/newsroom/introducing-gtk-future-of-digital-guarantee-and-trade-finance-management)."
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "In September 2026, the company announced a collaboration with Crédit Agricole CIB to integrate AI-powered capabilities into the bank's Optimtrade digital trade finance portal.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Official press release published on Komgo Newsroom on September 24, 2026, titled 'Crédit Agricole CIB and Komgo collaborate to bring AI-powered capabilities to Optimtrade' (https://komgo.io)."
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Komgo reports that its multibank trade finance platform connects more than 300 corporates and financial institutions across 50 countries, with specific shareholders and users including global entities such as BNP Paribas, Citibank, Mitsubishi UFJ Financial Group (MUFG), Crédit Agricole CIB, TotalEnergies, Shell, Gunvor, and Koch Supply & Trading.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Komgo corporate info page and ecosystem updates detailing network size of over 300 corporates and financial institutions across 50 countries, as well as founding shareholder records (https://www.komgo.io/about)."
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Publicly announced customer deployments include ANDRITZ deploying Komgo's Global Trade Konnect (GTK) solution across 40 countries to digitalize communications with 30+ financing partners, Standard Chartered executing its first ICC-SWIFT API standards bank guarantee transaction via Komgo, and case studies highlighting active utilization by Siemens Healthineers, Baker Hughes, Société Générale, and DBS Bank.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Komgo Newsroom (ANDRITZ press release, Nov 2025); Standard Chartered Press Release (Jan 2026); Komgo GTK Solutions page (Siemens Healthineers, Baker Hughes cases)"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reported a 50 percent increase in trade finance transactions flowing through its platform alongside a 65 percent year-over-year increase in clients operating in production.",
+    "verdict": "incorrect",
+    "corrected": "The company reported a 50 percent increase in trade finance transactions flowing through its platform alongside a 65 percent increase in clients in the past year.",
+    "note": "",
+    "source": "ING Ventures / Komgo Funding Announcement (June 2021); PYMNTS"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "Komgo SA expanded its corporate reach and operational volumes by acquiring GlobalTrade Corporation (GTC), which allowed the combined entity to service over 120 multinational clients and 11,000 subsidiaries.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Komgo Newsroom / Business Wire (Dec 2022 Acquisition Press Release)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports strengthening its physical footprint in the Americas by opening a hub office in Miami in April 2024, staffed with a regional Managing Director, sales executives, and account executives.",
+    "verdict": "incorrect",
+    "corrected": "The company reports strengthening its physical footprint in the Americas by opening a hub office in Miami in June 2024, staffed with a regional Managing Director, sales executives, and account executives.",
+    "note": "",
+    "source": "Komgo Newsroom (June 2024 Press Release: 'Komgo Strengthens Americas Presence with New Miami Office')"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Komgo SA was launched in 2018 as an independent venture backed by a consortium of 15 founding corporate and banking shareholders, including ABN Amro, BNP Paribas, Citi, Crédit Agricole, Gunvor, ING, Koch Supply & Trading, Macquarie, Mercuria, MUFG Bank, Natixis, Rabobank, Shell, SGS, and Société Générale.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "SGS Co-launches komgo Press Release (Sept 2018); Global Trade Review (GTR)"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company successfully closed a third equity funding round in May 2021, raising CHF 26 million (approximately $28.9 million) from returning shareholders alongside new investor Sumitomo Mitsui Banking Corporation (SMBC) and an additional unnamed financial institution. Subsequent strategic equity investments were executed by Santander Corporate & Investment Banking and Emirates NBD's Innovation Fund in June 2023 and September 2023 respectively, expanding the ownership base to 24 institutional backers.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The exact total count of institutional backers following the 2023 investments is unconfirmed (sources show Komgo already had 24 investors by July 2022).",
+    "source": "Komgo Press Releases & Webflow Funding Announcement (May 2021), Finextra (September 2023), Santander Press Release (June 2023), Komgo Newsroom (July 2022)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports connecting more than 60 banks and over 10,000 corporate users across 50 countries on its multi-bank trade finance digital network.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Komgo Newsroom (July 2025, December 2025)"
+   }
+  ]
+ },
+ "rootant global": {
+  "status": {
+   "operating": "renamed",
+   "event": "Renamed to TKDIGITAL HOLDINGS PTE. LTD. (previously RABC HOLDINGS PTE. LTD.)",
+   "current_name": "TKDIGITAL HOLDINGS PTE. LTD.",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Singapore, Singapore",
+   "main_product": "BANCO transaction banking and supply-chain finance platform",
+   "scope": "core",
+   "scope_reason": "The company provides the BANCO supply-chain finance platform which connects enterprises and financial institutions for digital trade and supply chain financing.",
+   "evidence": "According to Singapore ACRA registry records via Scam.sg, the company with UEN 201919616G changed its name from RootAnt to RABC Holdings and subsequently to TKDIGITAL HOLDINGS PTE. LTD."
+  },
+  "listed_hq": "Singapore",
+  "claims": [
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its BANCO platform utilizes R3's Corda enterprise blockchain network to manage data exchange, privacy, and transaction validation for multi-tier supply chain financing.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Ledger Insights; SBI Holdings Presentation (July 2021)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "In September 2021, the company partnered with Marketnode and SETL to develop end-to-end infrastructure for fixed-income and multi-asset documentation and data processing.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "The Business Times; Yahoo Finance"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports its Digital Banking-as-a-Service software model is built on a modular and microservices architecture with Open APIs available for ecosystem partner integration.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "RABC Group Official Site (RootAnt Digital About Page); e27 Startup Profile"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports that its deep-tier supply chain finance platform, BANCO, connects buyers and sellers with financing providers on the R3 Corda and Hyperledger Fabric blockchain protocols.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Fintech Futures Press Release; Hunter Technology Corporate Updates"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company expanded its capabilities on September 29, 2021, by launching a central lending platform called BANCR to integrate multi-funder digital lending directly into its BANCO transaction banking platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "IBS Intelligence; Retail Banker International; Finextra"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "RootAnt signed an agreement in 2021 with Bank of China to deploy a digital trade financing platform enabling branches in Singapore and Chongqing, alongside traders and logistics companies, to exchange electronic trade documents.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Monetary Authority of Singapore Official Speech (7 December 2021)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "RootAnt (rebranded as banco) established a strategic corporate partnership with real estate services firm Savills to deploy its finance platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Savills Singapore Press Release (29 March 2022) / PR Newswire"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company signed an agreement with the Bank of China to serve as a trade financing platform on the Singapore side under the CCI-ILSTC framework, verified by the Monetary Authority of Singapore.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "RootAnt / RABC Group Official Website / Monetary Authority of Singapore Official Speech"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The Business Times verified that the company secured nearly US$1.5 million in a seed funding round in October 2020, led by Linear Capital alongside co-investor KZM & Company Group.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "The Business Times (2 October 2020)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "In March 2021, SBI Group's local subsidiary BYFIN partnered with RootAnt Global to launch the blockchain-oriented \"SBI-BANCO\" Deep-Tier Supply Chain Finance Platform in the APAC region.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "SBI Holdings Press Release (16 March 2021) / IBS Intelligence (25 March 2021)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "Marketnode partnered with RootAnt Global and SETL to focus on fixed income and multi-asset end-to-end digital infrastructure development.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.thetradenews.com/marketnode-announces-partners-ahead-of-upcoming-product-launches/"
+   }
+  ]
+ },
+ "kyzer software india": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Kyzer Software India Private Limited",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Mumbai, India",
+   "main_product": "TradeZone (Trade Finance Automation Platform)",
+   "scope": "core",
+   "scope_reason": "The company develops and sells TradeZone, an automated trade finance workflow and processing platform designed specifically for banks and financial institutions.",
+   "evidence": "According to Ministry of Corporate Affairs records fetched from Tracxn, Kyzer Software India Private Limited is active and headquartered in Mumbai, India, while its official product suite outlines TradeZone as its flagship trade finance automation platform."
+  },
+  "listed_hq": "Mumbai, India",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports that its platform integrates with SWIFT networks, ERP platforms, core banking systems, and regulatory engines like the Reserve Bank of India's EDPMS/IDPMS to support transaction lifecycles and compliance.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tradefinanceautomation.com and https://kyzersoft.com"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its platform features an \"AI Document Intelligence\" engine designed to automatically process trade documents using OCR and AI validation.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tradefinanceautomation.com"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its TradeZone platform supports transaction movement across third-party compliance applications for AML/TBML and sanction screenings, alongside regulatory compliance modules for KYC and automated regulatory reporting frameworks.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tradefinanceautomation.com and https://kyzersoft.comarticle/csb-bank-ltd-digitizes-its-trade-finance-platform-with-kyzer-softwares-tradezone"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its core trade finance platform, TradeZone, offers integration with SWIFT and corporate core banking systems via direct connections, and provides a SWIFT FX Reconciliation Portal for message tracking and exception handling.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tradefinanceautomation.com and https://kyzersoft.com"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its platform features API-first integration capabilities to connect seamlessly with SWIFT networks, ERP platforms, and third-party data providers.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tradefinanceautomation.com"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its banking automation platform is built on a modular architecture featuring a secure cloud infrastructure and an API-first connectivity suite for seamless integrations with core banking systems and SWIFT.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tradefinanceautomation.com/"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its flagship TradeZone platform supports straight-through transaction processing using APIs and integrates with both in-house and cloud-based banking applications.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "straight-through transaction processing",
+    "source": "https://tradefinanceautomation.com"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports a future-ready product roadmap that incorporates blockchain-enabled smart contract settlements for trade finance, explainable AI for compliance decisions, and embedded low-code development tools.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tradefinanceautomation.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "CSB Bank Ltd partnered with Kyzer Software in July 2023 to digitize and automate its internal trade finance operations using the TradeZone workflow platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://kyzersoft.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "RBL Bank went live with Kyzer Software's trade finance automation solutions in August 2017, and NKGSB Bank deployed the TradeZone platform in August 2018.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://kyzersoft.com/article/nkgsb-bank-enhances-trade-finance-operations-with-kyzer-tradezone-trade-finance-automation-platform"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "Kyzer Software India Private Limited reported an annual revenue of ₹7.17 Cr for fiscal year 2024, representing a 3.00% year-on-year growth rate.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The exact year-on-year growth rate of 3.00% could not be verified in published sources.",
+    "source": "https://www.thecompanycheck.com/company/kyzer-software-india-private-limited/U74999MH2016PTC285016"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "Regulatory registry corporate filings show that Kyzer Software India Private Limited generated less than ₹10 Cr in revenue for the financial year ending on March 31, 2025, with a compounded annual growth rate of -19% over the preceding year.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://tracxn.com/d/legal-entities/india/kyzer-software-india-private-limited/__ylCb3klYUl9Rowch1oS4_R8VHFRj_aiusZW7M7OlqlU"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports its corporate headquarters in Mumbai, India, where its primary support and engineering resources manage products deployed across more than 16 Indian and multinational banks.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The deployment metric across 'more than 16' banks could not be verified in published sources.",
+    "source": "https://kyzersoft.com/"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "In July 2025, the company announced an expansion of its global footprint backed by a planned £10 million investment over three years to establish operations and a team in London, UK, which is officially registered at 124 City Road.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gov.uk/government/news/prime-minister-secures-thousands-of-british-jobs-and-6-billion-in-investment-and-export-wins-as-historic-trade-deal-with-india-signed"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Kyzer Software India Pvt Ltd is a private unlisted company incorporated in August 2016 with a paid-up capital of Rs. 100,000.00.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.zaubacorp.com/KYZER-SOFTWARE-INDIA-PRIVATE-LIMITED-U74999MH2016PTC285016"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports having over 100 client implementations, more than 5 multinational banks, and over 22 leading banks in India using its platforms.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Kyzer Software Corporate Profile Presentation (via Scribd) and Official Website Marketing Materials"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "Client deployments include live trade finance automation setups at RBL Bank, CSB Bank Ltd., NKGSB Bank, and SVC Bank.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Kyzer Software Official Site Case Studies, Press Releases, Media Coverage Page, and Client Testimonials"
+   }
+  ]
+ },
+ "ogydocs": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "WaveBL",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Kfar Saba, Israel",
+   "main_product": "Electronic Bill of Lading (eBL) platform",
+   "scope": "core",
+   "scope_reason": "The company provides a digital trade documentation and transaction network that enables the exchange of electronic bills of lading and structured presentations for trade finance.",
+   "evidence": "According to WaveBL's official platform documentation, it operates a blockchain-based digital network for electronic bills of lading and bank presentations in trade finance."
+  },
+  "listed_hq": "Kfar Saba, Israel",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports its platform enables structured bank presentations for letters of credit and collection transactions via network integrations with partners like TradeWaltz, and supported a non-bank trade finance transaction with Capital4Trade using its eBL with decentralized finance (DeFi) liquidity.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "WaveBL Website (Partners, News & Blog Announcements)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "OGYDocs Inc. (operating its WaveBL platform) implemented the Digital Container Shipping Association (DCSA) Standard Annex for eBL Platform Interoperability v.2 in June 2026, enabling its blockchain ecosystem to exchange electronic bills of lading multilaterally across other approved systems like CargoX, edoxOnline, TradeGo, and eTEU.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The implementation of DCSA Standard Annex for eBL Platform Interoperability v.2 specifically in June 2026, and multilateral cross-platform exchange with TradeGo and eTEU, is unverified by published sources.",
+    "source": "DCSA and WaveBL Press Releases"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company completed a proof of value network connectivity project with Swift and five global banking institutions in late 2024, demonstrating secure transfers of structured bank presentations and electronic bills of lading through Swift's FileAct file transfer service.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "WaveBL PR Newswire (October 15, 2024 Release)"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company offers integrated connectivity to global core banking frameworks via third-party technical integrations with trade finance software providers, explicitly partner technology platforms Temenos and Surecomp.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "WaveBL Bank Use Case and Partner Documentation (Temenos and Surecomp RIVO)"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports in July 2026 that it raised $6 million to expand its trade finance capabilities and strengthen its AI-powered services.",
+    "verdict": "incorrect",
+    "corrected": "The company reports in June 2023 that it raised $26 million to expand its trade finance capabilities and strengthen its services.",
+    "note": "",
+    "source": "WaveBL Official Series B Press Release (June 2023) / PitchBook / Tracxn Funding Records"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports that its core blockchain-based electronic bill of lading (eBL) network has been expanded through its \"Digital Envelope\" solution to securely bundle all transaction documents (such as Commercial Invoices and Packing Lists) alongside AI-driven validation, real-time error detection, and compliance checking tools.",
+    "verdict": "incorrect",
+    "corrected": "The company reports that its core blockchain-based electronic bill of lading (eBL) network has been expanded through its \"Wave Pouch\" solution to securely bundle all transaction documents (such as Commercial Invoices and Packing Lists) alongside AI-driven validation, real-time error detection, and compliance checking tools.",
+    "note": "",
+    "source": "https://wavebl.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Barclays Bank signed an agreement with OGYDocs (Wave) in 2015 to leverage its blockchain application within Barclays Corporate Bank, executing its first live blockchain trade finance transaction in 2016.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://coindesk.com"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports that its digital courier and electronic bill of lading platform is used across more than 100 countries globally.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://wavebl.com"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "OGYDocs Inc. (operating as WaveBL) has raised a total of $15.2 million in venture funding, completing early-stage funding rounds that include a Series A in 2019 and a Series B in 2021.",
+    "verdict": "incorrect",
+    "corrected": "OGYDocs Inc. (operating as WaveBL) has raised a total of $37 million in venture funding, completing early-stage funding rounds that include a Series A in 2019 and a Series B in 2021.",
+    "note": "",
+    "source": "https://prnewswire.com"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company has secured backing from strategic and institutional investors, including ZIM Integrated Shipping Services, Contour Venture Partners, NewRoad Capital Partners, and angel investors such as Jeroen Bertrams.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://itln.in, https://www.investorsglobe.com/investors/europe/jeroen-bertrams/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its platform, operating under the WaveBL brand, has achieved a 65% share of the global electronic bill of lading (eBL) market, processing more than 500,000 eBL issuances in 2025.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "WaveBL LinkedIn End of Year Report / Company Website"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The network connects users across more than 100 countries, including 7 of the world's top 12 ocean carriers, 25+ freight forwarders, and banking institutions like Lloyds Bank, Federal Bank, Emirates NBD Bank, U.S. Bank, and Bank Mizrahi.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "WaveBL Press Releases / Official Case Studies"
+   }
+  ]
+ },
+ "xalts technologies": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Xalts Technologies Pte. Ltd.",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Singapore, Singapore",
+   "main_product": "AI-driven financial infrastructure and treasury automation software",
+   "scope": "core",
+   "scope_reason": "The company builds and operates digital treasury, trade, and supply chain finance infrastructure, utilizing task-specific AI agents to execute complex trade finance processes and automate connectivity with financial institutions.",
+   "evidence": "According to a Global Trade Review report, Xalts builds digital treasury, trade, and supply chain finance infrastructure to digitise operational processes between businesses and financial institutions."
+  },
+  "listed_hq": "Singapore",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "MUFG Bank completed a fully digital transaction in 2025 on behalf of Tata International, processing a $15 million letter of credit using the company's network.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review (https://www.gtreview.com/news/digital-trade/mufg-tata-complete-first-of-its-kind-digital-transaction-on-xalts-network/)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "In February 2024, Xalts Technologies Pte. Ltd. completed the acquisition of Contour Network, a blockchain-based trade finance network built on R3's Corda platform that maintains pre-existing documentation and workflow integrations with external partners including CargoX, Bolero, and essDOCS.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Trade Finance Global (https://www.tradefinanceglobal.com/posts/digital-trade-finance-gets-a-lifeline-xalts-to-acquire-contour-network/) and TechCrunch (https://techcrunch.com/2024/02/19/xalts-contour/)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "In June 2024, Xalts announced upgrades to the Contour network enabling users to prepare and compare letter of credit applications against SWIFT messaging standards, with additional planned API integrations to ease system connections.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review (https://www.gtreview.com/news/digital-trade/xalts-unveils-new-contour-functionality-in-post-acquisition-upgrade/)"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports its SPARC application is a unified bank connectivity API designed to integrate multiple enterprise banking networks under universal data exchange schemas.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The SPARC application and its description as a unified bank connectivity API cannot be confirmed from company or news sources.",
+    "source": ""
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "Xalts completed a digital transaction with MUFG and Tata International over its network in February 2025 using its updated blockchain infrastructure and AI capabilities.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The specific inclusion of \"AI capabilities\" in the transaction infrastructure could not be verified in published reports.",
+    "source": ""
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "In February 2025, MUFG Bank went live on the Xalts bank connectivity network and executed a fully digitalized $15 million Letter of Credit transaction from its GIFT City branch for a subsidiary of Tata International Limited.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.linkedin.com/posts/mufg_giftcity-mufgtransactionbanking-activity-7300101807022776321-jq9W"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Xalts acquired the digital trade finance network Contour in February 2024, integrating a network framework that historically counted over 22 global banks and 100 businesses, including HSBC, BNP Paribas, Standard Chartered, and Rio Tinto.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.finextra.com/newsarticle/43733/xalts-to-acquire-contour-network-to-build-plaid-for-trade"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company announced a $6 million seed funding round in October 2022 co-led by Accel and Citi Ventures, with additional participation from Polygon co-founder Sandeep Nailwal.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.coindesk.com/business/2022/10/06/citi-ventures-backs-its-first-digital-asset-manager-co-leading-a-6m-round-in-xalts"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company utilized cash and stock to acquire the digital trade network Contour from a bank consortium in February 2024, receiving continuing transaction support from early backers Accel and Citi Ventures.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://techcrunch.com/2024/02/19/xalts-contour/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "In February 2024, Xalts Technologies Pte. Ltd. acquired the Contour Network, a digital trade platform used by over 22 banks and more than 100 global businesses including Tata Group and Rio Tinto.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.livemint.com/market/stock-market-news/japans-mufg-completes-first-blockchain-enabled-trade-deal-with-tata-international-at-gift-city-11740473145934.html"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "In February 2025, MUFG Bank went live on the Xalts bank connectivity network for corporate treasuries operating in GIFT City, processing a US$15 million letter of credit for Tata International.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review (GTR) & Banking Frontiers"
+   }
+  ]
+ },
+ "premium technology": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Premium Technology Inc.",
+   "owner": "",
+   "owner_since": "",
+   "hq": "New York City, USA",
+   "main_product": "FinShare supply chain and trade finance platform",
+   "scope": "core",
+   "scope_reason": "The company builds and sells its flagship FinShare platform which directly provides software and core digital ecosystems for supply chain finance and trade finance products such as letters of credit and bank guarantees.",
+   "evidence": "According to Premium Technology Inc.'s official website and press releases, the company celebrated its 25th anniversary in September 2026 and continues to provide its FinShare supply chain and trade finance platform."
+  },
+  "listed_hq": "New York City, New York, USA",
+  "claims": [
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its FinShare platform supports customizable standard output templates including SWIFT messages as well as core banking and third-party integration capabilities.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Premium Technology Inc. Official Trade Finance Product Page (https://www.premiumit.com/TF)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "SWIFT designated the FinShare platform as a certified software application for Supply Chain Finance, which validates support for the SWIFT Trade Services Utility (TSU) and Bank Payment Obligation (BPO).",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Premium Technology Inc. Press Release via PR Newswire (https://www.newswire.ca/news-releases/premium-technology-earns-swift-certification-for-supply-chain-finance-512884571.html)"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its FinShare platform supports over 50,000 corporate clients across more than 100 countries and processes over 50 million transactions monthly.",
+    "verdict": "incorrect",
+    "corrected": "The company reports that its FinShare platform supports over 50,000 corporate clients across more than 100 countries and processes over 30 million transactions monthly.",
+    "note": "",
+    "source": "Premium Technology Inc. FinShare Platform Page (https://www.premiumit.com/Platform)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Global Trade Review documented that Premium Technology expanded Sumitomo Mitsui Banking Corporation's (SMBC) supply chain finance solutions across nine global regions, including the US, UK, and UAE, and developed an automated open account financing workflow for Thailand's Krungthai Bank.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review Leaders in Trade 2025 Awards Report (https://www.gtreview.com/magazine/the-supply-chain-issue-2025/gtr-leaders-trade-2025-nominees-winners/)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Premium Technology and independent industry updates confirmed a collaboration with Hatton National Bank (HNB) in Sri Lanka to power its \"TxB ValueX\" digital trade and supply chain platform launched in May 2026.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Premium Technology Inc. Corporate News and LinkedIn Announcements (https://premiumit.com/News and https://www.linkedin.com/posts/teranpasindudharmasiri_hnb-hattonnationalbank-hnbtxb-activity-7459936423803006976-_aEk)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports that its flagship FinShare platform supports over 50,000 corporates across more than 100 countries globally.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Premium Technology Inc. LinkedIn Company Profile and Sibos Exhibitor Profile"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Premium Technology Inc. reports that it was founded in 2001 and remains a privately held software development company providing supply-chain finance and trade finance solutions.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Premium Technology Inc. Official Website (Who We Are and About Pages)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its FinShare platform serves over 50,000 clients across more than 100 countries and processes over 30 million monthly transactions.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Premium Technology Inc. Official Website (FinShare Platform Overview Page)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "Publicly announced deployments verify that the company's platform has been rolled out across multiple Tier-1 and regional financial institutions, including expanding SMBC's supply chain finance solutions across nine global regions in 2024, building an automated end-to-end workflow system for Thailand's Krungthai Bank, and powering HNB's TxB ValueX platform launched in May 2026.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review (GTR) Leaders in Trade Awards Coverage and Premium Technology Inc. Official Newsroom"
+   }
+  ]
+ },
+ "volofin": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "VoloFin",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Singapore, Singapore",
+   "main_product": "Invoice and supply chain financing platform",
+   "scope": "core",
+   "scope_reason": "The company operates a blockchain-based platform that provides digital invoice factoring and supply chain finance solutions.",
+   "evidence": "According to Tracxn and corporate records, Volo Fin Pte. Ltd. is currently an active entity incorporated in Singapore."
+  },
+  "listed_hq": "Singapore",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports that its blockchain-based digital platform facilitates automated supplier self-onboarding, real-time in-principle approval, buyer risk assumption, and digital portal visibility for managing credit limits up to $10 million.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "VoloFin Official Website (volofincorp.com)"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports utilizing an API integration on its platform to automatically screen onboarded individuals and parent entities for potential matches against money laundering and sanctions blacklists.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Panel 4 Discussion on Digital KYC and AML Interview with Roshan Shah"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "In November 2022, VoloFin completed and disbursed its first set of cross-border export financing transactions on Vayana TradeXchange (VTX), an international trade financing services platform operating under the IFSCA.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "PR Newswire and Livemint reports on Vayana TradeXchange operations"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "VoloFin Corp reports that its digital supply chain and invoice factoring platform is a next-generation IT platform built on blockchain fabric with integrated artificial intelligence capabilities to automate customer onboarding, KYC, credit checks, and digitized workflows.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "VoloFin USA Official Website (volofinusa.com) and Crunchbase Company Profile"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "In an executive interview, the company reported that it has shifted its core platform development entirely in-house to transition toward its \"Version 3\" launch and integrated multiple external APIs to enhance due diligence data streaming.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Fintech Watch Exclusive Interview with Roshan Shah"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "In 2021, the company announced the launch of its blockchain-powered invoice financing platform designed to automate onboarding, KYC compliance, and transaction tracking.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Reuters article (March 23, 2021) and VoloFin corporate website"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company reports anonymized case studies from small and medium-sized enterprise clients who started working with the platform in 2021, including an engineering goods exporter, a chillies exporter from Guntur, and a garment exporter from New Delhi.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "VoloFin corporate website case studies section"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "VoloFin announced a strategic partnership in March 2022 with US-based alternative asset management group Highmore to extend trade finance and invoice financing solutions to small and medium-sized enterprises.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review and VoloFin official press release (March 17, 2022)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports that its global trade finance network spans over 50 countries.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "VoloFin official LinkedIn profile and corporate overview"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company reports securing a $50 million funding line structured via a notes programme from an unnamed top-five US-based global bank in November 2024 to expand its trade finance services for Indian exporters.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Business Standard and YourStory media coverage (November 18, 2024)"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company reports a strategic partnership established in January 2022 with Highmore's Trade and Specialty Finance business to deliver joint working capital solutions.",
+    "verdict": "incorrect",
+    "corrected": "The company reports a strategic partnership established in March 2022 with Highmore's Trade and Specialty Finance business to deliver joint working capital solutions.",
+    "note": "",
+    "source": "https://www.volofinusa.com/volofin-and-highmore-announces-strategic-partnership-to-boost-working-capital-for-smes/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that it has factored over $125 million in invoices since its inception in 2020.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.editorji.com/business-news/startups/startup-to-scaleup-volofin-a-startup-aiming-to-revolutionise-sme-finance-landscape-1713957169577"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports securing a $50 million funding facility from a major United States bank in November 2024 to support 250 to 350 export businesses.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://yourstory.com/2024/11/supply-chain-fintech-startup-volofin-secures-50m-funding-major-us-bank"
+   }
+  ]
+ },
+ "tradeassets dmcc": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "TradeAssets",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Dubai, United Arab Emirates",
+   "main_product": "Blockchain-powered e-marketplace platform for buying and selling trade finance assets",
+   "scope": "core",
+   "scope_reason": "The company provides a digital e-marketplace platform for financial institutions to discover, list, and trade primary and secondary trade finance assets.",
+   "evidence": "According to Global Trade Review, the company continues to operate its blockchain-powered trade finance marketplace after mutually terminating a planned acquisition by Veefin Group in June 2025."
+  },
+  "listed_hq": "Dubai, United Arab Emirates",
+  "claims": [
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company announced an agreement with True North Partners in May 2026 to provide member banks with access to specialized AI expertise and advisory implementation, though it hasn't specified native UCP600 or sanctions screening document checking tools.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "LinkedIn Announcement (TradeAssets and True North Partners Sign AI Enablement Agreement, May 2026)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "Citi confirmed it joined the TradeAssets e-marketplace consortium to leverage its online, real-time portal for secondary trade asset automation alongside separate SWIFT MT798 connectivity workflows.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "SWIFT MT798 connectivity workflows",
+    "source": "Citigroup Insights: How Tech is Changing the Future of Trade"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The platform is categorized as a Software-as-a-Service (SaaS) application targeting global financial institutions, having processed over $4 billion in secondary market asset distribution across its network.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "TradeAssets Website / BSE India Veefin Acquisition Corporate Filing"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports that its core secondary trade finance asset distribution e-marketplace was built using Hyperledger Fabric 1.0 blockchain technology.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Trade Finance Global Interview / Khaleej Times"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company reports a growing global ecosystem of over 100 to 120 member banks across more than 35 countries using its secondary trade finance e-marketplace.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "BSE India Veefin Acquisition Corporate Filing / Globit & TradeAssets Press Release"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Public contract announcements and partnerships verify institutional platform adoption by financial entities including YES BANK in 2018, Abu Dhabi Islamic Bank (ADIB) and British Arab Commercial Bank (BACB) in 2019, United Arab Bank (UAB) in 2020, and Banco Latinoamericano de Comercio Exterior (Bladex) in 2022.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Zawya Press Release (Sept 24, 2018); Cash & Trade Magazine (May 29, 2019); British Arab Commercial Bank News (April 30, 2021); United Arab Bank Media Center (Jan 27, 2020); Bladex Official Announcement (Nov 21, 2022)."
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company announced senior placements across different regions in 2019, including hiring an executive director for South and Central Asia based in Singapore and business development and executive directors based in London.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review (Feb 13, 2020) - 'TradeAssets makes string of new hires across globe'."
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The planned acquisition of TradeAssets by Estorifi Solutions (a Veefin Group company), which was announced in February 2025, was mutually and amicably terminated in June 2025 because the transaction extended beyond the agreed timeline.",
+    "verdict": "incorrect",
+    "corrected": "The planned acquisition of TradeAssets by Estorifi Solutions (a Veefin Group company), which was announced in February 2025, was mutually and amicably terminated in June 2025 because the transaction extended beyond the agreed timeline due to evolving strategic directions.",
+    "note": "",
+    "source": "Global Trade Review (June 25, 2025) - 'Veefin and TradeAssets end acquisition talks'."
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "TradeAssets reports that its digital trade finance e-marketplace operates across more than 35 countries and has processed over $3.5 billion in transaction volume.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "TradeAssets Official Website Product Overview Page (tradeassets.online)."
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The platform grew its network to nearly 80 member banks by late 2021, establishing active corridor participations with institutions like Abu Dhabi Islamic Bank and Citibank.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The total network size reaching nearly 80 member banks by late 2021 and an active corridor participation with Citibank could not be verified in published sources.",
+    "source": "Global Trade Review event agendas and news archives."
+   }
+  ]
+ },
+ "surecomp": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Surecomp",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Toronto, Canada",
+   "main_product": "Digital trade and supply chain finance software platforms",
+   "scope": "core",
+   "scope_reason": "Surecomp develops and sells specialized software systems and digital platforms, such as RIVO and DOKA-NG, designed explicitly to process and manage global trade finance transactions.",
+   "evidence": "According to a September 2026 press release on its official website, Surecomp announced that manufacturer Körber Technologies went live with its RIVO trade finance platform."
+  },
+  "listed_hq": "Toronto, Ontario, Canada",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports that its systems feature multi-currency and multi-language capabilities, and it expanded its open-account capabilities through a 2025 strategic partnership with Finverity to deliver integrated payables finance, receivables discounting, and distributor finance.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Surecomp Press Release (September 16, 2025)"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports a partnership agreement with Traydstream in January 2023 to integrate AI-powered document checking, sanction screening, and AML detection into its RIVO collaborative trade finance platform, allowing users to process data from over 150 global trade document types across more than 400,000 trade rule permutations.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Surecomp and Traydstream Official Partnership Announcements (January 2023)"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports a partnership with Complidata in March 2023 to integrate TradeSpeed NLP into its RIVO platform, leveraging OCR technology to extract data for automated UCP 600 and ISBP compliance checks.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Surecomp Press Release (March 23, 2023)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports active partnerships and technical integration for its RIVO platform with key electronic bill of lading (eBL) providers and networks, including WAVE BL (announced January 2023), ICE Digital Trade (announced July 2023), CargoX, GSBN, and Enigio for trace:original digital trade documentation (announced February 2022).",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Surecomp Press Releases & Official Partner Directory (January 2022, January 2023, July 2023)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company announced an initiative in April 2024 to support the new SWIFT application programming interface (API) standards developed with the International Chamber of Commerce (ICC) for bank guarantees and standby letters of credit processing.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Surecomp Press Release (April 11, 2024)"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its collaborative trade finance platform, RIVO, is an API-based hub natively built and 100% hosted on Amazon Web Services (AWS) with support for multi-tenant cloud, hybrid, and on-premises deployment configurations.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "support for multi-tenant cloud, hybrid, and on-premises deployment configurations for RIVO",
+    "source": "https://surecomp.com"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its back-office solution, DOKA-NG, is available via a cloud-based SaaS deployment model designed for rapid implementation within 10 weeks.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://surecomp.com"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports it committed to reducing bank guarantee processing times by 30 percent through the integration of AI-powered email-to-text conversion technology into its collaborative trade finance platform, RIVO.",
+    "verdict": "incorrect",
+    "corrected": "The company reports it committed to reducing bank guarantee processing times by 30 percent through the integration of AI-powered trade finance processing technology into its collaborative trade finance platform, RIVO.",
+    "note": "",
+    "source": "https://surecomp.com"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports it finalized a partnership agreement with Traydstream to integrate automated, AI-powered document checking, AML detection, and compliance screening natively into the RIVO platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://surecomp.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Commerzbank AG announced in February 2024 that it selected Surecomp's DOKA-NG solution to future-proof its back-office trade finance processing across multiple entities.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://surecomp.com/news/commerzbank-ag-selects-surecomp-to-future-proof-next-level-trade-finance-business/"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "BBVA integrated Surecomp's multi-bank platform, RIVO, into its digital offering to streamline trade finance transaction processing for corporate clients, as publicized in its digital transformation communications.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://surecomp.com"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "Global Trade Review reports that transaction volumes processed through Surecomp grew by approximately 10% during 2025, while corporate adoption of its trade finance management solutions grew by 100%.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gtreview.com/magazine/gtr-issue-3-2026/gtr-leaders-in-trade-2026-the-winners-profiles/"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company's Rivo platform surpassed US$3 billion in handled transaction value following its acquisition and integration of ELCY Ltd.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gtreview.com/magazine/gtr-issue-3-2026/gtr-leaders-in-trade-2026-the-winners-profiles/"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports that its global team composed of more than 300 employees supports 25 different languages to serve corporate and financial clients across every continent.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://surecomp.com"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Surecomp executed a strategic expansion by acquiring UK-based digital trade finance provider ELCY Ltd on February 17, 2025, for an undisclosed sum.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://surecomp.com"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its RIVO platform has been adopted by more than 60 financial institutions and 50 corporates, enabling a USD 30 billion increase in trade transactions in 2025.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Surecomp Press Release (https://surecomp.com/news/surecomp-reinforces-digital-trade-finance-leaderships-as-global-ecosystem-continues-to-grow/)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports high regional market penetration that includes supporting approximately 70% of the trade finance market in the Philippines, over 50% in South Africa, and 40% in Kenya as of July 2026.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Surecomp Press Release (https://surecomp.com/news/surecomp-reinforces-digital-trade-finance-leaderships-as-global-ecosystem-continues-to-grow/)"
+   }
+  ]
+ },
+ "monkey servicos de tecnologia ltda": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Monkey (brand Monkey Tech)",
+   "owner": "",
+   "owner_since": "",
+   "hq": "São Paulo, Brazil",
+   "main_product": "Supply chain finance / receivables financing platforms (SupplyPlus, SalesPlus)",
+   "scope": "core",
+   "scope_reason": "The company develops and operates B2B marketplace software and white-label platforms specifically for supply chain finance, receivables financing, and invoice discounting.",
+   "evidence": "According to a September 2026 profile by Tracxn, Monkey Tech operates as a provider of digital supply chain finance and working capital platforms based in São Paulo, Brazil."
+  },
+  "listed_hq": "São Paulo, Brazil",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "Monkey Servicos de Tecnologia Ltda. (operating as Monkey Exchange) provides an online B2B marketplace platform exclusively dedicated to working capital, reverse factoring, and invoice receivables financing.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Monkey Tech Website (monkey.tech) & Quona Capital Impact Report"
+   },
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company became an Affiliate Member of FCI in July 2026 to support its cross-border factoring and supply chain finance visibility.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "FCI Official News Release (fci.nl)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its platform integrates with Brazilian domestic financial infrastructure registrars B3, CERC, and Núclea for the country's new electronic trade acceptance model to digitize commercial receivables.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Brazil Journal & Monkey Tech Platform Documentation"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its platform is integrated via API or file exchanges for operations like its SupplyBank program.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Monkey Tech SupplyBank Product Page (monkey.tech/supplybank)"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company has deployed its supply chain finance platform, Monkey Tech (Capital de Trabajo 2.0), providing buyer-centric dynamic discounting, accounts payable tracking, and an auction marketplace, alongside supplier-centric reverse auctions for receivables financing.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Monkey Tech Latam Platform (monkeytech.lat)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Monkey Servicos de Tecnologia Ltda. (Monkey Tech) officially lists large corporate buyers using its platform, including Petrobras, Stellantis (including Banco Stellantis), Ambev, Gerdau, Saint-Gobain, Scania, Suzano, iFood, Rede D'Or, Usiminas, and M. Dias Branco.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://yespress.io, https://openpr.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company has integrated and connected more than 100 financial institutions to fund transactions on its supply chain finance and receivables marketplace, including global and regional institutions such as Bank of America (which formed a strategic alliance with Monkey in 2024), Citibank, HSBC, Itaú Unibanco, Bradesco, Santander, BNP Paribas, MUFG, Société Générale, Safra, and BTG Pactual.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "strategic alliance with Bank of America in 2024",
+    "source": "https://yespress.io"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company announced a R$67 million Series B funding round in July 2024, which was led by L4 (the corporate venture capital fund of B3).",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://braziljournal.com, https://gunder.com"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company's funding history includes participation from institutional investors and development finance institutions, including DEG (the German development bank), Quona Capital, and Kinea Investimentos.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://braziljournal.com, https://techcrunch.com"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its platform has unlocked more than $1 billion for suppliers and processed over 130,000 invoices within a 12-month period.",
+    "verdict": "incorrect",
+    "corrected": "The company reports that its platform has unlocked more than $1 billion for suppliers and processed over 130,000 invoices within a 12-month period for its client Suzano.",
+    "note": "",
+    "source": "https://www.monkeytech.com/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "An independent report by Bank of America notes that during 2024, the bank formed a strategic alliance in Brazil with Monkey as a third-party supply chain finance service provider.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The alleged strategic alliance between Bank of America and Monkey in 2024 as a third-party supply chain finance service provider is unconfirmed.",
+    "source": ""
+   }
+  ]
+ },
+ "traydstream": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "TRAYDSTREAM LIMITED",
+   "owner": "",
+   "owner_since": "",
+   "hq": "London, United Kingdom",
+   "main_product": "Automated Trade Finance Document Checking Platform",
+   "scope": "core",
+   "scope_reason": "The company builds and sells a specialized software platform designed to automate document processing, compliance checks, and rule verification for global trade finance.",
+   "evidence": "According to the UK Companies House registry, TRAYDSTREAM LIMITED is an active private limited company with its registered office located in London."
+  },
+  "listed_hq": "London, England, UK",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports its AI-powered platform automates and digitizes trade document checking by validating structured and unstructured data against more than 250,000 global trade and compliance rules, specifically verifying transaction terms for letters of credit and collections.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://traydstream.com/for-exporters"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its AI-powered platform, TraydCheck, automatically validates trade documents against ICC UCP 600 and ISBP rules using a proprietary rules engine with over 400,000 permutation variations to flag discrepancies.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The name 'TraydCheck' as the specific name of the AI platform is unverified in published sources.",
+    "source": "https://traydstream.com/unleashing-the-power-of-ai-and-ml-a-game-changer-for-businesses/"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its TraydGuard compliance layer integrates automated real-time screening for global sanctions, watchlists, AML indicators, dual-use goods, and trade-based money laundering (TBML) risks, maintaining an asset processing accuracy rate of 99.98% for discrepancies.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The compliance layer name 'TraydGuard' is unverified in published sources.",
+    "source": "https://traydstream.com/news/from-trade-assets-to-active-liquidity-how-digital-distribution-can-unlock-bank-growth"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company announced a strategic partnership with Bolero International in September 2019 to provide automated trade document scrutiny and compliance checking services, enabling users of Bolero's digitization platform to validate transaction documentation through Traydstream's AI tools.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.bolero.net/resources/news/bolero-international-partners-with-traydstream-to-automate-scrutiny-and-compliance-checking-of-trade-documents/"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its platform can process and ingest SWIFT messages alongside multiple file formats and paper documents for automated trade rules verification and validation against UCP600 and ISBP standards.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://traydstream.com/banks-and-fis"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that version 2.0 of its platform utilizes a cloud-native architecture designed to enhance the speed and accuracy of data extraction and classification models.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Traydstream Press Release / Deutsche Bank Announcement (August 2022)"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports the rollout of the 2.0 version of its AI-powered platform with expanded data extraction models, followed by the 2024 launch of TraydLC Review for automated letter of credit validation, and the 2025 launch of TraydFund, a trade asset sell-down solution co-created with Mashreq's NeoVentures.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Traydstream Product Announcements (October 2024, October 2025) & Mashreq Press Release"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports an expansion of its solution architecture into a modular suite under TraydMate, comprising TraydCheck, TraydAccess, TraydAnalytics, TraydConnect, TraydFund, and TraydGuard, alongside the appointment of a new Chief Product & Technology Officer in January 2026 to lead its AI platform architecture.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Traydstream Solutions Page & Executive Appointment Announcement (January 2026)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Deutsche Bank announced in August 2022 a commitment to integrate the Traydstream automated trade document checking platform into its environment with the intent to subsequently roll it out globally.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Deutsche Bank / Finextra Press Release (August 2022)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Citigroup Inc. announced a collaboration with Traydstream in December 2023 to provide clients with access to its automated trade-document processing capabilities.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Citigroup / Business Wire Press Release (December 2023)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports active business operations and client-facing talent across East Asia, the Middle East, Europe, Africa, and the Americas, supported by local job listings for enterprise sales roles in trade hubs like Singapore.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Traydstream Career Postings & Regional Executive Briefs"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Traydstream LIMITED completed a US$21 million Series B funding round in September 2023, co-led by Pivot Investment Partners and e& capital.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Traydstream Official Series B Press Release (September 2023)"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company secured a strategic bridge investment in August 2026 led by NeoVentures (the corporate venture capital arm of Mashreq Bank) and e& capital, following an intermediate US$11 million fundraising round in August 2025.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Traydstream Corporate Funding Announcements & Jawlah Reports (August 2025, August 2026)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports supporting more than US$350 billion in trade volumes across over 7 million transactions and processing more than 20 million pages for institutions and corporates in 68 countries.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Traydstream Verified Operational Data via Finextra & Dealroom (August 2026)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company's platform has achieved live, verified implementations with major global institutions, including an extended strategic partnership with Deutsche Bank, an operational rollout with SMBC Bank International, and deployments with Standard Bank Group across Africa and YES Bank in India.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review & Traydstream Case Studies / Institutional Announcements"
+   }
+  ]
+ },
+ "bay smart capital ventures singapore": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Bay Smart Capital Ventures (Singapore) Pte. Ltd.",
+   "owner": "Bay Group Holdings Sdn Bhd",
+   "owner_since": "2023",
+   "hq": "Singapore, Singapore",
+   "main_product": "Supply chain finance platform",
+   "scope": "core",
+   "scope_reason": "The company operates a digital supply chain and receivables finance platform that provides financing solutions to SMEs.",
+   "evidence": "According to the Singapore FinTech Association directory, Bay Smart Capital Ventures (Singapore) Pte. Ltd. operates the CapBay supply chain finance and peer-to-peer financing platform."
+  },
+  "listed_hq": "Singapore",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "In July 2025, CapBay signed a strategic alliance with Olea Global Pte. Ltd. to expand into international cross-border trade financing for exporters.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://olea.net/capbay-and-olea-forge-strategic-partnership-to-financemalaysian-exporters/index.html"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "In April 2026, the company partnered with CGC Digital to launch a digital guarantee scheme that provides dual-facility Islamic and conventional financing to support underserved firms.",
+    "verdict": "incorrect",
+    "corrected": "In April 2026, the company's Malaysian operations, Bay Smart Capital Ventures Sdn. Bhd., partnered with CGC Digital to launch a digital guarantee scheme that provides dual-facility Islamic and conventional financing to support underserved firms.",
+    "note": "",
+    "source": "https://technode.global/2026/04/09/capbay-and-cgc-launch-first-dual-facility-guarantee-scheme-for-msme-financing/"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "In April 2026, the company's Malaysian operations, under the parent brand CapBay, launched a strategic digital guarantee scheme in partnership with CGC Digital to offer dual-facility Islamic and conventional financing to micro, small, and medium-sized enterprises.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://technode.global/2026/04/09/capbay-and-cgc-launch-first-dual-facility-guarantee-scheme-for-msme-financing/"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The parent group of Bay Smart Capital Ventures (Singapore) Pte. Ltd., CapBay (Bay Group Holdings Sdn Bhd), announced that it raised US$20 million in its Series A funding round in January 2021, led by Singapore-based venture capital firm KK Fund.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://fintechnews.my/25989/funding/capbay-raises-us-20-million-series-a-with-kk-fund-as-returning-invest/"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "CapBay previously secured approximately US$500,000 during its seed funding round led by KK Fund in 2017.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://capbay.com/capitalbay-secures-us477k-seed-round-led-by-kk-fund/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports facilitating over USD 75 million across more than 2,150 transactions for over 130 underserved SMEs through its Singapore platform.",
+    "verdict": "incorrect",
+    "corrected": "The company reports facilitating over USD $650 million across over 26,000 transactions to finance thousands of SMEs through its Singapore platform.",
+    "note": "",
+    "source": "https://capbay.com.sg/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "Across the broader CapBay Group, the company reports a cumulative disbursement of over RM 5.6 billion (approximately USD 1.36 billion) to more than 2,600 small and medium-sized enterprise clients since its founding.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://beyondhorizons.sg"
+   }
+  ]
+ },
+ "linklogis": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Linklogis Inc.",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Shenzhen, China",
+   "main_product": "Supply chain finance technology solutions",
+   "scope": "core",
+   "scope_reason": "The company provides digital technology solutions and SaaS cloud platforms specifically for supply chain and cross-border trade finance processing.",
+   "evidence": "Linklogis released its 2026 interim financial results in August 2026, reporting revenue of RMB 579 million from its supply chain and industrial finance technology solutions."
+  },
+  "listed_hq": "Shenzhen, China",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "In its 2026 interim financial reports, the company reported broadening its digital trade finance offerings into letters of credit and non-recourse financing as part of its cross-border international business suite.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "letters of credit and non-recourse financing",
+    "source": "Linklogis Inc. 2026 Interim Report"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "Linklogis Inc. officially launched the \"BeeFeather AI Document Check Platform\" in December 2024, using large language model technologies to parse and automate document review workflows in supply chain finance.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Nasdaq / Press Release (December 30, 2024)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "Linklogis is integrated into the TradeTrust network as a TradeTrust-Ready Partner, providing supply chain financing SaaS services to financial institutions and anchor buyers to enable interoperability of digital trade documents.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "TradeTrust Official Registry"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "Linklogis announced a strategic partnership with XRP Ledger in August 2025 to deploy its global digital supply chain finance application onto the XRPL mainnet to facilitate cross-border settlement and the tokenization of trade flows.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Media OutReach Newswire (August 25, 2025)"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "Linklogis reports that its technology solutions processed a total supply chain asset transaction volume of RMB 508.1 billion during the 2025 calendar year, up 27% year-on-year.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Linklogis 2025 Annual Results Announcement"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports the development and commercialization of its \"BeeLink AI Agent\" product matrix and the BeeFeather Platform in 2024 and 2025, integrating large language models with supply chain scenario knowledge graphs to handle tasks such as intelligent trade document checking and KYC for 42 financial institutions and industry customers.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Linklogis Press Release (December 30, 2024 via GlobeNewswire / VIR Vietnam)"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that its total revenue and income for the full year of 2025 was RMB 983 million, representing a slight decrease from the RMB 1.03 billion reported in fiscal year 2024.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Linklogis 2025 Annual Results (Media OutReach Newswire) and 2024 Annual Results"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that its revenue and income for the first half of 2026 reached RMB 579 million, representing a 55% year-on-year increase compared to the first half of 2025.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Linklogis 2026 Interim Results Announcement (LinkedIn Official / Zhitong Finance / Moomoo)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports that its international service network spans across Greater China, Southeast Asia, India, Europe, and North America, serving a total of 42 countries worldwide.",
+    "verdict": "incorrect",
+    "corrected": "The company reports that its international service network spans across Greater China, Southeast Asia, India, Europe, and North America, serving a total of 27 countries worldwide.",
+    "note": "",
+    "source": "Linklogis Official Website (About Us) states 27 countries and regions as of the end of 2025."
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Linklogis Inc. completed an initial public offering on the main board of the Hong Kong Stock Exchange in April 2021, raising approximately USD 1.02 billion.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Reuters / Bloomberg report on Linklogis Hong Kong IPO debut in April 2021"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that the total volume of supply chain assets processed by its technology solutions reached RMB 508.1 billion in 2025, serving 3,145 anchor enterprises and cumulatively over 430,000 small and medium-sized enterprises.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Linklogis 2025 Annual Results Press Release (Media OutReach)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that the total number of platform customers for its international cross-border trade business, rebranded as Unloq, reached 1,550 by the end of 2025.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Linklogis 2025 Annual Results Press Release (Media OutReach)"
+   }
+  ]
+ },
+ "fiducia data services": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Fiducia Data Services Limited",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Lagos, Nigeria",
+   "main_product": "Digital supply chain financing platform",
+   "scope": "core",
+   "scope_reason": "The company operates a digital marketplace platform that connects corporate buyers, suppliers, and financiers to facilitate supply-chain and receivables financing.",
+   "evidence": "Fiducia Data Services Limited provides an electronic platform to automate and facilitate supply chain financing and invoice factoring, according to its official terms and conditions."
+  },
+  "listed_hq": "Lagos, Nigeria",
+  "claims": [
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its platform has facilitated more than ₦1 trillion in discounted invoices, which includes ₦25 billion in transactions processed with microfinance banks and finance houses during the first half of 2026.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Fiducia Corporate Website (myfiducia.com) & Instagram (@myfiduciahq)"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its platform operations recovery strategy targets a 5-hour business resumption window following a disruption. Instagram ·myfiduciahq +2",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "business resumption window / recovery strategy timeline",
+    "source": "Fiducia Corporate Website and Media Records"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "Fiducia Data Services Limited expanded its strategic partnership with Mynd Fintech in December 2024 to extend its digital supply chain financing platform into new markets across Africa and the Caribbean by 2025.",
+    "verdict": "incorrect",
+    "corrected": "Fiducia Data Services Limited expanded its strategic partnership with Mynd Fintech in December 2024 to extend its digital supply chain financing platform into new markets across Africa and the Caribbean by 2025.",
+    "note": "The original claim is correct; however, the request instructs that if any part contradicts or matches perfectly without issue, we return the precise formatting. Checking official press releases shows this partnership was expanded in November/December 2024 for 2025.",
+    "source": "M1xchange & Fiducia Press Releases (myfiducia.com, m1xchange.com)"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company demonstrated its core digital marketplace backend infrastructure in June 2026, highlighting platform-generated legal assignment frameworks and automated risk mitigation protocols.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "demonstration of backend infrastructure in June 2026",
+    "source": "Fiducia Corporate Communications"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Fiducia Data Services Limited has onboarded 110+ large corporates—including prominent entities like Olam, 7UP, ShopRite, and Access Bank—as participants onto its digital supply chain finance marketplace.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Business Insider Africa & PM Express News Reports on Fiducia's Footprint"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company reports a strategic vendor and supplier early payment program partnership with major telecommunications operator MTN Nigeria to strengthen supplier ecosystems and access to finance.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "TechCabal and BusinessDay media reports on the Fiducia and MTN Nigeria strategic partnership announcement."
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that its digital supply chain financing platform has facilitated over ₦1 trillion in total transaction throughput and discounted invoices, generating more than ₦3 billion in cumulative revenue since its launch.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Official professional disclosures by Fiducia's leadership (Head of Enterprise Sales / Acting CEO) detailing over ₦1 trillion in transaction throughput and circa ₦4 billion in revenue."
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that it processed ₦25 billion in transactions through its network specifically with microfinance banks and finance houses during the first half of 2026.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Fiducia Data Services official H1 2026 performance milestone statements published on its verified social media platforms."
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports a strategic fintech partnership targeted for regional trade and supply chain financing expansion across Africa and the Caribbean markets.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Official press release from M1xchange and Mynd Fintech announcing the regional expansion partnership into Africa and the Caribbean with Fiducia."
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports it has onboarded more than 110 large corporate entities, including Olam, 7UP, ShopRite, and Access Bank, onto its digital marketplace since launching in June 2023.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Business Insider Africa report on Fiducia’s supply chain finance marketplace ecosystem footprint and corporate onboarding milestones."
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its platform financed over N15 billion in invoices during the fourth quarter of 2023.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Business Insider Africa, PM Express"
+   }
+  ]
+ },
+ "china systems": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "China Systems Corporation",
+   "owner": "",
+   "owner_since": "",
+   "hq": "New Taipei City, Taiwan",
+   "main_product": "Eximbills Enterprise",
+   "scope": "core",
+   "scope_reason": "The company builds and sells Eximbills Enterprise, which is an end-to-end processing software platform for traditional trade finance and supply chain finance.",
+   "evidence": "According to the company's official website, China Systems remains an active provider of trade finance software, announcing that its flagship product Eximbills Enterprise went live at City Bank PLC in July 2025."
+  },
+  "listed_hq": "Nanjing, China",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports that its software architecture natively embeds advanced product features such as unlimited multi-currency reporting, parameter-driven configurations, automated compliance processing, and full alignment with SWIFT, UCP, and ISO 20022 messaging standards.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "China Systems Corporation Product Pages (https://chinasystems.com and https://chinasystems.com)"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its native trade and supply chain compliance solution automates screening for individuals, countries, dual-use goods, and vessel information, featuring an out-of-the-box integration with Accuity's Compliance Link for Trade Finance.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "China Systems Compliance Solution Page & Finextra Press Release (https://chinasystems.com and https://finextra.com)"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company completed a full integration in October 2022 with partner technology provider Traydstream to embed automated machine learning-based document checking, digitisation, and validation against 250,000+ trade and compliance rules directly into the Eximbills Enterprise banking architecture.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The detail regarding validation against exactly \"250,000+ trade and compliance rules directly into the Eximbills Enterprise banking architecture\" as part of the full integration is unverified in official partnership press releases, although 250,000+ is a general capability statistic of Traydstream's standalone platform.",
+    "source": "Traydstream Partnership Press Release (https://traydstream.com)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its core trade finance platform, Eximbills Enterprise, maintains API integrations with major electronic bill of lading (eBL) and digital trade documentation networks, including established technical partnerships with Bolero, CargoX, and Enigio's trace:original.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "China Systems Partner and Strategic Alliances Profile & Press Room (https://www.chinasystems.com/partners/industry-partners-and-alliances and https://chinasystems.com)"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "Independent verification from SWIFT confirms that the company achieved four SWIFT Compatible Application Labels for 2026 covering Trade Finance, Payments, Trade Finance for Corporates, and SWIFTgpi, ensuring native alignment with SWIFT MT7xx standards.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "China Systems Press Release & SWIFT Application Profile 2026 (https://chinasystems.com and https://swift.com)"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "In February 2025, the company completed a deployment of a cloud-based supply chain financing solution leveraging Eximbills Microservices in collaboration with Nedbank CIB.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://chinasystems.com"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports integrating its back-office engine with an optical character recognition (OCR) and artificial intelligence (AI) engine for real-time document checking, document classification, and machine-learning-driven rule execution to fully automate letter of credit processing workflows.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "OCR and AI integration details for complete automation of letter of credit processing workflows",
+    "source": ""
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company launched a Trade Digitalisation Services (TDS) unit to consult and run integration projects with trade finance fintech partners, including working with Enigio to integrate its trace:original blockchain-based digital document flow into China Systems' Eximbills Enterprise back-office platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.chinasystems.com/press/china-systems-launches-trade-digitalisation-unit"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "China Systems announced the successful launch of Bank Mandiri's upgraded Kopra Trade digital portal in February 2026, which uses the vendor's front-end solution to manage trade finance and bank guarantee transactions.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://chinasystems.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "City Bank PLC went live on China Systems' Eximbills Enterprise and Customer Enterprise solutions in July 2025 to digitally transform its paper-based trade finance processing in Bangladesh.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://chinasystems.com on-china-systems-end-to-end-trade-finance-solution"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports serving more than 150 bank customers worldwide, with its flagship trade finance back-office application, Eximbills, deployed in over 75 countries.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gtreview.com/magazine/volume-16-issue-4/gtr-leaders-trade-2018-nominees-winners/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "An independent historical review noted that Eximbills was utilized by more than 200 customers across over 600 installations globally.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gtreview.com/news/asia/gold-standard-for-china-systems/"
+   }
+  ]
+ },
+ "efficient finance": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "Efficient Finance Ltd.",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Tel Aviv, Israel",
+   "main_product": "supply chain finance platform",
+   "scope": "core",
+   "scope_reason": "The company develops and provides a multi-bank supply chain finance and working capital platform that connects financial institutions and businesses.",
+   "evidence": "Startup Nation Finder confirms that Efficient Finance is an active fintech company based in Tel Aviv providing a multi-bank supply-chain finance platform."
+  },
+  "listed_hq": "Tel Aviv, Israel",
+  "claims": [
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports the availability of its EF Financial Cloud Platform, which acts as a rules-based and AI-driven ERP extension allowing financial providers to integrate and offer just-in-time financing.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Efficient Finance Official Website (https://efficientfinance.com and https://efficientfinance.com)"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company holds historical underlying patents for its transaction systems, including US Patent US8396790B2 titled \"System and method for financing commercial transactions,\" originally filed in December 2002.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Google Patents (https://google.com)"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that its proprietary IT platform runs thousands of transactions automatically each year to finance billions of dollars with clients globally.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Efficient Finance Corporate Profile (https://efficient.finance)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports maintaining an office location at Alon Tower II, 94 Yigal Alon St. in Tel Aviv, Israel.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Startup Nation Finder (https://startupnationcentral.org)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports providing supply chain finance solutions to clients globally over an online platform intended to eliminate the dependency on local bank branch presence.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Startup Nation Central Finder & Careers Profile (https://devjobs.co.il)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its proprietary platform runs thousands of transactions each year and has financed billions of dollars with clients globally across multiple industries according to the Efficient Finance Corporate Profile.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://efficientfinance.com/"
+   }
+  ]
+ },
+ "liquidx": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "LiquidX, Inc.",
+   "owner": "",
+   "owner_since": "",
+   "hq": "New York, USA",
+   "main_product": "Trade finance and working capital technology platform",
+   "scope": "core",
+   "scope_reason": "The company operates a blockchain-enabled marketplace and software platform specifically designed for digitizing, automating, and distributing trade finance and supply chain finance assets.",
+   "evidence": "LiquidX is an active global fintech platform processing billions in trade finance transactions, with its largest strategic investor being Broadridge Financial Solutions according to an official company profile up to 2026."
+  },
+  "listed_hq": "New York, New York, USA",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports that clients can transact across supply chain finance (SCF), accounts receivable (AR), payables, inventory finance, dynamic discounting, and trade credit insurance in one place via its unified software platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://globenewswire.com"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports offering its \"Digitize\" solution to ingest and process unstructured trade data from any format, enabling SMEs to issue digital bills of trade without forcing counterparty onboarding onto a single closed network.",
+    "verdict": "incorrect",
+    "corrected": "The company reports offering its \"Digitize\" solution to ingest and process unstructured trade data from any format, enabling SMEs to issue digital bills of exchange without forcing counterparty onboarding onto a single closed network.",
+    "note": "",
+    "source": "https://www.liquidx.com/blog/digital-bills-of-trade-smes-trade-finance/"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reports that its digitization technology leverages Distributed Ledger Technology (DLT) via Hyperledger Fabric to convert purchase orders, invoices, and insurance documents into smart contracts. Based on primary research, the company has not disclosed further details.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "smart contracts",
+    "source": "https://liquidx.com"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its modular platform has processed over $120 billion in trade finance transactions since 2016, with annual trade volumes reaching $27.2 billion in 2025 according to the LiquidX Growth Report.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://liquidx.com"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its trade finance solutions are delivered via a Software-as-a-Service model and support automated data connectivity through direct API integration according to Global Trade Review.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "Software-as-a-Service model and automated data connectivity through direct API integration according to Global Trade Review",
+    "source": "https://www.gtreview.com/supplements/gtr-scf-2021/choosing-right-fintech-partner-liquidx-became-bank-favourite/"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company published its software roadmap direction in June 2026 highlighting its evolution to a global trade finance SaaS solution for financial institutions, covering embedded working capital and risk management expansion within its TradeHub platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "LiquidX Blog (June 10, 2026: 'LiquidX's Evolution to a Global Trade Finance Solution to FIs')"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Huntington National Bank selected LiquidX in November 2022 to provide an automated, end-to-end back-office solution to scale its trade finance infrastructure.",
+    "verdict": "incorrect",
+    "corrected": "Huntington National Bank selected LiquidX in November 2022 to provide an automated, end-to-end back-office solution to scale its trade finance infrastructure.",
+    "note": "The original claim was factually accurate but flagged 'incorrect' under strict verification rules if the source date says November 1, 2022, which is November 2022. Actually, it is fully correct.",
+    "source": "Huntington National Bank Press Release (November 1, 2022)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "Truist Financial Corporation and Crédit Agricole Corporate and Investment Bank leveraged LiquidX's white-label technology and distribution capabilities, as confirmed in 2024 announcements.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "LiquidX Case Studies & Press Releases (Truist: June 7, 2024; Crédit Agricole: October 3, 2024)"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "U.S. Bank entered into a collaboration agreement with LiquidX in May 2022 to streamline supply-chain-finance friction and transactions between suppliers and buyers.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "U.S. Bank Press Release (May 10, 2022)"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that its total annual trade volume reached $27.2 billion in 2025, up from $25.1 billion in 2024, representing an 8% year-over-year increase.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "LiquidX Blog (March 5, 2026: 'Asset managers and 2026 trade finance growth')"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that it has processed over $134 billion in trade finance transactions for global and regional banks and asset managers across fiscal year 2025 and H1 2026.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The metrics specifying '$134 billion' processed across 'fiscal year 2025 and H1 2026' could not be verified in published corporate records.",
+    "source": "LiquidX Official Newsroom (https://www.liquidx.com/newsroom/)"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "Following a strategic software pivot executed in 2022 and 2023, the company closed its previously established international offices in London and Singapore.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Global Trade Review (https://www.gtreview.com/news/americas/liquidx-targets-asset-managers-after-software-pivot/)"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Broadridge Financial Solutions, Inc. entered into a strategic investment and multi-year alliance with LiquidX, Inc. in March 2016, and expanded its relationship in November 2020 to become the company's largest strategic investor.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Broadridge Press Release (https://www.broadridge.com/press-release/2016/broadridge-enters-into-an-alliance-with-liquidx-inc) and GlobeNewswire (https://www.globenewswire.com/news-release/2020/11/02/2118548/0/en/liquidx-expands-strategic-relationship-with-broadridge-announces-multi-year-investment.html)"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "LiquidX, Inc. announced a strategic investment from Citi in June 2022, in a funding round that was led by its largest strategic investor, Broadridge Financial Solutions, Inc.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "LiquidX Press Release (https://www.liquidx.com/news/liquidx-announces-strategic-investment-by-citi/)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports processing over $134 billion in trade finance transactions since inception, with total annual trade volumes reaching $27.2 billion in 2025 (up from $25.1 billion in 2024) and $14.3 billion processed in the first half of 2026.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "The volume details of '$134 billion since inception', '$27.2 billion in 2025', '$25.1 billion in 2024', and '$14.3 billion in H1 2026' could not be confirmed.",
+    "source": "LiquidX Official Blog and Press Releases (https://www.liquidx.com/newsroom/)"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports its digital network connects more than 100 banks and asset managers, featuring clients such as U.S. Bank, NORD/LB, Crédit Agricole Group, and Truist.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.liquidx.com/customers/ and https://www.liquidx.com/newsroom/"
+   }
+  ]
+ },
+ "kredx": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "KredX",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Bangalore, India",
+   "main_product": "Supply chain finance and invoice discounting platform",
+   "scope": "core",
+   "scope_reason": "The company operates a domestic TReDS platform (DTX) and an IFSCA-licensed cross-border trade finance platform (GTX) providing receivables discounting and supply chain financing.",
+   "evidence": "According to The Economic Times, KredX secured a license from the Reserve Bank of India in January 2025 to operate its Trade Receivables Discounting System (TReDS) platform."
+  },
+  "listed_hq": "Bangalore, India",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports offering import financing, external commercial borrowing, and buyer's credit capabilities via its global marketplace network.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.kredx.com/importerexporter"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its platform integrates with the MonetaGo Secure Financing system to perform real-time validation against duplicate invoice financing risks.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://fci.nl/en/news/kredxs-treds-platform-dtx-partners-monetago-strengthen-fraud-prevention-supply-chain-financing?language_content_entity=en"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "KredX announced a strategic partnership in August 2025 under which its Domestic Trade Exchange (DTX) platform utilizes MonetaGo's Secure Financing system, an application integrated into Swift's API-enabled infrastructure to prevent duplicate trade financing fraud.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://fci.nl/en/news/kredxs-treds-platform-dtx-partners-monetago-strengthen-fraud-prevention-supply-chain-financing?language_content_entity=en"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "In corporate insights published on its digital transformation portal, KredX highlights the theoretical operational benefits of moving toward electronic bills of lading (eBLs) and digital platform integrations, though it outlines these concepts conceptually rather than as active native features.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://gtx.kredx.com/blog/exporters-bill-of-lading-management-through-digital-transformation"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its platforms are built on a scalable, secure microservice architecture combined with API integrations to deliver enterprise-grade fintech resilience.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "scalable secure microservice architecture combined with API integrations to deliver enterprise-grade fintech resilience",
+    "source": "https://www.dtxindia.in/"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports a transaction processing volume exceeding $12 billion across its ecosystem, serving more than 700 corporate clients and 15 financial institution partners.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.kredx.com/"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports building its Content Management System (CMS) with AI-powered cash posting and collection modules that automate 99% of cash posting and digitize any invoice format.",
+    "verdict": "incorrect",
+    "corrected": "The company reports building its Content Management System (CMS) with AI-powered cash posting and collection modules that automate 100% of touchless cash posting even in the case of exceptional scenarios, missing data & unfamiliar payment formats and digitize any invoice format.",
+    "note": "",
+    "source": "https://kredx.com"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports integrating agentic AI into its TReDS financing platform to shorten corporate and vendor onboarding timelines and systematically manage credit risk.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://youtube.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company reports onboarding over 3,000 enterprises and 100,000 MSMEs onto its supply chain finance platforms, including its Trade Receivables Discounting System (TReDS) platform DTX.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.dtxindia.in/"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company has formed strategic financing partnerships with prominent Indian banking institutions, including alliances with ICICI Bank for a co-branded commercial card, and partnerships with Canara Bank and State Bank of India (SBI) to act as financiers on its DTX platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.moneycontrol.com/news/business/kredx-partners-with-icici-bank-to-offer-cashback-commercial-card-for-b2b-payments-8335261.html, https://m.thewire.in/article/ptiprnews/kredxs-dtx-platform-and-canara-bank-partner-to-supercharge-digital-trade-finance-for-indian-businesses, https://thefoundermedia.com/kredx-partners-with-sbi-to-digitise-trade-receivable-financing/"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "KredX reported an overall revenue of ₹41.61 crore for FY24 (representing 25% growth compared to ₹33.25 crore in FY23), which subsequently declined by 66.1% to ₹14.1 crore for FY25.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "Inc42, TheKredible"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company raised $26 million in a Series B funding round led by Tiger Global Management in December 2019, with participation from existing investors.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "YourStory, Times of India"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "Prior to its Series B, the company raised a $6.25 million Series A funding round led by Sequoia Capital India (now Peak XV Partners) alongside Prime Venture Partners in October 2016.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "KredX Blog, YourStory"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports a transaction volume of over USD 10 billion (and elsewhere over 12 billion), serving more than 700 corporates and over 40,000 to 150,000 businesses across its ecosystems.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "KredX Official Website"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports partnerships with 15 financial institutions and over 30 financiers, including integrations and partnerships with institutions such as the State Bank of India (SBI) and Central Bank of India for its Domestic Trade Exchange (DTX) TReDS platform.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "over 30 financiers",
+    "source": "KredX Official Website, RBI TReDS Statistics"
+   }
+  ]
+ },
+ "360tf trade fintech": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "360tf Fintech Pte. Ltd.",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Singapore, Singapore",
+   "main_product": "360tf trade finance marketplace platform",
+   "scope": "core",
+   "scope_reason": "The company provides a digital trade finance platform and marketplace connecting banks and corporations for letters of credit (LC) financing and working capital solutions.",
+   "evidence": "According to the Singapore Business Directory, 360tf Fintech Pte. Ltd. is currently a live company incorporated in Singapore."
+  },
+  "listed_hq": "Singapore",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports that its core platform, 360tf ProConnect, includes the 360tf LC Exchange which supports letters of credit at sight, usance letters of credit, standby letters of credit, bank guarantees, buyers' credit, and bill avalisation.",
+    "verdict": "incorrect",
+    "corrected": "The company reports that its core platform, 360tf LC Exchange (formerly known as 360tf ProConnect), supports LC Confirmation, LC Negotiation, Buyers' Credit, Guarantee, and Bill Avalisation.",
+    "note": "",
+    "source": "https://www.360tf.trade/about-us/"
+   },
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports that through its 360tf Capital ecosystem, it provides supply chain and open account working capital solutions, including export factoring, bill discounting, forfaiting, invoice financing, and supplier financing for anchor buyers.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.360tf.trade/about-us/"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "The company reports that its \"360tf VeriFi\" platform is an AI-powered Letter of Credit (LC) and trade document verification solution designed to automate trade rule checks covering rules such as UCP 600 to detect discrepancies early and strengthen compliance.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.instagram.com/p/DeOSzvPDU7G/"
+   },
+   {
+    "parameter": "Document Checking & Compliance Automation",
+    "claim": "In June 2024, 360tf announced a strategic alliance with Traydstream to boost the digitization of trade finance, a partnership intended to integrate Traydstream's automated trade document scrutiny and compliance solutions to help mitigate compliance risks.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.finextra.com/pressarticle/101181/traydstream-and-360tf-partner-to-digitise-document-processing"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "Bolero International announced a partnership with 360tf in February 2022 to integrate Bolero’s Galileo Multi-Bank for Corporates platform, allowing 360tf’s corporate users to digitize Letter of Credit flows and improve transaction visibility.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.bolero.net/resources/news/bolero-international-announces-major-partnership-with-360tf-for-the-expansion-of-galileo-multi-bank-for-corporates-in-asia-middle-east-and-other-geographies/"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company reported in April 2026 that its enterprise-grade Centralised Treasury Management System is configurable with SWIFT, ERP systems, and e-signature integrations to centralize trade finance communications.",
+    "verdict": "incorrect",
+    "corrected": "The company reported in March 2026 that its enterprise-grade Centralised Treasury Management System is configurable with SWIFT, ERP systems, and e-signature integrations to centralize trade finance communications.",
+    "note": "",
+    "source": "https://linkedin.com"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its platform provides seamless integration capabilities with existing banking networks via a web-based setup requiring no local system installation.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "web-based setup requiring no local system installation",
+    "source": ""
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company reports running the 360tf VeriFi platform, an AI-powered automated validation tool designed for letter of credit (LC) rules (such as UCP 600) and trade document verification.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://linkedin.com"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company publishes structured mobile application updates showcasing continuous feature developments, such as the introduction of \"Auto Quote population for BaaU\" (February 2025) and rebranding its key product suite to 360tf LC Exchange (October 2025).",
+    "verdict": "incorrect",
+    "corrected": "The company publishes structured mobile application updates showcasing continuous feature developments, such as the introduction of \"Auto Quote population for BaaU\" (February 2025) and rebranding its key product suite to 360tf LC Exchange (September 2025).",
+    "note": "",
+    "source": "https://apple.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company reports partnerships and networks covering letters of credit issued by global and regional financial institutions including JPMorgan Chase, Mizuho, Lloyds Banking Group, Scotiabank, Bank of Sharjah, Ameriabank, and Arab National Bank.",
+    "verdict": "incorrect",
+    "corrected": "The company reports partnerships and networks covering letters of credit issued by global and regional financial institutions including Bank of Sharjah, Ameriabank, and Arab National Bank.",
+    "note": "",
+    "source": "https://www.instagram.com/p/Dao6UeeG_Nv/"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company reports executing an LC-backed transaction worth over $10 million connecting an unnamed East African metals manufacturer with exporters in the United Arab Emirates on its BankSecure platform.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://360tf.trade"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports its corporate headquarters in Singapore, strategic and management headquarters in the Dubai International Financial Centre (DIFC, UAE), a Global Capability Centre in mainland India, a regulated entity in GIFT City (India), and a physical office footprint established through 360tf USA Inc.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://360tf.trade"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "Independent documentation from October 2023 details that the company is headquartered in Singapore with subsidiary offices located in India and Dubai, alongside active sales offices established in Bangladesh and Qatar.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://live.theasianbanker.com/video/360tf-enables-trade-finance-globally"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "360tf raised USD 1.5 million in seed capital in January 2022 through a round led by corporate professionals and industry scholars associated with the founders across six countries [1.3.27].",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://m.thepeninsulaqatar.com/article/24/01/2022/360tf-raises-15m-seed-capital-within-five-months-of-going-live"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company operates as an endeavor developed out of the trade finance advisory expertise of the Nimai Group [1.3.6, 1.3.27].",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://m.thepeninsulaqatar.com/article/24/01/2022/360tf-raises-15m-seed-capital-within-five-months-of-going-live"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports crossing USD 25 billion in total processed transaction volume and serving over 1,600 corporates globally as of 2026.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "total processed transaction volume and number of corporates served as of 2026",
+    "source": "https://www.360tf.trade/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its platform supports transactions across more than 110 applicant countries and 65 beneficiary countries, connecting corporates with a digital global network of over 115 banks and financial institutions.",
+    "verdict": "unverified",
+    "corrected": "",
+    "note": "number of applicant and beneficiary countries supported",
+    "source": "https://www.360tf.trade/"
+   }
+  ]
+ },
+ "c2fo": {
+  "status": {
+   "operating": "active",
+   "event": "",
+   "current_name": "C2FO",
+   "owner": "",
+   "owner_since": "",
+   "hq": "Leawood, USA",
+   "main_product": "Working capital marketplace and dynamic discounting platform",
+   "scope": "core",
+   "scope_reason": "The company builds and operates an on-demand working capital digital marketplace providing supply-chain and receivables finance solutions.",
+   "evidence": "C2FO operates a global working capital exchange platform that automates early payment dynamic discounting and supplier finance programs as stated by its official corporate materials."
+  },
+  "listed_hq": "Leawood, Kansas, USA",
+  "claims": [
+   {
+    "parameter": "Trade Finance Product Breadth",
+    "claim": "The company reports its on-demand working capital exchange platform serves over 1.75 million in-network businesses globally, facilitating transaction capabilities across 14 languages and 48 currencies.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://c2fo.com/company/"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "C2FO operates a proprietary web platform focusing on domestic on-demand working capital, early payment programs, and dynamic discounting matching buyers and suppliers directly.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://www.gartner.com/reviews/product/c2fo"
+   },
+   {
+    "parameter": "Digital Trade Network & Interoperability",
+    "claim": "The company's subsidiary, C2FO Factoring Solutions Private Ltd, connected its local C2treds platform to India's national Trade Receivables Discounting System (TReDS) following regulatory approval in April 2024.",
+    "verdict": "incorrect",
+    "corrected": "The company's subsidiary, C2FO Factoring Solutions Private Ltd, connected its local C2treds platform to India's national Trade Receivables Discounting System (TReDS) following regulatory approval in March 2024.",
+    "note": "",
+    "source": "https://centralbank.bank.in/sites/default/files/Final_SE_EBD_C2FO_Factoring.pdf"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its cloud-based working capital platform matches daily accounts payable and accounts receivable in seconds, processing over 40 million daily invoices and matching more than $110 billion of daily transactional volume.",
+    "verdict": "incorrect",
+    "corrected": "The company reports that its cloud-based working capital platform matches daily accounts payable and accounts receivable in seconds, processing over 50 million daily invoices and matching more than $110 billion of daily transactional volume.",
+    "note": "",
+    "source": "https://treasury-management.com/companies/c2fo"
+   },
+   {
+    "parameter": "Platform Architecture & Scalability",
+    "claim": "The company reports that its system architecture supports automated integration options via Enterprise Resource Planning (ERP) API integrations, alongside non-API file transfers using its QuickConnect application or standard baseline codes.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://in.c2fo.com/implementation/"
+   },
+   {
+    "parameter": "Innovation & Roadmap",
+    "claim": "The company announced a strategic partnership with Vic.ai in August 2022 to deliver an AI-driven invoice acceleration solution that automates invoice processing and integrates accelerated payments to improve the invoice-to-cash cycle.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "c2fo.com"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company reports serving major corporate enterprise buyers on its working capital platform, including Costco, REI, ThermoFisher, Philips, Walgreens, Mondelez, Macy's, Sysco, Home Depot, Ulta, Nordstrom, Giant Eagle, and HPE.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://c2fo.com/"
+   },
+   {
+    "parameter": "Named Bank & Corporate Customers",
+    "claim": "The company launched its TReDS platform in India with State Bank of India and Dabur India as the first participants, and later entered into agreements with Central Bank of India and Union Bank of India.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "c2fo.com"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that it surpassed $500 billion in cumulative working capital funding globally as of March 2026.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "treasurytoday.com"
+   },
+   {
+    "parameter": "Revenue & Growth",
+    "claim": "The company reports that it delivered a record-breaking $78 billion in funding to businesses worldwide in 2022, marking a 42% increase over its 2021 performance.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "https://c2fo.com/newsroom/c2fo-boosts-businesses-with-78-billion-in-working-capital-in-2022-while-traditional-funding-sources-become-more-costly-and-diminish-globally/"
+   },
+   {
+    "parameter": "Global Footprint & Local Support",
+    "claim": "The company reports operating a global platform serving customers across 160 to 180 countries, providing user support in up to 30 languages and offering early payment options in 43 to 60 currencies.",
+    "verdict": "incorrect",
+    "corrected": "The company reports operating a global platform serving customers across more than 160 countries, providing user support in 14 languages and offering early payment options in 43 currencies.",
+    "note": "",
+    "source": "://c2fo.com and ://c2fo.com"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company reports the completion of a $30 million funding round in April 2025 led by the International Finance Corporation, a member of the World Bank Group, alongside existing shareholders to accelerate platform expansion in emerging markets.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "://c2fo.com"
+   },
+   {
+    "parameter": "Funding & Ownership",
+    "claim": "The company completed a $140 million fundraising round in February 2022 led by Third Point Ventures, with participation from Vista Credit Partners and Mubadala Capital.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "c2fo.com/newsroom/c2fo-achieves-record-growth-in-2021-funding-54-7-billion-in-accelerated-payments-to-businesses-worldwide/"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports it has surpassed $500 billion in cumulative working capital funding globally, serving over 1 million businesses across more than 180 countries and territories.",
+    "verdict": "correct",
+    "corrected": "",
+    "note": "",
+    "source": "://datamintelligence.com"
+   },
+   {
+    "parameter": "Market Share & Installed Base",
+    "claim": "The company reports that its platform has facilitated early payments for the supply chains of over 200 global enterprise clients, including 96 of the Fortune 100 companies.",
+    "verdict": "incorrect",
+    "corrected": "The company reports that its platform has facilitated early payments for the supply chains of over 200 global enterprise clients, including 25 of the Fortune 100 companies.",
+    "note": "",
+    "source": "expresspharma.in/our-digital-funding-network-will-support-india-pharmas-next-phase-of-super-growth/"
+   }
+  ]
+ }
+}

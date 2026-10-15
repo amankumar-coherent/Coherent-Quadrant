@@ -1,0 +1,312 @@
+{
+  "Wiwynn Corporation": {
+    "x": {
+      "score": 72,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Wiwynn Corporation reports that its NVMe JBOF storage solution delivers an I/O throughput of 26.6GB/s and a 4KB random write performance of 5,692K IOPS."
+        },
+        {
+          "claim": "The company announced its AMD Helios AI infrastructure platform at the OCP Global Summit 2026, which delivers up to 2.9 EFLOPS of OCP MXFP4 performance and features up to 31 TB of HBM4 memory per rack with 1.67 PB/s aggregate memory bandwidth."
+        },
+        {
+          "claim": "The company reports that its tank-based two-phase immersion cooling technology delivers energy savings of over 90% for data center cooling operations and achieves a partial Power Usage Effectiveness (pPUE) of less than 1.01."
+        },
+        {
+          "claim": "Wiwynn partnered with Microsoft to develop a two-phase immersion cooling solution, which Microsoft confirmed was running at its production data center in Quincy."
+        },
+        {
+          "claim": "Wiwynn reports the development and debut of its double-wide Open Compute Project (OCP) compliant rack architecture at the OCP Global Summit, featuring integrated high-voltage DC (HVDC) power delivery supporting ±400/800 VDC and a liquid-cooled busbar designed for high-current loads."
+        },
+        {
+          "claim": "Wiwynn reports that its scalable rack-level high-power architecture supports disaggregated power and IT racks that scale from 190 kW to 1.1 MW, coupled with a modular AI cluster design where one 800 kW Coolant Distribution Unit (CDU) serves up to 8 liquid-cooled AI racks rated at 100 kW each."
+        },
+        {
+          "claim": "Wiwynn reports the implementation of its Universal Management System (UMS) under its Elastic Management Framework, which unifies rack- and cluster-level monitoring, exports telemetry to Prometheus/Thanos platforms with Grafana visualizations, and incorporates multi-layer leakage detection and cooling facility coordination for high-density liquid-cooled environments."
+        },
+        {
+          "claim": "Wiwynn published technical specifications for its Wiwynn Cluster Manager integrated with Intel Rack Scale Design (RSD) 2.1, providing features such as resource planning, massive firmware/OS deployment, and real-time rack-level visual monitoring."
+        },
+        {
+          "claim": "In April 2021, Microsoft partnered with Wiwynn in its Washington data center to test the deployment of energy-efficient two-phase immersion-cooled servers."
+        },
+        {
+          "claim": "Wiwynn reported that it addresses green innovation through eco-design and circularity by implementing carbon footprint analytics for product carbon emission calculations and reduction."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "Wiwynn Corporation reports that its NVMe JBOF storage solution delivers an I/O throughput of 26.6GB/s and a 4KB random write performance of 5,692K IOPS."
+            },
+            {
+              "claim": "The company announced its AMD Helios AI infrastructure platform at the OCP Global Summit 2026, which delivers up to 2.9 EFLOPS of OCP MXFP4 performance and features up to 31 TB of HBM4 memory per rack with 1.67 PB/s aggregate memory bandwidth."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's disclosed hardware metrics for its NVMe JBOF and AMD Helios AI platforms. Based on primary research, the company's compute benchmarks can be estimated as high, matching premier enterprise tiers, based on its open standard computing products and newest architectural integrations with premier processing families.",
+          "estimates": [
+            {
+              "metric": "compute benchmarks",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high, matching premier enterprise tiers",
+              "confidence": "high",
+              "basis": "its open standard computing products and newest architectural integrations with premier processing families",
+              "source": "https://www.wiwynn.com/products/19-inch \"Wiwynn 19-inch Products\"",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "The company reports that its tank-based two-phase immersion cooling technology delivers energy savings of over 90% for data center cooling operations and achieves a partial Power Usage Effectiveness (pPUE) of less than 1.01."
+            },
+            {
+              "claim": "Wiwynn partnered with Microsoft to develop a two-phase immersion cooling solution, which Microsoft confirmed was running at its production data center in Quincy."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified deployment of advanced immersion cooling solutions with Microsoft and its extensive portfolio of liquid cooling and vertical power delivery solutions designed for high-density Open Compute Project architectures. Based on primary research, the company's infrastructure hardware energy efficiency can be estimated as optimized for extreme low-loss conversion, based on its integrated phase balancing distribution units delivering 97% conversion efficiency.",
+          "estimates": [
+            {
+              "metric": "infrastructure hardware energy efficiency",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "optimized for extreme low-loss conversion",
+              "confidence": "high",
+              "basis": "its integrated phase balancing distribution units delivering 97% conversion efficiency",
+              "source": "https://www.wiwynn.com/hubfs/Datasheet%20-SR2000G2_171122.pdf \"Wiwynn Datasheet SR2000G2\"",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 82,
+          "evidence": [
+            {
+              "claim": "Wiwynn reports the development and debut of its double-wide Open Compute Project (OCP) compliant rack architecture at the OCP Global Summit 2025, featuring integrated high-voltage DC (HVDC) power delivery supporting ±400/800 VDC and a liquid-cooled busbar designed for high-current loads."
+            },
+            {
+              "claim": "Wiwynn reports that its scalable rack-level high-power architecture supports disaggregated power and IT racks that scale from 190 kW to 1.1 MW, coupled with a modular AI cluster design where one 800 kW Coolant Distribution Unit (CDU) serves up to 8 liquid-cooled AI racks rated at 100 kW each."
+            }
+          ],
+          "assessed_on": "The rating rests on its clear, published engineering specifications for ultra-high-density disaggregated AI racks scaling from 190 kW up to 1.1 MW, as well as production-ready OCP-integrated configurations. Based on primary research, the company's high density capacity deployment scaling can be estimated as extensive across hyperscale compute architectures, based on its modular topologies successfully climbing from 100-and-90-kilowatt frameworks up to 1.1-megawatt clusters.",
+          "estimates": [
+            {
+              "metric": "high density capacity deployment scaling",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "extensive across hyperscale compute architectures",
+              "confidence": "high",
+              "basis": "its modular topologies successfully climbing from 100-and-90-kilowatt frameworks up to 1.1-megawatt clusters",
+              "source": "https://www.wiwynn.com/technology/high-power-architecture \"Wiwynn High Power Architecture\"",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 62,
+          "evidence": [
+            {
+              "claim": "Wiwynn reports the implementation of its Universal Management System (UMS) under its Elastic Management Framework, which unifies rack- and cluster-level monitoring, exports telemetry to Prometheus/Thanos platforms with Grafana visualizations, and incorporates multi-layer leakage detection and cooling facility coordination for high-density liquid-cooled environments."
+            },
+            {
+              "claim": "Wiwynn published technical specifications for its Wiwynn Cluster Manager integrated with Intel Rack Scale Design (RSD) 2.1, providing features such as resource planning, massive firmware/OS deployment, and real-time rack-level visual monitoring."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's verified portfolio of proprietary rack-level management software, firmware utilities, and management hardware systems designed specifically to monitor direct liquid cooling telemetry and optimize server clusters. Based on primary research, the company's digital facility orchestration capability can be estimated as advanced through comprehensive full-suite iot tracking, based on its smart manufacturing operations utilizing full-facility operational digital twin and mes software integrations.",
+          "estimates": [
+            {
+              "metric": "digital facility orchestration capability",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "advanced through comprehensive full-suite iot tracking",
+              "confidence": "high",
+              "basis": "its smart manufacturing operations utilizing full-facility operational digital twin and mes software integrations",
+              "source": "https://www.wiwynn.com/global-services/manufacturing-and-quality \"Wiwynn Manufacturing and Quality\"",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "In April 2021, Microsoft partnered with Wiwynn in its Quincy data center to test the deployment of energy-efficient two-phase immersion-cooled servers."
+            },
+            {
+              "claim": "Wiwynn reported that it addresses green innovation through eco-design and circularity by implementing carbon footprint analytics for product carbon emission calculations and reduction."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified partnership testing two-phase immersion cooling and its deployment of actionable carbon analytics. Based on primary research, the company's deployment metrics for ai-driven predictive maintenance or energy optimization algorithms within its can be estimated as growing steadily, based on its multi-level management architecture, AI-driven thermal-sensing algorithms, and elastic management framework deployed across its global cloud service provider networks.",
+          "estimates": [
+            {
+              "metric": "deployment metrics for ai-driven predictive maintenance or energy optimization algorithms within its",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily",
+              "confidence": "high",
+              "basis": "its multi-level management architecture, AI-driven thermal-sensing algorithms, and elastic management framework deployed across its global cloud service provider networks",
+              "source": "Wiwynn Rack Integration, Wiwynn Data Center Operations Optimization",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 76,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "On September 9, 2026, Amazon publicly announced that Wiwynn supports Amazon's data center infrastructure by manufacturing and integrating server systems and racks to expand its domestic U.S. server capacity."
+        },
+        {
+          "claim": "Media reports in early 2025 indicated that Wiwynn counts major U.S. cloud service providers Meta Platforms Inc. and Microsoft Corp. as its primary clients, with over half of the company's revenue verified as originating from Meta to fuel AI and general-purpose server demand."
+        },
+        {
+          "claim": "Wiwynn Corporation reported a consolidated annual revenue of NT$950.663 billion for the fiscal year 2025, representing a 163.7% increase year-over-year, with AI-related products contributing to more than half of the total revenue."
+        },
+        {
+          "claim": "Wiwynn Corporation reported that its consolidated revenue for the first half of 2026 reached NT$554.660 billion, representing a 41.7% growth compared to the same period in the prior year."
+        },
+        {
+          "claim": "Wiwynn reported that it has shipped server racks to more than 350 data centers worldwide, as documented by DatacenterDynamics."
+        },
+        {
+          "claim": "Microsoft partnered with Wiwynn to deploy and test a production-level, two-phase immersion-cooled server infrastructure at a data center in Quincy, Washington, as reported by DatacenterDynamics."
+        },
+        {
+          "claim": "Wiwynn establishes global channel coverage through an authorized list of regional distributors including Penguin and Redapt in the United States, Circle-B in the Netherlands, Celeris-Informatique in France, Vespertec in the United Kingdom, and Teratac in South Korea to supply its Open Compute Project (OCP) rack servers, storage, and networking hardware."
+        },
+        {
+          "claim": "Wiwynn announced a formal strategic collaboration with Shinwa Controls Co., Ltd. on June 3, 2026, combining their respective engineering capabilities to deliver production-ready server Direct Liquid Cooling (DLC) infrastructure and coolant distribution systems for global Cloud Service Providers (CSPs)."
+        },
+        {
+          "claim": "According to the Wiwynn Corporation 2025 Annual Report, the company outlined plans to allocate an R&D expense budget of NT$17.2 billion for the fiscal year to support ongoing development plans, advance R&D capability, and enhance market competitiveness."
+        },
+        {
+          "claim": "Wiwynn reported a record financial performance for the first half of 2026, with consolidated revenue reaching NT$554.660 billion (a 41.7% year-over-year increase) and profit after tax rising 32.7% to NT$29.084 billion, while the Board approved a 2H26 capital expenditure budget of US$942 million alongside up to NT$15 billion in domestic unsecured convertible bonds to support working capital."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 88,
+          "evidence": [
+            {
+              "claim": "On September 9, 2026, Amazon publicly announced that Wiwynn supports Amazon's data center infrastructure by manufacturing and integrating server systems and racks to expand its domestic U.S. server capacity."
+            },
+            {
+              "claim": "Media reports in early 2025 indicated that Wiwynn counts major U.S. cloud service providers Meta Platforms Inc. and Microsoft Corp. as its primary clients, with over half of the company's revenue verified as originating from Meta to fuel AI and general-purpose server demand."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed, repeat manufacturing and systems integration contracts with Tier-1 hyperscale operators including Amazon, Meta, and Microsoft. Based on primary research, the company's contractual values or delivery timelines for each custom server rack design can be estimated as fast for most approvals, based on its systematic procedure in terms of overall planning and execution of rack integration to exceed expectations.",
+          "estimates": [
+            {
+              "metric": "contractual values or delivery timelines for each custom server rack design",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "fast for most approvals",
+              "confidence": "high",
+              "basis": "its systematic procedure in terms of overall planning and execution of rack integration to exceed expectations",
+              "source": "https://www.wiwynn.com/products/software-and-services",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "Wiwynn Corporation reported a consolidated annual revenue of NT$950.663 billion for the fiscal year 2025, representing a 163.7% increase year-over-year, with AI-related products contributing to more than half of the total revenue."
+            },
+            {
+              "claim": "Wiwynn Corporation reported that its consolidated revenue for the first half of 2026 reached NT$554.660 billion, representing a 41.7% growth compared to the same period in the prior year."
+            }
+          ],
+          "assessed_on": "The assessment rests on the company's official financial disclosures demonstrating high revenue growth driven by hyperscale and AI server demand. Based on primary research, the company's global data center market share percentage can be estimated as strong, in line with leading vendors, based on its net revenue totaling over 554 billion new taiwan dollars in the first half of 2,026.",
+          "estimates": [
+            {
+              "metric": "global data center market share percentage",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "high",
+              "basis": "its net revenue totaling over 554 billion new taiwan dollars in the first half of 2,026",
+              "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 74,
+          "evidence": [
+            {
+              "claim": "Wiwynn reported that it has shipped server racks to more than 350 data centers worldwide, as documented by W.Media."
+            },
+            {
+              "claim": "Microsoft partnered with Wiwynn to deploy and test a production-level, two-phase immersion-cooled server infrastructure at a data center in Quincy, Washington, as reported by DatacenterDynamics."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's verified server deployments with top-tier hyperscale clients and its global footprint spanning hundreds of facilities. Based on primary research, the company's cumulative unit shipment figures or long-term customer retention rates can be estimated as high, based on its shipping of server racks to more than 350 data centers globally.",
+          "estimates": [
+            {
+              "metric": "cumulative unit shipment figures or long-term customer retention rates",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "high",
+              "confidence": "high",
+              "basis": "its shipping of server racks to more than 350 data centers globally",
+              "source": "https://www.wiwynn.com/news/press/wiwynn-announces-its-first-overseas-rack-server-integration-plant-in-johor-malaysia",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 75,
+          "evidence": [
+            {
+              "claim": "Wiwynn establishes global channel coverage through an authorized list of regional distributors including Penguin and Redapt in the United States, Circle-B in the Netherlands, Celeris-Informatique in France, Vespertec in the United Kingdom, and Teratac in South Korea to supply its Open Compute Project (OCP) rack servers, storage, and networking hardware."
+            },
+            {
+              "claim": "Wiwynn announced a formal strategic collaboration with Shinwa Controls Co., Ltd. on June 3, 2026, combining their respective engineering capabilities to deliver production-ready server Direct Liquid Cooling (DLC) infrastructure and coolant distribution systems for global Cloud Service Providers (CSPs)."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's clear verifiable distribution channels across North America, Europe, and Asia-Pacific, alongside strategic co-development alliances with leading infrastructure and component providers. Based on primary research, the company's a structured, tiered global channel partner program or comprehensive metrics regarding its reseller revenues can be estimated as limited to a few markets, based on its direct original design manufacturer business model focused on world-leading hyperscale cloud service providers.",
+          "estimates": [
+            {
+              "metric": "a structured, tiered global channel partner program or comprehensive metrics regarding its reseller revenues",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "limited to a few markets",
+              "confidence": "high",
+              "basis": "its direct original design manufacturer business model focused on world-leading hyperscale cloud service providers",
+              "source": "https://www.wiwynn.com/news/press/wiwynn-announces-its-first-overseas-rack-server-integration-plant-in-johor-malaysia",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "R&D Investment & Financial Strength": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "According to the Wiwynn Corporation 2025 Annual Report, the company outlined plans to allocate an R&D expense budget of NT$17.2 billion for the fiscal year to support ongoing development plans, advance R&D capability, and enhance market competitiveness."
+            },
+            {
+              "claim": "Wiwynn reported a record financial performance for the first half of 2026, with consolidated revenue reaching NT$554.660 billion (a 41.7% year-over-year increase) and profit after tax rising 32.7% to NT$29.084 billion, while the Board approved a 2H26 capital expenditure budget of US$942 million alongside up to NT$15 billion in domestic unsecured convertible bonds to support working capital."
+            }
+          ],
+          "assessed_on": "The rating rests on the company's strong, transparent financial growth documentation and a specific multi-billion NT$ budget assigned to its ongoing R&D activities. Based on primary research, the company's annual research and development spending as a fixed percentage of revenue within its high-level public can be estimated as growing steadily, based on its continuous investments in advanced cooling, power, and optical interconnect technologies to scale the next generation of artificial intelligence infrastructure.",
+          "estimates": [
+            {
+              "metric": "annual research and development spending as a fixed percentage of revenue within its high-level public",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily",
+              "confidence": "high",
+              "basis": "its continuous investments in advanced cooling, power, and optical interconnect technologies to scale the next generation of artificial intelligence infrastructure",
+              "source": "https://ca.finance.yahoo.com/news/wiwynn-showcases-next-gen-ai-190000359.html",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

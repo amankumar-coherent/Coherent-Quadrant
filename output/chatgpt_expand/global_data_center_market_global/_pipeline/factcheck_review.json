@@ -1,0 +1,232 @@
+{
+  "exclude": [],
+  "scope": [
+    {
+      "company": "Maya Heat Transfer Technologies Ltd.",
+      "scope": "out",
+      "reason": "Maya HTT develops computer-aided engineering (CAE), product lifecycle management (PLM), and industrial simulation software for mechanical, aerospace, and general engineering applications rather than data center infrastructure software or hardware.",
+      "source": "Automatic chart fact-check (Google AI Mode)"
+    }
+  ],
+  "ownership": [],
+  "hq": [],
+  "corrections": [
+    {
+      "company": "NVIDIA Corporation",
+      "find": "NVIDIA introduced its DSX MaxLPS software as part of the DSX AI factory reference design to dynamically reallocate power between GPUs and racks in real time, enabling data center operators to run up to 40% more GPUs within the same power budget.",
+      "replace": "NVIDIA introduced its DSX MaxLPS software as part of the DSX platform to dynamically reallocate power between GPUs and racks in real time, enabling data center operators to run up to 40% more GPUs within the same power budget.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): NVIDIA DSX MaxLPS official documentation and technical overview blogs detailing the suite's features and its connection with the broader DSX platform rather than a 'DSX AI factory reference design'."
+    },
+    {
+      "company": "NVIDIA Corporation",
+      "find": "In its fiscal second-quarter 2027 earnings call, NVIDIA reported that its Data Center segment achieved a record $89 billion in revenue (representing 92.7% of total sales), with hyperscaler customer revenue specifically accounting for $49 billion of that total.",
+      "replace": "In its fiscal second-quarter 2027 earnings call, NVIDIA reported that its Data Center segment achieved a record $89 billion in revenue (representing 92.5% of total sales), with hyperscaler customer revenue specifically accounting for $49 billion of that total.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): NVIDIA Fiscal Q2 2027 Earnings Call Transcript and slide metrics specifying $89 billion in Data Center revenue out of $96.22 billion total sales (equivalent to ~92.5%)."
+    },
+    {
+      "company": "Hewlett Packard Enterprise Company",
+      "find": "According to an independent data center case study published by Eaton, Hewlett Packard Enterprise designed its scalable Modular Data Center (MDC) deployments using optimized infrastructure architectures capable of handling power densities up to 27kW or even 32kW per rack.",
+      "replace": "According to an independent data center case study published by Eaton, HP Enterprise designed its scalable Modular Data Center (MDC) deployments using optimized infrastructure architectures capable of handling power densities up to 27kW or even 32kW per rack.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Eaton Case Study (https://eaton.com.cn)"
+    },
+    {
+      "company": "Hewlett Packard Enterprise Company",
+      "find": "In fiscal year 2018, Hewlett Packard Enterprise officially ceased selling custom-designed commodity servers to Tier 1 service providers, which the company defined as Amazon, Google, Microsoft, Apple, Tencent, and Baidu, in order to pivot toward selling higher-margin products.",
+      "replace": "In fiscal year 2018, Hewlett Packard Enterprise officially ceased selling custom-designed commodity servers to Tier 1 service providers, which the company defined as Amazon, Google, Microsoft, Facebook, Apple, Tencent, Alibaba, and Baidu, in order to pivot toward selling higher-margin products.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): CRN Report (https://www.crn.com/news/data-center/300094536/hpe-to-step-back-from-tier-1-service-provider-server-business-while-focusing-on-higher-margin-growth-areas)"
+    },
+    {
+      "company": "Hewlett Packard Enterprise Company",
+      "find": "Hewlett Packard Enterprise honors global distributors and technology partners through its specialized channel programs, recognizing TD SYNNEX as its Global Distributor of the Year and Microsoft as its Global Technology Partner at the HPE Partner Growth Summit.",
+      "replace": "Hewlett Packard Enterprise honors global distributors and technology partners through its specialized channel programs, recognizing TD SYNNEX as its Global Distributor of the Year and Microsoft as its Global Technology Partner at the HPE Partner Growth Summit 2025.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): https://hpe.com"
+    },
+    {
+      "company": "Hewlett Packard Enterprise Company",
+      "find": "Hewlett Packard Enterprise reported research and development expenditures of $2.5 billion for the fiscal year ended October 31, 2025, which represents approximately 7% of its total net revenue of $34.3 billion, according to the company's annual report on Form 10-K.",
+      "replace": "Hewlett Packard Enterprise reported research and development expenditures of $2.5 billion for the fiscal year ended October 31, 2025, which represents approximately 7% of its total net revenue of $33.529 billion, according to the company's annual report on Form 10-K.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): https://www.sec.gov/Archives/edgar/data/1645590/000164559025000130/hpe-20251031.htm"
+    },
+    {
+      "company": "Dell Technologies Inc.",
+      "find": "The company reports that its Dell PowerRack Integrated Rack Scalable Systems support extreme-density workloads by managing up to 504 kW per ORv3 rack while utilizing a 4U Rack-mounted Coolant Distribution Unit that supplies up to 160 kW of cooling capacity, according to the Dell Integrated Rack Scalable Systems Page.",
+      "replace": "The company reports that its Dell PowerRack Integrated Rack Scalable Systems support extreme-density workloads by managing up to 504 kW per ORv3 rack while utilizing a 4U PowerCool Rack-mounted Coolant Distribution Unit that supplies up to 160 kW of cooling capacity, according to the Dell Integrated Rack Scalable Systems Page.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Dell Technologies Product Pages (https://www.dell.com/en-us/shop/storage-servers-and-networking-for-business/sf/integrated-rack-scalable-systems and https://infohub.delltechnologies.com/en-uk/p/dell-i"
+    },
+    {
+      "company": "Dell Technologies Inc.",
+      "find": "Dell Technologies offers OpenManage Enterprise Power Manager, a specialized plug-in designed to monitor and control power consumption, track carbon emissions, and evaluate thermal health and resource utilization across up to 25,000 devices per console.",
+      "replace": "Dell Technologies offers OpenManage Enterprise, a specialized console designed to monitor and control power consumption, track carbon emissions, and evaluate thermal health and resource utilization across up to 25,000 devices per console (monitoring-only), while the earlier separate Power Manager plug-in functionality is now integrated natively into OME.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Dell Support Knowledge Base (https://www.dell.com/support/kbdoc/en-us/000175879/support-for-openmanage-enterprise)"
+    },
+    {
+      "company": "Dell Technologies Inc.",
+      "find": "The company announced its Concept Astro program in October 2025, which is an experimental platform utilizing agentic AI, digital twins, and real-time grid data to forecast data center power requirements and optimize workload scheduling based on green energy availability, according to a company disclosure.",
+      "replace": "The company announced its Concept Astro program in May 2025, which is an experimental platform utilizing agentic AI, digital twins, and real-time grid data to forecast data center power requirements and optimize workload scheduling based on green energy availability, according to a company disclosure.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Dell Technologies Corporate Blog (https://dell.com) and SiliconANGLE (https://siliconangle.com)"
+    },
+    {
+      "company": "Dell Technologies Inc.",
+      "find": "The company reports a record full-year revenue of $60.8 billion for its Infrastructure Solutions Group in fiscal year 2026, representing a 40% year-over-year increase driven by $24.7 billion in AI server revenue.",
+      "replace": "The company reports a record full-year revenue of $60.8 billion for its Infrastructure Solutions Group in fiscal year 2026, representing a 40% year-over-year increase driven by $25 billion in AI server revenue.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Dell Technologies Fourth Quarter and Full-Year Fiscal 2026 Results"
+    },
+    {
+      "company": "Dell Inc.",
+      "find": "An independent comparative testing project conducted by Principled Technologies in May 2026 demonstrated that the Dell PowerStore 9500 storage array delivered superior IOPS, storage density, and latency performance compared to a rival all-NVMe enterprise array, according to the Principled Technologies study on CIO Influence.",
+      "replace": "An independent comparative testing project conducted by Principled Technologies in May 2026 demonstrated that the Dell PowerStore 9500 storage array delivered superior IOPS, storage density, and latency performance compared to a rival all-NVMe enterprise array, according to the Principled Technologies report.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): https://principledtechnologies.com"
+    },
+    {
+      "company": "Dell Inc.",
+      "find": "Dell Technologies collaborated with the Scripps Institution of Oceanography on a pilot program using the Dell AI Factory with NVIDIA to process coral reef imagery, achieving a 20% reduction in costs and 32% lower carbon emissions by utilizing agentic AI to schedule processing during optimum energy windows.",
+      "replace": "Dell Technologies collaborated with the Scripps Institution of Oceanography on a pilot program using the Dell Concept Astro initiative to process coral reef imagery, achieving a 20% reduction in energy costs and 32% lower carbon emissions by utilizing AI to schedule processing during optimum energy windows.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Scripps Institution of Oceanography Press Release (\"New Technology Infrastructure Streamlines AI-Powered Coral Research\")"
+    },
+    {
+      "company": "Dell Inc.",
+      "find": "Hostinger completed the deployment of 800 Dell PowerEdge servers equipped with AMD EPYC processors to scale its global web hosting and server infrastructure.",
+      "replace": "Hostinger completed the deployment of 800 Dell PowerEdge R6615 servers equipped with AMD EPYC processors to scale its global web hosting and server infrastructure.",
+      "reason": "Fact-check: The original claim omitted the specific server model 'R6615'.",
+      "source": "Automatic chart fact-check (Google AI Mode): Hostinger Official Blog Release (\"Hostinger's Record Investment: 800 Dell Servers With AMD EPYC Processors\")"
+    },
+    {
+      "company": "Dell Inc.",
+      "find": "Dell Technologies teamed up with Nvidia and Indian cloud provider NxtGen in January 2026 to build India's largest dedicated sovereign AI data center facility, deploying fully integrated liquid-cooled Dell IR5000 racks, PowerEdge XE9685L servers, and over 4,000 Nvidia Blackwell GPUs.",
+      "replace": "Dell Technologies teamed up with Nvidia and Indian cloud provider NxtGen in January 2026 to build India's largest dedicated sovereign AI factory, deploying fully integrated liquid-cooled Dell IR5000 racks, PowerEdge XE9685L servers, and over 4,000 Nvidia Blackwell GPUs.",
+      "reason": "Fact-check: The official announcement terms the facility an 'AI factory' rather than a 'data center facility'.",
+      "source": "Automatic chart fact-check (Google AI Mode): Dell Technologies Official Press Release (January 2026) / Times of India"
+    },
+    {
+      "company": "Wiwynn Corporation",
+      "find": "Wiwynn reports the development and debut of its double-wide Open Compute Project (OCP) compliant rack architecture at the OCP Global Summit, featuring integrated high-voltage DC (HVDC) power delivery supporting ±400/800 VDC and a liquid-cooled busbar designed for high-current loads.",
+      "replace": "Wiwynn reports the development and debut of its double-wide Open Compute Project (OCP) compliant rack architecture at the OCP Global Summit 2025, featuring integrated high-voltage DC (HVDC) power delivery supporting ±400/800 VDC and a liquid-cooled busbar designed for high-current loads.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Wiwynn Official Press Release October 2025 (https://www.wiwynn.com/news/wiwynn-debuts-double-wide-rack-architecture-for-next-generation-ai-at-ocp-global-summit-2025)"
+    },
+    {
+      "company": "Wiwynn Corporation",
+      "find": "In April 2021, Microsoft partnered with Wiwynn in its Washington data center to test the deployment of energy-efficient two-phase immersion-cooled servers.",
+      "replace": "In April 2021, Microsoft partnered with Wiwynn in its Quincy data center to test the deployment of energy-efficient two-phase immersion-cooled servers.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Microsoft Official Innovation Blog / DatacenterDynamics report on Wiwynn and Microsoft"
+    },
+    {
+      "company": "Wiwynn Corporation",
+      "find": "Wiwynn reported that it has shipped server racks to more than 350 data centers worldwide, as documented by DatacenterDynamics.",
+      "replace": "Wiwynn reported that it has shipped server racks to more than 350 data centers worldwide, as documented by W.Media.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): https://w.media/wiwynn-unveils-server-rack-integration-plant-in-johor-malaysia-targets-hyperscale-data-centers/"
+    },
+    {
+      "company": "Amphenol Corporation",
+      "find": "The company reports that its nrgILS DC power panel platform, introduced in March 2026, optimizes data center energy management by integrating real-time current and voltage monitoring, load shedding of non-critical infrastructure, and sequenced recovery automation.",
+      "replace": "The company reports that its nrgILS DC power panel platform, introduced in January 2026, optimizes data center energy management by integrating real-time current and voltage monitoring, load shedding of non-critical infrastructure, and sequenced recovery automation.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Amphenol Network Solutions Press Release"
+    },
+    {
+      "company": "Datapod Pty Ltd",
+      "find": "Datapod deploys its proprietary Integrated Monitoring and Control System (IMCS), a Modbus-based hardware and device management appliance built directly into its modular data center systems that offers local and remote access to performance data, as published on Datapod's corporate documentation.",
+      "replace": "Datapod deploys its proprietary Integrated Management and Control System (IMCS), a Modbus-based hardware and device management appliance built directly into its modular data center systems that offers local and remote access to performance data, as published on Datapod's corporate documentation.",
+      "reason": "Fact-check: The actual name of the system is 'Integrated Management and Control System', not 'Integrated Monitoring and Control System'.",
+      "source": "Automatic chart fact-check (Google AI Mode): Datapod Corporate Documentation via FAQ & Product Definition Pages (https://datapod.ai/10-frequently-asked-questions-about-datapods-modular-data-center/ and https://datapod.ai/what-do-you-get-when-you"
+    },
+    {
+      "company": "EnerSys",
+      "find": "The DataSafe Noir lithium energy storage system supports up to 600 kW of output power per cabinet and up to 1.2 MW across two racks for high-density environments, as reported in the EnerSys DataSafe Noir Product Specifications.",
+      "replace": "The DataSafe Noir lithium energy storage system supports up to 600 kW of output power per cabinet and up to 1.2 MW across two cabinets for high-density environments, as reported in the EnerSys DataSafe Noir Product Specifications.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): EnerSys DataSafe Noir Lithium Energy Storage System Overview"
+    },
+    {
+      "company": "EnerSys",
+      "find": "EnerSys achieved a record full-year net sales figure of $3.75 billion for its fiscal year ended 31 March 2026, representing a 4% increase year-over-year, alongside an adjusted diluted EPS of $10.56, as reported in the company's official Q4 and full-year fiscal 2026 results press release.",
+      "replace": "EnerSys achieved a record full-year net sales figure of $3.8 billion for its fiscal year ended 31 March 2026, representing a 4% increase year-over-year, alongside an adjusted diluted EPS of $10.56, as reported in the company's official Q4 and full-year fiscal 2026 results press release.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): https://investor.enersys.com/news/news-details/2026/EnerSys-Reports-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/default.aspx"
+    },
+    {
+      "company": "Asperitas BV",
+      "find": "A scale-up equity investment round successfully closed in September 2025, which included a €1.5 million investment from Invest-NL alongside capital from STECON GROUP, Shell Ventures, and PDENH to accelerate international expansion and portfolio innovation.",
+      "replace": "A scale-up equity investment round successfully closed in September 2025, which included an undisclosed investment from Invest-NL alongside capital from STECON GROUP, Shell Ventures, and PDENH to accelerate international expansion and portfolio innovation.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): https://www.asperitas.com/news/asperitas-investment"
+    },
+    {
+      "company": "Upsite Technologies, Inc.",
+      "find": "Upsite Technologies, Inc. expanded its regional product availability to the Asian market by securing a distribution partnership with Data Clean Asia to deploy its physical physical infrastructure and cooling optimization systems.",
+      "replace": "Upsite Technologies, Inc. expanded its regional product availability to the Asian market by securing a distribution partnership with Data Clean Asia to deploy its physical infrastructure and cooling optimization systems.",
+      "reason": "Fact-check: Fixed the duplicated word 'physical physical'.",
+      "source": "Automatic chart fact-check (Google AI Mode): https://upsite.com"
+    },
+    {
+      "company": "Salicru, S.A.",
+      "find": "The company reports supplying six 500 kW SLC ADAPT2 modular uninterruptible power supply (UPS) systems to safeguard the Oxigen Data Center facility in Barcelona, Spain, which provides colocation and hybrid cloud services.",
+      "replace": "The company reports supplying six SLC ADAPT2 modular uninterruptible power supply (UPS) systems that allow configurations of up to 500 kW per cabinet to safeguard the Oxigen Data Center facility in Barcelona, Spain, which provides colocation and hybrid cloud services.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): https://www.salicru.com/salicru-asegura-con-baterias-de-ion-de-litio-el-centro-de-dato.html"
+    },
+    {
+      "company": "WEG S.A.",
+      "find": "An integration of the W22 Premium Motor with the CFW701 HVAC variable speed drive in cooling tower infrastructure reduced electrical energy consumption by 48%, according to a WEG S.A. technical report.",
+      "replace": "An integration of the W22 Premium Motor with the CFW701 HVAC variable speed drive in cooling tower infrastructure reduced electrical energy consumption by up to 80%, according to a WEG S.A. technical report.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): WEG Industrial Solutions - Cooling Tower Application Report (https://weg.net)"
+    },
+    {
+      "company": "WEG S.A.",
+      "find": "The company reports that its WEG Motion Fleet Management platform integrates the WEG Motor Specialist module, which uses machine learning and artificial intelligence algorithms to autonomously diagnose anomalies and run predictive maintenance for data center cooling systems.",
+      "replace": "The company reports that its WEG Motion Fleet Management platform integrates the WEG Motor Specialist module, which uses machine learning and artificial intelligence algorithms to autonomously diagnose anomalies and run predictive maintenance for electric motors.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): WEG Institutional News - WEG Motor Specialist Launch (https://weg.net)"
+    },
+    {
+      "company": "EAE Elektrik A.Ş.",
+      "find": "The company's E-Line KX Aluminium 4000 A low-voltage busbar system was selected as the designated transformer busbar component integrated within Eaton's NordicEPOD 2.0 MW modular data center platform architecture, as verified in Eaton's technical product specifications.",
+      "replace": "The company's E-Line KX Aluminium 5000 A low-voltage busbar system was selected as the designated transformer busbar component integrated within Eaton's NordicEPOD 2.0 MW modular data center platform architecture, as verified in Eaton's technical product specifications.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Eaton Modular Data Center G A Critical Power Skid Technical Specifications"
+    },
+    {
+      "company": "OptiCool Technologies LLC",
+      "find": "An engineering laboratory evaluation completed in March 2026 for a major aerospace company simulated an 80 kW rack heat load and verified that OptiCool Technologies' 120 kW rear-door heat exchanger effectively sustained a 70°F exit temperature while drawing a steady-state power load of only 550 W.",
+      "replace": "An engineering laboratory evaluation completed in March 2026 for a major aerospace company simulated an 80 kW rack heat load and verified that OptiCool Technologies' 120 kW rear-door heat exchanger effectively sustained a 70°F exit temperature while drawing a steady-state power load of only 550 W under a system ambient temperature set point of 75°F.",
+      "reason": "Fact-check: The original claim missed that the test had an ambient temperature set point of 75°F, which makes the 70°F exit temperature specific to that condition, though the primary contradiction is minor; howev",
+      "source": "Automatic chart fact-check (Google AI Mode): https://opticooltechnologies.com/case-study/breaking-the-100-kw-barrier/"
+    },
+    {
+      "company": "OptiCool Technologies LLC",
+      "find": "OptiCool Technologies is an affiliate or operating subsidiary of Calvary Automation, which acquired the company in July 2012.",
+      "replace": "OptiCool Technologies is an affiliate or operating subsidiary of Calvary Automation, which co-founded the company in July 2012.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Rochester Business Journal (July 2012 report on OptiCool's founding)"
+    },
+    {
+      "company": "Tate Access Floors, Inc.",
+      "find": "A study published by the company details that server airflow leakage occurs at rates between 23% and 135% of their designed flow rate, and demonstrates that its pressure-sensing automatic airflow dampering platform reduces annualized PUE, according to Cabling Installation & Maintenance.",
+      "replace": "A study published by the company details that server airflow leakage occurs at rates between 23% and 135% of their designed flow rate, according to Cabling Installation & Maintenance.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Cabling Installation & Maintenance White Paper Coverage (://cablinginstall.com)"
+    },
+    {
+      "company": "Tate Access Floors, Inc.",
+      "find": "The company reports that its raised-floor fan tiles feature local control options, allowing them to be client-controlled or managed automatically using one to three rack-mounted temperature sensors.",
+      "replace": "The company reports that its SmartAire electronically controlled variable air volume dampers feature local control options, allowing them to be client-controlled or managed automatically using one to three rack-mounted temperature sensors.",
+      "reason": "Fact-check",
+      "source": "Automatic chart fact-check (Google AI Mode): Tate In-Floor Cooling Solutions Product Data Sheet (://hatchell.com)"
+    }
+  ]
+}

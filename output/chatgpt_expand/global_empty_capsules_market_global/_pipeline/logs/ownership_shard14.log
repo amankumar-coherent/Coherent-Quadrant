@@ -1,0 +1,43 @@
+[facts 23:13:02] ownership: 3 companies, 3 to check
+      · own-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_55_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · own-1: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 42s ago
+[facts 23:13:51] ownership: 3 unclear, asking one at a time
+      · own-one-Hexin Capsule Co., L: calling Google AI Mode (udm=50) attempt 1/4…
+      · own-one-Hexin Capsule Co., L: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 64s ago
+      · own-one-Saviour Caps Pvt. Lt: calling Google AI Mode (udm=50) attempt 1/4…
+      · own-one-Saviour Caps Pvt. Lt: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 86s ago
+      · own-one-Zhejiang Enerkang Ca: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_55_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · own-one-Zhejiang Enerkang Ca: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 37s ago
+[facts 23:15:45] ownership: 3 answers saved -> facts_ownership_shard14.json
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:574:12)
+    at _write (node:internal/streams/writable:503:10)
+    at Writable.write (node:internal/streams/writable:512:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36765:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:72575:59)
+    at DispatcherConnection.sendEvent (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26379:14)
+    at _FrameDispatcher._dispatchEvent (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26301:25)
+    at _Frame.<anonymous> (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:57047:16)
+    at _Frame.emit (node:events:514:28)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4047,
+  syscall: 'write',
+  code: 'EPIPE'
+}
+
+Node.js v24.21.0

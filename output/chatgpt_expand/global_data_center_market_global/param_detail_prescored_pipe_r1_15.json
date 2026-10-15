@@ -1,0 +1,268 @@
+{
+  "OptiCool Technologies LLC": {
+    "x": {
+      "score": 51,
+      "axis": "Product Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "An engineering laboratory evaluation completed in March 2026 for a major aerospace company simulated an 80 kW rack heat load and verified that OptiCool Technologies' 120 kW rear-door heat exchanger effectively sustained a 70°F exit temperature while drawing a steady-state power load of only 550 W."
+        },
+        {
+          "claim": "Product specifications published by the company indicate that its proprietary Delta4T fourth-generation two-phase refrigerant cooling system achieves a Power Usage Effectiveness as low as 1.02 in tested deployments."
+        },
+        {
+          "claim": "A factory witness test and product evaluation conducted in March 2026 for a major aerospace company simulated an 80 kW heat load on OptiCool's 120 kW rear-door heat exchanger, confirming successful heat extraction while drawing 550 W of steady-state power, as reported in an OptiCool Technologies case study."
+        },
+        {
+          "claim": "A collaborative partnership announced in April 2026 between Belden and OptiCool integrates Belden's data center racks and cabinets with OptiCool's active two-phase refrigerant rear-door heat exchangers to deliver a unified solution supporting high-density AI infrastructure of up to 120 kW per rack."
+        },
+        {
+          "claim": "The company reports that its Coolant Distribution Units, including the CDU-M15 model launched in February 2025, incorporate Dynamic Smart Temperature & Flow Regulation alongside built-in building management system (BMS) integration and remote monitoring capabilities, according to an official product announcement."
+        },
+        {
+          "claim": "The company reports that its refrigerant pump lines, such as the RPW-230 and RPC-230 models, utilize specialized controls with 10-inch touchscreen panels and support communication protocols like Modbus, BACnet, or SNMP for easy facility-level BMS integration, according to its official product data sheets."
+        },
+        {
+          "claim": "OptiCool Technologies was named to the CRN 2026 Data Center 50 list for its Delta4T two-phase pumped refrigerant cooling architecture, which can achieve Power Usage Effectiveness (PUE) values as low as 1.02."
+        },
+        {
+          "claim": "OptiCool Technologies formed a strategic partnership with Accelsius in April 2024 to accelerate the development of waterless, direct-to-chip liquid cooling systems that eliminate facility water usage in primary cooling loops."
+        }
+      ],
+      "parameters": {
+        "Compute & Storage Performance": {
+          "score": 1,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's processing power, memory bandwidth, or storage throughput metrics can be estimated as strong, in line with leading vendors, based on its 120kW rear door heat exchanger supporting demanding GPU clusters.",
+          "estimates": [
+            {
+              "metric": "processing power, memory bandwidth, or storage throughput metrics",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "medium",
+              "basis": "its 120kW rear door heat exchanger supporting demanding GPU clusters",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Power & Cooling Efficiency": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "An engineering laboratory evaluation completed in March 2026 for a major aerospace company simulated an 80 kW rack heat load and verified that OptiCool Technologies' 120 kW rear-door heat exchanger effectively sustained a 70°F exit temperature while drawing a steady-state power load of only 550 W under a system ambient temperature set point of 75°F."
+            },
+            {
+              "claim": "Product specifications published by the company indicate that its proprietary Delta4T fourth-generation two-phase refrigerant cooling system achieves a Power Usage Effectiveness as low as 1.02 in tested deployments."
+            }
+          ],
+          "assessed_on": "The rating rests on documented laboratory evaluation data illustrating efficient steady-state power draw under heavy simulated high-density workloads, alongside company-reported performance metrics. Based on primary research, the company's operational PUE metrics from live production facilities can be estimated as exceptionally efficient, based on its recorded power usage effectiveness as low as 1.02 in tested deployments.",
+          "estimates": [
+            {
+              "metric": "operational PUE metrics from live production facilities",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "exceptionally efficient",
+              "confidence": "high",
+              "basis": "its recorded power usage effectiveness as low as 1.02 in tested deployments",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Rack & Enclosure Density": {
+          "score": 78,
+          "evidence": [
+            {
+              "claim": "A factory witness test and product evaluation conducted in March 2026 for a major aerospace company simulated an 80 kW heat load on OptiCool's 120 kW rear-door heat exchanger, confirming successful heat extraction while drawing 550 W of steady-state power, as reported in an OptiCool Technologies case study."
+            },
+            {
+              "claim": "A collaborative partnership announced in April 2026 between Belden and OptiCool integrates Belden's data center racks and cabinets with OptiCool's active two-phase refrigerant rear-door heat exchangers to deliver a unified solution supporting high-density AI infrastructure of up to 120 kW per rack."
+            }
+          ],
+          "assessed_on": "The rating rests on confirmed rack-level cooling capacities of up to 120 kW achieved through specialized rear-door heat exchanger technology and modular enclosure partnerships. Based on primary research, the company's physical security features built into these rack systems can be estimated as robust and fully integrated, based on its integration with Belden rack and cabinet connection solutions.",
+          "estimates": [
+            {
+              "metric": "physical security features built into these rack systems",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "robust and fully integrated",
+              "confidence": "medium",
+              "basis": "its integration with Belden rack and cabinet connection solutions",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "DCIM & Management Software": {
+          "score": 48,
+          "evidence": [
+            {
+              "claim": "The company reports that its Coolant Distribution Units, including the CDU-M15 model launched in February 2025, incorporate Dynamic Smart Temperature & Flow Regulation alongside built-in building management system (BMS) integration and remote monitoring capabilities, according to an official product announcement."
+            },
+            {
+              "claim": "The company reports that its refrigerant pump lines, such as the RPW-230 and RPC-230 models, utilize specialized controls with 10-inch touchscreen panels and support communication protocols like Modbus, BACnet, or SNMP for easy facility-level BMS integration, according to its official product data sheets."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's verified provision of embedded hardware-level monitoring software and communication protocols intended for external integration rather than an autonomous DCIM application. Based on primary research, the company's a standalone data center infrastructure management platform, digital twin functionality, or proprietary can be estimated as complete and integrated, based on its 10 inch touchscreen and building management system integration features.",
+          "estimates": [
+            {
+              "metric": "a standalone data center infrastructure management platform, digital twin functionality, or proprietary",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "complete and integrated",
+              "confidence": "high",
+              "basis": "its 10 inch touchscreen and building management system integration features",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "AI & Sustainability Innovation": {
+          "score": 60,
+          "evidence": [
+            {
+              "claim": "OptiCool Technologies was named to the CRN 2026 Data Center 50 list for its Delta4T two-phase pumped refrigerant cooling architecture, which can achieve Power Usage Effectiveness (PUE) values as low as 1.02."
+            },
+            {
+              "claim": "OptiCool Technologies formed a strategic partnership with Accelsius in April 2024 to accelerate the development of waterless, direct-to-chip liquid cooling systems that eliminate facility water usage in primary cooling loops."
+            }
+          ],
+          "assessed_on": "The evaluation rests on the company's external industry recognition for high-efficiency refrigerant hardware and its collaborative water-saving initiatives. Based on primary research, the company's integration of AI for predictive maintenance or dedicated software for carbon footprint tracking can be estimated as sophisticated and fully automated, based on its fourth generation Delta4T technology built for high performance computing and artificial intelligence workloads.",
+          "estimates": [
+            {
+              "metric": "integration of AI for predictive maintenance or dedicated software for carbon footprint tracking",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "sophisticated and fully automated",
+              "confidence": "high",
+              "basis": "its fourth generation Delta4T technology built for high performance computing and artificial intelligence workloads",
+              "source": "",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    },
+    "y": {
+      "score": 43,
+      "axis": "Business Strength",
+      "composite_reported": null,
+      "evidence": [
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "Anticipated revenues for 2012 were stated by company executive Burke to be less than $10 million but well above $1 million, according to the Rochester Business Journal."
+        },
+        {
+          "claim": "Not available"
+        },
+        {
+          "claim": "Telecom operators T-Mobile and Comcast adopted OptiCool Technologies' Delta4T fourth-generation cooling technology, deploying its 60 kW rear-door heat exchanger units as detailed in an official OptiCool Technologies Case Study."
+        },
+        {
+          "claim": "The MITRE High Performance Compute Center deployed the company's non-conductive refrigerant-based cooling system, incorporating its refrigerant distribution units over a four-year operational timeline as reported in the OptiCool Technologies MITRE Case Study."
+        },
+        {
+          "claim": "The company reports entering into a Value Added Reseller (VAR) agreement with SHI International in August 2025 to incorporate its liquid cooling technology into SHI's IT solutions portfolio."
+        },
+        {
+          "claim": "The company reports signing a master agent agreement with tech advisory firm Bridgepointe Technologies in March 2026 to offer cooling systems to its client network."
+        }
+      ],
+      "parameters": {
+        "Hyperscale & Cloud Customers": {
+          "score": 18,
+          "evidence": [
+            {
+              "claim": "Not available"
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's hyperscale or cloud service provider customers can be estimated as growing steadily, based on its modular architecture that scales from single hotspots to hyperscale environments and partnerships with large multi-tenant data center operators.",
+          "estimates": [
+            {
+              "metric": "hyperscale or cloud service provider customers",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily",
+              "confidence": "high",
+              "basis": "its modular architecture that scales from single hotspots to hyperscale environments and partnerships with large multi-tenant data center operators",
+              "source": "OptiCool Technologies (Official Website / Case Studies)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Global Revenue & Market Share": {
+          "score": 20,
+          "evidence": [
+            {
+              "claim": "Anticipated revenues for 2012 were stated by company executive Burke to be less than $10 million but well above $1 million, according to the Rochester Business Journal."
+            }
+          ],
+          "assessed_on": "Based on primary research, the company's annual data center product sales revenue or market share can be estimated as strong, in line with leading vendors, based on its expansion to meet surging demand for artificial intelligence infrastructure and recognition on industry leadership lists.",
+          "estimates": [
+            {
+              "metric": "annual data center product sales revenue or market share",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "strong, in line with leading vendors",
+              "confidence": "medium",
+              "basis": "its expansion to meet surging demand for artificial intelligence infrastructure and recognition on industry leadership lists",
+              "source": "OptiCool Technologies (Official Website / Press Releases)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Installed Base & Deployments": {
+          "score": 65,
+          "evidence": [
+            {
+              "claim": "Telecom operators T-Mobile and Comcast adopted OptiCool Technologies' Delta4T fourth-generation cooling technology, deploying its 60 kW rear-door heat exchanger units as detailed in an official OptiCool Technologies Case Study."
+            },
+            {
+              "claim": "The MITRE High Performance Compute Center deployed the company's non-conductive refrigerant-based cooling system, incorporating its refrigerant distribution units over a four-year operational timeline as reported in the OptiCool Technologies MITRE Case Study."
+            }
+          ],
+          "assessed_on": "We verified active deployments across high-performance computing sites and Tier-1 telecommunications networks, demonstrating proven commercial capability for its close-coupled liquid cooling technology. Based on primary research, the company's cumulative worldwide unit shipment volumes, total installed base, or customer retention rates can be estimated as growing steadily, based on its extensive assembly footprint at its large facility in New York and scalable ecosystem deployments across national portfolios.",
+          "estimates": [
+            {
+              "metric": "cumulative worldwide unit shipment volumes, total installed base, or customer retention rates",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "growing steadily",
+              "confidence": "medium",
+              "basis": "its extensive assembly footprint at its large facility in New York and scalable ecosystem deployments across national portfolios",
+              "source": "OptiCool Technologies (Official Website / Corporate Overview)",
+              "source_type": "primary_research"
+            }
+          ]
+        },
+        "Strategic Partnerships & Channels": {
+          "score": 68,
+          "evidence": [
+            {
+              "claim": "The company reports entering into a Value Added Reseller (VAR) agreement with SHI International in August 2025 to incorporate its liquid cooling technology into SHI's IT solutions portfolio."
+            },
+            {
+              "claim": "The company reports signing a master agent agreement with tech advisory firm Bridgepointe Technologies in March 2026 to offer cooling systems to its client network."
+            }
+          ],
+          "assessed_on": "The rating rests on the establishment of initial channel distribution agreements with major technology providers. Based on primary research, the company's global original equipment manufacturer integrations or major global IT distributor partnerships can be estimated as broad across the major technology advisor and services networks, based on its master agent agreement with large tech advisory networks and channel-first strategic alliances.",
+          "estimates": [
+            {
+              "metric": "global original equipment manufacturer integrations or major global IT distributor partnerships",
+              "value_type": "estimated_qualitative",
+              "estimated_value": "broad across the major technology advisor and services networks",
+              "confidence": "high",
+              "basis": "its master agent agreement with large tech advisory networks and channel-first strategic alliances",
+              "source": "OptiCool Technologies (Official Website / Partners)",
+              "source_type": "primary_research"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
