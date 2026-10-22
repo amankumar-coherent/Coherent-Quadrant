@@ -126,6 +126,13 @@ def read_json(path: Path, default=None):
         return default
 
 
+def chart_by(pipe_dir: Path) -> str:
+    """How the chart's Top N is chosen: "overall" when the market brief sets
+    "chart_selection": "top_overall", else the per-quadrant rule."""
+    brief = read_json(Path(pipe_dir) / "market_brief.json", {}) or {}
+    return "overall" if str(brief.get("chart_selection") or "").strip().lower() == "top_overall" else "quadrant"
+
+
 class Runner:
     def __init__(self, args, out_dir: Path, pipe_dir: Path, spec_path: Path):
         self.args = args
@@ -417,9 +424,20 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
                              json.dumps(payload, ensure_ascii=False))
     checks.append(("Report wording: 'As per our findings', estimates read '... is ...'",
                    not old_wording, old_wording[:3]))
-    dots = [r.count("cq-sdot-on") for r in rows]
-    checks.append(("Other Noticeable Player sorted by Strength",
-                   all(a >= b for a, b in zip(dots, dots[1:])), dots[:10]))
+    # Owner 2026-10-21: grouped by quadrant (Leaders, Challengers, Trailblazers,
+    # Emerging Players), strongest first within each quadrant.
+    import html as _html
+
+    q_rank = {"leaders": 3, "challengers": 2, "trailblazers": 1, "emerging players": 0}
+    quad_of = {_html.unescape(str(b.get("company") or "")).strip(): q_rank.get(str(b.get("quadrant") or "").lower(), -1)
+               for b in brands}
+    order = []
+    for r in rows:
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", r, re.S)
+        comp = _html.unescape(re.sub(r"<[^>]+>", "", cells[1])).strip() if len(cells) > 1 else ""
+        order.append((quad_of.get(comp, -1), r.count("cq-sdot-on")))
+    checks.append(("Other Noticeable Player grouped by quadrant, sorted by Strength within each",
+                   all(a >= b for a, b in zip(order, order[1:])), order[:10]))
 
     publishers = [ln.strip() for ln in (ROOT / "config" / "research_publishers.txt")
                   .read_text(encoding="utf-8").splitlines()
@@ -985,9 +1003,11 @@ def main() -> int:
         # the quick X/Y scores of the whole verified pool.
         xy = {n: v for n in pool if chart_ok(n)
               and (v := axis_xy(n, evidence, overall, xp, yp)) is not None}
-        ev_pool = select_top_by_quadrant(xy, args.top_n)
-        log(f"   Top {len(ev_pool)} chosen {args.top_n // 4} per quadrant from "
-            f"{len(xy)} quick-scored companies")
+        ev_pool = select_top_by_quadrant(xy, args.top_n, by=chart_by(pipe_dir))
+        log(f"   Top {len(ev_pool)} chosen "
+            + ("by Overall (market brief chart_selection: top_overall)" if chart_by(pipe_dir) == "overall"
+               else f"{args.top_n // 4} per quadrant")
+            + f" from {len(xy)} quick-scored companies")
     elif ev_pool is None:
         # A larger --evidence-pool: the chart selector picks from it later.
         ranked = sorted(
@@ -1012,7 +1032,8 @@ def main() -> int:
         before = list(ev_pool)
         # The evidence pool IS the chart here (size <= top_n): composite re-splits it
         # 5 per quadrant by rank, so every surviving company stays.
-        ev_pool = refill_top_by_quadrant(ev_pool, xy, args.top_n, eligible=chart_ok, keep_all=True)
+        ev_pool = refill_top_by_quadrant(ev_pool, xy, args.top_n, eligible=chart_ok, keep_all=True,
+                                         by=chart_by(pipe_dir))
         log(f"   Top {args.top_n} refilled after 3b: added "
             f"{[n for n in ev_pool if n not in before]}")
         if not args.chart_top:
@@ -1145,7 +1166,7 @@ def main() -> int:
         xy = {n: (int(round(a)), int(round(b))) for n, a, b in zip(names, bx, by)}
         before = list(chart_top)
         chart_top = refill_top_by_quadrant(chart_top, xy, args.top_n, eligible=chart_ok,
-                                           keep_all=len(done_ev) <= args.top_n)
+                                           keep_all=len(done_ev) <= args.top_n, by=chart_by(pipe_dir))
         if set(chart_top) != set(before):
             write_json(chart_path, chart_top)
             log(f"6. chart rebalanced after 3b: added {[n for n in chart_top if n not in before]}, "
@@ -1248,6 +1269,11 @@ def main() -> int:
             if not r["changed"] and not r["already_applied"] and r.get("replace"):
                 log(f"   WARNING: correction text not found for {r['company']}: "
                     f"{r['find'][:80]!r}")
+        # A corrected sentence (analyst or fact-check) can bring back a
+        # third-party name or a citation leftover the tidy above removed
+        # ("as verified in a credit rating report CRISIL Ratings"): tidy again.
+        if any(r["changed"] for r in rows):
+            tidy_evidence(out_dir)
 
     # 8. Report --------------------------------------------------------------
     report_cmd = [PY, str(ROOT / "scripts" / "build_report_from_composite.py"),

@@ -199,12 +199,16 @@ def inactive_companies(pipe_dir: Path, *, include_auto: bool = True) -> dict[str
     status_needs_review() for a person to confirm.
     """
     out: dict[str, str] = {}
+    review = load_review(pipe_dir, include_auto=include_auto)
+    # The analyst always wins: a "keep" also overrides an automatic status
+    # answer ("exited" for a company the analyst confirmed is in the market).
+    keep = {norm_name(r.get("company") or "") for r in review.get("keep") or []}
     for name, rec in load_status(pipe_dir).items():
         st = str((rec or {}).get("status") or "").strip().lower()
         note = str((rec or {}).get("note") or "").strip()
-        if st in GONE_STATUSES and note:
+        if st in GONE_STATUSES and note and norm_name(name) not in keep:
             out[norm_name(name)] = f"{st}: {note}"
-    for row in load_review(pipe_dir, include_auto=include_auto)["exclude"]:
+    for row in review["exclude"]:
         name = str(row.get("company") or "").strip()
         if name:
             out[norm_name(name)] = "analyst review: " + str(row.get("reason") or "excluded").strip()
@@ -538,7 +542,7 @@ def apply_display_corrections(ckpt_path: Path, fixes: Iterable[dict[str, str]]) 
 
 def refill_top_by_quadrant(
     keep: list[str], xy: dict[str, tuple[float, float]], top_n: int = 20,
-    eligible: Callable[[str], bool] | None = None, keep_all: bool = False,
+    eligible: Callable[[str], bool] | None = None, keep_all: bool = False, by: str = "quadrant",
 ) -> list[str]:
     """The chart after 3b changed the pool: surviving companies stay, and each
     quadrant short of its share (top_n/4) takes the best remaining company of
@@ -572,6 +576,9 @@ def refill_top_by_quadrant(
     mid_y = ys[mid] if len(ys) % 2 else (ys[mid - 1] + ys[mid]) / 2
     picked = [n for n in keep if n in xy and ok(n)]
     share = top_n // 4
+    if by == "overall":  # market brief chart_selection: top_overall -- vacated slots go to the best overall
+        picked += [n for n in by_overall if n not in picked][: max(0, top_n - len(picked))]
+        return sorted(picked, key=lambda n: (-overall[n], n))
     if not keep_all:
         for quad in ("Leaders", "Challengers", "Trailblazers", "Emerging Players"):
             members = sorted((n for n in picked if quadrant_of(*xy[n], mid_x, mid_y) == quad),

@@ -193,6 +193,10 @@ _EVIDENCE_HINT: dict[str, str] = {
 # second finding", AI Mode answered the first measure twice and the second not
 # at all (revenue figures, no growth). So every part is asked for by name, the
 # number of findings is open, and the gap-fill re-asks a part with no finding.
+# Owner 2026-10-19: open-ended asks brought 8-9 points on one parameter; the
+# report keeps at most MAX_SUPPORTING_POINTS per parameter (asked for here,
+# trimmed in company_facts.tidy_evidence with one point per part kept first).
+MAX_SUPPORTING_POINTS = 5
 _PART_SPLIT = re.compile(r"\s*(?:&|/|\+|,|;|\band\b)\s*", re.I)
 _PART_STOP = {"the", "of", "for", "in", "on", "to", "with", "its", "a", "an", "by", "level", "levels"}
 
@@ -233,26 +237,37 @@ def uncovered_parts(param: str, claims: list[str]) -> list[str]:
 
 
 def evidence_lines(param: str, *, sample: str = "named product, facility, standard or figure") -> str:
-    """The Evidence lines of the answer template for one parameter: one per
-    part the parameter names, then open-ended further findings (no limit)."""
+    """The Evidence lines of the answer template for one parameter, at most
+    MAX_SUPPORTING_POINTS: the points are shared out over the parts the
+    parameter names (owner 2026-10-19: 'Revenue & Growth' -> 2 on revenue, 2 on
+    growth, 1 more), so no part is left with a single weak line."""
     parts = parameter_parts(param)
     if len(parts) > 1:
-        lines = [f"Evidence: <a specific finding on {p.upper()} — {sample} — and its source; "
-                 "if none exists write exactly 'Not available'>" for p in parts]
+        each = max(1, MAX_SUPPORTING_POINTS // len(parts))
+        lines = []
+        for k in range(each):
+            for p in parts:
+                if len(lines) >= MAX_SUPPORTING_POINTS:
+                    break
+                nth = "a specific finding" if k == 0 else "another, different finding"
+                lines.append(f"Evidence: <{nth} on {p.upper()} — {sample} — and its source; "
+                             "if none exists write exactly 'Not available'>")
     else:
         lines = [f"Evidence: <first specific finding — {sample} — and its source>",
                  "Evidence: <a SECOND, different finding for this same parameter; if none exists write "
                  "exactly 'Not available'>"]
-    lines.append("Evidence: <EVERY further documented finding for this parameter, one per line, as many as "
-                 "genuinely exist (no limit) -- cover every part of the parameter name and every criterion "
-                 "in what it measures>")
+    if len(lines) < MAX_SUPPORTING_POINTS:
+        lines.append(f"Evidence: <up to {MAX_SUPPORTING_POINTS - len(lines)} further documented finding(s) for "
+                     f"this parameter, one per line -- never more than {MAX_SUPPORTING_POINTS} Evidence lines "
+                     "for this parameter>")
     return "\n".join(lines) + "\n"
 
 
 EVIDENCE_COVERAGE = (
-    "COVERAGE: give each parameter its own Evidence lines for EVERY part its name joins (for 'Revenue & "
-    "Growth' at least one finding on revenue AND one on growth) and for every criterion in what it "
-    "measures. There is no limit on Evidence lines: list every genuine, different, documented finding.")
+    f"COVERAGE: at most {MAX_SUPPORTING_POINTS} Evidence lines per parameter -- the strongest genuine, "
+    "different, documented findings -- shared out over EVERY part its name joins, each part covered "
+    "strongly (for 'Revenue & Growth' two findings on revenue AND two on growth, then one more) and "
+    "within what the parameter measures.")
 
 
 def build_part_query(
@@ -272,10 +287,15 @@ def build_part_query(
                         str(context).strip()) if b]
     about = f"\nAbout this company: {'; '.join(bits)}" if bits else ""
     what = f"\nWhat the parameter measures: {definition.strip()}" if str(definition).strip() else ""
+    # The whole parameter is asked when its only supporting point is "Not available".
+    which = ("" if part.strip().lower() == str(param).strip().lower()
+             else f", one part of the parameter '{param}'")
     return (
-        f"Find documented facts about the company {company}{where} on {part.upper()}, one part of the "
-        f"parameter '{param}'.{about}{what}\n\n"
-        "Answer ONLY with Evidence lines, one finding per line, as many as genuinely exist (no limit):\n"
+        f"Find documented facts about the company {company}{where} on {part.upper()}{which}.{about}{what}\n\n"
+        "Look at the company's own website and press releases, regulatory filings and approvals, annual "
+        "reports and investor presentations of the company or its parent group, and trade or industry "
+        "news.\n"
+        f"Answer ONLY with Evidence lines, one finding per line, at most {MAX_SUPPORTING_POINTS}:\n"
         f"Evidence: <a specific finding on {part} — named figure, product, contract, facility, certification "
         "or date — and its source>\n"
         "Evidence: <another, different finding>\n"

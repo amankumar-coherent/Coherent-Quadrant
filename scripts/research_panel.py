@@ -73,7 +73,8 @@ def ensure_manufacturers(orgs: list[str], market: str) -> list[str]:
     return [f"{product_phrase(market)} manufacturers"] + orgs[: N - 1]
 
 
-def build_prompt(market: str, definition: str, player: str, country: str, want: list[str]) -> tuple[str, str]:
+def build_prompt(market: str, definition: str, player: str, country: str, want: list[str],
+                 excluded: list[str] | None = None) -> tuple[str, str]:
     system = ("You are the research director of a B2B market research firm writing the framing text of a market "
               "report. Return compact JSON only with the keys asked for.")
     where = "" if country.lower() in ("", "global") else f" ({country.title()} only)"
@@ -95,9 +96,17 @@ def build_prompt(market: str, definition: str, player: str, country: str, want: 
                                "companies are outside this assessment. Describe them in the language of that "
                                "category, not of another one."),
     }
+    # Owner 2026-10-19: the slot "(2) suppliers" became "API and chemical
+    # substance suppliers" in a market whose brief excludes APIs. A segment the
+    # market excludes is never shown as an organisation type surveyed.
+    outside = "; ".join(str(e).strip() for e in excluded or [] if str(e).strip())
     user = (f"Market: {market}{where}\n"
             f"Companies compared in the report: {player}\n"
-            f"Market definition: {definition[:1800]}\n\n"
+            f"Market definition: {definition[:1800]}\n"
+            + (f"EXCLUDED from this market (never list any of these as an organisation type; when a slot above "
+               f"would name one, use another organisation type of this market's value chain instead): "
+               f"{outside[:1200]}\n" if outside else "")
+            + "\n"
             "Write:\n" + "\n".join(asks[k] for k in want)
             + "\nNo market-research firm, no website, no explanation outside the JSON.")
     return system, user
@@ -137,13 +146,14 @@ def main() -> int:
         pass
     definition = str(brief.get("market_definition") or analysis.get("market_definition") or args.market)
     player = str(brief.get("player_type") or analysis.get("primary_participant") or "companies")
+    excluded = list(brief.get("adjacent_segments") or analysis.get("adjacent_segments") or [])
 
     from vendor_intel.pipeline.chatgpt_expand import _ai_mode_json
 
     for attempt in (1, 2):
         if not want:
             break
-        system, user = build_prompt(args.market, definition, player, args.country, want)
+        system, user = build_prompt(args.market, definition, player, args.country, want, excluded)
         try:
             # No require_key: that check wants a non-empty LIST, and two of these
             # pieces are text -- each piece is validated below instead.

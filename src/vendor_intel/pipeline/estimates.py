@@ -106,8 +106,30 @@ def task_id(company: str, parameter: str, sentence: str) -> str:
     return hashlib.sha1(f"{company}|{parameter}|{sentence}".encode("utf-8")).hexdigest()[:16]
 
 
+# A full stop that ends an abbreviation, not a sentence: dotted initials
+# ("U.S.", "U.K.", "e.g.") and short legal / title forms ("Inc.", "Ltd.").
+_ABBR = re.compile(r"(?:\b(?:[A-Za-z]\.){2,}|\b(?:Inc|Ltd|Co|Corp|Pvt|Plc|No|vs|approx|Mr|Ms|Dr|St|Jr|Sr)\.)$")
+_STARTERS = {"the", "this", "these", "that", "it", "its", "as", "we", "our", "however", "based", "in", "a", "an",
+             "while", "although", "since", "they", "their", "there", "for", "on", "with", "by", "from", "per"}
+
+
 def sentences(text: str) -> list[str]:
-    return [s for s in _SENT.split(str(text or "").strip()) if s]
+    """Split into sentences, keeping an abbreviation inside its sentence: "the
+    company has not disclosed U.S. sales revenue" was cut at "U.S.", so the
+    estimate step asked AI Mode about "has not disclosed U.S." and got nothing
+    (22 of 200 gaps left empty in U.S. Entresto, owner 2026-10-19)."""
+    out: list[str] = []
+    for part in _SENT.split(str(text or "").strip()):
+        if not part:
+            continue
+        first = part.split(None, 1)[0]
+        if out and _ABBR.search(out[-1]) and (
+                not first[:1].isupper()
+                or (re.search(r"(?:[A-Za-z]\.){2,}$", out[-1]) and first.lower().strip(",;:") not in _STARTERS)):
+            out[-1] = f"{out[-1]} {part}"
+        else:
+            out.append(part)
+    return out
 
 
 def gap_object(sentence: str) -> str:
@@ -129,6 +151,17 @@ def _company_text(rec: dict) -> str:
             out += [str(e.get("claim") or "") for e in v.get("evidence") or [] if isinstance(e, dict)]
             out.append(str(v.get("assessed_on") or ""))
     return " ".join(out)
+
+
+def case_topic(topic: str, ref: str = "") -> str:
+    """AI Mode's metric title in sentence case ("Revenue Growth Rate" ->
+    "revenue growth rate"), keeping acronyms ("ERP", "U.S.") and every word
+    the gap sentence itself writes with a capital mid-sentence ("Entresto",
+    "New Jersey"): lowercasing everything printed "the company's u.s. generic
+    entresto market share" (owner 2026-10-19)."""
+    proper = {w.strip("(),;:") for w in str(ref or "").split()[1:] if w[:1].isupper()}
+    return " ".join(w if re.fullmatch(r"\(?[A-Z0-9/&.]{2,}\)?s?", w) or w.strip("(),;:") in proper else w.lower()
+                    for w in str(topic or "").split())
 
 
 def gap_tasks(evidence: dict, names: Iterable[str], figures_only: bool = True) -> list[dict]:
@@ -455,7 +488,7 @@ def judge(result: dict, task: dict, company_text: str, *, bad=None,
     metric = re.sub(r"\b(?:audited|independently|independent|third-party|verified|validated|documented|"
                     r"guaranteed|maximum|minimum)\s+", "", metric, flags=re.I)
     metric = re.sub(r"\s{2,}", " ", metric).strip(" ,.")
-    metric = " ".join(w if re.fullmatch(r"\(?[A-Z0-9/&]{2,}\)?s?", w) else w.lower() for w in metric.split())
+    metric = case_topic(metric, task.get("gap", ""))
     if kind not in ("disclosed", "estimated") or not _metric_ok(metric, task["object"]):
         return None
     if kind == "estimated" and not numeric_estimates_enabled():
@@ -472,7 +505,7 @@ def judge(result: dict, task: dict, company_text: str, *, bad=None,
         # states (company-reported, gathered in step 5).
         want = _numbers(result.get("basis"))
         indicators = [{"fact": s.strip(), "source": "company-reported evidence in this report"}
-                      for s in re.split(r"(?<=[.!?])\s+", company_text)
+                      for s in sentences(company_text)
                       if want & _numbers(s) and not bad.search(s)][:3]
     stated = False
     # An answer whose every source was a banned data / research site rests
@@ -739,6 +772,8 @@ _ONES = {w: i for i, w in enumerate(
 _TENS = {w: 10 * i for i, w in enumerate("_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()) if i > 1}
 _SCALE = {"thousand": 1_000, "million": 1_000_000}
 _BIG = ("million", "billion", "trillion")
+_MONTHS = ("January|February|March|April|May|June|July|August|September|October|November|December|"
+           "Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec")
 _NUMWORD = r"(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|" \
            r"sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|" \
            r"thousand|million|billion|trillion|point)"
@@ -782,7 +817,15 @@ def words_to_figures(text: str) -> str:
             head = _run_value(words[:-1]) if len(words) > 1 else None
             return f"{head} {words[-1]}" if head is not None else m.group(0)
         val = _run_value(words)
-        return val if val is not None else m.group(0)
+        if val is None:
+            return m.group(0)
+        # A year is written without a thousands comma: "in September two
+        # thousand twenty-six" read "September 2,026" (owner 2026-10-19).
+        before = m.string[max(0, m.start() - 12):m.start()]
+        if re.fullmatch(r"(?:19|20)\d\d", val.replace(",", "")) and re.search(
+                rf"\b(?:{_MONTHS}|in|since|until|year|fiscal|FY)\s*$", before, re.I):
+            return val.replace(",", "")
+        return val
 
     out = _NUMRUN.sub(sub, str(text or ""))
     out = re.sub(r"(\d)\s+percent\b", r"\1%", out)
@@ -796,7 +839,7 @@ def judge_worded(result: dict, task: dict, *, bad=None) -> dict | None:
     topic = re.sub(r"\s+", " ", str(result.get("metric") or "")).split(" / ")[0].strip(" .")
     topic = re.sub(r"\b(?:audited|independently|independent|third-party|verified|validated|documented|"
                    r"certified|guaranteed|exact|precise|specific|explicit|detailed)\s+", "", topic, flags=re.I)
-    topic = " ".join(w if re.fullmatch(r"\(?[A-Z0-9/&]{2,}\)?s?", w) else w.lower() for w in topic.split())
+    topic = case_topic(topic, task.get("gap", ""))
     topic = re.sub(r"^(?:its|the company's|the)\s+", "", topic).strip(" ,.")
     value = re.sub(r"\s+", " ", str(result.get("value") or "")).strip(" .")
     value = value[:1].lower() + value[1:] if value[:2] != value[:2].upper() else value

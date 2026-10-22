@@ -186,13 +186,15 @@ def main() -> int:
         for i, n in enumerate(scored_names)
     }
 
-    xs = [normalized[n][0] for n in scored_names]
-    ys = [normalized[n][1] for n in scored_names]
     assign = (
         assign_quadrants_half_median if args.force_even_quadrants
         else assign_quadrants_absolute_median
     )
-    quads, _midx, _midy = assign(xs, ys)
+    # Split on the unrounded banded values: rounding made two different
+    # companies tie at the cut, and the tie-safe cut (equals stay together)
+    # then gave 6/5/4/5 (India Spices, owner 2026-10-20). True equals still
+    # stay together.
+    quads, _midx, _midy = assign(list(xs_band), list(ys_band))
 
     xy_partial = []
     for name, quad in zip(scored_names, quads):
@@ -300,12 +302,18 @@ def main() -> int:
             tail.append((name, int(x_raw), int(y_raw), brand))
             seen.add(name)
 
-        # The same 65-100 floor as the evidence-backed rows, banded across
-        # the long tail's own cohort, so every exported X/Y respects the
-        # floor regardless of which scoring path produced it.
+        # The same 65-100 floor as the evidence-backed rows. Banded together
+        # with the chart companies' own quick scores, not across the long tail
+        # alone: a 3-company tail stretched its best member (raw 18 of 100,
+        # near the bottom of the market) to 90, above almost the whole chart
+        # (U.S. Entresto, owner 2026-10-19).
         if tail:
-            tx = normalize_cohort_to_band([t[1] for t in tail])
-            ty = normalize_cohort_to_band([t[2] for t in tail])
+            ref = [(int(fresh[n]["x_score"]), int(fresh[n]["y_score"])) for n in
+                   (row["Company"] for row in xy_partial)
+                   if str((fresh.get(n) or {}).get("x_score", "")).strip().isdigit()
+                   and str((fresh.get(n) or {}).get("y_score", "")).strip().isdigit()]
+            tx = normalize_cohort_to_band([r[0] for r in ref] + [t[1] for t in tail])[len(ref):]
+            ty = normalize_cohort_to_band([r[1] for r in ref] + [t[2] for t in tail])[len(ref):]
             t_norm = [(int(round(a)), int(round(b))) for a, b in zip(tx, ty)]
             t_quads, _, _ = assign_quadrants_absolute_median(
                 [a for a, _ in t_norm], [b for _, b in t_norm]

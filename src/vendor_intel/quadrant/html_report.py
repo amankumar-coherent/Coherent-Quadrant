@@ -1142,11 +1142,14 @@ def _strength_table(
             v["company"], _strength_fill_count(n, floor=floor, ceiling=ceiling)
         )
 
-    # 5-filled rows first, then 4, then 3... ties broken by the raw Overall
-    # score so the ordering within one fill level still reads high-to-low.
+    # Quadrant first -- every Leader, then Challengers, Trailblazers, Emerging
+    # Players (owner 2026-10-21) -- then within a quadrant 5-filled rows first,
+    # then 4, 3..., ties broken by the raw Overall score high-to-low.
+    quad_rank = {"leaders": 3, "challengers": 2, "trailblazers": 1, "emerging players": 0}
     views = sorted(
         views,
-        key=lambda v: (_fill_for(v), v["overall_score"] if v["overall_score"] is not None else -1),
+        key=lambda v: (quad_rank.get(str(v.get("quadrant") or "").strip().lower(), -1), _fill_for(v),
+                       v["overall_score"] if v["overall_score"] is not None else -1),
         reverse=True,
     )
     rows = []

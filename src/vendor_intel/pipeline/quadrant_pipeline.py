@@ -279,6 +279,12 @@ def part_gaps(
                 for part in uncovered_parts(p, claims):
                     if f"{n}|{p}|{part}" not in done:
                         out.setdefault(n, []).append([axis, p, part])
+                # A parameter whose only supporting point is "Not available" is
+                # asked about once more on its own, whole (owner 2026-10-19: 35
+                # parameters of a 20-company chart showed only "Not available").
+                real = [c for c in claims if c.strip() and not c.strip().lower().startswith("not available")]
+                if not real and f"{n}|{p}|{p}" not in done and [axis, p, p] not in out.get(n, []):
+                    out.setdefault(n, []).append([axis, p, p])
     return out
 
 
@@ -344,7 +350,7 @@ def quadrant_of(x: float, y: float, mid_x: float, mid_y: float) -> str:
 
 
 def select_top_by_quadrant(
-    xy: dict[str, tuple[float, float]], top_n: int = 20
+    xy: dict[str, tuple[float, float]], top_n: int = 20, *, by: str = "quadrant"
 ) -> list[str]:
     """The chart's Top N: the best top_n/4 companies (by Overall = mean of
     X and Y) from EACH quadrant of the scored pool.
@@ -355,12 +361,19 @@ def select_top_by_quadrant(
     with the strongest all-rounders and leave Challengers / Trailblazers /
     Emerging Players empty. A quadrant with fewer than its share gives its
     free slots to the best remaining companies overall.
+
+    ``by="overall"`` (market brief ``"chart_selection": "top_overall"``)
+    takes the top_n strongest overall instead; the composite step still
+    places them 5 per quadrant by rank. In a large market whose leading
+    brands all score high (India Spices: 153 companies) the per-quadrant
+    rule charted only 5 of them and filled 15 slots with ranks 41-95
+    (owner 2026-10-20).
     """
     names = sorted(xy)
     overall = {n: (xy[n][0] + xy[n][1]) / 2 for n in names}
     by_overall = sorted(names, key=lambda n: (-overall[n], n))
-    if len(names) <= top_n:
-        return by_overall
+    if len(names) <= top_n or by == "overall":
+        return by_overall[:top_n]
     xs = sorted(v[0] for v in xy.values())
     ys = sorted(v[1] for v in xy.values())
     mid = len(xs) // 2

@@ -569,8 +569,14 @@ function filteredOthers(){
     return c.brand.toLowerCase().indexOf(term) >= 0 ||
            c.company.toLowerCase().indexOf(term) >= 0 ||
            c.hq.toLowerCase().indexOf(term) >= 0; });
-  /* Owner's rule: the long tail is ranked by strength, strongest first. */
-  return matched.slice().sort(function(a,b){ return (b.overallScore || 0) - (a.overallScore || 0); }); }
+  /* Owner's rule (2026-10-21): the long tail is grouped by quadrant -- every Leader,
+     then Challengers, Trailblazers, Emerging Players -- and ranked by strength,
+     strongest first, within each quadrant. */
+  var qRank = {'leaders': 3, 'challengers': 2, 'trailblazers': 1, 'emerging players': 0};
+  function level(c){ return strengthDots(c.overallScore).filter(Boolean).length; }
+  function qr(c){ var k = String(c.quadrant || '').trim().toLowerCase(); return k in qRank ? qRank[k] : -1; }
+  return matched.slice().sort(function(a,b){
+    return (qr(b) - qr(a)) || (level(b) - level(a)) || ((b.overallScore || 0) - (a.overallScore || 0)); }); }
 
 function othersHTML(){
   if (!report.others.length) return '';

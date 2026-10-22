@@ -687,6 +687,9 @@ _SRC_TAIL = (r"(?:\s+(?:user|supplier|company|corporate|business|product|officia
              r"asset|technical|operations|profile|profiles|page|portal|listing|listings|storefront|"
              r"registry|directory|showroom|catalog|catalogue|specifications?|logs?|documents?|"
              r"database|data|update|post))*")
+# The legal or "Ratings" word after a third party's name goes with it ("ICRA
+# Limited", "CRISIL Ratings"), or the sentence keeps "reports from Limited".
+_ORG_SUFFIX = r"(?:\s+(?:Ratings?|Private\s+Limited|Limited|Ltd\.?|Inc\.?)(?![\w-]))?"
 _ATTR_VERB = (r"(?:detailed|documented|disclosed|listed|outlined|stated|reported|shown|noted|"
               r"indicated|recorded|described|confirmed|published|featured|presented)")
 
@@ -741,7 +744,7 @@ def neutral_sources(text: str) -> str:
     tp = third_party_re()
     if not tp.search(s):
         return s
-    name = rf"(?:(?:the|its|an?)\s+)?(?:{tp.pattern}){_SRC_TAIL}"
+    name = rf"(?:(?:the|its|an?)\s+)?(?:{tp.pattern}){_ORG_SUFFIX}{_SRC_TAIL}"
     # Links and bare domains of a third-party site (a quoted title after a link too).
     s = re.sub(r'\s*\(?https?://\S+\)?(?:\s+"[^"]*")?',
                lambda m: "" if tp.search(m.group(0)) else m.group(0), s)
@@ -762,7 +765,9 @@ def neutral_sources(text: str) -> str:
     s = re.sub(rf"(?<=\s){name}\s+and\s+(?=[A-Z])", "", s, flags=re.I)
     s = re.sub(r"\b(by|from|on|via|in)\s+and\s+(?=[A-Z])", r"\1 ", s)
     # A platform as the agent of a verb: "a review by CRISIL indicated" -> "a review indicated".
-    s = re.sub(rf"\s+by\s+{name}(?=\s+[a-z])", "", s, flags=re.I)
+    # The next word must really be lowercase (a verb): under re.I "[a-z]" also
+    # matched "Limited" and cut "by ICRA" out of "as published by ICRA Limited".
+    s = re.sub(rf"\s+by\s+{name}(?=\s+(?-i:[a-z]))", "", s, flags=re.I)
     # A document passed through a platform: "retrieved from Scribd", "via Issuu".
     s = re.sub(rf"\s+(?:documented by|retrieved from|hosted on|uploaded to|published via|via)\s+{name}",
                "", s, flags=re.I)
@@ -770,8 +775,14 @@ def neutral_sources(text: str) -> str:
     s = re.sub(rf",?\s*(?:according to|as {_ATTR_VERB}(?:\s+(?:on|by|in|via|at|through))?)\s+{name}",
                ", according to primary research", s, flags=re.I)
     s = re.sub(rf"\s+{_ATTR_VERB}\s+(?:on|by|in|at)\s+{name}", "", s, flags=re.I)
-    # Anything left: drop the bare name, then any preposition it leaves dangling.
-    s = tp.sub("", s)
+    # Anything left: drop the bare name (with the legal or "Ratings" word after it:
+    # "reports from ICRA Limited" read "reports from Limited"), then any
+    # preposition it leaves dangling.
+    s = re.sub(rf"(?:{tp.pattern}){_ORG_SUFFIX}", "", s, flags=re.I)
+    # A rating symbol that carried the agency's name: "'CRISIL AAA/Stable'" ->
+    # "' AAA/Stable'", "[ICRA]A-" -> "[]A-".
+    s = re.sub(r"\[\s*\]", "", s)
+    s = re.sub(r"(^|[\s(])(['\"‘“])\s+(?=\S)", r"\1\2", s)
     s = re.sub(r"(?:^|\s+)(?:on|by|via|in|at|from|through|of)\s*(?=[.,;:)]|$)", "", s)
     s = re.sub(r"according to\s*(?=[.,;]|$)", "according to primary research", s)
     # "an official corporate announcement, according to primary research" -> one attribution
@@ -831,7 +842,8 @@ def drop_invalid_sources(out_dir: Path) -> int:
 
 def tidy_evidence(out_dir: Path) -> int:
     """Apply tidy_claim to every supporting point, then the parameter rule:
-    "Not available" only when there is no real finding, and then once."""
+    "Not available" only when there is no real finding, and then once; at most
+    MAX_SUPPORTING_POINTS per parameter."""
     changed = 0
     for side in sorted(Path(out_dir).glob("param_detail_prescored*.json")):
         part = _read(side, None)
@@ -842,7 +854,7 @@ def tidy_evidence(out_dir: Path) -> int:
             if not isinstance(rec, dict):
                 continue
             for axis in ("x", "y"):
-                for v in ((rec.get(axis) or {}).get("parameters") or {}).values():
+                for pname, v in ((rec.get(axis) or {}).get("parameters") or {}).items():
                     if not isinstance(v, dict) or not isinstance(v.get("evidence"), list):
                         continue
                     # No third-party name anywhere in the report: estimate
@@ -876,7 +888,14 @@ def tidy_evidence(out_dir: Path) -> int:
                                 e["claim"] = new
                                 changed += 1
                                 dirty = True
-                    kept = drop_restated(collapse_not_available(ev))
+                        # The bullet's source field ships in the JSON too (a crisil.com
+                        # rating-document link was left there).
+                        if isinstance(e, dict) and isinstance(e.get("source"), str) \
+                                and neutral_source_label(e["source"]) != e["source"]:
+                            e["source"] = neutral_source_label(e["source"])
+                            changed += 1
+                            dirty = True
+                    kept = cap_points(drop_restated(collapse_not_available(ev)), pname)
                     if len(kept) != len(ev):
                         v["evidence"] = kept
                         dirty = True
@@ -924,6 +943,39 @@ def drop_restated(ev: list) -> list:
         seen.append((nums, words))
         kept.append(e)
     return kept
+
+
+def cap_points(ev: list, param: str, limit: int | None = None) -> list:
+    """At most `limit` supporting points (owner 2026-10-19: 8-9 on one
+    parameter is too many). On a multi-part parameter ("Revenue & Growth")
+    the points are taken in turn from each part -- revenue, growth, revenue,
+    growth, ... -- so every part keeps its share and none fills all the slots;
+    points that match no part come last. Order within a part is kept."""
+    from vendor_intel.quadrant.ai_mode_scorer import MAX_SUPPORTING_POINTS, parameter_parts, part_covered
+
+    limit = MAX_SUPPORTING_POINTS if limit is None else limit
+    if len(ev) <= limit:
+        return ev
+
+    def claim(e: Any) -> str:
+        return str((e.get("claim") if isinstance(e, dict) else e) or "")
+
+    parts = parameter_parts(param)
+    if len(parts) < 2:
+        return ev[:limit]
+    # Each point counts for the first part it speaks to.
+    buckets: list[list[int]] = [[] for _ in parts]
+    rest: list[int] = []
+    for i, e in enumerate(ev):
+        k = next((k for k, p in enumerate(parts) if part_covered(p, [claim(e)])), None)
+        (buckets[k] if k is not None else rest).append(i)
+    pick: list[int] = []
+    while len(pick) < limit and any(buckets):
+        for b in buckets:
+            if b and len(pick) < limit:
+                pick.append(b.pop(0))
+    pick += rest[: limit - len(pick)]
+    return [ev[i] for i in sorted(pick)]
 
 
 def collapse_not_available(ev: list) -> list:
