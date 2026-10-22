@@ -1,0 +1,40 @@
+[facts 09:23:03] ownership: 15 companies, 15 to check
+      · own-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_52_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · own-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+      · own-2: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · own-2: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_52_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · own-2: calling Google AI Mode (udm=50) attempt 2/5…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · own-2: rate limited (rate limited by Google (2 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_52_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · own-2: calling Google AI Mode (udm=50) attempt 3/6…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #3)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_52_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+  [ai-mode] captchas — archiving profile and starting clean (reset #4)
+  [ai-mode] killed 1 orphaned browser process(es)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_52_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · own-2: rate limited (rate limited by Google (1 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #5)
+  [ai-mode] killed 3 orphaned browser process(es)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_52_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · own-2: calling Google AI Mode (udm=50) attempt 4/7…
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · own-2: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 56s ago
+[facts 09:36:05] ownership: 1 unclear, asking one at a time
+      · own-one-Jiangmen Goshen Equi: calling Google AI Mode (udm=50) attempt 1/4…
+      · own-one-Jiangmen Goshen Equi: AI Mode JSON parse OK — 2 CAPTCHAs this run, last 78s ago
+[facts 09:36:28] ownership: 15 answers saved -> facts_ownership_shard11.json

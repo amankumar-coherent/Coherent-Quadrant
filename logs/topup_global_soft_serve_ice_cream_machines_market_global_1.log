@@ -1,0 +1,39 @@
+[rounds 09:12:52] verify only: 4 unchecked companies
+    → substep 4a: verify 4 candidates as Manufacturer in 1 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1 (4 companies, 0/4 done)…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · verify-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · verify-1: calling Google AI Mode (udm=50) attempt 2/4…
+      · verify-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · verify-1: calling Google AI Mode (udm=50) attempt 3/4…
+      · verify-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+      · verify-1: calling Google AI Mode (udm=50) attempt 4/4…
+      · verify-1: unusable reply (no JSON object found in AI Mode answer: line 1 column 1 (char 0)) — asking for shorter JSON
+Traceback (most recent call last):
+  File "C:\Users\aman.kumar\Coherent-Quadrant\scripts\discover_verify_rounds.py", line 160, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\aman.kumar\Coherent-Quadrant\scripts\discover_verify_rounds.py", line 104, in main
+    kept, rej = ce.gpt_verify_market(
+                ~~~~~~~~~~~~~~~~~~~~^
+        client, model, query=args.market, family=family, companies=new,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        country=args.country,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aman.kumar\Coherent-Quadrant\src\vendor_intel\pipeline\chatgpt_expand.py", line 2873, in gpt_verify_market
+    data = _chat_json(
+        client,
+    ...<9 lines>...
+        require_key="results",
+    )
+  File "C:\Users\aman.kumar\Coherent-Quadrant\src\vendor_intel\pipeline\chatgpt_expand.py", line 1428, in _chat_json
+    return _ai_mode_json(system, user, label=label, require_key=require_key)
+  File "C:\Users\aman.kumar\Coherent-Quadrant\src\vendor_intel\pipeline\chatgpt_expand.py", line 1402, in _ai_mode_json
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: verify-1: Google AI Mode failed after 4 attempts (no API fallback is configured): no JSON object found in AI Mode answer: line 1 column 1 (char 0)

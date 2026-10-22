@@ -1,0 +1,638 @@
+[pipeline 04:36:51] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 04:36:51]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 04:36:51]    market brief: player_type = Manufacturer
+[pipeline 04:36:51]    market brief: market_type = B2B
+[pipeline 04:36:51] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 04:36:53] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 04:36:53] 1. verified rows: 38
+[pipeline 04:36:59] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 04:37:05] 2c. research panel: 5 organisation types, 5 designations -> _pipeline/research_panel.json
+[pipeline 04:37:05] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 04:37:05] 3b. operating-status check for 33 companies across 4 browser(s)
+[pipeline 04:39:13] 3b. 4 companies left out (not active or excluded by review): ['Accord Healthcare Inc.', 'Crystal Pharmaceutical', 'Solco Healthcare US, LLC', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 04:39:13] ownership: 29 companies across 10 browser(s)
+[pipeline 04:39:34] ownership: 8/10 shard(s) still running
+[pipeline 04:40:34] ownership: 4/10 shard(s) still running
+[pipeline 04:41:34] ownership: 3/10 shard(s) still running
+[pipeline 04:42:34] ownership: 2/10 shard(s) still running
+[pipeline 04:43:34] ownership: 1/10 shard(s) still running
+[pipeline 04:43:44] scope: 29 companies across 10 browser(s)
+[pipeline 04:44:05] scope: 7/10 shard(s) still running
+[pipeline 04:44:55] 3c. ownership 29 / identity 0 / scope 29 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 04:44:55] hq: 16 companies across 10 browser(s)
+[pipeline 04:45:16] hq: 7/10 shard(s) still running
+[pipeline 04:45:46] 3d. HQ missing for 16 companies: 16 found in AI Mode ['Alembic Pharmaceuticals Inc. -> Bedminster, United States', 'Ascend Laboratories LLC -> Bedminster, United States', 'Aurobindo Pharma USA Inc. -> East Windsor, United States', 'Avet Pharmaceuticals Inc. -> East Brunswick, United States', 'Biocon Pharma Inc. -> Iselin, United States', 'Camber Pharmaceuticals Inc. -> Piscataway, United States']
+[pipeline 04:45:46] 4. quick X/Y scorecard scoring needed for 25 companies (1 Product + 1 Business query each)
+[pipeline 04:45:46] overall: 25 companies across 10 browser(s)
+[pipeline 04:46:06] overall: 10/10 shard(s) still running
+[pipeline 04:47:06] overall: 10/10 shard(s) still running
+[pipeline 04:48:07] overall: 3/10 shard(s) still running
+[pipeline 04:48:22] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 04:48:22]    Top 20 chosen 5 per quadrant from 24 quick-scored companies
+[pipeline 04:48:22]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 04:48:22] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 04:48:22] 5. evidence round 1: 20 companies with gaps
+[pipeline 04:48:22] evidence_r1: 20 companies across 10 browser(s)
+[pipeline 04:48:43] evidence_r1: 10/10 shard(s) still running
+[pipeline 04:49:43] evidence_r1: 4/10 shard(s) still running
+[pipeline 04:50:18] reasoning_r1: 20 companies across 10 browser(s)
+[pipeline 04:50:39] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:51:39] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:52:39] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:53:40] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:54:40] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:55:41] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:56:42] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:57:42] reasoning_r1: 10/10 shard(s) still running
+[pipeline 04:58:42] reasoning_r1: 1/10 shard(s) still running
+[pipeline 04:59:12] 5. evidence round 2: 20 companies with gaps
+[pipeline 04:59:12] reasoning_r2: 20 companies across 10 browser(s)
+[pipeline 04:59:33] reasoning_r2: 10/10 shard(s) still running
+[pipeline 05:00:33] reasoning_r2: 10/10 shard(s) still running
+[pipeline 05:01:33] reasoning_r2: 10/10 shard(s) still running
+[pipeline 05:02:33] reasoning_r2: 1/10 shard(s) still running
+[pipeline 05:03:08] 5. evidence round 3: 11 companies with gaps
+[pipeline 05:03:08] reasoning_r3: 11 companies across 10 browser(s)
+[pipeline 05:03:29] reasoning_r3: 10/10 shard(s) still running
+[pipeline 05:04:14] 5b. parameter parts without a supporting point: 265 in 20 companies
+[pipeline 05:04:14] partfill: 20 companies across 10 browser(s)
+[pipeline 05:04:35] partfill: 10/10 shard(s) still running
+[pipeline 05:05:35] partfill: 10/10 shard(s) still running
+[pipeline 05:06:36] partfill: 10/10 shard(s) still running
+[pipeline 05:07:36] partfill: 10/10 shard(s) still running
+[pipeline 05:08:36] partfill: 10/10 shard(s) still running
+[pipeline 05:09:36] partfill: 10/10 shard(s) still running
+[pipeline 05:10:36] partfill: 9/10 shard(s) still running
+[pipeline 05:11:36] partfill: 9/10 shard(s) still running
+[pipeline 05:12:25] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 05:12:25]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:12:25]    market brief: player_type = Manufacturer
+[pipeline 05:12:25]    market brief: market_type = B2B
+[pipeline 05:12:25] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 05:12:32] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 05:12:32] 1. verified rows: 38
+[pipeline 05:12:32] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 05:12:33] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 05:12:33] 3b. 3 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'Solco Healthcare US, LLC', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 05:12:33] ownership: 1 companies across 1 browser(s)
+[pipeline 05:12:35] ownership: 1/1 shard(s) still running
+[pipeline 05:12:45] scope: 1 companies across 1 browser(s)
+[pipeline 05:12:47] scope: 1/1 shard(s) still running
+[pipeline 05:13:02] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:13:02] hq: 1 companies across 1 browser(s)
+[pipeline 05:13:04] hq: 1/1 shard(s) still running
+[pipeline 05:13:14] 3d. HQ missing for 1 companies: 1 found in AI Mode ['Accord Healthcare Inc. -> Durham, United States']
+[pipeline 05:13:14] 4. quick X/Y scorecard scoring needed for 1 companies (1 Product + 1 Business query each)
+[pipeline 05:13:14] overall: 1 companies across 1 browser(s)
+[pipeline 05:13:16] overall: 1/1 shard(s) still running
+[pipeline 05:14:01] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 05:14:01]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 05:14:01] 5. 5 supporting point(s) on invalid sources removed before gap-fill
+[pipeline 05:14:01] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 05:14:01] 5. evidence round 1: 3 companies with gaps
+[pipeline 05:14:01] reasoning_r1: 3 companies across 3 browser(s)
+[pipeline 05:14:07] reasoning_r1: 3/3 shard(s) still running
+[pipeline 05:14:37] 5b. parameter parts without a supporting point: 67 in 10 companies
+[pipeline 05:14:37] partfill: 10 companies across 10 browser(s)
+[pipeline 05:14:58] partfill: 9/10 shard(s) still running
+[pipeline 05:15:58] partfill: 6/10 shard(s) still running
+[pipeline 05:16:58] partfill: 5/10 shard(s) still running
+[pipeline 05:17:58] partfill: 3/10 shard(s) still running
+[pipeline 05:18:33]    WARNING: only 25 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:18:33]    --keep 120: 20 chart/evidence + 5 long tail kept, 0 lower-scored dropped
+[pipeline 05:18:33]    20 companies with full evidence, 5 in the long tail
+[pipeline 05:18:33] 6. composite scores (5 per quadrant)
+[pipeline 05:18:35] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:18:38] 7c. gaps: 200 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 05:21:27] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 180 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:21:28] 7b. supporting points: 197 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 05:21:28] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories
+[pipeline 05:21:28] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals
+[pipeline 05:21:28] 8. building HTML / JSON / CSV report
+[pipeline 05:21:30] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 05:21:30] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 05:28:22] 8a. chart fact-check (attempt 2) on 10 browser(s)
+[pipeline 05:28:49] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 2 scope, 0 ownership, 0 hq, 45 corrections (analyst review wins where both touch the same text)
+[pipeline 05:28:49] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 05:28:51] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 05:28:51]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:28:51]    market brief: player_type = Manufacturer
+[pipeline 05:28:51]    market brief: market_type = B2B
+[pipeline 05:28:51] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 05:28:54] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 05:28:54] 1. verified rows: 38
+[pipeline 05:28:56] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 05:28:56] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 05:28:56] 3b. 5 companies left out (not active or excluded by review): ['Ascend Laboratories LLC', 'Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 05:28:56] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 1 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:28:56] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:28:56] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 05:28:56]    Top 20 refilled after 3b: added ['Somerset Therapeutics LLC', 'Teva Pharmaceuticals USA, Inc.']
+[pipeline 05:28:57]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 05:28:57] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 05:28:57] 5. evidence round 1: 2 companies with gaps
+[pipeline 05:28:57] evidence_r1: 2 companies across 2 browser(s)
+[pipeline 05:29:01] evidence_r1: 2/2 shard(s) still running
+[pipeline 05:30:01] evidence_r1: 2/2 shard(s) still running
+[pipeline 05:31:01] evidence_r1: 2/2 shard(s) still running
+[pipeline 05:32:01] evidence_r1: 2/2 shard(s) still running
+[pipeline 05:33:01] 5b. parameter parts without a supporting point: 32 in 4 companies
+[pipeline 05:33:01] partfill: 4 companies across 4 browser(s)
+[pipeline 05:33:14] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 05:33:14]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:33:14]    market brief: player_type = Manufacturer
+[pipeline 05:33:14]    market brief: market_type = B2B
+[pipeline 05:33:14] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 05:33:17] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 05:33:17] 1. verified rows: 38
+[pipeline 05:33:18] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 05:33:18] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 05:33:18] 3b. 4 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 05:33:18] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:33:18] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:33:18] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 05:33:18]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 05:33:18] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 05:33:18] 5b. parameter parts without a supporting point: 32 in 4 companies
+[pipeline 05:33:18] partfill: 4 companies across 4 browser(s)
+[pipeline 05:33:26] partfill: 4/4 shard(s) still running
+[pipeline 05:34:26] partfill: 2/4 shard(s) still running
+[pipeline 05:35:26] partfill: 2/4 shard(s) still running
+[pipeline 05:36:26] partfill: 2/4 shard(s) still running
+[pipeline 05:37:26] partfill: 2/4 shard(s) still running
+[pipeline 05:38:26] partfill: 1/4 shard(s) still running
+[pipeline 05:39:26] partfill: 1/4 shard(s) still running
+[pipeline 05:39:36]    WARNING: only 24 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:39:36]    --keep 120: 20 chart/evidence + 4 long tail kept, 0 lower-scored dropped
+[pipeline 05:39:36]    20 companies with full evidence, 4 in the long tail
+[pipeline 05:39:36] 6. composite scores (5 per quadrant)
+[pipeline 05:39:38] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:39:41] 7c. gaps: 49 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 05:42:29] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 28 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:42:30] 7b. supporting points: 16 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 05:42:30] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 05:42:30] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 05:42:32] 7b. analyst corrections: 45 text(s) changed from 45 correction(s)
+[pipeline 05:42:32] 8. building HTML / JSON / CSV report
+[pipeline 05:42:35] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 05:42:35] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 05:44:27] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 05:44:27] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 05:44:29] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 05:44:29]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:44:29]    market brief: player_type = Manufacturer
+[pipeline 05:44:29]    market brief: market_type = B2B
+[pipeline 05:44:29] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 05:44:32] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 05:44:32] 1. verified rows: 38
+[pipeline 05:44:33] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 05:44:33] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 05:44:33] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 05:44:33] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:44:33] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:44:33] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 05:44:33]    Top 20 refilled after 3b: added ['Ascend Laboratories LLC']
+[pipeline 05:44:33]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 05:44:34] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 05:44:34]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:44:34]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 05:44:34]    20 companies with full evidence, 3 in the long tail
+[pipeline 05:44:34] 6. composite scores (5 per quadrant)
+[pipeline 05:44:35] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:44:38] 7c. gaps: 1 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 05:44:51] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:44:52] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 05:44:52] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 05:44:53] 7b. analyst corrections: 4 text(s) changed from 49 correction(s)
+[pipeline 05:44:53] 8. building HTML / JSON / CSV report
+[pipeline 05:44:57] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 05:44:58] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 05:44:58] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 05:44:59] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 05:44:59]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:44:59]    market brief: player_type = Manufacturer
+[pipeline 05:44:59]    market brief: market_type = B2B
+[pipeline 05:44:59] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 05:45:04] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 05:45:04] 1. verified rows: 38
+[pipeline 05:45:06] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 05:45:06] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 05:45:06] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 05:45:06] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:45:06] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:45:06] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 05:45:06]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 05:45:06] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 05:45:06]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:45:06]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 05:45:06]    20 companies with full evidence, 3 in the long tail
+[pipeline 05:45:06] 6. composite scores (5 per quadrant)
+[pipeline 05:45:10] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:45:16] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:45:18] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 05:45:18] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 05:45:19] 7b. analyst corrections: 0 text(s) changed from 49 correction(s)
+[pipeline 05:45:19] 8. building HTML / JSON / CSV report
+[pipeline 05:45:23] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 05:45:23] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 05:45:47] 8b. PDF report: u_s_entresto_market_global_report.pdf
+[pipeline 05:47:10] 8b. Word report: u_s_entresto_market_global_report.docx
+[pipeline 05:47:11] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 23 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 05:47:11] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\u_s_entresto_market_global_report.html
+exit=0
+[pipeline 05:59:48] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 05:59:48]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 05:59:48]    market brief: player_type = Manufacturer
+[pipeline 05:59:48]    market brief: market_type = B2B
+[pipeline 05:59:48] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 05:59:51] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 05:59:51] 1. verified rows: 38
+[pipeline 05:59:52] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 05:59:52] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 05:59:52] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 05:59:52] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 05:59:52] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 05:59:52] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 05:59:52]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 05:59:52] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 05:59:52]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 05:59:52]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 05:59:52]    20 companies with full evidence, 3 in the long tail
+[pipeline 05:59:52] 6. composite scores (5 per quadrant)
+[pipeline 05:59:53] 7. rewriting hedge wording / first person in evidence
+[pipeline 05:59:56] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 05:59:56] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 05:59:56] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 05:59:57] 7b. analyst corrections: 0 text(s) changed from 49 correction(s)
+[pipeline 05:59:57] 8. building HTML / JSON / CSV report
+[pipeline 05:59:59] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 05:59:59] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 06:00:17] 8b. PDF report: u_s_entresto_market_global_report.pdf
+[pipeline 06:01:14] 8b. Word report: u_s_entresto_market_global_report.docx
+[pipeline 06:01:15] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 23 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:01:15] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\u_s_entresto_market_global_report.html
+exit=0
+[pipeline 06:04:27] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 06:04:27]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:04:27]    market brief: player_type = Manufacturer
+[pipeline 06:04:27]    market brief: market_type = B2B
+[pipeline 06:04:27] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 06:04:29] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:04:29] 1. verified rows: 38
+[pipeline 06:04:30] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 06:04:30] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 06:04:30] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 06:04:30] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 06:04:30] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:04:30] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 06:04:30]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 06:04:30] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 06:04:30]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:04:30]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 06:04:30]    20 companies with full evidence, 3 in the long tail
+[pipeline 06:04:30] 6. composite scores (5 per quadrant)
+[pipeline 06:04:31] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:04:33] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:04:34] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 06:04:34] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 06:04:35] 7b. analyst corrections: 0 text(s) changed from 49 correction(s)
+[pipeline 06:04:35] 8. building HTML / JSON / CSV report
+[pipeline 06:04:37] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 06:04:37] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 06:04:53] 8b. PDF report: u_s_entresto_market_global_report.pdf
+[pipeline 06:05:48] 8b. Word report: u_s_entresto_market_global_report.docx
+[pipeline 06:05:50] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 23 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:05:50] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\u_s_entresto_market_global_report.html
+exit=0
+[pipeline 06:24:42] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 06:24:42]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:24:42]    market brief: player_type = Manufacturer
+[pipeline 06:24:42]    market brief: market_type = B2B
+[pipeline 06:24:42] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 06:24:44] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:24:44] 1. verified rows: 38
+[pipeline 06:24:45] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 06:24:45] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 06:24:45] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 06:24:45] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 06:24:45] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:24:45] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 06:24:45]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 06:24:45] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 06:24:45]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:24:45]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 06:24:45]    20 companies with full evidence, 3 in the long tail
+[pipeline 06:24:45] 6. composite scores (5 per quadrant)
+[pipeline 06:24:46] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:24:48] 7c. gaps: 21 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 06:26:34] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 21 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:26:34] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 06:26:34] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 06:26:35] 7b. analyst corrections: 0 text(s) changed from 49 correction(s)
+[pipeline 06:26:35] 8. building HTML / JSON / CSV report
+[pipeline 06:26:37] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 06:26:37] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 06:26:52] 8b. PDF report: u_s_entresto_market_global_report.pdf
+[pipeline 06:27:46] 8b. Word report: u_s_entresto_market_global_report.docx
+[pipeline 06:27:47] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 23 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:27:47] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\u_s_entresto_market_global_report.html
+exit=0
+[pipeline 06:30:46] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 06:30:46]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:30:46]    market brief: player_type = Manufacturer
+[pipeline 06:30:46]    market brief: market_type = B2B
+[pipeline 06:30:46] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 06:30:48] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:30:48] 1. verified rows: 38
+[pipeline 06:30:49] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 06:30:49] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 06:30:49] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 06:30:49] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 06:30:49] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:30:49] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 06:30:49]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 06:30:49] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 06:30:49]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:30:49]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 06:30:49]    20 companies with full evidence, 3 in the long tail
+[pipeline 06:30:49] 6. composite scores (5 per quadrant)
+[pipeline 06:30:50] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:30:51] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:30:52] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 06:30:52] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 06:30:53] 7b. analyst corrections: 0 text(s) changed from 49 correction(s)
+[pipeline 06:30:53] 8. building HTML / JSON / CSV report
+[pipeline 06:30:54] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 06:30:54] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 06:31:07] 8b. PDF report: u_s_entresto_market_global_report.pdf
+[pipeline 06:32:01] 8b. Word report: u_s_entresto_market_global_report.docx
+[pipeline 06:32:02] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 23 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:32:02] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\u_s_entresto_market_global_report.html
+exit=0
+[pipeline 06:33:42] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 06:33:42]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:33:42]    market brief: player_type = Manufacturer
+[pipeline 06:33:42]    market brief: market_type = B2B
+[pipeline 06:33:42] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 06:33:44] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:33:44] 1. verified rows: 38
+[pipeline 06:33:44] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 06:33:44] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 06:33:44] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 06:33:44] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 06:33:44] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:33:44] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 06:33:44]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 06:33:45] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 06:33:45]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:33:45]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 06:33:45]    20 companies with full evidence, 3 in the long tail
+[pipeline 06:33:45] 6. composite scores (5 per quadrant)
+[pipeline 06:33:46] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:33:47] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:33:48] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 06:33:48] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 06:33:48] 7b. analyst corrections: 2 text(s) changed from 51 correction(s)
+[pipeline 06:33:48] 8. building HTML / JSON / CSV report
+[pipeline 06:33:49] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 06:33:50] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 49 corrections (analyst review wins where both touch the same text)
+[pipeline 06:34:03] 8b. PDF report: u_s_entresto_market_global_report.pdf
+[pipeline 06:34:59] 8b. Word report: u_s_entresto_market_global_report.docx
+[pipeline 06:35:00] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 23 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:35:00] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\u_s_entresto_market_global_report.html
+exit=0
+[pipeline 06:37:08] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 06:37:08]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:37:08]    market brief: player_type = Manufacturer
+[pipeline 06:37:08]    market brief: market_type = B2B
+[pipeline 06:37:08] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 06:37:11] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:37:11] 1. verified rows: 38
+[pipeline 06:37:11] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 06:37:11] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 06:37:11] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 06:37:12] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 06:37:12] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:37:12] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 06:37:12]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 06:37:12] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 06:37:12] 5b. parameter parts without a supporting point: 35 in 17 companies
+[pipeline 06:37:12] partfill: 17 companies across 10 browser(s)
+[pipeline 06:37:32] partfill: 10/10 shard(s) still running
+[pipeline 06:38:32] partfill: 6/10 shard(s) still running
+[pipeline 06:39:32] partfill: 1/10 shard(s) still running
+[pipeline 06:39:52]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:39:52]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 06:39:52]    20 companies with full evidence, 3 in the long tail
+[pipeline 06:39:52] 6. composite scores (5 per quadrant)
+[pipeline 06:39:54] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:39:55] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:39:56] 7b. supporting points: 3 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 06:39:56] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 06:39:56] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 06:39:57] 7b. analyst corrections: 0 text(s) changed from 51 correction(s)
+[pipeline 06:39:57] 8. building HTML / JSON / CSV report
+[pipeline 06:39:58] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 06:39:58] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 06:40:40] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 50 corrections (analyst review wins where both touch the same text)
+[pipeline 06:40:40] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 06:40:41] market: U.S. Entresto Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global
+[pipeline 06:40:41]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 06:40:41]    market brief: player_type = Manufacturer
+[pipeline 06:40:41]    market brief: market_type = B2B
+[pipeline 06:40:41] 1b. 33 verified companies after dedupe, need 120 -> discover -> verify rounds
+[pipeline 06:40:43] 1b. now 33 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 06:40:43] 1. verified rows: 38
+[pipeline 06:40:44] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\axes_spec.json
+[pipeline 06:40:44] 3. 38 names -> 33 companies after dedupe (3 groups merged)
+[pipeline 06:40:44] 3b. 5 companies left out (not active or excluded by review): ['Crystal Pharmaceutical', 'NorthStar Rx LLC', 'Solco Healthcare US, LLC', 'Teva Pharmaceuticals USA, Inc.', 'Umedica Laboratories Pvt. Ltd.'] -> _pipeline/excluded_companies.json
+[pipeline 06:40:44] 3c. ownership 30 / identity 0 / scope 30 answers: 4 more left out ['Alkem Pharmaceuticals, Inc.', 'Evaric Pharmaceuticals Inc.', 'Micro Labs USA Inc.', 'NATCO Pharma USA LLC'], 2 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 06:40:44] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 06:40:44] 4a. owner groups: 1; left out (the weaker of each group) ['AvKARE LLC']
+[pipeline 06:40:44]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\_pipeline\evidence_pool.json
+[pipeline 06:40:45] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 06:40:45]    WARNING: only 23 verified companies after dedupe, fewer than --keep 120. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 06:40:45]    --keep 120: 20 chart/evidence + 3 long tail kept, 0 lower-scored dropped
+[pipeline 06:40:45]    20 companies with full evidence, 3 in the long tail
+[pipeline 06:40:45] 6. composite scores (5 per quadrant)
+[pipeline 06:40:46] 7. rewriting hedge wording / first person in evidence
+[pipeline 06:40:47] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 06:40:48] 7b. owner of Ascend Laboratories LLC: Alkem Laboratories (already set)
+[pipeline 06:40:48] 7b. owner of AvKARE LLC: Amneal Pharmaceuticals (already set)
+[pipeline 06:40:50] 7b. analyst corrections: 1 text(s) changed from 52 correction(s)
+[pipeline 06:40:50] 8. building HTML / JSON / CSV report
+[pipeline 06:40:51] 8. report page: interactive design (u_s_entresto_market_global_report.html); static copy u_s_entresto_market_global_report_classic.html
+[pipeline 06:40:51] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 3 scope, 0 ownership, 0 hq, 50 corrections (analyst review wins where both touch the same text)
+[pipeline 06:41:07] 8b. PDF report: u_s_entresto_market_global_report.pdf
+[pipeline 06:42:15] 8b. Word report: u_s_entresto_market_global_report.docx
+[pipeline 06:42:16] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 23 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 06:42:16] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\u_s_entresto_market_global\u_s_entresto_market_global_report.html
+exit=0

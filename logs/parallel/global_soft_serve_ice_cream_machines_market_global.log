@@ -1,0 +1,567 @@
+[pipeline 09:15:44] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 09:15:44]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 09:15:44]    market brief: player_type = Manufacturer
+[pipeline 09:15:44]    market brief: market_type = B2B
+[pipeline 09:15:44] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 09:15:47] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 09:15:47] 1. verified rows: 523
+[pipeline 09:15:54] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 09:16:06] 2c. research panel: 5 organisation types, 5 designations -> _pipeline/research_panel.json
+[pipeline 09:16:06] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 09:16:06] 3b. operating-status check for 309 companies across 20 browser(s)
+[pipeline 09:22:34] 3b. 8 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'CAB S.p.A.', 'Frotec Sogutma San. ve Tic. Ltd. Sti.', 'Italianinha Indústria de Máquinas de Sorvete Ltda', 'Klimagel', 'Ningbo Sumstar Commercial Appliance Co., Ltd.', 'Shams Ice Cream Machine Factory'] -> _pipeline/excluded_companies.json
+[pipeline 09:22:34] 3b. 3 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 09:22:34] ownership: 301 companies across 20 browser(s)
+[pipeline 09:23:16] ownership: 20/20 shard(s) still running
+[pipeline 09:24:16] ownership: 20/20 shard(s) still running
+[pipeline 09:25:17] ownership: 18/20 shard(s) still running
+[pipeline 09:26:17] ownership: 17/20 shard(s) still running
+[pipeline 09:27:17] ownership: 17/20 shard(s) still running
+[pipeline 09:28:17] ownership: 16/20 shard(s) still running
+[pipeline 09:29:17] ownership: 16/20 shard(s) still running
+[pipeline 09:30:18] ownership: 16/20 shard(s) still running
+[pipeline 09:31:18] ownership: 16/20 shard(s) still running
+[pipeline 09:32:18] ownership: 15/20 shard(s) still running
+[pipeline 09:33:18] ownership: 15/20 shard(s) still running
+[pipeline 09:34:18] ownership: 14/20 shard(s) still running
+[pipeline 09:35:18] ownership: 13/20 shard(s) still running
+[pipeline 09:36:19] ownership: 11/20 shard(s) still running
+[pipeline 09:37:19] ownership: 9/20 shard(s) still running
+[pipeline 09:38:19] ownership: 9/20 shard(s) still running
+[pipeline 09:39:19] ownership: 7/20 shard(s) still running
+[pipeline 09:40:19] ownership: 6/20 shard(s) still running
+[pipeline 09:41:19] ownership: 4/20 shard(s) still running
+[pipeline 09:42:19] ownership: 3/20 shard(s) still running
+[pipeline 09:43:19] ownership: 2/20 shard(s) still running
+[pipeline 09:44:19] ownership: 2/20 shard(s) still running
+[pipeline 09:45:19] ownership: 2/20 shard(s) still running
+[pipeline 09:46:20] ownership: 1/20 shard(s) still running
+[pipeline 09:46:30] identity: 15 companies across 15 browser(s)
+[pipeline 09:47:00] identity: 9/15 shard(s) still running
+[pipeline 09:48:00] scope: 301 companies across 20 browser(s)
+[pipeline 09:48:46] scope: 20/20 shard(s) still running
+[pipeline 09:49:46] scope: 14/20 shard(s) still running
+[pipeline 09:50:46] scope: 8/20 shard(s) still running
+[pipeline 09:51:16] 3c. ownership 301 / identity 15 / scope 298 answers: 49 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 15 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 09:51:18] hq: 22 companies across 20 browser(s)
+[pipeline 09:52:00] hq: 11/20 shard(s) still running
+[pipeline 09:53:00] hq: 1/20 shard(s) still running
+[pipeline 09:53:19] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 09:53:19]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 09:53:19]    market brief: player_type = Manufacturer
+[pipeline 09:53:19]    market brief: market_type = B2B
+[pipeline 09:53:19] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 09:53:22] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 09:53:22] 1. verified rows: 523
+[pipeline 09:53:23] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 09:53:23] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 09:53:23] 3b. operating-status check for 6 companies across 1 browser(s)
+[pipeline 09:53:55] 3b. 15 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'CAB S.p.A.', 'Cattabriga', 'Coldelite', 'Electro Freeze', 'Frotec Sogutma San. ve Tic. Ltd. Sti.'] -> _pipeline/excluded_companies.json
+[pipeline 09:53:55] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 09:53:55] scope: 3 companies across 3 browser(s)
+[pipeline 09:54:01] scope: 3/3 shard(s) still running
+[pipeline 09:54:21] 3c. ownership 301 / identity 15 / scope 301 answers: 49 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 8 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 09:54:24] 3d. HQ missing for 17 companies: 16 found in AI Mode ['Bokni Refrigeration -> Shanghai, China', 'Brullen -> Sydney, Australia', "Carpigiani -> Anzola dell'Emilia, Italy", 'Donper -> Huangshi, China', 'Frigomat -> Milano, Italy', 'Gel Matic -> Orio al Serio, Italy']
+[pipeline 09:54:24] 4. quick X/Y scorecard scoring needed for 245 companies (1 Product + 1 Business query each)
+[pipeline 09:54:24] overall: 245 companies across 20 browser(s)
+[pipeline 09:55:07] overall: 20/20 shard(s) still running
+[pipeline 09:56:08] overall: 20/20 shard(s) still running
+[pipeline 09:57:10] overall: 20/20 shard(s) still running
+[pipeline 09:58:10] overall: 20/20 shard(s) still running
+[pipeline 09:59:11] overall: 20/20 shard(s) still running
+[pipeline 10:00:13] overall: 20/20 shard(s) still running
+[pipeline 10:01:14] overall: 20/20 shard(s) still running
+[pipeline 10:02:14] overall: 20/20 shard(s) still running
+[pipeline 10:03:15] overall: 20/20 shard(s) still running
+[pipeline 10:04:15] overall: 20/20 shard(s) still running
+[pipeline 10:05:15] overall: 20/20 shard(s) still running
+[pipeline 10:06:16] overall: 18/20 shard(s) still running
+[pipeline 10:07:16] overall: 12/20 shard(s) still running
+[pipeline 10:08:16] overall: 9/20 shard(s) still running
+[pipeline 10:09:16] overall: 9/20 shard(s) still running
+[pipeline 10:10:16] overall: 8/20 shard(s) still running
+[pipeline 10:11:16] overall: 3/20 shard(s) still running
+[pipeline 10:12:16] overall: 1/20 shard(s) still running
+[pipeline 10:13:16] overall: 1/20 shard(s) still running
+[pipeline 10:14:16] overall: 1/20 shard(s) still running
+[pipeline 10:15:16] overall: 1/20 shard(s) still running
+[pipeline 10:16:16] overall: 1/20 shard(s) still running
+[pipeline 10:17:16] overall: 1/20 shard(s) still running
+[pipeline 10:18:16] overall: 1/20 shard(s) still running
+[pipeline 10:19:16] overall: 1/20 shard(s) still running
+[pipeline 10:20:16] overall: 1/20 shard(s) still running
+[pipeline 10:21:16] overall: 1/20 shard(s) still running
+[pipeline 10:21:34] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 10:21:34]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 10:21:34]    market brief: player_type = Manufacturer
+[pipeline 10:21:34]    market brief: market_type = B2B
+[pipeline 10:21:34] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 10:21:40] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 10:21:40] 1. verified rows: 523
+[pipeline 10:21:40] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 10:21:40] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 10:21:41] 3b. operating-status check for 4 companies across 1 browser(s)
+[pipeline 10:22:13] 3b. 15 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'CAB S.p.A.', 'Cattabriga', 'Coldelite', 'Electro Freeze', 'Frotec Sogutma San. ve Tic. Ltd. Sti.'] -> _pipeline/excluded_companies.json
+[pipeline 10:22:13] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 10:22:13] identity: 3 companies across 3 browser(s)
+[pipeline 10:22:19] identity: 3/3 shard(s) still running
+[pipeline 10:23:19] identity: 1/3 shard(s) still running
+[pipeline 10:23:24] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 8 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 10:23:26] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 10:23:26] 4. quick X/Y scorecard scoring needed for 9 companies (1 Product + 1 Business query each)
+[pipeline 10:23:26] overall: 9 companies across 9 browser(s)
+[pipeline 10:23:45] overall: 9/9 shard(s) still running
+[pipeline 10:24:40] 4a. owner groups: 2; left out (the weaker of each group) ['Stoelting Foodservice', 'Hoshizaki Corporation']
+[pipeline 10:24:40]    Top 20 chosen by Overall (market brief chart_selection: top_overall) from 242 quick-scored companies
+[pipeline 10:24:40]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 10:24:40] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 10:24:40] 5. evidence round 1: 20 companies with gaps
+[pipeline 10:24:40] evidence_r1: 20 companies across 20 browser(s)
+[pipeline 10:25:23] evidence_r1: 20/20 shard(s) still running
+[pipeline 10:26:24] evidence_r1: 20/20 shard(s) still running
+[pipeline 10:27:24] evidence_r1: 20/20 shard(s) still running
+[pipeline 10:28:25] evidence_r1: 20/20 shard(s) still running
+[pipeline 10:29:41] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 10:29:42]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 10:29:42]    market brief: player_type = Manufacturer
+[pipeline 10:29:42]    market brief: market_type = B2B
+[pipeline 10:29:42] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 10:29:52] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 10:29:52] 1. verified rows: 523
+[pipeline 10:29:53] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 10:29:53] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 10:29:53] 3b. 26 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite', 'Corema Telme S.p.A.'] -> _pipeline/excluded_companies.json
+[pipeline 10:29:53] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 10:29:54] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 10:29:56] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 10:29:56] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 10:29:56] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 10:29:56]    Top 20 chosen by Overall (market brief chart_selection: top_overall) from 232 quick-scored companies
+[pipeline 10:29:56]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 10:29:56] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 10:29:56] 5. evidence round 1: 18 companies with gaps
+[pipeline 10:29:56] evidence_r1: 18 companies across 18 browser(s)
+[pipeline 10:30:35] evidence_r1: 18/18 shard(s) still running
+[pipeline 10:31:35] evidence_r1: 18/18 shard(s) still running
+[pipeline 10:32:35] evidence_r1: 18/18 shard(s) still running
+[pipeline 10:33:35] evidence_r1: 17/18 shard(s) still running
+[pipeline 10:34:35] evidence_r1: 6/18 shard(s) still running
+[pipeline 10:35:00] 5b. parameter parts without a supporting point: 200 in 20 companies
+[pipeline 10:35:00] partfill: 20 companies across 20 browser(s)
+[pipeline 10:35:42] partfill: 20/20 shard(s) still running
+[pipeline 10:36:43] partfill: 20/20 shard(s) still running
+[pipeline 10:37:44] partfill: 19/20 shard(s) still running
+[pipeline 10:38:45] partfill: 18/20 shard(s) still running
+[pipeline 10:39:45] partfill: 12/20 shard(s) still running
+[pipeline 10:40:45] partfill: 10/20 shard(s) still running
+[pipeline 10:41:45] partfill: 4/20 shard(s) still running
+[pipeline 10:42:45] partfill: 3/20 shard(s) still running
+[pipeline 10:43:45] partfill: 2/20 shard(s) still running
+[pipeline 10:44:30]    WARNING: only 232 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 10:44:30]    --keep 1000: 20 chart/evidence + 212 long tail kept, 0 lower-scored dropped
+[pipeline 10:44:30]    20 companies with full evidence, 212 in the long tail
+[pipeline 10:44:30] 6. composite scores (5 per quadrant)
+[pipeline 10:44:31] 7. rewriting hedge wording / first person in evidence
+[pipeline 10:44:33] 7c. gaps: 200 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 10:48:13] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 190 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 10:48:13] 7b. supporting points: 221 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 10:48:13] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy)
+[pipeline 10:48:13] 7b. owner of Carpigiani: Ali Group
+[pipeline 10:48:13] 7b. owner of Taylor Company: The Middleby Corporation
+[pipeline 10:48:13] 7b. owner of Tecnofrigo S.r.l.: Celli Group
+[pipeline 10:48:13] 7b. owner of Telme S.p.A.: F4
+[pipeline 10:48:13] 7b. owner of Ugolini S.p.A.: Calao Finance
+[pipeline 10:48:13] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation
+[pipeline 10:48:13] 8. building HTML / JSON / CSV report
+[pipeline 10:48:15] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 10:48:15] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 10:55:56] 8a. chart fact-check (attempt 2) on 20 browser(s)
+[pipeline 10:56:24] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 38 corrections (analyst review wins where both touch the same text)
+[pipeline 10:56:24] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 10:56:25] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 10:56:25]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 10:56:25]    market brief: player_type = Manufacturer
+[pipeline 10:56:25]    market brief: market_type = B2B
+[pipeline 10:56:25] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 10:56:27] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 10:56:27] 1. verified rows: 523
+[pipeline 10:56:28] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 10:56:28] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 10:56:28] 3b. 26 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite', 'Corema Telme S.p.A.'] -> _pipeline/excluded_companies.json
+[pipeline 10:56:28] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 10:56:28] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 10:56:30] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 10:56:30] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 10:56:30] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 10:56:30]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 10:56:30] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 10:56:30] 5b. parameter parts without a supporting point: 6 in 5 companies
+[pipeline 10:56:30] partfill: 5 companies across 5 browser(s)
+[pipeline 10:56:41] partfill: 5/5 shard(s) still running
+[pipeline 10:57:11]    WARNING: only 232 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 10:57:11]    --keep 1000: 20 chart/evidence + 212 long tail kept, 0 lower-scored dropped
+[pipeline 10:57:11]    20 companies with full evidence, 212 in the long tail
+[pipeline 10:57:11] 6. composite scores (5 per quadrant)
+[pipeline 10:57:12] 7. rewriting hedge wording / first person in evidence
+[pipeline 10:57:13] 7c. gaps: 10 to ask in AI Mode on 20 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 10:58:35] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 10 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 10:58:35] 7b. supporting points: 7 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 10:58:35] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy) (already set)
+[pipeline 10:58:35] 7b. owner of Carpigiani: Ali Group (already set)
+[pipeline 10:58:35] 7b. owner of Taylor Company: The Middleby Corporation (already set)
+[pipeline 10:58:35] 7b. owner of Tecnofrigo S.r.l.: Celli Group (already set)
+[pipeline 10:58:35] 7b. owner of Telme S.p.A.: F4 (already set)
+[pipeline 10:58:35] 7b. owner of Ugolini S.p.A.: Calao Finance (already set)
+[pipeline 10:58:35] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation (already set)
+[pipeline 10:58:36] 7b. analyst corrections: 38 text(s) changed from 38 correction(s)
+[pipeline 10:58:37] 8. building HTML / JSON / CSV report
+[pipeline 10:58:38] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 10:58:38] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 10:59:13] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 38 corrections (analyst review wins where both touch the same text)
+[pipeline 10:59:29] 8b. PDF report: global_soft_serve_ice_cream_machines_market_global_report.pdf
+[pipeline 11:00:50] 8b. Word report: global_soft_serve_ice_cream_machines_market_global_report.docx
+[pipeline 11:00:51] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 232 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [FAIL] Every company has an HQ  -> 1 missing: ['Beiqi']
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 11:00:51] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\global_soft_serve_ice_cream_machines_market_global_report.html
+exit=1
+[pipeline 11:02:08] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 11:02:08]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:02:08]    market brief: player_type = Manufacturer
+[pipeline 11:02:08]    market brief: market_type = B2B
+[pipeline 11:02:08] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 11:02:10] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 11:02:10] 1. verified rows: 523
+[pipeline 11:02:11] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 11:02:11] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 11:02:11] 3b. 53 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'Beiqi', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite'] -> _pipeline/excluded_companies.json
+[pipeline 11:02:11] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:02:13] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 11:02:13] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 11:02:13]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 11:02:13] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:02:13] 5b. parameter parts without a supporting point: 1 in 1 companies
+[pipeline 11:02:13] partfill: 1 companies across 1 browser(s)
+[pipeline 11:02:15] partfill: 1/1 shard(s) still running
+[pipeline 11:02:25]    WARNING: only 205 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 11:02:25]    --keep 1000: 20 chart/evidence + 185 long tail kept, 0 lower-scored dropped
+[pipeline 11:02:25]    20 companies with full evidence, 185 in the long tail
+[pipeline 11:02:25] 6. composite scores (5 per quadrant)
+[pipeline 11:02:26] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:02:28] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 11:02:29] 7b. supporting points: 1 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 11:02:29] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy) (already set)
+[pipeline 11:02:29] 7b. owner of Carpigiani: Ali Group (already set)
+[pipeline 11:02:29] 7b. owner of Taylor Company: The Middleby Corporation (already set)
+[pipeline 11:02:29] 7b. owner of Tecnofrigo S.r.l.: Celli Group (already set)
+[pipeline 11:02:29] 7b. owner of Telme S.p.A.: F4 (already set)
+[pipeline 11:02:29] 7b. owner of Ugolini S.p.A.: Calao Finance (already set)
+[pipeline 11:02:29] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation (already set)
+[pipeline 11:02:30] 7b. analyst corrections: 0 text(s) changed from 38 correction(s)
+[pipeline 11:02:30] 8. building HTML / JSON / CSV report
+[pipeline 11:02:31] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 11:02:31] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 11:02:42] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 38 corrections (analyst review wins where both touch the same text)
+[pipeline 11:02:58] 8b. PDF report: global_soft_serve_ice_cream_machines_market_global_report.pdf
+[pipeline 11:04:15] 8b. Word report: global_soft_serve_ice_cream_machines_market_global_report.docx
+[pipeline 11:04:16] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 205 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 11:04:16] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\global_soft_serve_ice_cream_machines_market_global_report.html
+exit=0
+[pipeline 11:13:43] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 11:13:43]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:13:43]    market brief: player_type = Manufacturer
+[pipeline 11:13:43]    market brief: market_type = B2B
+[pipeline 11:13:43] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 11:13:45] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 11:13:45] 1. verified rows: 523
+[pipeline 11:13:46] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 11:13:46] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 11:13:46] 3b. 53 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'Beiqi', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite'] -> _pipeline/excluded_companies.json
+[pipeline 11:13:46] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:13:48] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 11:13:48] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 11:13:48]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 11:13:48] 5. 2 supporting point(s) on invalid sources removed before gap-fill
+[pipeline 11:13:48] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:13:48]    WARNING: only 205 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 11:13:48]    --keep 1000: 20 chart/evidence + 185 long tail kept, 0 lower-scored dropped
+[pipeline 11:13:48]    20 companies with full evidence, 185 in the long tail
+[pipeline 11:13:48] 6. composite scores (5 per quadrant)
+[pipeline 11:13:49] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:13:50] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 11:13:51] 7b. supporting points: 5 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 11:13:51] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy) (already set)
+[pipeline 11:13:51] 7b. owner of Carpigiani: Ali Group (already set)
+[pipeline 11:13:51] 7b. owner of Taylor Company: The Middleby Corporation (already set)
+[pipeline 11:13:51] 7b. owner of Tecnofrigo S.r.l.: Celli Group (already set)
+[pipeline 11:13:51] 7b. owner of Telme S.p.A.: F4 (already set)
+[pipeline 11:13:51] 7b. owner of Ugolini S.p.A.: Calao Finance (already set)
+[pipeline 11:13:51] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation (already set)
+[pipeline 11:13:52] 7b. analyst corrections: 0 text(s) changed from 38 correction(s)
+[pipeline 11:13:52] 8. building HTML / JSON / CSV report
+[pipeline 11:13:53] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 11:13:53] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 11:16:05] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 11:16:05]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:16:05]    market brief: player_type = Manufacturer
+[pipeline 11:16:05]    market brief: market_type = B2B
+[pipeline 11:16:05] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 11:16:06] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 11:16:06] 1. verified rows: 523
+[pipeline 11:16:07] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 11:16:07] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 11:16:07] 3b. 53 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'Beiqi', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite'] -> _pipeline/excluded_companies.json
+[pipeline 11:16:07] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:16:08] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 11:16:08] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 11:16:08]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 11:16:08] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:16:09]    WARNING: only 205 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 11:16:09]    --keep 1000: 20 chart/evidence + 185 long tail kept, 0 lower-scored dropped
+[pipeline 11:16:09]    20 companies with full evidence, 185 in the long tail
+[pipeline 11:16:09] 6. composite scores (5 per quadrant)
+[pipeline 11:16:09] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:16:11] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 11:16:11] 7b. supporting points: 8 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 11:16:11] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy) (already set)
+[pipeline 11:16:11] 7b. owner of Carpigiani: Ali Group (already set)
+[pipeline 11:16:11] 7b. owner of Taylor Company: The Middleby Corporation (already set)
+[pipeline 11:16:11] 7b. owner of Tecnofrigo S.r.l.: Celli Group (already set)
+[pipeline 11:16:11] 7b. owner of Telme S.p.A.: F4 (already set)
+[pipeline 11:16:11] 7b. owner of Ugolini S.p.A.: Calao Finance (already set)
+[pipeline 11:16:11] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation (already set)
+[pipeline 11:16:12] 7b. analyst corrections: 0 text(s) changed from 38 correction(s)
+[pipeline 11:16:12] 8. building HTML / JSON / CSV report
+[pipeline 11:16:13] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 11:16:13] 8a. chart fact-check (attempt 1) on 20 browser(s)
+[pipeline 11:17:12] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 40 corrections (analyst review wins where both touch the same text)
+[pipeline 11:17:12] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 11:17:14] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 11:17:14]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:17:14]    market brief: player_type = Manufacturer
+[pipeline 11:17:14]    market brief: market_type = B2B
+[pipeline 11:17:14] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 11:17:15] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 11:17:15] 1. verified rows: 523
+[pipeline 11:17:16] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 11:17:16] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 11:17:16] 3b. 53 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'Beiqi', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite'] -> _pipeline/excluded_companies.json
+[pipeline 11:17:16] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:17:18] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 11:17:18] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 11:17:18]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 11:17:18] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:17:18]    WARNING: only 205 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 11:17:18]    --keep 1000: 20 chart/evidence + 185 long tail kept, 0 lower-scored dropped
+[pipeline 11:17:18]    20 companies with full evidence, 185 in the long tail
+[pipeline 11:17:18] 6. composite scores (5 per quadrant)
+[pipeline 11:17:19] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:17:21] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 11:17:21] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy) (already set)
+[pipeline 11:17:21] 7b. owner of Carpigiani: Ali Group (already set)
+[pipeline 11:17:21] 7b. owner of Taylor Company: The Middleby Corporation (already set)
+[pipeline 11:17:21] 7b. owner of Tecnofrigo S.r.l.: Celli Group (already set)
+[pipeline 11:17:21] 7b. owner of Telme S.p.A.: F4 (already set)
+[pipeline 11:17:21] 7b. owner of Ugolini S.p.A.: Calao Finance (already set)
+[pipeline 11:17:21] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation (already set)
+[pipeline 11:17:22] 7b. analyst corrections: 2 text(s) changed from 40 correction(s)
+[pipeline 11:17:23] 8. building HTML / JSON / CSV report
+[pipeline 11:17:24] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 11:17:24] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 40 corrections (analyst review wins where both touch the same text)
+[pipeline 11:17:40] 8b. PDF report: global_soft_serve_ice_cream_machines_market_global_report.pdf
+[pipeline 11:18:52] 8b. Word report: global_soft_serve_ice_cream_machines_market_global_report.docx
+[pipeline 11:18:53] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 205 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 11:18:53] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\global_soft_serve_ice_cream_machines_market_global_report.html
+exit=0
+[pipeline 11:30:59] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 11:30:59]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:30:59]    market brief: player_type = Manufacturer
+[pipeline 11:30:59]    market brief: market_type = B2B
+[pipeline 11:30:59] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 11:31:01] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 11:31:01] 1. verified rows: 523
+[pipeline 11:31:01] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 11:31:01] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 11:31:02] 3b. 53 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'Beiqi', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite'] -> _pipeline/excluded_companies.json
+[pipeline 11:31:02] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:31:03] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 11:31:03] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 11:31:03]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 11:31:03] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:31:03]    WARNING: only 205 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 11:31:03]    --keep 1000: 20 chart/evidence + 185 long tail kept, 0 lower-scored dropped
+[pipeline 11:31:03]    20 companies with full evidence, 185 in the long tail
+[pipeline 11:31:03] 6. composite scores (5 per quadrant)
+[pipeline 11:31:04] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:31:06] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 11:31:06] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy) (already set)
+[pipeline 11:31:06] 7b. owner of Carpigiani: Ali Group (already set)
+[pipeline 11:31:06] 7b. owner of Taylor Company: The Middleby Corporation (already set)
+[pipeline 11:31:06] 7b. owner of Tecnofrigo S.r.l.: Celli Group (already set)
+[pipeline 11:31:06] 7b. owner of Telme S.p.A.: F4 (already set)
+[pipeline 11:31:06] 7b. owner of Ugolini S.p.A.: Calao Finance (already set)
+[pipeline 11:31:06] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation (already set)
+[pipeline 11:31:07] 7b. analyst corrections: 0 text(s) changed from 40 correction(s)
+[pipeline 11:31:07] 8. building HTML / JSON / CSV report
+[pipeline 11:31:08] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 11:31:08] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 40 corrections (analyst review wins where both touch the same text)
+[pipeline 11:31:22] 8b. PDF report: global_soft_serve_ice_cream_machines_market_global_report.pdf
+[pipeline 11:32:33] 8b. Word report: global_soft_serve_ice_cream_machines_market_global_report.docx
+[pipeline 11:32:34] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 205 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 11:32:34] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\global_soft_serve_ice_cream_machines_market_global_report.html
+exit=0
+[pipeline 11:37:10] market: Global Soft Serve Ice Cream Machines Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global
+[pipeline 11:37:10]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 11:37:10]    market brief: player_type = Manufacturer
+[pipeline 11:37:10]    market brief: market_type = B2B
+[pipeline 11:37:10] 1b. 309 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 11:37:12] 1b. now 309 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 11:37:12] 1. verified rows: 523
+[pipeline 11:37:12] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\axes_spec.json
+[pipeline 11:37:12] 3. 523 names -> 309 companies after dedupe (78 groups merged)
+[pipeline 11:37:12] 3b. 53 companies left out (not active or excluded by review): ['Alpine Freezer', 'Aurel LLC', 'BGI S.r.l.', 'Beiqi', 'CAB S.p.A.', 'Carpigiani Horeca S.r.l.', 'Cattabriga', 'Coldelite'] -> _pipeline/excluded_companies.json
+[pipeline 11:37:13] 3c. ownership 301 / identity 18 / scope 301 answers: 50 more left out ['Aqua Industries', 'Archita Equipment', 'BNG Tech', 'BSR Bematec S.r.l.', 'Berjaya CKE International Sdn. Bhd.', 'Bovo S.r.l.'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 11:37:14] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 11:37:14] 4a. owner groups: 1; left out (the weaker of each group) ['Hoshizaki Corporation']
+[pipeline 11:37:14]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\_pipeline\evidence_pool.json
+[pipeline 11:37:14] 5. deep evidence on 20 browser(s) (--evidence-slots 41-60)
+[pipeline 11:37:14]    WARNING: only 205 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 11:37:14]    --keep 1000: 20 chart/evidence + 185 long tail kept, 0 lower-scored dropped
+[pipeline 11:37:14]    20 companies with full evidence, 185 in the long tail
+[pipeline 11:37:14] 6. composite scores (5 per quadrant)
+[pipeline 11:37:15] 7. rewriting hedge wording / first person in evidence
+[pipeline 11:37:17] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 11:37:17] 7b. current name for The Vollrath Company, LLC: The Vollrath Company, LLC (listed brand is legacy) (already set)
+[pipeline 11:37:17] 7b. owner of Carpigiani: Ali Group (already set)
+[pipeline 11:37:17] 7b. owner of Taylor Company: The Middleby Corporation (already set)
+[pipeline 11:37:17] 7b. owner of Tecnofrigo S.r.l.: Celli Group (already set)
+[pipeline 11:37:17] 7b. owner of Telme S.p.A.: F4 (already set)
+[pipeline 11:37:17] 7b. owner of Ugolini S.p.A.: Calao Finance (already set)
+[pipeline 11:37:17] 7b. owner of Öztiryakiler Madeni Eşya San. ve Tic. A.Ş.: Hoshizaki Corporation (already set)
+[pipeline 11:37:18] 7b. analyst corrections: 0 text(s) changed from 40 correction(s)
+[pipeline 11:37:18] 8. building HTML / JSON / CSV report
+[pipeline 11:37:19] 8. report page: interactive design (global_soft_serve_ice_cream_machines_market_global_report.html); static copy global_soft_serve_ice_cream_machines_market_global_report_classic.html
+[pipeline 11:37:20] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 40 corrections (analyst review wins where both touch the same text)
+[pipeline 11:37:35] 8b. PDF report: global_soft_serve_ice_cream_machines_market_global_report.pdf
+[pipeline 11:38:53] 8b. Word report: global_soft_serve_ice_cream_machines_market_global_report.docx
+[pipeline 11:38:54] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 205 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player grouped by quadrant, sorted by Strength within each
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 11:38:54] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\global_soft_serve_ice_cream_machines_market_global\global_soft_serve_ice_cream_machines_market_global_report.html
+exit=0

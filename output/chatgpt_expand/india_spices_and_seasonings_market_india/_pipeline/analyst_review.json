@@ -1,0 +1,111 @@
+{
+  "keep": [
+    {
+      "company": "Kancor Ingredients Limited",
+      "reason": "Key company named in the client brief (owner 2026-10-19: include); the definition covers industrial food-processing applications and value-added seasoning solutions",
+      "source": "Client brief 2026-10-19, key companies; report sample company profiles (p28)"
+    },
+    {
+      "company": "Olam India",
+      "reason": "Key company named in the client brief (owner 2026-10-19: include); the definition covers industrial food-processing applications and value-added seasoning solutions",
+      "source": "Client brief 2026-10-19, key companies; report sample company profiles (p28)"
+    },
+    {
+      "company": "Adani Wilmar (Fortune Spices)",
+      "reason": "Key company named in the client brief; sells Fortune branded spices and owns the Kohinoor brand in India (owner 2026-10-20: include)",
+      "source": "Client brief 2026-10-19, key companies; report sample company profiles (p28)"
+    }
+  ],
+  "scope": [
+    {
+      "company": "Kancor Ingredients Limited",
+      "scope": "core",
+      "reason": "Key company named in the client brief (owner 2026-10-19: include); the definition covers industrial food-processing applications and value-added seasoning solutions",
+      "source": "Client brief 2026-10-19, key companies; report sample company profiles (p28)"
+    },
+    {
+      "company": "Olam India",
+      "scope": "core",
+      "reason": "Key company named in the client brief (owner 2026-10-19: include); the definition covers industrial food-processing applications and value-added seasoning solutions",
+      "source": "Client brief 2026-10-19, key companies; report sample company profiles (p28)"
+    },
+    {
+      "company": "Adani Wilmar (Fortune Spices)",
+      "scope": "core",
+      "reason": "Key company named in the client brief; sells Fortune branded spices and owns the Kohinoor brand in India (owner 2026-10-20: include)",
+      "source": "Client brief 2026-10-19, key companies; report sample company profiles (p28)"
+    }
+  ],
+  "exclude": [
+    {
+      "company": "Aachi Masala Foods Pvt Ltd",
+      "reason": "Duplicate of Aachi Spices and Foods Private Limited (same company, aachigroup.com); listed once under the client brief's name",
+      "source": "dedupe review 2026-10-20 (seed rows had no website, so the automatic dedupe could not join them)"
+    },
+    {
+      "company": "Aachi Spices & Foods Pvt. Ltd.",
+      "reason": "Duplicate of Aachi Spices and Foods Private Limited (same company, aachifoods.com); listed once under the client brief's name",
+      "source": "dedupe review 2026-10-20 (seed rows had no website, so the automatic dedupe could not join them)"
+    },
+    {
+      "company": "Pravin Masalewale",
+      "reason": "Duplicate of Pravin Masalewale (Suhana Masala) (same company, suhana.co.in); listed once under the client brief's name",
+      "source": "dedupe review 2026-10-20 (seed rows had no website, so the automatic dedupe could not join them)"
+    },
+    {
+      "company": "Goldiee Masale Private Limited",
+      "reason": "Duplicate of Goldiee Foods Private Limited (same company, goldiee.com); listed once under the client brief's name",
+      "source": "dedupe review 2026-10-20 (seed rows had no website, so the automatic dedupe could not join them)"
+    },
+    {
+      "company": "Rajesh Masala and Food Products Private Limited",
+      "reason": "Duplicate of Rajesh Masala Private Limited (same company, rajeshmasala.com); listed once under the client brief's name",
+      "source": "dedupe review 2026-10-20 (seed rows had no website, so the automatic dedupe could not join them)"
+    },
+    {
+      "company": "Dharampal Satyapal Limited",
+      "reason": "DS Group parent company (report sample: 'Parent Company'); its spice businesses Dharampal Satyapal Foods Limited and DS Spiceco Private Limited are listed (owner 2026-10-19: makers + brand owners)",
+      "source": "Report sample company profiles (p29)"
+    },
+    {
+      "company": "Dharampal Satyapal Foods Limited",
+      "reason": "DS Group company; DS Spiceco Private Limited (Catch, stronger) represents the group",
+      "source": "Owner 2026-10-20: one company per parent group, the stronger stays"
+    },
+    {
+      "company": "Sresta Natural Bioproducts Private Limited",
+      "reason": "Acquired by ITC Limited (24 Mantra Organic); ITC Limited (stronger) represents the group",
+      "source": "Owner 2026-10-20: one company per parent group, the stronger stays"
+    },
+    {
+      "company": "Patanjali Ayurved Limited",
+      "reason": "Patanjali group; Patanjali Foods Limited (stronger, sells the Patanjali spices) represents the group",
+      "source": "Owner 2026-10-20: one company per parent group, the stronger stays"
+    },
+    {
+      "company": "MVJ Foods (India) Private Limited",
+      "reason": "AVA group (Melam); Ava Cholayil Health & Heritage Private Limited (stronger) represents the group",
+      "source": "Owner 2026-10-20: one company per parent group, the stronger stays"
+    },
+    {
+      "company": "Keya Food Products Pvt. Ltd.",
+      "reason": "Keya is owned by VKL Seasoning since 2013; VKL Seasoning Private Limited represents the group",
+      "source": "Owner 2026-10-20: one company per parent group, the stronger stays"
+    }
+  ],
+  "hq": [
+    {
+      "company": "Goldiee Foods Private Limited",
+      "headquarters": "Kanpur, India",
+      "source": "Verified rows of the same company (goldiee.com: Shubham Goldiee Masale / Goldiee Masale), merged as duplicates 2026-10-20"
+    }
+  ],
+  "display": [
+    {
+      "company": "Orkla India Limited",
+      "current_name": "Orkla India Limited",
+      "brand_label": "Orkla India (MTR, Eastern)",
+      "source": "Orkla India owns the MTR and Eastern spice brands; bubble label chosen 2026-10-20"
+    }
+  ]
+}

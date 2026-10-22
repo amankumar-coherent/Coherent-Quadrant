@@ -1,0 +1,33 @@
+[facts 03:07:24] identity: 1 companies to check
+      · id-White Health Pharmac: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_43_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · id-White Health Pharmac: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+[facts 03:07:45] identity: 1 answers saved -> facts_identity_shard2.json
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:574:12)
+    at _write (node:internal/streams/writable:503:10)
+    at Writable.write (node:internal/streams/writable:512:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36765:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:72575:59)
+    at DispatcherConnection.sendEvent (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26379:14)
+    at _FrameDispatcher._dispatchEvent (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26301:25)
+    at _Frame.<anonymous> (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:57047:16)
+    at _Frame.emit (node:events:514:28)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processImmediate (node:internal/timers:541:9) {
+  errno: -4047,
+  syscall: 'write',
+  code: 'EPIPE'
+}
+
+Node.js v24.21.0

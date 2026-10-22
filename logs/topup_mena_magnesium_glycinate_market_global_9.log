@@ -1,0 +1,54 @@
+[rounds 02:37:15] round 1: 25/51 verified (keep rate 78%) -> discovering 40 more
+    → substep 1a: discovery rounds for Brand / Marketer (batch 10, target 72, resuming with 32)
+      · discover-round-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_49_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · discover-round-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.1: +10 (total 42)
+      · discover-round-2: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-2: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.2: +9 (total 51)
+      · discover-round-3: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-3: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+    → substep 1a.3: +6 (total 57)
+      · discover-round-4: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] CAPTCHA (1 this run) — solve it in the browser window
+      · discover-round-4: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 49s ago
+    → substep 1a.4: +7 (total 64)
+      · discover-round-5: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-5: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 72s ago
+    → substep 1a.5: +5 (total 69)
+      · discover-round-6: calling Google AI Mode (udm=50) attempt 1/4…
+      · discover-round-6: AI Mode JSON parse OK — 1 CAPTCHAs this run, last 96s ago
+    → substep 1a.6: +8 (total 77)
+    → substep 1a done: 77 companies in 6 rounds (resumed with 32) (target_reached)
+[rounds 02:40:29] round 1: verifying 45 new companies
+    → substep 4a: verify 45 candidates as Brand / Marketer in 4 DeepSeek chunk(s) (drop if they do not build / own-or-market)
+    → substep 4a.1: verify chunk 1 (10 companies, 0/45 done)…
+      · verify-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_49_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · verify-1: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 23s ago
+    → substep 4a.1: running kept=9 rejected=1
+    → substep 4a.2: verify chunk 2 (12 companies, 10/45 done)…
+      · verify-2: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_49_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (5 this run) — solve it in the browser window
+      · verify-2: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 30s ago
+    → substep 4a.2: running kept=21 rejected=1
+    → substep 4a.3: verify chunk 3 (12 companies, 22/45 done)…
+      · verify-3: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] WARNING prompt truncated 6630 -> 6623 chars to stay under the 7800-char URL limit
+      · verify-3: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 57s ago
+    → substep 4a.3: running kept=33 rejected=1
+    → substep 4a.4: verify chunk 4 (11 companies, 34/45 done)…
+      · verify-4: calling Google AI Mode (udm=50) attempt 1/4…
+      · verify-4: AI Mode JSON parse OK — 5 CAPTCHAs this run, last 83s ago
+    → substep 4a.4: running kept=44 rejected=1
+    → substep 4a done: kept=44 rejected=1 (required=Brand / Marketer)
+[rounds 02:42:57] round 1: +44 verified, 1 rejected
+[rounds 02:42:57] target reached: 69 verified companies (need 51)

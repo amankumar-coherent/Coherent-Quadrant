@@ -1,0 +1,431 @@
+[pipeline 02:46:49] market: MENA Magnesium Glycinate Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global
+[pipeline 02:46:49]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 02:46:49]    market brief: player_type = Brand / Marketer
+[pipeline 02:46:49]    market brief: market_type = B2C
+[pipeline 02:46:49] 1. verified rows: 194
+[pipeline 02:46:58] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\axes_spec.json
+[pipeline 02:47:13] 2c. research panel: 5 organisation types, 5 designations -> _pipeline/research_panel.json
+[pipeline 02:47:13] 3. 193 names -> 148 companies after dedupe (34 groups merged)
+[pipeline 02:47:14] 3b. operating-status check for 148 companies across 10 browser(s)
+[pipeline 02:52:20] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 02:52:20] ownership: 148 companies across 10 browser(s)
+[pipeline 02:52:40] ownership: 10/10 shard(s) still running
+[pipeline 02:53:40] ownership: 10/10 shard(s) still running
+[pipeline 02:54:41] ownership: 10/10 shard(s) still running
+[pipeline 02:55:41] ownership: 10/10 shard(s) still running
+[pipeline 02:56:41] ownership: 9/10 shard(s) still running
+[pipeline 02:57:41] ownership: 8/10 shard(s) still running
+[pipeline 02:58:42] ownership: 7/10 shard(s) still running
+[pipeline 02:59:42] ownership: 7/10 shard(s) still running
+[pipeline 03:00:42] ownership: 6/10 shard(s) still running
+[pipeline 03:01:42] ownership: 6/10 shard(s) still running
+[pipeline 03:02:42] ownership: 5/10 shard(s) still running
+[pipeline 03:03:42] ownership: 3/10 shard(s) still running
+[pipeline 03:04:42] ownership: 2/10 shard(s) still running
+[pipeline 03:05:42] ownership: 1/10 shard(s) still running
+[pipeline 03:06:42] ownership: 1/10 shard(s) still running
+[pipeline 03:07:08] identity: 3 companies across 3 browser(s)
+[pipeline 03:07:14] identity: 3/3 shard(s) still running
+[pipeline 03:08:14] identity: 1/3 shard(s) still running
+[pipeline 03:08:50] scope: 148 companies across 10 browser(s)
+[pipeline 03:09:10] scope: 10/10 shard(s) still running
+[pipeline 03:10:10] scope: 8/10 shard(s) still running
+[pipeline 03:11:10] scope: 3/10 shard(s) still running
+[pipeline 03:12:10] scope: 2/10 shard(s) still running
+[pipeline 03:12:35] 3c. ownership 148 / identity 3 / scope 147 answers: 16 more left out ['Ambrosial Nutraceuticals', 'Amir Nutrition LLC', 'Biogena Middle East', 'COPAD Pharma For Pharmaceutical Industries', 'ESI S.p.A.', 'Goli Nutrition Inc.'], 47 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 03:12:36] hq: 25 companies across 10 browser(s)
+[pipeline 03:12:57] hq: 8/10 shard(s) still running
+[pipeline 03:13:57] hq: 1/10 shard(s) still running
+[pipeline 03:14:07] 3d. HQ missing for 25 companies: 24 found in AI Mode ['BioEmblem -> New York, United States', 'Bluebonnet Nutrition Corporation -> Sugar Land, United States', 'Carlson Laboratories -> Arlington Heights, United States', 'Designs for Health, Inc. -> Palm Coast, United States', 'Devartlab -> New Cairo, Egypt', "Doctor's Best -> Tustin, California, United States"]
+[pipeline 03:14:07] 4. quick X/Y scorecard scoring needed for 132 companies (1 Product + 1 Business query each)
+[pipeline 03:14:07] overall: 132 companies across 10 browser(s)
+[pipeline 03:14:28] overall: 10/10 shard(s) still running
+[pipeline 03:15:29] overall: 10/10 shard(s) still running
+[pipeline 03:16:29] overall: 10/10 shard(s) still running
+[pipeline 03:17:29] overall: 10/10 shard(s) still running
+[pipeline 03:18:29] overall: 10/10 shard(s) still running
+[pipeline 03:19:29] overall: 10/10 shard(s) still running
+[pipeline 03:20:29] overall: 10/10 shard(s) still running
+[pipeline 03:21:30] overall: 10/10 shard(s) still running
+[pipeline 03:22:30] overall: 10/10 shard(s) still running
+[pipeline 03:23:30] overall: 6/10 shard(s) still running
+[pipeline 03:24:30] overall: 1/10 shard(s) still running
+[pipeline 03:25:30] overall: 1/10 shard(s) still running
+[pipeline 03:25:40] 4a. owner groups: 3; left out (the weaker of each group) ['Codeage LLC', 'KAL', 'Pure Encapsulations', "Puritan's Pride, Inc.", 'Solgar']
+[pipeline 03:25:40]    Top 20 chosen 5 per quadrant from 127 quick-scored companies
+[pipeline 03:25:40]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\evidence_pool.json
+[pipeline 03:25:40] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 03:25:40] 5. evidence round 1: 20 companies with gaps
+[pipeline 03:25:40] evidence_r1: 20 companies across 10 browser(s)
+[pipeline 03:26:01] evidence_r1: 10/10 shard(s) still running
+[pipeline 03:27:01] evidence_r1: 1/10 shard(s) still running
+[pipeline 03:27:31] reasoning_r1: 20 companies across 10 browser(s)
+[pipeline 03:27:52] reasoning_r1: 10/10 shard(s) still running
+[pipeline 03:28:52] reasoning_r1: 10/10 shard(s) still running
+[pipeline 03:29:52] reasoning_r1: 10/10 shard(s) still running
+[pipeline 03:30:53] reasoning_r1: 10/10 shard(s) still running
+[pipeline 03:31:53] reasoning_r1: 10/10 shard(s) still running
+[pipeline 03:32:53] reasoning_r1: 10/10 shard(s) still running
+[pipeline 03:33:53] reasoning_r1: 10/10 shard(s) still running
+[pipeline 03:34:48] 5. evidence round 2: 20 companies with gaps
+[pipeline 03:34:48] reasoning_r2: 20 companies across 10 browser(s)
+[pipeline 03:35:09] reasoning_r2: 10/10 shard(s) still running
+[pipeline 03:36:11] reasoning_r2: 10/10 shard(s) still running
+[pipeline 03:36:31] 5. evidence round 3: 8 companies with gaps
+[pipeline 03:36:31] reasoning_r3: 8 companies across 8 browser(s)
+[pipeline 03:36:47] reasoning_r3: 8/8 shard(s) still running
+[pipeline 03:37:17] 5b. parameter parts without a supporting point: 91 in 20 companies
+[pipeline 03:37:17] partfill: 20 companies across 10 browser(s)
+[pipeline 03:37:38] partfill: 10/10 shard(s) still running
+[pipeline 03:38:38] partfill: 10/10 shard(s) still running
+[pipeline 03:39:40] partfill: 9/10 shard(s) still running
+[pipeline 03:40:41] partfill: 4/10 shard(s) still running
+[pipeline 03:41:41] partfill: 1/10 shard(s) still running
+[pipeline 03:41:52]    WARNING: 2 companies still incomplete after 3 rounds, left out of the evidence set: ['Metagenics, LLC', 'Deva Nutrition LLC']
+[pipeline 03:41:52]    --keep 120: 18 chart/evidence + 102 long tail kept, 7 lower-scored dropped
+[pipeline 03:41:52]    18 companies with full evidence, 102 in the long tail
+[pipeline 03:41:52] 6. composite scores (5 per quadrant)
+[pipeline 03:41:55] 7. rewriting hedge wording / first person in evidence
+[pipeline 03:42:00] 7c. gaps: 180 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 03:45:01] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 166 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 03:45:03] 7b. supporting points: 136 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 03:45:03] 7b. owner of 21st Century HealthCare, Inc.: Grant Avenue Capital, LLC
+[pipeline 03:45:03] 7b. owner of Arkopharma Laboratoires Pharmaceutiques: Dermapharm AG
+[pipeline 03:45:03] 7b. owner of BioCare Limited: Sinolife United
+[pipeline 03:45:03] 7b. owner of BioSchwartz LLC: GoodBio
+[pipeline 03:45:03] 7b. owner of CanPrev Natural Health Products Ltd.: Apotex Inc.
+[pipeline 03:45:03] 7b. owner of Codeage LLC: Life Extension
+[pipeline 03:45:03] 7b. owner of Country Life, LLC: Lion Equity Partners
+[pipeline 03:45:03] 7b. owner of Designs for Health, Inc.: BDT & MSD Partners
+[pipeline 03:45:03] 7b. owner of Doctor's Best: Xiamen Kingdomway Group Co.
+[pipeline 03:45:03] 7b. owner of Double Wood LLC: Gryphon Investors
+[pipeline 03:45:03] 7b. owner of Douglas Laboratories: Nestlé
+[pipeline 03:45:03] 7b. owner of FoodState, Inc.: Pharmavite LLC
+[pipeline 03:45:03] 7b. owner of General Nutrition Centers, Inc.: Harbin Pharmaceutical Group
+[pipeline 03:45:03] 7b. owner of Gloryfeel GmbH: Bayer AG
+[pipeline 03:45:03] 7b. owner of HealthAid Ltd: PK Consumer Health
+[pipeline 03:45:03] 7b. owner of Holland & Barrett Retail Limited: L1 Retail
+[pipeline 03:45:03] 7b. owner of Jarrow Formulas, LLC: New Mountain Capital
+[pipeline 03:45:03] 7b. owner of KAL: Nutraceutical Corporation
+[pipeline 03:45:03] 7b. owner of Lamberts Healthcare Ltd: Procter & Gamble
+[pipeline 03:45:03] 7b. owner of Mason Vitamins, Inc.: ITO EN (North America) Inc.
+[pipeline 03:45:03] 7b. owner of Metagenics, LLC: Gryphon Investors
+[pipeline 03:45:03] 7b. owner of NATURELO Premium Supplements, LLC: Arcadia Consumer Healthcare, Inc.
+[pipeline 03:45:03] 7b. owner of Natrol LLC: New Mountain Capital
+[pipeline 03:45:03] 7b. owner of Nature Made: Otsuka Pharmaceutical
+[pipeline 03:45:03] 7b. owner of Nature's Bounty: Nestlé
+[pipeline 03:45:03] 7b. owner of Naturelo Lifestyle Brands: Arcadia Consumer Healthcare
+[pipeline 03:45:03] 7b. owner of Nested Naturals Inc.: Nutra Holdings
+[pipeline 03:45:03] 7b. owner of New Chapter, Inc.: Procter & Gamble
+[pipeline 03:45:03] 7b. owner of Nutraceutical Corporation: Snapdragon Capital Partners, LLC
+[pipeline 03:45:03] 7b. owner of Nutralie: URGO Group
+[pipeline 03:45:03] 7b. owner of Nutravita Limited: Karo Healthcare
+[pipeline 03:45:03] 7b. owner of Primal Harvest LLC: WM Partners, LP
+[pipeline 03:45:03] 7b. owner of Pure Encapsulations: Nestlé Health Science
+[pipeline 03:45:03] 7b. owner of Purely Holistic: Growve
+[pipeline 03:45:03] 7b. owner of Purely Optimal LLC: Smart for Life, Inc.
+[pipeline 03:45:03] 7b. owner of Puritan's Pride, Inc.: Nestlé Health Science
+[pipeline 03:45:03] 7b. owner of QGlobal Holdings, LLC: Sanofi
+[pipeline 03:45:03] 7b. owner of Solgar: Nestlé Health Science
+[pipeline 03:45:03] 7b. owner of Sporter: Gulf Capital
+[pipeline 03:45:03] 7b. owner of Sunday Natural Products GmbH: CVC Capital Partners
+[pipeline 03:45:03] 7b. owner of Swanson: Swander Pace Capital
+[pipeline 03:45:03] 7b. owner of Swisse Wellness Pty Ltd: Biostime International Holdings
+[pipeline 03:45:03] 7b. owner of Thorne: The Procter & Gamble Company
+[pipeline 03:45:03] 7b. owner of Trace Minerals Research, LLC: Rosewood Private Investments
+[pipeline 03:45:03] 7b. owner of Vital Nutrients: North Castle Partners
+[pipeline 03:45:03] 7b. owner of Vitawell Nutrition: Euro Vital Pharma
+[pipeline 03:45:03] 7b. owner of Zhou Nutrition LLC: Nutraceutical International Corporation
+[pipeline 03:45:03] 8. building HTML / JSON / CSV report
+[pipeline 03:45:06] 8. report page: interactive design (mena_magnesium_glycinate_market_global_report.html); static copy mena_magnesium_glycinate_market_global_report_classic.html
+[pipeline 03:45:06] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 03:50:04] 8a. fact-check: 18 of 18 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 16 corrections (analyst review wins where both touch the same text)
+[pipeline 03:50:04] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 03:50:05] market: MENA Magnesium Glycinate Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global
+[pipeline 03:50:05]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 03:50:05]    market brief: player_type = Brand / Marketer
+[pipeline 03:50:05]    market brief: market_type = B2C
+[pipeline 03:50:05] 1. verified rows: 194
+[pipeline 03:50:06] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\axes_spec.json
+[pipeline 03:50:06] 3. 193 names -> 148 companies after dedupe (34 groups merged)
+[pipeline 03:50:06] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 03:50:06] scope: 1 companies across 1 browser(s)
+[pipeline 03:50:08] scope: 1/1 shard(s) still running
+[pipeline 03:50:28] 3c. ownership 148 / identity 3 / scope 148 answers: 16 more left out ['Ambrosial Nutraceuticals', 'Amir Nutrition LLC', 'Biogena Middle East', 'COPAD Pharma For Pharmaceutical Industries', 'ESI S.p.A.', 'Goli Nutrition Inc.'], 47 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 03:50:28] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 03:50:28] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 03:50:28] 4a. owner groups: 3; left out (the weaker of each group) ['Codeage LLC', 'KAL', 'Pure Encapsulations', "Puritan's Pride, Inc.", 'Solgar']
+[pipeline 03:50:28]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\evidence_pool.json
+[pipeline 03:50:28] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 03:50:28] 5. evidence round 1: 2 companies with gaps
+[pipeline 03:50:28] reasoning_r1: 2 companies across 2 browser(s)
+[pipeline 03:50:32] reasoning_r1: 2/2 shard(s) still running
+[pipeline 03:50:42] 5b. parameter parts without a supporting point: 3 in 2 companies
+[pipeline 03:50:42] partfill: 2 companies across 2 browser(s)
+[pipeline 03:50:46] partfill: 2/2 shard(s) still running
+[pipeline 03:51:11]    --keep 120: 20 chart/evidence + 100 long tail kept, 7 lower-scored dropped
+[pipeline 03:51:11]    20 companies with full evidence, 100 in the long tail
+[pipeline 03:51:11] 6. composite scores (5 per quadrant)
+[pipeline 03:51:12] 7. rewriting hedge wording / first person in evidence
+[pipeline 03:51:13] 7c. gaps: 36 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 03:53:10] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 34 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 03:53:10] 7b. supporting points: 4 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 03:53:10] 7b. owner of 21st Century HealthCare, Inc.: Grant Avenue Capital, LLC (already set)
+[pipeline 03:53:10] 7b. owner of Arkopharma Laboratoires Pharmaceutiques: Dermapharm AG (already set)
+[pipeline 03:53:10] 7b. owner of BioCare Limited: Sinolife United (already set)
+[pipeline 03:53:10] 7b. owner of BioSchwartz LLC: GoodBio (already set)
+[pipeline 03:53:10] 7b. owner of CanPrev Natural Health Products Ltd.: Apotex Inc. (already set)
+[pipeline 03:53:10] 7b. owner of Codeage LLC: Life Extension (already set)
+[pipeline 03:53:10] 7b. owner of Country Life, LLC: Lion Equity Partners (already set)
+[pipeline 03:53:10] 7b. owner of Designs for Health, Inc.: BDT & MSD Partners (already set)
+[pipeline 03:53:10] 7b. owner of Doctor's Best: Xiamen Kingdomway Group Co. (already set)
+[pipeline 03:53:10] 7b. owner of Double Wood LLC: Gryphon Investors (already set)
+[pipeline 03:53:10] 7b. owner of Douglas Laboratories: Nestlé (already set)
+[pipeline 03:53:10] 7b. owner of FoodState, Inc.: Pharmavite LLC (already set)
+[pipeline 03:53:10] 7b. owner of General Nutrition Centers, Inc.: Harbin Pharmaceutical Group (already set)
+[pipeline 03:53:10] 7b. owner of Gloryfeel GmbH: Bayer AG (already set)
+[pipeline 03:53:10] 7b. owner of HealthAid Ltd: PK Consumer Health (already set)
+[pipeline 03:53:10] 7b. owner of Holland & Barrett Retail Limited: L1 Retail (already set)
+[pipeline 03:53:10] 7b. owner of Jarrow Formulas, LLC: New Mountain Capital (already set)
+[pipeline 03:53:10] 7b. owner of KAL: Nutraceutical Corporation (already set)
+[pipeline 03:53:10] 7b. owner of Lamberts Healthcare Ltd: Procter & Gamble (already set)
+[pipeline 03:53:10] 7b. owner of Mason Vitamins, Inc.: ITO EN (North America) Inc. (already set)
+[pipeline 03:53:10] 7b. owner of Metagenics, LLC: Gryphon Investors (already set)
+[pipeline 03:53:10] 7b. owner of NATURELO Premium Supplements, LLC: Arcadia Consumer Healthcare, Inc. (already set)
+[pipeline 03:53:10] 7b. owner of Natrol LLC: New Mountain Capital (already set)
+[pipeline 03:53:10] 7b. owner of Nature Made: Otsuka Pharmaceutical (already set)
+[pipeline 03:53:10] 7b. owner of Nature's Bounty: Nestlé (already set)
+[pipeline 03:53:10] 7b. owner of Naturelo Lifestyle Brands: Arcadia Consumer Healthcare (already set)
+[pipeline 03:53:10] 7b. owner of Nested Naturals Inc.: Nutra Holdings (already set)
+[pipeline 03:53:10] 7b. owner of New Chapter, Inc.: Procter & Gamble (already set)
+[pipeline 03:53:10] 7b. owner of Nutraceutical Corporation: Snapdragon Capital Partners, LLC (already set)
+[pipeline 03:53:10] 7b. owner of Nutralie: URGO Group (already set)
+[pipeline 03:53:10] 7b. owner of Nutravita Limited: Karo Healthcare (already set)
+[pipeline 03:53:10] 7b. owner of Primal Harvest LLC: WM Partners, LP (already set)
+[pipeline 03:53:10] 7b. owner of Pure Encapsulations: Nestlé Health Science (already set)
+[pipeline 03:53:10] 7b. owner of Purely Holistic: Growve (already set)
+[pipeline 03:53:10] 7b. owner of Purely Optimal LLC: Smart for Life, Inc. (already set)
+[pipeline 03:53:10] 7b. owner of Puritan's Pride, Inc.: Nestlé Health Science (already set)
+[pipeline 03:53:10] 7b. owner of QGlobal Holdings, LLC: Sanofi (already set)
+[pipeline 03:53:10] 7b. owner of Solgar: Nestlé Health Science (already set)
+[pipeline 03:53:10] 7b. owner of Sporter: Gulf Capital (already set)
+[pipeline 03:53:10] 7b. owner of Sunday Natural Products GmbH: CVC Capital Partners (already set)
+[pipeline 03:53:10] 7b. owner of Swanson: Swander Pace Capital (already set)
+[pipeline 03:53:10] 7b. owner of Swisse Wellness Pty Ltd: Biostime International Holdings (already set)
+[pipeline 03:53:10] 7b. owner of Thorne: The Procter & Gamble Company (already set)
+[pipeline 03:53:10] 7b. owner of Trace Minerals Research, LLC: Rosewood Private Investments (already set)
+[pipeline 03:53:10] 7b. owner of Vital Nutrients: North Castle Partners (already set)
+[pipeline 03:53:10] 7b. owner of Vitawell Nutrition: Euro Vital Pharma (already set)
+[pipeline 03:53:10] 7b. owner of Zhou Nutrition LLC: Nutraceutical International Corporation (already set)
+[pipeline 03:53:11] 7b. analyst corrections: 15 text(s) changed from 16 correction(s)
+[pipeline 03:53:11]    WARNING: correction text not found for Laperva: "Laperva's official account displays over 16,000 followers and engages consumers "
+[pipeline 03:53:11] 8. building HTML / JSON / CSV report
+[pipeline 03:53:12] 8. report page: interactive design (mena_magnesium_glycinate_market_global_report.html); static copy mena_magnesium_glycinate_market_global_report_classic.html
+[pipeline 03:53:12] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 03:54:40] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 18 corrections (analyst review wins where both touch the same text)
+[pipeline 03:54:40] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 03:54:41] market: MENA Magnesium Glycinate Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global
+[pipeline 03:54:41]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 03:54:41]    market brief: player_type = Brand / Marketer
+[pipeline 03:54:41]    market brief: market_type = B2C
+[pipeline 03:54:41] 1. verified rows: 194
+[pipeline 03:54:41] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\axes_spec.json
+[pipeline 03:54:41] 3. 193 names -> 148 companies after dedupe (34 groups merged)
+[pipeline 03:54:41] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 03:54:41] 3c. ownership 148 / identity 3 / scope 148 answers: 16 more left out ['Ambrosial Nutraceuticals', 'Amir Nutrition LLC', 'Biogena Middle East', 'COPAD Pharma For Pharmaceutical Industries', 'ESI S.p.A.', 'Goli Nutrition Inc.'], 47 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 03:54:41] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 03:54:42] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 03:54:42] 4a. owner groups: 3; left out (the weaker of each group) ['Codeage LLC', 'KAL', 'Pure Encapsulations', "Puritan's Pride, Inc.", 'Solgar']
+[pipeline 03:54:42]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\evidence_pool.json
+[pipeline 03:54:42] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 03:54:42]    --keep 120: 20 chart/evidence + 100 long tail kept, 7 lower-scored dropped
+[pipeline 03:54:42]    20 companies with full evidence, 100 in the long tail
+[pipeline 03:54:42] 6. composite scores (5 per quadrant)
+[pipeline 03:54:42] 7. rewriting hedge wording / first person in evidence
+[pipeline 03:54:44] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 03:54:44] 7b. supporting points: 1 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 03:54:44] 7b. owner of 21st Century HealthCare, Inc.: Grant Avenue Capital, LLC (already set)
+[pipeline 03:54:44] 7b. owner of Arkopharma Laboratoires Pharmaceutiques: Dermapharm AG (already set)
+[pipeline 03:54:44] 7b. owner of BioCare Limited: Sinolife United (already set)
+[pipeline 03:54:44] 7b. owner of BioSchwartz LLC: GoodBio (already set)
+[pipeline 03:54:44] 7b. owner of CanPrev Natural Health Products Ltd.: Apotex Inc. (already set)
+[pipeline 03:54:44] 7b. owner of Codeage LLC: Life Extension (already set)
+[pipeline 03:54:44] 7b. owner of Country Life, LLC: Lion Equity Partners (already set)
+[pipeline 03:54:44] 7b. owner of Designs for Health, Inc.: BDT & MSD Partners (already set)
+[pipeline 03:54:44] 7b. owner of Doctor's Best: Xiamen Kingdomway Group Co. (already set)
+[pipeline 03:54:44] 7b. owner of Double Wood LLC: Gryphon Investors (already set)
+[pipeline 03:54:44] 7b. owner of Douglas Laboratories: Nestlé (already set)
+[pipeline 03:54:44] 7b. owner of FoodState, Inc.: Pharmavite LLC (already set)
+[pipeline 03:54:44] 7b. owner of General Nutrition Centers, Inc.: Harbin Pharmaceutical Group (already set)
+[pipeline 03:54:44] 7b. owner of Gloryfeel GmbH: Bayer AG (already set)
+[pipeline 03:54:44] 7b. owner of HealthAid Ltd: PK Consumer Health (already set)
+[pipeline 03:54:44] 7b. owner of Holland & Barrett Retail Limited: L1 Retail (already set)
+[pipeline 03:54:44] 7b. owner of Jarrow Formulas, LLC: New Mountain Capital (already set)
+[pipeline 03:54:44] 7b. owner of KAL: Nutraceutical Corporation (already set)
+[pipeline 03:54:44] 7b. owner of Lamberts Healthcare Ltd: Procter & Gamble (already set)
+[pipeline 03:54:44] 7b. owner of Mason Vitamins, Inc.: ITO EN (North America) Inc. (already set)
+[pipeline 03:54:44] 7b. owner of Metagenics, LLC: Gryphon Investors (already set)
+[pipeline 03:54:44] 7b. owner of NATURELO Premium Supplements, LLC: Arcadia Consumer Healthcare, Inc. (already set)
+[pipeline 03:54:44] 7b. owner of Natrol LLC: New Mountain Capital (already set)
+[pipeline 03:54:44] 7b. owner of Nature Made: Otsuka Pharmaceutical (already set)
+[pipeline 03:54:44] 7b. owner of Nature's Bounty: Nestlé (already set)
+[pipeline 03:54:44] 7b. owner of Naturelo Lifestyle Brands: Arcadia Consumer Healthcare (already set)
+[pipeline 03:54:44] 7b. owner of Nested Naturals Inc.: Nutra Holdings (already set)
+[pipeline 03:54:44] 7b. owner of New Chapter, Inc.: Procter & Gamble (already set)
+[pipeline 03:54:44] 7b. owner of Nutraceutical Corporation: Snapdragon Capital Partners, LLC (already set)
+[pipeline 03:54:44] 7b. owner of Nutralie: URGO Group (already set)
+[pipeline 03:54:44] 7b. owner of Nutravita Limited: Karo Healthcare (already set)
+[pipeline 03:54:44] 7b. owner of Primal Harvest LLC: WM Partners, LP (already set)
+[pipeline 03:54:44] 7b. owner of Pure Encapsulations: Nestlé Health Science (already set)
+[pipeline 03:54:44] 7b. owner of Purely Holistic: Growve (already set)
+[pipeline 03:54:44] 7b. owner of Purely Optimal LLC: Smart for Life, Inc. (already set)
+[pipeline 03:54:44] 7b. owner of Puritan's Pride, Inc.: Nestlé Health Science (already set)
+[pipeline 03:54:44] 7b. owner of QGlobal Holdings, LLC: Sanofi (already set)
+[pipeline 03:54:44] 7b. owner of Solgar: Nestlé Health Science (already set)
+[pipeline 03:54:44] 7b. owner of Sporter: Gulf Capital (already set)
+[pipeline 03:54:44] 7b. owner of Sunday Natural Products GmbH: CVC Capital Partners (already set)
+[pipeline 03:54:44] 7b. owner of Swanson: Swander Pace Capital (already set)
+[pipeline 03:54:44] 7b. owner of Swisse Wellness Pty Ltd: Biostime International Holdings (already set)
+[pipeline 03:54:44] 7b. owner of Thorne: The Procter & Gamble Company (already set)
+[pipeline 03:54:44] 7b. owner of Trace Minerals Research, LLC: Rosewood Private Investments (already set)
+[pipeline 03:54:44] 7b. owner of Vital Nutrients: North Castle Partners (already set)
+[pipeline 03:54:44] 7b. owner of Vitawell Nutrition: Euro Vital Pharma (already set)
+[pipeline 03:54:44] 7b. owner of Zhou Nutrition LLC: Nutraceutical International Corporation (already set)
+[pipeline 03:54:44] 7b. analyst corrections: 2 text(s) changed from 18 correction(s)
+[pipeline 03:54:44]    WARNING: correction text not found for EVA Pharma: "The company's digital promotional launch post for Limitless Magnesium on its reg"
+[pipeline 03:54:44]    WARNING: correction text not found for Laperva: "Laperva's official account displays over 16,000 followers and engages consumers "
+[pipeline 03:54:44]    WARNING: correction text not found for Nature Made: 'Nature Made offers a High Absorption Magnesium Glycinate single-ingredient formu'
+[pipeline 03:54:44] 8. building HTML / JSON / CSV report
+[pipeline 03:54:45] 8. report page: interactive design (mena_magnesium_glycinate_market_global_report.html); static copy mena_magnesium_glycinate_market_global_report_classic.html
+[pipeline 03:54:45] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 18 corrections (analyst review wins where both touch the same text)
+[pipeline 03:54:57] 8b. PDF report: mena_magnesium_glycinate_market_global_report.pdf
+[pipeline 03:55:32] 8b. Word report: mena_magnesium_glycinate_market_global_report.docx
+[pipeline 03:55:33] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 120 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [FAIL] Every company has an HQ  -> 1 missing: ['Doctors Naturals']
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 03:55:33] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\mena_magnesium_glycinate_market_global_report.html
+exit=1
+[pipeline 04:24:33] market: MENA Magnesium Glycinate Market (global) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global
+[pipeline 04:24:33]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 04:24:33]    market brief: player_type = Brand / Marketer
+[pipeline 04:24:33]    market brief: market_type = B2C
+[pipeline 04:24:33] 1. verified rows: 194
+[pipeline 04:24:34] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\axes_spec.json
+[pipeline 04:24:34] 3. 193 names -> 148 companies after dedupe (34 groups merged)
+[pipeline 04:24:34] 3b. 1 companies left out (not active or excluded by review): ['Doctors Naturals'] -> _pipeline/excluded_companies.json
+[pipeline 04:24:34] 3b. 1 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 04:24:34] 3c. ownership 148 / identity 3 / scope 148 answers: 16 more left out ['Ambrosial Nutraceuticals', 'Amir Nutrition LLC', 'Biogena Middle East', 'COPAD Pharma For Pharmaceutical Industries', 'ESI S.p.A.', 'Goli Nutrition Inc.'], 47 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 04:24:34] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 04:24:34] 4a. owner groups: 3; left out (the weaker of each group) ['Codeage LLC', 'KAL', 'Pure Encapsulations', "Puritan's Pride, Inc.", 'Solgar']
+[pipeline 04:24:34]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\_pipeline\evidence_pool.json
+[pipeline 04:24:34] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 04:24:34]    --keep 120: 20 chart/evidence + 100 long tail kept, 6 lower-scored dropped
+[pipeline 04:24:34]    20 companies with full evidence, 100 in the long tail
+[pipeline 04:24:34] 6. composite scores (5 per quadrant)
+[pipeline 04:24:35] 7. rewriting hedge wording / first person in evidence
+[pipeline 04:24:36] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 04:24:36] 7b. owner of 21st Century HealthCare, Inc.: Grant Avenue Capital, LLC (already set)
+[pipeline 04:24:36] 7b. owner of Arkopharma Laboratoires Pharmaceutiques: Dermapharm AG (already set)
+[pipeline 04:24:36] 7b. owner of BioCare Limited: Sinolife United (already set)
+[pipeline 04:24:36] 7b. owner of BioSchwartz LLC: GoodBio (already set)
+[pipeline 04:24:36] 7b. owner of CanPrev Natural Health Products Ltd.: Apotex Inc. (already set)
+[pipeline 04:24:36] 7b. owner of Codeage LLC: Life Extension (already set)
+[pipeline 04:24:36] 7b. owner of Country Life, LLC: Lion Equity Partners (already set)
+[pipeline 04:24:36] 7b. owner of Designs for Health, Inc.: BDT & MSD Partners (already set)
+[pipeline 04:24:36] 7b. owner of Doctor's Best: Xiamen Kingdomway Group Co. (already set)
+[pipeline 04:24:36] 7b. owner of Double Wood LLC: Gryphon Investors (already set)
+[pipeline 04:24:36] 7b. owner of Douglas Laboratories: Nestlé (already set)
+[pipeline 04:24:36] 7b. owner of FoodState, Inc.: Pharmavite LLC (already set)
+[pipeline 04:24:36] 7b. owner of General Nutrition Centers, Inc.: Harbin Pharmaceutical Group (already set)
+[pipeline 04:24:36] 7b. owner of Gloryfeel GmbH: Bayer AG (already set)
+[pipeline 04:24:36] 7b. owner of HealthAid Ltd: PK Consumer Health (already set)
+[pipeline 04:24:36] 7b. owner of Holland & Barrett Retail Limited: L1 Retail (already set)
+[pipeline 04:24:36] 7b. owner of Jarrow Formulas, LLC: New Mountain Capital (already set)
+[pipeline 04:24:36] 7b. owner of KAL: Nutraceutical Corporation (already set)
+[pipeline 04:24:36] 7b. owner of Lamberts Healthcare Ltd: Procter & Gamble (already set)
+[pipeline 04:24:36] 7b. owner of Mason Vitamins, Inc.: ITO EN (North America) Inc. (already set)
+[pipeline 04:24:36] 7b. owner of Metagenics, LLC: Gryphon Investors (already set)
+[pipeline 04:24:36] 7b. owner of NATURELO Premium Supplements, LLC: Arcadia Consumer Healthcare, Inc. (already set)
+[pipeline 04:24:36] 7b. owner of Natrol LLC: New Mountain Capital (already set)
+[pipeline 04:24:36] 7b. owner of Nature Made: Otsuka Pharmaceutical (already set)
+[pipeline 04:24:36] 7b. owner of Nature's Bounty: Nestlé (already set)
+[pipeline 04:24:36] 7b. owner of Naturelo Lifestyle Brands: Arcadia Consumer Healthcare (already set)
+[pipeline 04:24:36] 7b. owner of Nested Naturals Inc.: Nutra Holdings (already set)
+[pipeline 04:24:36] 7b. owner of New Chapter, Inc.: Procter & Gamble (already set)
+[pipeline 04:24:36] 7b. owner of Nutraceutical Corporation: Snapdragon Capital Partners, LLC (already set)
+[pipeline 04:24:36] 7b. owner of Nutralie: URGO Group (already set)
+[pipeline 04:24:36] 7b. owner of Nutravita Limited: Karo Healthcare (already set)
+[pipeline 04:24:36] 7b. owner of Primal Harvest LLC: WM Partners, LP (already set)
+[pipeline 04:24:36] 7b. owner of Pure Encapsulations: Nestlé Health Science (already set)
+[pipeline 04:24:36] 7b. owner of Purely Holistic: Growve (already set)
+[pipeline 04:24:36] 7b. owner of Purely Optimal LLC: Smart for Life, Inc. (already set)
+[pipeline 04:24:36] 7b. owner of Puritan's Pride, Inc.: Nestlé Health Science (already set)
+[pipeline 04:24:36] 7b. owner of QGlobal Holdings, LLC: Sanofi (already set)
+[pipeline 04:24:36] 7b. owner of Solgar: Nestlé Health Science (already set)
+[pipeline 04:24:36] 7b. owner of Sporter: Gulf Capital (already set)
+[pipeline 04:24:36] 7b. owner of Sunday Natural Products GmbH: CVC Capital Partners (already set)
+[pipeline 04:24:36] 7b. owner of Swanson: Swander Pace Capital (already set)
+[pipeline 04:24:36] 7b. owner of Swisse Wellness Pty Ltd: Biostime International Holdings (already set)
+[pipeline 04:24:36] 7b. owner of Thorne: The Procter & Gamble Company (already set)
+[pipeline 04:24:36] 7b. owner of Trace Minerals Research, LLC: Rosewood Private Investments (already set)
+[pipeline 04:24:36] 7b. owner of Vital Nutrients: North Castle Partners (already set)
+[pipeline 04:24:36] 7b. owner of Vitawell Nutrition: Euro Vital Pharma (already set)
+[pipeline 04:24:36] 7b. owner of Zhou Nutrition LLC: Nutraceutical International Corporation (already set)
+[pipeline 04:24:37] 7b. analyst corrections: 0 text(s) changed from 18 correction(s)
+[pipeline 04:24:37]    WARNING: correction text not found for EVA Pharma: "The company's digital promotional launch post for Limitless Magnesium on its reg"
+[pipeline 04:24:37]    WARNING: correction text not found for Laperva: "Laperva's official account displays over 16,000 followers and engages consumers "
+[pipeline 04:24:37]    WARNING: correction text not found for Nature Made: 'Nature Made offers a High Absorption Magnesium Glycinate single-ingredient formu'
+[pipeline 04:24:37] 8. building HTML / JSON / CSV report
+[pipeline 04:24:38] 8. report page: interactive design (mena_magnesium_glycinate_market_global_report.html); static copy mena_magnesium_glycinate_market_global_report_classic.html
+[pipeline 04:24:38] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 18 corrections (analyst review wins where both touch the same text)
+[pipeline 04:24:48] 8b. PDF report: mena_magnesium_glycinate_market_global_report.pdf
+[pipeline 04:25:19] 8b. Word report: mena_magnesium_glycinate_market_global_report.docx
+[pipeline 04:25:20] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 120 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 04:25:20] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\mena_magnesium_glycinate_market_global\mena_magnesium_glycinate_market_global_report.html
+exit=0

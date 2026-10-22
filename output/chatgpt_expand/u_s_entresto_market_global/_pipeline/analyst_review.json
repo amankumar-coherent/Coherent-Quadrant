@@ -1,0 +1,78 @@
+{
+  "keep": [
+    {
+      "company": "Accord Healthcare Inc.",
+      "reason": "Profiled in the client sample report as a generic sacubitril/valsartan manufacturer; owner 2026-10-19: include",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18): Generic Sacubitril/Valsartan Manufacturers"
+    },
+    {
+      "company": "Cipla USA Inc.",
+      "reason": "Profiled in the client sample report as a generic sacubitril/valsartan manufacturer; owner 2026-10-19: include",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18): Generic Sacubitril/Valsartan Manufacturers"
+    },
+    {
+      "company": "Avet Pharmaceuticals Inc.",
+      "reason": "Profiled in the client sample report as a generic sacubitril/valsartan manufacturer; owner 2026-10-19: include",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18): Generic Sacubitril/Valsartan Manufacturers"
+    },
+    {
+      "company": "Ascend Laboratories LLC",
+      "reason": "Alkem Laboratories' U.S. company; Alkem is profiled in the client sample report as a generic sacubitril/valsartan manufacturer, and its sacubitril/valsartan tablets (ANDA 213764) are sold in the U.S. (relabelled by Major Pharmaceuticals); owner 2026-10-19: include sample-report companies",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18); verify answer for Major Pharmaceuticals Inc."
+    }
+  ],
+  "scope": [
+    {
+      "company": "Accord Healthcare Inc.",
+      "scope": "core",
+      "reason": "Profiled in the client sample report as a generic sacubitril/valsartan manufacturer; owner 2026-10-19: include",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18): Generic Sacubitril/Valsartan Manufacturers"
+    },
+    {
+      "company": "Cipla USA Inc.",
+      "scope": "core",
+      "reason": "Profiled in the client sample report as a generic sacubitril/valsartan manufacturer; owner 2026-10-19: include",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18): Generic Sacubitril/Valsartan Manufacturers"
+    },
+    {
+      "company": "Avet Pharmaceuticals Inc.",
+      "scope": "core",
+      "reason": "Profiled in the client sample report as a generic sacubitril/valsartan manufacturer; owner 2026-10-19: include",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18): Generic Sacubitril/Valsartan Manufacturers"
+    },
+    {
+      "company": "Ascend Laboratories LLC",
+      "scope": "core",
+      "reason": "Alkem Laboratories' U.S. company; Alkem is profiled in the client sample report as a generic sacubitril/valsartan manufacturer, and its sacubitril/valsartan tablets (ANDA 213764) are sold in the U.S. (relabelled by Major Pharmaceuticals); owner 2026-10-19: include sample-report companies",
+      "source": "Report Sample_U.S.Entresto Market_Coherent_Market_Insights.pdf, Company Profile (p18); verify answer for Major Pharmaceuticals Inc."
+    }
+  ],
+  "exclude": [
+    {
+      "company": "Umedica Laboratories Pvt. Ltd.",
+      "reason": "Headquartered in India (Vapi, Gujarat); its U.S. company Umedica Laboratories USA Inc. is the market's entry (owner 2026-10-19: U.S.-headquartered companies only)",
+      "source": "Verify answer for Umedica Laboratories USA Inc.; market brief U.S.-HQ rule"
+    },
+    {
+      "company": "Crystal Pharmaceutical",
+      "reason": "Headquartered in Suzhou, China (U.S. agent Freyr Inc.); not a U.S.-headquartered company (owner 2026-10-19: U.S.-headquartered companies only)",
+      "source": "Verify answer for Crystal Pharmaceutical (Headquarters: Suzhou, China)"
+    }
+  ],
+  "corrections": [
+    {
+      "company": "Camber Pharmaceuticals Inc.",
+      "find": "Based on primary research, the company has not disclosed two FDA inspections with its most recent inspection closed cleanly in November 2022 resulting in no Form 483 issuance, according to Atlas Compliance inspection tracking data.",
+      "replace": "",
+      "reason": "Garbled by the tone step (a hedge on a third-party claim turned into a 'has not disclosed' sentence); fact-check verdict unverified; source is a third-party inspection tracker",
+      "source": "_pipeline/factcheck/findings.json (unverified)"
+    },
+    {
+      "company": "ANI Pharmaceuticals, Inc.",
+      "find": " in the United States, but based on primary research, the company has not disclosed specific financial disclosures.",
+      "replace": " in the United States.",
+      "reason": "Redundant gap clause: the estimate sentence that follows already covers the company's revenue and margins",
+      "source": "report review 2026-10-19"
+    }
+  ]
+}

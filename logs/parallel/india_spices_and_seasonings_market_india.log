@@ -1,0 +1,596 @@
+[pipeline 00:17:56] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 00:17:56]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 00:17:56]    market brief: player_type = Manufacturer
+[pipeline 00:17:56]    market brief: market_type = B2B
+[pipeline 00:17:56] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 00:18:10] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 00:18:10] 1. verified rows: 261
+[pipeline 00:18:17] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 00:18:34] 2c. research panel: 5 organisation types, 5 designations -> _pipeline/research_panel.json
+[pipeline 00:18:34] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 00:18:35] 3b. operating-status check for 164 companies across 10 browser(s)
+[pipeline 00:24:57] 3b. 5 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Capital Foods Private Limited', 'KKR Food Products', 'Kohinoor Speciality Foods India Private Limited', 'Kusum Masala Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 00:24:57] 3b. 4 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 00:24:57] ownership: 159 companies across 10 browser(s)
+[pipeline 00:25:18] ownership: 10/10 shard(s) still running
+[pipeline 00:26:19] ownership: 10/10 shard(s) still running
+[pipeline 00:27:20] ownership: 9/10 shard(s) still running
+[pipeline 00:28:20] ownership: 8/10 shard(s) still running
+[pipeline 00:29:21] ownership: 7/10 shard(s) still running
+[pipeline 00:30:21] ownership: 7/10 shard(s) still running
+[pipeline 00:31:21] ownership: 6/10 shard(s) still running
+[pipeline 00:32:21] ownership: 5/10 shard(s) still running
+[pipeline 00:33:22] ownership: 5/10 shard(s) still running
+[pipeline 00:34:22] ownership: 5/10 shard(s) still running
+[pipeline 00:35:22] ownership: 4/10 shard(s) still running
+[pipeline 00:36:22] ownership: 3/10 shard(s) still running
+[pipeline 00:37:22] ownership: 2/10 shard(s) still running
+[pipeline 00:38:22] ownership: 2/10 shard(s) still running
+[pipeline 00:39:22] ownership: 1/10 shard(s) still running
+[pipeline 00:40:07] identity: 7 companies across 7 browser(s)
+[pipeline 00:40:22] identity: 6/7 shard(s) still running
+[pipeline 00:40:52] scope: 159 companies across 10 browser(s)
+[pipeline 00:41:13] scope: 10/10 shard(s) still running
+[pipeline 00:42:13] scope: 9/10 shard(s) still running
+[pipeline 00:43:13] scope: 7/10 shard(s) still running
+[pipeline 00:44:13] scope: 5/10 shard(s) still running
+[pipeline 00:45:13] scope: 1/10 shard(s) still running
+[pipeline 00:45:48] hq: 159 companies across 10 browser(s)
+[pipeline 00:46:08] hq: 10/10 shard(s) still running
+[pipeline 00:47:03] 3c. ownership 159 / identity 7 / scope 159 answers: 6 more left out ['Adani Wilmar (Fortune Spices)', 'Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 00:47:04] 3d. HQ placeholder replaced from the same company's other row: ['L V Spices -> Mumbai, India']
+[pipeline 00:47:05] 3d. HQ missing for 26 companies: 24 found in AI Mode ['AVT McCormick Ingredients Private Limited -> Chennai, India', 'Aachi Spices and Foods Private Limited -> Chennai, India', 'Adani Food Products Private Limited -> Rajkot, India', 'Asawa Food Products (Zoff Spices) -> Raipur, India', 'Badshah Masala Private Limited -> Mumbai, India', 'DNV Food Products Limited -> Kolkata, India']
+[pipeline 00:47:05] 4. quick X/Y scorecard scoring needed for 153 companies (1 Product + 1 Business query each)
+[pipeline 00:47:05] overall: 153 companies across 10 browser(s)
+[pipeline 00:47:25] overall: 10/10 shard(s) still running
+[pipeline 00:48:25] overall: 10/10 shard(s) still running
+[pipeline 00:49:25] overall: 10/10 shard(s) still running
+[pipeline 00:50:25] overall: 10/10 shard(s) still running
+[pipeline 00:51:25] overall: 10/10 shard(s) still running
+[pipeline 00:52:25] overall: 10/10 shard(s) still running
+[pipeline 00:52:45] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 00:52:45]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 00:52:45]    market brief: player_type = Manufacturer
+[pipeline 00:52:45]    market brief: market_type = B2B
+[pipeline 00:52:45] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 00:52:47] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 00:52:47] 1. verified rows: 261
+[pipeline 00:52:48] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 00:52:48] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 00:52:48] 3b. operating-status check for 1 companies across 1 browser(s)
+[pipeline 00:53:05] 3b. 6 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Capital Foods Private Limited', 'KKR Food Products', 'Kohinoor Speciality Foods India Private Limited', 'Kusum Masala Private Limited', 'Sakthi Pure Foods Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 00:53:05] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 00:53:05] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 00:53:06] 3d. HQ missing for 2 companies: 1 found in AI Mode ['Adani Wilmar (Fortune Spices) -> Ahmedabad, India']
+[pipeline 00:53:06] 4. quick X/Y scorecard scoring needed for 85 companies (1 Product + 1 Business query each)
+[pipeline 00:53:06] overall: 85 companies across 10 browser(s)
+[pipeline 00:53:27] overall: 10/10 shard(s) still running
+[pipeline 00:54:27] overall: 10/10 shard(s) still running
+[pipeline 00:55:27] overall: 10/10 shard(s) still running
+[pipeline 00:56:27] overall: 10/10 shard(s) still running
+[pipeline 00:57:27] overall: 10/10 shard(s) still running
+[pipeline 00:58:27] overall: 10/10 shard(s) still running
+[pipeline 00:59:27] overall: 4/10 shard(s) still running
+[pipeline 01:00:27] overall: 3/10 shard(s) still running
+[pipeline 01:01:27] overall: 2/10 shard(s) still running
+[pipeline 01:01:57] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 01:01:57]    Top 20 chosen 5 per quadrant from 152 quick-scored companies
+[pipeline 01:01:57]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 01:01:57] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 01:01:57] 5. evidence round 1: 20 companies with gaps
+[pipeline 01:01:57] evidence_r1: 20 companies across 10 browser(s)
+[pipeline 01:02:17] evidence_r1: 10/10 shard(s) still running
+[pipeline 01:03:07] reasoning_r1: 20 companies across 10 browser(s)
+[pipeline 01:03:28] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:04:28] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:05:30] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:06:30] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:07:32] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:08:32] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:09:32] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:10:32] reasoning_r1: 9/10 shard(s) still running
+[pipeline 01:15:20] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 01:15:20]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 01:15:20]    market brief: player_type = Manufacturer
+[pipeline 01:15:20]    market brief: market_type = B2B
+[pipeline 01:15:20] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 01:15:27] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 01:15:27] 1. verified rows: 261
+[pipeline 01:15:27] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 01:15:28] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 01:15:28] 3b. 12 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products', 'Kohinoor Speciality Foods India Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 01:15:28] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 01:15:28] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 01:15:28] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 01:15:28] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 01:15:28] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 01:15:28]    Top 20 chosen by Overall (market brief chart_selection: top_overall) from 146 quick-scored companies
+[pipeline 01:15:28]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 01:15:29] 5. 15 supporting point(s) on invalid sources removed before gap-fill
+[pipeline 01:15:29] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 01:15:29] 5. evidence round 1: 20 companies with gaps
+[pipeline 01:15:29] evidence_r1: 16 companies across 10 browser(s)
+[pipeline 01:15:49] evidence_r1: 10/10 shard(s) still running
+[pipeline 01:16:49] evidence_r1: 4/10 shard(s) still running
+[pipeline 01:17:49] evidence_r1: 4/10 shard(s) still running
+[pipeline 01:18:49] evidence_r1: 4/10 shard(s) still running
+[pipeline 01:19:39] reasoning_r1: 16 companies across 10 browser(s)
+[pipeline 01:20:00] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:21:00] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:22:00] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:23:01] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:24:01] reasoning_r1: 10/10 shard(s) still running
+[pipeline 01:25:01] 5. evidence round 2: 14 companies with gaps
+[pipeline 01:25:01] reasoning_r2: 14 companies across 10 browser(s)
+[pipeline 01:25:21] reasoning_r2: 10/10 shard(s) still running
+[pipeline 01:26:21] reasoning_r2: 3/10 shard(s) still running
+[pipeline 01:26:56] 5. evidence round 3: 7 companies with gaps
+[pipeline 01:26:56] reasoning_r3: 7 companies across 7 browser(s)
+[pipeline 01:27:10] reasoning_r3: 7/7 shard(s) still running
+[pipeline 01:27:36] 5b. parameter parts without a supporting point: 114 in 20 companies
+[pipeline 01:27:36] partfill: 20 companies across 10 browser(s)
+[pipeline 01:27:56] partfill: 10/10 shard(s) still running
+[pipeline 01:28:56] partfill: 10/10 shard(s) still running
+[pipeline 01:29:56] partfill: 9/10 shard(s) still running
+[pipeline 01:30:56] partfill: 7/10 shard(s) still running
+[pipeline 01:31:57] partfill: 5/10 shard(s) still running
+[pipeline 01:32:57] partfill: 3/10 shard(s) still running
+[pipeline 01:33:57]    WARNING: 2 companies still incomplete after 3 rounds, left out of the evidence set: ['ITC Limited', 'Kancor Ingredients Limited']
+[pipeline 01:33:57]    WARNING: only 146 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 01:33:57]    --keep 1000: 18 chart/evidence + 128 long tail kept, 0 lower-scored dropped
+[pipeline 01:33:57]    18 companies with full evidence, 128 in the long tail
+[pipeline 01:33:57] 6. composite scores (5 per quadrant)
+[pipeline 01:33:58] 7. rewriting hedge wording / first person in evidence
+[pipeline 01:34:01] 7c. gaps: 180 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 01:37:06] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 166 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 01:37:09] 7b. supporting points: 550 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 01:37:09] 7b. owner of Badshah Masala Private Limited: Dabur India Limited
+[pipeline 01:37:09] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting
+[pipeline 01:37:09] 7b. owner of Keya Foods International Private Limited: VKL Seasoning
+[pipeline 01:37:09] 7b. owner of MVJ Foods (India) Private Limited: AVA Condiments LLP
+[pipeline 01:37:09] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited
+[pipeline 01:37:09] 7b. owner of VKL Seasoning Private Limited: Firmenich
+[pipeline 01:37:09] 8. building HTML / JSON / CSV report
+[pipeline 01:37:12] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 01:37:12] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 01:45:31] 8a. fact-check: 18 of 18 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 54 corrections (analyst review wins where both touch the same text)
+[pipeline 01:45:31] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 01:45:32] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 01:45:32]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 01:45:32]    market brief: player_type = Manufacturer
+[pipeline 01:45:32]    market brief: market_type = B2B
+[pipeline 01:45:32] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 01:45:34] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 01:45:34] 1. verified rows: 261
+[pipeline 01:45:35] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 01:45:35] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 01:45:35] 3b. 12 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products', 'Kohinoor Speciality Foods India Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 01:45:35] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 01:45:35] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 01:45:36] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 01:45:36] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 01:45:36] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 01:45:36]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 01:45:36] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 01:45:36] 5. evidence round 1: 2 companies with gaps
+[pipeline 01:45:36] reasoning_r1: 2 companies across 2 browser(s)
+[pipeline 01:45:40] reasoning_r1: 2/2 shard(s) still running
+[pipeline 01:45:50] 5b. parameter parts without a supporting point: 3 in 2 companies
+[pipeline 01:45:50] partfill: 2 companies across 2 browser(s)
+[pipeline 01:45:54] partfill: 2/2 shard(s) still running
+[pipeline 01:46:19]    WARNING: only 146 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 01:46:19]    --keep 1000: 20 chart/evidence + 126 long tail kept, 0 lower-scored dropped
+[pipeline 01:46:19]    20 companies with full evidence, 126 in the long tail
+[pipeline 01:46:19] 6. composite scores (5 per quadrant)
+[pipeline 01:46:20] 7. rewriting hedge wording / first person in evidence
+[pipeline 01:46:22] 7c. gaps: 34 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 01:48:05] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 32 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 01:48:05] 7b. supporting points: 22 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 01:48:05] 7b. owner of Badshah Masala Private Limited: Dabur India Limited (already set)
+[pipeline 01:48:05] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting (already set)
+[pipeline 01:48:05] 7b. owner of Keya Foods International Private Limited: VKL Seasoning (already set)
+[pipeline 01:48:05] 7b. owner of MVJ Foods (India) Private Limited: AVA Condiments LLP (already set)
+[pipeline 01:48:05] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited (already set)
+[pipeline 01:48:05] 7b. owner of VKL Seasoning Private Limited: Firmenich (already set)
+[pipeline 01:48:06] 7b. analyst corrections: 53 text(s) changed from 54 correction(s)
+[pipeline 01:48:06]    WARNING: correction text not found for Aachi Spices and Foods Private Limited: "reaffirmed the company's long-term credit rating for bank lines at []BB+ with a "
+[pipeline 01:48:06] 8. building HTML / JSON / CSV report
+[pipeline 01:48:07] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 01:48:08] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 01:51:44] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 60 corrections (analyst review wins where both touch the same text)
+[pipeline 01:51:44] 8a. fact-check decisions changed -> re-running from saved work (pass 3)
+[pipeline 01:51:44] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 01:51:44]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 01:51:44]    market brief: player_type = Manufacturer
+[pipeline 01:51:44]    market brief: market_type = B2B
+[pipeline 01:51:44] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 01:51:46] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 01:51:46] 1. verified rows: 261
+[pipeline 01:51:47] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 01:51:47] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 01:51:47] 3b. 12 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products', 'Kohinoor Speciality Foods India Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 01:51:47] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 01:51:47] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 01:51:48] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 01:51:48] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 01:51:48] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 01:51:48]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 01:51:48] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 01:51:48] 5b. parameter parts without a supporting point: 2 in 2 companies
+[pipeline 01:51:48] partfill: 2 companies across 2 browser(s)
+[pipeline 01:51:52] partfill: 2/2 shard(s) still running
+[pipeline 01:52:07]    WARNING: only 146 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 01:52:07]    --keep 1000: 20 chart/evidence + 126 long tail kept, 0 lower-scored dropped
+[pipeline 01:52:07]    20 companies with full evidence, 126 in the long tail
+[pipeline 01:52:07] 6. composite scores (5 per quadrant)
+[pipeline 01:52:08] 7. rewriting hedge wording / first person in evidence
+[pipeline 01:52:10] 7c. gaps: 2 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 01:52:22] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 2 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 01:52:23] 7b. supporting points: 13 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 01:52:23] 7b. owner of Badshah Masala Private Limited: Dabur India Limited (already set)
+[pipeline 01:52:23] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting (already set)
+[pipeline 01:52:23] 7b. owner of Keya Foods International Private Limited: VKL Seasoning (already set)
+[pipeline 01:52:23] 7b. owner of MVJ Foods (India) Private Limited: AVA Condiments LLP (already set)
+[pipeline 01:52:23] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited (already set)
+[pipeline 01:52:23] 7b. owner of VKL Seasoning Private Limited: Firmenich (already set)
+[pipeline 01:52:24] 7b. analyst corrections: 10 text(s) changed from 60 correction(s)
+[pipeline 01:52:24]    WARNING: correction text not found for Synthite Industries Private Limited: "In March 2026, Ratings reaffirmed the company's long-term credit rating at ' AA/"
+[pipeline 01:52:24]    WARNING: correction text not found for Pravin Masalewale (Suhana Masala): 'The company reports an installed production capacity of 50,400 MTPA for packaged'
+[pipeline 01:52:24]    WARNING: correction text not found for Aachi Spices and Foods Private Limited: "reaffirmed the company's long-term credit rating for bank lines at []BB+ with a "
+[pipeline 01:52:24]    WARNING: correction text not found for Rakesh Masala Pvt Ltd: "Credit rating agency downgraded the company's long-term bank facilities BBB-/Sta"
+[pipeline 01:52:24] 8. building HTML / JSON / CSV report
+[pipeline 01:52:25] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 01:52:25] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 01:52:47] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 59 corrections (analyst review wins where both touch the same text)
+[pipeline 01:52:47] 8a. fact-check decisions changed -> re-running from saved work (pass 4)
+[pipeline 01:52:48] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 01:52:48]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 01:52:48]    market brief: player_type = Manufacturer
+[pipeline 01:52:48]    market brief: market_type = B2B
+[pipeline 01:52:48] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 01:52:50] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 01:52:50] 1. verified rows: 261
+[pipeline 01:52:51] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 01:52:51] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 01:52:51] 3b. 12 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products', 'Kohinoor Speciality Foods India Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 01:52:51] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 01:52:51] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 01:52:52] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 01:52:52] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 01:52:52] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 01:52:52]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 01:52:52] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 01:52:52] 5b. parameter parts without a supporting point: 1 in 1 companies
+[pipeline 01:52:52] partfill: 1 companies across 1 browser(s)
+[pipeline 01:52:54] partfill: 1/1 shard(s) still running
+[pipeline 01:53:09]    WARNING: only 146 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 01:53:09]    --keep 1000: 20 chart/evidence + 126 long tail kept, 0 lower-scored dropped
+[pipeline 01:53:09]    20 companies with full evidence, 126 in the long tail
+[pipeline 01:53:09] 6. composite scores (5 per quadrant)
+[pipeline 01:53:10] 7. rewriting hedge wording / first person in evidence
+[pipeline 01:53:12] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 01:53:13] 7b. supporting points: 6 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 01:53:13] 7b. owner of Badshah Masala Private Limited: Dabur India Limited (already set)
+[pipeline 01:53:13] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting (already set)
+[pipeline 01:53:13] 7b. owner of Keya Foods International Private Limited: VKL Seasoning (already set)
+[pipeline 01:53:13] 7b. owner of MVJ Foods (India) Private Limited: AVA Condiments LLP (already set)
+[pipeline 01:53:13] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited (already set)
+[pipeline 01:53:13] 7b. owner of VKL Seasoning Private Limited: Firmenich (already set)
+[pipeline 01:53:14] 7b. analyst corrections: 5 text(s) changed from 59 correction(s)
+[pipeline 01:53:14]    WARNING: correction text not found for Synthite Industries Private Limited: "In March 2026, Ratings reaffirmed the company's long-term credit rating at ' AA/"
+[pipeline 01:53:14]    WARNING: correction text not found for ITC Limited: 'An independent engineering consultant verified that the ITC Limited Guntur Spice'
+[pipeline 01:53:14]    WARNING: correction text not found for Pravin Masalewale (Suhana Masala): 'The company reports an installed production capacity of 50,400 MTPA for packaged'
+[pipeline 01:53:14]    WARNING: correction text not found for Aachi Spices and Foods Private Limited: "reaffirmed the company's long-term credit rating for bank lines at []BB+ with a "
+[pipeline 01:53:14]    WARNING: correction text not found for Rakesh Masala Pvt Ltd: "Credit rating agency downgraded the company's long-term bank facilities BBB-/Sta"
+[pipeline 01:53:14] 8. building HTML / JSON / CSV report
+[pipeline 01:53:16] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 01:53:16] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 01:53:33] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 59 corrections (analyst review wins where both touch the same text)
+[pipeline 01:53:49] 8b. PDF report: india_spices_and_seasonings_market_india_report.pdf
+[pipeline 01:55:24] 8b. Word report: india_spices_and_seasonings_market_india_report.docx
+[pipeline 01:55:26] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 146 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [FAIL] No third-party source named (marketplaces, directories, social, press)  -> ['CRISIL', 'ICRA', 'crisil']
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [FAIL] Every company has an HQ  -> 1 missing: ['Goldiee Foods Private Limited']
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 01:55:26] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\india_spices_and_seasonings_market_india_report.html
+exit=1
+[pipeline 02:01:22] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 02:01:22]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 02:01:22]    market brief: player_type = Manufacturer
+[pipeline 02:01:22]    market brief: market_type = B2B
+[pipeline 02:01:22] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 02:01:24] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 02:01:24] 1. verified rows: 261
+[pipeline 02:01:24] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 02:01:24] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 02:01:24] 3b. 12 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products', 'Kohinoor Speciality Foods India Private Limited'] -> _pipeline/excluded_companies.json
+[pipeline 02:01:24] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 02:01:25] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 6 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 02:01:25] 3d. HQ missing for 1 companies: 0 found in AI Mode []
+[pipeline 02:01:25] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 02:01:25] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 02:01:25]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 02:01:25] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 02:01:25]    WARNING: only 146 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 02:01:25]    --keep 1000: 20 chart/evidence + 126 long tail kept, 0 lower-scored dropped
+[pipeline 02:01:25]    20 companies with full evidence, 126 in the long tail
+[pipeline 02:01:25] 6. composite scores (5 per quadrant)
+[pipeline 02:01:26] 7. rewriting hedge wording / first person in evidence
+[pipeline 02:01:28] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 02:01:28] 7b. supporting points: 9 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 02:01:28] 7b. HQ for Goldiee Foods Private Limited: Kanpur, India
+[pipeline 02:01:28] 7b. owner of Badshah Masala Private Limited: Dabur India Limited (already set)
+[pipeline 02:01:28] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting (already set)
+[pipeline 02:01:28] 7b. owner of Keya Foods International Private Limited: VKL Seasoning (already set)
+[pipeline 02:01:28] 7b. owner of MVJ Foods (India) Private Limited: AVA Condiments LLP (already set)
+[pipeline 02:01:28] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited (already set)
+[pipeline 02:01:28] 7b. owner of VKL Seasoning Private Limited: Firmenich (already set)
+[pipeline 02:01:29] 7b. analyst corrections: 0 text(s) changed from 59 correction(s)
+[pipeline 02:01:29]    WARNING: correction text not found for Synthite Industries Private Limited: 'Synthite Industries Private Limited commands a dominant domestic market share of'
+[pipeline 02:01:29]    WARNING: correction text not found for Synthite Industries Private Limited: "In March 2026, Ratings reaffirmed the company's long-term credit rating at ' AA/"
+[pipeline 02:01:29]    WARNING: correction text not found for ITC Limited: 'An independent engineering consultant verified that the ITC Limited Guntur Spice'
+[pipeline 02:01:29]    WARNING: correction text not found for ITC Limited: "ITC Limited's bank loan facilities of Rs. 5,250 crore were reaffirmed with a ' A"
+[pipeline 02:01:29]    WARNING: correction text not found for Pravin Masalewale (Suhana Masala): 'The company reports an installed production capacity of 50,400 MTPA for packaged'
+[pipeline 02:01:29]    WARNING: correction text not found for Aachi Spices and Foods Private Limited: "reaffirmed the company's long-term credit rating for bank lines at []BB+ with a "
+[pipeline 02:01:29]    WARNING: correction text not found for Ramdev Food Products Private Limited: 'Ramdev Food Products Private Limited reported an operating income of ₹583.8 cror'
+[pipeline 02:01:29]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's operating profit margin stood at 12.9% and its net profit margin ("
+[pipeline 02:01:29]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's long-term fund-based cash credit facilities of ₹100.50 crore and t"
+[pipeline 02:01:29]    WARNING: correction text not found for Rakesh Masala Pvt Ltd: "Credit rating agency downgraded the company's long-term bank facilities BBB-/Sta"
+[pipeline 02:01:29] 8. building HTML / JSON / CSV report
+[pipeline 02:01:30] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 02:01:31] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 59 corrections (analyst review wins where both touch the same text)
+[pipeline 02:01:43] 8b. PDF report: india_spices_and_seasonings_market_india_report.pdf
+[pipeline 02:03:00] 8b. Word report: india_spices_and_seasonings_market_india_report.docx
+[pipeline 02:03:01] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 146 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 02:03:01] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\india_spices_and_seasonings_market_india_report.html
+exit=0
+[pipeline 02:07:45] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 02:07:45]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 02:07:45]    market brief: player_type = Manufacturer
+[pipeline 02:07:45]    market brief: market_type = B2B
+[pipeline 02:07:45] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 02:07:47] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 02:07:47] 1. verified rows: 261
+[pipeline 02:07:47] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 02:07:47] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 02:07:47] 3b. 17 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Foods Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products'] -> _pipeline/excluded_companies.json
+[pipeline 02:07:47] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 02:07:47] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 5 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 02:07:48] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 02:07:48] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 02:07:48]    Top 20 refilled after 3b: added ['Desai Foods Private Limited', 'Pushp India Limited']
+[pipeline 02:07:48]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 02:07:48] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 02:07:48] 5. evidence round 1: 2 companies with gaps
+[pipeline 02:07:48] evidence_r1: 2 companies across 2 browser(s)
+[pipeline 02:07:52] evidence_r1: 2/2 shard(s) still running
+[pipeline 02:08:52] evidence_r1: 2/2 shard(s) still running
+[pipeline 02:09:52] evidence_r1: 2/2 shard(s) still running
+[pipeline 02:10:52] evidence_r1: 2/2 shard(s) still running
+[pipeline 02:11:37] 5b. parameter parts without a supporting point: 10 in 2 companies
+[pipeline 02:11:37] partfill: 2 companies across 2 browser(s)
+[pipeline 02:11:41] partfill: 2/2 shard(s) still running
+[pipeline 02:12:41] partfill: 2/2 shard(s) still running
+[pipeline 02:13:31]    WARNING: only 141 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 02:13:31]    --keep 1000: 20 chart/evidence + 121 long tail kept, 0 lower-scored dropped
+[pipeline 02:13:31]    20 companies with full evidence, 121 in the long tail
+[pipeline 02:13:31] 6. composite scores (5 per quadrant)
+[pipeline 02:13:32] 7. rewriting hedge wording / first person in evidence
+[pipeline 02:13:34] 7c. gaps: 20 to ask in AI Mode on 10 browser(s) (figures first, then an estimate in words for every gap still without one)
+[pipeline 02:14:26] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 20 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 02:14:27] 7b. supporting points: 23 text(s) tidied (citation leftovers, absence -> 'Not available')
+[pipeline 02:14:27] 7b. HQ for Goldiee Foods Private Limited: Kanpur, India (already set)
+[pipeline 02:14:27] 7b. current name for Orkla India Limited: Orkla India Limited (listed brand is legacy)
+[pipeline 02:14:27] 7b. owner of Badshah Masala Private Limited: Dabur India Limited (already set)
+[pipeline 02:14:27] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting (already set)
+[pipeline 02:14:27] 7b. owner of Keya Foods International Private Limited: VKL Seasoning (already set)
+[pipeline 02:14:27] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited (already set)
+[pipeline 02:14:27] 7b. owner of VKL Seasoning Private Limited: Firmenich (already set)
+[pipeline 02:14:28] 7b. analyst corrections: 0 text(s) changed from 59 correction(s)
+[pipeline 02:14:28]    WARNING: correction text not found for Synthite Industries Private Limited: 'Synthite Industries Private Limited commands a dominant domestic market share of'
+[pipeline 02:14:28]    WARNING: correction text not found for Synthite Industries Private Limited: "In March 2026, Ratings reaffirmed the company's long-term credit rating at ' AA/"
+[pipeline 02:14:28]    WARNING: correction text not found for ITC Limited: 'An independent engineering consultant verified that the ITC Limited Guntur Spice'
+[pipeline 02:14:28]    WARNING: correction text not found for ITC Limited: "ITC Limited's bank loan facilities of Rs. 5,250 crore were reaffirmed with a ' A"
+[pipeline 02:14:28]    WARNING: correction text not found for Pravin Masalewale (Suhana Masala): 'The company reports an installed production capacity of 50,400 MTPA for packaged'
+[pipeline 02:14:28]    WARNING: correction text not found for Aachi Spices and Foods Private Limited: "reaffirmed the company's long-term credit rating for bank lines at []BB+ with a "
+[pipeline 02:14:28]    WARNING: correction text not found for Ramdev Food Products Private Limited: 'Ramdev Food Products Private Limited reported an operating income of ₹583.8 cror'
+[pipeline 02:14:28]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's operating profit margin stood at 12.9% and its net profit margin ("
+[pipeline 02:14:28]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's long-term fund-based cash credit facilities of ₹100.50 crore and t"
+[pipeline 02:14:28]    WARNING: correction text not found for Rakesh Masala Pvt Ltd: "Credit rating agency downgraded the company's long-term bank facilities BBB-/Sta"
+[pipeline 02:14:28] 8. building HTML / JSON / CSV report
+[pipeline 02:14:30] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 02:14:30] 8a. chart fact-check (attempt 1) on 10 browser(s)
+[pipeline 02:17:47] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 65 corrections (analyst review wins where both touch the same text)
+[pipeline 02:17:47] 8a. fact-check decisions changed -> re-running from saved work (pass 2)
+[pipeline 02:17:48] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 02:17:48]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 02:17:48]    market brief: player_type = Manufacturer
+[pipeline 02:17:48]    market brief: market_type = B2B
+[pipeline 02:17:48] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 02:17:50] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 02:17:50] 1. verified rows: 261
+[pipeline 02:17:50] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 02:17:50] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 02:17:51] 3b. 17 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Foods Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products'] -> _pipeline/excluded_companies.json
+[pipeline 02:17:51] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 02:17:51] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 5 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 02:17:51] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 02:17:51] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 02:17:51]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 02:17:51] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 02:17:51] 5b. parameter parts without a supporting point: 1 in 1 companies
+[pipeline 02:17:51] partfill: 1 companies across 1 browser(s)
+[pipeline 02:17:53] partfill: 1/1 shard(s) still running
+[pipeline 02:18:08]    WARNING: only 141 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 02:18:08]    --keep 1000: 20 chart/evidence + 121 long tail kept, 0 lower-scored dropped
+[pipeline 02:18:08]    20 companies with full evidence, 121 in the long tail
+[pipeline 02:18:08] 6. composite scores (5 per quadrant)
+[pipeline 02:18:10] 7. rewriting hedge wording / first person in evidence
+[pipeline 02:18:12] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 02:18:14] 7b. HQ for Goldiee Foods Private Limited: Kanpur, India (already set)
+[pipeline 02:18:14] 7b. current name for Orkla India Limited: Orkla India Limited (listed brand is legacy) (already set)
+[pipeline 02:18:14] 7b. owner of Badshah Masala Private Limited: Dabur India Limited (already set)
+[pipeline 02:18:14] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting (already set)
+[pipeline 02:18:14] 7b. owner of Keya Foods International Private Limited: VKL Seasoning (already set)
+[pipeline 02:18:14] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited (already set)
+[pipeline 02:18:14] 7b. owner of VKL Seasoning Private Limited: Firmenich (already set)
+[pipeline 02:18:15] 7b. analyst corrections: 6 text(s) changed from 65 correction(s)
+[pipeline 02:18:15]    WARNING: correction text not found for Synthite Industries Private Limited: 'Synthite Industries Private Limited commands a dominant domestic market share of'
+[pipeline 02:18:15]    WARNING: correction text not found for Synthite Industries Private Limited: "In March 2026, Ratings reaffirmed the company's long-term credit rating at ' AA/"
+[pipeline 02:18:15]    WARNING: correction text not found for ITC Limited: 'An independent engineering consultant verified that the ITC Limited Guntur Spice'
+[pipeline 02:18:15]    WARNING: correction text not found for ITC Limited: "ITC Limited's bank loan facilities of Rs. 5,250 crore were reaffirmed with a ' A"
+[pipeline 02:18:15]    WARNING: correction text not found for Pravin Masalewale (Suhana Masala): 'The company reports an installed production capacity of 50,400 MTPA for packaged'
+[pipeline 02:18:15]    WARNING: correction text not found for Aachi Spices and Foods Private Limited: "reaffirmed the company's long-term credit rating for bank lines at []BB+ with a "
+[pipeline 02:18:15]    WARNING: correction text not found for Ramdev Food Products Private Limited: 'Ramdev Food Products Private Limited reported an operating income of ₹583.8 cror'
+[pipeline 02:18:15]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's operating profit margin stood at 12.9% and its net profit margin ("
+[pipeline 02:18:15]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's long-term fund-based cash credit facilities of ₹100.50 crore and t"
+[pipeline 02:18:15]    WARNING: correction text not found for Rakesh Masala Pvt Ltd: "Credit rating agency downgraded the company's long-term bank facilities BBB-/Sta"
+[pipeline 02:18:16] 8. building HTML / JSON / CSV report
+[pipeline 02:18:18] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 02:18:18] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 65 corrections (analyst review wins where both touch the same text)
+[pipeline 02:18:35] 8b. PDF report: india_spices_and_seasonings_market_india_report.pdf
+[pipeline 02:20:07] 8b. Word report: india_spices_and_seasonings_market_india_report.docx
+[pipeline 02:20:09] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 141 companies
+   [PASS] Chart has 20 companies
+   [FAIL] Quadrant split even (5/5/5/5)  -> {'Trailblazers': 4, 'Challengers': 5, 'Leaders': 6, 'Emerging Players': 5}
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 02:20:09] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\india_spices_and_seasonings_market_india_report.html
+exit=1
+[pipeline 02:21:51] market: India Spices and Seasonings Market (india) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india
+[pipeline 02:21:51]    market brief: scope set from _pipeline/market_brief.json
+[pipeline 02:21:51]    market brief: player_type = Manufacturer
+[pipeline 02:21:51]    market brief: market_type = B2B
+[pipeline 02:21:51] 1b. 164 verified companies after dedupe, need 1000 -> discover -> verify rounds
+[pipeline 02:21:53] 1b. now 164 verified companies after dedupe (see _pipeline/logs/discover_rounds.log)
+[pipeline 02:21:53] 1. verified rows: 261
+[pipeline 02:21:54] 2. axes: X=Product Capability (5 params) Y=Business Capability (5 params) -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\axes_spec.json
+[pipeline 02:21:54] 3. 261 names -> 164 companies after dedupe (44 groups merged)
+[pipeline 02:21:54] 3b. 17 companies left out (not active or excluded by review): ['AVA Condiments LLP', 'Aachi Masala Foods Pvt Ltd', 'Aachi Spices & Foods Pvt. Ltd.', 'Capital Foods Private Limited', 'Dharampal Satyapal Foods Limited', 'Dharampal Satyapal Limited', 'Goldiee Masale Private Limited', 'KKR Food Products'] -> _pipeline/excluded_companies.json
+[pipeline 02:21:54] 3b. 2 status answers kept but need a person's look (renamed / no event given) -> _pipeline/status_needs_review.json
+[pipeline 02:21:54] 3c. ownership 159 / identity 7 / scope 159 answers: 5 more left out ['Ganesh Grains Limited', 'Jayanti Business Venture Limited', 'Lotus Corporate Private Limited', 'MTR Foods Private Limited', 'Sunrise Foods Private Limited'], 5 owner labels, 0 adjacent-segment (not on the chart) [] -> _pipeline/auto_review.json
+[pipeline 02:21:54] 4. quick X/Y scorecard scoring needed for 0 companies (1 Product + 1 Business query each)
+[pipeline 02:21:54] 4a. owner groups: 1; left out (the weaker of each group) ['Keya Foods International Private Limited']
+[pipeline 02:21:54]    evidence pool: 20 companies -> C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\_pipeline\evidence_pool.json
+[pipeline 02:21:55] 5. deep evidence on 10 browser(s) (--evidence-slots 41-50)
+[pipeline 02:21:55]    WARNING: only 141 verified companies after dedupe, fewer than --keep 1000. Discovery has already run for this market; re-run it with a larger --discover-target in a fresh output folder to find more.
+[pipeline 02:21:55]    --keep 1000: 20 chart/evidence + 121 long tail kept, 0 lower-scored dropped
+[pipeline 02:21:55]    20 companies with full evidence, 121 in the long tail
+[pipeline 02:21:55] 6. composite scores (5 per quadrant)
+[pipeline 02:21:56] 7. rewriting hedge wording / first person in evidence
+[pipeline 02:21:59] 7c. gaps: 0 disclosed figure(s), 0 figure estimate(s), 0 estimate(s) in words, 0 insufficient-basis statement(s) (review list: _pipeline/estimates/estimates.md)
+[pipeline 02:22:00] 7b. HQ for Goldiee Foods Private Limited: Kanpur, India (already set)
+[pipeline 02:22:00] 7b. current name for Orkla India Limited: Orkla India Limited (listed brand is legacy) (already set)
+[pipeline 02:22:00] 7b. owner of Badshah Masala Private Limited: Dabur India Limited (already set)
+[pipeline 02:22:00] 7b. owner of Brahmins Foods India Pvt Ltd: Wipro Consumer Care and Lighting (already set)
+[pipeline 02:22:00] 7b. owner of Keya Foods International Private Limited: VKL Seasoning (already set)
+[pipeline 02:22:00] 7b. owner of Sree Annapoorna Foods: Gemini Edibles & Fats India Limited (already set)
+[pipeline 02:22:00] 7b. owner of VKL Seasoning Private Limited: Firmenich (already set)
+[pipeline 02:22:01] 7b. analyst corrections: 0 text(s) changed from 65 correction(s)
+[pipeline 02:22:01]    WARNING: correction text not found for Synthite Industries Private Limited: 'Synthite Industries Private Limited commands a dominant domestic market share of'
+[pipeline 02:22:01]    WARNING: correction text not found for Synthite Industries Private Limited: "In March 2026, Ratings reaffirmed the company's long-term credit rating at ' AA/"
+[pipeline 02:22:01]    WARNING: correction text not found for ITC Limited: 'An independent engineering consultant verified that the ITC Limited Guntur Spice'
+[pipeline 02:22:01]    WARNING: correction text not found for ITC Limited: "ITC Limited's bank loan facilities of Rs. 5,250 crore were reaffirmed with a ' A"
+[pipeline 02:22:01]    WARNING: correction text not found for Pravin Masalewale (Suhana Masala): 'The company reports an installed production capacity of 50,400 MTPA for packaged'
+[pipeline 02:22:01]    WARNING: correction text not found for Aachi Spices and Foods Private Limited: "reaffirmed the company's long-term credit rating for bank lines at []BB+ with a "
+[pipeline 02:22:01]    WARNING: correction text not found for Ramdev Food Products Private Limited: 'Ramdev Food Products Private Limited reported an operating income of ₹583.8 cror'
+[pipeline 02:22:01]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's operating profit margin stood at 12.9% and its net profit margin ("
+[pipeline 02:22:01]    WARNING: correction text not found for Ramdev Food Products Private Limited: "The company's long-term fund-based cash credit facilities of ₹100.50 crore and t"
+[pipeline 02:22:01]    WARNING: correction text not found for Rakesh Masala Pvt Ltd: "Credit rating agency downgraded the company's long-term bank facilities BBB-/Sta"
+[pipeline 02:22:01] 8. building HTML / JSON / CSV report
+[pipeline 02:22:03] 8. report page: interactive design (india_spices_and_seasonings_market_india_report.html); static copy india_spices_and_seasonings_market_india_report_classic.html
+[pipeline 02:22:03] 8a. fact-check: 20 of 20 chart companies checked; decided 0 exclude, 0 scope, 0 ownership, 0 hq, 65 corrections (analyst review wins where both touch the same text)
+[pipeline 02:22:20] 8b. PDF report: india_spices_and_seasonings_market_india_report.pdf
+[pipeline 02:23:49] 8b. Word report: india_spices_and_seasonings_market_india_report.docx
+[pipeline 02:23:51] VERIFY
+   [PASS] Exactly 5 parameters on X and on Y
+   [PASS] Axes are Product Capability (X) / Business Capability (Y)
+   [PASS] No inactive / acquired / excluded company listed
+   [PASS] No company whose owner is also listed
+   [PASS] Top companies: score + evidence + reasoning for all 10 parameters
+   [PASS] Report keeps 141 companies
+   [PASS] Chart has 20 companies
+   [PASS] Quadrant split even (5/5/5/5)
+   [PASS] X/Y = mean of their parameter scores
+   [PASS] No hedge wording / first person in report
+   [PASS] Estimated figures labelled 'estimated ... approximately', with basis and confidence
+   [PASS] Other Noticeable Player shows filled bubbles only (no numbers, no tooltip)
+   [PASS] Interactive report: data embedded, long-tail bubbles without tooltip
+   [PASS] Research panel above the chart (organisations incl. manufacturers, designations)
+   [PASS] Market definition short (<= 100 words) and no internal note in the report
+   [PASS] Report wording: 'As per our findings', estimates read '... is ...'
+   [PASS] Other Noticeable Player sorted by Strength
+   [PASS] No market-research publisher (competitor) named
+   [PASS] No third-party source named (marketplaces, directories, social, press)
+   [PASS] No adjacent-segment company on the chart (like-for-like quadrant)
+   [PASS] Supporting points: absence reads 'Not available', only when nothing else is found
+   [PASS] Every company has an HQ
+   [PASS] Every X/Y >= 65
+   [PASS] Chart fact-check complete (status, owner, HQ, scope, supporting points)
+[pipeline 02:23:51] report: C:\Users\aman.kumar\Coherent-Quadrant\output\chatgpt_expand\india_spices_and_seasonings_market_india\india_spices_and_seasonings_market_india_report.html
+exit=0

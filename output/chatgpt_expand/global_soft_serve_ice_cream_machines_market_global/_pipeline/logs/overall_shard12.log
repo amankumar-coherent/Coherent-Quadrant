@@ -1,0 +1,34 @@
+shard 12/20: 12 companies (Overall score only, no evidence)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_53_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [1/12] Bangla Corporation: X=52 Y=25 O=38
+  [2/12] Desarrollo Mexicano: X=50 Y=52 O=51
+  [3/12] GRIS: X=59 Y=46 O=52
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: UNKNOWN: unknown error, write
+    at Socket._write (node:internal/net:75:18)
+    at writeOrBuffer (node:internal/streams/writable:574:12)
+    at _write (node:internal/streams/writable:503:10)
+    at Writable.write (node:internal/streams/writable:512:10)
+    at PipeTransport.send (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:36766:25)
+    at dispatcherConnection.onmessage (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:72575:59)
+    at DispatcherConnection.sendEvent (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26379:14)
+    at _FrameDispatcher._dispatchEvent (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:26301:25)
+    at _Frame.<anonymous> (C:\Users\aman.kumar\Coherent-Quadrant\.venv\Lib\site-packages\patchright\driver\package\lib\coreBundle.js:57059:16)
+    at _Frame.emit (node:events:526:24)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processImmediate (node:internal/timers:541:9) {
+  errno: -4094,
+  syscall: 'write',
+  code: 'UNKNOWN'
+}
+
+Node.js v24.21.0
+  [ai-mode] browser closed/crashed — reopening the browser (reset #1)

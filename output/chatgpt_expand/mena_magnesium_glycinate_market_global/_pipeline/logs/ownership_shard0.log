@@ -1,0 +1,25 @@
+[facts 02:52:24] ownership: 15 companies, 15 to check
+      · own-1: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · own-1: AI Mode JSON parse OK — no sign of blocking (0 CAPTCHAs this run)
+      · own-2: calling Google AI Mode (udm=50) attempt 1/4…
+  [ai-mode] Google 'Verifying your request' page — clearing cookies and relaunching browser (reset #1)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+  [ai-mode] CAPTCHA (2 this run) — solve it in the browser window
+      · own-2: rate limited (rate limited by Google (2 CAPTCHAs this run)) — resetting profile, cookies and browser, retrying now
+  [ai-mode] ratelimit — archiving profile and starting clean (reset #2)
+  [ai-mode] browser ready (chromium, headless=False, profile=C:\Users\aman.kumar\Coherent-Quadrant\data\ai_mode_batch_41_chromium)
+  [ai-mode] extensions loaded: ['Free AI ReCaptcha Solver by Raptor (Captcha Plugin) [COMMAND_LINE]'] | our workers: 1
+      · own-2: calling Google AI Mode (udm=50) attempt 2/5…
+  [ai-mode] CAPTCHA (3 this run) — solve it in the browser window
+      · own-2: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 77s ago
+[facts 02:56:20] ownership: 3 unclear, asking one at a time
+      · own-one-Bio Energy Tech: calling Google AI Mode (udm=50) attempt 1/4…
+      · own-one-Bio Energy Tech: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 96s ago
+      · own-one-InnovixLabs LLC: calling Google AI Mode (udm=50) attempt 1/4…
+      · own-one-InnovixLabs LLC: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 115s ago
+      · own-one-Natural Factors Nutr: calling Google AI Mode (udm=50) attempt 1/4…
+      · own-one-Natural Factors Nutr: AI Mode JSON parse OK — 3 CAPTCHAs this run, last 131s ago
+[facts 02:57:14] ownership: 15 answers saved -> facts_ownership_shard0.json
