@@ -228,3 +228,22 @@ def test_a_sentence_already_in_house_wording_is_kept_whole():
     s = (f"The company runs two plants, meaning {PR[0].lower()}{PR[1:]} per-plant output, which "
          "is not publicly reported.")
     assert to_primary(s).startswith("The company runs two plants")
+
+
+def test_the_sentence_level_fallback_also_guards_its_subject():
+    """No rule matches "The company reports that ... and X are not publicly reported", so it
+    reaches the sentence-level fallback. Its subject was a bare ".+?", which swallowed the
+    reporting clause: "...has not disclosed company reports that its products are sold on a
+    'Factory Direct Only' basis and". A subject that is not a noun phrase now falls back to
+    "further details" instead (owner 2026-11-02)."""
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+    from primary_research_wording import PR, to_primary
+    out = to_primary('The company reports that its products are sold on a "Factory Direct Only" '
+                     "basis and regional revenue splits are not publicly reported.")
+    assert out == f"{PR} further details."
+    assert "company reports that" not in out
+    # a plain subject still names what was not disclosed
+    assert to_primary("Regional revenue splits are not publicly reported.") == \
+        f"{PR} regional revenue splits."

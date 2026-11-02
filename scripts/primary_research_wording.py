@@ -250,7 +250,15 @@ _GAP_OBJECT = re.compile(r"\b(?:evidence|documentation|data|records?|information
                          r"|\b(?:regarding|concerning)\s+(.+)$", re.I)
 _BAND_TAIL = re.compile(r",\s*(?:placing|positioning|which (?:places|positions|puts|keeps))\b[^.]*?"
                         r"\b(?:band|score|scoring|tier|rating)\b[^.]*", re.I)
-_SUBJECT_GAP = re.compile(r"^(?:the\s+)?(.+?)\s+(?:(?:is|are|was|were) not|(?:has|have|had) not been) (?:publicly |officially )?"
+# The subject is a noun phrase, under the same guard as the rules above: a bare
+# ".+?" here swallowed a whole reporting clause into the gap object ("...has not
+# disclosed company reports that its products are sold on a 'Factory Direct
+# Only' basis and"). This is the second path into the gap wording -- the rules
+# never matched that sentence at all -- so it needs the guard too, and where the
+# subject cannot be read as a noun phrase the fallback below writes "further
+# details" rather than an ungrammatical object (owner 2026-11-02).
+_SUBJECT_GAP = re.compile(rf"^(?:the\s+)?({_NP})\s+(?:(?:is|are|was|were) not|(?:has|have|had) not been) "
+                          r"(?:publicly |officially )?"
                           r"(?:detailed|disclosed|reported|available|documented)\b", re.I)
 
 
@@ -268,6 +276,35 @@ def _gap_object(part: str) -> str:
     obj = re.sub(r"\s+(?:could|can|was|were|is|are|has|have)\b.*$", "", obj or "").strip(" ,.;")
     obj = re.sub(r"\s+(?:in|within|from) (?:public|published|the public)\b.*$", "", obj).strip(" ,.;")
     return _lower_head(obj) if obj else "further details"
+
+
+# Two rewrites can meet on one sentence and leave the gap stated twice, stated by a clause
+# that contradicts it, or stated without its lead. Each shape below was found in a finished
+# report (owner 2026-11-02). They match the bare gap phrase rather than the whole house
+# sentence, because in every one of them the lead is exactly what went missing. Cleaned
+# after the gap rules, never inside them, so each rule stays readable on its own.
+_SENT_START = r"(^|(?<=[.!?])\s)"
+_GAP_TIDY: list[tuple[re.Pattern[str], str]] = [
+    # "...has not disclosed by the company X": the gap wording met the "not confirmed
+    # through desk research" -> "not disclosed by the company" rewrite, so the sentence
+    # names who did not disclose twice.
+    (re.compile(r"has not disclosed by the company\b"), "has not disclosed"),
+    # "...the company has delayed or has not disclosed X": two verbs for one gap.
+    (re.compile(r"the company has \w+ or has not disclosed\b"), "the company has not disclosed"),
+    # "We verified that <gap>" / "The gap is that <gap>": a check cannot verify a
+    # non-disclosure, and "the gap" is the prompt's word for it, not the report's.
+    (re.compile(rf"{_SENT_START}(?:We (?:verified|found|confirmed|noted)|The gap is) that "
+                r"the company has not disclosed"), rf"\g<1>{PR}"),
+    # A gap sentence that lost its lead, with the subject or without it.
+    (re.compile(rf"{_SENT_START}[Tt]he company has not disclosed"), rf"\g<1>{PR}"),
+    (re.compile(rf"{_SENT_START}has not disclosed\b"), rf"\g<1>{PR}"),
+]
+
+
+def _tidy_gap_sentence(t: str) -> str:
+    for rx, rep in _GAP_TIDY:
+        t = rx.sub(rep, t)
+    return t
 
 
 def _rewrite_gap_sentences(t: str) -> str:
@@ -403,6 +440,7 @@ def _to_primary(text: str) -> str:
     if t.endswith(NOTE_CLOSING) and PR.lower() in t[: -len(NOTE_CLOSING)].lower():
         t = t[: -len(NOTE_CLOSING)].rstrip()
     t = _rewrite_gap_sentences(t)
+    t = _tidy_gap_sentence(t)
     t = t.replace(f"{PR[1:]} the company's ", f"{PR[1:]} its ")
     t = re.sub(r"\s{2,}", " ", t).replace(" ,", ",").strip()
     # "..., but based on primary research" after a comma already present
