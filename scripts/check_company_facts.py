@@ -31,8 +31,13 @@ sys.path.insert(0, str(ROOT / "src"))
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+def _scope_test(brief: dict) -> str:
+    """Market brief "scope_test": which scope question this market is judged by."""
+    return str(brief.get("scope_test") or "").strip().lower()
+
+
 BATCH = 10
-OWN_KEYS = ("acquired", "acquirer", "year", "today", "note", "current_name", "brand_status")
+OWN_KEYS = ("acquired", "acquirer", "year", "today", "note", "current_name", "brand_status", "group")
 SCOPE_KEYS = ("scope", "reason")
 ID_KEYS = ("exists", "website_is_theirs", "website_owner", "operating", "event", "year",
            "in_market", "evidence")
@@ -143,8 +148,8 @@ def main() -> int:
             if (pipe / "market_brief.json").exists() else {}
         system = cf.scope_prompt(args.market, scope, str(analysis.get("core_scope") or ""),
                                  analysis.get("adjacent_segments") or [],
-                                 own_product_line=str(brief.get("scope_test") or "").strip().lower()
-                                 == "own_product_line")
+                                 own_product_line=_scope_test(brief) == "own_product_line",
+                                 sells_in_channel=_scope_test(brief) == "sells_in_channel")
         todo = [n for n in names if n not in done and n not in merged]
         log(f"scope: {len(todo)} companies to check")
         for i in range(0, len(todo), BATCH):

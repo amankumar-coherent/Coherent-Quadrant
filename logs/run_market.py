@@ -27,6 +27,11 @@ ap.add_argument("--discovery-only", action="store_true", help="stop before the p
 ap.add_argument("--slot-start", type=int, default=41, help="first browser slot (one market per slot range)")
 ap.add_argument("--state-wise", action="store_true",
                 help="single-country run: discover state by state (state names only, no cities)")
+ap.add_argument("--pipeline-browsers", type=int, default=0,
+                help="browsers for the steps AFTER discovery (verify, facts, scoring, evidence). Discovery is bounded by how fast Google answers one browser, the later steps are not, so they parallelise further (owner 2026-10-29). Default: same as --browsers")
+ap.add_argument("--city-wise", action="store_true",
+                help="single-country run: discover area by area WITH each area's cities named "
+                     "(owner 2026-10-28, Mozambique: the broad rounds ran dry at 17 companies)")
 ap.add_argument("--discover-to", type=int, default=0,
                 help="stop discovery at this many verified (default: keep x 4/3)")
 ap.add_argument("--global-focus", action="store_true",
@@ -41,16 +46,33 @@ if a.discover_to:
 NB = str(a.browsers)
 S0 = a.slot_start
 FIRST, LAST = str(S0), str(S0 + a.browsers - 1)
+# The pipeline may use a wider slot range than discovery did; they never run at once.
+PIPE_NB = a.pipeline_browsers or a.browsers
+PIPE_FIRST, PIPE_LAST = str(S0), str(S0 + PIPE_NB - 1)
 OUT = Path(default_output_dir(MARKET, COUNTRY))
 PIPE = OUT / "_pipeline"
 CKPT = OUT / "chatgpt_checkpoint_batch_all.json"
 brief = json.loads((PIPE / "market_brief.json").read_text(encoding="utf-8"))
-env = {**os.environ, "PYTHONIOENCODING": "utf-8", "GOOGLE_AI_MODE_QUERY_DELAY": "10",
+"""Pacing: 10s between queries, unless the operator has already set a slower one.
+It was hardcoded, so a blocked market could not be slowed down without editing this
+file (owner 2026-10-28, Mozambique: 188 unusable AI Mode replies against 20 usable
+and 30 CAPTCHAs -- the browsers then reported the market "exhausted" after a single
+empty round, which is a rate block, not an empty market)."""
+env = {**os.environ, "PYTHONIOENCODING": "utf-8",
+       "GOOGLE_AI_MODE_QUERY_DELAY": os.environ.get("GOOGLE_AI_MODE_QUERY_DELAY") or "10",
        "MARKET_SCOPE": " ".join(brief["scope"].split()), "MARKET_PLAYER_TYPE": brief["player_type"],
-       "MARKET_TYPE": brief["market_type"], "EXPAND_DISCOVERY_XY": "0"}
+       "MARKET_TYPE": brief["market_type"], "EXPAND_DISCOVERY_XY": "0",
+       # How this market qualifies a company: who MAKES the product, or who SELLS it
+       # through the market's channel ("sells_in_channel"). Verify reads it too, so a
+       # B2C Brand / Marketer market can still hold the marketplaces that sell the goods.
+       "MARKET_SCOPE_TEST": str(brief.get("scope_test") or "")}
 if a.state_wise:
     # Owner 2026-10-14: state by state from the first round, state names only.
     env.update(DISCOVER_START_TIER="state", DISCOVER_STATE_NAMES_ONLY="1")
+if a.city_wise:
+    # Owner 2026-10-28: area by area from the first round, each area's cities named --
+    # the opposite of --state-wise, for a country whose companies sit outside the capital.
+    env.update(DISCOVER_START_TIER="state")
 if a.global_focus:
     # Owner 2026-10-14: search globally; the countries / areas the market names come first.
     env.update(DISCOVER_FOCUS_AREAS=";".join(brief.get("focus_areas") or []), DISCOVER_SKIP_COUNTRY_TIER="1")
@@ -83,6 +105,32 @@ if have() == 0 and not analysed():
     print(f"[run] first discovery: {have()} verified", flush=True)
 
 
+def load_seeds() -> None:
+    """queries/seeds/<market slug>.txt = the companies the client's sample names. The first
+    one-browser discovery loads them; with Step 0c pre-filled that step is skipped, so
+    they are added to the candidate list here (once; each is verified like any other)."""
+    if not CKPT.exists():
+        return
+    from vendor_intel.pipeline import chatgpt_expand as ce
+
+    seeds = ce._seed_candidates(MARKET, COUNTRY)
+    if not seeds:
+        return
+    state = json.loads(CKPT.read_text(encoding="utf-8"))
+    data = state.setdefault("data", {})
+    known = {ce._dedupe_key(str(r.get("name") or r.get("Company") or ""))
+             for k in ("recalled", "verified", "rejected_mid") for r in data.get(k) or []}
+    new = [x for x in seeds if ce._dedupe_key(x["name"]) not in known]
+    if new:
+        data["recalled"] = list(data.get("recalled") or []) + new
+        data["seeds_count"] = len(seeds)
+        CKPT.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
+        (PIPE / "verify_only_done").unlink(missing_ok=True)  # verify them on every browser next
+        print(f"[run] {len(new)} seed companies from the client's sample added to the candidates", flush=True)
+
+
+load_seeds()
+
 # Candidates the stopped one-browser discovery found but did not verify:
 # verify them on every browser (each company on one browser) before the top-up.
 if not (PIPE / "verify_only_done").exists():
@@ -109,6 +157,7 @@ def topup(extra: list[str], marker: str) -> None:
 # no browser sees the others' finds). A per-pass target a little above the
 # current count keeps each browser to ~25 finds -> verify -> merge, so the
 # verified count moves every pass. Stops at TOPUP_TO or when a pass adds < 5.
+TOPUP_AFTER_CHECKS = 3  # discover-again cycles when the checks leave the report under --keep
 STEP = 13  # new verified per browser per pass -> batch of 25 candidates
 for n in range(1, 9):
     if (PIPE / "country_steps_done").exists() or have() >= TOPUP_TO or not analysed():
@@ -144,11 +193,56 @@ for n in range(1, 7 if a.browsers > 3 else 13):
 if a.discovery_only:
     print(f"[run] discovery finished with {have()} companies; --discovery-only: pipeline not started", flush=True)
     sys.exit(0)
-print(f"[run] discovery finished with {have()} companies; starting the pipeline", flush=True)
-with open(ROOT / f"logs/parallel/{OUT.name}.log", "a", encoding="utf-8") as fh:
-    rc = subprocess.call([sys.executable, str(ROOT / "scripts/run_quadrant_pipeline.py"), "--market", MARKET,
-                          "--country", COUNTRY, "--slots", f"{FIRST}-{LAST}", "--evidence-slots", f"{FIRST}-{LAST}", "--keep", str(KEEP),
-                          "--max-discover-rounds", "0"], cwd=ROOT, env=env, stdout=fh, stderr=subprocess.STDOUT)
-    fh.write(f"exit={rc}\n")
+def run_pipeline() -> int:
+    print(f"[run] starting the pipeline on {PIPE_NB} browsers "
+          f"(slots {PIPE_FIRST}-{PIPE_LAST})", flush=True)
+    with open(ROOT / f"logs/parallel/{OUT.name}.log", "a", encoding="utf-8") as fh:
+        code = subprocess.call(
+            [sys.executable, str(ROOT / "scripts/run_quadrant_pipeline.py"), "--market", MARKET,
+             "--country", COUNTRY, "--slots", f"{PIPE_FIRST}-{PIPE_LAST}",
+             "--evidence-slots", f"{PIPE_FIRST}-{PIPE_LAST}", "--keep", str(KEEP),
+             "--max-discover-rounds", "0"], cwd=ROOT, env=env, stdout=fh, stderr=subprocess.STDOUT)
+        fh.write(f"exit={code}\n")
+    return code
+
+
+def in_report() -> int:
+    """Companies the finished report keeps, i.e. AFTER the 3b/3c checks removed some."""
+    try:
+        q = json.loads((OUT / f"{OUT.name}_quadrant.json").read_text(encoding="utf-8"))
+        return len(q.get("brands") or [])
+    except Exception:  # noqa: BLE001 -- no report yet
+        return 0
+
+
+print(f"[run] discovery finished with {have()} companies", flush=True)
+rc = run_pipeline()
+
+# Owner 2026-10-29: the operating-status, ownership and scope checks remove companies
+# AFTER discovery has already stopped, so a market can finish well under --keep even
+# though more companies are there to be found (Biopharma Buffer: 303 discovered -> 150
+# in the report). When that happens, discover again for the shortfall and rebuild, until
+# the report reaches --keep or the market is genuinely exhausted.
+for cycle in range(1, TOPUP_AFTER_CHECKS + 1):
+    kept = in_report()
+    if rc != 0 or kept >= KEEP:
+        break
+    before = have()
+    # the shortfall, plus margin because the checks will remove some of the new ones too
+    want = before + (KEEP - kept) + 25
+    print(f"[run] report keeps {kept} of --keep {KEEP} after the checks; top-up {cycle}: "
+          f"discovering towards {want} verified", flush=True)
+    for marker in ("country_steps_done", "global_steps_done", "topup_failures.json"):
+        (PIPE / marker).unlink(missing_ok=True)
+    subprocess.call([sys.executable, str(ROOT / "scripts/parallel_topup.py"), "--market", MARKET,
+                     "--country", COUNTRY, "--keep", str(want), "--browsers", NB,
+                     "--slot-start", FIRST, "--max-rounds", "3", "--timeout-minutes", "50"],
+                    cwd=ROOT, env=env)
+    gained = have() - before
+    print(f"[run] top-up {cycle}: +{gained} -> {have()} verified", flush=True)
+    if gained < 5:
+        print(f"[run] market exhausted: the report keeps {kept}, which is all it has", flush=True)
+        break
+    rc = run_pipeline()
 print(f"[run] pipeline exit {rc}", flush=True)
 sys.exit(rc)

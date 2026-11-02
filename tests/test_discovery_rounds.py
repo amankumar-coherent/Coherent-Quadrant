@@ -464,3 +464,44 @@ def test_block_detection_distinguishes_causes():
     assert dr._is_blocked(RuntimeError("AI response request limit reached"))
     assert dr._is_blocked(AiModeCaptcha("x"))
     assert not dr._is_blocked(ValueError("bad json"))
+
+
+def test_country_round_keeps_a_local_company_a_foreign_group_owns():
+    """Ownership is not headquarters (owner 2026-10-28, Mozambique Fire Insurance). "a
+    subsidiary of a foreign company does NOT qualify" stopped discovery from naming
+    Hollard Mocambique, Phoenix Mocambique and SIM -- licensed Mozambican insurers that
+    underwrite Mozambican policies. In a licensed market those ARE the market."""
+    for kw in ({"country": "Mozambique"}, {"country": "Mozambique", "focus_region": "Maputo"}):
+        _, user = dr.build_round_prompt("Fire Insurance Market", "Service Provider",
+                                        excluded_names=[], **kw)
+        low = user.lower()
+        assert "even when a foreign group owns it" in low, kw
+        assert "runs from abroad does not qualify" in low, kw
+        assert "subsidiary or distributor of a foreign company does not qualify" not in low, kw
+
+
+def test_country_round_asks_the_regulator_register_and_local_language():
+    """A small country's market is under-found in English alone (owner 2026-10-28,
+    Mozambique Fire Insurance stalled at 17). Every regulated market has a supervisor
+    that publishes who is licensed, and most countries write about their own companies
+    in their own language."""
+    _, user = dr.build_round_prompt("Fire Insurance Market", "Service Provider",
+                                    excluded_names=[], country="Mozambique")
+    low = user.lower()
+    assert "regulator, supervisory authority or industry association" in low
+    assert "official language(s) of mozambique" in low
+    # a global run has no country to name a regulator or a language for
+    _, g = dr.build_round_prompt("Fire Insurance Market", "Service Provider", excluded_names=[])
+    assert "supervisory authority" not in g.lower()
+
+
+def test_round_prompt_asks_for_the_company_s_own_english_name():
+    """The report is written in English, so a company from a non-English market is
+    listed under the English name it uses itself (owner 2026-10-29, Japan Fashion
+    E-Commerce) -- its own romanisation, not an invented translation."""
+    _, user = dr.build_round_prompt("Fashion E-commerce Market", "Brand / Marketer",
+                                    excluded_names=[], country="Japan")
+    low = user.lower()
+    assert "give the english name the company uses for itself" in low
+    assert "never the local-script name" in low
+    assert "never a word-by-word translation you invented" in low

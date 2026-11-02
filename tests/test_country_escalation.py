@@ -77,7 +77,10 @@ def test_a_country_round_names_the_country():
         "M", "Manufacturer", excluded_names=[], focus_region="Nigeria"
     )
     assert "HEADQUARTERED IN Nigeria" in user
-    assert "global headquarters must be in Nigeria" in user
+    assert "own head office must be in Nigeria" in user
+    # ownership is not headquarters: a company run in Nigeria that a foreign
+    # group owns still qualifies (owner 2026-10-29, Mozambique Fire Insurance)
+    assert "even when a foreign group owns it" in user
 
 
 def test_a_country_gets_only_one_empty_round():

@@ -45,7 +45,10 @@ def test_a_region_round_names_one_region_explicitly():
         "M", "Manufacturer", excluded_names=[], focus_region="Latin America"
     )
     assert "HEADQUARTERED IN Latin America" in user
-    assert "global headquarters must be in Latin America" in user
+    assert "own head office must be in Latin America" in user
+    # ownership is not headquarters: a company run in Latin America that a foreign
+    # group owns still qualifies (owner 2026-10-29, Mozambique Fire Insurance)
+    assert "even when a foreign group owns it" in user
 
 
 def test_a_region_round_rejects_a_local_office():

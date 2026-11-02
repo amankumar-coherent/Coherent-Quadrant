@@ -43,6 +43,11 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
+# Exit code when Google AI Mode keeps failing mid-run (not "market exhausted",
+# which is 1): run_quadrant_pipeline.py stops instead of continuing short.
+AI_MODE_FAILED = 3
+
+
 def log(msg: str) -> None:
     print(f"[rounds {time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
@@ -93,6 +98,36 @@ def main() -> int:
     def key(row: dict) -> str:
         return ce._dedupe_key(str(row.get("name") or row.get("Company") or ""))
 
+    def verify_saving(new: list[dict], note: str) -> tuple[int, int]:
+        """Verify in chunks and save the checkpoint after each one. A large batch
+        (795 names on one browser = about 2 hours) verified in a single call and
+        saved only at the end was lost every time a run was stopped -- and a
+        watchdog stops a run that saves nothing for 45 minutes -- so a market
+        could sit at the same count forever."""
+        chunk = max(12, int(os.getenv("VERIFY_SAVE_EVERY", "48")))
+        n_kept = n_rej = 0
+        for i in range(0, len(new), chunk):
+            part = new[i:i + chunk]
+            try:
+                kept, rej = ce.gpt_verify_market(
+                    client, model, query=args.market, family=family, companies=part,
+                    country=args.country,
+                )
+            except RuntimeError as err:
+                # AI Mode kept refusing (unusable answers): what is checked is saved;
+                # stop with AI_MODE_FAILED so the caller does not go on short of
+                # companies -- a restart on a fresh browser continues from here.
+                log(f"{note}: AI Mode failed at {i}/{len(new)} ({err}); stopping, saved work kept")
+                raise SystemExit(AI_MODE_FAILED)
+            data["verified"] = list(data.get("verified") or []) + list(kept)
+            data["rejected_mid"] = list(data.get("rejected_mid") or []) + list(rej)
+            n_kept += len(kept)
+            n_rej += len(rej)
+            ckpt.save(note=f"{note}: +{len(kept)} verified, {len(rej)} rejected "
+                           f"({min(i + chunk, len(new))}/{len(new)} checked)")
+            log(f"{note}: {min(i + chunk, len(new))}/{len(new)} checked, +{n_kept} verified so far")
+        return n_kept, n_rej
+
     if args.verify_only:
         # Discovery was stopped early: check what it already found, nothing more.
         verified = list(data.get("verified") or [])
@@ -101,14 +136,8 @@ def main() -> int:
         new = [r for r in data.get("recalled") or [] if key(r) and key(r) not in seen]
         log(f"verify only: {len(new)} unchecked companies")
         if new:
-            kept, rej = ce.gpt_verify_market(
-                client, model, query=args.market, family=family, companies=new,
-                country=args.country,
-            )
-            data["verified"] = verified + list(kept)
-            data["rejected_mid"] = rejected + list(rej)
-            ckpt.save(note=f"verify only: +{len(kept)} verified, {len(rej)} rejected")
-            log(f"verify only: +{len(kept)} verified, {len(rej)} rejected")
+            n_kept, n_rej = verify_saving(new, "verify only")
+            log(f"verify only: +{n_kept} verified, {n_rej} rejected")
         return 0
 
     for rnd in range(1, args.max_rounds + 1):
@@ -118,6 +147,18 @@ def main() -> int:
         if have >= args.keep:
             log(f"target reached: {have} verified companies (need {args.keep})")
             return 0
+
+        # Names an earlier, stopped run found but never verified come first:
+        # discovering more before checking them only grows the backlog.
+        seen = {key(r) for r in verified} | {key(r) for r in rejected}
+        pending = [r for r in data.get("recalled") or [] if key(r) and key(r) not in seen]
+        pending = list({key(r): r for r in pending}.values())
+        if pending:
+            log(f"round {rnd}: {have}/{args.keep} verified -- first verifying {len(pending)} "
+                "companies already found")
+            n_kept, n_rej = verify_saving(pending, f"discover/verify round {rnd} (found earlier)")
+            log(f"round {rnd}: +{n_kept} verified, {n_rej} rejected")
+            continue
 
         checked = len(verified) + len(rejected)
         rate = len(verified) / checked if checked else 0.5
@@ -130,10 +171,14 @@ def main() -> int:
         log(f"round {rnd}: {have}/{args.keep} verified (keep rate {rate:.0%}) -> "
             f"discovering {batch} more")
 
-        recalled = ce.discover_companies_rounds(
-            client, model, query=args.market, family=family,
-            target=len(recalled) + batch, country=args.country, ckpt=ckpt,
-        )
+        try:
+            recalled = ce.discover_companies_rounds(
+                client, model, query=args.market, family=family,
+                target=len(recalled) + batch, country=args.country, ckpt=ckpt,
+            )
+        except RuntimeError as err:
+            log(f"round {rnd}: AI Mode failed during discovery ({err}); stopping, saved work kept")
+            return AI_MODE_FAILED
         seen = {key(r) for r in verified} | {key(r) for r in rejected}
         new = [r for r in recalled if key(r) and key(r) not in seen]
         if not new:
@@ -141,15 +186,8 @@ def main() -> int:
             return 1
 
         log(f"round {rnd}: verifying {len(new)} new companies")
-        kept, rej = ce.gpt_verify_market(
-            client, model, query=args.market, family=family, companies=new,
-            country=args.country,
-        )
-        data["verified"] = verified + list(kept)
-        data["rejected_mid"] = rejected + list(rej)
-        ckpt.save(note=f"discover/verify round {rnd}: +{len(kept)} verified, "
-                       f"{len(rej)} rejected")
-        log(f"round {rnd}: +{len(kept)} verified, {len(rej)} rejected")
+        n_kept, n_rej = verify_saving(new, f"discover/verify round {rnd}")
+        log(f"round {rnd}: +{n_kept} verified, {n_rej} rejected")
 
     have = len(dedupe_companies(list(data.get("verified") or []))[0])
     log(f"stopped after {args.max_rounds} rounds at {have}/{args.keep} verified")

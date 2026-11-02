@@ -84,8 +84,8 @@ def test_the_query_asks_for_more_than_one_finding_per_parameter():
     reader sees one assertion instead of the argument behind a score."""
     q = S.build_parameter_score_query("Acme", "Product Strength", X, market="M")
     assert q.count("Evidence:") >= 3, "template must show repeated Evidence lines"
-    # Open-ended: no cap on findings (owner 2026-10-15) ...
-    assert "as many as genuinely exist (no limit)" in q
+    # At most 5 findings per parameter (owner 2026-10-19; was open-ended) ...
+    assert "at most 5 Evidence lines per parameter" in q
     # ... and one finding per part a parameter name joins ("Revenue & Growth").
     for part in S.parameter_parts(X[0]):
         assert f"a specific finding on {part.upper()}" in q

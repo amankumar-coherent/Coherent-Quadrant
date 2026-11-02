@@ -108,9 +108,25 @@ def main() -> int:
         return ""
 
     def write_sidecar() -> None:
-        tmp = side_path.with_suffix(".json.tmp")
+        # Windows refuses the rename while anything else holds the target open --
+        # an indexer, a virus scanner, or a reader in another shard. Unhandled, the
+        # whole shard died and every company it had left went unscored (owner
+        # 2026-10-29, Japan Fashion E-Commerce: shards 3 and 8 lost ~19 companies to
+        # "PermissionError: Access is denied"). The scores are already in `results`,
+        # so a short retry saves them; a per-process temp name keeps two shards from
+        # fighting over one file, as update_json_locked does for the shared files.
+        tmp = side_path.with_suffix(f".json.{os.getpid()}.tmp")
         tmp.write_text(json.dumps(results, ensure_ascii=False), encoding="utf-8")
-        os.replace(tmp, side_path)
+        for attempt in range(6):
+            try:
+                os.replace(tmp, side_path)
+                return
+            except PermissionError:
+                if attempt == 5:
+                    print(f"    sidecar still locked after {attempt + 1} tries; "
+                          f"keeping {tmp.name} for the next pass", flush=True)
+                    return      # never kill the shard over a locked file
+                time.sleep(1.5 * (attempt + 1))
 
     def axis_scores(name: str, title: str, params: list[str],
                     defs: dict[str, str]) -> dict[str, int]:

@@ -149,13 +149,19 @@ class Runner:
                                    env={**os.environ, "PYTHONIOENCODING": "utf-8", **(env or {})})
 
     def shards(self, step: str, script: str, names: list[str], extra: list[str],
-               per_shard=None) -> None:
-        """Run `script` over `names`, one shard per browser slot, and wait."""
+               per_shard=None, units: int = 0) -> None:
+        """Run `script` over `names`, one shard per browser slot, and wait.
+
+        ``units`` = independent queries the step holds (company x parameter for
+        the gap-fill steps, whose scripts split by that). With it, a step with
+        few companies still opens every browser (5 companies x 10 parameters =
+        50 queries over 20 browsers, not 5) -- owner 2026-10-27."""
         if not names:
             return
         names_path = write_json(self.pipe_dir / f"{step}_names.json", names)
-        n = max(1, min(len(self.slots), len(names)))
-        log(f"{step}: {len(names)} companies across {n} browser(s)")
+        n = max(1, min(len(self.slots), units or len(names)))
+        log(f"{step}: {len(names)} companies" + (f" ({units} queries)" if units else "")
+            + f" across {n} browser(s)")
         if self.args.dry_run:
             return
         self.log_dir.mkdir(parents=True, exist_ok=True)
@@ -580,6 +586,21 @@ def main() -> int:
 
     # 1. Discovery -----------------------------------------------------------
     state = read_json(ckpt_path, {}) or {}
+    sdata = state.get("data") or {}
+    if (state and not args.dry_run and not sdata.get("verified") and not sdata.get("recalled")
+            and state.get("step") not in (None, "0_start")):
+        # A discovery that AI Mode refusals cut short can save "finished, 0 found";
+        # every later run then skipped discovery and stopped at once, so the market
+        # was never searched. Keep the old file, restart from the market analysis.
+        old = ckpt_path.with_name(f"{ckpt_path.stem}.zero_found_{time.strftime('%Y%m%d_%H%M%S')}.json")
+        ckpt_path.rename(old)
+        fresh = {k: state[k] for k in ("version", "query", "country", "batch", "target", "created_at")
+                 if k in state}
+        fresh.update(status="running", step="0_start", substep="0c_market",
+                     data={k: sdata[k] for k in ("market_analysis",) if sdata.get(k)})
+        write_json(ckpt_path, fresh)
+        state = fresh
+        log(f"1. saved discovery found nothing (kept as {old.name}) -> searching again")
     if not (state.get("data") or {}).get("verified"):
         log("1. no verified companies yet -> running discovery (run_chatgpt_expand.py)")
         if args.dry_run:
@@ -600,18 +621,39 @@ def main() -> int:
     verified = data.get("verified") or []
     if args.keep:
         have = len(dedupe_companies(verified)[0])
-        if have < args.keep:
+        # Top-up failures in a row with no company gained (AI Mode answering
+        # nothing usable for this market): after TOPUP_MAX_FAILS the market is
+        # treated as exhausted and the run goes on with what it has, instead of
+        # restarting until a watchdog gives up on it.
+        fails_path = pipe_dir / "topup_failures.json"
+        fails = read_json(fails_path, {}) or {}
+        max_fails = int(os.getenv("TOPUP_MAX_FAILS", "3"))
+        if have < args.keep and fails.get("fails", 0) >= max_fails and fails.get("have") == have:
+            log(f"1b. top-up failed {fails['fails']} times in a row at {have} verified -- "
+                f"going on with {have} (AI Mode gives no usable answer for more)")
+        elif have < args.keep:
             log(f"1b. {have} verified companies after dedupe, need {args.keep} -> "
                 "discover -> verify rounds")
             if args.dry_run:
                 return 0
-            runner.run(
+            rc = runner.run(
                 [PY, str(ROOT / "scripts" / "discover_verify_rounds.py"),
                  "--market", args.market, "--country", args.country,
                  "--keep", str(args.keep), "--slot", str(runner.slots[0]),
                  "--max-rounds", str(args.max_discover_rounds)],
                 "discover_rounds.log",
             )
+            if rc == 3:
+                # AI Mode kept failing (not an exhausted market): going on would
+                # build the report on too few companies. Stop; a re-run (the
+                # watchdog, on a fresh browser) continues from the saved list.
+                now = len(dedupe_companies((read_json(ckpt_path, {}) or {}).get("data", {})
+                                           .get("verified") or [])[0])
+                n = fails.get("fails", 0) + 1 if fails.get("have") == now else 1
+                write_json(fails_path, {"fails": n, "have": now})
+                log(f"1b. AI Mode failed during the top-up ({n} in a row at {now} verified) -- "
+                    "stopping here; re-run to continue (see _pipeline/logs/discover_rounds.log)")
+                return 3
             state = read_json(ckpt_path, {}) or {}
             data = state["data"]
             verified = data.get("verified") or []
@@ -958,6 +1000,15 @@ def main() -> int:
         # An empty saved pool (e.g. left by an interrupted run before any
         # company had a score) is re-ranked, never reused as "score nobody".
         ev_pool = read_json(pool_path, []) or None
+        # A pool chosen while the market had fewer companies than chart slots
+        # (discovery cut short) is chosen again once more companies exist; their
+        # saved evidence is reused, only the selection changes.
+        if ev_pool and len(ev_pool) < size and len(pool) > len(ev_pool):
+            log(f"4. saved evidence pool has {len(ev_pool)} < {size} companies and the market "
+                f"now has {len(pool)} -> choosing again")
+            ev_pool = None
+            if not args.chart_top and len(read_json(chart_path, []) or []) < size and chart_path.exists():
+                chart_path.rename(chart_path.with_name(f"chart_top.short_{time.strftime('%Y%m%d_%H%M%S')}.json"))
     else:
         ev_pool = None
     overall = load_overall_only(out_dir)
@@ -1067,19 +1118,27 @@ def main() -> int:
         log(f"5. evidence round {rnd}: {len(gaps)} companies with gaps")
         fresh = [n for n in gaps if not (evidence.get(n) or {}).get("x")
                  and not (evidence.get(n) or {}).get("y")]
-        runner.shards(f"evidence_r{rnd}", "prescore_verified.py", fresh,
-                      ["--fixed-axes", str(spec_path), "--skip-batch", "--group-size", "1"],
-                      per_shard=lambda i, r=rnd: ["--sidecar-name", f"pipe_r{r}_{i}"])
+        if len(fresh) >= len(runner.slots):
+            runner.shards(f"evidence_r{rnd}", "prescore_verified.py", fresh,
+                          ["--fixed-axes", str(spec_path), "--skip-batch", "--group-size", "1"],
+                          per_shard=lambda i, r=rnd: ["--sidecar-name", f"pipe_r{r}_{i}"])
+        elif fresh:
+            # Fewer new companies than browsers: the fill-gap step below asks the
+            # same one-parameter questions but splits them company x parameter, so
+            # every browser works (prescore splits by company only).
+            log(f"5. {len(fresh)} new companies: their parameters are asked one by one over every browser")
         evidence = load_evidence(out_dir)
         gaps = evidence_gaps(evidence, ev_pool, xp, yp)
         runner.shards(f"fillgap_r{rnd}", "fill_missing_parameters.py",
                       [n for n, g in gaps.items() if g["missing"]],
-                      ["--fixed-axes", str(spec_path)])
+                      ["--fixed-axes", str(spec_path)],
+                      units=sum(len(g["missing"]) for g in gaps.values()))
         evidence = load_evidence(out_dir)
         gaps = evidence_gaps(evidence, ev_pool, xp, yp)
         runner.shards(f"reasoning_r{rnd}", "fill_missing_assessed_on.py",
                       [n for n, g in gaps.items() if g["no_reasoning"]],
-                      ["--fixed-axes", str(spec_path)])
+                      ["--fixed-axes", str(spec_path)],
+                      units=sum(len(g["no_reasoning"]) for g in gaps.values()))
         if args.dry_run:
             break
     # 5b. Parts of a parameter with no supporting point ("Revenue & Growth" with
@@ -1095,7 +1154,8 @@ def main() -> int:
         if not (pipe_dir / PART_ASKED_FILE).exists():
             write_json(pipe_dir / PART_ASKED_FILE, {"asked": []})
         runner.shards("partfill", "fill_missing_parts.py", list(todo_parts),
-                      ["--fixed-axes", str(spec_path)])
+                      ["--fixed-axes", str(spec_path)],
+                      units=sum(len(v) for v in todo_parts.values()))
     runner.slots = base_slots
     evidence = load_evidence(out_dir)
     left = evidence_gaps(evidence, ev_pool, xp, yp)

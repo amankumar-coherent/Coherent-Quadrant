@@ -68,7 +68,13 @@ EVIDENCE_RULES = (
     "GlobalDatabase, CB Insights) are not evidence. No footnote numbers or raw URLs in the text. Use the company's "
     "current name. Use only evidence about the company's own business in THIS market: work of a subsidiary, "
     "affiliate or acquired company counts only when it is this market's product, and then name it ('through "
-    "its subsidiary X'); a subsidiary's or division's business in a different product line is not evidence."
+    "its subsidiary X'); a subsidiary's or division's business in a different product line is not evidence. "
+    # The report is written in English (owner 2026-10-30, Japan Fashion E-Commerce: app,
+    # facility and product names came back in Japanese script, e.g. the Wacoal web store
+    # and ASICS official app).
+    "Write EVERY sentence in English, including the names of apps, shops, facilities, "
+    "services and products: give the official English name the company itself uses, or its "
+    "romanisation, and never the local-script name -- not even in brackets beside the English."
 )
 
 

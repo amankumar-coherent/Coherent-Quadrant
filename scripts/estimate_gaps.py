@@ -29,7 +29,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from vendor_intel.pipeline import estimates as est  # noqa: E402
-from vendor_intel.pipeline.quadrant_pipeline import load_evidence  # noqa: E402
+from vendor_intel.pipeline.quadrant_pipeline import load_evidence, share_browsers  # noqa: E402
 
 
 def _hq(out_dir: Path) -> dict[str, str]:
@@ -172,17 +172,28 @@ def main() -> int:
               "facts": (answers.get(f"facts:{t['company']}") or {}).get("facts")}
              for t in est.unestimated(out_dir, names, answers)]
     def run_round(todo: list[dict], label: str) -> dict:
-        """Split `todo` by company over the browsers, wait, return merged answers."""
+        """Split `todo` over the browsers, wait, return merged answers.
+
+        By company while there are at least as many companies as browsers;
+        with fewer, a company's gaps are shared over several browsers (up to 5
+        gaps a question each), so every browser works (owner 2026-10-27). Each
+        browser then asks that company's own facts once more -- one query."""
         companies = list(dict.fromkeys(t["company"] for t in todo))
-        n = min(args.browsers, len(companies))
+        if len(companies) >= args.browsers:
+            groups = [[t for t in todo if t["company"] in set(companies[i::args.browsers])]
+                      for i in range(args.browsers)]
+        else:
+            per = {c: [t for t in todo if t["company"] == c] for c in companies}
+            share = share_browsers({c: -(-len(ts) // 5) for c, ts in per.items()}, args.browsers)
+            groups = [per[c][k::share[c]] for c in companies for k in range(share[c])]
+        groups = [g for g in groups if g]
+        n = len(groups)
         print(f"[estimates] {label}: {len(todo)} to ask ({len(companies)} companies) on {n} browser(s)",
               flush=True)
         procs = []
         for i in range(n):
-            mine = set(companies[i::n])
             part = work / f"tasks_{label}_{i + 1}.json"
-            part.write_text(json.dumps([t for t in todo if t["company"] in mine], ensure_ascii=False),
-                            encoding="utf-8")
+            part.write_text(json.dumps(groups[i], ensure_ascii=False), encoding="utf-8")
             log = (work / f"browser_{i + 1}.log").open("a", encoding="utf-8")
             procs.append(subprocess.Popen(
                 [sys.executable, str(Path(__file__).resolve()), "--market", args.market, "--country",

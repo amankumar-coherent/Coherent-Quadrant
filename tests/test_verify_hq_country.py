@@ -35,6 +35,19 @@ def test_india_run_drops_foreign_hq(monkeypatch):
     assert all("headquarters not in india" in r["reason"] for r in rejected)
 
 
+def test_hq_rule_keeps_a_local_company_a_foreign_group_owns(monkeypatch):
+    """Ownership is not headquarters (owner 2026-10-28, Mozambique Fire Insurance): Hollard
+    Mocambique, Phoenix Mocambique and SIM are licensed Mozambican insurers that underwrite
+    Mozambican policies, and every one was dropped as "a subsidiary of a foreign group".
+    Only a branch run from abroad is a DROP, which is step 3c's own rule (hq_prompt)."""
+    _, _, system = _run(monkeypatch, "mozambique", [_ans("Hollard Mocambique", True)])
+    low = system.lower()
+    assert "foreign group owns it" in low and "not a reason to drop" in low
+    assert "branch, sales office, representative office or distributor" in low
+    # the old wording made any subsidiary of a foreign company a drop
+    assert "subsidiary or distributor of a foreign company is a drop" not in low
+
+
 def test_global_run_has_no_hq_rule(monkeypatch):
     kept, _, system = _run(monkeypatch, "global", [_ans("Oura", None)])
     assert kept == ["Oura"]

@@ -140,7 +140,7 @@ It should print `extensions loaded: ['Free AI ReCaptcha Solver by Raptor ...']`.
 | `--discover-target` | first discovery batch (default: `--keep`, else 400) |
 | `--max-discover-rounds` | top-up rounds cap (default 10) |
 | `--top-n` | chart size (default 20) |
-| `--slots 41-50` | browser profiles for parallel scoring (fewer on slow machines) |
+| `--slots 41-50` | browser profiles for parallel scoring (fewer on slow machines). Every step uses as many of them as it has questions, not companies (owner 2026-10-27): gap-fill steps split company × parameter / part (`Runner.shards(units=...)`), fewer new chart companies than browsers are asked parameter by parameter (fill-gap step, not `prescore_verified`), estimates and the fact-check share a company's gaps / claims over several browsers (`quadrant_pipeline.share_browsers`; `factcheck.merged_findings` unions each browser's claims) |
 | `--evidence-slots 41-60` | step 5 (deep evidence) only: its own browser range, e.g. 20 browsers = one chart company each; other steps keep `--slots` (default: same as `--slots`) |
 | `--skip-facts` | skip step 3c's AI Mode queries (saved ownership / identity answers still apply) |
 | `--no-pdf` | do not print the PDF (step 8b) |
@@ -155,7 +155,7 @@ each section on a new page, one company per page in Parameter Detail):
 ```bat
 .venv\Scripts\python.exe scripts\export_report_pdf.py --market "Global Smart Ring Market" --country global
 ```
-Writes `<slug>_report.pdf` next to the report. Page numbers on the contents
+Writes `<slug>_report.pdf` next to the report. The Word copy captures the chart from the viewport (scrolled to the chart), not as a full-page capture of the expanded report, which timed out with 20 browsers running. Page numbers on the contents
 page need `pymupdf` (in `requirements.txt`); without it the contents prints unnumbered.
 A back cover (e.g. "Thank you / Contact us") is appended when
 `<market>/_pipeline/pdf_back_cover.pdf` exists (that market only) or
@@ -249,7 +249,7 @@ made, so a company moved off the chart does not come back. Review-file
 - Verify keeps a role that is the market's own player type BEFORE the channel
   drop list (a distribution market's distributors are the market); the
   contract-manufacturer filter skips markers that name the market itself.
-- Seed files apply only on an exact market-slug match.
+- Seed files apply only on an exact market-slug match. `logs/run_market.py` adds a market's seed companies to the candidate list itself (`load_seeds`) when Step 0c is pre-filled, because that skips the one-browser first discovery that loads them; then `verify_only_done` is cleared so they are verified on every browser.
 - Discovery does not score (`EXPAND_DISCOVERY_XY=0`, set by the orchestrator
   and split discovery): steps 2 and 4 derive the axes and score once.
 - `scripts/parallel_topup.py --verify-only` verifies what stopped browsers
@@ -273,6 +273,11 @@ made, so a company moved off the chart does not come back. Review-file
   `keep` in the analyst review overrides it. `--update-report` decides on the
   existing report's chart and Overall. VERIFY checks the final report too ("No
   company whose owner is also listed", read from its "(acquired by / subsidiary of …)" labels).
+- **A division or regional arm of a listed group counts as that group** (owner 2026-10-28, Biopharma Buffer: Thermo Fisher Scientific Inc. + its Australia and India units, Merck KGaA + Merck Life Science + MilliporeSigma, Avantor Inc. + Avantor Sciences, Sartorius AG + Sartorius Stedim Biotech all sat on one chart). The ownership question (step 3c) now also asks `group`: the larger company a business belongs to today as a division, business unit, regional subsidiary or local arm, even when no acquisition happened (`company_facts.ownership_prompt`, saved in `ownership.json`). `auto_review` turns it into the same `listed_owner` pair as an owner (never an owner label), so step 4a keeps the stronger member. The group answer varies between runs ("Sartorius Group", or nothing for "Avantor Sciences"), so `listed_parent` also reads "X Group" / "X Holdings" as X, and `auto_review` pairs a company whose normalized name continues another listed company's name of 5+ characters at a word boundary ("avantor sciences" after "avantor"; "thermo fisher scientific australia" after "thermo fisher scientific"). Before this the pair only came from an acquisition answer, and `is_buyer` read an acquirer named inside the company's own name ("Thermo Fisher Scientific" in "Thermo Fisher Scientific Australia") as the company being the buyer. Markets finished before this change have no `group` in their saved answers; to apply it to one, move its `ownership.json` and `facts_ownership_shard*.json` aside and re-run.
+- **ONE player type per market, always** (owner's rule, restated 2026-10-29): a landscape compares like with like, so a market is found, verified and reported under a single role, and a B2C market's role is **Brand / Marketer**. `keep_roles` in the report is that one role; never list several provider categories, even when the client's sample report groups its company profiles into sections.
+- **A market measured by the SALE of a product, not by who makes it** (retail, e-commerce, distribution) sets the market brief's `"scope_test": "sells_in_channel"` (owner 2026-10-29, Japan Fashion E-Commerce). The brief -- not the role label -- carries this, so the player type stays Brand / Marketer while the landscape still holds the marketplaces and retail groups that sell the goods. `logs/run_market.py` exports it as `MARKET_SCOPE_TEST`, and `chatgpt_expand.sells_in_channel_market()` makes three places follow it: the verify criteria KEEP line asks who sells through this market's channel instead of whose brand is sold; `builds_or_owns` counts selling (including operating the marketplace the goods are sold on, and reselling other companies' goods); and `verify_should_keep` keeps the selling roles (`_SELLING_ROLE_WORDS`: retailer, marketplace, merchant, store, shop, e-commerce) plus the catch-all "Other" the verifier reaches for when its enum has no marketplace entry -- all still requiring in_market and builds_or_owns, and still dropping Distributor, Wholesaler, Reseller and Media, which sell to the trade rather than into this market. A bare "Platform" is NOT kept: an e-commerce platform vendor is an excluded type, so the scope check judges it. Without this, Rakuten, Mercari and Enigmo/BUYMA -- three of the four marketplaces in the client's own report -- were dropped as "a marketplace platform rather than a fashion brand selling its own inventory". The matching scope question is `company_facts.scope_prompt`'s `sells_in_channel` branch: core = the company itself sells the market's products through the market's channel, whether it makes them or resells them, and also when they are one category of a wider assortment; adjacent = it only lets others sell (platform, payment, logistics, marketing), sells only offline, or sells only other categories. A market WITHOUT this scope_test is completely unchanged: a Brand market still drops Retailer and Other.
+- `chatgpt_expand.is_channel_role` covers the other half: a market whose own player type IS a channel role (a distribution landscape) keeps the roles that name it with a qualifier ("E-commerce Retailer" IS its "Retailer"). A Manufacturer market still drops "Contract Manufacturer".
+- **A report that lands under `--keep` goes back and discovers more** (owner 2026-10-29): step 3b/3c remove companies AFTER discovery has stopped, so a market can finish well short of the cap while more companies are still there to find (Biopharma Buffer: 303 discovered -> 150 in the report). `logs/run_market.py` now compares the finished report's company count with `--keep`; while it is short it discovers again for the shortfall plus a 25-company margin (the checks will remove some of the new ones too), clears the discovery markers and rebuilds, up to `TOPUP_AFTER_CHECKS` (3) cycles. It stops early when a top-up adds fewer than 5 companies -- that is an exhausted market, and the run keeps what it has rather than padding.
 - A chart refill keeps **every surviving chart company** and fills only the
   vacated slots (`refill_top_by_quadrant(keep_all=True)`): the composite step
   re-splits the chart 5 per quadrant by rank, so trimming a "full" quadrant
@@ -293,7 +298,7 @@ Orchestrator: `scripts/run_quadrant_pipeline.py` (+ helpers in
 | # | Stage | Code |
 |---|---|---|
 | 1 | **Discovery** (only if the market has no verified companies): Step 0c market analysis → discovery rounds → verify → fill | `scripts/run_chatgpt_expand.py` → `pipeline/chatgpt_expand.py` |
-| 1b | **Top-up** (`--keep`): discover a batch, verify only new companies, repeat | `scripts/discover_verify_rounds.py` |
+| 1b | **Top-up** (`--keep`): discover a batch, verify only new companies, repeat. Names an earlier, stopped run found but never verified are verified first, before any new discovery; verification saves the checkpoint every 48 companies (`VERIFY_SAVE_EVERY`), so a stopped run keeps what it checked (a 795-name batch verified in one call was lost at every watchdog restart). When AI Mode keeps failing in the top-up, it exits 3 (saved work kept) and the pipeline stops instead of building the report on too few companies; after `TOPUP_MAX_FAILS` (3) such failures in a row with no company gained (`_pipeline/topup_failures.json`) the market counts as exhausted and the run goes on with what it has. A saved evidence pool smaller than the chart, when the market now has more companies, is chosen again. A step-1 checkpoint saved as finished with 0 found (AI Mode refusals) is set aside (`*.zero_found_<time>.json`) and discovery runs again from the market analysis | `scripts/discover_verify_rounds.py` |
 | 2 | **Axes spec**: 5+5 market-specific parameters + definitions (LLM), fixed axis names → `_pipeline/axes_spec.json` | `quadrant/axis_define.py` (`define_market_axes`, `explain_market_parameters`) |
 | 2c | **Report framing** (AI Mode, once per market, from the market definition) → `_pipeline/research_panel.json`: "Organisations We Surveyed" (5 organisation types, **manufacturers always one of them**) and "Designations We Spoke To" (5 job titles), shown directly above the chart; `report_definition` (the short 2-sentence market definition the report's Market Classification shows -- the long definition stays for discovery and the checks); `player_type_reason` (the line under "Provider Categories", in that player type's own language). Missing pieces are asked for on the next run; a market brief's own `report_definition` / `player_type_reason` override them; an internal file note never reaches the report | `scripts/research_panel.py` |
 | 3 | **Dedupe**: one row per real company (same registrable domain or same name minus legal suffixes; union-find) | `quadrant_pipeline.dedupe_companies` |
@@ -381,6 +386,7 @@ Any country other than `global` is a single-country run
 subsidiary or distributor does not qualify). When the broad rounds run dry it
 sweeps states/regions (only countries with a list in `geo_rotation.STATES_BY_COUNTRY`:
 India and the United Kingdom), and never escalates to other regions or countries.
+**Ownership is not headquarters** (owner 2026-10-28, Mozambique Fire Insurance): a company incorporated and run in the country stays even when a foreign group owns it; only a branch, sales office or distributor that a foreign company runs from abroad is dropped. Both the discovery ask (`discovery_rounds.build_round_prompt`, broad and focus-region) and the verify HQ RULE (`chatgpt_expand.gpt_verify_market`) said "a subsidiary of a foreign company does NOT qualify", so in a licensed market -- insurance, banking, telecoms, where the locally licensed arms of foreign groups ARE the market -- discovery never named them and verify dropped the ones the seeds supplied (Hollard Mocambique, Phoenix Mocambique, SIM). Step 3c's own HQ check (`company_facts.hq_prompt`) always had the right rule; the two now match it.
 `GEO_AREA_SHARD=k/N` gives each of N parallel discovery browsers its own share
 of those areas, so a 10-browser top-up sweeps different cities instead of
 repeating itself.
@@ -412,6 +418,23 @@ Reference markets that pass every VERIFY check:
 everything saved) is the quickest regression check after a change, **if**
 their `output/` folders were shared.
 
+### Running a market unattended (overnight)
+`profood/supervise_market.py` restarts a run that crashes, fails VERIFY or stalls (browsers reset,
+profiles archived). Two things it cannot see are covered by `logs/_overnight_watchdog.py <slug>
+<first-slot> <last-slot>`, which checks every `CHECK_EVERY` (600 s) and logs to
+`logs/overnight_watchdog.log`:
+
+* **disk** -- below `DISK_FLOOR_GB` (6) it deletes archived profile folders (never a live one)
+  until `DISK_TARGET_GB` (20). A full disk corrupted a run once (`No space left on device`).
+* **Google blocks** -- more than `BLOCK_LIMIT` (25) sign-in walls / "Verifying your request" pages
+  in one window and it archives the slot profiles and closes the browsers, so the run reopens on
+  fresh cookies.
+
+It stops itself after three consecutive checks find no supervisor. **Every check is wrapped: a
+watchdog must never die of its own checks** -- an unhandled `TimeoutExpired` from a slow CIM query
+killed it 10 minutes into an overnight run and left it unguarded for three hours (owner 2026-10-30).
+A slow or failed check is never read as "the run has ended".
+
 ## 7. Troubleshooting
 
 | Symptom | Cause / fix |
@@ -419,6 +442,7 @@ their `output/` folders were shared.
 | Browser shows CAPTCHA grid | Raptor solves it; if not, solve by hand in the window. The run continues |
 | Quota page ("reached the request limit for AI responses") | **Automatic:** profile archived (`data/ai_mode_batch_<slot>_chromium_quota_<time>`), browser reopened on a fresh profile, query retried; up to `GOOGLE_AI_MODE_MAX_RESETS` (3) per query with a growing wait (`GOOGLE_AI_MODE_QUOTA_COOLOFF` × 1, 2, 3). Then the query fails and the step's own retry/gap-fill picks it up later |
 | "Something went wrong and the content wasn't generated" / "…an AI response wasn't generated" | **Automatic:** matched anywhere on the page (the echoed prompt makes it long); 1st and 2nd time in a query clear cookies + relaunch the browser, 3rd time full profile reset + fresh browser (`…_noanswer_<time>`); the query is re-issued each time without costing a retry |
+| "Sign in to continue" / "Sign in to verify you're a human and see more results" | **Automatic:** Google's sign-in wall (owner 2026-10-29). Not a reCAPTCHA, and a signed-out scraping profile can never satisfy it, so the session is treated as flagged exactly like the "Verifying your request" page: cookies cleared + relaunch twice, then a full profile reset (`google_ai_mode._flagged_page_showing`). Without this the query returned the wall's own text and the run stalled on it. "Sign in to continue" alone counts only on a page that is nothing but the wall, so an ordinary result page that happens to contain the phrase does not trigger a reset |
 | "Verifying your request … Continue" page | **Automatic:** Google's interstitial when many browsers share one IP (not a reCAPTCHA, so Raptor does nothing). The session is treated as flagged: 1st and 2nd time in a query, cookies are cleared and the browser relaunched; 3rd time, a full profile reset (old profile archived as `…_verify_<time>`). The query is re-issued each time without costing a retry. Frequent = too many browsers on one IP: raise `GOOGLE_AI_MODE_QUERY_DELAY` or use fewer slots |
 | Browser crashed / closed | **Automatic:** browser reopened on the same profile, query retried |
 | Unusual-traffic `/sorry/` block | Google rate block (not solvable). Raise `GOOGLE_AI_MODE_QUERY_DELAY`, use fewer `--slots`/workers, wait. 5+ CAPTCHAs in a run also trigger a profile reset |

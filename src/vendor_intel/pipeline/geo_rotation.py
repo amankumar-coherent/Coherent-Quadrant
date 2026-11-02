@@ -167,6 +167,31 @@ STATES_BY_COUNTRY: dict[str, tuple[str, ...]] = {
         "Maranhão, Piauí and Sergipe (São Luís, Teresina and Aracaju)",
         "Tocantins, Rondônia, Acre, Roraima and Amapá (Palmas, Porto Velho, Rio Branco, Boa Vista and Macapá)",
     ),
+    # Mozambique's provinces with their main cities, largest business bases first
+    # (owner 2026-10-28: sweep city by city for a market whose broad rounds ran dry).
+    "mozambique": (
+        "Cidade de Maputo (Maputo city)",
+        "Maputo province (Matola, Boane and Namaacha)",
+        "Sofala (Beira and Dondo)",
+        "Nampula (Nampula city, Nacala and Angoche)",
+        "Zambézia (Quelimane, Mocuba and Gurúè)",
+        "Manica (Chimoio and Manica)",
+        "Tete (Tete city and Moatize)",
+        "Gaza (Xai-Xai and Chókwè)",
+        "Inhambane (Inhambane city, Maxixe and Vilankulo)",
+        "Cabo Delgado (Pemba, Montepuez and Palma)",
+        "Niassa (Lichinga and Cuamba)",
+    ),
+    # Japan's regions with their main cities, largest business bases first. The five
+    # names are the client report's own taxonomy (owner 2026-10-29, Japan Fashion
+    # E-Commerce: Kanto, Kansai, Chubu, Kyushu and Okinawa, Rest of Japan).
+    "japan": (
+        "Kanto (Tokyo, Yokohama, Saitama and Chiba)",
+        "Kansai (Osaka, Kyoto, Kobe and Nara)",
+        "Chubu (Nagoya, Shizuoka, Niigata and Kanazawa)",
+        "Kyushu and Okinawa (Fukuoka, Kitakyushu, Kumamoto and Naha)",
+        "Rest of Japan (Sapporo, Sendai, Hiroshima, Okayama and Takamatsu)",
+    ),
 }
 # Other names for the same country.
 for _alias in ("uk", "u.k.", "great britain", "britain"):

@@ -434,6 +434,40 @@ _BRAND_ROLES = frozenset(
         "producer",
     }
 )
+# Roles that mean "sells to this market's customers". Narrower than the channel words
+# below: a distributor or wholesaler sells to the trade, not into this market.
+_SELLING_ROLE_WORDS = ("retailer", "marketplace", "e-tailer", "etailer", "merchant",
+                       "store", "shop", "e-commerce", "ecommerce")
+
+_CHANNEL_ROLE_WORDS = ("retailer", "reseller", "distributor", "marketplace", "merchant",
+                       "dealer", "e-tailer", "etailer", "store", "shop")
+
+
+def sells_in_channel_market() -> bool:
+    """True when the market brief's ``scope_test`` says this market is measured by the
+    SALE of a product through a channel, not by who makes it.
+
+    The player type stays the market's own -- a B2C market is Brand / Marketer (owner's
+    rule) -- so the selling allowance cannot be read off the role name. Japan Fashion
+    E-Commerce is a Brand / Marketer market whose landscape still has to hold the
+    marketplaces the client's report profiles (owner 2026-10-29).
+    """
+    return (os.getenv("MARKET_SCOPE_TEST") or "").strip().lower() == "sells_in_channel"
+
+
+def is_channel_role(role: str) -> bool:
+    """True when a market's OWN player type is a selling channel rather than a maker.
+
+    In such a market -- fashion e-commerce, grocery retail, parts distribution -- selling
+    IS the qualifying activity, so the verifier must not require the company to make or
+    own the goods (owner 2026-10-29, Japan Fashion E-Commerce: Rakuten, Mercari and
+    Enigmo/BUYMA were all dropped as "a marketplace platform rather than a fashion brand
+    selling its own inventory", and those three are the market's marketplaces).
+    """
+    r = re.sub(r"\s+", " ", str(role or "").strip().lower())
+    return any(w in r for w in _CHANNEL_ROLE_WORDS)
+
+
 _ALWAYS_DROP_ROLES = frozenset(
     {
         "reseller",
@@ -478,10 +512,22 @@ def verify_criteria_prompt(query: str, family: str = "") -> str:
         role_line = "In the JSON role field return exactly one of: " + ", ".join(cats) + "."
     else:
         required = player_label(query, family)
-        keep_line = (
-            "KEEP: companies whose brand is sold in this market, or who "
-            "manufacture and market the product under their own name."
-        )
+        if is_channel_role(required) or sells_in_channel_market():
+            # A market whose own player type is a selling channel: the brand/maker
+            # wording below drops every marketplace and retailer in it.
+            keep_line = (
+                "KEEP: companies that themselves SELL this market's products to its "
+                "customers through this market's channel -- including the operator of a "
+                "marketplace, platform, shop or app on which those products are sold -- "
+                "whether they make the goods, own the brand, or buy and resell other "
+                "companies' goods, and also when those products are only one category of "
+                "a wider assortment."
+            )
+        else:
+            keep_line = (
+                "KEEP: companies whose brand is sold in this market, or who "
+                "manufacture and market the product under their own name."
+            )
         role_line = f"Expected role label: {required}."
     return (
         "You are a strict market-landscape verifier. Decide KEEP or DROP for "
@@ -560,9 +606,25 @@ def verify_should_keep(
     # Solution-Provider and Brand branches below existed. Checked BEFORE the
     # channel drop list: in a market whose own players are distributors or
     # retailers, those roles are the market, not a channel.
-    market_roles = {exp} | {c.strip().lower() for c in _discovery_categories()}
+    market_roles = {r for r in ({exp} | {c.strip().lower() for c in _discovery_categories()}) if r}
     if role_n in market_roles:
         return True
+    # A market whose OWN player type is a channel role must also keep the roles that
+    # name it with a qualifier: "E-commerce Retailer" / "Online Fashion Retailer" IS
+    # this market's "Retailer" (owner 2026-10-29, Japan Fashion E-Commerce, whose
+    # players are marketplaces and retailers). Widened only when the market's own
+    # role is itself a channel role, so a Manufacturer market still drops "Contract
+    # Manufacturer" and a Brand market still drops "Retailer".
+    channel_own = {r for r in market_roles if is_channel_role(r)}
+    if any(r in role_n for r in channel_own):
+        return True
+    # A market measured by the SALE of the product (market brief scope_test
+    # "sells_in_channel") keeps the companies that sell it, whatever selling word the
+    # verifier used -- and the catch-all it reaches for when its enum has no entry for
+    # a marketplace operator. Still fails closed: in_market and builds_or_owns above.
+    if channel_own or sells_in_channel_market():
+        if any(w in role_n for w in _SELLING_ROLE_WORDS) or role_n == "other":
+            return True
     if role_n in _ALWAYS_DROP_ROLES:
         return False
     if any(drop in role_n for drop in ("reseller", "distributor", "retailer", "media", "association")):
@@ -2807,12 +2869,20 @@ def gpt_verify_market(
         + (',"hq_in_country":true|false' if hq_country else "")
         + "}]}"
     )
+    # Ownership is not headquarters (owner 2026-10-28, Mozambique Fire Insurance): a locally
+    # incorporated, locally run company is a company OF this country even when a foreign group
+    # owns it -- Hollard Mocambique, Phoenix Mocambique and SIM (70% Fidelidade) are licensed
+    # Mozambican insurers and were all dropped as "subsidiary of a foreign group". Only a branch
+    # or office of a foreign company, with no company of its own here, is a DROP. This matches
+    # step 3c's own HQ check (company_facts.hq_prompt), which keeps such a company.
     hq_rule = (
-        f"\nHQ RULE: this landscape covers {hq_country} only. KEEP a company only "
-        f"if its OWN global headquarters is in {hq_country}. A local office, "
-        "plant, subsidiary or distributor of a foreign company is a DROP. Set "
-        "hq_in_country=true only when the headquarters is in "
-        f"{hq_country}; if unsure, false.\n"
+        f"\nHQ RULE: this landscape covers {hq_country} only. KEEP a company whose OWN head "
+        f"office -- where the operating company itself is run from -- is in {hq_country}. A "
+        f"company incorporated and run in {hq_country} KEEPS even when a foreign group owns it "
+        "(a foreign parent, or a foreign brand name, is NOT a reason to drop). DROP only a "
+        f"branch, sales office, representative office or distributor that a foreign company runs "
+        f"from abroad without a company of its own in {hq_country}. Set hq_in_country=true when "
+        f"the company's own head office is in {hq_country}; if unsure, false.\n"
         if hq_country else ""
     )
     system = (
@@ -2835,7 +2905,13 @@ def gpt_verify_market(
         "builds_or_owns=true when the company itself makes, owns or markets the product, or -- for "
         "a Service Provider -- itself delivers the service under its own name (it need not own the "
         "assets it inspects, maintains or operates on); false for a reseller, agent or directory. "
-        f"Return compact JSON only: {json_shape}"
+        + ("In THIS market selling is the qualifying activity, so builds_or_owns=true also when "
+           "the company itself SELLS the product to this market's customers through this market's "
+           "channel -- including the operator of a marketplace, platform, shop or app on which it "
+           "is sold -- whether it makes the goods, owns the brand, or buys and resells other "
+           "companies' goods. Such a company is NOT a mere reseller here: it is the market. "
+           if (is_channel_role(expected_role) or sells_in_channel_market()) else "")
+        + f"Return compact JSON only: {json_shape}"
     )
 
     def _user(chunk: list[dict[str, str]]) -> str:

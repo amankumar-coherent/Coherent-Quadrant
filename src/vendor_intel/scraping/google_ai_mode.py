@@ -93,6 +93,9 @@ _CAPTCHAS_BEFORE_PROFILE_RESET = 5
 # rebuilt (cookies cleared, browser relaunched); if the pages keep coming
 # after that, the profile itself is soured and needs the same treatment a
 # quota page gets.
+# Block pages (sign-in wall / "Verifying your request") that a reset did NOT clear
+# before the session gives up: past this, Google has flagged the IP, not the profile.
+_MAX_FLAGGED_BLOCKS = int(os.getenv("GOOGLE_AI_MODE_MAX_FLAGGED_BLOCKS") or "6")
 _SOFT_FAILURES_BEFORE_PROFILE_RESET = 3
 
 # Browser-death messages from patchright: the page/context/browser is gone,
@@ -507,6 +510,14 @@ class AiModeSession:
         # Consecutive "no AI response generated" pages. A good answer resets
         # it; crossing _SOFT_FAILURES_BEFORE_RESET rebuilds the session.
         self.soft_failures = 0
+        # Consecutive block pages (sign-in wall / "Verifying your request") that a
+        # session or profile reset did NOT clear. A good answer resets it. When Google
+        # has flagged the IP rather than the profile, every fresh profile is blocked
+        # too, so resetting cannot help and the session must stop instead of churning
+        # (owner 2026-10-29, Japan Fashion E-Commerce: 183 sign-in walls, 371 CAPTCHAs
+        # and 3 usable answers in 47 minutes, looping to "reset #44", while every
+        # archived profile ate disk).
+        self.flagged_blocks = 0
         self.resets = 0
         # AI-response quota pages ("reached the request limit"). Tracked
         # separately from CAPTCHAs because the remedy differs: a CAPTCHA can
@@ -725,15 +736,32 @@ class AiModeSession:
             last = n
             page.wait_for_timeout(1500)
 
-    def _verify_page_showing(self) -> bool:
-        """Google's "Verifying your request ... Continue" interstitial (seen
-        when many browsers share one IP). It is not a reCAPTCHA, so the solver
-        does nothing with it; the session is treated as flagged and reset."""
+    def _flagged_page_showing(self) -> str:
+        """The name of the block page Google is showing, or "" for a normal page.
+
+        Neither of these is a reCAPTCHA, so the solver does nothing with them and the
+        session is treated as flagged: cookies cleared and the browser relaunched,
+        then a full profile reset.
+
+        * "Verifying your request ... Continue" -- seen when many browsers share one IP.
+        * "Sign in to continue / Sign in to verify you're a human and see more results."
+          -- Google's sign-in wall (owner 2026-10-29, Japan Fashion E-Commerce). A
+          signed-out scraping profile can never satisfy it, so without this the query
+          just returned the wall's text and the run stalled on it.
+        """
         try:
-            return "verifying your request" in (
-                self._page.inner_text("body", timeout=3000) or "").lower()
+            body = (self._page.inner_text("body", timeout=3000) or "").lower()
         except Exception:  # noqa: BLE001
-            return False
+            return ""
+        if "verifying your request" in body:
+            return "Verifying your request"
+        if "sign in to verify" in body:
+            return "Sign in to verify you're a human"
+        # "Sign in to continue" alone also appears inside ordinary results, so only a
+        # page that is nothing BUT the wall counts.
+        if "sign in to continue" in body and len(body.strip()) < 400:
+            return "Sign in to continue"
+        return ""
 
     def _wait_for_captcha_clear(self, timeout: float = 60.0) -> bool:
         deadline = time.monotonic() + timeout
@@ -788,15 +816,27 @@ class AiModeSession:
                             raise AiModeUnavailable(f"navigation failed: {err}") from err
                         continue
 
-                if verify_left > 0 and self._verify_page_showing():
+                flagged = self._flagged_page_showing() if verify_left > 0 else ""
+                if flagged:
                     # The session is flagged: clear cookies and relaunch the
                     # browser (twice), then a full profile reset; re-issue the
                     # query each time without costing a retry.
                     verify_left -= 1
                     self.captcha_count += 1
+                    self.flagged_blocks += 1
                     self.last_captcha_at = time.monotonic()
+                    if self.flagged_blocks >= _MAX_FLAGGED_BLOCKS:
+                        # Fresh profiles are blocked too: this is the IP, not the
+                        # cookies. Stop so the step's own handling takes over rather
+                        # than resetting for hours and making no progress.
+                        raise AiModeUnavailable(
+                            f"Google is blocking this machine: {self.flagged_blocks} "
+                            f"'{flagged}' pages that a browser reset did not clear. "
+                            "Use fewer browsers, a longer GOOGLE_AI_MODE_QUERY_DELAY, "
+                            "or wait for the block to lift."
+                        )
                     if verify_left >= 1:
-                        self.reset_session(reason="Google 'Verifying your request' page")
+                        self.reset_session(reason=f"Google '{flagged}' page")
                     else:
                         self.reset_profile(reason="verify")
                     attempts_left += 1
@@ -935,6 +975,7 @@ class AiModeSession:
                     )
                 if text.strip():
                     self.soft_failures = 0  # a good answer clears the streak
+                    self.flagged_blocks = 0  # Google is answering again
                     return text
             raise AiModeUnavailable("empty answer from AI Mode")
 

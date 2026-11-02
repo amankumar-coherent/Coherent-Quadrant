@@ -303,8 +303,15 @@ def main() -> int:
         "market_type": str(market_analysis.get("market_type") or ""),
         "market_definition": str(market_analysis.get("market_definition") or ""),
         "market_type_reason": str(market_analysis.get("market_type_reason") or ""),
+        # ONE player type per market (owner's rule, restated 2026-10-29): a landscape
+        # compares like with like, so the report names the single role its companies
+        # were found and verified as -- never a list of categories.
         "keep_roles": [role],
-        "player_type_reason": str(market_analysis.get("primary_reason") or ""),
+        # research_panel.py writes player_type_reason for exactly this line (step 2c);
+        # reading primary_reason instead printed the generic "Defined by the scope of
+        # this report." under every brief-driven market.
+        "player_type_reason": str(market_analysis.get("player_type_reason")
+                                  or market_analysis.get("primary_reason") or ""),
     }
 
     audit = {

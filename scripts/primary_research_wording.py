@@ -61,10 +61,16 @@ _SUBJ_END = (r"(?:could not|cannot|can not) be (?:independently )?(?:confirmed|v
              r"secondary research|public|third-party|independent|open)[^,.;]*)?")
 # A noun phrase: never crosses a verb or a "but / though" clause, so a
 # positive finding earlier in the sentence is never swallowed into the
-# "has not disclosed" object.
+# "has not disclosed" object. "does/do/did" and a reporting clause
+# ("<source> states that ...") are barred too: without them the object ran from
+# the start of the sentence through the whole report of what a source said, and
+# the rewrite read "Based on primary research, the company has not disclosed
+# independent industry news states that Arthrex ..." -- ungrammatical, and the
+# hedge it was meant to remove survives inside it (owner 2026-10-30).
 _NP = (r"(?:(?!\b(?:but|though|although|while|whereas|however|is|are|was|were|has|have|had|"
+       r"does|do|did|states?|stated|says?|said|"
        r"confirms?|confirmed|verified|shows|outlines|provides|operates|indicates?|demonstrates?)\b)"
-       r"[^.;!?])*?")
+       r"(?!\b\w+s\s+that\b)[^.;!?])*?")
 # "... not publicly reported in the company's tracking summaries." -- a trailing
 # where-it-was-looked phrase the rewrite drops with the gap wording.
 _GAP_TAIL = r"(?:\s+(?:in|on|by|through|within|for|across|under)\s[^.]*)?"
@@ -273,7 +279,11 @@ def _rewrite_gap_sentences(t: str) -> str:
     has_pr = PR.lower() in t.lower()
     out = []
     for s in re.split(r"(?<=[.!?])\s+", t.strip()):
-        if not s or s.startswith(PR) or not _GAP_ANY.search(s):
+        # The house wording anywhere in the sentence, not only at its start: an
+        # earlier rule writes it mid-sentence (", meaning based on primary
+        # research, ..."). Read as "some OTHER sentence states the gap", such a
+        # sentence was dropped whole and its finding with it (owner 2026-10-30).
+        if not s or PR.lower() in s.lower() or not _GAP_ANY.search(s):
             out.append(s)
             continue
         body = s.rstrip(".")

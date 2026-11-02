@@ -84,10 +84,14 @@ def ownership_prompt(market: str, scope: str) -> str:
         "never guess an acquirer. A company that bought another is NOT acquired. "
         "current_name = the name the business trades under today if it differs from the "
         "listed name, else empty. brand_status = legacy if the listed brand has been "
-        "retired or divested (its capabilities now sold under another name), else current.\n"
+        "retired or divested (its capabilities now sold under another name), else current. "
+        "group = the larger company or group this business belongs to TODAY as a division, "
+        "business unit, regional subsidiary or local arm (\"Acme Australia\" of Acme Inc.; a "
+        "life-science division of its parent), even when no acquisition ever happened; empty "
+        "when it is an independent company, or is itself the parent.\n"
         "Return one result for EVERY company, never skip a name. Compact JSON only: "
         '{"results":[{"name":"...","acquired":true,"acquirer":"...","year":"...",'
-        '"today":"...","note":"...","current_name":"","brand_status":"current"}]}'
+        '"today":"...","note":"...","current_name":"","brand_status":"current","group":""}]}'
     )
 
 
@@ -114,7 +118,7 @@ def identity_prompt(market: str, scope: str) -> str:
 
 
 def scope_prompt(market: str, definition: str, core: str = "", adjacent: Iterable[str] = (),
-                 own_product_line: bool = False) -> str:
+                 own_product_line: bool = False, sells_in_channel: bool = False) -> str:
     """Core player, adjacent-segment player, or not in the market at all.
 
     ``own_product_line`` (market brief ``"scope_test": "own_product_line"``):
@@ -123,6 +127,39 @@ def scope_prompt(market: str, definition: str, core: str = "", adjacent: Iterabl
     put diversified makers (BASF, Huntsman, Smith & Nephew) in adjacent, which
     a brief's wording alone did not override (owner 2026-10-12)."""
     adj = "; ".join(a for a in adjacent if a)
+    if sells_in_channel:
+        # Market brief "scope_test": "sells_in_channel" -- a market measured by the SALE of a
+        # product through a channel (e-commerce, retail, distribution), not by who makes it
+        # (owner 2026-10-29, Japan Fashion E-Commerce). The other two tests both ask who MAKES
+        # the product, so a general marketplace that sells it (Rakuten, Mercari) came back
+        # adjacent for "it resells" -- in this market selling IS the qualifying activity.
+        return (
+            "You are a market research analyst building a landscape of the companies that SELL "
+            "this market's products through this market's channel. For EACH company decide "
+            "whether it sells them itself through that channel.\n"
+            f"Market: {market}\n" + (f"Market definition: {definition}\n" if definition else "")
+            + (f"Core players: {core}\n" if core else "")
+            + (f"Adjacent segments (not core): {adj}\n" if adj else "")
+            + "scope = core (the company itself sells this market's products to this market's "
+            "customers through this market's channel, under its own name, brand, shop, app or "
+            "platform -- ALSO when those products are only one category of a much wider "
+            "assortment, and whether it makes them itself or buys them to resell. A MARKETPLACE "
+            "where this market's customers themselves buy these products is core too, even when "
+            "the listings come from third-party shops or private individuals: that marketplace "
+            "IS one of this market's channels and the market's sales run through it) | adjacent "
+            "(it does not sell to this market's customers at all -- it sells tools or services "
+            "TO the companies that do: shop-building or marketplace SOFTWARE licensed to "
+            "merchants, payments, logistics, fulfilment, warehousing, marketing or advertising, "
+            "and it runs no storefront or marketplace of its own where these products are "
+            "bought; or it sells only through other channels; or it "
+            "sells only products outside this market's categories; or it only supplies or "
+            "manufactures for the companies that do sell) | out (not related to this market). "
+            "Judge from what the company sells today. A product the company has only ANNOUNCED "
+            "or has in its pipeline but does NOT sell yet does not make it core. "
+            "reason = one short factual sentence naming what it sells and through which channel.\n"
+            "Return one result for EVERY company. Compact JSON only: "
+            '{"results":[{"name":"...","scope":"core|adjacent|out","reason":"..."}]}'
+        )
     if own_product_line:
         return (
             "You are a market research analyst building a landscape of the companies that MAKE "
@@ -132,10 +169,20 @@ def scope_prompt(market: str, definition: str, core: str = "", adjacent: Iterabl
             + (f"Adjacent segments (not core): {adj}\n" if adj else "")
             + "scope = core (the company itself makes this market's product and sells it under "
             "its own name -- also when it is only one product line, grade family or division of a "
-            "larger, diversified business) | adjacent (it does not make the product itself: it "
+            "larger, diversified business, and HOWEVER SMALL a share of its revenue that line is: "
+            "do NOT weigh it against the company's bigger lines, and do not answer adjacent because "
+            "something else is its main business. The market definition's accessories, consumables "
+            "and components count as this market's product in their own right when it lists them) "
+            "| adjacent (it does not make the product itself: it "
             "buys and processes, converts or uses it, distributes or resells it, contract-makes "
             "it for others, or makes only a neighbouring product or a non-qualifying grade) | out "
             "(not related to this market). Judge from what the company sells today. "
+            # A planned product is not a product (owner 2026-10-28, Mozambique Fire Insurance):
+            # "including fire insurance which is currently in its product pipeline" came back as
+            # core, and the company reached the chart on a product it does not yet sell.
+            "A product the company has only ANNOUNCED, is piloting, has applied for a licence for, "
+            "or has in its pipeline or roadmap but does NOT sell yet is not core -- answer adjacent "
+            "(or out when nothing else connects it), and say so in the reason. "
             "reason = one short factual sentence naming the product line that decides it.\n"
             "Return one result for EVERY company. Compact JSON only: "
             '{"results":[{"name":"...","scope":"core|adjacent|out","reason":"..."}]}'
@@ -297,6 +344,7 @@ def auto_review(pipe_dir: Path, pool: Iterable[str],
     hq = _read(pipe_dir / HQ_FILE, {}) or {}
     exclude: dict[str, dict] = {}
     owners: list[dict] = []
+    group_links: list[dict] = []
     adjacent: list[dict] = []
     display: list[dict] = []
     brief = _read(pipe_dir / "market_brief.json", {}) or {}
@@ -365,6 +413,11 @@ def auto_review(pipe_dir: Path, pool: Iterable[str],
         entry = owner_entry(name, rec)
         if entry:
             owners.append(entry)
+        # A division, business unit or regional arm of a group (no deal needed) is not a
+        # separate competitor either. Only the pair is recorded below, never an owner label.
+        group = str(rec.get("group") or "").strip()
+        if group and norm_name(group) != norm_name(name):
+            group_links.append({"company": name, "owner": group})
         # A retired / divested brand is shown under the name the business trades as today.
         current = str(rec.get("current_name") or "").strip()
         # "Ctrack" for "Ctrack UK Limited" is the same name, not a retired brand.
@@ -378,7 +431,25 @@ def auto_review(pipe_dir: Path, pool: Iterable[str],
     # pairs are recorded here; which one stays needs the scores, so
     # resolve_listed_groups() decides after step 4. Owners come from these
     # answers, the analyst review and the chart fact-check.
-    all_owners = list(owners)
+    # Same distinctive name: "Avantor Sciences, Inc." beside "Avantor Inc.", "Sartorius Stedim Biotech
+    # GmbH" beside "Sartorius AG", "Thermo Fisher Scientific Australia" beside "Thermo Fisher
+    # Scientific Inc." -- the group answers above differ from run to run ("Sartorius Group", or
+    # nothing), a shared brand name does not. The shorter name must be 4+ characters and the other
+    # name must continue it after a word boundary.
+    # 4, not 5: at 5 a parent whose whole name is one short word sat on the chart beside its own
+    # unit ("Erbe", "Dell Inc." beside "Dell Technologies Inc.", "Lion Corporation" beside "Lion
+    # Korea Corporation"). 3 is too loose -- checked against the finished markets, it is the first
+    # length where a shared acronym is not a shared owner ("LNG Limited" is not "LNG Terminal Stade
+    # GmbH"), so the floor stays above it (owner 2026-10-30). A wrong pair is still recoverable:
+    # resolve_listed_groups() only drops the weaker member, and `keep` in the analyst review undoes it.
+    keys = {n: norm_name(n) for n in pool}
+    for a, ka in keys.items():
+        if len(ka) < 4:
+            continue
+        for b, kb in keys.items():
+            if b != a and kb.startswith(ka + " "):
+                group_links.append({"company": b, "owner": a})
+    all_owners = list(owners) + group_links
     for f in ("analyst_review.json", "factcheck_review.json"):
         all_owners += [r for r in (_read(pipe_dir / f, {}) or {}).get("ownership") or []
                        if str(r.get("owner") or "").strip()]
@@ -477,6 +548,8 @@ def listed_parent(owner: str, company: str, pool: Iterable[str], out_dir: Path) 
     listed co-owner counts (owner's rule): AvidXchange, taken private by
     "TPG and Corpay", is represented by Corpay when Corpay is in the list."""
     keys = [k for k in (norm_name(o) for o in owner_names(owner)) if k and len(k) >= 3]
+    # "Sartorius Group" / "Merck Holdings" name the listed "Sartorius AG" / "Merck KGaA".
+    keys += [re.sub(r"\s+(group|holdings?)$", "", k) for k in keys if re.search(r"\s(group|holdings?)$", k)]
     if not keys:
         return None
     brands = {}
@@ -584,8 +657,18 @@ _CHATTER = re.compile(
 _SOURCE_TAG_END = re.compile(r"\s*\((?=[A-Z0-9])[^()]{1,80}\)\s*(?=\.?\s*$)")
 
 
+# AI Mode's own page furniture, and the search-result list under an answer. A whole
+# results dump was landing in a supporting point (owner 2026-10-30, Japan Fashion
+# E-Commerce, Wacoal): "... Glamorise Foundations, Inc. <kanji> +6 <kanji> Wacoal's
+# Business Model ... Google Play <app listing> ... Show all Skip to previous prompt".
+# Everything from the first marker on is the page, not the finding, so it is cut.
+_PAGE_FURNITURE = re.compile(
+    r"\s*(?:Show all\b|Show more\b|Skip to (?:previous|main)\b|People also ask\b|"
+    r"Images? for\b|Videos? for\b|From sources across the web\b).*$",
+    re.I | re.S)
 def clean_artifacts(text: str) -> str:
-    t = _CHATTER.sub("", _MD_LINK.sub(_md_link, str(text or ""))).strip()
+    t = _PAGE_FURNITURE.sub("", str(text or ""))
+    t = _CHATTER.sub("", _MD_LINK.sub(_md_link, t)).strip()
     t = _SOURCE_TAG_END.sub("", t)
     t = _RAW_LINK.sub("", _FOOTNOTE.sub("", t))
     t = re.sub(r"\s+([.,;:])", r"\1", t)
@@ -662,10 +745,54 @@ def cites_employee_reviews(text: str) -> bool:
     return bool(_EMPLOYEE_REVIEW.search(str(text or "")))
 
 
+# Japanese / Chinese script, WITHOUT the katakana middle dot U+30FB, which some
+# companies use inside their own English name ("SOU-SOU").
+_LOCAL_SCRIPT = r"\u3040-\u30fa\u30fc-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uff01-\uffef"
+_LOCAL_RUN = re.compile(f"[{_LOCAL_SCRIPT}]")
+# "Name (English Name)" -- the local-script name with its own English gloss after it.
+_LOCAL_THEN_ENGLISH = re.compile(
+    f'["\u201c\u300c]?[{_LOCAL_SCRIPT}][^()\\n]*?["\u201d\u300d]?\\s*'
+    r"[(\uff08]\s*([A-Za-z0-9][^()\n]*?)\s*[)\uff09]")
+# A bracket that CONTAINS local script anywhere beside an English name that already says
+# it -- "(25年モデル)" starts with digits, so matching only the first character missed it.
+_LOCAL_BRACKET = re.compile(f"\\s*[(\\uff08\\u3010\\[][^)\\uff09\\u3011\\]\\n]*[{_LOCAL_SCRIPT}]"
+                            f"[^)\\uff09\\u3011\\]\\n]*[)\\uff09\\u3011\\]]")
+# An appositive that is only a local-script name: "the application, <name>, provides ..."
+# Dropping the whole phrase leaves a sentence that still reads and still states the fact.
+_LOCAL_APPOSITIVE = re.compile(f",\\s*(?:the\\s+|its\\s+)?[{_LOCAL_SCRIPT}][{_LOCAL_SCRIPT}\\s・]*,")
+_LOCAL_QUOTED = re.compile(f'\\s*["\u201c\u300c][^"\u201d\u300d\\n]*[{_LOCAL_SCRIPT}]'
+                           f'[^"\u201d\u300d\\n]*["\u201d\u300d]')
+
+
+def to_english(text: str) -> str:
+    """Drop local-script names from a sentence when their English form is already there.
+
+    The report is written in English (owner 2026-10-30, Japan Fashion E-Commerce: app,
+    shop and facility names arrived as "the アシックス公式アプリ (ASICS Official App)").
+    Only ever REMOVES the local-script copy, keeping the company's own English wording,
+    so nothing is translated here and no fact is invented. A name with no English form
+    beside it is left alone for a person to look at rather than guessed at.
+    """
+    t = str(text or "")
+    if not _LOCAL_RUN.search(t):
+        return t
+    t = _LOCAL_THEN_ENGLISH.sub(lambda m: m.group(1), t)   # local (English) -> English
+    t = _LOCAL_BRACKET.sub("", t)                          # English (local) -> English
+    t = _LOCAL_APPOSITIVE.sub("", t)                       # "X, <local name>, did" -> "X did"
+    t = _LOCAL_QUOTED.sub("", t)                           # a wholly local-script quote
+    t = re.sub(r"\s*\+\d+\s*$", "", t)                     # trailing citation count
+    # A run of local script left dangling at the end with no English around it is the
+    # source's own name, picked up as a citation ("Not available <company name in kanji>").
+    t = re.sub(f"[\\s,;:・]*[{_LOCAL_SCRIPT}][{_LOCAL_SCRIPT}\\s・]*$", "", t)
+    t = re.sub(r"\s{2,}", " ", t)
+    t = re.sub(r"\s+([,.;:])", r"\1", t).strip()
+    return t
+
+
 def tidy_claim(text: str) -> str:
     """Citation leftovers removed; 'None available. X did Y' -> 'X did Y'; a
     bullet that only reports an absence -> 'Not available'; else unchanged."""
-    t = clean_artifacts(text)
+    t = to_english(clean_artifacts(text))
     if not t:
         return t
     stripped = _PREFIX.sub("", t)

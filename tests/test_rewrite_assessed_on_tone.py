@@ -192,3 +192,39 @@ def test_double_gap_inside_house_sentence_cleaned():
     from primary_research_wording import PR, to_primary
     assert to_primary(f"{PR} IP ratings for Indian conditions remains undisclosed or self-reported.") == \
         f"{PR} IP ratings for Indian conditions."
+
+
+def test_reporting_clause_is_never_swallowed_into_the_gap_object():
+    """"<source> states that <company> does not disclose X, meaning Y is not publicly reported."
+    The gap object is Y. Before this, the noun-phrase guard crossed "states that" and "does not",
+    so the whole report of what the source said became the object: "...has not disclosed
+    independent industry news states that Arthrex ..." -- ungrammatical, and it carried the hedge
+    the rewrite exists to remove (owner 2026-10-30)."""
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+    from primary_research_wording import PR, to_primary
+    out = to_primary(
+        "Independent industry news states that Arthrex, a private company, does not publicly "
+        "disclose its financial status or annual reports, meaning segment revenue disclosures or "
+        "growth rates for its electrosurgical business are not publicly reported.")
+    assert out.startswith("Independent industry news states that Arthrex")
+    assert f"meaning {PR[0].lower()}{PR[1:]} segment revenue disclosures" in out
+    assert "disclosed independent industry news" not in out
+    # the finding before the gap survives, and only the gap is rewritten
+    assert to_primary("A trade press report states that the company shipped 12,000 generators in "
+                      "2024, but the regional split is not publicly reported.") == \
+        ("A trade press report states that the company shipped 12,000 generators in 2024, "
+         f"but {PR[0].lower()}{PR[1:]} the regional split.")
+
+
+def test_a_sentence_already_in_house_wording_is_kept_whole():
+    """The house sentence can be written mid-sentence by an earlier rule. Read as "another
+    sentence states this gap", such a sentence was dropped whole -- losing its finding with it."""
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+    from primary_research_wording import PR, to_primary
+    s = (f"The company runs two plants, meaning {PR[0].lower()}{PR[1:]} per-plant output, which "
+         "is not publicly reported.")
+    assert to_primary(s).startswith("The company runs two plants")

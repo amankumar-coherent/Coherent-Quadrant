@@ -87,8 +87,14 @@ def test_more_dots_are_filled_for_a_higher_score():
         len(re.findall(r'class="cq-sdot [^"]*cq-sdot-on"', r[4]))
         for r in rows if "cq-strength" in r[4]
     ]
-    # Overall descends down the table, so the filled count must never rise.
-    assert filled_counts == sorted(filled_counts, reverse=True)
+    # The table is grouped by quadrant and sorted by strength within each one
+    # (owner 2026-10-21), so the filled count descends inside a group and
+    # restarts at the next: one non-increasing run per quadrant, never more.
+    runs = 1
+    for prev, cur in zip(filled_counts, filled_counts[1:]):
+        if cur > prev:
+            runs += 1
+    assert runs <= len(QUADS), f"strength rises {runs - 1} times, more than one per quadrant"
     assert len(set(filled_counts)) > 1, "the column has to discriminate"
 
 

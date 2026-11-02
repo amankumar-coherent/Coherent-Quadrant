@@ -303,9 +303,19 @@ def _write_live_snapshot(
     }
     if phase:
         session.meta["phase"] = phase
-    tmp = live.with_suffix(".tmp")
-    tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    tmp.replace(live)
+    # A temp name per process, and a failed write is skipped: 25 markets run in
+    # parallel share this display-only file, and one fixed "live.tmp" made
+    # Windows refuse a concurrent write (PermissionError) and crashed a whole
+    # discovery (owner 2026-10-25, 25 ProFood markets at once).
+    tmp = live.with_name(f"live.{os.getpid()}.tmp")
+    try:
+        tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+        tmp.replace(live)
+    except OSError:
+        try:
+            tmp.unlink()
+        except OSError:
+            pass
 
 
 def load_runs(limit: int = 200) -> list[dict[str, Any]]:

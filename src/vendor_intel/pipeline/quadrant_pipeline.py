@@ -60,6 +60,26 @@ def write_json_atomic(path: Path, obj: Any, *, indent: int | None = None) -> Non
             time.sleep(0.25 * (attempt + 1))
 
 
+def share_browsers(work: dict[str, int], browsers: int) -> dict[str, int]:
+    """Browsers per company for a step with fewer companies than browsers.
+
+    ``work`` = queries each company needs. Every company gets one browser, then
+    each spare browser goes to the company with the most queries per browser
+    (never more browsers than queries), so a step with 3 companies still uses
+    all 20 browsers instead of 3 (owner 2026-10-27: always every browser).
+    """
+    share = {c: 1 for c, w in work.items() if w > 0}
+    spare = max(0, browsers - len(share))
+    while spare > 0:
+        open_ = [c for c in share if share[c] < work[c]]
+        if not open_:
+            break
+        c = max(open_, key=lambda c: work[c] / share[c])
+        share[c] += 1
+        spare -= 1
+    return share
+
+
 def update_json_locked(path: Path, mutate, *, indent: int | None = None, timeout: float = 180.0,
                        stale_after: float = 90.0) -> None:
     """Read-modify-write of a JSON file several browsers share.

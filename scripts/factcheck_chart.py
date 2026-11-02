@@ -71,6 +71,7 @@ def market_scope(out_dir: Path) -> tuple[str, str, str]:
 
 from vendor_intel.pipeline.factcheck import (  # noqa: E402
     applied_replacements, chart_rows, finished, key, merged_findings, specific_claims, was_checked)
+from vendor_intel.pipeline.quadrant_pipeline import share_browsers  # noqa: E402
 
 
 def worker(args) -> int:
@@ -103,7 +104,13 @@ def worker(args) -> int:
         assert status_sys != STATUS_SYS, "STATUS_SYS wording changed: update the own_product_line variant"
     skip = applied_replacements(out_dir / "_pipeline")
     definition, core, adjacent = market_scope(out_dir)
-    names = json.loads(Path(args.companies).read_text(encoding="utf-8"))
+    # Entries are a company name, or {"company", "part", "parts"} when one
+    # company's claims are shared over several browsers: part 0 asks the
+    # status, and each part takes every parts-th batch of 5 claims.
+    units = json.loads(Path(args.companies).read_text(encoding="utf-8"))
+    units = [u if isinstance(u, dict) else {"company": u, "part": 0, "parts": 1} for u in units]
+    names = [u["company"] for u in units]
+    part_of = {u["company"]: (int(u["part"]), int(u["parts"])) for u in units}
     out_file = Path(args.out)
     done = json.loads(out_file.read_text(encoding="utf-8")) if out_file.exists() else {}
     client, model = ce._client(Settings()), ce._model(Settings())
@@ -125,7 +132,8 @@ def worker(args) -> int:
     for name in names:
         b = by.get(name) or {}
         rec = done.setdefault(name, {})
-        if not rec.get("status"):
+        part, parts = part_of[name]
+        if not rec.get("status") and part == 0:
             got = ask(status_sys,
                       f"Market: {args.market}. Definition: {definition[:600]}\nCore players: {core[:500]}\n"
                       f"Adjacent segments: {adjacent[:300]}\n\nCompany: {name} (brand {b.get('brand')}), "
@@ -138,6 +146,8 @@ def worker(args) -> int:
         have = {c["claim"] for c in rec["claims"]}
         todo = [c for c in specific_claims(b, skip) if not was_checked(c["claim"], have)]
         for i in range(0, len(todo), 5):
+            if (i // 5) % parts != part:
+                continue
             chunk = todo[i:i + 5]
             got = ask(CLAIM_SYS, f"Company: {name} ({b.get('brand')}), {b.get('hq_location')}.\nClaims:\n"
                       + "\n".join(f"{k + 1}. {c['claim']}" for k, c in enumerate(chunk)),
@@ -200,7 +210,7 @@ def main() -> int:
     skip = applied_replacements(out_dir / "_pipeline")
     todo = [b["company"] for b in rows if not finished(b, merged.get(key(b["company"])), skip)]
     print(f"[factcheck] {len(rows) - len(todo)} of {len(rows)} chart companies already checked; "
-          f"{len(todo)} on {min(args.browsers, len(todo))} browsers", flush=True)
+          f"{len(todo)} to check on up to {args.browsers} browsers", flush=True)
     # Keep one merged file; per-browser files are rebuilt for this run's split.
     (work / "findings.json").write_text(json.dumps(merged, indent=1, ensure_ascii=False), encoding="utf-8")
     for old in [*work.glob("findings_*.json"), *work.glob("companies_*.json")]:
@@ -208,13 +218,30 @@ def main() -> int:
             old.unlink()
     (work / "findings_all.json").write_text(json.dumps(merged, indent=1, ensure_ascii=False), encoding="utf-8")
     procs = []
-    n = min(args.browsers, len(todo))
+    if len(todo) >= args.browsers:
+        groups = [todo[i::args.browsers] for i in range(args.browsers)]
+    else:
+        # Fewer companies than browsers: a company's claims (5 per question)
+        # are shared over several browsers, so every browser works (owner
+        # 2026-10-27); merged_findings unions the parts.
+        by_row = {b["company"]: b for b in rows}
+        work_of = {}
+        for c in todo:
+            rec = merged.get(key(c)) or {}
+            have = {x["claim"] for x in rec.get("claims") or [] if x.get("verdict")}
+            n_claims = sum(1 for x in specific_claims(by_row.get(c) or {}, skip) if not was_checked(x["claim"], have))
+            work_of[c] = max(1, -(-n_claims // 5))
+        share = share_browsers(work_of, args.browsers)
+        groups = [[{"company": c, "part": k, "parts": share[c]}] for c in todo for k in range(share[c])]
+    groups = [g for g in groups if g]
+    n = len(groups)
     for i in range(n):
-        names = todo[i::n]
+        names = groups[i]
+        plain = [u["company"] if isinstance(u, dict) else u for u in names]
         part = work / f"companies_{i + 1}.json"
         part.write_text(json.dumps(names, ensure_ascii=False), encoding="utf-8")
         out = work / f"findings_{i + 1}.json"
-        out.write_text(json.dumps({k: merged[key(k)] for k in names if key(k) in merged}, ensure_ascii=False),
+        out.write_text(json.dumps({k: merged[key(k)] for k in plain if key(k) in merged}, ensure_ascii=False),
                        encoding="utf-8")
         log = (work / f"browser_{i + 1}.log").open("a", encoding="utf-8")
         procs.append(subprocess.Popen(
@@ -222,6 +249,8 @@ def main() -> int:
              "--slot", str(args.slot_start + i), "--companies", str(part), "--out", str(out)],
             cwd=str(ROOT), stdout=log, stderr=subprocess.STDOUT, env={**os.environ, "PYTHONIOENCODING": "utf-8"}))
         print(f"browser {i + 1}: slot {args.slot_start + i}, {names}", flush=True)
+        if i == n - 1:
+            print(f"[factcheck] {n} browser(s) started", flush=True)
         time.sleep(args.stagger)
     for p in procs:
         p.wait()

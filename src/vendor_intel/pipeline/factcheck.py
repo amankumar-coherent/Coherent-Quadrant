@@ -115,16 +115,28 @@ def _read(path: Path) -> dict:
 
 
 def merged_findings(work: Path) -> dict:
+    """Every browser file's findings, per company: the first status found and
+    the union of checked claims. A company's claims can be split over several
+    browsers (each file then holds part of them), so keeping only the largest
+    record would drop the other browsers' verdicts."""
     merged: dict = {}
     for f in sorted(Path(work).glob("findings*.json")):
         for name, rec in _read(f).items():
             if not isinstance(rec, dict):
                 continue
             name = key(name)
-            cur = merged.get(name)
-            if (cur is None or len(rec.get("claims") or []) > len(cur.get("claims") or [])
-                    or (rec.get("status") and not cur.get("status"))):
-                merged[name] = rec
+            cur = merged.setdefault(name, {})
+            for k, v in rec.items():
+                if k == "claims":
+                    continue
+                if v and not cur.get(k):
+                    cur[k] = v
+            claims = cur.setdefault("claims", [])
+            seen = {c.get("claim") for c in claims if isinstance(c, dict) and c.get("verdict")}
+            for c in rec.get("claims") or []:
+                if isinstance(c, dict) and c.get("verdict") and c.get("claim") not in seen:
+                    claims.append(c)
+                    seen.add(c.get("claim"))
     return merged
 
 

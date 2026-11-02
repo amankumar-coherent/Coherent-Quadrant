@@ -128,18 +128,25 @@ async def read_report(html: Path) -> tuple[dict, bytes]:
         await page.evaluate(TOC_JS, None)
         await page.wait_for_timeout(400)
         data = await page.evaluate(EXTRACT_JS)
-        box = await page.evaluate("""() => {
+        box_js = """() => {
           const a = document.querySelector('.chartrow').getBoundingClientRect();
           const b = document.querySelector('.xaxis').getBoundingClientRect();
-          return {x: a.left + scrollX, y: a.top + scrollY, width: a.width, height: b.bottom - a.top};
-        }""")
-        # A busy machine (10 browsers) can take longer than the 30 s default
-        # to capture a large chart; allow 2 minutes and one retry.
+          return {x: a.left, y: a.top, width: a.width, height: b.bottom - a.top};
+        }"""
+        # Capture the chart from the viewport, not with full_page: the page is fully
+        # expanded by now (every company and section), and a full-page capture of it
+        # at 2x made Chromium lay out the whole page and time out on a busy machine
+        # (20 browsers). Scroll the chart to the top and make the viewport tall enough.
+        box = await page.evaluate(box_js)
+        await page.set_viewport_size({"width": 1280, "height": max(900, int(box["height"]) + 40)})
+        await page.evaluate("""() => document.querySelector('.chartrow').scrollIntoView({block: 'start'})""")
+        await page.wait_for_timeout(300)
+        box = await page.evaluate(box_js)
         try:
-            chart = await page.screenshot(clip=box, full_page=True, timeout=120_000)
+            chart = await page.screenshot(clip=box, timeout=120_000)
         except Exception:  # noqa: BLE001
             await page.wait_for_timeout(3000)
-            chart = await page.screenshot(clip=box, full_page=True, timeout=120_000)
+            chart = await page.screenshot(clip=await page.evaluate(box_js), timeout=120_000)
         await browser.close()
     return data, chart
 

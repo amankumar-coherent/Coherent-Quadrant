@@ -369,3 +369,159 @@ def test_buyback_by_own_ceo_is_not_an_owner_label():
     real = {"acquired": True, "acquirer": "Mann+Hummel", "year": "2012", "today": "subsidiary",
             "note": "Acquired by Mann+Hummel in 2012."}
     assert cf.owner_entry("Fluid Brasil Ltda.", real)["owner"] == "Mann+Hummel"
+
+
+def test_division_or_regional_arm_pairs_with_its_listed_group(tmp_path):
+    """No acquisition ever happened, yet "Thermo Fisher Scientific Australia" and "MilliporeSigma"
+    are not separate competitors of Thermo Fisher / Merck KGaA: the ownership answer's `group`
+    pairs them, and resolve_listed_groups keeps one company per group (owner 2026-10-28)."""
+    pool = ["Thermo Fisher Scientific Inc.", "Thermo Fisher Scientific Australia Pty Ltd", "Merck KGaA",
+            "MilliporeSigma", "Teknova Inc."]
+    _write(tmp_path / cf.OWNERSHIP_FILE, {
+        "Thermo Fisher Scientific Inc.": {"acquired": False, "group": ""},
+        "Thermo Fisher Scientific Australia Pty Ltd": {"acquired": True, "acquirer": "Thermo Fisher Scientific",
+                                                       "today": "subsidiary", "group": "Thermo Fisher Scientific"},
+        "Merck KGaA": {"acquired": False, "group": ""},
+        "MilliporeSigma": {"acquired": False, "group": "Merck KGaA", "note": "Life science business of Merck KGaA."},
+        "Teknova Inc.": {"acquired": False, "group": ""},
+    })
+    pairs = cf.auto_review(tmp_path, pool)["listed_owner"]
+    assert {"company": "MilliporeSigma", "parent": "Merck KGaA"} in pairs
+    assert {"company": "Thermo Fisher Scientific Australia Pty Ltd",
+            "parent": "Thermo Fisher Scientific Inc."} in pairs
+    assert not any(p["company"] == "Teknova Inc." for p in pairs)
+    # a group answer is never an owner label
+    assert not any(o["company"] == "MilliporeSigma" for o in cf.auto_review(tmp_path, pool)["ownership"])
+
+
+def test_same_brand_name_and_group_suffix_pair_with_the_listed_company(tmp_path):
+    """The group answer varies ("Sartorius Group", or none); a shared distinctive name does not."""
+    pool = ["Avantor Inc.", "Avantor Sciences, Inc.", "Sartorius AG", "Sartorius Stedim Biotech GmbH",
+            "Alfa Tecnova, Inc.", "Bio-Rad Laboratories Inc.", "Bio Basic Inc."]
+    _write(tmp_path / cf.OWNERSHIP_FILE, {"Sartorius Stedim Biotech GmbH": {"group": "Sartorius Group"}})
+    pairs = cf.auto_review(tmp_path, pool)["listed_owner"]
+    assert {"company": "Avantor Sciences, Inc.", "parent": "Avantor Inc."} in pairs
+    assert {"company": "Sartorius Stedim Biotech GmbH", "parent": "Sartorius AG"} in pairs
+    # a short or different first word never links ("Bio" is 3 letters; "Alfa Tecnova" is not "Alfa")
+    assert not any(p["company"] in ("Bio Basic Inc.", "Alfa Tecnova, Inc.") for p in pairs)
+    assert cf.listed_parent("Sartorius Group", "X", ["Sartorius AG"], tmp_path) == "Sartorius AG"
+
+
+def test_scope_prompt_rejects_a_product_that_is_only_planned():
+    """A planned product is not a product (owner 2026-10-28, Mozambique Fire Insurance):
+    "fire insurance which is currently in its product pipeline" was answered core, and the
+    company reached the chart on cover it does not yet sell."""
+    p = cf.scope_prompt("Fire Insurance Market", "fire policies", own_product_line=True).lower()
+    assert "only announced" in p and "pipeline or roadmap" in p
+    assert "does not sell yet is not core" in p.replace("does not", "does not")
+    # the default main-product test keeps its own wording
+    assert "pipeline or roadmap" not in cf.scope_prompt("M", "d").lower()
+
+
+def test_scope_prompt_sells_in_channel_counts_selling_not_making():
+    """A market measured by the SALE of a product through a channel (owner 2026-10-29,
+    Japan Fashion E-Commerce). Both maker tests call a marketplace that resells
+    "adjacent"; here selling IS the qualifying activity, and the enablers are not."""
+    p = cf.scope_prompt("Fashion E-commerce Market", "online sale of apparel",
+                        sells_in_channel=True).lower()
+    assert "companies that sell" in p
+    assert "whether it makes them itself or buys them to resell" in p
+    assert "only one category of a much wider assortment" in p
+    # the client's exclusions: enablers, offline-only, non-category goods. The enabler
+    # test is "who does it sell TO", not "does it let others sell" -- a consumer
+    # marketplace lets others sell and is still this market's channel (2026-10-29).
+    for kw in ("marketplace software licensed to merchants", "payments", "logistics",
+               "only through other channels"):
+        assert kw in p, kw
+    # the maker tests keep their own wording
+    assert "buys them to resell" not in cf.scope_prompt("M", "d", own_product_line=True).lower()
+    assert "buys them to resell" not in cf.scope_prompt("M", "d").lower()
+
+
+def test_sells_in_channel_counts_a_consumer_marketplace_as_the_channel():
+    """A marketplace where this market's customers buy IS one of its channels (owner
+    2026-10-29, Japan Fashion E-Commerce: Mercari and Enigmo/BUYMA came back "adjacent"
+    for "a platform that enables other sellers to sell", and both are Online Fashion
+    Marketplaces in the client's own report). The enablers that sell software TO
+    merchants and run no storefront stay adjacent."""
+    p = cf.scope_prompt("Fashion E-commerce Market", "online sale of apparel",
+                        sells_in_channel=True).lower()
+    assert "a marketplace where this market's customers themselves buy these products is core" in p
+    assert "even when the listings come from third-party shops or private individuals" in p
+    # the enabler test is now about who it sells TO, not about "letting others sell"
+    assert "it sells tools or services to the companies that do" in p
+    assert "runs no storefront or marketplace of its own" in p
+    assert "it only lets others sell" not in p
+
+
+def test_to_english_drops_a_local_script_name_that_already_has_its_english():
+    """The report is written in English (owner 2026-10-30, Japan Fashion E-Commerce).
+    Only the local-script COPY is removed; nothing is translated, so no fact is invented."""
+    f = cf.to_english
+    assert f("the アシックス公式アプリ (ASICS Official App) adds mobile buying") \
+        == "the ASICS Official App adds mobile buying"
+    assert f("its Joso Logistics (常総ロジスティクス) facility") == "its Joso Logistics facility"
+    assert f('the app "ワコール【公式】" (Wacoal Web Store), enables shopping') \
+        == "the app Wacoal Web Store, enables shopping"
+    # a citation leftover: the source's own name in kanji, left dangling
+    assert f("Not available 株式会社ストライプ +2") == "Not available"
+
+
+def test_to_english_leaves_english_and_brand_styling_alone():
+    f = cf.to_english
+    plain = "Fast Retailing sells apparel online in Japan."
+    assert f(plain) == plain
+    # the katakana middle dot is part of this company's OWN English name
+    assert f("SOU・SOU Co., Ltd. sells apparel online.") == "SOU・SOU Co., Ltd. sells apparel online."
+
+
+def test_to_english_leaves_a_readable_sentence_behind():
+    """Removing a local-script name must not leave a dangling comma or double space."""
+    f = cf.to_english
+    out = f("The company's official mobile application, ワコールウェブストア, provides a reservation service.")
+    assert out == "The company's official mobile application provides a reservation service."
+    assert f("the Recovery Sandal Slide (25年モデル) and others") == "the Recovery Sandal Slide and others"
+    for bad in (" ,", "  ", ", ,"):
+        assert bad not in out
+
+
+def test_page_furniture_is_cut_from_a_supporting_point():
+    """A whole search-results dump landed in one bullet (owner 2026-10-30, Japan Fashion
+    E-Commerce, Wacoal): the finding, then source chips, app listings and finally
+    "Show all Skip to previous prompt". Everything from the first marker on is the
+    page, not the finding."""
+    t = cf.clean_artifacts("Wacoal acquired Glamorise Foundations, Inc. in 2024. "
+                           "Show all Skip to previous prompt")
+    assert t == "Wacoal acquired Glamorise Foundations, Inc. in 2024."
+    assert "Show all" not in cf.clean_artifacts("A finding. Show all more results")
+    assert "People also ask" not in cf.clean_artifacts("A finding. People also ask what?")
+    # an ordinary sentence is untouched
+    plain = "The company sells apparel online in Japan."
+    assert cf.clean_artifacts(plain) == plain
+
+
+def test_own_product_line_ignores_how_small_the_line_is():
+    """A diversified maker qualifies on the line itself, not on its share of revenue
+    (owner 2026-10-30, Electrosurgical: FIAB was called adjacent with the reason "makes
+    electrosurgical accessories ... but its core lines are respiratory", and accessories
+    are named in that market's own product scope)."""
+    p = cf.scope_prompt("Electrosurgical Devices Market", "ESUs and accessories",
+                        own_product_line=True).lower()
+    assert "however small a share of its revenue that line is" in p
+    assert "do not answer adjacent because something else is its main business" in p
+    assert "accessories, consumables and components count as this market's product" in p
+
+
+def test_a_four_letter_parent_name_still_pairs_with_its_unit(tmp_path):
+    """The shared-name rule needed 5 characters, so a parent whose whole name is one short word
+    sat on the chart beside its own unit. 4 catches it; 3 would merge a shared commodity acronym
+    with an unrelated company, so the floor stays above it (owner 2026-10-30)."""
+    pool = ["Dell Inc.", "Dell Technologies Inc.", "Lion Corporation", "Lion Korea Corporation",
+            "LNG Limited", "LNG Terminal Stade GmbH", "Kirwan Surgical Products, LLC"]
+    _write(tmp_path / cf.OWNERSHIP_FILE, {n: {"acquired": False, "group": ""} for n in pool})
+    pairs = cf.auto_review(tmp_path, pool)["listed_owner"]
+    assert {"company": "Dell Technologies Inc.", "parent": "Dell Inc."} in pairs
+    assert {"company": "Lion Korea Corporation", "parent": "Lion Corporation"} in pairs
+    # "LNG" is the commodity, not the owner
+    assert not any(p["parent"] == "LNG Limited" for p in pairs)
+    assert not any(p["company"] == "Kirwan Surgical Products, LLC" for p in pairs)

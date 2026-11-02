@@ -183,3 +183,15 @@ def test_coverage_is_reported_in_the_stats():
     )
     assert set(stats["region_coverage"]) == set(gr.REGIONS)
     assert sum(stats["region_coverage"].values()) == 3
+
+
+def test_mozambique_sweeps_its_provinces_with_their_cities():
+    """A country whose broad rounds run dry is swept area by area, but only countries
+    with a list get one (owner 2026-10-28, Mozambique Fire Insurance: 17 companies)."""
+    from vendor_intel.pipeline import geo_rotation as gr
+    areas = gr.states_for("mozambique")
+    assert len(areas) == 11 and gr.is_single_country("mozambique")
+    assert areas[0].startswith("Cidade de Maputo"), "the capital is swept first"
+    assert any("Beira" in a for a in areas) and any("Nampula" in a for a in areas)
+    # a country with no list stays on the region/country ladder rather than inventing places
+    assert gr.states_for("malawi") == []

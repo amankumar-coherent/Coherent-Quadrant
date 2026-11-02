@@ -294,9 +294,11 @@ def build_round_prompt(
             f"HEADQUARTERED IN {focus_region}"
             + (f", {country}" if country else "")
             + f"{company_behind}"
-            ".\n\nThe company's own global headquarters must be in "
-            f"{focus_region} — a local sales office, plant or distributor "
-            "there does NOT qualify. Include national and regional companies, "
+            ".\n\nThe company's own head office must be in "
+            f"{focus_region} — a sales office, plant or distributor that a "
+            "foreign company runs from abroad does NOT qualify, but a company "
+            f"incorporated and run in {focus_region} DOES, even when a foreign "
+            "group owns it. Include national and regional companies, "
             "not only the global majors. If this region genuinely has no such "
             'company, return {"companies":[]} — do NOT substitute a company '
             "from elsewhere and do NOT invent one.\n\n"
@@ -310,10 +312,27 @@ def build_round_prompt(
             f"Give me {batch} {what} in this market"
             f"{'' if is_service_market else ' whose company is'} "
             f"HEADQUARTERED IN {country}{company_behind}.\n\n"
-            f"The company's own global headquarters must be in {country} — a "
-            "local sales office, plant, subsidiary or distributor of a "
-            "foreign company does NOT qualify. Include national and regional "
-            "companies, not only the largest few. If there genuinely are no "
+            # Ownership is not headquarters (owner 2026-10-28, Mozambique Fire Insurance):
+            # "subsidiary of a foreign company does NOT qualify" stopped discovery from
+            # naming locally licensed, locally run companies that a foreign group owns --
+            # in a licensed market (insurance, banking, telecoms) those ARE the market.
+            f"The company's own head office must be in {country} — a sales "
+            "office, branch or distributor that a foreign company runs from "
+            f"abroad does NOT qualify, but a company incorporated and run in "
+            f"{country} DOES, even when a foreign group owns it (a foreign "
+            "parent or a foreign brand name is no reason to leave it out). "
+            "Include national and regional "
+            "companies, not only the largest few. "
+            # A small country's market is under-found in English alone (owner 2026-10-28,
+            # Mozambique Fire Insurance: 17 companies). Two sources name the rest -- the
+            # supervisor's own register of licensed companies, and the country's own
+            # language. Both are generic: every regulated market has a register, and most
+            # countries publish about their companies in a language other than English.
+            f"Name companies on the published register or licence list of {country}'s own "
+            "regulator, supervisory authority or industry association for this market, "
+            "where such a body exists. Use sources in the official language(s) of "
+            f"{country} as well as English — search the local-language names for this "
+            "market too, not only the English ones. If there genuinely are no "
             'more such companies, return {"companies":[]} — do NOT substitute '
             "a company from another country and do NOT invent one.\n\n"
         )
@@ -393,7 +412,15 @@ def build_round_prompt(
         'otherwise "unrelated" or "unknown". NEVER guess this field. Include '
         'the company ONLY if verdict is "in_market".\n'
         "- why_related: one sentence naming what it actually makes, supplies "
-        "or does in THIS market.\n\n"
+        "or does in THIS market.\n"
+        # The report is written in English, so a company from a non-English market
+        # belongs in it under the name it uses in English itself (owner 2026-10-29,
+        # Japan Fashion E-Commerce). Its own romanisation, never a translation of
+        # the words: "FAST RETAILING CO., LTD.", not "Fast Retailing Company".
+        "- brand and company: give the ENGLISH name the company uses for itself -- its "
+        "own romanised or English trading name as it appears on its English website, "
+        "investor-relations pages or stock-exchange listing. Never the local-script "
+        "name, and never a word-by-word translation you invented.\n\n"
         "An empty string is CORRECT and preferred whenever you do not "
         "genuinely know a value. A wrong value is much worse than an empty one."
     )

@@ -59,68 +59,70 @@ def main() -> int:
     pipe = out_dir / "_pipeline"
     todo = json.loads((pipe / "part_fill_todo.json").read_text(encoding="utf-8"))
     names = [n for n in json.loads(Path(args.only_file).read_text(encoding="utf-8")) if n in todo]
-    mine = names[args.shard::args.shards]
+    # Split by (company, part), not by company: few companies with many bare
+    # parts still keep every browser busy (owner 2026-10-27).
+    mine = [(n, item) for n in names for item in todo[n]][args.shard::args.shards]
     rows = {}
     try:
         state = json.loads((out_dir / "chatgpt_checkpoint_batch_all.json").read_text(encoding="utf-8"))
         rows = {_row_name(r): r for r in (state.get("data") or {}).get("verified") or []}
     except (OSError, ValueError):
         pass
-    total = sum(len(todo[n]) for n in mine)
-    print(f"shard {args.shard}/{args.shards}: {len(mine)} companies, {total} parameter parts to fill")
+    total = len(mine)
+    print(f"shard {args.shard}/{args.shards}: {len({n for n, _ in mine})} companies, "
+          f"{total} parameter parts to fill")
 
     done = added_total = 0
-    for name in mine:
+    for name, (axis, param, part) in mine:
         row = rows.get(name, {})
-        for axis, param, part in todo[name]:
-            query = build_part_query(
-                name, param, part, str(defs[axis].get(param) or ""), market=args.market,
-                context=str(row.get("Summary") or row.get("snippet") or row.get("why_related") or ""),
-                headquarters=str(row.get("Headquarters") or row.get("headquarters") or ""))
-            found = []
-            for attempt in (1, 2):
+        query = build_part_query(
+            name, param, part, str(defs[axis].get(param) or ""), market=args.market,
+            context=str(row.get("Summary") or row.get("snippet") or row.get("why_related") or ""),
+            headquarters=str(row.get("Headquarters") or row.get("headquarters") or ""))
+        found = []
+        for attempt in (1, 2):
+            try:
+                answer = ai_ask(query)
+                found = parse_part_evidence(answer, query)
+                break
+            except Exception as err:  # noqa: BLE001
+                print(f"    attempt {attempt}: {type(err).__name__}: {str(err)[:80]}", flush=True)
+        added = 0
+        if found:
+            def mutate(data: dict, name=name, axis=axis, param=param, found=found) -> None:
+                nonlocal added
+                v = (((data.get(name) or {}).get(axis) or {}).get("parameters") or {}).get(param)
+                if not isinstance(v, dict):
+                    return
+                have = {str(e.get("claim") or "").strip().lower() for e in v.get("evidence") or []
+                        if isinstance(e, dict)}
+                # The new findings replace an absence-only bullet for the parameter.
+                ev = [e for e in v.get("evidence") or [] if not (
+                    isinstance(e, dict) and str(e.get("claim") or "").strip().lower().startswith("not available"))]
+                new = [e for e in found if str(e.get("claim") or "").strip().lower() not in have]
+                v["evidence"] = ev + new
+                added = max(added, len(new))
+            for side in sorted(out_dir.glob("param_detail_prescored*.json")):
                 try:
-                    answer = ai_ask(query)
-                    found = parse_part_evidence(answer, query)
-                    break
-                except Exception as err:  # noqa: BLE001
-                    print(f"    attempt {attempt}: {type(err).__name__}: {str(err)[:80]}", flush=True)
-            added = 0
-            if found:
-                def mutate(data: dict, name=name, axis=axis, param=param, found=found) -> None:
-                    nonlocal added
-                    v = (((data.get(name) or {}).get(axis) or {}).get("parameters") or {}).get(param)
-                    if not isinstance(v, dict):
-                        return
-                    have = {str(e.get("claim") or "").strip().lower() for e in v.get("evidence") or []
-                            if isinstance(e, dict)}
-                    # The new findings replace an absence-only bullet for the parameter.
-                    ev = [e for e in v.get("evidence") or [] if not (
-                        isinstance(e, dict) and str(e.get("claim") or "").strip().lower().startswith("not available"))]
-                    new = [e for e in found if str(e.get("claim") or "").strip().lower() not in have]
-                    v["evidence"] = ev + new
-                    added = max(added, len(new))
-                for side in sorted(out_dir.glob("param_detail_prescored*.json")):
-                    try:
-                        has = param in ((((json.loads(side.read_text(encoding="utf-8")).get(name) or {})
-                                          .get(axis) or {}).get("parameters")) or {})
-                    except (OSError, ValueError):
-                        continue
-                    if has:
-                        update_json_locked(side, mutate)
+                    has = param in ((((json.loads(side.read_text(encoding="utf-8")).get(name) or {})
+                                      .get(axis) or {}).get("parameters")) or {})
+                except (OSError, ValueError):
+                    continue
+                if has:
+                    update_json_locked(side, mutate)
 
-            def mark(data: dict, key=f"{name}|{param}|{part}") -> None:
-                data.setdefault("asked", [])
-                if key not in data["asked"]:
-                    data["asked"].append(key)
-            path = pipe / PART_ASKED_FILE
-            if not path.exists():
-                path.write_text(json.dumps({"asked": []}), encoding="utf-8")
-            update_json_locked(path, mark)
-            done += 1
-            added_total += added
-            print(f"  [{done}/{total}] {name} / {param} / {part}: +{added} supporting point(s)", flush=True)
-            time.sleep(0.2)
+        def mark(data: dict, key=f"{name}|{param}|{part}") -> None:
+            data.setdefault("asked", [])
+            if key not in data["asked"]:
+                data["asked"].append(key)
+        path = pipe / PART_ASKED_FILE
+        if not path.exists():
+            path.write_text(json.dumps({"asked": []}), encoding="utf-8")
+        update_json_locked(path, mark)
+        done += 1
+        added_total += added
+        print(f"  [{done}/{total}] {name} / {param} / {part}: +{added} supporting point(s)", flush=True)
+        time.sleep(0.2)
     print(f"done: {done} parts asked, {added_total} supporting points added")
     return 0
 

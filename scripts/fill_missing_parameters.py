@@ -138,9 +138,12 @@ def main() -> int:
         if missing:
             gaps[name] = missing
 
+    # Split by (company, parameter), not by company: a step with 3 companies
+    # and 30 missing parameters keeps every browser busy instead of 3.
     company_list = sorted(gaps.keys())
-    my_companies = company_list[args.shard::args.shards]
-    total_slots = sum(len(gaps[n]) for n in my_companies)
+    mine = [(n, slot) for n in company_list for slot in gaps[n]][args.shard::args.shards]
+    my_companies = list(dict.fromkeys(n for n, _ in mine))
+    total_slots = len(mine)
     print(f"shard {args.shard}/{args.shards}: {len(my_companies)} companies, "
           f"{total_slots} missing parameter slots to fill")
 
@@ -175,43 +178,42 @@ def main() -> int:
 
     started = time.monotonic()
     done_slots = 0
-    for name in my_companies:
+    for name, (axis_key, axis_label, pname) in mine:
         row_result = results.setdefault(name, {"x": {"parameters": {}}, "y": {"parameters": {}}})
-        for axis_key, axis_label, pname in gaps[name]:
-            if pname in (row_result[axis_key].get("parameters") or {}):
-                continue
-            defs = x_defs if axis_key == "x" else y_defs
-            query = build_defined_small_group_query(
-                name, [pname], defs, market=args.market,
+        if pname in (row_result[axis_key].get("parameters") or {}):
+            continue
+        defs = x_defs if axis_key == "x" else y_defs
+        query = build_defined_small_group_query(
+            name, [pname], defs, market=args.market,
+            market_definition=market_definition,
+            context=ctx_by.get(name, ""), headquarters=hq_by.get(name, ""),
+        )
+        answer = _ask_retry(query)
+        got = parse_small_group_scores(answer, [pname], query) if answer else {}
+        status = "OK" if pname in got else "MISS"
+        if pname not in got:
+            # Normal query left no "Score: NN / 100" line at all --
+            # likely the model refused to score instead of missing the
+            # format. Force it: absent evidence is a valid LOW score,
+            # not a reason to withhold a number.
+            forced_query = build_forced_score_query(
+                name, pname, defs, market=args.market,
                 market_definition=market_definition,
                 context=ctx_by.get(name, ""), headquarters=hq_by.get(name, ""),
             )
-            answer = _ask_retry(query)
-            got = parse_small_group_scores(answer, [pname], query) if answer else {}
-            status = "OK" if pname in got else "MISS"
-            if pname not in got:
-                # Normal query left no "Score: NN / 100" line at all --
-                # likely the model refused to score instead of missing the
-                # format. Force it: absent evidence is a valid LOW score,
-                # not a reason to withhold a number.
-                forced_query = build_forced_score_query(
-                    name, pname, defs, market=args.market,
-                    market_definition=market_definition,
-                    context=ctx_by.get(name, ""), headquarters=hq_by.get(name, ""),
-                )
-                forced_answer = _ask_retry(forced_query)
-                got = (
-                    parse_small_group_scores(forced_answer, [pname], forced_query)
-                    if forced_answer else {}
-                )
-                status = "OK (forced)" if pname in got else "MISS"
-            if pname in got:
-                row_result[axis_key]["parameters"][pname] = got[pname]
-                done_slots += 1
-            _write_sidecar()
-            mins = (time.monotonic() - started) / 60
-            print(f"  [{done_slots}/{total_slots}] {name} / {pname}: {status} "
-                  f"({mins:.1f}m elapsed)", flush=True)
+            forced_answer = _ask_retry(forced_query)
+            got = (
+                parse_small_group_scores(forced_answer, [pname], forced_query)
+                if forced_answer else {}
+            )
+            status = "OK (forced)" if pname in got else "MISS"
+        if pname in got:
+            row_result[axis_key]["parameters"][pname] = got[pname]
+            done_slots += 1
+        _write_sidecar()
+        mins = (time.monotonic() - started) / 60
+        print(f"  [{done_slots}/{total_slots}] {name} / {pname}: {status} "
+              f"({mins:.1f}m elapsed)", flush=True)
 
     print(f"\ndone: filled {done_slots}/{total_slots} missing parameter slots")
     print(f"sidecar: {side_path}")
