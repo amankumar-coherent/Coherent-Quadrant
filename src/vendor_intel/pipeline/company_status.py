@@ -315,7 +315,7 @@ def apply_corrections(out_dir: Path, corrections: Iterable[dict[str, str]],
         # "Coupa Software Inc.", brand "Coupa"); a reviewer may use any of them.
         row["_names"] = same.get(norm_name(row["company"]), {norm_name(row["company"])})
         # A correction written against the REPORT text carries its house wording
-        # ("..., as per our findings"); the evidence files keep the pipeline's
+        # ("..., as per our analysis"); the evidence files keep the pipeline's
         # own phrasing, so look for that form when the report form is absent.
         from vendor_intel.pipeline.house_wording import to_legacy
 

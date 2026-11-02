@@ -426,9 +426,13 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
     checks.append(("Market definition short (<= 100 words) and no internal note in the report",
                    0 < defn_words <= 100 and not internal, f"{defn_words} words"))
     # House wording (house_wording.py): no pipeline phrasing left in the report.
+    # The lead is read from house_wording.LEAD, never spelled out here: when the
+    # owner changes it, this check's name follows instead of naming the old one.
+    from vendor_intel.pipeline.house_wording import LEAD as _house_lead
+
     old_wording = re.findall(r"[^.]{0,40}(?:[Bb]ased on primary research|can be estimated (?:as|at))[^.]{0,40}",
                              json.dumps(payload, ensure_ascii=False))
-    checks.append(("Report wording: 'As per our findings', estimates read '... is ...'",
+    checks.append((f"Report wording: '{_house_lead}', estimates read '... is ...'",
                    not old_wording, old_wording[:3]))
     # Owner 2026-10-21: grouped by quadrant (Leaders, Challengers, Trailblazers,
     # Emerging Players), strongest first within each quadrant.

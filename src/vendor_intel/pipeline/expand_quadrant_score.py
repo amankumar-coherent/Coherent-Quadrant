@@ -1426,7 +1426,7 @@ def export_expand_quadrant_outputs(
 
     out_p = Path(out_dir)
     out_p.mkdir(parents=True, exist_ok=True)
-    # Client-facing wording ("As per our findings, ... is ...") is applied here,
+    # Client-facing wording ("As per our analysis, ... is ...") is applied here,
     # once, to everything the report writes; the pipeline keeps its own phrases.
     detail_rows = house_wording.apply(detail_rows)
     slug = out_p.name

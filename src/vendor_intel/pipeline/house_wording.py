@@ -8,11 +8,11 @@ phrases stay inside the pipeline, and the client-facing wording is applied
 once, when the report is written (HTML, JSON, CSV, PDF and Word all read it):
 
   Based on primary research, the company's X can be estimated as Y, based on Z.
-      -> As per our findings, the company's X is Y, based on Z.
+      -> As per our analysis, the company's X is Y, based on Z.
   Based on primary research, the company has not disclosed X.
-      -> As per our findings, the company has not disclosed X.
+      -> As per our analysis, the company has not disclosed X.
   ..., according to primary research.  /  According to primary research, ...
-      -> ..., as per our findings.     /  As per our findings, ...
+      -> ..., as per our analysis.     /  As per our analysis, ...
 
 ``to_legacy`` maps a reworded supporting point back, so a correction written
 against the report text still finds its sentence in the evidence files.
@@ -22,7 +22,7 @@ from __future__ import annotations
 import re
 from typing import Any
 
-LEAD = "As per our findings"
+LEAD = "As per our analysis"
 
 
 # "the company's <metric> can be estimated as / at approximately"
