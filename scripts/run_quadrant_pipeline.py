@@ -484,6 +484,24 @@ def verify(out_dir: Path, spec: dict, top_n: int, keep: int = 0) -> bool:
     checks.append(("Supporting points: absence reads 'Not available', only when nothing else is found",
                    not gaps, f"{len(gaps)}: {gaps[:3]}"))
 
+    # Owner 2026-11-15: the evidence prompt's own wording ("Lines, one finding per
+    # line", "<a specific finding on ...>") and search-snippet text pasted after a
+    # finding ("... Page Title - text ... afi...") are never a supporting point.
+    from vendor_intel.pipeline.company_facts import cut_snippet_tail
+    from vendor_intel.quadrant.ai_mode_scorer import is_evidence_echo
+
+    junk = []
+    for b in brands:
+        for ax in (b.get("score_detail") or {}).values():
+            params = (ax.get("parameters") or ax) if isinstance(ax, dict) else {}
+            for v in params.values():
+                for e in (v.get("evidence") or []) if isinstance(v, dict) else []:
+                    c = str((e.get("claim") if isinstance(e, dict) else e) or "")
+                    if is_evidence_echo(c) or cut_snippet_tail(c) != c:
+                        junk.append(f"{b.get('company')}: {c[:80]}")
+    checks.append(("Supporting points: no prompt template text or pasted search snippets",
+                   not junk, f"{len(junk)}: {junk[:3]}"))
+
     # A placeholder country ("Jundiaí, Country") is no HQ: rule 6 wants "City, Country".
     _placeholder = re.compile(r",\s*(?:country|unknown|n/?a|none)\s*\.?\s*$", re.I)
     no_hq = [b.get("company") for b in brands
@@ -543,6 +561,11 @@ def main() -> int:
                     help="discover -> verify top-up rounds when --keep is short")
     ap.add_argument("--skip-facts", action="store_true",
                     help="skip step 3c (ownership / identity checks in AI Mode); saved answers still apply")
+    ap.add_argument("--no-factcheck", action="store_true",
+                    help="skip the chart fact-check (step 8a) and its re-run passes: deliver the "
+                         "report from the evidence as gathered. The fact-check is what catches a "
+                         "wrong owner, HQ or scope on the chart, so a report built with this flag "
+                         "has not had that check")
     ap.add_argument("--no-pdf", action="store_true", help="do not print the PDF report (step 8b)")
     ap.add_argument("--no-docx", action="store_true", help="do not write the Word report (step 8b)")
     ap.add_argument("--dry-run", action="store_true", help="print the plan, open no browser")
@@ -610,9 +633,20 @@ def main() -> int:
         if args.dry_run:
             return 0
         slot = runner.slots[0]
+        # The first discovery runs on ONE browser (it also does the market analysis), so
+        # with several browsers it only finds a first batch; step 1b's parallel top-up then
+        # finds the rest on every browser at once. Asking browser 1 for the whole target
+        # left nine browsers idle for hours (owner 2026-11-12, Europe PVOH).
+        target = args.discover_target
+        slots = list(runner.slots)
+        if (args.keep and len(slots) > 1
+                and slots == list(range(slots[0], slots[0] + len(slots)))
+                and os.getenv("TOPUP_PARALLEL", "1").strip().lower() not in ("0", "false", "no")):
+            target = min(target, int(os.getenv("FIRST_DISCOVER_TARGET", "20")))
+            log(f"1. first batch of {target} on one browser, then all {len(slots)} browsers top up")
         rc = runner.run(
             [PY, str(ROOT / "scripts" / "run_chatgpt_expand.py"), "--query", args.market,
-             "--country", args.country, "--target", str(args.discover_target)],
+             "--country", args.country, "--target", str(target)],
             "discovery.log",
             env={"GOOGLE_AI_MODE_PROFILE_DIR": str(ROOT / "data" / f"ai_mode_batch_{slot:02d}"),
                  "GOOGLE_AI_MODE_BROWSER": "chromium", "GOOGLE_AI_MODE_ENABLED": "true"},
@@ -640,13 +674,50 @@ def main() -> int:
                 "discover -> verify rounds")
             if args.dry_run:
                 return 0
-            rc = runner.run(
-                [PY, str(ROOT / "scripts" / "discover_verify_rounds.py"),
-                 "--market", args.market, "--country", args.country,
-                 "--keep", str(args.keep), "--slot", str(runner.slots[0]),
-                 "--max-rounds", str(args.max_discover_rounds)],
-                "discover_rounds.log",
-            )
+            slots = list(runner.slots)
+            contiguous = slots == list(range(slots[0], slots[0] + len(slots)))
+            if (len(slots) > 1 and contiguous
+                    and os.getenv("TOPUP_PARALLEL", "1").strip().lower() not in ("0", "false", "no")):
+                # Every --slots browser searches at once, each on its own share of the
+                # regions (parallel_topup.py, GEO_AREA_SHARD), instead of browser 1 alone
+                # while the other nine sat idle (owner 2026-11-08, Silicone PSA: one
+                # browser open for the whole top-up of a 10-browser run).
+                recalled_before = len((read_json(ckpt_path, {}) or {}).get("data", {})
+                                      .get("recalled") or [])
+                rc = runner.run(
+                    [PY, str(ROOT / "scripts" / "parallel_topup.py"),
+                     "--market", args.market, "--country", args.country,
+                     "--keep", str(args.keep), "--browsers", str(len(slots)),
+                     "--slot-start", str(slots[0]),
+                     "--max-rounds", str(max(1, args.max_discover_rounds))],
+                    "discover_rounds.log",
+                )
+                after = (read_json(ckpt_path, {}) or {}).get("data", {})
+                now = len(dedupe_companies(after.get("verified") or [])[0])
+                found = len(after.get("recalled") or []) - recalled_before
+                if now > have:
+                    rc = 0
+                elif found < int(os.getenv("TOPUP_EXHAUSTED_BELOW", "5")):
+                    # Every browser searched its own regions and together they found
+                    # almost no new name: the market is exhausted, as discover_verify_rounds
+                    # reports with one browser ("found nothing new"). Go on to the report
+                    # instead of three more 90-minute searches (owner 2026-11-08, Silicone
+                    # PSA: 10 browsers, 90 minutes, 11 new names).
+                    log(f"1b. {len(slots)} browsers found {found} new names -- market exhausted "
+                        f"at {now} verified, going on")
+                    rc = 0
+                else:
+                    # Names were found but not verified in time: stop; the next run
+                    # verifies them first.
+                    rc = 3
+            else:
+                rc = runner.run(
+                    [PY, str(ROOT / "scripts" / "discover_verify_rounds.py"),
+                     "--market", args.market, "--country", args.country,
+                     "--keep", str(args.keep), "--slot", str(runner.slots[0]),
+                     "--max-rounds", str(args.max_discover_rounds)],
+                    "discover_rounds.log",
+                )
             if rc == 3:
                 # AI Mode kept failing (not an exhausted market): going on would
                 # build the report on too few companies. Stop; a re-run (the
@@ -998,9 +1069,13 @@ def main() -> int:
 
     # 4. Evidence pool (choose, or reuse) + Overall-only scores --------------
     size = args.evidence_pool or args.top_n
+    # --reselect is a one-time request: a fact-check re-run pass keeps the chart it
+    # made and only refills vacated slots. Re-choosing all 20 on every pass churned the
+    # chart and threw away finished evidence (owner 2026-11-12, Medical Films).
+    fc_pass_now = int(os.environ.get("QUADRANT_FACTCHECK_PASS") or "1")
     if args.top_list:
         ev_pool = read_json(Path(args.top_list), [])
-    elif pool_path.exists() and not args.reselect:
+    elif pool_path.exists() and not (args.reselect and fc_pass_now == 1):
         # An empty saved pool (e.g. left by an interrupted run before any
         # company had a score) is re-ranked, never reused as "score nobody".
         ev_pool = read_json(pool_path, []) or None
@@ -1094,7 +1169,7 @@ def main() -> int:
         if not args.chart_top:
             write_json(chart_path, ev_pool)
     if args.dry_run:
-        log(f"   evidence pool: {len(ev_pool)} companies"
+        log(f"   evidence pool: {len(ev_pool)} companies {ev_pool}"
             + (" (ranked after Overall-only scoring on a real run)" if not ev_pool else ""))
     else:
         write_json(pool_path, ev_pool)
@@ -1114,37 +1189,66 @@ def main() -> int:
     if args.evidence_slots:
         runner.slots = parse_slots(args.evidence_slots)
         log(f"5. deep evidence on {len(runner.slots)} browser(s) (--evidence-slots {args.evidence_slots})")
-    for rnd in range(1, args.max_rounds + 1):
-        evidence = load_evidence(out_dir)
-        gaps = evidence_gaps(evidence, ev_pool, xp, yp)
-        if not gaps:
-            break
-        log(f"5. evidence round {rnd}: {len(gaps)} companies with gaps")
-        fresh = [n for n in gaps if not (evidence.get(n) or {}).get("x")
-                 and not (evidence.get(n) or {}).get("y")]
-        if len(fresh) >= len(runner.slots):
-            runner.shards(f"evidence_r{rnd}", "prescore_verified.py", fresh,
-                          ["--fixed-axes", str(spec_path), "--skip-batch", "--group-size", "1"],
-                          per_shard=lambda i, r=rnd: ["--sidecar-name", f"pipe_r{r}_{i}"])
-        elif fresh:
-            # Fewer new companies than browsers: the fill-gap step below asks the
-            # same one-parameter questions but splits them company x parameter, so
-            # every browser works (prescore splits by company only).
-            log(f"5. {len(fresh)} new companies: their parameters are asked one by one over every browser")
-        evidence = load_evidence(out_dir)
-        gaps = evidence_gaps(evidence, ev_pool, xp, yp)
-        runner.shards(f"fillgap_r{rnd}", "fill_missing_parameters.py",
-                      [n for n, g in gaps.items() if g["missing"]],
-                      ["--fixed-axes", str(spec_path)],
-                      units=sum(len(g["missing"]) for g in gaps.values()))
-        evidence = load_evidence(out_dir)
-        gaps = evidence_gaps(evidence, ev_pool, xp, yp)
-        runner.shards(f"reasoning_r{rnd}", "fill_missing_assessed_on.py",
-                      [n for n, g in gaps.items() if g["no_reasoning"]],
-                      ["--fixed-axes", str(spec_path)],
-                      units=sum(len(g["no_reasoning"]) for g in gaps.values()))
-        if args.dry_run:
-            break
+    def evidence_rounds(names: list[str], tag: str = "") -> None:
+      for rnd in range(1, args.max_rounds + 1):
+          evidence = load_evidence(out_dir)
+          gaps = evidence_gaps(evidence, names, xp, yp)
+          if not gaps:
+              return
+          log(f"5. evidence round {rnd}: {len(gaps)} companies with gaps")
+          fresh = [n for n in gaps if not (evidence.get(n) or {}).get("x")
+                   and not (evidence.get(n) or {}).get("y")]
+          if len(fresh) >= len(runner.slots):
+              runner.shards(f"evidence{tag}_r{rnd}", "prescore_verified.py", fresh,
+                            ["--fixed-axes", str(spec_path), "--skip-batch", "--group-size", "1"],
+                            per_shard=lambda i, r=rnd: ["--sidecar-name", f"pipe{tag}_r{r}_{i}"])
+          elif fresh:
+              # Fewer new companies than browsers: the fill-gap step below asks the
+              # same one-parameter questions but splits them company x parameter, so
+              # every browser works (prescore splits by company only).
+              log(f"5. {len(fresh)} new companies: their parameters are asked one by one over every browser")
+          evidence = load_evidence(out_dir)
+          gaps = evidence_gaps(evidence, names, xp, yp)
+          runner.shards(f"fillgap{tag}_r{rnd}", "fill_missing_parameters.py",
+                        [n for n, g in gaps.items() if g["missing"]],
+                        ["--fixed-axes", str(spec_path)],
+                        units=sum(len(g["missing"]) for g in gaps.values()))
+          evidence = load_evidence(out_dir)
+          gaps = evidence_gaps(evidence, names, xp, yp)
+          runner.shards(f"reasoning{tag}_r{rnd}", "fill_missing_assessed_on.py",
+                        [n for n, g in gaps.items() if g["no_reasoning"]],
+                        ["--fixed-axes", str(spec_path)],
+                        units=sum(len(g["no_reasoning"]) for g in gaps.values()))
+          if args.dry_run:
+              return
+
+    evidence_rounds(ev_pool)
+    # A chart company still incomplete after every round used to leave its slot empty
+    # (owner 2026-11-07, UV-Curable: "Adhesives Research" never completed under Google
+    # blocking, the chart showed 19 and VERIFY failed). Its slot now goes to the best
+    # remaining core company of the same quadrant, which gets its own evidence rounds;
+    # at most two such refills, so a run that cannot complete anyone still ends.
+    if (not args.dry_run and size <= args.top_n and not args.top_list and not args.chart_top):
+        tried: set[str] = set()
+        for refill_no in (1, 2):
+            stuck = list(evidence_gaps(load_evidence(out_dir), ev_pool, xp, yp))
+            if not stuck:
+                break
+            tried |= set(stuck)
+            evidence = load_evidence(out_dir)
+            xy = {n: v for n in pool if (v := axis_xy(n, evidence, overall, xp, yp)) is not None}
+            before = [n for n in ev_pool if n not in tried]
+            ev_pool = refill_top_by_quadrant(
+                before, xy, args.top_n, keep_all=True, by=chart_by(pipe_dir),
+                eligible=lambda n: chart_ok(n) and n not in tried)
+            added = [n for n in ev_pool if n not in before]
+            log(f"5. {len(stuck)} chart companies still incomplete {stuck[:8]}: their slots "
+                f"refilled with {added}")
+            write_json(chart_path, ev_pool)
+            write_json(pool_path, ev_pool)
+            if not added:
+                break
+            evidence_rounds(ev_pool, tag=f"_refill{refill_no}")
     # 5b. Parts of a parameter with no supporting point ("Revenue & Growth" with
     # revenue facts only): ask about that part alone and add what is found.
     # Each part is asked once per market (part_fill_asked.json).
@@ -1368,7 +1472,10 @@ def main() -> int:
     # Only decisions that pass generic safety rules are applied
     # (vendor_intel.pipeline.factcheck), through the review layer the
     # analyst file overrides; the rest is listed in _pipeline/factcheck/findings.md.
-    if not args.dry_run:
+    if args.no_factcheck:
+        log("8a. chart fact-check SKIPPED (--no-factcheck): status, owner, HQ, scope and the "
+            "supporting points of the chart companies have NOT been re-checked")
+    elif not args.dry_run:
         from vendor_intel.pipeline import factcheck as fcheck
 
         slots = parse_slots(args.slots)
@@ -1399,7 +1506,8 @@ def main() -> int:
             # 8a then checks only the new chart entrants. Saved work is reused.
             log(f"8a. fact-check decisions changed -> re-running from saved work (pass {fc_pass + 1})")
             env = {**os.environ, "QUADRANT_FACTCHECK_PASS": str(fc_pass + 1)}
-            return subprocess.call([PY, str(Path(__file__).resolve()), *sys.argv[1:]], env=env)
+            argv = [a for a in sys.argv[1:] if a != "--reselect"]
+            return subprocess.call([PY, str(Path(__file__).resolve()), *argv], env=env)
 
     # 8b. PDF: cover, contents, one section per page, one company per page.
     if not args.no_pdf and not args.dry_run:

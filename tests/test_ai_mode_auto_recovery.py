@@ -77,7 +77,9 @@ def test_quota_gives_up_after_the_reset_budget(make_session, monkeypatch):
     s = make_session([QUOTA, QUOTA, QUOTA, GOOD])
     with pytest.raises(gam.AiModeCaptcha):
         s.ask("q")
-    assert len(s.calls) == 2
+    # 2 budgeted resets for this query, then one more so the NEXT query starts on a
+    # fresh browser instead of the blocked one (owner 2026-11-07)
+    assert [c[:2] for c in s.calls] == [("reset_profile", "quota")] * 3
 
 
 def test_no_answer_escalates_to_a_full_profile_reset(make_session):
@@ -106,3 +108,48 @@ def test_ordinary_navigation_error_does_not_reopen(make_session):
     s = make_session([RuntimeError("net::ERR_TIMED_OUT"), GOOD])
     assert s.ask("q") == GOOD
     assert s.calls == []
+
+
+def test_a_block_pauses_every_browser_and_doubles_until_google_answers(monkeypatch, tmp_path):
+    """Google's block follows the IP (owner 2026-11-07): one browser's block pauses all of
+    them through a shared file, the pause doubles per further block, and one good answer
+    anywhere clears it."""
+    monkeypatch.setenv("GOOGLE_AI_MODE_IP_BACKOFF", "60")
+    monkeypatch.setenv("GOOGLE_AI_MODE_IP_BACKOFF_MAX", "1800")
+    monkeypatch.setenv("GOOGLE_AI_MODE_IP_BACKOFF_FILE", str(tmp_path / "backoff.json"))
+    clock = [1_000_000.0]
+    monkeypatch.setattr(gam.time, "time", lambda: clock[0])
+    waits = []
+    for _ in range(7):
+        waits.append(gam._ip_backoff_note_block())
+        clock[0] = gam._ip_backoff_read()["until"] + 1   # the test search after the pause
+    assert waits == [60, 120, 240, 480, 960, 1800, 1800]
+    clock[0] -= 2                # back inside the last pause
+    # ten browsers blocked in the same burst count once (owner 2026-11-09)
+    level = gam._ip_backoff_read()["level"]
+    for _ in range(9):
+        gam._ip_backoff_note_block()
+    assert gam._ip_backoff_read()["level"] == level
+    gam._ip_backoff_note_ok()
+    assert gam._ip_backoff_read()["level"] == 0
+    gam._ip_backoff_wait()          # cleared: returns at once
+    assert gam._ip_backoff_note_block() == 60   # starts over after a good answer
+
+
+def test_after_a_pause_only_one_browser_tests_google(monkeypatch, tmp_path):
+    monkeypatch.setenv("GOOGLE_AI_MODE_IP_BACKOFF", "60")
+    monkeypatch.setenv("GOOGLE_AI_MODE_IP_BACKOFF_FILE", str(tmp_path / "backoff.json"))
+    monkeypatch.setattr(gam.time, "sleep", lambda s: None)
+    gam._ip_backoff_write({"level": 3, "until": gam.time.time() - 1, "updated": gam.time.time() - 300})
+    gam._ip_backoff_wait()          # pause over: this browser claims the test search
+    data = gam._ip_backoff_read()
+    assert data["probe_until"] > gam.time.time() and data["probe_by"]
+    assert gam._ip_backoff_active()  # the others still see the pause until it answers
+    gam._ip_backoff_note_ok()
+    assert not gam._ip_backoff_active()
+
+
+def test_the_shared_pause_is_off_in_tests_by_default(tmp_path, monkeypatch):
+    monkeypatch.setenv("GOOGLE_AI_MODE_IP_BACKOFF_FILE", str(tmp_path / "backoff.json"))
+    assert gam._ip_backoff_note_block() == 0.0
+    assert not (tmp_path / "backoff.json").exists()

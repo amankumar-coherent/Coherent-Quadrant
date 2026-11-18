@@ -227,3 +227,22 @@ def test_tone_step_leaves_estimate_sentences_alone():
     t = ("The rating rests on its footprint. Based on primary research, the company's published data can be "
          "estimated as no evidence of limits, based on its 6,500 customers.")
     assert to_primary(t) == t
+
+
+def test_an_applied_estimate_on_a_banned_source_is_taken_back(tmp_path):
+    """owner 2026-11-07: an estimate citing wiseguyreports.com stayed in the evidence."""
+    import json
+    from vendor_intel.pipeline.estimates import drop_bad_estimates
+    basis = "its strategic partnership with Dow to co-develop bonding materials"
+    side = tmp_path / "param_detail_prescored.json"
+    side.write_text(json.dumps({"Acme": {"x": {"parameters": {"Tech": {
+        "assessed_on": f"We verified X. Based on primary research, the company's material performance can be estimated as strong, based on {basis}.",
+        "estimates": [{"metric": "material performance", "value_type": "estimated_qualitative",
+                       "basis": basis, "source": "https://www.wiseguyreports.com/reports/x"}]}}}}}),
+        encoding="utf-8")
+    assert drop_bad_estimates(tmp_path) == 1
+    v = json.loads(side.read_text(encoding="utf-8"))["Acme"]["x"]["parameters"]["Tech"]
+    assert v["estimates"] == []
+    assert "wiseguy" not in json.dumps(v).lower()
+    assert "has not disclosed its material performance." in v["assessed_on"]
+    assert drop_bad_estimates(tmp_path) == 0

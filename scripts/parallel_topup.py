@@ -102,6 +102,21 @@ def main() -> int:
         shutil.rmtree(d, ignore_errors=True)
         d.mkdir(parents=True)
         shutil.copy(real, d / real.name)
+        if not args.verify_only:
+            # Names found earlier but never verified: each browser verifies ITS share
+            # first (then discovers), instead of all N verifying the same backlog
+            # (owner 2026-11-08, Acrylic Emulsion: 10 browsers each checking the same
+            # 110 names). The other shares stay out of this copy's recalled list; the
+            # merge puts every name back.
+            copy = json.loads((d / real.name).read_text(encoding="utf-8"))
+            cdata = copy["data"]
+            done = {key(r) for k in ("verified", "rejected_mid") for r in cdata.get(k) or []}
+            backlog = [r for r in cdata.get("recalled") or [] if key(r) and key(r) not in done]
+            if backlog:
+                mine = {key(r) for n, r in enumerate(backlog) if n % args.browsers == i}
+                cdata["recalled"] = [r for r in cdata.get("recalled") or []
+                                     if key(r) in done or key(r) in mine or not key(r)]
+                (d / real.name).write_text(json.dumps(copy, ensure_ascii=False), encoding="utf-8")
         if args.verify_only:
             if not shards[i]:
                 continue
@@ -118,7 +133,8 @@ def main() -> int:
         fh = (ROOT / "logs" / f"{tag}_{real_dir.name}_{i + 1}.log").open("w", encoding="utf-8")
         p = subprocess.Popen([sys.executable, str(ROOT / "scripts" / "discover_verify_rounds.py"),
                               "--market", args.market, "--country", args.country, "--keep", str(args.keep),
-                              "--slot", str(slot), "--max-rounds", str(args.max_rounds)]
+                              "--slot", str(slot), "--max-rounds", str(args.max_rounds),
+                              "--share", str(args.browsers)]
                              + (["--verify-only"] if args.verify_only else []),
                              cwd=str(ROOT), stdout=fh, stderr=subprocess.STDOUT, env=env)
         procs.append((p, fh, d))
@@ -152,6 +168,7 @@ def merge(real: Path, dirs: list[Path], before: int, dedupe_companies) -> int:
     state = json.loads(real.read_text(encoding="utf-8"))
     verified = list(state["data"].get("verified") or [])
     rejected = list(state["data"].get("rejected_mid") or [])
+    recalled = list(state["data"].get("recalled") or [])
     seen = {key(r) for r in verified}
     for i, d in enumerate(dirs, 1):
         try:
@@ -163,8 +180,15 @@ def merge(real: Path, dirs: list[Path], before: int, dedupe_companies) -> int:
         seen |= {key(r) for r in new}
         verified += new
         rejected += [r for r in data.get("rejected_mid") or [] if r not in rejected]
-        log(f"browser {i}: {len(new)} new verified")
+        # Names a browser found but had no time to verify are kept in the market's
+        # recalled list: the next top-up verifies them first ("found earlier") instead
+        # of losing them when the browser copies are recreated.
+        have_recalled = {key(r) for r in recalled}
+        found = [r for r in data.get("recalled") or [] if key(r) and key(r) not in have_recalled]
+        recalled += found
+        log(f"browser {i}: {len(new)} new verified, {len(found)} new names found")
     state["data"]["verified"], state["data"]["rejected_mid"] = verified, rejected
+    state["data"]["recalled"] = recalled
     real.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
     after = len(dedupe_companies(verified)[0])
     log(f"merged: {before} -> {after} verified companies after dedupe -> {real}")

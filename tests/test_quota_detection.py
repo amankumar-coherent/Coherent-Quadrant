@@ -101,11 +101,14 @@ def test_a_quota_page_triggers_a_profile_reset():
     assert "continue" in quota_block, "it must retry on the clean profile"
 
 
-def test_reset_profile_archives_rather_than_deletes():
-    """A run must stay inspectable afterwards; nothing is destroyed."""
+def test_reset_profile_deletes_the_old_profile_unless_asked_to_keep_it():
+    """Kept archives are never read again and filled the disk (owner 2026-11-06):
+    the old profile is renamed out of the way, then deleted in the background,
+    unless GOOGLE_AI_MODE_KEEP_ARCHIVED_PROFILES asks to keep it."""
     src = inspect.getsource(gam.AiModeSession.reset_profile)
     assert ".rename(" in src
-    assert "rmtree" not in src and "unlink" not in src
+    assert "rmtree" in src
+    assert "GOOGLE_AI_MODE_KEEP_ARCHIVED_PROFILES" in src
 
 
 def test_reset_profile_survives_a_locked_directory():
@@ -166,14 +169,15 @@ def test_the_orphan_kill_never_breaks_a_run():
 # --- a CAPTCHA storm is a soured profile, not bad luck ---------------------
 
 
-def test_sustained_captchas_trigger_a_profile_reset():
-    """Observed while scoring Wearable Glucometer: 31 CAPTCHAs in one run,
-    every scoring query walled, 3 of every 4 companies left unscored. Nothing
-    escalated past "solve it in the browser window"."""
+def test_captchas_never_replace_the_warm_profile():
+    """Owner 2026-11-15: a CAPTCHA streak used to archive the profile and start a fresh
+    one, and fresh profiles drew MORE blocks. A block page now only reopens or clears
+    cookies on the same profile; a new profile is for a usage-limit (quota) page only."""
     src = inspect.getsource(gam.AiModeSession.ask)
-    block = src.split("_CAPTCHAS_BEFORE_PROFILE_RESET", 1)[1][:400]
-    assert "reset_profile" in block
-    assert 'reason="captchas"' in block
+    assert 'reset_profile(reason="captchas")' not in src
+    assert 'reset_profile(reason="sorry"' not in src
+    assert 'reset_profile(reason="verify")' not in src
+    assert "_reopen_after_block(" in src
 
 
 def test_the_captcha_threshold_is_above_ordinary_noise():
@@ -182,17 +186,10 @@ def test_the_captcha_threshold_is_above_ordinary_noise():
     assert gam._CAPTCHAS_BEFORE_PROFILE_RESET >= 3
 
 
-def test_the_captcha_counter_resets_after_the_profile_is_rebuilt():
-    """Otherwise the next CAPTCHA on the fresh profile instantly re-triggers."""
-    src = inspect.getsource(gam.AiModeSession.ask)
-    block = src.split('reset_profile(reason="captchas")', 1)[1][:120]
-    assert "self.captcha_count = 0" in block
-
-
 def test_a_solvable_captcha_is_still_solved_first():
     """The reset is an escalation, not a replacement — a CAPTCHA the
     extension can clear must not cost a profile."""
     src = inspect.getsource(gam.AiModeSession.ask)
-    solve = src.index("_wait_for_captcha_clear")
-    reset = src.index("_CAPTCHAS_BEFORE_PROFILE_RESET")
-    assert solve < reset, "solving must be attempted before archiving"
+    solve = src.index('_wait_for_block_page_clear("Google /sorry/')
+    reopen = src.index("_reopen_after_block(", solve)
+    assert solve < reopen, "solving must be attempted before the browser is reopened"

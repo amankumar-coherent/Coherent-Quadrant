@@ -131,7 +131,234 @@ def _quota_cool_off(reset_number: int) -> float:
         base = 0.0
     return max(0.0, base) * max(1, reset_number)
 
+# --- machine-wide back-off ---------------------------------------------------
+#
+# Google's "Try again later" block follows the IP, not the browser. With 10 browsers on one
+# IP, each resetting its own profile and retrying a minute later, the machine kept hitting
+# Google every few seconds and the block never lifted: overnight 2026-11-07, 100+ resets per
+# browser and almost nothing saved in 30 minutes across 10 markets. So a block seen by ANY
+# browser now pauses EVERY browser on the machine, through one shared file, and the pause
+# doubles with each further block (60 s, 2, 4, 8, 16, 30 min) until Google answers again;
+# one good answer anywhere clears it. OFF by default since 2026-11-15 (owner): it parked every
+# window on about:blank; each browser now waits out its own CAPTCHA. GOOGLE_AI_MODE_IP_BACKOFF=60 turns it on.
+_IP_BACKOFF_RESET_AFTER = 1800.0  # a block more than 30 min after the last starts over
+
+
+def _ip_backoff_base() -> float:
+    try:
+        return max(0.0, float(os.getenv("GOOGLE_AI_MODE_IP_BACKOFF") or "0"))
+    except ValueError:
+        return 0.0
+
+
+def _ip_backoff_max() -> float:
+    try:
+        return max(0.0, float(os.getenv("GOOGLE_AI_MODE_IP_BACKOFF_MAX") or "1800"))
+    except ValueError:
+        return 1800.0
+
+
+def _ip_backoff_path() -> Path:
+    override = (os.getenv("GOOGLE_AI_MODE_IP_BACKOFF_FILE") or "").strip()
+    if override:
+        return Path(override)
+    return Path(__file__).resolve().parents[3] / "data" / "ai_mode_ip_backoff.json"
+
+
+def _ip_backoff_read() -> dict:
+    try:
+        data = json.loads(_ip_backoff_path().read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except Exception:  # noqa: BLE001 -- missing, half-written, anything: no back-off
+        return {}
+
+
+def _ip_backoff_write(data: dict) -> None:
+    path = _ip_backoff_path()
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_name(f"{path.name}.{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(data), encoding="utf-8")
+        os.replace(tmp, path)
+    except Exception:  # noqa: BLE001 -- another browser holds it; its write is as good
+        pass
+
+
+_IP_BACKOFF_PROBE = 300.0   # how long one browser's test search may take
+
+
+def _ip_backoff_note_block() -> float:
+    """Record a Google block; returns the pause (s) every browser now waits.
+
+    Blocks while a pause is on do not raise the level again: ten browsers hitting
+    the same block at once are one block, and counting them as ten sent the pause
+    straight to its maximum (owner 2026-11-09)."""
+    base = _ip_backoff_base()
+    if base <= 0:
+        return 0.0
+    now = time.time()
+    data = _ip_backoff_read()
+    # Start over only when the last pause ended more than 30 min ago -- measured from
+    # its END, or a 30-minute pause always "started over" at 1 minute.
+    since_end = now - max(float(data.get("until") or 0), float(data.get("updated") or 0))
+    level = int(data.get("level") or 0) if since_end < _IP_BACKOFF_RESET_AFTER else 0
+    # Blocks that land while the pause is still on (queries already in flight when it
+    # began) are the same block; a block on the test search AFTER the pause ended is a
+    # new one and doubles the pause. A fixed 2-minute burst window kept the pause at
+    # 1 minute forever, since every 1-minute pause ended inside it (owner 2026-11-09).
+    new_block = not (level and now < float(data.get("until") or 0))
+    if not new_block:
+        # Same burst: the pause already set stands. Extending it here would also let
+        # searches still in flight from an OLD IP stretch the short settle after a switch.
+        return float(data.get("until") or 0) - now
+    level += 1
+    wait = min(_ip_backoff_max(), base * (2 ** min(level - 1, 10)))
+    until = max(float(data.get("until") or 0), now + wait)
+    _ip_backoff_write({"level": level, "until": until, "updated": now})
+    # With a VPN configured (ip_rotate), a new block switches the machine to a fresh IP
+    # instead of waiting it out: the pause above is written FIRST so every other browser
+    # stops while the switch runs, then cut to a short settle once the new IP is up. One
+    # browser then tests Google (the probe in _ip_backoff_wait); blocked again -> next IP.
+    try:
+        from vendor_intel.scraping import ip_rotate  # noqa: PLC0415
+        if ip_rotate.enabled() and ip_rotate.rotate(reason=f"Google block (level {level})"):
+            settle = _float_env_safe("GOOGLE_AI_MODE_ROTATE_SETTLE", 15.0)
+            _ip_backoff_write({"level": 1, "until": time.time() + settle,
+                               "updated": time.time()})
+            return settle
+    except Exception as err:  # noqa: BLE001 -- a failed switch must never stop the run
+        print(f"  [ai-mode] IP switch failed: {err}", flush=True)
+    return wait
+
+
+def _float_env_safe(name: str, default: float) -> float:
+    try:
+        return float(os.getenv(name) or default)
+    except ValueError:
+        return default
+
+
+def _captcha_wait() -> float:
+    """Seconds a browser stays on a CAPTCHA / block page for it to be solved -- by
+    captcha-raptor or by hand in the window -- before its cookies or profile are reset
+    (owner 2026-11-14: "take time to solve captcha, do not close the browser instantly").
+    GOOGLE_AI_MODE_CAPTCHA_WAIT, default 120; 0 = reset at once (the old behaviour)."""
+    return max(0.0, _float_env_safe("GOOGLE_AI_MODE_CAPTCHA_WAIT", 120.0))
+
+
+def _ip_backoff_note_ok() -> None:
+    """Google answered: clear the shared pause (only written when one is set)."""
+    if _ip_backoff_base() <= 0:
+        return
+    data = _ip_backoff_read()
+    if data.get("level") or float(data.get("until") or 0) > time.time() or data.get("probe_until"):
+        _ip_backoff_write({"level": 0, "until": 0, "updated": time.time()})
+
+
+def _ip_backoff_active() -> bool:
+    if _ip_backoff_base() <= 0:
+        return False
+    data = _ip_backoff_read()
+    return bool(data.get("level")) and (float(data.get("until") or 0) > time.time()
+                                        or float(data.get("probe_until") or 0) > time.time())
+
+
+def _ip_backoff_wait() -> None:
+    """Sleep while the machine-wide pause is set, then let ONE browser test Google.
+
+    When the pause ends, the first browser to get here claims the test search
+    (probe_until); every other browser keeps waiting until that search either
+    answers (note_ok clears the pause, all resume) or is blocked (note_block sets a
+    new pause). Before, all ten searched at once, all ten were blocked and the pause
+    jumped back to 30 minutes (owner 2026-11-09)."""
+    if _ip_backoff_base() <= 0:
+        return
+    told = False
+    me = f"{os.getpid()}-{threading.get_ident()}"
+    while True:
+        data = _ip_backoff_read()
+        now = time.time()
+        left = float(data.get("until") or 0) - now
+        if left > 0:
+            if not told:
+                print(f"  [ai-mode] Google is blocking this machine: every browser pauses "
+                      f"{left / 60:.0f} min before the next query", flush=True)
+                told = True
+            time.sleep(min(left, 30.0))
+            continue
+        if not data.get("level"):
+            return                      # no pause (or a good answer cleared it)
+        probe_until = float(data.get("probe_until") or 0)
+        if probe_until > now and data.get("probe_by") != me:
+            time.sleep(15.0)            # another browser is testing Google
+            continue
+        if data.get("probe_by") != me or probe_until <= now:
+            _ip_backoff_write({**data, "probe_until": now + _IP_BACKOFF_PROBE, "probe_by": me})
+            time.sleep(1.0)
+            if _ip_backoff_read().get("probe_by") != me:
+                continue                # another browser claimed it first
+            print("  [ai-mode] pause over: this browser tests Google first, the others wait",
+                  flush=True)
+        return
+
+
+def _sorry_cool_off(reset_number: int) -> float:
+    """Seconds to wait on a fresh profile after Google's /sorry/ block.
+    GOOGLE_AI_MODE_SORRY_COOLOFF (default 60) x the reset number: the block is
+    tied to the IP, so a fresh profile only helps once the IP has rested."""
+    try:
+        base = float(os.getenv("GOOGLE_AI_MODE_SORRY_COOLOFF") or "60")
+    except ValueError:
+        base = 60.0
+    return max(0.0, base) * max(1, reset_number)
+
+
 _READY_MARKER = "ai mode response is ready"
+
+
+# --- Proton VPN server switching (scripts/vpn_switch.py, scripts/vpn_guard.py) ---
+# Owner 2026-11-17, ported from distributor-intelligence (PROTON_VPN_AUTO_SWITCH.md).
+# One guard per PC drives the Proton VPN app; these hooks make every browser
+# take part. Shared folder VPN_DIR (default data/vpn; set it to the other
+# project's folder when both run, the VPN is machine-wide):
+#   PAUSE      -- a switch is in progress: close this browser and wait;
+#   state.json -- "switches" = number of completed switches: a browser last used
+#                 under an older number starts on a fresh profile (new IP, new visitor);
+#   blocks.log -- one line per Google block, which the guard scores to decide a switch.
+# With no guard running none of these files change, so nothing here does anything.
+def _vpn_dir() -> Path:
+    # VPN_DIR usually lives only in .env, which not every pipeline step loads; read it from there, or the
+    # blocks / PAUSE go to a folder the guard does not watch (owner 2026-11-18: no switch for 7 hours).
+    if not os.getenv("VPN_DIR"):
+        try:
+            from dotenv import dotenv_values  # noqa: PLC0415
+            val = dotenv_values(Path(__file__).resolve().parents[3] / ".env").get("VPN_DIR")
+            if val:
+                os.environ["VPN_DIR"] = val
+        except Exception:  # noqa: BLE001
+            pass
+    return Path(os.getenv("VPN_DIR") or (Path(__file__).resolve().parents[3] / "data" / "vpn"))
+
+
+def vpn_report_block(kind: str) -> None:
+    """One line per Google block for vpn_guard: signin, verify, captcha, no_answer."""
+    try:
+        d = _vpn_dir()
+        d.mkdir(parents=True, exist_ok=True)
+        with (d / "blocks.log").open("a", encoding="utf-8") as fh:
+            fh.write(f"{time.time():.0f} {os.getpid()} {kind}\n")
+    except Exception:  # noqa: BLE001 -- reporting must never break a query
+        pass
+
+
+def _vpn_generation() -> int:
+    try:
+        return int(json.loads((_vpn_dir() / "state.json").read_text(encoding="utf-8")).get("switches", 0))
+    except Exception:  # noqa: BLE001
+        return -1
+
+
+_VPN_PAUSE_MAX = 900.0  # a crashed guard's PAUSE file must not freeze the run forever
 
 
 class AiModeCaptcha(RuntimeError):
@@ -429,11 +656,41 @@ def installed_extensions(profile_dir: str = "") -> list[str]:
     return paths
 
 
+def _proxy_for(profile: str) -> str:
+    """GOOGLE_AI_MODE_PROXY: one proxy for every browser, or a comma list shared out by
+    the slot number in the profile path (slot 41 -> list[41 % n]), so several proxies give
+    the browsers several IPs. Empty = direct connection."""
+    proxies = [p.strip() for p in (_env("GOOGLE_AI_MODE_PROXY") or "").split(",") if p.strip()]
+    if not proxies:
+        return ""
+    m = re.search(r"ai_mode_batch_(\d+)", profile or "")
+    return proxies[(int(m.group(1)) if m else 0) % len(proxies)]
+
+
 def _query_delay() -> float:
     try:
         return float(_env("GOOGLE_AI_MODE_QUERY_DELAY", "10") or 10)
     except ValueError:
         return _DEFAULT_DELAY
+
+
+def _mark_profile_exited_cleanly(profile: Path) -> None:
+    """Clear Chromium's crash flag so a relaunch shows no "Restore pages?" bubble, and
+    drop the saved startup tabs. Best-effort: an unreadable Preferences file is left alone."""
+    prefs = Path(profile) / "Default" / "Preferences"
+    if not prefs.is_file():
+        return
+    try:
+        data = json.loads(prefs.read_text(encoding="utf-8", errors="replace"))
+        prof = data.setdefault("profile", {})
+        prof["exit_type"] = "Normal"
+        prof["exited_cleanly"] = True
+        session = data.setdefault("session", {})
+        session["restore_on_startup"] = 5      # open the New Tab Page, never the old tabs
+        session["startup_urls"] = []
+        prefs.write_text(json.dumps(data), encoding="utf-8")
+    except (OSError, ValueError, AttributeError):
+        return
 
 
 def build_url(prompt: str) -> str:
@@ -542,7 +799,19 @@ class AiModeSession:
         self.channel = resolve_channel(self.extensions)
         profile = profile_dir_for(self.channel)
 
-        args = ["--profile-directory=Default"]
+        # No "Restore pages?" bubble (owner 2026-11-15, screenshot): a killed browser leaves
+        # exit_type="Crashed" in Preferences and the bubble sat on every relaunched window.
+        # Same fix as the distributor-intelligence pipeline: mark the profile clean, and
+        # never offer or replay a previous session.
+        _mark_profile_exited_cleanly(Path(profile))
+        args = [
+            "--profile-directory=Default",
+            "--hide-crash-restore-bubble",
+            "--disable-session-crashed-bubble",
+            "--no-first-run",
+            "--no-default-browser-check",
+            "--disable-features=InfiniteSessionRestore",
+        ]
         if self.extensions:
             # One comma-joined flag, not one flag per path.
             args.append("--load-extension=" + ",".join(self.extensions))
@@ -568,6 +837,12 @@ class AiModeSession:
         }
         if self.channel:
             launch["channel"] = self.channel
+        proxy = _proxy_for(profile)
+        if proxy:
+            # Search from another IP (e.g. a local SOCKS5 proxy in front of a VPN server)
+            # when Google blocks the machine's own address.
+            launch["proxy"] = {"server": proxy}
+            print(f"  [ai-mode] searching through proxy {proxy}", flush=True)
         try:
             try:
                 self._ctx = self._pw.chromium.launch_persistent_context(**launch)
@@ -688,6 +963,42 @@ class AiModeSession:
         )
         return False
 
+    # -- Proton VPN switching --
+
+    def _vpn_hooks(self) -> None:
+        """Before every query: wait out a VPN server switch with the browser closed,
+        then start on a fresh profile once per completed switch."""
+        pause = _vpn_dir() / "PAUSE"
+        if pause.exists():
+            print("  [ai-mode] VPN server switch in progress -- closing this browser and waiting", flush=True)
+            self.close()
+            start = time.monotonic()
+            while pause.exists() and time.monotonic() - start < _VPN_PAUSE_MAX:
+                time.sleep(5)
+            print("  [ai-mode] VPN switch finished -- resuming", flush=True)
+        gen = _vpn_generation()
+        if gen < 0:
+            return
+        profile = Path(profile_dir_for(self.channel))
+        marker = profile / ".vpn_gen"
+        try:
+            seen = int(marker.read_text(encoding="utf-8").strip())
+        except Exception:  # noqa: BLE001
+            seen = None
+        if seen == gen:
+            return
+        # A profile used before this switch (or before the VPN was tracked) is the old
+        # visitor on the old IP: start clean. A planned rotation, not a failure.
+        if seen is not None or (profile / "Default").exists():
+            self.reset_profile(reason=f"vpn{gen}")
+            self.resets = max(0, self.resets - 1)
+            self.flagged_blocks = 0
+        try:
+            profile.mkdir(parents=True, exist_ok=True)
+            marker.write_text(str(gen), encoding="utf-8")
+        except Exception:  # noqa: BLE001
+            pass
+
     def close(self) -> None:
         for closer in (
             getattr(self._ctx, "close", None),
@@ -763,12 +1074,70 @@ class AiModeSession:
             return "Sign in to continue"
         return ""
 
+    def _fresh_before_giving_up(self, *, new_profile: bool = False) -> None:
+        """This query is out of resets: leave a FRESH browser for the next one.
+
+        Raising used to leave the browser parked on the block page with the soured
+        profile, so the step's next query (or its retry) started in the same blocked
+        session (owner 2026-11-07: a blocked or unsolved browser must always be reset
+        and reopened automatically). No cool-off here: the next query's own pacing and
+        the step's retry spacing already wait."""
+        try:
+            # A new profile only after a usage-limit page, which is partly tied to the
+            # profile; a block page keeps the warm profile (owner 2026-11-15).
+            if new_profile:
+                self.reset_profile(reason="quota")
+            else:
+                self.reopen_browser(reason="giving up on this query")
+            self.captcha_count = 0
+        except Exception:  # noqa: BLE001 -- giving up must never fail differently
+            pass
+
+    def _sorry_is_hard_block(self) -> bool:
+        """True when the /sorry/ page is Google's "Try again later" block, which
+        no solver can clear (owner's screenshot 2026-11-06), as opposed to a
+        solvable image-grid reCAPTCHA."""
+        try:
+            body = (self._page.inner_text("body", timeout=3000) or "").lower()
+        except Exception:  # noqa: BLE001
+            return False
+        return "try again later" in body
+
     def _wait_for_captcha_clear(self, timeout: float = 60.0) -> bool:
         deadline = time.monotonic() + timeout
         while time.monotonic() < deadline:
             self._page.wait_for_timeout(2000)
             if "/sorry/" not in (self._page.url or ""):
                 return True  # solved -> caller MUST re-issue the query
+        return False
+
+    def _wait_for_block_page_clear(self, what: str, timeout: float) -> bool:
+        """Keep the browser OPEN on a block page for up to ``timeout`` seconds so the
+        CAPTCHA can be solved (captcha-raptor, or by hand in the window), instead of
+        clearing cookies at once. A "Continue" button (the "Verifying your request"
+        interstitial) is pressed once, as a person would. True = the page cleared and
+        the caller re-issues the query on the same session."""
+        if timeout <= 0:
+            return False
+        print(f"  [ai-mode] {what} -- waiting up to {int(timeout)} s for it to be solved "
+              "before resetting the browser", flush=True)
+        pressed = False
+        deadline = time.monotonic() + timeout
+        while time.monotonic() < deadline:
+            try:
+                if not pressed:
+                    btn = self._page.get_by_role("button", name="Continue")
+                    if btn.count():
+                        btn.first.click(timeout=3000)
+                        pressed = True
+                self._page.wait_for_timeout(3000)
+                if "/sorry/" not in (self._page.url or "") and not self._flagged_page_showing():
+                    print(f"  [ai-mode] {what} cleared -- re-issuing the query", flush=True)
+                    return True
+            except Exception as err:  # noqa: BLE001
+                if any(m in str(err).lower() for m in _BROWSER_GONE_MARKERS):
+                    return False  # window closed: the reset path reopens it
+                time.sleep(2)
         return False
 
     # -- the one public call --
@@ -789,12 +1158,21 @@ class AiModeSession:
             # retry: the retry after it runs on a fresh browser.
             resets_left = _max_resets_per_query()
             quota_resets = 0
+            sorry_resets = 0  # fresh profiles after a /sorry/ block, this query
             verify_left = 3  # "Verifying your request" interstitials cleared per query
             noanswer_left = 3  # "content wasn't generated" pages recovered per query
 
             while attempts_left > 0:
                 attempts_left -= 1
+                self._vpn_hooks()
                 self._pace()
+                # The browser stays OPEN through a machine-wide pause (owner 2026-11-15: "do not
+                # close the browser instantly"); closing every window on each pause left the
+                # run looking dead and threw away a session that was still usable. The
+                # window says why it waits -- a bare about:blank looked like a hang.
+                if _ip_backoff_active():
+                    self._show_pause_page()
+                _ip_backoff_wait()
                 try:
                     self._ensure_browser()
                     self._close_extra_tabs()
@@ -817,42 +1195,89 @@ class AiModeSession:
                         continue
 
                 flagged = self._flagged_page_showing() if verify_left > 0 else ""
+                # Every block page -- the sign-in wall too -- gets the CAPTCHA wait first
+                # (owner 2026-11-15, after comparing with the distributor-intelligence
+                # pipeline, which waits and keeps its warm profiles and is rarely blocked).
+                # The sign-in wall: close the browser AT ONCE, delete its profile and
+                # cookies, open a fresh one (owner 2026-11-15, screenshot, final call).
+                # Nothing on that page can be solved, so no wait.
+                if flagged.startswith("Sign in"):
+                    vpn_report_block("signin")
+                    self.captcha_count += 1
+                    self.last_captcha_at = time.monotonic()
+                    if resets_left > 0:
+                        resets_left -= 1
+                        self.reset_profile(reason="signin")
+                        attempts_left += 1
+                        continue
+                    self._fresh_before_giving_up(new_profile=True)
+                    raise AiModeCaptcha("Google sign-in wall on fresh profiles")
+                if (flagged
+                        and self._wait_for_block_page_clear(f"Google '{flagged}' page",
+                                                            _captcha_wait())):
+                    attempts_left += 1  # solved: same browser, no retry spent
+                    continue
                 if flagged:
                     # The session is flagged: clear cookies and relaunch the
                     # browser (twice), then a full profile reset; re-issue the
                     # query each time without costing a retry.
                     verify_left -= 1
                     self.captcha_count += 1
+                    vpn_report_block("verify")
+                    _ip_backoff_note_block()
                     self.flagged_blocks += 1
                     self.last_captcha_at = time.monotonic()
                     if self.flagged_blocks >= _MAX_FLAGGED_BLOCKS:
                         # Fresh profiles are blocked too: this is the IP, not the
                         # cookies. Stop so the step's own handling takes over rather
                         # than resetting for hours and making no progress.
+                        self._fresh_before_giving_up()
+                        self.flagged_blocks = 0
                         raise AiModeUnavailable(
                             f"Google is blocking this machine: {self.flagged_blocks} "
                             f"'{flagged}' pages that a browser reset did not clear. "
                             "Use fewer browsers, a longer GOOGLE_AI_MODE_QUERY_DELAY, "
                             "or wait for the block to lift."
                         )
-                    if verify_left >= 1:
-                        self.reset_session(reason=f"Google '{flagged}' page")
-                    else:
-                        self.reset_profile(reason="verify")
+                    # Cookies KEPT, same profile (owner 2026-11-15): a cookie-less session is
+                    # what Google sends to the "Sign in to verify" wall, so clearing cookies
+                    # made the wall come back. The distributor-intelligence pipeline never
+                    # clears them and saw no sign-in walls on the same IP the same night.
+                    self._reopen_after_block(_sorry_cool_off(3 - verify_left))
                     attempts_left += 1
                     continue
 
                 if "/sorry/" in (self._page.url or ""):
                     self.captcha_count += 1
                     self.last_captcha_at = time.monotonic()
-                    print(
-                        f"  [ai-mode] CAPTCHA ({self.captcha_count} this run) — "
-                        "solve it in the browser window",
-                        flush=True,
-                    )
-                    if captcha_left > 0 and self._wait_for_captcha_clear():
+                    # Google's "unusual traffic / Try again later" block (owner
+                    # 2026-11-06): close this browser, start it on a FRESH profile
+                    # after a short cool-off and re-issue the query. Waiting on the
+                    # page for a solve was pointless -- captcha-raptor cannot solve
+                    # /sorry/ (see the note on CAPTCHA-solver extensions) -- and left
+                    # the browser parked on the block for minutes. The cool-off grows
+                    # with each reset of this query because the block follows the IP.
+                    # An image-grid reCAPTCHA on the page CAN be solved by the
+                    # extension, so it gets a short chance first; the "Try again
+                    # later" variant has nothing to solve and resets at once.
+                    # Every /sorry/ page now gets the full CAPTCHA wait before the browser
+                    # is reset (owner 2026-11-14), also the "Try again later" variant: the
+                    # window stays open so it can be solved by hand.
+                    if (captcha_left > 0
+                            and self._wait_for_block_page_clear("Google /sorry/ CAPTCHA page",
+                                                                _captcha_wait())):
                         captcha_left -= 1
                         attempts_left += 1  # the solve must not cost a retry
+                        continue
+                    # Not solved: only now does it count as a block that pauses every
+                    # browser (a solved CAPTCHA must not stop the others).
+                    vpn_report_block("captcha")
+                    _ip_backoff_note_block()
+                    if resets_left > 0:
+                        resets_left -= 1
+                        sorry_resets += 1
+                        self._reopen_after_block(_sorry_cool_off(sorry_resets))
+                        attempts_left += 1
                         continue
                     # A CAPTCHA STORM is a soured profile, not bad luck.
                     # Observed while scoring: 31 CAPTCHAs in one run, every
@@ -861,13 +1286,9 @@ class AiModeSession:
                     # profile — sustained CAPTCHAs need exactly the same
                     # treatment, and without it the run keeps burning
                     # companies and producing nothing.
-                    if (
-                        self.captcha_count >= _CAPTCHAS_BEFORE_PROFILE_RESET
-                        and attempts_left > 0
-                    ):
-                        self.reset_profile(reason="captchas")
-                        self.captcha_count = 0
-                        continue
+                    # No fresh profile after a CAPTCHA streak any more (owner 2026-11-15):
+                    # fresh profiles were CAPTCHA'd MORE, not less. The warm profile stays.
+                    self._fresh_before_giving_up()
                     self._last_query_at = time.monotonic()
                     raise AiModeCaptcha(
                         f"rate limited by Google ({self.captcha_count} CAPTCHAs this run)"
@@ -885,8 +1306,17 @@ class AiModeSession:
 
                 low = text.lower()
                 if any(m in low for m in CAPTCHA_MARKERS):
+                    vpn_report_block("captcha")
                     self.captcha_count += 1
+                    _ip_backoff_note_block()
                     self.last_captcha_at = time.monotonic()
+                    if resets_left > 0:   # same block, shown without the /sorry/ URL
+                        resets_left -= 1
+                        sorry_resets += 1
+                        self._reopen_after_block(_sorry_cool_off(sorry_resets))
+                        attempts_left += 1
+                        continue
+                    self._fresh_before_giving_up()
                     raise AiModeCaptcha("blocked page text (unusual traffic)")
                 # AI-response quota. Checked BEFORE the refusal markers: it
                 # is rate limiting, so it needs the long cool-off, not an
@@ -900,7 +1330,9 @@ class AiModeSession:
                 # counted it as an empty market. These phrases cannot occur in
                 # a genuine answer, so matching them anywhere is safe.
                 if any(m in low for m in QUOTA_MARKERS):
+                    vpn_report_block("no_answer")
                     self.quota_hits += 1
+                    _ip_backoff_note_block()
                     self.last_captcha_at = time.monotonic()
                     # Archive the profile and try once on a clean one before
                     # giving up. Observed on this project: after a quota page,
@@ -918,6 +1350,7 @@ class AiModeSession:
                         )
                         attempts_left += 1
                         continue
+                    self._fresh_before_giving_up(new_profile=True)
                     raise AiModeCaptcha(
                         "AI response request limit reached for this IP "
                         f"({self.quota_hits} this run) — only waiting helps"
@@ -932,6 +1365,7 @@ class AiModeSession:
                 # query is re-issued each time without costing a retry.
                 if noanswer_left > 0 and any(m in low for m in NO_ANSWER_MARKERS):
                     noanswer_left -= 1
+                    vpn_report_block("no_answer")
                     self.soft_failures += 1
                     if noanswer_left >= 1:
                         self.reset_session(reason="'content wasn't generated' page")
@@ -976,6 +1410,7 @@ class AiModeSession:
                 if text.strip():
                     self.soft_failures = 0  # a good answer clears the streak
                     self.flagged_blocks = 0  # Google is answering again
+                    _ip_backoff_note_ok()
                     return text
             raise AiModeUnavailable("empty answer from AI Mode")
 
@@ -997,7 +1432,7 @@ class AiModeSession:
         # it silently cost 56 companies their score.
         target = profile_dir_for(self.channel)
         print(
-            f"  [ai-mode] {reason} — archiving profile and starting clean "
+            f"  [ai-mode] {reason} — closing the browser, deleting its profile and starting clean "
             f"(reset #{self.resets})",
             flush=True,
         )
@@ -1015,11 +1450,23 @@ class AiModeSession:
             path = Path(target)
             if path.exists():
                 stamp = time.strftime("%H%M%S")
-                path.rename(path.with_name(f"{path.name}_{reason}_{stamp}"))
+                moved = path.with_name(f"{path.name}_{reason}_{stamp}")
+                path.rename(moved)
+                # Deleted, not kept (owner 2026-11-06): kept archives are never
+                # read again and filled the disk -- 5,000+ of them, a 20-market
+                # run killed by "No space left on device". The rename frees the
+                # profile path at once; the delete runs in the background so the
+                # fresh browser does not wait for it. A folder that cannot be
+                # deleted keeps its archive-style name, so the watchdog's
+                # cleaner still removes it later.
+                # GOOGLE_AI_MODE_KEEP_ARCHIVED_PROFILES=true keeps them.
+                if (os.getenv("GOOGLE_AI_MODE_KEEP_ARCHIVED_PROFILES") or "").lower()                         not in ("1", "true", "yes"):
+                    threading.Thread(target=shutil.rmtree, args=(moved,),
+                                     kwargs={"ignore_errors": True}, daemon=True).start()
         except Exception as err:  # noqa: BLE001
             # A locked file must not kill the run — the fresh browser will
             # simply reuse the old profile and the caller still cools off.
-            print(f"  [ai-mode] could not archive profile: {err}", flush=True)
+            print(f"  [ai-mode] could not reset profile folder: {err}", flush=True)
         self.soft_failures = 0
         self.quota_hits = 0
         time.sleep(cool_off)
@@ -1057,6 +1504,32 @@ class AiModeSession:
         # No cool-off (owner 2026-10-11): a stuck browser is reset -- cookies
         # cleared, browser relaunched -- and goes straight back to work.
         self._ensure_browser()
+
+    def _show_pause_page(self) -> None:
+        """Put a short notice in the window while every browser waits out a Google block."""
+        if self._page is None:
+            return
+        try:
+            until = float(_ip_backoff_read().get("until") or 0)
+            when = time.strftime("%H:%M", time.localtime(until)) if until else "shortly"
+            self._page.set_content(
+                "<html><head><title>Paused: Google block</title></head>"
+                "<body style='font:20px sans-serif;margin:60px;color:#333'>"
+                "<h2>Waiting: Google is limiting searches from this network</h2>"
+                f"<p>Every browser pauses until about <b>{when}</b>, then this window "
+                "searches again by itself. Nothing is stuck; do not close it.</p></body></html>",
+                timeout=5000)
+        except Exception:  # noqa: BLE001 -- a notice must never break the query
+            pass
+
+    def _reopen_after_block(self, cool_off: float) -> None:
+        """An unsolved block page: wait, then reopen the browser on the SAME profile
+        (cookies and history kept) -- never a brand-new profile (owner 2026-11-15)."""
+        if cool_off > 0:
+            print(f"  [ai-mode] block not solved -- waiting {cool_off:.0f} s, then the same "
+                  "browser profile is reopened", flush=True)
+            time.sleep(cool_off)
+        self.reopen_browser(reason="Google block page")
 
     def reopen_browser(self, *, reason: str = "browser closed") -> None:
         """Close whatever is left of the browser and open a fresh one on the

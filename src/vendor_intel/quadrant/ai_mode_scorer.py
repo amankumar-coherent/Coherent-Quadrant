@@ -1215,6 +1215,118 @@ def build_axis_scorecard_query(
     )
 
 
+# An answer that is really the prompt's own fill-in-the-blank template: an angle-bracket
+# placeholder, or the template's instruction words. A truncated prompt used to defeat the
+# echo stripper and this text reached the report as a company's "Assessed on" line, which
+# also tripped VERIFY's hedge and research-publisher checks -- the banned words were the
+# prompt's, not a cited source (owner 2026-11-03). Nothing real ever looks like this, so
+# it is dropped wherever it is parsed and the gap-fill asks again.
+_TEMPLATE_MARKS = re.compile(
+    r"<\s*(?:one|two|a|the|insert|write|name|state|score|NN|short|brief)\b[^>]{8,}>"
+    r"|<[^>]{15,}>"
+    r"|\bexactly as (?:written|shown|above)\b"
+    r"|\bone or two sentences written as\b"
+    # An echo can also be plain instruction prose with no placeholder in it at all.
+    # These are the prompts' own imperatives; a finding about a company never uses them.
+    r"|\banswer in EXACTLY this format\b"
+    r"|\bsearch for real evidence\b"
+    r"|\breturn (?:compact |only )?JSON\b"
+    r"|\bdo NOT (?:repeat|invent|cite|include)\b"
+    r"|\bscore[:\s]*NN\b"
+    r"|\bone short reason\b"
+    r"|\bfor EACH (?:company|parameter)\b"
+    r"|\bwhen unsure, DROP\b", re.I)
+
+
+def is_prompt_template(text: str) -> bool:
+    """True when `text` is the prompt's template rather than an answer."""
+    return bool(_TEMPLATE_MARKS.search(str(text or "")))
+
+
+# Pieces of the evidence prompts' own wording. AI Mode sometimes repeats the
+# prompt instead of (or before) answering, and the repeated lines were parsed as
+# supporting points: "Lines, one finding per line, at most 5", "<a specific
+# finding on Scale -- named figure, ...>", ". Look at the company's own website
+# and press releases, ..." (owner 2026-11-15, Ethylene Oxide Derivatives).
+_EVIDENCE_ECHO = re.compile(
+    r"^\W*<"
+    r"|\bone finding per line\b"
+    r"|<\s*(?:a|another|first|second|up to)\b[^>]{0,40}\bfinding"
+    r"|\bnamed figure, product, contract, facility\b"
+    r"|\bLook at the company's own website and press releases\b"
+    r"|\bAnswer ONLY with Evidence lines\b"
+    r"|\bIf nothing is documented, answer exactly\b"
+    r"|\bUse only real sources\b"
+    r"|\bDo not invent a source or a figure\b"
+    r"|\bNEVER cite or name market-research\b"
+    r"|\bWhat the parameter measures:"
+    r"|\bFind documented facts about the company\b", re.I)
+
+
+def _shingles(text: str, n: int = 8) -> set[str]:
+    w = re.findall(r"[a-z0-9]+", str(text or "").lower())
+    return {" ".join(w[i:i + n]) for i in range(max(0, len(w) - n + 1))}
+
+
+_RULE_SHINGLES: set[str] = set()
+
+
+def is_evidence_echo(claim: str) -> bool:
+    """True when a supporting point is the evidence prompt's own wording
+    (template line, instructions or EVIDENCE_RULES) rather than a finding."""
+    text = str(claim or "")
+    if _EVIDENCE_ECHO.search(text):
+        return True
+    global _RULE_SHINGLES
+    if not _RULE_SHINGLES:
+        _RULE_SHINGLES = _shingles(EVIDENCE_RULES)
+    return bool(_shingles(text) & _RULE_SHINGLES)
+
+
+def strip_prompt_echo(flat: str, flat_prompt: str, *, anchor: int = 160) -> str:
+    """`flat` with any echoed prompt removed, even when the prompt was truncated.
+
+    google_ai_mode shortens an oversized prompt to fit the search URL, but the
+    caller still hands the parser the FULL prompt, so a plain rfind(prompt)
+    never matches and the echo survives -- and the template's own words
+    ("<one or two sentences ... no specific evidence was found>") were then
+    parsed as the answer and written into the report (owner 2026-11-03).
+
+    So: find where the echo starts (the last copy of the prompt's opening), then
+    walk forward for as long as the text still matches the prompt. Where they
+    diverge is where the echo stopped and the real answer begins.
+    """
+    if not flat_prompt:
+        return flat
+    idx = flat.rfind(flat_prompt)
+    if idx >= 0:                                    # whole prompt echoed
+        return flat[idx + len(flat_prompt):]
+    head = flat_prompt[:anchor]
+    if len(head) < 40:
+        return flat
+    start = flat.rfind(head)
+    if start < 0:
+        return flat
+    i, j = start, 0
+    while i < len(flat) and j < len(flat_prompt) and flat[i] == flat_prompt[j]:
+        i += 1
+        j += 1
+    return flat[i:]
+
+
+def _scorecard_body(answer: str, prompt: str = "") -> str:
+    """The answer itself, on one line: navigation chrome and any echoed prompt gone.
+    Shared so the score and reason parsers always read the same text."""
+    nav_parts = _CONVERSATION_RE.split(answer or "")
+    text = nav_parts[-1] if len(nav_parts) > 1 else (answer or "")
+    flat = " ".join(text.split())
+    if prompt:
+        # AI Mode can echo the prompt (template included) before answering;
+        # everything up to the LAST verbatim echo is not the answer.
+        flat = strip_prompt_echo(flat, " ".join(prompt.split()))
+    return flat if flat.strip() else ""
+
+
 def parse_axis_scorecard(
     answer: str, params: list[str], prompt: str = ""
 ) -> dict[str, int]:
@@ -1223,17 +1335,8 @@ def parse_axis_scorecard(
     for, a Markdown table, or prose -- each parameter's score is the first
     "NN/100" after its own name and before the next parameter's name.
     """
-    nav_parts = _CONVERSATION_RE.split(answer or "")
-    text = nav_parts[-1] if len(nav_parts) > 1 else (answer or "")
-    flat = " ".join(text.split())
-    if prompt:
-        # AI Mode can echo the prompt (template included) before answering;
-        # everything up to the LAST verbatim echo is not the answer.
-        flat_prompt = " ".join(prompt.split())
-        idx = flat.rfind(flat_prompt)
-        if idx >= 0:
-            flat = flat[idx + len(flat_prompt):]
-    if not flat.strip():
+    flat = _scorecard_body(answer, prompt)
+    if not flat:
         return {}
 
     bounds: list[tuple[int, str]] = []
@@ -1255,6 +1358,7 @@ def parse_axis_scorecard(
         if 1 <= score <= 100:
             out[name] = score
     return out
+
 
 
 def parse_small_group_scores(
@@ -1283,10 +1387,7 @@ def parse_small_group_scores(
     text = nav_parts[-1] if len(nav_parts) > 1 else (answer or "")
     flat_text = " ".join(text.split())
     if prompt:
-        flat_prompt = " ".join(prompt.split())
-        idx = flat_text.rfind(flat_prompt)
-        if idx >= 0:
-            flat_text = flat_text[idx + len(flat_prompt):].strip()
+        flat_text = strip_prompt_echo(flat_text, " ".join(prompt.split())).strip()
     if not flat_text:
         return {}
 
@@ -1476,7 +1577,8 @@ def _section_basis(section: str) -> str:
     if not match:
         return ""
     text = re.sub(r"[*#]+", "", match.group(1))
-    return " ".join(text.split()).strip(" -•:")
+    text = " ".join(text.split()).strip(" -•:")
+    return "" if is_prompt_template(text) else text
 
 
 def _section_evidence(section: str) -> list[dict[str, str]]:
@@ -1522,7 +1624,7 @@ def _section_evidence(section: str) -> list[dict[str, str]]:
         if not claim:
             continue
         key = claim.lower()
-        if key in seen:
+        if key in seen or is_evidence_echo(claim):
             continue
         seen.add(key)
         out.extend(_evidence_item(claim, source))

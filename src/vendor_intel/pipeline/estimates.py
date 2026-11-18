@@ -878,10 +878,54 @@ def worded_needed(out_dir: Path, names: Iterable[str], answers: dict) -> list[di
     return out
 
 
+def drop_bad_estimates(out_dir: Path) -> int:
+    """Take back an applied estimate whose basis or source is now a banned site.
+
+    The source lists can widen after an estimate was written (owner 2026-11-07,
+    Debondable: "wiseguyreports.com" was not recognised as the listed competitor "Wise
+    Guy Reports", so an estimate resting on it went into the evidence and VERIFY failed
+    on every re-run, since an applied estimate is never judged again). Its sentence goes
+    back to the house gap sentence, so this step can estimate the gap again from a
+    valid source. Returns the number of estimates removed."""
+    bad = _bad_source_rx()
+    removed = 0
+    for side in sorted(Path(out_dir).glob("param_detail_prescored*.json")):
+        try:
+            part = json.loads(side.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        changed = False
+        for rec in part.values():
+            for axis in ("x", "y"):
+                for v in ((rec or {}).get(axis) or {}).get("parameters", {}).values():
+                    if not isinstance(v, dict) or not v.get("estimates"):
+                        continue
+                    keep = []
+                    for e in v["estimates"]:
+                        src = f"{e.get('basis') or ''} {e.get('source') or ''}"
+                        if not bad.search(src):
+                            keep.append(e)
+                            continue
+                        removed += 1
+                        changed = True
+                        basis = str(e.get("basis") or "").strip()
+                        text = str(v.get("assessed_on") or "")
+                        hit = next((x for x in sentences(text) if basis and basis[:60] in x), "")
+                        if hit:
+                            metric = str(e.get("metric") or "this information").strip()
+                            v["assessed_on"] = text.replace(
+                                hit, f"Based on primary research, the company has not disclosed its {metric}.")
+                    v["estimates"] = keep
+        if changed:
+            write_json_atomic(side, part, indent=1)
+    return removed
+
+
 def apply_estimates(out_dir: Path, names: Iterable[str] | None = None) -> dict[str, int]:
     """Write the decisions into every evidence sidecar ('Assessed on' text +
     the parameter's ``estimates`` list); re-running is a no-op."""
     out_dir = Path(out_dir)
+    drop_bad_estimates(out_dir)
     dec = decisions(out_dir, names)
     counts = {"disclosed": 0, "estimated": 0, "estimated_qualitative": 0, "not_available": 0}
     for d in dec.values():

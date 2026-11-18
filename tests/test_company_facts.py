@@ -525,3 +525,14 @@ def test_a_four_letter_parent_name_still_pairs_with_its_unit(tmp_path):
     # "LNG" is the commodity, not the owner
     assert not any(p["parent"] == "LNG Limited" for p in pairs)
     assert not any(p["company"] == "Kirwan Surgical Products, LLC" for p in pairs)
+
+
+def test_listed_parent_folds_titles_and_umlaut_spellings(tmp_path):
+    """The fact-check named the owner "Hoenle AG"; the listed parent is "Dr. Hönle AG"
+    (owner 2026-11-07, UV-Curable). Still a whole-name match: no partial names."""
+    from vendor_intel.pipeline.company_facts import listed_parent
+    pool = ["Dr. Hönle AG", "Panacol-Elosol GmbH", "Visma Aquila Oy"]
+    assert listed_parent("Hoenle AG", "Panacol-Elosol GmbH", pool, tmp_path) == "Dr. Hönle AG"
+    assert listed_parent("Hönle", "Panacol-Elosol GmbH", pool, tmp_path) == "Dr. Hönle AG"
+    assert listed_parent("Visma", "X", pool, tmp_path) is None
+    assert listed_parent("Hoenle AG", "Dr. Hönle AG", pool, tmp_path) is None  # never itself

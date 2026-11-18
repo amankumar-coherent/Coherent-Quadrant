@@ -61,3 +61,75 @@ def test_the_threshold_is_tunable_by_env(monkeypatch):
     finally:
         monkeypatch.delenv("GOOGLE_AI_MODE_MAX_FLAGGED_BLOCKS", raising=False)
         importlib.reload(gam)
+
+
+def test_a_block_page_gets_time_to_be_solved_before_any_reset(monkeypatch):
+    """Owner 2026-11-14: take time to solve the CAPTCHA, do not close the browser at once.
+    The wait comes before the cookie / profile reset on both block paths."""
+    import inspect
+    from vendor_intel.scraping import google_ai_mode as gam
+    src = inspect.getsource(gam.AiModeSession.ask)
+    wait = src.index("_wait_for_block_page_clear(f\"Google '{flagged}' page\"")
+    assert wait < src.index('self._reopen_after_block(_sorry_cool_off(3 - verify_left))')
+    sorry = src.index('_wait_for_block_page_clear("Google /sorry/')
+    assert sorry < src.index("self._reopen_after_block(", sorry)
+    monkeypatch.delenv("GOOGLE_AI_MODE_CAPTCHA_WAIT", raising=False)
+    assert gam._captcha_wait() == 120.0
+    monkeypatch.setenv("GOOGLE_AI_MODE_CAPTCHA_WAIT", "0")
+    assert gam._captcha_wait() == 0.0
+
+
+def test_a_cleared_block_page_is_reported_solved():
+    from vendor_intel.scraping import google_ai_mode as gam
+    s = gam.AiModeSession.__new__(gam.AiModeSession)
+
+    class _NoButton:
+        def count(self): return 0
+
+    class P:
+        url = "https://www.google.com/search?q=x"
+        def get_by_role(self, *a, **k): return _NoButton()
+        def wait_for_timeout(self, ms): pass
+        def inner_text(self, sel, timeout=0): return "Ethanolamine producers include BASF and Dow." * 20
+    s._page = P()
+    assert s._wait_for_block_page_clear("test", 5) is True
+    assert s._wait_for_block_page_clear("test", 0) is False
+
+
+def test_the_sign_in_wall_gets_a_fresh_profile_at_once():
+    """Owner 2026-11-15 (screenshot): sign-in wall -> close, delete profile + cookies, new browser."""
+    import inspect
+    from vendor_intel.scraping import google_ai_mode as gam
+    src = inspect.getsource(gam.AiModeSession.ask)
+    block = src.split('if flagged.startswith("Sign in"):', 1)[1][:500]
+    assert 'reset_profile(reason="signin")' in block
+    assert "_wait_for_block_page_clear" not in block
+
+
+def test_a_machine_wide_pause_does_not_close_the_browser():
+    """Owner 2026-11-15: browsers stay open (and keep their CAPTCHA chance) through a pause."""
+    import inspect
+    from vendor_intel.scraping import google_ai_mode as gam
+    src = inspect.getsource(gam.AiModeSession.ask)
+    head = src.split("_ip_backoff_wait()", 1)[0]
+    assert "self.close()" not in head.split("while attempts_left > 0:", 1)[1]
+
+
+def test_a_block_page_never_clears_the_cookies():
+    """Owner 2026-11-15: cookie-less sessions drew the sign-in wall; cookies are kept."""
+    import inspect
+    from vendor_intel.scraping import google_ai_mode as gam
+    src = inspect.getsource(gam.AiModeSession.ask)
+    assert "reset_session(reason=f\"Google '{flagged}' page\")" not in src
+
+
+def test_a_crashed_profile_is_marked_clean_before_launch(tmp_path):
+    """Owner 2026-11-15: no "Restore pages?" bubble on relaunched browsers."""
+    import json
+    from vendor_intel.scraping import google_ai_mode as gam
+    d = tmp_path / "Default"
+    d.mkdir()
+    (d / "Preferences").write_text(json.dumps({"profile": {"exit_type": "Crashed"}}), encoding="utf-8")
+    gam._mark_profile_exited_cleanly(tmp_path)
+    data = json.loads((d / "Preferences").read_text(encoding="utf-8"))
+    assert data["profile"]["exit_type"] == "Normal" and data["session"]["restore_on_startup"] == 5

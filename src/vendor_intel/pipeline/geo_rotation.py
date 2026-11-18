@@ -208,6 +208,13 @@ def states_for(country: str) -> list[str]:
     # turned "thailand" into "ailand".
     key = " ".join(str(country or "").split()).strip().lower().removeprefix("the ").strip()
     areas = list(STATES_BY_COUNTRY.get(key, ()))
+    if not areas:
+        # A run scoped to a REGION ("europe") narrows by its countries, the way a country
+        # narrows by its states. Without this a region run stopped after its broad
+        # "headquartered in Europe" rounds -- a whole continent in one ask, which names the
+        # majors and stops -- and finished far short of --keep (owner 2026-11-07).
+        region = next((r for r in REGIONS if r.lower() == key), "")
+        areas = countries_for(region) if region else []
     import os
     import re
 

@@ -21,10 +21,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CHECK_EVERY = int(os.getenv("CHECK_EVERY") or "600")      # 10 minutes
-DISK_FLOOR_GB = float(os.getenv("DISK_FLOOR_GB") or "6")  # clean below this
-DISK_TARGET_GB = float(os.getenv("DISK_TARGET_GB") or "20")
+# 25, not 6: 20 browsers archive a ~150 MB profile on every Google block, so a 600 s window
+# can burn far more than 6 GB between two checks and hit "No space left on device" before the
+# next clean (owner 2026-11-05). The floor has to cover one window's worst case, not one browser's.
+DISK_FLOOR_GB = float(os.getenv("DISK_FLOOR_GB") or "25")  # clean below this
+DISK_TARGET_GB = float(os.getenv("DISK_TARGET_GB") or "60")
 BLOCK_LIMIT = int(os.getenv("BLOCK_LIMIT") or "25")       # walls in one window -> fresh cookies
-ARCHIVED = re.compile(r"_(stall|quota|noanswer|verify|captchas|reset|ratelimit|signin)_")
+ARCHIVED = re.compile(r"_(stall|quota|noanswer|verify|captchas|reset|ratelimit|signin|sorry|stuck)_")
 BLOCK_LINE = re.compile(r"Sign in to verify|Verifying your request|unusual traffic", re.I)
 
 
@@ -130,12 +133,17 @@ def main() -> int:
             # 1. the run finished or was stopped -> nothing left to guard. A failed or slow
             #    check is NOT evidence of that, so only a confirmed count of 0, three times
             #    in a row, ends the watch.
+            # Any of the runners counts, not just the supervisor: run_markets_parallel.py
+            # starts no supervisor, so matching 'supervise_market' alone made the watchdog
+            # stop minutes into a 20-market launch and leave it unguarded -- the disk then
+            # filled and killed six markets (owner 2026-11-05).
             count = ps("(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | "
-                       "Where-Object { $_.CommandLine -match 'supervise_market' } | "
+                       "Where-Object { $_.CommandLine -match "
+                       "'supervise_market|run_markets_parallel|run_quadrant_pipeline' } | "
                        "Measure-Object).Count")
             gone = gone + 1 if count == "0" else 0
             if gone >= 3:
-                log("no supervisor for three checks running -- watchdog stopping")
+                log("no run for three checks running -- watchdog stopping")
                 return 0
             # 2. disk
             if free_gb() < DISK_FLOOR_GB:

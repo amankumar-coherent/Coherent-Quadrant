@@ -87,7 +87,9 @@ def main() -> int:
         except Exception:  # noqa: BLE001
             results = {}
     # A company already scored by ANY earlier shard (a previous run may
-    # have used a different shard count) is not asked again.
+    # have used a different shard count) is not asked again. A record saved
+    # before the reason capture keeps its scores: re-asking a whole market to
+    # backfill reasons costs more than the reasons are worth (owner 2026-11-03).
     already: set[str] = set(results)
     for other in out_dir.glob("overall_only_shard*.json"):
         try:
@@ -131,7 +133,11 @@ def main() -> int:
     def axis_scores(name: str, title: str, params: list[str],
                     defs: dict[str, str]) -> dict[str, int]:
         """{parameter: score} from ONE scorecard query for the whole axis;
-        only parameters the answer left out are re-asked singly."""
+        only parameters the answer left out are re-asked singly.
+
+        Scores ONLY. The quick pass ranks every company so the Top N can be
+        chosen; evidence is step 5's job, for those Top N alone (owner's rule,
+        restated 2026-11-05)."""
         query = build_axis_scorecard_query(
             name, title, params, defs, market=args.market,
             market_definition=market_definition,

@@ -102,3 +102,12 @@ def test_missing_lists_unchecked_chart_companies_by_plain_name(tmp_path):
                              {"company": "Beta", "claims": [CLAIM]}],
                   {"Acme": {"status": _status(), "claims": [_claim(verdict="correct")]}})
     assert fc.missing(out) == ["Beta"]
+
+
+def test_a_research_publisher_given_as_a_url_is_a_bad_source():
+    """"Wise Guy Reports" cited as wiseguyreports.com (owner 2026-11-07)."""
+    from vendor_intel.pipeline.factcheck import _bad_source_rx
+    rx = _bad_source_rx()
+    assert rx.search("https://www.wiseguyreports.com/reports/temporary-wafer-bonding")
+    assert rx.search("Wise Guy Reports")
+    assert not rx.search("the company's 2024 annual report")

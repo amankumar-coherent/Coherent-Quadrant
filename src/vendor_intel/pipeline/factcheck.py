@@ -65,7 +65,12 @@ def _bad_source_rx() -> re.Pattern[str]:
     pats = []
     for name in ("estimate_sites.txt", "employee_review_sites.txt", "directory_sites.txt"):
         pats += _lines(root / name)
-    pats += [re.escape(p) for p in _lines(root / "research_publishers.txt")]
+    # Spaces optional, as in company_facts.cites_research_publisher and VERIFY: a source
+    # given as a URL ("wiseguyreports.com") must match "Wise Guy Reports" too. Escaped
+    # whole, it did not, and an estimate resting on that competitor reached the report
+    # (owner 2026-11-07, Debondable Adhesives).
+    pats += [r"\s*".join(map(re.escape, p.split())) for p in _lines(root / "research_publishers.txt")
+             if p.split()]
     return re.compile("|".join(f"(?:{p})" for p in pats) or r"(?!x)x", re.I)
 
 

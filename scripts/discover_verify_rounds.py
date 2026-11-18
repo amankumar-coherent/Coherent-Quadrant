@@ -62,6 +62,9 @@ def main() -> int:
     ap.add_argument("--min-batch", type=int, default=25,
                     help="smallest discovery batch per round")
     ap.add_argument("--max-rounds", type=int, default=10)
+    ap.add_argument("--share", type=int, default=1,
+                    help="this browser's share of the shortfall when N browsers top up the "
+                         "same market at once (parallel_topup.py passes N)")
     ap.add_argument("--slot", type=int, default=41, help="browser profile slot")
     ap.add_argument("--verify-only", action="store_true",
                     help="no discovery: verify the checkpoint's recalled companies not yet checked, then stop")
@@ -167,6 +170,12 @@ def main() -> int:
         # 20% margin; a floor on the rate stops a harsh first batch asking for
         # an absurd number.
         batch = max(args.min_batch, math.ceil(deficit / max(rate, 0.2) * 1.2))
+        if args.share > 1:
+            # One of N browsers topping up together asks for its share, not the whole
+            # shortfall: each asking for all ~260 names kept every browser in empty
+            # discovery rounds for the whole 90-minute window of a thin market, and
+            # none reached verification (owner 2026-11-08, Silicone PSA: 0 gained).
+            batch = max(10, math.ceil(batch / args.share))
         recalled = list(data.get("recalled") or [])
         log(f"round {rnd}: {have}/{args.keep} verified (keep rate {rate:.0%}) -> "
             f"discovering {batch} more")

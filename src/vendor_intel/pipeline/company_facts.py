@@ -539,6 +539,19 @@ def owner_names(owner: str) -> list[str]:
     return [owner] + [p.strip() for p in parts if p.strip() != owner]
 
 
+def _spelling_key(key: str) -> str:
+    """A normalized name with spelling variants folded: a leading title ("Dr.", "Prof.")
+    dropped and the German umlaut transcriptions read as the folded letter, so
+    "Dr. Hönle AG" ("dr honle") and "Hoenle AG" ("hoenle") are one key. Still a WHOLE-name
+    match -- no partial names (owner 2026-11-07, UV-Curable: the fact-check gave the owner
+    as "Hoenle AG", the listed parent "Dr. Hönle AG" was no longer recognised, and both
+    stayed in the report)."""
+    words = key.split()
+    while len(words) > 1 and words[0] in ("dr", "prof"):
+        words = words[1:]
+    return re.sub(r"(?<=[a-z])(ae|oe|ue)", lambda m: m.group(1)[0], " ".join(words))
+
+
 def listed_parent(owner: str, company: str, pool: Iterable[str], out_dir: Path) -> str | None:
     """The company of ``pool`` that ``owner`` names, if any -- never ``company``
     itself. Exact matches only, on the name without legal suffixes or on the
@@ -566,6 +579,14 @@ def listed_parent(owner: str, company: str, pool: Iterable[str], out_dir: Path) 
             if not nn or nn == me:
                 continue
             if on == nn or on in brands.get(nn, set()):
+                return n
+    # Same names again with spelling variants folded (title, umlaut transcription).
+    for on in {_spelling_key(k) for k in keys}:
+        for n in pool:
+            nn = norm_name(n)
+            if not nn or nn == me or _spelling_key(nn) == _spelling_key(me):
+                continue
+            if on == _spelling_key(nn) or on in {_spelling_key(b) for b in brands.get(nn, set())}:
                 return n
     return None
 
@@ -789,10 +810,33 @@ def to_english(text: str) -> str:
     return t
 
 
+# Search-result snippets pasted after a finding: page titles joined by " - " and
+# cut off with an ellipsis ("... according to its corporate website. Polaquimia
+# Division Internacional - Polaquimia Nuestra division ... afi..."; owner 2026-11-15).
+_SNIPPET_CUT = re.compile(r"\w\s?(?:…|\.{3})")
+
+
+def cut_snippet_tail(text: str) -> str:
+    """The finding without search-snippet text pasted after its last full sentence.
+
+    A truncation ellipsis is the snippet's mark; the text is cut back to the
+    last sentence end before the first one, when a real sentence (40+ chars)
+    remains. A finding with no sentence end before the ellipsis is left alone."""
+    t = str(text or "")
+    m = _SNIPPET_CUT.search(t)
+    if not m:
+        return t
+    head = t[:m.start() + 1]
+    ends = [e.end() for e in re.finditer(r"[.!?](?=\s+[A-Z0-9\"'(])", head)]
+    if not ends or ends[-1] < 40:
+        return t
+    return t[:ends[-1]].strip()
+
+
 def tidy_claim(text: str) -> str:
     """Citation leftovers removed; 'None available. X did Y' -> 'X did Y'; a
     bullet that only reports an absence -> 'Not available'; else unchanged."""
-    t = to_english(clean_artifacts(text))
+    t = to_english(clean_artifacts(cut_snippet_tail(text)))
     if not t:
         return t
     stripped = _PREFIX.sub("", t)
@@ -944,6 +988,7 @@ def drop_invalid_sources(out_dir: Path) -> int:
     a parameter that had nothing else with NO evidence, so step 5 re-asks it in
     the same run (tidy_evidence later would show "Not available" next to a
     score that rested on the removed bullet)."""
+    from vendor_intel.quadrant.ai_mode_scorer import is_evidence_echo
     removed = 0
     for side in sorted(Path(out_dir).glob("param_detail_prescored*.json")):
         part = _read(side, None)
@@ -957,7 +1002,10 @@ def drop_invalid_sources(out_dir: Path) -> int:
                 for v in ((rec.get(axis) or {}).get("parameters") or {}).values():
                     if not isinstance(v, dict) or not isinstance(v.get("evidence"), list):
                         continue
-                    keep = [e for e in v["evidence"] if not (isinstance(e, dict) and invalid_source(e.get("claim")))]
+                    # The prompt's own wording is no finding either; removing it here lets
+                    # step 5 re-ask a parameter it leaves empty.
+                    keep = [e for e in v["evidence"] if not (isinstance(e, dict) and (
+                        invalid_source(e.get("claim")) or is_evidence_echo(e.get("claim"))))]
                     if len(keep) != len(v["evidence"]):
                         removed += len(v["evidence"]) - len(keep)
                         v["evidence"] = keep
@@ -971,6 +1019,7 @@ def tidy_evidence(out_dir: Path) -> int:
     """Apply tidy_claim to every supporting point, then the parameter rule:
     "Not available" only when there is no real finding, and then once; at most
     MAX_SUPPORTING_POINTS per parameter."""
+    from vendor_intel.quadrant.ai_mode_scorer import is_evidence_echo  # prompt wording, not a finding
     changed = 0
     for side in sorted(Path(out_dir).glob("param_detail_prescored*.json")):
         part = _read(side, None)
@@ -1003,7 +1052,7 @@ def tidy_evidence(out_dir: Path) -> int:
                     ev = v["evidence"]
                     keep = [e for e in ev if not (isinstance(e, dict) and (
                         cites_employee_reviews(e.get("claim")) or cites_research_publisher(e.get("claim"))
-                        or cites_estimate_site(e.get("claim"))))]
+                        or cites_estimate_site(e.get("claim")) or is_evidence_echo(e.get("claim"))))]
                     if len(keep) != len(ev):
                         changed += len(ev) - len(keep)
                         dirty = True

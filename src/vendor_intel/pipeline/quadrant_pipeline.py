@@ -164,6 +164,16 @@ def norm_name(name: str) -> str:
     return " ".join(core or words)
 
 
+def _loose_name(name: str) -> str:
+    """norm_name without a bracketed note and with plural words folded, used only to
+    match duplicates: "Jiahua Chemical (Shanghai) Co., Ltd." and "Jiahua Chemicals" are
+    one company (owner 2026-11-14, Ethanolamine). "-ss", "-us", "-is" words keep their s."""
+    text = re.sub(r"\([^)]*\)", " ", str(name or ""))
+    words = norm_name(text).split()
+    return " ".join(w[:-1] if len(w) > 4 and w.endswith("s") and not w.endswith(("ss", "us", "is"))
+                    else w for w in words)
+
+
 def dedupe_companies(
     verified: Iterable[dict], prefer: Iterable[str] | dict[str, int] = ()
 ) -> tuple[list[str], dict[str, list[str]]]:
@@ -204,8 +214,18 @@ def dedupe_companies(
 
     by_key: dict[str, str] = {}
     for n, r in rows.items():
-        for key in (f"d:{domain_of(row_website(r))}", f"n:{norm_name(n)}"):
-            if key in ("d:", "n:"):
+        dom = domain_of(row_website(r))
+        keys = [f"d:{dom}", f"n:{norm_name(n)}", f"n:{_loose_name(n)}"]
+        # A name with no website that IS another row's domain label ("SABIC" beside
+        # "Saudi Basic Industries Corporation" on sabic.com) is that company (owner
+        # 2026-11-14, Ethanolamine: both sat on one chart). Both directions share one key.
+        if dom:
+            keys.append(f"l:{dom.split('.')[0]}")
+        compact = norm_name(n).replace(" ", "")
+        if not dom and len(compact) >= 3:
+            keys.append(f"l:{compact}")
+        for key in keys:
+            if key in ("d:", "n:", "l:"):
                 continue
             if key in by_key:
                 union(by_key[key], n)

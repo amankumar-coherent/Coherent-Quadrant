@@ -115,6 +115,17 @@ def main() -> int:
                 hpath.write_text(new_html, encoding="utf-8")
         if not args.dry_run:
             jpath.write_text(blob + "\n", encoding="utf-8")
+        # The static page and the CSV are written from the same payload but hold their own
+        # copy of the text, so they take the same replacements directly.
+        for sidecar in ("_report_classic.html", "_companies.csv"):
+            spath = jpath.with_name(jpath.name.replace("_quadrant.json", sidecar))
+            if not spath.exists():
+                continue
+            text = spath.read_text(encoding="utf-8")
+            new, tidied = gap_tidy(restyle_text(text, LEAD), LEAD)
+            counts["tidied"] += tidied
+            if new != text and not args.dry_run:
+                spath.write_text(new, encoding="utf-8")
         for k in total:
             total[k] += counts[k]
         print(f"{jpath.name[:52]:<54} reworded={counts['reworded']:<5} repaired={counts['repaired']} tidied={counts['tidied']} "

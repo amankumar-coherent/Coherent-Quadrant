@@ -64,8 +64,11 @@ def brief_for(m: dict) -> dict:
     if m.get("inclusion"):
         definition += " Inclusion: " + " ".join(str(m["inclusion"]).split())
     if single:
-        definition += (f" Geography: {country.title()} -- companies {where} (a foreign company's local "
-                       "office, branch, subsidiary or distributor does not qualify).")
+        # Ownership is not headquarters (CLAUDE.md, owner 2026-10-28): a company incorporated and
+        # run in the country stays even when a foreign group owns it.
+        definition += (f" Geography: {country.title()} -- companies {where}; a company incorporated and run "
+                       f"in {country.title()} qualifies even when a foreign group owns it, but a foreign "
+                       "company's branch, sales office or distributor does not.")
     one, many, what = _DOES.get(player, _DOES["Manufacturer"])
     core = (f"A core player{' is ' + where + ' and' if single else ''} {one} the {what} of the {market}; "
             "diversified groups qualify when this is one of their own product or business lines.")
@@ -83,7 +86,10 @@ def brief_for(m: dict) -> dict:
         "adjacent_segments": excl + ["Distributors, traders and resellers", "Buyers / users of these products"],
         "scope": scope,
         "scope_test": "own_product_line",
-        "adjacent_policy": "exclude",
+        # Adjacent companies stay in Other Noticeable Players (never on the chart) unless the
+        # markets file asks to drop them (owner 2026-11-17, Potassium Sorbate: 51 adjacent
+        # companies removed left 52 of 157 in the report).
+        **({"adjacent_policy": m["adjacent_policy"]} if m.get("adjacent_policy") else {}),
         "focus_areas": [],
     }
 
